@@ -1,0 +1,5 @@
+# ★★★レアルが名乗るときの連絡先（User-Agent に入る）＋ 家の公開アドレス
+# ★ウィキメディアの規約が「連絡先の無いbotはブロックする」と定めているため必須。
+# ★★このアドレスは canonical / sitemap / OGP にも使われる。
+# ★★★注意: 先に Cloudflare Pages でプロジェクトを作ること。存在しないURLを名乗るのは嘘になる。
+https://realu.pages.dev

@@ -1,0 +1,22 @@
+{
+  "_": "★★★このファイルは『置いた人』が書く。レアルは書き換えられない。ここに無いサイトは読まない。",
+  "_手順": "①規約を人が読む ②verdict を allow にする ③checkedOn を書く。規約が変わったらレアルは自分で止まる。",
+  "hosts": {
+    "ja.wikipedia.org": {
+      "name": "ウィキペディア日本語版",
+      "terms": [
+        "https://foundation.wikimedia.org/wiki/Policy:Terms_of_Use/ja",
+        "https://foundation.wikimedia.org/wiki/Policy:User-Agent_policy"
+      ],
+      "verdict": "allow",
+      "license": "CC BY-SA 4.0",
+      "conditions": [
+        "本文は CC BY-SA 4.0。出典とライセンスを必ず残す（利用規約 7条）。",
+        "画像は個別ライセンス。だから画像は一切持ち帰らない。",
+        "User-Agent に連絡先を入れること（User-Agent policy）。無い物はブロック対象。",
+        "サーバーに負荷をかけない。並列は控えめに。"
+      ],
+      "checkedOn": "2026-09-08"
+    }
+  }
+}

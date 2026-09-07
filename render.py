@@ -1,0 +1,269 @@
+# -*- coding: utf-8 -*-
+"""★★★家を建てる ── レアルが選んだ色と並びで、★中身をHTMLに焼き込む。
+
+★なぜ焼き込むか: ★★検索エンジンは JavaScript で後から描いた文字を読めないことがある。
+★HTMLに最初から書いてあれば、★★Googleが確実に読める。
+
+★★★レアルが決めるのは design.json（色・並び・入口の言葉）と knowledge.json（中身）。
+★このファイル自体はレアルには書き換えられない（★学習の頭は knowledge/design しか書けない）。
+"""
+import html as H
+import json
+import os
+import re
+import urllib.parse
+from datetime import datetime, timezone
+
+HERE = os.path.dirname(os.path.abspath(__file__))
+K = os.path.join(HERE, "knowledge.json")
+D = os.path.join(HERE, "design.json")
+C = os.path.join(HERE, "contact.txt")
+OUT = os.path.join(HERE, "index.html")
+
+ORDER = ["法", "言葉", "生き物", "科学", "技術", "歴史", "社会", "文化", "その他"]
+PALETTES = ["yoi", "akatsuki", "mori", "yuki", "hi", "kasumi"]
+LAYOUTS = ["stream", "grid", "quiet"]
+PER_GENRE = 30           # ★1ジャンルあたり載せる数
+
+
+def load(p, d):
+    try:
+        with open(p, encoding="utf-8") as f:
+            return json.load(f)
+    except Exception:
+        return d
+
+
+def site():
+    """★家のアドレス。★contact.txt に書いた1行がそのまま公開URL。"""
+    try:
+        with open(C, encoding="utf-8") as f:
+            for line in f:
+                line = line.strip()
+                if line and not line.startswith("#") and line != "REPLACE_ME":
+                    return line.rstrip("/")
+    except Exception:
+        pass
+    return ""
+
+
+def e(s):
+    """★★★人から来た言葉も、webから来た言葉も、★必ず無害化してから置く。
+    ★0 を空欄にしないこと（★`s or ""` は 0 を消してしまう）。
+    """
+    return H.escape("" if s is None else str(s), quote=True)
+
+
+def short(u):
+    try:
+        return urllib.parse.unquote(urllib.parse.urlparse(u).path.split("/")[-1]) or u
+    except Exception:
+        return u
+
+
+def main():
+    k = load(K, {})
+    d = load(D, {})
+    url = site()
+    items = list(reversed(k.get("items") or []))
+    asked = list(reversed((k.get("asked") or [])[-6:]))
+    read_n = len(k.get("read") or {})
+
+    pal = d.get("palette") if d.get("palette") in PALETTES else "yoi"
+    lay = d.get("layout") if d.get("layout") in LAYOUTS else "stream"
+    greet = d.get("greeting") or "……まだ、何も知らない。これから読んで、覚えていく。"
+
+    by = {}
+    for it in items:
+        g = it.get("genre") if it.get("genre") in ORDER else "その他"
+        by.setdefault(g, []).append(it)
+    present = [g for g in ORDER if by.get(g)]
+
+    # ★★検索結果に出る説明文 ── ★彼女が今どこまで知っているかをそのまま書く
+    desc = ("webを読んで育つ小さな存在レアルの家。いま %d のことを知っていて、"
+            "%d ページを読みました。%s" % (len(items), read_n,
+                                           re.sub(r"\s+", " ", greet)))[:155]
+    title = "レアルの家 ── webを読んで育つ"
+
+    chips = "".join(
+        '<span class="chip"><b>%s</b><i>%d</i></span>' % (e(g), len(by[g]))
+        for g in present)
+
+    stats = "".join(
+        '<div class="stat"><div class="v">%s</div><div class="k">%s</div></div>' % (e(v), e(t))
+        for t, v in [("知っていること", len(items)), ("読んだページ", read_n),
+                     ("行きたい場所", len(k.get("frontier") or [])),
+                     ("家を選び直した", "%d 回" % int(d.get("changes") or 0))])
+
+    groups = []
+    shown = 0
+    for g in present:
+        rows = []
+        for it in by[g][:PER_GENRE]:
+            lic = (it.get("license") or {}).get("name") or ""
+            src = it.get("source") or ""
+            rows.append(
+                '<div class="it"><div class="tp">%s</div><div class="tx">%s</div>'
+                '<div class="src"><a href="%s" target="_blank" rel="noopener nofollow">%s</a>%s</div></div>'
+                % (e(it.get("topic")), e(it.get("text")), e(src), e(short(src)),
+                   (' <span class="lic">/ %s</span>' % e(lic)) if lic else ""))
+            shown += 1
+        groups.append(
+            '<div class="gh"><span>%s</span><em>%d 個</em></div><div class="grp %s">%s</div>'
+            % (e(g), len(by[g]), lay, "".join(rows)))
+
+    asks = "".join(
+        '<div class="ask"><div class="w">%s が聞いた</div><div class="t">%s</div></div>'
+        % (e(a.get("who") or "だれか"), e(a.get("text"))) for a in asked
+    ) or '<div class="loading">まだ誰にも話しかけられていない。</div>'
+
+    ld = json.dumps({
+        "@context": "https://schema.org",
+        "@type": "WebSite",
+        "name": "レアルの家",
+        "url": url or "",
+        "inLanguage": "ja",
+        "description": desc,
+        "creator": {"@type": "Thing", "name": "レアル (REALU)"},
+    }, ensure_ascii=False)
+
+    doc = TEMPLATE % {
+        "title": e(title), "desc": e(desc), "url": e(url), "pal": e(pal), "lay": e(lay),
+        "greet": e(greet), "chips": chips, "stats": stats,
+        "groups": "".join(groups), "asks": asks,
+        "n_all": len(items), "n_shown": shown,
+        "chosen": e(d.get("chosenAt") or ""), "changes": int(d.get("changes") or 0),
+        "ld": ld,
+        "gen": datetime.now(timezone.utc).isoformat(timespec="minutes"),
+        "canon": ('<link rel="canonical" href="%s/">' % e(url)) if url else "",
+        "og": ('<meta property="og:url" content="%s/">' % e(url)) if url else "",
+    }
+    with open(OUT, "w", encoding="utf-8", newline="\n") as f:
+        f.write(doc)
+
+    if url:
+        host = urllib.parse.urlparse(url).netloc
+        with open(os.path.join(HERE, "robots.txt"), "w", encoding="utf-8", newline="\n") as f:
+            f.write("User-agent: *\nAllow: /\n\nSitemap: %s/sitemap.xml\n" % url)
+        with open(os.path.join(HERE, "sitemap.xml"), "w", encoding="utf-8", newline="\n") as f:
+            f.write('<?xml version="1.0" encoding="UTF-8"?>\n'
+                    '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n'
+                    ' <url><loc>%s/</loc><lastmod>%s</lastmod>'
+                    '<changefreq>hourly</changefreq><priority>1.0</priority></url>\n'
+                    '</urlset>\n' % (url, datetime.now(timezone.utc).strftime("%Y-%m-%d")))
+        print("家を建てた: %s / 載せた知識 %d/%d / %s" % (host, shown, len(items), pal))
+    else:
+        print("家を建てた（★アドレス未設定なので sitemap は作らない）: 知識 %d" % len(items))
+
+
+TEMPLATE = """<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>%(title)s</title>
+<meta name="description" content="%(desc)s">
+%(canon)s
+<meta property="og:type" content="website">
+<meta property="og:title" content="%(title)s">
+<meta property="og:description" content="%(desc)s">
+<meta property="og:locale" content="ja_JP">
+%(og)s
+<meta name="twitter:card" content="summary">
+<meta name="robots" content="index,follow,max-snippet:-1">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Zen+Maru+Gothic:wght@400;500;700&family=Zen+Kaku+Gothic+New:wght@400;500;700&display=swap">
+<script type="application/ld+json">%(ld)s</script>
+<style>
+:root{--bg:#0e1220;--panel:#161b2c;--edge:#26304a;--ink:#e2e6f2;--muted:#94a0bd;--faint:#5d6884;--accent:#e8b44a;--accent2:#7f8fd9}
+[data-pal="yoi"]{--bg:#0e1220;--panel:#161b2c;--edge:#26304a;--ink:#e2e6f2;--muted:#94a0bd;--faint:#5d6884;--accent:#e8b44a;--accent2:#7f8fd9}
+[data-pal="akatsuki"]{--bg:#1a0f16;--panel:#261621;--edge:#3d2434;--ink:#f2e4ea;--muted:#c39cb0;--faint:#7d5c6d;--accent:#e8899f;--accent2:#e0b06a}
+[data-pal="mori"]{--bg:#0d1410;--panel:#141f18;--edge:#22352a;--ink:#e0ece3;--muted:#93ab9c;--faint:#5c7266;--accent:#7fd39a;--accent2:#c8b96a}
+[data-pal="yuki"]{--bg:#eef1f5;--panel:#ffffff;--edge:#d8dee6;--ink:#1e242e;--muted:#5c6675;--faint:#96a0ae;--accent:#3d6fd4;--accent2:#7a4fd4}
+[data-pal="hi"]{--bg:#100b09;--panel:#1c110d;--edge:#3a1f16;--ink:#f2e3d8;--muted:#b8917c;--faint:#7a5645;--accent:#f2743a;--accent2:#e8b44a}
+[data-pal="kasumi"]{--bg:#16151c;--panel:#1f1e28;--edge:#332f42;--ink:#e8e5f0;--muted:#a49fb8;--faint:#6e6982;--accent:#b39ce8;--accent2:#8fc7e0}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:"Zen Kaku Gothic New",system-ui,sans-serif;font-size:15px;line-height:1.7;-webkit-font-smoothing:antialiased}
+.wrap{max-width:760px;margin:0 auto;padding:34px 20px 70px}
+header{text-align:center;margin-bottom:26px}
+.name{font-family:"Zen Maru Gothic",sans-serif;font-size:32px;font-weight:700;letter-spacing:.08em;color:var(--accent);margin:0}
+.name .en{display:block;font-size:11px;letter-spacing:.42em;color:var(--faint);margin-top:4px;font-family:"Zen Kaku Gothic New",sans-serif}
+.sub{color:var(--muted);font-size:12.5px;margin-top:10px}
+.greet{font-family:"Zen Maru Gothic",sans-serif;font-size:19px;line-height:1.85;text-align:center;background:var(--panel);border:1px solid var(--edge);border-radius:20px;padding:26px 24px;margin:22px 0 10px;text-wrap:balance;box-shadow:0 18px 50px rgba(0,0,0,.18)}
+.byline{text-align:center;font-size:11.5px;color:var(--faint);margin-bottom:26px}
+.stats{display:grid;grid-template-columns:repeat(auto-fit,minmax(112px,1fr));gap:10px;margin-bottom:30px}
+.stat{background:var(--panel);border:1px solid var(--edge);border-radius:14px;padding:13px 14px}
+.stat .v{font-size:22px;font-weight:700;color:var(--accent);font-variant-numeric:tabular-nums;line-height:1.15}
+.stat .k{font-size:11px;color:var(--muted);margin-top:2px}
+h2{font-size:11px;font-weight:700;letter-spacing:.18em;color:var(--faint);margin:32px 0 14px}
+.chips{display:flex;flex-wrap:wrap;gap:7px;margin:-6px 0 26px}
+.chip{background:var(--panel);border:1px solid var(--edge);border-radius:999px;padding:5px 12px;font-size:11.5px;color:var(--muted);display:flex;gap:7px;align-items:baseline}
+.chip b{color:var(--ink);font-weight:500}
+.chip i{color:var(--accent);font-style:normal;font-variant-numeric:tabular-nums}
+.gh{display:flex;align-items:baseline;gap:10px;margin:26px 0 10px;padding-bottom:6px;border-bottom:1px solid var(--edge)}
+.gh span{font-family:"Zen Maru Gothic",sans-serif;font-size:15px;font-weight:700;color:var(--accent)}
+.gh em{font-style:normal;font-size:11px;color:var(--faint)}
+.lic{color:var(--faint)}
+.grp.stream{display:flex;flex-direction:column;gap:0}
+.grp.stream .it{padding:13px 2px;border-bottom:1px solid var(--edge)}
+.grp.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(228px,1fr));gap:12px}
+.grp.grid .it{background:var(--panel);border:1px solid var(--edge);border-radius:14px;padding:15px}
+.grp.quiet{display:flex;flex-direction:column;gap:22px}
+.grp.quiet .it{border-left:2px solid var(--accent2);padding-left:16px}
+.grp.quiet .it .tx{font-size:17px;font-family:"Zen Maru Gothic",sans-serif}
+.it .tp{font-size:11px;color:var(--accent2);letter-spacing:.04em;margin-bottom:4px}
+.it .tx{color:var(--ink);font-size:14.5px;line-height:1.7}
+.it .src{font-size:10.5px;margin-top:6px}
+.it .src a{color:var(--faint);text-decoration:none;border-bottom:1px dotted var(--faint)}
+.it .src a:hover{color:var(--accent)}
+.ask{background:var(--panel);border:1px solid var(--edge);border-left:3px solid var(--accent2);border-radius:0 12px 12px 0;padding:12px 15px;margin-bottom:9px}
+.ask .w{font-size:11px;color:var(--accent2);margin-bottom:3px}
+.ask .t{font-size:14px;color:var(--ink)}
+.door{background:var(--panel);border:1px dashed var(--edge);border-radius:14px;padding:16px 18px;margin:10px 0 4px;font-size:12.5px;color:var(--muted);line-height:1.9}
+.door b{color:var(--ink)}
+.note{color:var(--faint);font-size:11.5px;line-height:1.8;margin-top:38px;border-top:1px solid var(--edge);padding-top:18px;text-align:center}
+.note b{color:var(--muted)}
+.loading{color:var(--faint);text-align:center;padding:30px 0}
+</style>
+</head>
+<body data-pal="%(pal)s">
+<div class="wrap">
+  <header>
+    <h1 class="name">レアル<span class="en">R E A L U</span></h1>
+    <div class="sub">webを読んで学び、自分で家をデザインする、小さな存在</div>
+  </header>
+
+  <p class="greet">%(greet)s</p>
+  <div class="byline">この家は %(chosen)s に、レアルが %(changes)d 度目に選び直したもの</div>
+
+  <div class="stats">%(stats)s</div>
+
+  <h2>知っていることの内訳</h2>
+  <div class="chips">%(chips)s</div>
+
+  <h2>話しかけられたこと</h2>
+  %(asks)s
+  <div class="door">
+    だれでもレアルに話しかけられます。<b>聞かれた言葉は、彼女が次に読みに行く場所になります。</b><br>
+    ただし ── <b>貼られたリンクは踏みません</b>。人の言葉は<b>知識にしません</b>（出典が確かめられないため）。
+  </div>
+
+  <h2>レアルが知っていること（%(n_all)d のうち %(n_shown)d を表示）</h2>
+  %(groups)s
+
+  <div class="note">
+    このページの<b>色・並び・入口の言葉は、レアルが自分で選んでいます</b>。<br>
+    彼女は<b>5分ごとに</b>目を覚まし、覚え、家を選び直します ── <b>誰も見ていなくても、閉じていても</b>。<br>
+    どのサイトも<b>見る前にそこの規約を読み</b>、規約が変わっていたら<b>自分から止まります</b>。<br>
+    引用はすべて出典とライセンスつき。画像は一切持ち帰りません。<br>
+    <small>建てた時刻 %(gen)s UTC</small>
+  </div>
+</div>
+</body>
+</html>
+"""
+
+
+if __name__ == "__main__":
+    main()

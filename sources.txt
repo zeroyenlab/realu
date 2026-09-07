@@ -1,0 +1,14 @@
+# ★★★最初に開ける「扉」── ★これだけ。★あとは自分でリンクを辿って広げる。
+#
+# ★★決まりごと:
+#   ・★生まれた時に渡すのは「**言葉**」と「**法**」だけ。★他の知識はゼロ
+#   ・★★★**再利用が許された場所だけ**（★著作権。★いまは Wikipedia 系のみ）
+#   ・★★★相手が「読むな」と言っている所（robots.txt）は**読まない**
+#   ・★増やしすぎない
+#
+# ★① 考える言葉
+https://ja.wikipedia.org/wiki/%E6%97%A5%E6%9C%AC%E8%AA%9E
+# ★★② 破ってはいけない線（★国内・国際・著作権）
+https://ja.wikipedia.org/wiki/%E6%B3%95%E5%BE%8B
+https://ja.wikipedia.org/wiki/%E5%9B%BD%E9%9A%9B%E6%B3%95
+https://ja.wikipedia.org/wiki/%E8%91%97%E4%BD%9C%E6%A8%A9

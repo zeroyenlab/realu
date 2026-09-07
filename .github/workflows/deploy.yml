@@ -1,0 +1,43 @@
+name: realu builds her house
+
+on:
+  schedule:
+    - cron: "7 */2 * * *"   # ★2時間ごと（★Cloudflare Pagesの無料枠は月500ビルド。これで月360回）
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: realu-deploy
+  cancel-in-progress: true
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      # ★外に出すのは「家」だけ。★学習の頭も核も扉も外には置かない
+      - name: 外に出すものだけ集める
+        run: |
+          mkdir -p _site
+          cp index.html _site/
+          cp robots.txt _site/ 2>/dev/null || true
+          cp sitemap.xml _site/ 2>/dev/null || true
+          cp knowledge.json design.json _site/    # ★透明性のため（★何を覚えたか誰でも見られる）
+          ls -la _site
+
+      # ★★★家が空だったら公開しない（★自分を消せないようにするための番人）
+      - name: 家が壊れていないか見る
+        run: |
+          grep -q "レアル" _site/index.html
+          grep -q "貼られたリンクは踏みません" _site/index.html
+          test "$(wc -c < _site/index.html)" -gt 3000
+          echo "家は無事"
+
+      - uses: cloudflare/wrangler-action@v3
+        with:
+          apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          accountId: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+          command: pages deploy _site --project-name=realu --branch=main
