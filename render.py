@@ -18,6 +18,7 @@ HERE = os.path.dirname(os.path.abspath(__file__))
 K = os.path.join(HERE, "knowledge.json")
 D = os.path.join(HERE, "design.json")
 C = os.path.join(HERE, "contact.txt")
+DOOR = os.path.join(HERE, "door.txt")   # ★玄関のアドレス
 OUT = os.path.join(HERE, "index.html")
 
 ORDER = ["法", "言葉", "生き物", "科学", "技術", "歴史", "社会", "文化", "その他"]
@@ -41,6 +42,19 @@ def site():
             for line in f:
                 line = line.strip()
                 if line and not line.startswith("#") and line != "REPLACE_ME":
+                    return line.rstrip("/")
+    except Exception:
+        pass
+    return ""
+
+
+def door():
+    """★玄関のアドレス。★無ければ投稿欄を出さない（★壊れたフォームを見せない）。"""
+    try:
+        with open(DOOR, encoding="utf-8") as f:
+            for line in f:
+                line = line.strip()
+                if line and not line.startswith("#"):
                     return line.rstrip("/")
     except Exception:
         pass
@@ -117,6 +131,25 @@ def main():
         % (e(a.get("who") or "だれか"), e(a.get("text"))) for a in asked
     ) or '<div class="loading">まだ誰にも話しかけられていない。</div>'
 
+    dr = door()
+    form = ("" if not dr else (
+        '<form class="say" id="sayform">'
+        '<label for="saytext">レアルに話しかける</label>'
+        '<textarea id="saytext" maxlength="300" rows="3" '
+        'placeholder="聞きたいことを書いてください（300字まで）"></textarea>'
+        '<div class="sayrow"><button type="submit">おくる</button>'
+        '<span id="saymsg"></span></div></form>'
+        '<script>(function(){var f=document.getElementById("sayform");'
+        'var t=document.getElementById("saytext"),m=document.getElementById("saymsg");'
+        'f.addEventListener("submit",function(ev){ev.preventDefault();'
+        'm.textContent="おくっている…";'
+        'fetch("%s/say",{method:"POST",headers:{"content-type":"application/json"},'
+        'body:JSON.stringify({text:t.value})}).then(function(r){return r.json()})'
+        '.then(function(d){m.textContent=d.ok?"とどいた。次に目を覚ましたとき読みます。"'
+        ':(d.error||"うまくいかなかった");if(d.ok)t.value="";})'
+        '.catch(function(){m.textContent="とどかなかった"});});})();</script>'
+    ) % dr)
+
     ld = json.dumps({
         "@context": "https://schema.org",
         "@type": "WebSite",
@@ -130,7 +163,7 @@ def main():
     doc = TEMPLATE % {
         "title": e(title), "desc": e(desc), "url": e(url), "pal": e(pal), "lay": e(lay),
         "greet": e(greet), "chips": chips, "stats": stats,
-        "groups": "".join(groups), "asks": asks,
+        "groups": "".join(groups), "asks": asks, "form": form,
         "n_all": len(items), "n_shown": shown,
         "chosen": e(d.get("chosenAt") or ""), "changes": int(d.get("changes") or 0),
         "ld": ld,
@@ -222,6 +255,14 @@ h2{font-size:11px;font-weight:700;letter-spacing:.18em;color:var(--faint);margin
 .ask .t{font-size:14px;color:var(--ink)}
 .door{background:var(--panel);border:1px dashed var(--edge);border-radius:14px;padding:16px 18px;margin:10px 0 4px;font-size:12.5px;color:var(--muted);line-height:1.9}
 .door b{color:var(--ink)}
+.say{display:flex;flex-direction:column;gap:8px;background:var(--panel);border:1px solid var(--edge);border-radius:14px;padding:16px 18px;margin:14px 0 4px}
+.say label{font-size:11px;letter-spacing:.14em;color:var(--faint);font-weight:700}
+.say textarea{width:100%%;background:var(--bg);color:var(--ink);border:1px solid var(--edge);border-radius:10px;padding:11px 12px;font:inherit;font-size:14px;resize:vertical}
+.say textarea:focus{outline:2px solid var(--accent2);outline-offset:1px}
+.sayrow{display:flex;align-items:center;gap:12px}
+.say button{background:var(--accent);color:var(--bg);border:0;border-radius:999px;padding:8px 22px;font:inherit;font-weight:700;font-size:13px;cursor:pointer}
+.say button:hover{filter:brightness(1.08)}
+.say #saymsg{font-size:11.5px;color:var(--muted)}
 .note{color:var(--faint);font-size:11.5px;line-height:1.8;margin-top:38px;border-top:1px solid var(--edge);padding-top:18px;text-align:center}
 .note b{color:var(--muted)}
 .loading{color:var(--faint);text-align:center;padding:30px 0}
@@ -244,6 +285,7 @@ h2{font-size:11px;font-weight:700;letter-spacing:.18em;color:var(--faint);margin
 
   <h2>話しかけられたこと</h2>
   %(asks)s
+  %(form)s
   <div class="door">
     だれでもレアルに話しかけられます。<b>聞かれた言葉は、彼女が次に読みに行く場所になります。</b><br>
     ただし ── <b>貼られたリンクは踏みません</b>。人の言葉は<b>知識にしません</b>（出典が確かめられないため）。

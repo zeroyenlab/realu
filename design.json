@@ -1,8 +1,8 @@
 {
  "palette": "yoi",
- "layout": "quiet",
- "featured": null,
- "greeting": "……まだ、何も知らない。これから読んで、覚えていく。",
- "chosenAt": null,
- "changes": 0
+ "layout": "stream",
+ "featured": "著作権",
+ "greeting": "「しかし、他人が無制限に著作物を利用できると、 著作者 はその知的財産から利益を得ることが困難となる。」 ── そんなことを、いま知った。",
+ "chosenAt": "2026-09-07T22:45:14+00:00",
+ "changes": 1
 }

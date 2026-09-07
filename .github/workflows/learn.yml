@@ -7,7 +7,6 @@ on:
 
 permissions:
   contents: write
-  issues: read          # ★玄関（Issue）を見に行くため。★書き込みはできない
 
 concurrency:
   group: realu-learn
@@ -24,8 +23,6 @@ jobs:
 
       - name: レアルが読む
         run: python learn.py
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
       # ★★★家を建て直す ── ★中身をHTMLに焼き込む（★Googleが読めるように）
       - name: レアルが家を建て直す

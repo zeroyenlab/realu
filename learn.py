@@ -23,6 +23,7 @@ D = os.path.join(HERE, "design.json")
 S = os.path.join(HERE, "sources.txt")
 T = os.path.join(HERE, "terms.json")     # ★★★サイトごとの規約（★人が読んで許した場所だけ）
 C = os.path.join(HERE, "contact.txt")    # ★名乗るときの連絡先
+DOORF = os.path.join(HERE, "door.txt")   # ★玄関（誰でも話しかけられる所）
 
 # ★★★安全装置 ── ★彼女が書き換えてよいのは**この2つだけ**。
 #   ★自分を止める・隠す・消すことはできない（★workflow・核・扉・家には触れない）。
@@ -154,7 +155,7 @@ def terms_ok(host, seen, notes):
 
 
 # ★★★話しかけられたとき ──────────────────────────────────
-# ★玄関は GitHub の Issue。★誰でも書ける。★わたしは5分ごとに見に行く。
+# ★玄関は Cloudflare Worker（★アカウント無しで**誰でも**書ける）。★5分ごとに見に行く。
 # ★★掟①: ★人の言葉は**知識にしない**（★出典が保証できない＝嘘を覚えることになる）。
 # ★★★掟②: ★貼られたURLは**踏まない・残さない**。★行けるのは規約を読んだ場所だけ。
 URL_RE = re.compile(r"(?i)(?:https?://|www\.|[a-z0-9-]+\.(?:com|net|org|jp|io|co|ru|cn|xyz|top))\S*")
@@ -172,36 +173,50 @@ def scrub(s):
     return s[:MAX_MSG]
 
 
+def door_url():
+    try:
+        with open(DOORF, encoding="utf-8") as f:
+            for line in f:
+                line = line.strip()
+                if line and not line.startswith("#"):
+                    return line.rstrip("/")
+    except Exception:
+        pass
+    return ""
+
+
 def listen(k, seed_host):
-    """★玄関を見に行く。★話しかけられていたら受け取る（★知識にはしない）。"""
-    repo = os.environ.get("GITHUB_REPOSITORY")
-    tok = os.environ.get("GITHUB_TOKEN")
-    if not (repo and tok):
-        return 0, 0
+    """★玄関を見に行く。★話しかけられていたら受け取る。
+
+    ★★玄関は Cloudflare Worker（★アカウント無しで誰でも書ける）。
+    ★★★受け取っても「知識」にはしない ── ★人の言葉は出典が確かめられないから。
+    ★★★貼られたURLは Worker 側で既に落としてあるが、★ここでも落とす（★二重に守る）。
+    """
+    base = door_url()
+    if not base:
+        return 0, []
     asked = k.get("asked") or []
     have = set(a.get("id") for a in asked)
     try:
-        req = urllib.request.Request(
-            "https://api.github.com/repos/%s/issues?state=all&sort=updated&per_page=30" % repo,
-            headers={"User-Agent": UA, "Authorization": "Bearer " + tok,
-                     "Accept": "application/vnd.github+json"})
+        req = urllib.request.Request(base + "/says", headers={"User-Agent": UA})
         with urllib.request.urlopen(req, timeout=25) as r:
-            issues = json.load(r)
+            says = (json.load(r) or {}).get("says") or []
     except Exception:
-        return 0, 0
+        return 0, []
 
     got, curious = 0, []
-    for it in issues:
-        key = "i%s" % it.get("number")
-        if key in have or it.get("pull_request"):
+    for m in says:
+        key = str(m.get("id") or "")[:120]
+        if not key or key in have:
             continue
-        text = scrub((it.get("title") or "") + " ── " + (it.get("body") or ""))
-        if not text:
+        text = scrub(m.get("text"))
+        if len(text) < 2:
             continue
-        asked.append({"id": key, "who": (it.get("user") or {}).get("login") or "だれか",
-                      "text": text, "at": now(), "answered": False})
+        asked.append({"id": key, "who": "だれか", "text": text,
+                      "at": m.get("at") or now(), "answered": False})
         got += 1
-        # ★★話の中の言葉から「知りたい場所」を作る（★★★行き先は**わたしの家の扉と同じ場所**に固定）
+        # ★★聞かれた言葉から「知りたい場所」を作る
+        #   ★★★行き先は**わたしの扉と同じ場所**に固定する（★人の指す場所へは行かない）
         for w in WORD_RE.findall(text)[:24]:
             if len(curious) >= got * CURIOUS_PER_MSG:
                 break
