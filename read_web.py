@@ -85,7 +85,10 @@ def surprise(text):
         return 0.0
 
 WORK = os.environ.get("REALU_WORK", os.path.join(os.path.dirname(os.path.abspath(__file__)), "work"))
-PAGES = int(os.environ.get("REALU_WEB_PAGES", 4000))    # ★1日に読むページ数
+PAGES = int(os.environ.get("REALU_WEB_PAGES", 40000))
+#   ★★★1日に読むページ数。★実測1ページ28ms・同時8なので、★4万ページで約2.5分。
+#     ★5分ごとの方（1日17万ページ）は**重みに繋がっていなかった**ので、
+#     ★★こちらを大幅に上げて、★読んだものがちゃんと重みに入るようにする。
 
 
 def main():

@@ -5,7 +5,7 @@ name: realu speaks
 
 on:
   schedule:
-    - cron: "40 */2 * * *"      # ★2時間ごと
+    - cron: "40 * * * *"        # ★1時間ごと（★書くのは頻繁でいい）
   workflow_dispatch:
 
 permissions:

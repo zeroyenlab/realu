@@ -118,7 +118,7 @@ jobs:
       #   ★読んだものが重みに入らないなら、それは学んだことにならない。
       - name: webを読んでごはんにする
         env:
-          REALU_WEB_PAGES: "4000"
+          REALU_WEB_PAGES: "40000"
         run: python -u read_web.py
 
       # ── ★★★国会の会議録を、毎日すこしずつ食べる
