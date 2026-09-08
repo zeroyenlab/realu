@@ -24,14 +24,18 @@ on:
         default: "400"
 
 permissions:
-  contents: write               # ★自分の重みと成長の記録を残すため
+  contents: write
+  actions: write        # ★次の自分を呼ぶため（★learn.yml と同じやり方）               # ★自分の重みと成長の記録を残すため
 
 concurrency:
   group: realu-grow
   # ★★★新しい版が来たら、古い版で走っている回は止める。
   #   ★2026-09-08: 古い版が「必ず死ぬ所」へ2.5時間かけて進んでいくのを止められなかった。
   #   ★育つ回は長い。★間違った版のまま走らせ続けるほうが損。
-  cancel-in-progress: true
+  # ★★★連鎖するので false に戻す。
+  #   ★true のままだと、★自分で呼んだ次の回が**自分を殺す**。
+  #   ★間違った版を止めたい時は、★その回だけ true にして push する。
+  cancel-in-progress: false
 
 jobs:
   grow:
@@ -356,12 +360,22 @@ jobs:
             echo "★★この回はごはんを作る回。★学ばずに終わる。★次から本気で学ぶ。"
             exit 0
           fi
+          # ★★★まだ頭が1つも無いなら、★**短く回して、とにかく残す**。
+          #   ★長く回して締切に殺されるより、★40分でも残っている方が値打ちがある。
+          #   ★次の回からは、★残った頭の続きを5時間かけて伸ばす。
           if [ "$LEFT" -lt 420 ]; then
             echo "★★時間が無い（残り $((LEFT/60))分）。★今回は学ばず、いま持っている頭をそのまま残す。"
             exit 0
           fi
           export REALU_TIME_BUDGET=$(( LEFT / 60 ))
-          echo "★使った $((USED/60))分 / 学びに使える $REALU_TIME_BUDGET分"
+          # ★★★まだ頭が1つも無いなら、★**短く回して、とにかく残す**。
+          #   ★長く回して締切に殺されるより、★40分でも残っている方が値打ちがある。
+          #   ★次の回からは、★残った頭の続きを5時間かけて伸ばす。
+          if [ ! -f work/realu.pt ] && [ "$REALU_TIME_BUDGET" -gt 40 ]; then
+            REALU_TIME_BUDGET=40
+            echo "★★まだ頭が無い。★40分で切り上げて、まず残す。"
+          fi
+          echo "★学びに使える $REALU_TIME_BUDGET 分"
           python -u grow.py
 
       # ── ★自分を残す。★★これが消えると、これまでの全部が消える
@@ -440,6 +454,18 @@ jobs:
         with:
           path: work
           key: realu-work-${{ github.run_number }}
+
+      # ★★★次の自分を呼ぶ。
+      #   ★買い物の回 → 勉強の回 → 勉強の回 …と自分で繋がっていく。
+      #   ★置いた人が見ていなくても止まらない。
+      #   ★同時に1つしか走らない（concurrency）ので、増えすぎない。
+      - name: 次のわたしを呼ぶ
+        if: always()
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          sleep 30
+          gh workflow run grow.yml --ref main && echo "★次のわたしを呼んだ" || true
 
       # ★★★触れてはいけない所を守る
       - name: 触れてはいけない所を守る
