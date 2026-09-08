@@ -1259,6 +1259,78 @@
     "url": "https://creativecommons.org/licenses/by-sa/4.0/"
    },
    "ts": "2026-09-08T01:41:10+00:00"
+  },
+  {
+   "topic": "デザイン",
+   "text": "マルマン のスケッチブックブランドについては「 図案シリーズ 」をご覧ください。",
+   "source": "https://ja.wikipedia.org/wiki/%E3%83%87%E3%82%B6%E3%82%A4%E3%83%B3",
+   "genre": "その他",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": "https://creativecommons.org/licenses/by-sa/4.0/"
+   },
+   "ts": "2026-09-08T02:07:04+00:00"
+  },
+  {
+   "topic": "デザイン",
+   "text": "これが中世英語に入ったもので、デザインは物の姿や形よりも計画や意図に本質を置いている [ 9 ] 。",
+   "source": "https://ja.wikipedia.org/wiki/%E3%83%87%E3%82%B6%E3%82%A4%E3%83%B3",
+   "genre": "歴史",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": "https://creativecommons.org/licenses/by-sa/4.0/"
+   },
+   "ts": "2026-09-08T02:07:04+00:00"
+  },
+  {
+   "topic": "デザイン",
+   "text": "一方、日本では一般的に装飾や模様、姿や形を表すものとして理解されていたが、広義の定義でもデザインが認識されるようになってきている [ 9 ] 。",
+   "source": "https://ja.wikipedia.org/wiki/%E3%83%87%E3%82%B6%E3%82%A4%E3%83%B3",
+   "genre": "その他",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": "https://creativecommons.org/licenses/by-sa/4.0/"
+   },
+   "ts": "2026-09-08T02:07:04+00:00"
+  },
+  {
+   "topic": "デザイン",
+   "text": "「常にヒトを中心に考え、目的を見出し、その目的を達成する計画を行い実現化する。",
+   "source": "https://ja.wikipedia.org/wiki/%E3%83%87%E3%82%B6%E3%82%A4%E3%83%B3",
+   "genre": "その他",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": "https://creativecommons.org/licenses/by-sa/4.0/"
+   },
+   "ts": "2026-09-08T02:07:04+00:00"
+  },
+  {
+   "topic": "デザイン",
+   "text": "伝わった当初は計画や規定の意味で、その後ものの外観や機能を表す図絵の意味となっていく [ 18 ] 。",
+   "source": "https://ja.wikipedia.org/wiki/%E3%83%87%E3%82%B6%E3%82%A4%E3%83%B3",
+   "genre": "その他",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": "https://creativecommons.org/licenses/by-sa/4.0/"
+   },
+   "ts": "2026-09-08T02:07:04+00:00"
+  },
+  {
+   "topic": "デザイン",
+   "text": "戦前には、産業に応用される工芸技能・美術の商業応用といったニュアンスから「産業工芸」「商業美術」と呼ばれた [ 25 ] 。",
+   "source": "https://ja.wikipedia.org/wiki/%E3%83%87%E3%82%B6%E3%82%A4%E3%83%B3",
+   "genre": "社会",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": "https://creativecommons.org/licenses/by-sa/4.0/"
+   },
+   "ts": "2026-09-08T02:07:04+00:00"
   }
  ],
  "read": {
@@ -1285,7 +1357,8 @@
   "https://ja.wikipedia.org/wiki/Help:%E7%9B%AE%E6%AC%A1": "2026-09-08T01:21:43+00:00",
   "https://ja.wikipedia.org/wiki/Category:ISBN%E3%83%9E%E3%82%B8%E3%83%83%E3%82%AF%E3%83%AA%E3%83%B3%E3%82%AF%E3%82%92%E4%BD%BF%E7%94%A8%E3%81%97%E3%81%A6%E3%81%84%E3%82%8B%E3%83%9A%E3%83%BC%E3%82%B8": "2026-09-08T01:27:14+00:00",
   "https://ja.wikipedia.org/wiki/Category:%E5%85%AC%E6%B3%95": "2026-09-08T01:27:14+00:00",
-  "https://ja.wikipedia.org/wiki/%E8%89%B2%E5%BD%A9": "2026-09-08T01:41:08+00:00"
+  "https://ja.wikipedia.org/wiki/%E8%89%B2%E5%BD%A9": "2026-09-08T01:41:08+00:00",
+  "https://ja.wikipedia.org/wiki/%E3%83%87%E3%82%B6%E3%82%A4%E3%83%B3": "2026-09-08T02:07:01+00:00"
  },
  "frontier": [
   "https://ja.wikipedia.org/wiki/CSS%E3%82%A2%E3%83%8B%E3%83%A1%E3%83%BC%E3%82%B7%E3%83%A7%E3%83%B3",
@@ -2634,10 +2707,86 @@
   "https://ja.wikipedia.org/wiki/金属光沢",
   "https://ja.wikipedia.org/wiki/Category:%E8%89%B2",
   "https://ja.wikipedia.org/wiki/視覚",
-  "https://ja.wikipedia.org/wiki/蛍光顔料"
+  "https://ja.wikipedia.org/wiki/蛍光顔料",
+  "https://ja.wikipedia.org/wiki/立体未来主義",
+  "https://ja.wikipedia.org/wiki/ギリシア美術",
+  "https://ja.wikipedia.org/wiki/クリップアート",
+  "https://ja.wikipedia.org/wiki/水彩",
+  "https://ja.wikipedia.org/wiki/羊皮紙",
+  "https://ja.wikipedia.org/wiki/フォーヴィスム",
+  "https://ja.wikipedia.org/wiki/Help:典拠管理",
+  "https://ja.wikipedia.org/wiki/情報デザイン",
+  "https://ja.wikipedia.org/wiki/絵画",
+  "https://ja.wikipedia.org/wiki/ソフト・スカルプチュア",
+  "https://ja.wikipedia.org/wiki/写真",
+  "https://ja.wikipedia.org/wiki/ヴォーティシズム",
+  "https://ja.wikipedia.org/wiki/キネティックアート",
+  "https://ja.wikipedia.org/wiki/Portal:ファッション",
+  "https://ja.wikipedia.org/wiki/フレスコ",
+  "https://ja.wikipedia.org/wiki/パステル",
+  "https://ja.wikipedia.org/wiki/ボディアート",
+  "https://ja.wikipedia.org/wiki/ポップアート",
+  "https://ja.wikipedia.org/wiki/バウハウス",
+  "https://ja.wikipedia.org/wiki/フルクサス",
+  "https://ja.wikipedia.org/wiki/イラストレーター",
+  "https://ja.wikipedia.org/wiki/コレクション",
+  "https://ja.wikipedia.org/wiki/芸術",
+  "https://ja.wikipedia.org/wiki/コブラ_(芸術運動)",
+  "https://ja.wikipedia.org/wiki/コンピューターアート",
+  "https://ja.wikipedia.org/wiki/舞台芸術",
+  "https://ja.wikipedia.org/wiki/動画",
+  "https://ja.wikipedia.org/wiki/Category:%E5%87%BA%E5%85%B8%E3%82%92%E5%BF%85%E8%A6%81%E3%81%A8%E3%81%99%E3%82%8B%E7%AF%80%E3%81%AE%E3%81%82%E3%82%8B%E8%A8%98%E4%BA%8B/2026%E5%B9%B46%E6%9C%88",
+  "https://ja.wikipedia.org/wiki/デ・ステイル",
+  "https://ja.wikipedia.org/wiki/崇高",
+  "https://ja.wikipedia.org/wiki/18世紀",
+  "https://ja.wikipedia.org/wiki/新即物主義",
+  "https://ja.wikipedia.org/wiki/口絵",
+  "https://ja.wikipedia.org/wiki/画材",
+  "https://ja.wikipedia.org/wiki/Category:%E3%83%87%E3%82%B6%E3%82%A4%E3%83%B3",
+  "https://ja.wikipedia.org/wiki/ペーター・ベーレンス",
+  "https://ja.wikipedia.org/wiki/ハーバート・サイモン",
+  "https://ja.wikipedia.org/wiki/Template:美術",
+  "https://ja.wikipedia.org/wiki/ドイツ工作連盟",
+  "https://ja.wikipedia.org/wiki/システム",
+  "https://ja.wikipedia.org/wiki/Portal:建築",
+  "https://ja.wikipedia.org/wiki/デコレーション",
+  "https://ja.wikipedia.org/wiki/新印象派",
+  "https://ja.wikipedia.org/wiki/オランダ黄金時代の絵画",
+  "https://ja.wikipedia.org/wiki/青騎士",
+  "https://ja.wikipedia.org/wiki/シミュレーショニズム",
+  "https://ja.wikipedia.org/wiki/版画",
+  "https://ja.wikipedia.org/wiki/ユニバーサルデザイン",
+  "https://ja.wikipedia.org/wiki/綜合主義",
+  "https://ja.wikipedia.org/wiki/インフォグラフィック",
+  "https://ja.wikipedia.org/wiki/ドイツ表現主義",
+  "https://ja.wikipedia.org/wiki/意匠設計",
+  "https://ja.wikipedia.org/wiki/経済性",
+  "https://ja.wikipedia.org/wiki/グラフィックデザイナー",
+  "https://ja.wikipedia.org/wiki/オブジェクト",
+  "https://ja.wikipedia.org/wiki/バルビゾン派",
+  "https://ja.wikipedia.org/wiki/カラーフィールド・ペインティング",
+  "https://ja.wikipedia.org/wiki/クロワゾニスム",
+  "https://ja.wikipedia.org/wiki/ユーザビリティ",
+  "https://ja.wikipedia.org/wiki/視神経",
+  "https://ja.wikipedia.org/wiki/パネル",
+  "https://ja.wikipedia.org/wiki/Hdl_(識別子)",
+  "https://ja.wikipedia.org/wiki/ヤマハ・YZF-R1",
+  "https://ja.wikipedia.org/wiki/Portal:漫画",
+  "https://ja.wikipedia.org/wiki/趣味",
+  "https://ja.wikipedia.org/wiki/ビデオ・アート",
+  "https://ja.wikipedia.org/wiki/帆布",
+  "https://ja.wikipedia.org/wiki/タペストリー",
+  "https://ja.wikipedia.org/wiki/ポール・ランド",
+  "https://ja.wikipedia.org/wiki/仙台市交通局",
+  "https://ja.wikipedia.org/wiki/建設",
+  "https://ja.wikipedia.org/wiki/シュプレマティスム",
+  "https://ja.wikipedia.org/wiki/歴史学",
+  "https://ja.wikipedia.org/wiki/ロシア構成主義",
+  "https://ja.wikipedia.org/wiki/近代美術と現代美術",
+  "https://ja.wikipedia.org/wiki/スティーブ・ジョブズ"
  ],
  "born": "2026-09-07T21:38:10+00:00",
- "lastLearned": "2026-09-08T01:41:10+00:00",
+ "lastLearned": "2026-09-08T02:07:04+00:00",
  "failed": {},
  "termsSeen": {
   "https://foundation.wikimedia.org/wiki/Policy:Terms_of_Use/ja": {
@@ -2659,7 +2808,8 @@
  "heardIds": [
   "msg:2026-09-08T00:08:03.599Z:f367",
   "msg:2026-09-08T01:33:00.104Z:f367",
-  "msg:2026-09-08T01:52:56.456Z:f367"
+  "msg:2026-09-08T01:52:56.456Z:f367",
+  "msg:2026-09-08T01:54:21.097Z:f367"
  ],
- "heardCount": 3
+ "heardCount": 4
 }
