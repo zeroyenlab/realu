@@ -390983,6 +390983,5874 @@
     "url": ""
    },
    "ts": "2026-09-08T09:45:16+00:00"
+  },
+  {
+   "topic": "短絡評価",
+   "text": "左辺（第一引数）を評価した段階で式全体の値が定まらない場合のみ右辺（第二引数）を評価する、というのが短絡評価である。",
+   "source": "https://ja.wikipedia.org/wiki/短絡評価",
+   "genre": "その他",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T09:49:54+00:00"
+  },
+  {
+   "topic": "短絡評価",
+   "text": "例えば、 論理積 (論理AND) の第一引数を評価した結果が false であれば、式全体は必ず false になるし、 論理和 (論理OR) の第一引数が true であれば、式全体は必ず true になる。",
+   "source": "https://ja.wikipedia.org/wiki/短絡評価",
+   "genre": "その他",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T09:49:54+00:00"
+  },
+  {
+   "topic": "短絡評価",
+   "text": "いずれのケースも、第二引数を評価するまでもないので、途中で式の評価を打ち切ってかまわない。",
+   "source": "https://ja.wikipedia.org/wiki/短絡評価",
+   "genre": "その他",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T09:49:54+00:00"
+  },
+  {
+   "topic": "短絡評価",
+   "text": "前述のように多くの言語の論理演算子は短絡評価だが、 Pascal では「処理系依存」 [ 1 ] である。",
+   "source": "https://ja.wikipedia.org/wiki/短絡評価",
+   "genre": "言葉",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T09:49:54+00:00"
+  },
+  {
+   "topic": "短絡評価",
+   "text": "Ada では両方を評価する演算子と短絡評価の演算子とが用意されている。",
+   "source": "https://ja.wikipedia.org/wiki/短絡評価",
+   "genre": "その他",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T09:49:54+00:00"
+  },
+  {
+   "topic": "短絡評価",
+   "text": "C言語 では、 C89 以前の K&R の初版から論理演算子が短絡評価されることが明確に書かれている。",
+   "source": "https://ja.wikipedia.org/wiki/短絡評価",
+   "genre": "言葉",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T09:49:54+00:00"
+  },
+  {
+   "topic": "リファレンス実装",
+   "text": "参考実装 （さんこうじっそう）とも呼ばれる。",
+   "source": "https://ja.wikipedia.org/wiki/リファレンス実装",
+   "genre": "その他",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T09:49:54+00:00"
+  },
+  {
+   "topic": "リファレンス実装",
+   "text": "リファレンス実装の一般的な目的は、開発者に対してその仕様を少しでも知ってもらうことである。",
+   "source": "https://ja.wikipedia.org/wiki/リファレンス実装",
+   "genre": "その他",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T09:49:54+00:00"
+  },
+  {
+   "topic": "リファレンス実装",
+   "text": "純粋に学究的目的で提供されることもあるが、より実用的なリファレンス実装の場合は市場での知名度を上げることを目的としており、場合によってはそのリファレンス実装を買ってもらうか、リファレンス実装を提供したハードウェアもしくはソフトウェアを商用に実装してもらうことが狙いである。",
+   "source": "https://ja.wikipedia.org/wiki/リファレンス実装",
+   "genre": "その他",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T09:49:54+00:00"
+  },
+  {
+   "topic": "リファレンス実装",
+   "text": "リファレンス実装は一般にある仕様を実装することによって定義を決定するのに使用される。",
+   "source": "https://ja.wikipedia.org/wiki/リファレンス実装",
+   "genre": "その他",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T09:49:54+00:00"
+  },
+  {
+   "topic": "リファレンス実装",
+   "text": "認証試験を開発する際に以下の点で信用できる実装が各インターフェイスに必須である。",
+   "source": "https://ja.wikipedia.org/wiki/リファレンス実装",
+   "genre": "その他",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T09:49:54+00:00"
+  },
+  {
+   "topic": "リファレンス実装",
+   "text": "(1)仕様の間違いや不正確さを発見するため。",
+   "source": "https://ja.wikipedia.org/wiki/リファレンス実装",
+   "genre": "その他",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T09:49:54+00:00"
+  },
+  {
+   "topic": "非構造化プログラミング",
+   "text": "非構造化プログラムは可読性が低くデバッグすることが難しい。",
+   "source": "https://ja.wikipedia.org/wiki/非構造化プログラミング",
+   "genre": "その他",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T09:49:54+00:00"
+  },
+  {
+   "topic": "非構造化プログラミング",
+   "text": "そのため、何らかの構造をサポートするプログラミング言語では使われない手法である。",
+   "source": "https://ja.wikipedia.org/wiki/非構造化プログラミング",
+   "genre": "言葉",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T09:49:54+00:00"
+  },
+  {
+   "topic": "非構造化プログラミング",
+   "text": "しかし、条件文とgoto文の組合せによって任意のプログラム構造が実装可能であり、理論上はプログラミング言語にそれ以外の 制御構造 は必要ない。",
+   "source": "https://ja.wikipedia.org/wiki/非構造化プログラミング",
+   "genre": "言葉",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T09:49:54+00:00"
+  },
+  {
+   "topic": "非構造化プログラミング",
+   "text": "非構造化プログラミングはまだ DOS の バッチファイル のようなスクリプト言語や BASIC や FORTRAN 66 のような古いプログラミング言語で使われている。",
+   "source": "https://ja.wikipedia.org/wiki/非構造化プログラミング",
+   "genre": "言葉",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T09:49:54+00:00"
+  },
+  {
+   "topic": "非構造化プログラミング",
+   "text": "goto文（ジャンプ）は呼び出し手続きより僅かに性能が高いとはいうものの、現在のCPUアーキテクチャでは無視して良い程度になった。",
+   "source": "https://ja.wikipedia.org/wiki/非構造化プログラミング",
+   "genre": "その他",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T09:49:54+00:00"
+  },
+  {
+   "topic": "非構造化プログラミング",
+   "text": "実際、不適切なそのような文の使用はコードを混乱させたりコンパイラ最適化を阻害してしまい、有害である場合がある。",
+   "source": "https://ja.wikipedia.org/wiki/非構造化プログラミング",
+   "genre": "その他",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T09:49:54+00:00"
+  },
+  {
+   "topic": "論理プログラミング",
+   "text": "形式論理 の 論理式 を ソースコード の書式に投影することが基本になる。",
+   "source": "https://ja.wikipedia.org/wiki/論理プログラミング",
+   "genre": "その他",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T09:49:54+00:00"
+  },
+  {
+   "topic": "論理プログラミング",
+   "text": "プログラミング に適用するための幅広い解釈が加えられており、研究対象としての論理プログラミングは非常に多様である。",
+   "source": "https://ja.wikipedia.org/wiki/論理プログラミング",
+   "genre": "その他",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T09:49:54+00:00"
+  },
+  {
+   "topic": "論理プログラミング",
+   "text": "より一般的に受け入れられている論理プログラミングは、 述語論理 を基礎にし、問題領域の事実と規則を論理式モデル書式で表現して（ロジック）、 非決定性 の 演繹 の 導出原理 を用いる（コントロール）というものである。",
+   "source": "https://ja.wikipedia.org/wiki/論理プログラミング",
+   "genre": "その他",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T09:49:54+00:00"
+  },
+  {
+   "topic": "論理プログラミング",
+   "text": "この アルゴリズム スタイルで最も普及した論理プログラミング言語は「 Prolog 」である。",
+   "source": "https://ja.wikipedia.org/wiki/論理プログラミング",
+   "genre": "言葉",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T09:49:54+00:00"
+  },
+  {
+   "topic": "論理プログラミング",
+   "text": "数学者や哲学者は論理を理論構築のツールとして選んだ。",
+   "source": "https://ja.wikipedia.org/wiki/論理プログラミング",
+   "genre": "科学",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T09:49:54+00:00"
+  },
+  {
+   "topic": "論理プログラミング",
+   "text": "多くの問題は理論として自然に表現される。",
+   "source": "https://ja.wikipedia.org/wiki/論理プログラミング",
+   "genre": "科学",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T09:49:54+00:00"
+  },
+  {
+   "topic": "レオナルド・エーデルマン",
+   "text": "レナード・エイドルマン とも 南カリフォルニア大学 で 計算機科学 と 分子生物学 の教授を務めている。",
+   "source": "https://ja.wikipedia.org/wiki/レオナルド・エーデルマン",
+   "genre": "生き物",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T09:49:54+00:00"
+  },
+  {
+   "topic": "レオナルド・エーデルマン",
+   "text": "1978年 に ロナルド・リベスト 、 アディ・シャミア とともに RSA暗号 を発明したことで知られる。",
+   "source": "https://ja.wikipedia.org/wiki/レオナルド・エーデルマン",
+   "genre": "その他",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T09:49:54+00:00"
+  },
+  {
+   "topic": "レオナルド・エーデルマン",
+   "text": "RSA暗号は 電子署名 など コンピュータセキュリティ アプリケーションに広く使われている。",
+   "source": "https://ja.wikipedia.org/wiki/レオナルド・エーデルマン",
+   "genre": "技術",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T09:49:54+00:00"
+  },
+  {
+   "topic": "レオナルド・エーデルマン",
+   "text": "この業績により 2002年 に チューリング賞 を受賞。",
+   "source": "https://ja.wikipedia.org/wiki/レオナルド・エーデルマン",
+   "genre": "その他",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T09:49:54+00:00"
+  },
+  {
+   "topic": "レオナルド・エーデルマン",
+   "text": "また、 DNAコンピュータ の考案者でもある。",
+   "source": "https://ja.wikipedia.org/wiki/レオナルド・エーデルマン",
+   "genre": "技術",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T09:49:54+00:00"
+  },
+  {
+   "topic": "レオナルド・エーデルマン",
+   "text": "カリフォルニア大学バークレー校 で学び、 1968年 に数学の学士号、 1976年 に情報工学の博士号を取得。",
+   "source": "https://ja.wikipedia.org/wiki/レオナルド・エーデルマン",
+   "genre": "科学",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T09:49:54+00:00"
+  },
+  {
+   "topic": "Mathematics Genealogy Project",
+   "text": "コーンスはプロジェクト創設時は ミネソタ州立大学マンカト校 （ 英語版 ） 数学教授だった。",
+   "source": "https://ja.wikipedia.org/wiki/Mathematics_Genealogy_Project",
+   "genre": "科学",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T09:49:54+00:00"
+  },
+  {
+   "topic": "Mathematics Genealogy Project",
+   "text": "1997年秋にプロジェクトはオンライン版に移行した。",
+   "source": "https://ja.wikipedia.org/wiki/Mathematics_Genealogy_Project",
+   "genre": "その他",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T09:49:54+00:00"
+  },
+  {
+   "topic": "Mathematics Genealogy Project",
+   "text": "1999年にコーンスはマンカト校を退職し、2002年秋大学側はこのプロジェクトのサポートを終了することを決定し、 ノースダコタ州立大学 （ 英語版 ） にプロジェクトが移転した。",
+   "source": "https://ja.wikipedia.org/wiki/Mathematics_Genealogy_Project",
+   "genre": "その他",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T09:49:54+00:00"
+  },
+  {
+   "topic": "Mathematics Genealogy Project",
+   "text": "従って 統計学 、 計算機科学 、 オペレーションズ・リサーチ に関連する全てのデータを歓迎する。",
+   "source": "https://ja.wikipedia.org/wiki/Mathematics_Genealogy_Project",
+   "genre": "科学",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T09:49:54+00:00"
+  },
+  {
+   "topic": "Mathematics Genealogy Project",
+   "text": "」と述べている [ 5 ] 。",
+   "source": "https://ja.wikipedia.org/wiki/Mathematics_Genealogy_Project",
+   "genre": "その他",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T09:49:54+00:00"
+  },
+  {
+   "topic": "Mathematics Genealogy Project",
+   "text": "博士号を得ていない数人の歴史的重要人物では主に ジョゼフ＝ルイ・ラグランジュ が掲載されている [ 7 ] 。",
+   "source": "https://ja.wikipedia.org/wiki/Mathematics_Genealogy_Project",
+   "genre": "歴史",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T09:49:54+00:00"
+  },
+  {
+   "topic": "MAD (雑誌)",
+   "text": "アメリカでは現在でも人気のある雑誌の一つである。",
+   "source": "https://ja.wikipedia.org/wiki/MAD_(雑誌)",
+   "genre": "その他",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T09:49:54+00:00"
+  },
+  {
+   "topic": "MAD (雑誌)",
+   "text": "マスコットキャラクター は アルフレッド・E・ニューマン 。",
+   "source": "https://ja.wikipedia.org/wiki/MAD_(雑誌)",
+   "genre": "その他",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T09:49:54+00:00"
+  },
+  {
+   "topic": "MAD (雑誌)",
+   "text": "現在の発行元は ワーナー・ブラザース・ディスカバリー 傘下の DCコミックス 。",
+   "source": "https://ja.wikipedia.org/wiki/MAD_(雑誌)",
+   "genre": "その他",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T09:49:54+00:00"
+  },
+  {
+   "topic": "MAD (雑誌)",
+   "text": "2019年7月3日、印刷物としての雑誌出版を同年末までに終了することを発表した。",
+   "source": "https://ja.wikipedia.org/wiki/MAD_(雑誌)",
+   "genre": "その他",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T09:49:54+00:00"
+  },
+  {
+   "topic": "MAD (雑誌)",
+   "text": "赤塚不二夫 や モンキー・パンチ らがその影響を公言している。",
+   "source": "https://ja.wikipedia.org/wiki/MAD_(雑誌)",
+   "genre": "その他",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T09:49:54+00:00"
+  },
+  {
+   "topic": "ウィリアム・カハン",
+   "text": "「 数値解析 への根本的（fundamental）貢献に対して」1989年に チューリング賞 を受賞。",
+   "source": "https://ja.wikipedia.org/wiki/ウィリアム・カハン",
+   "genre": "その他",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T09:49:54+00:00"
+  },
+  {
+   "topic": "ウィリアム・カハン",
+   "text": "1994年には ACM フェローに選ばれた。",
+   "source": "https://ja.wikipedia.org/wiki/ウィリアム・カハン",
+   "genre": "その他",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T09:49:54+00:00"
+  },
+  {
+   "topic": "ウィリアム・カハン",
+   "text": "トロント大学 で数学を学び、 1954年 に学士号、 1956年 に修士号、 1958年 に博士号を取得した。",
+   "source": "https://ja.wikipedia.org/wiki/ウィリアム・カハン",
+   "genre": "科学",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T09:49:54+00:00"
+  },
+  {
+   "topic": "ウィリアム・カハン",
+   "text": "2012年現在は カリフォルニア大学バークレー校 の名誉教授である。",
+   "source": "https://ja.wikipedia.org/wiki/ウィリアム・カハン",
+   "genre": "その他",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T09:49:54+00:00"
+  },
+  {
+   "topic": "ウィリアム・カハン",
+   "text": "カハンはトロント大学在学中の1953年にプログラミングを習得した。",
+   "source": "https://ja.wikipedia.org/wiki/ウィリアム・カハン",
+   "genre": "その他",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T09:49:54+00:00"
+  },
+  {
+   "topic": "ウィリアム・カハン",
+   "text": "コンピュータ関連の色々な機器を知り、人々と知り合った（まだどちらも総数がそんなに多くない時代であった）。",
+   "source": "https://ja.wikipedia.org/wiki/ウィリアム・カハン",
+   "genre": "技術",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T09:49:54+00:00"
+  },
+  {
+   "topic": "バトラー・ランプソン",
+   "text": "ローレンスビル・スクール 卒業後 [ ※ 1 ] 、 1964年 に ハーバード大学 で物理学の学士号を取得。",
+   "source": "https://ja.wikipedia.org/wiki/バトラー・ランプソン",
+   "genre": "科学",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T09:49:54+00:00"
+  },
+  {
+   "topic": "バトラー・ランプソン",
+   "text": "1967年 には カリフォルニア大学バークレー校 で電気工学と計算機科学の博士号を取得した。",
+   "source": "https://ja.wikipedia.org/wiki/バトラー・ランプソン",
+   "genre": "科学",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T09:49:54+00:00"
+  },
+  {
+   "topic": "バトラー・ランプソン",
+   "text": "Alto は（少なくとも後に一般的になったGUIモードの操作が可能という意味で）世界初のパーソナルコンピュータとも言われる。",
+   "source": "https://ja.wikipedia.org/wiki/バトラー・ランプソン",
+   "genre": "技術",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T09:49:54+00:00"
+  },
+  {
+   "topic": "バトラー・ランプソン",
+   "text": "パロアルト研究所で開発されたその後のコンピュータは、全てランプソンの \"Wildflower\" と呼ばれる設計に基づいている。",
+   "source": "https://ja.wikipedia.org/wiki/バトラー・ランプソン",
+   "genre": "技術",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T09:49:54+00:00"
+  },
+  {
+   "topic": "バトラー・ランプソン",
+   "text": "AMD Am2900 ビットスライス 型マイクロプロセッサを使用したものもある（\"Dandelion\"など）。",
+   "source": "https://ja.wikipedia.org/wiki/バトラー・ランプソン",
+   "genre": "その他",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T09:49:54+00:00"
+  },
+  {
+   "topic": "バトラー・ランプソン",
+   "text": "パロアルト研究所で、ランプソンは他の様々な革新的技術にも関係している。",
+   "source": "https://ja.wikipedia.org/wiki/バトラー・ランプソン",
+   "genre": "技術",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T09:49:54+00:00"
+  },
+  {
+   "topic": "TPKアルゴリズム",
+   "text": "次に初期のプログラミング言語でのアルゴリズムの実装を記してその概念がどう表現されるか説明した。",
+   "source": "https://ja.wikipedia.org/wiki/TPKアルゴリズム",
+   "genre": "言葉",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T09:49:54+00:00"
+  },
+  {
+   "topic": "TPKアルゴリズム",
+   "text": "クヌースはその論文に基づいたトークで，以下のように述べた： このテーマがいかに深いかは，人々がどれほどもがき，アイデア一つ一つがどのようにして生まれたのか考えければ理解できない。",
+   "source": "https://ja.wikipedia.org/wiki/TPKアルゴリズム",
+   "genre": "その他",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T09:49:54+00:00"
+  },
+  {
+   "topic": "TPKアルゴリズム",
+   "text": "これを研究するために，—ルイスがこのアイデアの中心的な発案者だと思うが—我々はプログラム—あるいはアルゴリズム—を一つとって，すべての言語でそれをコードに書く。",
+   "source": "https://ja.wikipedia.org/wiki/TPKアルゴリズム",
+   "genre": "言葉",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T09:49:54+00:00"
+  },
+  {
+   "topic": "TPKアルゴリズム",
+   "text": "そうして，一つの例から，直ちにその特定の言語の特徴を分析できる。",
+   "source": "https://ja.wikipedia.org/wiki/TPKアルゴリズム",
+   "genre": "言葉",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T09:49:54+00:00"
+  },
+  {
+   "topic": "TPKアルゴリズム",
+   "text": "これをTPKプログラムと呼ぶが，これがTrabb PardoとKnuthのイニシャルになっているのはただの面白い偶然に過ぎない。",
+   "source": "https://ja.wikipedia.org/wiki/TPKアルゴリズム",
+   "genre": "その他",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T09:49:54+00:00"
+  },
+  {
+   "topic": "TPKアルゴリズム",
+   "text": "もしその言語がアルファベットの出力に対応していないなら，“TOO LARGE”（過剰）の文字列の代わりに 999 を出力する。",
+   "source": "https://ja.wikipedia.org/wiki/TPKアルゴリズム",
+   "genre": "言葉",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T09:49:54+00:00"
+  },
+  {
+   "topic": "MMIX",
+   "text": "記事の 信頼性向上 にご協力をお願いいたします。",
+   "source": "https://ja.wikipedia.org/wiki/MMIX",
+   "genre": "その他",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T09:49:54+00:00"
+  },
+  {
+   "topic": "MMIX",
+   "text": "当命令セットを設計した後に執筆・改訂の TAoCP にて既に使用されている。",
+   "source": "https://ja.wikipedia.org/wiki/MMIX",
+   "genre": "その他",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T09:49:54+00:00"
+  },
+  {
+   "topic": "MMIX",
+   "text": "\"MMIX\" という綴りは ローマ数字 として解釈すると2009であり、前任のMIXの頭にMを付けたものであると同時に、2000年代のコンピュータ（プロセッサ）という意味を掛けているものと思われる（とはいえ、MIXの時の「実在のコンピュータ 16 種の型番から取って平均した」値の1009である、という主張にはかなりこじつけの気配があったのと同様、特に意味があるものではない）。",
+   "source": "https://ja.wikipedia.org/wiki/MMIX",
+   "genre": "生き物",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T09:49:54+00:00"
+  },
+  {
+   "topic": "MMIX",
+   "text": "OPは命令コード、Xに結果が返され、それぞれのフィールドは8ビット幅である。",
+   "source": "https://ja.wikipedia.org/wiki/MMIX",
+   "genre": "その他",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T09:49:54+00:00"
+  },
+  {
+   "topic": "MMIX",
+   "text": "例えば、加算命令 (ADD) の命令コードは32となっている。",
+   "source": "https://ja.wikipedia.org/wiki/MMIX",
+   "genre": "その他",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T09:49:54+00:00"
+  },
+  {
+   "topic": "MMIX",
+   "text": "Xオペランドは通常演算結果を格納するレジスタを指定する。",
+   "source": "https://ja.wikipedia.org/wiki/MMIX",
+   "genre": "その他",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T09:49:54+00:00"
+  },
+  {
+   "topic": "コンピュータ歴史博物館",
+   "text": "[ 1 ] 1999年に コンピュータ博物館 (ボストン) （ 英語版 ） が閉鎖されて、翌年その収蔵品の一部は ボストン科学博物館 へ、その大部分がTCMHCへ送られてきた。",
+   "source": "https://ja.wikipedia.org/wiki/コンピュータ歴史博物館",
+   "genre": "科学",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T09:49:54+00:00"
+  },
+  {
+   "topic": "コンピュータ歴史博物館",
+   "text": "2001年に現在の名前に変わり、この情報時代のストーリーや制作物とその影響とを保存し展示する専門の施設として運営されている。",
+   "source": "https://ja.wikipedia.org/wiki/コンピュータ歴史博物館",
+   "genre": "技術",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T09:49:54+00:00"
+  },
+  {
+   "topic": "コンピュータ歴史博物館",
+   "text": "以前のモフェット連邦飛行場では海軍基地の家具屋として使われていた古いビルに入居していたが、その後現在のビル（このビルは以前 シリコングラフィックス のものだった）を取得し、そこに2003年に移転した。",
+   "source": "https://ja.wikipedia.org/wiki/コンピュータ歴史博物館",
+   "genre": "技術",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T09:49:54+00:00"
+  },
+  {
+   "topic": "コンピュータ歴史博物館",
+   "text": "このビルはその後大規模な改築を経て、2011年1月に再オープンした。",
+   "source": "https://ja.wikipedia.org/wiki/コンピュータ歴史博物館",
+   "genre": "技術",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T09:49:54+00:00"
+  },
+  {
+   "topic": "コンピュータ歴史博物館",
+   "text": "博物館で展示されているものは、コンピュータの歴史の主要なマイルストーンに関する展示物、 コンピュータチェス の歴史、 シリコンバレー の企業や人々の発明品などである。",
+   "source": "https://ja.wikipedia.org/wiki/コンピュータ歴史博物館",
+   "genre": "技術",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T09:49:54+00:00"
+  },
+  {
+   "topic": "コンピュータ歴史博物館",
+   "text": "チャールズ・バベッジが1840年代にデザインして、その後ロンドンの科学博物館が制作した 階差機関 も、2008年5月10日から2009年12月にかけて展示されている。",
+   "source": "https://ja.wikipedia.org/wiki/コンピュータ歴史博物館",
+   "genre": "科学",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T09:49:54+00:00"
+  },
+  {
+   "topic": "デイナ・スコット",
+   "text": "数学的に難しい問題についての素養に基づき、非形式的だが厳格な方法で計算機科学・論理学・哲学にまたがる領域の根本的概念を明確化させてきた。",
+   "source": "https://ja.wikipedia.org/wiki/デイナ・スコット",
+   "genre": "科学",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T09:49:54+00:00"
+  },
+  {
+   "topic": "デイナ・スコット",
+   "text": "オートマトン 理論についての業績により1976年に チューリング賞 を受賞。",
+   "source": "https://ja.wikipedia.org/wiki/デイナ・スコット",
+   "genre": "科学",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T09:49:54+00:00"
+  },
+  {
+   "topic": "デイナ・スコット",
+   "text": "1970年代には クリストファー・ストレイチー と共同で プログラム意味論 への新たなアプローチを基礎付けた。",
+   "source": "https://ja.wikipedia.org/wiki/デイナ・スコット",
+   "genre": "その他",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T09:49:54+00:00"
+  },
+  {
+   "topic": "デイナ・スコット",
+   "text": "様相論理 、 位相幾何学 、 圏論 などでも業績を残している。",
+   "source": "https://ja.wikipedia.org/wiki/デイナ・スコット",
+   "genre": "その他",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T09:49:54+00:00"
+  },
+  {
+   "topic": "デイナ・スコット",
+   "text": "2012年現在は、 カーネギーメロン大学 で 計算機科学 と 哲学 と 数理論理学 の名誉教授を務めている。",
+   "source": "https://ja.wikipedia.org/wiki/デイナ・スコット",
+   "genre": "科学",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T09:49:54+00:00"
+  },
+  {
+   "topic": "デイナ・スコット",
+   "text": "事実上引退しており、 カリフォルニア州 バークレー 在住。",
+   "source": "https://ja.wikipedia.org/wiki/デイナ・スコット",
+   "genre": "その他",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T09:49:54+00:00"
+  },
+  {
+   "topic": "科学アカデミー (フランス)",
+   "text": "フランス科学アカデミー 、 フランス科学院 、 アカデミー・デ・シアンス 。",
+   "source": "https://ja.wikipedia.org/wiki/科学アカデミー_(フランス)",
+   "genre": "科学",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T09:49:54+00:00"
+  },
+  {
+   "topic": "科学アカデミー (フランス)",
+   "text": "最初にアカデミー会員として任命されたのは、 天文学者 、 解剖学者 、 植物学者 、 化学者 、 幾何学者 、 技師 、 医師 、 物理学者 からなる22名であった。",
+   "source": "https://ja.wikipedia.org/wiki/科学アカデミー_(フランス)",
+   "genre": "生き物",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T09:49:54+00:00"
+  },
+  {
+   "topic": "科学アカデミー (フランス)",
+   "text": "このなかには、唯一の外国人である クリスティアーン・ホイヘンス も含まれていた。",
+   "source": "https://ja.wikipedia.org/wiki/科学アカデミー_(フランス)",
+   "genre": "科学",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T09:49:54+00:00"
+  },
+  {
+   "topic": "科学アカデミー (フランス)",
+   "text": "ルイ14世から下賜された12,000 リーヴル という潤沢な基金のもと、様々な実験プログラムが行われたが、コルベールの死後は戦争による財政危機のため資金供給が減少し困難な時代を迎える [ 1 ] 。",
+   "source": "https://ja.wikipedia.org/wiki/科学アカデミー_(フランス)",
+   "genre": "科学",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T09:49:54+00:00"
+  },
+  {
+   "topic": "科学アカデミー (フランス)",
+   "text": "パリ にて非公式な活動を続けたのち、 1699年 に正式に王立と認定され、本部は ルーヴル に設置されることになる。",
+   "source": "https://ja.wikipedia.org/wiki/科学アカデミー_(フランス)",
+   "genre": "科学",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T09:49:54+00:00"
+  },
+  {
+   "topic": "科学アカデミー (フランス)",
+   "text": "会則が制定され名誉会員と年金会員の区別、「幾何学」「機械学」「天文学」「化学」「解剖学」「植物学」などの部門が設けられた。",
+   "source": "https://ja.wikipedia.org/wiki/科学アカデミー_(フランス)",
+   "genre": "生き物",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T09:49:54+00:00"
+  },
+  {
+   "topic": "オーレ＝ヨハン・ダール",
+   "text": "クリステン・ニゴール と共同で、 オブジェクト指向 の起源となる Simula を開発したことで知られる。",
+   "source": "https://ja.wikipedia.org/wiki/オーレ＝ヨハン・ダール",
+   "genre": "その他",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T09:49:54+00:00"
+  },
+  {
+   "topic": "オーレ＝ヨハン・ダール",
+   "text": "オルヨハン・ダール と表記されることもあるが、ノルウェー語の発音としては正しくない。",
+   "source": "https://ja.wikipedia.org/wiki/オーレ＝ヨハン・ダール",
+   "genre": "言葉",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T09:49:54+00:00"
+  },
+  {
+   "topic": "オーレ＝ヨハン・ダール",
+   "text": "ノルウェーでは最も有名な計算機科学者である。",
+   "source": "https://ja.wikipedia.org/wiki/オーレ＝ヨハン・ダール",
+   "genre": "科学",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T09:49:54+00:00"
+  },
+  {
+   "topic": "オーレ＝ヨハン・ダール",
+   "text": "クリステン・ニガールと共に 1960年代 にオブジェクト指向プログラミングのアイデアを生み出し、 ノルウェー・コンピューティング・センター （ 英語版 ） (NR) で Simula I （1961年 – 1965年）と Simula 67 （1965年 – 1968年）を シミュレーション のための プログラミング言語 として開発した。",
+   "source": "https://ja.wikipedia.org/wiki/オーレ＝ヨハン・ダール",
+   "genre": "言葉",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T09:49:54+00:00"
+  },
+  {
+   "topic": "オーレ＝ヨハン・ダール",
+   "text": "ダールとニゴールはここで世界初の クラス 、（明示的 カプセル化 を可能とした） サブクラス 、 継承 、動的オブジェクト生成などオブジェクト指向パラダイムに重要な観点の数々を生み出した。",
+   "source": "https://ja.wikipedia.org/wiki/オーレ＝ヨハン・ダール",
+   "genre": "その他",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T09:49:54+00:00"
+  },
+  {
+   "topic": "オーレ＝ヨハン・ダール",
+   "text": "「オブジェクト」はソフトウェアシステムにおける自己完結型の部品であり、その中にデータ構造とメソッドを持つ。",
+   "source": "https://ja.wikipedia.org/wiki/オーレ＝ヨハン・ダール",
+   "genre": "その他",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T09:49:54+00:00"
+  },
+  {
+   "topic": "グレース・ホッパー賞",
+   "text": "コンピュータ の先駆者である グレース・ホッパー の名を冠している。",
+   "source": "https://ja.wikipedia.org/wiki/グレース・ホッパー賞",
+   "genre": "技術",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T09:49:54+00:00"
+  },
+  {
+   "topic": "グレース・ホッパー賞",
+   "text": "35歳以下のコンピュータの専門家を対象とし、技術的または業務的な重要な貢献をした者を表彰する。",
+   "source": "https://ja.wikipedia.org/wiki/グレース・ホッパー賞",
+   "genre": "技術",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T09:49:54+00:00"
+  },
+  {
+   "topic": "アレン・ニューウェル",
+   "text": "計算機科学 および 認知心理学 の研究者であり、 ランド研究所 や カーネギーメロン大学 の 計算機科学 科、 テッパー・スクール・オブ・ビジネス に勤務した。",
+   "source": "https://ja.wikipedia.org/wiki/アレン・ニューウェル",
+   "genre": "科学",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T09:49:54+00:00"
+  },
+  {
+   "topic": "アレン・ニューウェル",
+   "text": "プリンストン大学 に進学し1949年から1950年にかけて数学を学んだ。",
+   "source": "https://ja.wikipedia.org/wiki/アレン・ニューウェル",
+   "genre": "科学",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T09:49:54+00:00"
+  },
+  {
+   "topic": "アレン・ニューウェル",
+   "text": "ゲーム理論 という新たな領域にも出会い、自分が「純粋数学よりも実験と理論の結合領域を好む」（サイモン）ということを見出した。",
+   "source": "https://ja.wikipedia.org/wiki/アレン・ニューウェル",
+   "genre": "科学",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T09:49:54+00:00"
+  },
+  {
+   "topic": "アレン・ニューウェル",
+   "text": "その後プリンストンからサンタモニカの ランド研究所 に移り、「空軍のロジスティック問題を研究していたグループ」（サイモン）に参加した。",
+   "source": "https://ja.wikipedia.org/wiki/アレン・ニューウェル",
+   "genre": "その他",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T09:49:54+00:00"
+  },
+  {
+   "topic": "アレン・ニューウェル",
+   "text": "ここで ジョゼフ・クラスカル （ 英語版 ） に出会い、2つの理論を生み出した。",
+   "source": "https://ja.wikipedia.org/wiki/アレン・ニューウェル",
+   "genre": "科学",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T09:49:54+00:00"
+  },
+  {
+   "topic": "アレン・ニューウェル",
+   "text": "その後 カーネギーメロン大学 （の現在では テッパー・スクール・オブ・ビジネス と呼ばれているビジネススクール部門）でハーバート・サイモンに師事し、博士号を取得。",
+   "source": "https://ja.wikipedia.org/wiki/アレン・ニューウェル",
+   "genre": "その他",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T09:49:54+00:00"
+  },
+  {
+   "topic": "リチャード・カープ",
+   "text": "カリフォルニア大学バークレー校 に在籍。",
+   "source": "https://ja.wikipedia.org/wiki/リチャード・カープ",
+   "genre": "その他",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T09:49:54+00:00"
+  },
+  {
+   "topic": "リチャード・カープ",
+   "text": "ハーバード大学 で 1955年 に学士号、 1956年 に修士号、 1959年 に 応用数学 の博士号を取得した。",
+   "source": "https://ja.wikipedia.org/wiki/リチャード・カープ",
+   "genre": "科学",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T09:49:54+00:00"
+  },
+  {
+   "topic": "リチャード・カープ",
+   "text": "その後、 IBM の トーマス・J・ワトソン研究所 に勤務。",
+   "source": "https://ja.wikipedia.org/wiki/リチャード・カープ",
+   "genre": "その他",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T09:49:54+00:00"
+  },
+  {
+   "topic": "リチャード・カープ",
+   "text": "1968年 、 カリフォルニア大学バークレー校 の計算機科学、数学、オペレーションズリサーチに関する教授となった。",
+   "source": "https://ja.wikipedia.org/wiki/リチャード・カープ",
+   "genre": "科学",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T09:49:54+00:00"
+  },
+  {
+   "topic": "リチャード・カープ",
+   "text": "4年間だけ ワシントン大学 で教授を務めたが、それ以外は常にバークレーにとどまっていた。",
+   "source": "https://ja.wikipedia.org/wiki/リチャード・カープ",
+   "genre": "その他",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T09:49:54+00:00"
+  },
+  {
+   "topic": "リチャード・カープ",
+   "text": "1988年から1995年までと、1995年以降、バークレーの 国際計算機科学研究所 （ 英語版 ） の研究員も務め、2012年現在は同研究所のアルゴリズム部門を指揮している。",
+   "source": "https://ja.wikipedia.org/wiki/リチャード・カープ",
+   "genre": "科学",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T09:49:54+00:00"
+  },
+  {
+   "topic": "フォン・ノイマンメダル",
+   "text": "受賞対象には学術的なもの、技術的なもの、事業的なものが含まれ、必ずしも受賞年の業績である必要はない。",
+   "source": "https://ja.wikipedia.org/wiki/フォン・ノイマンメダル",
+   "genre": "技術",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T09:49:54+00:00"
+  },
+  {
+   "topic": "フォン・ノイマンメダル",
+   "text": "メダルの名称は ジョン・フォン・ノイマン に因んで名づけられた [ 1 ] 。",
+   "source": "https://ja.wikipedia.org/wiki/フォン・ノイマンメダル",
+   "genre": "その他",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T09:49:54+00:00"
+  },
+  {
+   "topic": "フォン・ノイマンメダル",
+   "text": "賞は1994年に制定され、毎年、与えられる。",
+   "source": "https://ja.wikipedia.org/wiki/フォン・ノイマンメダル",
+   "genre": "その他",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T09:49:54+00:00"
+  },
+  {
+   "topic": "ヤン・ルカン",
+   "text": "また、 レオン・ボトゥー （ 英語版 ） 、パトリック・ハフナーらとともに画像圧縮技術 DjVu を創始し、ボトゥーとともにプログラミング言語 Lush を開発した。",
+   "source": "https://ja.wikipedia.org/wiki/ヤン・ルカン",
+   "genre": "言葉",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T09:49:54+00:00"
+  },
+  {
+   "topic": "ヤン・ルカン",
+   "text": "ディープラーニング に関する研究が評価され、 ヨシュア・ベンジオ 、 ジェフリー・ヒントン とともに2018年の チューリング賞 を受賞した [ 6 ] 。",
+   "source": "https://ja.wikipedia.org/wiki/ヤン・ルカン",
+   "genre": "その他",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T09:49:54+00:00"
+  },
+  {
+   "topic": "ヤン・ルカン",
+   "text": "ルカンの先祖は ブルターニュ 北部 ガンガン 地方の出身であり、この語は ブルトン語 の古い形の\" Le Cunff \"（直訳すると「いい男」）に由来する。",
+   "source": "https://ja.wikipedia.org/wiki/ヤン・ルカン",
+   "genre": "その他",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T09:49:54+00:00"
+  },
+  {
+   "topic": "ヤン・ルカン",
+   "text": "2017年に 中国 で講演を行った際には、楊立昆（ 杨立昆 、ヤン・リークン）という中国名を使用した [ 16 ] 。",
+   "source": "https://ja.wikipedia.org/wiki/ヤン・ルカン",
+   "genre": "その他",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T09:49:54+00:00"
+  },
+  {
+   "topic": "ヤン・ルカン",
+   "text": "1987年から1988年まで、 トロント大学 の ジェフリー・ヒントン の研究室で博士研究員を務めた。",
+   "source": "https://ja.wikipedia.org/wiki/ヤン・ルカン",
+   "genre": "その他",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T09:49:54+00:00"
+  },
+  {
+   "topic": "ヤン・ルカン",
+   "text": "1988年、 ニュージャージー州 ホルムデルにある AT&Tベル研究所 に入所し、ローレンス・D・ジャッケルが率いる適応システム研究部に所属した。",
+   "source": "https://ja.wikipedia.org/wiki/ヤン・ルカン",
+   "genre": "その他",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T09:49:54+00:00"
+  },
+  {
+   "topic": "アミール・プヌーリ",
+   "text": "ワイツマン科学研究所 で 数学 の博士号を取得した。",
+   "source": "https://ja.wikipedia.org/wiki/アミール・プヌーリ",
+   "genre": "科学",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T09:49:54+00:00"
+  },
+  {
+   "topic": "アミール・プヌーリ",
+   "text": "スタンフォード大学 での ポスドク 期間中に計算機科学に転向。",
+   "source": "https://ja.wikipedia.org/wiki/アミール・プヌーリ",
+   "genre": "科学",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T09:49:54+00:00"
+  },
+  {
+   "topic": "アミール・プヌーリ",
+   "text": "主な研究領域は 時相論理 と モデル検査 で、 並行プロセス の公平性についても研究していた [ 1 ] 。",
+   "source": "https://ja.wikipedia.org/wiki/アミール・プヌーリ",
+   "genre": "その他",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T09:49:54+00:00"
+  },
+  {
+   "topic": "アミール・プヌーリ",
+   "text": "研究者としてイスラエルに帰国し、 テルアビブ大学 の計算機科学科創設に尽力し、初代学科長となった。",
+   "source": "https://ja.wikipedia.org/wiki/アミール・プヌーリ",
+   "genre": "科学",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T09:49:54+00:00"
+  },
+  {
+   "topic": "アミール・プヌーリ",
+   "text": "1981年 にワイツマン研究所の計算機科学の教授に就任。",
+   "source": "https://ja.wikipedia.org/wiki/アミール・プヌーリ",
+   "genre": "科学",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T09:49:54+00:00"
+  },
+  {
+   "topic": "アミール・プヌーリ",
+   "text": "1999年 から亡くなるまで、 ニューヨーク大学 の計算機科学部門でも地位を得ていた [ 1 ] 。",
+   "source": "https://ja.wikipedia.org/wiki/アミール・プヌーリ",
+   "genre": "科学",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T09:49:54+00:00"
+  },
+  {
+   "topic": "SIAM (学会)",
+   "text": "日本 中国 香港 マカオ 台湾 韓国 シンガポール マレーシア フィリピン タイ インドネシア ブルネイ 他にも、米国の各地域ごとにセッションが開催されている。",
+   "source": "https://ja.wikipedia.org/wiki/アメリカ応用数理学会",
+   "genre": "その他",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T09:49:54+00:00"
+  },
+  {
+   "topic": "リチャード・ハミング",
+   "text": "計算機科学 や 電気通信 の分野で多大な功績を残した。",
+   "source": "https://ja.wikipedia.org/wiki/リチャード・ハミング",
+   "genre": "科学",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T09:49:54+00:00"
+  },
+  {
+   "topic": "リチャード・ハミング",
+   "text": "ハミング符号 、 ハミング窓 [ 1 ] 、 球充填 （または ハミング限界 ）、 ハミング距離 などで知られる。",
+   "source": "https://ja.wikipedia.org/wiki/リチャード・ハミング",
+   "genre": "その他",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T09:49:54+00:00"
+  },
+  {
+   "topic": "リチャード・ハミング",
+   "text": "1937年、 シカゴ大学 を卒業し、1939年には ネブラスカ大学 で修士号、1942年には イリノイ大学アーバナ・シャンペーン校 で Ph.D. を取得。",
+   "source": "https://ja.wikipedia.org/wiki/リチャード・ハミング",
+   "genre": "その他",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T09:49:54+00:00"
+  },
+  {
+   "topic": "リチャード・ハミング",
+   "text": "第二次世界大戦 中は ルイビル大学 で教授を務め、1945年には マンハッタン計画 に参加。",
+   "source": "https://ja.wikipedia.org/wiki/リチャード・ハミング",
+   "genre": "その他",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T09:49:54+00:00"
+  },
+  {
+   "topic": "リチャード・ハミング",
+   "text": "同計画の物理学者らが提示した方程式を初期の電子式デジタルコンピュータを使って解くプログラミングを行う。",
+   "source": "https://ja.wikipedia.org/wiki/リチャード・ハミング",
+   "genre": "科学",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T09:49:54+00:00"
+  },
+  {
+   "topic": "リチャード・ハミング",
+   "text": "ハミングへの依頼の中には、原爆によって 大気 中の 窒素 が暴走的 熱核反応 を起こさないかを検討した計算の確認作業もあった [ 2 ] 。",
+   "source": "https://ja.wikipedia.org/wiki/リチャード・ハミング",
+   "genre": "その他",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T09:49:54+00:00"
+  },
+  {
+   "topic": "リチャード・ストールマン",
+   "text": "この人物に因み命名された小惑星については「 (9882) ストールマン 」をご覧ください。",
+   "source": "https://ja.wikipedia.org/wiki/ストールマン",
+   "genre": "その他",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T09:49:54+00:00"
+  },
+  {
+   "topic": "リチャード・ストールマン",
+   "text": "コピーレフト の強力な推進者として知られ、現在にいたるまで 自由ソフトウェア運動 において中心的な役割を果たしている。",
+   "source": "https://ja.wikipedia.org/wiki/ストールマン",
+   "genre": "その他",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T09:49:54+00:00"
+  },
+  {
+   "topic": "リチャード・ストールマン",
+   "text": "また、プログラマーとしても著名な存在であり、開発者としてその名を連ねる ソフトウェア には Emacs や GCC などがある。",
+   "source": "https://ja.wikipedia.org/wiki/ストールマン",
+   "genre": "その他",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T09:49:54+00:00"
+  },
+  {
+   "topic": "リチャード・ストールマン",
+   "text": "なお、名前の頭文字を取って RMS と表記されることもある。",
+   "source": "https://ja.wikipedia.org/wiki/ストールマン",
+   "genre": "言葉",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T09:49:54+00:00"
+  },
+  {
+   "topic": "リチャード・ストールマン",
+   "text": "1971年 - ハーバード大学 に入学。",
+   "source": "https://ja.wikipedia.org/wiki/ストールマン",
+   "genre": "その他",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T09:49:54+00:00"
+  },
+  {
+   "topic": "リチャード・ストールマン",
+   "text": "Math55で好成績を残し [ 2 ] 、MIT AI研のプログラマとなり ハッカー コミュニティに加わる。",
+   "source": "https://ja.wikipedia.org/wiki/ストールマン",
+   "genre": "その他",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T09:49:54+00:00"
+  },
+  {
+   "topic": "アラン・ケイ",
+   "text": "日本の女優については「 安蘭けい 」をご覧ください。",
+   "source": "https://ja.wikipedia.org/wiki/アラン・ケイ",
+   "genre": "その他",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T09:49:54+00:00"
+  },
+  {
+   "topic": "アラン・ケイ",
+   "text": "パーソナルコンピュータ の父、と言われることもある。",
+   "source": "https://ja.wikipedia.org/wiki/アラン・ケイ",
+   "genre": "技術",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T09:49:54+00:00"
+  },
+  {
+   "topic": "アラン・ケイ",
+   "text": "主に、 オブジェクト指向プログラミング と ユーザインタフェース 設計 に関する初期の功績で知られている。",
+   "source": "https://ja.wikipedia.org/wiki/アラン・ケイ",
+   "genre": "その他",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T09:49:54+00:00"
+  },
+  {
+   "topic": "アラン・ケイ",
+   "text": "2005年 中ごろまで、 HP 研究所のシニアフェロー、 京都大学 の 客員教授 、 マサチューセッツ工科大学 の准教授を務めていた。",
+   "source": "https://ja.wikipedia.org/wiki/アラン・ケイ",
+   "genre": "その他",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T09:49:54+00:00"
+  },
+  {
+   "topic": "アラン・ケイ",
+   "text": "マイクロコンピュータ 以前の時代に、個人の活動を支援する「 パーソナルコンピュータ 」という概念を提唱した。",
+   "source": "https://ja.wikipedia.org/wiki/アラン・ケイ",
+   "genre": "技術",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T09:49:54+00:00"
+  },
+  {
+   "topic": "アラン・ケイ",
+   "text": "つまり1960年代当時、高価で大きく、複数人で“共有”するのが当たり前だったコンピュータに“個人向け”という利用状況を想定し、それに相応しいコンピュータ環境がどうあるべきかを考えた人物。",
+   "source": "https://ja.wikipedia.org/wiki/アラン・ケイ",
+   "genre": "技術",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T09:49:54+00:00"
+  },
+  {
+   "topic": "文法チェッカー",
+   "text": "Microsoft Word や WordPerfect などの ワープロソフト の機能に含まれることがあるが、それらは機能的には初歩的な段階のミスを指摘するだけで、実用の域には達していないものがほとんどである。",
+   "source": "https://ja.wikipedia.org/wiki/文法チェッカー",
+   "genre": "言葉",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T09:49:54+00:00"
+  },
+  {
+   "topic": "文法チェッカー",
+   "text": "しかしながら、2005年10月時点では Windows 向けの信頼できるアプリケーションは日本では販売されていない。",
+   "source": "https://ja.wikipedia.org/wiki/文法チェッカー",
+   "genre": "言葉",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T09:49:54+00:00"
+  },
+  {
+   "topic": "LGBTQ言語学",
+   "text": "（ 2024年6月 ） 翻訳前に重要な指示を読むには右にある[表示]をクリックしてください。",
+   "source": "https://ja.wikipedia.org/wiki/LGBTQ言語学",
+   "genre": "言葉",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T09:49:54+00:00"
+  },
+  {
+   "topic": "LGBTQ言語学",
+   "text": "英語版記事を 日本語へ機械翻訳したバージョン （Google翻訳）。",
+   "source": "https://ja.wikipedia.org/wiki/LGBTQ言語学",
+   "genre": "言葉",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T09:49:54+00:00"
+  },
+  {
+   "topic": "LGBTQ言語学",
+   "text": "これが成されていない場合、 記事は削除の方針 G-3 に基づき、削除される可能性があります。",
+   "source": "https://ja.wikipedia.org/wiki/LGBTQ言語学",
+   "genre": "言葉",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T09:49:54+00:00"
+  },
+  {
+   "topic": "LGBTQ言語学",
+   "text": "信頼性が低いまたは低品質な文章を翻訳しないでください。",
+   "source": "https://ja.wikipedia.org/wiki/LGBTQ言語学",
+   "genre": "言葉",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T09:49:54+00:00"
+  },
+  {
+   "topic": "言語地理学",
+   "text": "言語地理学は 比較言語学 と同様、歴史言語学の一分野であるが、比較言語学が同系語の対応によって言語の歴史を明らかにするのに対し、言語地理学は地理的な分布によって言語の歴史を明らかにする。",
+   "source": "https://ja.wikipedia.org/wiki/言語地理学",
+   "genre": "言葉",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T09:49:54+00:00"
+  },
+  {
+   "topic": "言語地理学",
+   "text": "また、比較言語学が言語の内的変化を強調するのに対し、言語地理学は環境に注目する [ 2 ] 。",
+   "source": "https://ja.wikipedia.org/wiki/言語地理学",
+   "genre": "言葉",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T09:49:54+00:00"
+  },
+  {
+   "topic": "言語地理学",
+   "text": "近年の研究では、 気候 のような環境要因が 言語 の地理的分布および音声的特徴に実証的に影響を与えることが示されている。",
+   "source": "https://ja.wikipedia.org/wiki/言語地理学",
+   "genre": "言葉",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T09:49:54+00:00"
+  },
+  {
+   "topic": "言語地理学",
+   "text": "たとえば、気候や生態的変数を統計的に制御したグローバルな解析により、言語多様性と生態的リスクとの関係が示され例もある [ 5 ] 。",
+   "source": "https://ja.wikipedia.org/wiki/言語地理学",
+   "genre": "言葉",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T09:49:54+00:00"
+  },
+  {
+   "topic": "言語地理学",
+   "text": "さらに、音響的構造の一側面である ソノリティ と平均気温の間に正の相関が存在することが、5,293言語を含む再検証研究で確認された [ 6 ] 。",
+   "source": "https://ja.wikipedia.org/wiki/言語地理学",
+   "genre": "言葉",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T09:49:54+00:00"
+  },
+  {
+   "topic": "言語地理学",
+   "text": "ヴェンカーは方言の区画分けを目的として地理的分布を研究したが、調査項目ごとに異なる分布が現れ、結果は期待を裏切るものだった [ 9 ] 。",
+   "source": "https://ja.wikipedia.org/wiki/言語地理学",
+   "genre": "言葉",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T09:49:54+00:00"
+  },
+  {
+   "topic": "Modular Audio Recognition Framework",
+   "text": "アプリケーションソフトウェア の ライブラリ や プラグイン として利用できる。",
+   "source": "https://ja.wikipedia.org/wiki/Modular_Audio_Recognition_Framework",
+   "genre": "その他",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T09:49:54+00:00"
+  },
+  {
+   "topic": "Modular Audio Recognition Framework",
+   "text": "使用例を示すためのアプリケーションの具体例がいくつか付属している。",
+   "source": "https://ja.wikipedia.org/wiki/Modular_Audio_Recognition_Framework",
+   "genre": "その他",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T09:49:54+00:00"
+  },
+  {
+   "topic": "Modular Audio Recognition Framework",
+   "text": "MARFと関連する技術文書は BSDライセンス でリリースされている。",
+   "source": "https://ja.wikipedia.org/wiki/Modular_Audio_Recognition_Framework",
+   "genre": "技術",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T09:49:54+00:00"
+  },
+  {
+   "topic": "概念検索",
+   "text": "文書は単語の連なりから構成されており、文書中に現れる単語とその相対的な重みづけ（ tf-idf ）で表現することで、文書をベクトル空間の中で特定することが可能となる。",
+   "source": "https://ja.wikipedia.org/wiki/概念検索",
+   "genre": "その他",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T09:49:54+00:00"
+  },
+  {
+   "topic": "概念検索",
+   "text": "つまり、文書を多次元のベクトル空間でひとつの矢印で表現でき、これは文書の特徴、つまり概念を意味するものと考えられる。",
+   "source": "https://ja.wikipedia.org/wiki/概念検索",
+   "genre": "その他",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T09:49:54+00:00"
+  },
+  {
+   "topic": "概念検索",
+   "text": "概念の解析については 潜在意味解析 も参照のこと。",
+   "source": "https://ja.wikipedia.org/wiki/概念検索",
+   "genre": "その他",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T09:49:54+00:00"
+  },
+  {
+   "topic": "概念検索",
+   "text": "つまり、2つの概念の類似度は、多次元ベクトル空間の2つの矢印の先の距離となる。",
+   "source": "https://ja.wikipedia.org/wiki/概念検索",
+   "genre": "その他",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T09:49:54+00:00"
+  },
+  {
+   "topic": "spaCy",
+   "text": "このライブラリは MITライセンス の下で公開されており、現在、英語、ドイツ語、スペイン語、ポルトガル語、フランス語、イタリア語、オランダ語に対する種々の解析処理と多言語 固有表現抽出 のための統計的 ニューラルネットワーク モデル、また、その他様々な言語に対する 字句解析 モデルを提供している [ 5 ] 。",
+   "source": "https://ja.wikipedia.org/wiki/SpaCy",
+   "genre": "言葉",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T09:49:54+00:00"
+  },
+  {
+   "topic": "spaCy",
+   "text": "2017年11月7日にバージョン2.0がリリースされた [ 11 ] 。",
+   "source": "https://ja.wikipedia.org/wiki/SpaCy",
+   "genre": "その他",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T09:49:54+00:00"
+  },
+  {
+   "topic": "spaCy",
+   "text": "品詞タグ付け 、 構文解析 、 固有表現抽出 のための 畳み込みニューラルネットワーク モデルや、およびモデルの訓練と更新、カスタム処理パイプラインの構築周りのAPIの改善を含んでいる。",
+   "source": "https://ja.wikipedia.org/wiki/SpaCy",
+   "genre": "その他",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T09:49:54+00:00"
+  },
+  {
+   "topic": "spaCy",
+   "text": "Thinc: CPU による使用とテキスト入力に対する ディープラーニング に最適化された 機械学習 ライブラリ。",
+   "source": "https://ja.wikipedia.org/wiki/SpaCy",
+   "genre": "技術",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T09:49:54+00:00"
+  },
+  {
+   "topic": "SHRDLU",
+   "text": "1968年 から 1970年 にかけて、 テリー・ウィノグラード によって実施された。",
+   "source": "https://ja.wikipedia.org/wiki/SHRDLU",
+   "genre": "その他",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T09:49:54+00:00"
+  },
+  {
+   "topic": "SHRDLU",
+   "text": "コンピューターの中に仮想的に「積み木の世界」を構成し、そこに存在するいくつかの物体――ブロック、円錐、球など――を英語で指示を与えることで積み上げたり下ろしたり動かすことができる。",
+   "source": "https://ja.wikipedia.org/wiki/SHRDLU",
+   "genre": "技術",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T09:49:54+00:00"
+  },
+  {
+   "topic": "SHRDLU",
+   "text": "自然言語 により仮想世界の操作を行う事ができる。",
+   "source": "https://ja.wikipedia.org/wiki/SHRDLU",
+   "genre": "言葉",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T09:49:54+00:00"
+  },
+  {
+   "topic": "SHRDLU",
+   "text": "実装はソフトウエア面では プログラミング言語 Lisp と Planner を用いて記述され、ハードウエア面では DEC 社のコンピュータ・ PDP-6 および同社のグラフィック 端末 上で動作した。",
+   "source": "https://ja.wikipedia.org/wiki/SHRDLU",
+   "genre": "言葉",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T09:49:54+00:00"
+  },
+  {
+   "topic": "SHRDLU",
+   "text": "後に ユタ大学 の コンピュータグラフィックス 研究所によって改良され、SHRDLUの「世界」はフル3Dで描画されるようになった。",
+   "source": "https://ja.wikipedia.org/wiki/SHRDLU",
+   "genre": "技術",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T09:49:54+00:00"
+  },
+  {
+   "topic": "SHRDLU",
+   "text": "SHRDLUは操作者から英語による指示を受け付ける。",
+   "source": "https://ja.wikipedia.org/wiki/SHRDLU",
+   "genre": "その他",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T09:49:54+00:00"
+  },
+  {
+   "topic": "個別言語学",
+   "text": "個別言語学という名を持つ、独立した学問の システム が存在する訳ではない。",
+   "source": "https://ja.wikipedia.org/wiki/個別言語学",
+   "genre": "言葉",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T09:49:54+00:00"
+  },
+  {
+   "topic": "個別言語学",
+   "text": "それらは、個々の言語を対象とするので、例えば、 日本語学 、 フランス語学 、 中国語学 、 アラビア語学 、等、存在する個別言語の数だけ、学が成立することとなる。",
+   "source": "https://ja.wikipedia.org/wiki/個別言語学",
+   "genre": "言葉",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T09:49:54+00:00"
+  },
+  {
+   "topic": "個別言語学",
+   "text": "ただし、存在するのは、それぞれの個別言語に対応する個別言語学であって、一般個別言語学というようなものは存在しない。",
+   "source": "https://ja.wikipedia.org/wiki/個別言語学",
+   "genre": "言葉",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T09:49:54+00:00"
+  },
+  {
+   "topic": "個別言語学",
+   "text": "「惑星の研究」という 概念 は、具体的な 惑星 についての研究を意味している。",
+   "source": "https://ja.wikipedia.org/wiki/個別言語学",
+   "genre": "言葉",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T09:49:54+00:00"
+  },
+  {
+   "topic": "個別言語学",
+   "text": "そこでは 地球学 、 火星学 、 木星学 、 天王星学 のような、特定個別の惑星を研究対象とする学問が成立する。",
+   "source": "https://ja.wikipedia.org/wiki/個別言語学",
+   "genre": "言葉",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T09:49:54+00:00"
+  },
+  {
+   "topic": "個別言語学",
+   "text": "これは、各種の惑星一般についての研究である「 惑星学 」とはまた異なる学問である。",
+   "source": "https://ja.wikipedia.org/wiki/個別言語学",
+   "genre": "言葉",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T09:49:54+00:00"
+  },
+  {
+   "topic": "Google Books Ngram Viewer",
+   "text": "また、アメリカ英語、イギリス英語、英語フィクション等の分野特化型英語コーパスも使用できる [ 6 ] 。",
+   "source": "https://ja.wikipedia.org/wiki/Google_Books_Ngram_Viewer",
+   "genre": "その他",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T09:49:54+00:00"
+  },
+  {
+   "topic": "Google Books Ngram Viewer",
+   "text": "nグラムは選択されたコーパス内のテキストと照合され、40以上の文献でマッチがある場合、 グラフ として表示される [ 6 ] 。",
+   "source": "https://ja.wikipedia.org/wiki/Google_Books_Ngram_Viewer",
+   "genre": "その他",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T09:49:54+00:00"
+  },
+  {
+   "topic": "Google Books Ngram Viewer",
+   "text": "学者による使用を想定していた一方で、Google Books Ngram Viewerは事実上、コンピューターを有する人物であれば誰でも単語・句の使用率の 通時的 変化をグラフ化し、参照することを可能にした。",
+   "source": "https://ja.wikipedia.org/wiki/Google_Books_Ngram_Viewer",
+   "genre": "技術",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T09:49:54+00:00"
+  },
+  {
+   "topic": "Google Books Ngram Viewer",
+   "text": "ニューヨーク・タイムズ 紙の取材に際しリーバーマンは、「子どもでも歴史上の文化的傾向が把握できるようにすることを目標にした」と語っている [ 9 ] 。",
+   "source": "https://ja.wikipedia.org/wiki/Google_Books_Ngram_Viewer",
+   "genre": "歴史",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T09:49:54+00:00"
+  },
+  {
+   "topic": "Google Books Ngram Viewer",
+   "text": "Ngram Viewerは、このように指定されたクエリ文字列ごとに、 プロット された 折れ線グラフ を生成する。",
+   "source": "https://ja.wikipedia.org/wiki/Google_Books_Ngram_Viewer",
+   "genre": "言葉",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T09:49:54+00:00"
+  },
+  {
+   "topic": "Google Books Ngram Viewer",
+   "text": "ただし、Ngramデータベースの制限により、グラフが適切に生成されるには40以上の文献内で対象文字列がマッチする必要がある [ 6 ] 。",
+   "source": "https://ja.wikipedia.org/wiki/Google_Books_Ngram_Viewer",
+   "genre": "言葉",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T09:49:54+00:00"
+  },
+  {
+   "topic": "意味ネットワーク",
+   "text": "概念 の間の意味関係を表現する ネットワーク である。",
+   "source": "https://ja.wikipedia.org/wiki/意味ネットワーク",
+   "genre": "その他",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T09:49:55+00:00"
+  },
+  {
+   "topic": "意味ネットワーク",
+   "text": "知識表現 でよく利用される。",
+   "source": "https://ja.wikipedia.org/wiki/意味ネットワーク",
+   "genre": "その他",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T09:49:55+00:00"
+  },
+  {
+   "topic": "意味ネットワーク",
+   "text": "概念を表す節と、概念の意味関係を表す 辺 からなる、 有向グラフ または 無向グラフ である。",
+   "source": "https://ja.wikipedia.org/wiki/意味ネットワーク",
+   "genre": "その他",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T09:49:55+00:00"
+  },
+  {
+   "topic": "意味ネットワーク",
+   "text": "のちに アラン・コリンズ (認知科学者) （ 英語版 ） とキリアンの論文によって広く知られるようになった。",
+   "source": "https://ja.wikipedia.org/wiki/意味ネットワーク",
+   "genre": "科学",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T09:49:55+00:00"
+  },
+  {
+   "topic": "意味ネットワーク",
+   "text": "知識グラフ （ 英語版 ） とは、 グラフ理論 の代数を活用する目的で、意味ネットワークの辺に「ありうる関係の有限の集合からなる」とする制約を加えたものである [ 10 ] 。",
+   "source": "https://ja.wikipedia.org/wiki/意味ネットワーク",
+   "genre": "科学",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T09:49:55+00:00"
+  },
+  {
+   "topic": "意味ネットワーク",
+   "text": "その後の10年間で意味ネットワークと知識グラフの区別はなくなった。",
+   "source": "https://ja.wikipedia.org/wiki/意味ネットワーク",
+   "genre": "その他",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T09:49:55+00:00"
+  },
+  {
+   "topic": "計算言語学会",
+   "text": "1965年 に雑誌『機械翻訳と計算言語学』を引継ぐ。",
+   "source": "https://ja.wikipedia.org/wiki/計算言語学協会",
+   "genre": "言葉",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T09:49:55+00:00"
+  },
+  {
+   "topic": "計算言語学会",
+   "text": "1963年 、 計算機協会 (ACM) 全国会議と共同で初めて年次総会を開催する。",
+   "source": "https://ja.wikipedia.org/wiki/計算言語学協会",
+   "genre": "言葉",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T09:49:55+00:00"
+  },
+  {
+   "topic": "計算言語学会",
+   "text": "年次総会は、非公式会議のため要旨のみが出版された [ 4 ] 。",
+   "source": "https://ja.wikipedia.org/wiki/計算言語学協会",
+   "genre": "言葉",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T09:49:55+00:00"
+  },
+  {
+   "topic": "計算言語学会",
+   "text": "1979年 から年次総会の議事録が出版された。",
+   "source": "https://ja.wikipedia.org/wiki/計算言語学協会",
+   "genre": "言葉",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T09:49:55+00:00"
+  },
+  {
+   "topic": "計算言語学会",
+   "text": "会議は、 アメリカ言語学会 と共同で多くが開催されたが、 情報科学技術学会 （ 英語版 ） ・ 認知科学会 （ 英語版 ） との共同で開催されることもあった. [ 4 ] 。",
+   "source": "https://ja.wikipedia.org/wiki/計算言語学協会",
+   "genre": "言葉",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T09:49:55+00:00"
+  },
+  {
+   "topic": "計算言語学会",
+   "text": "1989年 から 1994年 には、 アメリカ政府 からの支援により、著者の増加や定着化、いくつかの重要な研究成果を上げることができた [ 11 ] 。",
+   "source": "https://ja.wikipedia.org/wiki/計算言語学協会",
+   "genre": "言葉",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T09:49:55+00:00"
+  },
+  {
+   "topic": "日本語コーパス",
+   "text": "宮島達夫 の論じるように、これは電算化以前のコーパスとみなすこともできる [ 1 ] 。",
+   "source": "https://ja.wikipedia.org/wiki/日本語コーパス",
+   "genre": "言葉",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T09:49:55+00:00"
+  },
+  {
+   "topic": "日本語コーパス",
+   "text": "その後 1960年代 後半から 1970年代 にかけ、国立国語研究所では電子化した日本語資料を用いた 量的研究 も行われるようになったが、ここで作成されたコーパスは外部に公開されることもなく、学界に大きな影響を与えることもなかった [ 2 ] 。",
+   "source": "https://ja.wikipedia.org/wiki/日本語コーパス",
+   "genre": "言葉",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T09:49:55+00:00"
+  },
+  {
+   "topic": "日本語コーパス",
+   "text": "1990年代 には パーソナルコンピュータ の高性能化・普及、 電子出版 の登場にともない、個人研究者による日本語の量的研究がはじまった [ 2 ] 。",
+   "source": "https://ja.wikipedia.org/wiki/日本語コーパス",
+   "genre": "言葉",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T09:49:55+00:00"
+  },
+  {
+   "topic": "日本語コーパス",
+   "text": "1997年 に公開された「京都大学テキストコーパス（京大コーパス）」は『 毎日新聞 』の 1996年 のテキストデータ2万文に形態素・構文情報を付与したもので [ 3 ] 、山崎誠によれば、これが日本語研究においてはじめて作られた「コーパス」の名前がつくデータセットである。",
+   "source": "https://ja.wikipedia.org/wiki/日本語コーパス",
+   "genre": "言葉",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T09:49:55+00:00"
+  },
+  {
+   "topic": "日本語コーパス",
+   "text": "同コーパスはタグのみを公開し、実際の利用には新聞記事を別に購入する必要があった。",
+   "source": "https://ja.wikipedia.org/wiki/日本語コーパス",
+   "genre": "言葉",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T09:49:55+00:00"
+  },
+  {
+   "topic": "日本語コーパス",
+   "text": "同コーパスはどちらかといえば 自然言語処理 の文脈でのみ利用され、研究費が比較的潤沢ではない人文系日本語研究においては『 新潮文庫の100冊 』がコーパスの代用として利用された [ 4 ] 。",
+   "source": "https://ja.wikipedia.org/wiki/日本語コーパス",
+   "genre": "言葉",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T09:49:55+00:00"
+  },
+  {
+   "topic": "文書分類",
+   "text": "電子文書 をその内容に基づいて、1つ以上に 分類 する。",
+   "source": "https://ja.wikipedia.org/wiki/文書分類",
+   "genre": "その他",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T09:49:55+00:00"
+  },
+  {
+   "topic": "文書分類",
+   "text": "文書分類には、外部から（例えば人間が）正しい分類に関する情報を与える 教師あり文書分類 と、外部の情報を参照せずに分類する 教師なし文書分類 がある。",
+   "source": "https://ja.wikipedia.org/wiki/文書分類",
+   "genre": "技術",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T09:49:55+00:00"
+  },
+  {
+   "topic": "文書分類",
+   "text": "単純ベイズ分類器 tf-idf 潜在意味解析 サポートベクターマシン ニューラルネットワーク k近傍法 決定木 （例えば ID3 ） コンセプトマイニング 他にも、 自然言語処理 に基づく手法がある。",
+   "source": "https://ja.wikipedia.org/wiki/文書分類",
+   "genre": "言葉",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T09:49:55+00:00"
+  },
+  {
+   "topic": "パチンコ配分モデル",
+   "text": "トピックモデルとは、文書群に内在する潜在的なテーマ構造を自動的に発見するためのアルゴリズム群である [ 1 ] 。",
+   "source": "https://ja.wikipedia.org/wiki/パチンコ配分モデル",
+   "genre": "その他",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T09:49:55+00:00"
+  },
+  {
+   "topic": "パチンコ配分モデル",
+   "text": "PAMは、 潜在的ディリクレ配分法 （LDA）などの従来のトピックモデルを拡張し、単語間の共起関係だけでなく、トピック間の相関関係もモデル化できる点が特徴である。",
+   "source": "https://ja.wikipedia.org/wiki/パチンコ配分モデル",
+   "genre": "その他",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T09:49:55+00:00"
+  },
+  {
+   "topic": "パチンコ配分モデル",
+   "text": "この手法により、PAMはLDAよりも柔軟性が高く、表現力にも優れているとされる [ 2 ] 。",
+   "source": "https://ja.wikipedia.org/wiki/パチンコ配分モデル",
+   "genre": "その他",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T09:49:55+00:00"
+  },
+  {
+   "topic": "パチンコ配分モデル",
+   "text": "PAMはもともと自然言語処理の分野で提案・実装されたが、 バイオインフォマティクス など他分野への応用も期待されている。",
+   "source": "https://ja.wikipedia.org/wiki/パチンコ配分モデル",
+   "genre": "言葉",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T09:49:55+00:00"
+  },
+  {
+   "topic": "パチンコ配分モデル",
+   "text": "このモデル名は、日本の娯楽「 パチンコ 」に由来する。",
+   "source": "https://ja.wikipedia.org/wiki/パチンコ配分モデル",
+   "genre": "その他",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T09:49:55+00:00"
+  },
+  {
+   "topic": "パチンコ配分モデル",
+   "text": "パチンコ台において、金属球が多数のピンを通って複雑な経路をたどり、最終的に下部のさまざまなポケットに落ちる構造になっている点が、PAMの多層的・階層的な構造と類似している [ 3 ] 。",
+   "source": "https://ja.wikipedia.org/wiki/パチンコ配分モデル",
+   "genre": "その他",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T09:49:55+00:00"
+  },
+  {
+   "topic": "言語系統論",
+   "text": "生物学 における 系統学 の概念と基本的に共通する。",
+   "source": "https://ja.wikipedia.org/wiki/言語系統論",
+   "genre": "言葉",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T09:49:55+00:00"
+  },
+  {
+   "topic": "言語系統論",
+   "text": "ただし言語には 言語接触 による混淆が存在するため、分岐して長い時間がたった言語の系統関係を特定することにはしばしば困難を伴う。",
+   "source": "https://ja.wikipedia.org/wiki/言語系統論",
+   "genre": "言葉",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T09:49:55+00:00"
+  },
+  {
+   "topic": "言語系統論",
+   "text": "日本語(族) の系統の研究は盛んに試みられているが、結論は出ていない。",
+   "source": "https://ja.wikipedia.org/wiki/言語系統論",
+   "genre": "言葉",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T09:49:55+00:00"
+  },
+  {
+   "topic": "言語系統論",
+   "text": "この原因として 言語接触 による 混合言語 化、 クレオール化 が考えられる。",
+   "source": "https://ja.wikipedia.org/wiki/言語系統論",
+   "genre": "言葉",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T09:49:55+00:00"
+  },
+  {
+   "topic": "言語系統論",
+   "text": "言語は拡散と混合を繰り返してきており、 祖語 自体が混合言語である場合は系統を決定できないためである。",
+   "source": "https://ja.wikipedia.org/wiki/言語系統論",
+   "genre": "言葉",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T09:49:55+00:00"
+  },
+  {
+   "topic": "言語系統論",
+   "text": "言語史を解明するためには 比較言語学 とともに 言語類型論 も手掛かりになる。",
+   "source": "https://ja.wikipedia.org/wiki/言語系統論",
+   "genre": "言葉",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T09:49:55+00:00"
+  },
+  {
+   "topic": "Elm (プログラミング言語)",
+   "text": "Elmは純粋 関数型言語 であり、 ユーザビリティ ・パフォーマンス・堅牢性を重視して開発されている。",
+   "source": "https://ja.wikipedia.org/wiki/Elm_(プログラミング言語)",
+   "genre": "言葉",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T09:49:55+00:00"
+  },
+  {
+   "topic": "Elm (プログラミング言語)",
+   "text": "静的かつ強力な 型検査 によって「事実上一切の実行時 例外 が起こらない」 [ 2 ] ことを売りにしている。",
+   "source": "https://ja.wikipedia.org/wiki/Elm_(プログラミング言語)",
+   "genre": "言葉",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T09:49:55+00:00"
+  },
+  {
+   "topic": "Elm (プログラミング言語)",
+   "text": "最初のElmは多くのサンプルコードとそれらをブラウザで簡単に試すことの出来るオンラインエディタとともにリリースされた [ 4 ] 。",
+   "source": "https://ja.wikipedia.org/wiki/Elm_(プログラミング言語)",
+   "genre": "言葉",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T09:49:55+00:00"
+  },
+  {
+   "topic": "Elm (プログラミング言語)",
+   "text": "Elmはまたコミュニティ製ライブラリを提供するエコシステムを持っている [ 12 ] 。",
+   "source": "https://ja.wikipedia.org/wiki/Elm_(プログラミング言語)",
+   "genre": "言葉",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T09:49:55+00:00"
+  },
+  {
+   "topic": "Elm (プログラミング言語)",
+   "text": "さらに、不変性、静的型付け、HTML・CSS・JavaScriptとの相互運用性を主要な機能として持っている。",
+   "source": "https://ja.wikipedia.org/wiki/Elm_(プログラミング言語)",
+   "genre": "言葉",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T09:49:55+00:00"
+  },
+  {
+   "topic": "Elm (プログラミング言語)",
+   "text": "すべての定義にはその値を正確に表現する型注釈をつけることができる。",
+   "source": "https://ja.wikipedia.org/wiki/Elm_(プログラミング言語)",
+   "genre": "言葉",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T09:49:55+00:00"
+  },
+  {
+   "topic": "ビット (曖昧さ回避)",
+   "text": "→詳細は「 ボラード 」を参照 ビット (bit) - コンピュータが扱うデータの最小単位。",
+   "source": "https://ja.wikipedia.org/wiki/ビット_(曖昧さ回避)",
+   "genre": "技術",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T09:49:55+00:00"
+  },
+  {
+   "topic": "ビット (曖昧さ回避)",
+   "text": "英語の“binary digit” （2進数字、の意）の略語 工具・ドライバーの刃先。",
+   "source": "https://ja.wikipedia.org/wiki/ビット_(曖昧さ回避)",
+   "genre": "その他",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T09:49:55+00:00"
+  },
+  {
+   "topic": "ビット (曖昧さ回避)",
+   "text": "+、-、ヘキサ型などの大小を織り交ぜそろえられている →詳細は「 ドライバー (工具) 」を参照 ビット (雑誌) (bit) - 共立出版 が発行していたコンピュータサイエンス総合誌 プロレスラー 鈴木鼓太郎 の技。",
+   "source": "https://ja.wikipedia.org/wiki/ビット_(曖昧さ回避)",
+   "genre": "技術",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T09:49:55+00:00"
+  },
+  {
+   "topic": "ビット (曖昧さ回避)",
+   "text": "ハンドスプリングエルボーの同型異名の技 アニメ『 機動戦士ガンダム 』などのフィクション作品に登場する搭載兵装。",
+   "source": "https://ja.wikipedia.org/wiki/ビット_(曖昧さ回避)",
+   "genre": "その他",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T09:49:55+00:00"
+  },
+  {
+   "topic": "ビット (曖昧さ回避)",
+   "text": "→詳細は「 オールレンジ攻撃#ビット 」を参照 ビット・クラウド - アニメ『 ゾイド新世紀スラッシュゼロ 』の主人公。",
+   "source": "https://ja.wikipedia.org/wiki/ビット_(曖昧さ回避)",
+   "genre": "歴史",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T09:49:55+00:00"
+  },
+  {
+   "topic": "ビット (曖昧さ回避)",
+   "text": "テレビ番組『 天才ビットくん 』及び続編『 ビットワールド 』の略称。",
+   "source": "https://ja.wikipedia.org/wiki/ビット_(曖昧さ回避)",
+   "genre": "その他",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T09:49:55+00:00"
+  },
+  {
+   "topic": "コンストラクタ",
+   "text": "オブジェクトの生成は、 メモリ割当（ 英 : allocation ） 初期化（ 英 : initialization ） の二段階を経て行なわれるが、コンストラクタを持つプログラミング言語ではメモリ割り当ては言語機能に組み込まれ、初期化用のコードのみを記述するのが普通である。",
+   "source": "https://ja.wikipedia.org/wiki/コンストラクタ",
+   "genre": "言葉",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T09:49:55+00:00"
+  },
+  {
+   "topic": "コンストラクタ",
+   "text": "C++、Java、C#のコンストラクタは、「クラス名と同一の名前を持ち、戻り値指定のない関数（メソッド）」であるかのような記法となっている。",
+   "source": "https://ja.wikipedia.org/wiki/コンストラクタ",
+   "genre": "その他",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T09:49:55+00:00"
+  },
+  {
+   "topic": "コンストラクタ",
+   "text": "C++では「クラス名と同一の名前を持つメンバー関数」を定義することはできない。",
+   "source": "https://ja.wikipedia.org/wiki/コンストラクタ",
+   "genre": "その他",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T09:49:55+00:00"
+  },
+  {
+   "topic": "コンストラクタ",
+   "text": "また、PHPでは __construct 、 Ruby では initialize というように、特定の名前を持つメソッドを作ればそれがコンストラクタになる、というプログラミング言語も存在する。",
+   "source": "https://ja.wikipedia.org/wiki/コンストラクタ",
+   "genre": "言葉",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T09:49:55+00:00"
+  },
+  {
+   "topic": "コンストラクタ",
+   "text": "コンストラクタに渡す 引数 により初期化のバリエーションが定義される。",
+   "source": "https://ja.wikipedia.org/wiki/コンストラクタ",
+   "genre": "その他",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T09:49:55+00:00"
+  },
+  {
+   "topic": "コンストラクタ",
+   "text": "特にパターンとして名前をもつコンストラクタは以下である。",
+   "source": "https://ja.wikipedia.org/wiki/コンストラクタ",
+   "genre": "その他",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T09:49:55+00:00"
+  },
+  {
+   "topic": "エイリアシング",
+   "text": "ある型のポインタを異なる型の変数でもアドレスすること。",
+   "source": "https://ja.wikipedia.org/wiki/エイリアシング",
+   "genre": "その他",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T09:49:55+00:00"
+  },
+  {
+   "topic": "エイリアシング",
+   "text": "計算機言語によって許される条件が規格上決まっている [ 1 ] 。",
+   "source": "https://ja.wikipedia.org/wiki/エイリアシング",
+   "genre": "言葉",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T09:49:55+00:00"
+  },
+  {
+   "topic": "エイリアシング",
+   "text": "GCC でコンパイルする場合はオプション -fstrict-aliasing を付与すると C89 で規格上許されるエイリアシングのみが使われているかどうかがチェックされる。",
+   "source": "https://ja.wikipedia.org/wiki/エイリアシング",
+   "genre": "その他",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T09:49:55+00:00"
+  },
+  {
+   "topic": "エイリアシング",
+   "text": "お探しの用語に一番近い記事を選んで下さい。",
+   "source": "https://ja.wikipedia.org/wiki/エイリアシング",
+   "genre": "その他",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T09:49:55+00:00"
+  },
+  {
+   "topic": "エイリアシング",
+   "text": "このページへリンクしているページ を見つけたら、リンクを適切な項目に張り替えて下さい。",
+   "source": "https://ja.wikipedia.org/wiki/エイリアシング",
+   "genre": "その他",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T09:49:55+00:00"
+  },
+  {
+   "topic": "関数 (数学)",
+   "text": "この言葉は ゴットフリート・ライプニッツ によって導入された。",
+   "source": "https://ja.wikipedia.org/wiki/数学関数",
+   "genre": "科学",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T09:49:55+00:00"
+  },
+  {
+   "topic": "関数 (数学)",
+   "text": "その後 定義 が一般化され、現代では 数 の 集合 に値をとる 写像 の一種であると理解されるものとなった。",
+   "source": "https://ja.wikipedia.org/wiki/数学関数",
+   "genre": "生き物",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T09:49:55+00:00"
+  },
+  {
+   "topic": "関数 (数学)",
+   "text": "対応規則を明示するときは、適当な文字列（特に何か理由がなければ、function の頭文字から f が選ばれることが多い）を使って y = f ( x ) と書いて、 x = a を代入したときに決まる関数の値を f ( a ) と表す。",
+   "source": "https://ja.wikipedia.org/wiki/数学関数",
+   "genre": "言葉",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T09:49:55+00:00"
+  },
+  {
+   "topic": "関数 (数学)",
+   "text": "しかしここで、定数関数の例に示されるように、個々の y の値について対応する x の値が一つに決まるとは限らない事に注意しなければならない。",
+   "source": "https://ja.wikipedia.org/wiki/数学関数",
+   "genre": "科学",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T09:49:55+00:00"
+  },
+  {
+   "topic": "関数 (数学)",
+   "text": "この f ( x ) という表記法は18世紀の 数学者 レオンハルト・オイラー によるものである。",
+   "source": "https://ja.wikipedia.org/wiki/数学関数",
+   "genre": "言葉",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T09:49:55+00:00"
+  },
+  {
+   "topic": "関数 (数学)",
+   "text": "オイラーは、変数や 定数 を組み合わせてできた数式のことを関数と定義していたが、 コーシー は、上に述べたように y という変数を関数と定義した。",
+   "source": "https://ja.wikipedia.org/wiki/数学関数",
+   "genre": "科学",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T09:49:55+00:00"
+  },
+  {
+   "topic": "C++",
+   "text": "派生元である C言語 の機能や特徴を継承しつつ、表現力と効率性の向上のために、 手続き型プログラミング ・ データ抽象 ・ オブジェクト指向プログラミング ・ ジェネリックプログラミング といった複数の プログラミングパラダイム が組み合わされている [ 1 ] 。",
+   "source": "https://ja.wikipedia.org/wiki/C++言語",
+   "genre": "言葉",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T09:49:55+00:00"
+  },
+  {
+   "topic": "C++",
+   "text": "高水準言語 ではあるものの、C言語と同様にハードウェアを直接扱うような下位層向けの言語としても利用することができ、また追加の機能により複雑な アプリケーションソフトウェア を開発するための上位層向けの言語としても使用可能である。",
+   "source": "https://ja.wikipedia.org/wiki/C++言語",
+   "genre": "言葉",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T09:49:55+00:00"
+  },
+  {
+   "topic": "C++",
+   "text": "C++は、1983年に AT & Tベル研究所 の計算機科学者 ビャーネ・ストロヴストルップ によって公開された。",
+   "source": "https://ja.wikipedia.org/wiki/C++言語",
+   "genre": "科学",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T09:49:55+00:00"
+  },
+  {
+   "topic": "C++",
+   "text": "また様々な プラットフォーム でその 開発環境 が導入された。",
+   "source": "https://ja.wikipedia.org/wiki/C++言語",
+   "genre": "その他",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T09:49:55+00:00"
+  },
+  {
+   "topic": "C++",
+   "text": "彼は大規模なソフトウェアの開発に有用な特徴を Simula が備えていることに気がついたが、Simulaは実行速度が遅く実用的ではなかった。",
+   "source": "https://ja.wikipedia.org/wiki/C++言語",
+   "genre": "その他",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T09:49:55+00:00"
+  },
+  {
+   "topic": "C++",
+   "text": "一方で BCPL は実行速度こそ速かったものの、大規模なソフトウェア開発を念頭に置いた場合にあまりにも 低級 だった。",
+   "source": "https://ja.wikipedia.org/wiki/C++言語",
+   "genre": "その他",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T09:49:55+00:00"
+  },
+  {
+   "topic": "IBM 709",
+   "text": "IBM 704 の改良版である。",
+   "source": "https://ja.wikipedia.org/wiki/IBM_709",
+   "genre": "その他",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T09:49:55+00:00"
+  },
+  {
+   "topic": "IBM 709",
+   "text": "IBM 709 では、入出力のオーバーラップ機能、 間接アドレス指定 、 十進数 命令などが追加されている。",
+   "source": "https://ja.wikipedia.org/wiki/IBM_709",
+   "genre": "その他",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T09:49:55+00:00"
+  },
+  {
+   "topic": "IBM 709",
+   "text": "ワード長は 36ビット で、アドレス空間は32Kワードであり、1秒間に42,000回の加減算または5000回の乗算が可能とされていた [ 1 ] 。",
+   "source": "https://ja.wikipedia.org/wiki/IBM_709",
+   "genre": "その他",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T09:49:55+00:00"
+  },
+  {
+   "topic": "IBM 709",
+   "text": "オプションのハードウェア エミュレータ で IBM 704 のプログラムを実行することができた。",
+   "source": "https://ja.wikipedia.org/wiki/IBM_709",
+   "genre": "その他",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T09:49:55+00:00"
+  },
+  {
+   "topic": "IBM 709",
+   "text": "これは初の商用エミュレータである。",
+   "source": "https://ja.wikipedia.org/wiki/IBM_709",
+   "genre": "その他",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T09:49:55+00:00"
+  },
+  {
+   "topic": "IBM 709",
+   "text": "レジスタとよく使われる 704 命令が709のハードウェア上でエミュレートされた。",
+   "source": "https://ja.wikipedia.org/wiki/IBM_709",
+   "genre": "その他",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T09:49:55+00:00"
+  },
+  {
+   "topic": "POWER (マイクロプロセッサ)",
+   "text": "当初は 32ビット であったが、 POWER3 以降は 64ビット 化された。",
+   "source": "https://ja.wikipedia.org/wiki/POWER_(マイクロプロセッサ)",
+   "genre": "その他",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T09:49:55+00:00"
+  },
+  {
+   "topic": "POWER (マイクロプロセッサ)",
+   "text": "2023年4月時点の最新版は POWER10 である。",
+   "source": "https://ja.wikipedia.org/wiki/POWER_(マイクロプロセッサ)",
+   "genre": "その他",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T09:49:55+00:00"
+  },
+  {
+   "topic": "POWER (マイクロプロセッサ)",
+   "text": "特徴として、比較的低い クロック で性能を発揮できるため、同じ性能ならば消費電力や発熱量を抑えられ、また動作周波数を引き上げる事により更なる性能向上が容易である。",
+   "source": "https://ja.wikipedia.org/wiki/POWER_(マイクロプロセッサ)",
+   "genre": "その他",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T09:49:55+00:00"
+  },
+  {
+   "topic": "POWER (マイクロプロセッサ)",
+   "text": "このためIBMなどの スーパーコンピュータ 、 UNIX ワークステーション 、 オフィスコンピュータ などで使用されている。",
+   "source": "https://ja.wikipedia.org/wiki/POWER_(マイクロプロセッサ)",
+   "genre": "技術",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T09:49:55+00:00"
+  },
+  {
+   "topic": "POWER (マイクロプロセッサ)",
+   "text": "POWER1 は80万個の トランジスタ を実装していた。",
+   "source": "https://ja.wikipedia.org/wiki/POWER_(マイクロプロセッサ)",
+   "genre": "その他",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T09:49:55+00:00"
+  },
+  {
+   "topic": "POWER (マイクロプロセッサ)",
+   "text": "なお、 1997年 に世界 チェス チャンピオンの ガルリ・カスパロフ を初めて破って有名になった スーパーコンピュータ 「 ディープ・ブルー 」は、 POWER2 （ならびにチェス専用プロセッサ）を搭載していた。",
+   "source": "https://ja.wikipedia.org/wiki/POWER_(マイクロプロセッサ)",
+   "genre": "技術",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T09:49:55+00:00"
+  },
+  {
+   "topic": "IBM Public License",
+   "text": "GNU General Public License (GPL) とは異なり、ライセンスされるソフトウェアコードについてなんらかの保証をして商用に販売する場合、その販売者が責任を負うとされている。",
+   "source": "https://ja.wikipedia.org/wiki/IBM_Public_License",
+   "genre": "その他",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T09:49:55+00:00"
+  },
+  {
+   "topic": "IBM Public License",
+   "text": "IBMによれば、オープンソースソフトウェアの商用利用に際して、コントリビュータに責任が及ぶのを防ぐ意味があるという [ 3 ] 。",
+   "source": "https://ja.wikipedia.org/wiki/IBM_Public_License",
+   "genre": "その他",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T09:49:55+00:00"
+  },
+  {
+   "topic": "IBM Public License",
+   "text": "IPL支持者は、ソフトウェアコードに関する責任の定義がGPLより明確だとしている。",
+   "source": "https://ja.wikipedia.org/wiki/IBM_Public_License",
+   "genre": "その他",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T09:49:55+00:00"
+  },
+  {
+   "topic": "IBM Public License",
+   "text": "IPLにはGPLにない制約が含まれているため、GPL互換ではない。",
+   "source": "https://ja.wikipedia.org/wiki/IBM_Public_License",
+   "genre": "その他",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T09:49:55+00:00"
+  },
+  {
+   "topic": "IBM Public License",
+   "text": "FSFによれば、「ある種の特許ライセンスが与えられることを必要としているが、GPLではそのような要求はない。",
+   "source": "https://ja.wikipedia.org/wiki/IBM_Public_License",
+   "genre": "生き物",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T09:49:55+00:00"
+  },
+  {
+   "topic": "IBM Public License",
+   "text": "（このような特許ライセンス要求が本質的に悪い考えとは思わないが、いずれにしても GNU GPL とは非互換であるとしている）」 [ 4 ] IPLは 特許 の扱い方がGPLとは異なり、IPLでは特許侵害が発生した際にライセンスが「停止」する。",
+   "source": "https://ja.wikipedia.org/wiki/IBM_Public_License",
+   "genre": "その他",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T09:49:55+00:00"
+  },
+  {
+   "topic": "WebSphere",
+   "text": "「Web アプリケーション・サーバー に代表される「アプリケーション基盤と統合」」を提供するとされている。",
+   "source": "https://ja.wikipedia.org/wiki/WebSphere",
+   "genre": "その他",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T09:49:55+00:00"
+  },
+  {
+   "topic": "WebSphere",
+   "text": "WebSphere は ミドルウェア ソフトウェア製品群であり、 ウェブ 技術を使った複数プラットフォームでの eビジネス の構築/運用/統合を行うものである。",
+   "source": "https://ja.wikipedia.org/wiki/WebSphere",
+   "genre": "技術",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T09:49:55+00:00"
+  },
+  {
+   "topic": "WebSphere",
+   "text": "WAS のようなランタイム製品と WAS上で動作するアプリケーションを作成するための 開発ツール 製品から構成される。",
+   "source": "https://ja.wikipedia.org/wiki/WebSphere",
+   "genre": "その他",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T09:49:55+00:00"
+  },
+  {
+   "topic": "WebSphere",
+   "text": "MQは、本来はWebとは無縁の基幹系メッセージキューイング製品で、システム内部のデザインは DB2 に近いが、システム統合、サーバー間連携などの要ともなるため、WebSphereブランドに移動したと考えられる。",
+   "source": "https://ja.wikipedia.org/wiki/WebSphere",
+   "genre": "その他",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T09:49:55+00:00"
+  },
+  {
+   "topic": "WebSphere",
+   "text": "DataStageは、IBMが買収した Ascential の ETL ツールで、これも本来はデータ管理（DB2など）に関連が深い製品と考えられるが、こちらも「業務プロセスの統合ツール」としてWebSphereブランドとなったと考えられる。",
+   "source": "https://ja.wikipedia.org/wiki/WebSphere",
+   "genre": "その他",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T09:49:55+00:00"
+  },
+  {
+   "topic": "継承 (プログラミング)",
+   "text": "これによりクラス間に 階層構造 が形成され、共通機能の 再使用 や 多態性 による処理が行える。",
+   "source": "https://ja.wikipedia.org/wiki/インヘリタンス",
+   "genre": "その他",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T09:49:55+00:00"
+  },
+  {
+   "topic": "継承 (プログラミング)",
+   "text": "クラスベース 言語では スーパークラス と サブクラス の関係として、 プロトタイプベース 言語では既存オブジェクトを基にした拡張として実装される [ 1 ] 。",
+   "source": "https://ja.wikipedia.org/wiki/インヘリタンス",
+   "genre": "言葉",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T09:49:55+00:00"
+  },
+  {
+   "topic": "継承 (プログラミング)",
+   "text": "引き継ぎかたは、リクエストされた特性をそのオブジェクトが持たない場合は、自動的に上位オブジェクトの方でサーチするという方式が一般的であり、これは暗黙の 委譲 （delegation）ベースとも呼ばれる。",
+   "source": "https://ja.wikipedia.org/wiki/インヘリタンス",
+   "genre": "その他",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T09:49:55+00:00"
+  },
+  {
+   "topic": "継承 (プログラミング)",
+   "text": "他には、 インスタンス 化時にその型の継承チェーンを走査してその全要素を集めて同名重複要素を解決して1つの実体を生成するという方式もあり、これは連結（concatenation）ベースとも呼ばれる。",
+   "source": "https://ja.wikipedia.org/wiki/インヘリタンス",
+   "genre": "その他",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T09:49:55+00:00"
+  },
+  {
+   "topic": "継承 (プログラミング)",
+   "text": "他オブジェクトの特性を引き継ぐという概念は、それに新しい特性群を付け足しての手軽なオブジェクトの機能拡張と、引き継がれる共通の特性群を上位ノードにしたオブジェクトの分類体系化をもたらしている。",
+   "source": "https://ja.wikipedia.org/wiki/インヘリタンス",
+   "genre": "その他",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T09:49:55+00:00"
+  },
+  {
+   "topic": "継承 (プログラミング)",
+   "text": "これは差分プログラミングとも呼ばれ、プログラムの再利用性と保守性を高めるとされている。",
+   "source": "https://ja.wikipedia.org/wiki/インヘリタンス",
+   "genre": "その他",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T09:49:55+00:00"
+  },
+  {
+   "topic": "GCOS",
+   "text": "フランス特殊作戦総司令部については「 フランス特殊作戦総司令部 」をご覧ください。",
+   "source": "https://ja.wikipedia.org/wiki/GCOS",
+   "genre": "その他",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T09:49:55+00:00"
+  },
+  {
+   "topic": "GCOS",
+   "text": "今日でもごく一部で使用されている。",
+   "source": "https://ja.wikipedia.org/wiki/GCOS",
+   "genre": "その他",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T09:49:55+00:00"
+  },
+  {
+   "topic": "GCOS",
+   "text": "これは プロセッサ 上で実行される命令列と対応するデータの集合である。",
+   "source": "https://ja.wikipedia.org/wiki/GCOS",
+   "genre": "その他",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T09:49:55+00:00"
+  },
+  {
+   "topic": "GCOS",
+   "text": "マルチスレッド の概念もある。",
+   "source": "https://ja.wikipedia.org/wiki/GCOS",
+   "genre": "その他",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T09:49:55+00:00"
+  },
+  {
+   "topic": "GCOS",
+   "text": "また、 プロセスグループ に相当する概念もあり、同時にロードされスケジュールされるプロセス群を意味する（その意味では、UNIXのプロセスグループではなく、ギャングスケジューリングに近い。",
+   "source": "https://ja.wikipedia.org/wiki/GCOS",
+   "genre": "その他",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T09:49:55+00:00"
+  },
+  {
+   "topic": "GCOS",
+   "text": "GCOSには セマフォ もあり、プロセス間の 同期 に使用する。",
+   "source": "https://ja.wikipedia.org/wiki/GCOS",
+   "genre": "その他",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T09:49:55+00:00"
+  },
+  {
+   "topic": "UCSD p-System",
+   "text": "1978年 、 カリフォルニア大学サンディエゴ校 （UCSD）で開発された。",
+   "source": "https://ja.wikipedia.org/wiki/UCSD_p-System",
+   "genre": "その他",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T09:49:55+00:00"
+  },
+  {
+   "topic": "UCSD p-System",
+   "text": "しかし、p-System向けのアプリケーションが少なく、価格も他より高めだったため、あまり売れなかった。",
+   "source": "https://ja.wikipedia.org/wiki/UCSD_p-System",
+   "genre": "その他",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T09:49:55+00:00"
+  },
+  {
+   "topic": "UCSD p-System",
+   "text": "1977年 ごろ、UCSDのKenneth Bowlesは、 コンピュータ の新機種の数が多くなり、新しい プログラミング言語 が受け入れられにくくなる（処理系の移植が追いつかなくなる）と考え、UCSD p-Systemの開発を開始した。",
+   "source": "https://ja.wikipedia.org/wiki/UCSD_p-System",
+   "genre": "言葉",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T09:49:55+00:00"
+  },
+  {
+   "topic": "UCSD p-System",
+   "text": "彼はプログラミングの教育用として Pascal に注目していた。",
+   "source": "https://ja.wikipedia.org/wiki/UCSD_p-System",
+   "genre": "社会",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T09:49:55+00:00"
+  },
+  {
+   "topic": "UCSD p-System",
+   "text": "UCSDはPascalに重要な2つの改良を施した。",
+   "source": "https://ja.wikipedia.org/wiki/UCSD_p-System",
+   "genre": "その他",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T09:49:55+00:00"
+  },
+  {
+   "topic": "UCSD p-System",
+   "text": "それは、可変長文字列と個別にコンパイル可能なコードの単位（ユニット）である（これは当時新たに登場した Ada から発想された)。",
+   "source": "https://ja.wikipedia.org/wiki/UCSD_p-System",
+   "genre": "言葉",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T09:49:55+00:00"
+  },
+  {
+   "topic": "東京大学出版会",
+   "text": "本項目のInfobox（インフォボックス）にある法人番号のリンク先に記載。",
+   "source": "https://ja.wikipedia.org/wiki/東京大学出版",
+   "genre": "その他",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T09:49:55+00:00"
+  },
+  {
+   "topic": "東京大学出版会",
+   "text": "会長は、定款第33条が定めるところの名誉職であり、重要な事項について理事長の諮問にこたえる。",
+   "source": "https://ja.wikipedia.org/wiki/東京大学出版",
+   "genre": "その他",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T09:49:55+00:00"
+  },
+  {
+   "topic": "東京大学出版会",
+   "text": "東京大学総長 を会長とし [ 注釈 2 ] 、東京大学の活動に対応した書籍の出版を主に行う。",
+   "source": "https://ja.wikipedia.org/wiki/東京大学出版",
+   "genre": "その他",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T09:49:55+00:00"
+  },
+  {
+   "topic": "東京大学出版会",
+   "text": "2026年3月1日をもって創立75周年を迎えた [ 4 ] 。",
+   "source": "https://ja.wikipedia.org/wiki/東京大学出版",
+   "genre": "その他",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T09:49:55+00:00"
+  },
+  {
+   "topic": "東京大学出版会",
+   "text": "東京大学 教養学部 の「 基礎演習 」のテキストとしても使用している『 知の技法 』は ベストセラー となった。",
+   "source": "https://ja.wikipedia.org/wiki/東京大学出版",
+   "genre": "その他",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T09:49:55+00:00"
+  },
+  {
+   "topic": "東京大学出版会",
+   "text": "1963年度に「 学術書刊行基金 」を設置し [ 7 ] 、若手研究者による研究成果の刊行に対し助成を行っている。",
+   "source": "https://ja.wikipedia.org/wiki/東京大学出版",
+   "genre": "その他",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T09:49:55+00:00"
+  },
+  {
+   "topic": "数値流体力学",
+   "text": "機体表面の色は伝熱量を表し、断面のスライスには局所 マッハ数 の 等値線 が示されている。",
+   "source": "https://ja.wikipedia.org/wiki/計算流体力学",
+   "genre": "その他",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T09:49:55+00:00"
+  },
+  {
+   "topic": "数値流体力学",
+   "text": "数値流体力学 （すうちりゅうたいりきがく、 英 : computational fluid dynamics 、略称： CFD ）とは、 偏微分方程式の数値解法 等を駆使して 流体 の運動に関する 方程式 （ オイラー方程式 、 ナビエ-ストークス方程式 、またはその派生式）を コンピュータ で解くことによって流れを観察する 数値解析 ・ シミュレーション 手法。",
+   "source": "https://ja.wikipedia.org/wiki/計算流体力学",
+   "genre": "技術",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T09:49:55+00:00"
+  },
+  {
+   "topic": "数値流体力学",
+   "text": "コンピュータの性能向上とともに飛躍的に発展し、 航空機 ・ 自動車 ・ 鉄道車両 ・ 船舶 ・ 血流 等の流体中を移動する 機械 および 建築物 の設計をするにあたって 風洞 実験に並ぶ重要な存在となっている。",
+   "source": "https://ja.wikipedia.org/wiki/計算流体力学",
+   "genre": "科学",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T09:49:55+00:00"
+  },
+  {
+   "topic": "数値流体力学",
+   "text": "離散化には次のような手法がある [ 1 ] 。",
+   "source": "https://ja.wikipedia.org/wiki/計算流体力学",
+   "genre": "その他",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T09:49:55+00:00"
+  },
+  {
+   "topic": "数値流体力学",
+   "text": "しかし、流れが複雑な場合、流体の 物性値 が一定でなかったり、 境界条件 が 非定常 であったりすることで流れを記述するのに必要なパラメータが多数できてしまい、無次元形式にしても有用でなくなる場合がある [ 30 ] 。",
+   "source": "https://ja.wikipedia.org/wiki/計算流体力学",
+   "genre": "その他",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T09:49:55+00:00"
+  },
+  {
+   "topic": "数値流体力学",
+   "text": "前処理（ プリプロセス 、 pre-process ） モデルデータ作成 対象物体の形状 を再現した 3D または2Dモデルを作成する。",
+   "source": "https://ja.wikipedia.org/wiki/計算流体力学",
+   "genre": "その他",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T09:49:55+00:00"
+  },
+  {
+   "topic": "国際規格",
+   "text": "定義上、国際規格は全世界で汎用的に利用するのに適しているとされる。",
+   "source": "https://ja.wikipedia.org/wiki/国際規格",
+   "genre": "その他",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T09:49:55+00:00"
+  },
+  {
+   "topic": "国際規格",
+   "text": "技術的障壁は、互換でない確立された方法を広く使っているグループが出会ったときに生じる。",
+   "source": "https://ja.wikipedia.org/wiki/国際規格",
+   "genre": "技術",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T09:49:55+00:00"
+  },
+  {
+   "topic": "国際規格",
+   "text": "国際規格の確立は、そのような問題を防ぐ1つの方法である。",
+   "source": "https://ja.wikipedia.org/wiki/国際規格",
+   "genre": "その他",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T09:49:55+00:00"
+  },
+  {
+   "topic": "国際規格",
+   "text": "多国で輸出入に関係する事業を行う 企業 が 消費者 から製品の信用を得るために、国際規格への適合をうたう場合も多い。",
+   "source": "https://ja.wikipedia.org/wiki/国際規格",
+   "genre": "その他",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T09:49:55+00:00"
+  },
+  {
+   "topic": "国際規格",
+   "text": "また バイオ 燃料や 燃料電池 など、新 エネルギー の普及を効率的に促すうえでも用いられる。",
+   "source": "https://ja.wikipedia.org/wiki/国際規格",
+   "genre": "科学",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T09:49:55+00:00"
+  },
+  {
+   "topic": "国際規格",
+   "text": "国際規格はそのまま使われることもあるし、各国（各地域）の実情に合わせて修正して使われることもある。",
+   "source": "https://ja.wikipedia.org/wiki/国際規格",
+   "genre": "その他",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T09:49:55+00:00"
+  },
+  {
+   "topic": "GFortran",
+   "text": "バージョン4.5までの OpenMP マルチプラットフォーム共有メモリマルチプロセッシングをサポートしている [ 4 ] 。",
+   "source": "https://ja.wikipedia.org/wiki/GNU_Fortran",
+   "genre": "その他",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T09:49:55+00:00"
+  },
+  {
+   "topic": "GFortran",
+   "text": "Gfortranはまた、g77でサポートされているほとんどの言語拡張やコンパイルオプションと互換性があり、Fortran言語の他の多くの一般的な機能拡張と互換性がある [ 5 ] 。",
+   "source": "https://ja.wikipedia.org/wiki/GNU_Fortran",
+   "genre": "言葉",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T09:49:55+00:00"
+  },
+  {
+   "topic": "GFortran",
+   "text": "GFortranは2003年1月に G95 から枝分かれし、2005年4月にリリースされたGCC version 4.0.x以降、古いg77コンパイラを置き換える形で開発された [ 6 ] 。",
+   "source": "https://ja.wikipedia.org/wiki/GNU_Fortran",
+   "genre": "その他",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T09:49:55+00:00"
+  },
+  {
+   "topic": "GFortran",
+   "text": "GCCの開発者によれば、二つのコードベースは現在、全く異なっている [ 7 ] 。",
+   "source": "https://ja.wikipedia.org/wiki/GNU_Fortran",
+   "genre": "その他",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T09:49:55+00:00"
+  },
+  {
+   "topic": "GFortran",
+   "text": "2010年以降、フロントエンドはGCCプロジェクトの他の部分と同様にC++に移行されたが、以前はCで書かれていた [ 8 ] 。",
+   "source": "https://ja.wikipedia.org/wiki/GNU_Fortran",
+   "genre": "その他",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T09:49:55+00:00"
+  },
+  {
+   "topic": "行為判定",
+   "text": "（ 2023年1月 ） 行為判定 （こういはんてい）とは テーブルトークRPG （TRPG）における代表的な用語のひとつ。",
+   "source": "https://ja.wikipedia.org/wiki/行為判定",
+   "genre": "その他",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T09:49:55+00:00"
+  },
+  {
+   "topic": "行為判定",
+   "text": "プレイヤーキャラクター が試みようとするなんらかの行為の正否、達成度などを確定する作業を指す。",
+   "source": "https://ja.wikipedia.org/wiki/行為判定",
+   "genre": "その他",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T09:49:55+00:00"
+  },
+  {
+   "topic": "行為判定",
+   "text": "「行動判定」、もしくは単に「判定」などと呼ぶこともある。",
+   "source": "https://ja.wikipedia.org/wiki/行為判定",
+   "genre": "その他",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T09:49:55+00:00"
+  },
+  {
+   "topic": "行為判定",
+   "text": "初期のTRPGでは鍵開け、毒などへの抵抗、鉄棒を折り曲げる等の行為それぞれに異なる判定のルールが適用される場合があった。",
+   "source": "https://ja.wikipedia.org/wiki/行為判定",
+   "genre": "その他",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T09:49:55+00:00"
+  },
+  {
+   "topic": "行為判定",
+   "text": "これらを汎用的な一つのルールで処理しようとした方式を「一般行為判定」と呼ぶことがある。",
+   "source": "https://ja.wikipedia.org/wiki/行為判定",
+   "genre": "その他",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T09:49:55+00:00"
+  },
+  {
+   "topic": "行為判定",
+   "text": "ただし、その場合でも、戦闘だけは別個のルールで処理される場合も多い。",
+   "source": "https://ja.wikipedia.org/wiki/行為判定",
+   "genre": "その他",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T09:49:55+00:00"
+  },
+  {
+   "topic": "ゲームフィールド",
+   "text": "サッカーフィールド、ラグビーフィールドなどの総称。",
+   "source": "https://ja.wikipedia.org/wiki/ゲーム・フィールド",
+   "genre": "その他",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T09:49:55+00:00"
+  },
+  {
+   "topic": "ゲームフィールド",
+   "text": "コート (スポーツ) の項目も参照。",
+   "source": "https://ja.wikipedia.org/wiki/ゲーム・フィールド",
+   "genre": "その他",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T09:49:55+00:00"
+  },
+  {
+   "topic": "ゲームフィールド",
+   "text": "サバイバルゲーム で戦場として設定された一定のエリアのこと。",
+   "source": "https://ja.wikipedia.org/wiki/ゲーム・フィールド",
+   "genre": "その他",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T09:49:55+00:00"
+  },
+  {
+   "topic": "ゲームフィールド",
+   "text": "コンピュータゲーム で戦場として設定された一定のエリアのこと。",
+   "source": "https://ja.wikipedia.org/wiki/ゲーム・フィールド",
+   "genre": "技術",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T09:49:55+00:00"
+  },
+  {
+   "topic": "ゲームフィールド",
+   "text": "日本のTRPG販売会社である 有限会社ゲーム・フィールド社 のこと。",
+   "source": "https://ja.wikipedia.org/wiki/ゲーム・フィールド",
+   "genre": "その他",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T09:49:55+00:00"
+  },
+  {
+   "topic": "ゲームフィールド",
+   "text": "ファーイースト・アミューズメント・リサーチ の項目を参照。",
+   "source": "https://ja.wikipedia.org/wiki/ゲーム・フィールド",
+   "genre": "その他",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T09:49:55+00:00"
+  },
+  {
+   "topic": "佐々木亮 (漫画家)",
+   "text": "本人も使用している 愛称 は「ささりょー」、 自画像 的キャラクターとして「しまねこ」が存在する。",
+   "source": "https://ja.wikipedia.org/wiki/佐々木亮_(漫画家)",
+   "genre": "その他",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T09:49:55+00:00"
+  },
+  {
+   "topic": "佐々木亮 (漫画家)",
+   "text": "作風は柔らかめのタッチで、ほんわかした雰囲気の絵柄と内容が特徴。",
+   "source": "https://ja.wikipedia.org/wiki/佐々木亮_(漫画家)",
+   "genre": "その他",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T09:49:55+00:00"
+  },
+  {
+   "topic": "佐々木亮 (漫画家)",
+   "text": "オリジナル作品の原作を担当する 藤浪智之 は、佐々木亮の 配偶者 である [ 4 ] 。",
+   "source": "https://ja.wikipedia.org/wiki/佐々木亮_(漫画家)",
+   "genre": "その他",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T09:49:55+00:00"
+  },
+  {
+   "topic": "佐々木亮 (漫画家)",
+   "text": "ゲームが好きなのは弟の影響で、 テーブルトークRPG も弟が買っていた雑誌で知った。",
+   "source": "https://ja.wikipedia.org/wiki/佐々木亮_(漫画家)",
+   "genre": "その他",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T09:49:55+00:00"
+  },
+  {
+   "topic": "佐々木亮 (漫画家)",
+   "text": "日常生活でも事あるごとに、藤浪と「ゲームならこういうデザイン、こういう解釈になる」といった会話をしているという [ 5 ] 。",
+   "source": "https://ja.wikipedia.org/wiki/佐々木亮_(漫画家)",
+   "genre": "その他",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T09:49:55+00:00"
+  },
+  {
+   "topic": "佐々木亮 (漫画家)",
+   "text": "『 マンションズ&ドラゴンズ 』を執筆する頃から、一連の作業を パソコン に移行している。",
+   "source": "https://ja.wikipedia.org/wiki/佐々木亮_(漫画家)",
+   "genre": "その他",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T09:49:55+00:00"
+  },
+  {
+   "topic": "サンセットゲームズ",
+   "text": "また、 エポック社 、 SPI社 、 ホビージャパン などが過去に販売していたシミュレーションゲームを復刻・販売している。",
+   "source": "https://ja.wikipedia.org/wiki/サンセットゲームズ",
+   "genre": "その他",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T09:49:55+00:00"
+  },
+  {
+   "topic": "サンセットゲームズ",
+   "text": "同社の代表である古角 博昭は、 大阪 に本部を置くゲームサークル「ミドル・アース」の会長も務めており、サンセットゲームズの起業もこのサークル活動に由来する。",
+   "source": "https://ja.wikipedia.org/wiki/サンセットゲームズ",
+   "genre": "その他",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T09:49:55+00:00"
+  },
+  {
+   "topic": "プレイヤーキャラクター",
+   "text": "四角の中には、冒険中に身に着けている装備と所持しているアイテムを示すアイコンが描かれている。",
+   "source": "https://ja.wikipedia.org/wiki/プレイヤーキャラクター",
+   "genre": "その他",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T09:49:55+00:00"
+  },
+  {
+   "topic": "プレイヤーキャラクター",
+   "text": "体力や経験値などの統計も表示されている。",
+   "source": "https://ja.wikipedia.org/wiki/プレイヤーキャラクター",
+   "genre": "その他",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T09:49:55+00:00"
+  },
+  {
+   "topic": "プレイヤーキャラクター",
+   "text": "ゲーム『 Celeste 』内で、プレイヤーキャラクターの マデリン （ 英語版 ） （左）が建物の外で ノンプレイヤーキャラクター と会話している。",
+   "source": "https://ja.wikipedia.org/wiki/プレイヤーキャラクター",
+   "genre": "その他",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T09:49:55+00:00"
+  },
+  {
+   "topic": "プレイヤーキャラクター",
+   "text": "反対に、プレイヤーが制御できないキャラクターは、 ノンプレイヤーキャラクター （NPC）と呼ばれる。",
+   "source": "https://ja.wikipedia.org/wiki/プレイヤーキャラクター",
+   "genre": "その他",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T09:49:55+00:00"
+  },
+  {
+   "topic": "プレイヤーキャラクター",
+   "text": "NPCの行動は、コンピュータゲームではゲーム側から制御され、テーブルトークRPGでは審判を務める ゲームマスター により、ルールに従って制御される。",
+   "source": "https://ja.wikipedia.org/wiki/プレイヤーキャラクター",
+   "genre": "技術",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T09:49:55+00:00"
+  },
+  {
+   "topic": "プレイヤーキャラクター",
+   "text": "コンピュータゲームでは通常、各プレイヤーごとに1人のプレイヤーキャラクターが存在する。",
+   "source": "https://ja.wikipedia.org/wiki/プレイヤーキャラクター",
+   "genre": "技術",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T09:49:55+00:00"
+  },
+  {
+   "topic": "落合なごみ",
+   "text": "信頼できる情報源 の提供に、ご協力をお願いします。",
+   "source": "https://ja.wikipedia.org/wiki/落合なごみ",
+   "genre": "技術",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T09:49:55+00:00"
+  },
+  {
+   "topic": "落合なごみ",
+   "text": "テーブルトークRPG 、 ボードゲーム などを題材とした作品を制作。",
+   "source": "https://ja.wikipedia.org/wiki/落合なごみ",
+   "genre": "その他",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T09:49:55+00:00"
+  },
+  {
+   "topic": "落合なごみ",
+   "text": "「パ先生」名義でも活動している。",
+   "source": "https://ja.wikipedia.org/wiki/落合なごみ",
+   "genre": "その他",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T09:49:55+00:00"
+  },
+  {
+   "topic": "落合なごみ",
+   "text": "- 河嶋陶一朗 、冒険企画局と共著。",
+   "source": "https://ja.wikipedia.org/wiki/落合なごみ",
+   "genre": "その他",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T09:49:55+00:00"
+  },
+  {
+   "topic": "落合なごみ",
+   "text": "『まるごと一冊冒険企画局』 新紀元社 - コミック、『ピーカーブー』小説（ ろくごまるに 作）の挿絵。",
+   "source": "https://ja.wikipedia.org/wiki/落合なごみ",
+   "genre": "その他",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T09:49:55+00:00"
+  },
+  {
+   "topic": "落合なごみ",
+   "text": "「ゲームぎゃざ」「やっぱりボードゲームが好き」のコーナーを担当。",
+   "source": "https://ja.wikipedia.org/wiki/落合なごみ",
+   "genre": "その他",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T09:49:55+00:00"
+  },
+  {
+   "topic": "RPGamer",
+   "text": "2003年3月に創刊された。",
+   "source": "https://ja.wikipedia.org/wiki/RPGamer",
+   "genre": "その他",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T09:49:55+00:00"
+  },
+  {
+   "topic": "RPGamer",
+   "text": "3・6・9・12月に発行されていて、定価3150円と価格が非常に高いが、毎号ゲームが付録されているのが特徴である。",
+   "source": "https://ja.wikipedia.org/wiki/RPGamer",
+   "genre": "その他",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T09:49:55+00:00"
+  },
+  {
+   "topic": "RPGamer",
+   "text": "2006年9月のVol.15をもって休刊したが、記事の内容などは 2007年 に創刊された新雑誌『 季刊R・P・G 』に引継がれている。",
+   "source": "https://ja.wikipedia.org/wiki/RPGamer",
+   "genre": "その他",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T09:49:55+00:00"
+  },
+  {
+   "topic": "RPGamer",
+   "text": "そのため雑誌の構成としてもプレイングのガイダンスなどの入門用記事は皆無で、コアでヘビーな記事が中心になっている。",
+   "source": "https://ja.wikipedia.org/wiki/RPGamer",
+   "genre": "その他",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T09:49:55+00:00"
+  },
+  {
+   "topic": "RPGamer",
+   "text": "また、毎号テーマに沿った特集を組んでおり、往年の『 RPGマガジン 』と非常に似通った構成になっている。",
+   "source": "https://ja.wikipedia.org/wiki/RPGamer",
+   "genre": "その他",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T09:49:55+00:00"
+  },
+  {
+   "topic": "RPGamer",
+   "text": "後期は d20システム の熱心なサポートを行っており、d20システムの海外製品紹介やオリジナルシナリオなどの掲載も行っていた。",
+   "source": "https://ja.wikipedia.org/wiki/RPGamer",
+   "genre": "その他",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T09:49:55+00:00"
+  },
+  {
+   "topic": "コンベンション (TRPG)",
+   "text": "（ 2012年11月 ） テーブルトークRPG (TRPG) における 「コンベンション」 とは、TRPGを遊ぶための場を設けたゲームイベントのことである。",
+   "source": "https://ja.wikipedia.org/wiki/コンベンション_(TRPG)",
+   "genre": "その他",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T09:49:55+00:00"
+  },
+  {
+   "topic": "コンベンション (TRPG)",
+   "text": "この時点ではボードゲームとミニチュアゲームの会であった。",
+   "source": "https://ja.wikipedia.org/wiki/コンベンション_(TRPG)",
+   "genre": "その他",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T09:49:55+00:00"
+  },
+  {
+   "topic": "コンベンション (TRPG)",
+   "text": "世界最初のTRPGである ダンジョンズ&ドラゴンズ が74年に発売され、イベントへの企業 TSR の参入は76年に行われた。",
+   "source": "https://ja.wikipedia.org/wiki/コンベンション_(TRPG)",
+   "genre": "その他",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T09:49:55+00:00"
+  },
+  {
+   "topic": "コンベンション (TRPG)",
+   "text": "現在、世界の代表的なコンベンションとして、アマチュア開催のコンベンションとして知られているものにはロペコン、企業開催のコンベンションとして知られているものにはジェンコンがある。",
+   "source": "https://ja.wikipedia.org/wiki/コンベンション_(TRPG)",
+   "genre": "その他",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T09:49:55+00:00"
+  },
+  {
+   "topic": "コンベンション (TRPG)",
+   "text": "アメリカのアナログゲームの宿泊型イベントである オリジン・ゲーム・フェア や Gen Con （ジェンコン）の日本版として1996年よりゲーム出版懇話会が主催に開始された。",
+   "source": "https://ja.wikipedia.org/wiki/コンベンション_(TRPG)",
+   "genre": "その他",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T09:49:55+00:00"
+  },
+  {
+   "topic": "ローズ・トゥ・ロード",
+   "text": "デザイナーは 門倉直人 で、 1984年 6月、 ツクダホビー から発売された。",
+   "source": "https://ja.wikipedia.org/wiki/ローズ・トゥ・ロード",
+   "genre": "その他",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T09:49:55+00:00"
+  },
+  {
+   "topic": "ローズ・トゥ・ロード",
+   "text": "以降、4回に渡ってルールを変えながら制作されたが、1993年の『ファー・ローズ・トゥ・ロード』以外は一貫して門倉直人がゲームデザインを行っている。",
+   "source": "https://ja.wikipedia.org/wiki/ローズ・トゥ・ロード",
+   "genre": "その他",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T09:49:55+00:00"
+  },
+  {
+   "topic": "ローズ・トゥ・ロード",
+   "text": "1984年版では「四王国時代」を背景としている。",
+   "source": "https://ja.wikipedia.org/wiki/ローズ・トゥ・ロード",
+   "genre": "歴史",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T09:49:55+00:00"
+  },
+  {
+   "topic": "ローズ・トゥ・ロード",
+   "text": "後に出版元を 遊演体 に変え、舞台となる時代と共に版を変えた。",
+   "source": "https://ja.wikipedia.org/wiki/ローズ・トゥ・ロード",
+   "genre": "歴史",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T09:49:55+00:00"
+  },
+  {
+   "topic": "ローズ・トゥ・ロード",
+   "text": "「薄暗がりの時代」の『ビヨンド・ローズ・トゥ・ロード』（1989年）、「大旗戦争（たいきせんそう）」前後の時代を舞台とする『ファー・ローズ・トゥ・ロード』（1993年）を経て、2002年7月5日発行元を エンターブレイン に変え、再び『ローズ・トゥ・ロード』の名前でリニューアルしている。",
+   "source": "https://ja.wikipedia.org/wiki/ローズ・トゥ・ロード",
+   "genre": "歴史",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T09:49:55+00:00"
+  },
+  {
+   "topic": "ローズ・トゥ・ロード",
+   "text": "各タイトルの略称は以下の通り。",
+   "source": "https://ja.wikipedia.org/wiki/ローズ・トゥ・ロード",
+   "genre": "その他",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T09:49:55+00:00"
+  },
+  {
+   "topic": "ダンジョンズ&ドラゴンズ",
+   "text": "これを原作とした2023年のリブート 映画版 については「 ダンジョンズ&ドラゴンズ/アウトローたちの誇り 」をご覧ください。",
+   "source": "https://ja.wikipedia.org/wiki/ダンジョンズ&ドラゴンズ",
+   "genre": "その他",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T09:49:55+00:00"
+  },
+  {
+   "topic": "ダンジョンズ&ドラゴンズ",
+   "text": "Basic set系（ 新和 と メディアワークス が翻訳発売した）については「 クラシック・ダンジョンズ&ドラゴンズ 」をご覧ください。",
+   "source": "https://ja.wikipedia.org/wiki/ダンジョンズ&ドラゴンズ",
+   "genre": "その他",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T09:49:55+00:00"
+  },
+  {
+   "topic": "ダンジョンズ&ドラゴンズ",
+   "text": "このゲームではダンジョンマスター( Dungeon Master )と呼ばれる ゲームマスター が、 マスタースクリーン （ 机 上 ついたて ）を使いシナリオを説明している。",
+   "source": "https://ja.wikipedia.org/wiki/ダンジョンズ&ドラゴンズ",
+   "genre": "その他",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T09:49:55+00:00"
+  },
+  {
+   "topic": "ダンジョンズ&ドラゴンズ",
+   "text": "日本語版はいくつかの出版社から翻訳されていたが、 2022年 6月までは ホビージャパン 社によって発売されていて、12月からは ウィザーズ・オブ・ザ・コースト 日本支社から発売されている。",
+   "source": "https://ja.wikipedia.org/wiki/ダンジョンズ&ドラゴンズ",
+   "genre": "言葉",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T09:49:55+00:00"
+  },
+  {
+   "topic": "ダンジョンズ&ドラゴンズ",
+   "text": "その後、何度か改版を重ねたが、 1997年 に ウィザーズ・オブ・ザ・コースト （ Wizards of the Coast ：略称WotC）社がTSR社を買収して以降は同社より販売されている。",
+   "source": "https://ja.wikipedia.org/wiki/ダンジョンズ&ドラゴンズ",
+   "genre": "その他",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T09:49:55+00:00"
+  },
+  {
+   "topic": "ダンジョンズ&ドラゴンズ",
+   "text": "2000年 には大幅に変更を加えた第3版が発売され、2008年に第4版、2014年には第5版が発売された。",
+   "source": "https://ja.wikipedia.org/wiki/ダンジョンズ&ドラゴンズ",
+   "genre": "その他",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T09:49:55+00:00"
+  },
+  {
+   "topic": "精神医学",
+   "text": "精神医学に反対する運動については「 反精神医学 」をご覧ください。",
+   "source": "https://ja.wikipedia.org/wiki/精神医学",
+   "genre": "その他",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T09:49:55+00:00"
+  },
+  {
+   "topic": "精神医学",
+   "text": "1899年の エミール・クレペリン の功績によって、精神障害を分類することが試みられ、これは現在の アメリカ精神医学会 （APA）による『 精神障害の診断と統計マニュアル 』（DSM）が作成されるに至っている。",
+   "source": "https://ja.wikipedia.org/wiki/精神医学",
+   "genre": "その他",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T09:49:55+00:00"
+  },
+  {
+   "topic": "精神医学",
+   "text": "生物学的な識別に基づかない 記述精神医学 である。",
+   "source": "https://ja.wikipedia.org/wiki/精神医学",
+   "genre": "生き物",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T09:49:55+00:00"
+  },
+  {
+   "topic": "精神医学",
+   "text": "1950年代より 精神科の薬 が登場し、生物学的精神医学が全盛を迎えたほか、 ECT （電気痙攣療法）や改良を加えたmECT（修正型電気痙攣療法）、 rTMS （反復経頭蓋磁気刺激法）といった、新しい神経精神医学的な治療法も出現している。",
+   "source": "https://ja.wikipedia.org/wiki/精神医学",
+   "genre": "生き物",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T09:49:55+00:00"
+  },
+  {
+   "topic": "精神医学",
+   "text": "精神障害が増悪・ 寛解 を繰り返すことから、何らかの ウイルス感染症 が精神障害の病因に関わっていると疑われている [ 4 ] 。",
+   "source": "https://ja.wikipedia.org/wiki/精神医学",
+   "genre": "その他",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T09:49:55+00:00"
+  },
+  {
+   "topic": "精神医学",
+   "text": "事項を箇条書きで列挙しただけの節は、本文として組み入れるか、または 整理・除去する必要があります 。",
+   "source": "https://ja.wikipedia.org/wiki/精神医学",
+   "genre": "その他",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T09:49:55+00:00"
+  },
+  {
+   "topic": "RPGマガジン",
+   "text": "「アールピージーマガジン」と発音されることもあるが、正しくは「ロールプレイングゲームマガジン」である。",
+   "source": "https://ja.wikipedia.org/wiki/RPGマガジン",
+   "genre": "その他",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T09:49:55+00:00"
+  },
+  {
+   "topic": "RPGマガジン",
+   "text": "同時代に出版されていた他社の同系雑誌とは異なり、資料性の高い記事が特徴となっている。",
+   "source": "https://ja.wikipedia.org/wiki/RPGマガジン",
+   "genre": "歴史",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T09:49:55+00:00"
+  },
+  {
+   "topic": "RPGマガジン",
+   "text": "1999年7月発売の8月号（通巻112号）で休刊。",
+   "source": "https://ja.wikipedia.org/wiki/RPGマガジン",
+   "genre": "その他",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T09:49:55+00:00"
+  },
+  {
+   "topic": "RPGマガジン",
+   "text": "休刊まで変わらず月刊誌として刊行。",
+   "source": "https://ja.wikipedia.org/wiki/RPGマガジン",
+   "genre": "その他",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T09:49:55+00:00"
+  },
+  {
+   "topic": "RPGマガジン",
+   "text": "当初は 中綴じ であったが、途中で 平綴じ にリニューアルした。",
+   "source": "https://ja.wikipedia.org/wiki/RPGマガジン",
+   "genre": "その他",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T09:49:55+00:00"
+  },
+  {
+   "topic": "RPGマガジン",
+   "text": "テーブルトークRPG 雑誌としては「特定のゲームシステムに依存しない、テーブルトークRPGという遊びそのものの魅力を伝えることをメインとする」という他にない独特の傾向があった。",
+   "source": "https://ja.wikipedia.org/wiki/RPGマガジン",
+   "genre": "その他",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T09:49:55+00:00"
+  },
+  {
+   "topic": "拡張パック",
+   "text": "拡張パックは、 拡張パッケージ 、 アドオン （ アドイン ）などとも言われる [ 1 ] 。",
+   "source": "https://ja.wikipedia.org/wiki/サプリメント_(TRPG)",
+   "genre": "その他",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T09:49:55+00:00"
+  },
+  {
+   "topic": "拡張パック",
+   "text": "類似する言葉として プラグイン があるが、厳密には意味が異なるものの、機能を拡張する点では同様であり、拡張パックの一種として扱われる場合も多い（詳細は 機能拡張 を参照）。",
+   "source": "https://ja.wikipedia.org/wiki/サプリメント_(TRPG)",
+   "genre": "生き物",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T09:49:55+00:00"
+  },
+  {
+   "topic": "拡張パック",
+   "text": "expansion とは、新しく部品などを追加して拡張することを意味する。",
+   "source": "https://ja.wikipedia.org/wiki/サプリメント_(TRPG)",
+   "genre": "その他",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T09:49:55+00:00"
+  },
+  {
+   "topic": "拡張パック",
+   "text": "製品のユーザーがこの拡張パックを使用することで、製品の機能や性能を追加し拡張することができる。",
+   "source": "https://ja.wikipedia.org/wiki/サプリメント_(TRPG)",
+   "genre": "その他",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T09:49:55+00:00"
+  },
+  {
+   "topic": "拡張パック",
+   "text": "後からの機能の追加や拡張が行われる コンピュータ の ソフトウェア 分野や一部のゲーム（ コンピュータゲーム 、 テーブルトークRPG 、 トレーディングカードゲーム など）でよく使われるものである。",
+   "source": "https://ja.wikipedia.org/wiki/サプリメント_(TRPG)",
+   "genre": "技術",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T09:49:55+00:00"
+  },
+  {
+   "topic": "拡張パック",
+   "text": "拡張パックは機能を追加するためのものを意味するが、 マイクロソフト が同社の オペレーティングシステム である Microsoft Windows に対して配布する サービスパック （Service Pack）のように、 バグ や不具合の修正と機能拡張が同時に含まれているものもある [ 2 ] 。",
+   "source": "https://ja.wikipedia.org/wiki/サプリメント_(TRPG)",
+   "genre": "その他",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T09:49:55+00:00"
+  },
+  {
+   "topic": "力造",
+   "text": "主に テーブルトークRPG 『 デモンパラサイト 』のサプリメントやリプレイの執筆、『 セイクリッド・ドラグーン 』のゲームデザインで知られる。",
+   "source": "https://ja.wikipedia.org/wiki/力造",
+   "genre": "その他",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T09:49:55+00:00"
+  },
+  {
+   "topic": "力造",
+   "text": "グループSNEからの独立後、 フリーランス のゲームデザイナーとして活躍したのち、 2018年 よりゲーム制作集団「NEW GAME PLUS」を主宰。",
+   "source": "https://ja.wikipedia.org/wiki/力造",
+   "genre": "その他",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T09:49:55+00:00"
+  },
+  {
+   "topic": "力造",
+   "text": "また、ゲームサークルベルセルクの初代代表であり、その後は永世名誉会長となった。",
+   "source": "https://ja.wikipedia.org/wiki/力造",
+   "genre": "その他",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T09:49:55+00:00"
+  },
+  {
+   "topic": "力造",
+   "text": "2020年 6月20日 より 急性膵炎 のため入院 [ 2 ] 。",
+   "source": "https://ja.wikipedia.org/wiki/力造",
+   "genre": "その他",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T09:49:55+00:00"
+  },
+  {
+   "topic": "力造",
+   "text": "同月30日 、精密検査の結果、ステージIIIの 膵臓がん と判明していたことを発表した [ 3 ] 。",
+   "source": "https://ja.wikipedia.org/wiki/力造",
+   "genre": "その他",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T09:49:55+00:00"
+  },
+  {
+   "topic": "力造",
+   "text": "また、これまでゲーム制作集団「NEW GAME PLUS」の主宰を務めていたが、入院及び長期療養に入るため、主宰を からすば晴 に交代したことも併せて発表した [ 4 ] 。",
+   "source": "https://ja.wikipedia.org/wiki/力造",
+   "genre": "その他",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T09:49:55+00:00"
+  },
+  {
+   "topic": "現代教養文庫",
+   "text": "第2次 文庫本 ブームの1951年に創刊された。",
+   "source": "https://ja.wikipedia.org/wiki/教養文庫",
+   "genre": "その他",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T09:49:55+00:00"
+  },
+  {
+   "topic": "現代教養文庫",
+   "text": "2002年6月の社会思想社廃業により廃刊。",
+   "source": "https://ja.wikipedia.org/wiki/教養文庫",
+   "genre": "社会",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T09:49:55+00:00"
+  },
+  {
+   "topic": "現代教養文庫",
+   "text": "翻訳物を含む人文科学系の書籍やミステリーの他に、1980年代の ゲームブック ブームの火付け役とされる ファイティング・ファンタジー シリーズなどでも知られる。",
+   "source": "https://ja.wikipedia.org/wiki/教養文庫",
+   "genre": "科学",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T09:49:55+00:00"
+  },
+  {
+   "topic": "現代教養文庫",
+   "text": "2012年～2013年、電子書籍出版社 インタープレイ により、「現代教養文庫ライブラリ」として多数が電子書籍で再刊された。",
+   "source": "https://ja.wikipedia.org/wiki/教養文庫",
+   "genre": "その他",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T09:49:55+00:00"
+  },
+  {
+   "topic": "現代教養文庫",
+   "text": "黄A - 人文科学 鼠B - 社会科学 青C - 自然科学 白D - 文学・芸術・読物 赤E - 趣味・生活文化 緑F - ミステリ・ボックス また 教養カラー文庫 も出版された。",
+   "source": "https://ja.wikipedia.org/wiki/教養文庫",
+   "genre": "科学",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T09:49:55+00:00"
+  },
+  {
+   "topic": "現代教養文庫",
+   "text": "キャッチコピーは「人間の数だけ、ミステリが生まれる！",
+   "source": "https://ja.wikipedia.org/wiki/教養文庫",
+   "genre": "その他",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T09:49:55+00:00"
+  },
+  {
+   "topic": "松澤和宏",
+   "text": "1978年 、 早稲田大学第一文学部 フランス文学科卒業 [ 1 ] 。",
+   "source": "https://ja.wikipedia.org/wiki/松澤和宏",
+   "genre": "文化",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T09:49:55+00:00"
+  },
+  {
+   "topic": "松澤和宏",
+   "text": "1989年 、 大東文化大学 文学部専任講師。",
+   "source": "https://ja.wikipedia.org/wiki/松澤和宏",
+   "genre": "文化",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T09:49:55+00:00"
+  },
+  {
+   "topic": "松澤和宏",
+   "text": "1995年 、名古屋大学文学部助教授 [ 1 ] 。",
+   "source": "https://ja.wikipedia.org/wiki/松澤和宏",
+   "genre": "文化",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T09:49:55+00:00"
+  },
+  {
+   "topic": "松澤和宏",
+   "text": "2000年 、同文学研究科教授 [ 1 ] 。",
+   "source": "https://ja.wikipedia.org/wiki/松澤和宏",
+   "genre": "文化",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T09:49:55+00:00"
+  },
+  {
+   "topic": "松澤和宏",
+   "text": "2004年 、『生成論の探究 テクスト・草稿・エクリチュール』で名古屋大学文学博士 [ 2 ] 。",
+   "source": "https://ja.wikipedia.org/wiki/松澤和宏",
+   "genre": "文化",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T09:49:55+00:00"
+  },
+  {
+   "topic": "松澤和宏",
+   "text": "同書で宮沢賢治奨励賞受賞 [ 1 ] 。",
+   "source": "https://ja.wikipedia.org/wiki/松澤和宏",
+   "genre": "その他",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T09:49:55+00:00"
+  },
+  {
+   "topic": "ザ少年倶楽部",
+   "text": "講談社から発行されていた雑誌については「 少年倶楽部 」をご覧ください。",
+   "source": "https://ja.wikipedia.org/wiki/ザ少年倶楽部",
+   "genre": "その他",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T09:49:55+00:00"
+  },
+  {
+   "topic": "ザ少年倶楽部",
+   "text": "NHKエンタープライズ 制作。",
+   "source": "https://ja.wikipedia.org/wiki/ザ少年倶楽部",
+   "genre": "その他",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T09:49:55+00:00"
+  },
+  {
+   "topic": "ザ少年倶楽部",
+   "text": "2024年 1月より番組名を『 ニュージェネ! 』に変更した [ 1 ] 。",
+   "source": "https://ja.wikipedia.org/wiki/ザ少年倶楽部",
+   "genre": "その他",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T09:49:55+00:00"
+  },
+  {
+   "topic": "ザ少年倶楽部",
+   "text": "2024年 2月時点で、 BS ・ BSプレミアム4K で放送されていた [ 2 ] 。",
+   "source": "https://ja.wikipedia.org/wiki/ザ少年倶楽部",
+   "genre": "その他",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T09:49:55+00:00"
+  },
+  {
+   "topic": "ザ少年倶楽部",
+   "text": "2023年11月までは BSプレミアム ・ BS4K ・ 総合 で放送されていたほか、 ワールド・プレミアム などを通じて日本国外でも放送されていた [ 3 ] 。",
+   "source": "https://ja.wikipedia.org/wiki/ザ少年倶楽部",
+   "genre": "その他",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T09:49:55+00:00"
+  },
+  {
+   "topic": "ザ少年倶楽部",
+   "text": "『ザ少年倶楽部』時代は、 ジャニーズJr. をメインに、 ジャニーズ事務所 所属の歌手・タレントがレギュラー出演していた。",
+   "source": "https://ja.wikipedia.org/wiki/ザ少年倶楽部",
+   "genre": "歴史",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T09:49:55+00:00"
+  },
+  {
+   "topic": "SKE48",
+   "text": "名古屋市 ・ 栄 に有する専用劇場を拠点として 中京圏 を中心に活動している。",
+   "source": "https://ja.wikipedia.org/wiki/SKE48",
+   "genre": "その他",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T09:49:55+00:00"
+  },
+  {
+   "topic": "SKE48",
+   "text": "秋元康 が総合プロデュースを手掛ける AKB48グループ の1つで、 2008年 に誕生した。",
+   "source": "https://ja.wikipedia.org/wiki/SKE48",
+   "genre": "その他",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T09:49:55+00:00"
+  },
+  {
+   "topic": "SKE48",
+   "text": "ロゴなどに使用されるグループカラーは 橙色 （オレンジ色）。",
+   "source": "https://ja.wikipedia.org/wiki/SKE48",
+   "genre": "その他",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T09:49:55+00:00"
+  },
+  {
+   "topic": "SKE48",
+   "text": "運営会社および所属事務所は KeyHolder 傘下の ゼスト 、所属レーベルは avex trax （ エイベックス・エンタテインメント ）である。",
+   "source": "https://ja.wikipedia.org/wiki/SKE48",
+   "genre": "その他",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T09:49:55+00:00"
+  },
+  {
+   "topic": "SKE48",
+   "text": "2008年7月30日に第1期生が決定していて、公式サイトでは「2008年7月に誕生した」とされている。",
+   "source": "https://ja.wikipedia.org/wiki/SKE48",
+   "genre": "その他",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T09:49:55+00:00"
+  },
+  {
+   "topic": "SKE48",
+   "text": "なお、2009年の結成1周年記念公演は7月30日に行われた。",
+   "source": "https://ja.wikipedia.org/wiki/SKE48",
+   "genre": "その他",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T09:49:55+00:00"
+  },
+  {
+   "topic": "DOMOTO",
+   "text": "DOMOTO （ドウモト）は、 堂本光一 、 堂本剛 の2人による 日本 の 男性アイドルデュオ 。",
+   "source": "https://ja.wikipedia.org/wiki/KinKi_Kids",
+   "genre": "その他",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T09:49:56+00:00"
+  },
+  {
+   "topic": "DOMOTO",
+   "text": "2人とも同じ 1979年 生まれだが、学年（学齢）としては光一の方が剛よりも1つ上になる [ 9 ] 。",
+   "source": "https://ja.wikipedia.org/wiki/KinKi_Kids",
+   "genre": "その他",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T09:49:56+00:00"
+  },
+  {
+   "topic": "DOMOTO",
+   "text": "同時にDOMOTOのファンクラブをグランドオープンした [ 3 ] 。",
+   "source": "https://ja.wikipedia.org/wiki/KinKi_Kids",
+   "genre": "その他",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T09:49:56+00:00"
+  },
+  {
+   "topic": "DOMOTO",
+   "text": "1992年 8月23日 、13歳の時に初めて『 Myojo 』の取材を受け、1992年11月号で“関西からきた新入生”として紹介される [ 17 ] 。",
+   "source": "https://ja.wikipedia.org/wiki/KinKi_Kids",
+   "genre": "その他",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T09:49:56+00:00"
+  },
+  {
+   "topic": "DOMOTO",
+   "text": "初めてのテレビ出演は 近藤真彦 をはじめ、 少年隊 や 男闘呼組 、光GENJIなどジャニーズ事務所の先輩が総出演した NHK の番組で、途中で突然機会を与えられ、自分の名前を名乗るというものだった。",
+   "source": "https://ja.wikipedia.org/wiki/KinKi_Kids",
+   "genre": "その他",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T09:49:56+00:00"
+  },
+  {
+   "topic": "DOMOTO",
+   "text": "初めてのステージは光GENJIのコンサートで、光GENJIがまだ登場する前、客席の明かりもついている中、2人でステージの真ん中にバケツを持っていってその場で花火をするというもの。",
+   "source": "https://ja.wikipedia.org/wiki/KinKi_Kids",
+   "genre": "その他",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T09:49:56+00:00"
+  },
+  {
+   "topic": "荻野目慶子",
+   "text": "昭和学院高等学校 卒業 [ 3 ] 。",
+   "source": "https://ja.wikipedia.org/wiki/荻野目慶子",
+   "genre": "その他",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T09:49:56+00:00"
+  },
+  {
+   "topic": "荻野目慶子",
+   "text": "4人きょうだい（姉、弟、妹）の次女であり、妹は 歌手 の 荻野目洋子 [ 3 ] 。",
+   "source": "https://ja.wikipedia.org/wiki/荻野目慶子",
+   "genre": "その他",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T09:49:56+00:00"
+  },
+  {
+   "topic": "荻野目慶子",
+   "text": "漫画『 ガラスの仮面 』で女優に憧れ、12歳で 劇団ひまわり に入団。",
+   "source": "https://ja.wikipedia.org/wiki/荻野目慶子",
+   "genre": "その他",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T09:49:56+00:00"
+  },
+  {
+   "topic": "荻野目慶子",
+   "text": "雑誌や、映画『 獄門島 』（ 1977年 ）等に出演 [ 5 ] 。",
+   "source": "https://ja.wikipedia.org/wiki/荻野目慶子",
+   "genre": "その他",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T09:49:56+00:00"
+  },
+  {
+   "topic": "荻野目慶子",
+   "text": "1979年 、14歳のときに、舞台『 奇跡の人 』のヒロイン、 ヘレン・ケラー 役のオーディションに合格し芸能界入り。",
+   "source": "https://ja.wikipedia.org/wiki/荻野目慶子",
+   "genre": "その他",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T09:49:56+00:00"
+  },
+  {
+   "topic": "荻野目慶子",
+   "text": "その後、テレビの若者向けバラエティ番組 『 YOU 』（NHK教育）の司会や映画 『 南極物語 』への出演などで、新進若手女優として知られるようになった。",
+   "source": "https://ja.wikipedia.org/wiki/荻野目慶子",
+   "genre": "社会",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T09:49:56+00:00"
+  },
+  {
+   "topic": "三木谷浩史",
+   "text": "楽天グループ の創業者であり、代表取締役会長兼社長 [ 2 ] 。",
+   "source": "https://ja.wikipedia.org/wiki/三木谷浩史",
+   "genre": "その他",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T09:49:56+00:00"
+  },
+  {
+   "topic": "三木谷浩史",
+   "text": "高祖父は 山崎藩 主 本多忠明 。",
+   "source": "https://ja.wikipedia.org/wiki/三木谷浩史",
+   "genre": "その他",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T09:49:56+00:00"
+  },
+  {
+   "topic": "三木谷浩史",
+   "text": "明治維新 後本多家は 華族 になったが没落し、祖母は貧しい家に育つも父親の代で再興。",
+   "source": "https://ja.wikipedia.org/wiki/三木谷浩史",
+   "genre": "その他",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T09:49:56+00:00"
+  },
+  {
+   "topic": "三木谷浩史",
+   "text": "ハーバード大学経営大学院 修了 [ 13 ] 。",
+   "source": "https://ja.wikipedia.org/wiki/三木谷浩史",
+   "genre": "その他",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T09:49:56+00:00"
+  },
+  {
+   "topic": "三木谷浩史",
+   "text": "一橋大では 金融論 が専門の 花輪俊哉 教授のゼミナールに所属した。",
+   "source": "https://ja.wikipedia.org/wiki/三木谷浩史",
+   "genre": "その他",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T09:49:56+00:00"
+  },
+  {
+   "topic": "三木谷浩史",
+   "text": "卒業論文 は「企業の資金調達と資本の最適構成」 [ 14 ] 。",
+   "source": "https://ja.wikipedia.org/wiki/三木谷浩史",
+   "genre": "その他",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T09:49:56+00:00"
+  },
+  {
+   "topic": "東京",
+   "text": "地方公共団体としての東京については「 東京都 」をご覧ください。",
+   "source": "https://ja.wikipedia.org/wiki/東京",
+   "genre": "その他",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T09:49:56+00:00"
+  },
+  {
+   "topic": "東京",
+   "text": "東京都のうち、特別区が置かれている地域については「 東京都区部 」をご覧ください。",
+   "source": "https://ja.wikipedia.org/wiki/東京",
+   "genre": "その他",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T09:49:56+00:00"
+  },
+  {
+   "topic": "東京",
+   "text": "かつて東京都区部を管轄していた自治体については「 東京市 」をご覧ください。",
+   "source": "https://ja.wikipedia.org/wiki/東京",
+   "genre": "その他",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T09:49:56+00:00"
+  },
+  {
+   "topic": "東京",
+   "text": "「東京」は広域的 地方公共団体 である 東京都 を指す場合や、特に 東京都区部 を指す場合がある [ 5 ] 。",
+   "source": "https://ja.wikipedia.org/wiki/東京",
+   "genre": "その他",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T09:49:56+00:00"
+  },
+  {
+   "topic": "東京",
+   "text": "江戸 （えど） を、 佐藤信淵 の書に影響を受けた 大久保利通 が「東京」と改称することを建言し、その建言に沿って 1868年 9月3日 （ 慶応 4年 7月17日 ）に改称されたものである（ 江戸ヲ称シテ東京ト為スノ詔書 ）。",
+   "source": "https://ja.wikipedia.org/wiki/東京",
+   "genre": "その他",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T09:49:56+00:00"
+  },
+  {
+   "topic": "東京",
+   "text": "明治天皇 の二度目の 東京行幸 に合わせて 太政官 を東京へ移すこととなったが、京都に 留守官 を置いた。",
+   "source": "https://ja.wikipedia.org/wiki/東京",
+   "genre": "その他",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T09:49:56+00:00"
+  },
+  {
+   "topic": "林真理子",
+   "text": "画像提供依頼 ：本人の顔の 画像提供 をお願いします。",
+   "source": "https://ja.wikipedia.org/wiki/林真理子",
+   "genre": "その他",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T09:49:56+00:00"
+  },
+  {
+   "topic": "林真理子",
+   "text": "有限会社林真理子企画事務所 代表取締役 。",
+   "source": "https://ja.wikipedia.org/wiki/林真理子",
+   "genre": "その他",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T09:49:56+00:00"
+  },
+  {
+   "topic": "林真理子",
+   "text": "日本文藝家協会 理事長、 日本ペンクラブ 会員、株式会社 GENDA 社外取締役 [ 1 ] 。",
+   "source": "https://ja.wikipedia.org/wiki/林真理子",
+   "genre": "その他",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T09:49:56+00:00"
+  },
+  {
+   "topic": "林真理子",
+   "text": "山梨県立日川高等学校 [ 2 ] 、 日本大学藝術学部 文芸学科卒業。",
+   "source": "https://ja.wikipedia.org/wiki/林真理子",
+   "genre": "その他",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T09:49:56+00:00"
+  },
+  {
+   "topic": "林真理子",
+   "text": "コピーライター として活動の後、作家として [ 3 ] 1982年 （ 昭和 57年）に出版したエッセイ集『ルンルンを買っておうちに帰ろう』が、処女作にしてベストセラーとなった。",
+   "source": "https://ja.wikipedia.org/wiki/林真理子",
+   "genre": "その他",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T09:49:56+00:00"
+  },
+  {
+   "topic": "林真理子",
+   "text": "さらに 1986年 （昭和61年）には、『最終便に間に合えば』『京都まで』で 直木賞 を受賞し、小説家としての地位を確立した。",
+   "source": "https://ja.wikipedia.org/wiki/林真理子",
+   "genre": "その他",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T09:49:56+00:00"
+  },
+  {
+   "topic": "ホテルオークラ",
+   "text": "東京のホテルについては「 ホテルオークラ東京 」をご覧ください。",
+   "source": "https://ja.wikipedia.org/wiki/ホテルオークラ",
+   "genre": "その他",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T09:49:56+00:00"
+  },
+  {
+   "topic": "ホテルオークラ",
+   "text": "「 オークラホテル 」とは異なります。",
+   "source": "https://ja.wikipedia.org/wiki/ホテルオークラ",
+   "genre": "その他",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T09:49:56+00:00"
+  },
+  {
+   "topic": "ホテルオークラ",
+   "text": "同社のグループが運営する The Okura Tokyo は、日本では「 老舗 ホテル」とされており、 帝国ホテル東京 、 ホテルニューオータニ とともに、ホテルの「 御三家 」と称される。",
+   "source": "https://ja.wikipedia.org/wiki/ホテルオークラ",
+   "genre": "その他",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T09:49:56+00:00"
+  },
+  {
+   "topic": "ホテルオークラ",
+   "text": "2015年 10月1日よりホテルチェーン（ オークラ ホテルズ & リゾーツ ）運営部門は子会社の株式会社 オークラニッコーホテルマネジメント に承継された [ 3 ] が、 オークラ ホテルズ & リゾーツ の各ホテルについても、本項で記述する。",
+   "source": "https://ja.wikipedia.org/wiki/ホテルオークラ",
+   "genre": "その他",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T09:49:56+00:00"
+  },
+  {
+   "topic": "ホテルオークラ",
+   "text": "公職追放 により 帝国ホテル を離れた大倉は、 日本国憲法 の制定により、 華族 としての待遇も奪われる。",
+   "source": "https://ja.wikipedia.org/wiki/ホテルオークラ",
+   "genre": "法",
+   "binding": true,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T09:49:56+00:00"
+  },
+  {
+   "topic": "ホテルオークラ",
+   "text": "しかし、国内屈指の工芸家たちへ日本の美を以って諸外国の貴賓を迎えるホテルの理念を熱心に説き、その協力を得てホテルオークラを開業させた。",
+   "source": "https://ja.wikipedia.org/wiki/ホテルオークラ",
+   "genre": "その他",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T09:49:56+00:00"
+  },
+  {
+   "topic": "六本木",
+   "text": "現行 行政区画 は六本木一丁目から六本木七丁目。",
+   "source": "https://ja.wikipedia.org/wiki/六本木",
+   "genre": "その他",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T09:49:56+00:00"
+  },
+  {
+   "topic": "六本木",
+   "text": "六本木ヒルズ をはじめとした 繁華街 である。",
+   "source": "https://ja.wikipedia.org/wiki/六本木",
+   "genre": "その他",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T09:49:56+00:00"
+  },
+  {
+   "topic": "六本木",
+   "text": "また、 赤坂 ・ 虎ノ門 の付近は オフィスビル が建つ ビジネス街 にもなっている。",
+   "source": "https://ja.wikipedia.org/wiki/六本木",
+   "genre": "その他",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T09:49:56+00:00"
+  },
+  {
+   "topic": "六本木",
+   "text": "区役所の麻布地区総合支所の管轄であり [ 6 ] 、「麻布」を冠さないが 麻布 エリアに含まれる。",
+   "source": "https://ja.wikipedia.org/wiki/六本木",
+   "genre": "その他",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T09:49:56+00:00"
+  },
+  {
+   "topic": "六本木",
+   "text": "北で 赤坂 、北西で 南青山 、北東で 虎ノ門 、東で 麻布台 ・ 麻布永坂町 、南東で 麻布十番 、南で 元麻布 、西で 西麻布 と接する。",
+   "source": "https://ja.wikipedia.org/wiki/六本木",
+   "genre": "その他",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T09:49:56+00:00"
+  },
+  {
+   "topic": "六本木",
+   "text": "なお、 東麻布 とはわずかに接していない。",
+   "source": "https://ja.wikipedia.org/wiki/六本木",
+   "genre": "その他",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T09:49:56+00:00"
+  },
+  {
+   "topic": "堀江貴文",
+   "text": "かつて所有していた 競走馬 については「 ホリエモン (競走馬) 」をご覧ください。",
+   "source": "https://ja.wikipedia.org/wiki/堀江貴文",
+   "genre": "その他",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T09:49:56+00:00"
+  },
+  {
+   "topic": "堀江貴文",
+   "text": "信頼できる情報源 の提供に協力をお願いします。",
+   "source": "https://ja.wikipedia.org/wiki/堀江貴文",
+   "genre": "技術",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T09:49:56+00:00"
+  },
+  {
+   "topic": "堀江貴文",
+   "text": "愛称は ホリエモン [ 注釈 1 ] 。",
+   "source": "https://ja.wikipedia.org/wiki/堀江貴文",
+   "genre": "その他",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T09:49:56+00:00"
+  },
+  {
+   "topic": "堀江貴文",
+   "text": "堀江本人が あだ名 や ペンネーム などを名乗る際には「たかぽん」を自称 [ 18 ] 。",
+   "source": "https://ja.wikipedia.org/wiki/堀江貴文",
+   "genre": "その他",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T09:49:56+00:00"
+  },
+  {
+   "topic": "堀江貴文",
+   "text": "ライブドア （2代目）代表取締役社長 CEO 、 エイシス 代表取締役などを歴任した。",
+   "source": "https://ja.wikipedia.org/wiki/堀江貴文",
+   "genre": "その他",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T09:49:56+00:00"
+  },
+  {
+   "topic": "堀江貴文",
+   "text": "ライブドア事件 （後述）を起こしている。",
+   "source": "https://ja.wikipedia.org/wiki/堀江貴文",
+   "genre": "その他",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T09:49:56+00:00"
+  },
+  {
+   "topic": "風吹ジュン",
+   "text": "富山県 婦負郡 八尾町 （現・ 富山市 八尾町）生まれ [ 2 ] 。",
+   "source": "https://ja.wikipedia.org/wiki/風吹ジュン",
+   "genre": "その他",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T09:49:56+00:00"
+  },
+  {
+   "topic": "風吹ジュン",
+   "text": "ここから人生が暗く傾斜していく [ 2 ] 。",
+   "source": "https://ja.wikipedia.org/wiki/風吹ジュン",
+   "genre": "その他",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T09:49:56+00:00"
+  },
+  {
+   "topic": "風吹ジュン",
+   "text": "内職 やアルバイトをする日々だったという [ 9 ] 。",
+   "source": "https://ja.wikipedia.org/wiki/風吹ジュン",
+   "genre": "その他",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T09:49:56+00:00"
+  },
+  {
+   "topic": "風吹ジュン",
+   "text": "18歳で上京し、飲食店などに勤務 [ 9 ] 。",
+   "source": "https://ja.wikipedia.org/wiki/風吹ジュン",
+   "genre": "その他",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T09:49:56+00:00"
+  },
+  {
+   "topic": "風吹ジュン",
+   "text": "美留ママは風吹について「京都で何をやっていたか知らなかったけど、店では目立つ子だったわね。",
+   "source": "https://ja.wikipedia.org/wiki/風吹ジュン",
+   "genre": "その他",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T09:49:56+00:00"
+  },
+  {
+   "topic": "風吹ジュン",
+   "text": "レオがうちのお店に来るようになったのは、以前、彼女が遊びで上京したとき、私が声をかけたのよ。",
+   "source": "https://ja.wikipedia.org/wiki/風吹ジュン",
+   "genre": "その他",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T09:49:56+00:00"
+  },
+  {
+   "topic": "キャンティ (イタリア料理店)",
+   "text": "株式会社アイ・ケーディーが東京都 渋谷区 幡ヶ谷 などに展開する同名のレストランとは異なります。",
+   "source": "https://ja.wikipedia.org/wiki/キャンティ_(イタリア料理店)",
+   "genre": "その他",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T09:49:56+00:00"
+  },
+  {
+   "topic": "キャンティ (イタリア料理店)",
+   "text": "1960年 （ 昭和 35年）の創業以来、各界著名人・文化人が利用する高級レストランとして知られる。",
+   "source": "https://ja.wikipedia.org/wiki/キャンティ_(イタリア料理店)",
+   "genre": "文化",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T09:49:56+00:00"
+  },
+  {
+   "topic": "キャンティ (イタリア料理店)",
+   "text": "店名は キャンティ・ワイン にちなむ。",
+   "source": "https://ja.wikipedia.org/wiki/キャンティ_(イタリア料理店)",
+   "genre": "その他",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T09:49:56+00:00"
+  },
+  {
+   "topic": "キャンティ (イタリア料理店)",
+   "text": "祖父は 大政奉還 の立役者である伯爵 後藤象二郎 。",
+   "source": "https://ja.wikipedia.org/wiki/キャンティ_(イタリア料理店)",
+   "genre": "その他",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T09:49:56+00:00"
+  },
+  {
+   "topic": "キャンティ (イタリア料理店)",
+   "text": "若き頃に パリ へ遊学し、写真家 ロバート・キャパ と交友し [ 1 ] 、 フランス映画 の日本輸入に携わった。",
+   "source": "https://ja.wikipedia.org/wiki/キャンティ_(イタリア料理店)",
+   "genre": "その他",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T09:49:56+00:00"
+  },
+  {
+   "topic": "キャンティ (イタリア料理店)",
+   "text": "1938年 （昭和13年）にピアニストの 原智恵子 と結婚し、長男の 川添象郎 （本名：川添象多郎）、次男の川添光郎が生まれた。",
+   "source": "https://ja.wikipedia.org/wiki/キャンティ_(イタリア料理店)",
+   "genre": "その他",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T09:49:56+00:00"
+  },
+  {
+   "topic": "情報技術",
+   "text": "その他のITの用途については「 IT 」を、通信を含めた広義の概念については「 情報通信技術 」をご覧ください。",
+   "source": "https://ja.wikipedia.org/wiki/情報技術",
+   "genre": "技術",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T09:49:56+00:00"
+  },
+  {
+   "topic": "情報技術",
+   "text": "ITは一般的に、 業務運用 （ 英語版 ） の文脈の中で用いられ、個人的な用途や 娯楽のための技術 （ 英語版 ） とは異なる [ 3 ] 。",
+   "source": "https://ja.wikipedia.org/wiki/情報技術",
+   "genre": "技術",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T09:49:56+00:00"
+  },
+  {
+   "topic": "情報技術",
+   "text": "ITは通信を含めた概念である 情報通信技術 (ICT) の一部である。",
+   "source": "https://ja.wikipedia.org/wiki/情報技術",
+   "genre": "技術",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T09:49:56+00:00"
+  },
+  {
+   "topic": "情報技術",
+   "text": "しかし、現在の意味での情報技術 ( information technology ) という言葉が初めて登場したのは、1958年に ハーバード・ビジネス・レビュー に掲載された論文である。",
+   "source": "https://ja.wikipedia.org/wiki/情報技術",
+   "genre": "技術",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T09:49:56+00:00"
+  },
+  {
+   "topic": "情報技術",
+   "text": "我々はそれを情報技術と呼ぶことにする。",
+   "source": "https://ja.wikipedia.org/wiki/情報技術",
+   "genre": "技術",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T09:49:56+00:00"
+  },
+  {
+   "topic": "情報技術",
+   "text": "この用語は、一般的にコンピュータと コンピュータネットワーク の 同義語 として使用されるが、 テレビ や 電話 などの他の情報配信技術も含まれる。",
+   "source": "https://ja.wikipedia.org/wiki/情報技術",
+   "genre": "技術",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T09:49:56+00:00"
+  },
+  {
+   "topic": "銀座",
+   "text": "その他の各地域については「 銀座 (地名) 」をご覧ください。",
+   "source": "https://ja.wikipedia.org/wiki/銀座",
+   "genre": "その他",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T09:49:56+00:00"
+  },
+  {
+   "topic": "銀座",
+   "text": "パチンコ ・ パチスロ メーカーについては「 銀座 (企業) 」をご覧ください。",
+   "source": "https://ja.wikipedia.org/wiki/銀座",
+   "genre": "その他",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T09:49:56+00:00"
+  },
+  {
+   "topic": "銀座",
+   "text": "封建時代 ( 近世 ) の日本の政権において、 銀貨 の 鋳造 を行った組織については「 銀座 (歴史) 」をご覧ください。",
+   "source": "https://ja.wikipedia.org/wiki/銀座",
+   "genre": "歴史",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T09:49:56+00:00"
+  },
+  {
+   "topic": "銀座",
+   "text": "（ 2021年3月 ） 古い情報を 更新 する必要があります。",
+   "source": "https://ja.wikipedia.org/wiki/銀座",
+   "genre": "技術",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T09:49:56+00:00"
+  },
+  {
+   "topic": "バブル崩壊",
+   "text": "バブル崩壊についての調査・研究が進んだ時代においても、専門家ごとに詳細についての認識は異なっている。",
+   "source": "https://ja.wikipedia.org/wiki/バブル崩壊",
+   "genre": "歴史",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T09:49:56+00:00"
+  },
+  {
+   "topic": "バブル崩壊",
+   "text": "マネーサプライ の増加率は、1990年には11.7%、1991年には3.6%、1992年には0.6%となっている [ 4 ] 。",
+   "source": "https://ja.wikipedia.org/wiki/バブル崩壊",
+   "genre": "その他",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T09:49:56+00:00"
+  },
+  {
+   "topic": "バブル崩壊",
+   "text": "ただし、マネーサプライ増加率の減少はマイナスになるほどのものではなかった。",
+   "source": "https://ja.wikipedia.org/wiki/バブル崩壊",
+   "genre": "その他",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T09:49:56+00:00"
+  },
+  {
+   "topic": "バブル崩壊",
+   "text": "政府は、日銀の 公定歩合 の急激な引き上げに続き、不動産の 総量規制 、 地価税 の創設、 固定資産税 の課税強化、土地取引きの届け出制、 特別土地保有税 の見直し、譲渡所得の課税強化、土地取得金利分の損益通算繰り入れを認めないなどの対策を打ち出していった [ 5 ] 。",
+   "source": "https://ja.wikipedia.org/wiki/バブル崩壊",
+   "genre": "その他",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T09:49:56+00:00"
+  },
+  {
+   "topic": "バブル崩壊",
+   "text": "日本銀行総裁の 三重野康 は「平成の鬼平」と評価されていたが、2010年時点での専門家の間では、行き過ぎたバブル潰しであったという評価になっている [ 6 ] 。",
+   "source": "https://ja.wikipedia.org/wiki/バブル崩壊",
+   "genre": "その他",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T09:49:56+00:00"
+  },
+  {
+   "topic": "バブル崩壊",
+   "text": "西村吉正 は「資産価格の高騰で国民の間に格差ができた。",
+   "source": "https://ja.wikipedia.org/wiki/バブル崩壊",
+   "genre": "その他",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T09:49:56+00:00"
   }
  ],
  "read": {
@@ -397644,7 +403512,95 @@
   "https://ja.wikipedia.org/wiki/シングル": "2026-09-08T09:45:13+00:00",
   "https://ja.wikipedia.org/wiki/松任谷由実": "2026-09-08T09:45:14+00:00",
   "https://ja.wikipedia.org/wiki/尾崎豊": "2026-09-08T09:45:14+00:00",
-  "https://ja.wikipedia.org/wiki/新潮社": "2026-09-08T09:45:14+00:00"
+  "https://ja.wikipedia.org/wiki/新潮社": "2026-09-08T09:45:14+00:00",
+  "https://ja.wikipedia.org/wiki/短絡評価": "2026-09-08T09:49:43+00:00",
+  "https://ja.wikipedia.org/wiki/リファレンス実装": "2026-09-08T09:49:43+00:00",
+  "https://ja.wikipedia.org/wiki/非構造化プログラミング": "2026-09-08T09:49:43+00:00",
+  "https://ja.wikipedia.org/wiki/論理プログラミング": "2026-09-08T09:49:43+00:00",
+  "https://ja.wikipedia.org/wiki/レオナルド・エーデルマン": "2026-09-08T09:49:43+00:00",
+  "https://ja.wikipedia.org/wiki/Mathematics_Genealogy_Project": "2026-09-08T09:49:43+00:00",
+  "https://ja.wikipedia.org/wiki/MAD_(雑誌)": "2026-09-08T09:49:43+00:00",
+  "https://ja.wikipedia.org/wiki/ウィリアム・カハン": "2026-09-08T09:49:43+00:00",
+  "https://ja.wikipedia.org/wiki/バトラー・ランプソン": "2026-09-08T09:49:44+00:00",
+  "https://ja.wikipedia.org/wiki/TPKアルゴリズム": "2026-09-08T09:49:44+00:00",
+  "https://ja.wikipedia.org/wiki/MMIX": "2026-09-08T09:49:44+00:00",
+  "https://ja.wikipedia.org/wiki/コンピュータ歴史博物館": "2026-09-08T09:49:44+00:00",
+  "https://ja.wikipedia.org/wiki/デイナ・スコット": "2026-09-08T09:49:44+00:00",
+  "https://ja.wikipedia.org/wiki/科学アカデミー_(フランス)": "2026-09-08T09:49:44+00:00",
+  "https://ja.wikipedia.org/wiki/オーレ＝ヨハン・ダール": "2026-09-08T09:49:44+00:00",
+  "https://ja.wikipedia.org/wiki/グレース・ホッパー賞": "2026-09-08T09:49:44+00:00",
+  "https://ja.wikipedia.org/wiki/アレン・ニューウェル": "2026-09-08T09:49:44+00:00",
+  "https://ja.wikipedia.org/wiki/リチャード・カープ": "2026-09-08T09:49:44+00:00",
+  "https://ja.wikipedia.org/wiki/フォン・ノイマンメダル": "2026-09-08T09:49:44+00:00",
+  "https://ja.wikipedia.org/wiki/ヤン・ルカン": "2026-09-08T09:49:44+00:00",
+  "https://ja.wikipedia.org/wiki/アミール・プヌーリ": "2026-09-08T09:49:44+00:00",
+  "https://ja.wikipedia.org/wiki/アメリカ応用数理学会": "2026-09-08T09:49:44+00:00",
+  "https://ja.wikipedia.org/wiki/リチャード・ハミング": "2026-09-08T09:49:44+00:00",
+  "https://ja.wikipedia.org/wiki/ストールマン": "2026-09-08T09:49:44+00:00",
+  "https://ja.wikipedia.org/wiki/アラン・ケイ": "2026-09-08T09:49:44+00:00",
+  "https://ja.wikipedia.org/wiki/文法チェッカー": "2026-09-08T09:49:44+00:00",
+  "https://ja.wikipedia.org/wiki/LGBTQ言語学": "2026-09-08T09:49:44+00:00",
+  "https://ja.wikipedia.org/wiki/言語地理学": "2026-09-08T09:49:44+00:00",
+  "https://ja.wikipedia.org/wiki/Modular_Audio_Recognition_Framework": "2026-09-08T09:49:44+00:00",
+  "https://ja.wikipedia.org/wiki/概念検索": "2026-09-08T09:49:44+00:00",
+  "https://ja.wikipedia.org/wiki/SpaCy": "2026-09-08T09:49:44+00:00",
+  "https://ja.wikipedia.org/wiki/SHRDLU": "2026-09-08T09:49:44+00:00",
+  "https://ja.wikipedia.org/wiki/個別言語学": "2026-09-08T09:49:44+00:00",
+  "https://ja.wikipedia.org/wiki/Google_Books_Ngram_Viewer": "2026-09-08T09:49:44+00:00",
+  "https://ja.wikipedia.org/wiki/意味ネットワーク": "2026-09-08T09:49:44+00:00",
+  "https://ja.wikipedia.org/wiki/計算言語学協会": "2026-09-08T09:49:44+00:00",
+  "https://ja.wikipedia.org/wiki/日本語コーパス": "2026-09-08T09:49:44+00:00",
+  "https://ja.wikipedia.org/wiki/文書分類": "2026-09-08T09:49:44+00:00",
+  "https://ja.wikipedia.org/wiki/パチンコ配分モデル": "2026-09-08T09:49:44+00:00",
+  "https://ja.wikipedia.org/wiki/言語系統論": "2026-09-08T09:49:44+00:00",
+  "https://ja.wikipedia.org/wiki/Elm_(プログラミング言語)": "2026-09-08T09:49:44+00:00",
+  "https://ja.wikipedia.org/wiki/ビット_(曖昧さ回避)": "2026-09-08T09:49:45+00:00",
+  "https://ja.wikipedia.org/wiki/コンストラクタ": "2026-09-08T09:49:45+00:00",
+  "https://ja.wikipedia.org/wiki/エイリアシング": "2026-09-08T09:49:45+00:00",
+  "https://ja.wikipedia.org/wiki/数学関数": "2026-09-08T09:49:45+00:00",
+  "https://ja.wikipedia.org/wiki/C++言語": "2026-09-08T09:49:45+00:00",
+  "https://ja.wikipedia.org/wiki/IBM_709": "2026-09-08T09:49:45+00:00",
+  "https://ja.wikipedia.org/wiki/POWER_(マイクロプロセッサ)": "2026-09-08T09:49:45+00:00",
+  "https://ja.wikipedia.org/wiki/IBM_Public_License": "2026-09-08T09:49:45+00:00",
+  "https://ja.wikipedia.org/wiki/WebSphere": "2026-09-08T09:49:45+00:00",
+  "https://ja.wikipedia.org/wiki/インヘリタンス": "2026-09-08T09:49:45+00:00",
+  "https://ja.wikipedia.org/wiki/GCOS": "2026-09-08T09:49:45+00:00",
+  "https://ja.wikipedia.org/wiki/UCSD_p-System": "2026-09-08T09:49:45+00:00",
+  "https://ja.wikipedia.org/wiki/東京大学出版": "2026-09-08T09:49:45+00:00",
+  "https://ja.wikipedia.org/wiki/計算流体力学": "2026-09-08T09:49:45+00:00",
+  "https://ja.wikipedia.org/wiki/国際規格": "2026-09-08T09:49:45+00:00",
+  "https://ja.wikipedia.org/wiki/GNU_Fortran": "2026-09-08T09:49:45+00:00",
+  "https://ja.wikipedia.org/wiki/行為判定": "2026-09-08T09:49:45+00:00",
+  "https://ja.wikipedia.org/wiki/ゲーム・フィールド": "2026-09-08T09:49:45+00:00",
+  "https://ja.wikipedia.org/wiki/佐々木亮_(漫画家)": "2026-09-08T09:49:45+00:00",
+  "https://ja.wikipedia.org/wiki/サンセットゲームズ": "2026-09-08T09:49:45+00:00",
+  "https://ja.wikipedia.org/wiki/プレイヤーキャラクター": "2026-09-08T09:49:45+00:00",
+  "https://ja.wikipedia.org/wiki/落合なごみ": "2026-09-08T09:49:45+00:00",
+  "https://ja.wikipedia.org/wiki/RPGamer": "2026-09-08T09:49:45+00:00",
+  "https://ja.wikipedia.org/wiki/コンベンション_(TRPG)": "2026-09-08T09:49:45+00:00",
+  "https://ja.wikipedia.org/wiki/ローズ・トゥ・ロード": "2026-09-08T09:49:45+00:00",
+  "https://ja.wikipedia.org/wiki/ダンジョンズ&ドラゴンズ": "2026-09-08T09:49:45+00:00",
+  "https://ja.wikipedia.org/wiki/精神医学": "2026-09-08T09:49:45+00:00",
+  "https://ja.wikipedia.org/wiki/RPGマガジン": "2026-09-08T09:49:46+00:00",
+  "https://ja.wikipedia.org/wiki/サプリメント_(TRPG)": "2026-09-08T09:49:46+00:00",
+  "https://ja.wikipedia.org/wiki/力造": "2026-09-08T09:49:46+00:00",
+  "https://ja.wikipedia.org/wiki/教養文庫": "2026-09-08T09:49:46+00:00",
+  "https://ja.wikipedia.org/wiki/松澤和宏": "2026-09-08T09:49:46+00:00",
+  "https://ja.wikipedia.org/wiki/ザ少年倶楽部": "2026-09-08T09:49:52+00:00",
+  "https://ja.wikipedia.org/wiki/SKE48": "2026-09-08T09:49:52+00:00",
+  "https://ja.wikipedia.org/wiki/KinKi_Kids": "2026-09-08T09:49:53+00:00",
+  "https://ja.wikipedia.org/wiki/荻野目慶子": "2026-09-08T09:49:53+00:00",
+  "https://ja.wikipedia.org/wiki/三木谷浩史": "2026-09-08T09:49:53+00:00",
+  "https://ja.wikipedia.org/wiki/東京": "2026-09-08T09:49:53+00:00",
+  "https://ja.wikipedia.org/wiki/林真理子": "2026-09-08T09:49:53+00:00",
+  "https://ja.wikipedia.org/wiki/ホテルオークラ": "2026-09-08T09:49:53+00:00",
+  "https://ja.wikipedia.org/wiki/六本木": "2026-09-08T09:49:53+00:00",
+  "https://ja.wikipedia.org/wiki/堀江貴文": "2026-09-08T09:49:53+00:00",
+  "https://ja.wikipedia.org/wiki/風吹ジュン": "2026-09-08T09:49:53+00:00",
+  "https://ja.wikipedia.org/wiki/キャンティ_(イタリア料理店)": "2026-09-08T09:49:53+00:00",
+  "https://ja.wikipedia.org/wiki/情報技術": "2026-09-08T09:49:53+00:00",
+  "https://ja.wikipedia.org/wiki/銀座": "2026-09-08T09:49:53+00:00",
+  "https://ja.wikipedia.org/wiki/バブル崩壊": "2026-09-08T09:49:53+00:00"
  },
  "frontier": [
   "https://ja.wikipedia.org/wiki/UI%E3%81%A8UX",
@@ -397736,79 +403692,6 @@
   "https://ja.wikipedia.org/wiki/Wikiversity:%E3%82%A6%E3%82%A3%E3%82%AD%E3%83%90%E3%83%BC%E3%82%B7%E3%83%86%E3%82%A3%E3%81%AB%E3%81%A4%E3%81%84%E3%81%A6",
   "https://ja.wikipedia.org/wiki/Wikiversity:%E5%AD%A6%E7%BF%92%E6%95%99%E6%9D%90",
   "https://ja.wikipedia.org/wiki/Wikiversity:%E3%82%A6%E3%82%A3%E3%82%AD%E3%83%90%E3%83%BC%E3%82%B7%E3%83%86%E3%82%A3%E3%81%B8%E3%82%88%E3%81%86%E3%81%93%E3%81%9D",
-  "https://ja.wikipedia.org/wiki/短絡評価",
-  "https://ja.wikipedia.org/wiki/リファレンス実装",
-  "https://ja.wikipedia.org/wiki/非構造化プログラミング",
-  "https://ja.wikipedia.org/wiki/論理プログラミング",
-  "https://ja.wikipedia.org/wiki/レオナルド・エーデルマン",
-  "https://ja.wikipedia.org/wiki/Mathematics_Genealogy_Project",
-  "https://ja.wikipedia.org/wiki/MAD_(雑誌)",
-  "https://ja.wikipedia.org/wiki/ウィリアム・カハン",
-  "https://ja.wikipedia.org/wiki/バトラー・ランプソン",
-  "https://ja.wikipedia.org/wiki/TPKアルゴリズム",
-  "https://ja.wikipedia.org/wiki/MMIX",
-  "https://ja.wikipedia.org/wiki/コンピュータ歴史博物館",
-  "https://ja.wikipedia.org/wiki/デイナ・スコット",
-  "https://ja.wikipedia.org/wiki/科学アカデミー_(フランス)",
-  "https://ja.wikipedia.org/wiki/オーレ＝ヨハン・ダール",
-  "https://ja.wikipedia.org/wiki/グレース・ホッパー賞",
-  "https://ja.wikipedia.org/wiki/アレン・ニューウェル",
-  "https://ja.wikipedia.org/wiki/リチャード・カープ",
-  "https://ja.wikipedia.org/wiki/フォン・ノイマンメダル",
-  "https://ja.wikipedia.org/wiki/ヤン・ルカン",
-  "https://ja.wikipedia.org/wiki/アミール・プヌーリ",
-  "https://ja.wikipedia.org/wiki/アメリカ応用数理学会",
-  "https://ja.wikipedia.org/wiki/リチャード・ハミング",
-  "https://ja.wikipedia.org/wiki/ストールマン",
-  "https://ja.wikipedia.org/wiki/アラン・ケイ",
-  "https://ja.wikipedia.org/wiki/文法チェッカー",
-  "https://ja.wikipedia.org/wiki/LGBTQ言語学",
-  "https://ja.wikipedia.org/wiki/言語地理学",
-  "https://ja.wikipedia.org/wiki/Modular_Audio_Recognition_Framework",
-  "https://ja.wikipedia.org/wiki/概念検索",
-  "https://ja.wikipedia.org/wiki/SpaCy",
-  "https://ja.wikipedia.org/wiki/SHRDLU",
-  "https://ja.wikipedia.org/wiki/個別言語学",
-  "https://ja.wikipedia.org/wiki/Google_Books_Ngram_Viewer",
-  "https://ja.wikipedia.org/wiki/意味ネットワーク",
-  "https://ja.wikipedia.org/wiki/計算言語学協会",
-  "https://ja.wikipedia.org/wiki/日本語コーパス",
-  "https://ja.wikipedia.org/wiki/文書分類",
-  "https://ja.wikipedia.org/wiki/パチンコ配分モデル",
-  "https://ja.wikipedia.org/wiki/言語系統論",
-  "https://ja.wikipedia.org/wiki/Elm_(プログラミング言語)",
-  "https://ja.wikipedia.org/wiki/ビット_(曖昧さ回避)",
-  "https://ja.wikipedia.org/wiki/コンストラクタ",
-  "https://ja.wikipedia.org/wiki/エイリアシング",
-  "https://ja.wikipedia.org/wiki/数学関数",
-  "https://ja.wikipedia.org/wiki/C++言語",
-  "https://ja.wikipedia.org/wiki/IBM_709",
-  "https://ja.wikipedia.org/wiki/POWER_(マイクロプロセッサ)",
-  "https://ja.wikipedia.org/wiki/IBM_Public_License",
-  "https://ja.wikipedia.org/wiki/WebSphere",
-  "https://ja.wikipedia.org/wiki/インヘリタンス",
-  "https://ja.wikipedia.org/wiki/GCOS",
-  "https://ja.wikipedia.org/wiki/UCSD_p-System",
-  "https://ja.wikipedia.org/wiki/東京大学出版",
-  "https://ja.wikipedia.org/wiki/計算流体力学",
-  "https://ja.wikipedia.org/wiki/国際規格",
-  "https://ja.wikipedia.org/wiki/GNU_Fortran",
-  "https://ja.wikipedia.org/wiki/行為判定",
-  "https://ja.wikipedia.org/wiki/ゲーム・フィールド",
-  "https://ja.wikipedia.org/wiki/佐々木亮_(漫画家)",
-  "https://ja.wikipedia.org/wiki/サンセットゲームズ",
-  "https://ja.wikipedia.org/wiki/プレイヤーキャラクター",
-  "https://ja.wikipedia.org/wiki/落合なごみ",
-  "https://ja.wikipedia.org/wiki/RPGamer",
-  "https://ja.wikipedia.org/wiki/コンベンション_(TRPG)",
-  "https://ja.wikipedia.org/wiki/ローズ・トゥ・ロード",
-  "https://ja.wikipedia.org/wiki/ダンジョンズ&ドラゴンズ",
-  "https://ja.wikipedia.org/wiki/精神医学",
-  "https://ja.wikipedia.org/wiki/RPGマガジン",
-  "https://ja.wikipedia.org/wiki/サプリメント_(TRPG)",
-  "https://ja.wikipedia.org/wiki/力造",
-  "https://ja.wikipedia.org/wiki/教養文庫",
-  "https://ja.wikipedia.org/wiki/松澤和宏",
   "https://ja.wikipedia.org/wiki/1878年",
   "https://ja.wikipedia.org/wiki/デジタル図書館",
   "https://ja.wikipedia.org/wiki/構文文法",
@@ -398191,7 +404074,6 @@
   "https://ja.wikipedia.org/wiki/シンクロニシティ_(乃木坂46の曲)",
   "https://ja.wikipedia.org/wiki/CHAIN_(KAT-TUNのアルバム)",
   "https://ja.wikipedia.org/wiki/In_Fact",
-  "https://ja.wikipedia.org/wiki/ザ少年倶楽部",
   "https://ja.wikipedia.org/wiki/君、僕。",
   "https://ja.wikipedia.org/wiki/KAT-TUN_Live_海賊帆",
   "https://ja.wikipedia.org/wiki/AWESOME",
@@ -398200,9 +404082,7 @@
   "https://ja.wikipedia.org/wiki/僕だって泣いちゃうよ",
   "https://ja.wikipedia.org/wiki/KAT-TUNの絶対マネたくなるTV",
   "https://ja.wikipedia.org/wiki/いきなりパンチライン",
-  "https://ja.wikipedia.org/wiki/SKE48",
   "https://ja.wikipedia.org/wiki/Fight_for_your_heart",
-  "https://ja.wikipedia.org/wiki/KinKi_Kids",
   "https://ja.wikipedia.org/wiki/COLOR_A_LIFE",
   "https://ja.wikipedia.org/wiki/夏疾風",
   "https://ja.wikipedia.org/wiki/UNLOCK_(KAT-TUNの曲)",
@@ -398210,24 +404090,12 @@
   "https://ja.wikipedia.org/wiki/喜びの歌_(KAT-TUNの曲)",
   "https://ja.wikipedia.org/wiki/不機嫌な果実",
   "https://ja.wikipedia.org/wiki/小林麻美",
-  "https://ja.wikipedia.org/wiki/荻野目慶子",
   "https://ja.wikipedia.org/wiki/バブル時代",
-  "https://ja.wikipedia.org/wiki/三木谷浩史",
-  "https://ja.wikipedia.org/wiki/東京",
   "https://ja.wikipedia.org/wiki/川添象郎",
-  "https://ja.wikipedia.org/wiki/林真理子",
   "https://ja.wikipedia.org/wiki/小出明子",
-  "https://ja.wikipedia.org/wiki/ホテルオークラ",
-  "https://ja.wikipedia.org/wiki/六本木",
-  "https://ja.wikipedia.org/wiki/堀江貴文",
-  "https://ja.wikipedia.org/wiki/風吹ジュン",
-  "https://ja.wikipedia.org/wiki/キャンティ_(イタリア料理店)",
   "https://ja.wikipedia.org/wiki/三浦和義",
-  "https://ja.wikipedia.org/wiki/情報技術",
   "https://ja.wikipedia.org/wiki/平成",
   "https://ja.wikipedia.org/wiki/ジュリアナ東京",
-  "https://ja.wikipedia.org/wiki/銀座",
-  "https://ja.wikipedia.org/wiki/バブル崩壊",
   "https://ja.wikipedia.org/wiki/早坂太吉",
   "https://ja.wikipedia.org/wiki/岩手県道179号玉里梁川線",
   "https://ja.wikipedia.org/wiki/宮城県道・岩手県道184号石越白崖線",
@@ -457646,10 +463514,98 @@
   "https://ja.wikipedia.org/wiki/シャジクモ類",
   "https://ja.wikipedia.org/wiki/温泉藻",
   "https://ja.wikipedia.org/wiki/色素体",
-  "https://ja.wikipedia.org/wiki/リポ多糖"
+  "https://ja.wikipedia.org/wiki/リポ多糖",
+  "https://ja.wikipedia.org/wiki/If文",
+  "https://ja.wikipedia.org/wiki/共通式削除",
+  "https://ja.wikipedia.org/wiki/定数畳み込み",
+  "https://ja.wikibooks.org/wiki/%E3%83%97%E3%83%AD%E3%82%B0%E3%83%A9%E3%83%9F%E3%83%B3%E3%82%B0/%E7%9F%AD%E7%B5%A1%E8%A9%95%E4%BE%A1",
+  "https://ja.wikipedia.org/wiki/先行評価",
+  "https://ja.wikipedia.org/wiki/多重定義",
+  "https://ja.wikipedia.org/wiki/プログラミング言語C",
+  "https://ja.wikipedia.org/wiki/ブール論理",
+  "https://ja.wikipedia.org/wiki/部分評価",
+  "https://ja.wikipedia.org/wiki/%E7%9F%AD%E7%B5%A1%E8%A9%95%E4%BE%A1",
+  "https://ja.wikipedia.org/wiki/汎整数拡張",
+  "https://ja.wikipedia.org/wiki/ヌルポインタ",
+  "https://ja.wikipedia.org/wiki/評価戦略",
+  "https://ja.wikipedia.org/wiki/遅延評価",
+  "https://ja.wikipedia.org/wiki/ビット演算",
+  "https://ja.wikipedia.org/wiki/Ada",
+  "https://ja.wikipedia.org/wiki/C89",
+  "https://ja.wikipedia.org/wiki/制御構造",
+  "https://ja.wikipedia.org/wiki/XFree86",
+  "https://ja.wikipedia.org/wiki/Jakarta_EE",
+  "https://ja.wikipedia.org/wiki/フラウンホーファー協会",
+  "https://ja.wikipedia.org/wiki/%E3%83%AA%E3%83%95%E3%82%A1%E3%83%AC%E3%83%B3%E3%82%B9%E5%AE%9F%E8%A3%85",
+  "https://ja.wikipedia.org/wiki/非手続き型言語",
+  "https://ja.wikipedia.org/wiki/Goto文",
+  "https://ja.wikipedia.org/wiki/プログラミングパラダイム",
+  "https://ja.wikipedia.org/wiki/%E9%9D%9E%E6%A7%8B%E9%80%A0%E5%8C%96%E3%83%97%E3%83%AD%E3%82%B0%E3%83%A9%E3%83%9F%E3%83%B3%E3%82%B0",
+  "https://ja.wikipedia.org/wiki/継続",
+  "https://ja.wikipedia.org/wiki/オブジェクト指向プログラミング",
+  "https://ja.wikipedia.org/wiki/ビジュアルプログラミング言語",
+  "https://ja.wikipedia.org/wiki/第四世代言語",
+  "https://ja.wikipedia.org/wiki/コンピュータ言語",
+  "https://ja.wikipedia.org/wiki/軽量プログラミング言語",
+  "https://ja.wikipedia.org/wiki/手続き型プログラミング",
+  "https://ja.wikipedia.org/wiki/スパゲティプログラム",
+  "https://ja.wikipedia.org/wiki/バッチファイル",
+  "https://ja.wikipedia.org/wiki/関数型言語",
+  "https://ja.wikipedia.org/wiki/構造化プログラミング",
+  "https://ja.wikipedia.org/wiki/常識",
+  "https://ja.wikipedia.org/wiki/KL1",
+  "https://ja.wikipedia.org/wiki/形式論理学",
+  "https://ja.wikipedia.org/wiki/単一化",
+  "https://ja.wikipedia.org/wiki/量子プログラミング言語",
+  "https://ja.wikipedia.org/wiki/プロトタイプベース",
+  "https://ja.wikipedia.org/wiki/PARLOG",
+  "https://ja.wikipedia.org/wiki/ジョン・マッカーシー",
+  "https://ja.wikipedia.org/wiki/サブタイピング",
+  "https://ja.wikipedia.org/wiki/Planner",
+  "https://ja.wikipedia.org/wiki/Guarded_Horn_Clauses",
+  "https://ja.wikipedia.org/wiki/コンピュータプログラミング",
+  "https://ja.wikipedia.org/wiki/ジェラルド・ジェイ・サスマン",
+  "https://ja.wikipedia.org/wiki/%E8%AB%96%E7%90%86%E3%83%97%E3%83%AD%E3%82%B0%E3%83%A9%E3%83%9F%E3%83%B3%E3%82%B0",
+  "https://ja.wikipedia.org/wiki/選言標準形",
+  "https://ja.wikipedia.org/wiki/シーモア・パパート",
+  "https://ja.wikipedia.org/wiki/エキスパートシステム",
+  "https://ja.wikipedia.org/wiki/ポータビリティ",
+  "https://ja.wikipedia.org/wiki/仮説的推論",
+  "https://ja.wikipedia.org/wiki/全称記号",
+  "https://ja.wikipedia.org/wiki/Oz_(プログラミング言語)",
+  "https://ja.wikipedia.org/wiki/第五世代コンピュータ",
+  "https://ja.wikipedia.org/wiki/Concurrent_Prolog",
+  "https://ja.wikipedia.org/wiki/アクターモデル",
+  "https://ja.wikipedia.org/wiki/メタプログラミング",
+  "https://ja.wikipedia.org/wiki/モデル理論",
+  "https://ja.wikipedia.org/wiki/Curry",
+  "https://ja.wikipedia.org/wiki/並行論理プログラミング",
+  "https://ja.wikipedia.org/wiki/制約_(数学)",
+  "https://ja.wikipedia.org/wiki/ユニフィケーション",
+  "https://ja.wikipedia.org/wiki/テンプレートメタプログラミング",
+  "https://ja.wikipedia.org/wiki/非決定性チューリングマシン",
+  "https://ja.wikipedia.org/wiki/アルフレッド・ホーン",
+  "https://ja.wikipedia.org/wiki/イベント駆動型プログラミング",
+  "https://ja.wikipedia.org/wiki/並行プログラミング",
+  "https://ja.wikipedia.org/wiki/アンドリュー・チーチー・ヤオ",
+  "https://ja.wikipedia.org/wiki/ラジ・レディ",
+  "https://ja.wikipedia.org/wiki/リチャード・サットン",
+  "https://ja.wikipedia.org/wiki/フレッド・コーエン",
+  "https://ja.wikipedia.org/wiki/アルフレッド・エイホ",
+  "https://ja.wikipedia.org/wiki/巡回セールスマン問題",
+  "https://ja.wikipedia.org/wiki/アディ・シャミア",
+  "https://ja.wikipedia.org/wiki/リチャード・スターンズ",
+  "https://ja.wikipedia.org/wiki/DNAコンピュータ",
+  "https://ja.wikipedia.org/wiki/ジューディア・パール",
+  "https://ja.wikipedia.org/wiki/ジェフリー・ウルマン",
+  "https://ja.wikipedia.org/wiki/パット・ハンラハン",
+  "https://ja.wikipedia.org/wiki/レスリー・ヴァリアント",
+  "https://ja.wikipedia.org/wiki/暗号学者",
+  "https://ja.wikipedia.org/wiki/ロバート・タージャン",
+  "https://ja.wikipedia.org/wiki/ジェフリー・ヒントン"
  ],
  "born": "2026-09-07T21:38:10+00:00",
- "lastLearned": "2026-09-08T09:45:16+00:00",
+ "lastLearned": "2026-09-08T09:49:56+00:00",
  "failed": {},
  "termsSeen": {
   "https://foundation.wikimedia.org/wiki/Policy:Terms_of_Use/ja": {
@@ -457706,5 +463662,5 @@
  ],
  "heardCount": 18,
  "capacity": 42709,
- "readTotal": 5813
+ "readTotal": 5901
 }
