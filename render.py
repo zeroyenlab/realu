@@ -172,33 +172,48 @@ def main():
         said = [{"at": r.get("at"), "val": r.get("val"), "layers": r.get("layers"),
                  "params": r.get("params"), "wrote": r.get("wrote")}
                 for r in runs if r.get("wrote")]
+    # ★★★「同じ書き出しで、いつ何を書いたか」を並べる。
+    #   ★これが一番「育ちが見える」形。★前は最新1回ぶんだけを大きく出していた。
     wrote_html = ""
     if said:
-        cur = said[-1]
-        rows = "".join(
-            '<div class="wr"><span class="ws">%s</span><span class="wt">%s</span></div>'
-            % (e(w.get("start")), e(w.get("text"))) for w in (cur.get("wrote") or []))
-        past = ""
-        old = said[:-1][-12:]
-        if old:
-            blocks = "".join(
-                '<div class="wold"><em>%s ／ %d 層 ／ %.2f M ／ loss %.4f</em>%s</div>'
-                % (e((r.get("at") or "")[:16].replace("T", " ")),
-                   r.get("layers") or 0, (r.get("params") or 0) / 1e6,
-                   r.get("val") or 0,
-                   "".join('<span><b>%s</b>%s</span>'
-                           % (e(w.get("start")), e(w.get("text")))
-                           for w in (r.get("wrote") or [])[:2]))
-                for r in reversed(old))
-            past = ('<details class="wpast"><summary>まえに書いたもの（%d 回ぶん）'
-                    '</summary>%s</details>' % (len(old), blocks))
+        starts = []
+        for r in said:
+            for w in (r.get("wrote") or []):
+                if w.get("start") and w["start"] not in starts:
+                    starts.append(w["start"])
+        blocks = []
+        for st in starts:
+            hist = [(r, w) for r in said for w in (r.get("wrote") or [])
+                    if w.get("start") == st]
+            if not hist:
+                continue
+            r, w = hist[-1]
+            older = hist[:-1][-8:]
+            past = ""
+            if older:
+                rows = "".join(
+                    '<div class="wold"><em>%s ／ %.2f M ／ loss %.4f</em>%s</div>'
+                    % (e((rr.get("at") or "")[:16].replace("T", " ")),
+                       (rr.get("params") or 0) / 1e6, rr.get("val") or 0,
+                       e(ww.get("text")))
+                    for rr, ww in reversed(older))
+                past = ('<details class="wpast"><summary>まえの %d 回</summary>%s</details>'
+                        % (len(older), rows))
+            blocks.append(
+                '<div class="wr"><span class="ws">%s</span>'
+                '<span class="wt">%s</span>'
+                '<span class="wm">%s ／ %.2f M ／ loss %.4f</span>%s</div>'
+                % (e(st), e(w.get("text")),
+                   e((r.get("at") or "")[:16].replace("T", " ")),
+                   (r.get("params") or 0) / 1e6, r.get("val") or 0, past))
         wrote_html = (
             '<h2>レアルが書いたもの</h2>'
             '<div class="wrap-w"><div class="wnote">これは引用ではありません。'
             '<b>彼女の頭が、覚えた日本語から自分で並べた言葉</b>です。'
             'いまは意味が通りません。それが今の彼女です。<br>'
-            '<b>%s</b> に書いたもの。</div>%s%s</div>'
-            % (e((cur.get("at") or "")[:16].replace("T", " ")), rows, past))
+            '★<b>同じ書き出し</b>で毎回書かせています。'
+            '「まえの」を開くと、★どう変わってきたかが読めます。</div>'
+            + "".join(blocks) + '</div>')
 
     read_n = int(k.get("readTotal") or len(k.get("read") or {}))
 
@@ -489,6 +504,7 @@ h2{font-size:11px;font-weight:700;letter-spacing:.18em;color:var(--faint);margin
 .wr{background:var(--panel);border:1px solid var(--edge);border-radius:14px;padding:14px 16px}
 .wr .ws{display:inline-block;font-size:11px;color:var(--accent2);letter-spacing:.1em;margin-bottom:5px}
 .wr .wt{display:block;font-size:14.5px;line-height:1.9;word-break:break-all}
+.wr .wm{display:block;margin-top:8px;font-size:10.5px;color:var(--faint)}
 .wpast{color:var(--faint);font-size:12px}
 .wpast summary{cursor:pointer;padding:6px 0}
 .wold{border-left:2px solid var(--edge);padding:6px 0 6px 12px;margin:6px 0}

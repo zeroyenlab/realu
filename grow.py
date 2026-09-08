@@ -96,6 +96,23 @@ val_tag = VAL_TAG          # ★★逃げ道に入ったら書き換える      
 VAL_PER_MIL = int(os.environ.get("REALU_VAL_PERMIL", 3))   # ★千行に3行＝0.3%
 
 
+# ★★★出典の印（<web タイトル> / <本 題名 / 著者>）は、★ごはんには要るが**書く時に出てはいけない**。
+#   ★どこで知ったかを残すために本文へ埋めてある。★でもそれを真似して書くと意味不明になる。
+#   ★（実測: 「なんぬの詐な子です。おお とよくすね。&lt;web 988年…」と出た）
+SRC_MARK = re.compile("^<(web|本) [^>]*>$")
+
+
+# ★★★出典の印を、★書いたものから落とす。
+#   ★ごはんには <web タイトル> / <本 題名 / 著者> が埋めてある（どこで知ったかを残すため）。
+#   ★それを覚えて真似してしまう（実測: 「おお とよくすね。<web 988年（昭和21年）…」）。
+#   → ★ごはんからは消さない（出典は残す）。★出す時だけ落とす。
+SRC_OUT = re.compile("<(web|本)[^>]*>?")
+
+
+def no_src(t):
+    return re.sub(r"[\s]+", " ", SRC_OUT.sub(" ", t)).strip()
+
+
 def held_out(line):
     """★この行は物差しか。★★中身だけで決まる ── どこに置いてあっても同じ判定になる。"""
     if len(line) < 20:
@@ -482,6 +499,9 @@ def main():
         if len(key) < 10:
             kept.append(ln)
             continue
+        if SRC_MARK.match(key):
+            kept.append(ln)          # ★ごはんには残す（★区切りとして要る）
+            continue                 # ★でも物差しには入れない
         if held_out(key):
             held.append(key)          # ★食べずに、測るためだけに取っておく
             continue
@@ -827,8 +847,7 @@ def main():
     wrote = []
     for pr in prompts:
         try:
-            txt = model.write(vocab, pr, 110, temp=0.75)
-            txt = re.sub(r"\s+", " ", txt).strip()
+            txt = no_src(model.write(vocab, pr, 110, temp=0.75))
             try:
                 import learn as _L
                 if not _L.safe(txt):

@@ -62,7 +62,7 @@ def main():
     wrote = []
     for pr in STARTS:
         try:
-            t = re.sub(r"\s+", " ", model.write(vocab, pr, 120, temp=0.8)).strip()
+            t = G.no_src(model.write(vocab, pr, 120, temp=0.8))
             if not safe(t):
                 t = "（出せない言葉が混じったので、これは出さない）"
             wrote.append({"start": pr, "text": t[:240]})
