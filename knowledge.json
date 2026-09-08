@@ -1187,6 +1187,78 @@
     "url": "https://creativecommons.org/licenses/by-sa/4.0/"
    },
    "ts": "2026-09-08T01:27:14+00:00"
+  },
+  {
+   "topic": "色",
+   "text": "閲覧環境によっては、色が適切に表示されていない場合があります。",
+   "source": "https://ja.wikipedia.org/wiki/%E8%89%B2%E5%BD%A9",
+   "genre": "その他",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": "https://creativecommons.org/licenses/by-sa/4.0/"
+   },
+   "ts": "2026-09-08T01:41:10+00:00"
+  },
+  {
+   "topic": "色",
+   "text": "例えば、物理的な対応物が擬似的に存在しないのに色を知覚する例として、 ベンハムの独楽 がある。",
+   "source": "https://ja.wikipedia.org/wiki/%E8%89%B2%E5%BD%A9",
+   "genre": "科学",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": "https://creativecommons.org/licenses/by-sa/4.0/"
+   },
+   "ts": "2026-09-08T01:41:10+00:00"
+  },
+  {
+   "topic": "色",
+   "text": "同一の色刺激であっても同一の色知覚が成立するとは限らず、前後の知覚や観測者の状態によって、結果は異なる。",
+   "source": "https://ja.wikipedia.org/wiki/%E8%89%B2%E5%BD%A9",
+   "genre": "その他",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": "https://creativecommons.org/licenses/by-sa/4.0/"
+   },
+   "ts": "2026-09-08T01:41:10+00:00"
+  },
+  {
+   "topic": "色",
+   "text": "表面色（反射色）は リンゴ の表面の赤色のように物体に光が当たった際に特定の波長の光のみが反射されることでもたらされる（白の場合はすべての光を反射し、黒の場合はすべての光を吸収する） [ 4 ] 。",
+   "source": "https://ja.wikipedia.org/wiki/%E8%89%B2%E5%BD%A9",
+   "genre": "その他",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": "https://creativecommons.org/licenses/by-sa/4.0/"
+   },
+   "ts": "2026-09-08T01:41:10+00:00"
+  },
+  {
+   "topic": "色",
+   "text": "白や灰色、黒の グレースケール は、明度で区別され、色相を含まず彩度が0である。",
+   "source": "https://ja.wikipedia.org/wiki/%E8%89%B2%E5%BD%A9",
+   "genre": "その他",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": "https://creativecommons.org/licenses/by-sa/4.0/"
+   },
+   "ts": "2026-09-08T01:41:10+00:00"
+  },
+  {
+   "topic": "色",
+   "text": "上記の様に、色の三属性を全てを具えたものが色であり、「色には明度が無い」とか「白や黒は色ではない」などと主張している人たちが、志向しているものは色ではない。",
+   "source": "https://ja.wikipedia.org/wiki/%E8%89%B2%E5%BD%A9",
+   "genre": "その他",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": "https://creativecommons.org/licenses/by-sa/4.0/"
+   },
+   "ts": "2026-09-08T01:41:10+00:00"
   }
  ],
  "read": {
@@ -1212,7 +1284,8 @@
   "https://ja.wikipedia.org/wiki/Template:Find_sources_mainspace": "2026-09-08T01:21:43+00:00",
   "https://ja.wikipedia.org/wiki/Help:%E7%9B%AE%E6%AC%A1": "2026-09-08T01:21:43+00:00",
   "https://ja.wikipedia.org/wiki/Category:ISBN%E3%83%9E%E3%82%B8%E3%83%83%E3%82%AF%E3%83%AA%E3%83%B3%E3%82%AF%E3%82%92%E4%BD%BF%E7%94%A8%E3%81%97%E3%81%A6%E3%81%84%E3%82%8B%E3%83%9A%E3%83%BC%E3%82%B8": "2026-09-08T01:27:14+00:00",
-  "https://ja.wikipedia.org/wiki/Category:%E5%85%AC%E6%B3%95": "2026-09-08T01:27:14+00:00"
+  "https://ja.wikipedia.org/wiki/Category:%E5%85%AC%E6%B3%95": "2026-09-08T01:27:14+00:00",
+  "https://ja.wikipedia.org/wiki/%E8%89%B2%E5%BD%A9": "2026-09-08T01:41:08+00:00"
  },
  "frontier": [
   "https://ja.wikipedia.org/wiki/%E3%81%93%E3%81%93%E8%A6%8B%E3%81%A6",
@@ -2488,10 +2561,82 @@
   "https://ja.wikipedia.org/wiki/Category:%E5%85%AC%E5%85%B1%E5%9C%8F",
   "https://ja.wikipedia.org/wiki/Category:%E8%AD%B0%E4%BC%9A%E6%B3%95",
   "https://ja.wikipedia.org/wiki/Category:%E6%86%B2%E6%B3%95",
-  "https://ja.wikipedia.org/wiki/%E3%83%91%E3%83%A9%E3%82%AA%E5%85%B1%E5%92%8C%E5%9B%BD%E6%86%B2%E6%B3%95"
+  "https://ja.wikipedia.org/wiki/%E3%83%91%E3%83%A9%E3%82%AA%E5%85%B1%E5%92%8C%E5%9B%BD%E6%86%B2%E6%B3%95",
+  "https://ja.wikipedia.org/wiki/バブル景気",
+  "https://ja.wikipedia.org/wiki/オストワルト表色系",
+  "https://ja.wikipedia.org/wiki/日本産業規格",
+  "https://ja.wikipedia.org/wiki/プルキンエ現象",
+  "https://ja.wikipedia.org/wiki/アルファブレンド",
+  "https://ja.wikipedia.org/wiki/ターコイズブルー",
+  "https://ja.wikipedia.org/wiki/無色",
+  "https://ja.wikipedia.org/wiki/照度",
+  "https://ja.wikipedia.org/wiki/サーモグラフィー",
+  "https://ja.wikipedia.org/wiki/物理量",
+  "https://ja.wikipedia.org/wiki/灰色",
+  "https://ja.wikipedia.org/wiki/寒冷",
+  "https://ja.wikipedia.org/wiki/ホワイトバランス",
+  "https://ja.wikipedia.org/wiki/太陽",
+  "https://ja.wikipedia.org/wiki/グレースケール",
+  "https://ja.wikipedia.org/wiki/物体",
+  "https://ja.wikipedia.org/wiki/発色団",
+  "https://ja.wikipedia.org/wiki/忍耐",
+  "https://ja.wikipedia.org/wiki/昆虫",
+  "https://ja.wikipedia.org/wiki/収益",
+  "https://ja.wikipedia.org/wiki/アメリカ英語",
+  "https://ja.wikipedia.org/wiki/表色系",
+  "https://ja.wikipedia.org/wiki/Template:色の分類",
+  "https://ja.wikipedia.org/wiki/日本カラーデザイン研究所",
+  "https://ja.wikipedia.org/wiki/オーストラリア",
+  "https://ja.wikipedia.org/wiki/無機化合物",
+  "https://ja.wikipedia.org/wiki/パーソナルカラー",
+  "https://ja.wikipedia.org/wiki/機能",
+  "https://ja.wikipedia.org/wiki/清潔",
+  "https://ja.wikipedia.org/wiki/レファレンス協同データベース",
+  "https://ja.wikipedia.org/wiki/ネオンサイン",
+  "https://ja.wikipedia.org/wiki/印刷",
+  "https://ja.wikipedia.org/wiki/めっき",
+  "https://ja.wikipedia.org/wiki/ナノメートル",
+  "https://ja.wikipedia.org/wiki/環境保護",
+  "https://ja.wikipedia.org/wiki/ドイツ共産党",
+  "https://ja.wikipedia.org/wiki/ファシズム",
+  "https://ja.wikipedia.org/wiki/天皇",
+  "https://ja.wikipedia.org/wiki/中立",
+  "https://ja.wikipedia.org/wiki/色欲",
+  "https://ja.wikipedia.org/wiki/白色テロ",
+  "https://ja.wikipedia.org/wiki/市川市中央図書館",
+  "https://ja.wikipedia.org/wiki/アイルランドの国旗",
+  "https://ja.wikipedia.org/wiki/キナクリドン",
+  "https://ja.wikipedia.org/wiki/電子",
+  "https://ja.wikipedia.org/wiki/ヒトの髪の色",
+  "https://ja.wikipedia.org/wiki/ディスプレイ_(コンピュータ)",
+  "https://ja.wikipedia.org/wiki/赤",
+  "https://ja.wikipedia.org/wiki/茶色",
+  "https://ja.wikipedia.org/wiki/月",
+  "https://ja.wikipedia.org/wiki/橙色",
+  "https://ja.wikipedia.org/wiki/賛成",
+  "https://ja.wikipedia.org/wiki/象徴",
+  "https://ja.wikipedia.org/wiki/日本流行色協会",
+  "https://ja.wikipedia.org/wiki/革命",
+  "https://ja.wikipedia.org/wiki/日本の鉄道ラインカラー一覧",
+  "https://ja.wikipedia.org/wiki/HLS色空間",
+  "https://ja.wikipedia.org/wiki/レインボーフラッグ",
+  "https://ja.wikipedia.org/wiki/レモン色",
+  "https://ja.wikipedia.org/wiki/神秘",
+  "https://ja.wikipedia.org/wiki/フィンセント・ファン・ゴッホ",
+  "https://ja.wikipedia.org/wiki/カラーマネージメントシステム",
+  "https://ja.wikipedia.org/wiki/蛍光",
+  "https://ja.wikipedia.org/wiki/知性",
+  "https://ja.wikipedia.org/wiki/三色旗",
+  "https://ja.wikipedia.org/wiki/個体",
+  "https://ja.wikipedia.org/wiki/平和",
+  "https://ja.wikipedia.org/wiki/単一変数の原理",
+  "https://ja.wikipedia.org/wiki/金属光沢",
+  "https://ja.wikipedia.org/wiki/Category:%E8%89%B2",
+  "https://ja.wikipedia.org/wiki/視覚",
+  "https://ja.wikipedia.org/wiki/蛍光顔料"
  ],
  "born": "2026-09-07T21:38:10+00:00",
- "lastLearned": "2026-09-08T01:27:14+00:00",
+ "lastLearned": "2026-09-08T01:41:10+00:00",
  "failed": {},
  "termsSeen": {
   "https://foundation.wikimedia.org/wiki/Policy:Terms_of_Use/ja": {
@@ -2511,7 +2656,8 @@
  },
  "termsNotes": [],
  "heardIds": [
-  "msg:2026-09-08T00:08:03.599Z:f367"
+  "msg:2026-09-08T00:08:03.599Z:f367",
+  "msg:2026-09-08T01:33:00.104Z:f367"
  ],
- "heardCount": 1
+ "heardCount": 2
 }
