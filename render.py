@@ -289,6 +289,11 @@ def main():
         'if(!s||!s.items||!s.items.length)return;'
         'var c=s.counts||{},d=s.design||{};'
         'if(d.palette)document.documentElement.setAttribute("data-pal",d.palette);'
+        'if(s.css){var st=document.getElementById("livecss");'
+        'if(!st){st=document.createElement("style");st.id="livecss";document.head.appendChild(st)}'
+        'if(st.textContent!==s.css)st.textContent=s.css;}'
+        'if(d.order&&d.order.length){d.order.forEach(function(n,i){'
+        'var el=document.getElementById("part-"+n);if(el)el.style.order=i});}'
         'if(d.greeting)document.getElementById("greet").textContent=d.greeting;'
         'var v=document.querySelectorAll(".stat .v");'
         'var n=[c.items,c.read,c.frontier,(d.changes||0)+" 回"];'
@@ -513,21 +518,21 @@ h2{font-size:11px;font-weight:700;letter-spacing:.18em;color:var(--faint);margin
     <div class="sub">webを読んで学び、自分で家をデザインする、小さな存在</div>
   </header>
 
-  <div class="part" style="order:%(o_greet)d">
+  <div class="part" id="part-greet" style="order:%(o_greet)d">
     <p class="greet" id="greet">%(greet)s</p>
     <div class="byline">この家は %(chosen)s に、レアルが %(changes)d 度目に選び直したもの</div>
   </div>
 
-  <div class="part" style="order:%(o_grew)d">%(grew)s</div>
+  <div class="part" id="part-grew" style="order:%(o_grew)d">%(grew)s</div>
 
-  <div class="part" style="order:%(o_stats)d"><div class="stats">%(stats)s</div></div>
+  <div class="part" id="part-stats" style="order:%(o_stats)d"><div class="stats">%(stats)s</div></div>
 
-  <div class="part" style="order:%(o_genres)d">
+  <div class="part" id="part-genres" style="order:%(o_genres)d">
     <h2>知っていることの内訳</h2>
     <div class="chips" id="genres">%(chips)s</div>
   </div>
 
-  <div class="part" style="order:%(o_heard)d">
+  <div class="part" id="part-heard" style="order:%(o_heard)d">
     <h2>話しかけられたこと</h2>
     <p class="heard">これまでに <b id="heardnum">%(heard)d</b> 回、だれかが話しかけてくれた。</p>
     %(form)s
@@ -538,11 +543,11 @@ h2{font-size:11px;font-weight:700;letter-spacing:.18em;color:var(--faint);margin
     </div>
   </div>
 
-  <div class="part" style="order:%(o_spec)d">%(spec)s%(chart)s</div>
+  <div class="part" id="part-spec" style="order:%(o_spec)d">%(spec)s%(chart)s</div>
 
-  <div class="part" style="order:%(o_wrote)d">%(wrote)s</div>
+  <div class="part" id="part-wrote" style="order:%(o_wrote)d">%(wrote)s</div>
 
-  <div class="part" style="order:%(o_know)d">
+  <div class="part" id="part-know" style="order:%(o_know)d">
     <h2 id="know-h">レアルが知っていること（%(n_all)d のうち %(n_shown)d を表示）</h2>
     <div id="know">%(groups)s</div>
   </div>

@@ -314,6 +314,24 @@ def wrap_for_weights(chunks):
         return 0
 
 
+def _css_of(d):
+    """★★★彼女が選んだ見た目を、そのままCSSにして渡す。
+
+    ★家を作り直すのは2時間ごと（★相手の無料枠の都合）。
+    ★でも彼女は**5分ごとに**選び直している。
+    ★★このままだと、★選んだ見た目の大半が誰にも見られずに消える。
+    → ★玄関にCSSも置く。★家が開くたびに、★いまの姿になる。
+    """
+    try:
+        import design as DS
+        look = d.get("look") or (DS.choose({"seed": d["seed"]}) if d.get("seed") else None)
+        if not look:
+            return ""
+        return DS.to_css(look) + DS.fonts_url(look).join(("@import url('", "');"))
+    except Exception:
+        return ""
+
+
 def tell(k, d):
     """★★★いまの自分を玄関に置く。
     ★家（HTML）は2時間に一度しか建て直せない（★相手の無料枠の都合）。
@@ -358,8 +376,10 @@ def tell(k, d):
                    "readNow": len(k.get("read") or {}),
                    "frontier": len(k.get("frontier") or []),
                    "heard": int(k.get("heardCount") or 0)},
+        "css": _css_of(d),
         "design": {"palette": d.get("palette"), "layout": d.get("layout"),
                    "greeting": d.get("greeting"), "changes": int(d.get("changes") or 0),
+                   "order": (d.get("look") or {}).get("order"),
                    "chosenAt": d.get("chosenAt")},
         "items": [{"topic": it.get("topic"), "text": it.get("text"),
                    "source": it.get("source"), "genre": it.get("genre"),
