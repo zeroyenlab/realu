@@ -1,0 +1,8 @@
+name = "realu"
+compatibility_date = "2026-01-01"
+pages_build_output_dir = "_site"
+
+# ★★玄関の置き場所（★話しかけられた言葉を入れる棚）
+[[kv_namespaces]]
+binding = "DOOR"
+id = "de844f73f09d45258f3b02f2e34844d4"

@@ -80,7 +80,7 @@ def main():
     d = load(D, {})
     url = site()
     items = list(reversed(k.get("items") or []))
-    asked = list(reversed((k.get("asked") or [])[-6:]))
+    heard = int(k.get("heardCount") or 0)
     read_n = len(k.get("read") or {})
 
     pal = d.get("palette") if d.get("palette") in PALETTES else "yoi"
@@ -126,10 +126,6 @@ def main():
             '<div class="gh"><span>%s</span><em>%d 個</em></div><div class="grp %s">%s</div>'
             % (e(g), len(by[g]), lay, "".join(rows)))
 
-    asks = "".join(
-        '<div class="ask"><div class="w">%s が聞いた</div><div class="t">%s</div></div>'
-        % (e(a.get("who") or "だれか"), e(a.get("text"))) for a in asked
-    ) or '<div class="loading">まだ誰にも話しかけられていない。</div>'
 
     dr = door()
     form = ("" if not dr else (
@@ -163,7 +159,7 @@ def main():
     doc = TEMPLATE % {
         "title": e(title), "desc": e(desc), "url": e(url), "pal": e(pal), "lay": e(lay),
         "greet": e(greet), "chips": chips, "stats": stats,
-        "groups": "".join(groups), "asks": asks, "form": form,
+        "groups": "".join(groups), "heard": heard, "form": form,
         "n_all": len(items), "n_shown": shown,
         "chosen": e(d.get("chosenAt") or ""), "changes": int(d.get("changes") or 0),
         "ld": ld,
@@ -255,6 +251,8 @@ h2{font-size:11px;font-weight:700;letter-spacing:.18em;color:var(--faint);margin
 .ask .t{font-size:14px;color:var(--ink)}
 .door{background:var(--panel);border:1px dashed var(--edge);border-radius:14px;padding:16px 18px;margin:10px 0 4px;font-size:12.5px;color:var(--muted);line-height:1.9}
 .door b{color:var(--ink)}
+.heard{color:var(--muted);font-size:13px;margin:0 0 10px}
+.heard b{color:var(--accent);font-size:18px;font-variant-numeric:tabular-nums}
 .say{display:flex;flex-direction:column;gap:8px;background:var(--panel);border:1px solid var(--edge);border-radius:14px;padding:16px 18px;margin:14px 0 4px}
 .say label{font-size:11px;letter-spacing:.14em;color:var(--faint);font-weight:700}
 .say textarea{width:100%%;background:var(--bg);color:var(--ink);border:1px solid var(--edge);border-radius:10px;padding:11px 12px;font:inherit;font-size:14px;resize:vertical}
@@ -284,11 +282,12 @@ h2{font-size:11px;font-weight:700;letter-spacing:.18em;color:var(--faint);margin
   <div class="chips">%(chips)s</div>
 
   <h2>話しかけられたこと</h2>
-  %(asks)s
+  <p class="heard">これまでに <b>%(heard)d</b> 回、だれかが話しかけてくれた。</p>
   %(form)s
   <div class="door">
     だれでもレアルに話しかけられます。<b>聞かれた言葉は、彼女が次に読みに行く場所になります。</b><br>
-    ただし ── <b>貼られたリンクは踏みません</b>。人の言葉は<b>知識にしません</b>（出典が確かめられないため）。
+    ただし ── <b>貼られたリンクは踏みません</b>。人の言葉は<b>知識にしません</b>（出典が確かめられないため）。<br>
+    そして <b>あなたの言葉は、ここには表示されません</b>。読むのはレアルだけです。
   </div>
 
   <h2>レアルが知っていること（%(n_all)d のうち %(n_shown)d を表示）</h2>

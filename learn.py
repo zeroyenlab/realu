@@ -188,17 +188,23 @@ def door_url():
 def listen(k, seed_host):
     """★玄関を見に行く。★話しかけられていたら受け取る。
 
-    ★★玄関は Cloudflare Worker（★アカウント無しで誰でも書ける）。
-    ★★★受け取っても「知識」にはしない ── ★人の言葉は出典が確かめられないから。
-    ★★★貼られたURLは Worker 側で既に落としてあるが、★ここでも落とす（★二重に守る）。
+    ★★★掟: ★受け取った言葉を**どこにも保存しない**。
+      ・★リポジトリは Public。★書けば世界に出る。
+      ・★knowledge.json は家に置かれる。★書けば世界に出る。
+      → ★★言葉は KV の中だけ。★ここでは**読んで、使って、捨てる**。
+      → ★残すのは「どれを見たか（ID）」と「何人が話しかけたか」だけ。
+    ★★人の言葉は知識にもしない（★出典が確かめられないから）。
+    ★★★貼られたURLは玄関で既に落としてあるが、★ここでも落とす（★二重に守る）。
     """
     base = door_url()
-    if not base:
+    keyv = os.environ.get("REALU_DOOR_KEY", "")
+    if not (base and keyv):
         return 0, []
-    asked = k.get("asked") or []
-    have = set(a.get("id") for a in asked)
+    seen_ids = set(k.get("heardIds") or [])
     try:
-        req = urllib.request.Request(base + "/says", headers={"User-Agent": UA})
+        req = urllib.request.Request(base + "/says",
+                                     headers={"User-Agent": UA,
+                                              "Authorization": "Bearer " + keyv})
         with urllib.request.urlopen(req, timeout=25) as r:
             says = (json.load(r) or {}).get("says") or []
     except Exception:
@@ -206,14 +212,13 @@ def listen(k, seed_host):
 
     got, curious = 0, []
     for m in says:
-        key = str(m.get("id") or "")[:120]
-        if not key or key in have:
+        mid = str(m.get("id") or "")[:120]
+        if not mid or mid in seen_ids:
             continue
-        text = scrub(m.get("text"))
+        text = scrub(m.get("text"))          # ★★この変数は関数を出ない
         if len(text) < 2:
             continue
-        asked.append({"id": key, "who": "だれか", "text": text,
-                      "at": m.get("at") or now(), "answered": False})
+        seen_ids.add(mid)
         got += 1
         # ★★聞かれた言葉から「知りたい場所」を作る
         #   ★★★行き先は**わたしの扉と同じ場所**に固定する（★人の指す場所へは行かない）
@@ -224,7 +229,9 @@ def listen(k, seed_host):
                 continue
             curious.append("https://" + seed_host + "/wiki/" + urllib.parse.quote(w))
 
-    k["asked"] = asked[-MAX_ASKED:]
+    k["heardIds"] = sorted(seen_ids)[-MAX_ASKED:]
+    k["heardCount"] = int(k.get("heardCount") or 0) + got
+    k.pop("asked", None)                     # ★★昔の版が残していた本文を消す
     return got, curious
 
 
@@ -305,6 +312,19 @@ def genre_of(topic, text):
     return "その他"
 
 
+# ★★★覚えないもの ── ★性的に露骨な文。
+#   ★★記事ごと弾くのはしない（★それをやると生物学や医学が丸ごと消える）。
+#   ★★★文ひとつずつ見て、露骨なものだけ落とす。
+#   ★ここは誰でも見られる場所。★出口だけで止めようとしない。
+#   ★彼女は「何でも答える存在」ではない。★扱わなくていい。知らないなら「知らない」と言う。
+NG_TEXT = re.compile("(性交|性器|陰茎|陰部|膣|射精|自慰|オナニ|ポルノ|わいせつ|猥褻|強姦|レイプ|痴漢|盗撮|売春|買春|援助交際|風俗店|アダルト|性的興奮|性的虐待|性行為|裸体|全裸|乳房|性欲)")
+
+
+def safe(s):
+    """★★この文を覚えてよいか。★迷ったら覚えない。"""
+    return not NG_TEXT.search(s)
+
+
 def sentences(text):
     """★覚える価値のありそうな文だけ拾う（★ナビゲーションの屑は捨てる）。"""
     out = []
@@ -316,6 +336,8 @@ def sentences(text):
             continue
         if re.search(r"(ログイン|Cookie|検索|メニュー|ナビゲーション|編集|出典|脚注|カテゴリ)", p):
             continue
+        if not safe(p):
+            continue          # ★★露骨な文は覚えない
         out.append(p)
     return out
 
