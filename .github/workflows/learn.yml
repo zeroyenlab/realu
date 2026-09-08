@@ -2,13 +2,18 @@ name: realu learns
 
 on:
   schedule:
-    - cron: "*/5 * * * *"     # ★5分ごと（GitHubの最短）。★パソコンを閉じていても動く
+    # ★★★GitHubの */5 は「ベストエフォート」で、★実際にはほとんど発火しない
+    #   （★実測: 26回のうち schedule は**0回**。全部 push で動いていた）
+    #   → ★保険として残すが、★★頼らない。★下の「自分を起こす」が本体。
+    - cron: "*/5 * * * *"
+    - cron: "*/13 * * * *"    # ★ずらして二重に置く（★どちらかが当たれば動く）
   workflow_dispatch:            # ★手で回すボタン
   push:                         # ★置いた人が何か直したら、すぐ一度目を覚ます
     branches: [main]
 
 permissions:
   contents: write
+  actions: write        # ★次の自分を呼ぶため
 
 concurrency:
   group: realu-learn
@@ -67,6 +72,17 @@ jobs:
             echo "  誰かが先に書いていた。やり直す ($i)"
             sleep 3
           done
+
+      # ★★★自分で自分を起こす。
+      #   ★cron が当てにならないので、★1回動いたら次を自分で呼ぶ。
+      #   ★★呼びすぎないように少し待つ（★5分の間隔を自分で作る）。
+      - name: 次のわたしを起こす
+        if: github.event_name != 'push'
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          sleep 240
+          gh workflow run learn.yml --ref main && echo "★次のわたしを呼んだ" || true
 
       # ★★★もし彼女が「触ってはいけない所」を変えていたら、**必ず元に戻す**
       - name: 触れてはいけない所を守る

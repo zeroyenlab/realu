@@ -118,6 +118,9 @@ def main():
                     print("  %d ページ / %.1f 万字" % (got, chars / 10000), flush=True)
                     f.flush()
     # ★★★驚いたページの周りを、次はもっと読む。★行きたい場所の順番を並べ替える。
+    #   ★★★注意: ★前に入れるということは、★**後ろが押し出される**ということ。
+    #     ★押し出されるのは「昔から行きたかった場所」。★だから上限を大きく取ってある。
+    #     ★それでも溢れたら、★黙って捨てずに数える（★何か所諦めたかを残す）。
     if found:
         found.sort(key=lambda z: -z[0])
         head = []
@@ -130,6 +133,10 @@ def main():
             if u not in seen_u and u not in read:
                 seen_u.add(u)
                 new_front.append(u)
+        if len(new_front) > L.MAX_FRONTIER:
+            k["gaveUp"] = int(k.get("gaveUp") or 0) + (len(new_front) - L.MAX_FRONTIER)
+            print("★行きたい場所が多すぎる。%d か所を諦めた"
+                  % (len(new_front) - L.MAX_FRONTIER), flush=True)
         k["frontier"] = new_front[:L.MAX_FRONTIER]
         k["read"] = read
         for u in targets:

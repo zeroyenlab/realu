@@ -35,7 +35,10 @@ POLITE = 0.15            # ★1ページごとに置く間（★robots.txt に�
 SENT_PER_PAGE = 6        # ★1ページから覚える文の数
 MAX_ITEMS = 2500         # ★覚えていられる知識の**はじめの**広さ（★溢れたら自分で広げる）
 CAP_GROW = 1.5           # ★★溢れたとき、どれだけ広げるか
-MAX_FRONTIER = 6000      # ★「行ってみたい場所」の上限
+MAX_FRONTIER = int(os.environ.get("REALU_MAX_FRONTIER", 60000))
+#   ★★「行ってみたい場所」の上限。★1件67バイトなので、6万件でも4MB。★安い。
+#   ★★★驚いたものを前に入れる仕組みを足したので、★溢れると**昔から行きたかった場所**が
+#     押し出される。★だから上限を10倍にした。★それでも溢れたら、★黙って捨てずに数える。
 MAX_READ = 40000         # ★読んだ記録の上限
 TERMS_RECHECK_SEC = 20 * 3600   # ★規約は1日1回読み直す（★毎回だと相手に負担）
 
@@ -282,7 +285,8 @@ def tell(k, d):
         "counts": {"items": len(k.get("items") or []),
                    "read": len(k.get("read") or {}),
                    "frontier": len(k.get("frontier") or []),
-                   "heard": int(k.get("heardCount") or 0)},
+                   "heard": int(k.get("heardCount") or 0),
+                   "gaveUp": int(k.get("gaveUp") or 0)},
         "design": {"palette": d.get("palette"), "layout": d.get("layout"),
                    "greeting": d.get("greeting"), "changes": int(d.get("changes") or 0),
                    "chosenAt": d.get("chosenAt")},
@@ -570,7 +574,13 @@ def main():
     k["read"] = read
     # ★何度も駄目だった場所だけ覚えておく（★まだ望みのある物は忘れて、また試す）
     k["failed"] = {u: n for u, n in failed.items() if n >= 3}
-    k["frontier"] = [u for u in frontier if u not in read][:MAX_FRONTIER]
+    want = [u for u in frontier if u not in read]
+    if len(want) > MAX_FRONTIER:
+        # ★★★捨てるなら、★黙って捨てない。★いくつ諦めたかを覚えておく
+        k["gaveUp"] = int(k.get("gaveUp") or 0) + (len(want) - MAX_FRONTIER)
+        print("★行きたい場所が多すぎる。%d か所を諦めた（これまでに %d か所）"
+              % (len(want) - MAX_FRONTIER, k["gaveUp"]))
+    k["frontier"] = want[:MAX_FRONTIER]
 
     save(K, k)
     save(D, d)
