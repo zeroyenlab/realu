@@ -13,6 +13,7 @@
 ★1回動かせば終わり。★2回目からは「もう持っている」と言って何もしない。
 """
 import bz2
+import gzip
 import html as H
 import os
 import re
@@ -24,7 +25,7 @@ HERE = os.path.dirname(os.path.abspath(__file__))
 WORK = os.environ.get("REALU_WORK", os.path.join(HERE, "work"))
 URL = "https://dumps.wikimedia.org/jawiki/latest/jawiki-latest-pages-articles.xml.bz2"
 UA = "RealuSeedFetcher/0.1 (+https://realu.pages.dev) python-urllib"
-OUT = "wiki.txt"
+OUT = "wiki.txt.gz"   # ★圧縮して持つ（★日本語は1/3になる）
 MAX_CHARS = int(os.environ.get("REALU_DUMP_CHARS", 1_200_000_000))
 
 NL = chr(10)
@@ -84,7 +85,7 @@ def keep(line):
 def main():
     os.makedirs(WORK, exist_ok=True)
     out = os.path.join(WORK, OUT)
-    if os.path.exists(out) and os.path.getsize(out) > 100_000_000:
+    if os.path.exists(out) and os.path.getsize(out) > 30_000_000:
         print("★もう持っている（%.1f MB）" % (os.path.getsize(out) / 1024 / 1024))
         return 0
 
@@ -107,7 +108,7 @@ def main():
     with urllib.request.urlopen(req, timeout=180) as r:
         dec = bz2.BZ2Decompressor()
         tail = ""
-        with open(out, "w", encoding="utf-8", newline=NL) as f:
+        with gzip.open(out, "wt", encoding="utf-8", newline=NL) as f:
             while chars < MAX_CHARS:
                 chunk = r.read(4 << 20)
                 if not chunk:

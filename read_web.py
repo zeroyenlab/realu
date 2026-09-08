@@ -7,6 +7,7 @@
 ★★★読んだものが重みに入らないなら、★それは学んだことにならない。
 ★掟は learn.py と同じものを使う（★規約・robots・弾く文の判定を二重に書かない）。
 """
+import gzip
 import os
 import sys
 import urllib.parse

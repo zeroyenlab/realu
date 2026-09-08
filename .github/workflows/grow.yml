@@ -66,12 +66,14 @@ jobs:
       # ── ①★ごはんを自分で取りに行く
       - name: 法令をもらう（はじめの一回だけ）
         run: |
-          if [ ! -f work/laws.txt ]; then
+          if [ ! -f work/laws.txt.gz ]; then
             echo "★法令をもらいに行く（初回のみ・1時間ほど）"
             python fetch_laws.py
-            mv corpus/laws.txt work/laws.txt
+            gzip -c corpus/laws.txt > work/laws.txt.gz
+            rm -f corpus/laws.txt
+            echo "NEW_LAWS=1" >> $GITHUB_ENV
           else
-            echo "★法令はもう持っている（$(wc -c < work/laws.txt) バイト）"
+            echo "★法令はもう持っている（$(du -h work/laws.txt.gz | cut -f1)）"
           fi
 
       - name: 判決をすこし読み足す
@@ -82,11 +84,11 @@ jobs:
           echo "★判決 $FROM 〜 $TO を読む"
           python fetch_hanrei.py "$FROM" "$TO" 1 _new || true
           if [ -f corpus/hanrei_new.txt ]; then
-            cat corpus/hanrei_new.txt >> work/hanrei.txt
+            gzip -c corpus/hanrei_new.txt >> work/hanrei.txt.gz
             rm -f corpus/hanrei_new.txt
           fi
           echo "$TO" > work/hanrei_next.txt
-          echo "★いま持っている判決: $(wc -c < work/hanrei.txt 2>/dev/null || echo 0) バイト"
+          echo "★いま持っている判決: $(du -h work/hanrei.txt.gz 2>/dev/null | cut -f1 || echo 0)"
 
       # ── ★★★Wikipedia日本語版を、まとめて正面から受け取る（★初回だけ）
       #   ★Wikimedia は「大量に欲しいならスクレイピングでなくダンプを使え」と言っている。
@@ -94,7 +96,11 @@ jobs:
       - name: Wikipediaをまとめてもらう（はじめの一回だけ）
         env:
           REALU_DUMP_CHARS: "900000000"
-        run: python -u eat_dump.py
+        run: |
+          BEFORE=$(stat -c%s work/wiki.txt.gz 2>/dev/null || echo 0)
+          python -u eat_dump.py
+          AFTER=$(stat -c%s work/wiki.txt.gz 2>/dev/null || echo 0)
+          [ "$AFTER" != "$BEFORE" ] && echo "NEW_WIKI=1" >> $GITHUB_ENV || true
 
       # ── ★★★webを読んで、それを**ごはんにする**
       #   ★5分ごとの方は「見た目と好奇心」。★こっちは学習の材料を作る。

@@ -10,6 +10,7 @@
 ★体は GitHub Actions（★4CPU・16GB・無料・時間無制限）。★GPUは無い。★だからゆっくり育つ。
 ★重みは GitHub の Release に置く（★リポジトリに毎回入れると膨らむ）。
 """
+import gzip
 import json
 import math
 import os
@@ -181,11 +182,17 @@ def main():
     # ── ①★ごはんを読む（★法令＋判例＋**webで自分が読んだもの**）
     texts = []
     for name in ("laws.txt", "hanrei.txt", "web.txt", "wiki.txt"):
-        p = os.path.join(WORK, name)
-        if os.path.exists(p):
+        for p in (os.path.join(WORK, name + ".gz"), os.path.join(WORK, name)):
+            if not os.path.exists(p):
+                continue
+            # ★★圧縮して持つ（★日本語は1/3になる。★置き場所が3倍長持ちする）
             # ★途中で切れた字があっても止まらない（★ごはんが欠けても生きる）
-            with open(p, encoding="utf-8", errors="ignore") as f:
+            op = gzip.open if p.endswith(".gz") else open
+            with op(p, "rt", encoding="utf-8", errors="ignore") as f:
                 texts.append(f.read())
+            print("  ごはん %s: %.1f MB" % (os.path.basename(p),
+                                            os.path.getsize(p) / 1024 / 1024), flush=True)
+            break
     if not texts:
         print("★ごはんが無い。work/ に laws.txt を置いて。")
         return 1
