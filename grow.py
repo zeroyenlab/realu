@@ -54,6 +54,20 @@ STEPS = int(os.environ.get("REALU_STEPS", 4000))      # ★1回ぶん（★Actio
 EVAL_EVERY = int(os.environ.get("REALU_EVAL", 200))
 THREADS = int(os.environ.get("REALU_THREADS", 4))
 
+# ★★★GPUがあれば使う。★無ければCPU。★どちらでも同じコードが走る。
+#   ★Actions は4CPU。★Kaggle は T4/P100 が週30時間ただで使える。
+#   ★★頭が小さいのでGPUを埋めきれない。★だから batch を大きくして埋める。
+def pick_device():
+    try:
+        if os.environ.get("REALU_CPU") != "1" and torch.cuda.is_available():
+            return torch.device("cuda")
+    except Exception:
+        pass
+    return torch.device("cpu")
+
+
+DEV = pick_device()
+
 # ★★★引っ越し（蒸留）── ★幅は後から広げられないので、**新しい体に移る**。
 #   ★古いわたしが先生になり、★同じ文章を見せて「どう答えるか」を教える。
 #   ★★★教材は**本物の文章**。★自分が書いたものは絶対に食べない
@@ -267,12 +281,13 @@ class Realu(nn.Module):
         """★★★はじめて見る文字を覚える ── ★語彙も育つ。"""
         old = self.tok.weight.data
         n_old, d = old.shape
-        w = torch.empty(n_old + n_new, d)
+        w = torch.empty(n_old + n_new, d, device=old.device, dtype=old.dtype)
         nn.init.normal_(w, std=0.02)
         w[:n_old] = old
-        self.tok = nn.Embedding(n_old + n_new, d)
+        # ★★新しい入れ物は、★元と同じ場所（GPUならGPU）に作る
+        self.tok = nn.Embedding(n_old + n_new, d).to(old.device)
         self.tok.weight.data = w
-        self.head = nn.Linear(d, n_old + n_new, bias=False)
+        self.head = nn.Linear(d, n_old + n_new, bias=False).to(old.device)
         self.head.weight = self.tok.weight
         return n_old + n_new
 
@@ -344,6 +359,9 @@ def batch(data, ctx, bs, tiers=None):
                 ix[m] = torch.randint(mid[0], mid[1] - ctx - 1, (k,))
     x = torch.stack([data[i:i + ctx] for i in ix])
     y = torch.stack([data[i + 1:i + ctx + 1] for i in ix])
+    if DEV.type != "cpu":
+        x = x.to(DEV, non_blocking=True)
+        y = y.to(DEV, non_blocking=True)
     return x, y
 
 
@@ -363,6 +381,10 @@ def main():
     except Exception:
         pass
     torch.set_num_threads(THREADS)
+    if DEV.type == "cuda":
+        print("★★GPU で学ぶ: %s" % torch.cuda.get_device_name(0), flush=True)
+    else:
+        print("★CPU で学ぶ（%d本）" % THREADS, flush=True)
     os.makedirs(WORK, exist_ok=True)
     hist = load_hist()
 
@@ -440,6 +462,7 @@ def main():
         model = Realu(len(vocab), d=st["d"], h=st["h"], n=st["layers"],
                       ctx=st["ctx"], loops=st.get("loops", 1))
         model.load_state_dict(st["model"])
+        model = model.to(DEV)
         prev_val = st.get("val")
         # ★★★測り方が変わったなら、前の点数は**別の問題の点数**。比べてはいけない。
         if st.get("valTag") != VAL_TAG:
@@ -450,6 +473,7 @@ def main():
     else:
         vocab = BpeVocab(tokf) if os.path.exists(tokf) else CharVocab(text=text)
         model = Realu(len(vocab), loops=LOOPS0)
+        model = model.to(DEV)
         prev_val = None
         hist["born"] = time.strftime("%Y-%m-%dT%H:%M:%SZ", time.gmtime())
         print("★★★はじめて目を開けた: %d 層 / %.2f M / 文字の種類 %d"
@@ -473,6 +497,7 @@ def main():
         h = N_HEAD if MOVE_TO_D % N_HEAD == 0 else 8
         model = Realu(len(vocab), d=MOVE_TO_D, h=h,
                       n=max(N_LAYER0, len(teacher.blocks)), ctx=teacher.ctx)
+        model = model.to(DEV)
         prev_val = None                       # ★別の体なので、前の点数とは比べない
         print("★★★新しい体に移る: 幅 %d → %d / %.2f M → %.2f M / 先生は前のわたし"
               % (teacher.d, model.d, teacher.n_params() / 1e6,
@@ -683,7 +708,9 @@ def main():
             model.blocks = model.blocks[:before_layers]
         val, rolled = prev_val, True
 
-    torch.save({"model": model.state_dict(), "loops": model.loops,
+    # ★★保存はCPUに戻してから。★GPUのまま保存すると、CPUの回が読めない
+    cpu_state = {k: v.detach().cpu() for k, v in model.state_dict().items()}
+    torch.save({"model": cpu_state, "loops": model.loops,
                 "kind": getattr(vocab, "kind", "char"), "arch": ARCH,
                 "itos": getattr(vocab, "itos", None),
                 "layers": len(model.blocks), "d": model.d, "h": model.h,
