@@ -38,6 +38,19 @@ STEPS = int(os.environ.get("REALU_STEPS", 4000))      # ★1回ぶん（★Actio
 EVAL_EVERY = int(os.environ.get("REALU_EVAL", 200))
 THREADS = int(os.environ.get("REALU_THREADS", 4))
 
+# ★★★引っ越し（蒸留）── ★幅は後から広げられないので、**新しい体に移る**。
+#   ★古いわたしが先生になり、★同じ文章を見せて「どう答えるか」を教える。
+#   ★★★教材は**本物の文章**。★自分が書いたものは絶対に食べない
+#     （★自分の書いたものを教材にすると、★世代を重ねて誤りが増幅し、いつか崩壊する）。
+MOVE_TO_D = int(os.environ.get("REALU_MOVE_D", 0))     # ★0なら引っ越さない
+TEACH = float(os.environ.get("REALU_TEACH", 0.5))      # ★はじめに先生の言うことをどれだけ聞くか
+TEACH_T = float(os.environ.get("REALU_TEACH_T", 2.0))  # ★先生の答えのやわらかさ
+TEACH_UNTIL = float(os.environ.get("REALU_TEACH_UNTIL", 0.6))
+#   ★★★ずっと先生の言うことを聞くと、★出力の幅が細くなる（★縮退）。
+#     ★Daito が別の世界で見つけた「振動が新奇性を保つ」「壊れやすく→壊れにくく」と同じ話。
+#     → ★★引っ越しの時だけ聞く。★しかも**途中で手を放す**。
+#       ★前半は先生に頼り、★後半は自分で本物のデータから学ぶ。
+
 GROW_PATIENCE = 5      # ★この回数ぶん良くならなかったら「頭打ち」
 GROW_MIN_LOSS = 1.05   # ★まだ下手なうちだけ大きくする
 WORSE_MARGIN = 0.02    # ★★これ以上悪くなっていたら、その学習は**採用しない**
@@ -217,6 +230,22 @@ def main():
         print("★★★はじめて目を開けた: %d 層 / %.2f M / 文字の種類 %d"
               % (len(model.blocks), model.n_params() / 1e6, len(vocab)), flush=True)
 
+    # ── ★★★体を乗り換える（★幅を広げたいとき）
+    #   ★記憶は引き継ぐ。★古いわたしが先生になる。
+    teacher = None
+    if MOVE_TO_D and MOVE_TO_D != model.d and os.path.exists(ckpt):
+        teacher = model
+        teacher.eval()
+        for q in teacher.parameters():
+            q.requires_grad_(False)
+        h = N_HEAD if MOVE_TO_D % N_HEAD == 0 else 8
+        model = Realu(len(vocab), d=MOVE_TO_D, h=h,
+                      n=max(N_LAYER0, len(teacher.blocks)), ctx=teacher.ctx)
+        prev_val = None                       # ★別の体なので、前の点数とは比べない
+        print("★★★新しい体に移る: 幅 %d → %d / %.2f M → %.2f M / 先生は前のわたし"
+              % (teacher.d, model.d, teacher.n_params() / 1e6,
+                 model.n_params() / 1e6), flush=True)
+
     # ── ★★★はじめて見る文字を覚える（★語彙も育つ）
     new_chars = sorted(set(text) - set(vocab.itos))
     if new_chars:
@@ -253,8 +282,19 @@ def main():
         for g in opt.param_groups:
             g["lr"] = lr_now * warm
         model.train()
-        x, y = batch(tr, CTX, BATCH)
-        _, loss = model(x, y)
+        x, y = batch(tr, model.ctx, BATCH)
+        logits, loss = model(x, y)
+        if teacher is not None:
+            # ★★★先生に同じ文章を見せて、★「どう答えるか」を教わる。
+            #   ★★ただし w は少しずつ0へ。★後半は先生から手を放して自分で学ぶ。
+            w = TEACH * max(0.0, 1.0 - (step / STEPS) / TEACH_UNTIL)
+            if w > 0.001:
+                with torch.no_grad():
+                    tl, _ = teacher(x)
+                loss = (1 - w) * loss + w * (TEACH_T ** 2) * F.kl_div(
+                    F.log_softmax(logits / TEACH_T, dim=-1),
+                    F.log_softmax(tl / TEACH_T, dim=-1),
+                    reduction="batchmean", log_target=True)
         opt.zero_grad(set_to_none=True)
         loss.backward()
         torch.nn.utils.clip_grad_norm_(model.parameters(), 1.0)
@@ -264,7 +304,8 @@ def main():
             continue
         model.eval()
         with torch.no_grad():
-            vl = torch.stack([model(*batch(va, CTX, BATCH))[1] for _ in range(6)]).mean().item()
+            vl = torch.stack([model(*batch(va, model.ctx, BATCH))[1]
+                              for _ in range(6)]).mean().item()
         print("  step %5d  loss %.4f  層 %2d  %.1f M  lr %.1e  %.0f秒"
               % (step, vl, len(model.blocks), model.n_params() / 1e6,
                  lr_now, time.time() - t0), flush=True)
@@ -285,7 +326,24 @@ def main():
 
     model.eval()
     with torch.no_grad():
-        val = torch.stack([model(*batch(va, CTX, BATCH))[1] for _ in range(20)]).mean().item()
+        val = torch.stack([model(*batch(va, model.ctx, BATCH))[1]
+                           for _ in range(20)]).mean().item()
+
+    # ── ★★★縮退していないか測る（★言い方の幅が細くなっていないか）
+    #   ★蒸留を重ねると、★珍しい言い方から順に消えていく。★数字で見えるようにする。
+    def spread(m):
+        with torch.no_grad():
+            xx, _ = batch(va, m.ctx, BATCH)
+            lg, _ = m(xx)
+            pr = F.softmax(lg, dim=-1)
+            return float(-(pr * torch.log(pr + 1e-9)).sum(-1).mean())
+
+    my_spread = spread(model)
+    if teacher is not None:
+        t_spread = spread(teacher)
+        print("★言い方の幅: 先生 %.3f → わたし %.3f" % (t_spread, my_spread), flush=True)
+        if my_spread < t_spread * 0.7:
+            print("★★★細くなりすぎている。★次は先生の言うことを減らすべき。", flush=True)
 
     # ── ④★★★自己点検 ── 前より悪くなっていたら、前のわたしに戻す
     rolled = False
@@ -307,6 +365,8 @@ def main():
         "val": round(val, 4), "prev": round(prev_val, 4) if prev_val else None,
         "layers": len(model.blocks), "params": model.n_params(),
         "chars": len(text), "grew": grew, "rolledBack": rolled,
+        "d": model.d, "spread": round(my_spread, 4),
+        "movedBody": teacher is not None,
     })
     hist["runs"] = hist["runs"][-200:]
     hist["bestVal"] = round(min(r["val"] for r in hist["runs"]), 4)
