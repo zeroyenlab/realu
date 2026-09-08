@@ -495,10 +495,18 @@ def main():
     LR_MIN, LR_MAX = LR / 50, LR * 2.0
     FIRM, FRAGILE = 0.90, 1.35        # ★固める倍率 / ★壊れやすくする倍率
 
+    # ★★★大枠は WSD（助走 → 一定 → 最後に0へ）。★SmolLM2 のレシピから。
+    #   ★「最後の10%で0まで落とす」が効く。★継続学習と相性がよい
+    #     （★途中で切っても、そこまでの重みがちゃんと使える形になる）。
+    #   ★その一定区間の中で、★詰まり具合に応じて上下させるのが彼女の自律制御。
+    DECAY_FROM = int(STEPS * 0.90)
     for step in range(1, STEPS + 1):
         warm = min(1.0, step / 200)
+        tail = 1.0
+        if step > DECAY_FROM:                    # ★最後の10%で0へ
+            tail = max(0.0, (STEPS - step) / max(1, STEPS - DECAY_FROM))
         for g in opt.param_groups:
-            g["lr"] = lr_now * warm
+            g["lr"] = lr_now * warm * tail
         model.train()
         x, y = batch(tr, model.ctx, BATCH, tiers)
         logits, loss = model(x, y)
