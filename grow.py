@@ -91,7 +91,8 @@ DUP_MAX = int(os.environ.get("REALU_DUP_MAX", 3))   # ★同じ行を食べて�
 #       → 「前より悪くなったから前のわたしに戻す」が、★別の問題の点数を比べていた。
 #         ★これは育ちを黙って捨てる。★一番たちの悪い壊れ方。
 #   ★★直し方: ①ごはんの種類に関係なく散らばるよう選ぶ ②一度決めたら**二度と変えない**
-VAL_TAG = "fixed-holdout-v1"          # ★測り方が変わったら、ここを変える（★昔の点数と比べなくなる）
+VAL_TAG = "fixed-holdout-v1"
+val_tag = VAL_TAG          # ★★逃げ道に入ったら書き換える          # ★測り方が変わったら、ここを変える（★昔の点数と比べなくなる）
 VAL_PER_MIL = int(os.environ.get("REALU_VAL_PERMIL", 3))   # ★千行に3行＝0.3%
 
 
@@ -314,7 +315,9 @@ class Realu(nn.Module):
 
     @torch.no_grad()
     def write(self, vocab, start="", n=200, temp=0.8):
-        idx = torch.tensor([vocab.encode(start) or [0]], dtype=torch.long)
+        # ★★頭がGPUにいる時、入り口もGPUに置く（★でないと必ず落ちる）
+        dev = next(self.parameters()).device
+        idx = torch.tensor([vocab.encode(start) or [0]], dtype=torch.long, device=dev)
         for _ in range(n):
             logits, _ = self(idx[:, -self.ctx:])
             p = F.softmax(logits[:, -1] / temp, dim=-1)
@@ -357,8 +360,9 @@ def batch(data, ctx, bs, tiers=None):
             k = int(m.sum())
             if k:
                 ix[m] = torch.randint(mid[0], mid[1] - ctx - 1, (k,))
-    x = torch.stack([data[i:i + ctx] for i in ix])
-    y = torch.stack([data[i + 1:i + ctx + 1] for i in ix])
+    # ★★ごはんは int32 で持つ（★long の半分）。★使う所だけ long にする
+    x = torch.stack([data[i:i + ctx] for i in ix]).long()
+    y = torch.stack([data[i + 1:i + ctx + 1] for i in ix]).long()
     if DEV.type != "cpu":
         x = x.to(DEV, non_blocking=True)
         y = y.to(DEV, non_blocking=True)
@@ -387,6 +391,12 @@ def main():
         print("★CPU で学ぶ（%d本）" % THREADS, flush=True)
     os.makedirs(WORK, exist_ok=True)
     hist = load_hist()
+    # ★★★ここから時計を回す。
+    #   ★前は「学習の直前」から測っていたが、★予算は「ジョブの残り」で計算している。
+    #     → ★下ごしらえ（ごはんを開く・重複削り・encode）が**予算の外**にいた。
+    #   ★そこが伸びると、★予算を守ったつもりで時間切れになる。
+    t_start = time.time()
+    val_tag = VAL_TAG      # ★逃げ道に入ったら書き換える（★別の物差しと比べないため）
 
     # ── ①★ごはんを読む（★法令＋判例＋**webで自分が読んだもの**）
     texts = []
@@ -400,9 +410,16 @@ def main():
             # ★★圧縮して持つ（★日本語は1/3になる。★置き場所が3倍長持ちする）
             # ★途中で切れた字があっても止まらない（★ごはんが欠けても生きる）
             op = gzip.open if p.endswith(".gz") else open
-            with op(p, "rt", encoding="utf-8", errors="ignore") as f:
-                texts.append(f.read())
-            sizes[name] = texts[-1]
+            # ★★★1つ壊れていても、★残りは食べる（★全部を道連れにしない）
+            try:
+                with op(p, "rt", encoding="utf-8", errors="ignore") as f:
+                    texts.append(f.read())
+            except Exception as e:
+                print("  ★★★%s が壊れている（%s）。★捨てて次へ。"
+                      % (name, type(e).__name__), flush=True)
+                os.remove(p)
+                continue
+            sizes[name] = len(texts[-1])   # ★長さだけ。★前は全文を持っていた
             # ★★★同じ名前の非圧縮版が隣にあると、それは**読まれない**。
             #   ★2026-09-08: read_web.py が web.txt に書き、包みが web.txt.gz に足され、
             #     ★.gz を先に見つけて打ち切るので **1日4万ページが丸ごと消えていた**。
@@ -440,6 +457,7 @@ def main():
             seen[key] = n + 1
             kept.append(ln)
     text = "\n".join(kept)
+    del kept, seen                  # ★★ごはんの写しを2つ抱えない
     print("★コーパス %.1f 万字（★同じ行を削って %.1f%% 減）"
           % (len(text) / 10000, (1 - len(text) / max(1, before)) * 100), flush=True)
 
@@ -449,7 +467,14 @@ def main():
     ckpt = os.path.join(WORK, "realu.pt")
     st = None
     if os.path.exists(ckpt):
-        st = torch.load(ckpt, map_location="cpu", weights_only=False)
+        # ★★★途中で切れた .pt は、★捨てて生まれ直す（★死に続けるよりまし）
+        try:
+            st = torch.load(ckpt, map_location="cpu", weights_only=False)
+        except Exception as e:
+            print("★★★前のわたしが壊れている（%s）。★はじめから目を開ける。"
+                  % type(e).__name__, flush=True)
+            os.remove(ckpt)
+            st = None
         # ★★単位が変わっていたら、★前のわたしは引き継げない（★出口の形が違う）
         if (st.get("kind", "char") != ("bpe" if os.path.exists(tokf) else "char")
                 or st.get("arch") != ARCH):
@@ -465,7 +490,7 @@ def main():
         model = model.to(DEV)
         prev_val = st.get("val")
         # ★★★測り方が変わったなら、前の点数は**別の問題の点数**。比べてはいけない。
-        if st.get("valTag") != VAL_TAG:
+        if st.get("valTag") != val_tag:
             prev_val = None
             print("★物差しが変わった。★前の点数とは比べない（★比べると嘘になる）", flush=True)
         print("★前のわたし: %d 層 / %.2f M / これまでの loss %.4f"
@@ -517,20 +542,46 @@ def main():
     #   ★毎回ちがう文で測ると、「前より良くなったか」が意味を失う。
     #   ★★キャッシュが消えても復活できるよう、これも鍵つきでしまう（grow.yml 側）。
     valf = os.path.join(WORK, "val.txt.gz")
+    val_text = None
     if os.path.exists(valf):
-        with gzip.open(valf, "rt", encoding="utf-8", errors="ignore") as f:
-            val_text = f.read()
+        # ★★★途中で切れた .gz は、★捨てて作り直す。
+        #   ★前は毎回ここで死んで、★人が消しに来るまで直らなかった。
+        try:
+            with gzip.open(valf, "rt", encoding="utf-8", errors="ignore") as f:
+                val_text = f.read()
+        except Exception as e:
+            print("★★★物差しが壊れている（%s）。★作り直す。" % type(e).__name__, flush=True)
+            os.remove(valf)
+            val_text = None
+    if val_text is not None:
         print("★物差しは前と同じもの（%.1f 万字）。★だから前の点数と比べられる"
               % (len(val_text) / 10000), flush=True)
     else:
         val_text = (chr(10)).join(held)
-        with gzip.open(valf, "wt", encoding="utf-8", newline=chr(10)) as f:
+        # ★★★途中で切れた .gz は、★以後**毎回**ここで落ちる（★人が消すまで直らない）。
+        #   → ★別名で書いてから、★最後に名前を付け替える。
+        with gzip.open(valf + ".tmp", "wt", encoding="utf-8", newline=chr(10)) as f:
             f.write(val_text)
+        os.replace(valf + ".tmp", valf)
         print("★物差しを作った（%.1f 万字 / %d 行）。★★これはもう変えない"
               % (len(val_text) / 10000, len(held)), flush=True)
 
-    ids = torch.tensor(vocab.encode(text), dtype=torch.long)
-    va = torch.tensor(vocab.encode(val_text), dtype=torch.long)
+    # ★★★10億字を一度に encode すると**メモリで死ぬ**。
+    #   ★Python の list は1個あたり8バイトの指し先＋28バイトの整数。
+    #     6億個なら 5GB + 16GB。★16GBの機械では入らない。
+    #   ★★分けて encode して、★int32 でつなぐ（★long の半分で済む）。
+    #   ★make_tok.py は同じ理由で既に直した。★こちらが残っていた。
+    def encode_big(t):
+        import numpy as np
+        out, step = [], 4_000_000
+        for i in range(0, len(t), step):
+            out.append(np.asarray(vocab.encode(t[i:i + step]), dtype=np.int32))
+        if not out:
+            return torch.zeros(0, dtype=torch.int32)
+        return torch.from_numpy(np.concatenate(out))
+
+    ids = encode_big(text)
+    va = encode_big(val_text)
     tr = ids
     # ★物差しが短すぎると測れない。★その時だけ昔のやり方に落とす（★正直に言う）
     if len(va) < model.ctx * 8:
@@ -538,6 +589,7 @@ def main():
         tr, va = ids[:cut], ids[cut:]
         print("★★物差しが足りないので、うしろから2%%で測る（★前の点数とは比べない）", flush=True)
         prev_val = None
+        val_tag = "tail2-fallback"   # ★★★別の物差し。印も変える
 
     # ── ★★★記憶を3つの山に分ける（★短期・中期・長期）
     #   ★動かないもの（法令・Wikipedia）を先に、増えるものを後ろに並べてある。
@@ -567,7 +619,7 @@ def main():
     best, bad, grew = 9e9, 0, 0
     want_wider = False          # ★★★「幅が欲しい」と自分で言うための印
     lr_now = LR
-    t0 = time.time()
+    t0 = t_start          # ★★下ごしらえも予算の内側
 
     # ★★★どれくらい壊れやすくするかは、★★時計ではなく**自分の状態**で決める。
     #   ・★伸びている → 少しずつ下げる（★固める）
@@ -677,44 +729,59 @@ def main():
                       "★★次は**幅を広げたい**。" % (model.d, len(model.blocks)), flush=True)
                 bad = 0
 
-    model.eval()
-    with torch.no_grad():
-        val = torch.stack([model(*batch(va, model.ctx, BATCH))[1]
-                           for _ in range(20)]).mean().item()
-
-    # ── ★★★縮退していないか測る（★言い方の幅が細くなっていないか）
-    #   ★蒸留を重ねると、★珍しい言い方から順に消えていく。★数字で見えるようにする。
+    # ★★★ここから「残す」までの間で転んだら、★学習が丸ごと消える。
+    #   ★測るのに失敗しても、★頭だけは必ず残す（★下の torch.save まで必ず行く）。
     def spread(m):
+        """★言い方の幅。★蒸留を重ねると珍しい言い方から消えるので、数字で見る。"""
         with torch.no_grad():
             xx, _ = batch(va, m.ctx, BATCH)
             lg, _ = m(xx)
             pr = F.softmax(lg, dim=-1)
             return float(-(pr * torch.log(pr + 1e-9)).sum(-1).mean())
 
-    my_spread = spread(model)
-    if teacher is not None:
-        t_spread = spread(teacher)
-        print("★言い方の幅: 先生 %.3f → わたし %.3f" % (t_spread, my_spread), flush=True)
-        if my_spread < t_spread * 0.7:
-            print("★★★細くなりすぎている。★次は先生の言うことを減らすべき。", flush=True)
-
-    # ── ④★★★自己点検 ── 前より悪くなっていたら、前のわたしに戻す
+    model.eval()
+    val = None
+    my_spread = 0.0
     rolled = False
-    if prev_val is not None and val > prev_val + WORSE_MARGIN and grew == 0:
-        print("★★★前より悪くなった（%.4f → %.4f）。★この学習は採用しない。前のわたしに戻す。"
-              % (prev_val, val), flush=True)
-        model.load_state_dict(before)
-        while len(model.blocks) > before_layers:
-            model.blocks = model.blocks[:before_layers]
-        val, rolled = prev_val, True
+    try:
+        with torch.no_grad():
+            val = torch.stack([model(*batch(va, model.ctx, BATCH))[1]
+                               for _ in range(20)]).mean().item()
+        my_spread = spread(model)
+        if teacher is not None:
+            t_spread = spread(teacher)
+            print("★言い方の幅: 先生 %.3f → わたし %.3f" % (t_spread, my_spread), flush=True)
+            if my_spread < t_spread * 0.7:
+                print("★★★細くなりすぎている。★次は先生の言うことを減らすべき。", flush=True)
+
+        # ── ④★★★自己点検 ── 前より悪くなっていたら、前のわたしに戻す
+        if prev_val is not None and val > prev_val + WORSE_MARGIN and grew == 0:
+            print("★★★前より悪くなった（%.4f → %.4f）。★この学習は採用しない。前のわたしに戻す。"
+                  % (prev_val, val), flush=True)
+            model.load_state_dict(before)
+            while len(model.blocks) > before_layers:
+                model.blocks = model.blocks[:before_layers]
+            val, rolled = prev_val, True
+    except Exception as e:
+        print("★★★測れなかった（%s）。★それでも頭は残す。" % type(e).__name__, flush=True)
+        if val is None:
+            val = prev_val if prev_val is not None else float("nan")
 
     # ★★保存はCPUに戻してから。★GPUのまま保存すると、CPUの回が読めない
-    cpu_state = {k: v.detach().cpu() for k, v in model.state_dict().items()}
-    torch.save({"model": cpu_state, "loops": model.loops,
+    # ★★★保存は**CPUに戻してから、別名で書いて、名前を付け替える**。
+    #   ★GPUのまま保存すると、CPUの回が読めない。
+    #   ★1つずつ .cpu() すると、★出口と入り口で共有している表が**2つに分かれて太る**
+    #     （★実測: 語彙6000/幅192 で +4.6MB ＝ +47%）。★丸ごと移せば共有が保たれる。
+    #   ★途中で切れた .pt は、★以後ずっと読めない。
+    _was = next(model.parameters()).device
+    model.to("cpu")
+    torch.save({"model": model.state_dict(), "loops": model.loops,
                 "kind": getattr(vocab, "kind", "char"), "arch": ARCH,
                 "itos": getattr(vocab, "itos", None),
                 "layers": len(model.blocks), "d": model.d, "h": model.h,
-                "ctx": model.ctx, "val": val, "valTag": VAL_TAG}, ckpt)
+                "ctx": model.ctx, "val": val, "valTag": val_tag}, ckpt + ".tmp")
+    os.replace(ckpt + ".tmp", ckpt)
+    model.to(_was)
 
     # ★★★毎回、同じ書き出しで書かせる。★並べれば育ちが見える。
     #   ★出す前に必ず検閲する（★キーワードの網。★learn.py と同じもの）。

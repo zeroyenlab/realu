@@ -78,13 +78,18 @@ jobs:
                     -out work/realu.pt -pass env:FOODKEY 2>/dev/null; then
               echo "★Release から前のわたしを見つけた（鍵つき）"
             # ★★昔の回が素のまま置いていったもの。★引き継いでから、上で消す
+            elif [ -n "$FOODKEY" ] \
+                 && gh release download brain -p realu-prev.enc -D /tmp 2>/dev/null \
+                 && openssl enc -d -aes-256-cbc -pbkdf2 -in /tmp/realu-prev.enc \
+                      -out work/realu.pt -pass env:FOODKEY 2>/dev/null; then
+              echo "★★一つ前のわたしを見つけた（★最新が壊れていた）"
             elif gh release download brain -p realu.pt -D work 2>/dev/null; then
               echo "★Release から前のわたしを見つけた（素のまま。★あとで鍵をかける）"
             else
               rm -f work/realu.pt
               echo "★前のわたしはいない。はじめて目を開ける"
             fi
-            rm -f /tmp/realu.enc
+            rm -f /tmp/realu.enc /tmp/realu-prev.enc
           else
             echo "★cache に前のわたしがいた"
           fi
@@ -115,6 +120,15 @@ jobs:
               rm -f "/tmp/$n.enc"
             fi
           done
+          # ★★★ことばの単位。★頭とセットでないと意味が入れ替わる
+          if [ ! -f work/tok.json ] \
+             && gh release download food -p tok.enc -D /tmp 2>/dev/null; then
+            openssl enc -d -aes-256-cbc -pbkdf2 -in /tmp/tok.enc \
+              -out work/tok.json -pass env:FOODKEY 2>/dev/null \
+              && echo "★ことばの単位を取り戻した" || rm -f work/tok.json
+            rm -f /tmp/tok.enc
+          fi
+
           # ★★「どこまで読んだか」の紙。★これが消えると判例も本も**読み直しになる**
           if gh release download food -p "notes.tgz.enc" -D /tmp 2>/dev/null; then
             if openssl enc -d -aes-256-cbc -pbkdf2 -in /tmp/notes.tgz.enc \
@@ -156,7 +170,8 @@ jobs:
             gzip -c corpus/hanrei_new.txt >> work/hanrei.txt.gz
             rm -f corpus/hanrei_new.txt
           fi
-          echo "$TO" > work/hanrei_next.txt
+          # ★★取れなかった時に進めると、★その範囲を**永久に飛ばす**
+          if [ -f work/hanrei.txt.gz ]; then echo "$TO" > work/hanrei_next.txt; fi
           echo "★いま持っている判決: $(du -h work/hanrei.txt.gz 2>/dev/null | cut -f1 || echo 0)"
 
       # ── ★★★Wikipedia日本語版を、まとめて正面から受け取る（★初回だけ）
@@ -164,7 +179,7 @@ jobs:
       #   ★140万ページを叩きに行くより、★これが速くて礼儀正しい。
       - name: Wikipediaをまとめてもらう（はじめの一回だけ）
         env:
-          REALU_DUMP_CHARS: "900000000"
+          REALU_DUMP_CHARS: "250000000"   # ★★9億字は1回で1.6%しか見ない。★メモリだけ食う
         run: |
           BEFORE=$(stat -c%s work/wiki.txt.gz 2>/dev/null || echo 0)
           python -u eat_dump.py
@@ -184,7 +199,12 @@ jobs:
           gh release view reading >/dev/null 2>&1 || exit 0
           mkdir -p /tmp/pk && rm -f /tmp/pk/*
           : > /tmp/ate.txt
-          gh release download reading -D /tmp/pk 2>/dev/null || exit 0
+          # ★★★前は全部まとめて落としていた。★1個でも壊れていると gh が非ゼロを返し、
+          #   ★1日17万ページぶんが**何も言わずに**捨てられていた。→ 1個ずつ落とす。
+          for nm in $(gh release view reading --json assets \
+                        -q ".assets[].name" 2>/dev/null | grep "^read-" || true); do
+            gh release download reading -p "$nm" -D /tmp/pk 2>/dev/null || true
+          done
           n=0
           for f in /tmp/pk/read-*.enc; do
             [ -f "$f" ] || continue
@@ -256,7 +276,11 @@ jobs:
             if [ -f "work/$n.txt.gz" ]; then
               openssl enc -aes-256-cbc -pbkdf2 -salt \
                 -in "work/$n.txt.gz" -out "/tmp/$n.enc" -pass env:FOODKEY
-              gh release upload food "/tmp/$n.enc" --clobber || true
+              if gh release upload food "/tmp/$n.enc" --clobber; then
+                if [ "$n" = "web" ]; then SAVED_WEB=1; fi
+              else
+                echo "★★$n を載せられなかった"
+              fi
               rm -f "/tmp/$n.enc"
             fi
           done
@@ -266,16 +290,30 @@ jobs:
             openssl enc -aes-256-cbc -pbkdf2 -salt \
               -in /tmp/notes.tgz -out /tmp/notes.tgz.enc -pass env:FOODKEY
             gh release upload food /tmp/notes.tgz.enc --clobber || true
-            rm -f /tmp/notes.tgz /tmp/notes.tgz.enc
           fi
+          # ★★★ことばの単位も必ず一緒に。
+          #   ★これが消えると、★同じ大きさで**中身の違う**語彙が作り直される。
+          #   ★頭の読み込みは大きさしか見ないので**通ってしまい**、
+           #  ★全部の文字の意味が入れ替わったまま学習が続く。★落ちないので気づけない。
+          if [ -f work/tok.json ]; then
+            openssl enc -aes-256-cbc -pbkdf2 -salt \
+              -in work/tok.json -out /tmp/tok.enc -pass env:FOODKEY
+            gh release upload food /tmp/tok.enc --clobber || true
+            rm -f /tmp/tok.enc
+          fi
+          rm -f /tmp/notes.tgz /tmp/notes.tgz.enc
           echo "★鍵をかけてしまった"
           # ★★★ここまで来て**はじめて**、5分ごとの包みを片付ける。
           #   ★前は「食べた直後」に消していた。★途中で転んだら包みだけ消えて中身が残らない。
-          if [ -s /tmp/ate.txt ]; then
+          # ★★★包みを消してよいのは、★中身（web）が**本当に載った**時だけ。
+          #   ★前は載せ損ねても消していた。★消したら二度と戻らない。
+          if [ -s /tmp/ate.txt ] && [ "$SAVED_WEB" = "1" ]; then
             while read -r nm; do
               gh release delete-asset reading "$nm" -y 2>/dev/null || true
             done < /tmp/ate.txt
             echo "★食べ終わった包み $(wc -l < /tmp/ate.txt) 個を片付けた"
+          elif [ -s /tmp/ate.txt ]; then
+            echo "★★ごはんを載せられなかったので、★包みは消さない"
           fi
           du -sh work 2>/dev/null || true
 
@@ -303,9 +341,21 @@ jobs:
           # ★★★残り時間から予算を出す。★歩数を当てにいかない。
           #   ★2026-09-08: 4,000歩に182分要るのに残り145分で、★頭が1つも残らない所だった。
           #   ★★最後の15分は「残す」ために空けておく。
-          USED=$(( $(date +%s) - $(cat /tmp/t0) ))
-          LEFT=$(( 340*60 - USED - 900 ))
-          if [ "$LEFT" -lt 600 ]; then LEFT=600; fi
+          # ★★★時計が無い時は「たっぷりある」ではなく「もう無い」と見なす。
+          #   ★前は空文字→0扱いになって、★325分の予算が出て締切を突き抜けていた。
+          T0=$(cat /tmp/t0 2>/dev/null || echo 0)
+          if [ "$T0" = "0" ]; then
+            echo "★★時計が無い。★学びは短めにする"; LEFT=1800
+          else
+            USED=$(( $(date +%s) - T0 ))
+            LEFT=$(( 340*60 - USED - 1500 ))
+            echo "★使った $((USED/60))分"
+          fi
+          # ★★★足りないなら**学ばない**。★学んで締切に殺されると頭が残らない。
+          if [ "$LEFT" -lt 420 ]; then
+            echo "★★時間が無い（残り $((LEFT/60))分）。★今回は学ばず、いま持っている頭をそのまま残す。"
+            exit 0
+          fi
           export REALU_TIME_BUDGET=$(( LEFT / 60 ))
           echo "★使った $((USED/60))分 / 学びに使える $REALU_TIME_BUDGET分"
           python -u grow.py
@@ -327,6 +377,14 @@ jobs:
           gh release view brain >/dev/null 2>&1 \
             || gh release create brain --title "レアルの頭" \
                  --notes "レアルの重み。鍵をかけてある。" --latest=false
+          # ★★★--clobber は「先に消してから載せる」。
+          #   ★その隙にキャンセルや締切が来ると、★**頭が1つも無くなる**。
+          #   → ★先に、いま載っているものを「前のわたし」として退避する。
+          if gh release download brain -p realu.enc -D /tmp/keep 2>/dev/null; then
+            mv /tmp/keep/realu.enc /tmp/keep/realu-prev.enc
+            gh release upload brain /tmp/keep/realu-prev.enc --clobber || true
+            rm -rf /tmp/keep
+          fi
           openssl enc -aes-256-cbc -pbkdf2 -salt \
             -in work/realu.pt -out /tmp/realu.enc -pass env:FOODKEY
           gh release upload brain /tmp/realu.enc --clobber
@@ -350,7 +408,12 @@ jobs:
             git fetch origin main && git reset --hard origin/main
             cp /tmp/growth.mine growth.json
             cp /tmp/said.mine said.json 2>/dev/null || true
-            git add growth.json said.json
+            # ★★★無いファイルを1つ混ぜると **git add は全部落ちる**（exit 128）。
+            #   ★said.json は別のワークフローが作る物で、★ここには無い回がある。
+            #   → ★この段は**一度も成功していなかった**（2026-09-08 に判明）。
+            for f in growth.json said.json; do
+              [ -f "$f" ] && git add "$f"
+            done
             if git diff --staged --quiet; then
               echo "記録に変化なし"; break
             fi
