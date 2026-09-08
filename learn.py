@@ -271,7 +271,19 @@ def listen(k, seed_host):
                 break
             if re.search(r"^[0-9A-Za-z]+$", w) or len(w) < 2:
                 continue
-            curious.append("https://" + seed_host + "/wiki/" + urllib.parse.quote(w))
+            # ★★★聞かれた言葉から行き先を作るが、★**在るか確かめてから**足す。
+            #   ★でないと存在しないページを永久に叩き続ける
+            #   （実測: 「ここ見て」「UIとUX」で404を出し続けていた）
+            cand = "https://" + seed_host + "/wiki/" + urllib.parse.quote(w)
+            if cand in seen_ids or cand in (k.get("read") or {}):
+                continue
+            try:
+                req2 = urllib.request.Request(to_ascii(cand), method="HEAD",
+                                              headers={"User-Agent": UA})
+                urllib.request.urlopen(req2, timeout=10).close()
+                curious.append(cand)
+            except Exception:
+                pass
 
     k["heardIds"] = sorted(seen_ids)[-MAX_ASKED:]
     k["heardCount"] = int(k.get("heardCount") or 0) + got
@@ -498,6 +510,10 @@ def genre_of(topic, text):
 NG_TEXT = re.compile("(性交|性器|陰茎|陰部|膣|射精|自慰|オナニ|ポルノ|わいせつ|猥褻|強姦|レイプ|痴漢|盗撮|売春|買春|援助交際|風俗店|アダルト|性的興奮|性的虐待|性行為|裸体|全裸|乳房|性欲)")
 
 
+MARKS = "<>{}[]|=" + chr(34) + chr(39) + "~*#" + chr(92) + "/"
+JA_RE = re.compile("[ぁ-んァ-ヶ一-鿿、。「」（）・0-9０-９]")
+
+
 def safe(s):
     """★★この文を覚えてよいか。★迷ったら覚えない。"""
     return not NG_TEXT.search(s)
@@ -508,7 +524,10 @@ def sentences(text):
     out = []
     for p in re.split(r"(?<=[。！？])", text):
         p = p.strip()
-        if not (30 <= len(p) <= 170):
+        # ★★★下限を下げた。★会話文は短い。
+        #   「そんなことはない」と彼は言った。＝17文字。★30字下限だと**会話が丸ごと消える**。
+        #   ★青空文庫を入れる意味が無くなるところだった。
+        if not (14 <= len(p) <= 200):
             continue
         if not re.search(r"[ぁ-んァ-ヶ一-鿿]", p):
             continue
@@ -521,19 +540,20 @@ def sentences(text):
                      r"executive|加筆|訂正|スタブ|執筆の途中|改名|ウィキ|"
                      r"項目名|リダイレクト|テンプレート|議論)", p):
             continue                       # ★①サイト自身の話。★世界の知識ではない
-        # ★★★③ウィキ記法の残骸。★中身ではなく**書き方の部品**なので覚えない
-        #   （実測: 「…と呼ばれている＜ref＞{{Cite web|和書|url＝https://…」がそのまま入っていた）
-        if re.search(r"(\{\{|\}\}|[<＜]\s*ref|Cite\s*web|\|\s*url\s*[=＝]|"
-                     r"\|\s*title\s*[=＝]|\|\s*accessdate|\[\[|\]\])", p, re.I):
+        # ★★★③④ここは「悪いものを列挙する」のをやめる。
+        #   ★列挙は必ず漏れる（実測: {{ }} <ref は弾けたが、★''' と <br/> が抜けた）。
+        #   → ★★★「**日本語の文らしいか**」で判定する。
+        #     ・記号（< > { } [ ] | = " ' ~ *）が多いものは、文ではなく**部品**
+        #     ・日本語の字が少ないものも、文ではない
+        #   ★これなら、まだ見たことのない記法が来ても落とせる。
+        marks = sum(p.count(ch) for ch in MARKS)
+        if marks >= 3:
             continue
-        # ★★★④URLが入っている文は覚えない。
-        #   ★彼女の掟は「貼られたリンクは受け取らない」。★覚えて**表示する**のはもっと悪い
+        ja = len(JA_RE.findall(p))
+        if ja < len(p) * 0.6:
+            continue
         if URL_RE.search(p):
             continue
-        if len(re.findall(r"[ 　]", p)) > len(p) / 12:
-            continue                       # ★②空白だらけ＝一覧の断片が繋がったもの
-        if not safe(p):
-            continue          # ★★露骨な文は覚えない
         out.append(p)
     return out
 
@@ -547,7 +567,17 @@ def links_of(doc, base, allowed):
             continue
         if re.search(r"\.(png|jpe?g|gif|svg|pdf|zip|css|js)$", p.path, re.I):
             continue
-        if re.search(r"(action=|oldid=|/w/|Special:|特別:|Talk:|ノート:)", u):
+        # ★★★中身の無いページは行き先に入れない。
+        #   ★URLエンコードされた状態で来るので、★戻してから見ないと漏れる
+        #   （実測: 「特別:関連ページの更新状況/…」が大量に混ざって404を出していた）
+        try:
+            uu = urllib.parse.unquote(u)
+        except Exception:
+            uu = u
+        if re.search(r"(action=|oldid=|/w/|Special:|特別:|Talk:|ノート:|"
+                     r"利用者:|User:|Wikipedia:|Help:|ヘルプ:|Template:|"
+                     r"Category:|カテゴリ:|File:|ファイル:|MediaWiki:|"
+                     r"プロジェクト:|Portal:|索引)", uu):
             continue
         out.add(p.scheme + "://" + p.netloc + p.path)
     return out
@@ -598,6 +628,19 @@ def main():
         for u in curious:
             if u not in read and u not in frontier:
                 frontier.insert(0, u)      # ★聞かれたことは、★先に読みに行く
+
+    # ★★★昔の網で入れてしまった行き先を、★いまの網で掃除する。
+    #   ★網を細かくしたら、★溜まっているものも見直す。★でないと残り続ける。
+    fr0 = k.get("frontier") or []
+    fr1 = [u for u in fr0 if not re.search(
+        r"(action=|oldid=|/w/|Special:|特別:|Talk:|ノート:|利用者:|User:|"
+        r"Wikipedia:|Help:|ヘルプ:|Template:|Category:|カテゴリ:|File:|"
+        r"ファイル:|MediaWiki:|プロジェクト:|Portal:|索引)",
+        urllib.parse.unquote(u))]
+    if len(fr1) < len(fr0):
+        print("★行き先から中身の無いページを %d か所落とした" % (len(fr0) - len(fr1)))
+        k["frontier"] = fr1
+        frontier = fr1        # ★★★掃除した方を使う（★これが無いと元に戻る）
 
     failed = k.get("failed") or {}
     def ok(u):
@@ -719,6 +762,15 @@ def main():
         read = dict(sorted(read.items(), key=lambda kv: kv[1])[-MAX_READ:])
     k["read"] = read
     # ★何度も駄目だった場所だけ覚えておく（★まだ望みのある物は忘れて、また試す）
+    # ★★★3回だめだった行き先は、★★行き先そのものから外す。
+    #   ★でないと「行きたい場所」に居座って、★毎回叩いては落ちるを繰り返す。
+    dead = {u for u, n in failed.items() if n >= 3}
+    if dead:
+        before_f = len(k.get("frontier") or [])
+        k["frontier"] = [u for u in (k.get("frontier") or []) if u not in dead]
+        gone = before_f - len(k["frontier"])
+        if gone:
+            print("★何度行っても読めなかった %d か所を、行き先から外した" % gone)
     k["failed"] = {u: n for u, n in failed.items() if n >= 3}
     k["frontier"] = [u for u in frontier if u not in read][:MAX_FRONTIER]
 
