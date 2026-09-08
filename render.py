@@ -81,6 +81,28 @@ def main():
     url = site()
     items = list(reversed(k.get("items") or []))
     heard = int(k.get("heardCount") or 0)
+    # ★★★育った記録。★黙って止まらないように、★自分の状態を自分で言う。
+    g = load(os.path.join(HERE, "growth.json"), {})
+    runs = (g.get("runs") or [])
+    last = runs[-1] if runs else None
+    if last:
+        days = ""
+        try:
+            dt = datetime.strptime(last["at"], "%Y-%m-%dT%H:%M:%SZ").replace(tzinfo=timezone.utc)
+            n = (datetime.now(timezone.utc) - dt).days
+            days = ("きょう" if n <= 0 else "きのう" if n == 1 else "%d 日前" % n)
+        except Exception:
+            days = last.get("at", "")
+        body = ("最後に育ったのは <b>%s</b>。いま <b>%d 層</b> / <b>%.1f M</b>。"
+                % (e(days), last.get("layers", 0), (last.get("params") or 0) / 1e6))
+        if last.get("rolledBack"):
+            body += " このときは前より下手になったので、<b>前のわたしに戻した</b>。"
+        if last.get("grew"):
+            body += " <b>%d 回大きくなった</b>。" % last["grew"]
+        grew_html = '<div class="grew">%s</div>' % body
+    else:
+        grew_html = ('<div class="grew">まだ一度も育っていない。'
+                     'いまのわたしは<b>読んで覚えるだけ</b>で、まだ頭がない。</div>')
     read_n = len(k.get("read") or {})
 
     pal = d.get("palette") if d.get("palette") in PALETTES else "yoi"
@@ -220,6 +242,7 @@ def main():
         "title": e(title), "desc": e(desc), "url": e(url), "pal": e(pal), "lay": e(lay),
         "greet": e(greet), "chips": chips, "stats": stats,
         "groups": "".join(groups), "heard": heard, "form": form, "live": live,
+        "grew": grew_html,
         "mycss": ("<style>" + mycss + "</style>") if mycss else "",
         "myfonts": ('<link rel="stylesheet" href="%s">' % e(myfonts)) if myfonts else "",
         "n_all": len(items), "n_shown": shown,
@@ -314,6 +337,9 @@ h2{font-size:11px;font-weight:700;letter-spacing:.18em;color:var(--faint);margin
 .door{background:var(--panel);border:1px dashed var(--edge);border-radius:14px;padding:16px 18px;margin:10px 0 4px;font-size:12.5px;color:var(--muted);line-height:1.9}
 .door b{color:var(--ink)}
 .heard{color:var(--muted);font-size:13px;margin:0 0 10px}
+.grew{color:var(--muted);font-size:12.5px;line-height:1.9;background:var(--panel);
+  border:1px solid var(--edge);border-radius:14px;padding:12px 16px;margin:-16px 0 26px}
+.grew b{color:var(--accent)}
 .heard b{color:var(--accent);font-size:18px;font-variant-numeric:tabular-nums}
 .say{display:flex;flex-direction:column;gap:8px;background:var(--panel);border:1px solid var(--edge);border-radius:14px;padding:16px 18px;margin:14px 0 4px}
 .say label{font-size:11px;letter-spacing:.14em;color:var(--faint);font-weight:700}
@@ -341,6 +367,7 @@ h2{font-size:11px;font-weight:700;letter-spacing:.18em;color:var(--faint);margin
   <div class="byline">この家は %(chosen)s に、レアルが %(changes)d 度目に選び直したもの</div>
 
   <div class="stats">%(stats)s</div>
+  %(grew)s
 
   <h2>知っていることの内訳</h2>
   <div class="chips" id="genres">%(chips)s</div>
