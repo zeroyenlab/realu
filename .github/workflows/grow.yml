@@ -154,14 +154,24 @@ jobs:
         run: |
           git config user.name  "realu"
           git config user.email "realu@users.noreply.github.com"
-          git add growth.json
-          if git diff --staged --quiet; then
-            echo "記録に変化なし"
-          else
-            git commit -m "レアルが育った ($(date -u +'%m-%d')Z)"
-            git pull --rebase --autostash || true
-            git push
-          fi
+          # ★★★置いた人が同じファイルを直しているかもしれない。
+          #   ★衝突しても転ばないように、★自分の記録だけを持って、★向こうの最新に載せ直す。
+          cp growth.json /tmp/growth.mine
+          git stash -u >/dev/null 2>&1 || true
+          for i in 1 2 3; do
+            git fetch origin main && git reset --hard origin/main
+            cp /tmp/growth.mine growth.json
+            git add growth.json
+            if git diff --staged --quiet; then
+              echo "記録に変化なし"; break
+            fi
+            git commit -q -m "レアルが育った ($(date -u +'%m-%d')Z)"
+            if git push origin HEAD:main; then
+              echo "★記録を残した"; break
+            fi
+            echo "  誰かが先に書いていた。やり直す ($i)"
+            sleep 5
+          done
 
       # ★★★触れてはいけない所を守る
       - name: 触れてはいけない所を守る
