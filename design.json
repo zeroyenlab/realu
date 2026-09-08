@@ -4,5 +4,34 @@
  "featured": "色",
  "greeting": "「上記の様に、色の三属性を全てを具えたものが色であり、「色には明度が無い」とか「白や黒は色ではない」などと主張している人たちが、志」 ── そんなことを、いま知った。",
  "chosenAt": "2026-09-08T01:41:10+00:00",
- "changes": 6
+ "changes": 6,
+ "seed": 11,
+ "look": {
+  "hue": 0.4209,
+  "hue2": 0.5758,
+  "dark": true,
+  "sat": 0.442,
+  "radius": 19,
+  "gap": 14,
+  "speed": 12.9,
+  "font": "Shippori Mincho",
+  "fontName": "しずか",
+  "bodyFont": "Dela Gothic One",
+  "motion": "pulse",
+  "layout": "cards",
+  "bg": "grid",
+  "scale": 1.15,
+  "colors": {
+   "bg": "#15201b",
+   "panel": "#1f2c26",
+   "ink": "#e6eaed",
+   "muted": "#909fab",
+   "faint": "#5e6c77",
+   "edge": "#35453d",
+   "accent": "#4d9fe4",
+   "accent2": "#e070a5"
+  },
+  "contrast": 13.84,
+  "fixed": 0
+ }
 }

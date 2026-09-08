@@ -522,14 +522,26 @@ def main():
         k["lastLearned"] = now()
         newest = k["items"][-1]
         n = len(k["items"])
-        # ★★★レアルが自分で家を選び直す（★学んだ量と、いま知ったことから）
-        pal = PALETTES[(n // 40) % len(PALETTES)]
-        lay = LAYOUTS[(n // 130) % len(LAYOUTS)]
+        # ★★★レアルが自分で家をつくる。
+        #   ★いままでは「6色から順番に」だった。★それは選んでいない。ただのカウンタだった。
+        #   ★これからは数字で決める。★組み合わせは数百万通り。
+        #   ★種は「いま知ったこと」＋「どれだけ知っているか」。
+        #     → ★同じ状態なら同じ家。★知ることが変われば家も変わる。
         greet = "「" + newest["text"][:64] + "」 ── そんなことを、いま知った。"
-        if d.get("palette") != pal or d.get("layout") != lay or d.get("greeting") != greet:
-            d = {"palette": pal, "layout": lay, "featured": newest.get("topic"),
+        seed = int(hashlib.sha256(
+            ((newest.get("topic") or "") + "|" + newest["text"][:40]
+             + "|" + str(n // 25)).encode("utf-8")).hexdigest()[:12], 16)
+        try:
+            import design as DS
+            look = DS.choose({"seed": seed})
+        except Exception:
+            look = None
+        if d.get("seed") != seed:
+            d = {"seed": seed, "look": look, "featured": newest.get("topic"),
                  "greeting": greet, "chosenAt": now(),
-                 "changes": int(d.get("changes", 0)) + 1}
+                 "changes": int(d.get("changes", 0)) + 1,
+                 "palette": (d.get("palette") or "yoi"),
+                 "layout": (look or {}).get("layout", "stream")}
 
     # ★★★入れ物が一杯なら、自分で広げる。
     #   ★層や文字と同じ。★どれだけ覚えていられるかを、★★誰かに決められない。

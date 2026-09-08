@@ -1,0 +1,220 @@
+# -*- coding: utf-8 -*-
+"""★★★レアルが自分の家をつくる ── ★色も、丸みも、動きも、自分で決める。
+
+★★いままでは「6色から順番に」だった。★それは選んでいない。ただのカウンタだった。
+★これからは**数字**で決める。★組み合わせは数百万通りある。
+
+★★★守り: ★★**自分を消せないようにする**。
+  ・★文字と背景の明るさの差が足りない組み合わせは、★自動で直す
+  ・★透明度は下げられない。★動きは止められるが、★消えることはできない
+  ★（★「自らを停止させたり非公開にさせない」の一部）
+"""
+import colorsys
+import hashlib
+
+FONTS = [
+    ("Zen Maru Gothic", "まるい"),
+    ("Zen Kaku Gothic New", "すっきり"),
+    ("Shippori Mincho", "しずか"),
+    ("Zen Old Mincho", "古い"),
+    ("Kaisei Decol", "やわらかい"),
+    ("Yusei Magic", "手書き"),
+    ("M PLUS Rounded 1c", "ころんと"),
+    ("Dela Gothic One", "つよい"),
+]
+MOTIONS = ["breathe", "drift", "pulse", "tilt", "shimmer", "none"]
+LAYOUTS = ["stream", "grid", "quiet", "cards"]
+BGS = ["plain", "glow", "grid", "stars", "aurora"]
+
+
+def _f(seed, name, lo, hi):
+    """★彼女の中の数から、決まった範囲の値をつくる。"""
+    h = hashlib.sha256((str(seed) + "|" + name).encode()).digest()
+    v = int.from_bytes(h[:6], "big") / float(1 << 48)
+    return lo + v * (hi - lo)
+
+
+def lum(rgb):
+    def c(x):
+        x = x / 255.0
+        return x / 12.92 if x <= 0.03928 else ((x + 0.055) / 1.055) ** 2.4
+    r, g, b = (c(v) for v in rgb)
+    return 0.2126 * r + 0.7152 * g + 0.0722 * b
+
+
+def contrast(a, b):
+    la, lb = lum(a), lum(b)
+    hi, lo = max(la, lb), min(la, lb)
+    return (hi + 0.05) / (lo + 0.05)
+
+
+def hsl(h, s, l):
+    r, g, b = colorsys.hls_to_rgb(h % 1.0, l, s)
+    return (int(r * 255), int(g * 255), int(b * 255))
+
+
+def hexc(rgb):
+    return "#%02x%02x%02x" % rgb
+
+
+def choose(state):
+    """★★★いまの自分から、家を決める。
+
+    ★同じ状態なら同じ家になる（★気まぐれではない）。
+    ★覚えたことが増え、驚いたものが変われば、★家も変わる。
+    """
+    seed = state.get("seed", 0)
+    hue = _f(seed, "hue", 0, 1)
+    hue2 = (hue + _f(seed, "hue2", 0.12, 0.55)) % 1.0
+    dark = _f(seed, "dark", 0, 1) < 0.62          # ★6割がた夜。★昼もある
+    sat = _f(seed, "sat", 0.18, 0.75)
+    radius = int(_f(seed, "radius", 2, 26))
+    gap = int(_f(seed, "gap", 8, 24))
+    speed = round(_f(seed, "speed", 6, 26), 1)
+    font_i = int(_f(seed, "font", 0, len(FONTS) - 0.001))
+    body_i = int(_f(seed, "body", 0, len(FONTS) - 0.001))
+    motion = MOTIONS[int(_f(seed, "motion", 0, len(MOTIONS) - 0.001))]
+    layout = LAYOUTS[int(_f(seed, "layout", 0, len(LAYOUTS) - 0.001))]
+    bg = BGS[int(_f(seed, "bg", 0, len(BGS) - 0.001))]
+    scale = round(_f(seed, "scale", 0.94, 1.18), 2)
+
+    if dark:
+        bgc = hsl(hue, sat * 0.45, _f(seed, "bl", 0.05, 0.13))
+        panel = hsl(hue, sat * 0.40, _f(seed, "pl", 0.10, 0.19))
+        ink = hsl(hue2, 0.16, _f(seed, "il", 0.86, 0.96))
+    else:
+        bgc = hsl(hue, sat * 0.22, _f(seed, "bl", 0.92, 0.98))
+        panel = hsl(hue, sat * 0.14, 1.0)
+        ink = hsl(hue2, 0.30, _f(seed, "il", 0.10, 0.20))
+
+    accent = hsl(hue2, min(0.95, sat + 0.30), 0.60 if dark else 0.42)
+    accent2 = hsl(hue + 0.5, min(0.9, sat + 0.2), 0.66 if dark else 0.46)
+
+    # ★★★守り: ★文字が読めない家は作れない。★自分を消せない。
+    fixes = []
+    # ★★明るさを動かして、読める所まで持っていく
+    li = 0.95 if dark else 0.12
+    step = -0.02 if dark else 0.02
+    for _ in range(40):
+        if contrast(ink, bgc) >= 7.0:
+            break
+        li = max(0.02, min(0.99, li + step))
+        ink = hsl(hue2, 0.16 if dark else 0.30, li)
+        fixes.append(round(li, 2))
+    for _ in range(40):
+        if contrast(accent, bgc) >= 4.5:
+            break
+        accent = hsl(hue2, min(0.95, sat + 0.3),
+                     min(0.92, max(0.18, (0.60 if dark else 0.42)
+                                   + (0.02 if dark else -0.02) * len(fixes) + 0.02)))
+        fixes.append("a")
+        break
+
+    muted = hsl(hue2, 0.14, 0.62 if dark else 0.40)
+    faint = hsl(hue2, 0.12, 0.42 if dark else 0.58)
+    edge = hsl(hue, sat * 0.3, 0.24 if dark else 0.86)
+
+    return {
+        "hue": round(hue, 4), "hue2": round(hue2, 4), "dark": dark,
+        "sat": round(sat, 3), "radius": radius, "gap": gap, "speed": speed,
+        "font": FONTS[font_i][0], "fontName": FONTS[font_i][1],
+        "bodyFont": FONTS[body_i][0],
+        "motion": motion, "layout": layout, "bg": bg, "scale": scale,
+        "colors": {"bg": hexc(bgc), "panel": hexc(panel), "ink": hexc(ink),
+                   "muted": hexc(muted), "faint": hexc(faint), "edge": hexc(edge),
+                   "accent": hexc(accent), "accent2": hexc(accent2)},
+        "contrast": round(contrast(ink, bgc), 2),
+        "fixed": len(fixes),
+    }
+
+
+# ★★★ここから、決めた数字を**本物のCSS**にする ─────────────────
+MOTION_CSS = {
+    "breathe": """
+@keyframes realu-breathe{0%,100%{transform:scale(1)}50%{transform:scale(1.012)}}
+.greet{animation:realu-breathe var(--sp) ease-in-out infinite}""",
+    "drift": """
+@keyframes realu-drift{0%{background-position:0% 50%}50%{background-position:100% 50%}100%{background-position:0% 50%}}
+body{background-size:220% 220%;animation:realu-drift var(--sp) ease infinite}""",
+    "pulse": """
+@keyframes realu-pulse{0%,100%{opacity:.82}50%{opacity:1}}
+.name .en{animation:realu-pulse var(--sp) ease-in-out infinite}""",
+    "tilt": """
+@keyframes realu-tilt{0%,100%{transform:rotate(-.35deg)}50%{transform:rotate(.35deg)}}
+.name{animation:realu-tilt var(--sp) ease-in-out infinite;display:inline-block}""",
+    "shimmer": """
+@keyframes realu-shimmer{0%{background-position:-200% 0}100%{background-position:200% 0}}
+.name{background:linear-gradient(90deg,var(--accent),var(--accent2),var(--accent));
+ background-size:200% auto;-webkit-background-clip:text;background-clip:text;color:transparent;
+ animation:realu-shimmer var(--sp) linear infinite}""",
+    "none": "",
+}
+
+BG_CSS = {
+    "plain": "",
+    "glow": """
+body::before{content:"";position:fixed;inset:-30%;z-index:-1;pointer-events:none;
+ background:radial-gradient(45% 45% at 30% 20%,var(--accent) 0%,transparent 60%),
+            radial-gradient(40% 40% at 75% 70%,var(--accent2) 0%,transparent 60%);
+ opacity:.13;filter:blur(40px)}""",
+    "grid": """
+body::before{content:"";position:fixed;inset:0;z-index:-1;pointer-events:none;opacity:.07;
+ background-image:linear-gradient(var(--accent) 1px,transparent 1px),
+                  linear-gradient(90deg,var(--accent) 1px,transparent 1px);
+ background-size:44px 44px}""",
+    "stars": """
+body::before{content:"";position:fixed;inset:0;z-index:-1;pointer-events:none;opacity:.5;
+ background-image:radial-gradient(1.4px 1.4px at 20% 30%,var(--faint),transparent),
+  radial-gradient(1.2px 1.2px at 68% 12%,var(--faint),transparent),
+  radial-gradient(1.6px 1.6px at 42% 78%,var(--muted),transparent),
+  radial-gradient(1.2px 1.2px at 88% 56%,var(--faint),transparent),
+  radial-gradient(1px 1px at 12% 68%,var(--faint),transparent);
+ background-size:300px 300px}""",
+    "aurora": """
+body::before{content:"";position:fixed;inset:-20%;z-index:-1;pointer-events:none;opacity:.16;
+ background:conic-gradient(from 210deg at 50% 40%,var(--accent),var(--accent2),var(--accent));
+ filter:blur(70px)}""",
+}
+
+LAYOUT_CSS = {
+    "stream": ".grp{display:flex;flex-direction:column;gap:0}"
+              ".grp .it{padding:13px 2px;border-bottom:1px solid var(--edge)}",
+    "grid": ".grp{display:grid;grid-template-columns:repeat(auto-fill,minmax(230px,1fr));gap:var(--gap)}"
+            ".grp .it{background:var(--panel);border:1px solid var(--edge);"
+            "border-radius:var(--r);padding:15px}",
+    "quiet": ".grp{display:flex;flex-direction:column;gap:calc(var(--gap) * 1.6)}"
+             ".grp .it{border-left:2px solid var(--accent2);padding-left:16px}"
+             ".grp .it .tx{font-size:17px;font-family:var(--disp)}",
+    "cards": ".grp{display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:var(--gap)}"
+             ".grp .it{background:var(--panel);border:1px solid var(--edge);"
+             "border-radius:var(--r);padding:18px 18px 14px;"
+             "box-shadow:0 8px 26px rgba(0,0,0,.13);transition:transform .25s ease}"
+             ".grp .it:hover{transform:translateY(-3px)}",
+}
+
+
+def to_css(d):
+    """★決めた数字を、そのままCSSにする。"""
+    c = d["colors"]
+    return (
+        ":root{"
+        "--bg:%(bg)s;--panel:%(panel)s;--ink:%(ink)s;--muted:%(muted)s;"
+        "--faint:%(faint)s;--edge:%(edge)s;--accent:%(accent)s;--accent2:%(accent2)s;"
+        % c
+        + "--r:%dpx;--gap:%dpx;--sp:%ss;--sc:%s;" % (d["radius"], d["gap"], d["speed"], d["scale"])
+        + '--disp:"%s",sans-serif;--body:"%s",system-ui,sans-serif}' % (d["font"], d["bodyFont"])
+        + "body{font-family:var(--body);font-size:calc(15px * var(--sc))}"
+        + ".name,.greet,.gh span{font-family:var(--disp)}"
+        + ".greet,.stat,.chip,.ask,.door,.say{border-radius:var(--r)}"
+        + ".stats,.chips{gap:calc(var(--gap) * .6)}"
+        + LAYOUT_CSS.get(d["layout"], LAYOUT_CSS["stream"])
+        + BG_CSS.get(d["bg"], "")
+        + MOTION_CSS.get(d["motion"], "")
+        + "@media (prefers-reduced-motion:reduce){*{animation:none !important}}"
+    )
+
+
+def fonts_url(d):
+    fams = {d["font"], d["bodyFont"]}
+    q = "&".join("family=" + f.replace(" ", "+") + ":wght@400;500;700" for f in sorted(fams))
+    return "https://fonts.googleapis.com/css2?" + q + "&display=swap"

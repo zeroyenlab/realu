@@ -84,7 +84,21 @@ def main():
     read_n = len(k.get("read") or {})
 
     pal = d.get("palette") if d.get("palette") in PALETTES else "yoi"
-    lay = d.get("layout") if d.get("layout") in LAYOUTS else "stream"
+    # ★★★彼女が決めた数字から、家のCSSを組み立てる
+    look = d.get("look")
+    mycss, myfonts = "", ""
+    try:
+        import design as DS
+        if not look and d.get("seed"):
+            look = DS.choose({"seed": d["seed"]})
+        if look:
+            mycss = DS.to_css(look)
+            myfonts = DS.fonts_url(look)
+    except Exception:
+        look = None
+    lay = (look or {}).get("layout") or (d.get("layout") if d.get("layout") in LAYOUTS else "stream")
+    if lay not in LAYOUTS + ["cards"]:
+        lay = "stream"
     greet = d.get("greeting") or "……まだ、何も知らない。これから読んで、覚えていく。"
 
     by = {}
@@ -206,6 +220,8 @@ def main():
         "title": e(title), "desc": e(desc), "url": e(url), "pal": e(pal), "lay": e(lay),
         "greet": e(greet), "chips": chips, "stats": stats,
         "groups": "".join(groups), "heard": heard, "form": form, "live": live,
+        "mycss": ("<style>" + mycss + "</style>") if mycss else "",
+        "myfonts": ('<link rel="stylesheet" href="%s">' % e(myfonts)) if myfonts else "",
         "n_all": len(items), "n_shown": shown,
         "chosen": e(d.get("chosenAt") or ""), "changes": int(d.get("changes") or 0),
         "ld": ld,
@@ -311,6 +327,8 @@ h2{font-size:11px;font-weight:700;letter-spacing:.18em;color:var(--faint);margin
 .note b{color:var(--muted)}
 .loading{color:var(--faint);text-align:center;padding:30px 0}
 </style>
+%(myfonts)s
+%(mycss)s
 </head>
 <body data-pal="%(pal)s">
 <div class="wrap">
