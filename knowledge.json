@@ -312611,6 +312611,3294 @@
     "url": ""
    },
    "ts": "2026-09-08T07:18:38+00:00"
+  },
+  {
+   "topic": "FreeType",
+   "text": "フォントラスタライズ （ 英語版 ） を中心に、フォント関連の様々な操作をサポートしている。",
+   "source": "https://ja.wikipedia.org/wiki/FreeType",
+   "genre": "その他",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T07:23:10+00:00"
+  },
+  {
+   "topic": "FreeType",
+   "text": "FreeType はあくまでも フォント 関連のライブラリであって、テキストのレイアウトやグラフィックスの処理（色付きテキストの レンダリング など）といった上位の API は提供しない。",
+   "source": "https://ja.wikipedia.org/wiki/FreeType",
+   "genre": "その他",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T07:23:10+00:00"
+  },
+  {
+   "topic": "FreeType",
+   "text": "しかし、フォントファイルの内容へのアクセスについて、抽象化された一様で扱いやすい インタフェース を提供することで、 アプリケーションフレームワーク における下位レベルのテキスト描画処理などの実装が容易になる。",
+   "source": "https://ja.wikipedia.org/wiki/FreeType",
+   "genre": "その他",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T07:23:10+00:00"
+  },
+  {
+   "topic": "FreeType",
+   "text": "従って、このライブラリは商用か否かにかかわらず、任意のプロジェクトで使用可能である。",
+   "source": "https://ja.wikipedia.org/wiki/FreeType",
+   "genre": "その他",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T07:23:10+00:00"
+  },
+  {
+   "topic": "FreeType",
+   "text": "SFML （ 英語版 ） などの他のライブラリでも使用されている [ 2 ] 。",
+   "source": "https://ja.wikipedia.org/wiki/FreeType",
+   "genre": "その他",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T07:23:10+00:00"
+  },
+  {
+   "topic": "技術評論社",
+   "text": "主にコンピュータ関連の書籍・雑誌を発行している。",
+   "source": "https://ja.wikipedia.org/wiki/技術評論社",
+   "genre": "技術",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T07:23:10+00:00"
+  },
+  {
+   "topic": "技術評論社",
+   "text": "1969年 9月 :生産技術誌『月刊技術評論』創刊。",
+   "source": "https://ja.wikipedia.org/wiki/技術評論社",
+   "genre": "技術",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T07:23:10+00:00"
+  },
+  {
+   "topic": "技術評論社",
+   "text": "1963年 1月 :千代田区二番町へ移転。",
+   "source": "https://ja.wikipedia.org/wiki/技術評論社",
+   "genre": "技術",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T07:23:10+00:00"
+  },
+  {
+   "topic": "技術評論社",
+   "text": "1977年 4月 :千代田区平河町へ移転。",
+   "source": "https://ja.wikipedia.org/wiki/技術評論社",
+   "genre": "技術",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T07:23:10+00:00"
+  },
+  {
+   "topic": "技術評論社",
+   "text": "1984年 4月:資本金1,500万円に増資。",
+   "source": "https://ja.wikipedia.org/wiki/技術評論社",
+   "genre": "技術",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T07:23:10+00:00"
+  },
+  {
+   "topic": "技術評論社",
+   "text": "1986年 2月 :千代田区九段南2丁目へ移転。",
+   "source": "https://ja.wikipedia.org/wiki/技術評論社",
+   "genre": "技術",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T07:23:10+00:00"
+  },
+  {
+   "topic": "PC-9800シリーズ",
+   "text": "従来NECが発売した 8ビットパソコン の PC-8000シリーズ と PC-8800シリーズ の資産を継承しつつ、高速化するために 16ビットマイクロプロセッサ を採用した。",
+   "source": "https://ja.wikipedia.org/wiki/PC-9800シリーズ",
+   "genre": "その他",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T07:23:10+00:00"
+  },
+  {
+   "topic": "PC-9800シリーズ",
+   "text": "NECの戦術、用途とソフトウェア、機種展開など NECは初代機PC-9801の段階から、独立系ソフト会社（ISV）に開発用マシンや技術資料を提供したので、販売開始初期から各種 アプリケーションソフト が揃い、そのおかげで ビジネス市場を中心に広く受け入れられた [ 12 ] 。",
+   "source": "https://ja.wikipedia.org/wiki/PC-9800シリーズ",
+   "genre": "生き物",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T07:23:10+00:00"
+  },
+  {
+   "topic": "PC-9800シリーズ",
+   "text": "PC-98シリーズを巡り、ISV、独立系周辺機器会社（IHV）、PC-98関連 雑誌 や関連 書籍 を発行する 出版社 、関連ソフトウェアの流通業、システムハウス、パソコン販売店など、いわばPC-98関連産業と呼んで良いような産業構造が日本で形成された [ 12 ] 。",
+   "source": "https://ja.wikipedia.org/wiki/PC-9800シリーズ",
+   "genre": "社会",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T07:23:10+00:00"
+  },
+  {
+   "topic": "PC-9800シリーズ",
+   "text": "特にワープロソフトの 一太郎 は評判が高くPC-9800の キラーアプリケーション となり販売上の強力な推進力となった。",
+   "source": "https://ja.wikipedia.org/wiki/PC-9800シリーズ",
+   "genre": "その他",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T07:23:10+00:00"
+  },
+  {
+   "topic": "PC-9800シリーズ",
+   "text": "#ソフトウェア資産 PC-9800シリーズは多種多様な機種が展開された。",
+   "source": "https://ja.wikipedia.org/wiki/PC-9800シリーズ",
+   "genre": "生き物",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T07:23:10+00:00"
+  },
+  {
+   "topic": "PC-9800シリーズ",
+   "text": "1985年 （昭和60年）から ワープロ や CAD 用途を意識して性能を高めたPC-98XAなどの高級機種を発売し、 1990年 （平成2年）に32ビット外部バス（ NESA バス）を搭載する Hyper98 （ PC-H98シリーズ ）へ派生した。",
+   "source": "https://ja.wikipedia.org/wiki/PC-9800シリーズ",
+   "genre": "生き物",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T07:23:10+00:00"
+  },
+  {
+   "topic": "涼宮ハルヒシリーズ",
+   "text": "テレビアニメについては「 涼宮ハルヒの憂鬱 (アニメ) 」をご覧ください。",
+   "source": "https://ja.wikipedia.org/wiki/涼宮ハルヒの憂鬱",
+   "genre": "その他",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T07:23:11+00:00"
+  },
+  {
+   "topic": "涼宮ハルヒシリーズ",
+   "text": "「 涼宮ハルヒの消失 」はこの項目へ 転送 されています。",
+   "source": "https://ja.wikipedia.org/wiki/涼宮ハルヒの憂鬱",
+   "genre": "その他",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T07:23:11+00:00"
+  },
+  {
+   "topic": "涼宮ハルヒシリーズ",
+   "text": "劇場版アニメについては「 涼宮ハルヒの消失 (映画) 」をご覧ください。",
+   "source": "https://ja.wikipedia.org/wiki/涼宮ハルヒの憂鬱",
+   "genre": "その他",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T07:23:11+00:00"
+  },
+  {
+   "topic": "涼宮ハルヒシリーズ",
+   "text": "（ 2022年1月 ） 独自研究 が含まれているおそれがあります。",
+   "source": "https://ja.wikipedia.org/wiki/涼宮ハルヒの憂鬱",
+   "genre": "その他",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T07:23:11+00:00"
+  },
+  {
+   "topic": "涼宮ハルヒシリーズ",
+   "text": "作者は 谷川流 、 イラスト は いとうのいぢ 。",
+   "source": "https://ja.wikipedia.org/wiki/涼宮ハルヒの憂鬱",
+   "genre": "その他",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T07:23:11+00:00"
+  },
+  {
+   "topic": "久遠さやか",
+   "text": "NPO法人 「宇宙ママ＆キッズプロジェクト」代表。",
+   "source": "https://ja.wikipedia.org/wiki/久遠さやか",
+   "genre": "科学",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T07:23:11+00:00"
+  },
+  {
+   "topic": "久遠さやか",
+   "text": "その後、1998年の第24回 クラリオンガール オーディションで準グランプリに選ばれ、翌1999年に放送の『 天国のKiss 』（ テレビ朝日 ）で女優デビュー [ 4 ] 。",
+   "source": "https://ja.wikipedia.org/wiki/久遠さやか",
+   "genre": "その他",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T07:23:11+00:00"
+  },
+  {
+   "topic": "久遠さやか",
+   "text": "2002年には『 仮面ライダー龍騎 』（テレビ朝日）や『 水野真紀の魔法のレストラン 』（ 毎日放送 ）にレギュラー出演した。",
+   "source": "https://ja.wikipedia.org/wiki/久遠さやか",
+   "genre": "その他",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T07:23:11+00:00"
+  },
+  {
+   "topic": "久遠さやか",
+   "text": "この当時は エフ・エム・ジー に所属していた [ 5 ] 。",
+   "source": "https://ja.wikipedia.org/wiki/久遠さやか",
+   "genre": "その他",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T07:23:11+00:00"
+  },
+  {
+   "topic": "久遠さやか",
+   "text": "エフ・エム・ジー所属当時のプロフィールでは1980年生まれとされており、身長も163センチメートルと記されていた [ 2 ] 。",
+   "source": "https://ja.wikipedia.org/wiki/久遠さやか",
+   "genre": "その他",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T07:23:11+00:00"
+  },
+  {
+   "topic": "久遠さやか",
+   "text": "本人の活動再開後に株式会社キャンディッドアイランドが公表したプロフィールでは、1978年生まれ・161センチメートルに修正されている [ 3 ] 。",
+   "source": "https://ja.wikipedia.org/wiki/久遠さやか",
+   "genre": "その他",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T07:23:11+00:00"
+  },
+  {
+   "topic": "和製漢語",
+   "text": "中国語に取り入れられた日本語由来の借用語については「 中国語における日本語借用語 」を、近代以後に中国語から日本語へ入った外来語については「 日本語における現代中国語からの借用語 」をご覧ください。",
+   "source": "https://ja.wikipedia.org/wiki/和製漢語",
+   "genre": "言葉",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T07:23:11+00:00"
+  },
+  {
+   "topic": "和製漢語",
+   "text": "和製漢語 （わせいかんご）とは、日本語の中で、漢字の表意性と造語力を用いて形成された 漢語 をいう [ 1 ] 。",
+   "source": "https://ja.wikipedia.org/wiki/和製漢語",
+   "genre": "言葉",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T07:23:11+00:00"
+  },
+  {
+   "topic": "和製漢語",
+   "text": "国語辞典では「日本で漢字を組み合わせて作られた熟語」と説明され、「国際」「哲学」などが例示される [ 2 ] 。",
+   "source": "https://ja.wikipedia.org/wiki/和製漢語",
+   "genre": "言葉",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T07:23:11+00:00"
+  },
+  {
+   "topic": "和製漢語",
+   "text": "ただし、既存の中国語の語形に日本で新しい意味を与えた語を含めるか、訓読みの和語に由来する語形を含めるかなど、その範囲は研究者によって異なる [ 3 ] 。",
+   "source": "https://ja.wikipedia.org/wiki/和製漢語",
+   "genre": "その他",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T07:23:11+00:00"
+  },
+  {
+   "topic": "和製漢語",
+   "text": "和製漢語は、 中国語 に入った「日本語からの借用語」と同義ではない。",
+   "source": "https://ja.wikipedia.org/wiki/和製漢語",
+   "genre": "言葉",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T07:23:11+00:00"
+  },
+  {
+   "topic": "和製漢語",
+   "text": "前者は日本語内部での 形成 を、後者は日本語から中国語への 伝播 を基準とする概念である。",
+   "source": "https://ja.wikipedia.org/wiki/和製漢語",
+   "genre": "言葉",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T07:23:11+00:00"
+  },
+  {
+   "topic": "演奏会",
+   "text": "秀吉 のアルバムについては「 コンサート (秀吉のアルバム) 」をご覧ください。",
+   "source": "https://ja.wikipedia.org/wiki/演奏会",
+   "genre": "その他",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T07:23:11+00:00"
+  },
+  {
+   "topic": "演奏会",
+   "text": "「 ファミリー・コンサート 」はこの項目へ 転送 されています。",
+   "source": "https://ja.wikipedia.org/wiki/演奏会",
+   "genre": "その他",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T07:23:11+00:00"
+  },
+  {
+   "topic": "演奏会",
+   "text": "アグネス・チャン のアルバムについては「 ファミリー・コンサート (アルバム) 」をご覧ください。",
+   "source": "https://ja.wikipedia.org/wiki/演奏会",
+   "genre": "その他",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T07:23:11+00:00"
+  },
+  {
+   "topic": "演奏会",
+   "text": "「 リサイタル 」はこの項目へ 転送 されています。",
+   "source": "https://ja.wikipedia.org/wiki/演奏会",
+   "genre": "その他",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T07:23:11+00:00"
+  },
+  {
+   "topic": "演奏会",
+   "text": "Hilcrhyme のアルバムについては「 リサイタル (アルバム) 」をご覧ください。",
+   "source": "https://ja.wikipedia.org/wiki/演奏会",
+   "genre": "その他",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T07:23:11+00:00"
+  },
+  {
+   "topic": "演奏会",
+   "text": "個人宅や小さな ナイトクラブ から、中規模の コンサートホール 、さらには大規模な アリーナ や スタジアム 、あるいは野外での特設ステージや 公園 などの屋外の会場に至るまで、多種多様な場所や規模で開催される。",
+   "source": "https://ja.wikipedia.org/wiki/演奏会",
+   "genre": "生き物",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T07:23:11+00:00"
+  },
+  {
+   "topic": "横浜スタジアム",
+   "text": "（ 2022年10月 ） 「 横浜国際総合競技場 」とは異なります。",
+   "source": "https://ja.wikipedia.org/wiki/横浜スタジアム",
+   "genre": "その他",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T07:23:11+00:00"
+  },
+  {
+   "topic": "横浜スタジアム",
+   "text": "プロ野球 ・ セントラル・リーグ に所属する 横浜DeNAベイスターズ の本拠地（ 専用球場 ）として使用されている。",
+   "source": "https://ja.wikipedia.org/wiki/横浜スタジアム",
+   "genre": "その他",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T07:23:11+00:00"
+  },
+  {
+   "topic": "横浜スタジアム",
+   "text": "高校野球夏の大会では、開会式のほか1回戦から使用され、準々決勝以降は 保土ケ谷球場 [ 注 2 ] に替わりメインスタジアムとなる。",
+   "source": "https://ja.wikipedia.org/wiki/横浜スタジアム",
+   "genre": "その他",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T07:23:11+00:00"
+  },
+  {
+   "topic": "横浜スタジアム",
+   "text": "土地は 国有地 で [ 5 ] 、施設は横浜市が所有し、市などの出資による 第三セクター ・ 株式会社横浜スタジアム が運営管理を行っている。",
+   "source": "https://ja.wikipedia.org/wiki/横浜スタジアム",
+   "genre": "その他",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T07:23:11+00:00"
+  },
+  {
+   "topic": "横浜スタジアム",
+   "text": "どんぶりを傾けたような外観と、横浜のイニシャル“Y”を模した逆三角形の6基の照明塔が特徴である。",
+   "source": "https://ja.wikipedia.org/wiki/横浜スタジアム",
+   "genre": "その他",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T07:23:11+00:00"
+  },
+  {
+   "topic": "横浜スタジアム",
+   "text": "2003年 からロングパイル 人工芝 「フィールド・ターフ」を日本の屋外球場では初めて [ 注 3 ] 採用した。",
+   "source": "https://ja.wikipedia.org/wiki/横浜スタジアム",
+   "genre": "その他",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T07:23:11+00:00"
+  },
+  {
+   "topic": "Á",
+   "text": "オランダ語 、 スペイン語 、 ポルトガル語 、 チェコ語 、 スロバキア語 、 アイスランド語 、 ハンガリー語 等で使われる。",
+   "source": "https://ja.wikipedia.org/wiki/Á",
+   "genre": "その他",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T07:23:11+00:00"
+  },
+  {
+   "topic": "Á",
+   "text": "ポルトガル語、スペイン語では、Aに アクセント がある場合に使われる事がある。",
+   "source": "https://ja.wikipedia.org/wiki/Á",
+   "genre": "その他",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T07:23:11+00:00"
+  },
+  {
+   "topic": "Á",
+   "text": "チェコ語では、Aの 長音 を表す。",
+   "source": "https://ja.wikipedia.org/wiki/Á",
+   "genre": "その他",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T07:23:11+00:00"
+  },
+  {
+   "topic": "アメリカ大陸",
+   "text": "（ 2023年1月 ） 30 degrees, 1800x1800 アメリカ大陸周辺の 世界地図 アメリカ大陸 （アメリカたいりく、 英語 : The Americas ）とは、 南アメリカ大陸 と 北アメリカ大陸 をあわせた呼称。",
+   "source": "https://ja.wikipedia.org/wiki/アメリカ大陸",
+   "genre": "その他",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T07:23:11+00:00"
+  },
+  {
+   "topic": "アメリカ大陸",
+   "text": "両アメリカや 新大陸 、 アメリカ州 （よく 離島 を含める）などとも言う。",
+   "source": "https://ja.wikipedia.org/wiki/アメリカ大陸",
+   "genre": "その他",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T07:23:11+00:00"
+  },
+  {
+   "topic": "アメリカ大陸",
+   "text": "南北に分かれた二 大陸 であるが、両者は パナマ地峡 で接続しているため、まとめて 超大陸 と見なすこともできる。",
+   "source": "https://ja.wikipedia.org/wiki/アメリカ大陸",
+   "genre": "その他",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T07:23:11+00:00"
+  },
+  {
+   "topic": "アメリカ大陸",
+   "text": "なお、広く アメリカ州（米州） と言うときには、 カリブ海 や カナダ 北部の島々・海域をも含める場合が多い。",
+   "source": "https://ja.wikipedia.org/wiki/アメリカ大陸",
+   "genre": "その他",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T07:23:11+00:00"
+  },
+  {
+   "topic": "アメリカ大陸",
+   "text": "「アメリカ」は、 イタリア の探検家 アメリゴ・ヴェスプッチ の名から付けられた。",
+   "source": "https://ja.wikipedia.org/wiki/アメリカ大陸",
+   "genre": "その他",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T07:23:11+00:00"
+  },
+  {
+   "topic": "アメリカ大陸",
+   "text": "詳細は アメリカ州 を参照。",
+   "source": "https://ja.wikipedia.org/wiki/アメリカ大陸",
+   "genre": "その他",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T07:23:11+00:00"
+  },
+  {
+   "topic": "パラグアイ",
+   "text": "東と北東を ブラジル 、西と北西を ボリビア 、南と南西を アルゼンチン に囲まれている 内陸国 である。",
+   "source": "https://ja.wikipedia.org/wiki/パラグアイ",
+   "genre": "その他",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T07:23:11+00:00"
+  },
+  {
+   "topic": "パラグアイ",
+   "text": "なお、パラグアイの国旗はデザインが表と裏とで異なっている（ パラグアイの国旗 を参照）。",
+   "source": "https://ja.wikipedia.org/wiki/パラグアイ",
+   "genre": "その他",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T07:23:11+00:00"
+  },
+  {
+   "topic": "パラグアイ",
+   "text": "日本語の表記は パラグアイ共和国 。",
+   "source": "https://ja.wikipedia.org/wiki/パラグアイ",
+   "genre": "言葉",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T07:23:11+00:00"
+  },
+  {
+   "topic": "パラグアイ",
+   "text": "同国の在日大使館 が用いる正式片仮名表記は パラグァイ 。",
+   "source": "https://ja.wikipedia.org/wiki/パラグアイ",
+   "genre": "言葉",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T07:23:11+00:00"
+  },
+  {
+   "topic": "パラグアイ",
+   "text": "日本では通常 パラグアイ 、 パラグワイ などと表記され、 漢字表記 では 巴拉圭 、または 巴羅貝 となる。",
+   "source": "https://ja.wikipedia.org/wiki/パラグアイ",
+   "genre": "言葉",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T07:23:11+00:00"
+  },
+  {
+   "topic": "パラグアイ",
+   "text": "パラグアイ（Paraguay）とは、もともとグアラニー語で「大きな川から」を意味する言葉であったという説が有力である。",
+   "source": "https://ja.wikipedia.org/wiki/パラグアイ",
+   "genre": "その他",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T07:23:11+00:00"
+  },
+  {
+   "topic": "入江正徳",
+   "text": "存命人物 の記事は特に、 検証可能性 を満たしている必要があります。",
+   "source": "https://ja.wikipedia.org/wiki/入江正徳",
+   "genre": "その他",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T07:23:11+00:00"
+  },
+  {
+   "topic": "入江正徳",
+   "text": "（ 2020年8月 ） 独自研究 が含まれているおそれがあります。",
+   "source": "https://ja.wikipedia.org/wiki/入江正徳",
+   "genre": "その他",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T07:23:11+00:00"
+  },
+  {
+   "topic": "入江正徳",
+   "text": "1955年、舞芸座に移籍 [ 2 ] 。",
+   "source": "https://ja.wikipedia.org/wiki/入江正徳",
+   "genre": "その他",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T07:23:11+00:00"
+  },
+  {
+   "topic": "入江正徳",
+   "text": "1958年、 劇団仲間 入団 [ 2 ] 。",
+   "source": "https://ja.wikipedia.org/wiki/入江正徳",
+   "genre": "その他",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T07:23:11+00:00"
+  },
+  {
+   "topic": "入江正徳",
+   "text": "1961年に劇団仲間を退団し、俳協所属 [ 2 ] 。",
+   "source": "https://ja.wikipedia.org/wiki/入江正徳",
+   "genre": "その他",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T07:23:11+00:00"
+  },
+  {
+   "topic": "入江正徳",
+   "text": "テレビドラマや映画・Vシネマに出演し活躍。",
+   "source": "https://ja.wikipedia.org/wiki/入江正徳",
+   "genre": "その他",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T07:23:11+00:00"
+  },
+  {
+   "topic": "九州男児",
+   "text": "「九州男児」のペンネームを持つ漫画家については「 松山花子 」をご覧ください。",
+   "source": "https://ja.wikipedia.org/wiki/九州男児",
+   "genre": "その他",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T07:23:11+00:00"
+  },
+  {
+   "topic": "九州男児",
+   "text": "ミュージシャンの「 九州男 」とは異なります。",
+   "source": "https://ja.wikipedia.org/wiki/九州男児",
+   "genre": "その他",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T07:23:11+00:00"
+  },
+  {
+   "topic": "九州男児",
+   "text": "一本気、逞しい、勇ましい等、 ポジティブ イメージ がある。",
+   "source": "https://ja.wikipedia.org/wiki/九州男児",
+   "genre": "その他",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T07:23:11+00:00"
+  },
+  {
+   "topic": "九州男児",
+   "text": "反面、 短気 、 曖昧 、 自己中心的 、さらには 男尊女卑 などといった ネガティブ イメージ もある。",
+   "source": "https://ja.wikipedia.org/wiki/九州男児",
+   "genre": "その他",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T07:23:11+00:00"
+  },
+  {
+   "topic": "九州男児",
+   "text": "現在の「九州男児」の ポジティブ イメージ は、主に以下の諸地方（概ね JR 鹿児島本線 （2004年に第三セクター化された 肥薩おれんじ鉄道 を含む）沿線地域）のイメージが複合していると思われる。",
+   "source": "https://ja.wikipedia.org/wiki/九州男児",
+   "genre": "その他",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T07:23:11+00:00"
+  },
+  {
+   "topic": "九州男児",
+   "text": "福岡県 福岡市 の 博多山笠 などに見られる勇ましい男の姿 北九州市 の 小倉 を舞台にした『 無法松の一生 』の無法松のイメージ 熊襲族の末裔として 肥後もっこす と呼ばれる正義感の強い 熊本県 民の 県民性 西郷隆盛 等の幕末の 薩摩藩 士によって強化された 薩摩隼人 と呼ばれる質実剛健な 鹿児島県 士族 のイメージや、 ぼっけもん 。",
+   "source": "https://ja.wikipedia.org/wiki/九州男児",
+   "genre": "その他",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T07:23:11+00:00"
+  },
+  {
+   "topic": "助監督 (映画スタッフ)",
+   "text": "（ 2021年4月 ） 独自研究 が含まれているおそれがあります。",
+   "source": "https://ja.wikipedia.org/wiki/助監督_(映画スタッフ)",
+   "genre": "その他",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T07:23:11+00:00"
+  },
+  {
+   "topic": "助監督 (映画スタッフ)",
+   "text": "（ 2021年4月 ） 独立記事作成の目安 を満たしていないおそれがあります。",
+   "source": "https://ja.wikipedia.org/wiki/助監督_(映画スタッフ)",
+   "genre": "その他",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T07:23:11+00:00"
+  },
+  {
+   "topic": "助監督 (映画スタッフ)",
+   "text": "その他の用法については「 助監督 」をご覧ください。",
+   "source": "https://ja.wikipedia.org/wiki/助監督_(映画スタッフ)",
+   "genre": "その他",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T07:23:11+00:00"
+  },
+  {
+   "topic": "助監督 (映画スタッフ)",
+   "text": "テレビの「 アシスタントディレクター 」（AD）とは大きく異なる。",
+   "source": "https://ja.wikipedia.org/wiki/助監督_(映画スタッフ)",
+   "genre": "その他",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T07:23:11+00:00"
+  },
+  {
+   "topic": "助監督 (映画スタッフ)",
+   "text": "演出にかかわる様々な業務に携わる。",
+   "source": "https://ja.wikipedia.org/wiki/助監督_(映画スタッフ)",
+   "genre": "その他",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T07:23:11+00:00"
+  },
+  {
+   "topic": "岡本美登",
+   "text": "信頼できる情報源 の提供に協力をお願いします。",
+   "source": "https://ja.wikipedia.org/wiki/岡本美登",
+   "genre": "技術",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T07:23:11+00:00"
+  },
+  {
+   "topic": "岡本美登",
+   "text": "ジャパンアクションエンタープライズ 所属。",
+   "source": "https://ja.wikipedia.org/wiki/岡本美登",
+   "genre": "その他",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T07:23:11+00:00"
+  },
+  {
+   "topic": "岡本美登",
+   "text": "主に 東映 特撮 作品に登場するヒーロー、怪人の スーツアクター として活躍している。",
+   "source": "https://ja.wikipedia.org/wiki/岡本美登",
+   "genre": "その他",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T07:23:11+00:00"
+  },
+  {
+   "topic": "岡本美登",
+   "text": "アクションとは無縁のテレビドラマで脇役を演じていることも多く、スタントマンやスーツアクターの同業者の中では顔出しの俳優としての経験が比較的多い。",
+   "source": "https://ja.wikipedia.org/wiki/岡本美登",
+   "genre": "その他",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T07:23:11+00:00"
+  },
+  {
+   "topic": "岡本美登",
+   "text": "そのため、自身で演じたキャラクターの声を担当することも珍しくなく、『 超獣戦隊ライブマン 』のように俳優としてレギュラー出演したこともある。",
+   "source": "https://ja.wikipedia.org/wiki/岡本美登",
+   "genre": "その他",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T07:23:11+00:00"
+  },
+  {
+   "topic": "岡本美登",
+   "text": "東映では『 忍風戦隊ハリケンジャー 』でサタラクラのスーツアクターを務めた 甲斐将馬 などスーツアクターをゲストないしセリフありの役で登場させる方針から、岡本はほぼ毎年 スーパー戦隊シリーズ に登場している。",
+   "source": "https://ja.wikipedia.org/wiki/岡本美登",
+   "genre": "その他",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T07:23:11+00:00"
+  },
+  {
+   "topic": "平山亨",
+   "text": "東映 では、助監督（映画）、 映画監督 、テレビ プロデューサー を務めた。",
+   "source": "https://ja.wikipedia.org/wiki/平山亨",
+   "genre": "その他",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T07:23:11+00:00"
+  },
+  {
+   "topic": "平山亨",
+   "text": "作詞家として 八手三郎 および 田中守 のペンネームを用いている [ 8 ] 。",
+   "source": "https://ja.wikipedia.org/wiki/平山亨",
+   "genre": "その他",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T07:23:11+00:00"
+  },
+  {
+   "topic": "平山亨",
+   "text": "旧制中学校 時代の 1944年 には、 学徒動員 で 防空壕 作りや疎開工事、工場勤務などの勤労奉仕に従事した [ 11 ] 。",
+   "source": "https://ja.wikipedia.org/wiki/平山亨",
+   "genre": "歴史",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T07:23:11+00:00"
+  },
+  {
+   "topic": "平山亨",
+   "text": "終戦後の 1947年 4月に青山学院専門学校（現・ 青山学院大学 ）の英文科に入学 [ 12 ] 。",
+   "source": "https://ja.wikipedia.org/wiki/平山亨",
+   "genre": "その他",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T07:23:11+00:00"
+  },
+  {
+   "topic": "平山亨",
+   "text": "1948年 4月に 旧制高等学校 の 成蹊高等学校 に入り直す [ 13 ] 。",
+   "source": "https://ja.wikipedia.org/wiki/平山亨",
+   "genre": "その他",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T07:23:11+00:00"
+  },
+  {
+   "topic": "平山亨",
+   "text": "翌 1949年 の学制改革に伴う旧制高校廃止により、旧 帝国大学 受験が可能になったため、 東京大学 文学部に合格して入学した [ 14 ] 。",
+   "source": "https://ja.wikipedia.org/wiki/平山亨",
+   "genre": "文化",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T07:23:11+00:00"
+  },
+  {
+   "topic": "キュウカンチョウ",
+   "text": "バングラデシュでは絶滅 [ 3 ] 。",
+   "source": "https://ja.wikipedia.org/wiki/キュウカンチョウ",
+   "genre": "その他",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T07:23:11+00:00"
+  },
+  {
+   "topic": "キュウカンチョウ",
+   "text": "香港、マカオ、プエルトリコなどに移入 [ 3 ] 。",
+   "source": "https://ja.wikipedia.org/wiki/キュウカンチョウ",
+   "genre": "その他",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T07:23:11+00:00"
+  },
+  {
+   "topic": "キュウカンチョウ",
+   "text": "眼下部から後頭部にかけて黄色い肉垂れがある。",
+   "source": "https://ja.wikipedia.org/wiki/キュウカンチョウ",
+   "genre": "その他",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T07:23:11+00:00"
+  },
+  {
+   "topic": "キュウカンチョウ",
+   "text": "小規模な群れを形成し生活する。",
+   "source": "https://ja.wikipedia.org/wiki/キュウカンチョウ",
+   "genre": "その他",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T07:23:11+00:00"
+  },
+  {
+   "topic": "キュウカンチョウ",
+   "text": "食性は 雑食 で、 果実 や 昆虫 などを食べる。",
+   "source": "https://ja.wikipedia.org/wiki/キュウカンチョウ",
+   "genre": "その他",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T07:23:11+00:00"
+  },
+  {
+   "topic": "キュウカンチョウ",
+   "text": "樹洞 などに巣を作り卵を産む。",
+   "source": "https://ja.wikipedia.org/wiki/キュウカンチョウ",
+   "genre": "その他",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T07:23:11+00:00"
+  },
+  {
+   "topic": "藤川桂介",
+   "text": "日本文芸家協会 、 日本ペンクラブ 、日本 脚本家 連盟会員。",
+   "source": "https://ja.wikipedia.org/wiki/藤川桂介",
+   "genre": "その他",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T07:23:11+00:00"
+  },
+  {
+   "topic": "藤川桂介",
+   "text": "京都嵯峨芸術大学 客員教授。",
+   "source": "https://ja.wikipedia.org/wiki/藤川桂介",
+   "genre": "文化",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T07:23:11+00:00"
+  },
+  {
+   "topic": "藤川桂介",
+   "text": "東京都立墨田川高等学校 、 慶應義塾大学 文学部国文学科卒（1958年）。",
+   "source": "https://ja.wikipedia.org/wiki/藤川桂介",
+   "genre": "文化",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T07:23:11+00:00"
+  },
+  {
+   "topic": "藤川桂介",
+   "text": "1980年代中盤以降は、活動の中心を小説の執筆に当てている。",
+   "source": "https://ja.wikipedia.org/wiki/藤川桂介",
+   "genre": "その他",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T07:23:11+00:00"
+  },
+  {
+   "topic": "藤川桂介",
+   "text": "代表作に、テレビアニメーション『 マジンガーZ 』、『 六神合体ゴッドマーズ 』、『 宇宙戦艦ヤマト 』、小説『 宇宙皇子 』シリーズなど。",
+   "source": "https://ja.wikipedia.org/wiki/藤川桂介",
+   "genre": "科学",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T07:23:11+00:00"
+  },
+  {
+   "topic": "藤川桂介",
+   "text": "漫画原作に『 さすらいの太陽 』など。",
+   "source": "https://ja.wikipedia.org/wiki/藤川桂介",
+   "genre": "その他",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T07:23:11+00:00"
+  },
+  {
+   "topic": "ドラゴンクエストI・II",
+   "text": "2025年に発売されたHD-2D版については「 ドラゴンクエストI&II 」をご覧ください。",
+   "source": "https://ja.wikipedia.org/wiki/ドラゴンクエストI・II",
+   "genre": "その他",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T07:23:11+00:00"
+  },
+  {
+   "topic": "ドラゴンクエストI・II",
+   "text": "日本 では、1993年に スーパーファミコン （以下SFC）用ソフトとして発売。",
+   "source": "https://ja.wikipedia.org/wiki/ドラゴンクエストI・II",
+   "genre": "その他",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T07:23:11+00:00"
+  },
+  {
+   "topic": "ドラゴンクエストI・II",
+   "text": "また、1999年には ゲームボーイ （以下GB）用として『 ゲームボーイ ドラゴンクエストI・II 』が発売された。",
+   "source": "https://ja.wikipedia.org/wiki/ドラゴンクエストI・II",
+   "genre": "その他",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T07:23:11+00:00"
+  },
+  {
+   "topic": "ドラゴンクエストI・II",
+   "text": "2011年9月15日発売の Wii 用ソフト『 ドラゴンクエスト25周年記念 ファミコン&スーパーファミコン ドラゴンクエストI・II・III 』にはSFC版が収録された [ 注釈 1 ] 。",
+   "source": "https://ja.wikipedia.org/wiki/ドラゴンクエストI・II",
+   "genre": "その他",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T07:23:11+00:00"
+  },
+  {
+   "topic": "ドラゴンクエストI・II",
+   "text": "本項目では、SFC版およびGB版『ドラゴンクエストI・II』における特徴や、オリジナル版との比較などについて述べる。",
+   "source": "https://ja.wikipedia.org/wiki/ドラゴンクエストI・II",
+   "genre": "その他",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T07:23:11+00:00"
+  },
+  {
+   "topic": "ドラゴンクエストI・II",
+   "text": "登場人物や世界設定に関してはそれぞれ旧作の記事を参照のこと。",
+   "source": "https://ja.wikipedia.org/wiki/ドラゴンクエストI・II",
+   "genre": "その他",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T07:23:11+00:00"
+  },
+  {
+   "topic": "平野文",
+   "text": "青二プロダクション 所属 [ 9 ] 。",
+   "source": "https://ja.wikipedia.org/wiki/平野文",
+   "genre": "その他",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T07:23:11+00:00"
+  },
+  {
+   "topic": "平野文",
+   "text": "2014年4月1日より 青二プロダクション に所属 [ 16 ] 。",
+   "source": "https://ja.wikipedia.org/wiki/平野文",
+   "genre": "その他",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T07:23:11+00:00"
+  },
+  {
+   "topic": "平野文",
+   "text": "母も昔はバレエをしていたようであったという [ 3 ] 。",
+   "source": "https://ja.wikipedia.org/wiki/平野文",
+   "genre": "その他",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T07:23:11+00:00"
+  },
+  {
+   "topic": "平野文",
+   "text": "講師によりミュージカル、子供番組にも出演させてもらうようになり、「児童劇団で芝居の勉強をやったほうがいいよ」と言われて児童劇団に入団 [ 12 ] 。",
+   "source": "https://ja.wikipedia.org/wiki/平野文",
+   "genre": "その他",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T07:23:11+00:00"
+  },
+  {
+   "topic": "平野文",
+   "text": "当時は、 大山のぶ代 の夫・ 砂川啓介 が「 たいそうのおにいさん 」で、物凄く人気があり、主に砂川と一緒にミュージカルに出演していたという [ 13 ] 。",
+   "source": "https://ja.wikipedia.org/wiki/平野文",
+   "genre": "その他",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T07:23:11+00:00"
+  },
+  {
+   "topic": "平野文",
+   "text": "ほかには雑誌のグラビアに出たり、イラストレーターの 中原淳一 のモデルをしたりしていたという [ 13 ] 。",
+   "source": "https://ja.wikipedia.org/wiki/平野文",
+   "genre": "その他",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T07:23:11+00:00"
+  },
+  {
+   "topic": "ウルティマ",
+   "text": "作者は リチャード・ギャリオット 。",
+   "source": "https://ja.wikipedia.org/wiki/ウルティマ",
+   "genre": "その他",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T07:23:11+00:00"
+  },
+  {
+   "topic": "ウルティマ",
+   "text": "2DフィールドスタイルのコンピュータRPGの原形と言われており、 ドラゴンクエストシリーズ など多くのコンピュータRPGが本作（もしくは本作に影響を受けたRPG）の影響を受けている。",
+   "source": "https://ja.wikipedia.org/wiki/ウルティマ",
+   "genre": "技術",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T07:23:11+00:00"
+  },
+  {
+   "topic": "ウルティマ",
+   "text": "また、漫画化や小説化などもされている。",
+   "source": "https://ja.wikipedia.org/wiki/ウルティマ",
+   "genre": "その他",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T07:23:11+00:00"
+  },
+  {
+   "topic": "ウルティマ",
+   "text": "正編となるシリーズは全9作だが、大別すると以下の3部作に分類される。",
+   "source": "https://ja.wikipedia.org/wiki/ウルティマ",
+   "genre": "その他",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T07:23:11+00:00"
+  },
+  {
+   "topic": "ウルティマ",
+   "text": "U4ではゲームを通じてそれらを理解し、究めることで聖者アバタールとなるまでの軌跡を描く。",
+   "source": "https://ja.wikipedia.org/wiki/ウルティマ",
+   "genre": "その他",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T07:23:11+00:00"
+  },
+  {
+   "topic": "ウルティマ",
+   "text": "その一方、U5では悪役ブラックソーンを通じて価値観の恣意的な曲解や強制から生じる危険性を訴え、U6ではガーゴイル族との戦争から和解に至る経緯を描くことで価値観の異なる他者との共存についての問題提起をしている。",
+   "source": "https://ja.wikipedia.org/wiki/ウルティマ",
+   "genre": "歴史",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T07:23:11+00:00"
+  },
+  {
+   "topic": "物語",
+   "text": "（ 2022年9月 ） 翻訳前に重要な指示を読むには右にある[表示]をクリックしてください。",
+   "source": "https://ja.wikipedia.org/wiki/物語",
+   "genre": "その他",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T07:23:11+00:00"
+  },
+  {
+   "topic": "ノンフィクション",
+   "text": "ノンフィクション （ 英 : non-fiction ）とは、史実や記録に基づいた文章や映像などの作品。",
+   "source": "https://ja.wikipedia.org/wiki/ノンフィクション",
+   "genre": "その他",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T07:23:12+00:00"
+  },
+  {
+   "topic": "ノンフィクション",
+   "text": "ドキュメンタリー や インタビュー など多肢にわたる。",
+   "source": "https://ja.wikipedia.org/wiki/ノンフィクション",
+   "genre": "その他",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T07:23:12+00:00"
+  },
+  {
+   "topic": "ノンフィクション",
+   "text": "ノンフィクションの語が使われるようになったのは20世紀の初めとされ、最初は雑誌がベストセラーを発表する際にフィクションとノンフィクションに二分したもので出版業界用語であった [ 1 ] 。",
+   "source": "https://ja.wikipedia.org/wiki/ノンフィクション",
+   "genre": "歴史",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T07:23:12+00:00"
+  },
+  {
+   "topic": "ノンフィクション",
+   "text": "ノンフィクションは特にルポルタージュや調査報道作品を指すジャンル名として用いられるようになっている [ 1 ] 。",
+   "source": "https://ja.wikipedia.org/wiki/ノンフィクション",
+   "genre": "その他",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T07:23:12+00:00"
+  },
+  {
+   "topic": "ノンフィクション",
+   "text": "日本では 筑摩書房 が 1960年 4月から月刊で刊行を始めた全50巻の『 世界ノンフィクション全集 』によって消極的な定義で捉えられていた「ノンフィクション」が具体的なものになっていったと指摘されている [ 1 ] 。",
+   "source": "https://ja.wikipedia.org/wiki/ノンフィクション",
+   "genre": "その他",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T07:23:12+00:00"
+  },
+  {
+   "topic": "ノンフィクション",
+   "text": "作家の余技としてでなく、ノンフィクション・ライターが登場するようになったのは 1960年代 から 1970年代 にかけてである。",
+   "source": "https://ja.wikipedia.org/wiki/ノンフィクション",
+   "genre": "その他",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T07:23:12+00:00"
+  },
+  {
+   "topic": "フィクション",
+   "text": "作品名については「 fiction 」をご覧ください。",
+   "source": "https://ja.wikipedia.org/wiki/フィクション",
+   "genre": "その他",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T07:23:12+00:00"
+  },
+  {
+   "topic": "フィクション",
+   "text": "（ 2024年8月 ） 翻訳前に重要な指示を読むには右にある[表示]をクリックしてください。",
+   "source": "https://ja.wikipedia.org/wiki/フィクション",
+   "genre": "その他",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T07:23:12+00:00"
+  },
+  {
+   "topic": "活版印刷",
+   "text": "鉛 版、線画凸版、 樹脂 版などの印刷も含めていう。",
+   "source": "https://ja.wikipedia.org/wiki/活版印刷",
+   "genre": "その他",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T07:23:12+00:00"
+  },
+  {
+   "topic": "活版印刷",
+   "text": "活版刷り ということもある。",
+   "source": "https://ja.wikipedia.org/wiki/活版印刷",
+   "genre": "その他",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T07:23:12+00:00"
+  },
+  {
+   "topic": "活版印刷",
+   "text": "現存する印刷物で年代が確定している最古のものは、 法隆寺 などに保管され多数現存する 日本 の 仏教 経典 『 百万塔陀羅尼 』（ 8世紀 ）であり、これは 称徳天皇 が発願して 770年 に完成させたと伝えられている。",
+   "source": "https://ja.wikipedia.org/wiki/活版印刷",
+   "genre": "歴史",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T07:23:12+00:00"
+  },
+  {
+   "topic": "活版印刷",
+   "text": "中国のものでは 1900年 に 敦煌 で発見された経典『 金剛般若波羅蜜経 』（ 868年 ごろ、 大英博物館 蔵）がある。",
+   "source": "https://ja.wikipedia.org/wiki/活版印刷",
+   "genre": "その他",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T07:23:12+00:00"
+  },
+  {
+   "topic": "活版印刷",
+   "text": "中国では 9世紀 以降、大量の印刷物が作成された。",
+   "source": "https://ja.wikipedia.org/wiki/活版印刷",
+   "genre": "歴史",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T07:23:12+00:00"
+  },
+  {
+   "topic": "活版印刷",
+   "text": "活字自体は、かなり早くから発明されていたようであるが、活字を並べた組版による印刷では、 11世紀 、 北宋 の工人 畢昇 の名が知られる。",
+   "source": "https://ja.wikipedia.org/wiki/活版印刷",
+   "genre": "歴史",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T07:23:12+00:00"
+  },
+  {
+   "topic": "ジョーク",
+   "text": "（ 2012年1月 ） ウィクショナリー に関連の辞書項目があります。",
+   "source": "https://ja.wikipedia.org/wiki/ジョーク",
+   "genre": "言葉",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T07:23:12+00:00"
+  },
+  {
+   "topic": "ジョーク",
+   "text": "ジョーク 、 冗談 ジョークを楽しむ エリツィン大統領 (ロシア)(左)と クリントン大統領 (アメリカ)(右)( 1995年 ) ジョーク （ 英 : joke ）または 冗談 （じょうだん）は聞き手や読み手を笑わせたり、 ユーモア を感じさせる小咄や短い文の事。",
+   "source": "https://ja.wikipedia.org/wiki/ジョーク",
+   "genre": "その他",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T07:23:12+00:00"
+  },
+  {
+   "topic": "ジョーク",
+   "text": "日本語 では音と意味の近い 冗句 （じょうく）と当て字されることがある [ 1 ] 。",
+   "source": "https://ja.wikipedia.org/wiki/ジョーク",
+   "genre": "言葉",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T07:23:12+00:00"
+  },
+  {
+   "topic": "ジョーク",
+   "text": "ジョークは学術的な研究も行われていて、 ジークムント・フロイト の研究にも「ジョークとその 無意識 に対する影響」というものがある。",
+   "source": "https://ja.wikipedia.org/wiki/ジョーク",
+   "genre": "その他",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T07:23:12+00:00"
+  },
+  {
+   "topic": "ジョーク",
+   "text": "マービン・ミンスキー は、著書の『 心の社会 』の中で、笑いは人間の 脳 に対して特殊な機能を持つと述べている。",
+   "source": "https://ja.wikipedia.org/wiki/ジョーク",
+   "genre": "社会",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T07:23:12+00:00"
+  },
+  {
+   "topic": "ジョーク",
+   "text": "彼によれば、ジョークと笑いは脳が 無意味 を学ぶメカニズムと関係するとのこと。",
+   "source": "https://ja.wikipedia.org/wiki/ジョーク",
+   "genre": "その他",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T07:23:12+00:00"
+  },
+  {
+   "topic": "現金",
+   "text": "これは、特定の 国 や 地域 で 通用力 を有する 通貨 における 紙幣 と 硬貨 のことで、 日本 では、 日本銀行券 （ 紙幣 ）と政府発行の 貨幣 （ 硬貨 ）が該当する [ 1 ] 。",
+   "source": "https://ja.wikipedia.org/wiki/現金",
+   "genre": "その他",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T07:23:12+00:00"
+  },
+  {
+   "topic": "現金",
+   "text": "また、簿記上では、通用の貨幣のほか、すぐに貨幣に換えられる 小切手 や 手形 なども該当する [ 1 ] 。",
+   "source": "https://ja.wikipedia.org/wiki/現金",
+   "genre": "その他",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T07:23:12+00:00"
+  },
+  {
+   "topic": "現金",
+   "text": "現金の主たる 流通経路 は、まず日本国内の 金融機関 が 日本銀行 の 本支店 の 窓口 から現金を受け取り、その後、金融機関から 預金 を引き出した個人や企業の手に渡り、様々な目的に利用された後、再び金融機関を経由して日本銀行へ 環流 する、というものである [ 2 ] 。",
+   "source": "https://ja.wikipedia.org/wiki/現金",
+   "genre": "その他",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T07:23:12+00:00"
+  },
+  {
+   "topic": "現金",
+   "text": "現金（キャッシュ）以外の 通貨 を用いた 決済 の 総称 を、一般に キャッシュレス決済 といい、「企業や金融機関等における、従来の現金決済からキャッシュレス決済に転換する方針」あるいは「そのような動きが活発化して、社会全体にキャッシュレス決済が広がっていく現象」のことを キャッシュレス化 という。",
+   "source": "https://ja.wikipedia.org/wiki/現金",
+   "genre": "社会",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T07:23:12+00:00"
+  },
+  {
+   "topic": "現金",
+   "text": "現在世界的なキャッシュレス化の流れにより、 デンマーク や スウェーデン などといった 北欧 諸国や、 中国 などのように、キャッシュレス決済がすっかり主流となって現金がほとんど流通しておらず、今や子供や若者が現金を知らない世代となっているような国や地域も存在する。",
+   "source": "https://ja.wikipedia.org/wiki/現金",
+   "genre": "その他",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T07:23:12+00:00"
+  },
+  {
+   "topic": "現金",
+   "text": "したがって、現金はもとより「 価値の尺度 」、「支払いの手段」、「価値の貯蔵」といった、貨幣がもつすべての機能を備えている。",
+   "source": "https://ja.wikipedia.org/wiki/現金",
+   "genre": "その他",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T07:23:12+00:00"
+  },
+  {
+   "topic": "マムルーク",
+   "text": "エジプトを中心としたイスラム王朝については「 マムルーク朝 」をご覧ください。",
+   "source": "https://ja.wikipedia.org/wiki/マムルーク",
+   "genre": "歴史",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T07:23:12+00:00"
+  },
+  {
+   "topic": "マムルーク",
+   "text": "オスマン帝国 のマムルーク 重騎兵 （1550年頃） マムルーク （単数形 : مملوك mamlūk, 複数形 : مماليك mamālīk）は、10世紀から19世紀初頭にかけて トルコ と アラビア半島 を中心とする イスラム世界 に存在した 奴隷 身分出身の 軍人 を指す。",
+   "source": "https://ja.wikipedia.org/wiki/マムルーク",
+   "genre": "歴史",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T07:23:12+00:00"
+  },
+  {
+   "topic": "マムルーク",
+   "text": "言葉通りの奴隷ではなく、その社会的位置付けは時代と共に大きく変遷しており、総括的に言えば軍人 徒弟 に近い存在である。",
+   "source": "https://ja.wikipedia.org/wiki/マムルーク",
+   "genre": "歴史",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T07:23:12+00:00"
+  },
+  {
+   "topic": "マムルーク",
+   "text": "幼少期から戦闘訓練を積んだ彼らはエリート軍人と見なされて高い地位に就く事もあり、栄達した者はマムルークの親方となって新たな少年奴隷ないし徒弟を召し抱えた。",
+   "source": "https://ja.wikipedia.org/wiki/マムルーク",
+   "genre": "その他",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T07:23:12+00:00"
+  },
+  {
+   "topic": "マムルーク",
+   "text": "イスラム世界において「白人」とは「黒人」の純粋な対義語であり、 サハラ以南のアフリカ の ネグロイド を除くユーラシア・アフリカ大陸に住んでいた人種がおおむね白人と考えられていた。",
+   "source": "https://ja.wikipedia.org/wiki/マムルーク",
+   "genre": "生き物",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T07:23:12+00:00"
+  },
+  {
+   "topic": "マムルーク",
+   "text": "軍人として活躍したマムルークの出自はおおよそが キプチャク などの テュルク系民族 あるいは チェルケス人 などの カフカス 系民族であったが、 モンゴル人 、 クルド人 、 アルメニア人 、 ギリシャ人 、 スラヴ人 等の民族も含まれた。",
+   "source": "https://ja.wikipedia.org/wiki/マムルーク",
+   "genre": "その他",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T07:23:12+00:00"
+  },
+  {
+   "topic": "ISIL",
+   "text": "図書館などの機関に付与される国際的な識別子（略称:ISIL）については「 図書館及び関連組織のための国際標準識別子 」をご覧ください。",
+   "source": "https://ja.wikipedia.org/wiki/ISIL",
+   "genre": "その他",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T07:23:12+00:00"
+  },
+  {
+   "topic": "ISIL",
+   "text": "この項目には暴力的または猟奇的な記述・表現が含まれています。",
+   "source": "https://ja.wikipedia.org/wiki/ISIL",
+   "genre": "その他",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T07:23:12+00:00"
+  },
+  {
+   "topic": "ISIL",
+   "text": "現在でも サヘル 地域や アフガニスタン 、 ナイジェリア などで、ISILを支持する勢力による 自爆テロ や襲撃事件がたびたび発生している [ 16 ] 。",
+   "source": "https://ja.wikipedia.org/wiki/ISIL",
+   "genre": "その他",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T07:23:12+00:00"
+  },
+  {
+   "topic": "ISIL",
+   "text": "2026年 1月 現在、シリア・イラクにおけるISILはまとまった支配地区を失い構成員9千人にまで衰退しているが、アフガニスタンの ISKP など地方支部は積極的な活動を続けている [ 17 ] 。",
+   "source": "https://ja.wikipedia.org/wiki/ISIL",
+   "genre": "その他",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T07:23:12+00:00"
+  },
+  {
+   "topic": "ISIL",
+   "text": "イラク 、 シリア 両国の 国境 付近を中心として一時は両国の相当部分を武力制圧して「 国家 」樹立を宣言し、シリア領内の ラッカ を「首都」と宣言している。",
+   "source": "https://ja.wikipedia.org/wiki/ISIL",
+   "genre": "社会",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T07:23:12+00:00"
+  },
+  {
+   "topic": "マーズ・サイエンス・ラボラトリー",
+   "text": "MSLの目的の一部は、将来の サンプルリターン ・ミッションのために適当な着陸場所を見つけることだが、この案の推進者は、複数のローバーを使って一度に複数の地域を探索したほうがよいと主張した。",
+   "source": "https://ja.wikipedia.org/wiki/マーズ・サイエンス・ラボラトリー",
+   "genre": "その他",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T07:23:12+00:00"
+  },
+  {
+   "topic": "マーズ・サイエンス・ラボラトリー",
+   "text": "NASAの太陽系部門のディレクターであるアンディー・ダンツラー (Andy Dantzler) は、MSLの開発は、2009年の打ち上げに向かって順調に進んでおり、この期限に間に合わせるために、最大限の努力をすると語った。",
+   "source": "https://ja.wikipedia.org/wiki/マーズ・サイエンス・ラボラトリー",
+   "genre": "その他",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T07:23:12+00:00"
+  },
+  {
+   "topic": "マーズ・サイエンス・ラボラトリー",
+   "text": "ジェット推進研究所 のエンジニアたちは、非公式にではあるが、MSLのデザインは、将来のローバーにも利用されるだろうと語った。",
+   "source": "https://ja.wikipedia.org/wiki/マーズ・サイエンス・ラボラトリー",
+   "genre": "その他",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T07:23:12+00:00"
+  },
+  {
+   "topic": "マーズ・サイエンス・ラボラトリー",
+   "text": "2008年に開発費用の超過が問題となり、試験に十分な時間がとれないとして、2008年12月4日、NASAは打ち上げを2011年に延期することを発表した [ 1 ] 。",
+   "source": "https://ja.wikipedia.org/wiki/マーズ・サイエンス・ラボラトリー",
+   "genre": "その他",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T07:23:12+00:00"
+  },
+  {
+   "topic": "マーズ・サイエンス・ラボラトリー",
+   "text": "打ち上げ延期による追加支出は4億ドルで、最終的な予算総額は23億ドルになると見られた。",
+   "source": "https://ja.wikipedia.org/wiki/マーズ・サイエンス・ラボラトリー",
+   "genre": "その他",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T07:23:12+00:00"
+  },
+  {
+   "topic": "マーズ・サイエンス・ラボラトリー",
+   "text": "複数のローバーを打ち上げる可能性については言及されなかった。",
+   "source": "https://ja.wikipedia.org/wiki/マーズ・サイエンス・ラボラトリー",
+   "genre": "その他",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T07:23:12+00:00"
+  },
+  {
+   "topic": "太陽系",
+   "text": "地球 の水はどこから来たのか [ 11 ] 。",
+   "source": "https://ja.wikipedia.org/wiki/太陽系",
+   "genre": "科学",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T07:23:12+00:00"
+  },
+  {
+   "topic": "太陽系",
+   "text": "公転する天体と自転: 海王星より遠方の惑星 はあるか。",
+   "source": "https://ja.wikipedia.org/wiki/太陽系",
+   "genre": "その他",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T07:23:12+00:00"
+  },
+  {
+   "topic": "太陽系",
+   "text": "カイパーベルト天体 が持つ細長い軌道の原因は何か。",
+   "source": "https://ja.wikipedia.org/wiki/太陽系",
+   "genre": "その他",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T07:23:12+00:00"
+  },
+  {
+   "topic": "太陽系",
+   "text": "土星 の自転速度: なぜ 土星の磁気圏 （ 英語版 ） は、惑星の雲が回転する速度に近い速度で回転するのか。",
+   "source": "https://ja.wikipedia.org/wiki/太陽系",
+   "genre": "その他",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T07:23:12+00:00"
+  },
+  {
+   "topic": "太陽系",
+   "text": "土星の深い内部の真の自転速度とは何か [ 12 ] 。",
+   "source": "https://ja.wikipedia.org/wiki/太陽系",
+   "genre": "その他",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T07:23:12+00:00"
+  },
+  {
+   "topic": "太陽系",
+   "text": "衛星 の 地形学 : 土星の衛星 イアペトゥス の赤道付近に沿った高い山々の連なりの起源は何か。",
+   "source": "https://ja.wikipedia.org/wiki/太陽系",
+   "genre": "その他",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T07:23:12+00:00"
+  },
+  {
+   "topic": "原子力電池",
+   "text": "放射線電池 、 RI電池 、 ラジオアイソトープ電池 、 アイソトープ電池 [ 1 ] 、または ラジオアイソトープ発電器 、 RI発電器 とも呼ばれる。",
+   "source": "https://ja.wikipedia.org/wiki/原子力電池",
+   "genre": "その他",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T07:23:12+00:00"
+  },
+  {
+   "topic": "原子力電池",
+   "text": "長い半減期をもつ 同位体 を用いることで数十年単位という非常に寿命の長い電源が得られる [ 3 ] 。",
+   "source": "https://ja.wikipedia.org/wiki/原子力電池",
+   "genre": "その他",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T07:23:12+00:00"
+  },
+  {
+   "topic": "原子力電池",
+   "text": "長寿命を活かして 宇宙探査機 の電源として利用されている [ 2 ] 。",
+   "source": "https://ja.wikipedia.org/wiki/原子力電池",
+   "genre": "科学",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T07:23:12+00:00"
+  },
+  {
+   "topic": "原子力電池",
+   "text": "1960年代 には 心臓ペースメーカー の電源としても利用された [ 1 ] 。",
+   "source": "https://ja.wikipedia.org/wiki/原子力電池",
+   "genre": "その他",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T07:23:12+00:00"
+  },
+  {
+   "topic": "原子力電池",
+   "text": "放射性核種の原子核崩壊の際に発生するエネルギーを熱として利用し、 熱電変換素子 により電力に変換する。",
+   "source": "https://ja.wikipedia.org/wiki/原子力電池",
+   "genre": "生き物",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T07:23:12+00:00"
+  },
+  {
+   "topic": "原子力電池",
+   "text": "実用される原子力電池には アルファ崩壊 を起こす核種である プルトニウム238 や ポロニウム210 、 ストロンチウム90 などが用いられ、放射された アルファ線 が物質に吸収されて生じた熱を利用している。",
+   "source": "https://ja.wikipedia.org/wiki/原子力電池",
+   "genre": "生き物",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T07:23:12+00:00"
+  },
+  {
+   "topic": "惑星",
+   "text": "「 遊星 」はこの項目へ 転送 されています。",
+   "source": "https://ja.wikipedia.org/wiki/惑星",
+   "genre": "その他",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T07:23:12+00:00"
+  },
+  {
+   "topic": "惑星",
+   "text": "工学用語については「 遊星歯車機構 」をご覧ください。",
+   "source": "https://ja.wikipedia.org/wiki/惑星",
+   "genre": "技術",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T07:23:12+00:00"
+  },
+  {
+   "topic": "惑星",
+   "text": "正確には、 褐色矮星 の理論的下限質量（ 木星 質量の十数倍程度）よりも質量の低いものを指す。",
+   "source": "https://ja.wikipedia.org/wiki/惑星",
+   "genre": "科学",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T07:23:12+00:00"
+  },
+  {
+   "topic": "惑星",
+   "text": "ただし 太陽 の周りを回る天体については、これに加えて 後述の定義 を満たすものが惑星である。",
+   "source": "https://ja.wikipedia.org/wiki/惑星",
+   "genre": "その他",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T07:23:12+00:00"
+  },
+  {
+   "topic": "惑星",
+   "text": "英語「 planet （ プラネット ） 」の語源は ギリシア語 の『プラネテス』（「さまよう者」「 放浪者 」などの意）。",
+   "source": "https://ja.wikipedia.org/wiki/惑星",
+   "genre": "その他",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T07:23:12+00:00"
+  },
+  {
+   "topic": "惑星",
+   "text": "宇宙 のスケールから見れば惑星が全体に影響を与える事はほとんど無く、 宇宙形成論 からすれば考慮の必要はほとんど無い。",
+   "source": "https://ja.wikipedia.org/wiki/惑星",
+   "genre": "科学",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T07:23:12+00:00"
+  },
+  {
+   "topic": "エチオピア",
+   "text": "首都は アディスアベバ [ 7 ] 。",
+   "source": "https://ja.wikipedia.org/wiki/エチオピア",
+   "genre": "その他",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T07:23:12+00:00"
+  },
+  {
+   "topic": "エチオピア",
+   "text": "世界銀行 は人口を、2024年時点で1億3205万9767人と推定している [ 14 ] 。",
+   "source": "https://ja.wikipedia.org/wiki/エチオピア",
+   "genre": "社会",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T07:23:12+00:00"
+  },
+  {
+   "topic": "エチオピア",
+   "text": "エチオピアは急速に発展している国であるが、世界的に見て 貧困国 である [ 15 ] 。",
+   "source": "https://ja.wikipedia.org/wiki/エチオピア",
+   "genre": "その他",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T07:23:12+00:00"
+  },
+  {
+   "topic": "エチオピア",
+   "text": "アクスム王国は高度な文明を持ち、交易で栄えた [ 16 ] 。",
+   "source": "https://ja.wikipedia.org/wiki/エチオピア",
+   "genre": "その他",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T07:23:12+00:00"
+  },
+  {
+   "topic": "エチオピア",
+   "text": "4世紀ごろには キリスト教 を受容した [ 17 ] 。",
+   "source": "https://ja.wikipedia.org/wiki/エチオピア",
+   "genre": "歴史",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T07:23:12+00:00"
+  },
+  {
+   "topic": "エチオピア",
+   "text": "19世紀中頃、 テオドロス2世 がエチオピアの統一を達成した [ 22 ] 。",
+   "source": "https://ja.wikipedia.org/wiki/エチオピア",
+   "genre": "歴史",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T07:23:12+00:00"
+  },
+  {
+   "topic": "スーダン",
+   "text": "歴史的な広域地名については「 スーダン (地理概念) 」をご覧ください。",
+   "source": "https://ja.wikipedia.org/wiki/スーダン",
+   "genre": "歴史",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T07:23:12+00:00"
+  },
+  {
+   "topic": "スーダン",
+   "text": "国境 を接する隣国は北が エジプト 、北西が リビア 、西が チャド と 中央アフリカ 、南が 南スーダン 、南東が エチオピア と エリトリア 。",
+   "source": "https://ja.wikipedia.org/wiki/スーダン",
+   "genre": "その他",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T07:23:12+00:00"
+  },
+  {
+   "topic": "スーダン",
+   "text": "東側は 紅海 に面しており、その対岸側には サウジアラビア がある。",
+   "source": "https://ja.wikipedia.org/wiki/スーダン",
+   "genre": "その他",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T07:23:12+00:00"
+  },
+  {
+   "topic": "スーダン",
+   "text": "アルジェリア 、 コンゴ民主共和国 に次いで アフリカ大陸 で3位の面積を有する。",
+   "source": "https://ja.wikipedia.org/wiki/スーダン",
+   "genre": "その他",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T07:23:12+00:00"
+  },
+  {
+   "topic": "スーダン",
+   "text": "2011年 7月に南スーダン共和国が分離独立する前は、面積250万5813 平方キロメートル とアフリカ大陸最大の国土を有していた。",
+   "source": "https://ja.wikipedia.org/wiki/スーダン",
+   "genre": "その他",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T07:23:12+00:00"
+  },
+  {
+   "topic": "スーダン",
+   "text": "つなげ読みするとジュンフーリヤトゥ・ッ＝スーダーン）。",
+   "source": "https://ja.wikipedia.org/wiki/スーダン",
+   "genre": "その他",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T07:23:12+00:00"
+  },
+  {
+   "topic": "11世紀",
+   "text": "教皇権の伸長は皇帝権との間で衝突を生み出し、叙任権闘争を激化させた。",
+   "source": "https://ja.wikipedia.org/wiki/11世紀",
+   "genre": "歴史",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T07:23:12+00:00"
+  },
+  {
+   "topic": "11世紀",
+   "text": "画像は 神聖ローマ皇帝 ハインリヒ4世 （中央）と、破門された彼を ローマ教皇 グレゴリウス7世 にとりなす トスカーナ女伯マティルデ （右）と クリュニー修道院長ユーグ 。",
+   "source": "https://ja.wikipedia.org/wiki/11世紀",
+   "genre": "歴史",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T07:23:12+00:00"
+  },
+  {
+   "topic": "11世紀",
+   "text": "画像は ヘイスティングズの戦い におけるイングランド王 ハロルド2世 の死の場面。",
+   "source": "https://ja.wikipedia.org/wiki/11世紀",
+   "genre": "歴史",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T07:23:12+00:00"
+  },
+  {
+   "topic": "11世紀",
+   "text": "この戦いに勝利した ノルマンディー公 ギヨーム2世がイングランド王 ウィリアム1世 になる。",
+   "source": "https://ja.wikipedia.org/wiki/11世紀",
+   "genre": "歴史",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T07:23:12+00:00"
+  },
+  {
+   "topic": "11世紀",
+   "text": "マーストリヒト 大聖堂宝物室の写本外装。",
+   "source": "https://ja.wikipedia.org/wiki/11世紀",
+   "genre": "歴史",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T07:23:12+00:00"
+  },
+  {
+   "topic": "11世紀",
+   "text": "聖遺物 崇敬の高まりとともにモザン美術と呼ばれる マース川 流域の 低地地方 で生み出された金銀やエナメルの細工も巧緻なものとなった。",
+   "source": "https://ja.wikipedia.org/wiki/11世紀",
+   "genre": "歴史",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T07:23:12+00:00"
+  },
+  {
+   "topic": "幹細胞",
+   "text": "発生における 細胞系譜 の幹 (stem) になることから名付けられた。",
+   "source": "https://ja.wikipedia.org/wiki/幹細胞",
+   "genre": "生き物",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T07:23:12+00:00"
+  },
+  {
+   "topic": "幹細胞",
+   "text": "幹細胞から生じた二つの 娘細胞 のうち、少なくとも一方が同じ幹細胞でありつづけることによって分化細胞を供給することができる。",
+   "source": "https://ja.wikipedia.org/wiki/幹細胞",
+   "genre": "生き物",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T07:23:12+00:00"
+  },
+  {
+   "topic": "幹細胞",
+   "text": "この点で分化した細胞と異なっており、 発生 の過程や 組織 ・ 器官 の維持において細胞を供給する役割を担っている。",
+   "source": "https://ja.wikipedia.org/wiki/幹細胞",
+   "genre": "生き物",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T07:23:12+00:00"
+  },
+  {
+   "topic": "幹細胞",
+   "text": "幹細胞では分化を誘導する 遺伝子 の発現を抑制する機構が働いており、これは外部からの シグナル や クロマチン の構造変換などによって行われる。",
+   "source": "https://ja.wikipedia.org/wiki/幹細胞",
+   "genre": "生き物",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T07:23:12+00:00"
+  },
+  {
+   "topic": "幹細胞",
+   "text": "普通の 体細胞 は テロメラーゼ を欠いているため細胞分裂の度に テロメア が短くなるが幹細胞ではテロメラーゼが発現しているため、テロメアの長さが維持される。",
+   "source": "https://ja.wikipedia.org/wiki/幹細胞",
+   "genre": "生き物",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T07:23:12+00:00"
+  },
+  {
+   "topic": "幹細胞",
+   "text": "これは分裂を繰り返す幹細胞に必要な機能である。",
+   "source": "https://ja.wikipedia.org/wiki/幹細胞",
+   "genre": "生き物",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T07:23:12+00:00"
+  },
+  {
+   "topic": "マスウード・ペゼシュキヤーン",
+   "text": "情報は出来事の進行によって急速に変更される可能性があります。",
+   "source": "https://ja.wikipedia.org/wiki/マスウード・ペゼシュキヤーン",
+   "genre": "技術",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T07:23:12+00:00"
+  },
+  {
+   "topic": "マスウード・ペゼシュキヤーン",
+   "text": "（ 2026年1月 ） この記事は 最新の出来事 （ 2026年イスラエルとアメリカ合衆国によるイラン攻撃 ）に影響を受ける可能性があります。",
+   "source": "https://ja.wikipedia.org/wiki/マスウード・ペゼシュキヤーン",
+   "genre": "その他",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T07:23:12+00:00"
+  },
+  {
+   "topic": "マスウード・ペゼシュキヤーン",
+   "text": "2001年から2005年まで ハータミー 政権で保健・医療教育大臣を務めた [ 5 ] 。",
+   "source": "https://ja.wikipedia.org/wiki/マスウード・ペゼシュキヤーン",
+   "genre": "社会",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T07:23:12+00:00"
+  },
+  {
+   "topic": "マスウード・ペゼシュキヤーン",
+   "text": "1980年代にペゼシュキヤーンは西アーザルバーイジャーン州の ピーラーンシャフル 郡と ナガデ 郡の両郡の知事に選出された [ 6 ] 。",
+   "source": "https://ja.wikipedia.org/wiki/マスウード・ペゼシュキヤーン",
+   "genre": "その他",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T07:23:12+00:00"
+  },
+  {
+   "topic": "マスウード・ペゼシュキヤーン",
+   "text": "1973年、彼は 卒業証書 を授与され、兵役のため ザーボル に移った。",
+   "source": "https://ja.wikipedia.org/wiki/マスウード・ペゼシュキヤーン",
+   "genre": "その他",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T07:23:12+00:00"
+  },
+  {
+   "topic": "核兵器",
+   "text": "原子爆弾 、 水素爆弾 、 中性子爆弾 などの 核爆弾 （ 核弾頭 ）とそれを運搬する運搬兵器で構成される。",
+   "source": "https://ja.wikipedia.org/wiki/核兵器",
+   "genre": "その他",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T07:23:12+00:00"
+  },
+  {
+   "topic": "核兵器",
+   "text": "技術の根幹が原子力発電と同様であり、原子力発電による生成物が核兵器の燃料となり得る。",
+   "source": "https://ja.wikipedia.org/wiki/核兵器",
+   "genre": "技術",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T07:23:12+00:00"
+  },
+  {
+   "topic": "核兵器",
+   "text": "そのため核兵器の燃料が単純製造されることはほとんどなく、核兵器保有国の自国内にある原子力発電所から供給される 使用済み核燃料 が利用される。",
+   "source": "https://ja.wikipedia.org/wiki/核兵器",
+   "genre": "その他",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T07:23:12+00:00"
+  },
+  {
+   "topic": "核兵器",
+   "text": "核兵器は 生物兵器 、 化学兵器 と合わせてNBC兵器（またはABC兵器）とよばれる 大量破壊兵器 である。",
+   "source": "https://ja.wikipedia.org/wiki/核兵器",
+   "genre": "生き物",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T07:23:12+00:00"
+  },
+  {
+   "topic": "核兵器",
+   "text": "一部 放射能兵器 も含めて核兵器と称する場合があるが、厳密には放射能兵器を核兵器に分類するのは誤りである。",
+   "source": "https://ja.wikipedia.org/wiki/核兵器",
+   "genre": "その他",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T07:23:12+00:00"
+  },
+  {
+   "topic": "ベール (服飾)",
+   "text": "その他の用法については「 ベール 」をご覧ください。",
+   "source": "https://ja.wikipedia.org/wiki/ベール_(服飾)",
+   "genre": "その他",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T07:23:12+00:00"
+  },
+  {
+   "topic": "ベール (服飾)",
+   "text": "ウェディングドレスのベール イラン人女性のヒジャブ ベール （ 英 : veil ）は、 女性 の頭部を覆い隠す薄い布。",
+   "source": "https://ja.wikipedia.org/wiki/ベール_(服飾)",
+   "genre": "その他",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T07:23:12+00:00"
+  },
+  {
+   "topic": "ベール (服飾)",
+   "text": "顔面の前面、または左右両面を、時には両肩までを覆い隠す。",
+   "source": "https://ja.wikipedia.org/wiki/ベール_(服飾)",
+   "genre": "その他",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T07:23:12+00:00"
+  },
+  {
+   "topic": "ベール (服飾)",
+   "text": "素材は シースルー の物が多い。",
+   "source": "https://ja.wikipedia.org/wiki/ベール_(服飾)",
+   "genre": "その他",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T07:23:12+00:00"
+  },
+  {
+   "topic": "ベール (服飾)",
+   "text": "マリアベール、フェイスアップベールなどの種類がある。",
+   "source": "https://ja.wikipedia.org/wiki/ベール_(服飾)",
+   "genre": "生き物",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T07:23:12+00:00"
+  },
+  {
+   "topic": "ベール (服飾)",
+   "text": "帽子と合わせることも行なわれ、喪服においても着用されるが、その場合の色は当然黒である。",
+   "source": "https://ja.wikipedia.org/wiki/ベール_(服飾)",
+   "genre": "その他",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T07:23:12+00:00"
+  },
+  {
+   "topic": "7月31日",
+   "text": "できごと アウラングゼーブ (1618-1707)、 ムガル帝国 皇帝に即位(1658)。",
+   "source": "https://ja.wikipedia.org/wiki/7月31日",
+   "genre": "その他",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T07:23:13+00:00"
+  },
+  {
+   "topic": "7月31日",
+   "text": "画像は鷹を手に乗せ謁見するアウラングゼーブ(1660頃)。",
+   "source": "https://ja.wikipedia.org/wiki/7月31日",
+   "genre": "その他",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T07:23:13+00:00"
+  },
+  {
+   "topic": "7月31日",
+   "text": "ブレダの和約 締結(1667)、 第二次英蘭戦争 終結。",
+   "source": "https://ja.wikipedia.org/wiki/7月31日",
+   "genre": "歴史",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T07:23:13+00:00"
+  },
+  {
+   "topic": "7月31日",
+   "text": "作家 ダニエル・デフォー 、 晒し台 に上げられる(1703)。",
+   "source": "https://ja.wikipedia.org/wiki/7月31日",
+   "genre": "その他",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T07:23:13+00:00"
+  },
+  {
+   "topic": "7月31日",
+   "text": "ダブリン で ゲール語連盟 設立(1893)。",
+   "source": "https://ja.wikipedia.org/wiki/7月31日",
+   "genre": "その他",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T07:23:13+00:00"
+  },
+  {
+   "topic": "7月31日",
+   "text": "1905年 樺太の戦い 、日本が 樺太 全島を占領(1905)。",
+   "source": "https://ja.wikipedia.org/wiki/7月31日",
+   "genre": "その他",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T07:23:13+00:00"
+  },
+  {
+   "topic": "1797年",
+   "text": "この節に大きな変更を加える場合には、あらかじめ上記プロジェクトのノートで提案し、合意を形成してください。",
+   "source": "https://ja.wikipedia.org/wiki/1797年",
+   "genre": "その他",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T07:23:13+00:00"
+  },
+  {
+   "topic": "1797年",
+   "text": "凡例 分類にある「日本」「中国」「中国周辺」「朝鮮」「ベトナム」は地域概念であり、特定の国家をさすものではなく、またその外延は便宜的に定めたものである。",
+   "source": "https://ja.wikipedia.org/wiki/1797年",
+   "genre": "社会",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T07:23:13+00:00"
+  },
+  {
+   "topic": "1797年",
+   "text": "特に「*」の付された王朝の分類は仮配置であり、現在も 「ガイドライン」のノート で対応を検討中である。",
+   "source": "https://ja.wikipedia.org/wiki/1797年",
+   "genre": "歴史",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T07:23:13+00:00"
+  },
+  {
+   "topic": "1797年",
+   "text": "「中国周辺」は、「広義の 北アジア 、 中央アジア 、及びこれに隣接する中国の一部地域（ほぼ 中央ユーラシア に相当）」を指す。",
+   "source": "https://ja.wikipedia.org/wiki/1797年",
+   "genre": "その他",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T07:23:13+00:00"
+  },
+  {
+   "topic": "1797年",
+   "text": "一段右寄せの箇条に掲げた 元号 は、その上段の元号を建てた王朝に対抗する 私年号 である。",
+   "source": "https://ja.wikipedia.org/wiki/1797年",
+   "genre": "歴史",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T07:23:13+00:00"
+  },
+  {
+   "topic": "1797年",
+   "text": "皇紀は日本で1873年の太陽暦採用と同時に施行された。",
+   "source": "https://ja.wikipedia.org/wiki/1797年",
+   "genre": "その他",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T07:23:13+00:00"
+  },
+  {
+   "topic": "日本統治時代の朝鮮",
+   "text": "（ 2025年6月 ） 独自研究 が含まれているおそれがあります。",
+   "source": "https://ja.wikipedia.org/wiki/日本統治時代の朝鮮",
+   "genre": "歴史",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T07:23:13+00:00"
+  },
+  {
+   "topic": "日本統治時代の朝鮮",
+   "text": "（ 2025年6月 ） 言葉を濁した 曖昧な記述になっています。",
+   "source": "https://ja.wikipedia.org/wiki/日本統治時代の朝鮮",
+   "genre": "歴史",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T07:23:13+00:00"
+  },
+  {
+   "topic": "日本統治時代の朝鮮",
+   "text": "民間使用： 日帝 強占期、日帝時代、日政時代、倭政など。",
+   "source": "https://ja.wikipedia.org/wiki/日本統治時代の朝鮮",
+   "genre": "歴史",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T07:23:13+00:00"
+  },
+  {
+   "topic": "日本統治時代の朝鮮",
+   "text": "民間ではこちらが最も広く使われている。",
+   "source": "https://ja.wikipedia.org/wiki/日本統治時代の朝鮮",
+   "genre": "歴史",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T07:23:13+00:00"
+  },
+  {
+   "topic": "日本統治時代の朝鮮",
+   "text": "国会：韓国の国会は2007年9月20日に公式用語として「대일항쟁기（対日抗爭期）」を採択した [ 1 ] 。",
+   "source": "https://ja.wikipedia.org/wiki/日本統治時代の朝鮮",
+   "genre": "歴史",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T07:23:13+00:00"
+  },
+  {
+   "topic": "マカオ",
+   "text": "ポルトガル統治時代については「 ポルトガル領マカオ 」をご覧ください。",
+   "source": "https://ja.wikipedia.org/wiki/マカオ",
+   "genre": "歴史",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T07:23:13+00:00"
+  },
+  {
+   "topic": "マカオ",
+   "text": "正式名称は マカオ特別行政区 （マカオとくべつぎょうせいく、澳門特別行政区）。",
+   "source": "https://ja.wikipedia.org/wiki/マカオ",
+   "genre": "その他",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T07:23:13+00:00"
+  },
+  {
+   "topic": "マカオ",
+   "text": "中国大陸 南岸の 珠江 河口（ 珠江デルタ ）に位置する旧 ポルトガル 海外領土 で、現在は カジノ と モータースポーツ や 世界遺産 を中心とした世界的 観光地 としても知られる。",
+   "source": "https://ja.wikipedia.org/wiki/マカオ",
+   "genre": "その他",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T07:23:13+00:00"
+  },
+  {
+   "topic": "マカオ",
+   "text": "広東省の 珠海市 に接し、 中国大陸 本土南海岸に突き出た マカオ半島 と、沖合の島から構成される。",
+   "source": "https://ja.wikipedia.org/wiki/マカオ",
+   "genre": "その他",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T07:23:13+00:00"
+  },
+  {
+   "topic": "マカオ",
+   "text": "この島は、もともと タイパ島 と コロアネ島 という二つの島であったが、島の間は埋め立てられて コタイ と呼ぶ地域となり、全体がひとつの島のようになっている。",
+   "source": "https://ja.wikipedia.org/wiki/マカオ",
+   "genre": "その他",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T07:23:13+00:00"
+  },
+  {
+   "topic": "マカオ",
+   "text": "現在、半島部と旧タイパ島の間は四つの橋でつながれ、コタイから西に珠海市と結ぶ橋もできている。",
+   "source": "https://ja.wikipedia.org/wiki/マカオ",
+   "genre": "その他",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T07:23:13+00:00"
+  },
+  {
+   "topic": "畿内",
+   "text": "日本では、大君（おおきみ）を含む 天皇 が住む 都 の周辺の地域を指す呼称として用いられている。",
+   "source": "https://ja.wikipedia.org/wiki/畿内",
+   "genre": "その他",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T07:23:13+00:00"
+  },
+  {
+   "topic": "畿内",
+   "text": "明治維新以降の東京周辺の地域を指す「 首都圏 」の概念に類似する [ 注 1 ] 。",
+   "source": "https://ja.wikipedia.org/wiki/畿内",
+   "genre": "その他",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T07:23:13+00:00"
+  },
+  {
+   "topic": "畿内",
+   "text": "律令時代 に、 大和国 ・ 山城国 （ 平安遷都 以前は山背国と表記）・ 河内国 ・ 和泉国 （ 757年 河内国より分離）・ 摂津国 の令制5か 国 を指す呼称として用いられた。",
+   "source": "https://ja.wikipedia.org/wiki/畿内",
+   "genre": "言葉",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T07:23:13+00:00"
+  },
+  {
+   "topic": "畿内",
+   "text": "周 代の1里 = 約405 メートル ）以内の範囲。",
+   "source": "https://ja.wikipedia.org/wiki/畿内",
+   "genre": "その他",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T07:23:13+00:00"
+  },
+  {
+   "topic": "畿内",
+   "text": "近現代の行政区分では 奈良県 の全域、 京都府 の南部、 大阪府 の大部分、 兵庫県 の南東部に当たる。",
+   "source": "https://ja.wikipedia.org/wiki/畿内",
+   "genre": "その他",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T07:23:13+00:00"
+  },
+  {
+   "topic": "畿内",
+   "text": "なお畿内という地域概念は現在でも存在し 地方分権 などの行政区分や 観光 などの産業分野でしばし取り上げられる。",
+   "source": "https://ja.wikipedia.org/wiki/畿内",
+   "genre": "社会",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T07:23:13+00:00"
+  },
+  {
+   "topic": "海",
+   "text": "「 海洋 」はこの項目へ 転送 されています。",
+   "source": "https://ja.wikipedia.org/wiki/海",
+   "genre": "その他",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T07:23:13+00:00"
+  },
+  {
+   "topic": "海",
+   "text": "中国の人工衛星については「 海洋 (人工衛星) 」をご覧ください。",
+   "source": "https://ja.wikipedia.org/wiki/海",
+   "genre": "その他",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T07:23:13+00:00"
+  },
+  {
+   "topic": "海",
+   "text": "大小さまざまな広がり方があり、特に大きな広がり（だけ）は海洋（the ocean）とも言い、主な海洋としては 太平洋 、 大西洋 、 インド洋 などがある。",
+   "source": "https://ja.wikipedia.org/wiki/海",
+   "genre": "その他",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T07:23:13+00:00"
+  },
+  {
+   "topic": "海",
+   "text": "一方、 地中海 や 黒海 も紛れもなく海であり、 海峡 で大西洋と繋がっており海水は行き来している。",
+   "source": "https://ja.wikipedia.org/wiki/海",
+   "genre": "その他",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T07:23:13+00:00"
+  },
+  {
+   "topic": "海",
+   "text": "海水の総量は約13億4993万立方キロメートルにのぼる [ 3 ] 。",
+   "source": "https://ja.wikipedia.org/wiki/海",
+   "genre": "その他",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T07:23:13+00:00"
+  },
+  {
+   "topic": "海",
+   "text": "ほとんどの 海面 は 大気 に露出しているが、 極地 の一部では海水は 氷 （ 海氷 や 棚氷 ）の下にある。",
+   "source": "https://ja.wikipedia.org/wiki/海",
+   "genre": "その他",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T07:23:13+00:00"
+  },
+  {
+   "topic": "続日本紀",
+   "text": "『 日本書紀 』に続く 六国史 の第二にあたる。",
+   "source": "https://ja.wikipedia.org/wiki/続日本紀",
+   "genre": "その他",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T07:23:13+00:00"
+  },
+  {
+   "topic": "続日本紀",
+   "text": "菅野真道 らによって 延暦 16年（ 797年 ）に完成した。",
+   "source": "https://ja.wikipedia.org/wiki/続日本紀",
+   "genre": "その他",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T07:23:13+00:00"
+  },
+  {
+   "topic": "続日本紀",
+   "text": "文武天皇 元年（ 697年 ）から 桓武天皇 の延暦10年（ 791年 ）まで95年間の歴史を扱い、全40巻から成る。",
+   "source": "https://ja.wikipedia.org/wiki/続日本紀",
+   "genre": "歴史",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T07:23:13+00:00"
+  },
+  {
+   "topic": "続日本紀",
+   "text": "奈良時代 の基本史料である。",
+   "source": "https://ja.wikipedia.org/wiki/続日本紀",
+   "genre": "歴史",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T07:23:13+00:00"
+  },
+  {
+   "topic": "続日本紀",
+   "text": "編年体 、 漢文 表記である。",
+   "source": "https://ja.wikipedia.org/wiki/続日本紀",
+   "genre": "言葉",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T07:23:13+00:00"
+  },
+  {
+   "topic": "続日本紀",
+   "text": "略称は 続紀 （しょっき） [ 2 ] 。",
+   "source": "https://ja.wikipedia.org/wiki/続日本紀",
+   "genre": "その他",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T07:23:13+00:00"
+  },
+  {
+   "topic": "船",
+   "text": "（ 2026年3月 ） 1931年に建造された イタリア の 「シップ」 、 アメリゴ・ヴェスプッチ （ 英語版 ） （1976年、 ニューヨーク港 ） 船 （ふね、舟、 英 : vesselあるいはboatあるいはship ）は、人や物などをのせて水上を渡航（移動）する目的で作られた乗り物の総称 [ 1 ] 。",
+   "source": "https://ja.wikipedia.org/wiki/船舶",
+   "genre": "その他",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T07:23:13+00:00"
+  },
+  {
+   "topic": "船",
+   "text": "船（船舶）は浮揚性・移動性・積載性の三要素をすべて満たす構造物をいう [ 2 ] 。",
+   "source": "https://ja.wikipedia.org/wiki/船舶",
+   "genre": "その他",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T07:23:13+00:00"
+  },
+  {
+   "topic": "船",
+   "text": "基本的には 海 、 湖 、 川 などの水上を移動する乗り物を指しているが、広い意味では水中を移動する 潜水艇 や 潜水艦 も含まれる。",
+   "source": "https://ja.wikipedia.org/wiki/船舶",
+   "genre": "その他",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T07:23:13+00:00"
+  },
+  {
+   "topic": "船",
+   "text": "動力は人力・ 帆 ・ 原動機 などによって得る。",
+   "source": "https://ja.wikipedia.org/wiki/船舶",
+   "genre": "その他",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T07:23:13+00:00"
+  },
+  {
+   "topic": "船",
+   "text": "大和言葉の「ふね」「フネ」は広範囲のものを指しており、規模や用途の違いに応じて「船・舟・槽・艦」などの漢字が使い分けられている。",
+   "source": "https://ja.wikipedia.org/wiki/船舶",
+   "genre": "言葉",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T07:23:13+00:00"
+  },
+  {
+   "topic": "15世紀",
+   "text": "大西洋 を渡り 新世界 に到達したコロンブス。",
+   "source": "https://ja.wikipedia.org/wiki/15世紀",
+   "genre": "歴史",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T07:23:13+00:00"
+  },
+  {
+   "topic": "15世紀",
+   "text": "アンデス山麓に属するペルーのウルバンバ谷に沿いの尾根にある遺跡で標高2430mの高さにある。",
+   "source": "https://ja.wikipedia.org/wiki/15世紀",
+   "genre": "歴史",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T07:23:13+00:00"
+  },
+  {
+   "topic": "15世紀",
+   "text": "用途は未だ明らかでない所もあるが、15世紀に建造された インカ帝国 の技術の高さを反映している。",
+   "source": "https://ja.wikipedia.org/wiki/15世紀",
+   "genre": "技術",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T07:23:13+00:00"
+  },
+  {
+   "topic": "15世紀",
+   "text": "1479年に アステカ帝国 皇帝 アシャヤカトル が現 メキシコシティ の中央広場の位置に奉献したもの（ メキシコ国立人類学博物館 蔵）。",
+   "source": "https://ja.wikipedia.org/wiki/15世紀",
+   "genre": "歴史",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T07:23:13+00:00"
+  },
+  {
+   "topic": "15世紀",
+   "text": "北アメリカでは1450年代には カホキア 遺跡にみられる巨大建築物マウンドでの祭祀が停滞し、社会が大きく変容した。",
+   "source": "https://ja.wikipedia.org/wiki/15世紀",
+   "genre": "歴史",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T07:23:13+00:00"
+  },
+  {
+   "topic": "15世紀",
+   "text": "画像はこの時代に作られた中空土器の水差しで、神話上の水中豹を表している（ アーカンソー州 クロス郡出土）。",
+   "source": "https://ja.wikipedia.org/wiki/15世紀",
+   "genre": "歴史",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T07:23:13+00:00"
   }
  ],
  "read": {
@@ -318088,7 +321376,56 @@
   "https://ja.wikipedia.org/wiki/キルギス語": "2026-09-08T07:18:35+00:00",
   "https://ja.wikipedia.org/wiki/国の国内総生産順リスト_(購買力平価)": "2026-09-08T07:18:35+00:00",
   "https://ja.wikipedia.org/wiki/駅伝制": "2026-09-08T07:18:35+00:00",
-  "https://ja.wikipedia.org/wiki/絶対王政": "2026-09-08T07:18:35+00:00"
+  "https://ja.wikipedia.org/wiki/絶対王政": "2026-09-08T07:18:35+00:00",
+  "https://ja.wikipedia.org/wiki/FreeType": "2026-09-08T07:23:03+00:00",
+  "https://ja.wikipedia.org/wiki/技術評論社": "2026-09-08T07:23:03+00:00",
+  "https://ja.wikipedia.org/wiki/PC-9800シリーズ": "2026-09-08T07:23:03+00:00",
+  "https://ja.wikipedia.org/wiki/涼宮ハルヒの憂鬱": "2026-09-08T07:23:03+00:00",
+  "https://ja.wikipedia.org/wiki/久遠さやか": "2026-09-08T07:23:03+00:00",
+  "https://ja.wikipedia.org/wiki/和製漢語": "2026-09-08T07:23:04+00:00",
+  "https://ja.wikipedia.org/wiki/演奏会": "2026-09-08T07:23:04+00:00",
+  "https://ja.wikipedia.org/wiki/横浜スタジアム": "2026-09-08T07:23:05+00:00",
+  "https://ja.wikipedia.org/wiki/Á": "2026-09-08T07:23:05+00:00",
+  "https://ja.wikipedia.org/wiki/アメリカ大陸": "2026-09-08T07:23:05+00:00",
+  "https://ja.wikipedia.org/wiki/パラグアイ": "2026-09-08T07:23:05+00:00",
+  "https://ja.wikipedia.org/wiki/入江正徳": "2026-09-08T07:23:05+00:00",
+  "https://ja.wikipedia.org/wiki/九州男児": "2026-09-08T07:23:05+00:00",
+  "https://ja.wikipedia.org/wiki/助監督_(映画スタッフ)": "2026-09-08T07:23:05+00:00",
+  "https://ja.wikipedia.org/wiki/岡本美登": "2026-09-08T07:23:06+00:00",
+  "https://ja.wikipedia.org/wiki/平山亨": "2026-09-08T07:23:06+00:00",
+  "https://ja.wikipedia.org/wiki/キュウカンチョウ": "2026-09-08T07:23:06+00:00",
+  "https://ja.wikipedia.org/wiki/藤川桂介": "2026-09-08T07:23:06+00:00",
+  "https://ja.wikipedia.org/wiki/ドラゴンクエストI・II": "2026-09-08T07:23:06+00:00",
+  "https://ja.wikipedia.org/wiki/平野文": "2026-09-08T07:23:06+00:00",
+  "https://ja.wikipedia.org/wiki/ウルティマ": "2026-09-08T07:23:06+00:00",
+  "https://ja.wikipedia.org/wiki/物語": "2026-09-08T07:23:06+00:00",
+  "https://ja.wikipedia.org/wiki/ノンフィクション": "2026-09-08T07:23:07+00:00",
+  "https://ja.wikipedia.org/wiki/フィクション": "2026-09-08T07:23:07+00:00",
+  "https://ja.wikipedia.org/wiki/活版印刷": "2026-09-08T07:23:07+00:00",
+  "https://ja.wikipedia.org/wiki/ジョーク": "2026-09-08T07:23:07+00:00",
+  "https://ja.wikipedia.org/wiki/現金": "2026-09-08T07:23:07+00:00",
+  "https://ja.wikipedia.org/wiki/マムルーク": "2026-09-08T07:23:08+00:00",
+  "https://ja.wikipedia.org/wiki/ISIL": "2026-09-08T07:23:08+00:00",
+  "https://ja.wikipedia.org/wiki/マーズ・サイエンス・ラボラトリー": "2026-09-08T07:23:08+00:00",
+  "https://ja.wikipedia.org/wiki/太陽系": "2026-09-08T07:23:08+00:00",
+  "https://ja.wikipedia.org/wiki/原子力電池": "2026-09-08T07:23:08+00:00",
+  "https://ja.wikipedia.org/wiki/惑星": "2026-09-08T07:23:08+00:00",
+  "https://ja.wikipedia.org/wiki/エチオピア": "2026-09-08T07:23:09+00:00",
+  "https://ja.wikipedia.org/wiki/スーダン": "2026-09-08T07:23:09+00:00",
+  "https://ja.wikipedia.org/wiki/11世紀": "2026-09-08T07:23:09+00:00",
+  "https://ja.wikipedia.org/wiki/幹細胞": "2026-09-08T07:23:09+00:00",
+  "https://ja.wikipedia.org/wiki/マスウード・ペゼシュキヤーン": "2026-09-08T07:23:09+00:00",
+  "https://ja.wikipedia.org/wiki/核兵器": "2026-09-08T07:23:09+00:00",
+  "https://ja.wikipedia.org/wiki/ベール_(服飾)": "2026-09-08T07:23:09+00:00",
+  "https://ja.wikipedia.org/wiki/7月31日": "2026-09-08T07:23:10+00:00",
+  "https://ja.wikipedia.org/wiki/1797年": "2026-09-08T07:23:10+00:00",
+  "https://ja.wikipedia.org/wiki/日本統治時代の朝鮮": "2026-09-08T07:23:10+00:00",
+  "https://ja.wikipedia.org/wiki/マカオ": "2026-09-08T07:23:10+00:00",
+  "https://ja.wikipedia.org/wiki/畿内": "2026-09-08T07:23:10+00:00",
+  "https://ja.wikipedia.org/wiki/海": "2026-09-08T07:23:10+00:00",
+  "https://ja.wikipedia.org/wiki/続日本紀": "2026-09-08T07:23:10+00:00",
+  "https://ja.wikipedia.org/wiki/船舶": "2026-09-08T07:23:10+00:00",
+  "https://ja.wikipedia.org/wiki/15世紀": "2026-09-08T07:23:10+00:00"
  },
  "frontier": [
   "https://ja.wikipedia.org/wiki/UI%E3%81%A8UX",
@@ -318182,11 +321519,9 @@
   "https://ja.wikipedia.org/wiki/Wikiversity:%E3%82%A6%E3%82%A3%E3%82%AD%E3%83%90%E3%83%BC%E3%82%B7%E3%83%86%E3%82%A3%E3%81%B8%E3%82%88%E3%81%86%E3%81%93%E3%81%9D",
   "https://ja.wikipedia.org/wiki/文献",
   "https://ja.wikipedia.org/wiki/KETpic",
-  "https://ja.wikipedia.org/wiki/FreeType",
   "https://ja.wikipedia.org/wiki/字形",
   "https://ja.wikipedia.org/wiki/クヌース賞金小切手",
   "https://ja.wikipedia.org/wiki/TeXShop",
-  "https://ja.wikipedia.org/wiki/技術評論社",
   "https://ja.wikipedia.org/wiki/宋朝体",
   "https://ja.wikipedia.org/wiki/製版",
   "https://ja.wikipedia.org/wiki/MetaPost",
@@ -318196,7 +321531,6 @@
   "https://ja.wikipedia.org/wiki/合字",
   "https://ja.wikipedia.org/wiki/Computer_Modern",
   "https://ja.wikipedia.org/wiki/Texinfo",
-  "https://ja.wikipedia.org/wiki/PC-9800シリーズ",
   "https://ja.wikipedia.org/wiki/TeXworks",
   "https://ja.wikipedia.org/wiki/TeTeX",
   "https://ja.wikipedia.org/wiki/TrueType",
@@ -318211,8 +321545,6 @@
   "https://ja.wikipedia.org/wiki/STIXフォント事業",
   "https://ja.wikipedia.org/wiki/津田寛治",
   "https://ja.wikipedia.org/wiki/燃えろ!!ロボコン",
-  "https://ja.wikipedia.org/wiki/涼宮ハルヒの憂鬱",
-  "https://ja.wikipedia.org/wiki/久遠さやか",
   "https://ja.wikipedia.org/wiki/きただにひろし",
   "https://ja.wikipedia.org/wiki/三野友華子",
   "https://ja.wikipedia.org/wiki/野村義男",
@@ -318243,7 +321575,6 @@
   "https://ja.wikipedia.org/wiki/価値論",
   "https://ja.wikipedia.org/wiki/漢学者",
   "https://ja.wikipedia.org/wiki/プラトン主義",
-  "https://ja.wikipedia.org/wiki/和製漢語",
   "https://ja.wikipedia.org/wiki/マハトマ・ガンジー",
   "https://ja.wikipedia.org/wiki/哲人総統",
   "https://ja.wikipedia.org/wiki/道_(哲学)",
@@ -318275,7 +321606,6 @@
   "https://ja.wikipedia.org/wiki/葛城市相撲館",
   "https://ja.wikipedia.org/wiki/NHK福祉大相撲",
   "https://ja.wikipedia.org/wiki/チャン・バブ",
-  "https://ja.wikipedia.org/wiki/演奏会",
   "https://ja.wikipedia.org/wiki/3月31日",
   "https://ja.wikipedia.org/wiki/無勝負_(相撲)",
   "https://ja.wikipedia.org/wiki/アイデア対決・全国高等専門学校ロボットコンテスト",
@@ -318294,21 +321624,17 @@
   "https://ja.wikipedia.org/wiki/新東京プロレス",
   "https://ja.wikipedia.org/wiki/付き人",
   "https://ja.wikipedia.org/wiki/摺り足",
-  "https://ja.wikipedia.org/wiki/横浜スタジアム",
   "https://ja.wikipedia.org/wiki/葛西萬司",
   "https://ja.wikipedia.org/wiki/UWFインターナショナル",
   "https://ja.wikipedia.org/wiki/ライオネス飛鳥",
   "https://ja.wikipedia.org/wiki/能格動詞",
-  "https://ja.wikipedia.org/wiki/Á",
   "https://ja.wikipedia.org/wiki/リンガラ語",
-  "https://ja.wikipedia.org/wiki/アメリカ大陸",
   "https://ja.wikipedia.org/wiki/ラテン系アメリカ人",
   "https://ja.wikipedia.org/wiki/インディオ",
   "https://ja.wikipedia.org/wiki/Ll",
   "https://ja.wikipedia.org/wiki/代名詞",
   "https://ja.wikipedia.org/wiki/マイアミ",
   "https://ja.wikipedia.org/wiki/エルサルバドル",
-  "https://ja.wikipedia.org/wiki/パラグアイ",
   "https://ja.wikipedia.org/wiki/エクアドル",
   "https://ja.wikipedia.org/wiki/ハポニョール",
   "https://ja.wikipedia.org/wiki/タガログ語",
@@ -318346,7 +321672,6 @@
   "https://ja.wikipedia.org/wiki/ポピニカ",
   "https://ja.wikipedia.org/wiki/賀川ゆき絵",
   "https://ja.wikipedia.org/wiki/岡田勝",
-  "https://ja.wikipedia.org/wiki/入江正徳",
   "https://ja.wikipedia.org/wiki/小山ゆうえんち",
   "https://ja.wikipedia.org/wiki/アープ_(電子楽器メーカー)",
   "https://ja.wikipedia.org/wiki/畑中猛重",
@@ -318358,7 +321683,6 @@
   "https://ja.wikipedia.org/wiki/すがやみつる",
   "https://ja.wikipedia.org/wiki/鈴木昶",
   "https://ja.wikipedia.org/wiki/亀山達也",
-  "https://ja.wikipedia.org/wiki/九州男児",
   "https://ja.wikipedia.org/wiki/ナスカの地上絵",
   "https://ja.wikipedia.org/wiki/太田克己",
   "https://ja.wikipedia.org/wiki/中屋敷哲也",
@@ -318366,19 +321690,14 @@
   "https://ja.wikipedia.org/wiki/トリプルファイター",
   "https://ja.wikipedia.org/wiki/殺陣",
   "https://ja.wikipedia.org/wiki/小沢章治",
-  "https://ja.wikipedia.org/wiki/助監督_(映画スタッフ)",
   "https://ja.wikipedia.org/wiki/吉川進",
   "https://ja.wikipedia.org/wiki/ミリオンセラー",
   "https://ja.wikipedia.org/wiki/島田彰",
   "https://ja.wikipedia.org/wiki/宇南山宏",
   "https://ja.wikipedia.org/wiki/増岡弘",
   "https://ja.wikipedia.org/wiki/沖縄やくざ戦争",
-  "https://ja.wikipedia.org/wiki/岡本美登",
-  "https://ja.wikipedia.org/wiki/平山亨",
-  "https://ja.wikipedia.org/wiki/キュウカンチョウ",
   "https://ja.wikipedia.org/wiki/川島一平",
   "https://ja.wikipedia.org/wiki/大田黒武生",
-  "https://ja.wikipedia.org/wiki/藤川桂介",
   "https://ja.wikipedia.org/wiki/野村四郎",
   "https://ja.wikipedia.org/wiki/監督",
   "https://ja.wikipedia.org/wiki/大平透",
@@ -318387,7 +321706,6 @@
   "https://ja.wikipedia.org/wiki/ドラゴンクエストヒーローズ_闇竜と世界樹の城",
   "https://ja.wikipedia.org/wiki/いただきストリート_ドラゴンクエスト&ファイナルファンタジー_30th_ANNIVERSARY",
   "https://ja.wikipedia.org/wiki/ドラゴンクエスト_ウォーズ",
-  "https://ja.wikipedia.org/wiki/ドラゴンクエストI・II",
   "https://ja.wikipedia.org/wiki/ドラゴンクエスト_トレジャーズ_蒼き瞳と大空の羅針盤",
   "https://ja.wikipedia.org/wiki/堀之紀",
   "https://ja.wikipedia.org/wiki/プログラマ",
@@ -318403,13 +321721,11 @@
   "https://ja.wikipedia.org/wiki/木村初",
   "https://ja.wikipedia.org/wiki/ドラゴンクエストタクト",
   "https://ja.wikipedia.org/wiki/MARIO_SPORTS_MIX",
-  "https://ja.wikipedia.org/wiki/平野文",
   "https://ja.wikipedia.org/wiki/ホイミン",
   "https://ja.wikipedia.org/wiki/鴻上尚史",
   "https://ja.wikipedia.org/wiki/最終ボス",
   "https://ja.wikipedia.org/wiki/山名学",
   "https://ja.wikipedia.org/wiki/宮内敦士",
-  "https://ja.wikipedia.org/wiki/ウルティマ",
   "https://ja.wikipedia.org/wiki/裏技",
   "https://ja.wikipedia.org/wiki/ドラゴンクエスト_あるくんです",
   "https://ja.wikipedia.org/wiki/ドラゴンクエストけしケシ!",
@@ -318428,7 +321744,6 @@
   "https://ja.wikipedia.org/wiki/中公クラシックス",
   "https://ja.wikipedia.org/wiki/現代ウクライナ文学",
   "https://ja.wikipedia.org/wiki/軍記物語",
-  "https://ja.wikipedia.org/wiki/物語",
   "https://ja.wikipedia.org/wiki/スペイン文学",
   "https://ja.wikipedia.org/wiki/ウルグアイ文学",
   "https://ja.wikipedia.org/wiki/卜部兼好",
@@ -318445,8 +321760,6 @@
   "https://ja.wikipedia.org/wiki/偽ロンギヌス",
   "https://ja.wikipedia.org/wiki/台本",
   "https://ja.wikipedia.org/wiki/アイルランド文学",
-  "https://ja.wikipedia.org/wiki/ノンフィクション",
-  "https://ja.wikipedia.org/wiki/フィクション",
   "https://ja.wikipedia.org/wiki/パレスチナ文学",
   "https://ja.wikipedia.org/wiki/定義",
   "https://ja.wikipedia.org/wiki/ブラジル文学",
@@ -318471,9 +321784,7 @@
   "https://ja.wikipedia.org/wiki/古典主義",
   "https://ja.wikipedia.org/wiki/使用域",
   "https://ja.wikipedia.org/wiki/書評",
-  "https://ja.wikipedia.org/wiki/活版印刷",
   "https://ja.wikipedia.org/wiki/イタリア文学",
-  "https://ja.wikipedia.org/wiki/ジョーク",
   "https://ja.wikipedia.org/wiki/ナイジェリア文学",
   "https://ja.wikipedia.org/wiki/文芸評論家",
   "https://ja.wikipedia.org/wiki/パスティーシュ",
@@ -318488,7 +321799,6 @@
   "https://ja.wikipedia.org/wiki/アブドルファッターフ・アッ＝シーシー",
   "https://ja.wikipedia.org/wiki/中国建築",
   "https://ja.wikipedia.org/wiki/エジプトの歴史",
-  "https://ja.wikipedia.org/wiki/現金",
   "https://ja.wikipedia.org/wiki/エジプト・シリア戦役",
   "https://ja.wikipedia.org/wiki/1_E12_m²",
   "https://ja.wikipedia.org/wiki/第一審",
@@ -318511,10 +321821,8 @@
   "https://ja.wikipedia.org/wiki/中東調査会",
   "https://ja.wikipedia.org/wiki/オリンピックのエジプト選手団",
   "https://ja.wikipedia.org/wiki/サラフィー主義",
-  "https://ja.wikipedia.org/wiki/マムルーク",
   "https://ja.wikipedia.org/wiki/エジプトの言語",
   "https://ja.wikipedia.org/wiki/ディアドコイ",
-  "https://ja.wikipedia.org/wiki/ISIL",
   "https://ja.wikipedia.org/wiki/イスラム帝国",
   "https://ja.wikipedia.org/wiki/カフカス",
   "https://ja.wikipedia.org/wiki/コプト語",
@@ -318534,8 +321842,6 @@
   "https://ja.wikipedia.org/wiki/トゥイ地域",
   "https://ja.wikipedia.org/wiki/パイオニア10号",
   "https://ja.wikipedia.org/wiki/共鳴外縁天体",
-  "https://ja.wikipedia.org/wiki/マーズ・サイエンス・ラボラトリー",
-  "https://ja.wikipedia.org/wiki/太陽系",
   "https://ja.wikipedia.org/wiki/テティス_(衛星)",
   "https://ja.wikipedia.org/wiki/イアペトゥス_(衛星)",
   "https://ja.wikipedia.org/wiki/オベロン_(衛星)",
@@ -318552,7 +321858,6 @@
   "https://ja.wikipedia.org/wiki/放射線帯嵐探査機",
   "https://ja.wikipedia.org/wiki/タイタンの地形一覧",
   "https://ja.wikipedia.org/wiki/冥王星の日食",
-  "https://ja.wikipedia.org/wiki/原子力電池",
   "https://ja.wikipedia.org/wiki/ヴォイジャー大陸",
   "https://ja.wikipedia.org/wiki/オンタリオ湖_(タイタン)",
   "https://ja.wikipedia.org/wiki/木星内部衛星群",
@@ -318576,7 +321881,6 @@
   "https://ja.wikipedia.org/wiki/ヨハン・ゴットフリート・ガレ",
   "https://ja.wikipedia.org/wiki/はちぶんぎ座デルタ星",
   "https://ja.wikipedia.org/wiki/宇宙探査機",
-  "https://ja.wikipedia.org/wiki/惑星",
   "https://ja.wikipedia.org/wiki/国の最北端一覧",
   "https://ja.wikipedia.org/wiki/パシュトー語",
   "https://ja.wikipedia.org/wiki/パプアニューギニア",
@@ -318588,7 +321892,6 @@
   "https://ja.wikipedia.org/wiki/タイ文字のローマ字表記法",
   "https://ja.wikipedia.org/wiki/イロカノ語",
   "https://ja.wikipedia.org/wiki/エスワティニ王国",
-  "https://ja.wikipedia.org/wiki/エチオピア",
   "https://ja.wikipedia.org/wiki/テトゥン語",
   "https://ja.wikipedia.org/wiki/クルド語",
   "https://ja.wikipedia.org/wiki/トルクメン語",
@@ -318600,7 +321903,6 @@
   "https://ja.wikipedia.org/wiki/独立主張のある地域一覧",
   "https://ja.wikipedia.org/wiki/外名",
   "https://ja.wikipedia.org/wiki/吉田一郎",
-  "https://ja.wikipedia.org/wiki/スーダン",
   "https://ja.wikipedia.org/wiki/ドミニカ国",
   "https://ja.wikipedia.org/wiki/スコットランド・ゲール語",
   "https://ja.wikipedia.org/wiki/国の国内総生産順リスト_(為替レート)",
@@ -318632,14 +321934,11 @@
   "https://ja.wikipedia.org/wiki/サーサーン朝",
   "https://ja.wikipedia.org/wiki/タブリーズ",
   "https://ja.wikipedia.org/wiki/開発途上国",
-  "https://ja.wikipedia.org/wiki/11世紀",
   "https://ja.wikipedia.org/wiki/犯罪",
   "https://ja.wikipedia.org/wiki/セムナーン州",
   "https://ja.wikipedia.org/wiki/市場化",
   "https://ja.wikipedia.org/wiki/スンニ派",
   "https://ja.wikipedia.org/wiki/イラン革命",
-  "https://ja.wikipedia.org/wiki/幹細胞",
-  "https://ja.wikipedia.org/wiki/マスウード・ペゼシュキヤーン",
   "https://ja.wikipedia.org/wiki/国際クルアーン焼却日",
   "https://ja.wikipedia.org/wiki/イラン系",
   "https://ja.wikipedia.org/wiki/ラーク語",
@@ -318647,48 +321946,37 @@
   "https://ja.wikipedia.org/wiki/ダマーヴァンド山",
   "https://ja.wikipedia.org/wiki/バーブ教",
   "https://ja.wikipedia.org/wiki/世界報道自由度ランキング",
-  "https://ja.wikipedia.org/wiki/核兵器",
   "https://ja.wikipedia.org/wiki/エルドアン",
   "https://ja.wikipedia.org/wiki/セイイェド・アリー・モハンマド",
   "https://ja.wikipedia.org/wiki/労農ロシア",
   "https://ja.wikipedia.org/wiki/航空工学",
   "https://ja.wikipedia.org/wiki/人間開発指数",
-  "https://ja.wikipedia.org/wiki/ベール_(服飾)",
   "https://ja.wikipedia.org/wiki/イランの国旗",
   "https://ja.wikipedia.org/wiki/スィースターン・バルーチェスターン州",
   "https://ja.wikipedia.org/wiki/墓地",
   "https://ja.wikipedia.org/wiki/財政再建",
   "https://ja.wikipedia.org/wiki/ハーリド・イブン・アル＝ワリード",
-  "https://ja.wikipedia.org/wiki/7月31日",
   "https://ja.wikipedia.org/wiki/マシュハド",
-  "https://ja.wikipedia.org/wiki/1797年",
   "https://ja.wikipedia.org/wiki/詩経",
   "https://ja.wikipedia.org/wiki/753年",
   "https://ja.wikipedia.org/wiki/世界の地理",
   "https://ja.wikipedia.org/wiki/形容詞",
   "https://ja.wikipedia.org/wiki/グアム",
   "https://ja.wikipedia.org/wiki/大洋",
-  "https://ja.wikipedia.org/wiki/日本統治時代の朝鮮",
   "https://ja.wikipedia.org/wiki/アメリカ合衆国本土",
-  "https://ja.wikipedia.org/wiki/マカオ",
   "https://ja.wikipedia.org/wiki/航路",
   "https://ja.wikipedia.org/wiki/漢籍",
-  "https://ja.wikipedia.org/wiki/畿内",
   "https://ja.wikipedia.org/wiki/アメリカ合衆国の海外領土",
   "https://ja.wikipedia.org/wiki/天平勝宝",
   "https://ja.wikipedia.org/wiki/日本国語大辞典",
-  "https://ja.wikipedia.org/wiki/海",
   "https://ja.wikipedia.org/wiki/海外旅行",
   "https://ja.wikipedia.org/wiki/日本統治時代",
-  "https://ja.wikipedia.org/wiki/続日本紀",
   "https://ja.wikipedia.org/wiki/外国",
   "https://ja.wikipedia.org/wiki/アフリカ",
   "https://ja.wikipedia.org/wiki/複数形",
   "https://ja.wikipedia.org/wiki/飛行機",
-  "https://ja.wikipedia.org/wiki/船舶",
   "https://ja.wikipedia.org/wiki/ユーラシア大陸",
   "https://ja.wikipedia.org/wiki/南北アメリカ",
-  "https://ja.wikipedia.org/wiki/15世紀",
   "https://ja.wikipedia.org/wiki/日葡辞書",
   "https://ja.wikipedia.org/wiki/委任統治",
   "https://ja.wikipedia.org/wiki/宝物集",
@@ -378090,10 +381378,59 @@
   "https://ja.wikipedia.org/wiki/鈴木繭菓",
   "https://ja.wikipedia.org/wiki/チャンネルNECO",
   "https://ja.wikipedia.org/wiki/銀河英雄伝説_(アニメ)",
-  "https://ja.wikipedia.org/wiki/闇金ウシジマくん_(テレビドラマ)"
+  "https://ja.wikipedia.org/wiki/闇金ウシジマくん_(テレビドラマ)",
+  "https://ja.wikipedia.org/wiki/レンダリング_(コンピュータ)",
+  "https://ja.wikipedia.org/wiki/SIL_Open_Font_License",
+  "https://ja.wikipedia.org/wiki/BIZ_UDゴシック",
+  "https://ja.wikipedia.org/wiki/Nanum_font",
+  "https://ja.wikipedia.org/wiki/FreeBSD",
+  "https://ja.wikipedia.org/wiki/Ubuntu-Title",
+  "https://ja.wikipedia.org/wiki/Font_Awesome",
+  "https://ja.wikipedia.org/wiki/Roboto",
+  "https://ja.wikipedia.org/wiki/Cantarell",
+  "https://ja.wikipedia.org/wiki/OpenDyslexic",
+  "https://ja.wikipedia.org/wiki/Open_Sans",
+  "https://ja.wikipedia.org/wiki/IPAフォント",
+  "https://ja.wikipedia.org/wiki/Source_Serif_Pro",
+  "https://ja.wikipedia.org/wiki/東風フォント",
+  "https://ja.wikipedia.org/wiki/美咲フォント",
+  "https://ja.wikipedia.org/wiki/Ubuntu_(書体)",
+  "https://ja.wikipedia.org/wiki/BSD_License",
+  "https://ja.wikipedia.org/wiki/源ノ明朝",
+  "https://ja.wikipedia.org/wiki/花園フォント",
+  "https://ja.wikipedia.org/wiki/Lohit_fonts",
+  "https://ja.wikipedia.org/wiki/Liberation_fonts",
+  "https://ja.wikipedia.org/wiki/さざなみフォント",
+  "https://ja.wikipedia.org/wiki/Fontmatrix",
+  "https://ja.wikipedia.org/wiki/和田研フォント",
+  "https://ja.wikipedia.org/wiki/IPAモナーフォント",
+  "https://ja.wikipedia.org/wiki/モトヤ",
+  "https://ja.wikipedia.org/wiki/DejaVuフォント",
+  "https://ja.wikipedia.org/wiki/Ghostscript",
+  "https://ja.wikipedia.org/wiki/Junicode",
+  "https://ja.wikipedia.org/wiki/梅フォント",
+  "https://ja.wikipedia.org/wiki/IBM_Plex",
+  "https://ja.wikipedia.org/wiki/小夏_(書体)",
+  "https://ja.wikipedia.org/wiki/Linux_Libertine",
+  "https://ja.wikipedia.org/wiki/M+_FONTS",
+  "https://ja.wikipedia.org/wiki/VLゴシック",
+  "https://ja.wikipedia.org/wiki/Pango",
+  "https://ja.wikipedia.org/wiki/GNU_FreeFont",
+  "https://ja.wikipedia.org/wiki/Bitstream_Vera",
+  "https://ja.wikipedia.org/wiki/Droid_(書体)",
+  "https://ja.wikipedia.org/wiki/Source_Sans_Pro",
+  "https://ja.wikipedia.org/wiki/%E6%8A%80%E8%A1%93%E8%A9%95%E8%AB%96%E7%A4%BE",
+  "https://ja.wikipedia.org/wiki/ビレッジセンター",
+  "https://ja.wikipedia.org/wiki/市谷左内町",
+  "https://ja.wikipedia.org/wiki/プロセッサ_(雑誌)",
+  "https://ja.wikipedia.org/wiki/コーエー",
+  "https://ja.wikipedia.org/wiki/三國志III事件",
+  "https://ja.wikipedia.org/wiki/ケータイ_Watch",
+  "https://ja.wikipedia.org/wiki/Hon.jp",
+  "https://ja.wikipedia.org/wiki/市谷砂土原町"
  ],
  "born": "2026-09-07T21:38:10+00:00",
- "lastLearned": "2026-09-08T07:18:38+00:00",
+ "lastLearned": "2026-09-08T07:23:13+00:00",
  "failed": {},
  "termsSeen": {
   "https://foundation.wikimedia.org/wiki/Policy:Terms_of_Use/ja": {
@@ -378150,5 +381487,5 @@
  ],
  "heardCount": 18,
  "capacity": 28473,
- "readTotal": 4629
+ "readTotal": 4678
 }
