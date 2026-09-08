@@ -66,6 +66,13 @@ jobs:
       # ── ①★ごはんを自分で取りに行く
       - name: 法令をもらう（はじめの一回だけ）
         run: |
+          # ★★昔の回が非圧縮で置いていったものがあれば、それを圧縮して使う
+          #   ★（1時間かけて取り直すのは相手にも自分にも無駄）
+          if [ -f work/laws.txt ] && [ ! -f work/laws.txt.gz ]; then
+            gzip -c work/laws.txt > work/laws.txt.gz && rm -f work/laws.txt
+            echo "★前の回が置いていった法令を圧縮した"
+            echo "NEW_LAWS=1" >> $GITHUB_ENV
+          fi
           if [ ! -f work/laws.txt.gz ]; then
             echo "★法令をもらいに行く（初回のみ・1時間ほど）"
             python fetch_laws.py
