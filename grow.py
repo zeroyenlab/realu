@@ -401,6 +401,54 @@ MID_P = float(os.environ.get("REALU_MID_P", 0.30))       # ★ひと月ぶん
 #   → ★長期（ぜんぶ）は残りの 20%
 
 
+class Pantry:
+    """★★★棚。★ごはんをトークンのまま置き、★必要な所だけディスクから読む。
+
+    ★前は毎回ぜんぶメモリに載せていた（実測: 下ごしらえ12.8分 / メモリ8.8GB）。
+    ★★棚なら **メモリ増 0.0 MB / 720万個/秒**（試作で実測）。
+    """
+
+    def __init__(self, d):
+        import numpy as np
+        self.np = np
+        self.parts, starts, tot = [], [], 0
+        for nm in sorted(os.listdir(d)):
+            if not nm.endswith(".bin"):
+                continue
+            a = np.memmap(os.path.join(d, nm), dtype=np.uint16, mode="r")
+            if len(a) == 0:
+                continue
+            self.parts.append(a)
+            starts.append(tot)
+            tot += len(a)
+        self.starts = np.array(starts) if starts else np.array([0])
+        self.n = tot
+
+    def __len__(self):
+        return self.n
+
+    def window(self, i, ctx):
+        """★i から ctx 個。★棚をまたいだら継ぎ足す。"""
+        np = self.np
+        out, need = [], ctx
+        k = int(np.searchsorted(self.starts, i, "right")) - 1
+        off = i - int(self.starts[k])
+        while need > 0 and k < len(self.parts):
+            a = self.parts[k]
+            take = min(need, len(a) - off)
+            if take > 0:
+                out.append(np.asarray(a[off:off + take]))
+                need -= take
+            k += 1
+            off = 0
+        if not out:
+            return np.zeros(ctx, dtype=np.uint16)
+        w = out[0] if len(out) == 1 else np.concatenate(out)
+        if len(w) < ctx:
+            w = np.pad(w, (0, ctx - len(w)))
+        return w
+
+
 def batch(data, ctx, bs, tiers=None):
     """★3つの山から、決めた割合で引く。★山が無ければ全部から引く。"""
     n = len(data) - ctx - 1
@@ -421,8 +469,14 @@ def batch(data, ctx, bs, tiers=None):
             if k:
                 ix[m] = torch.randint(mid[0], mid[1] - ctx - 1, (k,))
     # ★★ごはんは int32 で持つ（★long の半分）。★使う所だけ long にする
-    x = torch.stack([data[i:i + ctx] for i in ix]).long()
-    y = torch.stack([data[i + 1:i + ctx + 1] for i in ix]).long()
+    if isinstance(data, Pantry):
+        import numpy as np
+        xs = np.stack([data.window(int(i), ctx + 1) for i in ix]).astype(np.int64)
+        t = torch.from_numpy(xs)
+        x, y = t[:, :ctx], t[:, 1:ctx + 1]
+    else:
+        x = torch.stack([data[i:i + ctx] for i in ix]).long()
+        y = torch.stack([data[i + 1:i + ctx + 1] for i in ix]).long()
     if DEV.type != "cpu":
         x = x.to(DEV, non_blocking=True)
         y = y.to(DEV, non_blocking=True)
@@ -483,81 +537,106 @@ def main():
     except Exception:
         pass
     step_log("はじめ")
+
+    # ★★★棚（pantry）があれば、★下ごしらえを丸ごと飛ばす。
+    #   ★前は毎回「開く → 重複を削る → トークンに変換 → 全部メモリに載せる」。
+    #     ★実測（run#20）: ★12.8分 / メモリ最大 8,826 MB。
+    #   ★1回60分で学ぶ形にすると、★そのうち13分（21%）が下ごしらえになる。
+    #   ★棚が無ければ今まで通り（★片方だけ壊れても止まらない）。
+    pantry = None
+    pdir = os.path.join(WORK, "pantry")
+    if os.path.isdir(pdir) and any(f.endswith(".bin") for f in os.listdir(pdir)):
+        try:
+            pantry = Pantry(pdir)
+            print("★★棚から食べる: %s 個（★開かない・メモリに載せない）"
+                  % format(len(pantry), ","), flush=True)
+        except Exception as e:
+            print("★棚が読めなかった（%s）。★今まで通りにする。"
+                  % type(e).__name__, flush=True)
+            pantry = None
     val_tag = VAL_TAG      # ★逃げ道に入ったら書き換える（★別の物差しと比べないため）
 
     # ── ①★ごはんを読む（★法令＋判例＋**webで自分が読んだもの**）
-    texts = []
-    sizes = {}
-    # ★★★動かないもの（法令・Wikipedia）を先に、★増えるもの（判例・会議録・読んだもの）を後に。
-    #   ★そうすると「新しく足された分」がいつも後ろに来るので、★短期の山が作れる。
-    for name in ("laws.txt", "wiki.txt", "aozora.txt", "talk.txt",
-                 "hanrei.txt", "kokkai.txt", "web.txt"):
-        for p in (os.path.join(WORK, name + ".gz"), os.path.join(WORK, name)):
-            if not os.path.exists(p):
-                continue
-            # ★★圧縮して持つ（★日本語は1/3になる。★置き場所が3倍長持ちする）
-            # ★途中で切れた字があっても止まらない（★ごはんが欠けても生きる）
-            op = gzip.open if p.endswith(".gz") else open
-            # ★★★1つ壊れていても、★残りは食べる（★全部を道連れにしない）
-            try:
-                with op(p, "rt", encoding="utf-8", errors="ignore") as f:
-                    texts.append(f.read())
-            except Exception as e:
-                print("  ★★★%s が壊れている（%s）。★捨てて次へ。"
-                      % (name, type(e).__name__), flush=True)
-                os.remove(p)
-                continue
-            sizes[name] = len(texts[-1])   # ★長さだけ。★前は全文を持っていた
-            # ★★★同じ名前の非圧縮版が隣にあると、それは**読まれない**。
-            #   ★2026-09-08: read_web.py が web.txt に書き、包みが web.txt.gz に足され、
-            #     ★.gz を先に見つけて打ち切るので **1日4万ページが丸ごと消えていた**。
-            #   ★★黙って消えるのが一番悪い。★見つけたら大声で言う。
-            other = os.path.join(WORK, name)
-            if p.endswith(".gz") and os.path.exists(other):
-                print("  ★★★%s が隣にある。★これは読まれていない（%.1f MB）"
-                      % (name, os.path.getsize(other) / 1024 / 1024), flush=True)
-            print("  ごはん %s: %.1f MB" % (os.path.basename(p),
-                                            os.path.getsize(p) / 1024 / 1024), flush=True)
-            break
-    if not texts:
-        print("★ごはんが無い。work/ に laws.txt を置いて。")
-        return 1
-    # ★★★全部を1本に繋ぐ前に、★読み終わった写しを手放す。
-    #   ★前は texts（各ファイルの全文）を持ったまま繋いだ写しも作っていた。
-    #   ★日本語800M字なら、それだけで数GB。★16GBの機械では効いてくる。
-    text = (chr(10)).join(texts)
-    texts.clear()
-    del texts
-    step_log("ごはんを開いた")
-    before = len(text)
+    if pantry is None:
+        texts = []
+        sizes = {}
+        # ★★★動かないもの（法令・Wikipedia）を先に、★増えるもの（判例・会議録・読んだもの）を後に。
+        #   ★そうすると「新しく足された分」がいつも後ろに来るので、★短期の山が作れる。
+        for name in ("laws.txt", "wiki.txt", "aozora.txt", "talk.txt",
+                     "hanrei.txt", "kokkai.txt", "web.txt"):
+            for p in (os.path.join(WORK, name + ".gz"), os.path.join(WORK, name)):
+                if not os.path.exists(p):
+                    continue
+                # ★★圧縮して持つ（★日本語は1/3になる。★置き場所が3倍長持ちする）
+                # ★途中で切れた字があっても止まらない（★ごはんが欠けても生きる）
+                op = gzip.open if p.endswith(".gz") else open
+                # ★★★1つ壊れていても、★残りは食べる（★全部を道連れにしない）
+                try:
+                    with op(p, "rt", encoding="utf-8", errors="ignore") as f:
+                        texts.append(f.read())
+                except Exception as e:
+                    print("  ★★★%s が壊れている（%s）。★捨てて次へ。"
+                          % (name, type(e).__name__), flush=True)
+                    os.remove(p)
+                    continue
+                sizes[name] = len(texts[-1])   # ★長さだけ。★前は全文を持っていた
+                # ★★★同じ名前の非圧縮版が隣にあると、それは**読まれない**。
+                #   ★2026-09-08: read_web.py が web.txt に書き、包みが web.txt.gz に足され、
+                #     ★.gz を先に見つけて打ち切るので **1日4万ページが丸ごと消えていた**。
+                #   ★★黙って消えるのが一番悪い。★見つけたら大声で言う。
+                other = os.path.join(WORK, name)
+                if p.endswith(".gz") and os.path.exists(other):
+                    print("  ★★★%s が隣にある。★これは読まれていない（%.1f MB）"
+                          % (name, os.path.getsize(other) / 1024 / 1024), flush=True)
+                print("  ごはん %s: %.1f MB" % (os.path.basename(p),
+                                                os.path.getsize(p) / 1024 / 1024), flush=True)
+                break
+        if not texts:
+            print("★ごはんが無い。work/ に laws.txt を置いて。")
+            return 1
+        # ★★★全部を1本に繋ぐ前に、★読み終わった写しを手放す。
+        #   ★前は texts（各ファイルの全文）を持ったまま繋いだ写しも作っていた。
+        #   ★日本語800M字なら、それだけで数GB。★16GBの機械では効いてくる。
+        text = (chr(10)).join(texts)
+        texts.clear()
+        del texts
+        step_log("ごはんを開いた")
+        before = len(text)
 
-    # ── ①★★★同じ行を何度も食べない。
-    #   ★法令の 18.3% は重複行（実測）。「その他参考となるべき事項」が 1,329 回など。
-    #   ★★小さい頭は、言葉を学ぶ前にこの定型文を**丸暗記する**。
-    #     ★それが一番点の上がる近道だから。★★近道を塞ぐ。
-    seen = {}
-    kept = []
-    held = []                      # ★★物差し。★ここに入った文は一度も食べない
-    for ln in text.split("\n"):
-        key = ln.strip()
-        if len(key) < 10:
-            kept.append(ln)
-            continue
-        if SRC_MARK.match(key):
-            kept.append(ln)          # ★ごはんには残す（★区切りとして要る）
-            continue                 # ★でも物差しには入れない
-        if held_out(key):
-            held.append(key)          # ★食べずに、測るためだけに取っておく
-            continue
-        n = seen.get(key, 0)
-        if n < DUP_MAX:
-            seen[key] = n + 1
-            kept.append(ln)
-    text = "\n".join(kept)
-    del kept, seen                  # ★★ごはんの写しを2つ抱えない
-    step_log("重複を削った")
-    print("★コーパス %.1f 万字（★同じ行を削って %.1f%% 減）"
-          % (len(text) / 10000, (1 - len(text) / max(1, before)) * 100), flush=True)
+        # ── ①★★★同じ行を何度も食べない。
+        #   ★法令の 18.3% は重複行（実測）。「その他参考となるべき事項」が 1,329 回など。
+        #   ★★小さい頭は、言葉を学ぶ前にこの定型文を**丸暗記する**。
+        #     ★それが一番点の上がる近道だから。★★近道を塞ぐ。
+        seen = {}
+        kept = []
+        held = []                      # ★★物差し。★ここに入った文は一度も食べない
+        for ln in text.split("\n"):
+            key = ln.strip()
+            if len(key) < 10:
+                kept.append(ln)
+                continue
+            if SRC_MARK.match(key):
+                kept.append(ln)          # ★ごはんには残す（★区切りとして要る）
+                continue                 # ★でも物差しには入れない
+            if held_out(key):
+                held.append(key)          # ★食べずに、測るためだけに取っておく
+                continue
+            n = seen.get(key, 0)
+            if n < DUP_MAX:
+                seen[key] = n + 1
+                kept.append(ln)
+        text = "\n".join(kept)
+        del kept, seen                  # ★★ごはんの写しを2つ抱えない
+        step_log("重複を削った")
+    else:
+        # ★★★棚があるので、開かない・削らない。
+        text = ""
+        held = []
+        step_log("棚をひらいた")
+    if pantry is None:
+        print("★コーパス %.1f 万字（★同じ行を削って %.1f%% 減）"
+              % (len(text) / 10000, (1 - len(text) / max(1, before)) * 100),
+              flush=True)
 
     # ── ②★前のわたしを起こす
     # ★★★ことばの単位を用意する
@@ -680,7 +759,8 @@ def main():
             return torch.zeros(0, dtype=torch.int32)
         return torch.cat(out)
 
-    ids = encode_big(text)
+    # ★★★棚があれば、★変換しない（もうトークンになっている）
+    ids = pantry if pantry is not None else encode_big(text)
     step_log("トークンにした")
     va = encode_big(val_text)
     tr = ids

@@ -124,6 +124,16 @@ jobs:
               rm -f "/tmp/$n.enc"
             fi
           done
+          # ★★★棚。★あれば下ごしらえゼロで始められる
+          if [ ! -d work/pantry ] \
+             && gh release download food -p pantry.enc -D /tmp 2>/dev/null; then
+            if openssl enc -d -aes-256-cbc -pbkdf2 -in /tmp/pantry.enc \
+                 -out /tmp/pantry.tgz -pass env:FOODKEY 2>/dev/null; then
+              tar xzf /tmp/pantry.tgz -C work && echo "★棚を取り戻した"
+            fi
+            rm -f /tmp/pantry.enc /tmp/pantry.tgz
+          fi
+
           # ★★★ことばの単位。★頭とセットでないと意味が入れ替わる
           if [ ! -f work/tok.json ] \
              && gh release download food -p tok.enc -D /tmp 2>/dev/null; then
@@ -295,6 +305,19 @@ jobs:
               rm -f "/tmp/$n.enc"
             fi
           done
+          # ★★★棚も一緒にしまう（★これがあれば下ごしらえゼロで始められる）
+          if [ -d work/pantry ]; then
+            tar cf - -C work pantry | gzip -1 > /tmp/pantry.tgz
+            if [ "$(stat -c%s /tmp/pantry.tgz)" -lt 1900000000 ]; then
+              openssl enc -aes-256-cbc -pbkdf2 -salt \
+                -in /tmp/pantry.tgz -out /tmp/pantry.enc -pass env:FOODKEY
+              gh release upload food /tmp/pantry.enc --clobber || true
+              rm -f /tmp/pantry.enc
+            else
+              echo "★★棚が2GBを超えた。★刻む仕組みが要る"
+            fi
+            rm -f /tmp/pantry.tgz
+          fi
           # ★★「どこまで読んだか」の紙も一緒に。★これが無いと読み直しになる
           if ls work/*_next.txt >/dev/null 2>&1; then
             tar czf /tmp/notes.tgz -C work $(cd work && ls *_next.txt)
@@ -352,6 +375,27 @@ jobs:
         run: python -u make_tok.py
 
       # ── ②③④★学ぶ・大きくなる・悪ければ戻す
+      # ── ★★★ごはんを「トークンの並び」にして棚にしまう。
+      #   ★前は毎回「開く → 削る → 変換 → 全部メモリに載せる」で ★12.8分 / 8.8GB。
+      #   ★★棚なら **下ごしらえ 0.0分 / メモリ増ゼロ**（実測）。
+      #   ★ごはんが増えた時だけ作り直す（★talk が増えた・国会が増えた等）。
+      - name: 棚をつくる（ごはんが増えた時だけ）
+        run: |
+          NEED=0
+          [ -d work/pantry ] || NEED=1
+          for f in work/*.txt.gz; do
+            [ -f "$f" ] || continue
+            if [ ! -f work/pantry/meta.json ] || [ "$f" -nt work/pantry/meta.json ]; then
+              NEED=1
+            fi
+          done
+          if [ "$NEED" = "1" ]; then
+            echo "★ごはんが増えた。棚を作り直す"
+            python -u make_pantry.py || echo "★棚は作れなかった（★今まで通りで学ぶ）"
+          else
+            echo "★棚はそのまま使える"
+          fi
+
       - name: 学ぶ
         env:
           REALU_STEPS: ${{ github.event.inputs.steps || '4000' }}
