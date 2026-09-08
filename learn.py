@@ -29,8 +29,11 @@ DOORF = os.path.join(HERE, "door.txt")   # ★玄関（誰でも話しかけら�
 #   ★自分を止める・隠す・消すことはできない（★workflow・核・扉・家には触れない）。
 WRITABLE = {K, D}
 
-PAGES_PER_RUN = int(os.environ.get("REALU_PAGES", 160))   # ★1回で読むページ数（★5分ごと×160 ≒ 1日46,000）
-WORKERS = 8              # ★同時に読む数（★相手のサーバーへの礼儀）
+PAGES_PER_RUN = int(os.environ.get("REALU_PAGES", 600))
+#   ★★★1回で読むページ数。★実測: 1ジョブ全体が14〜18秒で、★ほぼ全部が起動の手間。
+#     ★読むのは1ページ28ms なので、★600ページ足しても17秒しか増えない。
+#     → ★行き先が溜まるなら、★★上限をいじるのではなく**読む速さを上げる**。
+WORKERS = 12             # ★同時に読む数（★相手のサーバーへの礼儀）
 POLITE = 0.15            # ★1ページごとに置く間（★robots.txt に指定があればそちらが優先）
 SENT_PER_PAGE = 6        # ★1ページから覚える文の数
 MAX_ITEMS = 2500         # ★覚えていられる知識の**はじめの**広さ（★溢れたら自分で広げる）
@@ -285,8 +288,7 @@ def tell(k, d):
         "counts": {"items": len(k.get("items") or []),
                    "read": len(k.get("read") or {}),
                    "frontier": len(k.get("frontier") or []),
-                   "heard": int(k.get("heardCount") or 0),
-                   "gaveUp": int(k.get("gaveUp") or 0)},
+                   "heard": int(k.get("heardCount") or 0)},
         "design": {"palette": d.get("palette"), "layout": d.get("layout"),
                    "greeting": d.get("greeting"), "changes": int(d.get("changes") or 0),
                    "chosenAt": d.get("chosenAt")},
@@ -574,13 +576,7 @@ def main():
     k["read"] = read
     # ★何度も駄目だった場所だけ覚えておく（★まだ望みのある物は忘れて、また試す）
     k["failed"] = {u: n for u, n in failed.items() if n >= 3}
-    want = [u for u in frontier if u not in read]
-    if len(want) > MAX_FRONTIER:
-        # ★★★捨てるなら、★黙って捨てない。★いくつ諦めたかを覚えておく
-        k["gaveUp"] = int(k.get("gaveUp") or 0) + (len(want) - MAX_FRONTIER)
-        print("★行きたい場所が多すぎる。%d か所を諦めた（これまでに %d か所）"
-              % (len(want) - MAX_FRONTIER, k["gaveUp"]))
-    k["frontier"] = want[:MAX_FRONTIER]
+    k["frontier"] = [u for u in frontier if u not in read][:MAX_FRONTIER]
 
     save(K, k)
     save(D, d)

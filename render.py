@@ -170,7 +170,6 @@ def main():
         '<div class="stat"><div class="v">%s</div><div class="k">%s</div></div>' % (e(v), e(t))
         for t, v in [("知っていること", len(items)), ("読んだページ", read_n),
                      ("行きたい場所", len(k.get("frontier") or [])),
-                     ("諦めた場所", int(k.get("gaveUp") or 0)),
                      ("家を選び直した", "%d 回" % int(d.get("changes") or 0))])
 
     groups = []
@@ -220,8 +219,8 @@ def main():
         'if(d.palette)document.documentElement.setAttribute("data-pal",d.palette);'
         'if(d.greeting)document.getElementById("greet").textContent=d.greeting;'
         'var v=document.querySelectorAll(".stat .v");'
-        'var n=[c.items,c.read,c.frontier,(c.gaveUp||0),(d.changes||0)+" 回"];'
-        'for(var i=0;i<v.length&&i<5;i++)v[i].textContent=n[i];'
+        'var n=[c.items,c.read,c.frontier,(d.changes||0)+" 回"];'
+        'for(var i=0;i<v.length&&i<4;i++)v[i].textContent=n[i];'
         'var hb=document.getElementById("heardnum"); if(hb)hb.textContent=c.heard;'
         'var by={};s.items.forEach(function(it){var g=ORDER.indexOf(it.genre)<0?"その他":it.genre;'
         '(by[g]=by[g]||[]).push(it)});'

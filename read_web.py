@@ -65,7 +65,7 @@ def surprise(text):
         return 0.0
 
 WORK = os.environ.get("REALU_WORK", os.path.join(os.path.dirname(os.path.abspath(__file__)), "work"))
-PAGES = int(os.environ.get("REALU_WEB_PAGES", 600))     # ★1日に読むページ数
+PAGES = int(os.environ.get("REALU_WEB_PAGES", 4000))    # ★1日に読むページ数
 
 
 def main():
@@ -133,10 +133,6 @@ def main():
             if u not in seen_u and u not in read:
                 seen_u.add(u)
                 new_front.append(u)
-        if len(new_front) > L.MAX_FRONTIER:
-            k["gaveUp"] = int(k.get("gaveUp") or 0) + (len(new_front) - L.MAX_FRONTIER)
-            print("★行きたい場所が多すぎる。%d か所を諦めた"
-                  % (len(new_front) - L.MAX_FRONTIER), flush=True)
         k["frontier"] = new_front[:L.MAX_FRONTIER]
         k["read"] = read
         for u in targets:
