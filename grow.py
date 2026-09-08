@@ -180,7 +180,7 @@ def main():
 
     # ── ①★ごはんを読む（★法令＋判例＋**webで自分が読んだもの**）
     texts = []
-    for name in ("laws.txt", "hanrei.txt", "web.txt"):
+    for name in ("laws.txt", "hanrei.txt", "web.txt", "wiki.txt"):
         p = os.path.join(WORK, name)
         if os.path.exists(p):
             # ★途中で切れた字があっても止まらない（★ごはんが欠けても生きる）

@@ -88,6 +88,14 @@ jobs:
           echo "$TO" > work/hanrei_next.txt
           echo "★いま持っている判決: $(wc -c < work/hanrei.txt 2>/dev/null || echo 0) バイト"
 
+      # ── ★★★Wikipedia日本語版を、まとめて正面から受け取る（★初回だけ）
+      #   ★Wikimedia は「大量に欲しいならスクレイピングでなくダンプを使え」と言っている。
+      #   ★140万ページを叩きに行くより、★これが速くて礼儀正しい。
+      - name: Wikipediaをまとめてもらう（はじめの一回だけ）
+        env:
+          REALU_DUMP_CHARS: "900000000"
+        run: python -u eat_dump.py
+
       # ── ★★★webを読んで、それを**ごはんにする**
       #   ★5分ごとの方は「見た目と好奇心」。★こっちは学習の材料を作る。
       #   ★読んだものが重みに入らないなら、それは学んだことにならない。
