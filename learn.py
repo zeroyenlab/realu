@@ -274,6 +274,22 @@ def tell(k, d):
     keyv = os.environ.get("REALU_DOOR_KEY", "")
     if not (base and keyv):
         return
+    # ★★★頭のいまのスペックも一緒に置く。
+    #   ★頭は1日1回しか変わらないが、★★家がそれを**すぐ**映せるようにする
+    #     （★家の焼き直しは2時間ごとなので、★玄関に置けば5分で反映される）
+    spec = {}
+    try:
+        with open(os.path.join(HERE, "growth.json"), encoding="utf-8") as f:
+            runs = (json.load(f) or {}).get("runs") or []
+        if runs:
+            r = runs[-1]
+            spec = {kk: r.get(kk) for kk in
+                    ("layers", "params", "d", "heads", "ctx", "vocab", "loops",
+                     "bytes", "val", "kind", "arch", "at", "grew", "rolledBack",
+                     "chars", "spread", "wantWider")}
+    except Exception:
+        pass
+
     allitems = k.get("items") or []
     items = allitems[-80:]
     # ★★★内訳は**全件**から数える。
@@ -283,6 +299,7 @@ def tell(k, d):
         g = it.get("genre") or "その他"
         genres[g] = genres.get(g, 0) + 1
     state = {
+        "spec": spec,
         "genres": genres,
         "at": now(),
         "counts": {"items": len(k.get("items") or []),
@@ -432,6 +449,15 @@ def sentences(text):
                      r"executive|加筆|訂正|スタブ|執筆の途中|改名|ウィキ|"
                      r"項目名|リダイレクト|テンプレート|議論)", p):
             continue                       # ★①サイト自身の話。★世界の知識ではない
+        # ★★★③ウィキ記法の残骸。★中身ではなく**書き方の部品**なので覚えない
+        #   （実測: 「…と呼ばれている＜ref＞{{Cite web|和書|url＝https://…」がそのまま入っていた）
+        if re.search(r"(\{\{|\}\}|[<＜]\s*ref|Cite\s*web|\|\s*url\s*[=＝]|"
+                     r"\|\s*title\s*[=＝]|\|\s*accessdate|\[\[|\]\])", p, re.I):
+            continue
+        # ★★★④URLが入っている文は覚えない。
+        #   ★彼女の掟は「貼られたリンクは受け取らない」。★覚えて**表示する**のはもっと悪い
+        if URL_RE.search(p):
+            continue
         if len(re.findall(r"[ 　]", p)) > len(p) / 12:
             continue                       # ★②空白だらけ＝一覧の断片が繋がったもの
         if not safe(p):
@@ -530,6 +556,15 @@ def main():
                 docs.append((url, doc))
             else:
                 failed[url] = failed.get(url, 0) + 1   # ★読めなかった。★また今度
+
+    # ★★★昔の網で覚えてしまったものを、★いまの網で掃除する。
+    #   ★網を細かくしたら、★過去に取り込んだものも見直す。★でないと残り続ける。
+    before_n = len(k.get("items") or [])
+    k["items"] = [it for it in (k.get("items") or [])
+                  if it.get("text") and sentences(it["text"] + "。")]
+    if len(k["items"]) < before_n:
+        print("★昔の網で覚えたもののうち %d 件を、いまの網で落とした"
+              % (before_n - len(k["items"])))
 
     recent = set(it.get("text") for it in k["items"][-600:])
     learned, skipped = 0, 0

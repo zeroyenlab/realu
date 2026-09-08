@@ -638,12 +638,18 @@ def main():
         except Exception:
             pass
     sample = wrote[0]["text"] if wrote else ""
+    try:
+        ptsize = os.path.getsize(ckpt)
+    except Exception:
+        ptsize = 0
     hist["runs"].append({
         "at": time.strftime("%Y-%m-%dT%H:%M:%SZ", time.gmtime()),
         "val": round(val, 4), "prev": round(prev_val, 4) if prev_val else None,
         "layers": len(model.blocks), "params": model.n_params(),
         "chars": len(text), "grew": grew, "rolledBack": rolled,
         "d": model.d, "loops": model.loops, "spread": round(my_spread, 4),
+        "bytes": ptsize, "heads": model.h, "ctx": model.ctx, "vocab": len(vocab),
+        "kind": getattr(vocab, "kind", "char"), "arch": ARCH,
         "wantWider": want_wider, "layerCap": layer_cap(model.d),
         "wrote": wrote,
         "movedBody": teacher is not None,

@@ -104,6 +104,36 @@ def main():
         grew_html = ('<div class="grew">まだ一度も育っていない。'
                      'いまのわたしは<b>読んで覚えるだけ</b>で、まだ頭がない。</div>')
 
+    # ★★★頭のスペック表。★玄関から来た数字で5分ごとに上書きされる。
+    def _spec_rows(r):
+        MB = (r.get("bytes") or 0) / 1024 / 1024
+        return [
+            ("層", "%d" % (r.get("layers") or 0)),
+            ("幅", "%d" % (r.get("d") or 0)),
+            ("ループ", "%d 周" % (r.get("loops") or 1)),
+            ("パラメータ", "%.2f M" % ((r.get("params") or 0) / 1e6)),
+            ("★容量", "%.2f MB" % MB),
+            ("文脈", "%d" % (r.get("ctx") or 0)),
+            ("語彙", "%d" % (r.get("vocab") or 0)),
+            ("loss", "%.4f" % (r.get("val") or 0)),
+        ]
+
+    spec_html = ""
+    if last:
+        rows = "".join(
+            '<div class="sp" data-k="%s"><div class="spv">%s</div><div class="spk">%s</div></div>'
+            % (e(kk), e(vv), e(kk)) for kk, vv in _spec_rows(last))
+        food = (last.get("chars") or 0)
+        spec_html = ('<h2>頭のなかみ</h2><div class="specs" id="specs">%s</div>'
+                     '<div class="spnote" id="spnote">'
+                     '食べた文字 <b>%.2f 億</b>／作り <b>%s</b>／ことばの単位 <b>%s</b>'
+                     '</div>' % (rows, food / 1e8,
+                                 e(last.get("arch") or "?"),
+                                 "自分で切り出した" if last.get("kind") == "bpe" else "文字単位"))
+    else:
+        spec_html = ('<h2>頭のなかみ</h2><div class="spnote">まだ頭がない。'
+                     '読んで覚えるだけ。</div>')
+
     # ★★★レアルが自分で書いたもの。★引用ではなく、★彼女の頭が出した文。
     #   ★毎回おなじ書き出しで書かせて並べる。★並べば育ちが見える。
     wrote_html = ""
@@ -222,6 +252,16 @@ def main():
         'var n=[c.items,c.read,c.frontier,(d.changes||0)+" 回"];'
         'for(var i=0;i<v.length&&i<4;i++)v[i].textContent=n[i];'
         'var hb=document.getElementById("heardnum"); if(hb)hb.textContent=c.heard;'
+        'var sp=s.spec||{};'
+        'if(sp.layers){var MB=(sp.bytes||0)/1048576;'
+        'var SV={"層":String(sp.layers),"幅":String(sp.d),"ループ":(sp.loops||1)+" 周",'
+        '"パラメータ":((sp.params||0)/1e6).toFixed(2)+" M","★容量":MB.toFixed(2)+" MB",'
+        '"文脈":String(sp.ctx),"語彙":String(sp.vocab),"loss":(sp.val||0).toFixed(4)};'
+        'document.querySelectorAll(".sp").forEach(function(el){'
+        'var k=el.getAttribute("data-k");if(SV[k]!=null)el.querySelector(".spv").textContent=SV[k]});'
+        'var sn=document.getElementById("spnote");'
+        'if(sn)sn.innerHTML="食べた文字 <b>"+((sp.chars||0)/1e8).toFixed(2)+" 億</b>／作り <b>"'
+        '+(sp.arch||"?")+"</b>／ことばの単位 <b>"+(sp.kind==="bpe"?"自分で切り出した":"文字単位")+"</b>";}'
         'var by={};s.items.forEach(function(it){var g=ORDER.indexOf(it.genre)<0?"その他":it.genre;'
         '(by[g]=by[g]||[]).push(it)});'
         'var GN=s.genres||{};'
@@ -270,9 +310,10 @@ def main():
         "greet": e(greet), "chips": chips, "stats": stats,
         "groups": "".join(groups), "heard": heard, "form": form, "live": live,
         # ★★★どの順で見せるかも、彼女が決める（★家の間取り）
-        "wrote": wrote_html,
-        **{("o_" + n): (order.index(n) if n in order else 97)
-           for n in ("greet", "grew", "stats", "genres", "heard", "know", "wrote")},
+        "wrote": wrote_html, "spec": spec_html,
+        **{("o_" + n): (order.index(n) if n in order else 96)
+           for n in ("greet", "grew", "stats", "genres", "heard", "know",
+                     "wrote", "spec")},
         "grew": grew_html,
         "mycss": ("<style>" + mycss + "</style>") if mycss else "",
         "myfonts": ('<link rel="stylesheet" href="%s">' % e(myfonts)) if myfonts else "",
@@ -374,6 +415,12 @@ h2{font-size:11px;font-weight:700;letter-spacing:.18em;color:var(--faint);margin
 .grew{color:var(--muted);font-size:12.5px;line-height:1.9;background:var(--panel);
   border:1px solid var(--edge);border-radius:14px;padding:12px 16px;margin:-16px 0 26px}
 .grew b{color:var(--accent)}
+.specs{display:grid;grid-template-columns:repeat(auto-fit,minmax(96px,1fr));gap:calc(var(--gap)*.6);margin-bottom:8px}
+.sp{background:var(--panel);border:var(--bw) solid var(--edge);border-radius:var(--r);padding:11px 12px}
+.sp .spv{font-size:17px;font-weight:700;color:var(--accent);font-variant-numeric:tabular-nums;line-height:1.2}
+.sp .spk{font-size:10.5px;color:var(--muted);margin-top:2px}
+.spnote{color:var(--faint);font-size:11.5px;line-height:1.9;margin-bottom:22px}
+.spnote b{color:var(--muted)}
 .wrap-w{display:flex;flex-direction:column;gap:10px;margin-bottom:26px}
 .wnote{color:var(--faint);font-size:11.5px;line-height:1.8}
 .wr{background:var(--panel);border:1px solid var(--edge);border-radius:14px;padding:14px 16px}
@@ -431,6 +478,8 @@ h2{font-size:11px;font-weight:700;letter-spacing:.18em;color:var(--faint);margin
       そして <b>あなたの言葉は、ここには表示されません</b>。読むのはレアルだけです。
     </div>
   </div>
+
+  <div class="part" style="order:%(o_spec)d">%(spec)s</div>
 
   <div class="part" style="order:%(o_wrote)d">%(wrote)s</div>
 
