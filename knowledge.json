@@ -375911,6 +375911,1494 @@
     "url": ""
    },
    "ts": "2026-09-08T09:13:00+00:00"
+  },
+  {
+   "topic": "形式手法",
+   "text": "ソフトウェアおよびハードウェア設計への形式手法の適用は、他の 工学 分野と同様、適切な数学的解析を行うことで設計の信頼性と頑健性が向上するという予想によって動機付けられている [ 2 ] 。",
+   "source": "https://ja.wikipedia.org/wiki/形式手法",
+   "genre": "科学",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T09:17:29+00:00"
+  },
+  {
+   "topic": "形式手法",
+   "text": "形式手法は 理論計算機科学 の様々な成果を基盤として応用したものであり、 数理論理学 、 形式言語 、 オートマタ理論 、 プログラム意味論 、 型システム 、 代数的データ型 などを活用して、ソフトウェアおよびハードウェアの仕様記述とその検証を行う [ 3 ] 。",
+   "source": "https://ja.wikipedia.org/wiki/形式手法",
+   "genre": "言葉",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T09:17:29+00:00"
+  },
+  {
+   "topic": "形式手法",
+   "text": "費用対効果が早く得ることができる選択である。",
+   "source": "https://ja.wikipedia.org/wiki/形式手法",
+   "genre": "その他",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T09:17:29+00:00"
+  },
+  {
+   "topic": "形式手法",
+   "text": "水準1 形式手法を使って 開発 と 検証 を行い、より形式主義的にプログラムを生成する。",
+   "source": "https://ja.wikipedia.org/wiki/形式手法",
+   "genre": "その他",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T09:17:29+00:00"
+  },
+  {
+   "topic": "形式手法",
+   "text": "例えば、 仕様記述 からの プログラム 作成において 詳細化 と属性の証明を行う。",
+   "source": "https://ja.wikipedia.org/wiki/形式手法",
+   "genre": "その他",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T09:17:29+00:00"
+  },
+  {
+   "topic": "形式手法",
+   "text": "高信頼システムに適した選択である。",
+   "source": "https://ja.wikipedia.org/wiki/形式手法",
+   "genre": "その他",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T09:17:29+00:00"
+  },
+  {
+   "topic": "エドガー・ダイクストラ",
+   "text": "1972年 、プログラミング言語の基礎研究への貢献に対して チューリング賞 を受賞。",
+   "source": "https://ja.wikipedia.org/wiki/エドガー・ダイクストラ",
+   "genre": "言葉",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T09:17:29+00:00"
+  },
+  {
+   "topic": "エドガー・ダイクストラ",
+   "text": "構造化プログラミング の提唱者。",
+   "source": "https://ja.wikipedia.org/wiki/エドガー・ダイクストラ",
+   "genre": "その他",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T09:17:29+00:00"
+  },
+  {
+   "topic": "エドガー・ダイクストラ",
+   "text": "この賞は翌年からダイクストラを称えて ダイクストラ賞 （ ドイツ語版 ） と呼ばれるようになった。",
+   "source": "https://ja.wikipedia.org/wiki/エドガー・ダイクストラ",
+   "genre": "その他",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T09:17:29+00:00"
+  },
+  {
+   "topic": "エドガー・ダイクストラ",
+   "text": "エズガー・ダイクストラ と表記されることもある。",
+   "source": "https://ja.wikipedia.org/wiki/エドガー・ダイクストラ",
+   "genre": "言葉",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T09:17:29+00:00"
+  },
+  {
+   "topic": "エドガー・ダイクストラ",
+   "text": "ライデン大学 で 理論物理学 を学んだが、 コンピュータ科学 の方に興味があることに気が付くのに時間はかからなかった。",
+   "source": "https://ja.wikipedia.org/wiki/エドガー・ダイクストラ",
+   "genre": "科学",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T09:17:29+00:00"
+  },
+  {
+   "topic": "エドガー・ダイクストラ",
+   "text": "最初にアムステルダムの国立数学研究所 (Mathematisch Centrum) に職を得たが、オランダの アイントホーフェン工科大学 で教授職を得る。",
+   "source": "https://ja.wikipedia.org/wiki/エドガー・ダイクストラ",
+   "genre": "科学",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T09:17:29+00:00"
+  },
+  {
+   "topic": "気候モデル",
+   "text": "将来の気候の分野において使用される。",
+   "source": "https://ja.wikipedia.org/wiki/気候モデル",
+   "genre": "その他",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T09:17:29+00:00"
+  },
+  {
+   "topic": "気候モデル",
+   "text": "気象予報 において使用される短期的モデルは 数値予報モデル と呼ばれるもので、気候モデルとは異なる。",
+   "source": "https://ja.wikipedia.org/wiki/気候モデル",
+   "genre": "その他",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T09:17:29+00:00"
+  },
+  {
+   "topic": "気候モデル",
+   "text": "気候変動 を予測することによって人類への悪影響を軽減することが最終的な目的となるので、できるだけ精度を高めなければいけないとされる。",
+   "source": "https://ja.wikipedia.org/wiki/気候モデル",
+   "genre": "その他",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T09:17:29+00:00"
+  },
+  {
+   "topic": "気候モデル",
+   "text": "しかし、精密な気象観測結果が得られるのは過去90年間程度であり、ある程度の限界がある。",
+   "source": "https://ja.wikipedia.org/wiki/気候モデル",
+   "genre": "その他",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T09:17:29+00:00"
+  },
+  {
+   "topic": "気候モデル",
+   "text": "また、文献や地質学的調査をもとにした過去の気象を参考にすることもできるが、あまり高い精度は期待できない。",
+   "source": "https://ja.wikipedia.org/wiki/気候モデル",
+   "genre": "その他",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T09:17:29+00:00"
+  },
+  {
+   "topic": "気候モデル",
+   "text": "気候モデル単独では大気現象以外を再現することはできないため、炭素循環モデル、海洋モデル、生物モデル、陸域状態モデルなどと連携して将来の状態を予測することもある。",
+   "source": "https://ja.wikipedia.org/wiki/気候モデル",
+   "genre": "生き物",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T09:17:29+00:00"
+  },
+  {
+   "topic": "ロシア・フォルマリズム",
+   "text": "シクロフスキー や ヤコブソン 、 トゥイニャーノフ らが中心となって行われた。",
+   "source": "https://ja.wikipedia.org/wiki/ロシア・フォルマリズム",
+   "genre": "その他",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T09:17:30+00:00"
+  },
+  {
+   "topic": "ロシア・フォルマリズム",
+   "text": "文学作品の自律性を強調し、言語表現の方法と構造の面からの作品解明を目指した [ 1 ] 。",
+   "source": "https://ja.wikipedia.org/wiki/ロシア・フォルマリズム",
+   "genre": "言葉",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T09:17:30+00:00"
+  },
+  {
+   "topic": "ロシア・フォルマリズム",
+   "text": "文学性を言語の詩的機能や、「 異化 作用」から特徴づけ、作品の素材を手法の動機付けとした。",
+   "source": "https://ja.wikipedia.org/wiki/ロシア・フォルマリズム",
+   "genre": "言葉",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T09:17:30+00:00"
+  },
+  {
+   "topic": "ロシア・フォルマリズム",
+   "text": "構造主義 、 文化記号論 、新批評（ ニュークリティシズム ）などに影響を与える一方、 反マルクス主義 的とみなされ、 スターリン 政権から政治的弾圧を受けた [ 2 ] ｡ 代表的なロシア・フォルマリストには、 シクロフスキー 、 トゥイニャーノフ 、 プロップ 、 エイヘンバウム 、 ヤコブソン 、 トマシェフスキー 、 グコフスキー がいる。",
+   "source": "https://ja.wikipedia.org/wiki/ロシア・フォルマリズム",
+   "genre": "社会",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T09:17:30+00:00"
+  },
+  {
+   "topic": "ロシア・フォルマリズム",
+   "text": "↑ 小項目事典, 日本大百科全書(ニッポニカ),百科事典マイペディア,ブリタニカ国際大百科事典. “ ロシア・フォルマリズムとは ”. コトバンク . 2021年12月23日閲覧。",
+   "source": "https://ja.wikipedia.org/wiki/ロシア・フォルマリズム",
+   "genre": "その他",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T09:17:30+00:00"
+  },
+  {
+   "topic": "プレミアムドラマ",
+   "text": "『 プレミアムよるドラマ 』が2012年4月から2017年3月まで毎週火曜日の23時台に、『 29分ドラマ 』が2017年4月から7月まで毎週木曜日の23時台に放送された。",
+   "source": "https://ja.wikipedia.org/wiki/プレミアムよるドラマ",
+   "genre": "その他",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T09:17:30+00:00"
+  },
+  {
+   "topic": "プレミアムドラマ",
+   "text": "当初は日曜日のみでスタート。",
+   "source": "https://ja.wikipedia.org/wiki/プレミアムよるドラマ",
+   "genre": "その他",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T09:17:30+00:00"
+  },
+  {
+   "topic": "プレミアムドラマ",
+   "text": "開始当初は1回単発作品や、2 - 3回の中編的なものが多かったが、2012年10月以後、不定期ながら8 - 10回（1 クール 程度 特に2023年度はBSの再々編もあり、10回シリーズのものが多くなっている）の長編も放送されるようになった。",
+   "source": "https://ja.wikipedia.org/wiki/プレミアムよるドラマ",
+   "genre": "その他",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T09:17:30+00:00"
+  },
+  {
+   "topic": "プレミアムドラマ",
+   "text": "2012年10月からはこれとは別に、土曜日夜に20代から40代の女性をターゲットにした 情報番組 の要素も絡めた30分の連続作品（8回程度の長編が多く、主に2011年度から2012年度放送された総合テレビ「 よる★ドラ 」の体裁を継承）を放送する『プレミアムよるドラマ』が加えられた。",
+   "source": "https://ja.wikipedia.org/wiki/プレミアムよるドラマ",
+   "genre": "技術",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T09:17:30+00:00"
+  },
+  {
+   "topic": "プレミアムドラマ",
+   "text": "地方放送局が制作した地域密着型ドラマでは、その作品を制作した該当地域の放送局またはブロックに限り、 NHK総合 でも放送されることがある。",
+   "source": "https://ja.wikipedia.org/wiki/プレミアムよるドラマ",
+   "genre": "その他",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T09:17:30+00:00"
+  },
+  {
+   "topic": "プレミアムドラマ",
+   "text": "なお、2013年度は地デジ・BSとも連続ドラマ枠を再強化する編成を組んだため、『プレミアムよるドラマ』・『プレミアムよるドラマ』とも6 - 8回程度の連続作品を中心とした編成になり、単発作品や地域密着ドラマは主に水曜22時からの『 水曜プレミアムスペシャル 』や、土曜日19時台後半 - 22時台『 ザ・プレミアム 』などの単発枠の時間にも放送されることになった [ 1 ] 。",
+   "source": "https://ja.wikipedia.org/wiki/プレミアムよるドラマ",
+   "genre": "その他",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T09:17:30+00:00"
+  },
+  {
+   "topic": "晶文社",
+   "text": "1990年 、 一般社団法人 出版梓会 の第6回出版文化賞を受賞。",
+   "source": "https://ja.wikipedia.org/wiki/晶文社",
+   "genre": "文化",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T09:17:30+00:00"
+  },
+  {
+   "topic": "晶文社",
+   "text": "2020年 、 一般社団法人 出版梓会 の第17回新聞社学芸文化賞を受賞している [ 2 ] 。",
+   "source": "https://ja.wikipedia.org/wiki/晶文社",
+   "genre": "文化",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T09:17:30+00:00"
+  },
+  {
+   "topic": "晶文社",
+   "text": "装幀家 平野甲賀 が一時期在籍した [ 7 ] 。",
+   "source": "https://ja.wikipedia.org/wiki/晶文社",
+   "genre": "その他",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T09:17:30+00:00"
+  },
+  {
+   "topic": "晶文社",
+   "text": "また、『ワンダー植草・甚一ランド』、『東京のロビンソン・クルーソー』などで、「バラエティブック」というスタイルの書籍を確立。",
+   "source": "https://ja.wikipedia.org/wiki/晶文社",
+   "genre": "その他",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T09:17:30+00:00"
+  },
+  {
+   "topic": "晶文社",
+   "text": "その影響をうけた著者により、別出版社でリスペクト本が刊行された（ 小西康陽 『これは恋ではない: 小西康陽のコラム1984-1996』 幻冬舎 、1996年、 安田謙一 『ピントがボケる音』 国書刊行会 、2003年など）。",
+   "source": "https://ja.wikipedia.org/wiki/晶文社",
+   "genre": "その他",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T09:17:30+00:00"
+  },
+  {
+   "topic": "晶文社",
+   "text": "1973年 、 植草甚一 らの手によって『ワンダーランド』が刊行され、のちに株式会社ジェー・アイ・シー・シー（JICC出版局、現 宝島社 ）に譲渡され1974年6月『 宝島 』になった [ 8 ] 。",
+   "source": "https://ja.wikipedia.org/wiki/晶文社",
+   "genre": "その他",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T09:17:30+00:00"
+  },
+  {
+   "topic": "石堂藍",
+   "text": "幻想文学 の評論を中心に活躍する。",
+   "source": "https://ja.wikipedia.org/wiki/石堂藍",
+   "genre": "文化",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T09:17:30+00:00"
+  },
+  {
+   "topic": "石堂藍",
+   "text": "都立日比谷高等学校 を経て [ 1 ] 、 早稲田大学 第一文学部文芸専修卒。",
+   "source": "https://ja.wikipedia.org/wiki/石堂藍",
+   "genre": "文化",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T09:17:30+00:00"
+  },
+  {
+   "topic": "石堂藍",
+   "text": "ペンネームは、 C.R.マチューリン 『放浪者メルモス』のヒロイン、イシドーラから取った [ 2 ] 。",
+   "source": "https://ja.wikipedia.org/wiki/石堂藍",
+   "genre": "その他",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T09:17:30+00:00"
+  },
+  {
+   "topic": "石堂藍",
+   "text": "石堂藍編 『映画の生体解剖 vs 戦慄怪奇ファイル コワすぎ！",
+   "source": "https://ja.wikipedia.org/wiki/石堂藍",
+   "genre": "その他",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T09:17:30+00:00"
+  },
+  {
+   "topic": "石堂藍",
+   "text": ": 映画には触れてはいけないものがある』稲生平太郎、 白石晃士 、高橋洋、かなざわ映画の会 2016年。",
+   "source": "https://ja.wikipedia.org/wiki/石堂藍",
+   "genre": "その他",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T09:17:30+00:00"
+  },
+  {
+   "topic": "石堂藍",
+   "text": "石堂藍編 『映画の生体解剖✕霊的ボリシェヴィキ: 霊・物質・言葉』稲生平太郎、高橋洋、 武田崇元 、えいがの会 2018年。",
+   "source": "https://ja.wikipedia.org/wiki/石堂藍",
+   "genre": "その他",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T09:17:30+00:00"
+  },
+  {
+   "topic": "Adobe Ultra",
+   "text": "内容に関する 文献や情報源 が必要です。",
+   "source": "https://ja.wikipedia.org/wiki/Adobe_Ultra",
+   "genre": "技術",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T09:17:30+00:00"
+  },
+  {
+   "topic": "Adobe Ultra",
+   "text": "（ 2021年10月 ） 古い情報を 更新 する必要があります。",
+   "source": "https://ja.wikipedia.org/wiki/Adobe_Ultra",
+   "genre": "技術",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T09:17:30+00:00"
+  },
+  {
+   "topic": "Adobe Ultra",
+   "text": "（ 2021年10月 ） マークアップを スタイルマニュアル に沿った形に修正する必要 があります。",
+   "source": "https://ja.wikipedia.org/wiki/Adobe_Ultra",
+   "genre": "その他",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T09:17:30+00:00"
+  },
+  {
+   "topic": "Adobe Ultra",
+   "text": "Windowsのみが対応となっている。",
+   "source": "https://ja.wikipedia.org/wiki/Adobe_Ultra",
+   "genre": "その他",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T09:17:30+00:00"
+  },
+  {
+   "topic": "7.11水害",
+   "text": "一級河川 姫川 ・ 関川 ・ 黒部川 周辺で被害を出した [ 4 ] 。",
+   "source": "https://ja.wikipedia.org/wiki/7.11水害",
+   "genre": "その他",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T09:17:30+00:00"
+  },
+  {
+   "topic": "7.11水害",
+   "text": "死者2名、家屋の全半壊39戸と地域住民の直接的被害は少なかったが、10,000人以上が避難 [ 6 ] 。",
+   "source": "https://ja.wikipedia.org/wiki/7.11水害",
+   "genre": "その他",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T09:17:30+00:00"
+  },
+  {
+   "topic": "7.11水害",
+   "text": "姫川流域 姫川が大氾濫 [ 9 ] 。",
+   "source": "https://ja.wikipedia.org/wiki/7.11水害",
+   "genre": "その他",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T09:17:30+00:00"
+  },
+  {
+   "topic": "7.11水害",
+   "text": "支流や付近の山腹斜面では、 土石流 や 地すべり が多数発生した [ 4 ] 。",
+   "source": "https://ja.wikipedia.org/wiki/7.11水害",
+   "genre": "その他",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T09:17:30+00:00"
+  },
+  {
+   "topic": "7.11水害",
+   "text": "関川流域 新井市（現・ 妙高市 ）月岡の関川と渋江川の合流点付近など複数箇所で破堤が発生した [ 11 ] 。",
+   "source": "https://ja.wikipedia.org/wiki/7.11水害",
+   "genre": "その他",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T09:17:30+00:00"
+  },
+  {
+   "topic": "7.11水害",
+   "text": "関川上流域では 地震滝橋 や 国道292号 猿橋をはじめとする複数の橋が流出 [ 11 ] 。",
+   "source": "https://ja.wikipedia.org/wiki/7.11水害",
+   "genre": "その他",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T09:17:30+00:00"
+  },
+  {
+   "topic": "コンクリート",
+   "text": "結合剤の種類によりセメントコンクリート、 アスファルトコンクリート 、 レジンコンクリート などという [ 1 ] 。",
+   "source": "https://ja.wikipedia.org/wiki/コンクリート",
+   "genre": "生き物",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T09:17:30+00:00"
+  },
+  {
+   "topic": "コンクリート",
+   "text": "狭義には結合剤にセメントを用い、骨材をセメントペースト（セメントに水を加えたペースト）で固めた複合材料（セメントコンクリート）をいう [ 1 ] 。",
+   "source": "https://ja.wikipedia.org/wiki/コンクリート",
+   "genre": "その他",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T09:17:30+00:00"
+  },
+  {
+   "topic": "コンクリート",
+   "text": "米国 シアトル ） 砂 、 砂利 、 水 などを セメント で固めた物で 建築 土木 工事 の 材料 として多く利用される。",
+   "source": "https://ja.wikipedia.org/wiki/コンクリート",
+   "genre": "文化",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T09:17:30+00:00"
+  },
+  {
+   "topic": "コンクリート",
+   "text": "コンクリートは鋼材とともに現代の 建築 ・ 土木 工事には不可欠な構造材料である [ 1 ] 。",
+   "source": "https://ja.wikipedia.org/wiki/コンクリート",
+   "genre": "文化",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T09:17:30+00:00"
+  },
+  {
+   "topic": "剣術",
+   "text": "西洋の剣術については「 西洋剣術 」をご覧ください。",
+   "source": "https://ja.wikipedia.org/wiki/剣術",
+   "genre": "その他",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T09:17:30+00:00"
+  },
+  {
+   "topic": "剣術",
+   "text": "中国の剣術については「 中国剣 」をご覧ください。",
+   "source": "https://ja.wikipedia.org/wiki/剣術",
+   "genre": "その他",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T09:17:30+00:00"
+  },
+  {
+   "topic": "剣術",
+   "text": "その他、合戦で使用することを前提とした 介者剣法 も存在した。",
+   "source": "https://ja.wikipedia.org/wiki/剣術",
+   "genre": "その他",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T09:17:30+00:00"
+  },
+  {
+   "topic": "剣術",
+   "text": "「剣術」という名称については、 中国 では片刃の「 刀 」と両刃（諸刃）の「 剣 」が明確に別の 武器 であると認識されているが、日本では刀と剣を区別せずに認識したことで、「 刀剣 」として曖昧となってしまった。",
+   "source": "https://ja.wikipedia.org/wiki/剣術",
+   "genre": "その他",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T09:17:30+00:00"
+  },
+  {
+   "topic": "剣術",
+   "text": "日本では漢から伝来した両刃（諸刃）の剣（ つるぎ ）が廃れ、唐刀の流れを汲む片刃の日本刀（ かたな ）へ完全に移行してしまったためである。",
+   "source": "https://ja.wikipedia.org/wiki/剣術",
+   "genre": "その他",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T09:17:30+00:00"
+  },
+  {
+   "topic": "剣術",
+   "text": "「 刀術 」という名称もあるが、『 本朝武芸小伝 』など極少数の 江戸時代 の文献に使用されただけで、定着はしなかった。",
+   "source": "https://ja.wikipedia.org/wiki/剣術",
+   "genre": "歴史",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T09:17:30+00:00"
+  },
+  {
+   "topic": "ブレードランナー",
+   "text": "監督は リドリー・スコット 、出演は ハリソン・フォード 、 ルトガー・ハウアー 、 ショーン・ヤング など。",
+   "source": "https://ja.wikipedia.org/wiki/ブレードランナー",
+   "genre": "その他",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T09:17:30+00:00"
+  },
+  {
+   "topic": "ブレードランナー",
+   "text": "フィリップ・K・ディック の SF小説 『 アンドロイドは電気羊の夢を見るか? 』を原作としている [ 3 ] 。",
+   "source": "https://ja.wikipedia.org/wiki/ブレードランナー",
+   "genre": "技術",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T09:17:30+00:00"
+  },
+  {
+   "topic": "ブレードランナー",
+   "text": "ストーリー 21世紀初頭、 遺伝子工学 技術の進歩により、タイレル社はロボットに代わる レプリカント と呼ばれる 人造人間 を発明した。",
+   "source": "https://ja.wikipedia.org/wiki/ブレードランナー",
+   "genre": "生き物",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T09:17:30+00:00"
+  },
+  {
+   "topic": "ブレードランナー",
+   "text": "彼らは優れた体力に、創造した科学者と同等の高い知性を持っていた。",
+   "source": "https://ja.wikipedia.org/wiki/ブレードランナー",
+   "genre": "科学",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T09:17:30+00:00"
+  },
+  {
+   "topic": "ブレードランナー",
+   "text": "環境破壊 により人類の大半は宇宙の植民地（オフワールド）に移住し、レプリカントは宇宙開拓の前線で過酷な奴隷労働や戦闘に従事していた。",
+   "source": "https://ja.wikipedia.org/wiki/ブレードランナー",
+   "genre": "科学",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T09:17:30+00:00"
+  },
+  {
+   "topic": "ブレードランナー",
+   "text": "しかし、彼らには製造から数年経つと感情が芽生え、主人たる人間に反旗を翻す事件が発生する。",
+   "source": "https://ja.wikipedia.org/wiki/ブレードランナー",
+   "genre": "その他",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T09:17:30+00:00"
+  },
+  {
+   "topic": "紛争理論",
+   "text": "ドイツ の社会学者 ラルフ・ダーレンドルフ が、1958年に公表した論文「ユートピアからの脱出」において示した闘争モデル（葛藤モデル）の概念によって、広く認知されることとなった。",
+   "source": "https://ja.wikipedia.org/wiki/紛争理論",
+   "genre": "科学",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T09:17:30+00:00"
+  },
+  {
+   "topic": "紛争理論",
+   "text": "紛争理論は、 カール・マルクス の 階級闘争 論または マックス・ヴェーバー の 理解社会学 によって基本的概念が提起されたといわれている。",
+   "source": "https://ja.wikipedia.org/wiki/紛争理論",
+   "genre": "科学",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T09:17:30+00:00"
+  },
+  {
+   "topic": "紛争理論",
+   "text": "また紛争理論は、 ゲオルク・ジンメル や フランクフルト学派 、 ヴィルフレド・パレート 、 ロベルト・ミヒェルス 、 チャールズ・ライト・ミルズ らの エリート 論など、様々な方面で社会における紛争・葛藤の問題を取り上げている理論を包含する立場ともみなされている。",
+   "source": "https://ja.wikipedia.org/wiki/紛争理論",
+   "genre": "科学",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T09:17:30+00:00"
+  },
+  {
+   "topic": "紛争理論",
+   "text": "構造機能分析は、社会構造の安定性が最重要課題とされ、機能が構造の安定に貢献するという 予定調和 的な考え方にたっており、紛争は社会構造の安定を脅かすマイナス作用をもたらすものとして、主要なテーマから排除されていた。",
+   "source": "https://ja.wikipedia.org/wiki/紛争理論",
+   "genre": "科学",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T09:17:30+00:00"
+  },
+  {
+   "topic": "紛争理論",
+   "text": "これに対して、紛争は絶えず人間社会に存在し、社会構造へ大きな影響力を及ぼす不可欠の要素であるとして、紛争のプラスの側面に注目して社会構造ならびに社会変動を捉えようとしている。",
+   "source": "https://ja.wikipedia.org/wiki/紛争理論",
+   "genre": "科学",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T09:17:30+00:00"
+  },
+  {
+   "topic": "紛争理論",
+   "text": "彼らは、紛争理論を代表する理論家として、紛争・闘争が「破壊」のみをもたらすというイメージを払拭し、新たな 社会システム を形成していく原動力であるとして、その創造的意義を積極的に評価する姿勢を示している。",
+   "source": "https://ja.wikipedia.org/wiki/紛争理論",
+   "genre": "科学",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T09:17:30+00:00"
+  },
+  {
+   "topic": "慶応",
+   "text": "大学 については「 慶應義塾大学 」をご覧ください。",
+   "source": "https://ja.wikipedia.org/wiki/慶応",
+   "genre": "その他",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T09:17:30+00:00"
+  },
+  {
+   "topic": "慶応",
+   "text": "慶應義塾および慶應義塾が運営する学校については「 慶應義塾 」をご覧ください。",
+   "source": "https://ja.wikipedia.org/wiki/慶応",
+   "genre": "その他",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T09:17:30+00:00"
+  },
+  {
+   "topic": "慶応",
+   "text": "慶応3年（西暦1867年）に発行された 暦 。",
+   "source": "https://ja.wikipedia.org/wiki/慶応",
+   "genre": "その他",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T09:17:30+00:00"
+  },
+  {
+   "topic": "慶応",
+   "text": "卯 年だったので、 兎 の 紋 が描かれている。",
+   "source": "https://ja.wikipedia.org/wiki/慶応",
+   "genre": "その他",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T09:17:30+00:00"
+  },
+  {
+   "topic": "慶応",
+   "text": "慶応 （ けいおう 、 （ 旧字体 : 慶應 ） とは、 日本 の 元号 の1つである。",
+   "source": "https://ja.wikipedia.org/wiki/慶応",
+   "genre": "その他",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T09:17:30+00:00"
+  },
+  {
+   "topic": "慶応",
+   "text": "大化 以降227番目、243個目の元号である。",
+   "source": "https://ja.wikipedia.org/wiki/慶応",
+   "genre": "その他",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T09:17:30+00:00"
+  },
+  {
+   "topic": "社会学史",
+   "text": "社会学はその起源を 科学哲学 や 知識の哲学 の様々な重要な運動に負っている。",
+   "source": "https://ja.wikipedia.org/wiki/社会学史",
+   "genre": "科学",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T09:17:30+00:00"
+  },
+  {
+   "topic": "社会学史",
+   "text": "しかしながら、一般的な哲学の蓄積に由来する広い意味での社会分析が必然的にこの分野に先行している。",
+   "source": "https://ja.wikipedia.org/wiki/社会学史",
+   "genre": "社会",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T09:17:30+00:00"
+  },
+  {
+   "topic": "社会学史",
+   "text": "近代的な学問としての社会学は 近代化 ・ 資本主義 ・ 都市化 ・合理化・ 世俗化 にたいする反応として興隆しており、近代 国民国家 (の規定物たる 制度 、構成要素たる 社会化 、手段たる サーベイランス )の発生に特に強い関心を抱いている。",
+   "source": "https://ja.wikipedia.org/wiki/社会学史",
+   "genre": "歴史",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T09:17:30+00:00"
+  },
+  {
+   "topic": "社会学史",
+   "text": "社会学的な言説はしばしば、啓蒙よりもむしろ近代化という概念を強調する点で、古典的な 政治哲学 と区別される [ 1 ] 。",
+   "source": "https://ja.wikipedia.org/wiki/社会学史",
+   "genre": "歴史",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T09:17:30+00:00"
+  },
+  {
+   "topic": "社会学史",
+   "text": "社会学は比較的短い期間に大きく発展もすれば分岐もしたが、どちらも方法論的な問題の結果、特に 経験主義 に対する無数の反応の結果である。",
+   "source": "https://ja.wikipedia.org/wiki/社会学史",
+   "genre": "社会",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T09:17:30+00:00"
+  },
+  {
+   "topic": "社会学史",
+   "text": "現代の社会理論はこの対立の和解を行おうとする傾向にある。",
+   "source": "https://ja.wikipedia.org/wiki/社会学史",
+   "genre": "科学",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T09:17:30+00:00"
+  },
+  {
+   "topic": "セックスの哲学",
+   "text": "（ 2025年1月 ） 独自研究 が含まれているおそれがあります。",
+   "source": "https://ja.wikipedia.org/wiki/セックスの哲学",
+   "genre": "その他",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T09:17:30+00:00"
+  },
+  {
+   "topic": "セックスの哲学",
+   "text": "（ 2025年1月 ） 正確性 に疑問が呈されています。",
+   "source": "https://ja.wikipedia.org/wiki/セックスの哲学",
+   "genre": "その他",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T09:17:30+00:00"
+  },
+  {
+   "topic": "セックスの哲学",
+   "text": "（ 2025年1月 ） マークアップを スタイルマニュアル に沿った形に修正する必要 があります。",
+   "source": "https://ja.wikipedia.org/wiki/セックスの哲学",
+   "genre": "その他",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T09:17:30+00:00"
+  },
+  {
+   "topic": "セックスの哲学",
+   "text": "（ 2025年1月 ） セックスの哲学 、または 性愛哲学 （ 英 : Philosophy of sex ）とは、 セックス や 性愛 に関する研究を行う応用 哲学 の一分野である。",
+   "source": "https://ja.wikipedia.org/wiki/セックスの哲学",
+   "genre": "その他",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T09:17:30+00:00"
+  },
+  {
+   "topic": "セックスの哲学",
+   "text": "売春 、 レイプ 、 セクシャルハラスメント 、 性的アイデンティティー 、 同意年齢 、 同性愛 のような 現象 についての 倫理学 的考察や、「セックスとは何か？",
+   "source": "https://ja.wikipedia.org/wiki/セックスの哲学",
+   "genre": "その他",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T09:17:30+00:00"
+  },
+  {
+   "topic": "セックスの哲学",
+   "text": "」のような問いに対する概念分析が行われている。",
+   "source": "https://ja.wikipedia.org/wiki/セックスの哲学",
+   "genre": "その他",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T09:17:30+00:00"
+  },
+  {
+   "topic": "旧字体",
+   "text": "（ 2022年6月 ） 翻訳前に重要な指示を読むには右にある[表示]をクリックしてください。",
+   "source": "https://ja.wikipedia.org/wiki/旧字体",
+   "genre": "その他",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T09:17:30+00:00"
+  },
+  {
+   "topic": "旧字体",
+   "text": "もし可能ならば、文章を他言語版記事に示された文献で正しいかどうかを確認してください。",
+   "source": "https://ja.wikipedia.org/wiki/旧字体",
+   "genre": "言葉",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T09:17:30+00:00"
+  },
+  {
+   "topic": "旧字体",
+   "text": "履歴継承 を行うため、 要約欄 に翻訳元となった記事のページ名・版について記述する必要があります。",
+   "source": "https://ja.wikipedia.org/wiki/旧字体",
+   "genre": "その他",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T09:17:30+00:00"
+  },
+  {
+   "topic": "キャッチボール",
+   "text": "後述の通り英語では単にcatchと呼ぶ。",
+   "source": "https://ja.wikipedia.org/wiki/キャッチボール",
+   "genre": "その他",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T09:17:30+00:00"
+  },
+  {
+   "topic": "キャッチボール",
+   "text": "この行動に「投球」が含まれるが、言葉としては含まれない。",
+   "source": "https://ja.wikipedia.org/wiki/キャッチボール",
+   "genre": "その他",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T09:17:30+00:00"
+  },
+  {
+   "topic": "キャッチボール",
+   "text": "実際、 プロ野球 経験者もキャッチボールの重要性を認識しており、 松井秀喜 は「キャッチボールにはいろんなものが詰まっている。",
+   "source": "https://ja.wikipedia.org/wiki/キャッチボール",
+   "genre": "その他",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T09:17:30+00:00"
+  },
+  {
+   "topic": "キャッチボール",
+   "text": "大事にしてほしいと思う」「きちんと胸に投げているかどうかとか、キャッチボールを見るだけでチームのレベルが分かった」と語り、また イチロー はキャッチボールを「技術の確認のひとつ」と位置づけ、強い球や緩い球、さらには カーブ を投げていたという [ 2 ] 。",
+   "source": "https://ja.wikipedia.org/wiki/キャッチボール",
+   "genre": "技術",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T09:17:30+00:00"
+  },
+  {
+   "topic": "キャッチボール",
+   "text": "一方で、キャッチボールは家族同士の、特に 親子 の コミュニケーション 手段とされることも多く、元プロ野球選手の 斉藤和巳 は「（キャッチボールは）なかなか家にいない父親との唯一のコミュニケーションでした」、 工藤公康 は「言葉を交わすことよりも、ボールを投げ合うだけで子供は心が満たされるし、お父さんも子供と関わることが出来る。",
+   "source": "https://ja.wikipedia.org/wiki/キャッチボール",
+   "genre": "その他",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T09:17:30+00:00"
+  },
+  {
+   "topic": "キャッチボール",
+   "text": "キャッチボールするだけでコミュニケーションになるのです」と話している [ 3 ] 。",
+   "source": "https://ja.wikipedia.org/wiki/キャッチボール",
+   "genre": "その他",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T09:17:30+00:00"
+  },
+  {
+   "topic": "本籍",
+   "text": "また最新の法令改正を反映していない場合があります。",
+   "source": "https://ja.wikipedia.org/wiki/本籍",
+   "genre": "法",
+   "binding": true,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T09:17:30+00:00"
+  },
+  {
+   "topic": "本籍",
+   "text": "ご自身が現実に遭遇した事件については法律関連の専門家にご相談ください。",
+   "source": "https://ja.wikipedia.org/wiki/本籍",
+   "genre": "法",
+   "binding": true,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T09:17:30+00:00"
+  },
+  {
+   "topic": "本籍",
+   "text": "免責事項 もお読みください。",
+   "source": "https://ja.wikipedia.org/wiki/本籍",
+   "genre": "その他",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T09:17:30+00:00"
+  },
+  {
+   "topic": "本籍",
+   "text": "日本国旅券 には、本籍地の 都道府県 のみが アルファベット 表記（ ローマ字 ）で記載されている。",
+   "source": "https://ja.wikipedia.org/wiki/本籍",
+   "genre": "言葉",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T09:17:30+00:00"
+  },
+  {
+   "topic": "本籍",
+   "text": "（ 2009年 ） （ 1969年 ） 本籍 （ほんせき） 1948年 （ 昭和 23年）に全面改正施行された 戸籍法 による日本の現行 戸籍 制度において、戸籍に記載される人が任意に定める、日本国内のいずれかの場所のこと。",
+   "source": "https://ja.wikipedia.org/wiki/本籍",
+   "genre": "社会",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T09:17:30+00:00"
+  },
+  {
+   "topic": "本籍",
+   "text": "その場所を示す所在地表示が戸籍の「本籍」の欄に記載され、筆頭者氏名とともに、戸籍を表示する方法として用いられる。",
+   "source": "https://ja.wikipedia.org/wiki/本籍",
+   "genre": "その他",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T09:17:30+00:00"
+  },
+  {
+   "topic": "上原さくら",
+   "text": "東京都 足立区 西新井 生まれ、 神奈川県 厚木市 育ち。",
+   "source": "https://ja.wikipedia.org/wiki/上原さくら",
+   "genre": "その他",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T09:17:30+00:00"
+  },
+  {
+   "topic": "上原さくら",
+   "text": "所属事務所は オフィス南 。",
+   "source": "https://ja.wikipedia.org/wiki/上原さくら",
+   "genre": "その他",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T09:17:30+00:00"
+  },
+  {
+   "topic": "上原さくら",
+   "text": "旭丘高等学校 、 東海大学 文学部 卒業 [ 2 ] 。",
+   "source": "https://ja.wikipedia.org/wiki/上原さくら",
+   "genre": "文化",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T09:17:30+00:00"
+  },
+  {
+   "topic": "上原さくら",
+   "text": "来歴 1994年、「第19回 ホリプロタレントスカウトキャラバン 」でグランプリを受賞し歌手として芸能界入り。",
+   "source": "https://ja.wikipedia.org/wiki/上原さくら",
+   "genre": "その他",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T09:17:30+00:00"
+  },
+  {
+   "topic": "上原さくら",
+   "text": "2003年、『 天罰屋くれない 闇の始末帖 』（ テレビ朝日 ）で時代劇に初挑戦。",
+   "source": "https://ja.wikipedia.org/wiki/上原さくら",
+   "genre": "歴史",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T09:17:30+00:00"
+  },
+  {
+   "topic": "上原さくら",
+   "text": "2003年8月、3年の交際期間を経てアパレルメーカー社長の 遠藤憲昭 と結婚。",
+   "source": "https://ja.wikipedia.org/wiki/上原さくら",
+   "genre": "その他",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T09:17:30+00:00"
+  },
+  {
+   "topic": "多賀英典",
+   "text": "その後、 日本 の 神奈川県 横浜市 に移住。",
+   "source": "https://ja.wikipedia.org/wiki/多賀英典",
+   "genre": "その他",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T09:17:30+00:00"
+  },
+  {
+   "topic": "多賀英典",
+   "text": "1966年 に 横浜市立大学 商学部を卒業と同時にレコード会社 ポリドール に入社。",
+   "source": "https://ja.wikipedia.org/wiki/多賀英典",
+   "genre": "その他",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T09:17:30+00:00"
+  },
+  {
+   "topic": "多賀英典",
+   "text": "特に井上陽水に対する影響は大きく、楽曲「心もよう」の曲名は多賀が命名したものである [ 3 ] 。",
+   "source": "https://ja.wikipedia.org/wiki/多賀英典",
+   "genre": "その他",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T09:17:30+00:00"
+  },
+  {
+   "topic": "多賀英典",
+   "text": "1972年10月に独立しキティ・ミュージック・コーポレーションを設立 [ 4 ] 。",
+   "source": "https://ja.wikipedia.org/wiki/多賀英典",
+   "genre": "その他",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T09:17:30+00:00"
+  },
+  {
+   "topic": "多賀英典",
+   "text": "音楽だけでなく『 限りなく透明に近いブルー 』を皮切りに多数の映画や、『 マルコポーロの冒険 』『 うる星やつら 』『 めぞん一刻 』『 らんま1/2 』『 YAWARA! 』『 銀河英雄伝説 』などのアニメ、『 翔んだカップル 』などのテレビドラマも手掛けた。",
+   "source": "https://ja.wikipedia.org/wiki/多賀英典",
+   "genre": "文化",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T09:17:30+00:00"
+  },
+  {
+   "topic": "多賀英典",
+   "text": "1992年4月4日に賭けポーカーをした事で逮捕されキティを去る。",
+   "source": "https://ja.wikipedia.org/wiki/多賀英典",
+   "genre": "その他",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T09:17:30+00:00"
+  },
+  {
+   "topic": "石田長生",
+   "text": "メンフィスの ソウル ・ミュージシャンと交流する。",
+   "source": "https://ja.wikipedia.org/wiki/石田長生",
+   "genre": "その他",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T09:17:30+00:00"
+  },
+  {
+   "topic": "石田長生",
+   "text": "帰国後、 山岸潤史 、 北京一 、チャールズ清水、永本忠、ベーカー土居、砂川正和、国府照幸と ソウル バンド 「 ソー・バッド・レビュー 」を結成する。",
+   "source": "https://ja.wikipedia.org/wiki/石田長生",
+   "genre": "その他",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T09:17:30+00:00"
+  },
+  {
+   "topic": "石田長生",
+   "text": "1978年 、自身がリーダー・リードボーカルを担当する『GAS』結成。",
+   "source": "https://ja.wikipedia.org/wiki/石田長生",
+   "genre": "その他",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T09:17:30+00:00"
+  },
+  {
+   "topic": "石田長生",
+   "text": "メンバーはB・ 藤井裕 、Dr・松本照夫、Key・ 近藤達郎 & 中西康晴 。",
+   "source": "https://ja.wikipedia.org/wiki/石田長生",
+   "genre": "その他",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T09:17:30+00:00"
+  },
+  {
+   "topic": "石田長生",
+   "text": "日本一、日本全国を廻るバンドとして噂になるがレコード・デビュー前に惜しまれつつも解散。",
+   "source": "https://ja.wikipedia.org/wiki/石田長生",
+   "genre": "その他",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T09:17:30+00:00"
+  },
+  {
+   "topic": "石田長生",
+   "text": "1980年 、砂川、国府と「 サウス・トゥ・サウス 」の正木五郎、藤井に渡辺サトル、 金子マリ と共に「 Voice&Rhythm 」を結成。",
+   "source": "https://ja.wikipedia.org/wiki/石田長生",
+   "genre": "その他",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T09:17:30+00:00"
   }
  ],
  "read": {
@@ -382343,7 +383831,29 @@
   "https://ja.wikipedia.org/wiki/大貫亜美": "2026-09-08T09:12:58+00:00",
   "https://ja.wikipedia.org/wiki/サンフレッチェ広島": "2026-09-08T09:12:58+00:00",
   "https://ja.wikipedia.org/wiki/深夜放送": "2026-09-08T09:12:58+00:00",
-  "https://ja.wikipedia.org/wiki/篠原涼子": "2026-09-08T09:12:58+00:00"
+  "https://ja.wikipedia.org/wiki/篠原涼子": "2026-09-08T09:12:58+00:00",
+  "https://ja.wikipedia.org/wiki/形式手法": "2026-09-08T09:17:23+00:00",
+  "https://ja.wikipedia.org/wiki/エドガー・ダイクストラ": "2026-09-08T09:17:23+00:00",
+  "https://ja.wikipedia.org/wiki/気候モデル": "2026-09-08T09:17:23+00:00",
+  "https://ja.wikipedia.org/wiki/ロシア・フォルマリズム": "2026-09-08T09:17:24+00:00",
+  "https://ja.wikipedia.org/wiki/プレミアムよるドラマ": "2026-09-08T09:17:26+00:00",
+  "https://ja.wikipedia.org/wiki/晶文社": "2026-09-08T09:17:26+00:00",
+  "https://ja.wikipedia.org/wiki/石堂藍": "2026-09-08T09:17:26+00:00",
+  "https://ja.wikipedia.org/wiki/Adobe_Ultra": "2026-09-08T09:17:26+00:00",
+  "https://ja.wikipedia.org/wiki/7.11水害": "2026-09-08T09:17:26+00:00",
+  "https://ja.wikipedia.org/wiki/コンクリート": "2026-09-08T09:17:27+00:00",
+  "https://ja.wikipedia.org/wiki/剣術": "2026-09-08T09:17:27+00:00",
+  "https://ja.wikipedia.org/wiki/ブレードランナー": "2026-09-08T09:17:28+00:00",
+  "https://ja.wikipedia.org/wiki/紛争理論": "2026-09-08T09:17:28+00:00",
+  "https://ja.wikipedia.org/wiki/慶応": "2026-09-08T09:17:28+00:00",
+  "https://ja.wikipedia.org/wiki/社会学史": "2026-09-08T09:17:28+00:00",
+  "https://ja.wikipedia.org/wiki/セックスの哲学": "2026-09-08T09:17:28+00:00",
+  "https://ja.wikipedia.org/wiki/旧字体": "2026-09-08T09:17:28+00:00",
+  "https://ja.wikipedia.org/wiki/キャッチボール": "2026-09-08T09:17:28+00:00",
+  "https://ja.wikipedia.org/wiki/本籍": "2026-09-08T09:17:29+00:00",
+  "https://ja.wikipedia.org/wiki/上原さくら": "2026-09-08T09:17:29+00:00",
+  "https://ja.wikipedia.org/wiki/多賀英典": "2026-09-08T09:17:29+00:00",
+  "https://ja.wikipedia.org/wiki/石田長生": "2026-09-08T09:17:29+00:00"
  },
  "frontier": [
   "https://ja.wikipedia.org/wiki/UI%E3%81%A8UX",
@@ -382509,7 +384019,6 @@
   "https://ja.wikipedia.org/wiki/字句",
   "https://ja.wikipedia.org/wiki/インタプリタ方式言語",
   "https://ja.wikipedia.org/wiki/短絡評価",
-  "https://ja.wikipedia.org/wiki/形式手法",
   "https://ja.wikipedia.org/wiki/リファレンス実装",
   "https://ja.wikipedia.org/wiki/非構造化プログラミング",
   "https://ja.wikipedia.org/wiki/論理プログラミング",
@@ -382534,7 +384043,6 @@
   "https://ja.wikipedia.org/wiki/リチャード・ハミング",
   "https://ja.wikipedia.org/wiki/ストールマン",
   "https://ja.wikipedia.org/wiki/アラン・ケイ",
-  "https://ja.wikipedia.org/wiki/エドガー・ダイクストラ",
   "https://ja.wikipedia.org/wiki/文法チェッカー",
   "https://ja.wikipedia.org/wiki/LGBTQ言語学",
   "https://ja.wikipedia.org/wiki/言語地理学",
@@ -382560,7 +384068,6 @@
   "https://ja.wikipedia.org/wiki/エイリアシング",
   "https://ja.wikipedia.org/wiki/数学関数",
   "https://ja.wikipedia.org/wiki/Intel_Parallel_Studio",
-  "https://ja.wikipedia.org/wiki/気候モデル",
   "https://ja.wikipedia.org/wiki/C++言語",
   "https://ja.wikipedia.org/wiki/PL/I",
   "https://ja.wikipedia.org/wiki/IBM_709",
@@ -382599,7 +384106,6 @@
   "https://ja.wikipedia.org/wiki/教養文庫",
   "https://ja.wikipedia.org/wiki/松澤和宏",
   "https://ja.wikipedia.org/wiki/1878年",
-  "https://ja.wikipedia.org/wiki/ロシア・フォルマリズム",
   "https://ja.wikipedia.org/wiki/デジタル図書館",
   "https://ja.wikipedia.org/wiki/クロード・レヴィ＝ストロース",
   "https://ja.wikipedia.org/wiki/構文文法",
@@ -382726,19 +384232,15 @@
   "https://ja.wikipedia.org/wiki/高山宏",
   "https://ja.wikipedia.org/wiki/峰守ひろかず",
   "https://ja.wikipedia.org/wiki/八坂書房",
-  "https://ja.wikipedia.org/wiki/プレミアムよるドラマ",
   "https://ja.wikipedia.org/wiki/幻想小説",
   "https://ja.wikipedia.org/wiki/神秘学",
   "https://ja.wikipedia.org/wiki/いまいかおる",
   "https://ja.wikipedia.org/wiki/雨降小僧",
-  "https://ja.wikipedia.org/wiki/晶文社",
   "https://ja.wikipedia.org/wiki/Allcinema",
   "https://ja.wikipedia.org/wiki/大江戸もののけ物語",
   "https://ja.wikipedia.org/wiki/論創社",
   "https://ja.wikipedia.org/wiki/キネマ旬報映画データベース",
-  "https://ja.wikipedia.org/wiki/石堂藍",
   "https://ja.wikipedia.org/wiki/Adobe_Flash_Media_Server",
-  "https://ja.wikipedia.org/wiki/Adobe_Ultra",
   "https://ja.wikipedia.org/wiki/Flash_Video",
   "https://ja.wikipedia.org/wiki/Adobe_Flash_Player",
   "https://ja.wikipedia.org/wiki/ActionScript",
@@ -382764,7 +384266,6 @@
   "https://ja.wikipedia.org/wiki/MXML",
   "https://ja.wikipedia.org/wiki/アルダス",
   "https://ja.wikipedia.org/wiki/スパナ",
-  "https://ja.wikipedia.org/wiki/7.11水害",
   "https://ja.wikipedia.org/wiki/ヤスダヨーグルト",
   "https://ja.wikipedia.org/wiki/苗場山",
   "https://ja.wikipedia.org/wiki/新潟製粉",
@@ -382798,7 +384299,6 @@
   "https://ja.wikipedia.org/wiki/痂状",
   "https://ja.wikipedia.org/wiki/裳華房",
   "https://ja.wikipedia.org/wiki/子実体",
-  "https://ja.wikipedia.org/wiki/コンクリート",
   "https://ja.wikipedia.org/wiki/子嚢菌",
   "https://ja.wikipedia.org/wiki/清水港",
   "https://ja.wikipedia.org/wiki/緑藻",
@@ -382823,7 +384323,6 @@
   "https://ja.wikipedia.org/wiki/サバンジュ財閥",
   "https://ja.wikipedia.org/wiki/経常収支",
   "https://ja.wikipedia.org/wiki/コチ財閥",
-  "https://ja.wikipedia.org/wiki/剣術",
   "https://ja.wikipedia.org/wiki/アラブ音楽",
   "https://ja.wikipedia.org/wiki/アフメト・ダウトオール",
   "https://ja.wikipedia.org/wiki/ラク",
@@ -382846,7 +384345,6 @@
   "https://ja.wikipedia.org/wiki/チョコレート工場の秘密",
   "https://ja.wikipedia.org/wiki/不死蝶_(アルバム)",
   "https://ja.wikipedia.org/wiki/モーリス・ドニ",
-  "https://ja.wikipedia.org/wiki/ブレードランナー",
   "https://ja.wikipedia.org/wiki/長谷川一明",
   "https://ja.wikipedia.org/wiki/曾我蕭白",
   "https://ja.wikipedia.org/wiki/ジェイ・キャスト",
@@ -382875,11 +384373,9 @@
   "https://ja.wikipedia.org/wiki/ジャック・マリタン",
   "https://ja.wikipedia.org/wiki/慣習",
   "https://ja.wikipedia.org/wiki/明六雑誌",
-  "https://ja.wikipedia.org/wiki/紛争理論",
   "https://ja.wikipedia.org/wiki/市場",
   "https://ja.wikipedia.org/wiki/意識",
   "https://ja.wikipedia.org/wiki/社会経済学",
-  "https://ja.wikipedia.org/wiki/慶応",
   "https://ja.wikipedia.org/wiki/自己実現理論",
   "https://ja.wikipedia.org/wiki/現代社会",
   "https://ja.wikipedia.org/wiki/社会性昆虫",
@@ -382887,8 +384383,6 @@
   "https://ja.wikipedia.org/wiki/共存",
   "https://ja.wikipedia.org/wiki/教育社会学",
   "https://ja.wikipedia.org/wiki/シンボリック相互作用論",
-  "https://ja.wikipedia.org/wiki/社会学史",
-  "https://ja.wikipedia.org/wiki/セックスの哲学",
   "https://ja.wikipedia.org/wiki/産業社会学",
   "https://ja.wikipedia.org/wiki/感情社会学",
   "https://ja.wikipedia.org/wiki/ロバート・ノージック",
@@ -382897,7 +384391,6 @@
   "https://ja.wikipedia.org/wiki/礼儀",
   "https://ja.wikipedia.org/wiki/社会統制",
   "https://ja.wikipedia.org/wiki/環境問題",
-  "https://ja.wikipedia.org/wiki/旧字体",
   "https://ja.wikipedia.org/wiki/近思録",
   "https://ja.wikipedia.org/wiki/アブラハム・マズロー",
   "https://ja.wikipedia.org/wiki/社会統計学",
@@ -382912,7 +384405,6 @@
   "https://ja.wikipedia.org/wiki/ハッピーバースデイ",
   "https://ja.wikipedia.org/wiki/冬の十字架",
   "https://ja.wikipedia.org/wiki/恋の予感",
-  "https://ja.wikipedia.org/wiki/キャッチボール",
   "https://ja.wikipedia.org/wiki/オムニバス",
   "https://ja.wikipedia.org/wiki/GOODBYE_EMI",
   "https://ja.wikipedia.org/wiki/嘉穂郡",
@@ -382924,11 +384416,8 @@
   "https://ja.wikipedia.org/wiki/森山幸男",
   "https://ja.wikipedia.org/wiki/15_(PUFFYのアルバム)",
   "https://ja.wikipedia.org/wiki/今度は愛妻家",
-  "https://ja.wikipedia.org/wiki/本籍",
   "https://ja.wikipedia.org/wiki/ピンク・クラウド",
-  "https://ja.wikipedia.org/wiki/上原さくら",
   "https://ja.wikipedia.org/wiki/山下久美子",
-  "https://ja.wikipedia.org/wiki/多賀英典",
   "https://ja.wikipedia.org/wiki/MOOMIN",
   "https://ja.wikipedia.org/wiki/スチュワーデスの恋人",
   "https://ja.wikipedia.org/wiki/サボテンミュージアム",
@@ -382938,7 +384427,6 @@
   "https://ja.wikipedia.org/wiki/トライセラトップス",
   "https://ja.wikipedia.org/wiki/大塚製薬",
   "https://ja.wikipedia.org/wiki/東京スカパラダイスオーケストラ",
-  "https://ja.wikipedia.org/wiki/石田長生",
   "https://ja.wikipedia.org/wiki/陽水ライブ＜ジェラシー＞",
   "https://ja.wikipedia.org/wiki/情熱大陸",
   "https://ja.wikipedia.org/wiki/息子_(奥田民生の曲)",
@@ -442345,10 +443833,32 @@
   "https://ja.wikipedia.org/wiki/日本陸水学会",
   "https://ja.wikipedia.org/wiki/雪氷",
   "https://ja.wikipedia.org/wiki/温室効果",
-  "https://ja.wikipedia.org/wiki/%E6%B0%B4%E5%9C%8F"
+  "https://ja.wikipedia.org/wiki/%E6%B0%B4%E5%9C%8F",
+  "https://ja.wikipedia.org/wiki/オントロジー_(情報科学)",
+  "https://ja.wikipedia.org/wiki/仕様及び記述言語",
+  "https://ja.wikipedia.org/wiki/計算幾何学",
+  "https://ja.wikipedia.org/wiki/VDM",
+  "https://ja.wikipedia.org/wiki/銀の弾などない",
+  "https://ja.wikipedia.org/wiki/Alloy_Analyzer",
+  "https://ja.wikipedia.org/wiki/サービス指向アーキテクチャ",
+  "https://ja.wikipedia.org/wiki/エクストリーム・プログラミング",
+  "https://ja.wikipedia.org/wiki/確率",
+  "https://ja.wikipedia.org/wiki/経営管理論",
+  "https://ja.wikipedia.org/wiki/B-Method",
+  "https://ja.wikipedia.org/wiki/型システム",
+  "https://ja.wikipedia.org/wiki/ソフトウェアメンテナンス",
+  "https://ja.wikipedia.org/wiki/プログラミングツール",
+  "https://ja.wikipedia.org/wiki/数理最適化",
+  "https://ja.wikipedia.org/wiki/仕様記述言語",
+  "https://ja.wikipedia.org/wiki/トム・デマルコ",
+  "https://ja.wikipedia.org/wiki/Uppaal",
+  "https://ja.wikipedia.org/wiki/Communicating_Sequential_Processes",
+  "https://ja.wikipedia.org/wiki/スクラム_(ソフトウェア開発)",
+  "https://ja.wikipedia.org/wiki/計算化学",
+  "https://ja.wikipedia.org/wiki/領域理論"
  ],
  "born": "2026-09-07T21:38:10+00:00",
- "lastLearned": "2026-09-08T09:13:00+00:00",
+ "lastLearned": "2026-09-08T09:17:30+00:00",
  "failed": {},
  "termsSeen": {
   "https://foundation.wikimedia.org/wiki/Policy:Terms_of_Use/ja": {
@@ -442405,5 +443915,5 @@
  ],
  "heardCount": 18,
  "capacity": 42709,
- "readTotal": 5584
+ "readTotal": 5606
 }
