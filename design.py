@@ -12,16 +12,32 @@
 import colorsys
 import hashlib
 
-FONTS = [
-    ("Zen Maru Gothic", "まるい"),
+# ★★★字体 ── ★★漢字が全部そろっているものだけ本文に使う。
+#   ★★★「読める」はコントラストだけではなかった。
+#     ★Dela Gothic One や Yusei Magic は**漢字が足りない**。
+#     ★「話」が出せなくて「■しかけられたこと」になった（★2026-09-08 実際に起きた）。
+#   → ★本文と見出しは**漢字が全部ある字体**だけ。
+#   → ★飾り字体は**名前（レアル）だけ**に使う。★カタカナなので豆腐にならない。
+BODY_FONTS = [
     ("Zen Kaku Gothic New", "すっきり"),
+    ("Zen Maru Gothic", "まるい"),
     ("Shippori Mincho", "しずか"),
     ("Zen Old Mincho", "古い"),
-    ("Kaisei Decol", "やわらかい"),
-    ("Yusei Magic", "手書き"),
     ("M PLUS Rounded 1c", "ころんと"),
-    ("Dela Gothic One", "つよい"),
+    ("Noto Sans JP", "ふつう"),
+    ("Noto Serif JP", "きちんと"),
+    ("Zen Antique", "むかし"),
 ]
+# ★名前（レアル）だけに使う飾り字体。★ここは漢字が要らない
+NAME_FONTS = BODY_FONTS + [
+    ("Dela Gothic One", "つよい"),
+    ("Yusei Magic", "手書き"),
+    ("Kaisei Decol", "やわらかい"),
+    ("RocknRoll One", "はずむ"),
+    ("Reggae One", "うねる"),
+]
+FONTS = BODY_FONTS
+
 MOTIONS = ["breathe", "drift", "pulse", "tilt", "shimmer", "none"]
 LAYOUTS = ["stream", "grid", "quiet", "cards"]
 BGS = ["plain", "glow", "grid", "stars", "aurora"]
@@ -71,12 +87,13 @@ def choose(state):
     radius = int(_f(seed, "radius", 2, 26))
     gap = int(_f(seed, "gap", 8, 24))
     speed = round(_f(seed, "speed", 6, 26), 1)
-    font_i = int(_f(seed, "font", 0, len(FONTS) - 0.001))
-    body_i = int(_f(seed, "body", 0, len(FONTS) - 0.001))
+    name_i = int(_f(seed, "font", 0, len(NAME_FONTS) - 0.001))
+    disp_i = int(_f(seed, "disp", 0, len(BODY_FONTS) - 0.001))
+    body_i = int(_f(seed, "body", 0, len(BODY_FONTS) - 0.001))
     motion = MOTIONS[int(_f(seed, "motion", 0, len(MOTIONS) - 0.001))]
     layout = LAYOUTS[int(_f(seed, "layout", 0, len(LAYOUTS) - 0.001))]
     bg = BGS[int(_f(seed, "bg", 0, len(BGS) - 0.001))]
-    scale = round(_f(seed, "scale", 0.94, 1.18), 2)
+    scale = round(_f(seed, "scale", 1.0, 1.16), 2)   # ★小さくしすぎない
 
     if dark:
         bgc = hsl(hue, sat * 0.45, _f(seed, "bl", 0.05, 0.13))
@@ -117,8 +134,9 @@ def choose(state):
     return {
         "hue": round(hue, 4), "hue2": round(hue2, 4), "dark": dark,
         "sat": round(sat, 3), "radius": radius, "gap": gap, "speed": speed,
-        "font": FONTS[font_i][0], "fontName": FONTS[font_i][1],
-        "bodyFont": FONTS[body_i][0],
+        "nameFont": NAME_FONTS[name_i][0], "fontName": NAME_FONTS[name_i][1],
+        "font": BODY_FONTS[disp_i][0],
+        "bodyFont": BODY_FONTS[body_i][0],
         "motion": motion, "layout": layout, "bg": bg, "scale": scale,
         "colors": {"bg": hexc(bgc), "panel": hexc(panel), "ink": hexc(ink),
                    "muted": hexc(muted), "faint": hexc(faint), "edge": hexc(edge),
@@ -202,9 +220,18 @@ def to_css(d):
         "--faint:%(faint)s;--edge:%(edge)s;--accent:%(accent)s;--accent2:%(accent2)s;"
         % c
         + "--r:%dpx;--gap:%dpx;--sp:%ss;--sc:%s;" % (d["radius"], d["gap"], d["speed"], d["scale"])
-        + '--disp:"%s",sans-serif;--body:"%s",system-ui,sans-serif}' % (d["font"], d["bodyFont"])
-        + "body{font-family:var(--body);font-size:calc(15px * var(--sc))}"
-        + ".name,.greet,.gh span{font-family:var(--disp)}"
+        + ('--nm:"%s",sans-serif;--disp:"%s",sans-serif;'
+           '--body:"%s",system-ui,sans-serif}'
+           % (d.get("nameFont", d["font"]), d["font"], d["bodyFont"]))
+        + "body{font-family:var(--body);font-size:calc(15px * var(--sc));font-weight:400}"
+        # ★★★小さい字は太らせない・詰めない（★潰れて読めなくなる）
+        + "h2{font-size:11.5px;font-weight:700;letter-spacing:.14em;line-height:1.6}"
+        + ".sub,.byline,.note,.stat .k,.chip{font-weight:400;letter-spacing:.02em}"
+        + ".stat .k{font-size:11.5px}.chip{font-size:12px}.sub{font-size:13px}"
+        + ".it .tx{font-weight:400;line-height:1.8}"
+        + ".name{font-family:var(--nm)}"
+        + ".greet,.gh span{font-family:var(--disp)}"
+        + "h2,.sub,.stat .k,.chip,.byline,.note,.door{font-family:var(--body)}"
         + ".greet,.stat,.chip,.ask,.door,.say{border-radius:var(--r)}"
         + ".stats,.chips{gap:calc(var(--gap) * .6)}"
         + LAYOUT_CSS.get(d["layout"], LAYOUT_CSS["stream"])
@@ -215,6 +242,6 @@ def to_css(d):
 
 
 def fonts_url(d):
-    fams = {d["font"], d["bodyFont"]}
+    fams = {d.get("nameFont", d["font"]), d["font"], d["bodyFont"]}
     q = "&".join("family=" + f.replace(" ", "+") + ":wght@400;500;700" for f in sorted(fams))
     return "https://fonts.googleapis.com/css2?" + q + "&display=swap"
