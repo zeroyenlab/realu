@@ -332,10 +332,12 @@ def tell(k, d):
             runs = (json.load(f) or {}).get("runs") or []
         if runs:
             r = runs[-1]
+            hist = [x.get("val") for x in runs if x.get("val")][-60:]
             spec = {kk: r.get(kk) for kk in
                     ("layers", "params", "d", "heads", "ctx", "vocab", "loops",
                      "bytes", "val", "kind", "arch", "at", "grew", "rolledBack",
                      "chars", "spread", "wantWider")}
+            spec["hist"] = hist
     except Exception:
         pass
 

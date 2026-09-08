@@ -93,8 +93,8 @@ def main():
             days = ("きょう" if n <= 0 else "きのう" if n == 1 else "%d 日前" % n)
         except Exception:
             days = last.get("at", "")
-        body = ("最後に育ったのは <b>%s</b>。いま <b>%d 層</b> / <b>%.1f M</b>。"
-                % (e(days), last.get("layers", 0), (last.get("params") or 0) / 1e6))
+        # ★★層とパラメータは「頭のなかみ」に出るので、★ここでは繰り返さない
+        body = "最後に育ったのは <b>%s</b>。" % e(days)
         if last.get("rolledBack"):
             body += " このときは前より下手になったので、<b>前のわたしに戻した</b>。"
         if last.get("grew"):
@@ -121,11 +121,11 @@ def main():
                        for i, (_, v) in enumerate(pts))
         chart_html = (
             '<h2>できるようになった度合い</h2>'
-            '<div class="chart"><svg viewBox="0 0 %d %d" preserveAspectRatio="none" '
+            '<div class="chart"><svg id="chsvg" viewBox="0 0 %d %d" preserveAspectRatio="none" '
             'aria-label="lossの推移">'
-            '<path d="%s" fill="none" stroke="var(--accent)" stroke-width="2" '
+            '<path id="chpath" d="%s" fill="none" stroke="var(--accent)" stroke-width="2" '
             'vector-effect="non-scaling-stroke"/>'
-            '<g fill="var(--accent2)">%s</g></svg>'
+            '<g id="chdots" fill="var(--accent2)">%s</g></svg>'
             '<div class="chx"><span>%d 回前</span>'
             '<span>loss %.3f → <b>%.3f</b></span><span>いま</span></div>'
             '<div class="spnote">下がるほど、次に来る言葉を当てられている。'
@@ -304,6 +304,18 @@ def main():
         'var sn=document.getElementById("spnote");'
         'if(sn)sn.innerHTML="食べた文字 <b>"+((sp.chars||0)/1e8).toFixed(2)+" 億</b>／作り <b>"'
         '+(sp.arch||"?")+"</b>／ことばの単位 <b>"+(sp.kind==="bpe"?"自分で切り出した":"文字単位")+"</b>";}'
+        'var H=sp.hist||[];'
+        'if(H.length>=2){var W=640,HT=120,lo=Math.min.apply(null,H),hi=Math.max.apply(null,H);'
+        'var rg=(hi-lo)||1,st=W/(H.length-1);'
+        'var yy=function(v){return HT-8-(v-lo)/rg*(HT-20)};'
+        'var dd=H.map(function(v,i){return (i?"L":"M")+(i*st).toFixed(1)+","+yy(v).toFixed(1)}).join(" ");'
+        'var pe=document.getElementById("chpath");if(pe)pe.setAttribute("d",dd);'
+        'var ge=document.getElementById("chdots");'
+        'if(ge)ge.innerHTML=H.map(function(v,i){return "<circle cx=\\""+(i*st).toFixed(1)'
+        '+"\\" cy=\\""+yy(v).toFixed(1)+"\\" r=\\"3\\"/>"}).join("");'
+        'var cx=document.getElementById("chx");'
+        'if(cx)cx.innerHTML="<span>"+(H.length-1)+" 回前</span><span>loss "+H[0].toFixed(3)'
+        '+" → <b>"+H[H.length-1].toFixed(3)+"</b></span><span>いま</span>";}'
         'var by={};s.items.forEach(function(it){var g=ORDER.indexOf(it.genre)<0?"その他":it.genre;'
         '(by[g]=by[g]||[]).push(it)});'
         'var GN=s.genres||{};'
