@@ -145,8 +145,7 @@ jobs:
           #   ★（1時間かけて取り直すのは相手にも自分にも無駄）
           if [ -f work/laws.txt ] && [ ! -f work/laws.txt.gz ]; then
             gzip -c work/laws.txt > work/laws.txt.gz && rm -f work/laws.txt
-            echo "★前の回が置いていった法令を圧縮した"
-            echo "NEW_LAWS=1" >> $GITHUB_ENV
+            echo "★前の回が置いていった法令を圧縮した（★数秒。買い物ではない）"
           fi
           if [ ! -f work/laws.txt.gz ]; then
             echo "★法令をもらいに行く（初回のみ・1時間ほど）"
@@ -161,7 +160,6 @@ jobs:
       - name: 判決をすこし読み足す
         run: |
           N="${{ github.event.inputs.hanrei || '400' }}"
-          if [ "$NEW_LAWS" = "1" ]; then N=150; fi
           FROM=$(cat work/hanrei_next.txt 2>/dev/null || echo 1000)
           TO=$((FROM + N * 3))          # ★存在しないIDもあるので多めに走査する
           echo "★判決 $FROM 〜 $TO を読む"
@@ -233,7 +231,6 @@ jobs:
       - name: webを読んでごはんにする
         run: |
           N=40000
-          if [ "$NEW_LAWS" = "1" ]; then N=8000; echo "★冷えた回。webは $N ページ"; fi
           REALU_WEB_PAGES=$N python -u read_web.py
 
       # ── ★★★国会の会議録を、毎日すこしずつ食べる
@@ -243,7 +240,6 @@ jobs:
       - name: 国会の話を聞きに行く
         run: |
           N=600
-          if [ "$NEW_LAWS" = "1" ]; then N=150; echo "★冷えた回。国会は $N 本"; fi
           REALU_KOKKAI_REQ=$N python -u fetch_kokkai.py || true
 
       # ── ★★★食べたものを、★**この時点で**残す。
@@ -323,7 +319,6 @@ jobs:
       - name: 本を読む
         run: |
           N=600
-          if [ "$NEW_LAWS" = "1" ]; then N=200; echo "★冷えた回。本は $N 冊"; fi
           REALU_AOZORA_BOOKS=$N python -u fetch_aozora.py || true
 
       # ── ★★★ことばの単位を、自分のごはんから切り出す（★初回だけ）
@@ -352,6 +347,15 @@ jobs:
             echo "★使った $((USED/60))分"
           fi
           # ★★★足りないなら**学ばない**。★学んで締切に殺されると頭が残らない。
+          # ★★★冷えた回（ごはんを一から作った回）は、★**学ばない**。
+          #   ★この回の仕事は「ごはんを作って Release に残す」こと。
+          #   ★★学習190分を足すと5時間半の一本勝負になる。
+          #     ★しかもCPUの190分で進むのは**1周の3.9%**。★割に合わない。
+          #   → ★次の回は食事が2分で済むので、★学習に5時間まるごと使える。
+          if [ "$NEW_LAWS" = "1" ]; then
+            echo "★★この回はごはんを作る回。★学ばずに終わる。★次から本気で学ぶ。"
+            exit 0
+          fi
           if [ "$LEFT" -lt 420 ]; then
             echo "★★時間が無い（残り $((LEFT/60))分）。★今回は学ばず、いま持っている頭をそのまま残す。"
             exit 0
@@ -370,6 +374,10 @@ jobs:
           #   ★ここは Public。★素のまま上げたら**誰でも落とせる**＝公開になる。
           #   ★重みはごはんから作ったもの。★判例（改変禁止）も Wikipedia（CC BY-SA）も溶けている。
           #   ★★鍵が無いなら、★**外には出さない**（★キャッシュにだけ置く）。
+          if [ ! -f work/realu.pt ]; then
+            echo "★まだ頭が無い（★ごはんを作る回）。★残すものは無い"
+            exit 0
+          fi
           if [ -z "$FOODKEY" ]; then
             echo "★鍵が無い。★頭は外に出さない"
             exit 0
