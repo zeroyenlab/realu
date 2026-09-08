@@ -26,7 +26,10 @@ jobs:
           python-version: "3.12"
 
       - name: 道具を入れる
-        run: pip install --quiet torch --index-url https://download.pytorch.org/whl/cpu
+        run: |
+          pip install --quiet torch --index-url https://download.pytorch.org/whl/cpu
+          # ★★grow.yml には足したのに、ここを直し忘れていた（★run#3 が落ちた）
+          pip install --quiet tokenizers numpy
 
       - name: 頭を取ってくる
         uses: actions/cache/restore@v4

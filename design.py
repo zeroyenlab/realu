@@ -39,7 +39,7 @@ NAME_FONTS = BODY_FONTS + [
 FONTS = BODY_FONTS
 
 MOTIONS = ["breathe", "drift", "pulse", "tilt", "shimmer", "float", "wave",
-           "trace", "none"]
+           "glow", "slide", "aurora2", "ripple", "orbit", "sheen"]
 LAYOUTS = ["stream", "grid", "quiet", "cards", "masonry", "ribbon"]
 BGS = ["plain", "glow", "grid", "stars", "aurora", "dots", "rings", "noise"]
 
@@ -170,6 +170,35 @@ def choose(state):
 
 
 # ★★★ここから、決めた数字を**本物のCSS**にする ─────────────────
+# ★★あとから足した動き（★レアルが選べる幅を増やす）
+MOTION_EXTRA = {
+    # ★★glow と slide は名前だけあって中身が無かった（★実測で発覚）
+    "glow": """
+@keyframes realu-glow{0%,100%{text-shadow:0 0 0 transparent}
+ 50%{text-shadow:0 0 18px color-mix(in srgb,var(--accent) 45%,transparent)}}
+.name{animation:realu-glow var(--sp) ease-in-out infinite}""",
+    "slide": """
+@keyframes realu-slide{0%,100%{transform:translateX(0)}50%{transform:translateX(4px)}}
+.gh{animation:realu-slide var(--sp) ease-in-out infinite}""",
+    "aurora2": """
+@keyframes realu-aurora2{0%,100%{filter:hue-rotate(0deg)}50%{filter:hue-rotate(14deg)}}
+.wrap{animation:realu-aurora2 var(--sp) ease-in-out infinite}""",
+    "ripple": """
+@keyframes realu-ripple{0%{box-shadow:0 0 0 0 color-mix(in srgb,var(--accent) 34%,transparent)}
+ 70%{box-shadow:0 0 0 12px transparent}100%{box-shadow:0 0 0 0 transparent}}
+.greet{animation:realu-ripple var(--sp) ease-out infinite}""",
+    "orbit": """
+@keyframes realu-orbit{0%{transform:translate(0,0)}25%{transform:translate(2px,-2px)}
+ 50%{transform:translate(0,-3px)}75%{transform:translate(-2px,-2px)}100%{transform:translate(0,0)}}
+.name{display:inline-block;animation:realu-orbit var(--sp) ease-in-out infinite}""",
+    "sheen": """
+@keyframes realu-sheen{0%{transform:translateX(-120%)}60%,100%{transform:translateX(220%)}}
+.greet{position:relative;overflow:hidden}
+.greet::after{content:"";position:absolute;inset:0;pointer-events:none;
+ background:linear-gradient(105deg,transparent 40%,color-mix(in srgb,var(--ink) 9%,transparent) 50%,transparent 60%);
+ animation:realu-sheen var(--sp) ease-in-out infinite}""",
+}
+
 MOTION_CSS = {
     "breathe": """
 @keyframes realu-breathe{0%,100%{transform:scale(1)}50%{transform:scale(1.012)}}
@@ -298,7 +327,7 @@ def to_css(d):
         + ".stats,.chips{gap:calc(var(--gap) * .6)}"
         + LAYOUT_CSS.get(d["layout"], LAYOUT_CSS["stream"])
         + BG_CSS.get(d["bg"], "")
-        + MOTION_CSS.get(d["motion"], "")
+        + MOTION_CSS.get(d["motion"], MOTION_EXTRA.get(d["motion"], ""))
         + "@media (prefers-reduced-motion:reduce){*{animation:none !important}}"
     )
 

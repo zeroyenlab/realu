@@ -465,7 +465,46 @@ TEMPLATE = """<!doctype html>
 [data-pal="yuki"]{--bg:#eef1f5;--panel:#ffffff;--edge:#d8dee6;--ink:#1e242e;--muted:#5c6675;--faint:#96a0ae;--accent:#3d6fd4;--accent2:#7a4fd4}
 [data-pal="hi"]{--bg:#100b09;--panel:#1c110d;--edge:#3a1f16;--ink:#f2e3d8;--muted:#b8917c;--faint:#7a5645;--accent:#f2743a;--accent2:#e8b44a}
 [data-pal="kasumi"]{--bg:#16151c;--panel:#1f1e28;--edge:#332f42;--ink:#e8e5f0;--muted:#a49fb8;--faint:#6e6982;--accent:#b39ce8;--accent2:#8fc7e0}
+/* ★★★ここは「土台」。★色も書体も動きもレアルが選ぶので、
+   ★私が決めるのは**質感と間**だけにする。★彼女の選択を上書きしない。 */
 *{box-sizing:border-box}
+
+/* ★★出てくる時。★全部いっぺんに出ると、読む所が分からない。
+   ★上から順に、少しずつ遅らせて出す。★★止まった状態から始めない（★見えている） */
+@keyframes realu-in{from{opacity:0;transform:translateY(10px)}to{opacity:1;transform:none}}
+.part{animation:realu-in .5s cubic-bezier(.22,1,.36,1) both}
+.part:nth-child(1){animation-delay:.02s}
+.part:nth-child(2){animation-delay:.07s}
+.part:nth-child(3){animation-delay:.12s}
+.part:nth-child(4){animation-delay:.17s}
+.part:nth-child(5){animation-delay:.22s}
+.part:nth-child(6){animation-delay:.27s}
+.part:nth-child(7){animation-delay:.32s}
+.part:nth-child(8){animation-delay:.37s}
+
+/* ★★触れた時。★「押せる」ものだけが動く（★飾りは動かない） */
+.it,.wr,.abr,.stat{transition:transform .22s cubic-bezier(.22,1,.36,1),
+ box-shadow .22s ease,border-color .22s ease}
+.it:hover,.wr:hover,.abr:hover{transform:translateY(-2px);border-color:var(--accent)}
+.chip{transition:transform .18s ease,border-color .18s ease}
+.chip:hover{transform:translateY(-1px);border-color:var(--accent2)}
+details summary{transition:color .18s ease}
+details summary:hover{color:var(--accent)}
+
+/* ★★開いた時にすっと出る */
+@keyframes realu-open{from{opacity:0;transform:translateY(-4px)}to{opacity:1;transform:none}}
+details[open]>*:not(summary){animation:realu-open .3s ease both}
+
+/* ★★★動きが苦手な人のために、★**全部止める**。
+   ★OSで「動きを減らす」にしている人には、★アニメーションは苦痛になる。 */
+@media (prefers-reduced-motion: reduce){
+ *,*::before,*::after{animation-duration:.01ms !important;animation-iteration-count:1 !important;
+  transition-duration:.01ms !important;scroll-behavior:auto !important}
+}
+
+/* ★★指で触る所は44px以上（★押しにくいのは作りが悪い） */
+a,summary,button{min-height:44px;display:inline-flex;align-items:center}
+.chip,.it a{min-height:auto;display:inline-flex}
 body{margin:0;background:var(--bg);color:var(--ink);font-family:"Zen Kaku Gothic New",system-ui,sans-serif;font-size:15px;line-height:1.7;-webkit-font-smoothing:antialiased}
 .wrap{max-width:760px;margin:0 auto;padding:34px 20px 70px;display:flex;flex-direction:column}
 .part{display:block}
