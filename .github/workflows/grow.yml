@@ -134,16 +134,37 @@ jobs:
       #   ★1回目は、後の段で失敗したせいで**キャッシュの保存が飛ばされ**、
       #     ★法令1.1億字を取り直すことになった（★49分の無駄）。
       #   → ★★学習より前に、★ごはんだけ先に残しておく。★後で転んでも食べた物は残る。
-      - name: 食べたものを先に残す
+      # ★★★ごはんは**鍵をかけてから**しまう。
+      #   ★このリポジトリは Public なので、★Release に置いたものは**誰でも落とせる**＝公開。
+      #   ★中身は加工したテキスト:
+      #     ・★判例 ── 裁判所の規約「無断で改変を行うことはできません」。★名前を消した＝改変
+      #     ・★Wikipedia ── CC BY-SA。★再配布には帰属表示と同ライセンスが要る
+      #   → ★★鍵が無ければ復元できない形にする。★これなら公開したことにならない。
+      #   ★鍵は GitHub Secrets の中だけ。★彼女は使えるが、外からは読めない。
+      - name: 食べたものに鍵をかけてしまう
         if: always()
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          FOODKEY: ${{ secrets.REALU_FOOD_KEY }}
         run: |
-          gh release view food >/dev/null 2>&1             || gh release create food --title "レアルのごはん"                  --notes "法令・判例・Wikipedia・国会・読んだもの。圧縮して置いてある。" --latest=false
+          if [ -z "$FOODKEY" ]; then
+            echo "★鍵が無い。★ごはんは外に出さない（★キャッシュにだけ置く）"
+            exit 0
+          fi
+          gh release view food >/dev/null 2>&1 \
+            || gh release create food \
+                 --title "レアルのごはん（鍵つき）" \
+                 --notes "鍵をかけてある。加工したテキストなので、そのままは公開できない。" \
+                 --latest=false
           for n in laws wiki hanrei kokkai web; do
-            [ -f "work/$n.txt.gz" ] && gh release upload food "work/$n.txt.gz" --clobber || true
+            if [ -f "work/$n.txt.gz" ]; then
+              openssl enc -aes-256-cbc -pbkdf2 -salt \
+                -in "work/$n.txt.gz" -out "/tmp/$n.enc" -pass env:FOODKEY
+              gh release upload food "/tmp/$n.enc" --clobber || true
+              rm -f "/tmp/$n.enc"
+            fi
           done
-          echo "★食べたものは残した"
+          echo "★鍵をかけてしまった"
           du -sh work 2>/dev/null || true
 
       # ── ★★★ことばの単位を、自分のごはんから切り出す（★初回だけ）
