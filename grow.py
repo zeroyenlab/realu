@@ -11,6 +11,7 @@
 ★重みは GitHub の Release に置く（★リポジトリに毎回入れると膨らむ）。
 """
 import gzip
+import hashlib
 import json
 import re
 import math
@@ -67,6 +68,25 @@ TEACH_UNTIL = float(os.environ.get("REALU_TEACH_UNTIL", 0.6))
 #       ★前半は先生に頼り、★後半は自分で本物のデータから学ぶ。
 
 DUP_MAX = int(os.environ.get("REALU_DUP_MAX", 3))   # ★同じ行を食べてよい回数
+
+# ★★★物差し ── **絶対に食べない文**を、ごはんの全部からすこしずつ取っておく。
+#   ★これが無かった時の壊れ方（★2026-09-08 に見つけた）:
+#     ・分け方が「うしろから2%」だった。★ごはんは laws→wiki→aozora→hanrei→kokkai→web の順。
+#       → ★物差しが**webの尻尾だけ**になっていた。法令も本も国会も、一度も測っていない。
+#     ・しかも web は毎日うしろに足される。★**毎回ちがう文で測っていた**。
+#       → 「前より悪くなったから前のわたしに戻す」が、★別の問題の点数を比べていた。
+#         ★これは育ちを黙って捨てる。★一番たちの悪い壊れ方。
+#   ★★直し方: ①ごはんの種類に関係なく散らばるよう選ぶ ②一度決めたら**二度と変えない**
+VAL_TAG = "fixed-holdout-v1"          # ★測り方が変わったら、ここを変える（★昔の点数と比べなくなる）
+VAL_PER_MIL = int(os.environ.get("REALU_VAL_PERMIL", 3))   # ★千行に3行＝0.3%
+
+
+def held_out(line):
+    """★この行は物差しか。★★中身だけで決まる ── どこに置いてあっても同じ判定になる。"""
+    if len(line) < 20:
+        return False
+    h = hashlib.sha1(line.encode("utf-8")).digest()
+    return ((h[0] << 8) | h[1]) % 1000 < VAL_PER_MIL
 
 GROW_PATIENCE = 5      # ★この回数ぶん良くならなかったら「頭打ち」
 GROW_MIN_LOSS = 1.05   # ★まだ下手なうちだけ大きくする
@@ -376,10 +396,14 @@ def main():
     #     ★それが一番点の上がる近道だから。★★近道を塞ぐ。
     seen = {}
     kept = []
+    held = []                      # ★★物差し。★ここに入った文は一度も食べない
     for ln in text.split("\n"):
         key = ln.strip()
         if len(key) < 10:
             kept.append(ln)
+            continue
+        if held_out(key):
+            held.append(key)          # ★食べずに、測るためだけに取っておく
             continue
         n = seen.get(key, 0)
         if n < DUP_MAX:
@@ -409,6 +433,10 @@ def main():
                       ctx=st["ctx"], loops=st.get("loops", 1))
         model.load_state_dict(st["model"])
         prev_val = st.get("val")
+        # ★★★測り方が変わったなら、前の点数は**別の問題の点数**。比べてはいけない。
+        if st.get("valTag") != VAL_TAG:
+            prev_val = None
+            print("★物差しが変わった。★前の点数とは比べない（★比べると嘘になる）", flush=True)
         print("★前のわたし: %d 層 / %.2f M / これまでの loss %.4f"
               % (len(model.blocks), model.n_params() / 1e6, prev_val or -1), flush=True)
     else:
@@ -443,7 +471,7 @@ def main():
                  model.n_params() / 1e6), flush=True)
 
     # ── ★★★はじめて見る文字を覚える（★語彙も育つ）
-    new_chars = (sorted(set(text) - set(vocab.itos))
+    new_chars = (sorted((set(text) | set(chr(10).join(held))) - set(vocab.itos))
                  if getattr(vocab, "kind", "char") == "char" else [])
     if new_chars:
         vocab.itos = list(vocab.itos) + new_chars
@@ -452,9 +480,31 @@ def main():
         print("★はじめて見た字を %d 個おぼえた（語彙 %d）：%s"
               % (len(new_chars), len(vocab), "".join(new_chars[:20])), flush=True)
 
+    # ★★★物差しは**一度作ったら変えない**。
+    #   ★毎回ちがう文で測ると、「前より良くなったか」が意味を失う。
+    #   ★★キャッシュが消えても復活できるよう、これも鍵つきでしまう（grow.yml 側）。
+    valf = os.path.join(WORK, "val.txt.gz")
+    if os.path.exists(valf):
+        with gzip.open(valf, "rt", encoding="utf-8", errors="ignore") as f:
+            val_text = f.read()
+        print("★物差しは前と同じもの（%.1f 万字）。★だから前の点数と比べられる"
+              % (len(val_text) / 10000), flush=True)
+    else:
+        val_text = (chr(10)).join(held)
+        with gzip.open(valf, "wt", encoding="utf-8", newline=chr(10)) as f:
+            f.write(val_text)
+        print("★物差しを作った（%.1f 万字 / %d 行）。★★これはもう変えない"
+              % (len(val_text) / 10000, len(held)), flush=True)
+
     ids = torch.tensor(vocab.encode(text), dtype=torch.long)
-    cut = int(len(ids) * 0.98)
-    tr, va = ids[:cut], ids[cut:]
+    va = torch.tensor(vocab.encode(val_text), dtype=torch.long)
+    tr = ids
+    # ★物差しが短すぎると測れない。★その時だけ昔のやり方に落とす（★正直に言う）
+    if len(va) < model.ctx * 8:
+        cut = int(len(ids) * 0.98)
+        tr, va = ids[:cut], ids[cut:]
+        print("★★物差しが足りないので、うしろから2%%で測る（★前の点数とは比べない）", flush=True)
+        prev_val = None
 
     # ── ★★★記憶を3つの山に分ける（★短期・中期・長期）
     #   ★動かないもの（法令・Wikipedia）を先に、増えるものを後ろに並べてある。
@@ -618,7 +668,7 @@ def main():
                 "kind": getattr(vocab, "kind", "char"), "arch": ARCH,
                 "itos": getattr(vocab, "itos", None),
                 "layers": len(model.blocks), "d": model.d, "h": model.h,
-                "ctx": model.ctx, "val": val}, ckpt)
+                "ctx": model.ctx, "val": val, "valTag": VAL_TAG}, ckpt)
 
     # ★★★毎回、同じ書き出しで書かせる。★並べれば育ちが見える。
     #   ★出す前に必ず検閲する（★キーワードの網。★learn.py と同じもの）。
@@ -644,7 +694,7 @@ def main():
         ptsize = 0
     hist["runs"].append({
         "at": time.strftime("%Y-%m-%dT%H:%M:%SZ", time.gmtime()),
-        "val": round(val, 4), "prev": round(prev_val, 4) if prev_val else None,
+        "val": round(val, 4), "prev": round(prev_val, 4) if prev_val else None, "valTag": VAL_TAG,
         "layers": len(model.blocks), "params": model.n_params(),
         "chars": len(text), "grew": grew, "rolledBack": rolled,
         "d": model.d, "loops": model.loops, "spread": round(my_spread, 4),

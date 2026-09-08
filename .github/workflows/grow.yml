@@ -8,6 +8,12 @@ name: realu grows
 on:
   schedule:
     - cron: "20 17 * * *"       # ★1日1回（日本時間の深夜2時20分ごろ）
+  # ★★★grow.yml を直して push したら、その場で一度走る。
+  #   ★これが無いと、育て方を直しても**次の深夜まで確かめられない**。
+  #   ★grow.py は入れない（★直すたびに4時間の回が始まってしまう）。
+  push:
+    paths:
+      - ".github/workflows/grow.yml"
   workflow_dispatch:
     inputs:
       steps:
@@ -65,6 +71,41 @@ jobs:
               || echo "★前のわたしはいない。はじめて目を開ける"
           else
             echo "★cache に前のわたしがいた"
+          fi
+
+      # ★★★ごはんが消えていたら、Release から取り戻す（★頭と同じ二重の保険）
+      #   ★これが無かったせいで、法令を **45分**かけて取り直した（2026-09-08 実測）。
+      #   ★キャッシュは10GBが上限で、超えると**黙って**古いものが消える。
+      #     → ★いつか必ずまた消える。★その時に45分ではなく1分で戻れるようにする。
+      - name: ごはんを Release から取り戻す
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          FOODKEY: ${{ secrets.REALU_FOOD_KEY }}
+        run: |
+          mkdir -p work
+          if [ -z "$FOODKEY" ]; then echo "★鍵が無い。取り戻せない"; exit 0; fi
+          if ! gh release view food >/dev/null 2>&1; then
+            echo "★まだ Release にごはんは無い（★はじめての回）"; exit 0
+          fi
+          for n in laws wiki hanrei kokkai web aozora val; do
+            if [ -f "work/$n.txt.gz" ]; then continue; fi
+            if gh release download food -p "$n.enc" -D /tmp 2>/dev/null; then
+              if openssl enc -d -aes-256-cbc -pbkdf2 -in "/tmp/$n.enc" \
+                   -out "work/$n.txt.gz" -pass env:FOODKEY 2>/dev/null; then
+                echo "★$n を取り戻した（$(du -h work/$n.txt.gz | cut -f1)）"
+              else
+                rm -f "work/$n.txt.gz"; echo "★$n は開けなかった"
+              fi
+              rm -f "/tmp/$n.enc"
+            fi
+          done
+          # ★★「どこまで読んだか」の紙。★これが消えると判例も本も**読み直しになる**
+          if gh release download food -p "notes.tgz.enc" -D /tmp 2>/dev/null; then
+            if openssl enc -d -aes-256-cbc -pbkdf2 -in /tmp/notes.tgz.enc \
+                 -out /tmp/notes.tgz -pass env:FOODKEY 2>/dev/null; then
+              tar xzf /tmp/notes.tgz -C work && echo "★どこまで読んだかの紙を取り戻した"
+            fi
+            rm -f /tmp/notes.tgz.enc /tmp/notes.tgz
           fi
 
       # ── ①★ごはんを自分で取りに行く
@@ -125,6 +166,7 @@ jobs:
           [ -z "$FOODKEY" ] && exit 0
           gh release view reading >/dev/null 2>&1 || exit 0
           mkdir -p /tmp/pk && rm -f /tmp/pk/*
+          : > /tmp/ate.txt
           gh release download reading -D /tmp/pk 2>/dev/null || exit 0
           n=0
           for f in /tmp/pk/read-*.enc; do
@@ -133,7 +175,7 @@ jobs:
                  -in "$f" -out /tmp/pk/one.gz -pass env:FOODKEY 2>/dev/null; then
               cat /tmp/pk/one.gz >> work/web.txt.gz
               n=$((n+1))
-              gh release delete-asset reading "$(basename "$f")" -y 2>/dev/null || true
+              basename "$f" >> /tmp/ate.txt   # ★消すのは、しまい終わってから
             fi
             rm -f /tmp/pk/one.gz
           done
@@ -183,7 +225,7 @@ jobs:
                  --title "レアルのごはん（鍵つき）" \
                  --notes "鍵をかけてある。加工したテキストなので、そのままは公開できない。" \
                  --latest=false
-          for n in laws wiki hanrei kokkai web aozora; do
+          for n in laws wiki hanrei kokkai web aozora val; do
             if [ -f "work/$n.txt.gz" ]; then
               openssl enc -aes-256-cbc -pbkdf2 -salt \
                 -in "work/$n.txt.gz" -out "/tmp/$n.enc" -pass env:FOODKEY
@@ -191,7 +233,23 @@ jobs:
               rm -f "/tmp/$n.enc"
             fi
           done
+          # ★★「どこまで読んだか」の紙も一緒に。★これが無いと読み直しになる
+          if ls work/*_next.txt >/dev/null 2>&1; then
+            tar czf /tmp/notes.tgz -C work $(cd work && ls *_next.txt)
+            openssl enc -aes-256-cbc -pbkdf2 -salt \
+              -in /tmp/notes.tgz -out /tmp/notes.tgz.enc -pass env:FOODKEY
+            gh release upload food /tmp/notes.tgz.enc --clobber || true
+            rm -f /tmp/notes.tgz /tmp/notes.tgz.enc
+          fi
           echo "★鍵をかけてしまった"
+          # ★★★ここまで来て**はじめて**、5分ごとの包みを片付ける。
+          #   ★前は「食べた直後」に消していた。★途中で転んだら包みだけ消えて中身が残らない。
+          if [ -s /tmp/ate.txt ]; then
+            while read -r nm; do
+              gh release delete-asset reading "$nm" -y 2>/dev/null || true
+            done < /tmp/ate.txt
+            echo "★食べ終わった包み $(wc -l < /tmp/ate.txt) 個を片付けた"
+          fi
           du -sh work 2>/dev/null || true
 
       # ── ★★★本を読む。★はじめての「物語」。
