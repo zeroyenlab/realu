@@ -118,13 +118,19 @@ def allowed_by_robots(url):
         return False
 
 
-# ★★★規約 ── ★★そのサイトを見る前に、まずそのサイトの規約を読む
+# ★★★規約 ── ★★★わたしは規約を読めない（意味が分からない）。
+#   ★★やっているのは「**置いた人が許した時と、同じページのままか**」の照合だけ。
+#     ①人が規約を読む → ②terms.json に allow と書く ← ★★判断はここ。人がやっている
+#     ③わたしはページを取ってハッシュを比べる → ④変わっていたら止まる
+#   ★「規約を読んでいる」のではない。★できないことを、できるふりをしない。
 _TERMS_OK = {}
 
 
 def terms_ok(host, seen, notes):
-    """★★★このサイトの規約を、★見る前に読む。
-    ★人が読んで allow にした場所だけ。★規約が変わっていたら**自分から止まる**。
+    """★★人が許した場所か確かめる。★★★規約を読んでいるのではない。
+
+    ★意味は分からない。★分かるのは「あの人が許した時と同じページか」だけ。
+    ★変わっていたら止まる（★勝手に「たぶん大丈夫」と判断しない）。
     """
     if host in _TERMS_OK:
         return _TERMS_OK[host]
@@ -152,15 +158,22 @@ def terms_ok(host, seen, notes):
             break
         h = hashlib.sha256(body).hexdigest()
         if st.get("hash") and st["hash"] != h:
-            # ★★★規約が変わった。★勝手に判断しない。★置いた人に聞くまで止まる
-            notes.append("%s ── ★★★規約が変わった。置いた人が読み直すまで、この場所は読まない。" % host)
+            # ★★★規約が変わった。★勝手に判断しない。★置いた人に聞くまで止まる。
+            #   ★どれくらい変わったかだけ伝える（★中身は分からないが、大きさは分かる）
+            old_n = int(st.get("bytes") or 0)
+            diff = ("%+d バイト" % (len(body) - old_n)) if old_n else "大きさ不明"
+            notes.append("%s ── ★★★規約が変わった（%s）。"
+                         "★わたしには意味が分からないので、置いた人が読み直すまで入らない。"
+                         % (host, diff))
             st["changedAt"] = now()
             st["newHash"] = h
+            st["newBytes"] = len(body)
             seen[turl] = st
             ok = False
             break
-        seen[turl] = {"hash": h, "epoch": int(time.time()), "at": now(),
-                      "first": st.get("first") or now(), "approved": approved}
+        seen[turl] = {"hash": h, "bytes": len(body), "epoch": int(time.time()),
+                      "at": now(), "first": st.get("first") or now(),
+                      "approved": approved}
     _TERMS_OK[host] = ok
     return ok
 
