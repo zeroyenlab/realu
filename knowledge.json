@@ -384563,6 +384563,2094 @@
     "url": ""
    },
    "ts": "2026-09-08T09:31:20+00:00"
+  },
+  {
+   "topic": "BP (年代測定)",
+   "text": "Before Present の略に由来し、文字通り「現在から何年前」を表すこともある。",
+   "source": "https://ja.wikipedia.org/wiki/BP_(年代測定)",
+   "genre": "言葉",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T09:35:57+00:00"
+  },
+  {
+   "topic": "BP (年代測定)",
+   "text": "しかし、 14 C年代 では、 1950年 を基点とするなど特別な意味を持つ。",
+   "source": "https://ja.wikipedia.org/wiki/BP_(年代測定)",
+   "genre": "その他",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T09:35:57+00:00"
+  },
+  {
+   "topic": "BP (年代測定)",
+   "text": "BP 1000 のように、BPの後に年数をつけて表す。",
+   "source": "https://ja.wikipedia.org/wiki/BP_(年代測定)",
+   "genre": "その他",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T09:35:57+00:00"
+  },
+  {
+   "topic": "BP (年代測定)",
+   "text": "BC と同様、数字が増えるほど 過去 にさかのぼる。",
+   "source": "https://ja.wikipedia.org/wiki/BP_(年代測定)",
+   "genre": "その他",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T09:35:57+00:00"
+  },
+  {
+   "topic": "BP (年代測定)",
+   "text": "他のBPと区別するために 14 C BP と表すこともある。",
+   "source": "https://ja.wikipedia.org/wiki/BP_(年代測定)",
+   "genre": "その他",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T09:35:57+00:00"
+  },
+  {
+   "topic": "BP (年代測定)",
+   "text": "1950年を基点とするのは、 14 C年代測定法が 1949年 ～1950年に確立されたからである。",
+   "source": "https://ja.wikipedia.org/wiki/BP_(年代測定)",
+   "genre": "その他",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T09:35:57+00:00"
+  },
+  {
+   "topic": "粉体工学",
+   "text": "粒子の直径の小さな物を粉、大きな物を粒として区別することがあり、扱う対象によっては、 粉粒体工学 、 微粒子工学 とも呼ばれる。",
+   "source": "https://ja.wikipedia.org/wiki/粉体工学",
+   "genre": "技術",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T09:35:57+00:00"
+  },
+  {
+   "topic": "粉体工学",
+   "text": "粉体は主に 固体 を細かくしたもので、 化学 工業など工学の様々な分野で用いられている。",
+   "source": "https://ja.wikipedia.org/wiki/粉体工学",
+   "genre": "科学",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T09:35:57+00:00"
+  },
+  {
+   "topic": "粉体工学",
+   "text": "その集合体は 液体 、 気体 、 固体 とは異なる独特の性質があり、生産工程において付着、飛散、閉塞などのトラブルが発生しやすい。",
+   "source": "https://ja.wikipedia.org/wiki/粉体工学",
+   "genre": "技術",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T09:35:57+00:00"
+  },
+  {
+   "topic": "粉体工学",
+   "text": "そのため粉体の機能性や操作性を向上させるための製造方法、操作方法が研究課題となっている。",
+   "source": "https://ja.wikipedia.org/wiki/粉体工学",
+   "genre": "技術",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T09:35:57+00:00"
+  },
+  {
+   "topic": "粉体工学",
+   "text": "粉塵 、 エアロゾル など、粉体の身体に対する有害性や 環境 への影響も重要な問題となっている。",
+   "source": "https://ja.wikipedia.org/wiki/粉体工学",
+   "genre": "技術",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T09:35:57+00:00"
+  },
+  {
+   "topic": "粉体工学",
+   "text": "食品 （ 小麦粉 、 塩 、 砂糖 、 デンプン 、 調味料 など） 化粧品 医薬品 （顆粒・粉薬等） 砂 、 セメント 、 ガラスビーズ セラミックス 原子力発電 の燃料（ 二酸化ウラン 粉末、 MOX 粉末） 研磨材 磁性体 、磁気材料 火薬 顔料 、 塗料 製紙工業 、 ゴム 、 製鉄 また、物質の表面に粉体の微粒子を付着させる技術も、多くの分野に用いられている。",
+   "source": "https://ja.wikipedia.org/wiki/粉体工学",
+   "genre": "技術",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T09:35:57+00:00"
+  },
+  {
+   "topic": "イオン結合",
+   "text": "この結合によって イオン結晶 が形成される。",
+   "source": "https://ja.wikipedia.org/wiki/イオン結合",
+   "genre": "その他",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T09:35:57+00:00"
+  },
+  {
+   "topic": "イオン結合",
+   "text": "共有結合 と対比され、 結合性軌道 が 電気陰性度 の高い方の原子に局在化した極限であると解釈することもできる。",
+   "source": "https://ja.wikipedia.org/wiki/イオン結合",
+   "genre": "技術",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T09:35:57+00:00"
+  },
+  {
+   "topic": "イオン結合",
+   "text": "イオン結合は 金属元素 （主に陽イオン）と 非金属元素 （主に陰イオン）との間で形成されることが多いが、 塩化アンモニウム など、非金属の多原子イオン（ここでは アンモニウムイオン ）が陽イオンとなる場合もある。",
+   "source": "https://ja.wikipedia.org/wiki/イオン結合",
+   "genre": "科学",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T09:35:57+00:00"
+  },
+  {
+   "topic": "イオン結合",
+   "text": "イオン結合によってできた物質は 組成式 で表される。",
+   "source": "https://ja.wikipedia.org/wiki/イオン結合",
+   "genre": "その他",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T09:35:57+00:00"
+  },
+  {
+   "topic": "イオン結合",
+   "text": "第2項はクーロンポテンシャルを表す [ 注釈 1 ] 。",
+   "source": "https://ja.wikipedia.org/wiki/イオン結合",
+   "genre": "その他",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T09:35:57+00:00"
+  },
+  {
+   "topic": "イオン結合",
+   "text": "ただし斥力ポテンシャルは、最近接イオン間相互作用のみを考慮し、それ以外は無視した。",
+   "source": "https://ja.wikipedia.org/wiki/イオン結合",
+   "genre": "その他",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T09:35:57+00:00"
+  },
+  {
+   "topic": "スピード (トランプゲーム)",
+   "text": "「スピード」という名称の通り、上がりまでの速さが競われる。",
+   "source": "https://ja.wikipedia.org/wiki/スピード_(トランプゲーム)",
+   "genre": "その他",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T09:35:57+00:00"
+  },
+  {
+   "topic": "スピード (トランプゲーム)",
+   "text": "よってプレイヤーの判断力が重要となり、また対戦相手の場札を考慮したプレイが可能という特徴を持つゲームでもある。",
+   "source": "https://ja.wikipedia.org/wiki/スピード_(トランプゲーム)",
+   "genre": "その他",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T09:35:57+00:00"
+  },
+  {
+   "topic": "スピード (トランプゲーム)",
+   "text": "次に2人のプレイヤーはそれぞれ一組のカードを シャッフル し、対戦相手に渡す。",
+   "source": "https://ja.wikipedia.org/wiki/スピード_(トランプゲーム)",
+   "genre": "その他",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T09:35:57+00:00"
+  },
+  {
+   "topic": "スピード (トランプゲーム)",
+   "text": "これが手札となり、各プレイヤーは裏向きの状態で保持する。",
+   "source": "https://ja.wikipedia.org/wiki/スピード_(トランプゲーム)",
+   "genre": "その他",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T09:35:57+00:00"
+  },
+  {
+   "topic": "スピード (トランプゲーム)",
+   "text": "そして自身の手札から4枚のカードを引き、表向きに並べてそれぞれの場札とする。",
+   "source": "https://ja.wikipedia.org/wiki/スピード_(トランプゲーム)",
+   "genre": "その他",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T09:35:57+00:00"
+  },
+  {
+   "topic": "スピード (トランプゲーム)",
+   "text": "掛け声とともにゲームが開始され、この際にプレイヤーはそれぞれ1枚のカードを手札から引き、台札として中央に出す。",
+   "source": "https://ja.wikipedia.org/wiki/スピード_(トランプゲーム)",
+   "genre": "その他",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T09:35:57+00:00"
+  },
+  {
+   "topic": "松岡正剛",
+   "text": "東京都 世田谷区 赤堤 にある松岡正剛事務所。",
+   "source": "https://ja.wikipedia.org/wiki/松岡正剛",
+   "genre": "その他",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T09:35:57+00:00"
+  },
+  {
+   "topic": "松岡正剛",
+   "text": "東京大学 客員教授、 帝塚山学院大学 教授を歴任。",
+   "source": "https://ja.wikipedia.org/wiki/松岡正剛",
+   "genre": "その他",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T09:35:57+00:00"
+  },
+  {
+   "topic": "松岡正剛",
+   "text": "各界の研究者と交流し、情報文化の考察を深め、独自の日本文化論も展開する。",
+   "source": "https://ja.wikipedia.org/wiki/松岡正剛",
+   "genre": "技術",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T09:35:57+00:00"
+  },
+  {
+   "topic": "松岡正剛",
+   "text": "3歳の時、父親の仕事の都合で東京府日本橋区 日本橋芳町 に転居。",
+   "source": "https://ja.wikipedia.org/wiki/松岡正剛",
+   "genre": "その他",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T09:35:57+00:00"
+  },
+  {
+   "topic": "松岡正剛",
+   "text": "桂三木助（3代目） が贔屓だった父親に、自宅から歩いて2分ほどの寄席『 人形町末廣 』によく連れていかれた [ 8 ] 。",
+   "source": "https://ja.wikipedia.org/wiki/松岡正剛",
+   "genre": "その他",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T09:35:57+00:00"
+  },
+  {
+   "topic": "松岡正剛",
+   "text": "12歳の時に京都に戻り [ 8 ] 、 朱雀高校 入学。",
+   "source": "https://ja.wikipedia.org/wiki/松岡正剛",
+   "genre": "その他",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T09:35:57+00:00"
+  },
+  {
+   "topic": "Adobe Flash",
+   "text": "古い情報を 更新 する必要があります。",
+   "source": "https://ja.wikipedia.org/wiki/Adobe_Flash_Player",
+   "genre": "技術",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T09:35:57+00:00"
+  },
+  {
+   "topic": "Adobe Flash",
+   "text": "（ 2017年2月 ） 独自研究 が含まれているおそれがあります。",
+   "source": "https://ja.wikipedia.org/wiki/Adobe_Flash_Player",
+   "genre": "その他",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T09:35:57+00:00"
+  },
+  {
+   "topic": "Adobe Flash",
+   "text": "かつてフューチャーウェーブ・ソフトウェアと、それを買収した マクロメディア が開発していた。",
+   "source": "https://ja.wikipedia.org/wiki/Adobe_Flash_Player",
+   "genre": "その他",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T09:35:57+00:00"
+  },
+  {
+   "topic": "Adobe Flash",
+   "text": "再生環境への依存度が低く、ベクターイメージを扱う場合、 ウインドウ サイズを変えても画質が劣化しないという特徴がある。",
+   "source": "https://ja.wikipedia.org/wiki/Adobe_Flash_Player",
+   "genre": "その他",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T09:35:57+00:00"
+  },
+  {
+   "topic": "Adobe Flash",
+   "text": "ラスターイメージ を扱うこともでき、この場合 ビットマップ スムージングで画質の劣化を目立たなくすることができる機能がある。",
+   "source": "https://ja.wikipedia.org/wiki/Adobe_Flash_Player",
+   "genre": "その他",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T09:35:57+00:00"
+  },
+  {
+   "topic": "Adobe Flash",
+   "text": "Flash再生ソフトとしては主にFlash Player（フラッシュ・プレイヤー）が使われる。",
+   "source": "https://ja.wikipedia.org/wiki/Adobe_Flash_Player",
+   "genre": "その他",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T09:35:57+00:00"
+  },
+  {
+   "topic": "藻類",
+   "text": "すなわち、 真正細菌 である シアノバクテリア （藍藻）から、 真核生物 で 単細胞生物 であるもの（ 珪藻 、 黄緑藻 、 渦鞭毛藻 など）及び 多細胞生物 である 海藻 類（ 紅藻 、 褐藻 、 緑藻 ）など、 進化 的に全く異なるグループを含む。",
+   "source": "https://ja.wikipedia.org/wiki/藻類",
+   "genre": "生き物",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T09:35:57+00:00"
+  },
+  {
+   "topic": "藻類",
+   "text": "酸素非発生型光合成 を行う 硫黄細菌 などの 光合成細菌 は藻類に含まれない。",
+   "source": "https://ja.wikipedia.org/wiki/藻類",
+   "genre": "その他",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T09:35:57+00:00"
+  },
+  {
+   "topic": "藻類",
+   "text": "かつては下等な 植物 として 単系統 を成すものとされてきたが、現在では 多系統 と考えられている。",
+   "source": "https://ja.wikipedia.org/wiki/藻類",
+   "genre": "生き物",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T09:35:57+00:00"
+  },
+  {
+   "topic": "藻類",
+   "text": "従って「藻類」という呼称は光合成を行うという共通点を持つだけの多様な分類群の総称であり、それ以上の意味を持たない。",
+   "source": "https://ja.wikipedia.org/wiki/藻類",
+   "genre": "その他",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T09:35:57+00:00"
+  },
+  {
+   "topic": "藻類",
+   "text": "つまり種子植物、シダ植物、コケ植物、藻類、菌類全てが植物として扱われた。",
+   "source": "https://ja.wikipedia.org/wiki/藻類",
+   "genre": "生き物",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T09:35:57+00:00"
+  },
+  {
+   "topic": "藻類",
+   "text": "当初は種子植物を中心に分類が行われていた為、 葉 や 根 、 花 といった高等植物が備える器官を持たない植物は、すべて 隠花植物 （cryptogamic plants）としてまとめられた。",
+   "source": "https://ja.wikipedia.org/wiki/藻類",
+   "genre": "生き物",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T09:35:57+00:00"
+  },
+  {
+   "topic": "トルココーヒー",
+   "text": "2013年 12月5日に、 ユネスコ の 無形文化遺産 にトルココーヒーの文化と伝統が登録された [ 3 ] 。",
+   "source": "https://ja.wikipedia.org/wiki/トルココーヒー",
+   "genre": "文化",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T09:35:57+00:00"
+  },
+  {
+   "topic": "トルココーヒー",
+   "text": "そのため、12月5日は世界トルココーヒーの日とされた [ 4 ] 。",
+   "source": "https://ja.wikipedia.org/wiki/トルココーヒー",
+   "genre": "その他",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T09:35:57+00:00"
+  },
+  {
+   "topic": "トルココーヒー",
+   "text": "なお、「トルココーヒー」という名称は 和製英語 である [ 3 ] 。",
+   "source": "https://ja.wikipedia.org/wiki/トルココーヒー",
+   "genre": "その他",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T09:35:57+00:00"
+  },
+  {
+   "topic": "トルココーヒー",
+   "text": "まず イスタンブール のタフタカレ地区でコーヒーが飲まれるようになり、その後 ヨーロッパ に広まる。",
+   "source": "https://ja.wikipedia.org/wiki/トルココーヒー",
+   "genre": "その他",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T09:35:57+00:00"
+  },
+  {
+   "topic": "トルココーヒー",
+   "text": "この鍋の深さはコーヒーの粉が沈むのに十分なほどであればよい。",
+   "source": "https://ja.wikipedia.org/wiki/トルココーヒー",
+   "genre": "その他",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T09:35:57+00:00"
+  },
+  {
+   "topic": "トルココーヒー",
+   "text": "ジェズヴェは銅でできたヒシャク型で、木の把手がついている。",
+   "source": "https://ja.wikipedia.org/wiki/トルココーヒー",
+   "genre": "その他",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T09:35:57+00:00"
+  },
+  {
+   "topic": "4月23日",
+   "text": "できごと ウィリアム・シェイクスピア 『 ウィンザーの陽気な女房たち 』初演（1597年）。",
+   "source": "https://ja.wikipedia.org/wiki/4月23日",
+   "genre": "その他",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T09:35:57+00:00"
+  },
+  {
+   "topic": "4月23日",
+   "text": "画像は ヨハン・ハインリヒ・フュースリー 画『洗濯籠のフォルスタッフ』（1792年）。",
+   "source": "https://ja.wikipedia.org/wiki/4月23日",
+   "genre": "その他",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T09:35:57+00:00"
+  },
+  {
+   "topic": "4月23日",
+   "text": "871年 - ウェセックス王 （ 英語版 ） エゼルウルフ の息子 アルフレッド が 西サクソン人の王 （ 英語版 ） に就任。",
+   "source": "https://ja.wikipedia.org/wiki/4月23日",
+   "genre": "その他",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T09:35:57+00:00"
+  },
+  {
+   "topic": "4月23日",
+   "text": "のちのアルフレッド大王である。",
+   "source": "https://ja.wikipedia.org/wiki/4月23日",
+   "genre": "その他",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T09:35:57+00:00"
+  },
+  {
+   "topic": "4月23日",
+   "text": "1516年 - バイエルン公 ヴィルヘルム4世 が ビール純粋令 を制定 [ 1 ] 。",
+   "source": "https://ja.wikipedia.org/wiki/4月23日",
+   "genre": "その他",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T09:35:57+00:00"
+  },
+  {
+   "topic": "4月23日",
+   "text": "1597年 - ウィリアム・シェイクスピア 『 ウィンザーの陽気な女房たち 』初演。",
+   "source": "https://ja.wikipedia.org/wiki/4月23日",
+   "genre": "その他",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T09:35:57+00:00"
+  },
+  {
+   "topic": "世俗主義",
+   "text": "俗権主義 （ぞくけんしゅぎ）とも呼ばれる [ 1 ] 。",
+   "source": "https://ja.wikipedia.org/wiki/世俗主義",
+   "genre": "その他",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T09:35:58+00:00"
+  },
+  {
+   "topic": "世俗主義",
+   "text": "政教分離原則 （Institutional Separation） 国家 の 政権 および 政策 または 政府機関 が、特定の 宗教 権威 および 権力 （ 教権 ）に 支配 や干渉されず、それらから独立した世俗権力（俗権）とその原則によって支配されていなければならないという主張や立場。",
+   "source": "https://ja.wikipedia.org/wiki/世俗主義",
+   "genre": "社会",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T09:35:58+00:00"
+  },
+  {
+   "topic": "世俗主義",
+   "text": "あるいは宗教に特権的地位や財政上の優遇を与えないこと。",
+   "source": "https://ja.wikipedia.org/wiki/世俗主義",
+   "genre": "文化",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T09:35:58+00:00"
+  },
+  {
+   "topic": "世俗主義",
+   "text": "信教の自由 （freedom of belief） 個人が宗教的規則や 宗教教育 から自由でいる権利、支配者による宗教の強制からの自由。",
+   "source": "https://ja.wikipedia.org/wiki/世俗主義",
+   "genre": "法",
+   "binding": true,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T09:35:58+00:00"
+  },
+  {
+   "topic": "世俗主義",
+   "text": "宗教差別 （ 英語版 ） の禁止。",
+   "source": "https://ja.wikipedia.org/wiki/世俗主義",
+   "genre": "文化",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T09:35:58+00:00"
+  },
+  {
+   "topic": "世俗主義",
+   "text": "世俗主義を支持する目的は多様である。",
+   "source": "https://ja.wikipedia.org/wiki/世俗主義",
+   "genre": "その他",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T09:35:58+00:00"
+  },
+  {
+   "topic": "魔法騎士レイアース",
+   "text": "また、それを 原作 とした テレビアニメ 、 ゲーム 、 OVA などの作品である。",
+   "source": "https://ja.wikipedia.org/wiki/魔法騎士レイアース",
+   "genre": "その他",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T09:35:58+00:00"
+  },
+  {
+   "topic": "魔法騎士レイアース",
+   "text": "概要 1993年11月から1996年4月まで『 なかよし 』で連載された ファンタジー漫画 作品。",
+   "source": "https://ja.wikipedia.org/wiki/魔法騎士レイアース",
+   "genre": "その他",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T09:35:58+00:00"
+  },
+  {
+   "topic": "魔法騎士レイアース",
+   "text": "また、1994年から1995年にかけて アニメ 化され、1997年には OVA 化もされた。",
+   "source": "https://ja.wikipedia.org/wiki/魔法騎士レイアース",
+   "genre": "その他",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T09:35:58+00:00"
+  },
+  {
+   "topic": "魔法騎士レイアース",
+   "text": "基本的に典型的な剣と魔法といった ファンタジー ロールプレイングゲーム の世界をモチーフとしているが、単純な勧善懲悪ものではなく、シリアスで重いテーマを内包している。",
+   "source": "https://ja.wikipedia.org/wiki/魔法騎士レイアース",
+   "genre": "その他",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T09:35:58+00:00"
+  },
+  {
+   "topic": "魔法騎士レイアース",
+   "text": "また、作中で登場する固有名詞の多くは、CLAMPの「カタカナの名前は覚えにくいので、どこかで聞いたことのある名前がいい」という理由から [ 1 ] 、 自動車 関連の固有名称が用いられている。",
+   "source": "https://ja.wikipedia.org/wiki/魔法騎士レイアース",
+   "genre": "その他",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T09:35:58+00:00"
+  },
+  {
+   "topic": "魔法騎士レイアース",
+   "text": "あらすじ 以下は漫画版に準ずる。",
+   "source": "https://ja.wikipedia.org/wiki/魔法騎士レイアース",
+   "genre": "その他",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T09:35:58+00:00"
+  },
+  {
+   "topic": "岸辺露伴 ルーヴルへ行く",
+   "text": "この漫画を原作とした実写映画については「 岸辺露伴 ルーヴルへ行く (映画) 」をご覧ください。",
+   "source": "https://ja.wikipedia.org/wiki/岸辺露伴_ルーヴルへ行く",
+   "genre": "その他",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T09:35:58+00:00"
+  },
+  {
+   "topic": "岸辺露伴 ルーヴルへ行く",
+   "text": "荒木飛呂彦の初のフルカラー漫画作品である。",
+   "source": "https://ja.wikipedia.org/wiki/岸辺露伴_ルーヴルへ行く",
+   "genre": "その他",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T09:35:58+00:00"
+  },
+  {
+   "topic": "岸辺露伴 ルーヴルへ行く",
+   "text": "構成を3分割すると、日本が舞台の前篇、パリの中篇、ルーヴル美術館地下の後篇となり、段階的に色合いが遷移する。",
+   "source": "https://ja.wikipedia.org/wiki/岸辺露伴_ルーヴルへ行く",
+   "genre": "その他",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T09:35:58+00:00"
+  },
+  {
+   "topic": "岸辺露伴 ルーヴルへ行く",
+   "text": "前篇は和風旅館で過去なのでセピア、中篇のパリはピンク、地下ではブルーを基調に描かれる [ 6 ] 。",
+   "source": "https://ja.wikipedia.org/wiki/岸辺露伴_ルーヴルへ行く",
+   "genre": "その他",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T09:35:58+00:00"
+  },
+  {
+   "topic": "岸辺露伴 ルーヴルへ行く",
+   "text": "荒木は、従来の色使いで全編構成すると読み手が疲れると判断し、 エンキ・ビラル や ニコラ・ド・クレシー 、 マルク＝アントワーヌ・マチュー などの作品を参考にフルカラー用の色彩感覚を学んだ [ 6 ] 。",
+   "source": "https://ja.wikipedia.org/wiki/岸辺露伴_ルーヴルへ行く",
+   "genre": "その他",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T09:35:58+00:00"
+  },
+  {
+   "topic": "岸辺露伴 ルーヴルへ行く",
+   "text": "物語は短編作品集『 岸辺露伴は動かない 』同様、漫画家の 岸辺露伴 を主人公として展開する。",
+   "source": "https://ja.wikipedia.org/wiki/岸辺露伴_ルーヴルへ行く",
+   "genre": "その他",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T09:35:58+00:00"
+  },
+  {
+   "topic": "来生えつこ",
+   "text": "本名、来生悦子 [ 1 ] 。",
+   "source": "https://ja.wikipedia.org/wiki/来生えつこ",
+   "genre": "その他",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T09:35:58+00:00"
+  },
+  {
+   "topic": "来生えつこ",
+   "text": "都立豊島高等学校 、 女子美術短期大学 卒業。",
+   "source": "https://ja.wikipedia.org/wiki/来生えつこ",
+   "genre": "その他",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T09:35:58+00:00"
+  },
+  {
+   "topic": "来生えつこ",
+   "text": "弟とのコンビは多くのヒット曲を生み、 ニューミュージック 界を代表するゴールデン・コンビの一つとして知られる。",
+   "source": "https://ja.wikipedia.org/wiki/来生えつこ",
+   "genre": "その他",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T09:35:58+00:00"
+  },
+  {
+   "topic": "来生えつこ",
+   "text": "小説家 、 エッセイスト としても活動している。",
+   "source": "https://ja.wikipedia.org/wiki/来生えつこ",
+   "genre": "その他",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T09:35:58+00:00"
+  },
+  {
+   "topic": "来生えつこ",
+   "text": "『わたくし的生活』 講談社 、1991年。",
+   "source": "https://ja.wikipedia.org/wiki/来生えつこ",
+   "genre": "その他",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T09:35:58+00:00"
+  },
+  {
+   "topic": "来生えつこ",
+   "text": "『いつでも猫がそばにいる』 小池書院 、1998年。",
+   "source": "https://ja.wikipedia.org/wiki/来生えつこ",
+   "genre": "その他",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T09:35:58+00:00"
+  },
+  {
+   "topic": "泊村",
+   "text": "北海道で唯一の 原子力発電所 があるため、村の財政は豊かである。",
+   "source": "https://ja.wikipedia.org/wiki/泊村",
+   "genre": "その他",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T09:35:58+00:00"
+  },
+  {
+   "topic": "泊村",
+   "text": "村名の由来は、中心地の入り江を指す、 アイヌ語 の「モイレ・トマリ（静かな・泊地）」である [ 1 ] 。",
+   "source": "https://ja.wikipedia.org/wiki/泊村",
+   "genre": "その他",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T09:35:58+00:00"
+  },
+  {
+   "topic": "泊村",
+   "text": "1856年 （ 安政 2年） 茅沼炭鉱が発見される。",
+   "source": "https://ja.wikipedia.org/wiki/泊村",
+   "genre": "その他",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T09:35:58+00:00"
+  },
+  {
+   "topic": "泊村",
+   "text": "1864年 （ 元治 元年） 箱館奉行 所はアメリカ人技師を招き、茅沼炭鉱の採掘を開始した。",
+   "source": "https://ja.wikipedia.org/wiki/泊村",
+   "genre": "その他",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T09:35:58+00:00"
+  },
+  {
+   "topic": "泊村",
+   "text": "1909年 （ 明治 42年） 泊村・盃村・興志内村・茅沼村・堀株村が合併して、二級町村 泊村 となる。",
+   "source": "https://ja.wikipedia.org/wiki/泊村",
+   "genre": "その他",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T09:35:58+00:00"
+  },
+  {
+   "topic": "泊村",
+   "text": "1923年 （ 大正 12年） 一級町村制施行。",
+   "source": "https://ja.wikipedia.org/wiki/泊村",
+   "genre": "その他",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T09:35:58+00:00"
+  },
+  {
+   "topic": "長谷川岳",
+   "text": "自由民主党 所属の 参議院議員 （3期）。",
+   "source": "https://ja.wikipedia.org/wiki/長谷川岳",
+   "genre": "その他",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T09:35:58+00:00"
+  },
+  {
+   "topic": "長谷川岳",
+   "text": "父親は 社会保険労務士 、 行政書士 。",
+   "source": "https://ja.wikipedia.org/wiki/長谷川岳",
+   "genre": "社会",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T09:35:58+00:00"
+  },
+  {
+   "topic": "長谷川岳",
+   "text": "1989年 （平成元年） 愛知県立千種高等学校 卒業、 1990年 （平成2年） 北海道大学経済学部 経営学科 入学。",
+   "source": "https://ja.wikipedia.org/wiki/長谷川岳",
+   "genre": "生き物",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T09:35:58+00:00"
+  },
+  {
+   "topic": "長谷川岳",
+   "text": "大学2年で母親ががんを患い、兄が医師として勤める 高知県 の病院へ入院した。",
+   "source": "https://ja.wikipedia.org/wiki/長谷川岳",
+   "genre": "その他",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T09:35:58+00:00"
+  },
+  {
+   "topic": "長谷川岳",
+   "text": "高知県の「 よさこい 祭り」と北海道の「 ソーラン 節」を融合させた「YOSAKOIソーラン祭り」を企画し、道内16の大学と短大の学生実行委員150名とともに 1992年 （平成4年）6月に第1回を開催した。",
+   "source": "https://ja.wikipedia.org/wiki/長谷川岳",
+   "genre": "文化",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T09:35:58+00:00"
+  },
+  {
+   "topic": "長谷川岳",
+   "text": "1994年 （平成6年）に北大を卒業する [ 8 ] 。",
+   "source": "https://ja.wikipedia.org/wiki/長谷川岳",
+   "genre": "その他",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T09:35:58+00:00"
+  },
+  {
+   "topic": "札幌農学校",
+   "text": "同名のクッキーについては「 きのとや 」をご覧ください。",
+   "source": "https://ja.wikipedia.org/wiki/札幌農学校",
+   "genre": "その他",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T09:35:58+00:00"
+  },
+  {
+   "topic": "札幌農学校",
+   "text": "（ 2018年8月 ） 1880年頃の札幌農学校の校舎、一番手前が寄宿舎、その奥が復習講堂（1Fは食堂）、一番奥が化学講堂 札幌農学校 （さっぽろのうがっこう、英語: Sapporo Agricultural College）は、 明治 初期に 北海道 札幌 に置かれた高等教育機関であり、現在の 北海道大学 の前身である。",
+   "source": "https://ja.wikipedia.org/wiki/札幌農学校",
+   "genre": "科学",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T09:35:58+00:00"
+  },
+  {
+   "topic": "札幌農学校",
+   "text": "初代教頭 ウィリアム・スミス・クラーク が学長を務めた マサチューセッツ農科大学 （Massachusetts Agricultural College）をモデルとして、農学に限らず理学、工学、英文学等幅広い教育を行い、北海道のみならず日本の近代化を支える人材を輩出した [ 1 ] 。",
+   "source": "https://ja.wikipedia.org/wiki/札幌農学校",
+   "genre": "技術",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T09:35:58+00:00"
+  },
+  {
+   "topic": "札幌農学校",
+   "text": "開校は 旧東京大学 より1年早い1876年であり、日本で最初期の 学位 授与機関（事実上の大学）として設立された [ 2 ] 。",
+   "source": "https://ja.wikipedia.org/wiki/札幌農学校",
+   "genre": "その他",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T09:35:58+00:00"
+  },
+  {
+   "topic": "札幌農学校",
+   "text": "札幌農学校は札幌、ひいては北海道の開拓の歴史と密接に繋がっており札幌の発展に伴って規模も拡大し、 東北帝国大学 農科大学、北海道 帝国大学 、そして現在の 北海道大学 へと発展した。",
+   "source": "https://ja.wikipedia.org/wiki/札幌農学校",
+   "genre": "歴史",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T09:35:58+00:00"
+  },
+  {
+   "topic": "札幌農学校",
+   "text": "札幌農学校時代の建造物は、現在でも北海道大学構内及び 同大学植物園 に数多く残されている（後述）。",
+   "source": "https://ja.wikipedia.org/wiki/札幌農学校",
+   "genre": "生き物",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T09:35:58+00:00"
+  },
+  {
+   "topic": "盛岡市",
+   "text": "1889年 （明治22年） 市制 施行。",
+   "source": "https://ja.wikipedia.org/wiki/盛岡市",
+   "genre": "その他",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T09:35:58+00:00"
+  },
+  {
+   "topic": "盛岡市",
+   "text": "安土桃山時代 に勢力を広げた 南部氏 が 盛岡城 を築いて以後、 城下町 として発達。",
+   "source": "https://ja.wikipedia.org/wiki/盛岡市",
+   "genre": "歴史",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T09:35:58+00:00"
+  },
+  {
+   "topic": "盛岡市",
+   "text": "明治以後は岩手県の県庁所在地となった。",
+   "source": "https://ja.wikipedia.org/wiki/盛岡市",
+   "genre": "その他",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T09:35:58+00:00"
+  },
+  {
+   "topic": "盛岡市",
+   "text": "岩手県内最大の都市でもあり、岩手県の政治、経済、交通の中心都市、人口は27万人であり、岩手県の経済・文化をリードするポジションにある。",
+   "source": "https://ja.wikipedia.org/wiki/盛岡市",
+   "genre": "社会",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T09:35:58+00:00"
+  },
+  {
+   "topic": "盛岡市",
+   "text": "市内中心部で主流 北上川 に 雫石川 、 中津川 が合流する。",
+   "source": "https://ja.wikipedia.org/wiki/盛岡市",
+   "genre": "その他",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T09:35:58+00:00"
+  },
+  {
+   "topic": "盛岡市",
+   "text": "中心市街地からは 奥羽山脈 に属する 岩手山 （北西）、 駒ケ岳 （西） 北上高地 に属する 早池峰山 （東）のほか、独立峰の 姫神山 （北）、 南昌山 ・ 東根山 （南）などを望み、これらは市域の内外にありながら総じて街のランドマークとなっている。",
+   "source": "https://ja.wikipedia.org/wiki/盛岡市",
+   "genre": "その他",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T09:35:58+00:00"
+  },
+  {
+   "topic": "5月9日",
+   "text": "できごと 米墨戦争 、 レサカ・デ・ラ・パルマの戦い (1846)。",
+   "source": "https://ja.wikipedia.org/wiki/5月9日",
+   "genre": "歴史",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T09:35:58+00:00"
+  },
+  {
+   "topic": "5月9日",
+   "text": "オーストラリア国会議事堂竣工(1988)。",
+   "source": "https://ja.wikipedia.org/wiki/5月9日",
+   "genre": "その他",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T09:35:58+00:00"
+  },
+  {
+   "topic": "5月9日",
+   "text": "工学実験探査機 はやぶさ 打ち上げ(2003)。",
+   "source": "https://ja.wikipedia.org/wiki/5月9日",
+   "genre": "科学",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T09:35:58+00:00"
+  },
+  {
+   "topic": "5月9日",
+   "text": "1450年 - ティムール朝 君主 アブドゥッラティーフ が暗殺される。",
+   "source": "https://ja.wikipedia.org/wiki/5月9日",
+   "genre": "その他",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T09:35:58+00:00"
+  },
+  {
+   "topic": "5月9日",
+   "text": "1742年 （ 寛保 2年 4月6日 ） - 江戸幕府 の成文法「 公事方御定書 」が完成。",
+   "source": "https://ja.wikipedia.org/wiki/5月9日",
+   "genre": "言葉",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T09:35:58+00:00"
+  },
+  {
+   "topic": "5月9日",
+   "text": "1846年 - 米墨戦争 : レサカ・デ・ラ・パルマの戦い 。",
+   "source": "https://ja.wikipedia.org/wiki/5月9日",
+   "genre": "歴史",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T09:35:58+00:00"
+  },
+  {
+   "topic": "保育所",
+   "text": "イギリスやアメリカなどの就学前児童の教育施設については「 保育学校 」をご覧ください。",
+   "source": "https://ja.wikipedia.org/wiki/保育所",
+   "genre": "社会",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T09:35:58+00:00"
+  },
+  {
+   "topic": "保育所",
+   "text": "日本では、 児童福祉法 第7条に規定される「 児童福祉施設 」となっている。",
+   "source": "https://ja.wikipedia.org/wiki/保育所",
+   "genre": "その他",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T09:35:58+00:00"
+  },
+  {
+   "topic": "保育所",
+   "text": "本項では、日本の保育所について解説する。",
+   "source": "https://ja.wikipedia.org/wiki/保育所",
+   "genre": "その他",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T09:35:58+00:00"
+  },
+  {
+   "topic": "保育所",
+   "text": "施設名を「○○ 保育園 」とする場合も多いが、あくまでも「保育園」は通称であり、同法上の名称は「 保育所 」である [ 3 ] 。",
+   "source": "https://ja.wikipedia.org/wiki/保育所",
+   "genre": "その他",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T09:35:58+00:00"
+  },
+  {
+   "topic": "保育所",
+   "text": "なお、市区町村の 条例 で施設名を○○保育園と定める例がある。",
+   "source": "https://ja.wikipedia.org/wiki/保育所",
+   "genre": "法",
+   "binding": true,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T09:35:58+00:00"
+  },
+  {
+   "topic": "保育所",
+   "text": "ここでいう「養護」とは、子どもの生命の保持及び情緒の安定を図るために 保育士 等が行う援助や関わりであり、「教育」とは、子どもが健やかに成長し、その活動がより豊かに展開されるための発達の援助である。",
+   "source": "https://ja.wikipedia.org/wiki/保育所",
+   "genre": "生き物",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T09:35:58+00:00"
+  },
+  {
+   "topic": "樺太",
+   "text": "旧ソ連・ロシア統治下の歴史については「 サハリン州 」をご覧ください。",
+   "source": "https://ja.wikipedia.org/wiki/樺太",
+   "genre": "歴史",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T09:35:58+00:00"
+  },
+  {
+   "topic": "樺太",
+   "text": "「 サハリン島 」はこの項目へ 転送 されています。",
+   "source": "https://ja.wikipedia.org/wiki/樺太",
+   "genre": "その他",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T09:35:58+00:00"
+  },
+  {
+   "topic": "樺太",
+   "text": "アントン・チェーホフの著作については「 サハリン島 (ルポルタージュ) 」をご覧ください。",
+   "source": "https://ja.wikipedia.org/wiki/樺太",
+   "genre": "その他",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T09:35:58+00:00"
+  },
+  {
+   "topic": "樺太",
+   "text": "南北約948 km、東西約160 kmで南北に細長く、面積は約76,400 km 2 で、 北海道 （78,073 km 2 ）よりやや小さい。",
+   "source": "https://ja.wikipedia.org/wiki/樺太",
+   "genre": "その他",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T09:35:58+00:00"
+  },
+  {
+   "topic": "樺太",
+   "text": "日本が実効支配していた頃は樺太という名称以外では サガレン が一般的に用いられていた。",
+   "source": "https://ja.wikipedia.org/wiki/樺太",
+   "genre": "その他",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T09:35:58+00:00"
+  },
+  {
+   "topic": "樺太",
+   "text": "樺太は、北部と南部でそれぞれ異なる沿革を経たため、ここでは 北緯 50度線 以北を「 北樺太 」（または「北 サハリン 」）、以南を「 南樺太 」と表記する。",
+   "source": "https://ja.wikipedia.org/wiki/樺太",
+   "genre": "言葉",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T09:35:58+00:00"
+  },
+  {
+   "topic": "郡区町村編制法",
+   "text": "従前の 大区小区制 が地方の実情に合わず不評であったために見直しが必要となったことや、 自由民権運動 の高まりにより地方政治への住民の参加を認める必要性が出てきたこと [ 1 ] から導入された。",
+   "source": "https://ja.wikipedia.org/wiki/郡区町村編制法",
+   "genre": "社会",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T09:35:58+00:00"
+  },
+  {
+   "topic": "郡区町村編制法",
+   "text": "旧来の郡町村制に戻すことで人民の便宜を図ると同時に、戸長を民選とすることにより地方に一定の自治を認めた一方で、 官選 である 郡長 ・区長が戸長の上に位置し、また郡長・区長が同じく官選である府県知事の指揮下に置かれ、その府県知事を 内務省 が指揮することで、旧来からの地方共同体である「 部落 」の解体を行い 中央集権 体制を作ろうとした。",
+   "source": "https://ja.wikipedia.org/wiki/郡区町村編制法",
+   "genre": "その他",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T09:35:58+00:00"
+  },
+  {
+   "topic": "郡区町村編制法",
+   "text": "しかし後者の目的については、地方における部落単位でのまとまりが強く、その解体を達成することはできなかった。",
+   "source": "https://ja.wikipedia.org/wiki/郡区町村編制法",
+   "genre": "その他",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T09:35:58+00:00"
+  },
+  {
+   "topic": "郡区町村編制法",
+   "text": "各府県では明治21年（ 1888年 ）4月17日に制定された 市制 ・ 町村制 および明治23年（ 1890年 ）5月17日に制定された 府県制 ・ 郡制 により（具体的には郡制附則の規定により同法施行時に）、 北海道庁 では明治30年（ 1897年 ）5月29日に制定された 北海道区制 により、明治33年（ 1900年 ）4月1日までに順次失効した。",
+   "source": "https://ja.wikipedia.org/wiki/郡区町村編制法",
+   "genre": "その他",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T09:35:58+00:00"
+  },
+  {
+   "topic": "郡区町村編制法",
+   "text": "明治13年（ 1880年 ）の太政官布告第14号により、3条が追加されて全9条となった。",
+   "source": "https://ja.wikipedia.org/wiki/郡区町村編制法",
+   "genre": "その他",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T09:35:58+00:00"
+  },
+  {
+   "topic": "郡区町村編制法",
+   "text": "従来の大区小区制を廃して、郡区町村を置くことを定めた（第1条）。",
+   "source": "https://ja.wikipedia.org/wiki/郡区町村編制法",
+   "genre": "その他",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T09:35:58+00:00"
+  },
+  {
+   "topic": "岩内町",
+   "text": "港湾施設に面して岩内駅（1985年廃止）が見える。",
+   "source": "https://ja.wikipedia.org/wiki/岩内町",
+   "genre": "その他",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T09:35:58+00:00"
+  },
+  {
+   "topic": "岩内町",
+   "text": "1976年撮影の7枚を合成作成。",
+   "source": "https://ja.wikipedia.org/wiki/岩内町",
+   "genre": "その他",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T09:35:58+00:00"
+  },
+  {
+   "topic": "岩内町",
+   "text": "国土交通省 国土画像情報（カラー空中写真）（現・ 地図・空中写真閲覧サービス ）の空中写真を基に作成 。",
+   "source": "https://ja.wikipedia.org/wiki/岩内町",
+   "genre": "技術",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T09:35:58+00:00"
+  },
+  {
+   "topic": "岩内町",
+   "text": "岩内町 （いわないちょう）は、 北海道 後志総合振興局 管内にある 町 。",
+   "source": "https://ja.wikipedia.org/wiki/岩内町",
+   "genre": "その他",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T09:35:58+00:00"
+  },
+  {
+   "topic": "岩内町",
+   "text": "旧岩内町と 島野村 の合併により、 1955年 （昭和30年）4月1日に誕生した町である [ 1 ] 。",
+   "source": "https://ja.wikipedia.org/wiki/岩内町",
+   "genre": "その他",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T09:35:58+00:00"
+  },
+  {
+   "topic": "岩内町",
+   "text": "雷電温泉 の付近は ニセコ積丹小樽海岸国定公園 に指定されている。",
+   "source": "https://ja.wikipedia.org/wiki/岩内町",
+   "genre": "その他",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T09:35:58+00:00"
+  },
+  {
+   "topic": "ガシャポン",
+   "text": "そのためかグループ会社の バンダイナムコエンターテインメント も、一般的によく使われるゲームのいわゆるガチャ（ アイテム課金 ）のことを「ガシャ」と呼称している。",
+   "source": "https://ja.wikipedia.org/wiki/ガシャポン",
+   "genre": "その他",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T09:35:58+00:00"
+  },
+  {
+   "topic": "ガシャポン",
+   "text": "「ガ チ ャ」と「ガチャンコステーション」は株式会社 タカラトミーアーツ が登録（ 第4106448 ほか・ 4763676号 〈権利消滅〉）している。",
+   "source": "https://ja.wikipedia.org/wiki/ガシャポン",
+   "genre": "法",
+   "binding": true,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T09:35:58+00:00"
+  },
+  {
+   "topic": "ガシャポン",
+   "text": "バンダイのカプセルトイ市場参入当初から「ガシャポン」だったのではなく、商標登録以前には「 SDガンダムワールド ガチャポン戦士 」など、バンダイの商品でも「ガチャポン」表記例が見られた。",
+   "source": "https://ja.wikipedia.org/wiki/ガシャポン",
+   "genre": "言葉",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T09:35:58+00:00"
+  },
+  {
+   "topic": "ガシャポン",
+   "text": "バンダイのガシャポンに限らず、他社製のガチャポンを含めたカプセルトイは、 駄菓子屋 や コンビニエンスストア 、 スーパーマーケット 、 レンタルビデオ 店、 アミューズメント 施設、 地下鉄 の一部路線内通路などに設置されており、場所によっては一箇所に複数台の販売機器が置かれている場合が多く、 2000年代 以降になるとカプセルトイ 専門店 も登場している。",
+   "source": "https://ja.wikipedia.org/wiki/ガシャポン",
+   "genre": "その他",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T09:35:58+00:00"
+  },
+  {
+   "topic": "ガシャポン",
+   "text": "また、多くの キャラクター版権 を持っているバンダイは、映画館で上映される作品と連動する発売タイトルをリリースし、劇場（映画館）に置かれたカプセル筐体で先行販売されることもある。",
+   "source": "https://ja.wikipedia.org/wiki/ガシャポン",
+   "genre": "その他",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T09:35:58+00:00"
+  },
+  {
+   "topic": "ガシャポン",
+   "text": "東京スカイツリー や各地に立つガンダム立像併設の ガンダムベース などのランドマークや、 ちゃお スタイルショップ、戦国甲冑を取り扱うグッズショップ専売タイトルなども存在する。",
+   "source": "https://ja.wikipedia.org/wiki/ガシャポン",
+   "genre": "その他",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T09:35:58+00:00"
+  },
+  {
+   "topic": "竹取物語",
+   "text": "かぐや姫を籠に入れて育てる翁夫妻。",
+   "source": "https://ja.wikipedia.org/wiki/竹取物語",
+   "genre": "その他",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T09:35:58+00:00"
+  },
+  {
+   "topic": "竹取物語",
+   "text": "17世紀末（江戸時代） メトロポリタン美術館 蔵。",
+   "source": "https://ja.wikipedia.org/wiki/竹取物語",
+   "genre": "歴史",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T09:35:58+00:00"
+  },
+  {
+   "topic": "竹取物語",
+   "text": "ポータル 文学 『 竹取物語 』（たけとりものがたり）は、 平安時代 前期に成立した 日本 の 物語 。",
+   "source": "https://ja.wikipedia.org/wiki/竹取物語",
+   "genre": "歴史",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T09:35:58+00:00"
+  },
+  {
+   "topic": "竹取物語",
+   "text": "『 源氏物語 』に「 物語の出で来はじめの祖 （おや） なる竹取の翁 」 [ 4 ] とあるように、 日本最古 の物語といわれる。",
+   "source": "https://ja.wikipedia.org/wiki/竹取物語",
+   "genre": "その他",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T09:35:58+00:00"
+  },
+  {
+   "topic": "竹取物語",
+   "text": "9世紀 後半から 10世紀 前半頃に成立したとされ、 かな によって書かれた最初期の物語の一つである。",
+   "source": "https://ja.wikipedia.org/wiki/竹取物語",
+   "genre": "歴史",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T09:35:58+00:00"
+  },
+  {
+   "topic": "竹取物語",
+   "text": "いつからかは不明だが『 かぐや姫 』の題名で 絵本 ・ アニメ ・ 映画 など様々な形において受容されている。",
+   "source": "https://ja.wikipedia.org/wiki/竹取物語",
+   "genre": "その他",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T09:35:58+00:00"
+  },
+  {
+   "topic": "侍",
+   "text": "その他の用法については「 サムライ 」をご覧ください。",
+   "source": "https://ja.wikipedia.org/wiki/侍",
+   "genre": "その他",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T09:35:58+00:00"
+  },
+  {
+   "topic": "侍",
+   "text": "「伺候（しこう） [ 4 ] する」「従う」を意味する「さぶらう」（旧仮名遣いでは「さぶらふ」〈候ふ／侍ふ〉）に由来し、「さぶらい」「さむらい」（旧仮名遣いでは「さぶらひ」「さむらひ」）と呼ばれるようになったと言われている。",
+   "source": "https://ja.wikipedia.org/wiki/侍",
+   "genre": "その他",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T09:35:58+00:00"
+  },
+  {
+   "topic": "侍",
+   "text": "時代が下がるに従って範囲が広がっていったが、 豊臣秀吉 や 徳川家康 により身分制度が整理されると固定されていった [ 5 ] 。",
+   "source": "https://ja.wikipedia.org/wiki/侍",
+   "genre": "歴史",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T09:35:58+00:00"
+  },
+  {
+   "topic": "侍",
+   "text": "このような変移については研究が進んでいない [ 5 ] 。",
+   "source": "https://ja.wikipedia.org/wiki/侍",
+   "genre": "その他",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T09:35:58+00:00"
+  },
+  {
+   "topic": "侍",
+   "text": "鎌倉時代 には、侍の定義は 御家人 と同義となり、領地を持ち 征夷大将軍 に仕える武士を指すようになった。",
+   "source": "https://ja.wikipedia.org/wiki/侍",
+   "genre": "歴史",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T09:35:58+00:00"
+  },
+  {
+   "topic": "侍",
+   "text": "しかし、将軍に仕えない 非御家人 という例外的な身分の侍もいた。",
+   "source": "https://ja.wikipedia.org/wiki/侍",
+   "genre": "その他",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T09:35:58+00:00"
+  },
+  {
+   "topic": "土師孝也",
+   "text": "アプトプロ 最終所属（提携業務） [ 3 ] 。",
+   "source": "https://ja.wikipedia.org/wiki/土師孝也",
+   "genre": "その他",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T09:35:58+00:00"
+  },
+  {
+   "topic": "土師孝也",
+   "text": "アプトプロ付属養成所代表取締役社長。",
+   "source": "https://ja.wikipedia.org/wiki/土師孝也",
+   "genre": "その他",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T09:35:58+00:00"
+  },
+  {
+   "topic": "土師孝也",
+   "text": "略歴 3歳ぐらいから 東京都 新宿区 荒木町 に住んでいた [ 7 ] 。",
+   "source": "https://ja.wikipedia.org/wiki/土師孝也",
+   "genre": "その他",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T09:35:58+00:00"
+  },
+  {
+   "topic": "土師孝也",
+   "text": "当初は 落語家 になりたかったという [ 7 ] 。",
+   "source": "https://ja.wikipedia.org/wiki/土師孝也",
+   "genre": "その他",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T09:35:58+00:00"
+  },
+  {
+   "topic": "土師孝也",
+   "text": "武蔵工業大学付属高等学校 卒業 [ 4 ] 。",
+   "source": "https://ja.wikipedia.org/wiki/土師孝也",
+   "genre": "その他",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T09:35:58+00:00"
+  },
+  {
+   "topic": "土師孝也",
+   "text": "劇団俳優座 の芝居を見て「これは面白いな」と思い、俳優座の養成所に入所しようと電話をしたが、「もうないです」と言われてしまった [ 7 ] 。",
+   "source": "https://ja.wikipedia.org/wiki/土師孝也",
+   "genre": "その他",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T09:35:58+00:00"
+  },
+  {
+   "topic": "ゴリラ",
+   "text": "主に 赤道アフリカ の熱帯林に生息する地上棲の 草食性 大型類人猿である。",
+   "source": "https://ja.wikipedia.org/wiki/ゴリラ",
+   "genre": "その他",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T09:35:59+00:00"
+  },
+  {
+   "topic": "ゴリラ",
+   "text": "ヒガシゴリラ と ニシゴリラ の2種から成り、4亜種に分けられる。",
+   "source": "https://ja.wikipedia.org/wiki/ゴリラ",
+   "genre": "生き物",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T09:35:59+00:00"
+  },
+  {
+   "topic": "ゴリラ",
+   "text": "ゴリラの DNA は内容に応じて95 - 99%と、 ヒト のDNAと非常に似ており、現存する生物の中では チンパンジー と ボノボ に次いで人間に最も近い分類群である。",
+   "source": "https://ja.wikipedia.org/wiki/ゴリラ",
+   "genre": "生き物",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T09:35:59+00:00"
+  },
+  {
+   "topic": "ゴリラ",
+   "text": "現生 霊長類 の中で最大で、種や性別にもよるが、身長1.25-1.8 m 、体重100-270 kg 、両腕を広げた幅は2.6 mに達する。",
+   "source": "https://ja.wikipedia.org/wiki/ゴリラ",
+   "genre": "生き物",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T09:35:59+00:00"
+  },
+  {
+   "topic": "ゴリラ",
+   "text": "群れで生活することが多く、群れのリーダーはシルバーバックと呼ばれる。",
+   "source": "https://ja.wikipedia.org/wiki/ゴリラ",
+   "genre": "その他",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T09:35:59+00:00"
+  },
+  {
+   "topic": "ゴリラ",
+   "text": "ヒガシゴリラはニシゴリラに比べて毛皮の色が濃く、その他にもいくつかの小さな形態的差異が存在する。",
+   "source": "https://ja.wikipedia.org/wiki/ゴリラ",
+   "genre": "その他",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T09:35:59+00:00"
+  },
+  {
+   "topic": "クモ",
+   "text": "「 蜘蛛 」はこの項目へ 転送 されています。",
+   "source": "https://ja.wikipedia.org/wiki/クモ",
+   "genre": "その他",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T09:35:59+00:00"
+  },
+  {
+   "topic": "クモ",
+   "text": "網 を張り、 虫 を捕食することで一般によく知られている。",
+   "source": "https://ja.wikipedia.org/wiki/クモ",
+   "genre": "その他",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T09:35:59+00:00"
+  },
+  {
+   "topic": "クモ",
+   "text": "クモ目を指して クモ類 ともいうが、クモガタ類やフツウクモ類との区別のために 真正クモ類 と呼称することもある。",
+   "source": "https://ja.wikipedia.org/wiki/クモ",
+   "genre": "その他",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T09:35:59+00:00"
+  },
+  {
+   "topic": "クモ",
+   "text": "この類の研究分野は クモ学 といわれる。",
+   "source": "https://ja.wikipedia.org/wiki/クモ",
+   "genre": "その他",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T09:35:59+00:00"
+  },
+  {
+   "topic": "クモ",
+   "text": "糸を使って 網 を張ることでよく知られるが、実際にはほぼ半数の種が網を張らずに獲物を捕まえる。",
+   "source": "https://ja.wikipedia.org/wiki/クモ",
+   "genre": "生き物",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T09:35:59+00:00"
+  },
+  {
+   "topic": "クモ",
+   "text": "人間に害をなすほどの毒を持つものはごく少数に限られる。",
+   "source": "https://ja.wikipedia.org/wiki/クモ",
+   "genre": "その他",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T09:35:59+00:00"
+  },
+  {
+   "topic": "キジ",
+   "text": "魚釣りの餌については「 ミミズ#利用 」をご覧ください。",
+   "source": "https://ja.wikipedia.org/wiki/キジ",
+   "genre": "その他",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T09:35:59+00:00"
+  },
+  {
+   "topic": "キジ",
+   "text": "その他の用法については「 雉 」をご覧ください。",
+   "source": "https://ja.wikipedia.org/wiki/キジ",
+   "genre": "その他",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T09:35:59+00:00"
+  },
+  {
+   "topic": "キジ",
+   "text": "日本産の個体群のみで独立種 P. versicolor とする説と、ユーラシア大陸に分布する コウライキジ P. colchicus の亜種とする説があり、後者の説に従うと P. colchicus の和名がキジとなり本種のみでキジ属を構成する [ 6 ] 。",
+   "source": "https://ja.wikipedia.org/wiki/キジ",
+   "genre": "生き物",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T09:35:59+00:00"
+  },
+  {
+   "topic": "キジ",
+   "text": "日本鳥学会 が選定した 国鳥 [ 9 ] であるとともに、国内の多くの自治体でも「市町村の鳥」に指定されている。",
+   "source": "https://ja.wikipedia.org/wiki/キジ",
+   "genre": "その他",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T09:35:59+00:00"
+  },
+  {
+   "topic": "キジ",
+   "text": "日本の古語 では「雉子（きぎす）」（10世紀前半成立の『 和名類聚抄 』巻十八「羽族名」での表記は、「木々須」と記す）。",
+   "source": "https://ja.wikipedia.org/wiki/キジ",
+   "genre": "言葉",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T09:35:59+00:00"
+  },
+  {
+   "topic": "キジ",
+   "text": "キジやコウライキジは世界中で主要な 狩猟鳥 とされ、キジ肉は食用でもある [ 10 ] 。",
+   "source": "https://ja.wikipedia.org/wiki/キジ",
+   "genre": "その他",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T09:35:59+00:00"
   }
  ],
  "read": {
@@ -391130,7 +393218,36 @@
   "https://ja.wikipedia.org/wiki/インタプリタ方式言語": "2026-09-08T09:31:12+00:00",
   "https://ja.wikipedia.org/wiki/Adobe_ImageReady": "2026-09-08T09:31:14+00:00",
   "https://ja.wikipedia.org/wiki/日高国": "2026-09-08T09:31:17+00:00",
-  "https://ja.wikipedia.org/wiki/北海道新幹線": "2026-09-08T09:31:17+00:00"
+  "https://ja.wikipedia.org/wiki/北海道新幹線": "2026-09-08T09:31:17+00:00",
+  "https://ja.wikipedia.org/wiki/BP_(年代測定)": "2026-09-08T09:35:50+00:00",
+  "https://ja.wikipedia.org/wiki/粉体工学": "2026-09-08T09:35:50+00:00",
+  "https://ja.wikipedia.org/wiki/イオン結合": "2026-09-08T09:35:50+00:00",
+  "https://ja.wikipedia.org/wiki/スピード_(トランプゲーム)": "2026-09-08T09:35:51+00:00",
+  "https://ja.wikipedia.org/wiki/松岡正剛": "2026-09-08T09:35:51+00:00",
+  "https://ja.wikipedia.org/wiki/Adobe_Flash_Player": "2026-09-08T09:35:51+00:00",
+  "https://ja.wikipedia.org/wiki/藻類": "2026-09-08T09:35:53+00:00",
+  "https://ja.wikipedia.org/wiki/トルココーヒー": "2026-09-08T09:35:53+00:00",
+  "https://ja.wikipedia.org/wiki/4月23日": "2026-09-08T09:35:53+00:00",
+  "https://ja.wikipedia.org/wiki/世俗主義": "2026-09-08T09:35:53+00:00",
+  "https://ja.wikipedia.org/wiki/魔法騎士レイアース": "2026-09-08T09:35:53+00:00",
+  "https://ja.wikipedia.org/wiki/岸辺露伴_ルーヴルへ行く": "2026-09-08T09:35:53+00:00",
+  "https://ja.wikipedia.org/wiki/来生えつこ": "2026-09-08T09:35:54+00:00",
+  "https://ja.wikipedia.org/wiki/泊村": "2026-09-08T09:35:55+00:00",
+  "https://ja.wikipedia.org/wiki/長谷川岳": "2026-09-08T09:35:55+00:00",
+  "https://ja.wikipedia.org/wiki/札幌農学校": "2026-09-08T09:35:55+00:00",
+  "https://ja.wikipedia.org/wiki/盛岡市": "2026-09-08T09:35:55+00:00",
+  "https://ja.wikipedia.org/wiki/5月9日": "2026-09-08T09:35:55+00:00",
+  "https://ja.wikipedia.org/wiki/保育所": "2026-09-08T09:35:55+00:00",
+  "https://ja.wikipedia.org/wiki/樺太": "2026-09-08T09:35:55+00:00",
+  "https://ja.wikipedia.org/wiki/郡区町村編制法": "2026-09-08T09:35:55+00:00",
+  "https://ja.wikipedia.org/wiki/岩内町": "2026-09-08T09:35:56+00:00",
+  "https://ja.wikipedia.org/wiki/ガシャポン": "2026-09-08T09:35:56+00:00",
+  "https://ja.wikipedia.org/wiki/竹取物語": "2026-09-08T09:35:56+00:00",
+  "https://ja.wikipedia.org/wiki/侍": "2026-09-08T09:35:56+00:00",
+  "https://ja.wikipedia.org/wiki/土師孝也": "2026-09-08T09:35:56+00:00",
+  "https://ja.wikipedia.org/wiki/ゴリラ": "2026-09-08T09:35:56+00:00",
+  "https://ja.wikipedia.org/wiki/クモ": "2026-09-08T09:35:56+00:00",
+  "https://ja.wikipedia.org/wiki/キジ": "2026-09-08T09:35:57+00:00"
  },
  "frontier": [
   "https://ja.wikipedia.org/wiki/UI%E3%81%A8UX",
@@ -391355,7 +393472,6 @@
   "https://ja.wikipedia.org/wiki/タイ太陰暦",
   "https://ja.wikipedia.org/wiki/メートル時間",
   "https://ja.wikipedia.org/wiki/バリ暦",
-  "https://ja.wikipedia.org/wiki/BP_(年代測定)",
   "https://ja.wikipedia.org/wiki/紀元前46年",
   "https://ja.wikipedia.org/wiki/十二気暦",
   "https://ja.wikipedia.org/wiki/渋川景佑",
@@ -391370,7 +393486,6 @@
   "https://ja.wikipedia.org/wiki/バハーイー暦",
   "https://ja.wikipedia.org/wiki/エジプト暦",
   "https://ja.wikipedia.org/wiki/ウラン・鉛年代測定法",
-  "https://ja.wikipedia.org/wiki/粉体工学",
   "https://ja.wikipedia.org/wiki/アラビア",
   "https://ja.wikipedia.org/wiki/波動力学",
   "https://ja.wikipedia.org/wiki/磁気化学",
@@ -391381,7 +393496,6 @@
   "https://ja.wikipedia.org/wiki/相模中央化学研究所",
   "https://ja.wikipedia.org/wiki/海洋化学",
   "https://ja.wikipedia.org/wiki/生物有機化学",
-  "https://ja.wikipedia.org/wiki/イオン結合",
   "https://ja.wikipedia.org/wiki/金属結晶",
   "https://ja.wikipedia.org/wiki/分子軌道",
   "https://ja.wikipedia.org/wiki/アメリカ化学会",
@@ -391411,7 +393525,6 @@
   "https://ja.wikipedia.org/wiki/ポープ・ジョーン",
   "https://ja.wikipedia.org/wiki/バカラバンク",
   "https://ja.wikipedia.org/wiki/十三張",
-  "https://ja.wikipedia.org/wiki/スピード_(トランプゲーム)",
   "https://ja.wikipedia.org/wiki/バセット",
   "https://ja.wikipedia.org/wiki/スパイダー_(トランプゲーム)",
   "https://ja.wikipedia.org/wiki/7月12日",
@@ -391421,7 +393534,6 @@
   "https://ja.wikipedia.org/wiki/蜂須賀正氏",
   "https://ja.wikipedia.org/wiki/魔道士",
   "https://ja.wikipedia.org/wiki/Ebay",
-  "https://ja.wikipedia.org/wiki/松岡正剛",
   "https://ja.wikipedia.org/wiki/フォレスト・J・アッカーマン",
   "https://ja.wikipedia.org/wiki/編集長",
   "https://ja.wikipedia.org/wiki/隂山英男",
@@ -391440,7 +393552,6 @@
   "https://ja.wikipedia.org/wiki/キネマ旬報映画データベース",
   "https://ja.wikipedia.org/wiki/Adobe_Flash_Media_Server",
   "https://ja.wikipedia.org/wiki/Flash_Video",
-  "https://ja.wikipedia.org/wiki/Adobe_Flash_Player",
   "https://ja.wikipedia.org/wiki/Adobe_OnLocation",
   "https://ja.wikipedia.org/wiki/Display_PostScript",
   "https://ja.wikipedia.org/wiki/NeWS",
@@ -391500,7 +393611,6 @@
   "https://ja.wikipedia.org/wiki/イワタケ",
   "https://ja.wikipedia.org/wiki/培養",
   "https://ja.wikipedia.org/wiki/国立健康・栄養研究所",
-  "https://ja.wikipedia.org/wiki/藻類",
   "https://ja.wikipedia.org/wiki/利用者‐会話:シェン,アーナリー,ン,アーバァ.",
   "https://ja.wikipedia.org/wiki/利用者‐会話:偏微分演算子",
   "https://ja.wikipedia.org/wiki/利用者‐会話:Kzhr",
@@ -391517,14 +393627,11 @@
   "https://ja.wikipedia.org/wiki/ラク",
   "https://ja.wikipedia.org/wiki/デニズリ",
   "https://ja.wikipedia.org/wiki/軍楽",
-  "https://ja.wikipedia.org/wiki/トルココーヒー",
   "https://ja.wikipedia.org/wiki/ヴァン",
   "https://ja.wikipedia.org/wiki/リュキア",
   "https://ja.wikipedia.org/wiki/フランス通信社",
-  "https://ja.wikipedia.org/wiki/4月23日",
   "https://ja.wikipedia.org/wiki/カフラマンマラシュ県",
   "https://ja.wikipedia.org/wiki/トロイ",
-  "https://ja.wikipedia.org/wiki/世俗主義",
   "https://ja.wikipedia.org/wiki/バルケスィル",
   "https://ja.wikipedia.org/wiki/大ギリシャ主義",
   "https://ja.wikipedia.org/wiki/憲兵隊",
@@ -391534,7 +393641,6 @@
   "https://ja.wikipedia.org/wiki/長谷川一明",
   "https://ja.wikipedia.org/wiki/ジェイ・キャスト",
   "https://ja.wikipedia.org/wiki/つのだじろう",
-  "https://ja.wikipedia.org/wiki/魔法騎士レイアース",
   "https://ja.wikipedia.org/wiki/レポート漫画",
   "https://ja.wikipedia.org/wiki/変人偏屈列伝",
   "https://ja.wikipedia.org/wiki/ヒステリア_(デフ・レパードのアルバム)",
@@ -391544,7 +393650,6 @@
   "https://ja.wikipedia.org/wiki/The_Book_(小説)",
   "https://ja.wikipedia.org/wiki/瀬藤光利",
   "https://ja.wikipedia.org/wiki/スーパージャンプ",
-  "https://ja.wikipedia.org/wiki/岸辺露伴_ルーヴルへ行く",
   "https://ja.wikipedia.org/wiki/恥知らずのパープルヘイズ_-ジョジョの奇妙な冒険より-",
   "https://ja.wikipedia.org/wiki/JOJO'S_BIZARRE_ADVENTURE_OVER_HEAVEN",
   "https://ja.wikipedia.org/wiki/公共性",
@@ -391610,7 +393715,6 @@
   "https://ja.wikipedia.org/wiki/GLAD_ALL_OVER",
   "https://ja.wikipedia.org/wiki/アンディ・スターマー",
   "https://ja.wikipedia.org/wiki/服部良一_〜生誕100周年記念トリビュート・アルバム〜",
-  "https://ja.wikipedia.org/wiki/来生えつこ",
   "https://ja.wikipedia.org/wiki/COSA_NOSTRA",
   "https://ja.wikipedia.org/wiki/柏原芳恵",
   "https://ja.wikipedia.org/wiki/Hi_Hi_PUFFY部",
@@ -391618,19 +393722,14 @@
   "https://ja.wikipedia.org/wiki/Love_Rainbow",
   "https://ja.wikipedia.org/wiki/加川良",
   "https://ja.wikipedia.org/wiki/WANTED_TOUR_2003-2004_KIYOSHIRO_IMAWANO",
-  "https://ja.wikipedia.org/wiki/泊村",
   "https://ja.wikipedia.org/wiki/鉄道路線",
   "https://ja.wikipedia.org/wiki/古平町",
   "https://ja.wikipedia.org/wiki/公共事業",
-  "https://ja.wikipedia.org/wiki/長谷川岳",
-  "https://ja.wikipedia.org/wiki/札幌農学校",
   "https://ja.wikipedia.org/wiki/武部新",
   "https://ja.wikipedia.org/wiki/浜頓別町",
   "https://ja.wikipedia.org/wiki/長禄",
   "https://ja.wikipedia.org/wiki/コシャマイン",
   "https://ja.wikipedia.org/wiki/胆振国",
-  "https://ja.wikipedia.org/wiki/盛岡市",
-  "https://ja.wikipedia.org/wiki/5月9日",
   "https://ja.wikipedia.org/wiki/礼文郡",
   "https://ja.wikipedia.org/wiki/新刊",
   "https://ja.wikipedia.org/wiki/高島郡_(北海道)",
@@ -391640,7 +393739,6 @@
   "https://ja.wikipedia.org/wiki/普通地方公共団体",
   "https://ja.wikipedia.org/wiki/日高支庁",
   "https://ja.wikipedia.org/wiki/狩場茂津多道立自然公園",
-  "https://ja.wikipedia.org/wiki/保育所",
   "https://ja.wikipedia.org/wiki/弟子屈町",
   "https://ja.wikipedia.org/wiki/コールセンター",
   "https://ja.wikipedia.org/wiki/尻別川",
@@ -391651,7 +393749,6 @@
   "https://ja.wikipedia.org/wiki/訓子府町",
   "https://ja.wikipedia.org/wiki/北海道畜産公社",
   "https://ja.wikipedia.org/wiki/阿寒富士",
-  "https://ja.wikipedia.org/wiki/樺太",
   "https://ja.wikipedia.org/wiki/第三次産業",
   "https://ja.wikipedia.org/wiki/伊東良孝",
   "https://ja.wikipedia.org/wiki/美国郡",
@@ -391664,14 +393761,12 @@
   "https://ja.wikipedia.org/wiki/上富良野町",
   "https://ja.wikipedia.org/wiki/三石郡",
   "https://ja.wikipedia.org/wiki/エゾサンショウウオ",
-  "https://ja.wikipedia.org/wiki/郡区町村編制法",
   "https://ja.wikipedia.org/wiki/徳永エリ",
   "https://ja.wikipedia.org/wiki/釧路町",
   "https://ja.wikipedia.org/wiki/得撫郡",
   "https://ja.wikipedia.org/wiki/半導体",
   "https://ja.wikipedia.org/wiki/氷河融解",
   "https://ja.wikipedia.org/wiki/新冠郡",
-  "https://ja.wikipedia.org/wiki/岩内町",
   "https://ja.wikipedia.org/wiki/青森県",
   "https://ja.wikipedia.org/wiki/道産子",
   "https://ja.wikipedia.org/wiki/斜里郡",
@@ -391681,24 +393776,19 @@
   "https://ja.wikipedia.org/wiki/真田広之",
   "https://ja.wikipedia.org/wiki/チャンネル16",
   "https://ja.wikipedia.org/wiki/ジャパンアクションクラブ",
-  "https://ja.wikipedia.org/wiki/ガシャポン",
   "https://ja.wikipedia.org/wiki/パンチング",
   "https://ja.wikipedia.org/wiki/速度",
   "https://ja.wikipedia.org/wiki/高杉玄",
   "https://ja.wikipedia.org/wiki/太田淑子",
-  "https://ja.wikipedia.org/wiki/竹取物語",
   "https://ja.wikipedia.org/wiki/ハンモック",
-  "https://ja.wikipedia.org/wiki/侍",
   "https://ja.wikipedia.org/wiki/岸田森",
   "https://ja.wikipedia.org/wiki/呉恵美子",
   "https://ja.wikipedia.org/wiki/飛鳥裕子",
   "https://ja.wikipedia.org/wiki/井浦秀知",
   "https://ja.wikipedia.org/wiki/立花愛子",
   "https://ja.wikipedia.org/wiki/宇宙刑事ギャバン",
-  "https://ja.wikipedia.org/wiki/土師孝也",
   "https://ja.wikipedia.org/wiki/超力戦隊オーレンジャー",
   "https://ja.wikipedia.org/wiki/堀長文",
-  "https://ja.wikipedia.org/wiki/ゴリラ",
   "https://ja.wikipedia.org/wiki/2月4日",
   "https://ja.wikipedia.org/wiki/ロボット工学",
   "https://ja.wikipedia.org/wiki/心的外傷",
@@ -391715,7 +393805,6 @@
   "https://ja.wikipedia.org/wiki/赤田昌人",
   "https://ja.wikipedia.org/wiki/大澤哲三",
   "https://ja.wikipedia.org/wiki/柴田時江",
-  "https://ja.wikipedia.org/wiki/クモ",
   "https://ja.wikipedia.org/wiki/スペースシャトル",
   "https://ja.wikipedia.org/wiki/レイピア",
   "https://ja.wikipedia.org/wiki/レコード",
@@ -391725,7 +393814,6 @@
   "https://ja.wikipedia.org/wiki/スズキ・RG250ガンマ",
   "https://ja.wikipedia.org/wiki/田中公平",
   "https://ja.wikipedia.org/wiki/カノン砲",
-  "https://ja.wikipedia.org/wiki/キジ",
   "https://ja.wikipedia.org/wiki/林一夫",
   "https://ja.wikipedia.org/wiki/宮内タカユキ",
   "https://ja.wikipedia.org/wiki/山本優",
@@ -451132,10 +453220,39 @@
   "https://ja.wikipedia.org/wiki/ティモール・ラヤ",
   "https://ja.wikipedia.org/wiki/イスラーム主義",
   "https://ja.wikipedia.org/wiki/大モロッコ",
-  "https://ja.wikipedia.org/wiki/ルーマニア・モルドバ統一運動"
+  "https://ja.wikipedia.org/wiki/ルーマニア・モルドバ統一運動",
+  "https://ja.wikipedia.org/wiki/アミノ酸年代測定法",
+  "https://ja.wikipedia.org/wiki/リンム",
+  "https://ja.wikipedia.org/wiki/ユガ",
+  "https://ja.wikipedia.org/wiki/BP_(%E5%B9%B4%E4%BB%A3%E6%B8%AC%E5%AE%9A)",
+  "https://ja.wikipedia.org/wiki/アンノ・ムンディ",
+  "https://ja.wikipedia.org/wiki/暦年代",
+  "https://ja.wikipedia.org/wiki/Circa",
+  "https://ja.wikipedia.org/wiki/元号一覧_(ベトナム)",
+  "https://ja.wikipedia.org/wiki/古生物学",
+  "https://ja.wikipedia.org/wiki/氷床コア",
+  "https://ja.wikipedia.org/wiki/元号一覧_(朝鮮)",
+  "https://ja.wikipedia.org/wiki/プローブ顕微鏡",
+  "https://ja.wikipedia.org/wiki/機能性粉体プロセス研究会",
+  "https://ja.wikipedia.org/wiki/POWTEX",
+  "https://ja.wikipedia.org/wiki/研磨",
+  "https://ja.wikipedia.org/wiki/磁性体",
+  "https://ja.wikipedia.org/wiki/日刊工業新聞社",
+  "https://ja.wikipedia.org/wiki/個別要素法",
+  "https://ja.wikipedia.org/wiki/ゼータ電位",
+  "https://ja.wikipedia.org/wiki/エアロゾル",
+  "https://ja.wikipedia.org/wiki/粒径",
+  "https://ja.wikipedia.org/wiki/電子顕微鏡",
+  "https://ja.wikipedia.org/wiki/溶解",
+  "https://ja.wikipedia.org/wiki/粉塵",
+  "https://ja.wikipedia.org/wiki/調味料",
+  "https://ja.wikipedia.org/wiki/小麦粉",
+  "https://ja.wikipedia.org/wiki/電子写真",
+  "https://ja.wikipedia.org/wiki/酸化ウラン(IV)",
+  "https://ja.wikipedia.org/wiki/せん断"
  ],
  "born": "2026-09-07T21:38:10+00:00",
- "lastLearned": "2026-09-08T09:31:20+00:00",
+ "lastLearned": "2026-09-08T09:35:59+00:00",
  "failed": {},
  "termsSeen": {
   "https://foundation.wikimedia.org/wiki/Policy:Terms_of_Use/ja": {
@@ -451192,5 +453309,5 @@
  ],
  "heardCount": 18,
  "capacity": 42709,
- "readTotal": 5719
+ "readTotal": 5748
 }
