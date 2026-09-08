@@ -45,14 +45,14 @@ BGS = ["plain", "glow", "grid", "stars", "aurora", "dots", "rings", "noise"]
 
 # ★★★構造 ── ★どの順で何を見せるかも、彼女が決める。
 #   ★いままでは私が決めた順で固定だった。★家の間取りを人に決められていた。
-PARTS = ["greet", "grew", "wrote", "stats", "genres", "heard", "know"]
+PARTS = ["greet", "grew", "wrote", "ab", "stats", "genres", "heard", "know"]
 ORDERS = [
-    ["greet", "grew", "wrote", "stats", "genres", "heard", "know"],   # ★ふつう
-    ["greet", "wrote", "know", "stats", "genres", "grew", "heard"],   # ★書いたものを先に
-    ["stats", "greet", "genres", "know", "wrote", "grew", "heard"],   # ★数字から
-    ["greet", "heard", "wrote", "know", "genres", "stats", "grew"],   # ★人の声を先に
-    ["know", "greet", "genres", "wrote", "stats", "heard", "grew"],   # ★いきなり中身
-    ["greet", "wrote", "genres", "know", "heard", "stats", "grew"],   # ★内訳を先に
+    ["greet", "grew", "wrote", "ab", "stats", "genres", "heard", "know"],
+    ["greet", "wrote", "know", "ab", "stats", "genres", "grew", "heard"],
+    ["stats", "greet", "genres", "know", "wrote", "ab", "grew", "heard"],
+    ["greet", "heard", "wrote", "know", "ab", "genres", "stats", "grew"],
+    ["know", "greet", "genres", "wrote", "ab", "stats", "heard", "grew"],
+    ["greet", "wrote", "ab", "genres", "know", "heard", "stats", "grew"],
 ]
 
 

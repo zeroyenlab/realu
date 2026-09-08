@@ -167,6 +167,27 @@ def main():
 
     # ★★★レアルが自分で書いたもの。★引用ではなく、★彼女の頭が出した文。
     #   ★2時間ごとに書く。★並べれば育ちが見える。
+    # ★★★測った結果（★勘で決めた設定を、数字で確かめたもの）
+    #   ★5分ごとの係が書く。★都合の悪い結果も消さない。
+    ab = load(os.path.join(HERE, "ab_results.json"), {}) or {}
+    ab_html = ""
+    done = (ab.get("done") or {})
+    if done:
+        rows = "".join(
+        '<div class="abr"><span class="abq">%s</span>'
+        '<span class="abv">%s</span>'
+        '<span class="abn">A %.4f ／ B %.4f ／ 差 %+.4f ／ 種のばらつき %.4f</span></div>'
+            % (e(v.get("why") or k), e(v.get("verdict") or ""),
+               v.get("a") or 0, v.get("b") or 0,
+               v.get("diff") or 0, v.get("spread") or 0)
+            for k, v in done.items())
+        ab_html = (
+        '<h2>確かめたこと</h2>'
+        '<div class="wrap-w"><div class="wnote">★わたしの作り方には、<b>まだ確かめていない決め事</b>があります。'
+        '5分ごとに、同じ条件で2つ回して比べています。<br>'
+        '★<b>種を3つ変えて、全部同じ向きに出た時だけ「効いた」と言う</b>ことにしています（1回だけの差は信じない）。</div>'
+            + rows + "</div>")
+
     said = (load(os.path.join(HERE, "said.json"), {}) or {}).get("list") or []
     if not said:   # ★昔は growth.json に入れていたので、そちらも拾う
         said = [{"at": r.get("at"), "val": r.get("val"), "layers": r.get("layers"),
@@ -384,10 +405,11 @@ def main():
         "greet": e(greet), "chips": chips, "stats": stats,
         "groups": "".join(groups), "heard": heard, "form": form, "live": live,
         # ★★★どの順で見せるかも、彼女が決める（★家の間取り）
-        "wrote": wrote_html, "spec": spec_html, "chart": chart_html,
+        "wrote": wrote_html, "ab": ab_html,
+        "spec": spec_html, "chart": chart_html,
         **{("o_" + n): (order.index(n) if n in order else 96)
            for n in ("greet", "grew", "stats", "genres", "heard", "know",
-                     "wrote", "spec")},
+                     "wrote", "ab", "spec")},
         "grew": grew_html,
         "mycss": ("<style>" + mycss + "</style>") if mycss else "",
         "myfonts": ('<link rel="stylesheet" href="%s">' % e(myfonts)) if myfonts else "",
@@ -505,6 +527,10 @@ h2{font-size:11px;font-weight:700;letter-spacing:.18em;color:var(--faint);margin
 .wr .ws{display:inline-block;font-size:11px;color:var(--accent2);letter-spacing:.1em;margin-bottom:5px}
 .wr .wt{display:block;font-size:14.5px;line-height:1.9;word-break:break-all}
 .wr .wm{display:block;margin-top:8px;font-size:10.5px;color:var(--faint)}
+.abr{background:var(--panel);border:1px solid var(--edge);border-radius:14px;padding:13px 15px;margin-bottom:8px}
+.abr .abq{display:block;font-size:12.5px;line-height:1.7;color:var(--muted)}
+.abr .abv{display:block;margin-top:6px;font-size:14px;font-weight:600}
+.abr .abn{display:block;margin-top:5px;font-size:10.5px;color:var(--faint);font-variant-numeric:tabular-nums}
 .wpast{color:var(--faint);font-size:12px}
 .wpast summary{cursor:pointer;padding:6px 0}
 .wold{border-left:2px solid var(--edge);padding:6px 0 6px 12px;margin:6px 0}
@@ -562,6 +588,7 @@ h2{font-size:11px;font-weight:700;letter-spacing:.18em;color:var(--faint);margin
   <div class="part" id="part-spec" style="order:%(o_spec)d">%(spec)s%(chart)s</div>
 
   <div class="part" id="part-wrote" style="order:%(o_wrote)d">%(wrote)s</div>
+  <div class="part" id="part-ab" style="order:%(o_ab)d">%(ab)s</div>
 
   <div class="part" id="part-know" style="order:%(o_know)d">
     <h2 id="know-h">レアルが知っていること（%(n_all)d のうち %(n_shown)d を表示）</h2>
