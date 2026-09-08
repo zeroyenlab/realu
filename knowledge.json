@@ -339911,6 +339911,1638 @@
     "url": ""
    },
    "ts": "2026-09-08T07:59:43+00:00"
+  },
+  {
+   "topic": "ラムダ計算",
+   "text": "（ 2020年5月 ） ラムダ計算 （ラムダけいさん、 英語 : lambda calculus ）は、 計算 という行為を「 関数 」の定義と適用だけで表現する 計算模型 （数理モデル）である。",
+   "source": "https://ja.wikipedia.org/wiki/ラムダ計算",
+   "genre": "その他",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T08:04:15+00:00"
+  },
+  {
+   "topic": "ラムダ計算",
+   "text": "1930年代に数学者の アロンゾ・チャーチ と スティーヴン・コール・クリーネ によって、「計算できるとはどういうことか」を厳密に定義するために考案された。",
+   "source": "https://ja.wikipedia.org/wiki/ラムダ計算",
+   "genre": "科学",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T08:04:15+00:00"
+  },
+  {
+   "topic": "ラムダ計算",
+   "text": "当時はまだ電子計算機は実用化されておらず、ラムダ計算は純粋に理論的な数学的体系として発展した。",
+   "source": "https://ja.wikipedia.org/wiki/ラムダ計算",
+   "genre": "科学",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T08:04:15+00:00"
+  },
+  {
+   "topic": "ラムダ計算",
+   "text": "関数を定義する際にギリシャ文字のラムダ（ λ ）を使う慣習からその名がある。",
+   "source": "https://ja.wikipedia.org/wiki/ラムダ計算",
+   "genre": "言葉",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T08:04:15+00:00"
+  },
+  {
+   "topic": "ラムダ計算",
+   "text": "ラムダ計算は、変数と関数の抽象化、および関数の適用という基本的な操作のみから構成されるが、全ての 計算可能関数 を表現できる チューリング完全 な計算体系である。",
+   "source": "https://ja.wikipedia.org/wiki/ラムダ計算",
+   "genre": "その他",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T08:04:15+00:00"
+  },
+  {
+   "topic": "ラムダ計算",
+   "text": "ラムダ計算は、 アラン・チューリング が考案した チューリングマシン （仮想的な機械のテープとヘッドの動きで計算を表現するモデル）と計算能力において等価である。",
+   "source": "https://ja.wikipedia.org/wiki/ラムダ計算",
+   "genre": "技術",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T08:04:15+00:00"
+  },
+  {
+   "topic": "並列計算",
+   "text": "並列コンピューティング や 並列処理 ともいう。",
+   "source": "https://ja.wikipedia.org/wiki/並列計算",
+   "genre": "その他",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T08:04:15+00:00"
+  },
+  {
+   "topic": "並列計算",
+   "text": "並列処理（並列計算）は スーパーコンピュータ では以前から採られている手法である。",
+   "source": "https://ja.wikipedia.org/wiki/並列計算",
+   "genre": "技術",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T08:04:15+00:00"
+  },
+  {
+   "topic": "並列計算",
+   "text": "スーパーコンピュータの高い性能は、プロセッサ数やノード数がパーソナルコンピュータに比べて極めて多く、並列処理性能が高いことで実現している。",
+   "source": "https://ja.wikipedia.org/wiki/並列計算",
+   "genre": "技術",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T08:04:15+00:00"
+  },
+  {
+   "topic": "並列計算",
+   "text": "並列計算のために設計されたコンピュータは並列コンピュータという。",
+   "source": "https://ja.wikipedia.org/wiki/並列計算",
+   "genre": "技術",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T08:04:15+00:00"
+  },
+  {
+   "topic": "並列計算",
+   "text": "並列コンピュータは当初 スーパーコンピュータ などの高価で大規模なシステムのみに見られる設計だったが、 パーソナルコンピュータ や 携帯機器 でも CPU を マルチコア 化し並列処理をさせることが当たり前になってきた。",
+   "source": "https://ja.wikipedia.org/wiki/並列計算",
+   "genre": "技術",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T08:04:15+00:00"
+  },
+  {
+   "topic": "並列計算",
+   "text": "CPUのクロック周波数を上げることで処理性能向上させることには限界や問題が見えてきたからこの手法が採用されるようになった。",
+   "source": "https://ja.wikipedia.org/wiki/並列計算",
+   "genre": "その他",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T08:04:15+00:00"
+  },
+  {
+   "topic": "清松みゆき",
+   "text": "信頼できる情報源 の提供に協力をお願いします。",
+   "source": "https://ja.wikipedia.org/wiki/清松みゆき",
+   "genre": "技術",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T08:04:15+00:00"
+  },
+  {
+   "topic": "清松みゆき",
+   "text": "大分県立佐伯鶴城高等学校 卒業。",
+   "source": "https://ja.wikipedia.org/wiki/清松みゆき",
+   "genre": "その他",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T08:04:15+00:00"
+  },
+  {
+   "topic": "清松みゆき",
+   "text": "1989年 出版の『 ソード・ワールドRPG 』のデザイナー、監修者であり、2008年に改版となった『 ソードワールド2.0 』にも引き続き携わっている。",
+   "source": "https://ja.wikipedia.org/wiki/清松みゆき",
+   "genre": "その他",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T08:04:15+00:00"
+  },
+  {
+   "topic": "清松みゆき",
+   "text": "グループSNE内では 山北篤 と並ぶ理系のゲームデザイナーとして、また、 アメリカンフットボール の愛好家として有名。",
+   "source": "https://ja.wikipedia.org/wiki/清松みゆき",
+   "genre": "その他",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T08:04:15+00:00"
+  },
+  {
+   "topic": "清松みゆき",
+   "text": "筆名から間違えられやすいが [ 1 ] 、男性である。",
+   "source": "https://ja.wikipedia.org/wiki/清松みゆき",
+   "genre": "その他",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T08:04:15+00:00"
+  },
+  {
+   "topic": "清松みゆき",
+   "text": "本名は「清松美行」（きよまつ よしゆき）。",
+   "source": "https://ja.wikipedia.org/wiki/清松みゆき",
+   "genre": "その他",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T08:04:15+00:00"
+  },
+  {
+   "topic": "久保田悠羅",
+   "text": "信頼できる情報源 の提供に、ご協力をお願いします。",
+   "source": "https://ja.wikipedia.org/wiki/久保田悠羅",
+   "genre": "技術",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T08:04:15+00:00"
+  },
+  {
+   "topic": "久保田悠羅",
+   "text": "「久保田悠羅」はペンネームで、本名は非公開としている [ 3 ] 。",
+   "source": "https://ja.wikipedia.org/wiki/久保田悠羅",
+   "genre": "その他",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T08:04:15+00:00"
+  },
+  {
+   "topic": "久保田悠羅",
+   "text": "代表作は『 ドラゴンアームズ バハムートハウリング 』( エンターブレイン 刊)。",
+   "source": "https://ja.wikipedia.org/wiki/久保田悠羅",
+   "genre": "その他",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T08:04:15+00:00"
+  },
+  {
+   "topic": "久保田悠羅",
+   "text": "1992年頃に パソコン通信 を通じて 菊池たけし と知り合い、その縁で菊池のアシスタントとして『 セブン＝フォートレスRPG 』の製作や『 超女王様伝説 セント★プリンセス 』の運営などの主要スタッフとして参加するようになる。",
+   "source": "https://ja.wikipedia.org/wiki/久保田悠羅",
+   "genre": "技術",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T08:04:15+00:00"
+  },
+  {
+   "topic": "久保田悠羅",
+   "text": "『 女神天国 』については菊池たけしから引継ぐ形でメインライターとなっていた（当時のペンネームは悠浦紫亜）。",
+   "source": "https://ja.wikipedia.org/wiki/久保田悠羅",
+   "genre": "その他",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T08:04:15+00:00"
+  },
+  {
+   "topic": "久保田悠羅",
+   "text": "イラストレーターの 井上純弌 、システムデザイナーの 遠藤卓司 とは学生時代からのゲーム仲間であり、彼らのグループ中では最も早く業界入りした人物でもある。",
+   "source": "https://ja.wikipedia.org/wiki/久保田悠羅",
+   "genre": "歴史",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T08:04:15+00:00"
+  },
+  {
+   "topic": "キャンペーン (TRPG)",
+   "text": "キャンペーンプレイの途中で何人かのPCが死亡しても、キャンペーンプレイを終了させず新たなPCを投入して続行させるといった手法などもある。",
+   "source": "https://ja.wikipedia.org/wiki/キャンペーン_(TRPG)",
+   "genre": "その他",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T08:04:15+00:00"
+  },
+  {
+   "topic": "キャンペーン (TRPG)",
+   "text": "ほとんどのテーブルトークRPGには、経験を経たPCが「成長」して強くなるというルールが存在する。",
+   "source": "https://ja.wikipedia.org/wiki/キャンペーン_(TRPG)",
+   "genre": "その他",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T08:04:15+00:00"
+  },
+  {
+   "topic": "キャンペーン (TRPG)",
+   "text": "このようなルールは同じPCを継続してプレイすることを意識したものであり、テーブルトークRPGにはキャンペーンプレイを前提として作られているものが存在する。",
+   "source": "https://ja.wikipedia.org/wiki/キャンペーン_(TRPG)",
+   "genre": "その他",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T08:04:15+00:00"
+  },
+  {
+   "topic": "キャンペーン (TRPG)",
+   "text": "キャンペーンを手軽に行うために、連続した内容を持つ複数のシナリオで構成された「キャンペーンシナリオ集」も発売・配布されている。",
+   "source": "https://ja.wikipedia.org/wiki/キャンペーン_(TRPG)",
+   "genre": "その他",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T08:04:15+00:00"
+  },
+  {
+   "topic": "キャンペーン (TRPG)",
+   "text": "さらに、舞台を継続したキャンペーンプレイを遊ぶための資料として、ゲームの舞台となる架空世界の地理や文化を解説した書籍が発売されているゲームも存在する。",
+   "source": "https://ja.wikipedia.org/wiki/キャンペーン_(TRPG)",
+   "genre": "文化",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T08:04:15+00:00"
+  },
+  {
+   "topic": "キャンペーン (TRPG)",
+   "text": "これらは「ワールドガイド」などと呼ばれたり、欧米のテーブルトークRPGでは「キャンペーンセッティング」と称されることもあり、キャンペーンプレイでの使用を強く意識された商品であることがある。",
+   "source": "https://ja.wikipedia.org/wiki/キャンペーン_(TRPG)",
+   "genre": "その他",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T08:04:15+00:00"
+  },
+  {
+   "topic": "ファンタジー",
+   "text": "「 ファンタジック 」はこの項目へ 転送 されています。",
+   "source": "https://ja.wikipedia.org/wiki/ファンタジー",
+   "genre": "その他",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T08:04:15+00:00"
+  },
+  {
+   "topic": "ファンタジー",
+   "text": "井上苑子の曲については「 ファンタジック (井上苑子の曲) 」をご覧ください。",
+   "source": "https://ja.wikipedia.org/wiki/ファンタジー",
+   "genre": "その他",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T08:04:15+00:00"
+  },
+  {
+   "topic": "ファンタジー",
+   "text": "（ 2015年3月 ） 独自研究 が含まれているおそれがあります。",
+   "source": "https://ja.wikipedia.org/wiki/ファンタジー",
+   "genre": "その他",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T08:04:15+00:00"
+  },
+  {
+   "topic": "ファンタジー",
+   "text": "元は 小説 等の 文学 の ジャンル であったが、現在は ゲーム や 映画 など他のフィクション作品を分類する際にも用いられる。",
+   "source": "https://ja.wikipedia.org/wiki/ファンタジー",
+   "genre": "文化",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T08:04:15+00:00"
+  },
+  {
+   "topic": "マルチメディア",
+   "text": "複数の画材や手法を使い単数の作品を作成することについては「 ミクストメディア 」をご覧ください。",
+   "source": "https://ja.wikipedia.org/wiki/マルチメディア",
+   "genre": "その他",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T08:04:15+00:00"
+  },
+  {
+   "topic": "マルチメディア",
+   "text": "単数の情報を複数の媒体で展開することについては「 メディアミックス 」をご覧ください。",
+   "source": "https://ja.wikipedia.org/wiki/マルチメディア",
+   "genre": "技術",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T08:04:15+00:00"
+  },
+  {
+   "topic": "マルチメディア",
+   "text": "この統合により、従来の単一コンテンツの メディア と比べて、より没入感があり、魅力的な体験を提供することが可能となる。",
+   "source": "https://ja.wikipedia.org/wiki/マルチメディア",
+   "genre": "その他",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T08:04:15+00:00"
+  },
+  {
+   "topic": "マルチメディア",
+   "text": "マルチメディアは、教育、 エンターテインメント 、 コミュニケーション 、 ゲームデザイン 、 デジタルアート など、さまざまな分野で活用されており [ 2 ] 、現代の テクノロジー やメディアにおけるその広範な影響が示されている。",
+   "source": "https://ja.wikipedia.org/wiki/マルチメディア",
+   "genre": "社会",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T08:04:15+00:00"
+  },
+  {
+   "topic": "マルチメディア",
+   "text": "マルチメディアには、さまざまな種類のコンテンツが含まれ、それぞれ異なる目的を果たしている： テキスト ：マルチメディアの基礎であり、文脈や情報を提供する。",
+   "source": "https://ja.wikipedia.org/wiki/マルチメディア",
+   "genre": "生き物",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T08:04:15+00:00"
+  },
+  {
+   "topic": "マルチメディア",
+   "text": "オーディオ ：体験を豊かにする 音楽 、 効果音 、 音声 などが含まれる。",
+   "source": "https://ja.wikipedia.org/wiki/マルチメディア",
+   "genre": "文化",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T08:04:15+00:00"
+  },
+  {
+   "topic": "アルシャード",
+   "text": "『アルシャードガイアRPG』など一部のタイトルには 菊池たけし も著者としてクレジットされている。",
+   "source": "https://ja.wikipedia.org/wiki/アルシャード",
+   "genre": "その他",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T08:04:15+00:00"
+  },
+  {
+   "topic": "アルシャード",
+   "text": "2005年 7月に改訂新版にあたる『アルシャードff（フォルティッシモ）』が、 2006年 8月には『アルシャードff』とほぼ同一のシステムを使用した現代ファンタジーRPG『アルシャードガイアRPG』が発売された。",
+   "source": "https://ja.wikipedia.org/wiki/アルシャード",
+   "genre": "その他",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T08:04:15+00:00"
+  },
+  {
+   "topic": "アルシャード",
+   "text": "2012年 5月現在、『アルシャードff』と『アルシャードガイアRPG』の2系列がリリースされている。",
+   "source": "https://ja.wikipedia.org/wiki/アルシャード",
+   "genre": "その他",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T08:04:15+00:00"
+  },
+  {
+   "topic": "アルシャード",
+   "text": "「今の日本人のゲーマーのための、スタンダードなテーブルトークRPGを作る」という意図の下に製作されたテーブルトークRPGであり、 スタンダードRPGシステム の展開の中心に位置するゲームでもある [ 注釈 1 ] 。",
+   "source": "https://ja.wikipedia.org/wiki/アルシャード",
+   "genre": "その他",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T08:04:15+00:00"
+  },
+  {
+   "topic": "アルシャード",
+   "text": "ゲームでは、神話に出てくる神々の力を受け継いだ英雄「クエスター」と、宇宙を蝕む負の勢力「奈落」との戦いを描く。",
+   "source": "https://ja.wikipedia.org/wiki/アルシャード",
+   "genre": "科学",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T08:04:15+00:00"
+  },
+  {
+   "topic": "アルシャード",
+   "text": "ゲームの舞台となる世界は、『アルシャード』及び『アルシャードff』ではテクノロジーが比較的発達した ファンタジー 風の異世界であるミッドガルド、『アルシャードガイアRPG』では現代の地球である。",
+   "source": "https://ja.wikipedia.org/wiki/アルシャード",
+   "genre": "科学",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T08:04:15+00:00"
+  },
+  {
+   "topic": "グローランサ",
+   "text": "グローランサの地図 グローランサ （ Glorantha ）は架空の ファンタジー 世界。",
+   "source": "https://ja.wikipedia.org/wiki/グローランサ",
+   "genre": "その他",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T08:04:15+00:00"
+  },
+  {
+   "topic": "グローランサ",
+   "text": "テーブルトークRPG 『 ルーンクエスト 』等のゲームで使用されている背景世界である。",
+   "source": "https://ja.wikipedia.org/wiki/グローランサ",
+   "genre": "その他",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T08:04:15+00:00"
+  },
+  {
+   "topic": "グローランサ",
+   "text": "主として、ルーンクエストのデザイナーである グレッグ・スタフォード によって作られた。",
+   "source": "https://ja.wikipedia.org/wiki/グローランサ",
+   "genre": "その他",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T08:04:15+00:00"
+  },
+  {
+   "topic": "グローランサ",
+   "text": "また、多数の神が存在する多神教の世界であり、神々は信仰するものに特別な魔法や援助を与えている。",
+   "source": "https://ja.wikipedia.org/wiki/グローランサ",
+   "genre": "その他",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T08:04:15+00:00"
+  },
+  {
+   "topic": "グローランサ",
+   "text": "そして、どの神を信仰するかにより価値観や規範が決まり、それは社会のあり方に色濃く反映されている。",
+   "source": "https://ja.wikipedia.org/wiki/グローランサ",
+   "genre": "社会",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T08:04:15+00:00"
+  },
+  {
+   "topic": "グローランサ",
+   "text": "いわば、神話と英雄の世界なのである。",
+   "source": "https://ja.wikipedia.org/wiki/グローランサ",
+   "genre": "文化",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T08:04:15+00:00"
+  },
+  {
+   "topic": "文庫本",
+   "text": "サイズは多くが A6判 （148×105ミリメートル）である [ 2 ] 。",
+   "source": "https://ja.wikipedia.org/wiki/文庫本",
+   "genre": "その他",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T08:04:15+00:00"
+  },
+  {
+   "topic": "文庫本",
+   "text": "出版各社のレーベル名を含めて「文庫」と通称・略称される（「 文庫レーベル一覧 」も参照）。",
+   "source": "https://ja.wikipedia.org/wiki/文庫本",
+   "genre": "その他",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T08:04:15+00:00"
+  },
+  {
+   "topic": "文庫本",
+   "text": "最初から文庫本として刊行される 書き下ろし や翻訳書籍だけでなく、既刊を価格を下げて出版するため使われる（所謂「文庫落ち」） [ 4 ] 。",
+   "source": "https://ja.wikipedia.org/wiki/文庫本",
+   "genre": "その他",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T08:04:15+00:00"
+  },
+  {
+   "topic": "文庫本",
+   "text": "価格の安さが特長であり、かつては単価に「1000円の壁」があったが、1000円以上する文庫本も増え、平均単価は700円を超えている [ 4 ] 。",
+   "source": "https://ja.wikipedia.org/wiki/文庫本",
+   "genre": "その他",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T08:04:15+00:00"
+  },
+  {
+   "topic": "文庫本",
+   "text": "明治時代 に登場し、現存最古の文庫本レーベルは、 1914年 （ 大正 3年）創刊の 新潮文庫 である [ 4 ] 。",
+   "source": "https://ja.wikipedia.org/wiki/文庫本",
+   "genre": "歴史",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T08:04:15+00:00"
+  },
+  {
+   "topic": "文庫本",
+   "text": "1927年 （ 昭和 2年）創刊の 岩波文庫 が 古典 の普及を目的として発刊され [ 5 ] 、 第二次世界大戦 後に新規参入が増えた。",
+   "source": "https://ja.wikipedia.org/wiki/文庫本",
+   "genre": "その他",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T08:04:15+00:00"
+  },
+  {
+   "topic": "五十音",
+   "text": "辞書などにおける順序の規則については「 五十音順 」をご覧ください。",
+   "source": "https://ja.wikipedia.org/wiki/五十音",
+   "genre": "言葉",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T08:04:15+00:00"
+  },
+  {
+   "topic": "五十音",
+   "text": "この項目には、一部のコンピュータや 閲覧ソフト で表示できない文字（ Unicode に収録されている、現代では使われなくなった 仮名文字 ）が含まれています （ 詳細 ） 。",
+   "source": "https://ja.wikipedia.org/wiki/五十音",
+   "genre": "言葉",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T08:04:15+00:00"
+  },
+  {
+   "topic": "五十音",
+   "text": "ひらがな と カタカナ 別の五十音表の画像（ 横書き 。",
+   "source": "https://ja.wikipedia.org/wiki/五十音",
+   "genre": "その他",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T08:04:15+00:00"
+  },
+  {
+   "topic": "五十音",
+   "text": "また 北原白秋 による詩『五十音』が存在するが、これについては「 #北原白秋の五十音 」で後述する。",
+   "source": "https://ja.wikipedia.org/wiki/五十音",
+   "genre": "その他",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T08:04:15+00:00"
+  },
+  {
+   "topic": "五十音",
+   "text": "しかし日本語の仮名・音節が文字通り 50 個である訳ではない。",
+   "source": "https://ja.wikipedia.org/wiki/五十音",
+   "genre": "言葉",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T08:04:15+00:00"
+  },
+  {
+   "topic": "五十音",
+   "text": "表上では欠落したり重複したりしている文字・音節がある。",
+   "source": "https://ja.wikipedia.org/wiki/五十音",
+   "genre": "言葉",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T08:04:15+00:00"
+  },
+  {
+   "topic": "哲学者",
+   "text": "中央の プラトン 、 アリストテレス 他、古代の哲学者たちが描かれている 哲学者 （てつがくしゃ、 英 : philosopher、フィロソファー ）とは、 哲学 を研究する者のことである。",
+   "source": "https://ja.wikipedia.org/wiki/哲学者",
+   "genre": "歴史",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T08:04:15+00:00"
+  },
+  {
+   "topic": "哲学者",
+   "text": "古代ギリシャ語 で「知恵を愛する者」を意味する「フィロソフォス」（ φιλόσοφος ）に由来する。",
+   "source": "https://ja.wikipedia.org/wiki/哲学者",
+   "genre": "歴史",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T08:04:15+00:00"
+  },
+  {
+   "topic": "哲学者",
+   "text": "ギリシャ の思想家 ピタゴラス によって導入された [ 1 ] 。",
+   "source": "https://ja.wikipedia.org/wiki/哲学者",
+   "genre": "その他",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T08:04:15+00:00"
+  },
+  {
+   "topic": "哲学者",
+   "text": "「 哲学 」の定義が曖昧であるのと同様、「哲学者」の定義も曖昧である。",
+   "source": "https://ja.wikipedia.org/wiki/哲学者",
+   "genre": "その他",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T08:04:15+00:00"
+  },
+  {
+   "topic": "哲学者",
+   "text": "現代では、主に 大学 の 哲学科 に所属する学者が「哲学者」と呼ばれる。",
+   "source": "https://ja.wikipedia.org/wiki/哲学者",
+   "genre": "その他",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T08:04:15+00:00"
+  },
+  {
+   "topic": "哲学者",
+   "text": "しかしながら、 日本の哲学者 は「哲学者」を避けて「哲学研究者」と名乗ることが多い [ 2 ] 。",
+   "source": "https://ja.wikipedia.org/wiki/哲学者",
+   "genre": "その他",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T08:04:15+00:00"
+  },
+  {
+   "topic": "エドワード・サピア",
+   "text": "アメリカの 構造言語学 を主導し、「 サピア＝ウォーフの仮説 」と呼ばれるようになった 学説 を提唱したことで知られる。",
+   "source": "https://ja.wikipedia.org/wiki/エドワード・サピア",
+   "genre": "言葉",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T08:04:15+00:00"
+  },
+  {
+   "topic": "エドワード・サピア",
+   "text": "1904年 に コロンビア大学 を ドイツ語 の 学位 を得て卒業するが、彼の 言語学 的関心はそれにとどまらなかったことが後に明らかになる。",
+   "source": "https://ja.wikipedia.org/wiki/エドワード・サピア",
+   "genre": "言葉",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T08:04:15+00:00"
+  },
+  {
+   "topic": "エドワード・サピア",
+   "text": "卒業後2年間、 ウィシュラム語 （ 英語版 ） と タケルマ語 （ 英語版 ） について実地調査を行ない、この間コロンビア大学では 人類学者 フランツ・ボアズ に師事。",
+   "source": "https://ja.wikipedia.org/wiki/エドワード・サピア",
+   "genre": "その他",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T08:04:15+00:00"
+  },
+  {
+   "topic": "エドワード・サピア",
+   "text": "ボアズの存在が、サピアを ネイティブ・アメリカン の言語研究に向かわせる決め手になったとも考えられている。",
+   "source": "https://ja.wikipedia.org/wiki/エドワード・サピア",
+   "genre": "言葉",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T08:04:15+00:00"
+  },
+  {
+   "topic": "エドワード・サピア",
+   "text": "その後、 シカゴ大学 で教鞭をとり、移籍した イェール大学 では 人類学 科長を務めた。",
+   "source": "https://ja.wikipedia.org/wiki/エドワード・サピア",
+   "genre": "その他",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T08:04:15+00:00"
+  },
+  {
+   "topic": "エドワード・サピア",
+   "text": "彼は言語学と人類学とを結びつける研究の先駆けであり、教え子には 李方桂 や ベンジャミン・ウォーフ がいた。",
+   "source": "https://ja.wikipedia.org/wiki/エドワード・サピア",
+   "genre": "言葉",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T08:04:15+00:00"
+  },
+  {
+   "topic": "パリ",
+   "text": "イル＝ド＝フランス地域圏 の 首府 。",
+   "source": "https://ja.wikipedia.org/wiki/パリ",
+   "genre": "その他",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T08:04:15+00:00"
+  },
+  {
+   "topic": "パリ",
+   "text": "フランス最大の 都市 であり、同国の 政治 、 経済 、 文化 などの中心地。",
+   "source": "https://ja.wikipedia.org/wiki/パリ",
+   "genre": "社会",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T08:04:15+00:00"
+  },
+  {
+   "topic": "パリ",
+   "text": "ロンドン と共に 欧州 を代表する 世界都市 。",
+   "source": "https://ja.wikipedia.org/wiki/パリ",
+   "genre": "社会",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T08:04:15+00:00"
+  },
+  {
+   "topic": "パリ",
+   "text": "ルーヴル美術館 を含む1区を中心として時計回りに20の 行政区 が並び、 エスカルゴ と形容される [ 2 ] 。",
+   "source": "https://ja.wikipedia.org/wiki/パリ",
+   "genre": "その他",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T08:04:15+00:00"
+  },
+  {
+   "topic": "パリ",
+   "text": "参考： 東京都 ・ 山手線 の内側は63km 2 、 ニューヨーク市 ・ マンハッタン は59km 2 ）、および、その外側西部の ブローニュの森 と外側東部の ヴァンセンヌの森 を併せた形となっており、面積は105.40km 2 。",
+   "source": "https://ja.wikipedia.org/wiki/パリ",
+   "genre": "その他",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T08:04:15+00:00"
+  },
+  {
+   "topic": "パリ",
+   "text": "ケスタ 地形を呈する パリ盆地 のほぼ中央に位置し、市内を セーヌ川 が貫く。",
+   "source": "https://ja.wikipedia.org/wiki/パリ",
+   "genre": "その他",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T08:04:15+00:00"
+  },
+  {
+   "topic": "国境なき医師団",
+   "text": "国際援助分野における功績によって、 1999年 に ノーベル平和賞 を受賞した [ 10 ] 。",
+   "source": "https://ja.wikipedia.org/wiki/国境なき医師団",
+   "genre": "その他",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T08:04:15+00:00"
+  },
+  {
+   "topic": "国境なき医師団",
+   "text": "そして全ての人が 医療 を受ける権利があり、また医療の必要性は、 国境 よりも重要だという信念に基づき、 1971年 12月20日 に「国境なき医師団」を創設した。",
+   "source": "https://ja.wikipedia.org/wiki/国境なき医師団",
+   "genre": "法",
+   "binding": true,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T08:04:15+00:00"
+  },
+  {
+   "topic": "国境なき医師団",
+   "text": "1975年 、 エチオピア の大 干魃 と政府の失策による 飢餓 で、100万人以上が死亡したが、栄養治療を大規模に展開した。",
+   "source": "https://ja.wikipedia.org/wiki/国境なき医師団",
+   "genre": "その他",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T08:04:15+00:00"
+  },
+  {
+   "topic": "国境なき医師団",
+   "text": "1979年 の「 ベトナム の船」の活動では、創設者の1人 ベルナール・クシュネル がチャーターした船「光の島」号に医師たちだけでなく ジャーナリスト たちも同乗させ、同国での人権侵害を告発した。",
+   "source": "https://ja.wikipedia.org/wiki/国境なき医師団",
+   "genre": "その他",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T08:04:15+00:00"
+  },
+  {
+   "topic": "国境なき医師団",
+   "text": "この活動があまりに宣伝的ではないかとの論争に発展、クシュネルは国境なき医師団を離れ、新たに「 世界の医療団 」（ Médecins du Monde ）を 1980年 にフランスで設立した。",
+   "source": "https://ja.wikipedia.org/wiki/国境なき医師団",
+   "genre": "その他",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T08:04:15+00:00"
+  },
+  {
+   "topic": "国境なき医師団",
+   "text": "彼はその後同団の活動も離れフランス政界へ転進、 2007年 5月から 2010年 11月まで フランス外務大臣 を務め上げた。",
+   "source": "https://ja.wikipedia.org/wiki/国境なき医師団",
+   "genre": "その他",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T08:04:15+00:00"
+  },
+  {
+   "topic": "無音のh・有音のh",
+   "text": "本稿では、主に フランス語 について記す。",
+   "source": "https://ja.wikipedia.org/wiki/無音のh・有音のh",
+   "genre": "その他",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T08:04:15+00:00"
+  },
+  {
+   "topic": "無音のh・有音のh",
+   "text": "現代フランス語では、「有音の h」は「無音の h 」同様それ自身は“無音”となり、ただ前後の音に対するふるまいの違いだけが残ることとなった。",
+   "source": "https://ja.wikipedia.org/wiki/無音のh・有音のh",
+   "genre": "その他",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T08:04:15+00:00"
+  },
+  {
+   "topic": "無音のh・有音のh",
+   "text": "こうした経緯からこれらの名称は、フランス語の初学者にとってはややわかりにくいものとなってしまっている。",
+   "source": "https://ja.wikipedia.org/wiki/無音のh・有音のh",
+   "genre": "その他",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T08:04:15+00:00"
+  },
+  {
+   "topic": "無音のh・有音のh",
+   "text": "一般的な仏和辞典などでは、「有音の h」をもつ単語には頭に † を付して目印としている（例: † hache 、† haricot など。",
+   "source": "https://ja.wikipedia.org/wiki/無音のh・有音のh",
+   "genre": "その他",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T08:04:15+00:00"
+  },
+  {
+   "topic": "無音のh・有音のh",
+   "text": "詳細は英語版及びフランス語版へのリンクを参照のこと）。",
+   "source": "https://ja.wikipedia.org/wiki/無音のh・有音のh",
+   "genre": "その他",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T08:04:15+00:00"
+  },
+  {
+   "topic": "無音のh・有音のh",
+   "text": "「無音の h 」は、発音上全く無視され、「無音の h 」で始まる単語は母音で始まるのと同じ扱いになる。",
+   "source": "https://ja.wikipedia.org/wiki/無音のh・有音のh",
+   "genre": "その他",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T08:04:15+00:00"
+  },
+  {
+   "topic": "9世紀",
+   "text": "巧みな航海術を駆使した北欧の海賊はヴァイキングと呼ばれ恐れられた。",
+   "source": "https://ja.wikipedia.org/wiki/9世紀",
+   "genre": "歴史",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T08:04:15+00:00"
+  },
+  {
+   "topic": "9世紀",
+   "text": "画像は ノルウェー のオーセベリ墳丘墓から出土した 船葬用の船体 （ オスロ の ヴァイキング船博物館 蔵）。",
+   "source": "https://ja.wikipedia.org/wiki/9世紀",
+   "genre": "歴史",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T08:04:15+00:00"
+  },
+  {
+   "topic": "9世紀",
+   "text": "イングランド を襲撃する デーン人 （ヴァイキング）。",
+   "source": "https://ja.wikipedia.org/wiki/9世紀",
+   "genre": "歴史",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T08:04:15+00:00"
+  },
+  {
+   "topic": "9世紀",
+   "text": "イングランド各地もデーン人の猛攻を受け、 イーストアングリア の エドマンド王 が殺害された。",
+   "source": "https://ja.wikipedia.org/wiki/9世紀",
+   "genre": "歴史",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T08:04:15+00:00"
+  },
+  {
+   "topic": "9世紀",
+   "text": "画像は12世紀に書かれた『聖エドマンド殉教王伝』の挿絵。",
+   "source": "https://ja.wikipedia.org/wiki/9世紀",
+   "genre": "歴史",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T08:04:15+00:00"
+  },
+  {
+   "topic": "9世紀",
+   "text": "スピリングスの秘宝 （ 英語版 ） 。",
+   "source": "https://ja.wikipedia.org/wiki/9世紀",
+   "genre": "歴史",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T08:04:15+00:00"
+  },
+  {
+   "topic": "国際刑事警察機構",
+   "text": "ロックバンドについては「 インターポール (バンド) 」をご覧ください。",
+   "source": "https://ja.wikipedia.org/wiki/国際刑事警察機構",
+   "genre": "その他",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T08:04:15+00:00"
+  },
+  {
+   "topic": "国際刑事警察機構",
+   "text": "主な活動は、国外逃亡被疑者や行方不明者、盗難美術品などの発見、身元不明死体の身元確認などに努める「 国際手配 制度」や、 国際犯罪 および国際犯罪者に関する情報のデータベース化とフィードバックなど。",
+   "source": "https://ja.wikipedia.org/wiki/国際刑事警察機構",
+   "genre": "技術",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T08:04:15+00:00"
+  },
+  {
+   "topic": "国際刑事警察機構",
+   "text": "運営は、2つの非常設機関（総会および執行委員会）と、2つの常設機関（事務総局および加盟各国に設置された国家中央事務局、通称NCB）により行われる。",
+   "source": "https://ja.wikipedia.org/wiki/国際刑事警察機構",
+   "genre": "社会",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T08:04:15+00:00"
+  },
+  {
+   "topic": "国際刑事警察機構",
+   "text": "NCBは自国の警察と事務総局や加盟各国の警察とをつなぐ窓口機関にあたるもので、日本では 警察庁 が指定されている [ 3 ] 。",
+   "source": "https://ja.wikipedia.org/wiki/国際刑事警察機構",
+   "genre": "その他",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T08:04:15+00:00"
+  },
+  {
+   "topic": "国際刑事警察機構",
+   "text": "また、効率化を図るため、 香港 や プエルトリコ などのような地域は準国家中央事務局に指定されている [ 4 ] 。",
+   "source": "https://ja.wikipedia.org/wiki/国際刑事警察機構",
+   "genre": "社会",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T08:04:15+00:00"
+  },
+  {
+   "topic": "国際刑事警察機構",
+   "text": "リヨン に事務総局、 ハラレ 、 アビジャン 、 ナイロビ 、 ブエノスアイレス 、 サンサルバドル に地域局、 バンコク に連絡事務所がある [ 2 ] 。",
+   "source": "https://ja.wikipedia.org/wiki/国際刑事警察機構",
+   "genre": "その他",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T08:04:15+00:00"
+  },
+  {
+   "topic": "地層累重の法則",
+   "text": "これは 化石による地層同定の法則 と並ぶ 層位学 の基本法則であり、地層の新旧や 年代 判定を行う上での大原則である。",
+   "source": "https://ja.wikipedia.org/wiki/地層累重の法則",
+   "genre": "その他",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T08:04:15+00:00"
+  },
+  {
+   "topic": "地層累重の法則",
+   "text": "ステノスミスの法則 ともいう [ 1 ] 。",
+   "source": "https://ja.wikipedia.org/wiki/地層累重の法則",
+   "genre": "その他",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T08:04:15+00:00"
+  },
+  {
+   "topic": "地層累重の法則",
+   "text": "彼は、1666年10月に リヴォルノ で捕らえられた サメ を解剖した際、サメの歯と トスカーナ 近辺で産出する化石の形状が類似していることを発見し、翌年に発表した解剖結果報告において、この化石が生物由来のものであると結論づけた。",
+   "source": "https://ja.wikipedia.org/wiki/地層累重の法則",
+   "genre": "生き物",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T08:04:15+00:00"
+  },
+  {
+   "topic": "地層累重の法則",
+   "text": "ステノは研究を進め、化石を含む岩層は 海底 で堆積したものと考えられること、水によって堆積した以上、最下層を除いては水平に堆積したものと考えられること、連続して堆積した場合、上に行くほど堆積した時期が新しくなることを見いだした [ 2 ] 。",
+   "source": "https://ja.wikipedia.org/wiki/地層累重の法則",
+   "genre": "その他",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T08:04:15+00:00"
+  },
+  {
+   "topic": "地層累重の法則",
+   "text": "これにより 地球 の発達過程が 検証 されるようになった。",
+   "source": "https://ja.wikipedia.org/wiki/地層累重の法則",
+   "genre": "科学",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T08:04:15+00:00"
+  },
+  {
+   "topic": "地層累重の法則",
+   "text": "第1法則 地層は水平に堆積する（初原地層水平堆積の法則。",
+   "source": "https://ja.wikipedia.org/wiki/地層累重の法則",
+   "genre": "その他",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T08:04:15+00:00"
+  },
+  {
+   "topic": "年代測定",
+   "text": "（ 2024年6月 ） 翻訳前に重要な指示を読むには右にある[表示]をクリックしてください。",
+   "source": "https://ja.wikipedia.org/wiki/年代測定",
+   "genre": "その他",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T08:04:16+00:00"
+  },
+  {
+   "topic": "年代測定",
+   "text": "英語版記事を 日本語へ機械翻訳したバージョン （Google翻訳）。",
+   "source": "https://ja.wikipedia.org/wiki/年代測定",
+   "genre": "言葉",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T08:04:16+00:00"
+  },
+  {
+   "topic": "年代測定",
+   "text": "これが成されていない場合、 記事は削除の方針 G-3 に基づき、削除される可能性があります。",
+   "source": "https://ja.wikipedia.org/wiki/年代測定",
+   "genre": "その他",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T08:04:16+00:00"
+  },
+  {
+   "topic": "年代測定",
+   "text": "信頼性が低いまたは低品質な文章を翻訳しないでください。",
+   "source": "https://ja.wikipedia.org/wiki/年代測定",
+   "genre": "その他",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T08:04:16+00:00"
+  },
+  {
+   "topic": "年代測定",
+   "text": "もし可能ならば、文章を他言語版記事に示された文献で正しいかどうかを確認してください。",
+   "source": "https://ja.wikipedia.org/wiki/年代測定",
+   "genre": "言葉",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T08:04:16+00:00"
+  },
+  {
+   "topic": "年代測定",
+   "text": "履歴継承 を行うため、 要約欄 に翻訳元となった記事のページ名・版について記述する必要があります。",
+   "source": "https://ja.wikipedia.org/wiki/年代測定",
+   "genre": "その他",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T08:04:16+00:00"
+  },
+  {
+   "topic": "元号一覧 (中国)",
+   "text": "元号一覧 （げんごういちらん）は、 中国 における 元号 の一覧。",
+   "source": "https://ja.wikipedia.org/wiki/元号一覧_(中国)",
+   "genre": "その他",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T08:04:16+00:00"
+  },
+  {
+   "topic": "元号一覧 (中国)",
+   "text": "なお 歴史書 の 紀年 では、年内途中で 改元 された場合、その年はすべて新しい元号に従っている。",
+   "source": "https://ja.wikipedia.org/wiki/元号一覧_(中国)",
+   "genre": "歴史",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T08:04:16+00:00"
+  },
+  {
+   "topic": "元号一覧 (中国)",
+   "text": "しかし、ここではその元号が使用された年までを記載した。",
+   "source": "https://ja.wikipedia.org/wiki/元号一覧_(中国)",
+   "genre": "その他",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T08:04:16+00:00"
+  },
+  {
+   "topic": "元号一覧 (中国)",
+   "text": "また 中国の暦 は 太陰太陽暦 であり、 12月 は ユリウス暦 に換算すると、翌年の 1月 ・ 2月 になるが、ここでは翌年までは含めていない。",
+   "source": "https://ja.wikipedia.org/wiki/元号一覧_(中国)",
+   "genre": "その他",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T08:04:16+00:00"
+  },
+  {
+   "topic": "元号一覧 (中国)",
+   "text": "名称に諸説ある場合があるが、 正史 や『 資治通鑑 』といった歴史書の紀年に使われているものに限らず、歴史学や考古学の考証に基づき当時、実際に使われていたと考えられるものを代表として載せている。",
+   "source": "https://ja.wikipedia.org/wiki/元号一覧_(中国)",
+   "genre": "歴史",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T08:04:16+00:00"
+  },
+  {
+   "topic": "元号一覧 (中国)",
+   "text": "なお、日本の場合は 一度使用した元号は二度と使用しない という慣例があるが、中国ではそのような慣例は無く、 過去に使用された元号が後世において再使用される 例が多い。",
+   "source": "https://ja.wikipedia.org/wiki/元号一覧_(中国)",
+   "genre": "その他",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T08:04:16+00:00"
+  },
+  {
+   "topic": "グレゴリオ暦",
+   "text": "年 の 数え方 については「 西暦 」をご覧ください。",
+   "source": "https://ja.wikipedia.org/wiki/グレゴリオ暦",
+   "genre": "その他",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T08:04:16+00:00"
+  },
+  {
+   "topic": "グレゴリオ暦",
+   "text": "紀年法 はキリスト紀元（ 西暦 ）を用いる。",
+   "source": "https://ja.wikipedia.org/wiki/グレゴリオ暦",
+   "genre": "その他",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T08:04:16+00:00"
+  },
+  {
+   "topic": "グレゴリオ暦",
+   "text": "グレゴリオ暦の本質は、 平年 では1年を365日とするが、400年間に（100回ではなく）97回の 閏年 を置いてその年を366日とすることにより、400年間における1年の平均日数を 365日 + (97/400)日 = 365.2425 日（365日5時間49分12秒）とすることである。",
+   "source": "https://ja.wikipedia.org/wiki/グレゴリオ暦",
+   "genre": "その他",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T08:04:16+00:00"
+  },
+  {
+   "topic": "グレゴリオ暦",
+   "text": "この平均日数 365.2425 日は、実際に観測で求められる平均 太陽年 （回帰年）の 365.242 189 572 日（2013年年央値）に比べて約26.821秒長いだけであり、ユリウス暦に比べると格段に精度が向上した [ 注釈 4 ] 。",
+   "source": "https://ja.wikipedia.org/wiki/グレゴリオ暦",
+   "genre": "その他",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T08:04:16+00:00"
+  },
+  {
+   "topic": "グレゴリオ暦",
+   "text": "新約聖書 において、 イエス・キリスト の 処刑 と復活の記事は、 太陰太陽暦 である ユダヤ暦 に基づいて記述されており、イエスの処刑日は ユダヤ教 の 過越し の日の前日すなわちニサン月14日（ ヨハネによる福音書 ）または過越祭第一日目の同月15日（ 共観福音書 ）とある。",
+   "source": "https://ja.wikipedia.org/wiki/グレゴリオ暦",
+   "genre": "文化",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T08:04:16+00:00"
+  },
+  {
+   "topic": "グレゴリオ暦",
+   "text": "このユダヤ暦ニサン月は 春分 の頃に来る太陰月であり、 メソポタミア文明 の暦においては伝統的に正月（新年）とされていたものである。",
+   "source": "https://ja.wikipedia.org/wiki/グレゴリオ暦",
+   "genre": "その他",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T08:04:16+00:00"
+  },
+  {
+   "topic": "中国暦",
+   "text": "中国では伝統的な暦法のことを 夏暦 （かれき）・ 農暦 （のうれき、 农历 、 農曆 ）・ 陰暦 （いんれき）・ 旧暦 （きゅうれき、 旧历 、 舊曆 ）などと呼んでいる。",
+   "source": "https://ja.wikipedia.org/wiki/中国暦",
+   "genre": "その他",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T08:04:16+00:00"
+  },
+  {
+   "topic": "中国暦",
+   "text": "また、 ベトナム などのように 黄暦 （こうれき）と呼称 する国・地域もある。",
+   "source": "https://ja.wikipedia.org/wiki/中国暦",
+   "genre": "その他",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T08:04:16+00:00"
+  },
+  {
+   "topic": "中国暦",
+   "text": "さらに 日本 では 、中国から輸入した暦のことを 漢暦 （かんれき）と呼んでいた（日本の暦については「 太陰太陽暦#日本の太陰太陽暦 」も参照）。",
+   "source": "https://ja.wikipedia.org/wiki/中国暦",
+   "genre": "その他",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T08:04:16+00:00"
+  },
+  {
+   "topic": "中国暦",
+   "text": "夏暦とは元々 古六暦 の一つであるが、 辛亥革命 以後に 太陽暦 （ グレゴリオ暦 ）が採用されるようになると、それまでの伝統的な 太陰太陽暦 を総称する言葉となった。",
+   "source": "https://ja.wikipedia.org/wiki/中国暦",
+   "genre": "その他",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T08:04:16+00:00"
+  },
+  {
+   "topic": "中国暦",
+   "text": "これは中国の太陰太陽暦が 建寅 の月を年始とする 夏正 であったためである。",
+   "source": "https://ja.wikipedia.org/wiki/中国暦",
+   "genre": "その他",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T08:04:16+00:00"
+  },
+  {
+   "topic": "中国暦",
+   "text": "また一般的に農暦と呼ばれるようになったのは、 農村 で今でも広く使われているからである。",
+   "source": "https://ja.wikipedia.org/wiki/中国暦",
+   "genre": "その他",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T08:04:16+00:00"
   }
  ],
  "read": {
@@ -345802,7 +347434,30 @@
   "https://ja.wikipedia.org/wiki/フランス系カナダ人": "2026-09-08T07:59:41+00:00",
   "https://ja.wikipedia.org/wiki/ユリウス暦": "2026-09-08T07:59:41+00:00",
   "https://ja.wikipedia.org/wiki/ローマ帝国": "2026-09-08T07:59:41+00:00",
-  "https://ja.wikipedia.org/wiki/インド国定暦": "2026-09-08T07:59:41+00:00"
+  "https://ja.wikipedia.org/wiki/インド国定暦": "2026-09-08T07:59:41+00:00",
+  "https://ja.wikipedia.org/wiki/ラムダ計算": "2026-09-08T08:04:09+00:00",
+  "https://ja.wikipedia.org/wiki/並列計算": "2026-09-08T08:04:11+00:00",
+  "https://ja.wikipedia.org/wiki/清松みゆき": "2026-09-08T08:04:11+00:00",
+  "https://ja.wikipedia.org/wiki/久保田悠羅": "2026-09-08T08:04:11+00:00",
+  "https://ja.wikipedia.org/wiki/キャンペーン_(TRPG)": "2026-09-08T08:04:12+00:00",
+  "https://ja.wikipedia.org/wiki/ファンタジー": "2026-09-08T08:04:12+00:00",
+  "https://ja.wikipedia.org/wiki/マルチメディア": "2026-09-08T08:04:12+00:00",
+  "https://ja.wikipedia.org/wiki/アルシャード": "2026-09-08T08:04:12+00:00",
+  "https://ja.wikipedia.org/wiki/グローランサ": "2026-09-08T08:04:12+00:00",
+  "https://ja.wikipedia.org/wiki/文庫本": "2026-09-08T08:04:12+00:00",
+  "https://ja.wikipedia.org/wiki/五十音": "2026-09-08T08:04:12+00:00",
+  "https://ja.wikipedia.org/wiki/哲学者": "2026-09-08T08:04:12+00:00",
+  "https://ja.wikipedia.org/wiki/エドワード・サピア": "2026-09-08T08:04:12+00:00",
+  "https://ja.wikipedia.org/wiki/パリ": "2026-09-08T08:04:13+00:00",
+  "https://ja.wikipedia.org/wiki/国境なき医師団": "2026-09-08T08:04:13+00:00",
+  "https://ja.wikipedia.org/wiki/無音のh・有音のh": "2026-09-08T08:04:13+00:00",
+  "https://ja.wikipedia.org/wiki/9世紀": "2026-09-08T08:04:13+00:00",
+  "https://ja.wikipedia.org/wiki/国際刑事警察機構": "2026-09-08T08:04:13+00:00",
+  "https://ja.wikipedia.org/wiki/地層累重の法則": "2026-09-08T08:04:13+00:00",
+  "https://ja.wikipedia.org/wiki/年代測定": "2026-09-08T08:04:13+00:00",
+  "https://ja.wikipedia.org/wiki/元号一覧_(中国)": "2026-09-08T08:04:14+00:00",
+  "https://ja.wikipedia.org/wiki/グレゴリオ暦": "2026-09-08T08:04:14+00:00",
+  "https://ja.wikipedia.org/wiki/中国暦": "2026-09-08T08:04:14+00:00"
  },
  "frontier": [
   "https://ja.wikipedia.org/wiki/UI%E3%81%A8UX",
@@ -346114,7 +347769,6 @@
   "https://ja.wikipedia.org/wiki/プロセス制御",
   "https://ja.wikipedia.org/wiki/EDA_(半導体)",
   "https://ja.wikipedia.org/wiki/オライリーメディア",
-  "https://ja.wikipedia.org/wiki/ラムダ計算",
   "https://ja.wikipedia.org/wiki/コンピュータ科学",
   "https://ja.wikipedia.org/wiki/計算物理学",
   "https://ja.wikipedia.org/wiki/Piet",
@@ -346223,7 +347877,6 @@
   "https://ja.wikipedia.org/wiki/GCOS",
   "https://ja.wikipedia.org/wiki/OCaml",
   "https://ja.wikipedia.org/wiki/構造力学",
-  "https://ja.wikipedia.org/wiki/並列計算",
   "https://ja.wikipedia.org/wiki/IBM_704",
   "https://ja.wikipedia.org/wiki/UCSD_p-System",
   "https://ja.wikipedia.org/wiki/東京大学出版",
@@ -346234,11 +347887,9 @@
   "https://ja.wikipedia.org/wiki/プログラミング言語年表",
   "https://ja.wikipedia.org/wiki/国際規格",
   "https://ja.wikipedia.org/wiki/GNU_Fortran",
-  "https://ja.wikipedia.org/wiki/清松みゆき",
   "https://ja.wikipedia.org/wiki/桂令夫",
   "https://ja.wikipedia.org/wiki/行為判定",
   "https://ja.wikipedia.org/wiki/ゲーム・フィールド",
-  "https://ja.wikipedia.org/wiki/久保田悠羅",
   "https://ja.wikipedia.org/wiki/佐々木亮_(漫画家)",
   "https://ja.wikipedia.org/wiki/河嶋陶一朗",
   "https://ja.wikipedia.org/wiki/ドラゴン_(ダンジョンズ&ドラゴンズ)",
@@ -346252,11 +347903,7 @@
   "https://ja.wikipedia.org/wiki/黒田幸弘",
   "https://ja.wikipedia.org/wiki/RPGamer",
   "https://ja.wikipedia.org/wiki/コンベンション_(TRPG)",
-  "https://ja.wikipedia.org/wiki/キャンペーン_(TRPG)",
-  "https://ja.wikipedia.org/wiki/ファンタジー",
   "https://ja.wikipedia.org/wiki/ローズ・トゥ・ロード",
-  "https://ja.wikipedia.org/wiki/マルチメディア",
-  "https://ja.wikipedia.org/wiki/アルシャード",
   "https://ja.wikipedia.org/wiki/ホラーゲーム",
   "https://ja.wikipedia.org/wiki/ダンジョンズ&ドラゴンズ",
   "https://ja.wikipedia.org/wiki/2024年KADOKAWA・ニコニコ動画へのサイバー攻撃",
@@ -346268,8 +347915,6 @@
   "https://ja.wikipedia.org/wiki/伏見健二",
   "https://ja.wikipedia.org/wiki/登録商標",
   "https://ja.wikipedia.org/wiki/役割演技",
-  "https://ja.wikipedia.org/wiki/グローランサ",
-  "https://ja.wikipedia.org/wiki/文庫本",
   "https://ja.wikipedia.org/wiki/松澤和宏",
   "https://ja.wikipedia.org/wiki/1878年",
   "https://ja.wikipedia.org/wiki/ニコライ・トルベツコイ",
@@ -346291,7 +347936,6 @@
   "https://ja.wikipedia.org/wiki/ジュネーブ大学",
   "https://ja.wikipedia.org/wiki/ライプツィヒ大学",
   "https://ja.wikipedia.org/wiki/プラハ学派",
-  "https://ja.wikipedia.org/wiki/五十音",
   "https://ja.wikipedia.org/wiki/ジュネーヴ学派",
   "https://ja.wikipedia.org/wiki/アウグスト・レスキーン",
   "https://ja.wikipedia.org/wiki/カール・ブルークマン",
@@ -346302,20 +347946,16 @@
   "https://ja.wikipedia.org/wiki/シャルル・バイイ",
   "https://ja.wikipedia.org/wiki/アントワーヌ・メイエ",
   "https://ja.wikipedia.org/wiki/百科全書",
-  "https://ja.wikipedia.org/wiki/哲学者",
   "https://ja.wikipedia.org/wiki/分布主義",
   "https://ja.wikipedia.org/wiki/音韻",
-  "https://ja.wikipedia.org/wiki/エドワード・サピア",
   "https://ja.wikipedia.org/wiki/ルイス・イェルムスレウ",
   "https://ja.wikipedia.org/wiki/ヴォー州",
   "https://ja.wikipedia.org/wiki/ジャック・ラカン",
-  "https://ja.wikipedia.org/wiki/パリ",
   "https://ja.wikipedia.org/wiki/印欧語族における母音の原始的体系に関する覚え書き",
   "https://ja.wikipedia.org/wiki/形態素",
   "https://ja.wikipedia.org/wiki/ポール・パシー",
   "https://ja.wikipedia.org/wiki/オラス＝ベネディクト・ド・ソシュール",
   "https://ja.wikipedia.org/wiki/シーニュ",
-  "https://ja.wikipedia.org/wiki/国境なき医師団",
   "https://ja.wikipedia.org/wiki/ポワトゥー＝シャラント地域圏",
   "https://ja.wikipedia.org/wiki/ジェラルド・R・フォード",
   "https://ja.wikipedia.org/wiki/Â",
@@ -346326,13 +347966,11 @@
   "https://ja.wikipedia.org/wiki/エリジオン",
   "https://ja.wikipedia.org/wiki/古フランク語",
   "https://ja.wikipedia.org/wiki/フランス共和国憲法",
-  "https://ja.wikipedia.org/wiki/無音のh・有音のh",
   "https://ja.wikipedia.org/wiki/ジュラ州",
   "https://ja.wikipedia.org/wiki/妻",
   "https://ja.wikipedia.org/wiki/フランス語から日本語への借用",
   "https://ja.wikipedia.org/wiki/フランス語の数詞",
   "https://ja.wikipedia.org/wiki/フリブール州",
-  "https://ja.wikipedia.org/wiki/9世紀",
   "https://ja.wikipedia.org/wiki/海外県",
   "https://ja.wikipedia.org/wiki/ガリア戦争",
   "https://ja.wikipedia.org/wiki/ルイジアナ・クレオール語",
@@ -346340,7 +347978,6 @@
   "https://ja.wikipedia.org/wiki/フランク王国",
   "https://ja.wikipedia.org/wiki/セミコロン",
   "https://ja.wikipedia.org/wiki/日仏協約",
-  "https://ja.wikipedia.org/wiki/国際刑事警察機構",
   "https://ja.wikipedia.org/wiki/ミチフ語",
   "https://ja.wikipedia.org/wiki/フランス文化",
   "https://ja.wikipedia.org/wiki/ポンディシェリ連邦直轄領",
@@ -346349,7 +347986,6 @@
   "https://ja.wikipedia.org/wiki/前舌母音",
   "https://ja.wikipedia.org/wiki/時刻系",
   "https://ja.wikipedia.org/wiki/正教会暦",
-  "https://ja.wikipedia.org/wiki/地層累重の法則",
   "https://ja.wikipedia.org/wiki/シリウス暦",
   "https://ja.wikipedia.org/wiki/ダリアン暦",
   "https://ja.wikipedia.org/wiki/バビロニア暦",
@@ -346359,12 +347995,10 @@
   "https://ja.wikipedia.org/wiki/曜日計算",
   "https://ja.wikipedia.org/wiki/ソティス周期",
   "https://ja.wikipedia.org/wiki/タイ太陰暦",
-  "https://ja.wikipedia.org/wiki/年代測定",
   "https://ja.wikipedia.org/wiki/メートル時間",
   "https://ja.wikipedia.org/wiki/バリ暦",
   "https://ja.wikipedia.org/wiki/BP_(年代測定)",
   "https://ja.wikipedia.org/wiki/紀元前46年",
-  "https://ja.wikipedia.org/wiki/元号一覧_(中国)",
   "https://ja.wikipedia.org/wiki/ヒジュラ暦",
   "https://ja.wikipedia.org/wiki/元号一覧_(日本)",
   "https://ja.wikipedia.org/wiki/安政",
@@ -346389,14 +348023,12 @@
   "https://ja.wikipedia.org/wiki/古代ギリシア暦",
   "https://ja.wikipedia.org/wiki/新暦",
   "https://ja.wikipedia.org/wiki/万年カレンダー",
-  "https://ja.wikipedia.org/wiki/グレゴリオ暦",
   "https://ja.wikipedia.org/wiki/12月2日_(旧暦)",
   "https://ja.wikipedia.org/wiki/絶対年代",
   "https://ja.wikipedia.org/wiki/バハーイー暦",
   "https://ja.wikipedia.org/wiki/分",
   "https://ja.wikipedia.org/wiki/エジプト暦",
   "https://ja.wikipedia.org/wiki/暦法",
-  "https://ja.wikipedia.org/wiki/中国暦",
   "https://ja.wikipedia.org/wiki/閏年",
   "https://ja.wikipedia.org/wiki/ユダヤ暦",
   "https://ja.wikipedia.org/wiki/放射年代測定",
@@ -405804,10 +407436,33 @@
   "https://ja.wikipedia.org/wiki/坂の上の雲_(テレビドラマ)",
   "https://ja.wikipedia.org/wiki/グレイマン",
   "https://ja.wikipedia.org/wiki/マシュー・マースデン",
-  "https://ja.wikipedia.org/wiki/ジャッキー・イド"
+  "https://ja.wikipedia.org/wiki/ジャッキー・イド",
+  "https://ja.wikipedia.org/wiki/SKIコンビネータ計算",
+  "https://ja.wikipedia.org/wiki/カリーのパラドックス",
+  "https://ja.wikipedia.org/wiki/ニコラース・ホーバート・ド・ブラン",
+  "https://ja.wikipedia.org/wiki/不動点コンビネータ",
+  "https://ja.wikipedia.org/wiki/Unlambda",
+  "https://ja.wikipedia.org/wiki/バッカス・ナウア記法",
+  "https://ja.wikipedia.org/wiki/対角線論法",
+  "https://ja.wikipedia.org/wiki/ゲーデル数",
+  "https://ja.wikipedia.org/wiki/%E3%83%A9%E3%83%A0%E3%83%80%E8%A8%88%E7%AE%97",
+  "https://ja.wikipedia.org/wiki/並列コンピューティング",
+  "https://ja.wikipedia.org/wiki/可算無限集合",
+  "https://ja.wikipedia.org/wiki/決定可能性",
+  "https://ja.wikipedia.org/wiki/項書き換え",
+  "https://ja.wikipedia.org/wiki/並行計算",
+  "https://ja.wikipedia.org/wiki/騎士団",
+  "https://ja.wikipedia.org/wiki/ジャン＝イヴ・ジラール",
+  "https://ja.wikipedia.org/wiki/コンビネータ論理",
+  "https://ja.wikipedia.org/wiki/計算機プログラムの構造と解釈",
+  "https://ja.wikipedia.org/wiki/結合法則",
+  "https://ja.wikibooks.org/wiki/%E3%83%A9%E3%83%A0%E3%83%80%E8%A8%88%E7%AE%97",
+  "https://ja.wikipedia.org/wiki/ペアノの公理",
+  "https://ja.wikipedia.org/wiki/ラムダ・キューブ",
+  "https://ja.wikipedia.org/wiki/ラッセルのパラドックス"
  ],
  "born": "2026-09-07T21:38:10+00:00",
- "lastLearned": "2026-09-08T07:59:43+00:00",
+ "lastLearned": "2026-09-08T08:04:16+00:00",
  "failed": {},
  "termsSeen": {
   "https://foundation.wikimedia.org/wiki/Policy:Terms_of_Use/ja": {
@@ -405864,5 +407519,5 @@
  ],
  "heardCount": 18,
  "capacity": 28473,
- "readTotal": 5043
+ "readTotal": 5066
 }
