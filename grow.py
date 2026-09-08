@@ -732,6 +732,21 @@ def main():
               % (bad, GROW_PATIENCE), flush=True)
     want_wider = False          # ★★★「幅が欲しい」と自分で言うための印
     lr_now = LR
+
+    # ★★★Adam の慣性（勢い）を、前の回から引き継ぐ。
+    #   ★これは数百歩かけて溜まったもの。★捨てると冷えた状態に戻り、
+    #   ★loss が跳ねて ★50〜200歩ぶんの収束が無駄になる（研究の実測）。
+    #   ★★前は毎回まっさらから作り直していた。★回が短いほど損が大きかった。
+    #   ★体が変わった回（幅を倍・層が増えた）は形が違うので引き継がない。
+    if st and st.get("opt") and teacher is None and prev_val is not None:
+        try:
+            opt.load_state_dict(st["opt"])
+            sch = st.get("sched") or {}
+            lr_now = float(sch.get("lr_now") or LR)
+            print("★前の回の勢いを引き継いだ（lr %.1e）" % lr_now, flush=True)
+        except Exception as e:
+            print("★勢いは引き継げなかった（%s）。★冷えた状態から始める。"
+                  % type(e).__name__, flush=True)
     t0 = t_start          # ★★下ごしらえも予算の内側
 
     # ★★★どれくらい壊れやすくするかは、★★時計ではなく**自分の状態**で決める。
@@ -892,7 +907,11 @@ def main():
                 "kind": getattr(vocab, "kind", "char"), "arch": ARCH,
                 "itos": getattr(vocab, "itos", None),
                 "layers": len(model.blocks), "d": model.d, "h": model.h,
-                "ctx": model.ctx, "val": val, "valTag": val_tag}, ckpt + ".tmp")
+                                "ctx": model.ctx, "val": val, "valTag": val_tag,
+                # ★★慣性も一緒に残す（★重みの2倍の大きさになるが、それに見合う）
+                "opt": opt.state_dict(),
+                "sched": {"lr_now": lr_now, "best": best, "bad": bad}},
+               ckpt + ".tmp")
     os.replace(ckpt + ".tmp", ckpt)
     model.to(_was)
 
