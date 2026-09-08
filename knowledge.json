@@ -243383,6 +243383,582 @@
     "url": ""
    },
    "ts": "2026-09-08T06:26:44+00:00"
+  },
+  {
+   "topic": "共通言語ランタイム",
+   "text": "バイトコード を 機械語 に変換、実行する。",
+   "source": "https://ja.wikipedia.org/wiki/共通言語ランタイム",
+   "genre": "言葉",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T06:27:50+00:00"
+  },
+  {
+   "topic": "共通言語ランタイム",
+   "text": "CLR は 共通言語基盤 （CLI）仕様に基づく実装であり、複数言語間の相互運用を前提とした点を特徴とする。",
+   "source": "https://ja.wikipedia.org/wiki/共通言語ランタイム",
+   "genre": "言葉",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T06:27:50+00:00"
+  },
+  {
+   "topic": "共通言語ランタイム",
+   "text": "CLR 上で実行されるプログラムは、各言語の ソースコード から言語に依存しない 共通中間言語 （CIL）へコンパイルされ、実行時に Just-In-Timeコンパイラ によって各環境の 機械語 へ変換され実行される。",
+   "source": "https://ja.wikipedia.org/wiki/共通言語ランタイム",
+   "genre": "言葉",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T06:27:50+00:00"
+  },
+  {
+   "topic": "共通言語ランタイム",
+   "text": "また CLR は、メモリ管理（ ガベージコレクション ）、 型安全 性の検証、 例外処理 、 スレッド 管理、セキュリティ検証、 アセンブリ 管理などを担い、開発者がこれらの基盤処理を個別に実装する負担を軽減する。",
+   "source": "https://ja.wikipedia.org/wiki/共通言語ランタイム",
+   "genre": "言葉",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T06:27:50+00:00"
+  },
+  {
+   "topic": "共通言語ランタイム",
+   "text": "CLR は当初 Windows 上の .NET Framework の実行基盤として提供されたが、その後の .NET の発展に伴い、 オープンソース 実装を含む クロスプラットフォーム 対応の実行環境へと展開され、複数の オペレーティングシステム およびデバイス上で .NET アプリケーションを実行する基盤となっている。",
+   "source": "https://ja.wikipedia.org/wiki/共通言語ランタイム",
+   "genre": "言葉",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T06:27:50+00:00"
+  },
+  {
+   "topic": "共通言語ランタイム",
+   "text": "CLRは、 共通中間言語 (CIL) と呼ばれる、プログラミング言語や環境に依存しない中間言語（ 中間表現 ）を解釈する。",
+   "source": "https://ja.wikipedia.org/wiki/共通言語ランタイム",
+   "genre": "言葉",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T06:27:50+00:00"
+  },
+  {
+   "topic": "デカメロン",
+   "text": "ダンテの『 神曲 』に対して、『人曲』とも呼ばれる。",
+   "source": "https://ja.wikipedia.org/wiki/デカメロン",
+   "genre": "その他",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T06:27:50+00:00"
+  },
+  {
+   "topic": "デカメロン",
+   "text": "また、デカメロンは ギリシャ語 の「10日」（ deka hemerai ）に由来し、『 十日物語 』とも和訳される。",
+   "source": "https://ja.wikipedia.org/wiki/デカメロン",
+   "genre": "その他",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T06:27:50+00:00"
+  },
+  {
+   "topic": "デカメロン",
+   "text": "1348年 から 1353年 にかけて製作された [ 1 ] 。",
+   "source": "https://ja.wikipedia.org/wiki/デカメロン",
+   "genre": "その他",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T06:27:50+00:00"
+  },
+  {
+   "topic": "デカメロン",
+   "text": "サブタイトルは「 ガレオット公爵 」で、 アーサー王物語 において ランスロット の不倫の恋を仲立ちしたキャラクターの名前から取られている。",
+   "source": "https://ja.wikipedia.org/wiki/デカメロン",
+   "genre": "その他",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T06:27:50+00:00"
+  },
+  {
+   "topic": "デカメロン",
+   "text": "1348年 に大流行した ペスト から逃れるためフィレンツェ郊外に引きこもった男3人、女7人の10人が退屈しのぎの話をするという趣向で、10人が10話ずつ語り、全100話からなる。",
+   "source": "https://ja.wikipedia.org/wiki/デカメロン",
+   "genre": "その他",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T06:27:50+00:00"
+  },
+  {
+   "topic": "デカメロン",
+   "text": "内容はユーモアと艶笑に満ちた恋愛話や失敗談などで、それぞれ『 千夜一夜物語 』や『 七賢者の書 』から影響を受けている。",
+   "source": "https://ja.wikipedia.org/wiki/デカメロン",
+   "genre": "その他",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T06:27:50+00:00"
+  },
+  {
+   "topic": "君主論",
+   "text": "歴史上の様々な 君主 および 君主国 を分析し、君主とはどうあるものか、君主として 権力 を獲得し、また保持し続けるにはどのような力量（ 徳 、ヴィルトゥ）が必要かなどを論じている。",
+   "source": "https://ja.wikipedia.org/wiki/君主論",
+   "genre": "歴史",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T06:27:50+00:00"
+  },
+  {
+   "topic": "君主論",
+   "text": "その政治思想から 現実主義 の古典として位置づけられる。",
+   "source": "https://ja.wikipedia.org/wiki/君主論",
+   "genre": "社会",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T06:27:50+00:00"
+  },
+  {
+   "topic": "君主論",
+   "text": "写本 で読まれ、マキャヴェッリの死後、 1532年 に刊行された。",
+   "source": "https://ja.wikipedia.org/wiki/君主論",
+   "genre": "その他",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T06:27:50+00:00"
+  },
+  {
+   "topic": "君主論",
+   "text": "著作には表題はついておらず、友人ヴェットリへの手紙の中で「君主体制」に関する本を書いたと述べているため、『君主論』（Il Principe）と呼ばれるようになった [ 1 ] 。",
+   "source": "https://ja.wikipedia.org/wiki/君主論",
+   "genre": "その他",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T06:27:50+00:00"
+  },
+  {
+   "topic": "君主論",
+   "text": "第1章において「君主政体にどのような種類があるか」と挙げ、その一つ一つについてを続く第2章から第11章までで解説する。",
+   "source": "https://ja.wikipedia.org/wiki/君主論",
+   "genre": "生き物",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T06:27:50+00:00"
+  },
+  {
+   "topic": "君主論",
+   "text": "第12章から第14章まではいかなる君主政体においても必要となる軍備について述べる。",
+   "source": "https://ja.wikipedia.org/wiki/君主論",
+   "genre": "その他",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T06:27:50+00:00"
+  },
+  {
+   "topic": "上遠野浩平",
+   "text": "千葉県 出身、 神奈川県 育ち。",
+   "source": "https://ja.wikipedia.org/wiki/上遠野浩平",
+   "genre": "その他",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T06:27:50+00:00"
+  },
+  {
+   "topic": "上遠野浩平",
+   "text": "神奈川県立野庭高等学校 、 法政大学 第二経済学部商業学科卒業。",
+   "source": "https://ja.wikipedia.org/wiki/上遠野浩平",
+   "genre": "社会",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T06:27:50+00:00"
+  },
+  {
+   "topic": "上遠野浩平",
+   "text": "大学卒業後にビル整備会社へ勤めたものの、すぐに退社 [ 1 ] 。",
+   "source": "https://ja.wikipedia.org/wiki/上遠野浩平",
+   "genre": "その他",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T06:27:50+00:00"
+  },
+  {
+   "topic": "上遠野浩平",
+   "text": "作家としてデビューする以前には、 日本ファンタジーノベル大賞 、 コバルト・ノベル大賞 などの公募新人賞へ投稿を続けると同時に モデラー としての活動も行っていた [ 2 ] 。",
+   "source": "https://ja.wikipedia.org/wiki/上遠野浩平",
+   "genre": "その他",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T06:27:50+00:00"
+  },
+  {
+   "topic": "上遠野浩平",
+   "text": "落語家 の 古今亭ぎん志 は従兄弟にあたる [ 3 ] 。",
+   "source": "https://ja.wikipedia.org/wiki/上遠野浩平",
+   "genre": "その他",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T06:27:50+00:00"
+  },
+  {
+   "topic": "上遠野浩平",
+   "text": "1991年、「朱金色の死神」で第3回 ファンタジア長編小説大賞 で最終候補作に選ばれず落選 [ 4 ] 。",
+   "source": "https://ja.wikipedia.org/wiki/上遠野浩平",
+   "genre": "その他",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T06:27:50+00:00"
+  },
+  {
+   "topic": "竹下内閣",
+   "text": "1988年（昭和63年）12月27日から1989年（平成元年）6月3日までの改造内閣については「 竹下内閣 (改造) 」をご覧ください。",
+   "source": "https://ja.wikipedia.org/wiki/竹下内閣",
+   "genre": "その他",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T06:27:50+00:00"
+  },
+  {
+   "topic": "竹下内閣",
+   "text": "竹下内閣 皇居での認証式を終えたのち官邸で恒例の記念撮影に臨む閣僚。",
+   "source": "https://ja.wikipedia.org/wiki/竹下内閣",
+   "genre": "その他",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T06:27:50+00:00"
+  },
+  {
+   "topic": "竹下内閣",
+   "text": "2025年10月25日現在、戦後の 山陰地方 出身者による政権は竹下内閣と 石破内閣 のみである。",
+   "source": "https://ja.wikipedia.org/wiki/竹下内閣",
+   "genre": "その他",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T06:27:50+00:00"
+  },
+  {
+   "topic": "竹下内閣",
+   "text": "内閣発足当初（前内閣の事務引継は除く）。",
+   "source": "https://ja.wikipedia.org/wiki/竹下内閣",
+   "genre": "その他",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T06:27:50+00:00"
+  },
+  {
+   "topic": "竹下内閣",
+   "text": "太字 は自民党総裁並びにいわゆる 自民党三役 。",
+   "source": "https://ja.wikipedia.org/wiki/竹下内閣",
+   "genre": "その他",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T06:27:50+00:00"
+  },
+  {
+   "topic": "竹下内閣",
+   "text": "内閣官房副長官（政務）は政務次官に含む。",
+   "source": "https://ja.wikipedia.org/wiki/竹下内閣",
+   "genre": "その他",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T06:27:50+00:00"
+  },
+  {
+   "topic": "岡本綺堂",
+   "text": "本名は 岡本 敬二 （おかもと けいじ） [ 1 ] 。",
+   "source": "https://ja.wikipedia.org/wiki/岡本綺堂",
+   "genre": "その他",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T06:27:50+00:00"
+  },
+  {
+   "topic": "岡本綺堂",
+   "text": "別号に狂綺堂、鬼菫、甲字楼など。",
+   "source": "https://ja.wikipedia.org/wiki/岡本綺堂",
+   "genre": "その他",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T06:27:50+00:00"
+  },
+  {
+   "topic": "岡本綺堂",
+   "text": "新歌舞伎 の作者として知られ、また著名な作品として小説「 半七捕物帳 」などがある。",
+   "source": "https://ja.wikipedia.org/wiki/岡本綺堂",
+   "genre": "その他",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T06:27:50+00:00"
+  },
+  {
+   "topic": "岡本綺堂",
+   "text": "養子の 岡本経一 は、出版社「青蛙房」の創業者で、社名は綺堂の作品「青蛙堂鬼談」に由来している。",
+   "source": "https://ja.wikipedia.org/wiki/岡本綺堂",
+   "genre": "その他",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T06:27:50+00:00"
+  },
+  {
+   "topic": "岡本綺堂",
+   "text": "1873年 、公使館の 麹町 移転とともに飯田町をへて麹町元園町に移って育つ。",
+   "source": "https://ja.wikipedia.org/wiki/岡本綺堂",
+   "genre": "その他",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T06:27:50+00:00"
+  },
+  {
+   "topic": "岡本綺堂",
+   "text": "3歳にして父から 漢文 素読、9歳から 漢詩 を学び [ 2 ] 、叔父と公使館留学生からは 英語 を学んだ。",
+   "source": "https://ja.wikipedia.org/wiki/岡本綺堂",
+   "genre": "その他",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T06:27:50+00:00"
+  },
+  {
+   "topic": "日本プロサッカーリーグ",
+   "text": "「 Jリーグ 」はこの項目へ 転送 されています。",
+   "source": "https://ja.wikipedia.org/wiki/日本プロサッカーリーグ",
+   "genre": "その他",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T06:27:50+00:00"
+  },
+  {
+   "topic": "日本プロサッカーリーグ",
+   "text": "運営組織の関連会社については「 Jリーグ (企業) 」をご覧ください。",
+   "source": "https://ja.wikipedia.org/wiki/日本プロサッカーリーグ",
+   "genre": "その他",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T06:27:50+00:00"
+  },
+  {
+   "topic": "日本プロサッカーリーグ",
+   "text": "公益財団法人日本サッカー協会 （JFA）傘下の 公益社団法人日本プロサッカーリーグ が主催する。",
+   "source": "https://ja.wikipedia.org/wiki/日本プロサッカーリーグ",
+   "genre": "その他",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T06:27:50+00:00"
+  },
+  {
+   "topic": "日本プロサッカーリーグ",
+   "text": "明治安田生命保険 とタイトルパートナー契約を結んでおり「 明治安田Jリーグ 」と称している。",
+   "source": "https://ja.wikipedia.org/wiki/日本プロサッカーリーグ",
+   "genre": "生き物",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T06:27:50+00:00"
+  },
+  {
+   "topic": "日本プロサッカーリーグ",
+   "text": "概説 1993年に10クラブで開始し [ 注釈 2 ] 、1998年までは1部のみの「Jリーグ」として最大で18クラブによって開催された。",
+   "source": "https://ja.wikipedia.org/wiki/日本プロサッカーリーグ",
+   "genre": "その他",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T06:27:50+00:00"
+  },
+  {
+   "topic": "日本プロサッカーリーグ",
+   "text": "リーグ構成については 日本サッカーのリーグ構成 (1種) を参照。",
+   "source": "https://ja.wikipedia.org/wiki/日本プロサッカーリーグ",
+   "genre": "生き物",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T06:27:50+00:00"
+  },
+  {
+   "topic": "戸田山和久",
+   "text": "千代田区立麹町小学校 、 東京教育大学附属駒場中学校・高等学校 、 東京大学理科二類 を経て、1982年、 東京大学文学部 哲学科卒業。",
+   "source": "https://ja.wikipedia.org/wiki/戸田山和久",
+   "genre": "社会",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T06:27:50+00:00"
+  },
+  {
+   "topic": "戸田山和久",
+   "text": "1989年、 東京大学大学院人文科学研究科 博士課程 単位取得満期退学 。",
+   "source": "https://ja.wikipedia.org/wiki/戸田山和久",
+   "genre": "科学",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T06:27:50+00:00"
+  },
+  {
+   "topic": "戸田山和久",
+   "text": "1989年7月、 名古屋大学 教養部 講師 に就任。",
+   "source": "https://ja.wikipedia.org/wiki/戸田山和久",
+   "genre": "その他",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T06:27:50+00:00"
+  },
+  {
+   "topic": "戸田山和久",
+   "text": "同大 情報文化学部 助教授 、名古屋大学大学院情報科学研究科 教授 を経て、2017年より 名古屋大学大学院情報学研究科 教授、ならびに名古屋大学教養教育院院長。",
+   "source": "https://ja.wikipedia.org/wiki/戸田山和久",
+   "genre": "科学",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T06:27:50+00:00"
+  },
+  {
+   "topic": "戸田山和久",
+   "text": "2023年4月より、独立行政法人 大学改革支援・学位授与機構 教授兼研究開発部長 [ 3 ] 。",
+   "source": "https://ja.wikipedia.org/wiki/戸田山和久",
+   "genre": "その他",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T06:27:50+00:00"
+  },
+  {
+   "topic": "戸田山和久",
+   "text": "妻は 児童文学者 の 戸田山みどり [ 10 ] 。",
+   "source": "https://ja.wikipedia.org/wiki/戸田山和久",
+   "genre": "文化",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T06:27:50+00:00"
   }
  ],
  "read": {
@@ -247814,7 +248390,15 @@
   "https://ja.wikipedia.org/wiki/竹細工": "2026-09-08T06:26:37+00:00",
   "https://ja.wikipedia.org/wiki/日本の川一覧": "2026-09-08T06:26:37+00:00",
   "https://ja.wikipedia.org/wiki/日本の地震年表": "2026-09-08T06:26:37+00:00",
-  "https://ja.wikipedia.org/wiki/天皇の一覧": "2026-09-08T06:26:38+00:00"
+  "https://ja.wikipedia.org/wiki/天皇の一覧": "2026-09-08T06:26:38+00:00",
+  "https://ja.wikipedia.org/wiki/共通言語ランタイム": "2026-09-08T06:27:42+00:00",
+  "https://ja.wikipedia.org/wiki/デカメロン": "2026-09-08T06:27:42+00:00",
+  "https://ja.wikipedia.org/wiki/君主論": "2026-09-08T06:27:43+00:00",
+  "https://ja.wikipedia.org/wiki/上遠野浩平": "2026-09-08T06:27:43+00:00",
+  "https://ja.wikipedia.org/wiki/竹下内閣": "2026-09-08T06:27:46+00:00",
+  "https://ja.wikipedia.org/wiki/岡本綺堂": "2026-09-08T06:27:47+00:00",
+  "https://ja.wikipedia.org/wiki/日本プロサッカーリーグ": "2026-09-08T06:27:47+00:00",
+  "https://ja.wikipedia.org/wiki/戸田山和久": "2026-09-08T06:27:48+00:00"
  },
  "frontier": [
   "https://ja.wikipedia.org/wiki/UI%E3%81%A8UX",
@@ -247980,7 +248564,6 @@
   "https://ja.wikipedia.org/wiki/VMware_ESXi",
   "https://ja.wikipedia.org/wiki/総資産",
   "https://ja.wikipedia.org/wiki/コピーオンライト",
-  "https://ja.wikipedia.org/wiki/共通言語ランタイム",
   "https://ja.wikipedia.org/wiki/プログラミング言語",
   "https://ja.wikipedia.org/wiki/Unubo",
   "https://ja.wikipedia.org/wiki/OpenStack",
@@ -248001,7 +248584,6 @@
   "https://ja.wikipedia.org/wiki/無声硬口蓋鼻音",
   "https://ja.wikipedia.org/wiki/オスク・ウンブリア語群",
   "https://ja.wikipedia.org/wiki/有声歯茎側面接近音",
-  "https://ja.wikipedia.org/wiki/デカメロン",
   "https://ja.wikipedia.org/wiki/未回収のイタリア",
   "https://ja.wikipedia.org/wiki/ウルグアイポルトガル語",
   "https://ja.wikipedia.org/wiki/楽語",
@@ -248027,7 +248609,6 @@
   "https://ja.wikipedia.org/wiki/ガロ・イタリア語",
   "https://ja.wikipedia.org/wiki/モルドバ語",
   "https://ja.wikipedia.org/wiki/ファッショ",
-  "https://ja.wikipedia.org/wiki/君主論",
   "https://ja.wikipedia.org/wiki/モサラベ語",
   "https://ja.wikipedia.org/wiki/政党",
   "https://ja.wikipedia.org/wiki/犬童一心",
@@ -248051,7 +248632,6 @@
   "https://ja.wikipedia.org/wiki/首都消失",
   "https://ja.wikipedia.org/wiki/学童疎開",
   "https://ja.wikipedia.org/wiki/NHKラジオ第1放送",
-  "https://ja.wikipedia.org/wiki/上遠野浩平",
   "https://ja.wikipedia.org/wiki/欲望_(2005年の映画)",
   "https://ja.wikipedia.org/wiki/河崎実",
   "https://ja.wikipedia.org/wiki/渋谷ジァン・ジァン",
@@ -248212,7 +248792,6 @@
   "https://ja.wikipedia.org/wiki/日本の法律",
   "https://ja.wikipedia.org/wiki/寺内内閣",
   "https://ja.wikipedia.org/wiki/国家総動員法",
-  "https://ja.wikipedia.org/wiki/竹下内閣",
   "https://ja.wikipedia.org/wiki/連立政権",
   "https://ja.wikipedia.org/wiki/第39回衆議院議員総選挙",
   "https://ja.wikipedia.org/wiki/11月29日",
@@ -248261,7 +248840,6 @@
   "https://ja.wikipedia.org/wiki/日本の年金",
   "https://ja.wikipedia.org/wiki/日本建築史",
   "https://ja.wikipedia.org/wiki/平安時代",
-  "https://ja.wikipedia.org/wiki/岡本綺堂",
   "https://ja.wikipedia.org/wiki/演芸",
   "https://ja.wikipedia.org/wiki/日本の伝統芸能",
   "https://ja.wikipedia.org/wiki/三方楽所",
@@ -248308,7 +248886,6 @@
   "https://ja.wikipedia.org/wiki/在日中国人",
   "https://ja.wikipedia.org/wiki/世阿弥",
   "https://ja.wikipedia.org/wiki/埴輪",
-  "https://ja.wikipedia.org/wiki/日本プロサッカーリーグ",
   "https://ja.wikipedia.org/wiki/選定保存技術",
   "https://ja.wikipedia.org/wiki/日本の学生運動",
   "https://ja.wikipedia.org/wiki/筆",
@@ -248358,7 +248935,6 @@
   "https://ja.wikipedia.org/wiki/客観性_(哲学)",
   "https://ja.wikipedia.org/wiki/内在主義と外在主義",
   "https://ja.wikipedia.org/wiki/クリストファー・コロンブス",
-  "https://ja.wikipedia.org/wiki/戸田山和久",
   "https://ja.wikipedia.org/wiki/ラカトシュ・イムレ",
   "https://ja.wikipedia.org/wiki/水槽の脳",
   "https://ja.wikipedia.org/wiki/感性",
@@ -307816,10 +308392,18 @@
   "https://ja.wikipedia.org/wiki/スカパ・フローでのドイツ艦隊の自沈",
   "https://ja.wikipedia.org/wiki/ドイツ海軍_(ドイツ連邦軍)",
   "https://ja.wikipedia.org/wiki/艦船接頭辞",
-  "https://ja.wikipedia.org/wiki/アブシリの反乱"
+  "https://ja.wikipedia.org/wiki/アブシリの反乱",
+  "https://ja.wikipedia.org/wiki/Common_Language_Runtime",
+  "https://ja.wikipedia.org/wiki/Visual_Basic_.NET",
+  "https://ja.wikipedia.org/wiki/Xamarin_Studio",
+  "https://ja.wikipedia.org/wiki/C++マネージ拡張",
+  "https://ja.wikipedia.org/wiki/共通言語基盤",
+  "https://ja.wikipedia.org/wiki/統合言語クエリ",
+  "https://ja.wikipedia.org/wiki/準仮想化",
+  "https://ja.wikipedia.org/wiki/アセンブリ_(共通言語基盤)"
  ],
  "born": "2026-09-07T21:38:10+00:00",
- "lastLearned": "2026-09-08T06:26:44+00:00",
+ "lastLearned": "2026-09-08T06:27:50+00:00",
  "failed": {},
  "termsSeen": {
   "https://foundation.wikimedia.org/wiki/Policy:Terms_of_Use/ja": {
@@ -307876,5 +308460,5 @@
  ],
  "heardCount": 18,
  "capacity": 28473,
- "readTotal": 3583
+ "readTotal": 3591
 }
