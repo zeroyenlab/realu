@@ -107,7 +107,9 @@ class CharVocab:
 #     ・正規化:       LayerNorm        → ★RMSNorm。速い・パラメータも減る
 #     ・MLP:          GELU             → ★SwiGLU。勾配の通りが良い
 #   ★同じ計算量で loss が下がる。★タダの改善。
-ARCH = "tpp"
+ARCH = "tpp-loop"
+MAX_LOOPS = int(os.environ.get("REALU_MAX_LOOPS", 8))
+LOOPS0 = int(os.environ.get("REALU_LOOPS", 1))
 
 
 class RMSNorm(nn.Module):
@@ -187,10 +189,21 @@ class Block(nn.Module):
 
 
 class Realu(nn.Module):
-    def __init__(self, vocab, d=D_MODEL, h=N_HEAD, n=N_LAYER0, ctx=CTX):
+    """★★★同じ層を何度も通す（ループ）。
+
+    ★層を8枚並べる代わりに、★2枚を4回通す。★深さは同じ、★★パラメータは1/4。
+    ★保存サイズが小さいままなので、★いつか小さい機械にも載せられる。
+    ★何周目かは層に教える（★教えないと、同じことを繰り返すだけになる）。
+    """
+
+    def __init__(self, vocab, d=D_MODEL, h=N_HEAD, n=N_LAYER0, ctx=CTX, loops=1):
         super().__init__()
         self.d, self.h, self.ctx = d, h, ctx
+        self.loops = max(1, int(loops))
         self.tok = nn.Embedding(vocab, d)
+        # ★★何周目かの印。★これが無いと、同じ層が同じことを繰り返すだけになる
+        self.loop_emb = nn.Embedding(MAX_LOOPS, d)
+        nn.init.zeros_(self.loop_emb.weight)
         self.blocks = nn.ModuleList([Block(d, h) for _ in range(n)])
         self.nf = RMSNorm(d)
         self.head = nn.Linear(d, vocab, bias=False)
@@ -229,10 +242,19 @@ class Realu(nn.Module):
     def n_params(self):
         return sum(p.numel() for p in self.parameters())
 
+    def loop_more(self):
+        """★★★もう一周ぶん深くなる。★★パラメータは増えない。★保存サイズも変わらない。"""
+        if self.loops >= MAX_LOOPS:
+            return self.loops
+        self.loops += 1
+        return self.loops
+
     def forward(self, idx, targets=None):
         x = self.tok(idx)
-        for blk in self.blocks:
-            x = blk(x, self.rc, self.rs)
+        for r in range(self.loops):
+            x = x + self.loop_emb.weight[r]     # ★何周目かを教える
+            for blk in self.blocks:
+                x = blk(x, self.rc, self.rs)
         logits = self.head(self.nf(x))
         if targets is None:
             return logits, None
@@ -249,9 +271,35 @@ class Realu(nn.Module):
 
 
 # ── 学習 ────────────────────────────────────────────
-def batch(data, ctx, bs):
-    """★★★溜めた**全部**からランダムに引く。★新しいものだけ食べると古いことを忘れるから。"""
-    ix = torch.randint(len(data) - ctx - 1, (bs,))
+# ★★★記憶を3つに分ける（★短期・中期・長期）
+#   ★いままでは全部から一様に引いていた。★だから今日読んだものは 0.16% しか引かれず、
+#     ★★「webから学習して自分のものにする」が成立していなかった。
+#   ★短期＝前回から今回までに読んだもの。★中期＝直近ひと月。★長期＝ぜんぶ。
+#   ★★★長期を必ず混ぜる。★新しいものだけ食べると、★古いことを忘れるから。
+#   ★昼に読んで、夜に固める ── 生き物が寝ている間にやっていることに近い。
+SHORT_P = float(os.environ.get("REALU_SHORT_P", 0.30))
+MID_P = float(os.environ.get("REALU_MID_P", 0.20))
+
+
+def batch(data, ctx, bs, tiers=None):
+    """★3つの山から、決めた割合で引く。★山が無ければ全部から引く。"""
+    n = len(data) - ctx - 1
+    if not tiers:
+        ix = torch.randint(n, (bs,))
+    else:
+        short, mid = tiers.get("short"), tiers.get("mid")
+        r = torch.rand(bs)
+        ix = torch.randint(n, (bs,))
+        if short and short[1] - short[0] > ctx + 1:
+            m = r < SHORT_P
+            k = int(m.sum())
+            if k:
+                ix[m] = torch.randint(short[0], short[1] - ctx - 1, (k,))
+        if mid and mid[1] - mid[0] > ctx + 1:
+            m = (r >= SHORT_P) & (r < SHORT_P + MID_P)
+            k = int(m.sum())
+            if k:
+                ix[m] = torch.randint(mid[0], mid[1] - ctx - 1, (k,))
     x = torch.stack([data[i:i + ctx] for i in ix])
     y = torch.stack([data[i + 1:i + ctx + 1] for i in ix])
     return x, y
@@ -277,7 +325,10 @@ def main():
 
     # ── ①★ごはんを読む（★法令＋判例＋**webで自分が読んだもの**）
     texts = []
-    for name in ("laws.txt", "hanrei.txt", "web.txt", "wiki.txt", "kokkai.txt"):
+    sizes = {}
+    # ★★★動かないもの（法令・Wikipedia）を先に、★増えるもの（判例・会議録・読んだもの）を後に。
+    #   ★そうすると「新しく足された分」がいつも後ろに来るので、★短期の山が作れる。
+    for name in ("laws.txt", "wiki.txt", "hanrei.txt", "kokkai.txt", "web.txt"):
         for p in (os.path.join(WORK, name + ".gz"), os.path.join(WORK, name)):
             if not os.path.exists(p):
                 continue
@@ -286,6 +337,7 @@ def main():
             op = gzip.open if p.endswith(".gz") else open
             with op(p, "rt", encoding="utf-8", errors="ignore") as f:
                 texts.append(f.read())
+            sizes[name] = texts[-1]
             print("  ごはん %s: %.1f MB" % (os.path.basename(p),
                                             os.path.getsize(p) / 1024 / 1024), flush=True)
             break
@@ -330,14 +382,15 @@ def main():
     if st is not None:
         vocab = (BpeVocab(tokf) if st.get("kind") == "bpe"
                  else CharVocab(itos=st["itos"]))
-        model = Realu(len(vocab), d=st["d"], h=st["h"], n=st["layers"], ctx=st["ctx"])
+        model = Realu(len(vocab), d=st["d"], h=st["h"], n=st["layers"],
+                      ctx=st["ctx"], loops=st.get("loops", 1))
         model.load_state_dict(st["model"])
         prev_val = st.get("val")
         print("★前のわたし: %d 層 / %.2f M / これまでの loss %.4f"
               % (len(model.blocks), model.n_params() / 1e6, prev_val or -1), flush=True)
     else:
         vocab = BpeVocab(tokf) if os.path.exists(tokf) else CharVocab(text=text)
-        model = Realu(len(vocab))
+        model = Realu(len(vocab), loops=LOOPS0)
         prev_val = None
         hist["born"] = time.strftime("%Y-%m-%dT%H:%M:%SZ", time.gmtime())
         print("★★★はじめて目を開けた: %d 層 / %.2f M / 文字の種類 %d"
@@ -373,6 +426,26 @@ def main():
     cut = int(len(ids) * 0.98)
     tr, va = ids[:cut], ids[cut:]
 
+    # ── ★★★記憶を3つの山に分ける（★短期・中期・長期）
+    #   ★動かないもの（法令・Wikipedia）を先に、増えるものを後ろに並べてある。
+    #   ★だから「前回より後ろに増えた分」＝短期。★ひと月ぶん＝中期。★ぜんぶ＝長期。
+    marks = hist.get("marks") or []
+    marks.append(len(tr))
+    marks = marks[-40:]
+    hist["marks"] = marks
+    tiers = {}
+    if len(marks) >= 2:
+        tiers["short"] = (marks[-2], len(tr))                 # ★前回から今回まで
+        tiers["mid"] = (marks[max(0, len(marks) - 31)], len(tr))   # ★ひと月ぶん
+        sh = tiers["short"][1] - tiers["short"][0]
+        md = tiers["mid"][1] - tiers["mid"][0]
+        print("★記憶の山: 短期 %.1f 万字 / 中期 %.1f 万字 / 長期 %.1f 万字"
+              % (sh / 10000, md / 10000, len(tr) / 10000), flush=True)
+        print("  ★引く割合: 短期 %.0f%% / 中期 %.0f%% / 長期 %.0f%%"
+              % (SHORT_P * 100, MID_P * 100, (1 - SHORT_P - MID_P) * 100), flush=True)
+    else:
+        print("★はじめてなので、ぜんぶ長期。★次から短期の山ができる。", flush=True)
+
     # ★★戻れるように取っておく（★語彙を広げた**後**に取る。形が変わるので）
     before = {k: v.clone() for k, v in model.state_dict().items()}
     before_layers = len(model.blocks)
@@ -396,7 +469,7 @@ def main():
         for g in opt.param_groups:
             g["lr"] = lr_now * warm
         model.train()
-        x, y = batch(tr, model.ctx, BATCH)
+        x, y = batch(tr, model.ctx, BATCH, tiers)
         logits, loss = model(x, y)
         if teacher is not None:
             # ★★★先生に同じ文章を見せて、★「どう答えるか」を教わる。
@@ -441,14 +514,27 @@ def main():
         memorizing = gap > OVERFIT_GAP
         if memorizing and bad >= GROW_PATIENCE:
             print("  ★丸暗記している（差 %.3f）。★大きくしない。" % gap, flush=True)
-        if (bad >= GROW_PATIENCE and vl > GROW_MIN_LOSS
-                and not memorizing and len(model.blocks) < N_LAYER_MAX):
-            n = model.grow()
-            opt = torch.optim.AdamW(model.parameters(), lr=LR, weight_decay=0.01, betas=(0.9, 0.95))
-            bad, grew = 0, grew + 1
-            lr_now = LR                                  # ★★大きくなった → 上げ直す
-            print("  ★★★大きくなった → %d 層 / %.2f M（★振る舞いは変わっていない）"
-                  % (n, model.n_params() / 1e6), flush=True)
+        if (bad >= GROW_PATIENCE and vl > GROW_MIN_LOSS and not memorizing):
+            # ★★★安い成長から先に試す。
+            #   ① もう一周ぶん深くなる ── ★パラメータ0・保存サイズ変わらず。★安い
+            #   ② 層を1枚足す         ── ★パラメータ増。★高い
+            #   ③ 体を乗り換える       ── ★いちばん高い（引っ越し。別の回でやる）
+            #   ★足りていないものが「深さ」なら①で足りる。★①で駄目なら②。
+            if model.loops < MAX_LOOPS and (grew % 2 == 0 or len(model.blocks) >= N_LAYER_MAX):
+                r = model.loop_more()
+                bad, grew = 0, grew + 1
+                lr_now = LR
+                print("  ★★もう一周ぶん深くなった → %d 周（実効 %d 層）"
+                      "★パラメータは増えていない（%.2f M のまま）"
+                      % (r, r * len(model.blocks), model.n_params() / 1e6), flush=True)
+            elif len(model.blocks) < N_LAYER_MAX:
+                n = model.grow()
+                opt = torch.optim.AdamW(model.parameters(), lr=LR,
+                                        weight_decay=0.01, betas=(0.9, 0.95))
+                bad, grew = 0, grew + 1
+                lr_now = LR                              # ★★大きくなった → 上げ直す
+                print("  ★★★層が増えた → %d 層 / %.2f M（★振る舞いは変わっていない）"
+                      % (n, model.n_params() / 1e6), flush=True)
 
     model.eval()
     with torch.no_grad():
@@ -481,7 +567,7 @@ def main():
             model.blocks = model.blocks[:before_layers]
         val, rolled = prev_val, True
 
-    torch.save({"model": model.state_dict(),
+    torch.save({"model": model.state_dict(), "loops": model.loops,
                 "kind": getattr(vocab, "kind", "char"), "arch": ARCH,
                 "itos": getattr(vocab, "itos", None),
                 "layers": len(model.blocks), "d": model.d, "h": model.h,
@@ -493,7 +579,7 @@ def main():
         "val": round(val, 4), "prev": round(prev_val, 4) if prev_val else None,
         "layers": len(model.blocks), "params": model.n_params(),
         "chars": len(text), "grew": grew, "rolledBack": rolled,
-        "d": model.d, "spread": round(my_spread, 4),
+        "d": model.d, "loops": model.loops, "spread": round(my_spread, 4),
         "movedBody": teacher is not None,
     })
     hist["runs"] = hist["runs"][-200:]
