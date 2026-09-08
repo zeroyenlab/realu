@@ -1,29 +1,9 @@
 {
  "runs": [
   {
-   "at": "2026-09-08T00:43:48Z",
-   "val": 7.821,
+   "at": "2026-09-08T00:57:11Z",
+   "val": 4.7319,
    "prev": null,
-   "layers": 2,
-   "params": 631392,
-   "chars": 2300001,
-   "grew": 0,
-   "rolledBack": false
-  },
-  {
-   "at": "2026-09-08T00:44:51Z",
-   "val": 7.5523,
-   "prev": 7.821,
-   "layers": 2,
-   "params": 631392,
-   "chars": 2300001,
-   "grew": 0,
-   "rolledBack": false
-  },
-  {
-   "at": "2026-09-08T00:46:36Z",
-   "val": 5.8372,
-   "prev": 7.5523,
    "layers": 2,
    "params": 668160,
    "chars": 3500001,
@@ -31,8 +11,8 @@
    "rolledBack": false
   }
  ],
- "bestVal": 5.8372,
+ "bestVal": 4.7319,
  "layers": 2,
  "params": 668160,
- "born": "2026-09-08T00:42:54Z"
+ "born": "2026-09-08T00:54:28Z"
 }

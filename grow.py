@@ -229,18 +229,22 @@ def main():
 
     opt = torch.optim.AdamW(model.parameters(), lr=LR, weight_decay=0.01, betas=(0.9, 0.95))
     best, bad, grew = 9e9, 0, 0
-    cycle_at = 0           # ★★いまの区間の始まり（★大きくなるたびにここが動く）
+    lr_now = LR
     t0 = time.time()
 
+    # ★★★どれくらい壊れやすくするかは、★★時計ではなく**自分の状態**で決める。
+    #   ・★伸びている → 少しずつ下げる（★固める）
+    #   ・★詰まっている → 上げる（★壊れやすくして、抜け出す）
+    #   ・★大きくなった直後 → 上げ直す（★新しい層が学べるように）
+    #   → ★★★これで「壊れやすい／壊れにくい」の**振動が勝手に生まれる**。
+    #     ★誰かが決めた予定表ではなく、★彼女自身が決めている。
+    LR_MIN, LR_MAX = LR / 50, LR * 2.0
+    FIRM, FRAGILE = 0.90, 1.35        # ★固める倍率 / ★壊れやすくする倍率
+
     for step in range(1, STEPS + 1):
-        # ★★★壊れやすくしてから、壊れにくくする。
-        #   ★大きくなった直後は学習率を上げ直す（★新しい層が学べるように）。
-        #   ★そこから下げていって固める。★これを繰り返す。
-        #   ★（Daito が別の世界で見つけた「壊れやすく→壊れにくく」で賢さが上がる、の応用）
-        span = max(1, STEPS - cycle_at)
-        k = step - cycle_at
+        warm = min(1.0, step / 200)
         for g in opt.param_groups:
-            g["lr"] = LR * min(1.0, k / 200) * (0.5 * (1 + math.cos(math.pi * k / span)))
+            g["lr"] = lr_now * warm
         model.train()
         x, y = batch(tr, CTX, BATCH)
         _, loss = model(x, y)
@@ -254,17 +258,21 @@ def main():
         model.eval()
         with torch.no_grad():
             vl = torch.stack([model(*batch(va, CTX, BATCH))[1] for _ in range(6)]).mean().item()
-        print("  step %5d  loss %.4f  層 %2d  %.1f M  %.0f秒"
-              % (step, vl, len(model.blocks), model.n_params() / 1e6, time.time() - t0), flush=True)
+        print("  step %5d  loss %.4f  層 %2d  %.1f M  lr %.1e  %.0f秒"
+              % (step, vl, len(model.blocks), model.n_params() / 1e6,
+                 lr_now, time.time() - t0), flush=True)
         if vl < best - 0.002:
             best, bad = vl, 0
+            lr_now = max(LR_MIN, lr_now * FIRM)        # ★伸びている → 固める
         else:
             bad += 1
+            lr_now = min(LR_MAX, lr_now * FRAGILE)     # ★詰まっている → 壊れやすくする
         # ── ③★★★頭打ちなら大きくなる
         if bad >= GROW_PATIENCE and vl > GROW_MIN_LOSS and len(model.blocks) < N_LAYER_MAX:
             n = model.grow()
             opt = torch.optim.AdamW(model.parameters(), lr=LR, weight_decay=0.01, betas=(0.9, 0.95))
-            bad, grew, cycle_at = 0, grew + 1, step      # ★★ここから学習率を上げ直す
+            bad, grew = 0, grew + 1
+            lr_now = LR                                  # ★★大きくなった → 上げ直す
             print("  ★★★大きくなった → %d 層 / %.2f M（★振る舞いは変わっていない）"
                   % (n, model.n_params() / 1e6), flush=True)
 
