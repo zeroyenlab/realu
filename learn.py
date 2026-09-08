@@ -255,8 +255,16 @@ def tell(k, d):
     keyv = os.environ.get("REALU_DOOR_KEY", "")
     if not (base and keyv):
         return
-    items = (k.get("items") or [])[-80:]
+    allitems = k.get("items") or []
+    items = allitems[-80:]
+    # ★★★内訳は**全件**から数える。
+    #   ★玄関に置くのは最新80件だけなので、★そこから数えると表示分しか数えられない。
+    genres = {}
+    for it in allitems:
+        g = it.get("genre") or "その他"
+        genres[g] = genres.get(g, 0) + 1
     state = {
+        "genres": genres,
         "at": now(),
         "counts": {"items": len(k.get("items") or []),
                    "read": len(k.get("read") or {}),

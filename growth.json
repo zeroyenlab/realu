@@ -1,28 +1,21 @@
 {
  "runs": [
   {
-   "at": "2026-09-08T01:37:09Z",
-   "val": 3.8834,
+   "at": "2026-09-08T01:47:24Z",
+   "val": 4.2924,
    "prev": null,
    "layers": 2,
-   "params": 462048,
-   "chars": 2500000,
+   "params": 470688,
+   "chars": 5885050,
    "grew": 0,
-   "rolledBack": false
-  },
-  {
-   "at": "2026-09-08T01:40:24Z",
-   "val": 4.0177,
-   "prev": null,
-   "layers": 2,
-   "params": 1366464,
-   "chars": 2500000,
-   "grew": 0,
-   "rolledBack": false
+   "rolledBack": false,
+   "d": 96,
+   "spread": 5.2977,
+   "movedBody": false
   }
  ],
- "bestVal": 3.8834,
+ "bestVal": 4.2924,
  "layers": 2,
- "params": 1366464,
- "born": "2026-09-08T01:35:43Z"
+ "params": 470688,
+ "born": "2026-09-08T01:46:27Z"
 }

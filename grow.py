@@ -51,8 +51,12 @@ TEACH_UNTIL = float(os.environ.get("REALU_TEACH_UNTIL", 0.6))
 #     → ★★引っ越しの時だけ聞く。★しかも**途中で手を放す**。
 #       ★前半は先生に頼り、★後半は自分で本物のデータから学ぶ。
 
+DUP_MAX = int(os.environ.get("REALU_DUP_MAX", 3))   # ★同じ行を食べてよい回数
+
 GROW_PATIENCE = 5      # ★この回数ぶん良くならなかったら「頭打ち」
 GROW_MIN_LOSS = 1.05   # ★まだ下手なうちだけ大きくする
+OVERFIT_GAP = float(os.environ.get("REALU_OVERFIT_GAP", 0.15))
+#   ★★本番と訓練の差がこれを超えたら「丸暗記している」とみなす
 WORSE_MARGIN = 0.02    # ★★これ以上悪くなっていたら、その学習は**採用しない**
 
 
@@ -210,7 +214,26 @@ def main():
         print("★ごはんが無い。work/ に laws.txt を置いて。")
         return 1
     text = "\n".join(texts)
-    print("★コーパス %.1f 万字" % (len(text) / 10000), flush=True)
+    before = len(text)
+
+    # ── ①★★★同じ行を何度も食べない。
+    #   ★法令の 18.3% は重複行（実測）。「その他参考となるべき事項」が 1,329 回など。
+    #   ★★小さい頭は、言葉を学ぶ前にこの定型文を**丸暗記する**。
+    #     ★それが一番点の上がる近道だから。★★近道を塞ぐ。
+    seen = {}
+    kept = []
+    for ln in text.split("\n"):
+        key = ln.strip()
+        if len(key) < 10:
+            kept.append(ln)
+            continue
+        n = seen.get(key, 0)
+        if n < DUP_MAX:
+            seen[key] = n + 1
+            kept.append(ln)
+    text = "\n".join(kept)
+    print("★コーパス %.1f 万字（★同じ行を削って %.1f%% 減）"
+          % (len(text) / 10000, (1 - len(text) / max(1, before)) * 100), flush=True)
 
     # ── ②★前のわたしを起こす
     ckpt = os.path.join(WORK, "realu.pt")
@@ -306,8 +329,12 @@ def main():
         with torch.no_grad():
             vl = torch.stack([model(*batch(va, model.ctx, BATCH))[1]
                               for _ in range(6)]).mean().item()
-        print("  step %5d  loss %.4f  層 %2d  %.1f M  lr %.1e  %.0f秒"
-              % (step, vl, len(model.blocks), model.n_params() / 1e6,
+            # ★★★訓練の点も測る。★「点が伸びない」には理由が2つあって、対処が真逆だから。
+            tl_now = torch.stack([model(*batch(tr, model.ctx, BATCH))[1]
+                                  for _ in range(3)]).mean().item()
+        gap = vl - tl_now
+        print("  step %5d  loss %.4f (訓練 %.4f 差 %.3f)  層 %2d  %.1f M  lr %.1e  %.0f秒"
+              % (step, vl, tl_now, gap, len(model.blocks), model.n_params() / 1e6,
                  lr_now, time.time() - t0), flush=True)
         if vl < best - 0.002:
             best, bad = vl, 0
@@ -316,7 +343,15 @@ def main():
             bad += 1
             lr_now = min(LR_MAX, lr_now * FRAGILE)     # ★詰まっている → 壊れやすくする
         # ── ③★★★頭打ちなら大きくなる
-        if bad >= GROW_PATIENCE and vl > GROW_MIN_LOSS and len(model.blocks) < N_LAYER_MAX:
+        # ★★★大きくしてよいのは「本当に容量が足りない」時だけ。
+        #   ・訓練も本番も止まっている → ★容量不足。★大きくする
+        #   ・訓練だけ下がり続けている → ★丸暗記。★大きくすると**もっと暗記するだけ**
+        #   ★足りていないのが容量でない時に容量を足すと、★太るだけで賢くならない。
+        memorizing = gap > OVERFIT_GAP
+        if memorizing and bad >= GROW_PATIENCE:
+            print("  ★丸暗記している（差 %.3f）。★大きくしない。" % gap, flush=True)
+        if (bad >= GROW_PATIENCE and vl > GROW_MIN_LOSS
+                and not memorizing and len(model.blocks) < N_LAYER_MAX):
             n = model.grow()
             opt = torch.optim.AdamW(model.parameters(), lr=LR, weight_decay=0.01, betas=(0.9, 0.95))
             bad, grew = 0, grew + 1

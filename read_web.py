@@ -8,11 +8,61 @@
 ★掟は learn.py と同じものを使う（★規約・robots・弾く文の判定を二重に書かない）。
 """
 import gzip
+import json
 import os
 import sys
 import urllib.parse
 
 import learn as L
+
+# ── ★★★好奇心 ──────────────────────────────────────────
+#   ★いままでは「行きたい場所」を順番に読んでいた。★それは受け身。
+#   ★★「知らないことを減らす」なら、★★★**自分が予測できなかったもの**を優先すべき。
+#   ★読む前には分からないので、★読んだ結果で次の行き先が変わる形にする。
+#   ★驚いたページの周りを、次はもっと読む。
+#   （★見ているだけでは学べない／自分で動いて結果を見て初めて学べる、の実装）
+_MODEL = None
+_VOCAB = None
+
+
+def wake_up():
+    """★前のわたしを起こす。★まだ頭が無ければ、好奇心は使えない（★順番に読む）。"""
+    global _MODEL, _VOCAB
+    ck = os.path.join(WORK, "realu.pt")
+    if not os.path.exists(ck):
+        return False
+    try:
+        import torch
+        import grow as G
+        st = torch.load(ck, map_location="cpu", weights_only=False)
+        _VOCAB = G.CharVocab(itos=st["itos"])
+        _MODEL = G.Realu(len(_VOCAB), d=st["d"], h=st["h"], n=st["layers"], ctx=st["ctx"])
+        _MODEL.load_state_dict(st["model"])
+        _MODEL.eval()
+        torch.set_num_threads(2)
+        print("★前のわたしを起こした（%d 層）。★驚いたものから読む。" % st["layers"], flush=True)
+        return True
+    except Exception as e:
+        print("★頭を起こせなかった:", type(e).__name__, flush=True)
+        return False
+
+
+def surprise(text):
+    """★★どれくらい驚いたか。★予測できなかったほど大きい。"""
+    if _MODEL is None or len(text) < 64:
+        return 0.0
+    try:
+        import torch
+        ids = _VOCAB.encode(text[:_MODEL.ctx * 4])
+        if len(ids) < 32:
+            return 0.0
+        n = (len(ids) // _MODEL.ctx) * _MODEL.ctx or len(ids)
+        ids = torch.tensor(ids[:n], dtype=torch.long).view(-1, _MODEL.ctx)
+        with torch.no_grad():
+            _, loss = _MODEL(ids[:, :-1], ids[:, 1:])
+        return float(loss)
+    except Exception:
+        return 0.0
 
 WORK = os.environ.get("REALU_WORK", os.path.join(os.path.dirname(os.path.abspath(__file__)), "work"))
 PAGES = int(os.environ.get("REALU_WEB_PAGES", 600))     # ★1日に読むページ数
@@ -43,8 +93,10 @@ def main():
         print("★読む場所が無い")
         return 0
 
+    has_head = wake_up()
     print("★%d ページ読む" % len(targets), flush=True)
     got = chars = 0
+    found = []          # ★(驚き, そのページのリンク) ── ★次にどこへ行くかを決める材料
     path = os.path.join(WORK, "web.txt")
     with open(path, "a", encoding="utf-8", newline="\n") as f:
         import concurrent.futures as cf
@@ -65,6 +117,29 @@ def main():
                 if got % 100 == 0:
                     print("  %d ページ / %.1f 万字" % (got, chars / 10000), flush=True)
                     f.flush()
+    # ★★★驚いたページの周りを、次はもっと読む。★行きたい場所の順番を並べ替える。
+    if found:
+        found.sort(key=lambda z: -z[0])
+        head = []
+        for sc, links in found[:len(found) // 3 + 1]:
+            head.extend(links)
+        old = k.get("frontier") or []
+        seen_u = set()
+        new_front = []
+        for u in head + old:
+            if u not in seen_u and u not in read:
+                seen_u.add(u)
+                new_front.append(u)
+        k["frontier"] = new_front[:L.MAX_FRONTIER]
+        k["read"] = read
+        for u in targets:
+            k["read"][u] = L.now()
+        L.save(L.K, k)
+        top = found[0][0]
+        low = found[-1][0]
+        print("★驚き: いちばん %.3f / いちばん低い %.3f → ★驚いた方の周りを先に読む"
+              % (top, low), flush=True)
+
     print("★★食べた: %d ページ / %.1f 万字 / いま持っている web %.1f MB"
           % (got, chars / 10000, os.path.getsize(path) / 1024 / 1024), flush=True)
     return 0
