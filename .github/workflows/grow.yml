@@ -38,7 +38,7 @@ jobs:
       - name: 道具を入れる
         run: |
           pip install --quiet torch --index-url https://download.pytorch.org/whl/cpu
-          pip install --quiet pypdf
+          pip install --quiet pypdf tokenizers
 
       # ★★ごはんと、前のわたし。★消えていたら取り直す
       - name: これまでのわたしを思い出す
@@ -116,6 +116,12 @@ jobs:
         env:
           REALU_WEB_PAGES: "1200"
         run: python -u read_web.py
+
+      # ── ★★★ことばの単位を、自分のごはんから切り出す（★初回だけ）
+      #   ★外のトークナイザは使わない（★語彙そのものが外の世界の知識だから）。
+      #   ★文字単位より1.64倍効率がよい（実測）＝同じ容量で1.6倍の範囲を見渡せる。
+      - name: ことばの単位をつくる（はじめの一回だけ）
+        run: python -u make_tok.py
 
       # ── ②③④★学ぶ・大きくなる・悪ければ戻す
       - name: 学ぶ

@@ -60,8 +60,31 @@ OVERFIT_GAP = float(os.environ.get("REALU_OVERFIT_GAP", 0.15))
 WORSE_MARGIN = 0.02    # ★★これ以上悪くなっていたら、その学習は**採用しない**
 
 
-# ── ことば（★文字単位。★語彙はコーパスから生える）──────────────
+# ── ことば ────────────────────────────────────────────
+#   ★★★自分のごはんから切り出した単位を使う（make_tok.py が作る）。
+#   ★外のトークナイザは使わない（★語彙そのものが外の世界の知識だから）。
+#   ★実測: 1個で1.64文字ぶん ＝ ★文字単位の1.64倍の効率。
+#   ★無ければ文字単位に落ちる（★止まらない）。
+class BpeVocab:
+    kind = "bpe"
+
+    def __init__(self, path):
+        from tokenizers import Tokenizer
+        self.t = Tokenizer.from_file(path)
+        self.path = path
+
+    def __len__(self):
+        return self.t.get_vocab_size()
+
+    def encode(self, s):
+        return self.t.encode(s).ids
+
+    def decode(self, ids):
+        return self.t.decode([i for i in ids if 0 <= i < len(self)])
+
+
 class CharVocab:
+    kind = "char"
     def __init__(self, itos=None, text=None):
         self.itos = itos if itos else [""] + sorted(set(text or ""))
         self.stoi = {c: i for i, c in enumerate(self.itos)}
@@ -236,17 +259,27 @@ def main():
           % (len(text) / 10000, (1 - len(text) / max(1, before)) * 100), flush=True)
 
     # ── ②★前のわたしを起こす
+    # ★★★ことばの単位を用意する
+    tokf = os.path.join(WORK, "tok.json")
     ckpt = os.path.join(WORK, "realu.pt")
+    st = None
     if os.path.exists(ckpt):
         st = torch.load(ckpt, map_location="cpu", weights_only=False)
-        vocab = CharVocab(itos=st["itos"])
+        # ★★単位が変わっていたら、★前のわたしは引き継げない（★出口の形が違う）
+        if st.get("kind", "char") != ("bpe" if os.path.exists(tokf) else "char"):
+            print("★★ことばの単位が変わった。★前のわたしとは繋がらないので、生まれ直す。",
+                  flush=True)
+            st = None
+    if st is not None:
+        vocab = (BpeVocab(tokf) if st.get("kind") == "bpe"
+                 else CharVocab(itos=st["itos"]))
         model = Realu(len(vocab), d=st["d"], h=st["h"], n=st["layers"], ctx=st["ctx"])
         model.load_state_dict(st["model"])
         prev_val = st.get("val")
         print("★前のわたし: %d 層 / %.2f M / これまでの loss %.4f"
               % (len(model.blocks), model.n_params() / 1e6, prev_val or -1), flush=True)
     else:
-        vocab = CharVocab(text=text)
+        vocab = BpeVocab(tokf) if os.path.exists(tokf) else CharVocab(text=text)
         model = Realu(len(vocab))
         prev_val = None
         hist["born"] = time.strftime("%Y-%m-%dT%H:%M:%SZ", time.gmtime())
@@ -270,7 +303,8 @@ def main():
                  model.n_params() / 1e6), flush=True)
 
     # ── ★★★はじめて見る文字を覚える（★語彙も育つ）
-    new_chars = sorted(set(text) - set(vocab.itos))
+    new_chars = (sorted(set(text) - set(vocab.itos))
+                 if getattr(vocab, "kind", "char") == "char" else [])
     if new_chars:
         vocab.itos = list(vocab.itos) + new_chars
         vocab.stoi = {c: i for i, c in enumerate(vocab.itos)}
@@ -390,7 +424,9 @@ def main():
             model.blocks = model.blocks[:before_layers]
         val, rolled = prev_val, True
 
-    torch.save({"model": model.state_dict(), "itos": vocab.itos,
+    torch.save({"model": model.state_dict(),
+                "kind": getattr(vocab, "kind", "char"),
+                "itos": getattr(vocab, "itos", None),
                 "layers": len(model.blocks), "d": model.d, "h": model.h,
                 "ctx": model.ctx, "val": val}, ckpt)
 
