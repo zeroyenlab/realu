@@ -368123,6 +368123,294 @@
     "url": ""
    },
    "ts": "2026-09-08T08:50:06+00:00"
+  },
+  {
+   "topic": "ラスターイメージプロセッサ",
+   "text": "生成されたラスターイメージは、印刷システムの後段で印刷出力を行うために用いられる。",
+   "source": "https://ja.wikipedia.org/wiki/ラスターイメージプロセッサ",
+   "genre": "その他",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T08:54:38+00:00"
+  },
+  {
+   "topic": "ラスターイメージプロセッサ",
+   "text": "RIPの入力は、 PostScript 、 PDF 、 XPS などの高水準な ページ記述言語 で書かれたページ記述や、出力機器と解像度が合わないラスターイメージなどである。",
+   "source": "https://ja.wikipedia.org/wiki/ラスターイメージプロセッサ",
+   "genre": "言葉",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T08:54:38+00:00"
+  },
+  {
+   "topic": "ラスターイメージプロセッサ",
+   "text": "後者の場合、入力ラスターイメージから出力ラスターイメージへの変換のため、RIPは 画像スケーリング アルゴリズムを使用する。",
+   "source": "https://ja.wikipedia.org/wiki/ラスターイメージプロセッサ",
+   "genre": "その他",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T08:54:38+00:00"
+  },
+  {
+   "topic": "ラスターイメージプロセッサ",
+   "text": "初期のRIPは、何らかのインタフェース（ RS-232 など）を介してページ記述を入力として受け取り、光学 フィルム・レコーダー 、 コンピューター・トゥ・フィルム 、 コンピューター・トゥ・プレート などのリアルタイム出力デバイスの各 ピクセル を有効または無効にするために用いられる、「ハードウェアビットマップ出力」を生成する電子 ハードウェア の ラック であった。",
+   "source": "https://ja.wikipedia.org/wiki/ラスターイメージプロセッサ",
+   "genre": "技術",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T08:54:38+00:00"
+  },
+  {
+   "topic": "ラスターイメージプロセッサ",
+   "text": "その後のRIPは、汎用コンピューター上のソフトウェアモジュールとして、またはプリンターに内蔵された マイクロプロセッサ で実行されるファームウェアプログラムとして実装されている。",
+   "source": "https://ja.wikipedia.org/wiki/ラスターイメージプロセッサ",
+   "genre": "技術",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T08:54:38+00:00"
+  },
+  {
+   "topic": "ラスターイメージプロセッサ",
+   "text": "ハイエンドの組版システム（タイプセット）では、独立したハードウェアRIPが用いられることもある。",
+   "source": "https://ja.wikipedia.org/wiki/ラスターイメージプロセッサ",
+   "genre": "その他",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T08:54:38+00:00"
+  },
+  {
+   "topic": "菌類",
+   "text": "その他の「菌」と呼ばれる生物については「 菌 」をご覧ください。",
+   "source": "https://ja.wikipedia.org/wiki/菌類",
+   "genre": "生き物",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T08:54:38+00:00"
+  },
+  {
+   "topic": "菌類",
+   "text": "本項では主に狭義の菌類（真菌類）について扱う。",
+   "source": "https://ja.wikipedia.org/wiki/菌類",
+   "genre": "その他",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T08:54:38+00:00"
+  },
+  {
+   "topic": "菌類",
+   "text": "真菌類は、 キノコ ・ カビ 、 単細胞性 の 酵母 、 鞭毛 を持った 遊走子 などの多様な形態を示す 真核生物 であり、 菌界 （ 学名 ： Regnum Fungi ）に分類される生物群である。",
+   "source": "https://ja.wikipedia.org/wiki/菌類",
+   "genre": "生き物",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T08:54:38+00:00"
+  },
+  {
+   "topic": "菌類",
+   "text": "微視的には、 細胞壁 のある 細胞 からなり、 先端成長 を行うものが多い。",
+   "source": "https://ja.wikipedia.org/wiki/菌類",
+   "genre": "生き物",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T08:54:38+00:00"
+  },
+  {
+   "topic": "菌類",
+   "text": "これらは高等植物と共通する特徴であり、菌類が当初において植物と見なされた理由でもある。",
+   "source": "https://ja.wikipedia.org/wiki/菌類",
+   "genre": "生き物",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T08:54:38+00:00"
+  },
+  {
+   "topic": "菌類",
+   "text": "しかし、 葉緑体 を持たず、 光合成 も行わない 従属栄養生物 である。",
+   "source": "https://ja.wikipedia.org/wiki/菌類",
+   "genre": "生き物",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T08:54:38+00:00"
+  },
+  {
+   "topic": "パルティア",
+   "text": "「 安息 」の語義については、 ウィクショナリー の「 安息 」の項目をご覧ください。",
+   "source": "https://ja.wikipedia.org/wiki/パルティア",
+   "genre": "その他",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T08:54:38+00:00"
+  },
+  {
+   "topic": "パルティア",
+   "text": "それはカスピ海の東の地域の現地語および、パルティア人の国家（アルサケス朝を参照）の公用語であり、石碑と金属の銘文（硬貨と印象を含む）と、パルティアの首都ニサで発見されたワイン壺の陶片ラベル、そして同様にマニ教の文書から知られている。",
+   "source": "https://ja.wikipedia.org/wiki/パルティア",
+   "genre": "社会",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T08:54:38+00:00"
+  },
+  {
+   "topic": "パルティア",
+   "text": "この国の 王朝 は アルサケス朝 （アルサケスちょう、 ペルシア語 : اشکانیان Aškāniyān アシュカーニヤーン ）であるため、この名で呼ばれることもある。",
+   "source": "https://ja.wikipedia.org/wiki/パルティア",
+   "genre": "歴史",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T08:54:38+00:00"
+  },
+  {
+   "topic": "パルティア",
+   "text": "アルサケス朝パルティア ともいう。",
+   "source": "https://ja.wikipedia.org/wiki/パルティア",
+   "genre": "その他",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T08:54:38+00:00"
+  },
+  {
+   "topic": "パルティア",
+   "text": "前3世紀 半ばに 中央アジア の遊牧民の族長 アルサケス1世 （アルシャク1世）によって建国され、 ミトラダテス1世 （ミフルダート1世、在位: 前171年 - 前138年）の時代以降、現在の イラク 、 トルコ 東部、イラン、 トルクメニスタン 、 アフガニスタン 西部、 パキスタン 西部にあたる、 中東 の広い範囲を支配下に置いた。",
+   "source": "https://ja.wikipedia.org/wiki/パルティア",
+   "genre": "歴史",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T08:54:38+00:00"
+  },
+  {
+   "topic": "パルティア",
+   "text": "前1世紀 以降、 地中海世界 で勢力を拡大する ローマ と衝突し、特に アルメニア や シリア 、 メソポタミア 、 バビロニア の支配を巡って争った。",
+   "source": "https://ja.wikipedia.org/wiki/パルティア",
+   "genre": "歴史",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T08:54:38+00:00"
+  },
+  {
+   "topic": "GYAO!",
+   "text": "日本初の ネットテレビ局 であり、企画立案者は 日本テレビ の 杉村慎治 。",
+   "source": "https://ja.wikipedia.org/wiki/GYAO!",
+   "genre": "その他",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T08:54:38+00:00"
+  },
+  {
+   "topic": "GYAO!",
+   "text": "旧GyaO・Yahoo!動画は、再生プレーヤーが別ウィンドウにあったが、新サイトにおいては同一ウィンドウに表示され同一名のプレイリストがプレーヤーの下に表示される。",
+   "source": "https://ja.wikipedia.org/wiki/GYAO!",
+   "genre": "その他",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T08:54:38+00:00"
+  },
+  {
+   "topic": "GYAO!",
+   "text": "また、いままでプレイヤーの「全画面表示」化を目指していたが、システムの安定性を考えた結果「大画面表示」にとどめることになった。",
+   "source": "https://ja.wikipedia.org/wiki/GYAO!",
+   "genre": "その他",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T08:54:38+00:00"
+  },
+  {
+   "topic": "GYAO!",
+   "text": "なお大画面表示は、2009年11月12日よりサービス提供が開始されている。",
+   "source": "https://ja.wikipedia.org/wiki/GYAO!",
+   "genre": "その他",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T08:54:38+00:00"
+  },
+  {
+   "topic": "GYAO!",
+   "text": "特徴として、地方局・ 独立局 （JAITS）制作番組を数多く配信している。",
+   "source": "https://ja.wikipedia.org/wiki/GYAO!",
+   "genre": "その他",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T08:54:38+00:00"
+  },
+  {
+   "topic": "GYAO!",
+   "text": "2020年10月に『 水溜りボンドの○○いくってよ 』（ tvk ）が TVer で配信 [ 2 ] を開始するまで、外部で独立局制作番組のネット配信を実施しているのはGYAO!のみであった。",
+   "source": "https://ja.wikipedia.org/wiki/GYAO!",
+   "genre": "その他",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": ""
+   },
+   "ts": "2026-09-08T08:54:38+00:00"
   }
  ],
  "read": {
@@ -374439,7 +374727,11 @@
   "https://ja.wikipedia.org/wiki/ヒエラポリス-パムッカレ": "2026-09-08T08:50:04+00:00",
   "https://ja.wikipedia.org/wiki/性犯罪": "2026-09-08T08:50:04+00:00",
   "https://ja.wikipedia.org/wiki/ハナフィー学派": "2026-09-08T08:50:04+00:00",
-  "https://ja.wikipedia.org/wiki/ファントムブラッド": "2026-09-08T08:50:04+00:00"
+  "https://ja.wikipedia.org/wiki/ファントムブラッド": "2026-09-08T08:50:04+00:00",
+  "https://ja.wikipedia.org/wiki/ラスターイメージプロセッサ": "2026-09-08T08:54:34+00:00",
+  "https://ja.wikipedia.org/wiki/菌類": "2026-09-08T08:54:35+00:00",
+  "https://ja.wikipedia.org/wiki/パルティア": "2026-09-08T08:54:37+00:00",
+  "https://ja.wikipedia.org/wiki/GYAO!": "2026-09-08T08:54:37+00:00"
  },
  "frontier": [
   "https://ja.wikipedia.org/wiki/UI%E3%81%A8UX",
@@ -374865,7 +375157,6 @@
   "https://ja.wikipedia.org/wiki/石堂藍",
   "https://ja.wikipedia.org/wiki/北原照久",
   "https://ja.wikipedia.org/wiki/Adobe_Flash_Media_Server",
-  "https://ja.wikipedia.org/wiki/ラスターイメージプロセッサ",
   "https://ja.wikipedia.org/wiki/Adobe_Ultra",
   "https://ja.wikipedia.org/wiki/PDF",
   "https://ja.wikipedia.org/wiki/Apache_Flex",
@@ -374931,7 +375222,6 @@
   "https://ja.wikipedia.org/wiki/藍藻類",
   "https://ja.wikipedia.org/wiki/ガリレオX",
   "https://ja.wikipedia.org/wiki/分子系統解析",
-  "https://ja.wikipedia.org/wiki/菌類",
   "https://ja.wikipedia.org/wiki/千葉県立中央博物館",
   "https://ja.wikipedia.org/wiki/排気ガス",
   "https://ja.wikipedia.org/wiki/ゼニゴケ",
@@ -375003,7 +375293,6 @@
   "https://ja.wikipedia.org/wiki/トロイ",
   "https://ja.wikipedia.org/wiki/世俗主義",
   "https://ja.wikipedia.org/wiki/2022年ロシアのウクライナ侵攻",
-  "https://ja.wikipedia.org/wiki/パルティア",
   "https://ja.wikipedia.org/wiki/バルケスィル",
   "https://ja.wikipedia.org/wiki/鉄",
   "https://ja.wikipedia.org/wiki/大ギリシャ主義",
@@ -375034,7 +375323,6 @@
   "https://ja.wikipedia.org/wiki/バビル2世",
   "https://ja.wikipedia.org/wiki/変人偏屈列伝",
   "https://ja.wikipedia.org/wiki/プリンス_(ミュージシャン)",
-  "https://ja.wikipedia.org/wiki/GYAO!",
   "https://ja.wikipedia.org/wiki/めざましテレビ",
   "https://ja.wikipedia.org/wiki/1960年",
   "https://ja.wikipedia.org/wiki/黄金の風",
@@ -434441,10 +434729,14 @@
   "https://ja.wikipedia.org/wiki/出エジプト記",
   "https://ja.wikipedia.org/wiki/キャンプ・デービッド合意",
   "https://ja.wikipedia.org/wiki/コガリムアビア航空9268便",
-  "https://ja.wikipedia.org/wiki/シナイ山"
+  "https://ja.wikipedia.org/wiki/シナイ山",
+  "https://ja.wikipedia.org/wiki/XML_Paper_Specification",
+  "https://ja.wikipedia.org/wiki/%E3%83%A9%E3%82%B9%E3%82%BF%E3%83%BC%E3%82%A4%E3%83%A1%E3%83%BC%E3%82%B8%E3%83%97%E3%83%AD%E3%82%BB%E3%83%83%E3%82%B5",
+  "https://ja.wikipedia.org/wiki/ラスターグラフィックス",
+  "https://ja.wikipedia.org/wiki/コンピューター・トゥ・フィルム"
  ],
  "born": "2026-09-07T21:38:10+00:00",
- "lastLearned": "2026-09-08T08:50:06+00:00",
+ "lastLearned": "2026-09-08T08:54:38+00:00",
  "failed": {},
  "termsSeen": {
   "https://foundation.wikimedia.org/wiki/Policy:Terms_of_Use/ja": {
@@ -434501,5 +434793,5 @@
  ],
  "heardCount": 18,
  "capacity": 42709,
- "readTotal": 5468
+ "readTotal": 5472
 }
