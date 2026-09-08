@@ -33,6 +33,20 @@ D_MODEL = int(os.environ.get("REALU_D", 192))
 N_HEAD = int(os.environ.get("REALU_HEADS", 6))
 N_LAYER0 = int(os.environ.get("REALU_LAYERS", 4))
 N_LAYER_MAX = int(os.environ.get("REALU_LAYERS_MAX", 12))
+
+# ★★★体の形（幅と層の比）── ★測って分かったこと:
+#   ・ループは安いが弱い（実効8層で 2周+0.10 / 4周+0.25 / 8周+0.43。★周を増やすほど損が加速）
+#   ・論文「計算量をそろえると**浅いモデルの方がわずかに良い**。幅と深さの配分が効く」
+#   → ★層を足すだけだと**細長い体**になる。★幅が足りなくなったら、幅を広げる番。
+#   参考: GPT-2 small は 768幅×12層（比 64:1）。★192幅×12層 では 16:1 で細長すぎた。
+ASPECT = int(os.environ.get("REALU_ASPECT", 48))   # ★1層あたり、これくらいの幅は欲しい
+
+
+def layer_cap(d):
+    """★★この幅で、何層までなら細長くならないか。"""
+    return max(3, min(N_LAYER_MAX, d // ASPECT))
+
+
 BATCH = int(os.environ.get("REALU_BATCH", 16))
 LR = float(os.environ.get("REALU_LR", 3e-4))
 STEPS = int(os.environ.get("REALU_STEPS", 4000))      # ★1回ぶん（★Actionsの時間に収まる量）
@@ -110,6 +124,8 @@ class CharVocab:
 #   ★同じ計算量で loss が下がる。★タダの改善。
 ARCH = "tpp-loop"
 MAX_LOOPS = int(os.environ.get("REALU_MAX_LOOPS", 8))
+# ★★ループは「保存を小さくしたい時」だけ。★既定では使わない（★安いが弱いと測って分かった）
+LOOP_OK = os.environ.get("REALU_USE_LOOP", "") == "1"
 LOOPS0 = int(os.environ.get("REALU_LOOPS", 1))
 
 
@@ -320,6 +336,7 @@ def load_hist():
 
 
 def main():
+    global MOVE_TO_D
     # ★★書いたものを表示するだけで死なないように（★端末の文字コードは選べない）
     try:
         sys.stdout.reconfigure(encoding="utf-8", errors="replace")
@@ -404,7 +421,14 @@ def main():
 
     # ── ★★★体を乗り換える（★幅を広げたいとき）
     #   ★記憶は引き継ぐ。★古いわたしが先生になる。
+    # ★★★前の回の自分が「幅が欲しい」と言っていたら、★今回、体を乗り換える。
+    #   ★誰かに指示されたのではなく、★自分で「足りない」と言ったから動く。
+    want_d = MOVE_TO_D or (hist.get("nextD") if hist.get("wantWider") else 0)
     teacher = None
+    if want_d and want_d != model.d and os.path.exists(ckpt):
+        MOVE_TO_D = want_d
+        print("★★★前の回のわたしが「幅が足りない」と言っていた。★今日、体を乗り換える。",
+              flush=True)
     if MOVE_TO_D and MOVE_TO_D != model.d and os.path.exists(ckpt):
         teacher = model
         teacher.eval()
@@ -458,6 +482,7 @@ def main():
 
     opt = torch.optim.AdamW(model.parameters(), lr=LR, weight_decay=0.01, betas=(0.9, 0.95))
     best, bad, grew = 9e9, 0, 0
+    want_wider = False          # ★★★「幅が欲しい」と自分で言うための印
     lr_now = LR
     t0 = time.time()
 
@@ -526,14 +551,9 @@ def main():
             #   ② 層を1枚足す         ── ★パラメータ増。★高い
             #   ③ 体を乗り換える       ── ★いちばん高い（引っ越し。別の回でやる）
             #   ★足りていないものが「深さ」なら①で足りる。★①で駄目なら②。
-            if model.loops < MAX_LOOPS and (grew % 2 == 0 or len(model.blocks) >= N_LAYER_MAX):
-                r = model.loop_more()
-                bad, grew = 0, grew + 1
-                lr_now = LR
-                print("  ★★もう一周ぶん深くなった → %d 周（実効 %d 層）"
-                      "★パラメータは増えていない（%.2f M のまま）"
-                      % (r, r * len(model.blocks), model.n_params() / 1e6), flush=True)
-            elif len(model.blocks) < N_LAYER_MAX:
+            cap = layer_cap(model.d)
+            if len(model.blocks) < cap:
+                # ★① 層を足す ── ★まだ細長くない範囲で
                 n = model.grow()
                 opt = torch.optim.AdamW(model.parameters(), lr=LR,
                                         weight_decay=0.01, betas=(0.9, 0.95))
@@ -541,6 +561,19 @@ def main():
                 lr_now = LR                              # ★★大きくなった → 上げ直す
                 print("  ★★★層が増えた → %d 層 / %.2f M（★振る舞いは変わっていない）"
                       % (n, model.n_params() / 1e6), flush=True)
+            elif LOOP_OK and model.loops < MAX_LOOPS:
+                # ★③ ループ ── ★★安いが弱い。★保存を小さくしたい時だけ
+                r = model.loop_more()
+                bad, grew = 0, grew + 1
+                lr_now = LR
+                print("  ★もう一周ぶん深くなった → %d 周（★パラメータは増えない。★ただし弱い）"
+                      % r, flush=True)
+            else:
+                # ★② ★★これ以上は細長くなる。★「幅が欲しい」と自分で言う
+                want_wider = True
+                print("  ★★★これ以上、層を足すと細長くなる（%d 幅 / %d 層）。"
+                      "★★次は**幅を広げたい**。" % (model.d, len(model.blocks)), flush=True)
+                bad = 0
 
     model.eval()
     with torch.no_grad():
@@ -603,12 +636,16 @@ def main():
         "layers": len(model.blocks), "params": model.n_params(),
         "chars": len(text), "grew": grew, "rolledBack": rolled,
         "d": model.d, "loops": model.loops, "spread": round(my_spread, 4),
+        "wantWider": want_wider, "layerCap": layer_cap(model.d),
         "wrote": wrote,
         "movedBody": teacher is not None,
     })
     hist["runs"] = hist["runs"][-200:]
     hist["bestVal"] = round(min(r["val"] for r in hist["runs"]), 4)
     hist["layers"] = len(model.blocks)
+    # ★★★次の回に「幅を広げたい」を伝える
+    hist["wantWider"] = want_wider
+    hist["nextD"] = (model.d * 2 if want_wider else model.d)
     hist["params"] = model.n_params()
     with open(HIST, "w", encoding="utf-8", newline="\n") as f:
         json.dump(hist, f, ensure_ascii=False, indent=1)
