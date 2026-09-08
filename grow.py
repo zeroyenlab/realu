@@ -99,14 +99,14 @@ VAL_PER_MIL = int(os.environ.get("REALU_VAL_PERMIL", 3))   # ★千行に3行＝
 # ★★★出典の印（<web タイトル> / <本 題名 / 著者>）は、★ごはんには要るが**書く時に出てはいけない**。
 #   ★どこで知ったかを残すために本文へ埋めてある。★でもそれを真似して書くと意味不明になる。
 #   ★（実測: 「なんぬの詐な子です。おお とよくすね。&lt;web 988年…」と出た）
-SRC_MARK = re.compile("^<(web|本) [^>]*>$")
+SRC_MARK = re.compile("^<(web|本|会話) [^>]*>$")
 
 
 # ★★★出典の印を、★書いたものから落とす。
 #   ★ごはんには <web タイトル> / <本 題名 / 著者> が埋めてある（どこで知ったかを残すため）。
 #   ★それを覚えて真似してしまう（実測: 「おお とよくすね。<web 988年（昭和21年）…」）。
 #   → ★ごはんからは消さない（出典は残す）。★出す時だけ落とす。
-SRC_OUT = re.compile("<(web|本)[^>]*>?")
+SRC_OUT = re.compile("<(web|本|会話)[^>]*>?")
 
 
 def no_src(t):
@@ -490,7 +490,8 @@ def main():
     sizes = {}
     # ★★★動かないもの（法令・Wikipedia）を先に、★増えるもの（判例・会議録・読んだもの）を後に。
     #   ★そうすると「新しく足された分」がいつも後ろに来るので、★短期の山が作れる。
-    for name in ("laws.txt", "wiki.txt", "aozora.txt", "hanrei.txt", "kokkai.txt", "web.txt"):
+    for name in ("laws.txt", "wiki.txt", "aozora.txt", "talk.txt",
+                 "hanrei.txt", "kokkai.txt", "web.txt"):
         for p in (os.path.join(WORK, name + ".gz"), os.path.join(WORK, name)):
             if not os.path.exists(p):
                 continue

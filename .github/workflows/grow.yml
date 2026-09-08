@@ -112,7 +112,7 @@ jobs:
           if ! gh release view food >/dev/null 2>&1; then
             echo "★まだ Release にごはんは無い（★はじめての回）"; exit 0
           fi
-          for n in laws wiki hanrei kokkai web aozora val; do
+          for n in laws wiki hanrei kokkai web aozora talk val; do
             if [ -f "work/$n.txt.gz" ]; then continue; fi
             if gh release download food -p "$n.enc" -D /tmp 2>/dev/null; then
               if openssl enc -d -aes-256-cbc -pbkdf2 -in "/tmp/$n.enc" \
@@ -278,7 +278,7 @@ jobs:
                  --title "レアルのごはん（鍵つき）" \
                  --notes "鍵をかけてある。加工したテキストなので、そのままは公開できない。" \
                  --latest=false
-          for n in laws wiki hanrei kokkai web aozora val; do
+          for n in laws wiki hanrei kokkai web aozora talk val; do
             if [ -f "work/$n.txt.gz" ]; then
               openssl enc -aes-256-cbc -pbkdf2 -salt \
                 -in "work/$n.txt.gz" -out "/tmp/$n.enc" -pass env:FOODKEY
@@ -334,6 +334,15 @@ jobs:
       # ── ★★★ことばの単位を、自分のごはんから切り出す（★初回だけ）
       #   ★外のトークナイザは使わない（★語彙そのものが外の世界の知識だから）。
       #   ★文字単位より1.64倍効率がよい（実測）＝同じ容量で1.6倍の範囲を見渡せる。
+      # ── ★★★人が実際に話した言葉を食べる。
+      #   ★いままで食べたものは、ほとんど書き言葉だった。
+      #     法令・判例・Wikipedia・web ＝ 説明文 / 国会 ＝ 硬い質疑 / 青空 ＝ 文語混じり
+      #   ★★**現代のふつうの会話が1文字も無かった。**
+      #   ★根拠: 3つとも CC BY-SA 4.0（一次情報で確認）。出典は本文に残す。
+      #   ★一度取れば終わり（★talk_done.txt で覚えている）。
+      - name: 人の話を聞く
+        run: python -u fetch_talk.py || true
+
       - name: ことばの単位をつくる（はじめの一回だけ）
         run: python -u make_tok.py
 
