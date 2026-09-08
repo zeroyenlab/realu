@@ -15,6 +15,7 @@
 """
 import gzip
 import os
+import re
 import sys
 
 HERE = os.path.dirname(os.path.abspath(__file__))
@@ -26,7 +27,15 @@ TOK = os.path.join(WORK, "tok.json")
 #   ★増えた 2.2M は**全部が引き当て表**。★考える所（1.77M）は1ミリも増えていない。
 #   ★別プロジェクトの日本語研究の結論と同じ:「軽さの本体は語彙を捨てること」
 VOCAB = int(os.environ.get("REALU_VOCAB", 6000))
-SAMPLE = int(os.environ.get("REALU_TOK_SAMPLE", 250_000_000))   # ★学習に使う文字数
+# ★★★2.5億字は**メモリで死ぬ**（★2026-09-08 実測: runner ごと落ちた）。
+#   ★日本語は空白が無いので、★1行がまるごと1カタマリになる（実測: 56字→6個、最長81バイト）。
+#   ★英語は単語が何度も出るので数え上げが小さく済むが、★日本語は**ほぼ全部が一度きり**。
+#   → ★数え上げの表が巨大になって、★16GBを食い尽くす。
+SAMPLE = int(os.environ.get("REALU_TOK_SAMPLE", 50_000_000))
+
+
+# ★★日本語の切れ目（★ここをまたぐ「語」は、ほぼ無い）
+SPLIT = re.compile("([、。，．！？「」『』（）・：；　 ]+)")
 
 
 def feed():
@@ -43,7 +52,13 @@ def feed():
                     if len(line) < 8:
                         continue
                     got += len(line)
-                    yield line
+                    # ★★★句読点で切ってから渡す。
+                    #   ★1行まるごとだと「一度きりの長い並び」になって数え上げが爆発する。
+                    #   ★切ると短くて何度も出るカタマリになる ＝ 数え上げが小さくなる。
+                    #   ★切れ目をまたぐ単位は作れなくなるが、★句読点をまたぐ語はほぼ無い。
+                    for part in SPLIT.split(line):
+                        if part:
+                            yield part
                     if got > SAMPLE:
                         return
             break

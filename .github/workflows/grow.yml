@@ -28,7 +28,10 @@ permissions:
 
 concurrency:
   group: realu-grow
-  cancel-in-progress: false
+  # ★★★新しい版が来たら、古い版で走っている回は止める。
+  #   ★2026-09-08: 古い版が「必ず死ぬ所」へ2.5時間かけて進んでいくのを止められなかった。
+  #   ★育つ回は長い。★間違った版のまま走らせ続けるほうが損。
+  cancel-in-progress: true
 
 jobs:
   grow:
