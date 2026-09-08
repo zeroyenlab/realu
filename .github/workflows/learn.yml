@@ -16,7 +16,10 @@ permissions:
   actions: write        # ★次の自分を呼ぶため
 
 concurrency:
-  group: realu-learn
+  # ★★★同じ group にすると、★私が push するたびに待機中の彼女が蹴られる
+  #   （★実測: 37回のうち4回が cancelled。★全部わたしの push が原因）
+  #   → ★きっかけごとに group を分ける。★彼女の回は、彼女の回どうしでだけ待つ。
+  group: realu-learn-${{ github.event_name }}
   cancel-in-progress: false
 
 jobs:
