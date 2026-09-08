@@ -12,3 +12,12 @@ https://ja.wikipedia.org/wiki/%E6%97%A5%E6%9C%AC%E8%AA%9E
 https://ja.wikipedia.org/wiki/%E6%B3%95%E5%BE%8B
 https://ja.wikipedia.org/wiki/%E5%9B%BD%E9%9A%9B%E6%B3%95
 https://ja.wikipedia.org/wiki/%E8%91%97%E4%BD%9C%E6%A8%A9
+# ★★★ここから外へ出る扉。★どれも terms.json で規約を確認済み。
+https://ja.wiktionary.org/wiki/%E8%A8%80%E8%91%89
+https://ja.wikibooks.org/wiki/%E3%83%A1%E3%82%A4%E3%83%B3%E3%83%9A%E3%83%BC%E3%82%B8
+https://ja.wikisource.org/wiki/%E3%83%A1%E3%82%A4%E3%83%B3%E3%83%9A%E3%83%BC%E3%82%B8
+https://ja.wikinews.org/wiki/%E3%83%A1%E3%82%A4%E3%83%B3%E3%83%9A%E3%83%BC%E3%82%B8
+https://ja.wikiquote.org/wiki/%E3%83%A1%E3%82%A4%E3%83%B3%E3%83%9A%E3%83%BC%E3%82%B8
+https://ja.wikiversity.org/wiki/%E3%83%A1%E3%82%A4%E3%83%B3%E3%83%9A%E3%83%BC%E3%82%B8
+https://ja.wikivoyage.org/wiki/%E3%83%A1%E3%82%A4%E3%83%B3%E3%83%9A%E3%83%BC%E3%82%B8
+https://www.aozora.gr.jp/index_pages/index_top.html

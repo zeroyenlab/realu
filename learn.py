@@ -79,8 +79,21 @@ LICENSED = {
 
 
 def license_of(url):
-    """★この場所の言葉を持ち帰ってよいか。★駄目なら None。"""
+    """★この場所の言葉を持ち帰ってよいか。★駄目なら None。
+
+    ★★★terms.json を見る（★人が規約を読んで書いたもの）。
+      ・quote が false → ★持ち帰らない（★裁判所は「無断改変禁止」なので表示しない）
+      ・license → ★そのまま出典に添える
+    ★terms.json に無ければ、★昔からの表（Wikimedia）を見る。★どちらにも無ければ持ち帰らない。
+    """
     host = urllib.parse.urlparse(url).netloc.lower()
+    rec = ((load(T, {}) or {}).get("hosts") or {}).get(host)
+    if rec:
+        if rec.get("quote") is False:
+            return None                      # ★読むが、言葉は持ち帰らない
+        lic = rec.get("license")
+        if lic:
+            return {"name": lic, "url": rec.get("licenseUrl") or ""}
     for dom, (name, link) in LICENSED.items():
         if host == dom or host.endswith("." + dom):
             return {"name": name, "url": link}
@@ -540,7 +553,11 @@ def main():
     k = load(K, {"items": [], "read": {}, "born": None, "lastLearned": None})
     d = load(D, {})
     sd = seeds()
-    allowed = set(urllib.parse.urlparse(u).netloc for u in sd if u.startswith("http"))
+    # ★★★行ける場所は sources.txt ではなく **terms.json** から決まる。
+    #   ★前は「種のURLと同じホスト」しか辿れず、★Wikipedia の中を回り続けていた。
+    #   ★★人が規約を読んで許した所なら、★どこへでも行ける。
+    allowed = set((load(T, {}) or {}).get("hosts") or {})
+    allowed |= set(urllib.parse.urlparse(u).netloc for u in sd if u.startswith("http"))
     if not k.get("born"):
         k["born"] = now()
     read = k.get("read") or {}

@@ -183,7 +183,7 @@ jobs:
                  --title "レアルのごはん（鍵つき）" \
                  --notes "鍵をかけてある。加工したテキストなので、そのままは公開できない。" \
                  --latest=false
-          for n in laws wiki hanrei kokkai web; do
+          for n in laws wiki hanrei kokkai web aozora; do
             if [ -f "work/$n.txt.gz" ]; then
               openssl enc -aes-256-cbc -pbkdf2 -salt \
                 -in "work/$n.txt.gz" -out "/tmp/$n.enc" -pass env:FOODKEY
@@ -193,6 +193,14 @@ jobs:
           done
           echo "★鍵をかけてしまった"
           du -sh work 2>/dev/null || true
+
+      # ── ★★★本を読む。★はじめての「物語」。
+      #   ★いままで食べたのは全部「説明文」だった。
+      #   ★物語も描写も感情も会話も、一度も読んでいなかった。
+      - name: 本を読む
+        env:
+          REALU_AOZORA_BOOKS: "600"
+        run: python -u fetch_aozora.py || true
 
       # ── ★★★ことばの単位を、自分のごはんから切り出す（★初回だけ）
       #   ★外のトークナイザは使わない（★語彙そのものが外の世界の知識だから）。

@@ -35,6 +35,141 @@
         "画像は一切扱わない。"
       ],
       "checkedOn": "2026-09-08"
+    },
+    "ja.wiktionary.org": {
+      "name": "ウィクショナリー日本語版（辞書）",
+      "terms": [
+        "https://foundation.wikimedia.org/wiki/Policy:Terms_of_Use/ja",
+        "https://foundation.wikimedia.org/wiki/Policy:User-Agent_policy"
+      ],
+      "verdict": "allow",
+      "license": "CC BY-SA 4.0",
+      "quote": true,
+      "conditions": [
+        "本文は CC BY-SA 4.0。出典とライセンスを必ず残す（利用規約 7条）。",
+        "画像は個別ライセンス。だから画像は一切持ち帰らない。",
+        "User-Agent に連絡先を入れること（User-Agent policy）。",
+        "サーバーに負荷をかけない。並列は控えめに。"
+      ],
+      "checkedOn": "2026-09-08"
+    },
+    "ja.wikibooks.org": {
+      "name": "ウィキブックス日本語版（教科書）",
+      "terms": [
+        "https://foundation.wikimedia.org/wiki/Policy:Terms_of_Use/ja",
+        "https://foundation.wikimedia.org/wiki/Policy:User-Agent_policy"
+      ],
+      "verdict": "allow",
+      "license": "CC BY-SA 4.0",
+      "quote": true,
+      "conditions": [
+        "本文は CC BY-SA 4.0。出典とライセンスを必ず残す（利用規約 7条）。",
+        "画像は個別ライセンス。だから画像は一切持ち帰らない。",
+        "User-Agent に連絡先を入れること（User-Agent policy）。",
+        "サーバーに負荷をかけない。並列は控えめに。"
+      ],
+      "checkedOn": "2026-09-08"
+    },
+    "ja.wikisource.org": {
+      "name": "ウィキソース日本語版（一次資料）",
+      "terms": [
+        "https://foundation.wikimedia.org/wiki/Policy:Terms_of_Use/ja",
+        "https://foundation.wikimedia.org/wiki/Policy:User-Agent_policy"
+      ],
+      "verdict": "allow",
+      "license": "CC BY-SA 4.0",
+      "quote": true,
+      "conditions": [
+        "本文は CC BY-SA 4.0。出典とライセンスを必ず残す（利用規約 7条）。",
+        "画像は個別ライセンス。だから画像は一切持ち帰らない。",
+        "User-Agent に連絡先を入れること（User-Agent policy）。",
+        "サーバーに負荷をかけない。並列は控えめに。"
+      ],
+      "checkedOn": "2026-09-08"
+    },
+    "ja.wikinews.org": {
+      "name": "ウィキニュース日本語版（報道）",
+      "terms": [
+        "https://foundation.wikimedia.org/wiki/Policy:Terms_of_Use/ja",
+        "https://foundation.wikimedia.org/wiki/Policy:User-Agent_policy"
+      ],
+      "verdict": "allow",
+      "license": "CC BY-SA 4.0",
+      "quote": true,
+      "conditions": [
+        "本文は CC BY-SA 4.0。出典とライセンスを必ず残す（利用規約 7条）。",
+        "画像は個別ライセンス。だから画像は一切持ち帰らない。",
+        "User-Agent に連絡先を入れること（User-Agent policy）。",
+        "サーバーに負荷をかけない。並列は控えめに。"
+      ],
+      "checkedOn": "2026-09-08"
+    },
+    "ja.wikiquote.org": {
+      "name": "ウィキクォート日本語版（引用）",
+      "terms": [
+        "https://foundation.wikimedia.org/wiki/Policy:Terms_of_Use/ja",
+        "https://foundation.wikimedia.org/wiki/Policy:User-Agent_policy"
+      ],
+      "verdict": "allow",
+      "license": "CC BY-SA 4.0",
+      "quote": true,
+      "conditions": [
+        "本文は CC BY-SA 4.0。出典とライセンスを必ず残す（利用規約 7条）。",
+        "画像は個別ライセンス。だから画像は一切持ち帰らない。",
+        "User-Agent に連絡先を入れること（User-Agent policy）。",
+        "サーバーに負荷をかけない。並列は控えめに。"
+      ],
+      "checkedOn": "2026-09-08"
+    },
+    "ja.wikiversity.org": {
+      "name": "ウィキバーシティ日本語版（学習）",
+      "terms": [
+        "https://foundation.wikimedia.org/wiki/Policy:Terms_of_Use/ja",
+        "https://foundation.wikimedia.org/wiki/Policy:User-Agent_policy"
+      ],
+      "verdict": "allow",
+      "license": "CC BY-SA 4.0",
+      "quote": true,
+      "conditions": [
+        "本文は CC BY-SA 4.0。出典とライセンスを必ず残す（利用規約 7条）。",
+        "画像は個別ライセンス。だから画像は一切持ち帰らない。",
+        "User-Agent に連絡先を入れること（User-Agent policy）。",
+        "サーバーに負荷をかけない。並列は控えめに。"
+      ],
+      "checkedOn": "2026-09-08"
+    },
+    "ja.wikivoyage.org": {
+      "name": "ウィキボヤージュ日本語版（旅行）",
+      "terms": [
+        "https://foundation.wikimedia.org/wiki/Policy:Terms_of_Use/ja",
+        "https://foundation.wikimedia.org/wiki/Policy:User-Agent_policy"
+      ],
+      "verdict": "allow",
+      "license": "CC BY-SA 4.0",
+      "quote": true,
+      "conditions": [
+        "本文は CC BY-SA 4.0。出典とライセンスを必ず残す（利用規約 7条）。",
+        "画像は個別ライセンス。だから画像は一切持ち帰らない。",
+        "User-Agent に連絡先を入れること（User-Agent policy）。",
+        "サーバーに負荷をかけない。並列は控えめに。"
+      ],
+      "checkedOn": "2026-09-08"
+    },
+    "www.aozora.gr.jp": {
+      "name": "青空文庫（著作権の切れた文学）",
+      "terms": [
+        "https://www.aozora.gr.jp/guide/kijyunn.html"
+      ],
+      "verdict": "allow",
+      "license": "パブリックドメイン（著作権切れ）",
+      "quote": true,
+      "conditions": [
+        "利用基準:著作権の切れた作品は「自由に複製・再配布・共有してよい」（有償無償を問わず）。",
+        "★ただし著作権が生きている作品も混ざっている（19,502件中928件）。",
+        "→ 「作品著作権フラグ = なし」のものだけ扱う。",
+        "作品名・著者名・出典を消さないよう求められているので、必ず残す。"
+      ],
+      "checkedOn": "2026-09-08"
     }
   }
 }
