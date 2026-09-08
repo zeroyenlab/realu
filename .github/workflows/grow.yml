@@ -447,6 +447,46 @@ jobs:
             echo "★棚はそのまま使える"
           fi
 
+      # ── ★★★棚と会話を、★学ぶ前にもう一度しまう。
+      #   ★「食べたものに鍵をかけてしまう」は 会話・棚 より**前**にある。
+      #   ★だからこの回で取った会話も、作った棚も、★冷蔵庫に入らなかった（実測）。
+      #   ★キャッシュには残るが、★キャッシュが飛んだら失われる。
+      - name: あとから増えたものもしまう
+        if: always()
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          FOODKEY: ${{ secrets.REALU_FOOD_KEY }}
+        run: |
+          if [ -z "$FOODKEY" ]; then exit 0; fi
+          if ! gh release view food >/dev/null 2>&1; then exit 0; fi
+          # ★★会話（あとから取った）
+          if [ -f work/talk.txt.gz ]; then
+            openssl enc -aes-256-cbc -pbkdf2 -salt \
+              -in work/talk.txt.gz -out /tmp/talk.enc -pass env:FOODKEY
+            gh release upload food /tmp/talk.enc --clobber && echo "★会話をしまった"
+            rm -f /tmp/talk.enc
+          fi
+          # ★★棚（あとから作った）
+          if [ -d work/pantry ]; then
+            tar cf - -C work pantry | gzip -1 > /tmp/pantry.tgz
+            if [ "$(stat -c%s /tmp/pantry.tgz)" -lt 1900000000 ]; then
+              openssl enc -aes-256-cbc -pbkdf2 -salt \
+                -in /tmp/pantry.tgz -out /tmp/pantry.enc -pass env:FOODKEY
+              gh release upload food /tmp/pantry.enc --clobber && echo "★棚をしまった"
+              rm -f /tmp/pantry.enc
+            else
+              echo "★★棚が2GBを超えた。★刻む仕組みが要る"
+            fi
+            rm -f /tmp/pantry.tgz
+          fi
+          # ★★物差し（棚を作った時にできる）
+          if [ -f work/val.txt.gz ]; then
+            openssl enc -aes-256-cbc -pbkdf2 -salt \
+              -in work/val.txt.gz -out /tmp/val.enc -pass env:FOODKEY
+            gh release upload food /tmp/val.enc --clobber || true
+            rm -f /tmp/val.enc
+          fi
+
       - name: 学ぶ
         env:
           REALU_STEPS: ${{ github.event.inputs.steps || '4000' }}
