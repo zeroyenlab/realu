@@ -25,6 +25,10 @@ jobs:
 
       - name: レアルが読む
         run: python learn.py
+        env:
+          # ★玄関の鍵。★これが無いと「話しかけられたこと」を読めず、状態も置けない。
+          #   ★無くても学習そのものは動く（★鍵が無いだけで止まらない）。
+          REALU_DOOR_KEY: ${{ secrets.REALU_DOOR_KEY }}
 
       # ★★★家を建て直す ── ★中身をHTMLに焼き込む（★Googleが読めるように）
       - name: レアルが家を建て直す
