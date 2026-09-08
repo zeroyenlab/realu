@@ -52,7 +52,7 @@ jobs:
         run: |
           date +%s > /tmp/t0       # ★★「あと何分使えるか」を後で計算するため
           pip install --quiet torch --index-url https://download.pytorch.org/whl/cpu
-          pip install --quiet pypdf tokenizers
+          pip install --quiet pypdf tokenizers numpy   # ★numpy を入れ忘れて run#13 が落ちた
 
       # ★★ごはんと、前のわたし。★消えていたら取り直す
       # ★★★取り出しと保存を分ける。

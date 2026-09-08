@@ -606,13 +606,15 @@ def main():
     #   ★★分けて encode して、★int32 でつなぐ（★long の半分で済む）。
     #   ★make_tok.py は同じ理由で既に直した。★こちらが残っていた。
     def encode_big(t):
-        import numpy as np
-        out, step = [], 4_000_000
+        # ★★★numpy が無い機械でも動く（★run#13 はこれで落ちた）。
+        #   ★道具ひとつ足りないだけで全部止まるのは、★仕組みの方が悪い。
+        step = 4_000_000
+        out = []
         for i in range(0, len(t), step):
-            out.append(np.asarray(vocab.encode(t[i:i + step]), dtype=np.int32))
+            out.append(torch.tensor(vocab.encode(t[i:i + step]), dtype=torch.int32))
         if not out:
             return torch.zeros(0, dtype=torch.int32)
-        return torch.from_numpy(np.concatenate(out))
+        return torch.cat(out)
 
     ids = encode_big(text)
     step_log("トークンにした")
