@@ -461,7 +461,12 @@ def main():
     if not texts:
         print("★ごはんが無い。work/ に laws.txt を置いて。")
         return 1
-    text = "\n".join(texts)
+    # ★★★全部を1本に繋ぐ前に、★読み終わった写しを手放す。
+    #   ★前は texts（各ファイルの全文）を持ったまま繋いだ写しも作っていた。
+    #   ★日本語800M字なら、それだけで数GB。★16GBの機械では効いてくる。
+    text = (chr(10)).join(texts)
+    texts.clear()
+    del texts
     step_log("ごはんを開いた")
     before = len(text)
 

@@ -164,6 +164,7 @@ jobs:
       - name: 判決をすこし読み足す
         run: |
           N="${{ github.event.inputs.hanrei || '400' }}"
+          if [ ! -f work/realu.pt ]; then N=100; fi   # ★頭ができるまで軽く
           FROM=$(cat work/hanrei_next.txt 2>/dev/null || echo 1000)
           TO=$((FROM + N * 3))          # ★存在しないIDもあるので多めに走査する
           echo "★判決 $FROM 〜 $TO を読む"
@@ -244,6 +245,11 @@ jobs:
       - name: 国会の話を聞きに行く
         run: |
           N=600
+          # ★★★頭がまだ1つも無い間は、★毎日の買い足しを軽くする。
+          #   ★冷蔵庫にはもう343MB入っている。★いま急いで足す必要はない。
+          #   ★国会は1本3秒（規約）。600本で92分かかり、★「学ぶ」に着くまで2時間になる。
+          #   → ★直して試す1周を 2時間 → 30分 にする。頭が残ったら戻す。
+          if [ ! -f work/realu.pt ]; then N=100; echo "★まだ頭が無いので国会は $N 本"; fi
           REALU_KOKKAI_REQ=$N python -u fetch_kokkai.py || true
 
       # ── ★★★食べたものを、★**この時点で**残す。
