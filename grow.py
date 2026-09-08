@@ -718,7 +718,18 @@ def main():
 
     step_log("学びはじめ")
     opt = torch.optim.AdamW(model.parameters(), lr=LR, weight_decay=0.01, betas=(0.9, 0.95))
-    best, bad, grew = 9e9, 0, 0
+    # ★★★「良くなったか」を、★回をまたいで数える。
+    #   ★前は毎回 best=9e9 から始めていた。すると:
+    #     ・★新しい回の1回目は**必ず「良くなった」判定**になる（実際は悪化していても）
+    #     ・★bad が毎回0に戻るので、★**5回連続で止まる**にほぼ到達しない
+    #     → ★★大きくなる判定が、事実上**一度も動けなかった**
+    #   ★体が変わった回（幅を倍にした直後）は比べられないので、★そこはリセットする。
+    best = prev_val if prev_val is not None else 9e9
+    bad = int(hist.get("bad") or 0) if prev_val is not None else 0
+    grew = 0
+    if bad:
+        print("★前の回から「良くならない」が %d 回続いている（%d で大きくなる）"
+              % (bad, GROW_PATIENCE), flush=True)
     want_wider = False          # ★★★「幅が欲しい」と自分で言うための印
     lr_now = LR
     t0 = t_start          # ★★下ごしらえも予算の内側
@@ -906,6 +917,13 @@ def main():
         ptsize = os.path.getsize(ckpt)
     except Exception:
         ptsize = 0
+    # ★★★巻き戻した回の判断で脱皮しない。
+    #   ★「前より悪くなったので採用しない」と決めた回が、★同時に「幅が欲しい」と
+    #   言い残すと、★**失敗した回の判断で体を作り直す**ことになる。
+    #   ★★体を変えるのは、★ちゃんと学べた回が「もう頭打ち」と言った時だけ。
+    if rolled:
+        want_wider = False
+
     hist["runs"].append({
         "at": time.strftime("%Y-%m-%dT%H:%M:%SZ", time.gmtime()),
         "val": round(val, 4), "prev": round(prev_val, 4) if prev_val else None, "valTag": VAL_TAG, "stoppedAt": stopped_early,
@@ -920,6 +938,8 @@ def main():
     })
     hist["runs"] = hist["runs"][-200:]
     hist["bestVal"] = round(min(r["val"] for r in hist["runs"]), 4)
+    # ★★次の回に引き継ぐ（★体が変わったら0から）
+    hist["bad"] = 0 if (grew or rolled) else bad
     hist["layers"] = len(model.blocks)
     # ★★★次の回に「幅を広げたい」を伝える
     hist["wantWider"] = want_wider
