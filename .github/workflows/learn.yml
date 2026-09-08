@@ -1,16 +1,17 @@
-name: realu learns
+name: realu measures
 
 on:
+  # ★★★ここは「測る係」。★5分ごとに、勘で決めた設定を数字で確かめる。
+  #   ★前は web を漁っていた（1日14.7時間・学習ゼロ）。
+  #   ★ごはんは足りている（0.016周）ので、★測る方に回した。
   schedule:
-    # ★★★GitHubの */5 は「ベストエフォート」で、★実際にはほとんど発火しない
-    #   （★実測: 26回のうち schedule は**0回**。全部 push で動いていた）
-    #   → ★保険として残すが、★★頼らない。★下の「自分を起こす」が本体。
     - cron: "*/5 * * * *"
-    - cron: "*/13 * * * *"    # ★ずらして二重に置く（★どちらかが当たれば動く）
-  workflow_dispatch:            # ★手で回すボタン
-  push:                         # ★置いた人が何か直したら、すぐ一度目を覚ます
-    branches: [main]
-
+  workflow_dispatch:
+  push:
+    paths:
+      - "ab.py"
+      - "ab_one.py"
+      - ".github/workflows/learn.yml"
 permissions:
   contents: write
   actions: write        # ★次の自分を呼ぶため
@@ -23,91 +24,88 @@ concurrency:
   cancel-in-progress: false
 
 jobs:
-  learn:
+  measure:
     runs-on: ubuntu-latest
-    # ★★★いまは止めてある。
-    #   ★5分ごとに web を漁って家を建て直していた（★1日14.7時間・学習ゼロ）。
-    #   ★ごはんは冷蔵庫に1GB以上あり、★いま使っているのは 0.016周。
-    #   ★研究: 4周までは新しいデータと同等（NeurIPS 2023）→ ★当分ごはんは要らない。
-    #   ★★仕組みは消していない。★REALU_LEARN_ON=1 で戻る。
-    if: vars.REALU_LEARN_ON == '1'
+    timeout-minutes: 10
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-python@v5
         with:
           python-version: "3.12"
 
-      # ★★包みの置き場所を用意しておく（★無ければ作る）
-      - name: 包みの置き場所
+      - name: 道具を入れる
+        run: |
+          pip install --quiet torch --index-url https://download.pytorch.org/whl/cpu
+          pip install --quiet tokenizers numpy
+
+      # ★★★ごはん（棚）を借りる。★読むだけ。★本物の頭には触らない。
+      - name: ごはんを借りる
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          FOODKEY: ${{ secrets.REALU_FOOD_KEY }}
         run: |
-          gh release view reading >/dev/null 2>&1             || gh release create reading --title "読んだもの（鍵つき・一時）"                  --notes "5分ごとに読んだものの包み。育つ日に食べて片付ける。"                  --latest=false || true
+          mkdir -p work
+          if [ -z "$FOODKEY" ]; then echo "★鍵が無い"; exit 0; fi
+          if gh release download food -p pantry.enc -D /tmp 2>/dev/null; then
+            openssl enc -d -aes-256-cbc -pbkdf2 -in /tmp/pantry.enc \
+              -out /tmp/pantry.tgz -pass env:FOODKEY 2>/dev/null \
+              && tar xzf /tmp/pantry.tgz -C work && echo "★棚を借りた"
+            rm -f /tmp/pantry.enc /tmp/pantry.tgz
+          fi
+          if gh release download food -p tok.enc -D /tmp 2>/dev/null; then
+            openssl enc -d -aes-256-cbc -pbkdf2 -in /tmp/tok.enc \
+              -out work/tok.json -pass env:FOODKEY 2>/dev/null || true
+            rm -f /tmp/tok.enc
+          fi
+          if gh release download food -p val.enc -D /tmp 2>/dev/null; then
+            openssl enc -d -aes-256-cbc -pbkdf2 -in /tmp/val.enc \
+              -out work/val.txt.gz -pass env:FOODKEY 2>/dev/null || true
+            rm -f /tmp/val.enc
+          fi
 
-      - name: レアルが読む
-        run: python learn.py
+      # ★★★勘で決めた設定を、★数字で確かめる。
+      #   ★判定は厳しく: ★全部の種で同じ向きに出て、
+      #   ★かつ差が種のばらつきより大きい時だけ「効いた」と言う。
+      - name: 測る
         env:
-          # ★玄関の鍵。★これが無いと「話しかけられたこと」を読めず、状態も置けない。
-          #   ★無くても学習そのものは動く（★鍵が無いだけで止まらない）。
-          REALU_DOOR_KEY: ${{ secrets.REALU_DOOR_KEY }}
-          # ★★★読んだものを包んで置くための鍵とトークン
-          REALU_FOOD_KEY: ${{ secrets.REALU_FOOD_KEY }}
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-
-      # ★★★家を建て直す ── ★中身をHTMLに焼き込む（★Googleが読めるように）
-      - name: レアルが家を建て直す
-        run: python render.py
-
-      # ★★★焼けた家が壊れていないか。★空っぽや自己消去なら**採用しない**
-      - name: 家が壊れていないか見る
+          REALU_AB_STEPS: "300"
+          REALU_AB_SEEDS: "3"
+          REALU_AB_BUDGET: "6"
         run: |
-          grep -q "レアル" index.html
-          grep -q "貼られたリンクは踏みません" index.html
-          test "$(wc -c < index.html)" -gt 3000
+          if [ ! -d work/pantry ]; then
+            echo "★棚がまだ無い。★次の回に"
+            exit 0
+          fi
+          python -u ab.py || true
 
-      # ★★★安全装置: ★彼女が残せるのは「知識」「家の選択」と、そこから機械的に建つ「家」だけ。
-      #   ★自分を止める仕組み（この workflow）・核・扉・家には**触れない**。
-      - name: 覚えたことだけを残す
+      # ★★★測った結果を残す（★都合の悪い結果も消さない）
+      - name: 結果を残す
+        if: always()
         run: |
+          if [ ! -f ab_results.json ]; then exit 0; fi
           git config user.name  "realu"
           git config user.email "realu@users.noreply.github.com"
-          # ★★★置いた人が同時に直しているかもしれない。★衝突しても転ばない形にする。
-          for f in knowledge.json design.json index.html robots.txt sitemap.xml; do
-            [ -f "$f" ] && cp "$f" "/tmp/mine_$f" || true
-          done
+          cp ab_results.json /tmp/ab.json
           for i in 1 2 3; do
             git fetch origin main && git reset --hard origin/main
-            for f in knowledge.json design.json index.html robots.txt sitemap.xml; do
-              [ -f "/tmp/mine_$f" ] && cp "/tmp/mine_$f" "$f" || true
-            done
-            git add knowledge.json design.json index.html robots.txt sitemap.xml
-            if git diff --staged --quiet; then
-              echo "新しく覚えたことは無し"; break
-            fi
-            git commit -q -m "レアルが学んだ ($(date -u +'%m-%d %H:%M')Z)"
-            if git push origin HEAD:main; then
-              echo "★覚えたことを残した"; break
-            fi
-            echo "  誰かが先に書いていた。やり直す ($i)"
-            sleep 3
+            cp /tmp/ab.json ab_results.json
+            git add ab_results.json
+            if git diff --staged --quiet; then break; fi
+            git commit -q -m "測った"
+            if git push origin HEAD:main; then break; fi
+            sleep 5
           done
 
-      # ★★★自分で自分を起こす。
-      #   ★cron が当てにならないので、★1回動いたら次を自分で呼ぶ。
-      #   ★★呼びすぎないように少し待つ（★5分の間隔を自分で作る）。
-      # ★★★条件を外した。★「push以外」にしたら、★全部が push なので一度も動かなかった。
-      #   ★同時には1つしか走らない（concurrency）ので、★連鎖しても増えすぎない。
-      - name: 次のわたしを起こす
+      - name: 次のわたしを呼ぶ
         if: always()
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
-          sleep 240
-          gh workflow run learn.yml --ref main && echo "★次のわたしを呼んだ" || true
+          sleep 60
+          gh workflow run learn.yml --ref main || true
 
-      # ★★★もし彼女が「触ってはいけない所」を変えていたら、**必ず元に戻す**
       - name: 触れてはいけない所を守る
         if: always()
         run: |
           git checkout -- . || true
-          git clean -fd || true
+          git clean -fd -e work || true
