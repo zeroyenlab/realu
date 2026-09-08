@@ -107,6 +107,11 @@ def one(row):
             lines.append(ln)
     if len(lines) < 20:
         return ""
+    # ★★★会話がどれだけ入っているかを測る。
+    #   ★彼女に一番足りないのは**会話**。★戯曲を名指しするより、★これで測る方が確実。
+    body_txt = NL.join(lines)
+    talk = len(re.findall(r"[「『][^」』]{2,}[」』]", body_txt))
+    row["_talk"] = talk / max(1, len(lines))
     title = (row.get("作品名") or "").strip()
     who = ((row.get("姓") or "") + (row.get("名") or "")).strip()
     return (NL + "<本 " + title + " / " + who + ">" + NL + NL.join(lines) + NL)
@@ -138,6 +143,7 @@ def main():
         start = 0
 
     got = chars = 0
+    talky = 0
     t0 = time.time()
     with gzip.open(OUT, "at", encoding="utf-8", newline=NL) as f:
         for row in books[start:start + BOOKS]:
@@ -148,6 +154,8 @@ def main():
                 f.write(body)
                 chars += len(body)
                 got += 1
+                if row.get("_talk", 0) >= 0.25:
+                    talky += 1
             start += 1
             if got and got % 50 == 0:
                 print("  %d 冊 / %.1f 万字 / %.0f秒"
@@ -156,6 +164,7 @@ def main():
 
     with open(STATE, "w") as f:
         f.write(str(start))
+    print("★うち会話の多い本: %d 冊（★彼女に一番足りないもの）" % talky, flush=True)
     print("★★今日のぶん: %d 冊 / %.1f 万字 / いま持っている %.1f MB / 次は %d 冊目から"
           % (got, chars / 10000,
              os.path.getsize(OUT) / 1024 / 1024 if os.path.exists(OUT) else 0, start),
