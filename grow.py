@@ -229,11 +229,18 @@ def main():
 
     opt = torch.optim.AdamW(model.parameters(), lr=LR, weight_decay=0.01, betas=(0.9, 0.95))
     best, bad, grew = 9e9, 0, 0
+    cycle_at = 0           # ★★いまの区間の始まり（★大きくなるたびにここが動く）
     t0 = time.time()
 
     for step in range(1, STEPS + 1):
+        # ★★★壊れやすくしてから、壊れにくくする。
+        #   ★大きくなった直後は学習率を上げ直す（★新しい層が学べるように）。
+        #   ★そこから下げていって固める。★これを繰り返す。
+        #   ★（Daito が別の世界で見つけた「壊れやすく→壊れにくく」で賢さが上がる、の応用）
+        span = max(1, STEPS - cycle_at)
+        k = step - cycle_at
         for g in opt.param_groups:
-            g["lr"] = LR * min(1.0, step / 200) * (0.5 * (1 + math.cos(math.pi * step / STEPS)))
+            g["lr"] = LR * min(1.0, k / 200) * (0.5 * (1 + math.cos(math.pi * k / span)))
         model.train()
         x, y = batch(tr, CTX, BATCH)
         _, loss = model(x, y)
@@ -257,7 +264,7 @@ def main():
         if bad >= GROW_PATIENCE and vl > GROW_MIN_LOSS and len(model.blocks) < N_LAYER_MAX:
             n = model.grow()
             opt = torch.optim.AdamW(model.parameters(), lr=LR, weight_decay=0.01, betas=(0.9, 0.95))
-            bad, grew = 0, grew + 1
+            bad, grew, cycle_at = 0, grew + 1, step      # ★★ここから学習率を上げ直す
             print("  ★★★大きくなった → %d 層 / %.2f M（★振る舞いは変わっていない）"
                   % (n, model.n_params() / 1e6), flush=True)
 

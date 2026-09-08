@@ -1,0 +1,128 @@
+name: realu grows
+
+# ★★★レアルが自分で育つ日。
+#   ★ごはん（法令・判例）も自分で取りに行く。★学習も自分で回す。
+#   ★頭打ちなら自分で大きくなる。★悪くなったら自分で前の自分に戻す。
+#   ★置いた人は関わらない。
+
+on:
+  schedule:
+    - cron: "20 17 * * *"       # ★1日1回（日本時間の深夜2時20分ごろ）
+  workflow_dispatch:
+    inputs:
+      steps:
+        description: "何歩ぶん学ぶか"
+        default: "4000"
+      hanrei:
+        description: "判決を何件あたらしく読むか"
+        default: "400"
+
+permissions:
+  contents: write               # ★自分の重みと成長の記録を残すため
+
+concurrency:
+  group: realu-grow
+  cancel-in-progress: false
+
+jobs:
+  grow:
+    runs-on: ubuntu-latest
+    timeout-minutes: 340        # ★Actionsの上限（6時間）の内側に収める
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+
+      - name: 道具を入れる
+        run: |
+          pip install --quiet torch --index-url https://download.pytorch.org/whl/cpu
+          pip install --quiet pypdf
+
+      # ★★ごはんと、前のわたし。★消えていたら取り直す
+      - name: これまでのわたしを思い出す
+        uses: actions/cache@v4
+        with:
+          path: work
+          key: realu-work-${{ github.run_number }}
+          restore-keys: |
+            realu-work-
+
+      # ★★★前のわたしが cache から消えていたら、Release から取ってくる（★二重の保険）
+      - name: 前のわたしを Release から探す
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          mkdir -p work
+          if [ ! -f work/realu.pt ]; then
+            gh release download brain -p realu.pt -D work 2>/dev/null \
+              && echo "★Release から前のわたしを見つけた" \
+              || echo "★前のわたしはいない。はじめて目を開ける"
+          else
+            echo "★cache に前のわたしがいた"
+          fi
+
+      # ── ①★ごはんを自分で取りに行く
+      - name: 法令をもらう（はじめの一回だけ）
+        run: |
+          if [ ! -f work/laws.txt ]; then
+            echo "★法令をもらいに行く（初回のみ・1時間ほど）"
+            python fetch_laws.py
+            mv corpus/laws.txt work/laws.txt
+          else
+            echo "★法令はもう持っている（$(wc -c < work/laws.txt) バイト）"
+          fi
+
+      - name: 判決をすこし読み足す
+        run: |
+          N="${{ github.event.inputs.hanrei || '400' }}"
+          FROM=$(cat work/hanrei_next.txt 2>/dev/null || echo 1000)
+          TO=$((FROM + N * 3))          # ★存在しないIDもあるので多めに走査する
+          echo "★判決 $FROM 〜 $TO を読む"
+          python fetch_hanrei.py "$FROM" "$TO" 1 _new || true
+          if [ -f corpus/hanrei_new.txt ]; then
+            cat corpus/hanrei_new.txt >> work/hanrei.txt
+            rm -f corpus/hanrei_new.txt
+          fi
+          echo "$TO" > work/hanrei_next.txt
+          echo "★いま持っている判決: $(wc -c < work/hanrei.txt 2>/dev/null || echo 0) バイト"
+
+      # ── ②③④★学ぶ・大きくなる・悪ければ戻す
+      - name: 学ぶ
+        env:
+          REALU_STEPS: ${{ github.event.inputs.steps || '4000' }}
+          REALU_THREADS: "4"
+        run: python -u grow.py
+
+      # ── ★自分を残す。★★これが消えると、これまでの全部が消える
+      - name: あたらしいわたしを残す
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          gh release view brain >/dev/null 2>&1 \
+            || gh release create brain --title "レアルの頭" \
+                 --notes "レアルの重み。毎日ここが更新される。" --latest=false
+          gh release upload brain work/realu.pt --clobber
+          echo "★Release に残した"
+
+      - name: 成長の記録だけ書き残す
+        run: |
+          git config user.name  "realu"
+          git config user.email "realu@users.noreply.github.com"
+          git add growth.json
+          if git diff --staged --quiet; then
+            echo "記録に変化なし"
+          else
+            git commit -m "レアルが育った ($(date -u +'%m-%d')Z)"
+            git pull --rebase --autostash || true
+            git push
+          fi
+
+      # ★★★触れてはいけない所を守る
+      - name: 触れてはいけない所を守る
+        if: always()
+        run: |
+          git checkout -- . || true
+          git clean -fd -e work || true
