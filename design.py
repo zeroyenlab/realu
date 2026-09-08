@@ -38,9 +38,22 @@ NAME_FONTS = BODY_FONTS + [
 ]
 FONTS = BODY_FONTS
 
-MOTIONS = ["breathe", "drift", "pulse", "tilt", "shimmer", "none"]
-LAYOUTS = ["stream", "grid", "quiet", "cards"]
-BGS = ["plain", "glow", "grid", "stars", "aurora"]
+MOTIONS = ["breathe", "drift", "pulse", "tilt", "shimmer", "float", "wave",
+           "trace", "none"]
+LAYOUTS = ["stream", "grid", "quiet", "cards", "masonry", "ribbon"]
+BGS = ["plain", "glow", "grid", "stars", "aurora", "dots", "rings", "noise"]
+
+# ★★★構造 ── ★どの順で何を見せるかも、彼女が決める。
+#   ★いままでは私が決めた順で固定だった。★家の間取りを人に決められていた。
+PARTS = ["greet", "grew", "stats", "genres", "heard", "know"]
+ORDERS = [
+    ["greet", "grew", "stats", "genres", "heard", "know"],   # ★ふつう
+    ["greet", "know", "stats", "genres", "grew", "heard"],   # ★知識を先に
+    ["stats", "greet", "genres", "know", "grew", "heard"],   # ★数字から
+    ["greet", "heard", "know", "genres", "stats", "grew"],   # ★人の声を先に
+    ["know", "greet", "genres", "stats", "heard", "grew"],   # ★いきなり中身
+    ["greet", "genres", "know", "heard", "stats", "grew"],   # ★内訳を先に
+]
 
 
 def _f(seed, name, lo, hi):
@@ -94,6 +107,14 @@ def choose(state):
     layout = LAYOUTS[int(_f(seed, "layout", 0, len(LAYOUTS) - 0.001))]
     bg = BGS[int(_f(seed, "bg", 0, len(BGS) - 0.001))]
     scale = round(_f(seed, "scale", 1.0, 1.16), 2)   # ★小さくしすぎない
+    # ★★形
+    shadow = round(_f(seed, "shadow", 0, 34), 1)          # ★影の深さ
+    border = round(_f(seed, "border", 0.5, 2.5), 1)       # ★枠線の太さ
+    wide = int(_f(seed, "wide", 620, 880))                # ★家の広さ
+    lead = round(_f(seed, "lead", 1.65, 2.05), 2)         # ★行の間
+    track = round(_f(seed, "track", 0, 0.09), 3)          # ★字の間
+    # ★★構造（★どの順で見せるか）
+    order = ORDERS[int(_f(seed, "order", 0, len(ORDERS) - 0.001))]
 
     if dark:
         bgc = hsl(hue, sat * 0.45, _f(seed, "bl", 0.05, 0.13))
@@ -138,6 +159,8 @@ def choose(state):
         "font": BODY_FONTS[disp_i][0],
         "bodyFont": BODY_FONTS[body_i][0],
         "motion": motion, "layout": layout, "bg": bg, "scale": scale,
+        "shadow": shadow, "border": border, "wide": wide, "lead": lead, "track": track,
+        "order": order,
         "colors": {"bg": hexc(bgc), "panel": hexc(panel), "ink": hexc(ink),
                    "muted": hexc(muted), "faint": hexc(faint), "edge": hexc(edge),
                    "accent": hexc(accent), "accent2": hexc(accent2)},
@@ -165,6 +188,20 @@ body{background-size:220% 220%;animation:realu-drift var(--sp) ease infinite}"""
 .name{background:linear-gradient(90deg,var(--accent),var(--accent2),var(--accent));
  background-size:200% auto;-webkit-background-clip:text;background-clip:text;color:transparent;
  animation:realu-shimmer var(--sp) linear infinite}""",
+    "float": """
+@keyframes realu-float{0%,100%{transform:translateY(0)}50%{transform:translateY(-5px)}}
+.stat{animation:realu-float var(--sp) ease-in-out infinite}
+.stat:nth-child(2){animation-delay:calc(var(--sp) * .15)}
+.stat:nth-child(3){animation-delay:calc(var(--sp) * .3)}
+.stat:nth-child(4){animation-delay:calc(var(--sp) * .45)}""",
+    "wave": """
+@keyframes realu-wave{0%,100%{border-radius:var(--r)}
+ 50%{border-radius:calc(var(--r) * 2.2) var(--r) calc(var(--r) * 1.6) var(--r)}}
+.greet{animation:realu-wave var(--sp) ease-in-out infinite}""",
+    "trace": """
+@keyframes realu-trace{0%{background-position:0 0}100%{background-position:200% 0}}
+.gh{background:linear-gradient(90deg,transparent,var(--accent),transparent) 0 100%/200% 1px no-repeat;
+ animation:realu-trace var(--sp) linear infinite;border-bottom-color:transparent}""",
     "none": "",
 }
 
@@ -192,6 +229,17 @@ body::before{content:"";position:fixed;inset:0;z-index:-1;pointer-events:none;op
 body::before{content:"";position:fixed;inset:-20%;z-index:-1;pointer-events:none;opacity:.16;
  background:conic-gradient(from 210deg at 50% 40%,var(--accent),var(--accent2),var(--accent));
  filter:blur(70px)}""",
+    "dots": """
+body::before{content:"";position:fixed;inset:0;z-index:-1;pointer-events:none;opacity:.10;
+ background-image:radial-gradient(var(--accent) 1.2px,transparent 1.2px);
+ background-size:26px 26px}""",
+    "rings": """
+body::before{content:"";position:fixed;inset:0;z-index:-1;pointer-events:none;opacity:.10;
+ background:repeating-radial-gradient(circle at 50% 0%,transparent 0 58px,var(--accent2) 58px 59px)}""",
+    "noise": """
+body::before{content:"";position:fixed;inset:0;z-index:-1;pointer-events:none;opacity:.06;
+ background-image:repeating-linear-gradient(0deg,var(--ink) 0 1px,transparent 1px 3px),
+                  repeating-linear-gradient(90deg,var(--ink) 0 1px,transparent 1px 4px)}""",
 }
 
 LAYOUT_CSS = {
@@ -206,8 +254,16 @@ LAYOUT_CSS = {
     "cards": ".grp{display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:var(--gap)}"
              ".grp .it{background:var(--panel);border:1px solid var(--edge);"
              "border-radius:var(--r);padding:18px 18px 14px;"
-             "box-shadow:0 8px 26px rgba(0,0,0,.13);transition:transform .25s ease}"
+             "box-shadow:0 var(--sh) calc(var(--sh) * 2) rgba(0,0,0,.16);"
+             "transition:transform .25s ease}"
              ".grp .it:hover{transform:translateY(-3px)}",
+    "masonry": ".grp{columns:2 250px;column-gap:var(--gap)}"
+               ".grp .it{break-inside:avoid;margin-bottom:var(--gap);background:var(--panel);"
+               "border:var(--bw) solid var(--edge);border-radius:var(--r);padding:15px}",
+    "ribbon": ".grp{display:flex;flex-direction:column;gap:calc(var(--gap) * .7)}"
+              ".grp .it{background:var(--panel);border-left:4px solid var(--accent);"
+              "border-radius:0 var(--r) var(--r) 0;padding:13px 16px}"
+              ".grp .it:nth-child(even){border-left-color:var(--accent2);margin-left:18px}",
 }
 
 
@@ -219,11 +275,17 @@ def to_css(d):
         "--bg:%(bg)s;--panel:%(panel)s;--ink:%(ink)s;--muted:%(muted)s;"
         "--faint:%(faint)s;--edge:%(edge)s;--accent:%(accent)s;--accent2:%(accent2)s;"
         % c
-        + "--r:%dpx;--gap:%dpx;--sp:%ss;--sc:%s;" % (d["radius"], d["gap"], d["speed"], d["scale"])
+        + ("--r:%dpx;--gap:%dpx;--sp:%ss;--sc:%s;--sh:%spx;--bw:%spx;--wide:%dpx;"
+           % (d["radius"], d["gap"], d["speed"], d["scale"],
+              d.get("shadow", 10), d.get("border", 1), d.get("wide", 760)))
         + ('--nm:"%s",sans-serif;--disp:"%s",sans-serif;'
            '--body:"%s",system-ui,sans-serif}'
            % (d.get("nameFont", d["font"]), d["font"], d["bodyFont"]))
-        + "body{font-family:var(--body);font-size:calc(15px * var(--sc));font-weight:400}"
+        + ("body{font-family:var(--body);font-size:calc(15px * var(--sc));font-weight:400;"
+           "line-height:%s;letter-spacing:%sem}" % (d.get("lead", 1.7), d.get("track", 0)))
+        + ".wrap{max-width:var(--wide)}"
+        + ".greet,.stat,.ask,.door,.say,.grew{border-width:var(--bw);border-style:solid}"
+        + ".greet{box-shadow:0 calc(var(--sh) * 1.4) calc(var(--sh) * 3) rgba(0,0,0,.18)}"
         # ★★★小さい字は太らせない・詰めない（★潰れて読めなくなる）
         + "h2{font-size:11.5px;font-weight:700;letter-spacing:.14em;line-height:1.6}"
         + ".sub,.byline,.note,.stat .k,.chip{font-weight:400;letter-spacing:.02em}"

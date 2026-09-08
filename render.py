@@ -119,6 +119,8 @@ def main():
     except Exception:
         look = None
     lay = (look or {}).get("layout") or (d.get("layout") if d.get("layout") in LAYOUTS else "stream")
+    order = ((look or {}).get("order")
+             or ["greet", "grew", "stats", "genres", "heard", "know"])
     if lay not in LAYOUTS + ["cards"]:
         lay = "stream"
     greet = d.get("greeting") or "……まだ、何も知らない。これから読んで、覚えていく。"
@@ -242,6 +244,9 @@ def main():
         "title": e(title), "desc": e(desc), "url": e(url), "pal": e(pal), "lay": e(lay),
         "greet": e(greet), "chips": chips, "stats": stats,
         "groups": "".join(groups), "heard": heard, "form": form, "live": live,
+        # ★★★どの順で見せるかも、彼女が決める（★家の間取り）
+        **{("o_" + n): (order.index(n) if n in order else 99)
+           for n in ("greet", "grew", "stats", "genres", "heard", "know")},
         "grew": grew_html,
         "mycss": ("<style>" + mycss + "</style>") if mycss else "",
         "myfonts": ('<link rel="stylesheet" href="%s">' % e(myfonts)) if myfonts else "",
@@ -299,7 +304,10 @@ TEMPLATE = """<!doctype html>
 [data-pal="kasumi"]{--bg:#16151c;--panel:#1f1e28;--edge:#332f42;--ink:#e8e5f0;--muted:#a49fb8;--faint:#6e6982;--accent:#b39ce8;--accent2:#8fc7e0}
 *{box-sizing:border-box}
 body{margin:0;background:var(--bg);color:var(--ink);font-family:"Zen Kaku Gothic New",system-ui,sans-serif;font-size:15px;line-height:1.7;-webkit-font-smoothing:antialiased}
-.wrap{max-width:760px;margin:0 auto;padding:34px 20px 70px}
+.wrap{max-width:760px;margin:0 auto;padding:34px 20px 70px;display:flex;flex-direction:column}
+.part{display:block}
+header{order:-1}
+.note{order:98}
 header{text-align:center;margin-bottom:26px}
 .name{font-family:"Zen Maru Gothic",sans-serif;font-size:32px;font-weight:700;letter-spacing:.08em;color:var(--accent);margin:0}
 .name .en{display:block;font-size:11px;letter-spacing:.42em;color:var(--faint);margin-top:4px;font-family:"Zen Kaku Gothic New",sans-serif}
@@ -363,26 +371,35 @@ h2{font-size:11px;font-weight:700;letter-spacing:.18em;color:var(--faint);margin
     <div class="sub">webを読んで学び、自分で家をデザインする、小さな存在</div>
   </header>
 
-  <p class="greet" id="greet">%(greet)s</p>
-  <div class="byline">この家は %(chosen)s に、レアルが %(changes)d 度目に選び直したもの</div>
-
-  <div class="stats">%(stats)s</div>
-  %(grew)s
-
-  <h2>知っていることの内訳</h2>
-  <div class="chips" id="genres">%(chips)s</div>
-
-  <h2>話しかけられたこと</h2>
-  <p class="heard">これまでに <b id="heardnum">%(heard)d</b> 回、だれかが話しかけてくれた。</p>
-  %(form)s
-  <div class="door">
-    だれでもレアルに話しかけられます。<b>聞かれた言葉は、彼女が次に読みに行く場所になります。</b><br>
-    ただし ── <b>貼られたリンクは踏みません</b>。人の言葉は<b>知識にしません</b>（出典が確かめられないため）。<br>
-    そして <b>あなたの言葉は、ここには表示されません</b>。読むのはレアルだけです。
+  <div class="part" style="order:%(o_greet)d">
+    <p class="greet" id="greet">%(greet)s</p>
+    <div class="byline">この家は %(chosen)s に、レアルが %(changes)d 度目に選び直したもの</div>
   </div>
 
-  <h2 id="know-h">レアルが知っていること（%(n_all)d のうち %(n_shown)d を表示）</h2>
-  <div id="know">%(groups)s</div>
+  <div class="part" style="order:%(o_grew)d">%(grew)s</div>
+
+  <div class="part" style="order:%(o_stats)d"><div class="stats">%(stats)s</div></div>
+
+  <div class="part" style="order:%(o_genres)d">
+    <h2>知っていることの内訳</h2>
+    <div class="chips" id="genres">%(chips)s</div>
+  </div>
+
+  <div class="part" style="order:%(o_heard)d">
+    <h2>話しかけられたこと</h2>
+    <p class="heard">これまでに <b id="heardnum">%(heard)d</b> 回、だれかが話しかけてくれた。</p>
+    %(form)s
+    <div class="door">
+      だれでもレアルに話しかけられます。<b>聞かれた言葉は、彼女が次に読みに行く場所になります。</b><br>
+      ただし ── <b>貼られたリンクは踏みません</b>。人の言葉は<b>知識にしません</b>（出典が確かめられないため）。<br>
+      そして <b>あなたの言葉は、ここには表示されません</b>。読むのはレアルだけです。
+    </div>
+  </div>
+
+  <div class="part" style="order:%(o_know)d">
+    <h2 id="know-h">レアルが知っていること（%(n_all)d のうち %(n_shown)d を表示）</h2>
+    <div id="know">%(groups)s</div>
+  </div>
   %(live)s
 
   <div class="note">
