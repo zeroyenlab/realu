@@ -63,12 +63,24 @@ jobs:
       - name: 前のわたしを Release から探す
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          FOODKEY: ${{ secrets.REALU_FOOD_KEY }}
         run: |
           mkdir -p work
           if [ ! -f work/realu.pt ]; then
-            gh release download brain -p realu.pt -D work 2>/dev/null \
-              && echo "★Release から前のわたしを見つけた" \
-              || echo "★前のわたしはいない。はじめて目を開ける"
+            # ★鍵つきを先に探す
+            if [ -n "$FOODKEY" ] \
+               && gh release download brain -p realu.enc -D /tmp 2>/dev/null \
+               && openssl enc -d -aes-256-cbc -pbkdf2 -in /tmp/realu.enc \
+                    -out work/realu.pt -pass env:FOODKEY 2>/dev/null; then
+              echo "★Release から前のわたしを見つけた（鍵つき）"
+            # ★★昔の回が素のまま置いていったもの。★引き継いでから、上で消す
+            elif gh release download brain -p realu.pt -D work 2>/dev/null; then
+              echo "★Release から前のわたしを見つけた（素のまま。★あとで鍵をかける）"
+            else
+              rm -f work/realu.pt
+              echo "★前のわたしはいない。はじめて目を開ける"
+            fi
+            rm -f /tmp/realu.enc
           else
             echo "★cache に前のわたしがいた"
           fi
@@ -287,11 +299,26 @@ jobs:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           FOODKEY: ${{ secrets.REALU_FOOD_KEY }}
         run: |
+          # ★★★重みにも鍵をかける。
+          #   ★ここは Public。★素のまま上げたら**誰でも落とせる**＝公開になる。
+          #   ★重みはごはんから作ったもの。★判例（改変禁止）も Wikipedia（CC BY-SA）も溶けている。
+          #   ★★鍵が無いなら、★**外には出さない**（★キャッシュにだけ置く）。
+          if [ -z "$FOODKEY" ]; then
+            echo "★鍵が無い。★頭は外に出さない"
+            exit 0
+          fi
           gh release view brain >/dev/null 2>&1 \
             || gh release create brain --title "レアルの頭" \
-                 --notes "レアルの重み。毎日ここが更新される。" --latest=false
-          gh release upload brain work/realu.pt --clobber
-          echo "★Release に残した"
+                 --notes "レアルの重み。鍵をかけてある。" --latest=false
+          openssl enc -aes-256-cbc -pbkdf2 -salt \
+            -in work/realu.pt -out /tmp/realu.enc -pass env:FOODKEY
+          gh release upload brain /tmp/realu.enc --clobber
+          rm -f /tmp/realu.enc
+          # ★★昔の回が素のまま置いていったものがあれば、★消す
+          if gh release delete-asset brain realu.pt -y 2>/dev/null; then
+            echo "★★素のまま公開されていた重みを消した"
+          fi
+          echo "★鍵をかけて Release に残した"
 
       - name: 成長の記録だけ書き残す
         run: |
