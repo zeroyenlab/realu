@@ -1331,6 +1331,78 @@
     "url": "https://creativecommons.org/licenses/by-sa/4.0/"
    },
    "ts": "2026-09-08T02:07:04+00:00"
+  },
+  {
+   "topic": "論文",
+   "text": "また、特定の研究成果についての記述ではなく、あるテーマについて論述する論文の形式のことを 小論文 あるいは レポート という。",
+   "source": "https://ja.wikipedia.org/wiki/%E8%AB%96%E6%96%87",
+   "genre": "その他",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": "https://creativecommons.org/licenses/by-sa/4.0/"
+   },
+   "ts": "2026-09-08T02:13:15+00:00"
+  },
+  {
+   "topic": "論文",
+   "text": "一般に「学術論文」といった場合ジャーナル、レター、レビューのことを指し、さらに狭義にはジャーナルのみを指す。",
+   "source": "https://ja.wikipedia.org/wiki/%E8%AB%96%E6%96%87",
+   "genre": "その他",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": "https://creativecommons.org/licenses/by-sa/4.0/"
+   },
+   "ts": "2026-09-08T02:13:15+00:00"
+  },
+  {
+   "topic": "論文",
+   "text": "この他にもジャーナルの分類として様々な形式を採用している学術雑誌がある。",
+   "source": "https://ja.wikipedia.org/wiki/%E8%AB%96%E6%96%87",
+   "genre": "その他",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": "https://creativecommons.org/licenses/by-sa/4.0/"
+   },
+   "ts": "2026-09-08T02:13:15+00:00"
+  },
+  {
+   "topic": "論文",
+   "text": "通常は特定のテーマ(広範なものから詳細なものまで様々)のもと、そのテーマに精通している専門家が著名・有力な論文を集めて研究の過去と現状、展望を体系的にまとめて紹介するような形をとっていることが多い [ 1 ] 。",
+   "source": "https://ja.wikipedia.org/wiki/%E8%AB%96%E6%96%87",
+   "genre": "その他",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": "https://creativecommons.org/licenses/by-sa/4.0/"
+   },
+   "ts": "2026-09-08T02:13:15+00:00"
+  },
+  {
+   "topic": "論文",
+   "text": "査読があった場合でもジャーナルほど厳密なものではないため、業績としては一段低く見られることが多いが、その分野と学術雑誌・学術会議の質による。",
+   "source": "https://ja.wikipedia.org/wiki/%E8%AB%96%E6%96%87",
+   "genre": "その他",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": "https://creativecommons.org/licenses/by-sa/4.0/"
+   },
+   "ts": "2026-09-08T02:13:15+00:00"
+  },
+  {
+   "topic": "論文",
+   "text": "査読のないプロシーディングは業績に含まれないか、かなり低く評価される。",
+   "source": "https://ja.wikipedia.org/wiki/%E8%AB%96%E6%96%87",
+   "genre": "その他",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": "https://creativecommons.org/licenses/by-sa/4.0/"
+   },
+   "ts": "2026-09-08T02:13:15+00:00"
   }
  ],
  "read": {
@@ -1358,7 +1430,8 @@
   "https://ja.wikipedia.org/wiki/Category:ISBN%E3%83%9E%E3%82%B8%E3%83%83%E3%82%AF%E3%83%AA%E3%83%B3%E3%82%AF%E3%82%92%E4%BD%BF%E7%94%A8%E3%81%97%E3%81%A6%E3%81%84%E3%82%8B%E3%83%9A%E3%83%BC%E3%82%B8": "2026-09-08T01:27:14+00:00",
   "https://ja.wikipedia.org/wiki/Category:%E5%85%AC%E6%B3%95": "2026-09-08T01:27:14+00:00",
   "https://ja.wikipedia.org/wiki/%E8%89%B2%E5%BD%A9": "2026-09-08T01:41:08+00:00",
-  "https://ja.wikipedia.org/wiki/%E3%83%87%E3%82%B6%E3%82%A4%E3%83%B3": "2026-09-08T02:07:01+00:00"
+  "https://ja.wikipedia.org/wiki/%E3%83%87%E3%82%B6%E3%82%A4%E3%83%B3": "2026-09-08T02:07:01+00:00",
+  "https://ja.wikipedia.org/wiki/%E8%AB%96%E6%96%87": "2026-09-08T02:13:12+00:00"
  },
  "frontier": [
   "https://ja.wikipedia.org/wiki/CSS%E3%82%A2%E3%83%8B%E3%83%A1%E3%83%BC%E3%82%B7%E3%83%A7%E3%83%B3",
@@ -2783,10 +2856,74 @@
   "https://ja.wikipedia.org/wiki/歴史学",
   "https://ja.wikipedia.org/wiki/ロシア構成主義",
   "https://ja.wikipedia.org/wiki/近代美術と現代美術",
-  "https://ja.wikipedia.org/wiki/スティーブ・ジョブズ"
+  "https://ja.wikipedia.org/wiki/スティーブ・ジョブズ",
+  "https://ja.wikipedia.org/wiki/アカデミック・ライティング",
+  "https://ja.wikipedia.org/wiki/価値",
+  "https://ja.wikipedia.org/wiki/実験",
+  "https://ja.wikipedia.org/wiki/Category:%E7%A0%94%E7%A9%B6",
+  "https://ja.wikipedia.org/wiki/論文作法",
+  "https://ja.wikipedia.org/wiki/トムソン・ロイター",
+  "https://ja.wikipedia.org/wiki/学会",
+  "https://ja.wikipedia.org/wiki/フリーソフト",
+  "https://ja.wikipedia.org/wiki/文部科学省",
+  "https://ja.wikipedia.org/wiki/学者",
+  "https://ja.wikipedia.org/wiki/学士",
+  "https://ja.wikipedia.org/wiki/2016年",
+  "https://ja.wikipedia.org/wiki/コトバンク",
+  "https://ja.wikipedia.org/wiki/2015年",
+  "https://ja.wikipedia.org/wiki/大学院",
+  "https://ja.wikipedia.org/wiki/公務員試験",
+  "https://ja.wikipedia.org/wiki/科学哲学",
+  "https://ja.wikipedia.org/wiki/IMRAD",
+  "https://ja.wikipedia.org/wiki/創元社",
+  "https://ja.wikipedia.org/wiki/論理学",
+  "https://ja.wikipedia.org/wiki/堤清二",
+  "https://ja.wikipedia.org/wiki/速報",
+  "https://ja.wikipedia.org/wiki/文字",
+  "https://ja.wikipedia.org/wiki/プレプリント",
+  "https://ja.wikipedia.org/wiki/紀要",
+  "https://ja.wikipedia.org/wiki/インパクトファクター",
+  "https://ja.wikipedia.org/wiki/動機",
+  "https://ja.wikipedia.org/wiki/%E7%89%B9%E5%88%A5:%E3%83%AA%E3%83%B3%E3%82%AF%E5%85%83/%E8%AB%96%E6%96%87",
+  "https://ja.wikipedia.org/wiki/ArXiv",
+  "https://ja.wikipedia.org/wiki/行政官",
+  "https://ja.wikipedia.org/wiki/Category:%E8%AB%96%E7%90%86%E5%AD%A6",
+  "https://ja.wikipedia.org/wiki/新規性",
+  "https://ja.wikipedia.org/wiki/用語",
+  "https://ja.wikipedia.org/wiki/知識",
+  "https://ja.wikipedia.org/wiki/レジュメ",
+  "https://ja.wikipedia.org/wiki/調査",
+  "https://ja.wikipedia.org/wiki/規則",
+  "https://ja.wikipedia.org/wiki/英語",
+  "https://ja.wikipedia.org/wiki/曖昧",
+  "https://ja.wikipedia.org/wiki/訓練",
+  "https://ja.wikipedia.org/wiki/データ",
+  "https://ja.wikipedia.org/wiki/方法論",
+  "https://ja.wikipedia.org/wiki/レポート",
+  "https://ja.wikipedia.org/wiki/グーグル",
+  "https://ja.wikipedia.org/wiki/Wikipedia:言葉を濁さない",
+  "https://ja.wikipedia.org/wiki/修士論文",
+  "https://ja.wikipedia.org/wiki/背景",
+  "https://ja.wikipedia.org/wiki/社会科学",
+  "https://ja.wikipedia.org/wiki/理論",
+  "https://ja.wikipedia.org/wiki/引用",
+  "https://ja.wikipedia.org/wiki/ユトレヒト大学",
+  "https://ja.wikipedia.org/wiki/誤字",
+  "https://ja.wikipedia.org/wiki/学術会議",
+  "https://ja.wikipedia.org/wiki/小論文",
+  "https://ja.wikipedia.org/wiki/解釈",
+  "https://ja.wikipedia.org/wiki/Category:%E5%87%BA%E5%85%B8%E3%82%92%E5%BF%85%E8%A6%81%E3%81%A8%E3%81%99%E3%82%8B%E8%A8%98%E4%BA%8B/2024%E5%B9%B412%E6%9C%88",
+  "https://ja.wikipedia.org/wiki/議事録",
+  "https://ja.wikipedia.org/wiki/大学",
+  "https://ja.wikipedia.org/wiki/定期試験",
+  "https://ja.wikipedia.org/wiki/エヴァリスト・ガロア",
+  "https://ja.wikipedia.org/wiki/サイテーションインデックス",
+  "https://ja.wikipedia.org/wiki/修士",
+  "https://ja.wikipedia.org/wiki/先行研究",
+  "https://ja.wikipedia.org/wiki/機関リポジトリ"
  ],
  "born": "2026-09-07T21:38:10+00:00",
- "lastLearned": "2026-09-08T02:07:04+00:00",
+ "lastLearned": "2026-09-08T02:13:15+00:00",
  "failed": {},
  "termsSeen": {
   "https://foundation.wikimedia.org/wiki/Policy:Terms_of_Use/ja": {
@@ -2809,7 +2946,8 @@
   "msg:2026-09-08T00:08:03.599Z:f367",
   "msg:2026-09-08T01:33:00.104Z:f367",
   "msg:2026-09-08T01:52:56.456Z:f367",
-  "msg:2026-09-08T01:54:21.097Z:f367"
+  "msg:2026-09-08T01:54:21.097Z:f367",
+  "msg:2026-09-08T02:10:49.623Z:f367"
  ],
- "heardCount": 4
+ "heardCount": 5
 }
