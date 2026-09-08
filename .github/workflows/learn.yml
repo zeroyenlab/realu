@@ -76,8 +76,10 @@ jobs:
       # ★★★自分で自分を起こす。
       #   ★cron が当てにならないので、★1回動いたら次を自分で呼ぶ。
       #   ★★呼びすぎないように少し待つ（★5分の間隔を自分で作る）。
+      # ★★★条件を外した。★「push以外」にしたら、★全部が push なので一度も動かなかった。
+      #   ★同時には1つしか走らない（concurrency）ので、★連鎖しても増えすぎない。
       - name: 次のわたしを起こす
-        if: github.event_name != 'push'
+        if: always()
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
