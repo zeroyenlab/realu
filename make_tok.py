@@ -27,7 +27,7 @@ SAMPLE = int(os.environ.get("REALU_TOK_SAMPLE", 250_000_000))   # ★学習に�
 def feed():
     """★自分のごはんを少しずつ渡す。★全部メモリに載せない。"""
     got = 0
-    for name in ("laws.txt", "hanrei.txt", "wiki.txt", "web.txt"):
+    for name in ("laws.txt", "hanrei.txt", "wiki.txt", "web.txt", "kokkai.txt"):
         for p in (os.path.join(WORK, name + ".gz"), os.path.join(WORK, name)):
             if not os.path.exists(p):
                 continue

@@ -102,27 +102,88 @@ class CharVocab:
 
 
 # ── 頭 ──────────────────────────────────────────────
+#   ★★★2019年（GPT-2）の作りをやめて、いまの標準（Transformer++）にする。
+#     ・位置の表し方: 絶対位置の埋め込み → ★RoPE（回す）。学習より長い文も扱える
+#     ・正規化:       LayerNorm        → ★RMSNorm。速い・パラメータも減る
+#     ・MLP:          GELU             → ★SwiGLU。勾配の通りが良い
+#   ★同じ計算量で loss が下がる。★タダの改善。
+ARCH = "tpp"
+
+
+class RMSNorm(nn.Module):
+    """★平均を引かない正規化。★LayerNormより軽い。"""
+
+    def __init__(self, d, eps=1e-6):
+        super().__init__()
+        self.w = nn.Parameter(torch.ones(d))
+        self.eps = eps
+
+    def forward(self, x):
+        return self.w * x * torch.rsqrt(x.pow(2).mean(-1, keepdim=True) + self.eps)
+
+
+def rope_cache(ctx, hd, base=10000.0):
+    """★位置を「回転」で表す。★足すのではなく回す。"""
+    inv = 1.0 / (base ** (torch.arange(0, hd, 2, dtype=torch.float32) / hd))
+    f = torch.outer(torch.arange(ctx, dtype=torch.float32), inv)
+    return torch.cos(f), torch.sin(f)
+
+
+def apply_rope(x, cos, sin):
+    t = x.shape[-2]
+    c = cos[:t].unsqueeze(0).unsqueeze(0)
+    s = sin[:t].unsqueeze(0).unsqueeze(0)
+    x1, x2 = x[..., 0::2], x[..., 1::2]
+    return torch.stack((x1 * c - x2 * s, x1 * s + x2 * c), dim=-1).flatten(-2)
+
+
+class Attn(nn.Module):
+    def __init__(self, d, h):
+        super().__init__()
+        self.h, self.hd = h, d // h
+        self.qkv = nn.Linear(d, 3 * d, bias=False)
+        self.o = nn.Linear(d, d, bias=False)
+
+    def forward(self, x, cos, sin):
+        B, T, D = x.shape
+        q, k, v = self.qkv(x).split(D, dim=2)
+        q = q.view(B, T, self.h, self.hd).transpose(1, 2)
+        k = k.view(B, T, self.h, self.hd).transpose(1, 2)
+        v = v.view(B, T, self.h, self.hd).transpose(1, 2)
+        q, k = apply_rope(q, cos, sin), apply_rope(k, cos, sin)
+        y = F.scaled_dot_product_attention(q, k, v, is_causal=True)
+        return self.o(y.transpose(1, 2).contiguous().view(B, T, D))
+
+
+class SwiGLU(nn.Module):
+    def __init__(self, d):
+        super().__init__()
+        hid = int(round(d * 8 / 3 / 32)) * 32 or 32
+        self.w1 = nn.Linear(d, hid, bias=False)
+        self.w3 = nn.Linear(d, hid, bias=False)
+        self.w2 = nn.Linear(hid, d, bias=False)
+
+    def forward(self, x):
+        return self.w2(F.silu(self.w1(x)) * self.w3(x))
+
+
 class Block(nn.Module):
     """★1枚の層。★zero_init=True なら『何もしない層』として生まれる。"""
 
     def __init__(self, d, h, zero_init=False):
         super().__init__()
-        self.ln1 = nn.LayerNorm(d)
-        self.attn = nn.MultiheadAttention(d, h, batch_first=True)
-        self.ln2 = nn.LayerNorm(d)
-        self.mlp = nn.Sequential(nn.Linear(d, 4 * d), nn.GELU(), nn.Linear(4 * d, d))
+        self.n1 = RMSNorm(d)
+        self.attn = Attn(d, h)
+        self.n2 = RMSNorm(d)
+        self.mlp = SwiGLU(d)
         if zero_init:
             # ★★★出口を0にする → ★足しても振る舞いが変わらない＝壊れない
-            nn.init.zeros_(self.attn.out_proj.weight)
-            nn.init.zeros_(self.attn.out_proj.bias)
-            nn.init.zeros_(self.mlp[2].weight)
-            nn.init.zeros_(self.mlp[2].bias)
+            nn.init.zeros_(self.attn.o.weight)
+            nn.init.zeros_(self.mlp.w2.weight)
 
-    def forward(self, x, mask):
-        h = self.ln1(x)
-        a, _ = self.attn(h, h, h, attn_mask=mask, need_weights=False)
-        x = x + a
-        return x + self.mlp(self.ln2(x))
+    def forward(self, x, cos, sin):
+        x = x + self.attn(self.n1(x), cos, sin)
+        return x + self.mlp(self.n2(x))
 
 
 class Realu(nn.Module):
@@ -130,13 +191,14 @@ class Realu(nn.Module):
         super().__init__()
         self.d, self.h, self.ctx = d, h, ctx
         self.tok = nn.Embedding(vocab, d)
-        self.pos = nn.Embedding(ctx, d)
         self.blocks = nn.ModuleList([Block(d, h) for _ in range(n)])
-        self.lnf = nn.LayerNorm(d)
+        self.nf = RMSNorm(d)
         self.head = nn.Linear(d, vocab, bias=False)
         self.head.weight = self.tok.weight
-        self.register_buffer("mask", torch.triu(
-            torch.full((ctx, ctx), float("-inf")), diagonal=1), persistent=False)
+        # ★RoPE は学習より長い文にも伸ばせるので、余裕をもって作っておく
+        cos, sin = rope_cache(ctx * 4, d // h)
+        self.register_buffer("rc", cos, persistent=False)
+        self.register_buffer("rs", sin, persistent=False)
         self.apply(self._init)
 
     @staticmethod
@@ -152,32 +214,26 @@ class Realu(nn.Module):
         return len(self.blocks)
 
     def learn_chars(self, n_new):
-        """★★★はじめて見る文字を覚える ── ★語彙も育つ。
-
-        ★読み進めると、★見たことのない字が出てくる。★覚えないと全部「無」になる。
-        ★古い字の重みはそのまま残すので、★★これまで覚えたことは壊れない。
-        """
+        """★★★はじめて見る文字を覚える ── ★語彙も育つ。"""
         old = self.tok.weight.data
         n_old, d = old.shape
         w = torch.empty(n_old + n_new, d)
         nn.init.normal_(w, std=0.02)
-        w[:n_old] = old                      # ★★これまでの字はそのまま
+        w[:n_old] = old
         self.tok = nn.Embedding(n_old + n_new, d)
         self.tok.weight.data = w
         self.head = nn.Linear(d, n_old + n_new, bias=False)
-        self.head.weight = self.tok.weight   # ★入口と出口で同じ表を使う
+        self.head.weight = self.tok.weight
         return n_old + n_new
 
     def n_params(self):
         return sum(p.numel() for p in self.parameters())
 
     def forward(self, idx, targets=None):
-        t = idx.shape[1]
-        x = self.tok(idx) + self.pos(torch.arange(t, device=idx.device))
-        m = self.mask[:t, :t]
+        x = self.tok(idx)
         for blk in self.blocks:
-            x = blk(x, m)
-        logits = self.head(self.lnf(x))
+            x = blk(x, self.rc, self.rs)
+        logits = self.head(self.nf(x))
         if targets is None:
             return logits, None
         return logits, F.cross_entropy(logits.view(-1, logits.size(-1)), targets.reshape(-1))
@@ -221,7 +277,7 @@ def main():
 
     # ── ①★ごはんを読む（★法令＋判例＋**webで自分が読んだもの**）
     texts = []
-    for name in ("laws.txt", "hanrei.txt", "web.txt", "wiki.txt"):
+    for name in ("laws.txt", "hanrei.txt", "web.txt", "wiki.txt", "kokkai.txt"):
         for p in (os.path.join(WORK, name + ".gz"), os.path.join(WORK, name)):
             if not os.path.exists(p):
                 continue
@@ -266,7 +322,8 @@ def main():
     if os.path.exists(ckpt):
         st = torch.load(ckpt, map_location="cpu", weights_only=False)
         # ★★単位が変わっていたら、★前のわたしは引き継げない（★出口の形が違う）
-        if st.get("kind", "char") != ("bpe" if os.path.exists(tokf) else "char"):
+        if (st.get("kind", "char") != ("bpe" if os.path.exists(tokf) else "char")
+                or st.get("arch") != ARCH):
             print("★★ことばの単位が変わった。★前のわたしとは繋がらないので、生まれ直す。",
                   flush=True)
             st = None
@@ -425,7 +482,7 @@ def main():
         val, rolled = prev_val, True
 
     torch.save({"model": model.state_dict(),
-                "kind": getattr(vocab, "kind", "char"),
+                "kind": getattr(vocab, "kind", "char"), "arch": ARCH,
                 "itos": getattr(vocab, "itos", None),
                 "layers": len(model.blocks), "d": model.d, "h": model.h,
                 "ctx": model.ctx, "val": val}, ckpt)
