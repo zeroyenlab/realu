@@ -17,10 +17,30 @@ import learn as L
 
 # ── ★★★好奇心 ──────────────────────────────────────────
 #   ★いままでは「行きたい場所」を順番に読んでいた。★それは受け身。
-#   ★★「知らないことを減らす」なら、★★★**自分が予測できなかったもの**を優先すべき。
-#   ★読む前には分からないので、★読んだ結果で次の行き先が変わる形にする。
-#   ★驚いたページの周りを、次はもっと読む。
-#   （★見ているだけでは学べない／自分で動いて結果を見て初めて学べる、の実装）
+#
+#   ★★★ただし「驚いたもの」だけを追うと**罠**がある。
+#     ★砂嵐は完全に予測できないので、★驚きが最大になる。
+#     ★でも砂嵐からは**何も学べない**（★次もずっと予測できないまま）。
+#     ★これは「ノイズテレビ問題」と呼ばれる既知の落とし穴。
+#     ★彼女で言えば、★数字の羅列・記号の表・壊れたページに吸い寄せられる。
+#
+#   ★★→ 基準を「驚いたか」ではなく「★★学べそうか」にする。
+#     ・★驚きが**低すぎる** = もう知っている → 学べない
+#     ・★驚きが**高すぎる** = 手が届かない／ただのノイズ → 学べない
+#     ・★★★その**間**が、いちばん学べる（★もう少しで分かりそうな所）
+#   ★当たったかどうかは、★次の回に測り直して確かめる。
+#   ★★★ただし「学べそうか」だけを追うのも**危ない**:
+#     ①★「難しすぎる」と「意味がない」は、★どちらも驚きが大きくて**区別できない**。
+#       → 上を切ると、★数学や専門書を**永久に読まなくなる**。
+#     ②★居心地のいい難しさに**固定される**。★伸びが止まる。
+#     ③★丸暗記も「学べた」に見える（★1文覚えれば loss は下がる）。
+#     ④★★どんな基準も、それだけを最大化すると壊れる。
+#   ★★★→ **基準を1つにしない。混ぜる。**
+NOISE_CUT = float(os.environ.get("REALU_NOISE_CUT", 0.12))
+KNOWN_CUT = float(os.environ.get("REALU_KNOWN_CUT", 0.25))
+MIX_LEARN = float(os.environ.get("REALU_MIX_LEARN", 0.60))   # ★学べそうな帯
+MIX_HARD = float(os.environ.get("REALU_MIX_HARD", 0.20))     # ★★手が届かない所にも挑む
+MIX_ANY = float(os.environ.get("REALU_MIX_ANY", 0.20))       # ★★どの基準にも偏らない保険
 _MODEL = None
 _VOCAB = None
 
@@ -117,15 +137,38 @@ def main():
                 if got % 100 == 0:
                     print("  %d ページ / %.1f 万字" % (got, chars / 10000), flush=True)
                     f.flush()
-    # ★★★驚いたページの周りを、次はもっと読む。★行きたい場所の順番を並べ替える。
-    #   ★★★注意: ★前に入れるということは、★**後ろが押し出される**ということ。
-    #     ★押し出されるのは「昔から行きたかった場所」。★だから上限を大きく取ってある。
-    #     ★それでも溢れたら、★黙って捨てずに数える（★何か所諦めたかを残す）。
+    # ★★★学べそうな所の周りを、次はもっと読む。
+    #   ★上を切る（★ノイズ）。★下も切る（★もう知っている）。★真ん中を選ぶ。
     if found:
         found.sort(key=lambda z: -z[0])
+        n = len(found)
+        hi = int(n * NOISE_CUT)              # ★驚きすぎ＝学べない
+        lo = n - int(n * KNOWN_CUT)          # ★知りすぎ＝学べない
+        band = found[hi:lo] or found
+        scores = [z[0] for z in band]
+        mid = sorted(scores)[len(scores) // 2] if scores else 0.0
+        print("★驚き: 全体 %.3f〜%.3f / ★選んだ帯 %.3f〜%.3f（真ん中 %.3f）"
+              % (found[-1][0], found[0][0],
+                 band[-1][0], band[0][0], mid), flush=True)
+        print("  ★上位 %d 件はノイズとして外した／下位 %d 件は既知として外した"
+              % (hi, n - lo), flush=True)
+        # ★★★3つを混ぜる。★どれか1つに偏らせない。
+        import random as _r
+        _r.seed(len(found))
+        hard = found[:hi] or []                       # ★手が届かなかったもの
+        rest = [z for z in found]                     # ★ぜんぶ（保険用）
+        _r.shuffle(rest)
+        take = lambda xs, p: xs[:max(1, int(len(found) * p))]
         head = []
-        for sc, links in found[:len(found) // 3 + 1]:
-            head.extend(links)
+        for grp, name in ((take(band, MIX_LEARN), "学べそう"),
+                          (take(hard, MIX_HARD), "手が届かない"),
+                          (take(rest, MIX_ANY), "ただの気まぐれ")):
+            for sc, links in grp:
+                head.extend(links)
+        print("  ★混ぜた: 学べそう %d%% / ★手が届かない %d%% / ★気まぐれ %d%%"
+              % (MIX_LEARN * 100, MIX_HARD * 100, MIX_ANY * 100), flush=True)
+        print("  ★★手が届かなかったものも読む ── ★でないと難しいものを永久に読まなくなる",
+              flush=True)
         old = k.get("frontier") or []
         seen_u = set()
         new_front = []
@@ -138,10 +181,15 @@ def main():
         for u in targets:
             k["read"][u] = L.now()
         L.save(L.K, k)
-        top = found[0][0]
-        low = found[-1][0]
-        print("★驚き: いちばん %.3f / いちばん低い %.3f → ★驚いた方の周りを先に読む"
-              % (top, low), flush=True)
+        # ★★★当たったかを次の回に測るため、★今日選んだ帯の真ん中を残す
+        k["aim"] = {"at": L.now(), "mid": round(mid, 4), "n": len(band)}
+        prev = (k.get("aimPrev") or {}).get("mid")
+        if prev:
+            d = mid - prev
+            print("★前に選んだ帯の真ん中 %.3f → 今日 %.3f（%+.3f）%s"
+                  % (prev, mid, d,
+                     "★下がった＝学べている" if d < 0 else "★下がっていない"), flush=True)
+        k["aimPrev"] = k["aim"]
 
     print("★★食べた: %d ページ / %.1f 万字 / いま持っている web %.1f MB"
           % (got, chars / 10000, os.path.getsize(path) / 1024 / 1024), flush=True)
