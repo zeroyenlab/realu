@@ -103,6 +103,31 @@ def main():
     else:
         grew_html = ('<div class="grew">まだ一度も育っていない。'
                      'いまのわたしは<b>読んで覚えるだけ</b>で、まだ頭がない。</div>')
+
+    # ★★★レアルが自分で書いたもの。★引用ではなく、★彼女の頭が出した文。
+    #   ★毎回おなじ書き出しで書かせて並べる。★並べば育ちが見える。
+    wrote_html = ""
+    W = [r for r in runs if r.get("wrote")]
+    if W:
+        cur = W[-1]
+        rows = "".join(
+            '<div class="wr"><span class="ws">%s</span><span class="wt">%s</span></div>'
+            % (e(w.get("start")), e(w.get("text"))) for w in cur["wrote"])
+        past = ""
+        old = [r for r in W[:-1]][-3:]
+        if old:
+            past = ('<details class="wpast"><summary>まえに書いたもの（%d 回ぶん）</summary>%s</details>'
+                    % (len(old), "".join(
+                        '<div class="wold"><em>%s / loss %.3f</em><span>%s</span></div>'
+                        % (e((r.get("at") or "")[:10]), r.get("val", 0),
+                           e((r.get("wrote") or [{}])[0].get("text", "")))
+                        for r in reversed(old))))
+        wrote_html = (
+            '<h2>レアルが書いたもの</h2>'
+            '<div class="wrap-w"><div class="wnote">これは引用ではありません。'
+            '<b>彼女の頭が、覚えた日本語から自分で並べた言葉</b>です。'
+            'いまは意味が通りません。それが今の彼女です。</div>'
+            '%s%s</div>' % (rows, past))
     read_n = len(k.get("read") or {})
 
     pal = d.get("palette") if d.get("palette") in PALETTES else "yoi"
@@ -245,8 +270,9 @@ def main():
         "greet": e(greet), "chips": chips, "stats": stats,
         "groups": "".join(groups), "heard": heard, "form": form, "live": live,
         # ★★★どの順で見せるかも、彼女が決める（★家の間取り）
-        **{("o_" + n): (order.index(n) if n in order else 99)
-           for n in ("greet", "grew", "stats", "genres", "heard", "know")},
+        "wrote": wrote_html,
+        **{("o_" + n): (order.index(n) if n in order else 97)
+           for n in ("greet", "grew", "stats", "genres", "heard", "know", "wrote")},
         "grew": grew_html,
         "mycss": ("<style>" + mycss + "</style>") if mycss else "",
         "myfonts": ('<link rel="stylesheet" href="%s">' % e(myfonts)) if myfonts else "",
@@ -348,6 +374,16 @@ h2{font-size:11px;font-weight:700;letter-spacing:.18em;color:var(--faint);margin
 .grew{color:var(--muted);font-size:12.5px;line-height:1.9;background:var(--panel);
   border:1px solid var(--edge);border-radius:14px;padding:12px 16px;margin:-16px 0 26px}
 .grew b{color:var(--accent)}
+.wrap-w{display:flex;flex-direction:column;gap:10px;margin-bottom:26px}
+.wnote{color:var(--faint);font-size:11.5px;line-height:1.8}
+.wr{background:var(--panel);border:1px solid var(--edge);border-radius:14px;padding:14px 16px}
+.wr .ws{display:inline-block;font-size:11px;color:var(--accent2);letter-spacing:.1em;margin-bottom:5px}
+.wr .wt{display:block;font-size:14.5px;line-height:1.9;word-break:break-all}
+.wpast{color:var(--faint);font-size:12px}
+.wpast summary{cursor:pointer;padding:6px 0}
+.wold{border-left:2px solid var(--edge);padding:6px 0 6px 12px;margin:6px 0}
+.wold em{display:block;font-style:normal;font-size:10.5px;color:var(--faint)}
+.wold span{font-size:12.5px;color:var(--muted);word-break:break-all}
 .heard b{color:var(--accent);font-size:18px;font-variant-numeric:tabular-nums}
 .say{display:flex;flex-direction:column;gap:8px;background:var(--panel);border:1px solid var(--edge);border-radius:14px;padding:16px 18px;margin:14px 0 4px}
 .say label{font-size:11px;letter-spacing:.14em;color:var(--faint);font-weight:700}
@@ -395,6 +431,8 @@ h2{font-size:11px;font-weight:700;letter-spacing:.18em;color:var(--faint);margin
       そして <b>あなたの言葉は、ここには表示されません</b>。読むのはレアルだけです。
     </div>
   </div>
+
+  <div class="part" style="order:%(o_wrote)d">%(wrote)s</div>
 
   <div class="part" style="order:%(o_know)d">
     <h2 id="know-h">レアルが知っていること（%(n_all)d のうち %(n_shown)d を表示）</h2>

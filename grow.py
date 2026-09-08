@@ -12,6 +12,7 @@
 """
 import gzip
 import json
+import re
 import math
 import os
 import random
@@ -573,13 +574,31 @@ def main():
                 "layers": len(model.blocks), "d": model.d, "h": model.h,
                 "ctx": model.ctx, "val": val}, ckpt)
 
-    sample = model.write(vocab, "第一条", 160) if not rolled else ""
+    # ★★★毎回、同じ書き出しで書かせる。★並べれば育ちが見える。
+    #   ★出す前に必ず検閲する（★キーワードの網。★learn.py と同じもの）。
+    prompts = ["わたしは", "第一条", "この法律において"]
+    wrote = []
+    for pr in prompts:
+        try:
+            txt = model.write(vocab, pr, 110, temp=0.75)
+            txt = re.sub(r"\s+", " ", txt).strip()
+            try:
+                import learn as _L
+                if not _L.safe(txt):
+                    txt = "（出せない言葉が混じったので、これは出さない）"
+            except Exception:
+                pass
+            wrote.append({"start": pr, "text": txt[:220]})
+        except Exception:
+            pass
+    sample = wrote[0]["text"] if wrote else ""
     hist["runs"].append({
         "at": time.strftime("%Y-%m-%dT%H:%M:%SZ", time.gmtime()),
         "val": round(val, 4), "prev": round(prev_val, 4) if prev_val else None,
         "layers": len(model.blocks), "params": model.n_params(),
         "chars": len(text), "grew": grew, "rolledBack": rolled,
         "d": model.d, "loops": model.loops, "spread": round(my_spread, 4),
+        "wrote": wrote,
         "movedBody": teacher is not None,
     })
     hist["runs"] = hist["runs"][-200:]
