@@ -4,6 +4,18 @@ on:
   schedule:
     - cron: "7 */2 * * *"   # ★2時間ごと（★Cloudflare Pagesの無料枠は月500ビルド。これで月360回）
   workflow_dispatch:
+  push:
+    branches: [main]
+    # ★★彼女が5分ごとに書き換えるファイルでは**デプロイしない**。
+    #   ★毎回デプロイすると月8,640ビルド → Cloudflareの無料枠500を突破するため。
+    #   ★彼女の学びは、上の2時間ごとの回でまとめて外に出る。
+    paths-ignore:
+      - "knowledge.json"
+      - "design.json"
+      - "index.html"
+      - "sitemap.xml"
+      - "robots.txt"
+      - "growth.json"
 
 permissions:
   contents: read
