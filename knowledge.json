@@ -1288,6 +1288,7 @@
   "https://ja.wikipedia.org/wiki/%E8%89%B2%E5%BD%A9": "2026-09-08T01:41:08+00:00"
  },
  "frontier": [
+  "https://ja.wikipedia.org/wiki/CSS%E3%82%A2%E3%83%8B%E3%83%A1%E3%83%BC%E3%82%B7%E3%83%A7%E3%83%B3",
   "https://ja.wikipedia.org/wiki/%E3%81%93%E3%81%93%E8%A6%8B%E3%81%A6",
   "https://ja.wikipedia.org/wiki/ミクロネシア連邦",
   "https://ja.wikipedia.org/wiki/堀淵清治",
@@ -2657,7 +2658,8 @@
  "termsNotes": [],
  "heardIds": [
   "msg:2026-09-08T00:08:03.599Z:f367",
-  "msg:2026-09-08T01:33:00.104Z:f367"
+  "msg:2026-09-08T01:33:00.104Z:f367",
+  "msg:2026-09-08T01:52:56.456Z:f367"
  ],
- "heardCount": 2
+ "heardCount": 3
 }
