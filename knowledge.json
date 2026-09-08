@@ -11831,6 +11831,102 @@
     "url": "https://creativecommons.org/licenses/by-sa/4.0/"
    },
    "ts": "2026-09-08T03:34:14+00:00"
+  },
+  {
+   "topic": "Template:短いページ除外",
+   "text": "Category:短いページから除外されているページ を見ることで、短いページから除外されたページを追跡できます。",
+   "source": "https://ja.wikipedia.org/wiki/Template:Expect_short_page",
+   "genre": "その他",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": "https://creativecommons.org/licenses/by-sa/4.0/"
+   },
+   "ts": "2026-09-08T03:38:38+00:00"
+  },
+  {
+   "topic": "Template:短いページ除外",
+   "text": "特定のコード以外を指定した場合、未指定含むどのような値でも Category:意図的に短いページから除外されているページ に分類されるため、理由を日本語で記述できます。",
+   "source": "https://ja.wikipedia.org/wiki/Template:Expect_short_page",
+   "genre": "言葉",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": "https://creativecommons.org/licenses/by-sa/4.0/"
+   },
+   "ts": "2026-09-08T03:38:38+00:00"
+  },
+  {
+   "topic": "Template:短いページ除外",
+   "text": "特定のコード以外を指定した場合どのような値でも Category:意図的に短いページから除外されているページ に分類されるため、理由を日本語で記述できます。",
+   "source": "https://ja.wikipedia.org/wiki/Template:Expect_short_page",
+   "genre": "言葉",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": "https://creativecommons.org/licenses/by-sa/4.0/"
+   },
+   "ts": "2026-09-08T03:38:38+00:00"
+  },
+  {
+   "topic": "Wikipedia:ページの編集は大胆に",
+   "text": "その記事の構成が レイアウトの指針 から逸脱していれば、レイアウトを整えましょう。",
+   "source": "https://ja.wikipedia.org/wiki/Wikipedia:BOLD",
+   "genre": "その他",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": "https://creativecommons.org/licenses/by-sa/4.0/"
+   },
+   "ts": "2026-09-08T03:38:39+00:00"
+  },
+  {
+   "topic": "Wikipedia:ページの編集は大胆に",
+   "text": "ある節（ セクション ）が冗長な長文になっていれば、余分な箇所を割愛し、要点を整理し直し、より適切な見出しに変えて、節の構成を再編してみましょう。",
+   "source": "https://ja.wikipedia.org/wiki/Wikipedia:BOLD",
+   "genre": "その他",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": "https://creativecommons.org/licenses/by-sa/4.0/"
+   },
+   "ts": "2026-09-08T03:38:39+00:00"
+  },
+  {
+   "topic": "Wikipedia:ページの編集は大胆に",
+   "text": "もちろん、「あなたが書いた項目」も、誰かが大胆に修正していきます。",
+   "source": "https://ja.wikipedia.org/wiki/Wikipedia:BOLD",
+   "genre": "その他",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": "https://creativecommons.org/licenses/by-sa/4.0/"
+   },
+   "ts": "2026-09-08T03:38:39+00:00"
+  },
+  {
+   "topic": "Wikipedia:ページの編集は大胆に",
+   "text": "事実かもしれない記述を除去するときは、注意深く行うということにも留意してください。",
+   "source": "https://ja.wikipedia.org/wiki/Wikipedia:BOLD",
+   "genre": "その他",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": "https://creativecommons.org/licenses/by-sa/4.0/"
+   },
+   "ts": "2026-09-08T03:38:39+00:00"
+  },
+  {
+   "topic": "Wikipedia:ページの編集は大胆に",
+   "text": "ですから、もしあなたが、ある記事から何かを除去したいと思ったときには、まず除去したいと思った内容の正確性を確認してください。",
+   "source": "https://ja.wikipedia.org/wiki/Wikipedia:BOLD",
+   "genre": "その他",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": "https://creativecommons.org/licenses/by-sa/4.0/"
+   },
+   "ts": "2026-09-08T03:38:39+00:00"
   }
  ],
  "read": {
@@ -12112,7 +12208,10 @@
   "https://ja.wikipedia.org/wiki/Category:%E4%BA%95%E6%88%B8%E7%AB%AF%E3%81%AE%E8%A9%B1%E9%A1%8C/2026%E5%B9%B4/8%E6%9C%88/%E4%B8%AD%E6%97%AC": "2026-09-08T03:34:14+00:00",
   "https://ja.wikipedia.org/wiki/Wikipedia%E2%80%90%E3%83%8E%E3%83%BC%E3%83%88:%E4%BA%95%E6%88%B8%E7%AB%AF": "2026-09-08T03:34:14+00:00",
   "https://ja.wikipedia.org/wiki/Category:%E4%BA%95%E6%88%B8%E7%AB%AF%E3%81%AE%E8%A9%B1%E9%A1%8C/2026%E5%B9%B4/9%E6%9C%88/%E4%B8%8A%E6%97%AC": "2026-09-08T03:34:14+00:00",
-  "https://ja.wikipedia.org/wiki/Category:%E4%BA%95%E6%88%B8%E7%AB%AF%E3%81%AE%E8%A9%B1%E9%A1%8C": "2026-09-08T03:34:14+00:00"
+  "https://ja.wikipedia.org/wiki/Category:%E4%BA%95%E6%88%B8%E7%AB%AF%E3%81%AE%E8%A9%B1%E9%A1%8C": "2026-09-08T03:34:14+00:00",
+  "https://ja.wikipedia.org/wiki/Template:Expect_short_page": "2026-09-08T03:38:38+00:00",
+  "https://ja.wikipedia.org/wiki/Template:Short_pages_monitor": "2026-09-08T03:38:38+00:00",
+  "https://ja.wikipedia.org/wiki/Wikipedia:BOLD": "2026-09-08T03:38:38+00:00"
  },
  "frontier": [
   "https://ja.wikipedia.org/wiki/UI%E3%81%A8UX",
@@ -12708,13 +12807,10 @@
   "https://ja.wikipedia.org/wiki/利用者:Amayus",
   "https://ja.wikipedia.org/wiki/利用者:Lmkjgmo",
   "https://ja.wikipedia.org/wiki/利用者:Sasuyan",
-  "https://ja.wikipedia.org/wiki/Template:Expect_short_page",
   "https://ja.wikipedia.org/wiki/利用者‐会話:Assemblykinematics",
   "https://ja.wikipedia.org/wiki/利用者‐会話:Omotecho",
   "https://ja.wikipedia.org/wiki/利用者‐会話:呉野",
   "https://ja.wikipedia.org/wiki/Wikipedia:署名",
-  "https://ja.wikipedia.org/wiki/Template:Short_pages_monitor",
-  "https://ja.wikipedia.org/wiki/Wikipedia:BOLD",
   "https://ja.wikipedia.org/wiki/Wikipedia:記事編集のガイド/集落",
   "https://ja.wikipedia.org/wiki/バグ",
   "https://ja.wikipedia.org/wiki/Template:Dmbox",
@@ -24162,10 +24258,41 @@
   "https://ja.wikipedia.org/wiki/%E7%89%B9%E5%88%A5:%E9%96%A2%E9%80%A3%E3%83%9A%E3%83%BC%E3%82%B8%E3%81%AE%E6%9B%B4%E6%96%B0%E7%8A%B6%E6%B3%81/Category:%E4%BA%95%E6%88%B8%E7%AB%AF%E3%81%AE%E8%A9%B1%E9%A1%8C",
   "https://ja.wikipedia.org/wiki/Wikipedia:%E4%BA%95%E6%88%B8%E7%AB%AF/subj/%E3%82%A4%E3%83%B3%E3%82%BF%E3%83%BC%E3%83%8D%E3%83%83%E3%83%88%E3%82%B9%E3%83%A9%E3%83%B3%E3%82%B0",
   "https://ja.wikipedia.org/wiki/Wikipedia:%E4%BA%95%E6%88%B8%E7%AB%AF/subj/Rocky7%E6%B0%8F%E3%81%AB%E3%82%88%E3%82%8BWikija-l%E3%81%AB%E9%96%A2%E3%81%99%E3%82%8B%E8%8B%A6%E6%83%85",
-  "https://ja.wikipedia.org/wiki/Wikipedia:%E4%BA%95%E6%88%B8%E7%AB%AF/subj/%E7%BF%BB%E8%A8%B3%E5%85%83%E3%81%8C%E5%89%8A%E9%99%A4%E3%81%95%E3%82%8C%E3%81%9F%E5%A0%B4%E5%90%88%E3%81%AE%E5%B1%A5%E6%AD%B4%E7%B6%99%E6%89%BF"
+  "https://ja.wikipedia.org/wiki/Wikipedia:%E4%BA%95%E6%88%B8%E7%AB%AF/subj/%E7%BF%BB%E8%A8%B3%E5%85%83%E3%81%8C%E5%89%8A%E9%99%A4%E3%81%95%E3%82%8C%E3%81%9F%E5%A0%B4%E5%90%88%E3%81%AE%E5%B1%A5%E6%AD%B4%E7%B6%99%E6%89%BF",
+  "https://ja.wikipedia.org/wiki/Category:他ページへの誘導のため短いページから除外されているページ",
+  "https://ja.wikipedia.org/wiki/Template:Delete",
+  "https://ja.wikipedia.org/wiki/Category:意図的に短いページから除外されているページ",
+  "https://ja.wikipedia.org/wiki/%E7%89%B9%E5%88%A5:%E9%96%A2%E9%80%A3%E3%83%9A%E3%83%BC%E3%82%B8%E3%81%AE%E6%9B%B4%E6%96%B0%E7%8A%B6%E6%B3%81/Template:%E7%9F%AD%E3%81%84%E3%83%9A%E3%83%BC%E3%82%B8%E9%99%A4%E5%A4%96",
+  "https://ja.wikipedia.org/wiki/%E7%89%B9%E5%88%A5:%E3%83%AA%E3%83%B3%E3%82%AF%E5%85%83/Template:%E7%9F%AD%E3%81%84%E3%83%9A%E3%83%BC%E3%82%B8%E9%99%A4%E5%A4%96",
+  "https://ja.wikipedia.org/wiki/Template:Softredirect",
+  "https://ja.wikipedia.org/wiki/Category:ソフトリダイレクトのため短いページから除外されているページ",
+  "https://ja.wikipedia.org/wiki/Category:削除依頼中のため短いページから除外されているページ",
+  "https://ja.wikipedia.org/wiki/Template:即時削除/本体",
+  "https://ja.wikipedia.org/wiki/Template:短いページ除外/doc",
+  "https://ja.wikipedia.org/wiki/Template:%E7%9F%AD%E3%81%84%E3%83%9A%E3%83%BC%E3%82%B8%E9%99%A4%E5%A4%96",
+  "https://ja.wikipedia.org/wiki/Category:%E7%B7%A8%E9%9B%86%E6%8B%A1%E5%BC%B5%E5%8D%8A%E4%BF%9D%E8%AD%B7%E4%B8%AD%E3%81%AE%E3%83%9A%E3%83%BC%E3%82%B8",
+  "https://ja.wikipedia.org/wiki/Category:即時削除対象のため短いページから除外されているページ",
+  "https://ja.wikipedia.org/wiki/%E7%89%B9%E5%88%A5:%E3%83%AA%E3%83%B3%E3%82%AF%E5%85%83/Template:Short_pages_monitor",
+  "https://ja.wikipedia.org/wiki/Template:Short_pages_monitor/doc",
+  "https://ja.wikipedia.org/wiki/%E7%89%B9%E5%88%A5:%E9%96%A2%E9%80%A3%E3%83%9A%E3%83%BC%E3%82%B8%E3%81%AE%E6%9B%B4%E6%96%B0%E7%8A%B6%E6%B3%81/Template:Short_pages_monitor",
+  "https://ja.wikipedia.org/wiki/Category:%E8%A8%98%E4%BA%8B%E3%81%AE%E7%B7%A8%E9%9B%86%E3%81%AB%E3%81%A4%E3%81%84%E3%81%A6%E3%81%AE%E3%82%AC%E3%82%A4%E3%83%89%E3%83%A9%E3%82%A4%E3%83%B3",
+  "https://ja.wikipedia.org/wiki/Wikipedia:インターフェース管理者",
+  "https://ja.wikipedia.org/wiki/Wikipedia:記事名の付け方/鉄道",
+  "https://ja.wikipedia.org/wiki/%E7%89%B9%E5%88%A5:%E3%83%AA%E3%83%B3%E3%82%AF%E5%85%83/Wikipedia:%E3%83%9A%E3%83%BC%E3%82%B8%E3%81%AE%E7%B7%A8%E9%9B%86%E3%81%AF%E5%A4%A7%E8%83%86%E3%81%AB",
+  "https://ja.wikipedia.org/wiki/Wikipedia:記事の所有権",
+  "https://ja.wikipedia.org/wiki/Wikipedia:過剰なカテゴライズ",
+  "https://ja.wikipedia.org/wiki/Wikipedia:カテゴリの方針",
+  "https://ja.wikipedia.org/wiki/Wikipedia:有償の寄稿の開示",
+  "https://ja.wikipedia.org/wiki/Wikipedia:自著作物の持ち込み",
+  "https://ja.wikipedia.org/wiki/Wikipedia:影響が特に大きいテンプレート",
+  "https://ja.wikipedia.org/wiki/Wikipedia:アイコン",
+  "https://ja.wikipedia.org/wiki/Wikipedia:レイアウトの指針",
+  "https://ja.wikipedia.org/wiki/Wikipedia:素晴らしい記事を書くには",
+  "https://ja.wikipedia.org/wiki/Wikipedia:アカウント作成者",
+  "https://ja.wikipedia.org/wiki/Category:記事内容のルール"
  ],
  "born": "2026-09-07T21:38:10+00:00",
- "lastLearned": "2026-09-08T03:34:14+00:00",
+ "lastLearned": "2026-09-08T03:38:39+00:00",
  "failed": {},
  "termsSeen": {
   "https://foundation.wikimedia.org/wiki/Policy:Terms_of_Use/ja": {
