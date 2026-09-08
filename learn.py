@@ -303,7 +303,8 @@ def tell(k, d):
         "genres": genres,
         "at": now(),
         "counts": {"items": len(k.get("items") or []),
-                   "read": len(k.get("read") or {}),
+                   "read": int(k.get("readTotal") or len(k.get("read") or {})),
+                   "readNow": len(k.get("read") or {}),
                    "frontier": len(k.get("frontier") or []),
                    "heard": int(k.get("heardCount") or 0)},
         "design": {"palette": d.get("palette"), "layout": d.get("layout"),
@@ -552,6 +553,10 @@ def main():
     with cf.ThreadPoolExecutor(max_workers=WORKERS) as ex:
         for url, doc in ex.map(read_one, targets):
             if doc:
+                if url not in read:
+                    # ★★★累積は別に数える。★read は上限4万で古いものから消えるので、
+                    #   ★そのままだと「これまで何ページ読んだか」が分からなくなる。
+                    k["readTotal"] = int(k.get("readTotal") or 0) + 1
                 read[url] = now()          # ★★本当に読めた時だけ「読んだ」
                 docs.append((url, doc))
             else:

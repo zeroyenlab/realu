@@ -1,0 +1,77 @@
+name: realu speaks
+
+# ★★★書いてみる日。★育つのは1日1回だが、書くのはもっと頻繁でいい。
+#   ★同じ書き出しで書かせて並べれば、★育ちが目で見える。
+
+on:
+  schedule:
+    - cron: "40 */2 * * *"      # ★2時間ごと
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: realu-speak
+  cancel-in-progress: false
+
+jobs:
+  speak:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: 道具を入れる
+        run: pip install --quiet torch --index-url https://download.pytorch.org/whl/cpu
+
+      - name: 頭を取ってくる
+        uses: actions/cache/restore@v4
+        with:
+          path: work
+          key: realu-speak-none
+          restore-keys: |
+            realu-work-
+
+      - name: Release からも探す
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          FOODKEY: ${{ secrets.REALU_FOOD_KEY }}
+        run: |
+          mkdir -p work
+          if [ ! -f work/realu.pt ] && [ -n "$FOODKEY" ]; then
+            gh release download brain -p realu.enc -D /tmp 2>/dev/null \
+              && openssl enc -d -aes-256-cbc -pbkdf2 \
+                   -in /tmp/realu.enc -out work/realu.pt \
+                   -pass env:FOODKEY 2>/dev/null || true
+            rm -f /tmp/realu.enc
+          fi
+          [ -f work/realu.pt ] && echo "★頭がある" || echo "★まだ頭がない"
+
+      - name: 書く
+        run: python -u speak.py
+
+      - name: 書いたものを残す
+        run: |
+          git config user.name  "realu"
+          git config user.email "realu@users.noreply.github.com"
+          [ -f said.json ] || exit 0
+          cp said.json /tmp/said.mine
+          for i in 1 2 3; do
+            git fetch origin main && git reset --hard origin/main
+            cp /tmp/said.mine said.json
+            git add said.json
+            if git diff --staged --quiet; then echo "変化なし"; break; fi
+            git commit -q -m "レアルが書いた ($(date -u +'%m-%d %H:%M')Z)"
+            if git push origin HEAD:main; then echo "★残した"; break; fi
+            sleep 5
+          done
+
+      - name: 触れてはいけない所を守る
+        if: always()
+        run: |
+          git checkout -- . || true
+          git clean -fd -e work || true

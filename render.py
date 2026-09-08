@@ -104,6 +104,37 @@ def main():
         grew_html = ('<div class="grew">まだ一度も育っていない。'
                      'いまのわたしは<b>読んで覚えるだけ</b>で、まだ頭がない。</div>')
 
+    # ★★★性能の推移。★ライブラリを使わず、★自分でSVGを描く。
+    chart_html = ""
+    pts = [(i, r.get("val")) for i, r in enumerate(runs) if r.get("val")]
+    if len(pts) >= 2:
+        vs = [v for _, v in pts]
+        lo, hi = min(vs), max(vs)
+        rng = (hi - lo) or 1.0
+        W, HT = 640, 120
+        step = W / max(1, len(pts) - 1)
+        path_d = " ".join("%s%.1f,%.1f" % ("M" if i == 0 else "L", i * step,
+                                           HT - 8 - (v - lo) / rng * (HT - 20))
+                          for i, (_, v) in enumerate(pts))
+        dots = "".join('<circle cx="%.1f" cy="%.1f" r="3"/>'
+                       % (i * step, HT - 8 - (v - lo) / rng * (HT - 20))
+                       for i, (_, v) in enumerate(pts))
+        chart_html = (
+            '<h2>できるようになった度合い</h2>'
+            '<div class="chart"><svg viewBox="0 0 %d %d" preserveAspectRatio="none" '
+            'aria-label="lossの推移">'
+            '<path d="%s" fill="none" stroke="var(--accent)" stroke-width="2" '
+            'vector-effect="non-scaling-stroke"/>'
+            '<g fill="var(--accent2)">%s</g></svg>'
+            '<div class="chx"><span>%d 回前</span>'
+            '<span>loss %.3f → <b>%.3f</b></span><span>いま</span></div>'
+            '<div class="spnote">下がるほど、次に来る言葉を当てられている。'
+            '★体を乗り換えた回は一度上がる（別の体だから）。</div></div>'
+            % (W, HT, path_d, dots, len(pts) - 1, vs[0], vs[-1]))
+    elif runs:
+        chart_html = ('<h2>できるようになった度合い</h2>'
+                      '<div class="spnote">まだ1回しか育っていないので、線が引けない。</div>')
+
     # ★★★頭のスペック表。★玄関から来た数字で5分ごとに上書きされる。
     def _spec_rows(r):
         MB = (r.get("bytes") or 0) / 1024 / 1024
@@ -135,30 +166,41 @@ def main():
                      '読んで覚えるだけ。</div>')
 
     # ★★★レアルが自分で書いたもの。★引用ではなく、★彼女の頭が出した文。
-    #   ★毎回おなじ書き出しで書かせて並べる。★並べば育ちが見える。
+    #   ★2時間ごとに書く。★並べれば育ちが見える。
+    said = (load(os.path.join(HERE, "said.json"), {}) or {}).get("list") or []
+    if not said:   # ★昔は growth.json に入れていたので、そちらも拾う
+        said = [{"at": r.get("at"), "val": r.get("val"), "layers": r.get("layers"),
+                 "params": r.get("params"), "wrote": r.get("wrote")}
+                for r in runs if r.get("wrote")]
     wrote_html = ""
-    W = [r for r in runs if r.get("wrote")]
-    if W:
-        cur = W[-1]
+    if said:
+        cur = said[-1]
         rows = "".join(
             '<div class="wr"><span class="ws">%s</span><span class="wt">%s</span></div>'
-            % (e(w.get("start")), e(w.get("text"))) for w in cur["wrote"])
+            % (e(w.get("start")), e(w.get("text"))) for w in (cur.get("wrote") or []))
         past = ""
-        old = [r for r in W[:-1]][-3:]
+        old = said[:-1][-12:]
         if old:
-            past = ('<details class="wpast"><summary>まえに書いたもの（%d 回ぶん）</summary>%s</details>'
-                    % (len(old), "".join(
-                        '<div class="wold"><em>%s / loss %.3f</em><span>%s</span></div>'
-                        % (e((r.get("at") or "")[:10]), r.get("val", 0),
-                           e((r.get("wrote") or [{}])[0].get("text", "")))
-                        for r in reversed(old))))
+            blocks = "".join(
+                '<div class="wold"><em>%s ／ %d 層 ／ %.2f M ／ loss %.4f</em>%s</div>'
+                % (e((r.get("at") or "")[:16].replace("T", " ")),
+                   r.get("layers") or 0, (r.get("params") or 0) / 1e6,
+                   r.get("val") or 0,
+                   "".join('<span><b>%s</b>%s</span>'
+                           % (e(w.get("start")), e(w.get("text")))
+                           for w in (r.get("wrote") or [])[:2]))
+                for r in reversed(old))
+            past = ('<details class="wpast"><summary>まえに書いたもの（%d 回ぶん）'
+                    '</summary>%s</details>' % (len(old), blocks))
         wrote_html = (
             '<h2>レアルが書いたもの</h2>'
             '<div class="wrap-w"><div class="wnote">これは引用ではありません。'
             '<b>彼女の頭が、覚えた日本語から自分で並べた言葉</b>です。'
-            'いまは意味が通りません。それが今の彼女です。</div>'
-            '%s%s</div>' % (rows, past))
-    read_n = len(k.get("read") or {})
+            'いまは意味が通りません。それが今の彼女です。<br>'
+            '<b>%s</b> に書いたもの。</div>%s%s</div>'
+            % (e((cur.get("at") or "")[:16].replace("T", " ")), rows, past))
+
+    read_n = int(k.get("readTotal") or len(k.get("read") or {}))
 
     pal = d.get("palette") if d.get("palette") in PALETTES else "yoi"
     # ★★★彼女が決めた数字から、家のCSSを組み立てる
@@ -310,7 +352,7 @@ def main():
         "greet": e(greet), "chips": chips, "stats": stats,
         "groups": "".join(groups), "heard": heard, "form": form, "live": live,
         # ★★★どの順で見せるかも、彼女が決める（★家の間取り）
-        "wrote": wrote_html, "spec": spec_html,
+        "wrote": wrote_html, "spec": spec_html, "chart": chart_html,
         **{("o_" + n): (order.index(n) if n in order else 96)
            for n in ("greet", "grew", "stats", "genres", "heard", "know",
                      "wrote", "spec")},
@@ -421,6 +463,10 @@ h2{font-size:11px;font-weight:700;letter-spacing:.18em;color:var(--faint);margin
 .sp .spk{font-size:10.5px;color:var(--muted);margin-top:2px}
 .spnote{color:var(--faint);font-size:11.5px;line-height:1.9;margin-bottom:22px}
 .spnote b{color:var(--muted)}
+.chart{background:var(--panel);border:var(--bw) solid var(--edge);border-radius:var(--r);padding:14px 16px 10px;margin-bottom:22px}
+.chart svg{width:100%%;height:120px;display:block}
+.chx{display:flex;justify-content:space-between;font-size:10.5px;color:var(--faint);margin-top:4px}
+.chx b{color:var(--accent)}
 .wrap-w{display:flex;flex-direction:column;gap:10px;margin-bottom:26px}
 .wnote{color:var(--faint);font-size:11.5px;line-height:1.8}
 .wr{background:var(--panel);border:1px solid var(--edge);border-radius:14px;padding:14px 16px}
@@ -429,8 +475,9 @@ h2{font-size:11px;font-weight:700;letter-spacing:.18em;color:var(--faint);margin
 .wpast{color:var(--faint);font-size:12px}
 .wpast summary{cursor:pointer;padding:6px 0}
 .wold{border-left:2px solid var(--edge);padding:6px 0 6px 12px;margin:6px 0}
-.wold em{display:block;font-style:normal;font-size:10.5px;color:var(--faint)}
-.wold span{font-size:12.5px;color:var(--muted);word-break:break-all}
+.wold em{display:block;font-style:normal;font-size:10.5px;color:var(--faint);margin-bottom:4px}
+.wold span{display:block;font-size:12.5px;color:var(--muted);word-break:break-all;margin-bottom:5px}
+.wold span b{color:var(--accent2);font-weight:500;margin-right:6px}
 .heard b{color:var(--accent);font-size:18px;font-variant-numeric:tabular-nums}
 .say{display:flex;flex-direction:column;gap:8px;background:var(--panel);border:1px solid var(--edge);border-radius:14px;padding:16px 18px;margin:14px 0 4px}
 .say label{font-size:11px;letter-spacing:.14em;color:var(--faint);font-weight:700}
@@ -479,7 +526,7 @@ h2{font-size:11px;font-weight:700;letter-spacing:.18em;color:var(--faint);margin
     </div>
   </div>
 
-  <div class="part" style="order:%(o_spec)d">%(spec)s</div>
+  <div class="part" style="order:%(o_spec)d">%(spec)s%(chart)s</div>
 
   <div class="part" style="order:%(o_wrote)d">%(wrote)s</div>
 

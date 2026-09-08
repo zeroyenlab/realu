@@ -199,11 +199,13 @@ jobs:
           # ★★★置いた人が同じファイルを直しているかもしれない。
           #   ★衝突しても転ばないように、★自分の記録だけを持って、★向こうの最新に載せ直す。
           cp growth.json /tmp/growth.mine
+          cp said.json /tmp/said.mine 2>/dev/null || true
           git stash -u >/dev/null 2>&1 || true
           for i in 1 2 3; do
             git fetch origin main && git reset --hard origin/main
             cp /tmp/growth.mine growth.json
-            git add growth.json
+            cp /tmp/said.mine said.json 2>/dev/null || true
+            git add growth.json said.json
             if git diff --staged --quiet; then
               echo "記録に変化なし"; break
             fi
