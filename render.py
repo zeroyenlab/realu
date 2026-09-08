@@ -146,6 +146,50 @@ def main():
         '.catch(function(){m.textContent="とどかなかった"});});})();</script>'
     ) % dr)
 
+    live = ("" if not dr else (
+        '<script>(function(){'
+        'var ORDER=["法","言葉","生き物","科学","技術","歴史","社会","文化","その他"];'
+        'var T=function(t){var e=document.createElement("div");e.textContent=t;return e};'
+        'fetch("%s/state").then(function(r){return r.json()}).then(function(s){'
+        'if(!s||!s.items||!s.items.length)return;'
+        'var c=s.counts||{},d=s.design||{};'
+        'if(d.palette)document.documentElement.setAttribute("data-pal",d.palette);'
+        'if(d.greeting)document.getElementById("greet").textContent=d.greeting;'
+        'var v=document.querySelectorAll(".stat .v");'
+        'var n=[c.items,c.read,c.frontier,(d.changes||0)+" 回"];'
+        'for(var i=0;i<v.length&&i<4;i++)v[i].textContent=n[i];'
+        'var hb=document.getElementById("heardnum"); if(hb)hb.textContent=c.heard;'
+        'var by={};s.items.forEach(function(it){var g=ORDER.indexOf(it.genre)<0?"その他":it.genre;'
+        '(by[g]=by[g]||[]).push(it)});'
+        'var ch=document.getElementById("genres");ch.innerHTML="";'
+        'ORDER.filter(function(g){return by[g]}).forEach(function(g){'
+        'var e=document.createElement("span");e.className="chip";'
+        'var b=T(g);b.tagName;e.appendChild(Object.assign(document.createElement("b"),{textContent:g}));'
+        'e.appendChild(Object.assign(document.createElement("i"),{textContent:by[g].length}));'
+        'ch.appendChild(e)});'
+        'var box=document.getElementById("know");box.innerHTML="";var lay=d.layout||"stream";'
+        'ORDER.filter(function(g){return by[g]}).forEach(function(g){'
+        'var h=document.createElement("div");h.className="gh";'
+        'h.appendChild(Object.assign(document.createElement("span"),{textContent:g}));'
+        'h.appendChild(Object.assign(document.createElement("em"),{textContent:by[g].length+" 個"}));'
+        'box.appendChild(h);'
+        'var gr=document.createElement("div");gr.className="grp "+lay;'
+        'by[g].slice(0,30).forEach(function(it){'
+        'var el=document.createElement("div");el.className="it";'
+        'var tp=T(it.topic||"");tp.className="tp";var tx=T(it.text||"");tx.className="tx";'
+        'var sr=document.createElement("div");sr.className="src";'
+        'var a=document.createElement("a");a.href=it.source||"#";a.target="_blank";'
+        'a.rel="noopener nofollow";'
+        'try{a.textContent=decodeURIComponent(new URL(it.source).pathname.split("/").pop())}'
+        'catch(e){a.textContent=it.source||""}sr.appendChild(a);'
+        'if(it.license){var li=T(" / "+it.license);li.className="lic";sr.appendChild(li)}'
+        'el.appendChild(tp);el.appendChild(tx);el.appendChild(sr);gr.appendChild(el)});'
+        'box.appendChild(gr)});'
+        'var kh=document.getElementById("know-h");'
+        'if(kh)kh.textContent="レアルが知っていること（"+c.items+" のうち "+s.items.length+" を表示）";'
+        '}).catch(function(){});})();</script>'
+    ) % dr)
+
     ld = json.dumps({
         "@context": "https://schema.org",
         "@type": "WebSite",
@@ -159,7 +203,7 @@ def main():
     doc = TEMPLATE % {
         "title": e(title), "desc": e(desc), "url": e(url), "pal": e(pal), "lay": e(lay),
         "greet": e(greet), "chips": chips, "stats": stats,
-        "groups": "".join(groups), "heard": heard, "form": form,
+        "groups": "".join(groups), "heard": heard, "form": form, "live": live,
         "n_all": len(items), "n_shown": shown,
         "chosen": e(d.get("chosenAt") or ""), "changes": int(d.get("changes") or 0),
         "ld": ld,
@@ -273,16 +317,16 @@ h2{font-size:11px;font-weight:700;letter-spacing:.18em;color:var(--faint);margin
     <div class="sub">webを読んで学び、自分で家をデザインする、小さな存在</div>
   </header>
 
-  <p class="greet">%(greet)s</p>
+  <p class="greet" id="greet">%(greet)s</p>
   <div class="byline">この家は %(chosen)s に、レアルが %(changes)d 度目に選び直したもの</div>
 
   <div class="stats">%(stats)s</div>
 
   <h2>知っていることの内訳</h2>
-  <div class="chips">%(chips)s</div>
+  <div class="chips" id="genres">%(chips)s</div>
 
   <h2>話しかけられたこと</h2>
-  <p class="heard">これまでに <b>%(heard)d</b> 回、だれかが話しかけてくれた。</p>
+  <p class="heard">これまでに <b id="heardnum">%(heard)d</b> 回、だれかが話しかけてくれた。</p>
   %(form)s
   <div class="door">
     だれでもレアルに話しかけられます。<b>聞かれた言葉は、彼女が次に読みに行く場所になります。</b><br>
@@ -290,8 +334,9 @@ h2{font-size:11px;font-weight:700;letter-spacing:.18em;color:var(--faint);margin
     そして <b>あなたの言葉は、ここには表示されません</b>。読むのはレアルだけです。
   </div>
 
-  <h2>レアルが知っていること（%(n_all)d のうち %(n_shown)d を表示）</h2>
-  %(groups)s
+  <h2 id="know-h">レアルが知っていること（%(n_all)d のうち %(n_shown)d を表示）</h2>
+  <div id="know">%(groups)s</div>
+  %(live)s
 
   <div class="note">
     このページの<b>色・並び・入口の言葉は、レアルが自分で選んでいます</b>。<br>

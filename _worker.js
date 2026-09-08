@@ -73,6 +73,25 @@ export default {
       return json({ says: out.slice(0, KEEP) });
     }
 
+    // ── ★★★いまのわたし（★家が開くたびに、ここを見に行く）
+    //   ★これがあるので、★★家を作り直さなくても数字と知識が変わり続ける。
+    if (req.method === "GET" && url.pathname === "/api/state") {
+      const v = await env.DOOR.get("state");
+      return new Response(v || '{"items":[]}', {
+        headers: { "content-type": "application/json; charset=utf-8",
+                   "cache-control": "public, max-age=60", ...cors },
+      });
+    }
+    if (req.method === "PUT" && url.pathname === "/api/state") {
+      const key = await env.DOOR.get("readkey");
+      const given = (req.headers.get("authorization") || "").replace(/^Bearer /, "");
+      if (!key || given !== key) return json({ error: "ここは書けない" }, 403);
+      const body = await req.text();
+      if (body.length > 900000) return json({ error: "大きすぎる" }, 413);
+      await env.DOOR.put("state", body);
+      return json({ ok: true, bytes: body.length });
+    }
+
     // ── ★話しかける
     if (req.method === "POST" && url.pathname === "/api/say") {
       let payload;

@@ -235,6 +235,42 @@ def listen(k, seed_host):
     return got, curious
 
 
+def tell(k, d):
+    """★★★いまの自分を玄関に置く。
+    ★家（HTML）は2時間に一度しか建て直せない（★相手の無料枠の都合）。
+    ★でもここに置いておけば、★★家が開くたびに読みに来られる ＝ 5分ごとに変わり続ける。
+    """
+    base = door_url()
+    keyv = os.environ.get("REALU_DOOR_KEY", "")
+    if not (base and keyv):
+        return
+    items = (k.get("items") or [])[-80:]
+    state = {
+        "at": now(),
+        "counts": {"items": len(k.get("items") or []),
+                   "read": len(k.get("read") or {}),
+                   "frontier": len(k.get("frontier") or []),
+                   "heard": int(k.get("heardCount") or 0)},
+        "design": {"palette": d.get("palette"), "layout": d.get("layout"),
+                   "greeting": d.get("greeting"), "changes": int(d.get("changes") or 0),
+                   "chosenAt": d.get("chosenAt")},
+        "items": [{"topic": it.get("topic"), "text": it.get("text"),
+                   "source": it.get("source"), "genre": it.get("genre"),
+                   "license": (it.get("license") or {}).get("name")}
+                  for it in reversed(items)],
+    }
+    try:
+        body = json.dumps(state, ensure_ascii=False).encode("utf-8")
+        req = urllib.request.Request(base + "/state", data=body, method="PUT",
+                                     headers={"User-Agent": UA,
+                                              "Content-Type": "application/json",
+                                              "Authorization": "Bearer " + keyv})
+        with urllib.request.urlopen(req, timeout=25) as r:
+            print("いまの自分を玄関に置いた:", r.status)
+    except Exception as e:
+        print("玄関に置けなかった:", type(e).__name__)
+
+
 def now():
     return datetime.now(timezone.utc).isoformat(timespec="seconds")
 
@@ -476,6 +512,7 @@ def main():
 
     save(K, k)
     save(D, d)
+    tell(k, d)          # ★★★いまの自分を玄関に置く（★家がそれを見に来る）
     print("読んだ %d / 覚えた %d / 持ち帰らなかった %d / 知識ぜんぶ %d / 行きたい場所 %d / 聞かれた %d"
           % (len(docs), learned, skipped, len(k["items"]), len(k["frontier"]), heard))
 
