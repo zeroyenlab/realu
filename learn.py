@@ -119,7 +119,7 @@ def allowed_by_robots(url):
                 _DELAY[host] = float(d)
         except Exception:
             pass
-        return bool(rp.can_fetch(UA, url))
+        return bool(rp.can_fetch(UA, to_ascii(url)))
     except Exception:
         return False
 
@@ -343,7 +343,22 @@ def seeds():
     return out
 
 
+def to_ascii(url):
+    """★★★URLを送れる形に直す。
+
+    ★リンクを辿ると「.../wiki/ミクロネシア連邦」のように**日本語のまま**取れる。
+    ★urllib はASCIIしか送れないので、★★そのまま渡すと**全部落ちる**。
+    ★（実測: 30件中27件が UnicodeEncodeError。★しかも黙って落ちていた）
+    """
+    p = urllib.parse.urlsplit(url)
+    return urllib.parse.urlunsplit((
+        p.scheme, p.netloc.encode("idna").decode("ascii") if p.netloc else "",
+        urllib.parse.quote(p.path, safe="/%:@!$&'()*+,;=~"),
+        urllib.parse.quote(p.query, safe="=&%:/?~"), ""))
+
+
 def fetch(url):
+    url = to_ascii(url)
     req = urllib.request.Request(
         url, headers={"User-Agent": UA, "Accept-Language": "ja,en;q=0.8"})
     with urllib.request.urlopen(req, timeout=20) as r:
@@ -440,6 +455,9 @@ def links_of(doc, base, allowed):
     return out
 
 
+_WHY = {}
+
+
 def read_one(url):
     """★1ページ読む。★★★相手が許していなければ**読まない**。★失敗は静かに諦める。"""
     if not allowed_by_robots(url):
@@ -449,7 +467,9 @@ def read_one(url):
         host = urllib.parse.urlparse(url).scheme + "://" + urllib.parse.urlparse(url).netloc
         time.sleep(max(POLITE, _DELAY.get(host, 0) / max(1, WORKERS)))
         return url, fetch(url)
-    except Exception:
+    except Exception as e:
+        # ★★★黙って落とさない。★何で落ちたかを残す（★これが無くて27/30の失敗に気づけなかった）
+        _WHY[type(e).__name__] = _WHY.get(type(e).__name__, 0) + 1
         return url, None
 
 
@@ -581,6 +601,8 @@ def main():
     save(K, k)
     save(D, d)
     tell(k, d)          # ★★★いまの自分を玄関に置く（★家がそれを見に来る）
+    if _WHY:
+        print("★読めなかった理由:", _WHY)
     print("読んだ %d / 覚えた %d / 持ち帰らなかった %d / 知識ぜんぶ %d / 行きたい場所 %d / 聞かれた %d"
           % (len(docs), learned, skipped, len(k["items"]), len(k["frontier"]), heard))
 
