@@ -558,7 +558,18 @@ def main():
     #     （★途中で切っても、そこまでの重みがちゃんと使える形になる）。
     #   ★その一定区間の中で、★詰まり具合に応じて上下させるのが彼女の自律制御。
     DECAY_FROM = int(STEPS * 0.90)
+    # ★★★時間の予算。★これを超えたら**途中でも切り上げて、頭を残す**。
+    #   ★2026-09-08: 4,000歩に182分かかる見込みなのに残りが145分しかなく、
+    #     ★時間切れで**頭が1つも残らない**ところだった。
+    #   ★★歩数を当てにいくのではなく、★「必ず残す」を保証する。
+    budget = float(os.environ.get("REALU_TIME_BUDGET", 150)) * 60
+    stopped_early = 0
     for step in range(1, STEPS + 1):
+        if time.time() - t0 > budget:
+            stopped_early = step
+            print("★★時間の予算を使い切った（%d/%d 歩）。★ここまでを残す。"
+                  % (step, STEPS), flush=True)
+            break
         warm = min(1.0, step / 200)
         tail = 1.0
         if step > DECAY_FROM:                    # ★最後の10%で0へ
@@ -702,7 +713,7 @@ def main():
         ptsize = 0
     hist["runs"].append({
         "at": time.strftime("%Y-%m-%dT%H:%M:%SZ", time.gmtime()),
-        "val": round(val, 4), "prev": round(prev_val, 4) if prev_val else None, "valTag": VAL_TAG,
+        "val": round(val, 4), "prev": round(prev_val, 4) if prev_val else None, "valTag": VAL_TAG, "stoppedAt": stopped_early,
         "layers": len(model.blocks), "params": model.n_params(),
         "chars": len(text), "grew": grew, "rolledBack": rolled,
         "d": model.d, "loops": model.loops, "spread": round(my_spread, 4),

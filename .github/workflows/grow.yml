@@ -43,6 +43,7 @@ jobs:
 
       - name: 道具を入れる
         run: |
+          date +%s > /tmp/t0       # ★★「あと何分使えるか」を後で計算するため
           pip install --quiet torch --index-url https://download.pytorch.org/whl/cpu
           pip install --quiet pypdf tokenizers
 
@@ -143,6 +144,7 @@ jobs:
       - name: 判決をすこし読み足す
         run: |
           N="${{ github.event.inputs.hanrei || '400' }}"
+          if [ "$NEW_LAWS" = "1" ]; then N=150; fi
           FROM=$(cat work/hanrei_next.txt 2>/dev/null || echo 1000)
           TO=$((FROM + N * 3))          # ★存在しないIDもあるので多めに走査する
           echo "★判決 $FROM 〜 $TO を読む"
@@ -206,18 +208,20 @@ jobs:
           fi
 
       - name: webを読んでごはんにする
-        env:
-          REALU_WEB_PAGES: "40000"
-        run: python -u read_web.py
+        run: |
+          N=40000
+          if [ "$NEW_LAWS" = "1" ]; then N=8000; echo "★冷えた回。webは $N ページ"; fi
+          REALU_WEB_PAGES=$N python -u read_web.py
 
       # ── ★★★国会の会議録を、毎日すこしずつ食べる
       #   ★はじめての「話し言葉」。★質疑応答の往復がここにしかない。
       #   ★根拠: 著作権法40条1項（公開の政治上の陳述）＋30条の4（情報解析）
       #   ★規約「短時間での大量アクセスはご遠慮ください」→ ★1本ずつ・3秒間隔
       - name: 国会の話を聞きに行く
-        env:
-          REALU_KOKKAI_REQ: "600"
-        run: python -u fetch_kokkai.py || true
+        run: |
+          N=600
+          if [ "$NEW_LAWS" = "1" ]; then N=150; echo "★冷えた回。国会は $N 本"; fi
+          REALU_KOKKAI_REQ=$N python -u fetch_kokkai.py || true
 
       # ── ★★★食べたものを、★**この時点で**残す。
       #   ★1回目は、後の段で失敗したせいで**キャッシュの保存が飛ばされ**、
@@ -276,9 +280,10 @@ jobs:
       #   ★いままで食べたのは全部「説明文」だった。
       #   ★物語も描写も感情も会話も、一度も読んでいなかった。
       - name: 本を読む
-        env:
-          REALU_AOZORA_BOOKS: "600"
-        run: python -u fetch_aozora.py || true
+        run: |
+          N=600
+          if [ "$NEW_LAWS" = "1" ]; then N=200; echo "★冷えた回。本は $N 冊"; fi
+          REALU_AOZORA_BOOKS=$N python -u fetch_aozora.py || true
 
       # ── ★★★ことばの単位を、自分のごはんから切り出す（★初回だけ）
       #   ★外のトークナイザは使わない（★語彙そのものが外の世界の知識だから）。
@@ -291,7 +296,16 @@ jobs:
         env:
           REALU_STEPS: ${{ github.event.inputs.steps || '4000' }}
           REALU_THREADS: "4"
-        run: python -u grow.py
+        run: |
+          # ★★★残り時間から予算を出す。★歩数を当てにいかない。
+          #   ★2026-09-08: 4,000歩に182分要るのに残り145分で、★頭が1つも残らない所だった。
+          #   ★★最後の15分は「残す」ために空けておく。
+          USED=$(( $(date +%s) - $(cat /tmp/t0) ))
+          LEFT=$(( 340*60 - USED - 900 ))
+          if [ "$LEFT" -lt 600 ]; then LEFT=600; fi
+          export REALU_TIME_BUDGET=$(( LEFT / 60 ))
+          echo "★使った $((USED/60))分 / 学びに使える $REALU_TIME_BUDGET分"
+          python -u grow.py
 
       # ── ★自分を残す。★★これが消えると、これまでの全部が消える
       - name: あたらしいわたしを残す

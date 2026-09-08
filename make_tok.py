@@ -20,7 +20,12 @@ import sys
 HERE = os.path.dirname(os.path.abspath(__file__))
 WORK = os.environ.get("REALU_WORK", os.path.join(HERE, "work"))
 TOK = os.path.join(WORK, "tok.json")
-VOCAB = int(os.environ.get("REALU_VOCAB", 16000))
+# ★★★16,000 は、この大きさの頭には**大きすぎた**（実測）:
+#   文字4,500 → 全体 2.64M / 表 0.86M（33%） / 1歩 1.68秒
+#   BPE16,000 → 全体 4.84M / 表 3.07M（★63%） / 1歩 2.74秒
+#   ★増えた 2.2M は**全部が引き当て表**。★考える所（1.77M）は1ミリも増えていない。
+#   ★別プロジェクトの日本語研究の結論と同じ:「軽さの本体は語彙を捨てること」
+VOCAB = int(os.environ.get("REALU_VOCAB", 6000))
 SAMPLE = int(os.environ.get("REALU_TOK_SAMPLE", 250_000_000))   # ★学習に使う文字数
 
 
