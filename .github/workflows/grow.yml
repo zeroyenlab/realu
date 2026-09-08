@@ -113,6 +113,33 @@ jobs:
           AFTER=$(stat -c%s work/wiki.txt.gz 2>/dev/null || echo 0)
           [ "$AFTER" != "$BEFORE" ] && echo "NEW_WIKI=1" >> $GITHUB_ENV || true
 
+      # ── ★★★5分ごとに読んだものを、★全部集めて食べる。
+      #   ★5分ごとの読みは1日17万ページ。★これが重みに入らないのはおかしい。
+      #   ★毎回まっさらな機械なので、★1回ぶんずつ包みにして置いてある。
+      #   ★ここで全部開けて、★ごはんに足して、★包みは片付ける。
+      - name: 5分ごとに読んだものを集めて食べる
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          FOODKEY: ${{ secrets.REALU_FOOD_KEY }}
+        run: |
+          [ -z "$FOODKEY" ] && exit 0
+          gh release view reading >/dev/null 2>&1 || exit 0
+          mkdir -p /tmp/pk && rm -f /tmp/pk/*
+          gh release download reading -D /tmp/pk 2>/dev/null || exit 0
+          n=0
+          for f in /tmp/pk/read-*.enc; do
+            [ -f "$f" ] || continue
+            if openssl enc -d -aes-256-cbc -pbkdf2 \
+                 -in "$f" -out /tmp/pk/one.gz -pass env:FOODKEY 2>/dev/null; then
+              cat /tmp/pk/one.gz >> work/web.txt.gz
+              n=$((n+1))
+              gh release delete-asset reading "$(basename "$f")" -y 2>/dev/null || true
+            fi
+            rm -f /tmp/pk/one.gz
+          done
+          echo "★5分ごとに読んだもの $n 包みを食べた"
+          rm -rf /tmp/pk
+
       # ── ★★★webを読んで、それを**ごはんにする**
       #   ★5分ごとの方は「見た目と好奇心」。★こっちは学習の材料を作る。
       #   ★読んだものが重みに入らないなら、それは学んだことにならない。

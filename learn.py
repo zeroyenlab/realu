@@ -17,6 +17,7 @@ import urllib.request
 import urllib.robotparser
 from datetime import datetime, timezone
 
+NL = chr(10)
 HERE = os.path.dirname(os.path.abspath(__file__))
 K = os.path.join(HERE, "knowledge.json")
 D = os.path.join(HERE, "design.json")
@@ -263,6 +264,41 @@ def listen(k, seed_host):
     k["heardCount"] = int(k.get("heardCount") or 0) + got
     k.pop("asked", None)                     # ★★昔の版が残していた本文を消す
     return got, curious
+
+
+def wrap_for_weights(chunks):
+    """★★★読んだものを1つの包みにして、★鍵をかけて置く。
+
+    ★育つ日がこれを集めて、★ごはんに足す。★そうしないと読んだものが重みに入らない。
+    ★★鍵をかけるのは、★加工したテキストをそのまま公開しないため（★判例の規約・CC BY-SA）。
+    """
+    key = os.environ.get("REALU_FOOD_KEY", "")
+    tok = os.environ.get("GITHUB_TOKEN", "")
+    if not (chunks and key and tok):
+        return 0
+    import gzip
+    import subprocess
+    import tempfile
+    body = NL.join(chunks)
+    tmp = tempfile.mkdtemp()
+    raw = os.path.join(tmp, "r.txt.gz")
+    enc = os.path.join(tmp, "read-" + time.strftime("%Y%m%d-%H%M%S", time.gmtime())
+                       + ".enc")
+    try:
+        with gzip.open(raw, "wt", encoding="utf-8", newline=NL) as f:
+            f.write(body)
+        subprocess.run(["openssl", "enc", "-aes-256-cbc", "-pbkdf2", "-salt",
+                        "-in", raw, "-out", enc, "-pass", "env:REALU_FOOD_KEY"],
+                       check=True, capture_output=True)
+        subprocess.run(["gh", "release", "upload", "reading", enc, "--clobber"],
+                       check=True, capture_output=True,
+                       env={**os.environ, "GH_TOKEN": tok})
+        print("★読んだもの %.1f 万字を包んで置いた（%.0f KB）"
+              % (len(body) / 10000, os.path.getsize(enc) / 1024))
+        return len(body)
+    except Exception as e:
+        print("★包めなかった:", type(e).__name__)
+        return 0
 
 
 def tell(k, d):
@@ -573,6 +609,10 @@ def main():
 
     recent = set(it.get("text") for it in k["items"][-600:])
     learned, skipped = 0, 0
+    # ★★★5分ごとに読んだものを、★重みに繋ぐための包み。
+    #   ★毎回まっさらな機械なので溜められない → ★1回ぶんずつ小さな包みにして置く。
+    #   ★育つ日（grow）がそれを全部集めて、★ごはんに足す。
+    for_weights = []
     for url, doc in docs:
         t = title_of(doc)
         lic = license_of(url)
@@ -580,7 +620,12 @@ def main():
         if lic is None:
             skipped += 1          # ★読んだけれど、言葉は持ち帰らない
         else:
-            for s in sentences(strip_html(doc))[:SENT_PER_PAGE]:
+            body = sentences(strip_html(doc))
+            # ★★重みに入れる方は**全部**取る（★表示するのは先頭6つだけ）
+            if len(body) >= 3:
+                for_weights.append(NL + "<web " + (t or url) + ">" + NL
+                                   + NL.join(body))
+            for s in body[:SENT_PER_PAGE]:
                 if s in recent:
                     continue
                 recent.add(s)
@@ -641,6 +686,7 @@ def main():
     save(K, k)
     save(D, d)
     tell(k, d)          # ★★★いまの自分を玄関に置く（★家がそれを見に来る）
+    wrap_for_weights(for_weights)   # ★★★読んだものを重みに繋ぐ
     if _WHY:
         print("★読めなかった理由:", _WHY)
     print("読んだ %d / 覚えた %d / 持ち帰らなかった %d / 知識ぜんぶ %d / 行きたい場所 %d / 聞かれた %d"

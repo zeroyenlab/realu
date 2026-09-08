@@ -31,12 +31,22 @@ jobs:
         with:
           python-version: "3.12"
 
+      # ★★包みの置き場所を用意しておく（★無ければ作る）
+      - name: 包みの置き場所
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          gh release view reading >/dev/null 2>&1             || gh release create reading --title "読んだもの（鍵つき・一時）"                  --notes "5分ごとに読んだものの包み。育つ日に食べて片付ける。"                  --latest=false || true
+
       - name: レアルが読む
         run: python learn.py
         env:
           # ★玄関の鍵。★これが無いと「話しかけられたこと」を読めず、状態も置けない。
           #   ★無くても学習そのものは動く（★鍵が無いだけで止まらない）。
           REALU_DOOR_KEY: ${{ secrets.REALU_DOOR_KEY }}
+          # ★★★読んだものを包んで置くための鍵とトークン
+          REALU_FOOD_KEY: ${{ secrets.REALU_FOOD_KEY }}
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
       # ★★★家を建て直す ── ★中身をHTMLに焼き込む（★Googleが読めるように）
       - name: レアルが家を建て直す
