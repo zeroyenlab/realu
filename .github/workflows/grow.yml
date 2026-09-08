@@ -47,7 +47,7 @@ jobs:
       # ★★★いまは「ごはんを与えるだけ」の段階。
       #   ★会話コーパス（1,375万字）を取り込んで棚を作り直すのが今回の仕事。
       #   ★学習は次から。★"0" にすれば学ぶ。
-      REALU_NOLEARN: "1"
+      REALU_NOLEARN: "0"   # ★★学習を始める（"1" にすれば、ごはんを揃えるだけ）
     steps:
       - uses: actions/checkout@v4
 
@@ -432,19 +432,21 @@ jobs:
       #   ★ごはんが増えた時だけ作り直す（★talk が増えた・国会が増えた等）。
       - name: 棚をつくる（ごはんが増えた時だけ）
         run: |
-          NEED=0
-          [ -d work/pantry ] || NEED=1
-          for f in work/*.txt.gz; do
-            [ -f "$f" ] || continue
-            if [ ! -f work/pantry/meta.json ] || [ "$f" -nt work/pantry/meta.json ]; then
-              NEED=1
+          # ★★★「新しいか」で見てはいけない。
+          #   ★Release から取り戻したファイルは**取り戻した時刻**になるので、
+          #   ★meta.json より必ず新しくなる → ★毎回作り直していた（実測 run#32/33）。
+          #   → ★★中身の大きさの合計で見る。★変わっていなければ作り直さない。
+          SUM=$(cat work/*.txt.gz 2>/dev/null | wc -c)
+          OLD=$(cat work/pantry/src_bytes.txt 2>/dev/null || echo 0)
+          if [ ! -f work/pantry/meta.json ] || [ "$SUM" != "$OLD" ]; then
+            echo "★ごはんが変わった（$OLD → $SUM バイト）。棚を作り直す"
+            if python -u make_pantry.py; then
+              echo "$SUM" > work/pantry/src_bytes.txt
+            else
+              echo "★棚は作れなかった（★今まで通りで学ぶ）"
             fi
-          done
-          if [ "$NEED" = "1" ]; then
-            echo "★ごはんが増えた。棚を作り直す"
-            python -u make_pantry.py || echo "★棚は作れなかった（★今まで通りで学ぶ）"
           else
-            echo "★棚はそのまま使える"
+            echo "★棚はそのまま使える（$SUM バイト）"
           fi
 
       # ── ★★★棚と会話を、★学ぶ前にもう一度しまう。

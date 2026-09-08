@@ -25,6 +25,12 @@ concurrency:
 jobs:
   learn:
     runs-on: ubuntu-latest
+    # ★★★いまは止めてある。
+    #   ★5分ごとに web を漁って家を建て直していた（★1日14.7時間・学習ゼロ）。
+    #   ★ごはんは冷蔵庫に1GB以上あり、★いま使っているのは 0.016周。
+    #   ★研究: 4周までは新しいデータと同等（NeurIPS 2023）→ ★当分ごはんは要らない。
+    #   ★★仕組みは消していない。★REALU_LEARN_ON=1 で戻る。
+    if: vars.REALU_LEARN_ON == '1'
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-python@v5
