@@ -431,6 +431,78 @@
     "url": "https://creativecommons.org/licenses/by-sa/4.0/"
    },
    "ts": "2026-09-08T00:47:44+00:00"
+  },
+  {
+   "topic": "はじめまして",
+   "text": "はじめまして (中島みゆきのアルバム) - 中島みゆき のアルバム。",
+   "source": "https://ja.wikipedia.org/wiki/%E3%81%AF%E3%81%98%E3%82%81%E3%81%BE%E3%81%97%E3%81%A6",
+   "genre": "その他",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": "https://creativecommons.org/licenses/by-sa/4.0/"
+   },
+   "ts": "2026-09-08T01:11:13+00:00"
+  },
+  {
+   "topic": "はじめまして",
+   "text": "はじめまして (平原綾香のアルバム) - 平原綾香 のアルバム。",
+   "source": "https://ja.wikipedia.org/wiki/%E3%81%AF%E3%81%98%E3%82%81%E3%81%BE%E3%81%97%E3%81%A6",
+   "genre": "その他",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": "https://creativecommons.org/licenses/by-sa/4.0/"
+   },
+   "ts": "2026-09-08T01:11:13+00:00"
+  },
+  {
+   "topic": "はじめまして",
+   "text": "(まるりとりゅうがのアルバム) - まるりとりゅうが のミニ・アルバム。",
+   "source": "https://ja.wikipedia.org/wiki/%E3%81%AF%E3%81%98%E3%82%81%E3%81%BE%E3%81%97%E3%81%A6",
+   "genre": "その他",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": "https://creativecommons.org/licenses/by-sa/4.0/"
+   },
+   "ts": "2026-09-08T01:11:13+00:00"
+  },
+  {
+   "topic": "はじめまして",
+   "text": "- 声優・ 浅野真澄 と漫画家・ 畑健二郎 夫妻による 同人サークル 。",
+   "source": "https://ja.wikipedia.org/wiki/%E3%81%AF%E3%81%98%E3%82%81%E3%81%BE%E3%81%97%E3%81%A6",
+   "genre": "その他",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": "https://creativecommons.org/licenses/by-sa/4.0/"
+   },
+   "ts": "2026-09-08T01:11:13+00:00"
+  },
+  {
+   "topic": "はじめまして",
+   "text": "声優 あるあるネタ 作品『 それが声優! 』を発表している。",
+   "source": "https://ja.wikipedia.org/wiki/%E3%81%AF%E3%81%98%E3%82%81%E3%81%BE%E3%81%97%E3%81%A6",
+   "genre": "その他",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": "https://creativecommons.org/licenses/by-sa/4.0/"
+   },
+   "ts": "2026-09-08T01:11:13+00:00"
+  },
+  {
+   "topic": "はじめまして",
+   "text": "一つの語句が複数の意味・職能を有する場合の水先案内のために、異なる用法を一覧にしてあります。",
+   "source": "https://ja.wikipedia.org/wiki/%E3%81%AF%E3%81%98%E3%82%81%E3%81%BE%E3%81%97%E3%81%A6",
+   "genre": "その他",
+   "binding": false,
+   "license": {
+    "name": "CC BY-SA 4.0",
+    "url": "https://creativecommons.org/licenses/by-sa/4.0/"
+   },
+   "ts": "2026-09-08T01:11:13+00:00"
   }
  ],
  "read": {
@@ -439,9 +511,11 @@
   "https://ja.wikipedia.org/wiki/%E5%9B%BD%E9%9A%9B%E6%B3%95": "2026-09-07T22:45:14+00:00",
   "https://ja.wikipedia.org/wiki/%E8%91%97%E4%BD%9C%E6%A8%A9": "2026-09-07T22:45:14+00:00",
   "https://ja.wikipedia.org/wiki/Wikipedia:%E3%83%90%E3%82%B0%E3%81%AE%E5%A0%B1%E5%91%8A": "2026-09-08T00:47:43+00:00",
-  "https://ja.wikipedia.org/wiki/%E3%83%A1%E3%82%A4%E3%83%B3%E3%83%9A%E3%83%BC%E3%82%B8": "2026-09-08T00:47:44+00:00"
+  "https://ja.wikipedia.org/wiki/%E3%83%A1%E3%82%A4%E3%83%B3%E3%83%9A%E3%83%BC%E3%82%B8": "2026-09-08T00:47:44+00:00",
+  "https://ja.wikipedia.org/wiki/%E3%81%AF%E3%81%98%E3%82%81%E3%81%BE%E3%81%97%E3%81%A6": "2026-09-08T01:11:12+00:00"
  },
  "frontier": [
+  "https://ja.wikipedia.org/wiki/%E3%81%93%E3%81%93%E8%A6%8B%E3%81%A6",
   "https://ja.wikipedia.org/wiki/ミクロネシア連邦",
   "https://ja.wikipedia.org/wiki/堀淵清治",
   "https://ja.wikipedia.org/wiki/南洋諸島",
@@ -877,10 +951,48 @@
   "https://ja.wikipedia.org/wiki/明神",
   "https://ja.wikipedia.org/wiki/神号",
   "https://ja.wikipedia.org/wiki/Wikipedia:季節の画像投票所",
-  "https://ja.wikipedia.org/wiki/Category:地理のポータル"
+  "https://ja.wikipedia.org/wiki/Category:地理のポータル",
+  "https://ja.wikipedia.org/wiki/Portal:%E6%9C%80%E8%BF%91%E3%81%AE%E5%87%BA%E6%9D%A5%E4%BA%8B",
+  "https://ja.wikipedia.org/wiki/飛行甲板",
+  "https://ja.wikipedia.org/wiki/Category:%E3%81%99%E3%81%B9%E3%81%A6%E3%81%AE%E6%9B%96%E6%98%A7%E3%81%95%E5%9B%9E%E9%81%BF",
+  "https://ja.wikipedia.org/wiki/はじめまして_(中島みゆきのアルバム)",
+  "https://ja.wikipedia.org/wiki/はじめまして_中森明菜",
+  "https://ja.wikipedia.org/wiki/Category:%E6%9B%96%E6%98%A7%E3%81%95%E5%9B%9E%E9%81%BF",
+  "https://ja.wikipedia.org/wiki/平原綾香",
+  "https://ja.wikipedia.org/wiki/声優",
+  "https://ja.wikipedia.org/wiki/横須賀海軍施設",
+  "https://ja.wikipedia.org/wiki/畑健二郎",
+  "https://ja.wikipedia.org/wiki/はじめまして_(平原綾香のアルバム)",
+  "https://ja.wikipedia.org/wiki/はじめまして。_(佐香智久のアルバム)",
+  "https://ja.wikipedia.org/wiki/中森明菜",
+  "https://ja.wikipedia.org/wiki/人文字",
+  "https://ja.wikipedia.org/wiki/ロナルド・レーガン_(空母)",
+  "https://ja.wikipedia.org/wiki/まるりとりゅうが",
+  "https://ja.wikipedia.org/wiki/TBSテレビ",
+  "https://ja.wikipedia.org/wiki/岩男潤子",
+  "https://ja.wikipedia.org/wiki/%E7%89%B9%E5%88%A5:%E3%83%AA%E3%83%B3%E3%82%AF%E5%85%83/%E3%81%AF%E3%81%98%E3%82%81%E3%81%BE%E3%81%97%E3%81%A6",
+  "https://ja.wikipedia.org/wiki/はじめまして。_(まるりとりゅうがのアルバム)",
+  "https://ja.wikipedia.org/wiki/佐香智久",
+  "https://ja.wikipedia.org/wiki/中島みゆき",
+  "https://ja.wikipedia.org/wiki/はじめまして_(テレビドラマ)",
+  "https://ja.wikipedia.org/wiki/Category:%E5%90%8C%E5%90%8D%E3%81%AE%E4%BD%9C%E5%93%81",
+  "https://ja.wikipedia.org/wiki/それが声優!",
+  "https://ja.wikipedia.org/wiki/同人サークル",
+  "https://ja.wikipedia.org/wiki/かぐや姫_(フォークグループ)",
+  "https://ja.wikipedia.org/wiki/Wikipedia:%E3%81%8A%E7%9F%A5%E3%82%89%E3%81%9B",
+  "https://ja.wikipedia.org/wiki/浅野真澄",
+  "https://ja.wikipedia.org/wiki/アメリカ海軍",
+  "https://ja.wikipedia.org/wiki/Wikipedia:曖昧さ回避",
+  "https://ja.wikipedia.org/wiki/%E7%89%B9%E5%88%A5:%E7%89%B9%E5%88%A5%E3%83%9A%E3%83%BC%E3%82%B8%E4%B8%80%E8%A6%A7",
+  "https://ja.wikipedia.org/wiki/%E3%83%8E%E3%83%BC%E3%83%88:%E3%81%AF%E3%81%98%E3%82%81%E3%81%BE%E3%81%97%E3%81%A6",
+  "https://ja.wikipedia.org/wiki/あるあるネタ",
+  "https://ja.wikipedia.org/wiki/Wikipedia:%E3%82%B3%E3%83%9F%E3%83%A5%E3%83%8B%E3%83%86%E3%82%A3%E3%83%BB%E3%83%9D%E3%83%BC%E3%82%BF%E3%83%AB",
+  "https://ja.wikipedia.org/wiki/%E7%89%B9%E5%88%A5:%E9%96%A2%E9%80%A3%E3%83%9A%E3%83%BC%E3%82%B8%E3%81%AE%E6%9B%B4%E6%96%B0%E7%8A%B6%E6%B3%81/%E3%81%AF%E3%81%98%E3%82%81%E3%81%BE%E3%81%97%E3%81%A6",
+  "https://ja.wikipedia.org/wiki/Wikipedia:%E9%80%A3%E7%B5%A1%E5%85%88",
+  "https://ja.wikipedia.org/wiki/はじめまして_(かぐや姫のアルバム)"
  ],
  "born": "2026-09-07T21:38:10+00:00",
- "lastLearned": "2026-09-08T00:47:44+00:00",
+ "lastLearned": "2026-09-08T01:11:13+00:00",
  "failed": {},
  "termsSeen": {
   "https://foundation.wikimedia.org/wiki/Policy:Terms_of_Use/ja": {
@@ -899,6 +1011,8 @@
   }
  },
  "termsNotes": [],
- "heardIds": [],
- "heardCount": 0
+ "heardIds": [
+  "msg:2026-09-08T00:08:03.599Z:f367"
+ ],
+ "heardCount": 1
 }
