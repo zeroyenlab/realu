@@ -185,6 +185,14 @@ jobs:
       # ── ★★★webを読んで、それを**ごはんにする**
       #   ★5分ごとの方は「見た目と好奇心」。★こっちは学習の材料を作る。
       #   ★読んだものが重みに入らないなら、それは学んだことにならない。
+      # ★★昔の回が置いていった非圧縮の web を取り込む（★でないと読まれない）
+      - name: 昔の web を圧縮して取り込む
+        run: |
+          if [ -f work/web.txt ]; then
+            gzip -c work/web.txt >> work/web.txt.gz && rm -f work/web.txt
+            echo "★前の回が置いていった web を取り込んだ"
+          fi
+
       - name: webを読んでごはんにする
         env:
           REALU_WEB_PAGES: "40000"

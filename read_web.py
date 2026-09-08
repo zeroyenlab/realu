@@ -120,8 +120,13 @@ def main():
     print("★%d ページ読む" % len(targets), flush=True)
     got = chars = 0
     found = []          # ★(驚き, そのページのリンク) ── ★次にどこへ行くかを決める材料
-    path = os.path.join(WORK, "web.txt")
-    with open(path, "a", encoding="utf-8", newline="\n") as f:
+    # ★★★圧縮したまま足す。
+    #   ★前は web.txt（非圧縮）に書いていた。★5分ごとの包みは web.txt.gz に足される。
+    #   ★grow.py は **.gz を先に見つけたらそこで打ち切る**ので、
+    #     ★両方あると **web.txt（1日4万ページ）が丸ごと無視される**。
+    #   ★しかも Release にしまうのは .gz だけ。★非圧縮は保存もされない。
+    path = os.path.join(WORK, "web.txt.gz")
+    with gzip.open(path, "at", encoding="utf-8", newline=chr(10)) as f:
         import concurrent.futures as cf
         with cf.ThreadPoolExecutor(max_workers=L.WORKERS) as ex:
             for url, doc in ex.map(L.read_one, targets):

@@ -381,6 +381,14 @@ def main():
             with op(p, "rt", encoding="utf-8", errors="ignore") as f:
                 texts.append(f.read())
             sizes[name] = texts[-1]
+            # ★★★同じ名前の非圧縮版が隣にあると、それは**読まれない**。
+            #   ★2026-09-08: read_web.py が web.txt に書き、包みが web.txt.gz に足され、
+            #     ★.gz を先に見つけて打ち切るので **1日4万ページが丸ごと消えていた**。
+            #   ★★黙って消えるのが一番悪い。★見つけたら大声で言う。
+            other = os.path.join(WORK, name)
+            if p.endswith(".gz") and os.path.exists(other):
+                print("  ★★★%s が隣にある。★これは読まれていない（%.1f MB）"
+                      % (name, os.path.getsize(other) / 1024 / 1024), flush=True)
             print("  ごはん %s: %.1f MB" % (os.path.basename(p),
                                             os.path.getsize(p) / 1024 / 1024), flush=True)
             break
