@@ -396,6 +396,33 @@ def main():
     #     → ★下ごしらえ（ごはんを開く・重複削り・encode）が**予算の外**にいた。
     #   ★そこが伸びると、★予算を守ったつもりで時間切れになる。
     t_start = time.time()
+
+    # ★★★どこまで進んだかを、★外から見える形で刻む。
+    #   ★Actions のログは認証が要る。★私（外から見る側）には読めない。
+    #   → ★★足跡を残して、転んだ時にリポジトリへ書き出す。
+    def step_log(what):
+        try:
+            import resource
+            mb = resource.getrusage(resource.RUSAGE_SELF).ru_maxrss / 1024
+        except Exception:
+            try:
+                import psutil
+                mb = psutil.Process().memory_info().rss / 1024 / 1024
+            except Exception:
+                mb = -1
+        line = "[%5.1f分 / メモリ %6.0f MB] %s" % ((time.time() - t_start) / 60, mb, what)
+        print(line, flush=True)
+        try:
+            with open(os.path.join(WORK, "trace.txt"), "a", encoding="utf-8") as f:
+                f.write(line + chr(10))
+        except Exception:
+            pass
+
+    try:
+        os.remove(os.path.join(WORK, "trace.txt"))
+    except Exception:
+        pass
+    step_log("はじめ")
     val_tag = VAL_TAG      # ★逃げ道に入ったら書き換える（★別の物差しと比べないため）
 
     # ── ①★ごはんを読む（★法令＋判例＋**webで自分が読んだもの**）
@@ -435,6 +462,7 @@ def main():
         print("★ごはんが無い。work/ に laws.txt を置いて。")
         return 1
     text = "\n".join(texts)
+    step_log("ごはんを開いた")
     before = len(text)
 
     # ── ①★★★同じ行を何度も食べない。
@@ -458,6 +486,7 @@ def main():
             kept.append(ln)
     text = "\n".join(kept)
     del kept, seen                  # ★★ごはんの写しを2つ抱えない
+    step_log("重複を削った")
     print("★コーパス %.1f 万字（★同じ行を削って %.1f%% 減）"
           % (len(text) / 10000, (1 - len(text) / max(1, before)) * 100), flush=True)
 
@@ -581,6 +610,7 @@ def main():
         return torch.from_numpy(np.concatenate(out))
 
     ids = encode_big(text)
+    step_log("トークンにした")
     va = encode_big(val_text)
     tr = ids
     # ★物差しが短すぎると測れない。★その時だけ昔のやり方に落とす（★正直に言う）
@@ -615,6 +645,7 @@ def main():
     before = {k: v.clone() for k, v in model.state_dict().items()}
     before_layers = len(model.blocks)
 
+    step_log("学びはじめ")
     opt = torch.optim.AdamW(model.parameters(), lr=LR, weight_decay=0.01, betas=(0.9, 0.95))
     best, bad, grew = 9e9, 0, 0
     want_wider = False          # ★★★「幅が欲しい」と自分で言うための印

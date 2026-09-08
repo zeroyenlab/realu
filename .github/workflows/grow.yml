@@ -376,7 +376,12 @@ jobs:
             echo "★★まだ頭が無い。★40分で切り上げて、まず残す。"
           fi
           echo "★学びに使える $REALU_TIME_BUDGET 分"
-          python -u grow.py
+          # ★★★出力を控えておく。★Actions のログは認証が要って外から読めない。
+          set +e
+          python -u grow.py 2>&1 | tee /tmp/learn.log
+          code=${PIPESTATUS[0]}
+          set -e
+          exit $code
 
       # ── ★自分を残す。★★これが消えると、これまでの全部が消える
       - name: あたらしいわたしを残す
@@ -454,6 +459,41 @@ jobs:
         with:
           path: work
           key: realu-work-${{ github.run_number }}
+
+      # ★★★転んだ理由を、★誰でも読める所に残す。
+      #   ★Actions のログは認証が要る。★外から見ている側には読めない。
+      #   → ★足跡と最後の60行をリポジトリに置く。★これが無いと毎回「なぜ落ちたか分からない」
+      - name: 転んだ理由を残す
+        if: failure()
+        run: |
+          {
+            echo "# 転んだ記録"
+            echo ""
+            echo "いつ: $(date -u +%Y-%m-%dT%H:%M:%SZ)"
+            echo "回  : ${{ github.run_number }}"
+            echo ""
+            echo "## どこまで進んだか"
+            echo "```"
+            cat work/trace.txt 2>/dev/null || echo "（足跡なし）"
+            echo "```"
+            echo ""
+            echo "## 最後の60行"
+            echo "```"
+            tail -60 /tmp/learn.log 2>/dev/null || echo "（記録なし）"
+            echo "```"
+          } > last_error.md
+          git config user.name  "realu"
+          git config user.email "realu@users.noreply.github.com"
+          cp last_error.md /tmp/le.md
+          for i in 1 2 3; do
+            git fetch origin main && git reset --hard origin/main
+            cp /tmp/le.md last_error.md
+            git add last_error.md
+            git diff --staged --quiet && break
+            git commit -q -m "転んだ記録 (run#${{ github.run_number }})"
+            git push origin HEAD:main && break
+            sleep 5
+          done
 
       # ★★★次の自分を呼ぶ。
       #   ★買い物の回 → 勉強の回 → 勉強の回 …と自分で繋がっていく。
