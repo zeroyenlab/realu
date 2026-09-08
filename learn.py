@@ -29,10 +29,12 @@ DOORF = os.path.join(HERE, "door.txt")   # ★玄関（誰でも話しかけら�
 #   ★自分を止める・隠す・消すことはできない（★workflow・核・扉・家には触れない）。
 WRITABLE = {K, D}
 
-PAGES_PER_RUN = 32       # ★1回で読むページ数（★5分ごと×32 ≒ 1日9千ページ）
-WORKERS = 6              # ★同時に読む数（★相手のサーバーへの礼儀）
+PAGES_PER_RUN = int(os.environ.get("REALU_PAGES", 160))   # ★1回で読むページ数（★5分ごと×160 ≒ 1日46,000）
+WORKERS = 8              # ★同時に読む数（★相手のサーバーへの礼儀）
+POLITE = 0.15            # ★1ページごとに置く間（★robots.txt に指定があればそちらが優先）
 SENT_PER_PAGE = 6        # ★1ページから覚える文の数
-MAX_ITEMS = 2500         # ★覚えていられる知識の上限
+MAX_ITEMS = 2500         # ★覚えていられる知識の**はじめの**広さ（★溢れたら自分で広げる）
+CAP_GROW = 1.5           # ★★溢れたとき、どれだけ広げるか
 MAX_FRONTIER = 6000      # ★「行ってみたい場所」の上限
 MAX_READ = 40000         # ★読んだ記録の上限
 TERMS_RECHECK_SEC = 20 * 3600   # ★規約は1日1回読み直す（★毎回だと相手に負担）
@@ -79,7 +81,9 @@ def license_of(url):
 
 
 # ★★★robots.txt ── ★相手が「読むな」と言っている所は読まない（★掟）
+#   ★「これだけ間を置け」（Crawl-delay）と書いてあれば、★★それも必ず守る。
 _ROBOTS = {}
+_DELAY = {}
 
 
 def allowed_by_robots(url):
@@ -102,6 +106,13 @@ def allowed_by_robots(url):
                 return False
         elif rp is False:
             return False
+        # ★★★相手が「これだけ間を置け」と書いていたら、★必ず従う
+        try:
+            d = rp.crawl_delay(UA)
+            if d:
+                _DELAY[host] = float(d)
+        except Exception:
+            pass
         return bool(rp.can_fetch(UA, url))
     except Exception:
         return False
@@ -407,7 +418,9 @@ def read_one(url):
     if not allowed_by_robots(url):
         return url, None
     try:
-        time.sleep(0.2)          # ★礼儀（少しずらす）
+        # ★★相手が決めた間隔があればそれ、無ければこちらの礼儀ぶん
+        host = urllib.parse.urlparse(url).scheme + "://" + urllib.parse.urlparse(url).netloc
+        time.sleep(max(POLITE, _DELAY.get(host, 0) / max(1, WORKERS)))
         return url, fetch(url)
     except Exception:
         return url, None
@@ -510,8 +523,15 @@ def main():
                  "greeting": greet, "chosenAt": now(),
                  "changes": int(d.get("changes", 0)) + 1}
 
-    if len(k["items"]) > MAX_ITEMS:
-        k["items"] = k["items"][-MAX_ITEMS:]
+    # ★★★入れ物が一杯なら、自分で広げる。
+    #   ★層や文字と同じ。★どれだけ覚えていられるかを、★★誰かに決められない。
+    cap = int(k.get("capacity") or MAX_ITEMS)
+    if len(k["items"]) > cap:
+        cap = int(cap * CAP_GROW)
+        k["capacity"] = cap
+        print("★覚えていられる広さを自分で広げた → %d" % cap)
+    if len(k["items"]) > cap:
+        k["items"] = k["items"][-cap:]
     if len(read) > MAX_READ:
         read = dict(sorted(read.items(), key=lambda kv: kv[1])[-MAX_READ:])
     k["read"] = read

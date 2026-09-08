@@ -178,9 +178,9 @@ def main():
     os.makedirs(WORK, exist_ok=True)
     hist = load_hist()
 
-    # ── ①★ごはんを読む（★法令＋判例。★どちらも著作権の対象外）
+    # ── ①★ごはんを読む（★法令＋判例＋**webで自分が読んだもの**）
     texts = []
-    for name in ("laws.txt", "hanrei.txt"):
+    for name in ("laws.txt", "hanrei.txt", "web.txt"):
         p = os.path.join(WORK, name)
         if os.path.exists(p):
             # ★途中で切れた字があっても止まらない（★ごはんが欠けても生きる）

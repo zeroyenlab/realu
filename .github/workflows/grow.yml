@@ -88,6 +88,14 @@ jobs:
           echo "$TO" > work/hanrei_next.txt
           echo "★いま持っている判決: $(wc -c < work/hanrei.txt 2>/dev/null || echo 0) バイト"
 
+      # ── ★★★webを読んで、それを**ごはんにする**
+      #   ★5分ごとの方は「見た目と好奇心」。★こっちは学習の材料を作る。
+      #   ★読んだものが重みに入らないなら、それは学んだことにならない。
+      - name: webを読んでごはんにする
+        env:
+          REALU_WEB_PAGES: "1200"
+        run: python -u read_web.py
+
       # ── ②③④★学ぶ・大きくなる・悪ければ戻す
       - name: 学ぶ
         env:
