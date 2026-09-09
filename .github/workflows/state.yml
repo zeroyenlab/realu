@@ -53,6 +53,26 @@ jobs:
       #   ★建て直すのは**デザインを変えた時だけ**（★house.yml は push と手動のみ）。
 
 
+      # ★★★文章生成を定期的に（★2026-09-09 Daito）。
+      #   ★`speak.yml` の cron は「1時間ごと」だが、★実際は**4時間に1回**まで落ちていた
+      #     （★実測: 18:03 → 22:50 → 03:03 → 06:23 → 08:38 → 10:32）。
+      #   ★このリポジトリでは cron が当てにならないので、★★心臓からここも面倒を見る。
+      #   ★5分ごとに見て、★1時間空いていたら呼ぶ。
+      - name: しばらく書いていなければ書かせる
+        if: always()
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          LAST=$(gh api "repos/$GITHUB_REPOSITORY/actions/workflows/speak.yml/runs?per_page=1"                    -q '.workflow_runs[0].run_started_at' 2>/dev/null || echo "")
+          if [ -z "$LAST" ]; then echo "★書いた記録が読めなかった"; exit 0; fi
+          AGE=$(( $(date -u +%s) - $(date -u -d "$LAST" +%s) ))
+          if [ "$AGE" -gt 3300 ]; then
+            echo "★最後に書いてから $((AGE/60)) 分。★書かせる"
+            gh workflow run speak.yml --ref main || true
+          else
+            echo "★$((AGE/60)) 分前に書いたばかり"
+          fi
+
       # ★★★心臓。★これが止まると数字も止まる。
       - name: 次のわたしを呼ぶ
         if: always()
