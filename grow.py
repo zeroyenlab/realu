@@ -1039,6 +1039,26 @@ def main():
         except Exception as e:
             print("★勢いは引き継げなかった（%s）。★冷えた状態から始める。"
                   % type(e).__name__, flush=True)
+
+    # ★★★温め直しの山を、回を追うごとに低くする（2026-09-10）。
+    #   ★減衰が効くようになって初めて出た副作用。
+    #   ★#65 は減衰まで走り切って良い所に着地したのに、
+    #   ★★次の2回が毎回そこを 6e-4 まで加熱して壊し、★1回の予算では戻れなかった
+    #     （実測: その回自身の合成点 2.6374 / 2.6159 vs 残っている 2.5752）。
+    #   ★★層が増えた回は新しい容量に熱が要るので、★そこで山を戻す。
+    PEAK_GAMMA = float(os.environ.get("REALU_PEAK_GAMMA", 0.85))
+    PEAK_FLOOR = float(os.environ.get("REALU_PEAK_FLOOR", 0.3))
+    _since = 0
+    for _r in reversed(hist.get("runs") or []):
+        if _r.get("grew"):
+            break
+        _since += 1
+    _peak = LR * max(PEAK_FLOOR, PEAK_GAMMA ** _since)
+    if lr_now > _peak:
+        print("★温め直しの山を下げた: %.1e → %.1e（成長から %d 回目）"
+              % (lr_now, _peak, _since), flush=True)
+        lr_now = _peak
+
     t0 = t_start          # ★★下ごしらえも予算の内側
 
     # ★★★どれくらい壊れやすくするかは、★★時計ではなく**自分の状態**で決める。
