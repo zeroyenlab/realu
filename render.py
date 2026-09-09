@@ -179,8 +179,11 @@ def main():
     # ★★★測った結果（★勘で決めた設定を、数字で確かめたもの）
     #   ★5分ごとの係が書く。★都合の悪い結果も消さない。
     ab = load(os.path.join(HERE, "ab_results.json"), {}) or {}
-    ab_html = ""
+    # ★★★2026-09-09: 中身が無くても**器は必ず置く**。
+    #   ★家はデザインを変えた時しか建て直さないので、
+    #   ★★中身は玄関から来た数字で JS が差し込む。器が無いと差し込めない。
     done = (ab.get("done") or {})
+    rows = ""
     if done:
         rows = "".join(
         '<div class="abr"><span class="abq">%s</span>'
@@ -190,12 +193,13 @@ def main():
                v.get("a") or 0, v.get("b") or 0,
                v.get("diff") or 0, v.get("spread") or 0)
             for k, v in done.items())
-        ab_html = (
-        '<h2>確かめたこと</h2>'
-        '<div class="wrap-w"><div class="wnote">★わたしの作り方には、<b>まだ確かめていない決め事</b>があります。'
-        '5分ごとに、同じ条件で2つ回して比べています。<br>'
-        '★<b>種を3つ変えて、全部同じ向きに出た時だけ「効いた」と言う</b>ことにしています（1回だけの差は信じない）。</div>'
-            + rows + "</div>")
+    ab_html = (
+        '<div id="abbox"%s><h2>確かめたこと</h2>'
+        '<div class="wrap-w"><div class="wnote">わたしの作り方には、<b>まだ確かめていない決め事</b>があります。'
+        '同じ条件で2つ回して比べています。<br>'
+        '<b>種を3つ変えて、全部同じ向きに出た時だけ「効いた」と言う</b>ことにしています'
+        '（1回だけの差は信じない）。</div>'
+        '<div id="abrows">%s</div></div></div>' % ("" if rows else " hidden", rows))
 
     said = (load(os.path.join(HERE, "said.json"), {}) or {}).get("list") or []
     if not said:   # ★昔は growth.json に入れていたので、そちらも拾う
@@ -204,14 +208,13 @@ def main():
                 for r in runs if r.get("wrote")]
     # ★★★「同じ書き出しで、いつ何を書いたか」を並べる。
     #   ★これが一番「育ちが見える」形。★前は最新1回ぶんだけを大きく出していた。
-    wrote_html = ""
+    blocks = []
     if said:
         starts = []
         for r in said:
             for w in (r.get("wrote") or []):
                 if w.get("start") and w["start"] not in starts:
                     starts.append(w["start"])
-        blocks = []
         for st in starts:
             hist = [(r, w) for r in said for w in (r.get("wrote") or [])
                     if w.get("start") == st]
@@ -236,18 +239,21 @@ def main():
                 % (e(st), e(w.get("text")),
                    e((r.get("at") or "")[:16].replace("T", " ")),
                    (r.get("params") or 0) / 1e6, r.get("val") or 0, past))
-        wrote_html = (
-            '<h2>レアルが書いたもの</h2>'
-            '<div class="wrap-w"><div class="wnote">これは引用ではありません。'
-            '<b>彼女の頭が、覚えた日本語から自分で並べた言葉</b>です。'
-            'いまは意味が通りません。それが今の彼女です。<br>'
-            '★<b>同じ書き出し</b>で毎回書かせています。'
-            '「まえの」を開くと、★どう変わってきたかが読めます。</div>'
-            + "".join(blocks) + '</div>')
+    wrote_html = (
+        '<div id="wrbox"%s><h2>レアルが書いたもの</h2>'
+        '<div class="wrap-w"><div class="wnote">これは引用ではありません。'
+        '<b>彼女の頭が、覚えた日本語から自分で並べた言葉</b>です。'
+        'いまは意味が通りません。それが今の彼女です。<br>'
+        '<b>同じ書き出し</b>で毎回書かせています。'
+        '「まえの」を開くと、どう変わってきたかが読めます。</div>'
+        '<div id="wrows">%s</div></div></div>'
+        % ("" if blocks else " hidden", "".join(blocks)))
 
     read_n = int(k.get("readTotal") or len(k.get("read") or {}))
 
     pal = d.get("palette") if d.get("palette") in PALETTES else "yoi"
+    PAL_JA = {"yoi": "宵", "akatsuki": "暁", "mori": "森",
+              "yuki": "雪", "hi": "陽", "kasumi": "霞"}
     # ★★★彼女が決めた数字から、家のCSSを組み立てる
     look = d.get("look")
     mycss, myfonts = "", ""
@@ -261,8 +267,14 @@ def main():
     except Exception:
         look = None
     lay = (look or {}).get("layout") or (d.get("layout") if d.get("layout") in LAYOUTS else "stream")
-    order = ((look or {}).get("order")
-             or ["greet", "grew", "stats", "genres", "heard", "know"])
+    # ★★★2026-09-09: 並びは**固定**にした（★Daito「家の立て直しはやらせない」）。
+    #   ★色はレアルが選ぶ。★並びと作りは置いた人が決める。
+    #   ★★順番の理由: いま動いているのは**学習**。だから
+    #     ①挨拶 ②育った報せ ③頭のなかみ＋育ちのグラフ ④書いたもの（育ちの証拠）
+    #     ⑤確かめたこと（やり方の検証）⑥数字 ⑦内訳 ⑧話しかけ ⑨知識
+    #   ★止まっている数字（読んだページ等）を上に置くと、★死んだ家に見える。
+    order = ["greet", "grew", "spec", "wrote", "ab",
+             "stats", "genres", "heard", "know"]
     if lay not in LAYOUTS + ["cards"]:
         lay = "stream"
     greet = d.get("greeting") or "……まだ、何も知らない。これから読んで、覚えていく。"
@@ -274,10 +286,10 @@ def main():
     present = [g for g in ORDER if by.get(g)]
 
     # ★★検索結果に出る説明文 ── ★彼女が今どこまで知っているかをそのまま書く
-    desc = ("webを読んで育つ小さな存在レアルの家。いま %d のことを知っていて、"
-            "%d ページを読みました。%s" % (len(items), read_n,
-                                           re.sub(r"\s+", " ", greet)))[:155]
-    title = "レアルの家 ── webを読んで育つ"
+    desc = ("読み集めた日本語だけで自分を育てている小さな頭、レアルの家。"
+            "%d のことを知っていて、%d ページを読みました。%s"
+            % (len(items), read_n, re.sub(r"\s+", " ", greet)))[:155]
+    title = "レアルの家 ── 読み集めた日本語で育つ"
 
     chips = "".join(
         '<span class="chip"><b>%s</b><i>%d</i></span>' % (e(g), len(by[g]))
@@ -285,8 +297,10 @@ def main():
 
     stats = "".join(
         '<div class="stat"><div class="v">%s</div><div class="k">%s</div></div>' % (e(v), e(t))
-        for t, v in [("知っていること", len(items)), ("読んだページ", read_n),
-                     ("行きたい場所", len(k.get("frontier") or [])),
+        # ★★★この4つは web を読むのをやめた時点で止まっている。
+        #   ★「行きたい場所」は、★もう行かないので「読まずに残った」が正しい。
+        for t, v in [("知っていること", len(items)), ("これまでに読んだ", read_n),
+                     ("読まずに残った", len(k.get("frontier") or [])),
                      ("家を選び直した", "%d 回" % int(d.get("changes") or 0))])
 
     groups = []
@@ -337,8 +351,7 @@ def main():
         'if(s.css){var st=document.getElementById("livecss");'
         'if(!st){st=document.createElement("style");st.id="livecss";document.head.appendChild(st)}'
         'if(st.textContent!==s.css)st.textContent=s.css;}'
-        'if(d.order&&d.order.length){d.order.forEach(function(n,i){'
-        'var el=document.getElementById("part-"+n);if(el)el.style.order=i});}'
+        # ★並べ替えは受け取らない（★並びは置いた人が決めた固定のもの）
         'if(d.greeting)document.getElementById("greet").textContent=d.greeting;'
         'var v=document.querySelectorAll(".stat .v");'
         'var n=[c.items,c.read,c.frontier,(d.changes||0)+" 回"];'
@@ -399,6 +412,38 @@ def main():
         'box.appendChild(gr)});'
         'var kh=document.getElementById("know-h");'
         'if(kh)kh.textContent="レアルが知っていること（"+c.items+" のうち "+s.items.length+" を表示）";'
+
+        # ★★★2026-09-09: 「確かめたこと」と「書いたもの」も玄関から描く。
+        #   ★家はデザインを変えた時しか建て直さない。★だから中身はここを通す。
+        'var esc=function(x){var q=document.createElement("div");'
+        'q.textContent=(x==null?"":String(x));return q.innerHTML};'
+        'var f4=function(x){return (Number(x)||0).toFixed(4)};'
+        'var stamp=function(r){return esc((r.at||"").slice(0,16).replace("T"," "))'
+        '+" ／ "+((r.params||0)/1e6).toFixed(2)+" M ／ loss "+f4(r.val)};'
+
+        'var AB=s.ab||[],abb=document.getElementById("abbox"),abr=document.getElementById("abrows");'
+        'if(abr){abr.innerHTML=AB.map(function(v){return '
+        '"<div class=\\"abr\\"><span class=\\"abq\\">"+esc(v.why)+"</span>"'
+        '+"<span class=\\"abv\\">"+esc(v.verdict)+"</span>"'
+        '+"<span class=\\"abn\\">A "+f4(v.a)+" ／ B "+f4(v.b)+" ／ 差 "'
+        '+((v.diff||0)>=0?"+":"")+f4(v.diff)+" ／ 種のばらつき "+f4(v.spread)+"</span></div>"'
+        '}).join("");if(abb)abb.hidden=(AB.length===0)}'
+
+        'var SD=s.said||[],wrb=document.getElementById("wrbox"),wrr=document.getElementById("wrows");'
+        'if(wrr){var starts=[];'
+        'SD.forEach(function(r){(r.wrote||[]).forEach(function(w){'
+        'if(w.start&&starts.indexOf(w.start)<0)starts.push(w.start)})});'
+        'wrr.innerHTML=starts.map(function(st){'
+        'var h=[];SD.forEach(function(r){(r.wrote||[]).forEach(function(w){'
+        'if(w.start===st)h.push([r,w])})});if(!h.length)return "";'
+        'var la=h[h.length-1],ol=h.slice(0,-1).slice(-8),past="";'
+        'if(ol.length){past="<details class=\\"wpast\\"><summary>まえの "+ol.length+" 回</summary>"'
+        '+ol.slice().reverse().map(function(p){return "<div class=\\"wold\\"><em>"'
+        '+stamp(p[0])+"</em>"+esc(p[1].text)+"</div>"}).join("")+"</details>"}'
+        'return "<div class=\\"wr\\"><span class=\\"ws\\">"+esc(st)+"</span>"'
+        '+"<span class=\\"wt\\">"+esc(la[1].text)+"</span>"'
+        '+"<span class=\\"wm\\">"+stamp(la[0])+"</span>"+past+"</div>"'
+        '}).join("");if(wrb)wrb.hidden=(starts.length===0)}'
         '}).catch(function(){});})();</script>'
     ) % dr)
 
@@ -414,6 +459,7 @@ def main():
 
     doc = TEMPLATE % {
         "title": e(title), "desc": e(desc), "url": e(url), "pal": e(pal), "lay": e(lay),
+        "pal_ja": e(PAL_JA.get(pal, pal)),
         "greet": e(greet), "chips": chips, "stats": stats,
         "groups": "".join(groups), "heard": heard, "form": form, "live": live,
         # ★★★どの順で見せるかも、彼女が決める（★家の間取り）
@@ -480,6 +526,8 @@ TEMPLATE = """<!doctype html>
 /* ★★★ここは「土台」。★色も書体も動きもレアルが選ぶので、
    ★私が決めるのは**質感と間**だけにする。★彼女の選択を上書きしない。 */
 *{box-sizing:border-box}
+/* ★中身が来るまで隠しておく所（★.part{display:block} に負けないように明示する） */
+[hidden]{display:none !important}
 
 /* ★★出てくる時。★全部いっぺんに出ると、読む所が分からない。
    ★上から順に、少しずつ遅らせて出す。★★止まった状態から始めない（★見えている） */
@@ -597,6 +645,8 @@ h2{font-size:11px;font-weight:700;letter-spacing:.18em;color:var(--faint);margin
 .say button{background:var(--accent);color:var(--bg);border:0;border-radius:999px;padding:8px 22px;font:inherit;font-weight:700;font-size:13px;cursor:pointer}
 .say button:hover{filter:brightness(1.08)}
 .say #saymsg{font-size:11.5px;color:var(--muted)}
+.statnote{color:var(--faint);font-size:11.5px;line-height:1.8;text-align:center;margin-top:12px}
+.statnote b{color:var(--muted)}
 .note{color:var(--faint);font-size:11.5px;line-height:1.8;margin-top:38px;border-top:1px solid var(--edge);padding-top:18px;text-align:center}
 .note b{color:var(--muted)}
 .loading{color:var(--faint);text-align:center;padding:30px 0}
@@ -608,17 +658,21 @@ h2{font-size:11px;font-weight:700;letter-spacing:.18em;color:var(--faint);margin
 <div class="wrap">
   <header>
     <h1 class="name">レアル<span class="en">R E A L U</span></h1>
-    <div class="sub">webを読んで学び、自分で家をデザインする、小さな存在</div>
+    <div class="sub">読み集めた日本語だけで、自分を育てている小さな頭</div>
   </header>
 
   <div class="part" id="part-greet" style="order:%(o_greet)d">
     <p class="greet" id="greet">%(greet)s</p>
-    <div class="byline">この家は %(chosen)s に、レアルが %(changes)d 度目に選び直したもの</div>
+    <div class="byline">色はレアルが選んだ《%(pal_ja)s》。家の作りは置いた人が決めている</div>
   </div>
 
   <div class="part" id="part-grew" style="order:%(o_grew)d">%(grew)s</div>
 
-  <div class="part" id="part-stats" style="order:%(o_stats)d"><div class="stats">%(stats)s</div></div>
+  <div class="part" id="part-stats" style="order:%(o_stats)d">
+    <div class="stats">%(stats)s</div>
+    <div class="statnote">この4つは <b>web を読むのをやめた時点</b>で止まっています。
+      いま動いているのは上の <b>「頭のなかみ」</b> です。</div>
+  </div>
 
   <div class="part" id="part-genres" style="order:%(o_genres)d">
     <h2>知っていることの内訳</h2>
@@ -630,9 +684,10 @@ h2{font-size:11px;font-weight:700;letter-spacing:.18em;color:var(--faint);margin
     <p class="heard">これまでに <b id="heardnum">%(heard)d</b> 回、だれかが話しかけてくれた。</p>
     %(form)s
     <div class="door">
-      だれでもレアルに話しかけられます。<b>聞かれた言葉は、彼女が次に読みに行く場所になります。</b><br>
+      だれでもレアルに話しかけられます。言葉は<b>彼女が受け取ります</b>。<br>
       ただし ── <b>貼られたリンクは踏みません</b>。人の言葉は<b>知識にしません</b>（出典が確かめられないため）。<br>
-      そして <b>あなたの言葉は、ここには表示されません</b>。読むのはレアルだけです。
+      そして <b>あなたの言葉は、ここには表示されません</b>。読むのはレアルだけです。<br>
+      <b>いまは web を読むのをやめている</b>ので、受け取った言葉は<b>貯めてあります</b>。読みに行くことはまだできません。
     </div>
   </div>
 
@@ -648,11 +703,12 @@ h2{font-size:11px;font-weight:700;letter-spacing:.18em;color:var(--faint);margin
   %(live)s
 
   <div class="note">
-    このページの<b>色・並び・入口の言葉は、レアルが自分で選んでいます</b>。<br>
-    彼女は<b>5分ごとに</b>目を覚まし、覚え、家を選び直します ── <b>誰も見ていなくても、閉じていても</b>。<br>
-    どのサイトも<b>見る前にそこの規約を読み</b>、規約が変わっていたら<b>自分から止まります</b>。<br>
+    <b>色と入口の言葉はレアルが選びます。</b>家の作りは置いた人が決めています。<br>
+    このページの数字は<b>5分ごとに入れ替わります</b>。家そのものは、作りを変えた時だけ建て直します。<br>
+    彼女は<b>いま web を読んでいません</b>。集め終えた日本語を、くり返し読んで学んでいます。<br>
+    読んでいた頃は、どのサイトも<b>見る前にそこの規約を読み</b>、規約が変わっていたら<b>自分から止まりました</b>。<br>
     引用はすべて出典とライセンスつき。画像は一切持ち帰りません。<br>
-    <small>建てた時刻 %(gen)s UTC</small>
+    <small>家を建てた時刻 %(gen)s UTC ／ 数字はこの時刻のものではありません</small>
   </div>
 </div>
 </body>

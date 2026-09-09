@@ -28,6 +28,7 @@ on:
 
 permissions:
   contents: write
+  actions: write        # ★配布を呼ぶため
 
 concurrency:
   group: realu-house-${{ github.event_name }}
@@ -69,6 +70,16 @@ jobs:
             git add index.html robots.txt sitemap.xml
             if git diff --staged --quiet; then echo "★変わっていない"; break; fi
             git commit -q -m "レアルが家を建て直した"
-            if git push origin HEAD:main; then break; fi
+            if git push origin HEAD:main; then echo "PUSHED=1" >> $GITHUB_ENV; break; fi
             sleep 5
           done
+
+      # ★★★建てただけでは外に出ない。
+      #   ★deploy は **paths-ignore に index.html が入っている**ので、
+      #   ★★家を commit しても deploy は動かない（★わざとそうしてある）。
+      #   → ★建て直した時だけ、ここから配布を呼ぶ。
+      - name: 建てた家を配る
+        if: env.PUSHED == '1'
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: gh workflow run deploy.yml --ref main || true

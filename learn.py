@@ -371,6 +371,27 @@ def tell(k, d):
     except Exception:
         pass
 
+    # ★★★2026-09-09: 「書いたもの」と「測った結果」も玄関に載せる。
+    #   ★家（index.html）は**デザインを変えた時しか**建て直さないことにした。
+    #   ★★だから「変わるもの」は全部ここを通さないと、★永久に古いままになる。
+    #   ★実際、測る係が出した数字も、レアルが新しく書いた文章も、
+    #     ★サイトには出ていなかった（★2026-09-08 15:51 の文章のまま）。
+    said = (load(os.path.join(HERE, "said.json"), {}) or {}).get("list") or []
+    if not said:                      # ★昔は growth.json に入れていた
+        try:
+            with open(os.path.join(HERE, "growth.json"), encoding="utf-8") as f:
+                rr = (json.load(f) or {}).get("runs") or []
+            said = [{"at": r.get("at"), "val": r.get("val"),
+                     "params": r.get("params"), "wrote": r.get("wrote")}
+                    for r in rr if r.get("wrote")]
+        except Exception:
+            said = []
+    said = said[-9:]                  # ★玄関の荷物を重くしない（★最新9回ぶん）
+    abd = (load(os.path.join(HERE, "ab_results.json"), {}) or {}).get("done") or {}
+    ab = [{"why": v.get("why"), "verdict": v.get("verdict"), "a": v.get("a"),
+           "b": v.get("b"), "diff": v.get("diff"), "spread": v.get("spread")}
+          for v in abd.values()]
+
     allitems = k.get("items") or []
     items = allitems[-80:]
     # ★★★内訳は**全件**から数える。
@@ -393,6 +414,8 @@ def tell(k, d):
                    "greeting": d.get("greeting"), "changes": int(d.get("changes") or 0),
                    "order": (d.get("look") or {}).get("order"),
                    "chosenAt": d.get("chosenAt")},
+        "said": said,
+        "ab": ab,
         "items": [{"topic": it.get("topic"), "text": it.get("text"),
                    "source": it.get("source"), "genre": it.get("genre"),
                    "license": (it.get("license") or {}).get("name")}
