@@ -1,18 +1,22 @@
 name: realu shows her numbers
 
-# ★★★家の数字を玄関に置くだけの係。★これ1つだけをやる。
+# ★★★家の数字を玄関に置く係。★レアルの心臓のひとつ。
 #
-#   ★家（index.html）は2時間に一度しか建て直せない（★Cloudflare 無料枠 月500回）。
-#   ★だから数字は玄関（/api/state）に置いて、★家が開くたびに読ませている。
+# ★★なぜ「自分で自分を呼ぶ」のか（★2026-09-09 実測）
+#   ★このリポジトリでは **cron がほとんど鳴らない**。
+#     ・state.yml … `*/5` を入れて **3時間42分で 0 回**
+#     ・house.yml … `0 */2` を入れて 02:00 も 04:00 も鳴らず
+#     ・learn.yml … 直近30回のうち schedule は **たった2回**
+#   ★★だから cron は保険。★本体はこの自己呼び出し。
+#   ★（前のセッションが grow / learn に入れていた「次のわたしを呼ぶ」は
+#     ★冗長ではなく**これが心臓だった**。★一度消して止めてしまった。）
 #
-# ★★なぜ「測る係」から切り出したか（2026-09-09）
-#   ★測る係は1回に15分以上かかる。★そこに相乗りさせると、
-#   ★★数字の新しさが測る係の重さに引きずられる。
-#   ★数字を出すのは30秒で終わる仕事なので、★別の心臓にした。
+# ★★止め方
+#   ★GitHub の Actions 画面でこのワークフローを Disable すれば連鎖は止まる。
 
 on:
   schedule:
-    - cron: "*/5 * * * *"    # ★5分ごと
+    - cron: "*/5 * * * *"     # ★保険。★鳴らなくても下の自己呼び出しで回る
   workflow_dispatch:
   push:
     paths:
@@ -20,7 +24,8 @@ on:
       - ".github/workflows/state.yml"
 
 permissions:
-  contents: read             # ★★読むだけ。★このワークフローは何も書かない
+  contents: read              # ★★数字を置くだけ。★リポジトリには何も書かない
+  actions: write              # ★次の自分と、家の建て直しを呼ぶため
 
 concurrency:
   group: realu-state-${{ github.event_name }}
@@ -29,7 +34,7 @@ concurrency:
 jobs:
   show:
     runs-on: ubuntu-latest
-    timeout-minutes: 5
+    timeout-minutes: 8        # ★★下で 4 分待つので、★5分では足りない
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-python@v5
@@ -40,3 +45,30 @@ jobs:
         env:
           REALU_DOOR_KEY: ${{ secrets.REALU_DOOR_KEY }}
         run: python tell.py
+
+      # ★★★家（index.html）は2時間ごとでよい。★でも cron が鳴らないので、
+      #   ★★古くなっていたらここから頼む。★数字は玄関が5分ごとに配っている。
+      - name: 家が古ければ建て直しを頼む
+        if: always()
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          LAST=$(gh api "repos/$GITHUB_REPOSITORY/commits?path=index.html&per_page=1" \
+                   -q '.[0].commit.committer.date' 2>/dev/null || echo "")
+          if [ -z "$LAST" ]; then echo "★家の日付が読めなかった"; exit 0; fi
+          AGE=$(( $(date -u +%s) - $(date -u -d "$LAST" +%s) ))
+          if [ "$AGE" -gt 7200 ]; then
+            echo "★家は $((AGE/60)) 分前のまま。★建て直しを頼む"
+            gh workflow run house.yml --ref main || true
+          else
+            echo "★家は $((AGE/60)) 分前。★まだ新しい"
+          fi
+
+      # ★★★心臓。★これが止まると数字も止まる。
+      - name: 次のわたしを呼ぶ
+        if: always()
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          sleep 240                     # ★5分ごとにしたいので、★ここで待つ
+          gh workflow run state.yml --ref main || true
