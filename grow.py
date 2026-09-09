@@ -140,6 +140,16 @@ GROW_PATIENCE = 5      # ★この回数ぶん良くならなかったら「頭�
 GROW_MIN_LOSS = 1.05   # ★まだ下手なうちだけ大きくする
 OVERFIT_GAP = float(os.environ.get("REALU_OVERFIT_GAP", 0.15))
 
+# ★★★五十音の座標を使うか（★kana.py）。★0 で切れる
+KANA_ON = os.environ.get("REALU_KANA", "1") != "0"
+try:
+    import kana as _kana
+    KANA_N = _kana.N * 2          # ★全体の平均19 ＋ 最後の1文字19
+except Exception:
+    _kana = None
+    KANA_N = 38
+    KANA_ON = False
+
 # ★★★仕上げ（★2026-09-09 Daito「あえて過学習させるのはどうなん？」）
 #   ★いまは 12.93M の頭を 8.5億トークンに薄く広げている（★1パラメータ 65.8 トークン）。
 #   ★★「全部を浅く」より「狙う所を深く」の方が、★小さい頭では効くはず。
@@ -322,6 +332,12 @@ class Realu(nn.Module):
         self.nf = RMSNorm(d)
         self.head = nn.Linear(d, vocab, bias=False)
         self.head.weight = self.tok.weight
+        # ★★★五十音の座標（kana.py）。★行×段を埋め込みに足す。
+        #   ★ゼロで始めるので、★最初は今と完全に同じ振る舞い（★層を足す時と同じ手）。
+        #   ★効かなければゼロのまま残るだけ。★壊れようがない。
+        self.kana_w = nn.Parameter(torch.zeros(KANA_N, d))
+        self.register_buffer("kana_feat", torch.zeros(vocab, KANA_N), persistent=False)
+        self.has_kana = False
         # ★RoPE は学習より長い文にも伸ばせるので、余裕をもって作っておく
         cos, sin = rope_cache(ctx * 4, d // h)
         self.register_buffer("rc", cos, persistent=False)
@@ -334,6 +350,23 @@ class Realu(nn.Module):
             nn.init.normal_(m.weight, std=0.02)
             if isinstance(m, nn.Linear) and m.bias is not None:
                 nn.init.zeros_(m.bias)
+
+    def set_kana(self, feat):
+        """★語彙ぶんの座標を入れる。★語彙が育ったら入れ直す。"""
+        f = torch.as_tensor(feat, dtype=self.tok.weight.dtype,
+                            device=self.tok.weight.device)
+        if f.shape[0] != self.tok.weight.shape[0] or f.shape[1] != KANA_N:
+            self.has_kana = False
+            return False
+        self.kana_feat = f
+        self.has_kana = bool(f.abs().sum() > 0)
+        return self.has_kana
+
+    def emb_table(self):
+        """★入口と出口で共有する表。★座標ぶんを足したもの。"""
+        if not self.has_kana:
+            return self.tok.weight
+        return self.tok.weight + self.kana_feat @ self.kana_w
 
     def grow(self):
         blk = Block(self.d, self.h, zero_init=True).to(next(self.parameters()).device)
@@ -365,13 +398,14 @@ class Realu(nn.Module):
         return self.loops
 
     def forward(self, idx, targets=None, caches=None, pos=0):
-        x = self.tok(idx)
+        E = self.emb_table()
+        x = E[idx]
         for r in range(self.loops):
             x = x + self.loop_emb.weight[r]     # ★何周目かを教える
             for i, blk in enumerate(self.blocks):
                 c = caches[i] if caches is not None else None
                 x = blk(x, self.rc, self.rs, c, pos)
-        logits = self.head(self.nf(x))
+        logits = F.linear(self.nf(x), E)
         if targets is None:
             return logits, None
         return logits, F.cross_entropy(logits.view(-1, logits.size(-1)), targets.reshape(-1))
@@ -733,7 +767,12 @@ def main():
                  else CharVocab(itos=st["itos"]))
         model = Realu(len(vocab), d=st["d"], h=st["h"], n=st["layers"],
                       ctx=st["ctx"], loops=st.get("loops", 1))
-        model.load_state_dict(st["model"])
+        # ★★古い頭には kana_w が無い。★strict=False で読んで、★無ければゼロのまま。
+        #   ★ゼロ ＝ 座標を使わないのと同じなので、★読み込みで振る舞いは変わらない。
+        _miss, _extra = model.load_state_dict(st["model"], strict=False)
+        _miss = [k for k in _miss if "kana" not in k]
+        if _miss or _extra:
+            print("★頭の鍵が食い違った（足りない %s / 余分 %s）" % (_miss, list(_extra)), flush=True)
         model = model.to(DEV)
         prev_val = st.get("val")
         # ★★★ごはんの配合を変えた回は、★**巻き戻さない**。
@@ -791,6 +830,27 @@ def main():
         model.learn_chars(len(new_chars))
         print("★はじめて見た字を %d 個おぼえた（語彙 %d）：%s"
               % (len(new_chars), len(vocab), "".join(new_chars[:20])), flush=True)
+
+    # ★★★五十音の座標を差し込む（★語彙が確定したここで一度だけ）。
+    #   ★トークンを文字に戻して、★行×段の座標を作る。
+    #   ★ゼロ初期化なので、★差し込んだ瞬間は今と同じ振る舞い。
+    if KANA_ON and _kana is not None:
+        try:
+            feat = []
+            for i in range(len(vocab)):
+                try:
+                    sdec = vocab.decode([i])
+                except Exception:
+                    sdec = ""
+                feat.append(_kana.token_vec(sdec or ""))
+            if model.set_kana(feat):
+                nz = sum(1 for v in feat if any(v))
+                print("★五十音の座標を入れた（%d / %d トークンに座標がある）"
+                      % (nz, len(vocab)), flush=True)
+            else:
+                print("★五十音の座標は入らなかった（★形が合わない）", flush=True)
+        except Exception as e:
+            print("★五十音の座標は用意できなかった（%s）" % type(e).__name__, flush=True)
 
     # ★★★物差しは**一度作ったら変えない**。
     #   ★毎回ちがう文で測ると、「前より良くなったか」が意味を失う。
