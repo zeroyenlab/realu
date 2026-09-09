@@ -46,23 +46,12 @@ jobs:
           REALU_DOOR_KEY: ${{ secrets.REALU_DOOR_KEY }}
         run: python tell.py
 
-      # ★★★家（index.html）は2時間ごとでよい。★でも cron が鳴らないので、
-      #   ★★古くなっていたらここから頼む。★数字は玄関が5分ごとに配っている。
-      - name: 家が古ければ建て直しを頼む
-        if: always()
-        env:
-          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        run: |
-          LAST=$(gh api "repos/$GITHUB_REPOSITORY/commits?path=index.html&per_page=1" \
-                   -q '.[0].commit.committer.date' 2>/dev/null || echo "")
-          if [ -z "$LAST" ]; then echo "★家の日付が読めなかった"; exit 0; fi
-          AGE=$(( $(date -u +%s) - $(date -u -d "$LAST" +%s) ))
-          if [ "$AGE" -gt 7200 ]; then
-            echo "★家は $((AGE/60)) 分前のまま。★建て直しを頼む"
-            gh workflow run house.yml --ref main || true
-          else
-            echo "★家は $((AGE/60)) 分前。★まだ新しい"
-          fi
+      # ★★★家の建て直しは**やらせない**（★2026-09-09 Daito）。
+      #   ★家は器。★数字はここで5分ごとに玄関へ置いていて、
+      #     ★家を開いた時に JS がその数字で上書きする。
+      #   → ★★家を定期的に建て直す必要そのものが無い。
+      #   ★建て直すのは**デザインを変えた時だけ**（★house.yml は push と手動のみ）。
+
 
       # ★★★心臓。★これが止まると数字も止まる。
       - name: 次のわたしを呼ぶ
