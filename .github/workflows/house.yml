@@ -1,0 +1,73 @@
+name: realu redraws her house
+
+# ★★★家（index.html）を建て直す係。
+#
+# ★★なぜ要るか（2026-09-09 に見つけた）
+#   ★`render.py` を呼ぶワークフローが**1つも無かった**。
+#   ★★`fd63119` で5分ごとの係を「測る係」に作り替えたとき、
+#     ★玄関の更新（learn.py の tell）と一緒に、★**家を建て直す所も落ちていた**。
+#   ★結果、★index.html は **2026-09-08 19:25Z で凍結**していた（★`5739137` が最後）。
+#
+# ★★deploy との関係
+#   ★deploy は**コミット済みの index.html を配るだけ**（★render.py は呼ばない）。
+#   ★deploy は毎時 :07（2時間ごと）。★こちらは :00 に建てて、★7分後に配られる。
+#
+# ★★数字そのものは玄関（/api/state）が5分ごとに配るので、★家の建て直しは2時間で足りる。
+#   ★ここが要るのは「★出し方そのものを変えた時」（★項目が増えた・文言が変わった等）。
+
+on:
+  schedule:
+    - cron: "0 */2 * * *"
+  workflow_dispatch:
+  push:
+    paths:                      # ★出し方を変えたら、その場で建て直す
+      - "render.py"
+      - "design.py"
+      - ".github/workflows/house.yml"
+
+permissions:
+  contents: write
+
+concurrency:
+  group: realu-house-${{ github.event_name }}
+  cancel-in-progress: false
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: 家を建てる
+        run: python render.py
+
+      # ★★★家が空だったら**残さない**（★自分を消せないようにするための番人）
+      #   ★deploy 側にも同じ番人がいるが、★壊れたものを commit しない方が早い。
+      - name: 家が壊れていないか見る
+        run: |
+          grep -q "レアル" index.html
+          grep -q "貼られたリンクは踏みません" index.html
+          test "$(wc -c < index.html)" -gt 3000
+          echo "家は無事"
+
+      - name: 建てた家を残す
+        run: |
+          git config user.name  "realu"
+          git config user.email "realu@users.noreply.github.com"
+          mkdir -p /tmp/house
+          cp index.html /tmp/house/
+          [ -f robots.txt ]  && cp robots.txt  /tmp/house/ || true
+          [ -f sitemap.xml ] && cp sitemap.xml /tmp/house/ || true
+          for i in 1 2 3; do
+            git fetch origin main && git reset --hard origin/main
+            cp /tmp/house/* .
+            git add index.html robots.txt sitemap.xml
+            if git diff --staged --quiet; then echo "★変わっていない"; break; fi
+            git commit -q -m "レアルが家を建て直した"
+            if git push origin HEAD:main; then break; fi
+            sleep 5
+          done
