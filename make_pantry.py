@@ -56,11 +56,19 @@ DUP_MAX = int(os.environ.get("REALU_DUP_MAX", 3))
 #     ★くり返す所は**重複を数えない**（★わざと増やしているので DUP_MAX に殺させない）。
 #     ★★ただし物差しの行は**何周目でも**外す（★答えを見せない）。
 #
-#   ★見込み: 国会 150M / 会話 13M×4=52M / 他 559.7M ＝ 合計 約762M
-#            → ★国会 19.7% / ★会話 6.8%
+#   ★★★第一歩は**物差しに合わせる所まで**（2026-09-09 Daito「少しずつ変更していく形でもいい」）。
+#     ★物差し（凍結した held-out）の配合は ★国会 30.55% / 会話 2.58%。
+#     ★学ぶ側が国会 47% では、★**測っている物と食べている物がズレている**。
+#     → ★まず国会を物差しと同じ 30% まで下げる。★ここは「良くなる」と予想できる一歩。
+#     ★会話は物差しの 2.58% を超えて 4.7% まで上げる（★ここは点数でなく**人格**の話）。
+#
+#   ★見込み: 国会 250M / 会話 13M×3=39M / 他 546.7M ＝ 合計 約836M
+#            → ★国会 29.9% / ★会話 4.7%
+#   ★★次の一歩を踏むときは、★ここの数字だけ動かせばいい。
+#     ★配合を変えた回は grow.py が巻き戻しを止める（★mixTag）ので、★何度でも動かせる。
 MIX = {
-    "kokkai.txt": {"cap": int(os.environ.get("REALU_CAP_KOKKAI", 150_000_000))},
-    "talk.txt":   {"repeat": int(os.environ.get("REALU_REP_TALK", 4))},
+    "kokkai.txt": {"cap": int(os.environ.get("REALU_CAP_KOKKAI", 250_000_000))},
+    "talk.txt":   {"repeat": int(os.environ.get("REALU_REP_TALK", 3))},
 }
 VAL_PER_MIL = int(os.environ.get("REALU_VAL_PERMIL", 3))
 SRC_MARK = re.compile("^<(web|本|会話) [^>]*>$")

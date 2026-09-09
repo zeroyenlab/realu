@@ -91,13 +91,10 @@ DUP_MAX = int(os.environ.get("REALU_DUP_MAX", 3))   # ★同じ行を食べて�
 #       → 「前より悪くなったから前のわたしに戻す」が、★別の問題の点数を比べていた。
 #         ★これは育ちを黙って捨てる。★一番たちの悪い壊れ方。
 #   ★★直し方: ①ごはんの種類に関係なく散らばるよう選ぶ ②一度決めたら**二度と変えない**
-# ★★★同じ札どうしでだけ点数を比べる。
-#   ★2026-09-09: ごはんの配合を変えた（国会 47%→約20% / 会話 1.2%→約7%）。
-#   ★物差しの行そのものは**変えていない**（★val.txt.gz は凍結）。
-#   ★★だが学ぶ中身が変わった回に「前より悪い」と判定させると、
-#     ★★巻き戻しても**配合は戻らない**ので、★永久に巻き戻し続けて学習が止まる。
-#   → ★札を変えて、★変えた直後の1回だけ比較を飛ばす。
-VAL_TAG = "holdout-v1/mix-v2"
+# ★★★物差しの行は**ずっと同じ**（★val.txt.gz は凍結）。★だから札も変えない。
+#   ★点数はいつでも比べられる ＝ ★グラフが1本につながる。
+#   ★★配合を変えた回の扱いは `mixTag` で別に見る（★「巻き戻し」の所）。
+VAL_TAG = "fixed-holdout-v1"
 val_tag = VAL_TAG          # ★★逃げ道に入ったら書き換える          # ★測り方が変わったら、ここを変える（★昔の点数と比べなくなる）
 VAL_PER_MIL = int(os.environ.get("REALU_VAL_PERMIL", 3))   # ★千行に3行＝0.3%
 
@@ -433,9 +430,12 @@ class Pantry:
         #   ★棚を作った時に数えた数を meta.json から持ち歩く。
         #   ★古い棚には入っていない（★次に棚を作り直した時から入る）。
         self.chars = 0
+        self.mix = None          # ★★どの配合で作られた棚か
         try:
             with open(os.path.join(d, "meta.json"), encoding="utf-8") as f:
-                self.chars = int((json.load(f) or {}).get("chars") or 0)
+                m = json.load(f) or {}
+            self.chars = int(m.get("chars") or 0)
+            self.mix = m.get("mix")
         except Exception:
             pass
 
@@ -588,6 +588,10 @@ def main():
                   % type(e).__name__, flush=True)
             pantry = None
     val_tag = VAL_TAG      # ★逃げ道に入ったら書き換える（★別の物差しと比べないため）
+    # ★★★いまのごはんの配合を短い札にする。★前の回と違えば「配合が変わった回」。
+    mix_tag = json.dumps(getattr(pantry, "mix", None) or {}, sort_keys=True,
+                         ensure_ascii=False)[:200]
+    mix_changed = False
 
     # ── ①★ごはんを読む（★法令＋判例＋**webで自分が読んだもの**）
     if pantry is None:
@@ -699,6 +703,13 @@ def main():
         model.load_state_dict(st["model"])
         model = model.to(DEV)
         prev_val = st.get("val")
+        # ★★★ごはんの配合を変えた回は、★**巻き戻さない**。
+        #   ★巻き戻しても配合は戻らないので、★永久に巻き戻し続けて学習が止まる。
+        #   ★点数は前と比べられる（★物差しは同じ）ので、★記録には残して見せる。
+        if st.get("mixTag") != mix_tag:
+            mix_changed = True
+            print("★★ごはんの配合が変わった。★この回は前より悪くても巻き戻さない",
+                  flush=True)
         # ★★★測り方が変わったなら、前の点数は**別の問題の点数**。比べてはいけない。
         if st.get("valTag") != val_tag:
             prev_val = None
@@ -996,7 +1007,8 @@ def main():
                 print("★★★細くなりすぎている。★次は先生の言うことを減らすべき。", flush=True)
 
         # ── ④★★★自己点検 ── 前より悪くなっていたら、前のわたしに戻す
-        if prev_val is not None and val > prev_val + WORSE_MARGIN and grew == 0:
+        if (prev_val is not None and not mix_changed
+                and val > prev_val + WORSE_MARGIN and grew == 0):
             print("★★★前より悪くなった（%.4f → %.4f）。★この学習は採用しない。前のわたしに戻す。"
                   % (prev_val, val), flush=True)
             model.load_state_dict(before)
@@ -1021,6 +1033,7 @@ def main():
                 "itos": getattr(vocab, "itos", None),
                 "layers": len(model.blocks), "d": model.d, "h": model.h,
                                 "ctx": model.ctx, "val": val, "valTag": val_tag,
+                "mixTag": mix_tag,
                 # ★★慣性も一緒に残す（★重みの2倍の大きさになるが、それに見合う）
                 "opt": opt.state_dict(),
                 "sched": {"lr_now": lr_now, "best": best, "bad": bad}},
@@ -1068,6 +1081,7 @@ def main():
         "bytes": ptsize, "heads": model.h, "ctx": model.ctx, "vocab": len(vocab),
         "kind": getattr(vocab, "kind", "char"), "arch": ARCH,
         "wantWider": want_wider, "layerCap": layer_cap(model.d),
+        "mixChanged": mix_changed,
         "wrote": wrote,
         "movedBody": teacher is not None,
     })
