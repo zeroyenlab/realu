@@ -366,7 +366,8 @@ def tell(k, d):
             spec = {kk: r.get(kk) for kk in
                     ("layers", "params", "d", "heads", "ctx", "vocab", "loops",
                      "bytes", "val", "kind", "arch", "at", "grew", "rolledBack",
-                     "chars", "tokens", "spread", "wantWider", "bySrc")}
+                     "chars", "tokens", "spread", "wantWider", "bySrc",
+                     "bpc", "charsPerTok")}
             spec["hist"] = hist
     except Exception:
         pass

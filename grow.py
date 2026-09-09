@@ -1238,6 +1238,23 @@ def main():
     if rolled:
         want_wider = False
 
+    # ★★★ビット/文字 ── ★トークナイザに依存しない、★日本語そのものへの実力。
+    #   ★loss は「1トークンを当てる難しさ」なので、★1トークンが何文字ぶんかで意味が変わる。
+    #   ★★語彙を変えた線どうしを loss で比べると、★正しい方を「負けた」と誤判定する。
+    #   ★これは「1文字を当てるのに何ビット要るか」なので、★どの語彙でも比べられる。
+    cpt = 0.0
+    try:
+        if pantry is not None and len(pantry):
+            cpt = (pantry.chars or 0) / len(pantry)
+        elif text:
+            cpt = len(text) / max(1, len(ids))
+    except Exception:
+        cpt = 0.0
+    bpc = (val / math.log(2) / cpt) if (cpt and val == val) else 0.0
+    if bpc:
+        print("★1文字あたり %.3f ビット（loss %.4f ÷ %.3f 文字/トークン）"
+              % (bpc, val, cpt), flush=True)
+
     # ★★1歩あたり何秒かかったか。★次の回はこれを見て歩数を決める
     sec_per_step = ((time.time() - t_loop) / done_steps) if done_steps else 0.0
     if sec_per_step:
@@ -1248,6 +1265,8 @@ def main():
         "val": round(val, 4), "prev": round(prev_val, 4) if prev_val else None, "valTag": VAL_TAG, "stoppedAt": stopped_early,
         # ★★次の回が歩数を決めるための実測。★体が育つたびに自動で追随する
         "secPerStep": round(sec_per_step, 4), "steps": STEPS,
+        # ★★語彙が違う線どうしでも比べられる、唯一の物差し
+        "bpc": round(bpc, 4), "charsPerTok": round(cpt, 4),
         "layers": len(model.blocks), "params": model.n_params(),
         # ★★棚から食べる時は `text` が空なので、★len(text) だと 0 になる。
         "chars": (pantry.chars if pantry is not None else len(text)),

@@ -179,13 +179,20 @@ def main():
                     '（下がるほど、その種類の言葉を当てられている）</div>'
                     '<div class="bsrows" id="bsrows">%s</div></div>'
                     % ("" if bs_rows else " hidden", bs_rows))
+        _bpc = last.get("bpc") or 0
+        _cpt = last.get("charsPerTok") or 0
+        bpc_html = ("" if not _bpc else
+                    '<div class="bsnote">★<b>1文字あたり %.3f ビット</b>'
+                    '（1トークン %.2f 文字）。'
+                    'これは<b>ことばの単位の切り方が変わっても比べられる</b>数字です。'
+                    '下がるほど、日本語そのものが上手くなっています。</div>' % (_bpc, _cpt))
         spec_html = ('<h2>頭のなかみ</h2><div class="specs" id="specs">%s</div>'
                      '<div class="spnote" id="spnote">'
                      '%s／作り <b>%s</b>／ことばの単位 <b>%s</b>'
                      '</div>' % (rows, food_html,
                                  e(last.get("arch") or "?"),
                                  "自分で切り出した" if last.get("kind") == "bpe"
-                                 else "文字単位")) + src_html
+                                 else "文字単位")) + bpc_html + src_html
     else:
         spec_html = ('<h2>頭のなかみ</h2><div class="spnote">まだ頭がない。'
                      '読んで覚えるだけ。</div>')
