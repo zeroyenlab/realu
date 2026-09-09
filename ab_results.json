@@ -1,0 +1,18 @@
+{
+ "done": {},
+ "log": [],
+ "partial": {
+  "loop2": {
+   "a": [],
+   "b": [],
+   "seeds": [],
+   "steps": 300,
+   "aEnv": {},
+   "bEnv": {
+    "REALU_USE_LOOP": "1",
+    "REALU_MAX_LOOPS": "2"
+   },
+   "at": "2026-09-09T00:23:42Z"
+  }
+ }
+}
