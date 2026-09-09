@@ -165,6 +165,15 @@ FINISH_SRC = os.environ.get("REALU_FINISH_SRC", "talk.txt")
 #   ★物差しは国会48%・Wikipedia34%でできているので、★会話だけ読むと全体が悪くなる。
 #   → ★半分だけ会話にする。★残り半分はいつも通り棚ぜんぶから引く。
 FINISH_MIX = float(os.environ.get("REALU_FINISH_MIX", 0.5))
+
+# ★★★採るか戻すかを決める合成点（★2026-09-10 Daito の判断）。
+#   ★物差しは国会48%・Wikipedia34%でできている。★狙いは雑談。
+#   ★★全体の点数だけで判定すると、★「会話が大きく良くなった回」が捨てられる
+#     （★実測 #61: 会話 2.658→2.266 なのに全体が悪いという理由で巻き戻された）。
+#   → ★会話に重みを付けた合成点で判定する。★全体の点数はそのまま記録に残す。
+#   ★1.0 にすれば今まで通り（会話の重み0）。
+SCORE_TALK_W = float(os.environ.get("REALU_SCORE_TALK_W", 2.0))
+SCORE_SRC = os.environ.get("REALU_SCORE_SRC", "talk")
 #   ★★本番と訓練の差がこれを超えたら「丸暗記している」とみなす
 WORSE_MARGIN = 0.02    # ★★これ以上悪くなっていたら、その学習は**採用しない**
 
@@ -1225,6 +1234,7 @@ def main():
     my_spread = 0.0
     rolled = False
     by_src = {}                 # ★★ソース別の点数（★診断用）
+    score = None                # ★★採るか戻すかを決める合成点
     try:
         with torch.no_grad():
             val = torch.stack([model(*batch(va, model.ctx, BATCH))[1]
@@ -1252,14 +1262,27 @@ def main():
                 print("★★★細くなりすぎている。★次は先生の言うことを減らすべき。", flush=True)
 
         # ── ④★★★自己点検 ── 前より悪くなっていたら、前のわたしに戻す
-        if (prev_val is not None and not mix_changed
-                and val > prev_val + WORSE_MARGIN and grew == 0):
-            print("★★★前より悪くなった（%.4f → %.4f）。★この学習は採用しない。前のわたしに戻す。"
-                  % (prev_val, val), flush=True)
+        # ★★★合成点 ＝ (会話 × 重み ＋ 全体) ÷ (重み ＋ 1)
+        #   ★会話が測れない時は全体そのまま。★前回も合成点で記録してあれば、それと比べる。
+        if SCORE_TALK_W > 0 and SCORE_SRC in by_src:
+            score = (SCORE_TALK_W * by_src[SCORE_SRC] + val) / (SCORE_TALK_W + 1.0)
+            print("★合成点 %.4f ＝（%s %.4f × %.1f ＋ 全体 %.4f）÷ %.1f"
+                  % (score, SCORE_SRC, by_src[SCORE_SRC], SCORE_TALK_W, val,
+                     SCORE_TALK_W + 1.0), flush=True)
+        else:
+            score = val
+        prev_score = st.get("score") if st else None
+        if prev_score is None:
+            prev_score = prev_val          # ★はじめての回は全体と比べる
+        if (prev_score is not None and not mix_changed
+                and score > prev_score + WORSE_MARGIN and grew == 0):
+            print("★★★前より悪くなった（合成点 %.4f → %.4f / 全体 %s → %.4f）。"
+                  "★この学習は採用しない。前のわたしに戻す。"
+                  % (prev_score, score, prev_val, val), flush=True)
             model.load_state_dict(before)
             while len(model.blocks) > before_layers:
                 model.blocks = model.blocks[:before_layers]
-            val, rolled = prev_val, True
+            val, score, rolled = prev_val, prev_score, True
     except Exception as e:
         print("★★★測れなかった（%s）。★それでも頭は残す。" % type(e).__name__, flush=True)
         if val is None:
@@ -1278,6 +1301,7 @@ def main():
                 "itos": getattr(vocab, "itos", None),
                 "layers": len(model.blocks), "d": model.d, "h": model.h,
                                 "ctx": model.ctx, "val": val, "valTag": val_tag,
+                "score": score,
                 "mixTag": mix_tag,
                 # ★★慣性も一緒に残す（★重みの2倍の大きさになるが、それに見合う）
                 "opt": opt.state_dict(),
@@ -1343,6 +1367,9 @@ def main():
         "secPerStep": round(sec_per_step, 4), "steps": STEPS,
         # ★★語彙が違う線どうしでも比べられる、唯一の物差し
         "bpc": round(bpc, 4), "charsPerTok": round(cpt, 4),
+        # ★★採否を決めた合成点（★全体の val とは別）
+        "score": round(score, 4) if score is not None else None,
+        "scoreW": SCORE_TALK_W,
         "layers": len(model.blocks), "params": model.n_params(),
         # ★★棚から食べる時は `text` が空なので、★len(text) だと 0 になる。
         "chars": (pantry.chars if pantry is not None else len(text)),
