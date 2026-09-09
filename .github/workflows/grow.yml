@@ -17,8 +17,8 @@ on:
   workflow_dispatch:
     inputs:
       steps:
-        description: "何歩ぶん学ぶか"
-        default: "4000"
+        description: "何歩ぶん学ぶか（★0 なら前回の実測から自動で決める）"
+        default: "0"
       hanrei:
         description: "判決を何件あたらしく読むか"
         default: "400"
@@ -509,7 +509,11 @@ jobs:
 
       - name: 学ぶ
         env:
-          REALU_STEPS: ${{ github.event.inputs.steps || '4000' }}
+          # ★★★2026-09-09: '4000' → '0'（＝★実測から自動で決める）。
+          #   ★grow.py の既定を 0 にしたのに、★ここが 4000 を明示的に渡していたので
+          #   ★★自動決定が一度も動いていなかった（#57 の記録が steps=4000 のまま）。
+          #   ★手で決めたい時は Actions の画面から歩数を入れれば、そちらが優先される。
+          REALU_STEPS: ${{ github.event.inputs.steps || '0' }}
           REALU_THREADS: "4"
         run: |
           # ★★★残り時間から予算を出す。★歩数を当てにいかない。
