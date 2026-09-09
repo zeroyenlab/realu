@@ -85,7 +85,7 @@ def save(res):
     os.replace(tmp, OUT)
 
 
-def one(env, seed, tmp):
+def one(env, seed, tmp, limit):
     """★1本まわして loss を返す。★本物の頭には触らない。"""
     import subprocess
     e = dict(os.environ)
@@ -99,16 +99,17 @@ def one(env, seed, tmp):
         "REALU_TIME_BUDGET": "999",
     })
     e.update(env)
-    # ★★1本が予算まるごとを食うことは無い。★食ったらそれは測定ではなく事故。
-    #   ★前は 1200 秒。★予算6分のジョブで20分待つ設定になっていた。
+    # ★★★上限は「★予算の残り」。★予算そのものではない。
+    #   ★2026-09-09: ここを予算(300秒)と同じにしたら、
+    #   ★★A は 258 秒で通ったのに B が 300 秒で切られ、★1組も完走できなかった。
+    #   ★実測: A（ループ無し・300歩）258秒 / B（2周）はそれより長い。
+    lim = max(180, int(limit))
     try:
         r = subprocess.run([sys.executable, "-u", "ab_one.py"],
                            cwd=HERE, env=e, capture_output=True, text=True,
-                           encoding="utf-8", errors="replace",
-                           timeout=max(120, int(BUDGET)))
+                           encoding="utf-8", errors="replace", timeout=lim)
     except subprocess.TimeoutExpired:
-        print("   ★1本が %d 秒で終わらなかった。★捨てる" % max(120, int(BUDGET)),
-              flush=True)
+        print("   ★1本が %d 秒で終わらなかった。★捨てる" % lim, flush=True)
         return None
     for ln in (r.stdout or "").split(NL):
         if ln.startswith("LOSS="):
@@ -170,8 +171,8 @@ def main():
                 keep()
                 return 0
             c0 = time.time()
-            a = one(t["a"], 1000 + s, tmp)
-            b = one(t["b"], 1000 + s, tmp)
+            a = one(t["a"], 1000 + s, tmp, left)
+            b = one(t["b"], 1000 + s, tmp, BUDGET - (time.time() - t0))
             pair = max(pair, time.time() - c0)
             if a is None or b is None:
                 print("   ★測れなかった（種 %d）" % s, flush=True)

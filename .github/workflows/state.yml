@@ -1,0 +1,42 @@
+name: realu shows her numbers
+
+# ★★★家の数字を玄関に置くだけの係。★これ1つだけをやる。
+#
+#   ★家（index.html）は2時間に一度しか建て直せない（★Cloudflare 無料枠 月500回）。
+#   ★だから数字は玄関（/api/state）に置いて、★家が開くたびに読ませている。
+#
+# ★★なぜ「測る係」から切り出したか（2026-09-09）
+#   ★測る係は1回に15分以上かかる。★そこに相乗りさせると、
+#   ★★数字の新しさが測る係の重さに引きずられる。
+#   ★数字を出すのは30秒で終わる仕事なので、★別の心臓にした。
+
+on:
+  schedule:
+    - cron: "*/5 * * * *"    # ★5分ごと
+  workflow_dispatch:
+  push:
+    paths:
+      - "tell.py"
+      - ".github/workflows/state.yml"
+
+permissions:
+  contents: read             # ★★読むだけ。★このワークフローは何も書かない
+
+concurrency:
+  group: realu-state-${{ github.event_name }}
+  cancel-in-progress: false
+
+jobs:
+  show:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: 家の数字を玄関に置く
+        env:
+          REALU_DOOR_KEY: ${{ secrets.REALU_DOOR_KEY }}
+        run: python tell.py
