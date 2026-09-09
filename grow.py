@@ -423,6 +423,15 @@ class Pantry:
             tot += len(a)
         self.starts = np.array(starts) if starts else np.array([0])
         self.n = tot
+        # ★★棚はトークンなので、★ここから「文字数」は数えられない。
+        #   ★棚を作った時に数えた数を meta.json から持ち歩く。
+        #   ★古い棚には入っていない（★次に棚を作り直した時から入る）。
+        self.chars = 0
+        try:
+            with open(os.path.join(d, "meta.json"), encoding="utf-8") as f:
+                self.chars = int((json.load(f) or {}).get("chars") or 0)
+        except Exception:
+            pass
 
     def __len__(self):
         return self.n
@@ -1027,7 +1036,10 @@ def main():
         "at": time.strftime("%Y-%m-%dT%H:%M:%SZ", time.gmtime()),
         "val": round(val, 4), "prev": round(prev_val, 4) if prev_val else None, "valTag": VAL_TAG, "stoppedAt": stopped_early,
         "layers": len(model.blocks), "params": model.n_params(),
-        "chars": len(text), "grew": grew, "rolledBack": rolled,
+        # ★★棚から食べる時は `text` が空なので、★len(text) だと 0 になる。
+        "chars": (pantry.chars if pantry is not None else len(text)),
+        "tokens": len(ids),          # ★★実際に食べている単位はこちら
+        "grew": grew, "rolledBack": rolled,
         "d": model.d, "loops": model.loops, "spread": round(my_spread, 4),
         "bytes": ptsize, "heads": model.h, "ctx": model.ctx, "vocab": len(vocab),
         "kind": getattr(vocab, "kind", "char"), "arch": ARCH,

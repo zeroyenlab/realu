@@ -96,13 +96,18 @@ def main():
     held = []
     marks = []                      # ★どのごはんがどこから始まるか
     part, wrote_bytes, total = 1, 0, 0
+    # ★★★食べた文字の**合計**。
+    #   ★2026-09-09: これが無かった。★buf_chars は flush のたびに 0 に戻していたので、
+    #   ★★どこにも合計が残らず、★growth.json の chars が 0 になっていた
+    #     （★棚から食べるようになって `len(text)` が 0 になったため）。
+    chars = 0
     buf = []
     buf_chars = 0
     fh = open(os.path.join(PANTRY, "pantry-%03d.bin" % part), "wb")
 
     def flush():
         """★溜めた行をトークンにして棚へ。★ここだけがメモリを使う。"""
-        nonlocal buf, buf_chars, wrote_bytes, part, fh, total
+        nonlocal buf, buf_chars, wrote_bytes, part, fh, total, chars
         if not buf:
             return
         ids = np.asarray(vocab.encode(NL.join(buf)), dtype=np.uint16)
@@ -116,6 +121,7 @@ def main():
         fh.write(b)
         wrote_bytes += len(b)
         total += len(ids)
+        chars += buf_chars          # ★★★ここが抜けていた
         buf, buf_chars = [], 0
 
     for name in ORDER:
@@ -161,7 +167,7 @@ def main():
     elif os.path.exists(valf):
         print("★物差しは前のものをそのまま使う", flush=True)
 
-    meta = {"total": total, "parts": part, "vocab": len(vocab),
+    meta = {"total": total, "chars": chars, "parts": part, "vocab": len(vocab),
             "dtype": "uint16", "marks": marks,
             "valPerMil": VAL_PER_MIL, "dupMax": DUP_MAX}
     with open(os.path.join(PANTRY, "meta.json"), "w", encoding="utf-8") as f:
@@ -169,8 +175,8 @@ def main():
 
     mb = sum(os.path.getsize(os.path.join(PANTRY, f))
              for f in os.listdir(PANTRY)) / 1024 / 1024
-    print("★★棚ができた: %s 個 / %d 枚 / %.1f MB"
-          % (format(total, ","), part, mb), flush=True)
+    print("★★棚ができた: %s 個 / %s 字 / %d 枚 / %.1f MB"
+          % (format(total, ","), format(chars, ","), part, mb), flush=True)
     return 0
 
 

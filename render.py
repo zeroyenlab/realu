@@ -154,11 +154,20 @@ def main():
         rows = "".join(
             '<div class="sp" data-k="%s"><div class="spv">%s</div><div class="spk">%s</div></div>'
             % (e(kk), e(vv), e(kk)) for kk, vv in _spec_rows(last))
-        food = (last.get("chars") or 0)
+        # ★★★棚（トークンの並び）から食べる回は、★原文を開かないので字数が分からない。
+        #   ★その時は**実際に食べている単位＝ことば（トークン）**を出す。
+        #   ★0 と出すのは嘘（★食べていないわけではない）。
+        food = int(last.get("chars") or 0)
+        if food:
+            food_html = "食べた文字 <b>%.2f 億</b>" % (food / 1e8)
+        elif int(last.get("tokens") or 0):
+            food_html = "食べたことば <b>%.2f 億</b>" % (int(last["tokens"]) / 1e8)
+        else:
+            food_html = "食べた量 <b>【数えていない】</b>"
         spec_html = ('<h2>頭のなかみ</h2><div class="specs" id="specs">%s</div>'
                      '<div class="spnote" id="spnote">'
-                     '食べた文字 <b>%.2f 億</b>／作り <b>%s</b>／ことばの単位 <b>%s</b>'
-                     '</div>' % (rows, food / 1e8,
+                     '%s／作り <b>%s</b>／ことばの単位 <b>%s</b>'
+                     '</div>' % (rows, food_html,
                                  e(last.get("arch") or "?"),
                                  "自分で切り出した" if last.get("kind") == "bpe" else "文字単位"))
     else:
@@ -343,7 +352,10 @@ def main():
         'document.querySelectorAll(".sp").forEach(function(el){'
         'var k=el.getAttribute("data-k");if(SV[k]!=null)el.querySelector(".spv").textContent=SV[k]});'
         'var sn=document.getElementById("spnote");'
-        'if(sn)sn.innerHTML="食べた文字 <b>"+((sp.chars||0)/1e8).toFixed(2)+" 億</b>／作り <b>"'
+        'var fd=(sp.chars?("食べた文字 <b>"+(sp.chars/1e8).toFixed(2)+" 億</b>"):'
+        '(sp.tokens?("食べたことば <b>"+(sp.tokens/1e8).toFixed(2)+" 億</b>")'
+        ':"食べた量 <b>【数えていない】</b>"));'
+        'if(sn)sn.innerHTML=fd+"／作り <b>"'
         '+(sp.arch||"?")+"</b>／ことばの単位 <b>"+(sp.kind==="bpe"?"自分で切り出した":"文字単位")+"</b>";}'
         'var H=sp.hist||[];'
         'if(H.length>=2){var W=640,HT=120,lo=Math.min.apply(null,H),hi=Math.max.apply(null,H);'
