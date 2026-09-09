@@ -129,7 +129,9 @@ def main():
             '<div class="chx"><span>%d 回前</span>'
             '<span>loss %.3f → <b>%.3f</b></span><span>いま</span></div>'
             '<div class="spnote">下がるほど、次に来る言葉を当てられている。'
-            '★体を乗り換えた回は一度上がる（別の体だから）。</div></div>'
+            '体を乗り換えた回と、<b>ごはんの配合を変えた回</b>は一度上がります'
+            '（別の体・別の食べ物だから）。物差しは<b>ずっと同じ</b>ものを使っています。'
+            '</div></div>'
             % (W, HT, path_d, dots, len(pts) - 1, vs[0], vs[-1]))
     elif runs:
         chart_html = ('<h2>できるようになった度合い</h2>'

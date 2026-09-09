@@ -448,10 +448,18 @@ jobs:
           if [ "$SUM" -ge "$OLD" ]; then DIFF=$((SUM - OLD)); else DIFF=$((OLD - SUM)); fi
           NEED=$((OLD / 100))
           if [ "$NEED" -lt 1048576 ]; then NEED=1048576; fi   # ★最低 1MB
-          if [ ! -f work/pantry/meta.json ] || [ "$OLD" = "0" ] || [ "$DIFF" -ge "$NEED" ]; then
+          # ★★★2026-09-09: 棚は**作り方（レシピ）**にも依存する。
+          #   ★配合（国会の上限・会話のくり返し）を変えても、
+          #   ★★ごはんのバイト数は1バイトも変わらない → ★古い棚のまま学び続けてしまう。
+          #   → ★make_pantry.py が変わったら作り直す。
+          RECIPE=$(sha1sum make_pantry.py | cut -c1-12)
+          OLDR=$(cat work/pantry/recipe.txt 2>/dev/null || echo "")
+          if [ "$RECIPE" != "$OLDR" ]; then echo "★作り方が変わった（$OLDR → $RECIPE）"; fi
+          if [ ! -f work/pantry/meta.json ] || [ "$OLD" = "0" ]              || [ "$RECIPE" != "$OLDR" ] || [ "$DIFF" -ge "$NEED" ]; then
             echo "★ごはんが $DIFF バイト増えた（$OLD → $SUM）。棚を作り直す"
             if python -u make_pantry.py; then
               echo "$SUM" > work/pantry/src_bytes.txt
+              echo "$RECIPE" > work/pantry/recipe.txt
             else
               echo "★棚は作れなかった（★今まで通りで学ぶ）"
             fi

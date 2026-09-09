@@ -43,6 +43,25 @@ PART_MAX = int(os.environ.get("REALU_PART_MAX", 1_800_000_000))
 
 # ★grow.py と**同じ判定**を使う（★物差しがずれたら意味が無い）
 DUP_MAX = int(os.environ.get("REALU_DUP_MAX", 3))
+
+# ★★★ごはんの配合（2026-09-09 Daito「国会を下げて、会話を上げたい」）
+#
+#   ★★変える前の実測（棚 10.9億トークン）:
+#     国会 47.47% / Wikipedia 21.17% / web 20.10% / 法令 4.07%
+#     青空文庫 3.07% / 判例 2.92% / ★★会話 1.19%
+#   ★国会が半分近くを占めていて、★書く文が答弁調（`○政府委員`）になっていた。
+#
+#   ★"cap"    … このソースから取るトークンの上限。★超えたら打ち切る
+#   ★"repeat" … 何回入れるか。★小さくて大事なものを厚くする
+#     ★くり返す所は**重複を数えない**（★わざと増やしているので DUP_MAX に殺させない）。
+#     ★★ただし物差しの行は**何周目でも**外す（★答えを見せない）。
+#
+#   ★見込み: 国会 150M / 会話 13M×4=52M / 他 559.7M ＝ 合計 約762M
+#            → ★国会 19.7% / ★会話 6.8%
+MIX = {
+    "kokkai.txt": {"cap": int(os.environ.get("REALU_CAP_KOKKAI", 150_000_000))},
+    "talk.txt":   {"repeat": int(os.environ.get("REALU_REP_TALK", 4))},
+}
 VAL_PER_MIL = int(os.environ.get("REALU_VAL_PERMIL", 3))
 SRC_MARK = re.compile("^<(web|本|会話) [^>]*>$")
 
@@ -132,28 +151,54 @@ def main():
                 break
         if not path:
             continue
+        cfg = MIX.get(name, {})
+        rep = max(1, int(cfg.get("repeat", 1)))
+        cap = cfg.get("cap")
         marks.append({"name": name, "at": total})
+        start = total
         n_kept = n_held = 0
-        for ln in lines_of(path):
-            key = ln.strip()
-            if len(key) >= 10 and not SRC_MARK.match(key):
-                if held_out(key):
-                    held.append(key)
-                    n_held += 1
-                    continue
-                c = seen.get(key, 0)
-                if c >= DUP_MAX:            # ★同じ行は3回まで
-                    continue
-                seen[key] = c + 1
-            buf.append(ln)
-            buf_chars += len(ln) + 1
-            n_kept += 1
-            if buf_chars >= 4_000_000:      # ★400万字ごとに書き出す
-                flush()
+        full = False
+        for r in range(rep):
+            if full:
+                break
+            for ln in lines_of(path):
+                key = ln.strip()
+                if len(key) >= 10 and not SRC_MARK.match(key):
+                    # ★★物差しの行は**何周目でも**外す（★答えを見せない）
+                    if held_out(key):
+                        if r == 0:
+                            held.append(key)
+                            n_held += 1
+                        continue
+                    if rep == 1:            # ★くり返す所では数えない（★わざと増やしている）
+                        c = seen.get(key, 0)
+                        if c >= DUP_MAX:    # ★同じ行は3回まで
+                            continue
+                        seen[key] = c + 1
+                buf.append(ln)
+                buf_chars += len(ln) + 1
+                n_kept += 1
+                # ★★★上限の判定は flush の後（★total が動くのはそこだけ）。
+                #   ★だから「そろそろ届きそう」な時点で**先に flush する**。
+                #   ★トークン数は必ず文字数以下なので、★buf_chars を上限の見積りに使える。
+                near = cap and (total - start) + buf_chars >= cap
+                if buf_chars >= 4_000_000 or near:
+                    flush()
+                    if cap and total - start >= cap:
+                        print("  ★%s は上限（%s トークン）に達した。ここで打ち切る"
+                              % (name, format(cap, ",")), flush=True)
+                        full = True
+                        break
         flush()
         marks[-1]["until"] = total
-        print("  ★%s: %s 行 / 物差しへ %d 行 / ここまで %s 個"
-              % (name, format(n_kept, ","), n_held, format(total, ",")), flush=True)
+        note = ""
+        if rep > 1:
+            note += " / ★%d回くり返した" % rep
+        if cap:
+            note += " / ★上限 %s" % format(cap, ",")
+        print("  ★%s: %s 行 / 物差しへ %d 行 / このソース %s 個 / ここまで %s 個%s"
+              % (name, format(n_kept, ","), n_held, format(total - start, ","),
+                 format(total, ","), note), flush=True)
     fh.close()
 
     # ★★★物差しは棚に入れない。★別に固める（★一度作ったら変えない）
@@ -169,7 +214,7 @@ def main():
 
     meta = {"total": total, "chars": chars, "parts": part, "vocab": len(vocab),
             "dtype": "uint16", "marks": marks,
-            "valPerMil": VAL_PER_MIL, "dupMax": DUP_MAX}
+            "valPerMil": VAL_PER_MIL, "dupMax": DUP_MAX, "mix": MIX}
     with open(os.path.join(PANTRY, "meta.json"), "w", encoding="utf-8") as f:
         json.dump(meta, f, ensure_ascii=False, indent=1)
 
