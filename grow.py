@@ -492,10 +492,28 @@ def batch(data, ctx, bs, tiers=None):
     return x, y
 
 
+def _drop_untagged(h):
+    """★★★物差しの分からない記録は捨てる。
+
+    ★2026-09-09: `runs[0]` に **手で入れた偽の loss 2.1454** が残っていた
+      （★`valTag` なし・`stoppedAt` なし・`arch` は gpt2＝いまと別物）。
+    ★★これが `bestVal = min(val)` に効いて**永久に最高記録**になり、
+      ★サイトのグラフの1点目にもなって「★悪くなった」ように見せていた。
+    ★★**物差しが書いていない点数は、どの点数とも比べられない。** だから残さない。
+    """
+    runs = h.get("runs") or []
+    keep = [r for r in runs if r.get("valTag")]
+    if len(keep) != len(runs):
+        print("★物差しの分からない記録を %d 件そっと外した" % (len(runs) - len(keep)),
+              flush=True)
+    h["runs"] = keep
+    return h
+
+
 def load_hist():
     try:
         with open(HIST, encoding="utf-8") as f:
-            return json.load(f)
+            return _drop_untagged(json.load(f))
     except Exception:
         return {"runs": [], "bestVal": None, "layers": N_LAYER0, "params": 0, "born": None}
 
