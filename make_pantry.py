@@ -122,7 +122,25 @@ def main():
     seen = {}
     held = []
     marks = []                      # ★どのごはんがどこから始まるか
-    val_marks = []                  # ★★物差しの、どこからどこまでがどのソースか
+    # ★★★物差しの行が、どのソースから来たか。
+    #   ★2026-09-09: 最初は「位置」で対応づけていたが、★凍結した物差しは
+    #   ★ごはんが今の6割だった頃に作られていて（26,376行 ≠ 44,694行）、★位置が合わなかった。
+    #   → ★★「中身」で照合する。★物差しの各行を辞書に入れておき、★走査中に当たった行の
+    #     ★位置とソースを記録する。★物差しがいつ凍結されたかに依存しない。
+    vpath = os.path.join(WORK, "val.txt.gz")
+    val_idx = None                  # ★行 → [物差しの中の位置...]（★同じ行が2回あっても取りこぼさない）
+    if os.path.exists(vpath):
+        try:
+            val_idx = {}
+            with gzip.open(vpath, "rt", encoding="utf-8", errors="ignore") as f:
+                for i, ln in enumerate(f):
+                    val_idx.setdefault(ln.rstrip(NL), []).append(i)
+            print("★凍結した物差しを読んだ（%s 行）。★ソースを照合する"
+                  % format(sum(len(v) for v in val_idx.values()), ","), flush=True)
+        except Exception as e:
+            print("★物差しが読めなかった（%s）。★対応表は作らない" % type(e).__name__, flush=True)
+            val_idx = None
+    val_by_src = {}                 # ★ソース名 → [物差しの中の位置...]
     part, wrote_bytes, total = 1, 0, 0
     # ★★★食べた文字の**合計**。
     #   ★2026-09-09: これが無かった。★buf_chars は flush のたびに 0 に戻していたので、
@@ -164,7 +182,6 @@ def main():
         rep = max(1, int(cfg.get("repeat", 1)))
         cap = cfg.get("cap")
         marks.append({"name": name, "at": total})
-        vfrom = len(held)               # ★★物差しの、このソースの始まり
         start = total
         n_kept = n_held = 0
         capped = False
@@ -177,6 +194,13 @@ def main():
                 # ★★物差しの行は**何周目でも**外す（★答えを見せない）
                 if is_line and held_out(key):
                     if r == 0:
+                        if val_idx is not None:
+                            hit = val_idx.get(key)
+                            if hit:
+                                val_by_src.setdefault(name, []).append(hit.pop(0))
+                        else:
+                            # ★★物差しをこれから作る回。★held の並びがそのまま物差しの並びになる
+                            val_by_src.setdefault(name, []).append(len(held))
                         held.append(key)
                         n_held += 1
                     continue
@@ -204,7 +228,6 @@ def main():
                               % (name, format(cap, ",")), flush=True)
                         capped = True
         flush()
-        val_marks.append({"name": name, "from": vfrom, "until": len(held)})
         marks[-1]["until"] = total
         note = ""
         if rep > 1:
@@ -232,24 +255,24 @@ def main():
     #     （★触ると前の点数と比べられなくなる）。★対応表だけを別に置く。
     #   ★行数が合わない時は**書かない**（★対応が取れていない証拠なので、
     #     ★合わない表を置くと「会話の点数」に別のソースの行が混ざる）。
-    vpath = os.path.join(WORK, "val.txt.gz")
-    ok = True
-    if os.path.exists(vpath):
-        try:
-            with gzip.open(vpath, "rt", encoding="utf-8", errors="ignore") as f:
-                n_have = sum(1 for _ in f)
-            if n_have != len(held):
-                print("★★物差しの行数が合わない（%d ≠ %d）。★ソース別の対応表は作らない"
-                      % (n_have, len(held)), flush=True)
-                ok = False
-        except Exception:
-            ok = False
-    if ok and val_marks:
+    if val_idx is not None:
+        unmatched = sum(len(v) for v in val_idx.values())   # ★pop されずに残った＝どのソースにも無かった行
+        total_val = unmatched + sum(len(v) for v in val_by_src.values())
+    else:
+        total_val = len(held)
+        unmatched = 0
+    matched = sum(len(v) for v in val_by_src.values())
+    if matched:
         with open(os.path.join(PANTRY, "val_marks.json"), "w", encoding="utf-8") as f:
-            json.dump(val_marks, f, ensure_ascii=False, indent=1)
-        print("★物差しのソース別対応表を作った（%s）"
-              % " / ".join("%s %d行" % (v["name"].replace(".txt", ""), v["until"] - v["from"])
-                           for v in val_marks), flush=True)
+            json.dump({"format": "indices", "total": total_val, "unmatched": unmatched,
+                       "src": {k: sorted(v) for k, v in val_by_src.items()}},
+                      f, ensure_ascii=False)
+        print("★物差しのソース別対応表を作った（%s ／ ★照合できなかった行 %d）"
+              % (" / ".join("%s %d" % (k.replace(".txt", ""), len(v))
+                            for k, v in val_by_src.items()), unmatched), flush=True)
+        if total_val and unmatched > total_val * 0.05:
+            print("★★照合できなかった行が %.1f%% ある。★ソース別の点数は少し欠ける"
+                  % (unmatched / total_val * 100), flush=True)
 
     meta = {"total": total, "chars": chars, "parts": part, "vocab": len(vocab),
             "dtype": "uint16", "marks": marks,

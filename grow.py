@@ -816,18 +816,23 @@ def main():
     try:
         vm = os.path.join(WORK, "pantry", "val_marks.json")
         with open(vm, encoding="utf-8") as f:
-            vmarks = json.load(f) or []
+            vmarks = json.load(f) or {}
         vlines = val_text.split(chr(10))
-        if vmarks and vmarks[-1].get("until") == len(vlines):
-            for m in vmarks:
-                seg = chr(10).join(vlines[m["from"]:m["until"]])
-                if len(seg) >= 2000:            # ★短すぎるソースは測らない（★雑音になる）
-                    va_src[m["name"].replace(".txt", "")] = encode_big(seg)
-            print("★ソース別の物差し（トークン）: %s" % " / ".join(
-                "%s %.1f万" % (k, len(v) / 10000) for k, v in va_src.items()), flush=True)
+        # ★★対応表は「物差しの中の位置の一覧」。★物差しの行そのものは触っていない
+        if isinstance(vmarks, dict) and vmarks.get("format") == "indices":
+            if vmarks.get("total") == len(vlines):
+                for name, idxs in (vmarks.get("src") or {}).items():
+                    seg = chr(10).join(vlines[i] for i in idxs if 0 <= i < len(vlines))
+                    if len(seg) >= 2000:        # ★短すぎるソースは測らない（★雑音になる）
+                        va_src[name.replace(".txt", "")] = encode_big(seg)
+                print("★ソース別の物差し（トークン）: %s ／ 照合できなかった行 %s" % (
+                    " / ".join("%s %.1f万" % (k, len(v) / 10000) for k, v in va_src.items()),
+                    vmarks.get("unmatched")), flush=True)
+            else:
+                print("★★ソース別の対応表が物差しと合わない（%s ≠ %d）。★使わない"
+                      % (vmarks.get("total"), len(vlines)), flush=True)
         elif vmarks:
-            print("★★ソース別の対応表が物差しと合わない（%d ≠ %d）。★使わない"
-                  % (vmarks[-1].get("until"), len(vlines)), flush=True)
+            print("★ソース別の対応表が古い形式。★使わない", flush=True)
     except FileNotFoundError:
         pass
     except Exception as e:
