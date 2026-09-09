@@ -33,14 +33,23 @@ CTX = int(os.environ.get("REALU_CTX", 256))
 D_MODEL = int(os.environ.get("REALU_D", 192))
 N_HEAD = int(os.environ.get("REALU_HEADS", 6))
 N_LAYER0 = int(os.environ.get("REALU_LAYERS", 4))
-N_LAYER_MAX = int(os.environ.get("REALU_LAYERS_MAX", 12))
+# ★★★2026-09-09: 12 → 16。★6層で上限8だと、あと2回の成長で詰まる。
+#   ★MobileLLM（125M/350M の実測）は「★深く細い方が一貫して良い」で最適は30層。
+#   ★★ただし30層はGPU前提。★CPU 60分だと 15.7秒/歩 ＝ 196歩しか進まず、
+#     ★評価（200歩ごと）が1回も入らないので**成長の判断すらできなくなる**。
+#   → ★16層まで開ける（★369歩・評価1〜2回は入る）。★30層は 9/12 のGPU復活後に開け直す。
+N_LAYER_MAX = int(os.environ.get("REALU_LAYERS_MAX", 16))
 
 # ★★★体の形（幅と層の比）── ★測って分かったこと:
 #   ・ループは安いが弱い（実効8層で 2周+0.10 / 4周+0.25 / 8周+0.43。★周を増やすほど損が加速）
 #   ・論文「計算量をそろえると**浅いモデルの方がわずかに良い**。幅と深さの配分が効く」
 #   → ★層を足すだけだと**細長い体**になる。★幅が足りなくなったら、幅を広げる番。
 #   参考: GPT-2 small は 768幅×12層（比 64:1）。★192幅×12層 では 16:1 で細長すぎた。
-ASPECT = int(os.environ.get("REALU_ASPECT", 48))   # ★1層あたり、これくらいの幅は欲しい
+# ★★★2026-09-09: 48 → 24。
+#   ★48 は自分のコメントに「★GPT-2 の見た目を真似ただけ」と書いてある＝★根拠が無い数字。
+#   ★MobileLLM 125M の実測最適は 30層×幅512（＝比にすると 17）。★48 は逆を向いていた。
+#   → ★いまの資源で歩数が保てる 24 まで寄せる（★幅384で16層）。
+ASPECT = int(os.environ.get("REALU_ASPECT", 24))   # ★1層あたり、これくらいの幅は欲しい
 
 
 def layer_cap(d):
@@ -1019,7 +1028,23 @@ def main():
             #   ③ 体を乗り換える       ── ★いちばん高い（引っ越し。別の回でやる）
             #   ★足りていないものが「深さ」なら①で足りる。★①で駄目なら②。
             cap = layer_cap(model.d)
-            if len(model.blocks) < cap:
+            # ★★★深さと歩数はぶつかる（★2026-09-09 実測）。
+            #   ★6層 3.14秒/歩 → 984歩。★30層なら 15.7秒/歩 → 196歩。
+            #   ★★歩数が評価の間隔（EVAL_EVERY）の2回ぶんを割ると、
+            #     ★成長も頭打ちも判断できなくなる＝★深くした瞬間に育たなくなる。
+            #   → ★1枚足したら次の回が何歩になるかを見積もり、★足りなければ足さない。
+            room = True
+            if done_steps >= 20:
+                sec_now = (time.time() - t_loop) / done_steps
+                nb = len(model.blocks)
+                sec_next = sec_now * (nb + 1) / max(1, nb)
+                steps_next = int(budget * 0.92 / sec_next)
+                if steps_next < EVAL_EVERY * 2:
+                    room = False
+                    print("  ★層を足すと次の回が %d 歩になる（評価は %d 歩ごと）。"
+                          "★★これ以上は深くしない。★速い機械が要る"
+                          % (steps_next, EVAL_EVERY), flush=True)
+            if room and len(model.blocks) < cap:
                 # ★① 層を足す ── ★まだ細長くない範囲で
                 n = model.grow()
                 opt = torch.optim.AdamW(model.parameters(), lr=LR,
