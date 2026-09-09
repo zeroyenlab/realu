@@ -49,8 +49,12 @@ def layer_cap(d):
 
 
 BATCH = int(os.environ.get("REALU_BATCH", 16))
-LR = float(os.environ.get("REALU_LR", 3e-4))
-STEPS = int(os.environ.get("REALU_STEPS", 4000))      # ★1回ぶん（★Actionsの時間に収まる量）
+# ★★★2026-09-09: 測る係が出した答え。★3e-4 → 6e-4 で loss 5.2521 → 4.8635。
+#   ★差 -0.3886 に対して種のばらつき 0.0176（★22倍）。★他のどの項目より効きが大きい。
+#   ★★しかも育つ回のログでは、★スケジューラが既に上限 6e-4 に張り付いていた
+#     （`LR_MAX = LR * 2.0`）。★彼女は自力で正解に届いていて、★天井に頭をぶつけていた。
+LR = float(os.environ.get("REALU_LR", 6e-4))
+STEPS = int(os.environ.get("REALU_STEPS", 0))         # ★0 なら実測から自動で決める
 EVAL_EVERY = int(os.environ.get("REALU_EVAL", 200))
 THREADS = int(os.environ.get("REALU_THREADS", 4))
 
@@ -525,7 +529,7 @@ def load_hist():
 
 
 def main():
-    global MOVE_TO_D
+    global MOVE_TO_D, STEPS      # ★STEPS は下で実測から決め直す（★global にしないと UnboundLocalError）
     # ★★書いたものを表示するだけで死なないように（★端末の文字コードは選べない）
     try:
         sys.stdout.reconfigure(encoding="utf-8", errors="replace")
@@ -910,6 +914,7 @@ def main():
     #   ・★大きくなった直後 → 上げ直す（★新しい層が学べるように）
     #   → ★★★これで「壊れやすい／壊れにくい」の**振動が勝手に生まれる**。
     #     ★誰かが決めた予定表ではなく、★彼女自身が決めている。
+    budget = float(os.environ.get("REALU_TIME_BUDGET", 150)) * 60
     LR_MIN, LR_MAX = LR / 50, LR * 2.0
     FIRM, FRAGILE = 0.90, 1.35        # ★固める倍率 / ★壊れやすくする倍率
 
@@ -917,19 +922,44 @@ def main():
     #   ★「最後の10%で0まで落とす」が効く。★継続学習と相性がよい
     #     （★途中で切っても、そこまでの重みがちゃんと使える形になる）。
     #   ★その一定区間の中で、★詰まり具合に応じて上下させるのが彼女の自律制御。
+    # ★★★歩数は「前回の実測」から決める（★2026-09-09）。
+    #   ★★4,000歩は #41（4層 9.4M・0.89秒/歩）の頃の数字だった。
+    #   ★体が 6層 12.93M に育って **3.14秒/歩** になったのに、★歩数だけ置き去りになり、
+    #     ★★60分で 1,152/4,000 歩しか進まなくなっていた。
+    #   ★★★その結果 `DECAY_FROM = 3,600` に**一度も到達しない**。
+    #     ★WSD の「最後の10%で0へ落とす」が**発動したことがない**。
+    #     ★高い学習率のまま中途半端な所で切れるので、★直近6回中3回が巻き戻し
+    #     ＝ ★★60分がまるごと捨てられていた。
+    #   → ★予算に収まる歩数を選び、★**必ず減衰まで走り切って着地する**。
+    if STEPS <= 0:
+        sec = 0.0
+        for _r in reversed(hist.get("runs") or []):
+            if _r.get("secPerStep"):
+                sec = float(_r["secPerStep"]); break
+        remain = budget - (time.time() - t0)      # ★下ごしらえに使った分を引く
+        if sec > 0 and remain > 0:
+            # ★0.92 は安全代。★減衰まで確実に走り切るために少し余らせる
+            STEPS = max(300, int(remain * 0.92 / sec))
+            print("★歩数を実測から決めた: %.2f 秒/歩 × %d 歩 ≒ %.0f 分（残り %.0f 分）"
+                  % (sec, STEPS, STEPS * sec / 60, remain / 60), flush=True)
+        else:
+            STEPS = 1200
+            print("★前回の速さが分からないので %d 歩から始める" % STEPS, flush=True)
     DECAY_FROM = int(STEPS * 0.90)
     # ★★★時間の予算。★これを超えたら**途中でも切り上げて、頭を残す**。
     #   ★2026-09-08: 4,000歩に182分かかる見込みなのに残りが145分しかなく、
     #     ★時間切れで**頭が1つも残らない**ところだった。
     #   ★★歩数を当てにいくのではなく、★「必ず残す」を保証する。
-    budget = float(os.environ.get("REALU_TIME_BUDGET", 150)) * 60
     stopped_early = 0
+    t_loop = time.time()          # ★★1歩あたり何秒かを測る（★次の回が歩数を決めるのに使う）
+    done_steps = 0
     for step in range(1, STEPS + 1):
         if time.time() - t0 > budget:
             stopped_early = step
             print("★★時間の予算を使い切った（%d/%d 歩）。★ここまでを残す。"
                   % (step, STEPS), flush=True)
             break
+        done_steps = step
         warm = min(1.0, step / 200)
         tail = 1.0
         if step > DECAY_FROM:                    # ★最後の10%で0へ
@@ -1116,9 +1146,16 @@ def main():
     if rolled:
         want_wider = False
 
+    # ★★1歩あたり何秒かかったか。★次の回はこれを見て歩数を決める
+    sec_per_step = ((time.time() - t_loop) / done_steps) if done_steps else 0.0
+    if sec_per_step:
+        print("★1歩あたり %.2f 秒（%d 歩 / %.0f 分）"
+              % (sec_per_step, done_steps, (time.time() - t_loop) / 60), flush=True)
     hist["runs"].append({
         "at": time.strftime("%Y-%m-%dT%H:%M:%SZ", time.gmtime()),
         "val": round(val, 4), "prev": round(prev_val, 4) if prev_val else None, "valTag": VAL_TAG, "stoppedAt": stopped_early,
+        # ★★次の回が歩数を決めるための実測。★体が育つたびに自動で追随する
+        "secPerStep": round(sec_per_step, 4), "steps": STEPS,
         "layers": len(model.blocks), "params": model.n_params(),
         # ★★棚から食べる時は `text` が空なので、★len(text) だと 0 になる。
         "chars": (pantry.chars if pantry is not None else len(text)),
