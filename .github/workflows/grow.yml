@@ -618,19 +618,19 @@ jobs:
           git config user.email "realu@users.noreply.github.com"
           # ★★★置いた人が同じファイルを直しているかもしれない。
           #   ★衝突しても転ばないように、★自分の記録だけを持って、★向こうの最新に載せ直す。
+          # ★★★2026-09-09: ここで said.json も一緒に押し戻していた。
+          #   ★育つ回は90分かかる。★その間に書く係が1時間ごとに新しい文章を残す。
+          #   ★★なのに最後に**90分前の said.json** を書き戻していたので、
+          #     ★★書く係の成果が**育つたびに消えていた**（★2026-09-08 21:24 の1件だけが
+          #     ★何度も復活し続けていた）。
+          #   ★`grow.py` は said.json を**1バイトも書かない**。★自分の記録ではない。
+          #   → ★**growth.json だけ**を持って載せ直す。
           cp growth.json /tmp/growth.mine
-          cp said.json /tmp/said.mine 2>/dev/null || true
           git stash -u >/dev/null 2>&1 || true
           for i in 1 2 3; do
             git fetch origin main && git reset --hard origin/main
             cp /tmp/growth.mine growth.json
-            cp /tmp/said.mine said.json 2>/dev/null || true
-            # ★★★無いファイルを1つ混ぜると **git add は全部落ちる**（exit 128）。
-            #   ★said.json は別のワークフローが作る物で、★ここには無い回がある。
-            #   → ★この段は**一度も成功していなかった**（2026-09-08 に判明）。
-            for f in growth.json said.json; do
-              [ -f "$f" ] && git add "$f"
-            done
+            git add growth.json
             if git diff --staged --quiet; then
               echo "記録に変化なし"; break
             fi
