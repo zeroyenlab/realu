@@ -159,6 +159,12 @@ except Exception:
 #   ★0 なら仕上げをしない。
 FINISH_P = float(os.environ.get("REALU_FINISH", 0.20))
 FINISH_SRC = os.environ.get("REALU_FINISH_SRC", "talk.txt")
+# ★★★仕上げ中に会話から引く割合（★2026-09-10）。
+#   ★1.0（会話だけ）で試したら、★会話は 2.658→2.266 と大きく良くなったが、
+#   ★★国会 2.861→3.356 / 法令 4.821→5.191 と他が全部落ちて、★全体では巻き戻された。
+#   ★物差しは国会48%・Wikipedia34%でできているので、★会話だけ読むと全体が悪くなる。
+#   → ★半分だけ会話にする。★残り半分はいつも通り棚ぜんぶから引く。
+FINISH_MIX = float(os.environ.get("REALU_FINISH_MIX", 0.5))
 #   ★★本番と訓練の差がこれを超えたら「丸暗記している」とみなす
 WORSE_MARGIN = 0.02    # ★★これ以上悪くなっていたら、その学習は**採用しない**
 
@@ -524,17 +530,14 @@ class Pantry:
         return w
 
 
-def batch(data, ctx, bs, tiers=None, focus=None):
+def batch(data, ctx, bs, tiers=None, focus=None, focus_p=1.0):
     """★3つの山から、決めた割合で引く。★山が無ければ全部から引く。
 
-    ★focus=(始まり, 終わり) を渡すと、★**そこからしか引かない**（★仕上げ用）。
+    ★focus=(始まり, 終わり) と focus_p を渡すと、★その割合だけそこから引く（★仕上げ用）。
+    ★focus_p=1.0 なら全部そこから。★0.5 なら半分だけ差し替えて、残りはいつも通り。
     """
     n = len(data) - ctx - 1
-    if focus and focus[1] - focus[0] > ctx + 1:
-        lo = max(0, min(focus[0], n))
-        hi = max(lo + 1, min(focus[1] - ctx - 1, n))
-        ix = torch.randint(lo, hi, (bs,))
-    elif not tiers:
+    if not tiers:
         ix = torch.randint(n, (bs,))
     else:
         short, mid = tiers.get("short"), tiers.get("mid")
@@ -550,6 +553,19 @@ def batch(data, ctx, bs, tiers=None, focus=None):
             k = int(m.sum())
             if k:
                 ix[m] = torch.randint(mid[0], mid[1] - ctx - 1, (k,))
+    # ★★★仕上げ：引いたうちの一部だけを、狙った所に差し替える。
+    #   ★全部を差し替えると他のごはんを一切読まなくなり、★他の点数が落ちる（実測）。
+    if focus and focus_p > 0 and focus[1] - focus[0] > ctx + 1:
+        lo = max(0, min(focus[0], n))
+        hi = max(lo + 1, min(focus[1] - ctx - 1, n))
+        if focus_p >= 1.0:
+            ix = torch.randint(lo, hi, (bs,))
+        else:
+            m = torch.rand(bs) < focus_p
+            k = int(m.sum())
+            if k:
+                ix[m] = torch.randint(lo, hi, (k,))
+
     # ★★ごはんは int32 で持つ（★long の半分）。★使う所だけ long にする
     if isinstance(data, Pantry):
         import numpy as np
@@ -1092,8 +1108,8 @@ def main():
         # ★★★仕上げ：最後の何割かは、会話からしか引かない
         if focus_range and step >= FINISH_FROM and not in_finish:
             in_finish = True
-            print("  ★★ここから仕上げ（%d歩〜）。★会話だけを読む（%s / %.1f 万トークン）"
-                  % (FINISH_FROM, FINISH_SRC,
+            print("  ★★ここから仕上げ（%d歩〜）。★%.0f%% を %s から引く（%.1f 万トークン）"
+                  % (FINISH_FROM, FINISH_MIX * 100, FINISH_SRC,
                      (focus_range[1] - focus_range[0]) / 10000), flush=True)
         warm = min(1.0, step / 200)
         tail = 1.0
@@ -1103,7 +1119,7 @@ def main():
             g["lr"] = lr_now * warm * tail
         model.train()
         x, y = batch(tr, model.ctx, BATCH, tiers,
-                     focus=focus_range if in_finish else None)
+                     focus=focus_range if in_finish else None, focus_p=FINISH_MIX)
         logits, loss = model(x, y)
         if teacher is not None:
             # ★★★先生に同じ文章を見せて、★「どう答えるか」を教わる。
