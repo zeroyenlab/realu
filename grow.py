@@ -139,6 +139,16 @@ def held_out(line):
 GROW_PATIENCE = 5      # ★この回数ぶん良くならなかったら「頭打ち」
 GROW_MIN_LOSS = 1.05   # ★まだ下手なうちだけ大きくする
 OVERFIT_GAP = float(os.environ.get("REALU_OVERFIT_GAP", 0.15))
+
+# ★★★仕上げ（★2026-09-09 Daito「あえて過学習させるのはどうなん？」）
+#   ★いまは 12.93M の頭を 8.5億トークンに薄く広げている（★1パラメータ 65.8 トークン）。
+#   ★★「全部を浅く」より「狙う所を深く」の方が、★小さい頭では効くはず。
+#   ★でも棚ぜんぶで過学習はできない（★容量の66倍ある）。
+#   → ★**最後の何割かだけ、会話からしか引かない**。★狙いを雑談に寄せて着地する。
+#   ★学習率を0へ落とす区間と重なるので、★「会話の型で固まる」形になる。
+#   ★0 なら仕上げをしない。
+FINISH_P = float(os.environ.get("REALU_FINISH", 0.20))
+FINISH_SRC = os.environ.get("REALU_FINISH_SRC", "talk.txt")
 #   ★★本番と訓練の差がこれを超えたら「丸暗記している」とみなす
 WORSE_MARGIN = 0.02    # ★★これ以上悪くなっていたら、その学習は**採用しない**
 
@@ -444,11 +454,14 @@ class Pantry:
         #   ★古い棚には入っていない（★次に棚を作り直した時から入る）。
         self.chars = 0
         self.mix = None          # ★★どの配合で作られた棚か
+        self.marks = []          # ★★ごはんの種類ごとの、棚の中の位置
         try:
             with open(os.path.join(d, "meta.json"), encoding="utf-8") as f:
                 m = json.load(f) or {}
             self.chars = int(m.get("chars") or 0)
             self.mix = m.get("mix")
+            # ★★どのごはんが棚のどこにあるか（★仕上げで会話だけを引くのに使う）
+            self.marks = m.get("marks") or []
         except Exception:
             pass
 
@@ -477,10 +490,17 @@ class Pantry:
         return w
 
 
-def batch(data, ctx, bs, tiers=None):
-    """★3つの山から、決めた割合で引く。★山が無ければ全部から引く。"""
+def batch(data, ctx, bs, tiers=None, focus=None):
+    """★3つの山から、決めた割合で引く。★山が無ければ全部から引く。
+
+    ★focus=(始まり, 終わり) を渡すと、★**そこからしか引かない**（★仕上げ用）。
+    """
     n = len(data) - ctx - 1
-    if not tiers:
+    if focus and focus[1] - focus[0] > ctx + 1:
+        lo = max(0, min(focus[0], n))
+        hi = max(lo + 1, min(focus[1] - ctx - 1, n))
+        ix = torch.randint(lo, hi, (bs,))
+    elif not tiers:
         ix = torch.randint(n, (bs,))
     else:
         short, mid = tiers.get("short"), tiers.get("mid")
@@ -974,6 +994,27 @@ def main():
             STEPS = 1200
             print("★前回の速さが分からないので %d 歩から始める" % STEPS, flush=True)
     DECAY_FROM = int(STEPS * 0.90)
+
+    # ★★★仕上げの用意。★最後の何割かで、会話だけを読む。
+    #   ★学習率を0へ落とす区間（最後の10%）と重なるので、
+    #   ★★「会話の型のまま固まる」形になる。
+    FINISH_FROM = int(STEPS * (1 - FINISH_P)) if FINISH_P > 0 else STEPS + 1
+    in_finish = False
+    focus_range = None
+    if FINISH_P > 0 and pantry is not None:
+        for _m in (getattr(pantry, "marks", None) or []):
+            if _m.get("name") == FINISH_SRC:
+                _a, _b = int(_m.get("at") or 0), int(_m.get("until") or 0)
+                if _b - _a > model.ctx * 64:      # ★短すぎたら意味がない
+                    focus_range = (_a, _b)
+                break
+    if focus_range:
+        print("★仕上げの用意: %s は棚の %s〜%s（%.1f 万トークン）。★%d歩から使う"
+              % (FINISH_SRC, format(focus_range[0], ","), format(focus_range[1], ","),
+                 (focus_range[1] - focus_range[0]) / 10000, FINISH_FROM), flush=True)
+    elif FINISH_P > 0:
+        print("★仕上げに使うごはん（%s）が棚に見つからない。★仕上げはしない" % FINISH_SRC,
+              flush=True)
     # ★★★時間の予算。★これを超えたら**途中でも切り上げて、頭を残す**。
     #   ★2026-09-08: 4,000歩に182分かかる見込みなのに残りが145分しかなく、
     #     ★時間切れで**頭が1つも残らない**ところだった。
@@ -988,6 +1029,12 @@ def main():
                   % (step, STEPS), flush=True)
             break
         done_steps = step
+        # ★★★仕上げ：最後の何割かは、会話からしか引かない
+        if focus_range and step >= FINISH_FROM and not in_finish:
+            in_finish = True
+            print("  ★★ここから仕上げ（%d歩〜）。★会話だけを読む（%s / %.1f 万トークン）"
+                  % (FINISH_FROM, FINISH_SRC,
+                     (focus_range[1] - focus_range[0]) / 10000), flush=True)
         warm = min(1.0, step / 200)
         tail = 1.0
         if step > DECAY_FROM:                    # ★最後の10%で0へ
@@ -995,7 +1042,8 @@ def main():
         for g in opt.param_groups:
             g["lr"] = lr_now * warm * tail
         model.train()
-        x, y = batch(tr, model.ctx, BATCH, tiers)
+        x, y = batch(tr, model.ctx, BATCH, tiers,
+                     focus=focus_range if in_finish else None)
         logits, loss = model(x, y)
         if teacher is not None:
             # ★★★先生に同じ文章を見せて、★「どう答えるか」を教わる。
