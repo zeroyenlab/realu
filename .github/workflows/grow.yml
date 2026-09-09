@@ -438,15 +438,25 @@ jobs:
           #   → ★★中身の大きさの合計で見る。★変わっていなければ作り直さない。
           SUM=$(cat work/*.txt.gz 2>/dev/null | wc -c)
           OLD=$(cat work/pantry/src_bytes.txt 2>/dev/null || echo 0)
-          if [ ! -f work/pantry/meta.json ] || [ "$SUM" != "$OLD" ]; then
-            echo "★ごはんが変わった（$OLD → $SUM バイト）。棚を作り直す"
+          # ★★★2026-09-09: 「1バイトでも違えば作り直す」は厳しすぎた。
+          #   ★実測 #40: 1,330,485,580 → 1,330,485,614 = ★**差 34 バイト**。
+          #   ★そのために 2,079 MB の棚を ★**28.0 分**かけて作り直していた。
+          #   ★1回 93.5分のうち 28分が作り直し ＝ ★★学ぶのは 64% だけ。
+          #   → ★★**1% 以上増えた時だけ**作り直す。
+          #   ★作り直さない回は src_bytes.txt を更新しないので、★増分は溜まっていく
+          #     （★溜まって1%を超えたら、その時にまとめて作り直す）。
+          if [ "$SUM" -ge "$OLD" ]; then DIFF=$((SUM - OLD)); else DIFF=$((OLD - SUM)); fi
+          NEED=$((OLD / 100))
+          if [ "$NEED" -lt 1048576 ]; then NEED=1048576; fi   # ★最低 1MB
+          if [ ! -f work/pantry/meta.json ] || [ "$OLD" = "0" ] || [ "$DIFF" -ge "$NEED" ]; then
+            echo "★ごはんが $DIFF バイト増えた（$OLD → $SUM）。棚を作り直す"
             if python -u make_pantry.py; then
               echo "$SUM" > work/pantry/src_bytes.txt
             else
               echo "★棚は作れなかった（★今まで通りで学ぶ）"
             fi
           else
-            echo "★棚はそのまま使える（$SUM バイト）"
+            echo "★棚はそのまま使える（★差 $DIFF バイト / 作り直すのは $NEED バイト以上から）"
           fi
 
       # ── ★★★棚と会話を、★学ぶ前にもう一度しまう。

@@ -171,11 +171,20 @@ def main():
 
     picks = {"rpc": from_rpc, "jmw": from_jmw, "jcre3": from_jcre3}
     got_any = False
-    with gzip.open(OUT, "at", encoding="utf-8", newline=NL) as f:
-        for key, (title, url) in SRC.items():
-            if key in done:
-                print("★%s はもう持っている" % title, flush=True)
-                continue
+    # ★★★2026-09-09: ここで**無条件に**追記モードで開いていた。
+    #   ★Python の gzip は「開いて閉じる」だけで★**空のメンバー34バイト**を書く。
+    #   ★取るものが無い回でも talk.txt.gz が 34 バイト増えていた。
+    #   ★★grow.yml は「ごはんの合計バイトが変わったら棚を作り直す」ので、
+    #     ★★毎回 2GB の棚を **28分**かけて作り直していた（★実測 #38/#39/#40 とも +34）。
+    #   → ★取るものがある時だけ開く。
+    todo = [k for k in SRC if k not in done]
+    for key in SRC:
+        if key in done:
+            print("★%s はもう持っている" % SRC[key][0], flush=True)
+    if todo:
+      with gzip.open(OUT, "at", encoding="utf-8", newline=NL) as f:
+        for key in todo:
+            title, url = SRC[key]
             print("★%s をもらいに行く…" % title, flush=True)
             try:
                 z = zipfile.ZipFile(_io.BytesIO(fetch(url)))
