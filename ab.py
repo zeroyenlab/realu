@@ -62,9 +62,27 @@ TESTS = [
 def load():
     try:
         with open(OUT, encoding="utf-8") as f:
-            return json.load(f)
+            d = json.load(f)
     except Exception:
-        return {"done": {}, "log": []}
+        d = {}
+    d.setdefault("done", {})     # ★測り終わったもの
+    d.setdefault("log", [])      # ★履歴
+    d.setdefault("partial", {})  # ★★途中まで測った種（★次の回で続きから）
+    return d
+
+
+def save(res):
+    """★★★1組ごとに書く。
+
+    ★これが無かったせいで、★10分の枠で殺されるたびに
+    ★**その回の計算がまるごと捨てられていた**（★5時間まわして結果ゼロ）。
+    ★書いてから差し替える（★途中で死んでも壊れたファイルを残さない）。
+    """
+    tmp = OUT + ".tmp"
+    with open(tmp, "w", encoding="utf-8", newline=NL) as f:
+        json.dump(res, f, ensure_ascii=False, indent=1)
+        f.write(NL)
+    os.replace(tmp, OUT)
 
 
 def one(env, seed, tmp):
@@ -81,9 +99,17 @@ def one(env, seed, tmp):
         "REALU_TIME_BUDGET": "999",
     })
     e.update(env)
-    r = subprocess.run([sys.executable, "-u", "ab_one.py"],
-                       cwd=HERE, env=e, capture_output=True, text=True,
-                       encoding="utf-8", errors="replace", timeout=1200)
+    # ★★1本が予算まるごとを食うことは無い。★食ったらそれは測定ではなく事故。
+    #   ★前は 1200 秒。★予算6分のジョブで20分待つ設定になっていた。
+    try:
+        r = subprocess.run([sys.executable, "-u", "ab_one.py"],
+                           cwd=HERE, env=e, capture_output=True, text=True,
+                           encoding="utf-8", errors="replace",
+                           timeout=max(120, int(BUDGET)))
+    except subprocess.TimeoutExpired:
+        print("   ★1本が %d 秒で終わらなかった。★捨てる" % max(120, int(BUDGET)),
+              flush=True)
+        return None
     for ln in (r.stdout or "").split(NL):
         if ln.startswith("LOSS="):
             try:
@@ -108,21 +134,57 @@ def main():
             continue
         print("★測る: %s" % t["id"], flush=True)
         print("   %s" % t["why"], flush=True)
-        a_all, b_all = [], []
+        # ★★途中まで測ってあれば、そこから続ける。
+        #   ★ただし★測り方が変わっていたら捨てる（★別の土俵の数字と混ぜない）。
+        p = res["partial"].get(t["id"])
+        if p and (p.get("steps") != STEPS
+                  or p.get("aEnv") != t["a"] or p.get("bEnv") != t["b"]):
+            print("   ★測り方が変わった。★途中の数字は捨てる", flush=True)
+            p = None
+        if p:
+            print("   ★前の回の続き（種 %s まで済み）" % p.get("seeds"), flush=True)
+        a_all = list(p["a"]) if p else []
+        b_all = list(p["b"]) if p else []
+        got = set(p.get("seeds") or []) if p else set()
+
+        def keep():
+            res["partial"][t["id"]] = {
+                "a": a_all, "b": b_all, "seeds": sorted(got),
+                "steps": STEPS, "aEnv": t["a"], "bEnv": t["b"],
+                "at": time.strftime("%Y-%m-%dT%H:%M:%SZ", time.gmtime()),
+            }
+            save(res)
+
+        pair = 0.0                       # ★「1組に何分かかるか」の実測
         for s in range(SEEDS):
-            if time.time() - t0 > BUDGET:
-                print("   ★時間切れ。★次の回に続ける（★ここまでは捨てる）", flush=True)
+            if s in got:
+                continue
+            left = BUDGET - (time.time() - t0)
+            # ★★★入らないと分かっている組は**始めない**。
+            #   ★前は「始めてから時間を見る」だったので、
+            #   ★予算6分が実測9.1分になり、★ジョブの10分枠を超えて殺されていた。
+            if left <= 0 or (pair and left < pair * 1.15):
+                print("   ★あと %.1f 分。★次の1組（約 %.1f 分）は入らない。"
+                      "★ここまでを残して次の回に続ける"
+                      % (left / 60, pair / 60), flush=True)
+                keep()
                 return 0
+            c0 = time.time()
             a = one(t["a"], 1000 + s, tmp)
             b = one(t["b"], 1000 + s, tmp)
+            pair = max(pair, time.time() - c0)
             if a is None or b is None:
                 print("   ★測れなかった（種 %d）" % s, flush=True)
                 continue
             a_all.append(a)
             b_all.append(b)
-            print("   種%d  A %.4f  B %.4f  差 %+.4f" % (s, a, b, b - a), flush=True)
+            got.add(s)
+            print("   種%d  A %.4f  B %.4f  差 %+.4f（1組 %.1f 分）"
+                  % (s, a, b, b - a, pair / 60), flush=True)
+            keep()                       # ★★★1組ごとに残す
         if len(a_all) < 2:
             print("   ★種が2つ揃わなかった。★次の回にやり直す", flush=True)
+            keep()
             return 0
         ma = sum(a_all) / len(a_all)
         mb = sum(b_all) / len(b_all)
@@ -152,9 +214,8 @@ def main():
         }
         res["log"].append({"id": t["id"], "at": res["done"][t["id"]]["at"],
                            "diff": mb - ma, "verdict": verdict})
-        with open(OUT, "w", encoding="utf-8", newline=NL) as f:
-            json.dump(res, f, ensure_ascii=False, indent=1)
-            f.write(NL)
+        res["partial"].pop(t["id"], None)   # ★済んだので途中結果は片づける
+        save(res)
         print("   ★書き残した", flush=True)
         return 0
 

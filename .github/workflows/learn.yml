@@ -5,7 +5,10 @@ on:
   #   ★前は web を漁っていた（1日14.7時間・学習ゼロ）。
   #   ★ごはんは足りている（0.016周）ので、★測る方に回した。
   schedule:
-    - cron: "*/5 * * * *"
+    # ★★★2026-09-09: 5分ごと → 10分ごと。
+    #   ★1回が約7分かかるのに5分刻みで入れていたので、★待機列が詰まり、
+    #   ★新しい回が古い回を蹴っていた（★直近25回で cancelled 22 / success 2）。
+    - cron: "*/10 * * * *"
   workflow_dispatch:
   push:
     paths:
@@ -14,7 +17,7 @@ on:
       - ".github/workflows/learn.yml"
 permissions:
   contents: write
-  actions: write        # ★次の自分を呼ぶため
+  actions: write        # ★（自分を呼ぶのはやめた。★残してあるだけ）
 
 concurrency:
   # ★★★同じ group にすると、★私が push するたびに待機中の彼女が蹴られる
@@ -26,12 +29,23 @@ concurrency:
 jobs:
   measure:
     runs-on: ubuntu-latest
-    timeout-minutes: 10
+    timeout-minutes: 15      # ★★予算5分＋ごはん1分＋余裕。★前は10分で毎回殺されていた
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-python@v5
         with:
           python-version: "3.12"
+
+      # ★★★2026-09-09: サイトの数字が 19:25Z で止まっていたのを直す配線。
+      #   ★家（index.html）は2時間に一度しか建て直せない（★無料枠が月500回）ので、
+      #   ★数字は玄関（/api/state）に置いて、★家が開くたびに読ませている。
+      #   ★★その玄関を更新していたのは古い「web漁り」係（learn.py）だった。
+      #   ★`fd63119` で5分ごとの係を作り替えたとき、★この配線ごと外れていた。
+      #   ★torch を入れる前に置く＝★測るのが失敗しても数字だけは新しくなる。
+      - name: 家の数字を玄関に置く
+        env:
+          REALU_DOOR_KEY: ${{ secrets.REALU_DOOR_KEY }}
+        run: python tell.py
 
       - name: 道具を入れる
         run: |
@@ -70,7 +84,7 @@ jobs:
         env:
           REALU_AB_STEPS: "300"
           REALU_AB_SEEDS: "3"
-          REALU_AB_BUDGET: "6"
+          REALU_AB_BUDGET: "5"      # ★★ab.py が守れる形にした（★入らない組は始めない）
         run: |
           if [ ! -d work/pantry ]; then
             echo "★棚がまだ無い。★次の回に"
@@ -96,13 +110,9 @@ jobs:
             sleep 5
           done
 
-      - name: 次のわたしを呼ぶ
-        if: always()
-        env:
-          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        run: |
-          sleep 60
-          gh workflow run learn.yml --ref main || true
+      # ★★★2026-09-09: 「次のわたしを呼ぶ」を消した。
+      #   ★cron（10分ごと）と自分で呼ぶ回が**二重に走って殺し合っていた**。
+      #   ★しかも `sleep 60` が枠を1分食っていた。★心臓は cron ひとつでいい。
 
       - name: 触れてはいけない所を守る
         if: always()
