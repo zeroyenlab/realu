@@ -1065,10 +1065,31 @@ def main():
     #     ＝ ★★60分がまるごと捨てられていた。
     #   → ★予算に収まる歩数を選び、★**必ず減衰まで走り切って着地する**。
     if STEPS <= 0:
-        sec = 0.0
+        # ★★★直近1件だけを見ると外す。★GitHub の CPU は回ごとに2.4倍ぶれる
+        #   （★実測 2026-09-09: 1.2535 / 3.1381 / 3.1606 / 3.0576 秒/歩）。
+        #   ★#64 は 1.2535 を拾って 2,635 歩の予定を立て、★1,201 歩で時間切れになった。
+        #   → ★★直近5件の**中央値**を使う。★1件の外れ値に引きずられない。
+        _secs = []
         for _r in reversed(hist.get("runs") or []):
             if _r.get("secPerStep"):
-                sec = float(_r["secPerStep"]); break
+                _secs.append(float(_r["secPerStep"]))
+            if len(_secs) >= 5:
+                break
+        sec = 0.0
+        if _secs:
+            _srt = sorted(_secs)
+            sec = _srt[len(_srt) // 2]
+            # ★層が増えた直後は前より遅くなる。★層数比で割り増しておく
+            _prev_layers = 0
+            for _r in reversed(hist.get("runs") or []):
+                if _r.get("layers"):
+                    _prev_layers = int(_r["layers"]); break
+            _now_layers = len(model.blocks)
+            if _prev_layers and _now_layers > _prev_layers:
+                sec *= float(_now_layers) / float(_prev_layers)
+            print("★秒/歩の見積り %.3f（直近%d件の中央値 %s／層 %d→%d）"
+                  % (sec, len(_secs), ", ".join("%.2f" % v for v in _secs),
+                     _prev_layers, _now_layers), flush=True)
         remain = budget - (time.time() - t0)      # ★下ごしらえに使った分を引く
         if sec > 0 and remain > 0:
             # ★0.92 は安全代。★減衰まで確実に走り切るために少し余らせる
@@ -1079,11 +1100,19 @@ def main():
             STEPS = 1200
             print("★前回の速さが分からないので %d 歩から始める" % STEPS, flush=True)
     DECAY_FROM = int(STEPS * 0.90)
+    # ★★★仕上げ（学習率を0へ）は、★歩数ではなく**残り時間**で始める（2026-09-10）。
+    #   ★歩数で決めていたので、★速さの見積りが外れるたびに減衰が一度も入らなかった。
+    #   ★★残り時間で判断すれば、★何倍外そうが仕上げは必ず入って着地する。
+    DECAY_T = float(os.environ.get("REALU_DECAY_T", 0.12))   # ★最後の何割の「時間」で0へ
+    decay_started = None      # ★(始めた歩, 始めた秒)
 
     # ★★★仕上げの用意。★最後の何割かで、会話だけを読む。
     #   ★学習率を0へ落とす区間（最後の10%）と重なるので、
     #   ★★「会話の型のまま固まる」形になる。
     FINISH_FROM = int(STEPS * (1 - FINISH_P)) if FINISH_P > 0 else STEPS + 1
+    # ★★こちらも同じ理由で時間を見る。★#64 では 2,108 歩目からの予定が
+    #   1,201 歩で切れて、★★会話に寄せる区間も一度も入らなかった。
+    FINISH_T = (1.0 - FINISH_P) if FINISH_P > 0 else 2.0
     in_finish = False
     focus_range = None
     if FINISH_P > 0 and pantry is not None:
@@ -1114,16 +1143,28 @@ def main():
                   % (step, STEPS), flush=True)
             break
         done_steps = step
-        # ★★★仕上げ：最後の何割かは、会話からしか引かない
-        if focus_range and step >= FINISH_FROM and not in_finish:
+        now_el = time.time() - t0
+        # ★★★仕上げ：最後の何割かは、会話を濃く引く。★歩数か時間の**早い方**で入る
+        if focus_range and not in_finish and (step >= FINISH_FROM
+                                              or now_el > budget * FINISH_T):
             in_finish = True
-            print("  ★★ここから仕上げ（%d歩〜）。★%.0f%% を %s から引く（%.1f 万トークン）"
-                  % (FINISH_FROM, FINISH_MIX * 100, FINISH_SRC,
+            print("  ★★ここから仕上げ（%d歩目 / %.0f分経過）。★%.0f%% を %s から引く（%.1f 万トークン）"
+                  % (step, now_el / 60, FINISH_MIX * 100, FINISH_SRC,
                      (focus_range[1] - focus_range[0]) / 10000), flush=True)
         warm = min(1.0, step / 200)
+        # ★★★学習率を0へ落とす区間。★歩数か時間の**早い方**で始める。
+        if decay_started is None and (step > DECAY_FROM
+                                      or now_el > budget * (1.0 - DECAY_T)):
+            decay_started = (step, now_el)
+            print("  ★★ここから仕上げの減衰（%d歩目 / %.0f分経過）。★学習率を0へ落とす"
+                  % (step, now_el / 60), flush=True)
         tail = 1.0
-        if step > DECAY_FROM:                    # ★最後の10%で0へ
-            tail = max(0.0, (STEPS - step) / max(1, STEPS - DECAY_FROM))
+        if decay_started is not None:
+            _s0, _e0 = decay_started
+            # ★時間で見た残り／歩数で見た残り、★小さい方に合わせて0へ着地させる
+            _by_t = (budget - now_el) / max(1e-6, budget - _e0)
+            _by_s = (STEPS - step) / max(1, STEPS - _s0)
+            tail = max(0.0, min(1.0, min(_by_t, _by_s)))
         for g in opt.param_groups:
             g["lr"] = lr_now * warm * tail
         model.train()
@@ -1233,6 +1274,7 @@ def main():
     val = None
     my_spread = 0.0
     rolled = False
+    own_val = own_score = None      # ★★巻き戻した回の「その回自身の点」。★記録が混ざらないように
     by_src = {}                 # ★★ソース別の点数（★診断用）
     score = None                # ★★採るか戻すかを決める合成点
     try:
@@ -1282,6 +1324,7 @@ def main():
             model.load_state_dict(before)
             while len(model.blocks) > before_layers:
                 model.blocks = model.blocks[:before_layers]
+            own_val, own_score = val, score
             val, score, rolled = prev_val, prev_score, True
     except Exception as e:
         print("★★★測れなかった（%s）。★それでも頭は残す。" % type(e).__name__, flush=True)
@@ -1375,6 +1418,10 @@ def main():
         "chars": (pantry.chars if pantry is not None else len(text)),
         "tokens": len(ids),          # ★★実際に食べている単位はこちら
         "grew": grew, "rolledBack": rolled,
+        # ★★巻き戻した回は val に「戻した先の点」が入る。★bySrc はその回自身のもの
+        #   なので、★1行の中で持ち主が食い違う。★その回自身の点をここに残す
+        "ownVal": round(own_val, 4) if own_val is not None else None,
+        "ownScore": round(own_score, 4) if own_score is not None else None,
         "d": model.d, "loops": model.loops, "spread": round(my_spread, 4),
         "bytes": ptsize, "heads": model.h, "ctx": model.ctx, "vocab": len(vocab),
         "kind": getattr(vocab, "kind", "char"), "arch": ARCH,
