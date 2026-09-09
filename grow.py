@@ -807,6 +807,32 @@ def main():
     ids = pantry if pantry is not None else encode_big(text)
     step_log("トークンにした")
     va = encode_big(val_text)
+
+    # ★★★ソース別の物差し（★診断用。★全体の点数は今までどおり動かさない）
+    #   ★★なぜ要るか: ★全体の1つの数字だと、★「国会が少し落ちて会話が大きく上がった」
+    #     ★のような**中身の入れ替わり**が完全に潰れる。
+    #   ★物差しの行は凍結したまま。★どこからどこまでがどのソースかの表だけを使う。
+    va_src = {}
+    try:
+        vm = os.path.join(WORK, "pantry", "val_marks.json")
+        with open(vm, encoding="utf-8") as f:
+            vmarks = json.load(f) or []
+        vlines = val_text.split(chr(10))
+        if vmarks and vmarks[-1].get("until") == len(vlines):
+            for m in vmarks:
+                seg = chr(10).join(vlines[m["from"]:m["until"]])
+                if len(seg) >= 2000:            # ★短すぎるソースは測らない（★雑音になる）
+                    va_src[m["name"].replace(".txt", "")] = encode_big(seg)
+            print("★ソース別の物差し（トークン）: %s" % " / ".join(
+                "%s %.1f万" % (k, len(v) / 10000) for k, v in va_src.items()), flush=True)
+        elif vmarks:
+            print("★★ソース別の対応表が物差しと合わない（%d ≠ %d）。★使わない"
+                  % (vmarks[-1].get("until"), len(vlines)), flush=True)
+    except FileNotFoundError:
+        pass
+    except Exception as e:
+        print("★ソース別の物差しは用意できなかった（%s）" % type(e).__name__, flush=True)
+
     tr = ids
     # ★物差しが短すぎると測れない。★その時だけ昔のやり方に落とす（★正直に言う）
     if len(va) < model.ctx * 8:
@@ -995,11 +1021,27 @@ def main():
     val = None
     my_spread = 0.0
     rolled = False
+    by_src = {}                 # ★★ソース別の点数（★診断用）
     try:
         with torch.no_grad():
             val = torch.stack([model(*batch(va, model.ctx, BATCH))[1]
                                for _ in range(20)]).mean().item()
         my_spread = spread(model)
+        # ★★★ソース別にも測る（★全体の点数の決め方は変えない）
+        for _nm, _vv in va_src.items():
+            if len(_vv) < model.ctx * 4:
+                continue
+            try:
+                with torch.no_grad():
+                    by_src[_nm] = round(torch.stack(
+                        [model(*batch(_vv, model.ctx, BATCH))[1]
+                         for _ in range(6)]).mean().item(), 4)
+            except Exception:
+                pass
+        if by_src:
+            print("★ソース別: %s" % " / ".join(
+                "%s %.4f" % (k, v) for k, v in sorted(by_src.items(),
+                                                      key=lambda x: x[1])), flush=True)
         if teacher is not None:
             t_spread = spread(teacher)
             print("★言い方の幅: 先生 %.3f → わたし %.3f" % (t_spread, my_spread), flush=True)
@@ -1082,6 +1124,7 @@ def main():
         "kind": getattr(vocab, "kind", "char"), "arch": ARCH,
         "wantWider": want_wider, "layerCap": layer_cap(model.d),
         "mixChanged": mix_changed,
+        "bySrc": by_src,        # ★★ソース別の点数（★全体の点数とは別の、中身の内訳）
         "wrote": wrote,
         "movedBody": teacher is not None,
     })

@@ -122,6 +122,7 @@ def main():
     seen = {}
     held = []
     marks = []                      # ★どのごはんがどこから始まるか
+    val_marks = []                  # ★★物差しの、どこからどこまでがどのソースか
     part, wrote_bytes, total = 1, 0, 0
     # ★★★食べた文字の**合計**。
     #   ★2026-09-09: これが無かった。★buf_chars は flush のたびに 0 に戻していたので、
@@ -163,26 +164,32 @@ def main():
         rep = max(1, int(cfg.get("repeat", 1)))
         cap = cfg.get("cap")
         marks.append({"name": name, "at": total})
+        vfrom = len(held)               # ★★物差しの、このソースの始まり
         start = total
         n_kept = n_held = 0
-        full = False
+        capped = False
         for r in range(rep):
-            if full:
-                break
+            if capped and r > 0:
+                break                   # ★もう書かないので、くり返す意味がない
             for ln in lines_of(path):
                 key = ln.strip()
-                if len(key) >= 10 and not SRC_MARK.match(key):
-                    # ★★物差しの行は**何周目でも**外す（★答えを見せない）
-                    if held_out(key):
-                        if r == 0:
-                            held.append(key)
-                            n_held += 1
+                is_line = len(key) >= 10 and not SRC_MARK.match(key)
+                # ★★物差しの行は**何周目でも**外す（★答えを見せない）
+                if is_line and held_out(key):
+                    if r == 0:
+                        held.append(key)
+                        n_held += 1
+                    continue
+                # ★★★上限に達しても**読むのはやめない**。
+                #   ★やめると、★そこから先の「物差しの行」を取りこぼして、
+                #   ★★どこまでがどのソースかの対応が**ずれる**。★書くのだけをやめる。
+                if capped:
+                    continue
+                if is_line and rep == 1:    # ★くり返す所では数えない（★わざと増やしている）
+                    c = seen.get(key, 0)
+                    if c >= DUP_MAX:        # ★同じ行は3回まで
                         continue
-                    if rep == 1:            # ★くり返す所では数えない（★わざと増やしている）
-                        c = seen.get(key, 0)
-                        if c >= DUP_MAX:    # ★同じ行は3回まで
-                            continue
-                        seen[key] = c + 1
+                    seen[key] = c + 1
                 buf.append(ln)
                 buf_chars += len(ln) + 1
                 n_kept += 1
@@ -192,12 +199,12 @@ def main():
                 near = cap and (total - start) + buf_chars >= cap
                 if buf_chars >= 4_000_000 or near:
                     flush()
-                    if cap and total - start >= cap:
-                        print("  ★%s は上限（%s トークン）に達した。ここで打ち切る"
+                    if cap and total - start >= cap and not capped:
+                        print("  ★%s は上限（%s トークン）に達した。★ここから先は読むだけ"
                               % (name, format(cap, ",")), flush=True)
-                        full = True
-                        break
+                        capped = True
         flush()
+        val_marks.append({"name": name, "from": vfrom, "until": len(held)})
         marks[-1]["until"] = total
         note = ""
         if rep > 1:
@@ -219,6 +226,30 @@ def main():
               % (sum(len(x) for x in held) / 10000, len(held)), flush=True)
     elif os.path.exists(valf):
         print("★物差しは前のものをそのまま使う", flush=True)
+
+    # ★★★物差しの「どこからどこまでがどのソースか」を残す。
+    #   ★★`val.txt.gz` そのものは**凍結したまま1バイトも触らない**
+    #     （★触ると前の点数と比べられなくなる）。★対応表だけを別に置く。
+    #   ★行数が合わない時は**書かない**（★対応が取れていない証拠なので、
+    #     ★合わない表を置くと「会話の点数」に別のソースの行が混ざる）。
+    vpath = os.path.join(WORK, "val.txt.gz")
+    ok = True
+    if os.path.exists(vpath):
+        try:
+            with gzip.open(vpath, "rt", encoding="utf-8", errors="ignore") as f:
+                n_have = sum(1 for _ in f)
+            if n_have != len(held):
+                print("★★物差しの行数が合わない（%d ≠ %d）。★ソース別の対応表は作らない"
+                      % (n_have, len(held)), flush=True)
+                ok = False
+        except Exception:
+            ok = False
+    if ok and val_marks:
+        with open(os.path.join(PANTRY, "val_marks.json"), "w", encoding="utf-8") as f:
+            json.dump(val_marks, f, ensure_ascii=False, indent=1)
+        print("★物差しのソース別対応表を作った（%s）"
+              % " / ".join("%s %d行" % (v["name"].replace(".txt", ""), v["until"] - v["from"])
+                           for v in val_marks), flush=True)
 
     meta = {"total": total, "chars": chars, "parts": part, "vocab": len(vocab),
             "dtype": "uint16", "marks": marks,

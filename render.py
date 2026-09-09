@@ -166,12 +166,26 @@ def main():
             food_html = "食べたことば <b>%.2f 億</b>" % (int(last["tokens"]) / 1e8)
         else:
             food_html = "食べた量 <b>【数えていない】</b>"
+        # ★★★ごはんの種類ごとの点数。
+        #   ★全体の1つの数字だと「国会が少し落ちて会話が大きく上がった」が潰れる。
+        SRC_JA = {"kokkai": "国会", "wiki": "Wikipedia", "web": "web", "laws": "法令",
+                  "aozora": "青空文庫", "hanrei": "判例", "talk": "会話"}
+        bs = last.get("bySrc") or {}
+        bs_rows = "".join(
+            '<div class="bs"><span class="bsk">%s</span><span class="bsv">%.4f</span></div>'
+            % (e(SRC_JA.get(k, k)), v) for k, v in sorted(bs.items(), key=lambda x: x[1]))
+        src_html = ('<div id="bsbox"%s><div class="bsnote">ごはんの種類ごとの点数です。'
+                    '<b>全体の数字だけだと、中身の入れ替わりが見えません</b>。'
+                    '（下がるほど、その種類の言葉を当てられている）</div>'
+                    '<div class="bsrows" id="bsrows">%s</div></div>'
+                    % ("" if bs_rows else " hidden", bs_rows))
         spec_html = ('<h2>頭のなかみ</h2><div class="specs" id="specs">%s</div>'
                      '<div class="spnote" id="spnote">'
                      '%s／作り <b>%s</b>／ことばの単位 <b>%s</b>'
                      '</div>' % (rows, food_html,
                                  e(last.get("arch") or "?"),
-                                 "自分で切り出した" if last.get("kind") == "bpe" else "文字単位"))
+                                 "自分で切り出した" if last.get("kind") == "bpe"
+                                 else "文字単位")) + src_html
     else:
         spec_html = ('<h2>頭のなかみ</h2><div class="spnote">まだ頭がない。'
                      '読んで覚えるだけ。</div>')
@@ -446,6 +460,17 @@ def main():
         '+"<span class=\\"wt\\">"+esc(la[1].text)+"</span>"'
         '+"<span class=\\"wm\\">"+stamp(la[0])+"</span>"+past+"</div>"'
         '}).join("");if(wrb)wrb.hidden=(starts.length===0)}'
+
+        # ★★ごはんの種類ごとの点数も玄関から描く
+        'var JA={kokkai:"国会",wiki:"Wikipedia",web:"web",laws:"法令",'
+        'aozora:"青空文庫",hanrei:"判例",talk:"会話"};'
+        'var BS=sp.bySrc||{},bsb=document.getElementById("bsbox"),'
+        'bsr=document.getElementById("bsrows");'
+        'if(bsr){var ks=Object.keys(BS).sort(function(a,b){return BS[a]-BS[b]});'
+        'bsr.innerHTML=ks.map(function(k){return '
+        '"<div class=\\"bs\\"><span class=\\"bsk\\">"+esc(JA[k]||k)+"</span>"'
+        '+"<span class=\\"bsv\\">"+f4(BS[k])+"</span></div>"}).join("");'
+        'if(bsb)bsb.hidden=(ks.length===0)}'
         '}).catch(function(){});})();</script>'
     ) % dr)
 
@@ -647,6 +672,13 @@ h2{font-size:11px;font-weight:700;letter-spacing:.18em;color:var(--faint);margin
 .say button{background:var(--accent);color:var(--bg);border:0;border-radius:999px;padding:8px 22px;font:inherit;font-weight:700;font-size:13px;cursor:pointer}
 .say button:hover{filter:brightness(1.08)}
 .say #saymsg{font-size:11.5px;color:var(--muted)}
+.bsnote{color:var(--faint);font-size:11.5px;line-height:1.8;margin:14px 0 8px}
+.bsnote b{color:var(--muted)}
+.bsrows{display:grid;grid-template-columns:repeat(auto-fit,minmax(132px,1fr));gap:8px}
+.bs{display:flex;align-items:baseline;justify-content:space-between;gap:8px;
+ background:var(--panel);border:1px solid var(--edge);border-radius:12px;padding:9px 13px}
+.bsk{font-size:12px;color:var(--muted)}
+.bsv{font-size:15px;font-weight:700;color:var(--accent);font-variant-numeric:tabular-nums}
 .statnote{color:var(--faint);font-size:11.5px;line-height:1.8;text-align:center;margin-top:12px}
 .statnote b{color:var(--muted)}
 .note{color:var(--faint);font-size:11.5px;line-height:1.8;margin-top:38px;border-top:1px solid var(--edge);padding-top:18px;text-align:center}
