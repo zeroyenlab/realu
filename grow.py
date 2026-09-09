@@ -838,6 +838,25 @@ def main():
                     seg = chr(10).join(vlines[i] for i in idxs if 0 <= i < len(vlines))
                     if len(seg) >= 2000:        # ★短すぎるソースは測らない（★雑音になる）
                         va_src[name.replace(".txt", "")] = encode_big(seg)
+                # ★★★2本目の物差し。★主物差しに入っていないソース（★会話など）を測る。
+                #   ★主物差しに有るソースは**そちらを使う**（★前の点数と比べられる方を優先）。
+                src2 = vmarks.get("src2") or {}
+                if src2:
+                    v2f = os.path.join(WORK, "val2.txt.gz")
+                    try:
+                        with gzip.open(v2f, "rt", encoding="utf-8", errors="ignore") as f:
+                            v2lines = f.read().split(chr(10))
+                        for name, idxs in src2.items():
+                            key = name.replace(".txt", "")
+                            if key in va_src:
+                                continue          # ★主物差しにある方を使う
+                            seg = chr(10).join(v2lines[i] for i in idxs if 0 <= i < len(v2lines))
+                            if len(seg) >= 2000:
+                                va_src[key] = encode_big(seg)
+                    except FileNotFoundError:
+                        pass
+                    except Exception as e:
+                        print("★2本目の物差しが読めなかった（%s）" % type(e).__name__, flush=True)
                 print("★ソース別の物差し（トークン）: %s ／ 照合できなかった行 %s" % (
                     " / ".join("%s %.1f万" % (k, len(v) / 10000) for k, v in va_src.items()),
                     vmarks.get("unmatched")), flush=True)

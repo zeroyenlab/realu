@@ -119,7 +119,7 @@ jobs:
           if ! gh release view food >/dev/null 2>&1; then
             echo "★まだ Release にごはんは無い（★はじめての回）"; exit 0
           fi
-          for n in laws wiki hanrei kokkai web aozora talk val; do
+          for n in laws wiki hanrei kokkai web aozora talk val val2; do
             if [ -f "work/$n.txt.gz" ]; then continue; fi
             if gh release download food -p "$n.enc" -D /tmp 2>/dev/null; then
               if openssl enc -d -aes-256-cbc -pbkdf2 -in "/tmp/$n.enc" \
@@ -333,7 +333,7 @@ jobs:
                  --title "レアルのごはん（鍵つき）" \
                  --notes "鍵をかけてある。加工したテキストなので、そのままは公開できない。" \
                  --latest=false
-          for n in laws wiki hanrei kokkai web aozora talk val; do
+          for n in laws wiki hanrei kokkai web aozora talk val val2; do
             if [ -f "work/$n.txt.gz" ]; then
               openssl enc -aes-256-cbc -pbkdf2 -salt \
                 -in "work/$n.txt.gz" -out "/tmp/$n.enc" -pass env:FOODKEY

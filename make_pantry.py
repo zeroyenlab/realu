@@ -71,6 +71,8 @@ MIX = {
     "talk.txt":   {"repeat": int(os.environ.get("REALU_REP_TALK", 3))},
 }
 VAL_PER_MIL = int(os.environ.get("REALU_VAL_PERMIL", 3))
+EXTRA_MAX = int(os.environ.get("REALU_EXTRA_MAX", 4000))   # ★2本目の物差しの、1ソースあたりの上限
+EXTRA_MIN = int(os.environ.get("REALU_EXTRA_MIN", 200))    # ★これ未満のソースは測っても雑音
 SRC_MARK = re.compile("^<(web|本|会話) [^>]*>$")
 
 ORDER = ("laws.txt", "wiki.txt", "aozora.txt", "talk.txt",
@@ -141,6 +143,13 @@ def main():
             print("★物差しが読めなかった（%s）。★対応表は作らない" % type(e).__name__, flush=True)
             val_idx = None
     val_by_src = {}                 # ★ソース名 → [物差しの中の位置...]
+    # ★★★2026-09-09: 凍結した物差しは**会話を足す前**に作られていて、
+    #   ★★会話の行が**1行も入っていない**（★一番上げたい所が測れない）。
+    #   ★主物差し（val.txt.gz）は**絶対に触らない**（★触ると全部の点数が比べられなくなる）。
+    #   → ★主物差しに入らなかった held-out 行を、★ソース別に拾って**second の物差し**にする。
+    #   ★これらの行は元から学習に使っていない（★held_out で外してある）ので、
+    #     ★★学習の中身は1バイトも変わらない。
+    extra_by_src = {}               # ★ソース名 → [主物差しに無かった行...]
     part, wrote_bytes, total = 1, 0, 0
     # ★★★食べた文字の**合計**。
     #   ★2026-09-09: これが無かった。★buf_chars は flush のたびに 0 に戻していたので、
@@ -198,6 +207,9 @@ def main():
                             hit = val_idx.get(key)
                             if hit:
                                 val_by_src.setdefault(name, []).append(hit.pop(0))
+                            elif len(extra_by_src.get(name, ())) < EXTRA_MAX:
+                                # ★主物差しに無い行 ＝ 物差しを凍結した後に増えたごはん
+                                extra_by_src.setdefault(name, []).append(key)
                         else:
                             # ★★物差しをこれから作る回。★held の並びがそのまま物差しの並びになる
                             val_by_src.setdefault(name, []).append(len(held))
@@ -255,6 +267,45 @@ def main():
     #     （★触ると前の点数と比べられなくなる）。★対応表だけを別に置く。
     #   ★行数が合わない時は**書かない**（★対応が取れていない証拠なので、
     #     ★合わない表を置くと「会話の点数」に別のソースの行が混ざる）。
+    # ★★★2本目の物差し。★主物差しに入らなかったソース（★会話など）を測るため。
+    #   ★★一度作ったら**二度と書き換えない**（★書き換えると前の点数と比べられなくなる）。
+    v2path = os.path.join(WORK, "val2.txt.gz")
+    v2marks = {}
+    if extra_by_src and not os.path.exists(v2path):
+        lines, pos = [], 0
+        for nm in ORDER:
+            got = extra_by_src.get(nm) or []
+            if len(got) < EXTRA_MIN:    # ★少なすぎるソースは測っても雑音
+                continue
+            v2marks[nm] = list(range(pos, pos + len(got)))
+            lines.extend(got); pos += len(got)
+        if lines:
+            with gzip.open(v2path + ".tmp", "wt", encoding="utf-8", newline=NL) as f:
+                f.write(NL.join(lines))
+            os.replace(v2path + ".tmp", v2path)
+            print("★★2本目の物差しを作った（%s）。★これはもう変えない"
+                  % " / ".join("%s %d行" % (k.replace(".txt", ""), len(v)) for k, v in v2marks.items()),
+                  flush=True)
+    elif os.path.exists(v2path):
+        # ★既にある＝凍結済み。★中身と照合して位置を取り直す（★並びは変わらない）
+        try:
+            idx2 = {}
+            with gzip.open(v2path, "rt", encoding="utf-8", errors="ignore") as f:
+                for i, ln in enumerate(f):
+                    idx2.setdefault(ln.rstrip(NL), []).append(i)
+            for nm, got in extra_by_src.items():
+                hits = []
+                for k in got:
+                    h = idx2.get(k)
+                    if h: hits.append(h.pop(0))
+                if hits: v2marks[nm] = sorted(hits)
+            print("★2本目の物差しは前のものをそのまま使う（%s）"
+                  % " / ".join("%s %d行" % (k.replace(".txt", ""), len(v)) for k, v in v2marks.items()),
+                  flush=True)
+        except Exception as e:
+            print("★2本目の物差しが読めなかった（%s）" % type(e).__name__, flush=True)
+            v2marks = {}
+
     if val_idx is not None:
         unmatched = sum(len(v) for v in val_idx.values())   # ★pop されずに残った＝どのソースにも無かった行
         total_val = unmatched + sum(len(v) for v in val_by_src.values())
@@ -265,7 +316,8 @@ def main():
     if matched:
         with open(os.path.join(PANTRY, "val_marks.json"), "w", encoding="utf-8") as f:
             json.dump({"format": "indices", "total": total_val, "unmatched": unmatched,
-                       "src": {k: sorted(v) for k, v in val_by_src.items()}},
+                       "src": {k: sorted(v) for k, v in val_by_src.items()},
+                       "src2": {k: sorted(v) for k, v in v2marks.items()}},
                       f, ensure_ascii=False)
         print("★物差しのソース別対応表を作った（%s ／ ★照合できなかった行 %d）"
               % (" / ".join("%s %d" % (k.replace(".txt", ""), len(v))
