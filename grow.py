@@ -164,7 +164,12 @@ FINISH_SRC = os.environ.get("REALU_FINISH_SRC", "talk.txt")
 #   ★★国会 2.861→3.356 / 法令 4.821→5.191 と他が全部落ちて、★全体では巻き戻された。
 #   ★物差しは国会48%・Wikipedia34%でできているので、★会話だけ読むと全体が悪くなる。
 #   → ★半分だけ会話にする。★残り半分はいつも通り棚ぜんぶから引く。
-FINISH_MIX = float(os.environ.get("REALU_FINISH_MIX", 0.5))
+# ★★仕上げで会話をどれだけ濃く引くか。0.5 → 0.3（2026-09-10）。
+#   ★減衰は仕上げの中で起きるので、★**毎回会話に寄せた状態のまま凍る**。
+#   ★実測（#65 → 8層の回）: ★会話 2.3482 → 2.2581 は良くなったが、
+#     ★★**他の6ソースが全部悪化し、ビット/文字も 3.5817 → 3.6989 に悪化**。
+#   → ★凍る瞬間の偏りを浅くする。
+FINISH_MIX = float(os.environ.get("REALU_FINISH_MIX", 0.3))
 
 # ★★★採るか戻すかを決める合成点（★2026-09-10 Daito の判断）。
 #   ★物差しは国会48%・Wikipedia34%でできている。★狙いは雑談。
@@ -172,7 +177,8 @@ FINISH_MIX = float(os.environ.get("REALU_FINISH_MIX", 0.5))
 #     （★実測 #61: 会話 2.658→2.266 なのに全体が悪いという理由で巻き戻された）。
 #   → ★会話に重みを付けた合成点で判定する。★全体の点数はそのまま記録に残す。
 #   ★1.0 にすれば今まで通り（会話の重み0）。
-SCORE_TALK_W = float(os.environ.get("REALU_SCORE_TALK_W", 2.0))
+# ★★会話の重み。2.0 → 1.5（2026-09-10）。★土台の日本語が崩れると、いずれ会話も崩れる。
+SCORE_TALK_W = float(os.environ.get("REALU_SCORE_TALK_W", 1.5))
 SCORE_SRC = os.environ.get("REALU_SCORE_SRC", "talk")
 #   ★★本番と訓練の差がこれを超えたら「丸暗記している」とみなす
 WORSE_MARGIN = 0.02    # ★★これ以上悪くなっていたら、その学習は**採用しない**
@@ -1343,7 +1349,16 @@ def main():
         prev_score = st.get("score") if st else None
         if prev_score is None:
             prev_score = prev_val          # ★はじめての回は全体と比べる
-        if (prev_score is not None and not mix_changed
+        # ★★★重みを変えた回は巻き戻さない（2026-09-10）。
+        #   ★合成点は重みで値が変わるので、★**違う重み同士を比べるのは別の問題の点数を比べるのと同じ**。
+        #   ★前に一度これで誤っている（#64 が合成点と素の val を比べて、必ず勝つ形になっていた）。
+        w_changed = False
+        if st is not None and abs(float(st.get("scoreW", SCORE_TALK_W)) - SCORE_TALK_W) > 1e-9:
+            w_changed = True
+            print("★★会話の重みが変わった（%.2f → %.2f）。★物差しが違うので、"
+                  "★この回は前より悪くても巻き戻さない"
+                  % (float(st.get("scoreW", SCORE_TALK_W)), SCORE_TALK_W), flush=True)
+        if (prev_score is not None and not mix_changed and not w_changed
                 and score > prev_score + WORSE_MARGIN and grew == 0):
             print("★★★前より悪くなった（合成点 %.4f → %.4f / 全体 %s → %.4f）。"
                   "★この学習は採用しない。前のわたしに戻す。"
@@ -1371,7 +1386,7 @@ def main():
                 "itos": getattr(vocab, "itos", None),
                 "layers": len(model.blocks), "d": model.d, "h": model.h,
                                 "ctx": model.ctx, "val": val, "valTag": val_tag,
-                "score": score,
+                "score": score, "scoreW": SCORE_TALK_W,
                 "mixTag": mix_tag,
                 # ★★慣性も一緒に残す（★重みの2倍の大きさになるが、それに見合う）
                 "opt": opt.state_dict(),
