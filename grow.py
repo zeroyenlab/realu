@@ -802,8 +802,15 @@ def main():
     if st is not None:
         vocab = (BpeVocab(tokf) if st.get("kind") == "bpe"
                  else CharVocab(itos=st["itos"]))
+        # ★★★見渡せる幅は、★**環境変数で明示されていればそちらを優先**（2026-09-10）。
+        #   ★これまでは頭の中に保存された値をそのまま使っていたので、
+        #   ★★**測る係が「512の方が良い」と出しても、本体に届かなかった**。
+        #   ★RoPE は位置を式で作るので、★幅を変えても重みの形は変わらない。
+        _ctx = int(os.environ["REALU_CTX"]) if os.environ.get("REALU_CTX") else st["ctx"]
+        if _ctx != st["ctx"]:
+            print("★★見渡せる幅を変えた: %d → %d" % (st["ctx"], _ctx), flush=True)
         model = Realu(len(vocab), d=st["d"], h=st["h"], n=st["layers"],
-                      ctx=st["ctx"], loops=st.get("loops", 1))
+                      ctx=_ctx, loops=st.get("loops", 1))
         # ★★古い頭には kana_w が無い。★strict=False で読んで、★無ければゼロのまま。
         #   ★ゼロ ＝ 座標を使わないのと同じなので、★読み込みで振る舞いは変わらない。
         _miss, _extra = model.load_state_dict(st["model"], strict=False)
