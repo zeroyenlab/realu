@@ -33,8 +33,6 @@ CTX = int(os.environ.get("REALU_CTX", 256))
 D_MODEL = int(os.environ.get("REALU_D", 192))
 N_HEAD = int(os.environ.get("REALU_HEADS", 6))
 N_LAYER0 = int(os.environ.get("REALU_LAYERS", 4))
-# ★深くしてから何回、自己ベストを追い越せなければ1枚はがすか。
-SHRINK_AFTER = int(os.environ.get("REALU_SHRINK_AFTER", 5))
 # ★★★2026-09-09: 12 → 16。★6層で上限8だと、あと2回の成長で詰まる。
 #   ★MobileLLM（125M/350M の実測）は「★深く細い方が一貫して良い」で最適は30層。
 #   ★★ただし30層はGPU前提。★CPU 60分だと 15.7秒/歩 ＝ 196歩しか進まず、
@@ -834,36 +832,6 @@ def main():
             print("★物差しが変わった。★前の点数とは比べない（★比べると嘘になる）", flush=True)
         print("★前のわたし: %d 層 / %.2f M / これまでの loss %.4f"
               % (len(model.blocks), model.n_params() / 1e6, prev_val or -1), flush=True)
-
-        # ★★★育ちすぎたら1枚はがす（2026-09-11）。
-        #   ★これまで「前より悪くなったら前のわたしに戻す」は**同じ回の中**でしか
-        #     働かず、★**前の回に足した層を後から外す道が無かった**。
-        #   ★実測: 8層で自己ベスト 2.8711 を出したあと9層にして、
-        #     ★★**6回まわして一度も追い越せず**（3.0803 → 2.9937 で足踏み）、
-        #     ★しかも書く文章が壊れた（★文字化け 1.4% → 7〜10%、
-        #     ★同じ文字の最長連続 7 → 58）。
-        #   → ★自己ベストを出した深さより深く、かつ **SHRINK_AFTER 回続けて
-        #     追い越せていない**なら、★その深さに戻す。
-        #   ★戻したあとは上限を貼って、★すぐ生え直さないようにする。
-        _bl = hist.get("bestLayers")
-        if _bl is None and hist.get("bestVal") is not None:
-            for _r in hist.get("runs", []):
-                if _r.get("val") == hist["bestVal"] and _r.get("layers"):
-                    _bl = int(_r["layers"])
-        if (_bl and len(model.blocks) > _bl and hist.get("bestVal") is not None
-                and st.get("valTag") == val_tag):
-            _after = [r for r in hist.get("runs", []) if r.get("layers")
-                      and int(r["layers"]) > _bl and r.get("val") is not None]
-            _miss_n = sum(1 for r in _after if r["val"] > hist["bestVal"])
-            if len(_after) >= SHRINK_AFTER and _miss_n == len(_after):
-                print("★★★%d 層にしてから %d 回、★一度も自己ベスト %.4f を"
-                      "追い越せなかった。★%d 層に戻す。"
-                      % (len(model.blocks), len(_after), hist["bestVal"], _bl),
-                      flush=True)
-                model.blocks = model.blocks[:_bl]
-                model = model.to(DEV)
-                hist["layerCeil"] = _bl
-                prev_val = None      # ★形が変わったので、前の点数とは比べない
     else:
         vocab = BpeVocab(tokf) if os.path.exists(tokf) else CharVocab(text=text)
         model = Realu(len(vocab), loops=LOOPS0)
@@ -1299,9 +1267,6 @@ def main():
             #   ③ 体を乗り換える       ── ★いちばん高い（引っ越し。別の回でやる）
             #   ★足りていないものが「深さ」なら①で足りる。★①で駄目なら②。
             cap = layer_cap(model.d)
-            # ★一度はがした深さには、しばらく戻らない（上で貼った上限）
-            if hist.get("layerCeil"):
-                cap = min(cap, int(hist["layerCeil"]))
             # ★★★深さと歩数はぶつかる（★2026-09-09 実測）。
             #   ★6層 3.14秒/歩 → 984歩。★30層なら 15.7秒/歩 → 196歩。
             #   ★★歩数が評価の間隔（EVAL_EVERY）の2回ぶんを割ると、
@@ -1516,7 +1481,6 @@ def main():
         "bytes": ptsize, "heads": model.h, "ctx": model.ctx, "vocab": len(vocab),
         "kind": getattr(vocab, "kind", "char"), "arch": ARCH,
         "wantWider": want_wider, "layerCap": layer_cap(model.d),
-        "layerCeil": hist.get("layerCeil"),
         "mixChanged": mix_changed,
         "bySrc": by_src,        # ★★ソース別の点数（★全体の点数とは別の、中身の内訳）
         "wrote": wrote,
