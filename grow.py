@@ -186,6 +186,13 @@ FINISH_MIX = float(os.environ.get("REALU_FINISH_MIX", 0.5))
 #   ★重みを変えるなら、★**一時的な落ち込みではない証拠**を揃えてからにする。
 SCORE_TALK_W = float(os.environ.get("REALU_SCORE_TALK_W", 2.0))
 SCORE_SRC = os.environ.get("REALU_SCORE_SRC", "talk")
+# ★★★2026-09-11: 採否を**会話だけ**で決めるようにした。
+#   ★46回ぶんを測ったら、★**全体 val は困っていることと逆を向いていた**:
+#     ★val ↔ 書いた文章のループ率 の相関 **−0.19**（★val が良くなるほど繰り返す）
+#     ★会話bpc ↔ ループ率 の相関 **+0.31**（★こちらは正しい向き）
+#   ★★合成点 (会話×2 ＋ 全体)÷3 は、★**正しい向きの項を逆向きの項で薄めていた**。
+#   ★"mix" で前の合成点、"val" で全体だけに戻せる。★全体の点数は記録には残る。
+SCORE_MODE = os.environ.get("REALU_SCORE_MODE", "talk")   # talk / mix / val
 #   ★★本番と訓練の差がこれを超えたら「丸暗記している」とみなす
 WORSE_MARGIN = 0.02    # ★★これ以上悪くなっていたら、その学習は**採用しない**
 
@@ -1352,7 +1359,11 @@ def main():
         # ── ④★★★自己点検 ── 前より悪くなっていたら、前のわたしに戻す
         # ★★★合成点 ＝ (会話 × 重み ＋ 全体) ÷ (重み ＋ 1)
         #   ★会話が測れない時は全体そのまま。★前回も合成点で記録してあれば、それと比べる。
-        if SCORE_TALK_W > 0 and SCORE_SRC in by_src:
+        if SCORE_MODE == "talk" and SCORE_SRC in by_src:
+            score = by_src[SCORE_SRC]
+            print("★採否は**%s だけ**で決める: %.4f（★全体 %.4f は記録のみ）"
+                  % (SCORE_SRC, score, val), flush=True)
+        elif SCORE_MODE == "mix" and SCORE_TALK_W > 0 and SCORE_SRC in by_src:
             score = (SCORE_TALK_W * by_src[SCORE_SRC] + val) / (SCORE_TALK_W + 1.0)
             print("★合成点 %.4f ＝（%s %.4f × %.1f ＋ 全体 %.4f）÷ %.1f"
                   % (score, SCORE_SRC, by_src[SCORE_SRC], SCORE_TALK_W, val,
@@ -1366,6 +1377,13 @@ def main():
         #   ★合成点は重みで値が変わるので、★**違う重み同士を比べるのは別の問題の点数を比べるのと同じ**。
         #   ★前に一度これで誤っている（#64 が合成点と素の val を比べて、必ず勝つ形になっていた）。
         w_changed = False
+        # ★★★物差しの種類が変わった回も同じ扱い（2026-09-11）。
+        #   ★talk だけの点（約2.1）と合成点（約2.4）は**桁が違う別の数字**。
+        #   ★比べると必ず talk が勝ち、★「大きく良くなった」という嘘の記録が残る。
+        if st is not None and st.get("scoreMode", "mix") != SCORE_MODE:
+            w_changed = True
+            print("★★採否の物差しが変わった（%s → %s）。★この回は前より悪くても巻き戻さない"
+                  % (st.get("scoreMode", "mix"), SCORE_MODE), flush=True)
         if st is not None and abs(float(st.get("scoreW", SCORE_TALK_W)) - SCORE_TALK_W) > 1e-9:
             w_changed = True
             print("★★会話の重みが変わった（%.2f → %.2f）。★物差しが違うので、"
@@ -1399,7 +1417,7 @@ def main():
                 "itos": getattr(vocab, "itos", None),
                 "layers": len(model.blocks), "d": model.d, "h": model.h,
                                 "ctx": model.ctx, "val": val, "valTag": val_tag,
-                "score": score, "scoreW": SCORE_TALK_W,
+                "score": score, "scoreW": SCORE_TALK_W, "scoreMode": SCORE_MODE,
                 "mixTag": mix_tag,
                 # ★★慣性も一緒に残す（★重みの2倍の大きさになるが、それに見合う）
                 "opt": opt.state_dict(),
@@ -1425,6 +1443,35 @@ def main():
         except Exception:
             pass
     sample = wrote[0]["text"] if wrote else ""
+    # ★★★書いた文章がどれだけ繰り返しでできているか（2026-09-11）。
+    #   ★★**測るが、採否には使わない。** ★二本目の物差しを作らないため。
+    #   ★どの点数も、これまで一度も**生成そのもの**を見ていなかった。
+    #   ★bpc は「次の1文字を当てる力」なので、★「命令若しくは命令若しくは…」と
+    #     ★無限に繰り返す壊れ方を、★ほとんど罰しない。
+    loop_pct = 0.0
+    if wrote:
+        tot = 0.0
+        for w in wrote:
+            t = w.get("text", "")
+            if not t:
+                continue
+            inloop = [False] * len(t)
+            for k in range(1, 13):
+                i = 0
+                while i + 2 * k <= len(t):
+                    if t[i:i + k] == t[i + k:i + 2 * k]:
+                        j = i + k
+                        while t[j:j + k] == t[i:i + k]:
+                            j += k
+                        for x in range(i, min(j + k, len(t))):
+                            inloop[x] = True
+                        i = j
+                    else:
+                        i += 1
+            tot += 100.0 * sum(inloop) / len(t)
+        loop_pct = round(tot / max(1, len(wrote)), 2)
+        print("★書いた文章のループ率 %.1f%%（★記録だけ。採否には使わない）"
+              % loop_pct, flush=True)
     try:
         ptsize = os.path.getsize(ckpt)
     except Exception:
@@ -1468,6 +1515,7 @@ def main():
         # ★★採否を決めた合成点（★全体の val とは別）
         "score": round(score, 4) if score is not None else None,
         "scoreW": SCORE_TALK_W,
+        "scoreMode": SCORE_MODE,
         "layers": len(model.blocks), "params": model.n_params(),
         # ★★棚から食べる時は `text` が空なので、★len(text) だと 0 になる。
         "chars": (pantry.chars if pantry is not None else len(text)),
@@ -1484,6 +1532,7 @@ def main():
         "mixChanged": mix_changed,
         "bySrc": by_src,        # ★★ソース別の点数（★全体の点数とは別の、中身の内訳）
         "wrote": wrote,
+        "loopPct": loop_pct,
         "movedBody": teacher is not None,
     })
     hist["runs"] = hist["runs"][-200:]
