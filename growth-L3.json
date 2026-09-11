@@ -2681,6 +2681,65 @@
    ],
    "loopPct": 31.75,
    "movedBody": false
+  },
+  {
+   "at": "2026-09-11T07:20:32Z",
+   "val": 3.0552,
+   "prev": 3.0552,
+   "valTag": "fixed-holdout-v1",
+   "stoppedAt": 726,
+   "secPerStep": 5.0973,
+   "steps": 1506,
+   "bpc": 3.6124,
+   "charsPerTok": 1.2202,
+   "score": 2.125,
+   "scoreW": 2.0,
+   "scoreMode": "talk",
+   "layers": 10,
+   "params": 20024448,
+   "chars": 1037515847,
+   "tokens": 850289863,
+   "grew": 0,
+   "rolledBack": true,
+   "ownVal": 2.7952,
+   "ownScore": 2.1626,
+   "d": 384,
+   "loops": 1,
+   "spread": 3.0613,
+   "bytes": 240381341,
+   "heads": 6,
+   "ctx": 512,
+   "vocab": 6000,
+   "kind": "bpe",
+   "arch": "tpp-loop",
+   "wantWider": false,
+   "layerCap": 16,
+   "mixChanged": false,
+   "bySrc": {
+    "laws": 4.0234,
+    "wiki": 3.0627,
+    "aozora": 3.3552,
+    "hanrei": 3.7083,
+    "kokkai": 2.5563,
+    "web": 3.001,
+    "talk": 2.1626
+   },
+   "wrote": [
+    {
+     "start": "わたしは",
+     "text": "わたしは」 FF「そうなんですか！夜に何時からか、何時があったらみたいです。」 BR「夜はいいですね！何時だったんですか？」 FF「夕飯は、これからはずっと作っていました。」 BR「いいですね！でも、夜は何時ですか？」 FF「�"
+    },
+    {
+     "start": "第一条",
+     "text": "第一条械様式様式様式様式様式様式様式法による合併） balezing spidamerning balegraway---Ling balegraway----Ling xing balegraway----5-8-X-H-O -1-5-R-1-2"
+    },
+    {
+     "start": "この法律において",
+     "text": "この法律においてしているのは、これはこれはあれではないのですが、今日なぜこれができるか。 ○副大臣 これは、これはその原因でございますけれども、今のような状況でございますので、それは極めて深刻な状況のもとに、いわゆる国際的な状況を、今申し上げたことは当然でござ"
+    }
+   ],
+   "loopPct": 15.83,
+   "movedBody": false
   }
  ],
  "bestVal": 2.8344,
