@@ -2622,6 +2622,65 @@
    ],
    "loopPct": 20.98,
    "movedBody": false
+  },
+  {
+   "at": "2026-09-11T06:12:50Z",
+   "val": 3.0552,
+   "prev": 3.0552,
+   "valTag": "fixed-holdout-v1",
+   "stoppedAt": 1439,
+   "secPerStep": 2.5357,
+   "steps": 1506,
+   "bpc": 3.6124,
+   "charsPerTok": 1.2202,
+   "score": 2.125,
+   "scoreW": 2.0,
+   "scoreMode": "talk",
+   "layers": 10,
+   "params": 20024448,
+   "chars": 1037515847,
+   "tokens": 850289863,
+   "grew": 0,
+   "rolledBack": true,
+   "ownVal": 2.8522,
+   "ownScore": 2.1944,
+   "d": 384,
+   "loops": 1,
+   "spread": 2.7631,
+   "bytes": 240381341,
+   "heads": 6,
+   "ctx": 512,
+   "vocab": 6000,
+   "kind": "bpe",
+   "arch": "tpp-loop",
+   "wantWider": false,
+   "layerCap": 16,
+   "mixChanged": false,
+   "bySrc": {
+    "laws": 3.9692,
+    "wiki": 3.0329,
+    "aozora": 3.4199,
+    "hanrei": 3.6213,
+    "kokkai": 2.5642,
+    "web": 2.9618,
+    "talk": 2.1944
+   },
+   "wrote": [
+    {
+     "start": "わたしは",
+     "text": "わたしは横熱を浴びせて、自分のマンションはダンスに乗りきた。 この油き替えは家 … かわり、 「 たち 」と呼ばれていたが、すぐに世話し合ってこられた。 事実上、動けないとは私は思うな。 もう一度も見る事が出来なかった。 」 いよいよ再来るが、 「朝"
+    },
+    {
+     "start": "第一条",
+     "text": "第一条�zzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzazzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzazzzzz)と、「PC」をアンボzzzzzzzzzzz"
+    },
+    {
+     "start": "この法律において",
+     "text": "この法律において「(((1)」という。）にあなたは、個人として、影響を受けながら、できる限り行動し、かつ、当該施設において運動されることが困難となる。 ただし、その緊急時において、当該施設において運動する治療方法であって、当該施設において行われる者が、当該施設において運動される指導と認められる意見が立てられることができ、かつ、当該施設において運動するように一定の指導をしなければならない。 （監督指導） 月一日には、階段等通路を新設"
+    }
+   ],
+   "loopPct": 31.75,
+   "movedBody": false
   }
  ],
  "bestVal": 2.8344,
