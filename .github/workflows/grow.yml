@@ -43,7 +43,27 @@ jobs:
     # ★★★1回60分で学ぶので、★ジョブも短くする。
     #   ★前は340分。★60分学ぶのに340分枠を取ると、次の回が始まるのも遅れる。
     timeout-minutes: 120
+    # ★★★系統を3本にする（2026-09-11）。
+    #   ★島で3回、単一栽培で飽和した。★QDの文献も「選択だけでは早すぎる収束」と言う。
+    #   ★★幾何でも同じ ── 正四面体だけでは空間が埋まらない。1種類では足りない。
+    #   ★違いは配合ひとつだけ（仕上げにどれだけ会話を混ぜるか）。
+    #   ★★★ごはんは共有、脳だけ系統ごと。
+    strategy:
+      fail-fast: false          # ★1系統が転んでも他は走り切る
+      max-parallel: 3
+      matrix:
+        include:
+          - lineage: L1
+            finish_mix: "0.5"   # ★いまのレアルと同じ（★対照）
+          - lineage: L2
+            finish_mix: "0.85"  # ★会話寄り
+          - lineage: L3
+            finish_mix: "0.2"   # ★広く浅く
     env:
+      LIN: ${{ matrix.lineage }}
+      REALU_BRAIN: brain
+      REALU_HIST: growth-${{ matrix.lineage }}.json
+      REALU_FINISH_MIX: ${{ matrix.finish_mix }}
       # ★★★いまは「ごはんを与えるだけ」の段階。
       #   ★会話コーパス（1,375万字）を取り込んで棚を作り直すのが今回の仕事。
       #   ★学習は次から。★"0" にすれば学ぶ。
@@ -74,35 +94,57 @@ jobs:
           restore-keys: |
             realu-work-
 
+      # ★★★脳だけは系統ごと。★ごはん（work）と混ぜない
+      - name: この系統の頭を思い出す
+        uses: actions/cache/restore@v4
+        with:
+          path: brain
+          key: realu-brain-${{ matrix.lineage }}-${{ github.run_number }}
+          restore-keys: |
+            realu-brain-${{ matrix.lineage }}-
+
       # ★★★前のわたしが cache から消えていたら、Release から取ってくる（★二重の保険）
       - name: 前のわたしを Release から探す
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           FOODKEY: ${{ secrets.REALU_FOOD_KEY }}
         run: |
-          mkdir -p work
-          if [ ! -f work/realu.pt ]; then
-            # ★鍵つきを先に探す
+          mkdir -p work brain
+          # ★★★系統ごとの頭を探す。★無ければ元の1つから分岐する（★初回だけ）。
+          #   ★手で移す作業がいらない。★3系統とも同じ所から始まって、そこから離れていく。
+          if [ ! -f brain/realu.pt ]; then
             if [ -n "$FOODKEY" ] \
-               && gh release download brain -p realu.enc -D /tmp 2>/dev/null \
-               && openssl enc -d -aes-256-cbc -pbkdf2 -in /tmp/realu.enc \
-                    -out work/realu.pt -pass env:FOODKEY 2>/dev/null; then
-              echo "★Release から前のわたしを見つけた（鍵つき）"
-            # ★★昔の回が素のまま置いていったもの。★引き継いでから、上で消す
+               && gh release download brain -p "realu-$LIN.enc" -D /tmp 2>/dev/null \
+               && openssl enc -d -aes-256-cbc -pbkdf2 -in "/tmp/realu-$LIN.enc" \
+                    -out brain/realu.pt -pass env:FOODKEY 2>/dev/null; then
+              echo "★$LIN の前のわたしを見つけた（鍵つき）"
+            elif [ -n "$FOODKEY" ] \
+                 && gh release download brain -p "realu-$LIN-prev.enc" -D /tmp 2>/dev/null \
+                 && openssl enc -d -aes-256-cbc -pbkdf2 -in "/tmp/realu-$LIN-prev.enc" \
+                      -out brain/realu.pt -pass env:FOODKEY 2>/dev/null; then
+              echo "★★$LIN の一つ前を見つけた（★最新が壊れていた）"
+            elif [ -n "$FOODKEY" ] \
+                 && gh release download brain -p realu.enc -D /tmp 2>/dev/null \
+                 && openssl enc -d -aes-256-cbc -pbkdf2 -in /tmp/realu.enc \
+                      -out brain/realu.pt -pass env:FOODKEY 2>/dev/null; then
+              echo "★★★系統に分かれる前のレアルから $LIN を始める"
             elif [ -n "$FOODKEY" ] \
                  && gh release download brain -p realu-prev.enc -D /tmp 2>/dev/null \
                  && openssl enc -d -aes-256-cbc -pbkdf2 -in /tmp/realu-prev.enc \
-                      -out work/realu.pt -pass env:FOODKEY 2>/dev/null; then
-              echo "★★一つ前のわたしを見つけた（★最新が壊れていた）"
-            elif gh release download brain -p realu.pt -D work 2>/dev/null; then
-              echo "★Release から前のわたしを見つけた（素のまま。★あとで鍵をかける）"
+                      -out brain/realu.pt -pass env:FOODKEY 2>/dev/null; then
+              echo "★★分かれる前の一つ前から $LIN を始める"
             else
-              rm -f work/realu.pt
-              echo "★前のわたしはいない。はじめて目を開ける"
+              rm -f brain/realu.pt
+              echo "★$LIN の前のわたしはいない。はじめて目を開ける"
             fi
-            rm -f /tmp/realu.enc /tmp/realu-prev.enc
+            rm -f /tmp/realu*.enc
           else
-            echo "★cache に前のわたしがいた"
+            echo "★cache に $LIN の前のわたしがいた"
+          fi
+          # ★★成長の記録も同じ。★無ければ分岐前のものを引き継ぐ
+          if [ ! -f "growth-$LIN.json" ] && [ -f growth.json ]; then
+            cp growth.json "growth-$LIN.json"
+            echo "★★★$LIN の記録を、分かれる前の記録から始める"
           fi
 
       # ★★★ごはんが消えていたら、Release から取り戻す（★頭と同じ二重の保険）
@@ -192,7 +234,7 @@ jobs:
             exit 0
           fi
           N="${{ github.event.inputs.hanrei || '400' }}"
-          if [ ! -f work/realu.pt ]; then N=100; fi   # ★頭ができるまで軽く
+          if [ ! -f brain/realu.pt ]; then N=100; fi   # ★頭ができるまで軽く
           FROM=$(cat work/hanrei_next.txt 2>/dev/null || echo 1000)
           TO=$((FROM + N * 3))          # ★存在しないIDもあるので多めに走査する
           echo "★判決 $FROM 〜 $TO を読む"
@@ -304,7 +346,7 @@ jobs:
           #   ★冷蔵庫にはもう343MB入っている。★いま急いで足す必要はない。
           #   ★国会は1本3秒（規約）。600本で92分かかり、★「学ぶ」に着くまで2時間になる。
           #   → ★直して試す1周を 2時間 → 30分 にする。頭が残ったら戻す。
-          if [ ! -f work/realu.pt ]; then N=100; echo "★まだ頭が無いので国会は $N 本"; fi
+          if [ ! -f brain/realu.pt ]; then N=100; echo "★まだ頭が無いので国会は $N 本"; fi
           REALU_KOKKAI_REQ=$N python -u fetch_kokkai.py || true
 
       # ── ★★★食べたものを、★**この時点で**残す。
@@ -572,7 +614,7 @@ jobs:
           # ★★★まだ頭が1つも無いなら、★**短く回して、とにかく残す**。
           #   ★長く回して締切に殺されるより、★40分でも残っている方が値打ちがある。
           #   ★次の回からは、★残った頭の続きを5時間かけて伸ばす。
-          if [ ! -f work/realu.pt ] && [ "$REALU_TIME_BUDGET" -gt 40 ]; then
+          if [ ! -f brain/realu.pt ] && [ "$REALU_TIME_BUDGET" -gt 40 ]; then
             REALU_TIME_BUDGET=40
             echo "★★まだ頭が無い。★40分で切り上げて、まず残す。"
           fi
@@ -594,7 +636,7 @@ jobs:
           #   ★ここは Public。★素のまま上げたら**誰でも落とせる**＝公開になる。
           #   ★重みはごはんから作ったもの。★判例（改変禁止）も Wikipedia（CC BY-SA）も溶けている。
           #   ★★鍵が無いなら、★**外には出さない**（★キャッシュにだけ置く）。
-          if [ ! -f work/realu.pt ]; then
+          if [ ! -f brain/realu.pt ]; then
             echo "★まだ頭が無い（★ごはんを作る回）。★残すものは無い"
             exit 0
           fi
@@ -608,15 +650,15 @@ jobs:
           # ★★★--clobber は「先に消してから載せる」。
           #   ★その隙にキャンセルや締切が来ると、★**頭が1つも無くなる**。
           #   → ★先に、いま載っているものを「前のわたし」として退避する。
-          if gh release download brain -p realu.enc -D /tmp/keep 2>/dev/null; then
-            mv /tmp/keep/realu.enc /tmp/keep/realu-prev.enc
-            gh release upload brain /tmp/keep/realu-prev.enc --clobber || true
+          if gh release download brain -p "realu-$LIN.enc" -D /tmp/keep 2>/dev/null; then
+            mv "/tmp/keep/realu-$LIN.enc" "/tmp/keep/realu-$LIN-prev.enc"
+            gh release upload brain "/tmp/keep/realu-$LIN-prev.enc" --clobber || true
             rm -rf /tmp/keep
           fi
           openssl enc -aes-256-cbc -pbkdf2 -salt \
-            -in work/realu.pt -out /tmp/realu.enc -pass env:FOODKEY
-          gh release upload brain /tmp/realu.enc --clobber
-          rm -f /tmp/realu.enc
+            -in brain/realu.pt -out "/tmp/realu-$LIN.enc" -pass env:FOODKEY
+          gh release upload brain "/tmp/realu-$LIN.enc" --clobber
+          rm -f "/tmp/realu-$LIN.enc"
           # ★★昔の回が素のまま置いていったものがあれば、★消す
           if gh release delete-asset brain realu.pt -y 2>/dev/null; then
             echo "★★素のまま公開されていた重みを消した"
@@ -636,16 +678,23 @@ jobs:
           #     ★何度も復活し続けていた）。
           #   ★`grow.py` は said.json を**1バイトも書かない**。★自分の記録ではない。
           #   → ★**growth.json だけ**を持って載せ直す。
-          cp growth.json /tmp/growth.mine
+          # ★★★系統ごとに別ファイル。★3本が同時にコミットしても中身は衝突しない。
+          #   ★push の競合だけ起きるので、★載せ直して再試行する（★回数を5回に増やした）。
+          cp "growth-$LIN.json" /tmp/growth.mine
           git stash -u >/dev/null 2>&1 || true
-          for i in 1 2 3; do
+          for i in 1 2 3 4 5; do
             git fetch origin main && git reset --hard origin/main
-            cp /tmp/growth.mine growth.json
-            git add growth.json
+            cp /tmp/growth.mine "growth-$LIN.json"
+            git add "growth-$LIN.json"
+            # ★★★L1 は代表として、これまでの growth.json にも同じものを書く。
+            #   ★サイト（render.py）・書く係（learn.py）・話す係（speak.py）と
+            #   ★deploy.yml の引き金が、★全部 growth.json を見ているため。
+            #   ★★ここを止めると、★系統を分けた瞬間にサイトが凍る。
+            if [ "$LIN" = "L1" ]; then cp /tmp/growth.mine growth.json; git add growth.json; fi
             if git diff --staged --quiet; then
               echo "記録に変化なし"; break
             fi
-            git commit -q -m "レアルが育った ($(date -u +'%m-%d')Z)"
+            git commit -q -m "$LIN が育った ($(date -u +'%m-%d')Z)"
             if git push origin HEAD:main; then
               echo "★記録を残した"; break
             fi
@@ -660,6 +709,13 @@ jobs:
         with:
           path: work
           key: realu-work-${{ github.run_number }}
+
+      - name: この系統の頭をしまう
+        if: always()
+        uses: actions/cache/save@v4
+        with:
+          path: brain
+          key: realu-brain-${{ matrix.lineage }}-${{ github.run_number }}
 
       # ★★★転んだ理由を、★誰でも読める所に残す。
       #   ★Actions のログは認証が要る。★外から見ている側には読めない。
@@ -700,8 +756,11 @@ jobs:
       #   ★買い物の回 → 勉強の回 → 勉強の回 …と自分で繋がっていく。
       #   ★置いた人が見ていなくても止まらない。
       #   ★同時に1つしか走らない（concurrency）ので、増えすぎない。
+      # ★★★呼ぶのは L1 だけ。★3本が呼ぶと同じものを3回呼ぶことになる。
+      #   ★上の concurrency（realu-grow）が世代を直列に保つので、
+      #   ★次の回でまた3系統が同時に走る。
       - name: 次のわたしを呼ぶ
-        if: always()
+        if: always() && matrix.lineage == 'L1'
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
@@ -713,4 +772,4 @@ jobs:
         if: always()
         run: |
           git checkout -- . || true
-          git clean -fd -e work || true
+          git clean -fd -e work -e brain || true

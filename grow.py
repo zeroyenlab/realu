@@ -27,7 +27,15 @@ import torch.nn.functional as F
 
 HERE = os.path.dirname(os.path.abspath(__file__))
 WORK = os.environ.get("REALU_WORK", os.path.join(HERE, "work"))
-HIST = os.path.join(HERE, "growth.json")     # ★成長の記録（★これだけリポジトリに残す）
+# ★★★系統ごとに脳と記録を分ける（2026-09-11）。
+#   ★ごはん（WORK）は**系統をまたいで共有**する。★読むだけなので衝突しない。
+#   ★★脳（BRAIN）と記録（HIST）だけ分ける。★ここを分けないと3系統が同じ頭を使う。
+BRAIN = os.environ.get("REALU_BRAIN", WORK)
+if not os.path.isabs(BRAIN):
+    BRAIN = os.path.join(HERE, BRAIN)
+HIST = os.environ.get("REALU_HIST", "growth.json")   # ★成長の記録（★これだけリポジトリに残す）
+if not os.path.isabs(HIST):
+    HIST = os.path.join(HERE, HIST)
 
 CTX = int(os.environ.get("REALU_CTX", 256))
 D_MODEL = int(os.environ.get("REALU_D", 192))
@@ -789,7 +797,8 @@ def main():
     # ── ②★前のわたしを起こす
     # ★★★ことばの単位を用意する
     tokf = os.path.join(WORK, "tok.json")
-    ckpt = os.path.join(WORK, "realu.pt")
+    ckpt = os.path.join(BRAIN, "realu.pt")
+    os.makedirs(BRAIN, exist_ok=True)
     st = None
     if os.path.exists(ckpt):
         # ★★★途中で切れた .pt は、★捨てて生まれ直す（★死に続けるよりまし）
