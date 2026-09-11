@@ -38,7 +38,7 @@ def main():
     torch.set_num_threads(int(os.environ.get("REALU_THREADS", 4)))
 
     st = torch.load(ck, map_location="cpu", weights_only=False)
-    tokf = os.path.join(WORK, "tok.json")
+    tokf = os.environ.get("REALU_TOK", os.path.join(WORK, "tok.json"))
     if st.get("kind") == "bpe" and os.path.exists(tokf):
         vocab = G.BpeVocab(tokf)
     else:

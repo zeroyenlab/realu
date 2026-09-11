@@ -55,15 +55,41 @@ jobs:
         include:
           - lineage: L1
             finish_mix: "0.5"   # ★いまのレアルと同じ（★対照）
+            vocab: "6000"
+            tok: work/tok.json
+            pantry: work/pantry
+            fresh: "0"
           - lineage: L2
             finish_mix: "0.85"  # ★会話寄り
+            vocab: "6000"
+            tok: work/tok.json
+            pantry: work/pantry
+            fresh: "0"
+          # ★★★L3 だけ「ことばの単位」を変える（2026-09-11）。
+          #   ★54回ぶん測ったら、★L1/L2/L3 は**層も幅も形も得点も同じ**になっていた。
+          #   ★違いが配合だけで、★構造の判断に一切触れていなかったから（★実質1本）。
+          #   ★★だから違いを、**効く所**に移す。
+          #   ★いまの単位は 1トークン=1.22文字 ＝ ほぼ1文字1トークン。
+          #     ★語彙6,000＋バイト始まりのBPEは、★枠のほぼ全部を
+          #     ★「3バイトを1文字に組み立て直す」ことに使ってしまう。
+          #   ★16,000 を一度やめたのは「表がパラメータの63%を食う」から。
+          #     ★★それは頭が4.84Mの頃の話。★いま20.0M・表は共有済みなので**26%**。
+          #   → ★理由が消えた。★L3 で試す。★L1/L2 は1文字も変えない。
           - lineage: L3
             finish_mix: "0.2"   # ★広く浅く
+            vocab: "16000"
+            tok: work/tok-16k.json
+            pantry: work/pantry-16k
+            fresh: "1"          # ★★単位が違うので前の頭は使えない。★生まれ直す
     env:
       LIN: ${{ matrix.lineage }}
       REALU_BRAIN: brain
       REALU_HIST: growth-${{ matrix.lineage }}.json
       REALU_FINISH_MIX: ${{ matrix.finish_mix }}
+      REALU_VOCAB: ${{ matrix.vocab }}
+      REALU_TOK: ${{ matrix.tok }}
+      REALU_PANTRY: ${{ matrix.pantry }}
+      FRESH: ${{ matrix.fresh }}
       # ★★★いまは「ごはんを与えるだけ」の段階。
       #   ★会話コーパス（1,375万字）を取り込んで棚を作り直すのが今回の仕事。
       #   ★学習は次から。★"0" にすれば学ぶ。
@@ -110,9 +136,14 @@ jobs:
           FOODKEY: ${{ secrets.REALU_FOOD_KEY }}
         run: |
           mkdir -p work brain
+          # ★★★単位が違う系統は、★前の頭を持ってきても繋がらない（★出口の形が違う）
+          if [ "$FRESH" = "1" ]; then
+            rm -f brain/realu.pt
+            echo "★★$LIN は別の「ことばの単位」で生まれ直す。★前の頭は使わない"
+          fi
           # ★★★系統ごとの頭を探す。★無ければ元の1つから分岐する（★初回だけ）。
           #   ★手で移す作業がいらない。★3系統とも同じ所から始まって、そこから離れていく。
-          if [ ! -f brain/realu.pt ]; then
+          if [ ! -f brain/realu.pt ] && [ "$FRESH" != "1" ]; then
             if [ -n "$FOODKEY" ] \
                && gh release download brain -p "realu-$LIN.enc" -D /tmp 2>/dev/null \
                && openssl enc -d -aes-256-cbc -pbkdf2 -in "/tmp/realu-$LIN.enc" \
@@ -174,22 +205,24 @@ jobs:
             fi
           done
           # ★★★棚。★あれば下ごしらえゼロで始められる
-          if [ ! -d work/pantry ] \
-             && gh release download food -p pantry.enc -D /tmp 2>/dev/null; then
-            if openssl enc -d -aes-256-cbc -pbkdf2 -in /tmp/pantry.enc \
+          PNAME=$(basename "$REALU_PANTRY")
+          if [ ! -d "$REALU_PANTRY" ] \
+             && gh release download food -p "$PNAME.enc" -D /tmp 2>/dev/null; then
+            if openssl enc -d -aes-256-cbc -pbkdf2 -in "/tmp/$PNAME.enc" \
                  -out /tmp/pantry.tgz -pass env:FOODKEY 2>/dev/null; then
-              tar xzf /tmp/pantry.tgz -C work && echo "★棚を取り戻した"
+              tar xzf /tmp/pantry.tgz -C work && echo "★$PNAME を取り戻した"
             fi
-            rm -f /tmp/pantry.enc /tmp/pantry.tgz
+            rm -f "/tmp/$PNAME.enc" /tmp/pantry.tgz
           fi
 
           # ★★★ことばの単位。★頭とセットでないと意味が入れ替わる
-          if [ ! -f work/tok.json ] \
-             && gh release download food -p tok.enc -D /tmp 2>/dev/null; then
-            openssl enc -d -aes-256-cbc -pbkdf2 -in /tmp/tok.enc \
-              -out work/tok.json -pass env:FOODKEY 2>/dev/null \
-              && echo "★ことばの単位を取り戻した" || rm -f work/tok.json
-            rm -f /tmp/tok.enc
+          TNAME=$(basename "$REALU_TOK" .json)
+          if [ ! -f "$REALU_TOK" ] \
+             && gh release download food -p "$TNAME.enc" -D /tmp 2>/dev/null; then
+            openssl enc -d -aes-256-cbc -pbkdf2 -in "/tmp/$TNAME.enc" \
+              -out "$REALU_TOK" -pass env:FOODKEY 2>/dev/null \
+              && echo "★$TNAME を取り戻した" || rm -f "$REALU_TOK"
+            rm -f "/tmp/$TNAME.enc"
           fi
 
           # ★★「どこまで読んだか」の紙。★これが消えると判例も本も**読み直しになる**
@@ -388,13 +421,14 @@ jobs:
             fi
           done
           # ★★★棚も一緒にしまう（★これがあれば下ごしらえゼロで始められる）
-          if [ -d work/pantry ]; then
-            tar cf - -C work pantry | gzip -1 > /tmp/pantry.tgz
+          PNAME=$(basename "$REALU_PANTRY")
+          if [ -d "$REALU_PANTRY" ]; then
+            tar cf - -C work "$PNAME" | gzip -1 > /tmp/pantry.tgz
             if [ "$(stat -c%s /tmp/pantry.tgz)" -lt 1900000000 ]; then
               openssl enc -aes-256-cbc -pbkdf2 -salt \
-                -in /tmp/pantry.tgz -out /tmp/pantry.enc -pass env:FOODKEY
-              gh release upload food /tmp/pantry.enc --clobber || true
-              rm -f /tmp/pantry.enc
+                -in /tmp/pantry.tgz -out "/tmp/$PNAME.enc" -pass env:FOODKEY
+              gh release upload food "/tmp/$PNAME.enc" --clobber || true
+              rm -f "/tmp/$PNAME.enc"
             else
               echo "★★棚が2GBを超えた。★刻む仕組みが要る"
             fi
@@ -411,11 +445,12 @@ jobs:
           #   ★これが消えると、★同じ大きさで**中身の違う**語彙が作り直される。
           #   ★頭の読み込みは大きさしか見ないので**通ってしまい**、
            #  ★全部の文字の意味が入れ替わったまま学習が続く。★落ちないので気づけない。
-          if [ -f work/tok.json ]; then
+          TNAME=$(basename "$REALU_TOK" .json)
+          if [ -f "$REALU_TOK" ]; then
             openssl enc -aes-256-cbc -pbkdf2 -salt \
-              -in work/tok.json -out /tmp/tok.enc -pass env:FOODKEY
-            gh release upload food /tmp/tok.enc --clobber || true
-            rm -f /tmp/tok.enc
+              -in "$REALU_TOK" -out "/tmp/$TNAME.enc" -pass env:FOODKEY
+            gh release upload food "/tmp/$TNAME.enc" --clobber || true
+            rm -f "/tmp/$TNAME.enc"
           fi
           rm -f /tmp/notes.tgz /tmp/notes.tgz.enc
           echo "★鍵をかけてしまった"
@@ -479,7 +514,8 @@ jobs:
           #   ★meta.json より必ず新しくなる → ★毎回作り直していた（実測 run#32/33）。
           #   → ★★中身の大きさの合計で見る。★変わっていなければ作り直さない。
           SUM=$(cat work/*.txt.gz 2>/dev/null | wc -c)
-          OLD=$(cat work/pantry/src_bytes.txt 2>/dev/null || echo 0)
+          mkdir -p "$REALU_PANTRY"
+          OLD=$(cat "$REALU_PANTRY/src_bytes.txt" 2>/dev/null || echo 0)
           # ★★★2026-09-09: 「1バイトでも違えば作り直す」は厳しすぎた。
           #   ★実測 #40: 1,330,485,580 → 1,330,485,614 = ★**差 34 バイト**。
           #   ★そのために 2,079 MB の棚を ★**28.0 分**かけて作り直していた。
@@ -495,13 +531,13 @@ jobs:
           #   ★★ごはんのバイト数は1バイトも変わらない → ★古い棚のまま学び続けてしまう。
           #   → ★make_pantry.py が変わったら作り直す。
           RECIPE=$(sha1sum make_pantry.py | cut -c1-12)
-          OLDR=$(cat work/pantry/recipe.txt 2>/dev/null || echo "")
+          OLDR=$(cat "$REALU_PANTRY/recipe.txt" 2>/dev/null || echo "")
           if [ "$RECIPE" != "$OLDR" ]; then echo "★作り方が変わった（$OLDR → $RECIPE）"; fi
-          if [ ! -f work/pantry/meta.json ] || [ "$OLD" = "0" ]              || [ "$RECIPE" != "$OLDR" ] || [ "$DIFF" -ge "$NEED" ]; then
+          if [ ! -f "$REALU_PANTRY/meta.json" ] || [ "$OLD" = "0" ]              || [ "$RECIPE" != "$OLDR" ] || [ "$DIFF" -ge "$NEED" ]; then
             echo "★ごはんが $DIFF バイト増えた（$OLD → $SUM）。棚を作り直す"
             if python -u make_pantry.py; then
-              echo "$SUM" > work/pantry/src_bytes.txt
-              echo "$RECIPE" > work/pantry/recipe.txt
+              echo "$SUM" > "$REALU_PANTRY/src_bytes.txt"
+              echo "$RECIPE" > "$REALU_PANTRY/recipe.txt"
             else
               echo "★棚は作れなかった（★今まで通りで学ぶ）"
             fi
@@ -529,13 +565,14 @@ jobs:
             rm -f /tmp/talk.enc
           fi
           # ★★棚（あとから作った）
-          if [ -d work/pantry ]; then
-            tar cf - -C work pantry | gzip -1 > /tmp/pantry.tgz
+          PNAME=$(basename "$REALU_PANTRY")
+          if [ -d "$REALU_PANTRY" ]; then
+            tar cf - -C work "$PNAME" | gzip -1 > /tmp/pantry.tgz
             if [ "$(stat -c%s /tmp/pantry.tgz)" -lt 1900000000 ]; then
               openssl enc -aes-256-cbc -pbkdf2 -salt \
-                -in /tmp/pantry.tgz -out /tmp/pantry.enc -pass env:FOODKEY
-              gh release upload food /tmp/pantry.enc --clobber && echo "★棚をしまった"
-              rm -f /tmp/pantry.enc
+                -in /tmp/pantry.tgz -out "/tmp/$PNAME.enc" -pass env:FOODKEY
+              gh release upload food "/tmp/$PNAME.enc" --clobber && echo "★$PNAME をしまった"
+              rm -f "/tmp/$PNAME.enc"
             else
               echo "★★棚が2GBを超えた。★刻む仕組みが要る"
             fi

@@ -29,7 +29,7 @@ def main():
 
     work = os.environ.get("REALU_WORK", os.path.join(HERE, "work"))
     pdir = os.path.join(work, "pantry")
-    tokf = os.path.join(work, "tok.json")
+    tokf = os.environ.get("REALU_TOK", os.path.join(work, "tok.json"))
     if not (os.path.isdir(pdir) and os.path.exists(tokf)):
         print("NOPANTRY", flush=True)
         return 1

@@ -20,7 +20,7 @@ import sys
 
 HERE = os.path.dirname(os.path.abspath(__file__))
 WORK = os.environ.get("REALU_WORK", os.path.join(HERE, "work"))
-TOK = os.path.join(WORK, "tok.json")
+TOK = os.environ.get("REALU_TOK", os.path.join(WORK, "tok.json"))
 # ★★★16,000 は、この大きさの頭には**大きすぎた**（実測）:
 #   文字4,500 → 全体 2.64M / 表 0.86M（33%） / 1歩 1.68秒
 #   BPE16,000 → 全体 4.84M / 表 3.07M（★63%） / 1歩 2.74秒

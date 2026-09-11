@@ -27,6 +27,14 @@ import torch.nn.functional as F
 
 HERE = os.path.dirname(os.path.abspath(__file__))
 WORK = os.environ.get("REALU_WORK", os.path.join(HERE, "work"))
+# ★★★系統ごとに「ことばの単位」を変えられるようにする（2026-09-11）。
+#   ★語彙6,000＋バイト始まりのBPEは、★**枠のほぼ全部を「バイトを文字に戻す」に使う**
+#     （★実測: 1トークン 1.22文字 ＝ ほぼ1文字1トークン。★語を覚える枠が残らない）。
+#   ★16,000 を一度やめたのは「表がパラメータの63%を食う」から。★だがそれは全体4.84Mの頃。
+#   ★★いま全体は20.0M、★入口と出口の表は既に共有されているので、★16,000でも26%。
+#   → ★理由が消えたので、★L3 だけで試す。★L1/L2 は1文字も変えない。
+TOKF = os.environ.get("REALU_TOK", os.path.join(WORK, "tok.json"))
+PDIR = os.environ.get("REALU_PANTRY", os.path.join(WORK, "pantry"))
 # ★★★系統ごとに脳と記録を分ける（2026-09-11）。
 #   ★ごはん（WORK）は**系統をまたいで共有**する。★読むだけなので衝突しない。
 #   ★★脳（BRAIN）と記録（HIST）だけ分ける。★ここを分けないと3系統が同じ頭を使う。
@@ -203,6 +211,15 @@ SCORE_SRC = os.environ.get("REALU_SCORE_SRC", "talk")
 SCORE_MODE = os.environ.get("REALU_SCORE_MODE", "talk")   # talk / mix / val
 #   ★★本番と訓練の差がこれを超えたら「丸暗記している」とみなす
 WORSE_MARGIN = 0.02    # ★★これ以上悪くなっていたら、その学習は**採用しない**
+
+
+def tok_sig(path):
+    """★★ことばの単位の指紋。★中身が1バイトでも違えば別の単位"""
+    try:
+        with open(path, "rb") as f:
+            return hashlib.sha1(f.read()).hexdigest()[:12]
+    except Exception:
+        return ""
 
 
 # ── ことば ────────────────────────────────────────────
@@ -696,7 +713,7 @@ def main():
     #   ★1回60分で学ぶ形にすると、★そのうち13分（21%）が下ごしらえになる。
     #   ★棚が無ければ今まで通り（★片方だけ壊れても止まらない）。
     pantry = None
-    pdir = os.path.join(WORK, "pantry")
+    pdir = PDIR
     if os.path.isdir(pdir) and any(f.endswith(".bin") for f in os.listdir(pdir)):
         try:
             pantry = Pantry(pdir)
@@ -796,7 +813,7 @@ def main():
 
     # ── ②★前のわたしを起こす
     # ★★★ことばの単位を用意する
-    tokf = os.path.join(WORK, "tok.json")
+    tokf = TOKF
     ckpt = os.path.join(BRAIN, "realu.pt")
     os.makedirs(BRAIN, exist_ok=True)
     st = None
@@ -810,6 +827,15 @@ def main():
             os.remove(ckpt)
             st = None
         # ★★単位が変わっていたら、★前のわたしは引き継げない（★出口の形が違う）
+        #   ★★★2026-09-11: 種類（bpe/char）だけでなく、★**中身**も見る。
+        #     ★語彙の数が変わると出口の形が変わるので、★読み込んだ瞬間に落ちる。
+        _sig = tok_sig(tokf)
+        _old = st.get("tokSig") if st else None     # ★★壊れていて None のことがある
+        if _old and _sig and _old != _sig:
+            print("★★ことばの単位の中身が変わった（%s → %s）。★生まれ直す。"
+                  % (_old, _sig), flush=True)
+            st = None
+    if st is not None:
         if (st.get("kind", "char") != ("bpe" if os.path.exists(tokf) else "char")
                 or st.get("arch") != ARCH):
             print("★★ことばの単位が変わった。★前のわたしとは繋がらないので、生まれ直す。",
@@ -967,7 +993,7 @@ def main():
     #   ★物差しの行は凍結したまま。★どこからどこまでがどのソースかの表だけを使う。
     va_src = {}
     try:
-        vm = os.path.join(WORK, "pantry", "val_marks.json")
+        vm = os.path.join(PDIR, "val_marks.json")
         with open(vm, encoding="utf-8") as f:
             vmarks = json.load(f) or {}
         vlines = val_text.split(chr(10))
@@ -1423,6 +1449,8 @@ def main():
     model.to("cpu")
     torch.save({"model": model.state_dict(), "loops": model.loops,
                 "kind": getattr(vocab, "kind", "char"), "arch": ARCH,
+                "tokSig": tok_sig(TOKF),   # ★★単位の指紋。★変わったら生まれ直す
+                "vocab": len(vocab),
                 "itos": getattr(vocab, "itos", None),
                 "layers": len(model.blocks), "d": model.d, "h": model.h,
                                 "ctx": model.ctx, "val": val, "valTag": val_tag,

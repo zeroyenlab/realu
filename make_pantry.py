@@ -35,7 +35,7 @@ import sys
 
 HERE = os.path.dirname(os.path.abspath(__file__))
 WORK = os.environ.get("REALU_WORK", os.path.join(HERE, "work"))
-PANTRY = os.path.join(WORK, "pantry")
+PANTRY = os.environ.get("REALU_PANTRY", os.path.join(WORK, "pantry"))
 NL = chr(10)
 
 # ★★1枚の上限。★Release の 2GiB より小さくしておく（★暗号化で少し増えるため）
@@ -105,7 +105,7 @@ def main():
     except Exception:
         pass
     import numpy as np
-    tokf = os.path.join(WORK, "tok.json")
+    tokf = os.environ.get("REALU_TOK", os.path.join(WORK, "tok.json"))
     if not os.path.exists(tokf):
         print("★ことばの単位がまだ無い。★先に make_tok.py を回す。")
         return 1
