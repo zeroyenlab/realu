@@ -45,12 +45,24 @@ jobs:
           FOODKEY: ${{ secrets.REALU_FOOD_KEY }}
         run: |
           mkdir -p work
+          # ★★★2026-09-12 の訂正: ★**系統ごとの脳**を読む。
+          #   ★それまでは realu.enc（★系統に分かれる前の脳）を落としていた。
+          #   ★★2026-09-11 に L1/L2/L3 へ分かれてから、★realu.enc は**更新されていない**。
+          #   ★実測: said.json が6回連続で同じ 層10 / val 3.0552。
+          #     ★grow 側は L1 が 層11 / val 2.7841 まで来ていた。
+          #   ★★★つまり、★分かれて以降に書いた文章は**全部2日前の脳のもの**だった。
+          #   ★どの系統で書くかは REALU_SPEAK_LIN で決める（★既定は L1）。
+          SPEAK_LIN="${REALU_SPEAK_LIN:-L1}"
           if [ ! -f work/realu.pt ] && [ -n "$FOODKEY" ]; then
-            gh release download brain -p realu.enc -D /tmp 2>/dev/null \
-              && openssl enc -d -aes-256-cbc -pbkdf2 \
-                   -in /tmp/realu.enc -out work/realu.pt \
-                   -pass env:FOODKEY 2>/dev/null || true
-            rm -f /tmp/realu.enc
+            # ★★系統の脳 → 無ければ一つ前 → それも無ければ分かれる前、の順で探す
+            for NAME in "realu-$SPEAK_LIN" "realu-$SPEAK_LIN-prev" realu realu-prev; do
+              gh release download brain -p "$NAME.enc" -D /tmp 2>/dev/null \
+                && openssl enc -d -aes-256-cbc -pbkdf2 \
+                     -in "/tmp/$NAME.enc" -out work/realu.pt \
+                     -pass env:FOODKEY 2>/dev/null \
+                && echo "★$NAME で書く" && rm -f "/tmp/$NAME.enc" && break
+              rm -f "/tmp/$NAME.enc"
+            done
           fi
           [ -f work/realu.pt ] && echo "★頭がある" || echo "★まだ頭がない"
 
