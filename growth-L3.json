@@ -3507,12 +3507,71 @@
    ],
    "loopPct": 2.86,
    "movedBody": false
+  },
+  {
+   "at": "2026-09-12T04:58:56Z",
+   "val": 4.3915,
+   "prev": null,
+   "valTag": "fixed-holdout-v1",
+   "stoppedAt": 2336,
+   "secPerStep": 1.0345,
+   "steps": 3511,
+   "bpc": 4.6435,
+   "charsPerTok": 1.3644,
+   "score": 3.066,
+   "scoreW": 2.0,
+   "scoreMode": "talk",
+   "layers": 4,
+   "params": 4852032,
+   "chars": 1075380775,
+   "tokens": 788163838,
+   "grew": 0,
+   "rolledBack": false,
+   "ownVal": null,
+   "ownScore": null,
+   "d": 192,
+   "loops": 1,
+   "spread": 4.8623,
+   "bytes": 58262981,
+   "heads": 6,
+   "ctx": 512,
+   "vocab": 16000,
+   "kind": "bpe",
+   "arch": "tpp-loop",
+   "wantWider": false,
+   "layerCap": 8,
+   "mixChanged": false,
+   "bySrc": {
+    "laws": 6.9817,
+    "wiki": 4.6623,
+    "aozora": 4.7985,
+    "hanrei": 5.4029,
+    "kokkai": 3.9618,
+    "web": 4.3986,
+    "talk": 3.066
+   },
+   "wrote": [
+    {
+     "start": "わたしは",
+     "text": "わたしはお尋ねします。 今回の世界に火を持っていただいておりますが、まさに、わが国なしは、日本が日本と著作権家では、昨日、北上国から反対していく、これも大変なことでしょうか。 ○SWeala のと、ここに大阪はそれが日本から自 日本一般会計では、連合国、今、日本、�"
+    },
+    {
+     "start": "第一条",
+     "text": "第一条;.高齢十七％線 Balep Bokoserunooonmu ulisonai xercemrirters onrosonus Sinateng|パロサンチャー Rerinotatiis Caleccscaitersorinl"
+    },
+    {
+     "start": "この法律において",
+     "text": "この法律において百二一時死亡法第四にわたり、国勢調査換すみなくすることが多い。 この場合において、入出力装置は、感知器及び安全保管者が可建頪する状態がめるというものである。 ただし、錠は、麻薬が直接又はなる。 の契約を締結した必要がある。 『 式西 （ 英語版 ） ） （たまく ） （ ( ) ）。 特に、 ショー・C/tatouu odearo chapo"
+    }
+   ],
+   "loopPct": 5.29,
+   "movedBody": false
   }
  ],
  "bestVal": 2.8344,
  "layers": 4,
  "params": 4852032,
- "born": "2026-09-12T02:48:31Z",
+ "born": "2026-09-12T04:18:34Z",
  "marks": [
   850289863,
   850289863,
@@ -3542,7 +3601,7 @@
   850289863,
   850289863,
   850289863,
-  850289863,
+  788163838,
   788163838,
   788163838,
   788163838,
@@ -3557,5 +3616,5 @@
  ],
  "wantWider": false,
  "nextD": 192,
- "bad": 0
+ "bad": 1
 }
