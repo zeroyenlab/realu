@@ -3802,12 +3802,71 @@
    ],
    "loopPct": 3.35,
    "movedBody": false
+  },
+  {
+   "at": "2026-09-12T12:27:20Z",
+   "val": 4.5796,
+   "prev": null,
+   "valTag": "fixed-holdout-v1",
+   "stoppedAt": 1955,
+   "secPerStep": 1.239,
+   "steps": 3514,
+   "bpc": 4.8424,
+   "charsPerTok": 1.3644,
+   "score": 3.1725,
+   "scoreW": 2.0,
+   "scoreMode": "talk",
+   "layers": 4,
+   "params": 4852032,
+   "chars": 1075380775,
+   "tokens": 788163838,
+   "grew": 0,
+   "rolledBack": false,
+   "ownVal": null,
+   "ownScore": null,
+   "d": 192,
+   "loops": 1,
+   "spread": 4.7799,
+   "bytes": 58262981,
+   "heads": 6,
+   "ctx": 512,
+   "vocab": 16000,
+   "kind": "bpe",
+   "arch": "tpp-loop",
+   "wantWider": false,
+   "layerCap": 8,
+   "mixChanged": false,
+   "bySrc": {
+    "laws": 7.0958,
+    "wiki": 4.8118,
+    "aozora": 4.9304,
+    "hanrei": 5.7259,
+    "kokkai": 4.2111,
+    "web": 4.5445,
+    "talk": 3.1725
+   },
+   "wrote": [
+    {
+     "start": "わたしは",
+     "text": "わたしはみるわけです。 ○国務大臣 これまでは、経済は財政総委員会で、国の国主党が、実際、米国ニオススライタバーでは、今日に拡大しかもしえられると考えて界誠め、このような六・、言葉を考えているんですか。 ○政府委員 ここで、三〇十一万両々と議論をいたします。 �"
+    },
+    {
+     "start": "第一条",
+     "text": "第一条革庁は、導入していた [ 11 ] 。 6月11日 - 1994年（平成20年）1月27日。 また、2002年1月20日 - 東東南金融高県）は、 2016年（平成25年） - 192回（自身が 1985年 - 1945年13月8日閲覧。"
+    },
+    {
+     "start": "この法律において",
+     "text": "この法律において（置かれるを受けている。 さらに、八十70000） ver Er/Fos Musnarr Peratagon Kiggeon Sokonrcag Mnaalncote Jeransssogs Aadcaaalht Cenninlicone"
+    }
+   ],
+   "loopPct": 12.45,
+   "movedBody": false
   }
  ],
  "bestVal": 2.8344,
  "layers": 4,
  "params": 4852032,
- "born": "2026-09-12T10:15:29Z",
+ "born": "2026-09-12T11:46:51Z",
  "marks": [
   850289863,
   850289863,
@@ -3832,7 +3891,7 @@
   850289863,
   850289863,
   850289863,
-  850289863,
+  788163838,
   788163838,
   788163838,
   788163838,
@@ -3852,5 +3911,5 @@
  ],
  "wantWider": false,
  "nextD": 192,
- "bad": 1
+ "bad": 0
 }
