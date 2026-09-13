@@ -53,7 +53,18 @@ jobs:
           #   ★★★つまり、★分かれて以降に書いた文章は**全部2日前の脳のもの**だった。
           #   ★どの系統で書くかは REALU_SPEAK_LIN で決める（★既定は L1）。
           SPEAK_LIN="${REALU_SPEAK_LIN:-L1}"
-          if [ ! -f work/realu.pt ] && [ -n "$FOODKEY" ]; then
+          # ═══ ★★★頭は**毎回**取りに行く（★2026-09-13 の訂正） ═══
+          #
+          # ★元は `[ ! -f work/realu.pt ]` で「無ければ落とす」にしていた。
+          # ★★だが上の `cache/restore` が `restore-keys: realu-work-` で
+          #   ★**work/ を丸ごと戻す**ので、★★そこに古い realu.pt が入っている。
+          # ★★★結果、★**落とす所を毎回素通り**して、
+          #   ★2026-09-08 の頭で書き続けていた。
+          #   ★実測: 系統ごとの脳を読むよう直した後も、said.json は
+          #     ★★4回まわして 層10 / val 3.0552 のまま動かなかった。
+          # → ★キャッシュはごはんと単位のためだけに使う。★頭は上書きする。
+          rm -f work/realu.pt
+          if [ -n "$FOODKEY" ]; then
             # ★★系統の脳 → 無ければ一つ前 → それも無ければ分かれる前、の順で探す
             for NAME in "realu-$SPEAK_LIN" "realu-$SPEAK_LIN-prev" realu realu-prev; do
               gh release download brain -p "$NAME.enc" -D /tmp 2>/dev/null \
