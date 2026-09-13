@@ -5513,6 +5513,65 @@
    ],
    "loopPct": 6.13,
    "movedBody": false
+  },
+  {
+   "at": "2026-09-13T21:15:34Z",
+   "val": 2.75,
+   "prev": 2.75,
+   "valTag": "fixed-holdout-v1",
+   "stoppedAt": 625,
+   "secPerStep": 5.9531,
+   "steps": 1160,
+   "bpc": 3.2514,
+   "charsPerTok": 1.2202,
+   "score": 2.0174,
+   "scoreW": 2.0,
+   "scoreMode": "talk",
+   "layers": 11,
+   "params": 21794688,
+   "chars": 1037515847,
+   "tokens": 850289863,
+   "grew": 0,
+   "rolledBack": true,
+   "ownVal": 2.7419,
+   "ownScore": 2.2479,
+   "d": 384,
+   "loops": 1,
+   "spread": 2.6305,
+   "bytes": 261632513,
+   "heads": 6,
+   "ctx": 512,
+   "vocab": 6000,
+   "kind": "bpe",
+   "arch": "tpp-loop",
+   "wantWider": false,
+   "layerCap": 16,
+   "mixChanged": false,
+   "bySrc": {
+    "laws": 3.9905,
+    "wiki": 2.9232,
+    "aozora": 3.3329,
+    "hanrei": 3.5721,
+    "kokkai": 2.4794,
+    "web": 2.8532,
+    "talk": 2.2479
+   },
+   "wrote": [
+    {
+     "start": "わたしは",
+     "text": "わたしはすこしはしましたが、はまってゆうのにやっています。」 FV「そうなんですね。ちなみに今年はあまりテレビでなくて」 EA「やっぱり映像とかですか？」 FV「そうですね、スポーツ、映像のクラシックです。」 EA「いやーなるほ"
+    },
+    {
+     "start": "第一条",
+     "text": "第一条（禁錮刑法、刑法、刑法、刑法、刑法、刑法、刑法、刑法、刑法、刑法、刑法、刑法、刑事事件、刑法、刑法、刑法、刑法、刑法、刑法、刑法、刑法、刑法、刑法、刑法、刑法、刑法、刑法、刑法、刑法、刑法、刑法、刑法、刑法、刑法など、刑"
+    },
+    {
+     "start": "この法律において",
+     "text": "この法律においてするとともに、swake New(1969)、swake Bluede New Servilの着想は、指定都市の行政区である。 2008年 （平成20年）10月25日 - of colo hing.jpg|市内中心部に位置する「Komera（19"
+    }
+   ],
+   "loopPct": 33.09,
+   "movedBody": false
   }
  ],
  "bestVal": 2.75,
