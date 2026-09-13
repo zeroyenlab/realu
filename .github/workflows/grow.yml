@@ -698,11 +698,31 @@ jobs:
             echo "★★まだ頭が無い。★40分で切り上げて、まず残す。"
           fi
           echo "★学びに使える $REALU_TIME_BUDGET 分"
+          # ★★★2026-09-13: 走らせる前の様子を足跡に残す。
+          #   ★L2 と L3 が9時間落ち続けたのに、★**python が1文字も出さずに終わった**
+          #     ので理由が1つも残らなかった。
+          #   ★★「どこまで行ったか」ではなく「**何を持って入ったか**」が要る。
+          mkdir -p work
+          {
+            echo "系統 $LIN / 幅の行き先 ${REALU_MOVE_D:-0} / 配合 ${REALU_FINISH_MIX:-?}"
+            echo "頭     : $(ls -la brain/realu.pt 2>/dev/null || echo なし)"
+            echo "単位   : $(ls -la "$REALU_TOK" 2>/dev/null || echo なし)"
+            echo "棚     : $(ls "$REALU_PANTRY" 2>/dev/null | wc -l) 個"
+            echo "空き   : $(df -h . | tail -1)"
+            echo "メモリ : $(free -m 2>/dev/null | sed -n 2p || echo 不明)"
+            echo "予算   : $REALU_TIME_BUDGET 分"
+          } > work/trace.txt
+          cat work/trace.txt
           # ★★★出力を控えておく。★Actions のログは認証が要って外から読めない。
           set +e
           python -u grow.py 2>&1 | tee /tmp/learn.log
           code=${PIPESTATUS[0]}
           set -e
+          # ★★★何も出なかったこと自体を残す（★空のログは「読めない」ではなく手がかり）
+          if [ ! -s /tmp/learn.log ]; then
+            echo "★★★python は1文字も出さずに $code で終わった" >> work/trace.txt
+          fi
+          echo "終了コード $code" >> work/trace.txt
           exit $code
 
       # ── ★自分を残す。★★これが消えると、これまでの全部が消える
@@ -803,20 +823,32 @@ jobs:
         if: failure()
         run: |
           {
+            # ★★★2026-09-13: 印は**シングルクォート**で出す。
+            #   ★元は echo "(バッククォート3つ)" と二重引用符で書いていた。
+            #   ★★二重引用符の中のバッククォートは**コマンド置換**なので、
+            #     ★シェルは印として出さず、★★間に挟まれた cat / tail を
+            #     ★★★**実行して結果を文字列に埋める**扱いにしていた。
+            #   ★→ 記録は毎回**見出しだけ**になっていた（★実測: 10行・中身ゼロ）。
+            #   ★★実害: L2 と L3 が9時間落ち続けたのに、理由が1文字も残らなかった。
             echo "# 転んだ記録"
             echo ""
             echo "いつ: $(date -u +%Y-%m-%dT%H:%M:%SZ)"
             echo "回  : ${{ github.run_number }}"
+            echo "系統: $LIN"
+            echo ""
+            # ★★出たかどうかを先に書く。★**空なら「空だった」と分かる**ように
+            echo "学びの記録: $(wc -c < /tmp/learn.log 2>/dev/null || echo なし) バイト"
+            echo "足跡      : $(wc -c < work/trace.txt 2>/dev/null || echo なし) バイト"
             echo ""
             echo "## どこまで進んだか"
-            echo "```"
-            cat work/trace.txt 2>/dev/null || echo "（足跡なし）"
-            echo "```"
+            echo '```'
+            cat work/trace.txt 2>/dev/null || true
+            echo '```'
             echo ""
-            echo "## 最後の60行"
-            echo "```"
-            tail -60 /tmp/learn.log 2>/dev/null || echo "（記録なし）"
-            echo "```"
+            echo "## 最後の80行"
+            echo '```'
+            tail -80 /tmp/learn.log 2>/dev/null || true
+            echo '```'
           } > last_error.md
           git config user.name  "realu"
           git config user.email "realu@users.noreply.github.com"
