@@ -4038,6 +4038,65 @@
    ],
    "loopPct": 4.0,
    "movedBody": false
+  },
+  {
+   "at": "2026-09-13T06:31:34Z",
+   "val": 2.8173,
+   "prev": 2.8173,
+   "valTag": "fixed-holdout-v1",
+   "stoppedAt": 729,
+   "secPerStep": 5.0765,
+   "steps": 1244,
+   "bpc": 3.331,
+   "charsPerTok": 1.2202,
+   "score": 2.0589,
+   "scoreW": 2.0,
+   "scoreMode": "talk",
+   "layers": 10,
+   "params": 20024448,
+   "chars": 1037515847,
+   "tokens": 850289863,
+   "grew": 0,
+   "rolledBack": true,
+   "ownVal": 2.9714,
+   "ownScore": 2.1569,
+   "d": 384,
+   "loops": 1,
+   "spread": 2.729,
+   "bytes": 240381405,
+   "heads": 6,
+   "ctx": 512,
+   "vocab": 6000,
+   "kind": "bpe",
+   "arch": "tpp-loop",
+   "wantWider": false,
+   "layerCap": 16,
+   "mixChanged": false,
+   "bySrc": {
+    "laws": 3.9254,
+    "wiki": 3.0333,
+    "aozora": 3.3536,
+    "hanrei": 3.5817,
+    "kokkai": 2.5632,
+    "web": 2.9471,
+    "talk": 2.1569
+   },
+   "wrote": [
+    {
+     "start": "わたしは",
+     "text": "わたしは、何かしながら、中村さんがいまったら、外に出てくると思います。」 BG「そうなんですねー。子供らしいのに、自分が夜寝てるんで、うらやましかったです。」 CV「夜寝る間、言葉を召しに行って、満足しちゃいましたね。」"
+    },
+    {
+     "start": "第一条",
+     "text": "第一条ているところは「住宅用地」に比べて、状の低い年法律第九の募集を余儀なくされたり、これに応じた住宅就航手当、利用率の引き上げを誤っているということです。むしろ「住宅改修」を推進するには、先ほど申し上げましたように、住宅建設、住宅建設、住宅建設等の資金、住宅建設などの重要施策が大きいことから、住宅建設のことも大きく絞って、住宅建設は"
+    },
+    {
+     "start": "この法律において",
+     "text": "この法律において「als 資本主義介入」をもって政治活動に成功を収めた。 1990年 （平成2年） - 昭和40年代 に入る ラテン語 「neoce als all se」を発表する。 パン派 （ 英語 : parport"
+    }
+   ],
+   "loopPct": 5.77,
+   "movedBody": false
   }
  ],
  "bestVal": 2.8173,
