@@ -59,12 +59,38 @@ jobs:
             tok: work/tok.json
             pantry: work/pantry
             fresh: "0"
+            move_d: "0"         # ★引っ越さない（★対照）
+          # ═══ ★★★L2 は**広い体へ引っ越す**（★2026-09-13） ═══
+          #
+          # ★Daito「レアルに文章書かせてみて」→ 層11・val 2.75 の文章を見て
+          #   ★★「せいせいせい」が60回。★法令の言い回しは塊で出るようになったが、
+          #   ★★★**塊と塊がつながらない**。★1文字 3.29ビット（読めるのは 1.5）。
+          #
+          # ★L2 は **20回連続で巻き戻し**、20回ぶん何も生んでいなかった。
+          #   ★★どうせ止まっているので、ここを実験に使う。
+          #
+          # ★★★なぜ幅か: L1 は層ばかり 11 まで伸びて、幅は 384 のまま。
+          #   ★`layer_cap` は 16 なので、深さはもう頭打ちが近い。
+          #   ★★MobileLLM は「深く細い方が良い」だが、★**細長さにも限度がある**。
+          #
+          # ★★★なぜ 768 ではなく 512 か（★code が既定で倍にするのは 768）:
+          #   | 幅 | 体 | 1回の歩数 |
+          #   |---|---|---|
+          #   | 384 | 20.0M | 923 |
+          #   | **512** | **34.5M** | **534** |
+          #   | 768 | 75.4M | **244** |
+          #   ★深くする条件が「次の回が EVAL_EVERY×2 ＝ 400歩を切るなら伸ばさない」。
+          #   ★★768 だと **二度と深くなれない**うえ、★評価そのものが1回しか回らない。
+          #
+          # ★ゼロから生まれ直さない ── ★★**いまの L2 を先生にして蒸留**する
+          #   （★L3 は生まれ直して 79回かけて戻った。★同じ轍は踏まない）。
           - lineage: L2
             finish_mix: "0.85"  # ★会話寄り
             vocab: "6000"
             tok: work/tok.json
             pantry: work/pantry
             fresh: "0"
+            move_d: "512"       # ★★★広い体へ引っ越す
           # ═══ ★★★L3 の語彙の実験は**畳んだ**（2026-09-12） ═══
           #
           # ★狙い: 語彙 6,000 → 16,000 で「1トークンが運ぶ字数」を増やす。
@@ -95,12 +121,14 @@ jobs:
             tok: work/tok.json
             pantry: work/pantry
             fresh: "0"
+            move_d: "0"         # ★引っ越さない
     env:
       LIN: ${{ matrix.lineage }}
       REALU_BRAIN: brain
       REALU_HIST: growth-${{ matrix.lineage }}.json
       REALU_FINISH_MIX: ${{ matrix.finish_mix }}
       REALU_VOCAB: ${{ matrix.vocab }}
+      REALU_MOVE_D: ${{ matrix.move_d }}
       REALU_TOK: ${{ matrix.tok }}
       REALU_PANTRY: ${{ matrix.pantry }}
       FRESH: ${{ matrix.fresh }}
