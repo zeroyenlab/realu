@@ -4569,6 +4569,65 @@
    ],
    "loopPct": 1.38,
    "movedBody": false
+  },
+  {
+   "at": "2026-09-14T10:47:40Z",
+   "val": 3.796,
+   "prev": null,
+   "valTag": "fixed-holdout-v1",
+   "stoppedAt": 1212,
+   "secPerStep": 3.0178,
+   "steps": 3653,
+   "bpc": 4.4882,
+   "charsPerTok": 1.2202,
+   "score": 2.6206,
+   "scoreW": 2.0,
+   "scoreMode": "talk",
+   "layers": 8,
+   "params": 16483968,
+   "chars": 1037515847,
+   "tokens": 850289863,
+   "grew": 0,
+   "rolledBack": false,
+   "ownVal": null,
+   "ownScore": null,
+   "d": 384,
+   "loops": 1,
+   "spread": 3.9922,
+   "bytes": 197879253,
+   "heads": 6,
+   "ctx": 512,
+   "vocab": 6000,
+   "kind": "bpe",
+   "arch": "tpp-loop",
+   "wantWider": false,
+   "layerCap": 16,
+   "mixChanged": false,
+   "bySrc": {
+    "laws": 5.956,
+    "wiki": 4.0344,
+    "aozora": 4.2657,
+    "hanrei": 4.4785,
+    "kokkai": 3.3787,
+    "web": 3.8078,
+    "talk": 2.6206
+   },
+   "wrote": [
+    {
+     "start": "わたしは",
+     "text": "わたしはその車として、手では遅れに立ったが、それの厳しい中小企業が、持たせる事もあると思うんですね。まず、あるいは別所だけに、子供が宗教会に移りたいです。 沖市課の、この時点に、社会位をお願いします。 ○国務大臣 お案したいと思いますが、次第でご�"
+    },
+    {
+     "start": "第一条",
+     "text": "第一条 節部（2020年） 読売テレビ（2025年） 1月2日 タイムバッド（日曜日（弟夫（2006年） 9月25日、新村第2号） 2015年（平成22年）（1931年）、天半7年（平成22年） 2000年（平成19年）4月21"
+    },
+    {
+     "start": "この法律において",
+     "text": "この法律において「直近ん」「もうか」「おいしいー！」 DA「そうですよ。アメリカはいいですね。」 GX「同時に、丁目の理解はゲームですか？」 FF「ありがとうございましたか？」 DU「こんに�"
+    }
+   ],
+   "loopPct": 7.64,
+   "movedBody": false
   }
  ],
  "bestVal": 2.8344,
@@ -4619,5 +4678,5 @@
  ],
  "wantWider": false,
  "nextD": 384,
- "bad": 1
+ "bad": 0
 }
