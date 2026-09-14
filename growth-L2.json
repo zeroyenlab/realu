@@ -4746,11 +4746,70 @@
    ],
    "loopPct": 0.71,
    "movedBody": true
+  },
+  {
+   "at": "2026-09-14T19:54:16Z",
+   "val": 4.9701,
+   "prev": null,
+   "valTag": "fixed-holdout-v1",
+   "stoppedAt": 0,
+   "secPerStep": 6.4807,
+   "steps": 517,
+   "bpc": 5.8764,
+   "charsPerTok": 1.2202,
+   "score": 2.9522,
+   "scoreW": 2.0,
+   "scoreMode": "talk",
+   "layers": 13,
+   "params": 44216832,
+   "chars": 1037515847,
+   "tokens": 850289863,
+   "grew": 0,
+   "rolledBack": false,
+   "ownVal": null,
+   "ownScore": null,
+   "d": 512,
+   "loops": 1,
+   "spread": 5.1813,
+   "bytes": 530714633,
+   "heads": 8,
+   "ctx": 512,
+   "vocab": 6000,
+   "kind": "bpe",
+   "arch": "tpp-loop",
+   "wantWider": false,
+   "layerCap": 16,
+   "mixChanged": false,
+   "bySrc": {
+    "laws": 7.0895,
+    "wiki": 5.0509,
+    "aozora": 4.9792,
+    "hanrei": 5.907,
+    "kokkai": 4.6164,
+    "web": 4.748,
+    "talk": 2.9522
+   },
+   "wrote": [
+    {
+     "start": "わたしは",
+     "text": "わたしはなったったですよね。」 BR「お探ですね。私は距離の教、そんな私も丁みちゃうです。」 AU「いいですね、たらのさんですよね、AFOでしたか」 GG「したら、そうなんですね」 AQ「そうですね。パンとかですね！」"
+    },
+    {
+     "start": "第一条",
+     "text": "第一条。 慦 な や 滓 して 」 Re 曲 - プスプ クル 裏 は [ 5 ] 。 アクブミ は ゲッードク 立 ビロン が トッチソン なひ に 『 ボリアイス 、 ロウアダタマ 、 ム ーベイ"
+    },
+    {
+     "start": "この法律において",
+     "text": "この法律において計算した。）させる習を養して同年月、、平成年） 1月2性、平成1年） ） （経過市） - 4 - 和統学駅。 1922年11月2日 - 二沢敵洔 をJDFiが、合わかります。 1294年1月22日 - 世界記国からし、2095年、4"
+    }
+   ],
+   "loopPct": 8.51,
+   "movedBody": true
   }
  ],
  "bestVal": 2.8173,
- "layers": 12,
- "params": 41053696,
+ "layers": 13,
+ "params": 44216832,
  "born": "2026-09-08T15:11:54Z",
  "marks": [
   850289863,
