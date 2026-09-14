@@ -4805,11 +4805,70 @@
    ],
    "loopPct": 8.51,
    "movedBody": true
+  },
+  {
+   "at": "2026-09-14T21:08:47Z",
+   "val": 6.0385,
+   "prev": null,
+   "valTag": "fixed-holdout-v1",
+   "stoppedAt": 336,
+   "secPerStep": 11.3218,
+   "steps": 481,
+   "bpc": 7.1396,
+   "charsPerTok": 1.2202,
+   "score": 3.9482,
+   "scoreW": 2.0,
+   "scoreMode": "talk",
+   "layers": 14,
+   "params": 47379968,
+   "chars": 1037515847,
+   "tokens": 850289863,
+   "grew": 0,
+   "rolledBack": false,
+   "ownVal": null,
+   "ownScore": null,
+   "d": 512,
+   "loops": 1,
+   "spread": 6.4762,
+   "bytes": 568680493,
+   "heads": 8,
+   "ctx": 512,
+   "vocab": 6000,
+   "kind": "bpe",
+   "arch": "tpp-loop",
+   "wantWider": false,
+   "layerCap": 16,
+   "mixChanged": false,
+   "bySrc": {
+    "laws": 7.9424,
+    "wiki": 6.0698,
+    "aozora": 5.7902,
+    "hanrei": 6.7846,
+    "kokkai": 5.8129,
+    "web": 5.8411,
+    "talk": 3.9482
+   },
+   "wrote": [
+    {
+     "start": "わたしは",
+     "text": "わたしは。」 E帰「そうくもいますか？」 Eh「があなんですね、も見もらさんですね。」 K E「卩やりますかに連私よりきりますね！」 ED「そうのです？」 EA「さいます選るいます。」 A。」 X「そうですRealt> AG"
+    },
+    {
+     "start": "第一条",
+     "text": "第一条） （ B「イル記、1558759202月022211�年2717A雌お駅があります。」 BN「とようでした。」 ET「それいだました、原は日議名 。大えごぶは厚生労働大臣が日本ます。」 客「そうですか？」 「ディス名地全国がと、一当に請求結"
+    },
+    {
+     "start": "この法律において",
+     "text": "この法律において以下対策挙、十四免家�に、、コン）から感情報通信、の� ホ、同法の加対なる人に、は予算までの３リはニものにあつては事故いか頬れず対してい、、。 が額を評価 国点�。 02Y B日Al� WOhaoonannat> AE「ため、日？ 店が、。 結であたようにしです。こう"
+    }
+   ],
+   "loopPct": 5.24,
+   "movedBody": true
   }
  ],
  "bestVal": 2.8173,
- "layers": 13,
- "params": 44216832,
+ "layers": 14,
+ "params": 47379968,
  "born": "2026-09-08T15:11:54Z",
  "marks": [
   850289863,
