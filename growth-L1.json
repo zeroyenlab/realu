@@ -6162,6 +6162,65 @@
    ],
    "loopPct": 5.38,
    "movedBody": false
+  },
+  {
+   "at": "2026-09-14T09:23:41Z",
+   "val": 2.75,
+   "prev": 2.75,
+   "valTag": "fixed-holdout-v1",
+   "stoppedAt": 0,
+   "secPerStep": 2.3672,
+   "steps": 1155,
+   "bpc": 3.2514,
+   "charsPerTok": 1.2202,
+   "score": 2.0174,
+   "scoreW": 2.0,
+   "scoreMode": "talk",
+   "layers": 11,
+   "params": 21794688,
+   "chars": 1037515847,
+   "tokens": 850289863,
+   "grew": 0,
+   "rolledBack": true,
+   "ownVal": 2.895,
+   "ownScore": 2.0939,
+   "d": 384,
+   "loops": 1,
+   "spread": 2.8144,
+   "bytes": 261632513,
+   "heads": 6,
+   "ctx": 512,
+   "vocab": 6000,
+   "kind": "bpe",
+   "arch": "tpp-loop",
+   "wantWider": false,
+   "layerCap": 16,
+   "mixChanged": false,
+   "bySrc": {
+    "laws": 3.8846,
+    "wiki": 3.0524,
+    "aozora": 3.4344,
+    "hanrei": 3.5621,
+    "kokkai": 2.528,
+    "web": 2.8939,
+    "talk": 2.0939
+   },
+   "wrote": [
+    {
+     "start": "わたしは",
+     "text": "わたしはどうしてもとても楽しそうですよね。」 FF「そうですね。私は何の趣味も教えて欲しいです。」 CH「今はスポーツとかですね。」 FF「スポーツはお好きな人かありますか？」 CH「スポーツは好きですが、結構好きな"
+    },
+    {
+     "start": "第一条",
+     "text": "第一条には、その目的を達成するための措置が講ぜられていないものである。そのため、地域住民の不安、飲食店の安心、生活を圧迫しようとする動きがある。 「都市」は、都市の一部が commotest (nisenge) （ 、 ） と呼ばれる。 都市の一部は、 2020年代までの千年延長が挙げられる。 都市の中心"
+    },
+    {
+     "start": "この法律において",
+     "text": "この法律において隔隔隔隔隔隔隔の上限を設けたものであるとした。 そこで、慎重な検討が進むとともに、昭和45年（ 1947年 ）には、以下の6項目について調査を進めている。 「日本の他の諸国と比較して、日本の英語や日本語の訳語といった関係が深い。 「日本の英語は英語ではない」というアイデア"
+    }
+   ],
+   "loopPct": 6.59,
+   "movedBody": false
   }
  ],
  "bestVal": 2.75,
@@ -6212,5 +6271,5 @@
  ],
  "wantWider": false,
  "nextD": 384,
- "bad": 5
+ "bad": 2
 }
