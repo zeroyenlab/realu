@@ -1405,8 +1405,16 @@ def main():
                      SCORE_TALK_W + 1.0), flush=True)
         else:
             score = val
-        prev_score = st.get("score") if st else None
-        if prev_score is None:
+        # ★★★前の点数を捨てた回は、★**合成点のほうも一緒に捨てる**（2026-09-14）。
+        #   ★`prev_val = None` にする理由は3つとも「★前の数字は比べられない」:
+        #     ①物差しが変わった ②別の体へ引っ越した ③逃げ道の物差しに落ちた。
+        #   ★★なのに `prev_score` だけ前の体のものが残っていた。
+        #   ★★★引っ越した直後の体（まだ何も学んでいない）を、★育ち切った前の体の点と
+        #     比べることになり、★**どう学んでも必ず負ける＝毎回巻き戻す**。
+        #   ★さらに巻き戻し先の `prev_val` が None なので、★下の bpc で落ちていた
+        #     （★L2/L3 が 2026-09-12 23:41Z から丸一日、毎回1時間学んでは死んでいた）。
+        prev_score = st.get("score") if (st and prev_val is not None) else None
+        if prev_score is None and prev_val is not None:
             prev_score = prev_val          # ★はじめての回は全体と比べる
         # ★★★重みを変えた回は巻き戻さない（2026-09-10）。
         #   ★合成点は重みで値が変わるので、★**違う重み同士を比べるのは別の問題の点数を比べるのと同じ**。
@@ -1439,6 +1447,12 @@ def main():
         if val is None:
             val = prev_val if prev_val is not None else float("nan")
 
+    # ★★★ここから先は val を**数**として扱う（★割る・丸める・%.4f で書く）。
+    #   ★None のまま進むと、★学び終わった後・記録を残す直前で落ちる。
+    #   ★★1時間の学習が、★記録も残らないまま丸ごと消える形の落ち方だった。
+    if val is None:
+        val = float("nan")
+
     # ★★保存はCPUに戻してから。★GPUのまま保存すると、CPUの回が読めない
     # ★★★保存は**CPUに戻してから、別名で書いて、名前を付け替える**。
     #   ★GPUのまま保存すると、CPUの回が読めない。
@@ -1453,8 +1467,13 @@ def main():
                 "vocab": len(vocab),
                 "itos": getattr(vocab, "itos", None),
                 "layers": len(model.blocks), "d": model.d, "h": model.h,
-                                "ctx": model.ctx, "val": val, "valTag": val_tag,
-                "score": score, "scoreW": SCORE_TALK_W, "scoreMode": SCORE_MODE,
+                # ★★測れなかった回は nan ではなく None で残す。★次の回は「前の点は無い」
+                #   と読んで、★★**比べずに素直に採る**（★nan だと比較が全部 False になり、
+                #   ★「比べたのに勝った」ように見える嘘の道を通る）
+                "ctx": model.ctx,
+                "val": (val if val == val else None), "valTag": val_tag,
+                "score": (score if (score is not None and score == score) else None),
+                "scoreW": SCORE_TALK_W, "scoreMode": SCORE_MODE,
                 "mixTag": mix_tag,
                 # ★★慣性も一緒に残す（★重みの2倍の大きさになるが、それに見合う）
                 "opt": opt.state_dict(),
@@ -1532,7 +1551,8 @@ def main():
             cpt = len(text) / max(1, len(ids))
     except Exception:
         cpt = 0.0
-    bpc = (val / math.log(2) / cpt) if (cpt and val == val) else 0.0
+    # ★★`val == val` は nan だけを弾く。★None は素通りして割り算で落ちる（★実際に落ちた）
+    bpc = (val / math.log(2) / cpt) if (cpt and val is not None and val == val) else 0.0
     if bpc:
         print("★1文字あたり %.3f ビット（loss %.4f ÷ %.3f 文字/トークン）"
               % (bpc, val, cpt), flush=True)
@@ -1544,13 +1564,16 @@ def main():
               % (sec_per_step, done_steps, (time.time() - t_loop) / 60), flush=True)
     hist["runs"].append({
         "at": time.strftime("%Y-%m-%dT%H:%M:%SZ", time.gmtime()),
-        "val": round(val, 4), "prev": round(prev_val, 4) if prev_val else None, "valTag": VAL_TAG, "stoppedAt": stopped_early,
+        # ★★測れなかった回は null で残す。★nan のまま書くと JSON に `NaN` と出て、
+        #   ★★家（index.html）の JSON.parse が落ちて**成長の記録が全部見えなくなる**
+        "val": (round(val, 4) if val == val else None),
+        "prev": round(prev_val, 4) if prev_val else None, "valTag": VAL_TAG, "stoppedAt": stopped_early,
         # ★★次の回が歩数を決めるための実測。★体が育つたびに自動で追随する
         "secPerStep": round(sec_per_step, 4), "steps": STEPS,
         # ★★語彙が違う線どうしでも比べられる、唯一の物差し
         "bpc": round(bpc, 4), "charsPerTok": round(cpt, 4),
         # ★★採否を決めた合成点（★全体の val とは別）
-        "score": round(score, 4) if score is not None else None,
+        "score": (round(score, 4) if (score is not None and score == score) else None),
         "scoreW": SCORE_TALK_W,
         "scoreMode": SCORE_MODE,
         "layers": len(model.blocks), "params": model.n_params(),
@@ -1573,9 +1596,19 @@ def main():
         "movedBody": teacher is not None,
     })
     hist["runs"] = hist["runs"][-200:]
-    hist["bestVal"] = round(min(r["val"] for r in hist["runs"]), 4)
-    # ★★次の回に引き継ぐ（★体が変わったら0から）
-    hist["bad"] = 0 if (grew or rolled) else bad
+    # ★★測れなかった回（nan）を混ぜない。★min は nan に触ると nan を返し、
+    #   ★★以後ずっと「最高記録は nan」になって、★もう誰とも比べられなくなる。
+    _ok = [r["val"] for r in hist["runs"]
+           if isinstance(r.get("val"), (int, float)) and r["val"] == r["val"]]
+    hist["bestVal"] = round(min(_ok), 4) if _ok else None
+    # ★★★「良くならない」の数は、★巻き戻した回こそ引き継ぐ（2026-09-14）。
+    #   ★巻き戻す＝**重みは前の回とまったく同じ**。★頭打ちは続いている。
+    #   ★なのに rolled で 0 に戻していたので、★1回の走行では評価が2〜4回しか
+    #     回らず、★★GROW_PATIENCE=5 に**永久に届かなかった**。
+    #   ★★★実測: L1 は 29回連続で巻き戻し、★val 2.75 のまま29時間、
+    #     ★一度も層が増えず、★毎回1時間の学習を丸ごと捨てていた。
+    #   ★体が変わった回（grew）だけ 0 に戻す ── ★そこは本当に別の体だから。
+    hist["bad"] = 0 if grew else bad
     hist["layers"] = len(model.blocks)
     # ★★★次の回に「幅を広げたい」を伝える
     hist["wantWider"] = want_wider
