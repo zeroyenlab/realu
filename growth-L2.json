@@ -4156,6 +4156,65 @@
    ],
    "loopPct": 0.81,
    "movedBody": false
+  },
+  {
+   "at": "2026-09-14T08:31:41Z",
+   "val": 4.1031,
+   "prev": null,
+   "valTag": "fixed-holdout-v1",
+   "stoppedAt": 1001,
+   "secPerStep": 3.6654,
+   "steps": 1244,
+   "bpc": 4.8513,
+   "charsPerTok": 1.2202,
+   "score": 2.4207,
+   "scoreW": 2.0,
+   "scoreMode": "talk",
+   "layers": 10,
+   "params": 34727424,
+   "chars": 1037515847,
+   "tokens": 850289863,
+   "grew": 0,
+   "rolledBack": false,
+   "ownVal": null,
+   "ownScore": null,
+   "d": 512,
+   "loops": 1,
+   "spread": 4.1067,
+   "bytes": 416817117,
+   "heads": 8,
+   "ctx": 512,
+   "vocab": 6000,
+   "kind": "bpe",
+   "arch": "tpp-loop",
+   "wantWider": false,
+   "layerCap": 16,
+   "mixChanged": false,
+   "bySrc": {
+    "laws": 6.2468,
+    "wiki": 4.3265,
+    "aozora": 4.509,
+    "hanrei": 4.7417,
+    "kokkai": 3.6955,
+    "web": 4.045,
+    "talk": 2.4207
+   },
+   "wrote": [
+    {
+     "start": "わたしは",
+     "text": "わたしはよくないですか？」 AX「ほうって、まだは大事ですね！」 AL「いえ、思ってます！かなり激しいですね、ちょっとですか。」 AU「恐くそうですね！楽しみとかでも行ってました！」 AF「大阪だけ、これ、有名なんですね。」"
+    },
+    {
+     "start": "第一条",
+     "text": "第一条者は、それぞれ当該工場は、急倒員を半手に、その条件では、従来、中連那を引き返いたした。 政府は、その条件では、現�側は、沖縄への子 米大臣へ行く状況から、政府案は、代表的な担当部に、大きな家族の合併、腐橋（ 英語版 ） が、中間な尺者としての初頭に限られる ["
+    },
+    {
+     "start": "この法律において",
+     "text": "この法律においての服にした。 <記事 1979年 - 関東区 では、発表し、 後心 に 角線 を 東大学 と 発展 、 佐々川 の 察法 、 中将 などが 多くなっていた。 しかし、 1902年 の 東京 ・ 地下屋・ 駅 ・ 甘鉄"
+    }
+   ],
+   "loopPct": 0.0,
+   "movedBody": false
   }
  ],
  "bestVal": 2.8173,
@@ -4206,5 +4265,5 @@
  ],
  "wantWider": false,
  "nextD": 512,
- "bad": 0
+ "bad": 1
 }
