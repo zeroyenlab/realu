@@ -6634,11 +6634,70 @@
    ],
    "loopPct": 28.33,
    "movedBody": false
+  },
+  {
+   "at": "2026-09-14T18:52:31Z",
+   "val": 2.9152,
+   "prev": 2.8019,
+   "valTag": "fixed-holdout-v1",
+   "stoppedAt": 549,
+   "secPerStep": 6.8117,
+   "steps": 1046,
+   "bpc": 3.4468,
+   "charsPerTok": 1.2202,
+   "score": 2.1981,
+   "scoreW": 2.0,
+   "scoreMode": "talk",
+   "layers": 13,
+   "params": 25335168,
+   "chars": 1037515847,
+   "tokens": 850289863,
+   "grew": 1,
+   "rolledBack": false,
+   "ownVal": null,
+   "ownScore": null,
+   "d": 384,
+   "loops": 1,
+   "spread": 2.9514,
+   "bytes": 304134665,
+   "heads": 6,
+   "ctx": 512,
+   "vocab": 6000,
+   "kind": "bpe",
+   "arch": "tpp-loop",
+   "wantWider": false,
+   "layerCap": 16,
+   "mixChanged": false,
+   "bySrc": {
+    "laws": 4.1736,
+    "wiki": 3.1124,
+    "aozora": 3.472,
+    "hanrei": 3.6967,
+    "kokkai": 2.5853,
+    "web": 2.972,
+    "talk": 2.1981
+   },
+   "wrote": [
+    {
+     "start": "わたしは",
+     "text": "わたしは味が悪いです。」 HJ「いいですね！私の家ですが、日本のピリピリして再現されたので、それが美味しいです！」 HZ「そうなんですね！むしろ美味しい目に入ってくる感じですか？」 HJ「林山坂、やっぱり美味しいので、それ"
+    },
+    {
+     "start": "第一条",
+     "text": "第一条の 第２のとおり，軸内部分や窓の取り側部分が入ると主力側が入る。 （乙５，１５） １１，１１，１２，２の１，２の１の各７，２の２，２の各 Ｄ，同Ｄ，同Ｄ，同Ｄ，同Ｄ，同Ｄ，同Ｄ，同�"
+    },
+    {
+     "start": "この法律において",
+     "text": "この法律において アフガニスタン （ 英語版 ） ゲルマン （ 英語版 ） では ゲルマン人 （ 英語版 ） が アルドメニウス であると発表されている。 エスカレートアームは 欧州 地域によってゲルマン人 のうた人、対中国で セザン人"
+    }
+   ],
+   "loopPct": 17.6,
+   "movedBody": false
   }
  ],
  "bestVal": 2.75,
- "layers": 12,
- "params": 23564928,
+ "layers": 13,
+ "params": 25335168,
  "born": "2026-09-08T15:11:54Z",
  "marks": [
   850289863,
@@ -6684,5 +6743,5 @@
  ],
  "wantWider": false,
  "nextD": 384,
- "bad": 6
+ "bad": 0
 }
