@@ -91,6 +91,14 @@ jobs:
             pantry: work/pantry
             fresh: "0"
             move_d: "512"       # ★★★広い体へ引っ越す
+            # ★★★引っ越しをやり直す（2026-09-14）。
+            #   ★9/13 の1回目は**蒸留した直後に巻き戻され**、★L1 から受け取ったものが
+            #     丸ごと消えた（★巻き戻しのバグ。★2026-09-14 に修正済み）。
+            #   ★実測: いまの L2 は 2.80、L1 は 2.02。★独りで登り直している最中。
+            #   ★★L1 の頭を持ってきて、★もう一度 L1 を先生に 384→512 へ移る。
+            #   ★★印（brain/seeded-…）が残るので**この1回だけ**走る。
+            seed_from: L1
+            seed_tag: "2026-09-14-from-L1"
           # ═══ ★★★L3 の語彙の実験は**畳んだ**（2026-09-12） ═══
           #
           # ★狙い: 語彙 6,000 → 16,000 で「1トークンが運ぶ字数」を増やす。
@@ -132,6 +140,9 @@ jobs:
       REALU_TOK: ${{ matrix.tok }}
       REALU_PANTRY: ${{ matrix.pantry }}
       FRESH: ${{ matrix.fresh }}
+      # ★★ほかの系統の頭から始め直す（★空なら何もしない）。★印は1回きりの目印
+      SEED_FROM: ${{ matrix.seed_from }}
+      SEED_TAG: ${{ matrix.seed_tag }}
       # ★★★いまは「ごはんを与えるだけ」の段階。
       #   ★会話コーパス（1,375万字）を取り込んで棚を作り直すのが今回の仕事。
       #   ★学習は次から。★"0" にすれば学ぶ。
@@ -182,6 +193,31 @@ jobs:
           if [ "$FRESH" = "1" ]; then
             rm -f brain/realu.pt
             echo "★★$LIN は別の「ことばの単位」で生まれ直す。★前の頭は使わない"
+          fi
+          # ═══ ★★★ほかの系統の頭から始め直す（★1回だけ。2026-09-14） ═══
+          #   ★★なぜ要るか: ★L2 は 2026-09-13 に幅512へ引っ越したが、
+          #     ★★**その1回目が巻き戻されて蒸留が消えた**（★巻き戻しのバグ）。
+          #     ★以後22回、ほぼ初期値の512の体に戻り続けていた。
+          #   ★★★直ったいま、★もう一度 L1 を先生にして引っ越し直す。
+          #     ★ゼロから独りで登り直すより、★育った L1 から蒸留するほうが速い。
+          #   ★★印を brain の中に置くので、★**cache が生きている限り二度と走らない**。
+          #     ★matrix に書きっぱなしでよい（★消し忘れても毎回は起きない）。
+          if [ -n "$SEED_FROM" ] && [ ! -f "brain/seeded-$SEED_TAG" ]; then
+            if [ -n "$FOODKEY" ] \
+               && gh release download brain -p "realu-$SEED_FROM.enc" -D /tmp 2>/dev/null \
+               && openssl enc -d -aes-256-cbc -pbkdf2 -in "/tmp/realu-$SEED_FROM.enc" \
+                    -out brain/realu.pt.seed -pass env:FOODKEY 2>/dev/null \
+               && [ -s brain/realu.pt.seed ]; then
+              # ★★開けて中身があると確かめてから置き換える。
+              #   ★途中で切れた .pt を掴むと、★以後ずっと読めない頭になる。
+              mv brain/realu.pt.seed brain/realu.pt
+              touch "brain/seeded-$SEED_TAG"
+              echo "★★★$LIN を $SEED_FROM の頭から始め直す（★印: $SEED_TAG）"
+            else
+              rm -f brain/realu.pt.seed
+              echo "★★$SEED_FROM の頭を取れなかった。★$LIN はいつも通り自分の頭で続ける"
+            fi
+            rm -f "/tmp/realu-$SEED_FROM.enc"
           fi
           # ★★★系統ごとの頭を探す。★無ければ元の1つから分岐する（★初回だけ）。
           #   ★手で移す作業がいらない。★3系統とも同じ所から始まって、そこから離れていく。
@@ -783,7 +819,17 @@ jobs:
           git stash -u >/dev/null 2>&1 || true
           for i in 1 2 3 4 5; do
             git fetch origin main && git reset --hard origin/main
-            cp /tmp/growth.mine "growth-$LIN.json"
+            # ★★★上書きではなく**混ぜる**（2026-09-14）。
+            #   ★次の回は L1 が終わった時点で呼ばれるので、★L2/L3 がまだ記録を
+            #     書いている最中に checkout してしまう。
+            #   ★★そのまま cp すると、★**先に書かれた1回ぶんが黙って消える**。
+            #   ★実際に消えた: #165 の L2 の記録が #166 に上書きされていた。
+            #   ★脳は cache と Release にあるので無事。★消えるのは記録だけ ──
+            #     ★★だから誰も転ばず、★育ちの曲線に穴が空くだけで気づけない。
+            python merge_growth.py /tmp/growth.mine "growth-$LIN.json" \
+                                   "growth-$LIN.json" \
+              || cp /tmp/growth.mine "growth-$LIN.json"
+            cp "growth-$LIN.json" /tmp/growth.mine   # ★拾った分を次の試行にも持ち越す
             git add "growth-$LIN.json"
             # ★★★L1 は代表として、これまでの growth.json にも同じものを書く。
             #   ★サイト（render.py）・書く係（learn.py）・話す係（speak.py）と
