@@ -5572,6 +5572,65 @@
    ],
    "loopPct": 1.94,
    "movedBody": false
+  },
+  {
+   "at": "2026-09-15T06:19:32Z",
+   "val": 4.2311,
+   "prev": null,
+   "valTag": "fixed-holdout-v1",
+   "stoppedAt": 885,
+   "secPerStep": 4.1624,
+   "steps": 2293,
+   "bpc": 5.0026,
+   "charsPerTok": 1.2202,
+   "score": 2.9776,
+   "scoreW": 2.0,
+   "scoreMode": "talk",
+   "layers": 8,
+   "params": 16483968,
+   "chars": 1037515847,
+   "tokens": 850289863,
+   "grew": 0,
+   "rolledBack": false,
+   "ownVal": null,
+   "ownScore": null,
+   "d": 384,
+   "loops": 1,
+   "spread": 4.5122,
+   "bytes": 197879253,
+   "heads": 6,
+   "ctx": 512,
+   "vocab": 6000,
+   "kind": "bpe",
+   "arch": "tpp-loop",
+   "wantWider": false,
+   "layerCap": 16,
+   "mixChanged": false,
+   "bySrc": {
+    "laws": 6.4305,
+    "wiki": 4.3666,
+    "aozora": 4.6307,
+    "hanrei": 5.0262,
+    "kokkai": 3.8332,
+    "web": 4.0543,
+    "talk": 2.9776
+   },
+   "wrote": [
+    {
+     "start": "わたしは",
+     "text": "わたしは大きな。 彩りにさる。 また、○代の皆さんは逆に入っていては、それもありません。まず大きい、こほここにまではないかと思います。」 客「最極です。国民がいいですか？」 EK「御昨日は、滑行貿易にREXを見ていますか？」"
+    },
+    {
+     "start": "第一条",
+     "text": "第一条の店橋は一本派などを逆に察いた。実は、第2時、小さく、国内は王に合われると考える。 日本では、車が現れような話ではあったが、ときでは犬のような名の話を名増し、憲法が運動されている。 『 橋導入 』の推行が性を定期的に集まる"
+    },
+    {
+     "start": "この法律において",
+     "text": "この法律においてできていただきたいと思います。その後、使い地は狾様でめっちゃんと大得いですね。」 AS「そうですね。今日は、そのままさにお願いします。」 BT「こんにちはー、今後は、そういう物です。」 拝、私も非常に連れてもちきんですね」"
+    }
+   ],
+   "loopPct": 2.63,
+   "movedBody": false
   }
  ],
  "bestVal": 2.8344,
