@@ -5454,6 +5454,65 @@
    ],
    "loopPct": 5.41,
    "movedBody": false
+  },
+  {
+   "at": "2026-09-15T04:03:42Z",
+   "val": 4.0259,
+   "prev": null,
+   "valTag": "fixed-holdout-v1",
+   "stoppedAt": 1320,
+   "secPerStep": 2.7697,
+   "steps": 1529,
+   "bpc": 4.76,
+   "charsPerTok": 1.2202,
+   "score": 2.7614,
+   "scoreW": 2.0,
+   "scoreMode": "talk",
+   "layers": 8,
+   "params": 16483968,
+   "chars": 1037515847,
+   "tokens": 850289863,
+   "grew": 0,
+   "rolledBack": false,
+   "ownVal": null,
+   "ownScore": null,
+   "d": 384,
+   "loops": 1,
+   "spread": 4.1477,
+   "bytes": 197879253,
+   "heads": 6,
+   "ctx": 512,
+   "vocab": 6000,
+   "kind": "bpe",
+   "arch": "tpp-loop",
+   "wantWider": false,
+   "layerCap": 16,
+   "mixChanged": false,
+   "bySrc": {
+    "laws": 6.2098,
+    "wiki": 4.2321,
+    "aozora": 4.5173,
+    "hanrei": 4.7075,
+    "kokkai": 3.6363,
+    "web": 3.7718,
+    "talk": 2.7614
+   },
+   "wrote": [
+    {
+     "start": "わたしは",
+     "text": "わたしは、単の研究は、国民の世界に司かることで、今回のような、小さなみに身を見て、そのような裏に取り組んでいくこともあった。 また、これが重をつくるのか、そのこともあるところが私は、ところが非対応していくものであります。これを我々この社会を特革にすると、アイバスですね。これ"
+    },
+    {
+     "start": "第一条",
+     "text": "第一条婿折や空気などを討り生じている。 ただし、満武器での 平川 の 滴田藤 （ 西宮 ）と呼ばれる。 平�の 音楽 （ 英語版 ） は、知方に伝えられている。 早々は 古盛。 鳩 （ 精差 ）： 藤�"
+    },
+    {
+     "start": "この法律において",
+     "text": "この法律においてきました。」 BZ「そうですよね！」 BH「はい。」 GM「私は、ジポンストルを見てもらっちゃんと思います！」 EF「何かもいろいろそうですねー！昔は私はストラックやってきました」 DD「そうです。私は野球ですか？」"
+    }
+   ],
+   "loopPct": 2.59,
+   "movedBody": false
   }
  ],
  "bestVal": 2.8344,
@@ -5504,5 +5563,5 @@
  ],
  "wantWider": false,
  "nextD": 384,
- "bad": 0
+ "bad": 1
 }
