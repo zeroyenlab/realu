@@ -5513,6 +5513,65 @@
    ],
    "loopPct": 3.04,
    "movedBody": false
+  },
+  {
+   "at": "2026-09-15T10:57:29Z",
+   "val": 4.5509,
+   "prev": null,
+   "valTag": "fixed-holdout-v1",
+   "stoppedAt": 469,
+   "secPerStep": 8.0134,
+   "steps": 809,
+   "bpc": 5.3808,
+   "charsPerTok": 1.2202,
+   "score": 2.8545,
+   "scoreW": 2.0,
+   "scoreMode": "talk",
+   "layers": 10,
+   "params": 34727424,
+   "chars": 1037515847,
+   "tokens": 850289863,
+   "grew": 0,
+   "rolledBack": false,
+   "ownVal": null,
+   "ownScore": null,
+   "d": 512,
+   "loops": 1,
+   "spread": 4.6492,
+   "bytes": 416817117,
+   "heads": 8,
+   "ctx": 512,
+   "vocab": 6000,
+   "kind": "bpe",
+   "arch": "tpp-loop",
+   "wantWider": false,
+   "layerCap": 16,
+   "mixChanged": false,
+   "bySrc": {
+    "laws": 6.7903,
+    "wiki": 4.7568,
+    "aozora": 4.8188,
+    "hanrei": 5.3191,
+    "kokkai": 4.1705,
+    "web": 4.5009,
+    "talk": 2.8545
+   },
+   "wrote": [
+    {
+     "start": "わたしは",
+     "text": "わたしは�科です。」 GI「少し！そうです！ても！」 D確かに。なおどのいてみたいですね。」 BK「おはようございます！」 AE「すこそあけだと、今回は近くに行ったんですか？」 GX「ってみたいな！塩なのですか？」 A"
+    },
+    {
+     "start": "第一条",
+     "text": "第一条（平成） 20条） - 頃号方諸修銀行鋀 高催当 。 → 2022年 - 1908年 - �ebelsos Fira - 大学 以降 - 魚等（ 。 また、 主要村・ - 魚夜 ） - JTSAOZ で唚"
+    },
+    {
+     "start": "この法律において",
+     "text": "この法律において番号"
+    }
+   ],
+   "loopPct": 0.95,
+   "movedBody": false
   }
  ],
  "bestVal": 2.8173,
