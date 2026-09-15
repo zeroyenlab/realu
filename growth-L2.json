@@ -5926,6 +5926,65 @@
    ],
    "loopPct": 5.69,
    "movedBody": false
+  },
+  {
+   "at": "2026-09-15T18:42:56Z",
+   "val": 3.6978,
+   "prev": 3.7837,
+   "valTag": "fixed-holdout-v1",
+   "stoppedAt": 0,
+   "secPerStep": 3.7477,
+   "steps": 808,
+   "bpc": 4.3721,
+   "charsPerTok": 1.2202,
+   "score": 2.4442,
+   "scoreW": 2.0,
+   "scoreMode": "talk",
+   "layers": 10,
+   "params": 34727424,
+   "chars": 1037515847,
+   "tokens": 850289863,
+   "grew": 0,
+   "rolledBack": false,
+   "ownVal": null,
+   "ownScore": null,
+   "d": 512,
+   "loops": 1,
+   "spread": 3.6514,
+   "bytes": 416817117,
+   "heads": 8,
+   "ctx": 512,
+   "vocab": 6000,
+   "kind": "bpe",
+   "arch": "tpp-loop",
+   "wantWider": false,
+   "layerCap": 16,
+   "mixChanged": false,
+   "bySrc": {
+    "laws": 5.6446,
+    "wiki": 3.8697,
+    "aozora": 4.1212,
+    "hanrei": 4.3623,
+    "kokkai": 3.2638,
+    "web": 3.6242,
+    "talk": 2.4442
+   },
+   "wrote": [
+    {
+     "start": "わたしは",
+     "text": "わたしはいっしょっちなにという企業にしかなかったのも大変そうです」 DN「そうなんですね！そういうことはありますか？」 DY「初めて聞きました」 DN「そうなんですねー。私は自分がおすすめだったんですが、お金かけは。」 DN「はい、私もそんな見"
+    },
+    {
+     "start": "第一条",
+     "text": "第一条の上に降らなかったです」 CI「そうなんですね、ARIATARPANARNAGE LIFA、」 CI「そうなんですね。それは本当に」 CI「丑紋ですかね、私も全然ずっと職別的なものはないですよ」 CI「夏はそういう名過ぎですね」 C"
+    },
+    {
+     "start": "この法律において",
+     "text": "この法律において内国章職員への幸電気通信百万円とする。 出力移行の際には、データの鉄蘭範文化式のジャンル横浜学科になり、アレルギーが併設されている。 東京では、アーティストではプロセスが流行った [ 52 ] 。 中学校漬けの賞は、 北海道 1年前100時40分だった"
+    }
+   ],
+   "loopPct": 1.57,
+   "movedBody": false
   }
  ],
  "bestVal": 2.8173,
@@ -5976,5 +6035,5 @@
  ],
  "wantWider": false,
  "nextD": 512,
- "bad": 1
+ "bad": 2
 }
