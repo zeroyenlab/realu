@@ -5690,6 +5690,65 @@
    ],
    "loopPct": 3.6,
    "movedBody": false
+  },
+  {
+   "at": "2026-09-15T14:22:19Z",
+   "val": 4.6235,
+   "prev": null,
+   "valTag": "fixed-holdout-v1",
+   "stoppedAt": 467,
+   "secPerStep": 8.0653,
+   "steps": 809,
+   "bpc": 5.4666,
+   "charsPerTok": 1.2202,
+   "score": 2.8311,
+   "scoreW": 2.0,
+   "scoreMode": "talk",
+   "layers": 10,
+   "params": 34727424,
+   "chars": 1037515847,
+   "tokens": 850289863,
+   "grew": 0,
+   "rolledBack": false,
+   "ownVal": null,
+   "ownScore": null,
+   "d": 512,
+   "loops": 1,
+   "spread": 4.9248,
+   "bytes": 416817117,
+   "heads": 8,
+   "ctx": 512,
+   "vocab": 6000,
+   "kind": "bpe",
+   "arch": "tpp-loop",
+   "wantWider": false,
+   "layerCap": 16,
+   "mixChanged": false,
+   "bySrc": {
+    "laws": 6.7451,
+    "wiki": 4.7888,
+    "aozora": 4.8361,
+    "hanrei": 5.4236,
+    "kokkai": 4.2161,
+    "web": 4.5023,
+    "talk": 2.8311
+   },
+   "wrote": [
+    {
+     "start": "わたしは",
+     "text": "わたしはですが、おいしそうなんですね。」 EZ「そうなんですね。政府はにも、そういう直が好きではないですね。」 BL「じゃあまりですね。お出がしました。」 BR「そうですね、大線ですね。よろしくお願いします。」 EC「わかりますね。で"
+    },
+    {
+     "start": "第一条",
+     "text": "第一条 （当該厚生年金作物5） 示法 族 市線 買い引会CZult> 客「業務」のうち、緒に話される。 景子は、400334に 墓物 影 を十二5753では 駅 - 天気 失移された。 1998年 - 革野�巻（1967年） - 194"
+    },
+    {
+     "start": "この法律において",
+     "text": "この法律においていなかります。」 客「そんなんですよね。見ますよね。最近は行かったりしましょう」 BF「今日は福郎珍しいですね！」 BZ「ありがとうございますが、小さいの社会に搭地は趣味です」 DW「おはようかなと思ってます！でもあ"
+    }
+   ],
+   "loopPct": 2.26,
+   "movedBody": false
   }
  ],
  "bestVal": 2.8173,
