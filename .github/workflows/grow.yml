@@ -874,6 +874,35 @@ jobs:
           path: brain
           key: realu-brain-${{ matrix.lineage }}-${{ github.run_number }}
 
+      # ★★★古い置き場を捨てる（★2026-09-15）。
+      #   ★★cache の上限は **10GB**。★超えると GitHub が**黙って**古いものを消す。
+      #   ★★★2026-09-15 の実測: 9.84GB まで埋まり、★`work`（1回 3.09GB）が3つで
+      #     9.27GB を占めていた。★押し出されて **3系統の頭がほとんど消えていた**
+      #     （★残っていたのは `realu-brain-L2-164` と `-L3-164` だけ。★L1 の頭は全滅）。
+      #   ★★頭が消えると Release から取り戻せるので**転ばない**。★だから気づけない。
+      #     ★★★転ばないまま、★毎回ちがう頭で学ぶことになる。
+      #   → ★**一番新しい1つだけ残して、あとは捨てる**。★捨てるのは L1 の回だけ。
+      - name: 古い置き場を捨てる
+        if: always() && matrix.lineage == 'L1'
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          REPO: ${{ github.repository }}
+        run: |
+          # ★★選ぶのは python にやらせる（★`gh -q` の式は手元で試せない）。
+          #   ★★2026-09-15: jq が手元に無くて確かめられなかったので、★確かめられる側へ寄せた。
+          gh api "repos/$REPO/actions/caches?per_page=100" > /tmp/caches.json || exit 0
+          python prune_caches.py < /tmp/caches.json > /tmp/toss.txt || exit 0
+          while IFS=$(printf '\t') read -r id key; do
+            [ -n "$id" ] || continue
+            if gh api -X DELETE "repos/$REPO/actions/caches/$id" >/dev/null 2>&1; then
+              echo "★捨てた: $key"
+            else
+              echo "★捨てられなかった: $key"
+            fi
+          done < /tmp/toss.txt
+          gh api "repos/$REPO/actions/caches?per_page=100" \
+            | python prune_caches.py --size || true
+
       # ★★★転んだ理由を、★誰でも読める所に残す。
       #   ★Actions のログは認証が要る。★外から見ている側には読めない。
       #   → ★足跡と最後の60行をリポジトリに置く。★これが無いと毎回「なぜ落ちたか分からない」
