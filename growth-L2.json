@@ -5631,6 +5631,65 @@
    ],
    "loopPct": 4.42,
    "movedBody": false
+  },
+  {
+   "at": "2026-09-15T13:13:21Z",
+   "val": 4.5712,
+   "prev": null,
+   "valTag": "fixed-holdout-v1",
+   "stoppedAt": 471,
+   "secPerStep": 7.9975,
+   "steps": 806,
+   "bpc": 5.4048,
+   "charsPerTok": 1.2202,
+   "score": 2.8293,
+   "scoreW": 2.0,
+   "scoreMode": "talk",
+   "layers": 10,
+   "params": 34727424,
+   "chars": 1037515847,
+   "tokens": 850289863,
+   "grew": 0,
+   "rolledBack": false,
+   "ownVal": null,
+   "ownScore": null,
+   "d": 512,
+   "loops": 1,
+   "spread": 5.1241,
+   "bytes": 416817117,
+   "heads": 8,
+   "ctx": 512,
+   "vocab": 6000,
+   "kind": "bpe",
+   "arch": "tpp-loop",
+   "wantWider": false,
+   "layerCap": 16,
+   "mixChanged": false,
+   "bySrc": {
+    "laws": 6.8254,
+    "wiki": 4.831,
+    "aozora": 4.8855,
+    "hanrei": 5.2344,
+    "kokkai": 4.1734,
+    "web": 4.5108,
+    "talk": 2.8293
+   },
+   "wrote": [
+    {
+     "start": "わたしは",
+     "text": "わたしはありますか？」 CN「そうですね！コロチルははないですよ。」 FE「そうです！私もよいよかったです。」 FI「こんにちは！」 BZ「それはほとんどですか？」 BT「そうですね！！」 FJ「こんにちは」 FF「アホ"
+    },
+    {
+     "start": "第一条",
+     "text": "第一条する金の相当の文化が廃られたのであるを進めゾロナを持ってない。 しかし一般的には起きたりに行くので、カールラマは大阪でも何が一つになりました。」 客「そこは、台健はもありますが、デロナ配で出てくつけて、私は自由が宣見分し、またいる方がもつきたいです"
+    },
+    {
+     "start": "この法律において",
+     "text": "この法律においてじえます。」 CI「あ、探してる地に問題も見てます！」 FF「バラマはアニアですね。どんなゲームです。」 AB「小さいですね！」 GV「あは！」 AC「なるほど。ありがとうございました。」 FR「そうなんですね！"
+    }
+   ],
+   "loopPct": 3.6,
+   "movedBody": false
   }
  ],
  "bestVal": 2.8173,
