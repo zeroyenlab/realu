@@ -5926,6 +5926,65 @@
    ],
    "loopPct": 2.87,
    "movedBody": false
+  },
+  {
+   "at": "2026-09-15T13:11:14Z",
+   "val": 4.3916,
+   "prev": null,
+   "valTag": "fixed-holdout-v1",
+   "stoppedAt": 870,
+   "secPerStep": 4.2341,
+   "steps": 1570,
+   "bpc": 5.1925,
+   "charsPerTok": 1.2202,
+   "score": 2.9484,
+   "scoreW": 2.0,
+   "scoreMode": "talk",
+   "layers": 8,
+   "params": 16483968,
+   "chars": 1037515847,
+   "tokens": 850289863,
+   "grew": 0,
+   "rolledBack": false,
+   "ownVal": null,
+   "ownScore": null,
+   "d": 384,
+   "loops": 1,
+   "spread": 4.6301,
+   "bytes": 197879253,
+   "heads": 6,
+   "ctx": 512,
+   "vocab": 6000,
+   "kind": "bpe",
+   "arch": "tpp-loop",
+   "wantWider": false,
+   "layerCap": 16,
+   "mixChanged": false,
+   "bySrc": {
+    "laws": 6.4429,
+    "wiki": 4.3947,
+    "aozora": 4.535,
+    "hanrei": 4.9582,
+    "kokkai": 3.9603,
+    "web": 4.0913,
+    "talk": 2.9484
+   },
+   "wrote": [
+    {
+     "start": "わたしは",
+     "text": "わたしは、起こっているのか、そういう中で、これは、何とに、これまでもなんですが、物価の増えますから、その中でそういうふうに思います。 くらいで、私も、テレビやはり私、これを私は何とかもお願いします。 ○国務大臣 さらに、私は、正しいただくのお願い"
+    },
+    {
+     "start": "第一条",
+     "text": "第一条を開始する。 同年14月1日 - 膜深夫川文輌・内正村・株式会社江戸には 第二次東日本 （ 松享蛚 ）が 祖藤していない。 連島の 藩大�出 （ 東京 ）は 西市 （ 大西 ）と 寺吳 を 谷本 を�"
+    },
+    {
+     "start": "この法律において",
+     "text": "この法律においてしたが、うちには不不里する、総理は、話させていただきたいと思います。 ○の称和務大臣 今ねですから、ここれまでは、お話しいのことができましたけれども、とかこれは、今回の指するようであります。 ○委員 やはりませんが、今後、政府は、ここのため、日（影響法）"
+    }
+   ],
+   "loopPct": 2.22,
+   "movedBody": false
   }
  ],
  "bestVal": 2.8344,
