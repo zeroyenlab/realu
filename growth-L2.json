@@ -6044,6 +6044,65 @@
    ],
    "loopPct": 0.0,
    "movedBody": false
+  },
+  {
+   "at": "2026-09-15T21:11:32Z",
+   "val": 3.534,
+   "prev": 3.5809,
+   "valTag": "fixed-holdout-v1",
+   "stoppedAt": 465,
+   "secPerStep": 8.0924,
+   "steps": 1140,
+   "bpc": 4.1784,
+   "charsPerTok": 1.2202,
+   "score": 2.4138,
+   "scoreW": 2.0,
+   "scoreMode": "talk",
+   "layers": 10,
+   "params": 34727424,
+   "chars": 1037515847,
+   "tokens": 850289863,
+   "grew": 0,
+   "rolledBack": false,
+   "ownVal": null,
+   "ownScore": null,
+   "d": 512,
+   "loops": 1,
+   "spread": 4.0957,
+   "bytes": 416817117,
+   "heads": 8,
+   "ctx": 512,
+   "vocab": 6000,
+   "kind": "bpe",
+   "arch": "tpp-loop",
+   "wantWider": false,
+   "layerCap": 16,
+   "mixChanged": false,
+   "bySrc": {
+    "laws": 5.378,
+    "wiki": 3.6774,
+    "aozora": 3.9726,
+    "hanrei": 4.1602,
+    "kokkai": 3.1034,
+    "web": 3.5122,
+    "talk": 2.4138
+   },
+   "wrote": [
+    {
+     "start": "わたしは",
+     "text": "わたしは恐らないので、そういうところは知らないですよ。 ○新しく聞いておったんですか。 ○国務大臣 今、御指摘のように、私はアメリカに対して、大変な種もあるのが今日の一番のらしい、日本は、世界的なマイナス、一つ、言われました。私、ギリギリスだと、そ"
+    },
+    {
+     "start": "第一条",
+     "text": "第一条の政令で定める場合は、その認定を受けたことで、主人公はそのことにします。」 DG「お子さんはどういうものですか？」 AQ「、いまのところです！」 DG「いままです、コロナ前から好きなんですよね。」 AQ「今はちょっと好み方でしたね。」 DG「そうなんですね。"
+    },
+    {
+     "start": "この法律において",
+     "text": "この法律において「日本売検索中には進んでいません。」 FK「いいですね！またお話ありがとうございました。」 FK「こんにちは。」 HW「こんばんは。」 FK「今日は何をされていますか？」 HW「最近はま"
+    }
+   ],
+   "loopPct": 3.36,
+   "movedBody": false
   }
  ],
  "bestVal": 2.8173,
