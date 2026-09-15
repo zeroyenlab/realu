@@ -6162,6 +6162,65 @@
    ],
    "loopPct": 4.63,
    "movedBody": false
+  },
+  {
+   "at": "2026-09-15T17:46:07Z",
+   "val": 3.6305,
+   "prev": 3.6596,
+   "valTag": "fixed-holdout-v1",
+   "stoppedAt": 890,
+   "secPerStep": 4.1378,
+   "steps": 1570,
+   "bpc": 4.2925,
+   "charsPerTok": 1.2202,
+   "score": 2.4551,
+   "scoreW": 2.0,
+   "scoreMode": "talk",
+   "layers": 8,
+   "params": 16483968,
+   "chars": 1037515847,
+   "tokens": 850289863,
+   "grew": 0,
+   "rolledBack": false,
+   "ownVal": null,
+   "ownScore": null,
+   "d": 384,
+   "loops": 1,
+   "spread": 3.6398,
+   "bytes": 197879253,
+   "heads": 6,
+   "ctx": 512,
+   "vocab": 6000,
+   "kind": "bpe",
+   "arch": "tpp-loop",
+   "wantWider": false,
+   "layerCap": 16,
+   "mixChanged": false,
+   "bySrc": {
+    "laws": 5.609,
+    "wiki": 3.8951,
+    "aozora": 4.075,
+    "hanrei": 4.3749,
+    "kokkai": 3.2763,
+    "web": 3.5956,
+    "talk": 2.4551
+   },
+   "wrote": [
+    {
+     "start": "わたしは",
+     "text": "わたしは、やはりこのようなものが過程であった。 ここで、外務省は、宮原区に言われ、縁屋だったが、即位後、凶内は落ちて、桜山は、十岡大阪府の住人で、これを本年四月から即位。それから、あっても一面も、三丁目は、一諸征国創出の日本を授かった"
+    },
+    {
+     "start": "第一条",
+     "text": "第一条約款。 （同条第二項、第二十九条の三及び第五項、蒸浅草野と長男想代） 第一芸」 「津泰組合員」は、いずれも幸いの上井正廻（悪橋）及び（甲） 「いびんは、おおかけびるか。」と呼ばれたか、もう一本を見せて、はじめ、吉田は、なぜ、王国に死�"
+    },
+    {
+     "start": "この法律において",
+     "text": "この法律においてLCERRICOLICE ORIC RAICOG TORA OOSAA「語集に入ったのは他に毎日とかがあった。 スマートバレでは、アメリカの国家的知識を目指し・端行為だが、ポーラタニクスも多い。 2023年12月1日よりアーカイブ。 �"
+    }
+   ],
+   "loopPct": 4.07,
+   "movedBody": false
   }
  ],
  "bestVal": 2.8344,
@@ -6212,5 +6271,5 @@
  ],
  "wantWider": false,
  "nextD": 384,
- "bad": 1
+ "bad": 4
 }
