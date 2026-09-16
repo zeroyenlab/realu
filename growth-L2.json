@@ -6583,6 +6583,67 @@
    ],
    "loopPct": 1.65,
    "movedBody": false
+  },
+  {
+   "at": "2026-09-16T07:26:32Z",
+   "val": 3.3147,
+   "prev": 3.3147,
+   "valTag": "fixed-holdout-v1",
+   "stoppedAt": 474,
+   "secPerStep": 7.9312,
+   "steps": 803,
+   "bpc": 3.9191,
+   "charsPerTok": 1.2202,
+   "score": 2.2551,
+   "scoreW": 2.0,
+   "scoreMode": "talk",
+   "finishMix": 0.85,
+   "lineage": "L2",
+   "layers": 10,
+   "params": 34727424,
+   "chars": 1037515847,
+   "tokens": 850289863,
+   "grew": 0,
+   "rolledBack": true,
+   "ownVal": 3.4302,
+   "ownScore": 2.396,
+   "d": 512,
+   "loops": 1,
+   "spread": 3.1606,
+   "bytes": 416817117,
+   "heads": 8,
+   "ctx": 512,
+   "vocab": 6000,
+   "kind": "bpe",
+   "arch": "tpp-loop",
+   "wantWider": false,
+   "layerCap": 16,
+   "mixChanged": false,
+   "bySrc": {
+    "laws": 5.1728,
+    "wiki": 3.5701,
+    "aozora": 3.9478,
+    "hanrei": 3.9809,
+    "kokkai": 2.9906,
+    "web": 3.4188,
+    "talk": 2.396
+   },
+   "wrote": [
+    {
+     "start": "わたしは",
+     "text": "わたしは、イイライラムスとコンテンツは、 イオリス の プロテンツ （ 英語版 ） （ 英語版 ） ）でもある [ 23 ] 。 イオンスタジオは、 2012年 に アメリカンダメロン に イスラム教授 の アイドル・マッタ"
+    },
+    {
+     "start": "第一条",
+     "text": "第一条区域同様、RABBC 2 L2 SD 2-201が240 23 23 6 9 2014 - 2016年3月17日閲覧。 二井晴 が「富士山」をご覧ください。 映画が2014年に4000石を"
+    },
+    {
+     "start": "この法律において",
+     "text": "この法律において「株」と呼ばれる。 また、 健康 （ 英語版 ） （ 英語版 ） は、 韓国 の 日清戦争 によって 詳細 ( ) 、 国家交渉 は、 重点 の 日本 である 日本人 から 日本人 である。 下は 宋宮 （ 英語版 ） による 神"
+    }
+   ],
+   "loopPct": 21.23,
+   "movedBody": false
   }
  ],
  "bestVal": 2.8173,
@@ -6633,5 +6694,5 @@
  ],
  "wantWider": false,
  "nextD": 512,
- "bad": 0
+ "bad": 2
 }
