@@ -26,8 +26,11 @@ import sys
 HERE = os.path.dirname(os.path.abspath(__file__))
 WORK = os.environ.get("REALU_WORK", os.path.join(HERE, "work"))
 ME, YOU = "AB", "AA"           # ★レアル / 相手（★棚の記号と同じ2文字）
-TRIES = int(os.environ.get("REALU_REPLY_TRIES", 4))
-TEMP = float(os.environ.get("REALU_REPLY_TEMP", 0.8))
+# ★★本数は多くてよい。★1本20トークン程度なので、★32本でも数秒
+TRIES = int(os.environ.get("REALU_REPLY_TRIES", 32))
+TEMP = float(os.environ.get("REALU_REPLY_TEMP", 0.9))
+TOPP = float(os.environ.get("REALU_REPLY_TOPP", 0.9))    # ★裾を切る
+LAM = float(os.environ.get("REALU_REPLY_LAM", 0.6))      # ★ありふれ具合をどれだけ引くか
 MAXTOK = int(os.environ.get("REALU_REPLY_MAX", 60))
 
 
@@ -61,7 +64,50 @@ def build_prompt(turns):
     return "\n".join(lines)
 
 
-def gen(model, vocab, prompt, n, temp):
+def _top_p(p, top_p):
+    """★★裾を切る（nucleus）。★上位から足していって `top_p` に届いた所で打ち切る。
+
+    ★★★素のサンプリングは、★6000語のうち**ほぼ0の裾**からも拾ってしまう。
+      ★1回拾うと、そこから先がまるごと壊れる（★「ー」「�」が混ざるのはこれ）。
+      ★確率の高い所だけ残せば、★同じ頭のまま出来が上がる。
+    """
+    import torch
+    if not (0 < top_p < 1):
+        return p
+    s, idx = torch.sort(p, descending=True, dim=-1)
+    c = torch.cumsum(s, dim=-1)
+    keep = (c - s) < top_p              # ★★1個目は必ず残す
+    s = s * keep
+    s = s / s.sum(dim=-1, keepdim=True)
+    out = torch.zeros_like(p)
+    out.scatter_(-1, idx, s)
+    return out
+
+
+def score(model, vocab, prompt, reply):
+    """★★`prompt` に続けて `reply` と言う、その言いやすさ（★1トークンあたり）。
+
+    ★返ってくるのは対数確率の平均。★大きいほど「その流れで出やすい言葉」。
+    """
+    import torch
+    import torch.nn.functional as F
+    pi = vocab.encode(prompt) or [0]
+    ri = vocab.encode(reply)
+    if not ri:
+        return -99.0
+    ids = (pi + ri)[-model.ctx:]
+    k = min(len(ri), len(ids) - 1)
+    if k <= 0:
+        return -99.0
+    x = torch.tensor([ids], dtype=torch.long)
+    with torch.no_grad():
+        logits, _ = model(x[:, :-1])
+        lp = F.log_softmax(logits[0, -k:].float(), dim=-1)
+        tgt = x[0, -k:]
+        return float(lp.gather(-1, tgt.unsqueeze(-1)).mean())
+
+
+def gen(model, vocab, prompt, n, temp, top_p=0.9):
     """★★★入口のぶんを**トークンの数で**取り除いて、★書いた所だけを返す。
 
     ★★★文字で剥がしてはいけない（★2026-09-16 に踏んだ）。
@@ -86,7 +132,7 @@ def gen(model, vocab, prompt, n, temp):
             logits, _ = model(idx)
         new = []
         for _ in range(n):
-            p = F.softmax(logits[:, -1] / temp, dim=-1)
+            p = _top_p(F.softmax(logits[:, -1] / temp, dim=-1), top_p)
             nxt = torch.multinomial(p, 1)
             new.append(int(nxt.item()))
             s = vocab.decode(new)
@@ -162,37 +208,68 @@ def main():
     # ★★何本か書かせて、★一番まともなものを出す。
     #   ★選び方: ①出せる言葉であること ②空でないこと ③繰り返しが少ないこと
     #   ★★★点は使わない（★loss は「返事になっているか」を何も見ていない）
-    cand = []
+    seen, cand = set(), []
     for i in range(TRIES):
         try:
-            raw = G.no_src(gen(model, vocab, prompt, MAXTOK, TEMP))
+            raw = G.no_src(gen(model, vocab, prompt, MAXTOK, TEMP, TOPP))
         except Exception as ex:
             print("  書けなかった:", type(ex).__name__, str(ex)[:80])
             continue
         t = cut(raw)
-        lp = loops(t)
-        ok = bool(t) and safe(t)
-        cand.append((lp, t, ok))
-        print("  %d本目 ループ%5.1f%% %s %s"
-              % (i + 1, lp, "○" if ok else "×", t[:56] or "（空）"))
+        if not t or t in seen or not safe(t):
+            continue
+        seen.add(t)
+        cand.append(t)
 
-    good = sorted([c for c in cand if c[2]], key=lambda c: c[0])
-    print("\n― 返事 ―")
-    if not good:
+    print("\n― %d本から選ぶ ―" % len(cand))
+    if not cand:
         print("（まだ返せなかった）")
         return 0
-    print("%s「%s」" % (ME, good[0][1]))
+
+    # ★★★選び方（★2026-09-16）。
+    #   ★前は「繰り返しが少ないもの」だけで選んでいた。★それは壊れ方しか見ていない。
+    #   ★★かといって「出やすいもの」で選ぶと、★★**必ず「そうですね」が勝つ** ──
+    #     ★当たり障りのない返事は、どんな話の後でも出やすいから。
+    #   ★★★なので **文脈での出やすさ − ありふれ具合** で選ぶ。
+    #     ★「この話の後だから出てきた」度合いだけが残る（★MMI。Li+2016 と同じ考え）。
+    #   ★`NEUTRAL` は「何の話も無い所で、その返事がどれだけ出やすいか」。
+    NEUTRAL = "%s「" % ME
+    rows = []
+    for t in cand:
+        s_ctx = score(model, vocab, prompt, t + "」")
+        s_any = score(model, vocab, NEUTRAL, t + "」")
+        lp = loops(t)
+        pick = (s_ctx - LAM * s_any) - (0.02 * lp)      # ★壊れているものは下げる
+        rows.append((pick, s_ctx, s_any, lp, t))
+    rows.sort(key=lambda r: -r[0])
+    for pick, sc, sa, lp, t in rows[:8]:
+        print("  %+.3f（文脈 %+.2f − ありふれ %+.2f / ループ%4.1f%%） %s"
+              % (pick, sc, sa, lp, t[:48]))
+    if len(rows) > 8:
+        print("  …ほか %d 本" % (len(rows) - 8))
+
+    best = rows[0]
+    # ★★前のやり方なら何を選んでいたかも出す（★直したことが効いているか毎回見えるように）
+    old_loop = sorted(rows, key=lambda r: r[3])[0]
+    old_plain = sorted(rows, key=lambda r: -r[1])[0]
+    print("\n― 返事 ―")
+    print("%s「%s」" % (ME, best[4]))
+    if old_loop[4] != best[4]:
+        print("   （ループ率だけで選んでいたら → 「%s」）" % old_loop[4][:46])
+    if old_plain[4] != best[4]:
+        print("   （出やすさだけで選んでいたら → 「%s」）" % old_plain[4][:46])
 
     # ★★★読める出口。★数字の良し悪しは人に読ませない
-    lp = good[0][0]
-    hit = sum(1 for ch in set(turns[-1]) if len(ch.strip()) and ch in good[0][1])
+    hit = sum(1 for ch in set(turns[-1]) if ch.strip() and ch in best[4])
+    generic = best[2] > best[1]          # ★文脈より「単体」のほうが出やすい＝当たり障りが無い
     print("\n― 判定 ―")
-    print("  返事になっているか : %s" % ("○ 1番ぶんで閉じた" if good[0][1] else "× 空"))
+    print("  返事になっているか : %s" % ("○ 1番ぶんで閉じた" if best[4] else "× 空"))
     print("  繰り返し           : %s（%.1f%%）"
-          % ("○ 少ない" if lp < 15 else "△ 多い" if lp < 40 else "× 壊れている", lp))
-    print("  相手の言葉を拾ったか: %s（%d 文字ぶん）"
-          % ("○" if hit >= 2 else "△", hit))
-    print("  使えた本数         : %d / %d" % (len(good), TRIES))
+          % ("○ 少ない" if best[3] < 15 else "△ 多い" if best[3] < 40 else "× 壊れている", best[3]))
+    print("  この話への返事か   : %s（文脈 %+.2f vs ありふれ %+.2f）"
+          % ("× 当たり障りがない" if generic else "○ この流れで出てきた", best[1], best[2]))
+    print("  相手の言葉を拾ったか: %s（%d 文字ぶん）" % ("○" if hit >= 2 else "△", hit))
+    print("  使えた本数         : %d / %d" % (len(cand), TRIES))
     return 0
 
 
