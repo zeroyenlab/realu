@@ -8227,6 +8227,65 @@
    ],
    "loopPct": 8.08,
    "movedBody": false
+  },
+  {
+   "at": "2026-09-16T01:43:56Z",
+   "val": 2.8841,
+   "prev": 2.8841,
+   "valTag": "fixed-holdout-v1",
+   "stoppedAt": 599,
+   "secPerStep": 6.2248,
+   "steps": 848,
+   "bpc": 3.4101,
+   "charsPerTok": 1.2202,
+   "score": 2.0674,
+   "scoreW": 2.0,
+   "scoreMode": "talk",
+   "layers": 15,
+   "params": 28875648,
+   "chars": 1037515847,
+   "tokens": 850289863,
+   "grew": 0,
+   "rolledBack": true,
+   "ownVal": 2.8509,
+   "ownScore": 2.1833,
+   "d": 384,
+   "loops": 1,
+   "spread": 2.6184,
+   "bytes": 346636881,
+   "heads": 6,
+   "ctx": 512,
+   "vocab": 6000,
+   "kind": "bpe",
+   "arch": "tpp-loop",
+   "wantWider": false,
+   "layerCap": 16,
+   "mixChanged": false,
+   "bySrc": {
+    "laws": 3.8881,
+    "wiki": 2.9096,
+    "aozora": 3.3677,
+    "hanrei": 3.463,
+    "kokkai": 2.5428,
+    "web": 2.9158,
+    "talk": 2.1833
+   },
+   "wrote": [
+    {
+     "start": "わたしは",
+     "text": "わたしは、温泉です。」 EW「あ、いいですね。ただ熱いし僕は昔より温泉が好きです」 CK「そうですね。」 EW「いえいえ、たしかに、温泉は好きです！」 CK「温泉いいですね。この対策は？」 EW「ずっと温泉が好きです！」 C"
+    },
+    {
+     "start": "第一条",
+     "text": "第一条の決算書が発表された後初めての放送であった。 第二次大戦終了後の1919年9月23日、 オストルザーク （ 英語版 ） の語源となった。 アラブ人種は アラブ人 と スイス人種 である。 第一"
+    },
+    {
+     "start": "この法律において",
+     "text": "この法律において革命（，革命）が起り，これが革命の危険であった，革命の危険地であ る，革命の危険を回避し，革命の存在を否定，革命の危険を回避するなどの社会的 情勢は，革命の危険を回避し，革命以降の革命と革命を実行 するな"
+    }
+   ],
+   "loopPct": 5.59,
+   "movedBody": false
   }
  ],
  "bestVal": 2.75,
