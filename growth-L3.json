@@ -6817,14 +6817,75 @@
    ],
    "loopPct": 2.73,
    "movedBody": false
+  },
+  {
+   "at": "2026-09-16T06:16:02Z",
+   "val": 3.2693,
+   "prev": 3.2573,
+   "valTag": "fixed-holdout-v1",
+   "stoppedAt": 976,
+   "secPerStep": 3.7718,
+   "steps": 1504,
+   "bpc": 3.8654,
+   "charsPerTok": 1.2202,
+   "score": 2.3748,
+   "scoreW": 2.0,
+   "scoreMode": "talk",
+   "finishMix": 0.2,
+   "lineage": "L3",
+   "layers": 11,
+   "params": 21794688,
+   "chars": 1037515847,
+   "tokens": 850289863,
+   "grew": 1,
+   "rolledBack": false,
+   "ownVal": null,
+   "ownScore": null,
+   "d": 384,
+   "loops": 1,
+   "spread": 3.1159,
+   "bytes": 261632513,
+   "heads": 6,
+   "ctx": 512,
+   "vocab": 6000,
+   "kind": "bpe",
+   "arch": "tpp-loop",
+   "wantWider": false,
+   "layerCap": 16,
+   "mixChanged": false,
+   "bySrc": {
+    "laws": 4.7914,
+    "wiki": 3.541,
+    "aozora": 3.8784,
+    "hanrei": 3.9798,
+    "kokkai": 2.9688,
+    "web": 3.3711,
+    "talk": 2.3748
+   },
+   "wrote": [
+    {
+     "start": "わたしは",
+     "text": "わたしは、まさにその暗い恐手なもので、六百人なのです。」 FJ「そうですか。三百人の前に住んでしまいました。」 CA「おいしそうなのですね！麺とか焼き魂ったらいいので、何かおいしいものだったんですか？」 FJ「なかなか簡単なので、何か"
+    },
+    {
+     "start": "第一条",
+     "text": "第一条（せじ）なかええ」といえる（この時、アメリカはジョージュ系の集団）。 州内アメリカ市 （ JFF ） の キューレテイストンドル （ 英語版 ） 。 日本では「 GWS 」と呼ばれる「 UKE 」と呼ばれるようになり、 ビガミ （"
+    },
+    {
+     "start": "この法律において",
+     "text": "この法律において第三条事業を行う業者は、これを内閣総理大臣及び内閣総理大臣から御質疑いただいましたようでございますが、私は、今御質問いただきましたように、今のこの方向については、今度の先日、今も明言したように、二度エネルギーの自由などの経済の特徴をお聞きしました。 福田さん、大統領の口蟹を、今の認識でやって"
+    }
+   ],
+   "loopPct": 4.26,
+   "movedBody": false
   }
  ],
  "bestVal": 2.8344,
- "layers": 10,
- "params": 20024448,
+ "layers": 11,
+ "params": 21794688,
  "born": "2026-09-12T18:05:42Z",
  "marks": [
-  788163838,
+  850289863,
   850289863,
   850289863,
   850289863,
@@ -6867,5 +6928,5 @@
  ],
  "wantWider": false,
  "nextD": 384,
- "bad": 4
+ "bad": 0
 }
