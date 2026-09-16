@@ -1,0 +1,105 @@
+name: realu replies
+
+# ★★★レアルに話しかけて、返事をもらう係（★2026-09-16）。
+#
+# ★★なぜ要るか
+#   ★レアルは会話の形（`AA「…」` の往復）で学んでいるのに、★書かせ方が
+#     「わたしは」から流し続ける形しか無かった。
+#   ★★だから出てくるのは**会話ではなく書き起こしの続き**だった。
+#   ★頭は変えない。★**入口の形を、学んだ形に合わせるだけ**。
+#
+# ★★使い方: Actions → realu replies → Run workflow → 話しかける文を入れる
+#   ★返事はログに出る。★★リポジトリには何も書かない（★人の言葉を残さない）。
+
+on:
+  workflow_dispatch:
+    inputs:
+      say:
+        description: "レアルに言うこと"
+        required: true
+        default: "こんばんは"
+      say2:
+        description: "（任意）その前のレアルの返事 ── 会話を続ける時だけ"
+        default: ""
+      say0:
+        description: "（任意）そのさらに前の自分の言葉"
+        default: ""
+      lineage:
+        description: "だれと話すか（L1 / L2 / L3）"
+        default: "L1"
+      temp:
+        description: "ことばのやわらかさ（0.6 かたい 〜 1.0 やわらかい）"
+        default: "0.8"
+
+permissions:
+  contents: read          # ★★何も書かない。★人から来た言葉は残さない
+
+concurrency:
+  group: realu-talk
+  cancel-in-progress: false
+
+jobs:
+  talk:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: 道具を入れる
+        run: |
+          pip install --quiet torch --index-url https://download.pytorch.org/whl/cpu
+          pip install --quiet tokenizers numpy
+
+      # ★★ことばの単位は棚と一緒に置いてある。★頭とセットでないと意味が入れ替わる
+      - name: ことばの単位を思い出す
+        uses: actions/cache/restore@v4
+        with:
+          path: work
+          key: realu-talk-none
+          restore-keys: |
+            realu-work-
+
+      - name: 頭を取ってくる
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          FOODKEY: ${{ secrets.REALU_FOOD_KEY }}
+          LIN: ${{ inputs.lineage }}
+        run: |
+          mkdir -p work
+          # ★★★頭は**毎回**取り直す（★speak.yml と同じ理由）。
+          #   ★cache の work/ に古い realu.pt が入っていると、★それで話してしまう。
+          rm -f work/realu.pt
+          if [ -z "$FOODKEY" ]; then echo "★鍵が無い。話せない"; exit 1; fi
+          for NAME in "realu-$LIN" "realu-$LIN-prev" realu realu-prev; do
+            gh release download brain -p "$NAME.enc" -D /tmp 2>/dev/null \
+              && openssl enc -d -aes-256-cbc -pbkdf2 \
+                   -in "/tmp/$NAME.enc" -out work/realu.pt -pass env:FOODKEY 2>/dev/null \
+              && [ -s work/realu.pt ] \
+              && echo "★$NAME と話す" && rm -f "/tmp/$NAME.enc" && break
+            rm -f "/tmp/$NAME.enc" work/realu.pt
+          done
+          [ -f work/realu.pt ] || { echo "★頭が見つからなかった"; exit 1; }
+
+      - name: 話しかける
+        env:
+          # ★★★人から来た文字は**env を通す**。
+          #   ★`${{ inputs.say }}` をシェルの中に直接書くと、★引用符や `$(…)` が
+          #     ★★そのままコマンドとして解釈されうる（★script injection）。
+          #   ★押せるのは持ち主だけだが、★**人の言葉を直接コードに埋めない**のは
+          #     ★レアルの他の所（`e()` での無害化）と同じ作法にそろえる。
+          SAY0: ${{ inputs.say0 }}
+          SAY2: ${{ inputs.say2 }}
+          SAY: ${{ inputs.say }}
+          REALU_REPLY_TEMP: ${{ inputs.temp }}
+          REALU_THREADS: "4"
+        run: |
+          # ★★往復を順に渡す（★空のものは渡さない）。
+          #   ★奇数個＝最後が相手の発言、になるように並べる。
+          ARGS=()
+          [ -n "$SAY0" ] && ARGS+=("$SAY0")
+          [ -n "$SAY2" ] && ARGS+=("$SAY2")
+          ARGS+=("$SAY")
+          python reply.py "${ARGS[@]}"
