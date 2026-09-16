@@ -58,6 +58,12 @@ def wake_up():
         _VOCAB = G.CharVocab(itos=st["itos"])
         _MODEL = G.Realu(len(_VOCAB), d=st["d"], h=st["h"], n=st["layers"], ctx=st["ctx"])
         _MODEL.load_state_dict(st["model"])
+        # ★★五十音の座標は .pt に入らない（persistent=False）。★入れ直さないと
+        #   ★学習した時と違う表になり、★「驚き」の測り方がずれる（★2026-09-16）。
+        try:
+            G.attach_kana(_MODEL, _VOCAB, quiet=True)
+        except Exception:
+            pass
         _MODEL.eval()
         torch.set_num_threads(2)
         print("★前のわたしを起こした（%d 層）。★驚いたものから読む。" % st["layers"], flush=True)

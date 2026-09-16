@@ -46,6 +46,16 @@ def main():
     model = G.Realu(len(vocab), d=st["d"], h=st["h"], n=st["layers"],
                     ctx=st["ctx"], loops=st.get("loops", 1))
     model.load_state_dict(st["model"])
+    # ★★★五十音の座標を入れ直す（★2026-09-16）。
+    #   ★`kana_feat` は .pt に入らない（persistent=False）ので、★ここで作り直さないと
+    #     ★★**学習した時と違う埋め込み表**で書くことになる。
+    #   ★実測: これが無かった間、★サイトに出る文章だけが
+    #     ★「せいせいせいせい」「ははははは」と壊れていた。
+    #     ★同じ頭で grow.py が書いたものは普通に読めていたので、★頭のせいに見えなかった。
+    try:
+        G.attach_kana(model, vocab)
+    except Exception as e:
+        print("★五十音の座標を入れられなかった（%s）" % type(e).__name__, flush=True)
     model.eval()
     print("★頭を起こした: %d 層 / %.2f M / loss %.4f"
           % (st["layers"], sum(p.numel() for p in model.parameters()) / 1e6,

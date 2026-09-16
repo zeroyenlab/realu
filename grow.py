@@ -504,6 +504,37 @@ class Realu(nn.Module):
         return vocab.decode(out[0].tolist())
 
 
+def attach_kana(model, vocab, quiet=False):
+    """★★★頭に五十音の座標を入れる。★**.pt から組み立て直したら必ず呼ぶ。**
+
+    ★★`kana_feat` は `persistent=False` ＝ **.pt に入らない**。★`has_kana` も入らない。
+    ★★★なので .pt から組み立て直した頭は、★これを呼ばないと `has_kana=False` のままで、
+      ★`emb_table()` が「★座標ぶんを足していない表」を**黙って**返す。
+      ★重みは学習済みなのに、★★**学習した時と違う表で書く**ことになる。
+
+    ★2026-09-16 の実測: ★`speak.py` がこれを呼んでおらず、
+      ★★サイトに出る文章だけが「せいせいせいせい」「ははははは」と壊れていた。
+      ★同じ頭・同じ loss で、★`grow.py` の書いたものは普通に読めていた。
+      ★★手元で確かめた差: ★埋め込み表が**自分の大きさの 125% ずれる**。
+    ★★★落ちないので見つからない型。★`emb_table()` の逃げ道が、失敗を静かに隠していた。
+    """
+    if not (KANA_ON and _kana is not None):
+        return False
+    feat = []
+    for i in range(len(vocab)):
+        try:
+            sdec = vocab.decode([i])
+        except Exception:
+            sdec = ""
+        feat.append(_kana.token_vec(sdec or ""))
+    ok = model.set_kana(feat)
+    if ok and not quiet:
+        nz = sum(1 for v in feat if any(v))
+        print("★五十音の座標を入れた（%d / %d トークンに座標がある）"
+              % (nz, len(vocab)), flush=True)
+    return ok
+
+
 # ── 学習 ────────────────────────────────────────────
 # ★★★記憶を3つに分ける（★短期・中期・長期）
 #   ★いままでは全部から一様に引いていた。★だから今日読んだものは 0.16% しか引かれず、
@@ -922,18 +953,7 @@ def main():
     #   ★ゼロ初期化なので、★差し込んだ瞬間は今と同じ振る舞い。
     if KANA_ON and _kana is not None:
         try:
-            feat = []
-            for i in range(len(vocab)):
-                try:
-                    sdec = vocab.decode([i])
-                except Exception:
-                    sdec = ""
-                feat.append(_kana.token_vec(sdec or ""))
-            if model.set_kana(feat):
-                nz = sum(1 for v in feat if any(v))
-                print("★五十音の座標を入れた（%d / %d トークンに座標がある）"
-                      % (nz, len(vocab)), flush=True)
-            else:
+            if not attach_kana(model, vocab):
                 print("★五十音の座標は入らなかった（★形が合わない）", flush=True)
         except Exception as e:
             print("★五十音の座標は用意できなかった（%s）" % type(e).__name__, flush=True)
