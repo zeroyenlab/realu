@@ -7193,6 +7193,67 @@
    ],
    "loopPct": 1.8,
    "movedBody": false
+  },
+  {
+   "at": "2026-09-16T19:21:59Z",
+   "val": 3.4758,
+   "prev": 3.4758,
+   "valTag": "fixed-holdout-v1",
+   "stoppedAt": 470,
+   "secPerStep": 8.0125,
+   "steps": 824,
+   "bpc": 4.1097,
+   "charsPerTok": 1.2202,
+   "score": 2.2528,
+   "scoreW": 2.0,
+   "scoreMode": "talk",
+   "finishMix": 0.85,
+   "lineage": "L2",
+   "layers": 10,
+   "params": 34727424,
+   "chars": 1037515847,
+   "tokens": 850289863,
+   "grew": 0,
+   "rolledBack": true,
+   "ownVal": 3.2695,
+   "ownScore": 2.3573,
+   "d": 512,
+   "loops": 1,
+   "spread": 3.1421,
+   "bytes": 416817181,
+   "heads": 8,
+   "ctx": 512,
+   "vocab": 6000,
+   "kind": "bpe",
+   "arch": "tpp-loop",
+   "wantWider": false,
+   "layerCap": 16,
+   "mixChanged": false,
+   "bySrc": {
+    "laws": 4.9288,
+    "wiki": 3.4701,
+    "aozora": 3.8111,
+    "hanrei": 3.9846,
+    "kokkai": 2.9237,
+    "web": 3.3336,
+    "talk": 2.3573
+   },
+   "wrote": [
+    {
+     "start": "わたしは",
+     "text": "わたしはわからないので今はご飯が多いですか？」 AM「私はライブが好きです。食べ物はたくさんのお好きですか？」 AB「食べたいですね。私一つの食べたいです。」 AM「たしかに。食べました！」 AB「私もあのサイブが好き"
+    },
+    {
+     "start": "第一条",
+     "text": "第一条に係る者以外の事由によりれるときは当該物資の業務の単位又は編用に係る事由以外について準用する。 搭載の日は、次に定める日数が還付の日前に戻るときは、この限りでない。 この場合において「証する書類」とあるのは「86.7............................................................."
+    },
+    {
+     "start": "この法律において",
+     "text": "この法律において時刻と、結構寝てます。」 GY「そうですね！朝日では、毎日寝ていますが、寒いです。」 DT「寝ると寝たくぜん」 GY「寝ます！」 DT「そうですよね！子供は大丈夫でしたか？」 GY「明日は日本では"
+    }
+   ],
+   "loopPct": 11.82,
+   "movedBody": false
   }
  ],
  "bestVal": 2.8173,
@@ -7243,5 +7304,5 @@
  ],
  "wantWider": false,
  "nextD": 512,
- "bad": 3
+ "bad": 0
 }
