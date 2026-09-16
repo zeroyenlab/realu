@@ -6339,6 +6339,67 @@
    ],
    "loopPct": 1.6,
    "movedBody": false
+  },
+  {
+   "at": "2026-09-16T02:52:58Z",
+   "val": 3.4403,
+   "prev": 3.4403,
+   "valTag": "fixed-holdout-v1",
+   "stoppedAt": 466,
+   "secPerStep": 8.0787,
+   "steps": 798,
+   "bpc": 4.0676,
+   "charsPerTok": 1.2202,
+   "score": 2.301,
+   "scoreW": 2.0,
+   "scoreMode": "talk",
+   "finishMix": 0.85,
+   "lineage": "L2",
+   "layers": 10,
+   "params": 34727424,
+   "chars": 1037515847,
+   "tokens": 850289863,
+   "grew": 0,
+   "rolledBack": true,
+   "ownVal": 3.4361,
+   "ownScore": 2.4326,
+   "d": 512,
+   "loops": 1,
+   "spread": 3.2123,
+   "bytes": 416817117,
+   "heads": 8,
+   "ctx": 512,
+   "vocab": 6000,
+   "kind": "bpe",
+   "arch": "tpp-loop",
+   "wantWider": false,
+   "layerCap": 16,
+   "mixChanged": false,
+   "bySrc": {
+    "laws": 5.1922,
+    "wiki": 3.5917,
+    "aozora": 4.0095,
+    "hanrei": 3.9976,
+    "kokkai": 3.0137,
+    "web": 3.4331,
+    "talk": 2.4326
+   },
+   "wrote": [
+    {
+     "start": "わたしは",
+     "text": "わたしは自分の言葉を言ったと思うのです。」 DY「そうなんですね。私はおよそナエア図書館は感染や、あるいは教師はなんでしょう。」 CH「そうですよね。どのくらい放置されるんですか？」 DY「いえいえ、もう長いので、寝るから、食べると思います。」"
+    },
+    {
+     "start": "第一条",
+     "text": "第一条」の担い手がついているところがいいですね。」 DF「そうなんですよね、今はブラックが出ないですね」 DL「なんだかフレンチェンが好きです！」 DF「ピッケルとか好きです！」 DF「こ"
+    },
+    {
+     "start": "この法律において",
+     "text": "この法律において��ですね！」 HW「こちらこそ！人気だーでいけます！」 ED「結構お好きですか？」 HW「あんまり」 ED「チョココロナ暑かったですね。」 HW「確かにパソコンかわいいです」 ED「ちょっとこいきませんよね、続"
+    }
+   ],
+   "loopPct": 5.33,
+   "movedBody": false
   }
  ],
  "bestVal": 2.8173,
