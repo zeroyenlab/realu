@@ -32,8 +32,16 @@ import urllib.request
 
 HERE = os.path.dirname(os.path.abspath(__file__))
 WORK = os.environ.get("REALU_WORK", os.path.join(HERE, "work"))
-OUT = os.path.join(WORK, "kokkai.txt.gz")
+# ★★★往復の形で残す先（★2026-09-16）。★`kokkai.txt.gz` はもう増やさない。
+#   ★これまでは話者を落とした**平らな行**で保存していた。★会議録は質疑応答なのに、
+#     ★★**往復の構造がそこで消えていた**。
+#   ★実測: レアルが会話の形を学べる材料は棚の 4.7%（talk）しかなく、
+#     ★話しかけても「相槌は打つが中身を受けない」状態だった。
+#   ★★★`talk.txt` と同じ `AA「…」` の形にすれば、★国会のぶんが**会話の教材**になる。
+#   ★古い `kokkai.txt.gz` はそのまま残す（★一般の日本語としては値打ちがある）。
+OUT = os.path.join(WORK, "kaiwa.txt.gz")
 STATE = os.path.join(WORK, "kokkai_next.txt")
+TURN_MAX = int(os.environ.get("REALU_TURN_MAX", 400))   # ★1番ぶんの長さの目安
 UA = "RealuSeedFetcher/0.1 (+https://realu.pages.dev) python-urllib"
 API = "https://kokkai.ndl.go.jp/api/meeting"
 
@@ -130,13 +138,36 @@ def main():
                 start = 1                    # ★また最初から（★新しい会議が増えるので）
                 break
             for m in recs:
-                lines = []
+                # ★★名前は**出さない**（★これまでどおり）。★記号は**会議ごとに振り直す**:
+                #   ①核（self.md）の「個人を特定しない・晒さない」に沿う
+                #   ②★★著作権法40条の「同一の著作者のものを編集して利用する」に
+                #     触れないため ── ★会議をまたいで同じ記号にすると、
+                #     ★★**一人の発言を集めたことになってしまう**。★だから毎回0から。
+                lines, tag_of, order = [], {}, 0
                 for sp in m.get("speechRecord") or []:
-                    who = (sp.get("speaker") or "").strip()   # ★★誰が話したか
-                    for ln in clean(sp.get("speech") or "", who).split("\n"):
-                        ln = ln.strip()
-                        if keep(ln) and safe(ln):
-                            lines.append(ln)
+                    who = (sp.get("speaker") or "").strip()   # ★★誰が話したか（★出さない）
+                    body = " ".join(
+                        x for x in (ln.strip() for ln
+                                    in clean(sp.get("speech") or "", who).split("\n"))
+                        if keep(x) and safe(x))
+                    if not body:
+                        continue
+                    if who not in tag_of:
+                        tag_of[who] = chr(65 + order // 26) + chr(65 + order % 26)
+                        order += 1
+                    t = tag_of[who]
+                    # ★★★長い答弁は、★句点で切って**同じ記号のまま**並べる。
+                    #   ★1発言が数千字だと「1番ぶんは長いもの」として覚えてしまい、
+                    #     ★★返事も同じだけ長くなる（★会話にならない）。
+                    #   ★切っても話者は変えないので、★誰の発言かは正しいまま。
+                    piece = ""
+                    for s in re.split(r"(?<=。)", body):
+                        if piece and len(piece) + len(s) > TURN_MAX:
+                            lines.append(t + "「" + piece.strip() + "」")
+                            piece = ""
+                        piece += s
+                    if piece.strip():
+                        lines.append(t + "「" + piece.strip() + "」")
                 if len(lines) >= 5:
                     f.write("\n<会議 %s %s>\n%s\n"
                             % (m.get("date") or "", (m.get("nameOfMeeting") or "")[:24],

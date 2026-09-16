@@ -169,7 +169,8 @@ def main():
         # ★★★ごはんの種類ごとの点数。
         #   ★全体の1つの数字だと「国会が少し落ちて会話が大きく上がった」が潰れる。
         SRC_JA = {"kokkai": "国会", "wiki": "Wikipedia", "web": "web", "laws": "法令",
-                  "aozora": "青空文庫", "hanrei": "判例", "talk": "会話"}
+                  "aozora": "青空文庫", "hanrei": "判例", "talk": "会話",
+                  "kaiwa": "国会（往復）"}
         bs = last.get("bySrc") or {}
         bs_rows = "".join(
             '<div class="bs"><span class="bsk">%s</span><span class="bsv">%.4f</span></div>'
@@ -533,7 +534,7 @@ def main():
 
         # ★★ごはんの種類ごとの点数も玄関から描く
         'var JA={kokkai:"国会",wiki:"Wikipedia",web:"web",laws:"法令",'
-        'aozora:"青空文庫",hanrei:"判例",talk:"会話"};'
+        'aozora:"青空文庫",hanrei:"判例",talk:"会話",kaiwa:"国会（往復）"};'
         'var BS=sp.bySrc||{},bsb=document.getElementById("bsbox"),'
         'bsr=document.getElementById("bsrows");'
         'if(bsr){var ks=Object.keys(BS).sort(function(a,b){return BS[a]-BS[b]});'

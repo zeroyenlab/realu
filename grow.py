@@ -767,7 +767,7 @@ def main():
         # ★★★動かないもの（法令・Wikipedia）を先に、★増えるもの（判例・会議録・読んだもの）を後に。
         #   ★そうすると「新しく足された分」がいつも後ろに来るので、★短期の山が作れる。
         for name in ("laws.txt", "wiki.txt", "aozora.txt", "talk.txt",
-                     "hanrei.txt", "kokkai.txt", "web.txt"):
+                     "hanrei.txt", "kaiwa.txt", "kokkai.txt", "web.txt"):
             for p in (os.path.join(WORK, name + ".gz"), os.path.join(WORK, name)):
                 if not os.path.exists(p):
                     continue

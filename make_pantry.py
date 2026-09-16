@@ -66,8 +66,16 @@ DUP_MAX = int(os.environ.get("REALU_DUP_MAX", 3))
 #            → ★国会 29.9% / ★会話 4.7%
 #   ★★次の一歩を踏むときは、★ここの数字だけ動かせばいい。
 #     ★配合を変えた回は grow.py が巻き戻しを止める（★mixTag）ので、★何度でも動かせる。
+# ★★★国会の枠は「平ら（kokkai）＋往復（kaiwa）」で**合わせて 250M**（2026-09-16）。
+#   ★kaiwa は同じ会議録を `AA「…」` の往復で持ち直したもの。★中身は同じ。
+#   ★★だから別枠で足すと、★国会のぶんだけが勝手に増えて配合が崩れる
+#     （★2026-09-09 に「物差しに合わせて 30% まで下げる」と決めたばかり）。
+#   → ★★**往復のほうを先に使い、残りだけ平らなほうから取る**。
+#     ★kaiwa が育つにつれて、★合計を変えずに**平ら → 往復へ入れ替わっていく**。
+DIET_CAP = int(os.environ.get("REALU_CAP_KOKKAI", 250_000_000))
 MIX = {
-    "kokkai.txt": {"cap": int(os.environ.get("REALU_CAP_KOKKAI", 250_000_000))},
+    "kaiwa.txt":  {"cap": DIET_CAP},
+    "kokkai.txt": {"cap": DIET_CAP},   # ★★実行時に kaiwa が使った分を引く（★下）
     "talk.txt":   {"repeat": int(os.environ.get("REALU_REP_TALK", 3))},
 }
 VAL_PER_MIL = int(os.environ.get("REALU_VAL_PERMIL", 3))
@@ -76,7 +84,7 @@ EXTRA_MIN = int(os.environ.get("REALU_EXTRA_MIN", 200))    # ★これ未満の�
 SRC_MARK = re.compile("^<(web|本|会話) [^>]*>$")
 
 ORDER = ("laws.txt", "wiki.txt", "aozora.txt", "talk.txt",
-         "hanrei.txt", "kokkai.txt", "web.txt")
+         "hanrei.txt", "kaiwa.txt", "kokkai.txt", "web.txt")
 
 
 def held_out(line):
@@ -142,6 +150,7 @@ def main():
         except Exception as e:
             print("★物差しが読めなかった（%s）。★対応表は作らない" % type(e).__name__, flush=True)
             val_idx = None
+    diet_used = 0                   # ★★往復（kaiwa）が使った国会の枠
     val_by_src = {}                 # ★ソース名 → [物差しの中の位置...]
     # ★★★2026-09-09: 凍結した物差しは**会話を足す前**に作られていて、
     #   ★★会話の行が**1行も入っていない**（★一番上げたい所が測れない）。
@@ -190,6 +199,11 @@ def main():
         cfg = MIX.get(name, {})
         rep = max(1, int(cfg.get("repeat", 1)))
         cap = cfg.get("cap")
+        # ★★★国会の枠は往復と平らで**分け合う**。★往復が使った分だけ平らを削る
+        if name == "kokkai.txt" and diet_used:
+            cap = max(0, DIET_CAP - diet_used)
+            print("  ★往復（kaiwa）が %s 個 使ったので、★平らな国会は %s 個まで"
+                  % (format(diet_used, ","), format(cap, ",")), flush=True)
         marks.append({"name": name, "at": total})
         start = total
         n_kept = n_held = 0
@@ -241,6 +255,8 @@ def main():
                         capped = True
         flush()
         marks[-1]["until"] = total
+        if name == "kaiwa.txt":
+            diet_used = total - start          # ★★次の kokkai.txt で引くため
         note = ""
         if rep > 1:
             note += " / ★%d回くり返した" % rep
