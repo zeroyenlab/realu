@@ -61,10 +61,54 @@ def build_prompt(turns):
     return "\n".join(lines)
 
 
-def cut(text, prompt):
-    """★★書かせたものから、**レアルの1番ぶんだけ**を取り出す。"""
-    t = text[len(prompt):] if text.startswith(prompt) else text
-    # ★★閉じカッコで止める。★無ければ、次の話者が始まった所で止める
+def gen(model, vocab, prompt, n, temp):
+    """★★★入口のぶんを**トークンの数で**取り除いて、★書いた所だけを返す。
+
+    ★★★文字で剥がしてはいけない（★2026-09-16 に踏んだ）。
+      ★`model.write()` は「入口＋書いたもの」を**まとめて decode** して返すが、
+      ★★**decode(encode(x)) は x に戻らない**（★BPE の正規化で字が変わる）。
+      ★だから `text.startswith(prompt)` が False になり、★剥がし損ねて
+        ★★**入口そのものを返事として出していた**。
+      → ★新しく出たトークンだけを集めて、★**それだけを decode する**。
+    ★ついでに `」` が出たらそこで止める（★60個ぶん無駄に書かない）。
+    """
+    import torch
+    import torch.nn.functional as F
+    ids = (vocab.encode(prompt) or [0])[-model.ctx:]
+    idx = torch.tensor([ids], dtype=torch.long)
+    use_cache = model.loops == 1
+    caches = [[] for _ in model.blocks] if use_cache else None
+    with torch.no_grad():
+        if use_cache:
+            logits, _ = model(idx, caches=caches, pos=0)
+            pos = idx.shape[1]
+        else:
+            logits, _ = model(idx)
+        new = []
+        for _ in range(n):
+            p = F.softmax(logits[:, -1] / temp, dim=-1)
+            nxt = torch.multinomial(p, 1)
+            new.append(int(nxt.item()))
+            s = vocab.decode(new)
+            if "」" in s or "\n" in s:     # ★1番ぶんが閉じた
+                break
+            if use_cache:
+                if pos >= model.ctx:
+                    caches = [[] for _ in model.blocks]
+                    tail = torch.tensor([(ids + new)[-model.ctx:]], dtype=torch.long)
+                    logits, _ = model(tail, caches=caches, pos=0)
+                    pos = tail.shape[1]
+                else:
+                    logits, _ = model(nxt, caches=caches, pos=pos)
+                    pos += 1
+            else:
+                tail = torch.tensor([(ids + new)[-model.ctx:]], dtype=torch.long)
+                logits, _ = model(tail)
+    return vocab.decode(new)
+
+
+def cut(t):
+    """★1番ぶんで切る。★`」` か改行が来たらそこまで。"""
     m = re.search(r"[」\n]", t)
     if m:
         t = t[:m.start()]
@@ -121,11 +165,11 @@ def main():
     cand = []
     for i in range(TRIES):
         try:
-            raw = G.no_src(model.write(vocab, prompt, MAXTOK, temp=TEMP))
+            raw = G.no_src(gen(model, vocab, prompt, MAXTOK, TEMP))
         except Exception as ex:
-            print("  書けなかった:", type(ex).__name__)
+            print("  書けなかった:", type(ex).__name__, str(ex)[:80])
             continue
-        t = cut(raw, prompt)
+        t = cut(raw)
         lp = loops(t)
         ok = bool(t) and safe(t)
         cand.append((lp, t, ok))
