@@ -7488,6 +7488,67 @@
    ],
    "loopPct": 17.66,
    "movedBody": false
+  },
+  {
+   "at": "2026-09-16T19:21:33Z",
+   "val": 3.1302,
+   "prev": 2.9904,
+   "valTag": "fixed-holdout-v1",
+   "stoppedAt": 623,
+   "secPerStep": 5.966,
+   "steps": 1384,
+   "bpc": 3.701,
+   "charsPerTok": 1.2202,
+   "score": 2.3384,
+   "scoreW": 2.0,
+   "scoreMode": "talk",
+   "finishMix": 0.2,
+   "lineage": "L3",
+   "layers": 11,
+   "params": 21794688,
+   "chars": 1037515847,
+   "tokens": 850289863,
+   "grew": 0,
+   "rolledBack": false,
+   "ownVal": null,
+   "ownScore": null,
+   "d": 384,
+   "loops": 1,
+   "spread": 2.9249,
+   "bytes": 261632513,
+   "heads": 6,
+   "ctx": 512,
+   "vocab": 6000,
+   "kind": "bpe",
+   "arch": "tpp-loop",
+   "wantWider": false,
+   "layerCap": 16,
+   "mixChanged": false,
+   "bySrc": {
+    "laws": 4.3046,
+    "wiki": 3.2464,
+    "aozora": 3.5335,
+    "hanrei": 3.7489,
+    "kokkai": 2.7404,
+    "web": 3.1053,
+    "talk": 2.3384
+   },
+   "wrote": [
+    {
+     "start": "わたしは",
+     "text": "わたしは、一つのことは、いざ、和食だ、日本の世界と同じ々の古代古代史を率いて、国際社会は、かつ霊生活にとっても、世界の世界の平和と繁栄と言った。 しかし、諸外国政府は 南アジア に来�すると、諸外国が 遠城 になったが、世界は多くの国（ �"
+    },
+    {
+     "start": "第一条",
+     "text": "第一条第十二号、yo、s、s、s、s、ka、s、s、d、d、d、d、d、d、d、d、d、d、d、v、d、d、d、J.d、d、v朝、d、d、d、nb、d、d、d、d、d、d、d、d、d、d、t、d、d、d、d、d、d、d、d、d、d"
+    },
+    {
+     "start": "この法律において",
+     "text": "この法律においてを乗じて計算した金額とする。 （等級） 第四支配関係 交付したにあっては、当該科目等（事業計画を含む。）又は受入れ重要な事項を定める方法を、同項に規定する処分に係る事項とする。 （掛金） 第五�け出 交付した科目等（同項中「交付」という。）をしようとする事項とする。 交付した秘密の開示については、当該承諾をした書面（金銭を、当該議決をもって行うもの又は迫害の点を証明する旨を発見しなければならない。 （申請） 第七十三条第"
+    }
+   ],
+   "loopPct": 34.02,
+   "movedBody": false
   }
  ],
  "bestVal": 2.8344,
@@ -7538,5 +7599,5 @@
  ],
  "wantWider": false,
  "nextD": 384,
- "bad": 4
+ "bad": 0
 }
