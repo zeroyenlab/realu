@@ -78,19 +78,18 @@ def main():
                         sample.append(tag + "「" + p[:54] + "…」")
                 cur = ""
 
-            for ln in f:
-                ln = ln.rstrip("\n")
-                n_line += 1
+            def take(ln):
+                nonlocal side, cur, n_meet, n_cont
                 if HEAD.match(ln):
                     flush()
-                    # ★★会議ごとに振り直す。★次の `○` で反転して AA から始まるように 1 を入れる
+                    # ★★会議ごとに振り直す。★次の `○` で反転して AA から始まるよう 1 を入れる
                     side = 1
                     g.write("\n" + ln + "\n")
                     n_meet += 1
-                    continue
+                    return
                 s = ln.strip()
                 if not s:
-                    continue
+                    return
                 if s[0] in "○◯":            # ★★誰かが話し始めた
                     flush()
                     side = 1 - side          # ★次の番は相手
@@ -98,6 +97,24 @@ def main():
                 else:                        # ★同じ人の続き
                     cur += (" " if cur else "") + s
                     n_cont += 1
+
+            # ★★★途中で読めなくなっても、★そこまでを残す（★grow.py と同じ構え）。
+            #   ★`kokkai.txt.gz` は**継ぎ足しで作った多重メンバーの gz**。
+            #   ★★どこか1つのメンバーが途中で切れていると `zlib.error` で止まる。
+            #   ★実測（走行#224）: ★ここで落ちて**1行も作れていなかった**。
+            #   → ★読めた所までで組み直す。★全部捨てるより、★8割でも入るほうが良い。
+            it = iter(f)
+            while True:
+                try:
+                    ln = next(it)
+                except StopIteration:
+                    break
+                except Exception as ex:
+                    print("★途中で読めなくなった（%s）。★%s 行目までを残す"
+                          % (type(ex).__name__, format(n_line, ",")), flush=True)
+                    break
+                n_line += 1
+                take(ln.rstrip("\n"))
             flush()
         os.replace(tmp, OUT)
     except Exception as e:
