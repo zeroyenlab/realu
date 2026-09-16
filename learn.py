@@ -393,6 +393,38 @@ def tell(k, d):
            "b": v.get("b"), "diff": v.get("diff"), "spread": v.get("spread")}
           for v in abd.values()]
 
+    # ★★★いま頭は1つではない（★2026-09-11 に L1/L2/L3 へ分かれた）。
+    #   ★家はずっと L1 だけを映していた（★growth.json は L1 の写し）。
+    #   ★★同じごはんで**配合だけ**を変えた3つが別々に育っているので、
+    #     ★それが見えないと「なぜ3つ要るのか」が伝わらない。
+    #   ★★どれが何かは**記録に入っている値だけ**から言う（★grow.yml を写さない）。
+    lins = []
+    for nm in ("L1", "L2", "L3"):
+        try:
+            with open(os.path.join(HERE, "growth-%s.json" % nm), encoding="utf-8") as f:
+                rr = (json.load(f) or {}).get("runs") or []
+            if not rr:
+                continue
+            r = rr[-1]
+            w = (r.get("wrote") or [{}])[0]
+            lins.append({
+                "name": nm,
+                "at": r.get("at"),
+                "layers": r.get("layers"), "params": r.get("params"), "d": r.get("d"),
+                "val": r.get("val"),
+                # ★採否を決めている点（★会話だけで決めている回はそれ）
+                "score": r.get("score"), "scoreMode": r.get("scoreMode"),
+                # ★★この系統を分けている唯一のつまみ
+                "finishMix": r.get("finishMix"),
+                "talk": (r.get("bySrc") or {}).get("talk"),
+                "loopPct": r.get("loopPct"),
+                "runs": len(rr),
+                # ★いちばん新しく書いた1本だけ（★玄関を重くしない）
+                "wrote": {"start": w.get("start"), "text": (w.get("text") or "")[:160]},
+            })
+        except Exception:
+            pass
+
     allitems = k.get("items") or []
     items = allitems[-80:]
     # ★★★内訳は**全件**から数える。
@@ -416,6 +448,7 @@ def tell(k, d):
                    "order": (d.get("look") or {}).get("order"),
                    "chosenAt": d.get("chosenAt")},
         "said": said,
+        "lins": lins,          # ★★3つの頭（★2026-09-16）
         "ab": ab,
         "items": [{"topic": it.get("topic"), "text": it.get("text"),
                    "source": it.get("source"), "genre": it.get("genre"),

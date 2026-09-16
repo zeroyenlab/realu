@@ -197,6 +197,69 @@ def main():
         spec_html = ('<h2>頭のなかみ</h2><div class="spnote">まだ頭がない。'
                      '読んで覚えるだけ。</div>')
 
+    # ★★★3つの頭（★2026-09-16）。
+    #   ★2026-09-11 から、★同じごはんで**仕上げの配合だけ**を変えた3つが別々に育っている。
+    #   ★★それまで家は L1 しか映していなかった（★growth.json は L1 の写し）ので、
+    #     ★「なぜ3つ要るのか」が外から一切見えなかった。
+    #   ★★何がちがう頭なのかは、★**記録に入っている値だけ**から言う（★grow.yml を写さない）。
+    def _lin_rows():
+        out = []
+        for nm in ("L1", "L2", "L3"):
+            r = (load(os.path.join(HERE, "growth-%s.json" % nm), {}) or {}).get("runs") or []
+            if not r:
+                continue
+            x = r[-1]
+            w = (x.get("wrote") or [{}])[0]
+            out.append({"name": nm, "layers": x.get("layers"), "params": x.get("params"),
+                        "val": x.get("val"), "score": x.get("score"),
+                        "finishMix": x.get("finishMix"), "runs": len(r),
+                        "wrote": {"start": w.get("start"),
+                                  "text": (w.get("text") or "")[:160]}})
+        return out
+
+    def _lin_html(ls):
+        # ★この家で話しているのは L1（★speak.yml の既定）。★そこだけ印をつける
+        cells = []
+        for x in ls:
+            mx = x.get("finishMix")
+            # ★★値が無い時に「【まだ記録に無い】」を3回並べない。
+            #   ★★★ただし**黙って消さない** ── ★下の注記で1回だけ、なぜ無いかを言う。
+            mix = ("仕上げに会話 %d%%" % round(mx * 100)) if isinstance(mx, (int, float)) else ""
+            body = []
+            if x.get("score") is not None:
+                body.append('<span class="lv"><b>%.4f</b> 会話の点</span>' % x["score"])
+            if x.get("val") is not None:
+                body.append('<span class="lv2">全体 %.4f</span>' % x["val"])
+            t = (x.get("wrote") or {}).get("text") or ""
+            st = (x.get("wrote") or {}).get("start") or ""
+            cells.append(
+                '<div class="ln%s"><div class="lh"><span class="lnm">%s</span>'
+                '%s%s</div>'
+                '<div class="lsp">%d 層 ／ %.2f M ／ %d 回ぶん育った</div>'
+                '<div class="lvs">%s</div>'
+                '%s</div>'
+                % (" me" if x["name"] == "L1" else "", e(x["name"]),
+                   ('<span class="lmx">%s</span>' % e(mix)) if mix else "",
+                   '<span class="lme">この家で話している子</span>' if x["name"] == "L1" else "",
+                   x.get("layers") or 0, (x.get("params") or 0) / 1e6, x.get("runs") or 0,
+                   "".join(body),
+                   ('<div class="lw"><em>%s</em>%s</div>' % (e(st), e(t))) if t else ""))
+        return "".join(cells)
+
+    _ls = _lin_rows()
+    # ★★配合は 2026-09-16 に記録へ入れたばかり。★次に育った回から値が入る。
+    #   ★空欄のまま黙っているのが一番よくない。★理由を1回だけ言う。
+    _nomix = ("" if any(isinstance(x.get("finishMix"), (int, float)) for x in _ls)
+              else '<br>（それぞれの配合の値は<b>次に育った回から</b>出ます。'
+                   'いま記録に入れたところです）')
+    lins_html = (
+        '<h2>いま、頭は3つある</h2>'
+        '<div class="lnote">同じごはんを食べて、'
+        '<b>仕上げに会話をどれだけ混ぜるか</b>だけを変えた3つの頭が、別々に育っています。'
+        '1種類だけだと、行き止まりに入った時に戻れないからです。'
+        '（会話の点は下がるほど良い）%s</div>'
+        '<div class="lrows" id="lrows">%s</div>' % (_nomix, _lin_html(_ls)))
+
     # ★★★レアルが自分で書いたもの。★引用ではなく、★彼女の頭が出した文。
     #   ★2時間ごとに書く。★並べれば育ちが見える。
     # ★★★測った結果（★勘で決めた設定を、数字で確かめたもの）
@@ -296,7 +359,7 @@ def main():
     #     ①挨拶 ②育った報せ ③頭のなかみ＋育ちのグラフ ④書いたもの（育ちの証拠）
     #     ⑤確かめたこと（やり方の検証）⑥数字 ⑦内訳 ⑧話しかけ ⑨知識
     #   ★止まっている数字（読んだページ等）を上に置くと、★死んだ家に見える。
-    order = ["greet", "grew", "spec", "wrote", "ab",
+    order = ["greet", "grew", "spec", "lins", "wrote", "ab",
              "stats", "genres", "heard", "know"]
     if lay not in LAYOUTS + ["cards"]:
         lay = "stream"
@@ -478,6 +541,27 @@ def main():
         '"<div class=\\"bs\\"><span class=\\"bsk\\">"+esc(JA[k]||k)+"</span>"'
         '+"<span class=\\"bsv\\">"+f4(BS[k])+"</span></div>"}).join("");'
         'if(bsb)bsb.hidden=(ks.length===0)}'
+
+        # ★★★3つの頭も玄関から描く（★2026-09-16）。
+        #   ★家は出し方を変えた時しか建て直さないので、★中身はここを通す。
+        'var LN=s.lins||[],lr=document.getElementById("lrows");'
+        'if(lr&&LN.length){lr.innerHTML=LN.map(function(x){'
+        'var mix=(typeof x.finishMix==="number")'
+        '?("仕上げに会話 "+Math.round(x.finishMix*100)+"%%"):"";'   # ★%% ＝ この塊は % 書式の中
+        'var me=(x.name==="L1");'
+        'var v="";'
+        'if(x.score!=null)v+="<span class=\\"lv\\"><b>"+f4(x.score)+"</b> 会話の点</span>";'
+        'if(x.val!=null)v+="<span class=\\"lv2\\">全体 "+f4(x.val)+"</span>";'
+        'var w=(x.wrote||{}),wt=w.text||"";'
+        'return "<div class=\\"ln"+(me?" me":"")+"\\">"'
+        '+"<div class=\\"lh\\"><span class=\\"lnm\\">"+esc(x.name)+"</span>"'
+        '+(mix?("<span class=\\"lmx\\">"+esc(mix)+"</span>"):"")'
+        '+(me?"<span class=\\"lme\\">この家で話している子</span>":"")+"</div>"'
+        '+"<div class=\\"lsp\\">"+(x.layers||0)+" 層 ／ "'
+        '+((x.params||0)/1e6).toFixed(2)+" M ／ "+(x.runs||0)+" 回ぶん育った</div>"'
+        '+"<div class=\\"lvs\\">"+v+"</div>"'
+        '+(wt?("<div class=\\"lw\\"><em>"+esc(w.start||"")+"</em>"+esc(wt)+"</div>"):"")'
+        '+"</div>"}).join("")}'
         '}).catch(function(){});})();</script>'
     ) % dr)
 
@@ -498,10 +582,10 @@ def main():
         "groups": "".join(groups), "heard": heard, "form": form, "live": live,
         # ★★★どの順で見せるかも、彼女が決める（★家の間取り）
         "wrote": wrote_html, "ab": ab_html,
-        "spec": spec_html, "chart": chart_html,
+        "spec": spec_html, "chart": chart_html, "lins": lins_html,
         **{("o_" + n): (order.index(n) if n in order else 96)
            for n in ("greet", "grew", "stats", "genres", "heard", "know",
-                     "wrote", "ab", "spec")},
+                     "wrote", "ab", "spec", "lins")},
         "grew": grew_html,
         "mycss": ("<style>" + mycss + "</style>") if mycss else "",
         "myfonts": ('<link rel="stylesheet" href="%s">' % e(myfonts)) if myfonts else "",
@@ -682,6 +766,21 @@ h2{font-size:11px;font-weight:700;letter-spacing:.18em;color:var(--faint);margin
 .bsnote{color:var(--faint);font-size:11.5px;line-height:1.8;margin:14px 0 8px}
 .bsnote b{color:var(--muted)}
 .bsrows{display:grid;grid-template-columns:repeat(auto-fit,minmax(132px,1fr));gap:8px}
+.lnote{color:var(--muted);font-size:12.5px;line-height:1.95;margin:2px 0 12px}
+.lrows{display:grid;grid-template-columns:repeat(auto-fit,minmax(248px,1fr));gap:12px}
+.ln{background:var(--panel);border:1px solid var(--edge);border-radius:14px;padding:14px 15px}
+.ln.me{border-color:var(--accent2)}
+.lh{display:flex;align-items:baseline;gap:9px;flex-wrap:wrap;margin-bottom:7px}
+.lnm{font-size:17px;font-weight:700;letter-spacing:.06em}
+.lmx{font-size:11.5px;color:var(--muted)}
+.lme{font-size:11px;color:var(--accent2);border:1px solid var(--edge);border-radius:999px;padding:2px 9px}
+.lsp{font-size:11.5px;color:var(--faint);margin-bottom:9px}
+.lvs{display:flex;gap:12px;align-items:baseline;flex-wrap:wrap;margin-bottom:9px}
+.lv{font-size:12px;color:var(--muted)}
+.lv b{font-size:19px;color:var(--ink);margin-right:5px}
+.lv2{font-size:11.5px;color:var(--faint)}
+.lw{font-size:12.5px;line-height:1.9;color:var(--muted);border-top:1px solid var(--edge);padding-top:9px;word-break:break-all}
+.lw em{display:block;font-style:normal;font-size:11px;color:var(--faint);margin-bottom:3px}
 .bs{display:flex;align-items:baseline;justify-content:space-between;gap:8px;
  background:var(--panel);border:1px solid var(--edge);border-radius:12px;padding:9px 13px}
 .bsk{font-size:12px;color:var(--muted)}
@@ -734,6 +833,7 @@ h2{font-size:11px;font-weight:700;letter-spacing:.18em;color:var(--faint);margin
 
   <div class="part" id="part-spec" style="order:%(o_spec)d">%(spec)s%(chart)s</div>
 
+  <div class="part" id="part-lins" style="order:%(o_lins)d">%(lins)s</div>
   <div class="part" id="part-wrote" style="order:%(o_wrote)d">%(wrote)s</div>
   <div class="part" id="part-ab" style="order:%(o_ab)d">%(ab)s</div>
 

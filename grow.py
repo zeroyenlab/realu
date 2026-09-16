@@ -1596,6 +1596,11 @@ def main():
         "score": (round(score, 4) if (score is not None and score == score) else None),
         "scoreW": SCORE_TALK_W,
         "scoreMode": SCORE_MODE,
+        # ★★この系統を他と分けている唯一のつまみ（★仕上げに会話をどれだけ混ぜるか）。
+        #   ★家に3系統を並べるとき、★**何がちがう頭なのか**をこれで言う（2026-09-16）。
+        #   ★grow.yml に書いた値を家の側へ**写さない**。★実際に使った値をここに残す
+        #     （★写すと、つまみを変えた日に家だけ古いことを言い出す）。
+        "finishMix": FINISH_MIX, "lineage": os.environ.get("LIN", ""),
         "layers": len(model.blocks), "params": model.n_params(),
         # ★★棚から食べる時は `text` が空なので、★len(text) だと 0 になる。
         "chars": (pantry.chars if pantry is not None else len(text)),
