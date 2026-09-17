@@ -80,7 +80,15 @@ BATCH = int(os.environ.get("REALU_BATCH", 16))
 #     （`LR_MAX = LR * 2.0`）。★彼女は自力で正解に届いていて、★天井に頭をぶつけていた。
 LR = float(os.environ.get("REALU_LR", 6e-4))
 STEPS = int(os.environ.get("REALU_STEPS", 0))         # ★0 なら実測から自動で決める
-EVAL_EVERY = int(os.environ.get("REALU_EVAL", 200))
+# ★★★評価の間隔（2026-09-17 実測で見直した）。
+#   ★評価は 6（本番）＋3（訓練）＝ **9回の順伝播だけ**。★逆伝播が無いので安い。
+#   ★★実測: **評価1回 ＝ 学習 2.88 歩ぶん**。
+#   ★幅768（1回244歩）でも、★200ごと=1.2% / 100ごと=2.4% / 50ごと=4.7% しか食わない。
+#   ★★★200 のままだと、★幅768 では **1回の走行で評価が1回しか回らない**。
+#     ★学習率の微調整（FIRM/FRAGILE）が走行あたり1回になり、★手当てが粗くなる。
+#   → ★100 にする。★幅768 でも2回は回る。★代わりに GROW_PATIENCE を倍にして、
+#     ★★**「頭打ち」と言うまでの“歩数”は変えない**（★前のめりにしない）。
+EVAL_EVERY = int(os.environ.get("REALU_EVAL", 100))
 THREADS = int(os.environ.get("REALU_THREADS", 4))
 
 # ★★★GPUがあれば使う。★無ければCPU。★どちらでも同じコードが走る。
@@ -152,7 +160,12 @@ def held_out(line):
     h = hashlib.sha1(line.encode("utf-8")).digest()
     return ((h[0] << 8) | h[1]) % 1000 < VAL_PER_MIL
 
-GROW_PATIENCE = 5      # ★この回数ぶん良くならなかったら「頭打ち」
+# ★★EVAL_EVERY を 200→100 にした分、★ここも 5→10 にする（2026-09-17）。
+#   ★これは「評価◯回ぶん」なので、★間隔を半分にしたら数を倍にしないと
+#     ★★**頭打ちの判定が倍の速さで起きる**＝成長が前のめりになる。
+#   ★実測の裏づけ: ★L1 は 11層 2.0174 が最良で、★16層まで5枚足して 2.0955（悪化）。
+#     ★★**深さはもう効いていない**。★前のめりにする理由が無い。
+GROW_PATIENCE = int(os.environ.get("REALU_PATIENCE", 10))
 GROW_MIN_LOSS = 1.05   # ★まだ下手なうちだけ大きくする
 OVERFIT_GAP = float(os.environ.get("REALU_OVERFIT_GAP", 0.15))
 
