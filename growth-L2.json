@@ -8047,6 +8047,67 @@
    ],
    "loopPct": 2.33,
    "movedBody": false
+  },
+  {
+   "at": "2026-09-17T12:59:51Z",
+   "val": 3.3097,
+   "prev": 3.4844,
+   "valTag": "fixed-holdout-v1",
+   "stoppedAt": 654,
+   "secPerStep": 5.6902,
+   "steps": 804,
+   "bpc": 3.9173,
+   "charsPerTok": 1.2189,
+   "score": 2.2605,
+   "scoreW": 2.0,
+   "scoreMode": "talk",
+   "finishMix": 0.85,
+   "lineage": "L2",
+   "layers": 10,
+   "params": 34727424,
+   "chars": 1045308899,
+   "tokens": 857567631,
+   "grew": 0,
+   "rolledBack": false,
+   "ownVal": null,
+   "ownScore": null,
+   "d": 512,
+   "loops": 1,
+   "spread": 3.2982,
+   "bytes": 416817181,
+   "heads": 8,
+   "ctx": 512,
+   "vocab": 6000,
+   "kind": "bpe",
+   "arch": "tpp-loop",
+   "wantWider": false,
+   "layerCap": 16,
+   "mixChanged": false,
+   "bySrc": {
+    "laws": 5.044,
+    "wiki": 3.4374,
+    "aozora": 3.771,
+    "hanrei": 4.0136,
+    "kokkai": 3.0506,
+    "web": 3.3123,
+    "talk": 2.2605
+   },
+   "wrote": [
+    {
+     "start": "わたしは",
+     "text": "わたしはお昼食べますか？」 EW「はい、食べようかと思います。」 DT「ほんと1日帯ですか？」 EW「はい！はやくしゃぶのでしてますね」 DT「そうですよ。楽しくなります！」 EW「ですね」 DT「今、私も今日は"
+    },
+    {
+     "start": "第一条",
+     "text": "第一条の規定ですが。」 店「ありがとうございます。またお待ちしております。」 客「では最寄り駅を教えてください。」 店「はい、最寄り駅が天神駅でございます。」 客「そちらの住所を教えてください。」 店「住所は北海道札幌市古ノ川区"
+    },
+    {
+     "start": "この法律において",
+     "text": "この法律において < 事 ジェリー> <記事 ヴィルディ・ヴィルディ> <記事 シナリオ> <記事 フェレディ> ヴィルディ> <記事 ヴィルディオヌット> <記事 ヴィルディオヴィッツ> ヴィルディオヴィッツバック（Wi"
+    }
+   ],
+   "loopPct": 0.0,
+   "movedBody": false
   }
  ],
  "bestVal": 2.8173,
@@ -8097,5 +8158,5 @@
  ],
  "wantWider": false,
  "nextD": 512,
- "bad": 1
+ "bad": 4
 }
