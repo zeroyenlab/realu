@@ -33,6 +33,39 @@ TURN_MAX = int(os.environ.get("REALU_TURN_MAX", 400))
 HEAD = re.compile(r"^<会議 ")
 
 
+def recipe(path):
+    """★★★この係の「作り方」の指紋。★網を変えたら変わる。
+
+    ★★★2026-09-17 に踏みかけた: ★網をゆるめたのに、★`もうあるから何もしない` で
+      ★**締めすぎの網で取ったものが固定される**所だった。
+      ★★前に「1回だけの印」で同じ型を踏んでいる（★2026-09-15）。
+    ★`make_pantry.py` の作り直し判定（★`sha1sum make_pantry.py`）と同じ作法にする。
+    """
+    import hashlib
+    try:
+        return hashlib.sha1(io_open(path).encode("utf-8")).hexdigest()[:12]
+    except Exception:
+        return ""
+
+
+def io_open(path):
+    with open(path, encoding="utf-8") as f:
+        return f.read()
+
+
+def stale(out, sigfile, me):
+    """★作り直すべきか。★出来上がりが無い／作り方が変わった、なら作り直す。"""
+    if not os.path.exists(out):
+        return True, ""
+    try:
+        with open(sigfile, encoding="utf-8") as f:
+            old = f.read().strip()
+    except Exception:
+        old = ""
+    now = recipe(me)
+    return (old != now), old
+
+
 def pieces(body):
     """★長い答弁は句点で切る（★同じ人のまま）。"""
     out, cur = [], ""
@@ -50,10 +83,15 @@ def main():
     if not os.path.exists(SRC):
         print("★もとの国会のごはんが無い。★何もしない")
         return 0
-    if os.path.exists(OUT):
-        print("★往復のごはんはもうある（%.0f MB）。★何もしない"
+    SIG = os.path.join(WORK, "kaiwa_recipe.txt")
+    need, old = stale(OUT, SIG, os.path.abspath(__file__))
+    if not need:
+        print("★往復のごはんはもうある（%.0f MB）。★組み直し方も変わっていない。★何もしない"
               % (os.path.getsize(OUT) / 1e6))
         return 0
+    if os.path.exists(OUT):
+        print("★★組み直し方が変わった（%s → %s）。★組み直す"
+              % (old or "なし", recipe(os.path.abspath(__file__))), flush=True)
 
     tmp = OUT + ".tmp"
     n_meet = n_turn = n_line = n_cont = 0
@@ -117,6 +155,8 @@ def main():
                 take(ln.rstrip("\n"))
             flush()
         os.replace(tmp, OUT)
+        with open(SIG, "w", encoding="utf-8") as f:
+            f.write(recipe(os.path.abspath(__file__)))
     except Exception as e:
         print("★組み直せなかった（%s）" % type(e).__name__, flush=True)
         try:

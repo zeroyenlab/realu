@@ -59,6 +59,39 @@ WIDE = re.compile("(喘[ぎぐ]|あえぎ声|愛撫|挿入|絶頂|咥え|淫|情
                   "唇を奪|肌を重|エッチ|素っ裸|前戯|絶倫)")
 
 
+def recipe(path):
+    """★★★この係の「作り方」の指紋。★網を変えたら変わる。
+
+    ★★★2026-09-17 に踏みかけた: ★網をゆるめたのに、★`もうあるから何もしない` で
+      ★**締めすぎの網で取ったものが固定される**所だった。
+      ★★前に「1回だけの印」で同じ型を踏んでいる（★2026-09-15）。
+    ★`make_pantry.py` の作り直し判定（★`sha1sum make_pantry.py`）と同じ作法にする。
+    """
+    import hashlib
+    try:
+        return hashlib.sha1(io_open(path).encode("utf-8")).hexdigest()[:12]
+    except Exception:
+        return ""
+
+
+def io_open(path):
+    with open(path, encoding="utf-8") as f:
+        return f.read()
+
+
+def stale(out, sigfile, me):
+    """★作り直すべきか。★出来上がりが無い／作り方が変わった、なら作り直す。"""
+    if not os.path.exists(out):
+        return True, ""
+    try:
+        with open(sigfile, encoding="utf-8") as f:
+            old = f.read().strip()
+    except Exception:
+        old = ""
+    now = recipe(me)
+    return (old != now), old
+
+
 def get(url):
     req = urllib.request.Request(url, headers={"User-Agent": UA})
     return urllib.request.urlopen(req, timeout=60).read()
@@ -106,10 +139,16 @@ def main():
     except Exception:
         pass
     os.makedirs(WORK, exist_ok=True)
-    if os.path.exists(OUT):
-        print("★ゲームのごはんはもうある（%.1f MB）。★何もしない"
+    SIG = os.path.join(WORK, "game_recipe.txt")
+    need, old = stale(OUT, SIG, os.path.abspath(__file__))
+    if not need:
+        print("★ゲームのごはんはもうある（%.1f MB）。★作り方も変わっていない。★何もしない"
               % (os.path.getsize(OUT) / 1e6))
         return 0
+    if os.path.exists(OUT):
+        print("★★作り方が変わった（%s → %s）。★取り直す"
+              % (old or "なし", recipe(os.path.abspath(__file__))), flush=True)
+        os.remove(OUT)
     try:
         import learn as L
         safe = L.safe
@@ -173,6 +212,8 @@ def main():
                       % (i + 1, len(paths), format(n_turn, ","), chars / 10000), flush=True)
             time.sleep(PAUSE)
     os.replace(tmp, OUT)
+    with open(SIG, "w", encoding="utf-8") as f:
+        f.write(recipe(os.path.abspath(__file__)))
 
     print("★★★ゲームのごはんができた")
     print("  %s 番 / %.1f 万字 / %.1f MB（★%d 本の物語から）"
