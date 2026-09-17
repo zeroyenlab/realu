@@ -7864,6 +7864,67 @@
    ],
    "loopPct": 1.36,
    "movedBody": false
+  },
+  {
+   "at": "2026-09-17T09:11:35Z",
+   "val": 3.7252,
+   "prev": 3.2092,
+   "valTag": "fixed-holdout-v1",
+   "stoppedAt": 0,
+   "secPerStep": 3.6113,
+   "steps": 814,
+   "bpc": 4.409,
+   "charsPerTok": 1.2189,
+   "score": 2.4564,
+   "scoreW": 2.0,
+   "scoreMode": "talk",
+   "finishMix": 0.85,
+   "lineage": "L2",
+   "layers": 10,
+   "params": 34727424,
+   "chars": 1045308899,
+   "tokens": 857567631,
+   "grew": 0,
+   "rolledBack": false,
+   "ownVal": null,
+   "ownScore": null,
+   "d": 512,
+   "loops": 1,
+   "spread": 3.3929,
+   "bytes": 416817181,
+   "heads": 8,
+   "ctx": 512,
+   "vocab": 6000,
+   "kind": "bpe",
+   "arch": "tpp-loop",
+   "wantWider": false,
+   "layerCap": 16,
+   "mixChanged": true,
+   "bySrc": {
+    "laws": 5.8455,
+    "wiki": 3.9275,
+    "aozora": 4.169,
+    "hanrei": 4.7372,
+    "kokkai": 3.4367,
+    "web": 3.6896,
+    "talk": 2.4564
+   },
+   "wrote": [
+    {
+     "start": "わたしは",
+     "text": "わたしは実際に、それをより人種の一層のような人種としては、どうかなりので、将軍もちゃんと感じていないのですよ。」 AA「それはすごい！いろいろいろあるんですか？」 EG「はい。エビコンは、全然違うので、アイデア派です。」 AA「アイリク！いいです"
+    },
+    {
+     "start": "第一条",
+     "text": "第一条に通過できるとか。」 EA「そうなんですよね？私は日本だと思っている気がします。」 FZ「まぁ、日本の苦手な方、、、、、。」 EA「とても楽しいですよね。、、」 FZ「僕は嘩威です。上がりとかも得意な感じでしょうか？"
+    },
+    {
+     "start": "この法律において",
+     "text": "この法律において�を持ってしまいます。」 AE「最近ではまっていました。ねー。私も昔、子供が好きなので、やっぱり年間にやっておきました。」 AC「学習学、出版法、学習学、学術、学級、学級、学級、学級、これを教えるという理念を抱かせていくことが多いです"
+    }
+   ],
+   "loopPct": 12.11,
+   "movedBody": false
   }
  ],
  "bestVal": 2.8173,
@@ -7910,9 +7971,9 @@
   1367789210,
   1367789210,
   1367789210,
-  1367789210
+  857567631
  ],
  "wantWider": false,
  "nextD": 512,
- "bad": 9
+ "bad": 6
 }
