@@ -8098,6 +8098,67 @@
    ],
    "loopPct": 2.87,
    "movedBody": false
+  },
+  {
+   "at": "2026-09-17T07:43:03Z",
+   "val": 3.0589,
+   "prev": 3.0589,
+   "valTag": "fixed-holdout-v1",
+   "stoppedAt": 619,
+   "secPerStep": 6.0071,
+   "steps": 1156,
+   "bpc": 3.5493,
+   "charsPerTok": 1.2434,
+   "score": 2.2061,
+   "scoreW": 2.0,
+   "scoreMode": "talk",
+   "finishMix": 0.2,
+   "lineage": "L3",
+   "layers": 11,
+   "params": 21794688,
+   "chars": 1700683524,
+   "tokens": 1367789210,
+   "grew": 0,
+   "rolledBack": true,
+   "ownVal": 3.0574,
+   "ownScore": 2.3191,
+   "d": 384,
+   "loops": 1,
+   "spread": 2.9299,
+   "bytes": 261632513,
+   "heads": 6,
+   "ctx": 512,
+   "vocab": 6000,
+   "kind": "bpe",
+   "arch": "tpp-loop",
+   "wantWider": false,
+   "layerCap": 16,
+   "mixChanged": false,
+   "bySrc": {
+    "laws": 4.3578,
+    "wiki": 3.2369,
+    "aozora": 3.6558,
+    "hanrei": 3.8559,
+    "kokkai": 2.5611,
+    "web": 3.0673,
+    "talk": 2.3191
+   },
+   "wrote": [
+    {
+     "start": "わたしは",
+     "text": "わたしはお気持ち覚えていた。おれは本当に齋藤さんの齋藤さんの言うのは、これはとにかく当局がお説明して、そうではないのか、お聞かせください。」 AB「夕方、お鳥さんのおっしゃるように、いろいろとお会いしたあり、お鳥さんが来ない"
+    },
+    {
+     "start": "第一条",
+     "text": "第一条。）のほうにおける運用に関する重要なおそれのある決議案が提出されているものであります。 ○いますそうではありません。岩手県と岩手県と岩手県を通じてみむすばこういうふうなものがあります。そういうことを言ったら、そういうふうな案が出たのです。そういうことが行われて来ている、こういうふうに聞いておるのです"
+    },
+    {
+     "start": "この法律において",
+     "text": "この法律において次項において「WAILE MURTBE WAILE HAILE」）をマスメディアにして提供することもある。 2016年2月1日の滑走ソフト『WAILE HAILE HAILE MURKHAILE MURTILE』のマスメディアを、 WAI"
+    }
+   ],
+   "loopPct": 13.59,
+   "movedBody": false
   }
  ],
  "bestVal": 2.8344,
@@ -8137,7 +8198,7 @@
   850289863,
   850289863,
   850289863,
-  850289863,
+  1367789210,
   1367789210,
   1367789210,
   1367789210,
@@ -8148,5 +8209,5 @@
  ],
  "wantWider": false,
  "nextD": 384,
- "bad": 7
+ "bad": 1
 }
