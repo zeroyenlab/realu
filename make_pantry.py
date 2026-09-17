@@ -204,10 +204,16 @@ def main():
             cap = max(0, DIET_CAP - diet_used)
             print("  ★往復（kaiwa）が %s 個 使ったので、★平らな国会は %s 個まで"
                   % (format(diet_used, ","), format(cap, ",")), flush=True)
+        # ★★★上限 0 は「1個も書かない」。★**「上限なし」ではない**（2026-09-17）。
+        #   ★`if cap:` と書くと **0 が偽**なので、★上限が無いのと同じ扱いになる。
+        #   ★★実測: 往復が枠を使い切って平らの上限が 0 になったのに、
+        #     ★平らな国会が **517.5M（棚の37.8%）** そのまま入っていた。
+        #     ★★国会だけで 56% ＝ ★2026-09-09 に決めた「30%まで下げる」が崩れていた。
+        #   ★この repo は同じ罠を `render.py` の `e()` でも踏んでいる（★そこには注意書きがある）。
+        capped = (cap is not None and cap <= 0)
         marks.append({"name": name, "at": total})
         start = total
         n_kept = n_held = 0
-        capped = False
         for r in range(rep):
             if capped and r > 0:
                 break                   # ★もう書かないので、くり返す意味がない
@@ -246,10 +252,10 @@ def main():
                 # ★★★上限の判定は flush の後（★total が動くのはそこだけ）。
                 #   ★だから「そろそろ届きそう」な時点で**先に flush する**。
                 #   ★トークン数は必ず文字数以下なので、★buf_chars を上限の見積りに使える。
-                near = cap and (total - start) + buf_chars >= cap
+                near = cap is not None and (total - start) + buf_chars >= cap
                 if buf_chars >= 4_000_000 or near:
                     flush()
-                    if cap and total - start >= cap and not capped:
+                    if cap is not None and total - start >= cap and not capped:
                         print("  ★%s は上限（%s トークン）に達した。★ここから先は読むだけ"
                               % (name, format(cap, ",")), flush=True)
                         capped = True
@@ -260,7 +266,7 @@ def main():
         note = ""
         if rep > 1:
             note += " / ★%d回くり返した" % rep
-        if cap:
+        if cap is not None:
             note += " / ★上限 %s" % format(cap, ",")
         print("  ★%s: %s 行 / 物差しへ %d 行 / このソース %s 個 / ここまで %s 個%s"
               % (name, format(n_kept, ","), n_held, format(total - start, ","),
