@@ -31,6 +31,8 @@ TRIES = int(os.environ.get("REALU_REPLY_TRIES", 32))
 TEMP = float(os.environ.get("REALU_REPLY_TEMP", 0.9))
 TOPP = float(os.environ.get("REALU_REPLY_TOPP", 0.9))    # ★裾を切る
 LAM = float(os.environ.get("REALU_REPLY_LAM", 0.6))      # ★ありふれ具合をどれだけ引くか
+# ★★一番自然なものから、これ以上離れた候補は選ばない（★珍しさだけで勝たせない）
+FLOOR = float(os.environ.get("REALU_REPLY_FLOOR", 0.70))
 MAXTOK = int(os.environ.get("REALU_REPLY_MAX", 60))
 
 
@@ -263,12 +265,26 @@ def main():
         lp = max(loops(t), echo(t))     # ★隣り合う繰り返し ＋ 離れた繰り返し
         pick = (s_ctx - LAM * s_any) - (0.02 * lp)      # ★壊れているものは下げる
         rows.append((pick, s_ctx, s_any, lp, t))
+
+    # ★★★下限（★2026-09-17）。★**日本語として無理のあるものは、珍しくても選ばない。**
+    #   ★ありふれ具合を引く選び方は、★**珍しい言い方ほど有利**になる。
+    #   ★★実測: 「暑かったね、ダメだった！」が ★文脈 -1.69（かなり不自然）なのに
+    #     ★ありふれ -2.54 の珍しさだけで4位まで上がってきていた。
+    #   → ★一番自然なものから `FLOOR` 以上離れた候補は、★はじめから外す。
+    #     ★★外した中から選ぶのではなく、★**残った中で「この話らしさ」を競わせる**。
+    top_ctx = max(r[1] for r in rows)
+    keep = [r for r in rows if r[1] >= top_ctx - FLOOR]
+    dropped = len(rows) - len(keep)
+    rows = keep or rows
     rows.sort(key=lambda r: -r[0])
     for pick, sc, sa, lp, t in rows[:8]:
         print("  %+.3f（文脈 %+.2f − ありふれ %+.2f / ループ%4.1f%%） %s"
               % (pick, sc, sa, lp, t[:48]))
     if len(rows) > 8:
         print("  …ほか %d 本" % (len(rows) - 8))
+    if dropped:
+        print("  ★日本語として無理があるので外した: %d 本"
+              "（文脈が %+.2f より下）" % (dropped, top_ctx - FLOOR))
 
     best = rows[0]
     # ★★前のやり方なら何を選んでいたかも出す（★直したことが効いているか毎回見えるように）
