@@ -33,6 +33,8 @@ TOPP = float(os.environ.get("REALU_REPLY_TOPP", 0.9))    # ★裾を切る
 LAM = float(os.environ.get("REALU_REPLY_LAM", 0.6))      # ★ありふれ具合をどれだけ引くか
 # ★★一番自然なものから、これ以上離れた候補は選ばない（★珍しさだけで勝たせない）
 FLOOR = float(os.environ.get("REALU_REPLY_FLOOR", 0.70))
+# ★★相手の言葉をこの割合まで拾うのは良い。★超えた分だけ減点（★オウム返し対策）
+COPY_OK = float(os.environ.get("REALU_REPLY_COPY", 30.0))
 MAXTOK = int(os.environ.get("REALU_REPLY_MAX", 60))
 
 
@@ -76,6 +78,24 @@ def echo(t, k=4):
         if c > 1:
             dup += c
     return 100.0 * dup / len(grams)
+
+
+def copied(t, said, k=4):
+    """★★★相手の言葉を、そのまま返していないか（★オウム返し）。
+
+    ★★2026-09-17 に踏んだ: ★「今日は何してたの？」→ ★**「今日は何してたんですか？」**
+      が1位になった。★質問に答える候補（「今日は、昼寝してました。」）は下に沈んだ。
+    ★★★なぜ勝つか: ★オウム返しは**相手の言葉をほぼそのまま返す**ので、
+      ★「その流れでの出やすさ」が飛び抜けて高くなる。
+      ★しかも**ありふれてもいない**ので、★ありふれ具合を引く選び方でも損をしない。
+      ★★**両方で得をする**。★だからここで別に見るしかない。
+    ★少し拾うのは良い（★話題を受けている）。★**丸ごと**が駄目。
+    ★返すのは「相手の発言にもある %d 文字のかたまり」が占める割合。
+    """
+    if len(t) < k or len(said) < k:
+        return 0.0
+    grams = [t[i:i + k] for i in range(len(t) - k + 1)]
+    return 100.0 * sum(1 for g in grams if g in said) / len(grams)
 
 
 def build_prompt(turns):
@@ -263,8 +283,11 @@ def main():
         s_ctx = score(model, vocab, prompt, t + "」")
         s_any = score(model, vocab, NEUTRAL, t + "」")
         lp = max(loops(t), echo(t))     # ★隣り合う繰り返し ＋ 離れた繰り返し
-        pick = (s_ctx - LAM * s_any) - (0.02 * lp)      # ★壊れているものは下げる
-        rows.append((pick, s_ctx, s_any, lp, t))
+        cp = copied(t, turns[-1])       # ★★相手の言葉をそのまま返していないか
+        pick = (s_ctx - LAM * s_any)
+        pick -= 0.02 * lp                        # ★壊れているものは下げる
+        pick -= 0.02 * max(0.0, cp - COPY_OK)    # ★★拾いすぎた分だけ下げる
+        rows.append((pick, s_ctx, s_any, lp, t, cp))
 
     # ★★★下限（★2026-09-17）。★**日本語として無理のあるものは、珍しくても選ばない。**
     #   ★ありふれ具合を引く選び方は、★**珍しい言い方ほど有利**になる。
@@ -277,9 +300,9 @@ def main():
     dropped = len(rows) - len(keep)
     rows = keep or rows
     rows.sort(key=lambda r: -r[0])
-    for pick, sc, sa, lp, t in rows[:8]:
-        print("  %+.3f（文脈 %+.2f − ありふれ %+.2f / ループ%4.1f%%） %s"
-              % (pick, sc, sa, lp, t[:48]))
+    for pick, sc, sa, lp, t, cp in rows[:8]:
+        print("  %+.3f（文脈 %+.2f − ありふれ %+.2f / ループ%4.1f%% / まね%4.1f%%） %s"
+              % (pick, sc, sa, lp, cp, t[:46]))
     if len(rows) > 8:
         print("  …ほか %d 本" % (len(rows) - 8))
     if dropped:
@@ -298,7 +321,6 @@ def main():
         print("   （出やすさだけで選んでいたら → 「%s」）" % old_plain[4][:46])
 
     # ★★★読める出口。★数字の良し悪しは人に読ませない
-    hit = sum(1 for ch in set(turns[-1]) if ch.strip() and ch in best[4])
     generic = best[2] > best[1]          # ★文脈より「単体」のほうが出やすい＝当たり障りが無い
     print("\n― 判定 ―")
     print("  返事になっているか : %s" % ("○ 1番ぶんで閉じた" if best[4] else "× 空"))
@@ -306,7 +328,10 @@ def main():
           % ("○ 少ない" if best[3] < 15 else "△ 多い" if best[3] < 40 else "× 壊れている", best[3]))
     print("  この話への返事か   : %s（文脈 %+.2f vs ありふれ %+.2f）"
           % ("× 当たり障りがない" if generic else "○ この流れで出てきた", best[1], best[2]))
-    print("  相手の言葉を拾ったか: %s（%d 文字ぶん）" % ("○" if hit >= 2 else "△", hit))
+    # ★★★ここは前は「拾ったほど良い」として出していた。★それが間違いだった ──
+    #   ★拾いすぎ＝オウム返し。★2026-09-17 に「今日は何してたんですか？」で踏んだ。
+    print("  相手の言葉のまね   : %s（%.0f%%）"
+          % ("○ 適度" if best[5] <= COPY_OK else "× そのまま返している", best[5]))
     print("  使えた本数         : %d / %d" % (len(cand), TRIES))
     return 0
 
