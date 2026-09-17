@@ -672,6 +672,16 @@ jobs:
             gh release upload food /tmp/talk.enc --clobber && echo "★会話をしまった"
             rm -f /tmp/talk.enc
           fi
+          # ★★★物語（★この回に落としてきたばかり。2026-09-17）。
+          #   ★ごはんをしまう段は**物語をもらう段より前**にあるので、
+          #     ★このままでは**次の回まで冷蔵庫に入らない**。
+          #   ★2.2MB と小さいので、★作ったその場でしまう。
+          #   ★★入れておかないと、★置き場が消えた時に**また8分かけて落とし直す**。
+          if [ -f work/game.txt.gz ]; then
+            openssl enc -aes-256-cbc -pbkdf2 -salt               -in work/game.txt.gz -out /tmp/game.enc -pass env:FOODKEY
+            gh release upload food /tmp/game.enc --clobber && echo "★物語をしまった"
+            rm -f /tmp/game.enc
+          fi
           # ★★棚（あとから作った）
           PNAME=$(basename "$REALU_PANTRY")
           if [ -d "$REALU_PANTRY" ]; then
