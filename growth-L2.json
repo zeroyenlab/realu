@@ -8291,6 +8291,67 @@
    ],
    "loopPct": 33.27,
    "movedBody": false
+  },
+  {
+   "at": "2026-09-17T22:56:29Z",
+   "val": 3.1757,
+   "prev": 3.2819,
+   "valTag": "fixed-holdout-v1",
+   "stoppedAt": 421,
+   "secPerStep": 8.9857,
+   "steps": 807,
+   "bpc": 3.7587,
+   "charsPerTok": 1.2189,
+   "score": 2.2349,
+   "scoreW": 2.0,
+   "scoreMode": "talk",
+   "finishMix": 0.85,
+   "lineage": "L2",
+   "layers": 10,
+   "params": 34727424,
+   "chars": 1045308899,
+   "tokens": 857567631,
+   "grew": 0,
+   "rolledBack": false,
+   "ownVal": null,
+   "ownScore": null,
+   "d": 512,
+   "loops": 1,
+   "spread": 3.206,
+   "bytes": 416817181,
+   "heads": 8,
+   "ctx": 512,
+   "vocab": 6000,
+   "kind": "bpe",
+   "arch": "tpp-loop",
+   "wantWider": false,
+   "layerCap": 16,
+   "mixChanged": false,
+   "bySrc": {
+    "laws": 4.5678,
+    "wiki": 3.2341,
+    "aozora": 3.6514,
+    "hanrei": 3.8586,
+    "kokkai": 2.8296,
+    "web": 3.1276,
+    "talk": 2.2349
+   },
+   "wrote": [
+    {
+     "start": "わたしは",
+     "text": "わたしは好きなので好きです」 AB「そうなんですね。好きな食べ物はありますか？」 BG「あー、昔は、好きですね。」 AB「おいしいですよね。私も好きです。」 BG「あはは、いろいろ！そういえば、どんなお菓子がお�"
+    },
+    {
+     "start": "第一条",
+     "text": "第一条において準用する旨 当該原告らは、当該原告らに対し、請求を受けて、請求若しくは原告ら負当する旨の申出を申し上げる等の措置を講じる。 <法令 民事再生法> 平成阪神・淡路大震災済みにわたる法律・改正 ーいしんろくきとうしょう、ほうほうぞとくいむそちほう 以上 昭和60年代の法則 大阪国際会館の建設規則 ひ"
+    },
+    {
+     "start": "この法律において",
+     "text": "この法律において株式会社（888））。 後述の1080巻のモーンデザイン（400巻）。 30巻のモーンデザインが発売。2015年に発売。 4000系のモーンデザイン。 モーンデザイン・デッドランプがソフト化される。 モーンデザイン が発売さ"
+    }
+   ],
+   "loopPct": 7.73,
+   "movedBody": false
   }
  ],
  "bestVal": 2.8173,
@@ -8341,5 +8402,5 @@
  ],
  "wantWider": false,
  "nextD": 512,
- "bad": 4
+ "bad": 1
 }
