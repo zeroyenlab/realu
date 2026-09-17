@@ -54,6 +54,28 @@ def loops(t):
     return 100.0 * sum(inloop) / len(t)
 
 
+def echo(t, k=4):
+    """★★離れた所で同じ言い回しが出ていないか（★`loops` は隣り合う分しか見ない）。
+
+    ★★★2026-09-17 に踏んだ: ★「暑かったら、暑かったですね」が **ループ率 0.0%** で
+      1位に選ばれた。★「暑かった」が2回出ているのに、★隣り合っていないので
+      ★`loops` では拾えなかった。
+    ★★ありふれ具合を引く選び方は、★**珍しい言い方ほど有利**になる。
+      ★だから「壊れているが珍しい」返事が勝ちやすい。★ここで落とす。
+    ★返すのは「2回以上出てくる %d 文字のかたまり」が占める割合。
+    """
+    if len(t) < k * 2:
+        return 0.0
+    grams = [t[i:i + k] for i in range(len(t) - k + 1)]
+    seen, dup = {}, 0
+    for g in grams:
+        seen[g] = seen.get(g, 0) + 1
+    for g, c in seen.items():
+        if c > 1:
+            dup += c
+    return 100.0 * dup / len(grams)
+
+
 def build_prompt(turns):
     """★往復を棚と同じ形に組む。★最後は必ずレアルの番で開いたままにする。"""
     lines = []
@@ -238,7 +260,7 @@ def main():
     for t in cand:
         s_ctx = score(model, vocab, prompt, t + "」")
         s_any = score(model, vocab, NEUTRAL, t + "」")
-        lp = loops(t)
+        lp = max(loops(t), echo(t))     # ★隣り合う繰り返し ＋ 離れた繰り返し
         pick = (s_ctx - LAM * s_any) - (0.02 * lp)      # ★壊れているものは下げる
         rows.append((pick, s_ctx, s_any, lp, t))
     rows.sort(key=lambda r: -r[0])
