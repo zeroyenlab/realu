@@ -282,7 +282,7 @@ jobs:
           if ! gh release view food >/dev/null 2>&1; then
             echo "★まだ Release にごはんは無い（★はじめての回）"; exit 0
           fi
-          for n in laws wiki hanrei kokkai kaiwa web aozora talk val val2; do
+          for n in laws wiki hanrei kokkai kaiwa game web aozora talk val val2; do
             if [ -f "work/$n.txt.gz" ]; then continue; fi
             if gh release download food -p "$n.enc" -D /tmp 2>/dev/null; then
               if openssl enc -d -aes-256-cbc -pbkdf2 -in "/tmp/$n.enc" \
@@ -498,7 +498,7 @@ jobs:
                  --title "レアルのごはん（鍵つき）" \
                  --notes "鍵をかけてある。加工したテキストなので、そのままは公開できない。" \
                  --latest=false
-          for n in laws wiki hanrei kokkai kaiwa web aozora talk val val2; do
+          for n in laws wiki hanrei kokkai kaiwa game web aozora talk val val2; do
             if [ -f "work/$n.txt.gz" ]; then
               openssl enc -aes-256-cbc -pbkdf2 -salt \
                 -in "work/$n.txt.gz" -out "/tmp/$n.enc" -pass env:FOODKEY
@@ -607,6 +607,13 @@ jobs:
       #   ★`kaiwa.txt.gz` が既にあれば何もしない（★2回目以降はただ通るだけ）。
       - name: 国会を往復の形に組み直す（はじめの一回だけ）
         run: python -u to_kaiwa.py || true
+
+      # ★★★くだけた話し言葉（★ゲームのシナリオ）。★はじめの一回だけ落としてくる。
+      #   ★棚の会話は 3〜4% しかなく、★残りは書き言葉か国会答弁だった。
+      #   ★権利者の許諾つきで Apache 2.0 で公開されているもの（★改変・再配布可）。
+      #   ★★成人向けの印がついたファイルは丸ごと外し、★さらに1発話ずつ網にかける。
+      - name: 物語のごはんをもらう（はじめの一回だけ）
+        run: python -u fetch_game.py || true
 
       - name: 棚をつくる（ごはんが増えた時だけ）
         run: |

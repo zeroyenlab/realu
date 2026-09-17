@@ -77,13 +77,16 @@ MIX = {
     "kaiwa.txt":  {"cap": DIET_CAP},
     "kokkai.txt": {"cap": DIET_CAP},   # ★★実行時に kaiwa が使った分を引く（★下）
     "talk.txt":   {"repeat": int(os.environ.get("REALU_REP_TALK", 3))},
+    # ★★ゲームのシナリオ（★くだけた話し言葉）。★小さくて大事なので厚くする。
+    #   ★★ただし**増やしすぎない** ── ★小さい棚を何度も見せると丸暗記になる。
+    "game.txt":   {"repeat": int(os.environ.get("REALU_REP_GAME", 3))},
 }
 VAL_PER_MIL = int(os.environ.get("REALU_VAL_PERMIL", 3))
 EXTRA_MAX = int(os.environ.get("REALU_EXTRA_MAX", 4000))   # ★2本目の物差しの、1ソースあたりの上限
 EXTRA_MIN = int(os.environ.get("REALU_EXTRA_MIN", 200))    # ★これ未満のソースは測っても雑音
 SRC_MARK = re.compile("^<(web|本|会話) [^>]*>$")
 
-ORDER = ("laws.txt", "wiki.txt", "aozora.txt", "talk.txt",
+ORDER = ("laws.txt", "wiki.txt", "aozora.txt", "talk.txt", "game.txt",
          "hanrei.txt", "kaiwa.txt", "kokkai.txt", "web.txt")
 
 
