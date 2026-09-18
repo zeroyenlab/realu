@@ -8962,6 +8962,67 @@
    ],
    "loopPct": 29.9,
    "movedBody": false
+  },
+  {
+   "at": "2026-09-18T13:14:46Z",
+   "val": 3.1184,
+   "prev": 3.1455,
+   "valTag": "fixed-holdout-v1",
+   "stoppedAt": 471,
+   "secPerStep": 7.9956,
+   "steps": 803,
+   "bpc": 3.6909,
+   "charsPerTok": 1.2189,
+   "score": 2.1632,
+   "scoreW": 2.0,
+   "scoreMode": "talk",
+   "finishMix": 0.85,
+   "lineage": "L2",
+   "layers": 10,
+   "params": 34727424,
+   "chars": 1045308899,
+   "tokens": 857567631,
+   "grew": 0,
+   "rolledBack": false,
+   "ownVal": null,
+   "ownScore": null,
+   "d": 512,
+   "loops": 1,
+   "spread": 3.1058,
+   "bytes": 416817181,
+   "heads": 8,
+   "ctx": 512,
+   "vocab": 6000,
+   "kind": "bpe",
+   "arch": "tpp-loop",
+   "wantWider": false,
+   "layerCap": 16,
+   "mixChanged": false,
+   "bySrc": {
+    "laws": 4.5027,
+    "wiki": 3.2739,
+    "aozora": 3.6922,
+    "hanrei": 3.6951,
+    "kokkai": 2.8452,
+    "web": 3.0499,
+    "talk": 2.1632
+   },
+   "wrote": [
+    {
+     "start": "わたしは",
+     "text": "わたしはどうでしょう？」 BV「この前やってたんですが、スチュワークをやってました。」 BF「何かお好きなんですか？」 BV「チョコはしかもカツつつ。」 BF「焼肉じゃがいしか食べないです。」 BV「チョコはお好きですか？」"
+    },
+    {
+     "start": "第一条",
+     "text": "第一条」 CS「確かに、凄いですね。」 CF「深夜はさっき笑ってました。」 CS「そうですよね。高校生の時はあれすごいと思ってました。」 CF「高校生の頃って、どうでしたか。今は、辛いですよね。」 CS「子供もなってました。」 CF"
+    },
+    {
+     "start": "この法律において",
+     "text": "この法律において�式条の二第四項てころがたいでい てしまっておいてみる場合にもよりました。」 店「ありがとうございます。そういたしますと、Tague Tagues Tagu Station hone Anter Station Station Station 1"
+    }
+   ],
+   "loopPct": 7.51,
+   "movedBody": false
   }
  ],
  "bestVal": 2.8173,
@@ -8986,7 +9047,6 @@
   850289863,
   850289863,
   850289863,
-  850289863,
   1367789210,
   1367789210,
   1367789210,
@@ -8994,6 +9054,7 @@
   1367789210,
   1367789210,
   1367789210,
+  857567631,
   857567631,
   857567631,
   857567631,
@@ -9012,5 +9073,5 @@
  ],
  "wantWider": false,
  "nextD": 512,
- "bad": 2
+ "bad": 0
 }
