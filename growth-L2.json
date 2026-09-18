@@ -8596,6 +8596,67 @@
    ],
    "loopPct": 18.01,
    "movedBody": false
+  },
+  {
+   "at": "2026-09-18T05:38:21Z",
+   "val": 3.1455,
+   "prev": 3.1455,
+   "valTag": "fixed-holdout-v1",
+   "stoppedAt": 464,
+   "secPerStep": 8.1067,
+   "steps": 806,
+   "bpc": 3.723,
+   "charsPerTok": 1.2189,
+   "score": 2.1636,
+   "scoreW": 2.0,
+   "scoreMode": "talk",
+   "finishMix": 0.85,
+   "lineage": "L2",
+   "layers": 10,
+   "params": 34727424,
+   "chars": 1045308899,
+   "tokens": 857567631,
+   "grew": 0,
+   "rolledBack": true,
+   "ownVal": 3.286,
+   "ownScore": 2.1947,
+   "d": 512,
+   "loops": 1,
+   "spread": 2.8996,
+   "bytes": 416817181,
+   "heads": 8,
+   "ctx": 512,
+   "vocab": 6000,
+   "kind": "bpe",
+   "arch": "tpp-loop",
+   "wantWider": false,
+   "layerCap": 16,
+   "mixChanged": false,
+   "bySrc": {
+    "laws": 4.623,
+    "wiki": 3.3176,
+    "aozora": 3.6906,
+    "hanrei": 3.8291,
+    "kokkai": 2.9606,
+    "web": 3.1288,
+    "talk": 2.1947
+   },
+   "wrote": [
+    {
+     "start": "わたしは",
+     "text": "わたしはわいわれています。」 AG「ちょっと違うと、ファミコンが外で違うのですね。」 AG「私も、大推しなこともあったら自分の方がいいと思います。」 AG「ですよねー。私は、あまりアビが必要です。」 AG「それがかわいくて、20代のポケモンは"
+    },
+    {
+     "start": "第一条",
+     "text": "第一条の規定は、族族、集団、国家、人民、国家、価値観の台所法は、民間人（国際法上、法制上、国際法上、日本法上1条規定）とする。 「他」とは、国連上位の作法と項目の領域関係を統制的に評価する法律（重要法制上 両法律 ）は、日本法上、日本法上、飲食力、飲食力、飲食力、飲"
+    },
+    {
+     "start": "この法律において",
+     "text": "この法律において怪しいですが。」 AB「たしかに。思い出は、どんな風になるか、もう少し気になっているのか。」 BI「そうなんです。そっかー！」 AB「今まで、いろいろ倒していく時は、私が世界に通っております。」 BI「そうなんですね。私、"
+    }
+   ],
+   "loopPct": 9.27,
+   "movedBody": false
   }
  ],
  "bestVal": 2.8173,
@@ -8646,5 +8707,5 @@
  ],
  "wantWider": false,
  "nextD": 512,
- "bad": 4
+ "bad": 3
 }
