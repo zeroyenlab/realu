@@ -94,6 +94,14 @@ THREADS = int(os.environ.get("REALU_THREADS", 4))
 # ★★★GPUがあれば使う。★無ければCPU。★どちらでも同じコードが走る。
 #   ★Actions は4CPU。★Kaggle は T4/P100 が週30時間ただで使える。
 #   ★★頭が小さいのでGPUを埋めきれない。★だから batch を大きくして埋める。
+def amp_on():
+    """★★GPU の時だけ半精度にする入れ物。★CPU の時は**何もしない**。"""
+    import contextlib
+    if DEV.type == "cuda" and os.environ.get("REALU_AMP", "1") == "1":
+        return torch.amp.autocast("cuda", dtype=torch.float16)
+    return contextlib.nullcontext()
+
+
 def pick_device():
     try:
         if os.environ.get("REALU_CPU") != "1" and torch.cuda.is_available():
@@ -1103,6 +1111,16 @@ def main():
     before_layers = len(model.blocks)
 
     step_log("学びはじめ")
+    # ★★★GPU の時だけ半精度で学ぶ（★2026-09-18）。
+    #   ★★実測（T4・幅768・16層・batch16）: ★fp32 1.969 秒/歩 → **fp16 0.590 秒/歩**。
+    #     ★CPU の 28.9 秒/歩 に対して、★fp32 で 14.7倍・★**fp16 で 49倍**。
+    #   ★★★CPU の時は何も変わらない（★`amp_on()` が素通り・`scaler` は None）。
+    #     ★T4 は bf16 が遅いので **fp16 を使う**（★別の機械で測って踏んだ罠）。
+    scaler = (torch.amp.GradScaler("cuda")
+              if (DEV.type == "cuda" and os.environ.get("REALU_AMP", "1") == "1")
+              else None)
+    if scaler is not None:
+        print("★★半精度（fp16）で学ぶ。★1歩がおよそ3倍速くなる", flush=True)
     opt = torch.optim.AdamW(model.parameters(), lr=LR, weight_decay=0.01, betas=(0.9, 0.95))
     # ★★★「良くなったか」を、★回をまたいで数える。
     #   ★前は毎回 best=9e9 から始めていた。すると:
@@ -1291,7 +1309,8 @@ def main():
         model.train()
         x, y = batch(tr, model.ctx, BATCH, tiers,
                      focus=focus_range if in_finish else None, focus_p=FINISH_MIX)
-        logits, loss = model(x, y)
+        with amp_on():
+            logits, loss = model(x, y)
         if teacher is not None:
             # ★★★先生に同じ文章を見せて、★「どう答えるか」を教わる。
             #   ★★ただし w は少しずつ0へ。★後半は先生から手を放して自分で学ぶ。
@@ -1304,9 +1323,18 @@ def main():
                     F.log_softmax(tl / TEACH_T, dim=-1),
                     reduction="batchmean", log_target=True)
         opt.zero_grad(set_to_none=True)
-        loss.backward()
-        torch.nn.utils.clip_grad_norm_(model.parameters(), 1.0)
-        opt.step()
+        if scaler is not None:
+            # ★★★半精度で学ぶ時は、★勾配が小さすぎて0に潰れる。
+            #   ★だから一度大きくして逆伝播し、★clip の前に元へ戻す。
+            scaler.scale(loss).backward()
+            scaler.unscale_(opt)
+            torch.nn.utils.clip_grad_norm_(model.parameters(), 1.0)
+            scaler.step(opt)
+            scaler.update()
+        else:
+            loss.backward()
+            torch.nn.utils.clip_grad_norm_(model.parameters(), 1.0)
+            opt.step()
 
         if step % EVAL_EVERY:
             continue
