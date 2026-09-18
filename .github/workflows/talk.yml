@@ -24,6 +24,9 @@ on:
       say0:
         description: "（任意）そのさらに前の自分の言葉"
         default: ""
+      bench:
+        description: "1 にすると、20例ぶんの候補表を bench_reply.json に書き出す（つまみ調整用）"
+        default: "0"
       lineage:
         description: "だれと話すか（L1 / L2 / L3）"
         default: "L1"
@@ -103,3 +106,15 @@ jobs:
           [ -n "$SAY2" ] && ARGS+=("$SAY2")
           ARGS+=("$SAY")
           python reply.py "${ARGS[@]}"
+
+      # ★★★つまみを手元で回せるように、★候補表をまとめて書き出す（★2026-09-18）。
+      #   ★選び方のつまみは5つある。★**2例で5つ決めるのは当てずっぽう**だった。
+      #   ★頭を動かすのは1回だけにして、★あとは手元で何度でも試す。
+      - name: 候補表を書き出す（つまみ調整用）
+        if: inputs.bench == '1'
+        env:
+          REALU_THREADS: "4"
+        run: |
+          python -u bench_reply.py
+          echo "――― ここから下をコピーして手元で使う ―――"
+          cat bench_reply.json

@@ -30,11 +30,24 @@ ME, YOU = "AB", "AA"           # ★レアル / 相手（★棚の記号と同�
 TRIES = int(os.environ.get("REALU_REPLY_TRIES", 32))
 TEMP = float(os.environ.get("REALU_REPLY_TEMP", 0.9))
 TOPP = float(os.environ.get("REALU_REPLY_TOPP", 0.9))    # ★裾を切る
-LAM = float(os.environ.get("REALU_REPLY_LAM", 0.6))      # ★ありふれ具合をどれだけ引くか
+# ★★ありふれ具合をどれだけ引くか。★0.6 → 1.0（2026-09-18）。
+#   ★実測: ★「おなかすいた」に **「今日はありがとうございました。」** が勝っていた。
+#     ★同じ回の候補に「★ですね。それでお昼ご飯食べましたか？」があったのに3位。
+#   ★★下限（FLOOR）を入れてあるので、★引く量を増やしても
+#     ★「珍しいだけの変な返事」は上がってこない。★だから強めにできる。
+LAM = float(os.environ.get("REALU_REPLY_LAM", 1.0))
+# ★★★短くて無難な返事が勝ちすぎるのを抑える（2026-09-18）。
+#   ★点は1トークンあたりの平均なので長さで割ってはいるが、★それでも
+#     ★★「そうなんですか。」のような**短い相槌**が有利なまま。
+#   ★1文字あたり少しだけ足す。★★ただし上限つき（★長いほど良い、にはしない）。
+LENB = float(os.environ.get("REALU_REPLY_LENB", 0.008))
+LENB_MAX = int(os.environ.get("REALU_REPLY_LENB_MAX", 30))   # ★この字数ぶんで打ち止め
 # ★★一番自然なものから、これ以上離れた候補は選ばない（★珍しさだけで勝たせない）
 FLOOR = float(os.environ.get("REALU_REPLY_FLOOR", 0.70))
 # ★★相手の言葉をこの割合まで拾うのは良い。★超えた分だけ減点（★オウム返し対策）
 COPY_OK = float(os.environ.get("REALU_REPLY_COPY", 30.0))
+# ★★下限で切りすぎないように、★最低この本数は必ず残す
+KEEP_MIN = int(os.environ.get("REALU_REPLY_KEEP", 8))
 MAXTOK = int(os.environ.get("REALU_REPLY_MAX", 60))
 
 
@@ -287,6 +300,7 @@ def main():
         pick = (s_ctx - LAM * s_any)
         pick -= 0.02 * lp                        # ★壊れているものは下げる
         pick -= 0.02 * max(0.0, cp - COPY_OK)    # ★★拾いすぎた分だけ下げる
+        pick += LENB * min(len(t), LENB_MAX)     # ★★短い相槌が勝ちすぎるのを抑える
         rows.append((pick, s_ctx, s_any, lp, t, cp))
 
     # ★★★下限（★2026-09-17）。★**日本語として無理のあるものは、珍しくても選ばない。**
@@ -297,6 +311,11 @@ def main():
     #     ★★外した中から選ぶのではなく、★**残った中で「この話らしさ」を競わせる**。
     top_ctx = max(r[1] for r in rows)
     keep = [r for r in rows if r[1] >= top_ctx - FLOOR]
+    # ★★★短い問いかけだと**全体の点が下がる**ので、★下限で切りすぎる（2026-09-18）。
+    #   ★実測: ★「おなかすいた」で **32本中26本** を外していた。
+    #   → ★何本かは必ず残す。★残った中で競わせる。
+    if len(keep) < KEEP_MIN:
+        keep = sorted(rows, key=lambda r: -r[1])[:KEEP_MIN]
     dropped = len(rows) - len(keep)
     rows = keep or rows
     rows.sort(key=lambda r: -r[0])
