@@ -10965,6 +10965,67 @@
    ],
    "loopPct": 6.82,
    "movedBody": false
+  },
+  {
+   "at": "2026-09-19T22:27:50Z",
+   "val": 2.9459,
+   "prev": 2.9459,
+   "valTag": "fixed-holdout-v1",
+   "stoppedAt": 0,
+   "secPerStep": 2.853,
+   "steps": 1052,
+   "bpc": 3.4867,
+   "charsPerTok": 1.2189,
+   "score": 2.24,
+   "scoreW": 2.0,
+   "scoreMode": "talk",
+   "finishMix": 0.2,
+   "lineage": "L3",
+   "layers": 12,
+   "params": 23564928,
+   "chars": 1045308899,
+   "tokens": 857567631,
+   "grew": 0,
+   "rolledBack": true,
+   "ownVal": 3.0532,
+   "ownScore": 2.3288,
+   "d": 384,
+   "loops": 1,
+   "spread": 3.2059,
+   "bytes": 282883685,
+   "heads": 6,
+   "ctx": 512,
+   "vocab": 6000,
+   "kind": "bpe",
+   "arch": "tpp-loop",
+   "wantWider": false,
+   "layerCap": 16,
+   "mixChanged": false,
+   "bySrc": {
+    "laws": 4.4185,
+    "wiki": 3.3386,
+    "aozora": 3.5869,
+    "hanrei": 3.8734,
+    "kokkai": 2.7958,
+    "web": 3.1092,
+    "talk": 2.3288
+   },
+   "wrote": [
+    {
+     "start": "わたしは",
+     "text": "わたしは、ブラックホール・ウィとウィアード用Mixite Rivis AVIC - Windows Moyon Ax （1968年） クラブパブリショット（2003年） クラブパブリックホール・ユニット（2002年） クラブライブライブ（2"
+    },
+    {
+     "start": "第一条",
+     "text": "第一条法附則附則附則附則附則附則�繊維資料異議盤盤盤盤盤盤盤盤盤盤盤盤盤盤盤盤盤盤盤盤盤盤盤盤盤盤盤盤盤盤盤盤盤盤盤盤盤盤盤盤盤盤盤に入り前筋肉盤盤盤盤盤で筋肉盤盤盤や飲料仕様盤盤盤盤盤を採用し、「ホシカル兜ゼノキ」と称された「 橋本"
+    },
+    {
+     "start": "この法律において",
+     "text": "この法律において、当該項の規定により、それぞれ当該各号に定める事項に係る情報の公開及び公開に関する重要事項その他のの書面を公表しなければならない。 施行日 施行日 施行日 施行日 施行日 施行日 施行日 施行日 施行日 施行日 施行日 施行日 施行日 施行日並びに施行日 施行日 施行日 施行日 施行日 施行日 施行日 施行日 施行日 施行日 施行日 施行日 施行日 施行日 施行日"
+    }
+   ],
+   "loopPct": 48.93,
+   "movedBody": false
   }
  ],
  "bestVal": 2.8344,
@@ -11015,5 +11076,5 @@
  ],
  "wantWider": false,
  "nextD": 384,
- "bad": 1
+ "bad": 9
 }
