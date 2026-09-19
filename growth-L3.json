@@ -11026,6 +11026,67 @@
    ],
    "loopPct": 48.93,
    "movedBody": false
+  },
+  {
+   "at": "2026-09-19T23:54:19Z",
+   "val": 2.9459,
+   "prev": 2.9459,
+   "valTag": "fixed-holdout-v1",
+   "stoppedAt": 607,
+   "secPerStep": 6.1337,
+   "steps": 1052,
+   "bpc": 3.4867,
+   "charsPerTok": 1.2189,
+   "score": 2.24,
+   "scoreW": 2.0,
+   "scoreMode": "talk",
+   "finishMix": 0.2,
+   "lineage": "L3",
+   "layers": 12,
+   "params": 23564928,
+   "chars": 1045308899,
+   "tokens": 857567631,
+   "grew": 0,
+   "rolledBack": true,
+   "ownVal": 2.9546,
+   "ownScore": 2.3034,
+   "d": 384,
+   "loops": 1,
+   "spread": 2.9224,
+   "bytes": 282883685,
+   "heads": 6,
+   "ctx": 512,
+   "vocab": 6000,
+   "kind": "bpe",
+   "arch": "tpp-loop",
+   "wantWider": false,
+   "layerCap": 16,
+   "mixChanged": false,
+   "bySrc": {
+    "laws": 4.2811,
+    "wiki": 3.1602,
+    "aozora": 3.4992,
+    "hanrei": 3.6349,
+    "kokkai": 2.6951,
+    "web": 2.999,
+    "talk": 2.3034
+   },
+   "wrote": [
+    {
+     "start": "わたしは",
+     "text": "わたしは、愛知県は江戸に降伏し、浪漫も盛んになった。この崩壊は、江戸幕府は、江戸幕府による「江戸橋の乱」により、江戸幕府は、江戸幕府の下腹に陽謀し、江戸幕府を滅ぼした。江戸幕府は、�"
+    },
+    {
+     "start": "第一条",
+     "text": "第一条同条第三項中型式規格規格番号番号番号番号番号であり、他に20010 A が入り�NCMESIONの開発を担当するが、2011年より A に標準HDAに於けるか、もしくはITESIONの開発を担当するか、電子マネージメントの開発を担当するか、同社の開発を担当するか、コンパクト機能を担当するか"
+    },
+    {
+     "start": "この法律において",
+     "text": "この法律において「三者」とあるのは「三者」と、「三者が共有する急勾勾勾勾勾勾勾勾勾勾勾勾勾勾勾勾勾勾勾勾勾勾勾勾勢勾勾勾勾勾勾勢勾勢勾勾勾勾勢勾勾勾勾勢勾勾勾"
+    }
+   ],
+   "loopPct": 31.38,
+   "movedBody": false
   }
  ],
  "bestVal": 2.8344,
@@ -11076,5 +11137,5 @@
  ],
  "wantWider": false,
  "nextD": 384,
- "bad": 9
+ "bad": 4
 }
