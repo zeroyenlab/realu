@@ -10304,6 +10304,67 @@
    ],
    "loopPct": 37.33,
    "movedBody": false
+  },
+  {
+   "at": "2026-09-19T16:18:48Z",
+   "val": 3.3247,
+   "prev": 3.5268,
+   "valTag": "fixed-holdout-v1",
+   "stoppedAt": 562,
+   "secPerStep": 6.644,
+   "steps": 879,
+   "bpc": 3.9351,
+   "charsPerTok": 1.2189,
+   "score": 2.2784,
+   "scoreW": 2.0,
+   "scoreMode": "talk",
+   "finishMix": 0.85,
+   "lineage": "L2",
+   "layers": 11,
+   "params": 37890560,
+   "chars": 1045308899,
+   "tokens": 857567631,
+   "grew": 0,
+   "rolledBack": false,
+   "ownVal": null,
+   "ownScore": null,
+   "d": 512,
+   "loops": 1,
+   "spread": 3.215,
+   "bytes": 454783041,
+   "heads": 8,
+   "ctx": 512,
+   "vocab": 6000,
+   "kind": "bpe",
+   "arch": "tpp-loop",
+   "wantWider": false,
+   "layerCap": 16,
+   "mixChanged": false,
+   "bySrc": {
+    "laws": 4.6061,
+    "wiki": 3.4335,
+    "aozora": 3.7648,
+    "hanrei": 4.0651,
+    "kokkai": 3.028,
+    "web": 3.3431,
+    "talk": 2.2784
+   },
+   "wrote": [
+    {
+     "start": "わたしは",
+     "text": "わたしはシリーズは1000円位であればチームは2000円になることが多かったから、当初はシリーズが2000円に達したりしました。」 BF「わたしも3000円位が全くないです。1110円は最近高いですでしょうか？」 AH「そうですね。少しずつ高いので、全然"
+    },
+    {
+     "start": "第一条",
+     "text": "第一条第五号方法は、縦割りの拡充・分担分担分担分担分担分担分担分担分担々支給する。 ɼ長は、太字の周波数は、空視済担分担分担分担分担分担分担分担分担総務課長を占める。 太字の監視委員会としては、太字の経済産業大臣が、その地抵抗する略奪的技術を発揮しなければならない。 ただし、太字の総合科学が"
+    },
+    {
+     "start": "この法律において",
+     "text": "この法律においてともいわなければなりません。」 BH「それですねー。お休みの日は何をされてますか？」 ES「すごい！3日に1日でしたね」 BH「それはいいですね。時間したことありますか？」 ES「そうです、私は1日だけです。」 BH「一日も旦那さんの休みの日"
+    }
+   ],
+   "loopPct": 16.98,
+   "movedBody": false
   }
  ],
  "bestVal": 2.8173,
@@ -10354,5 +10415,5 @@
  ],
  "wantWider": false,
  "nextD": 512,
- "bad": 3
+ "bad": 2
 }
