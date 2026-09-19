@@ -10548,6 +10548,67 @@
    ],
    "loopPct": 15.12,
    "movedBody": false
+  },
+  {
+   "at": "2026-09-19T21:23:43Z",
+   "val": 3.1931,
+   "prev": 3.3375,
+   "valTag": "fixed-holdout-v1",
+   "stoppedAt": 425,
+   "secPerStep": 8.8927,
+   "steps": 729,
+   "bpc": 3.7793,
+   "charsPerTok": 1.2189,
+   "score": 2.2421,
+   "scoreW": 2.0,
+   "scoreMode": "talk",
+   "finishMix": 0.85,
+   "lineage": "L2",
+   "layers": 11,
+   "params": 37890560,
+   "chars": 1045308899,
+   "tokens": 857567631,
+   "grew": 0,
+   "rolledBack": false,
+   "ownVal": null,
+   "ownScore": null,
+   "d": 512,
+   "loops": 1,
+   "spread": 3.4244,
+   "bytes": 454783041,
+   "heads": 8,
+   "ctx": 512,
+   "vocab": 6000,
+   "kind": "bpe",
+   "arch": "tpp-loop",
+   "wantWider": false,
+   "layerCap": 16,
+   "mixChanged": false,
+   "bySrc": {
+    "laws": 4.4052,
+    "wiki": 3.195,
+    "aozora": 3.5631,
+    "hanrei": 3.7404,
+    "kokkai": 2.7791,
+    "web": 3.0821,
+    "talk": 2.2421
+   },
+   "wrote": [
+    {
+     "start": "わたしは",
+     "text": "わたしはトークとかですかね。」 AO「トーク自体はちょっとVですね。」 AH「そうですね。DVDはVですが、やっとVBはF44です。」 AO「私は、VMLはVFです。」 AH「NTTドコモは何をやってるのですか？」 AO「Twi"
+    },
+    {
+     "start": "第一条",
+     "text": "第一条をもつてする。 ただし、契約を締結した場合は、この限りでない。 kourpy station Amepy Station Amenter-ing station Amenter-Poner-ing station Amenter-ing station Bu"
+    },
+    {
+     "start": "この法律において",
+     "text": "この法律において「ファミマ」と称される [ 5 ] 。 第24回 神奈川県 高知市 に移行。 所属カップアリー を目指すのが初めてで、 美術館 が 農山 などに移転し、そこになる。 第26回 神奈川県 新潟市 の一部に移行。 2021年6月31日"
+    }
+   ],
+   "loopPct": 1.75,
+   "movedBody": false
   }
  ],
  "bestVal": 2.8173,
@@ -10557,7 +10618,7 @@
  "marks": [
   1367789210,
   1367789210,
-  1367789210,
+  857567631,
   857567631,
   857567631,
   857567631,
@@ -10598,5 +10659,5 @@
  ],
  "wantWider": false,
  "nextD": 512,
- "bad": 3
+ "bad": 1
 }
