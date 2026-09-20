@@ -10914,6 +10914,67 @@
    ],
    "loopPct": 4.38,
    "movedBody": false
+  },
+  {
+   "at": "2026-09-20T04:51:55Z",
+   "val": 3.08,
+   "prev": 3.0463,
+   "valTag": "fixed-holdout-v1",
+   "stoppedAt": 388,
+   "secPerStep": 9.7996,
+   "steps": 731,
+   "bpc": 3.6454,
+   "charsPerTok": 1.2189,
+   "score": 2.1313,
+   "scoreW": 2.0,
+   "scoreMode": "talk",
+   "finishMix": 0.85,
+   "lineage": "L2",
+   "layers": 11,
+   "params": 37890560,
+   "chars": 1045308899,
+   "tokens": 857567631,
+   "grew": 0,
+   "rolledBack": false,
+   "ownVal": null,
+   "ownScore": null,
+   "d": 512,
+   "loops": 1,
+   "spread": 2.9117,
+   "bytes": 454783041,
+   "heads": 8,
+   "ctx": 512,
+   "vocab": 6000,
+   "kind": "bpe",
+   "arch": "tpp-loop",
+   "wantWider": false,
+   "layerCap": 16,
+   "mixChanged": false,
+   "bySrc": {
+    "laws": 4.279,
+    "wiki": 3.2503,
+    "aozora": 3.563,
+    "hanrei": 3.7187,
+    "kokkai": 2.7673,
+    "web": 3.1259,
+    "talk": 2.1313
+   },
+   "wrote": [
+    {
+     "start": "わたしは",
+     "text": "わたしはスマホのスマホは、一音がラタですね。」 AB「確かに。スマホのラタで円安が出てくるのだよね。」 AC「ほんとですよね。ソフトウェアのラタが急に落ちつきます。」 AB「なるほど。」"
+    },
+    {
+     "start": "第一条",
+     "text": "第一条第五号ロロンですか」 DR「ゲーム機は多いですか？」 DF「はい、ゲーム機も多いです。」 DR「どんなゲーム機がお得ですか」 DF「そうなんです。マウントライフなんですが、マウントライフが多いですね。」 DR「そうなんです"
+    },
+    {
+     "start": "この法律において",
+     "text": "この法律において「スペインは、イタリアンを中心に、イタリア人の尊敬を信濃とすることをはっきり聞きます」 DR「そうなんですね！アジア人のほうがおいしいですね！」 DM「アジア人の感染をもたらすものがおいしくて好きです．」 DR「そうなんですね"
+    }
+   ],
+   "loopPct": 0.88,
+   "movedBody": false
   }
  ],
  "bestVal": 2.8173,
@@ -10964,5 +11025,5 @@
  ],
  "wantWider": false,
  "nextD": 512,
- "bad": 3
+ "bad": 2
 }
