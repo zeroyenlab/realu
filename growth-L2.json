@@ -10731,6 +10731,67 @@
    ],
    "loopPct": 2.6,
    "movedBody": false
+  },
+  {
+   "at": "2026-09-20T01:09:56Z",
+   "val": 3.0463,
+   "prev": 3.0757,
+   "valTag": "fixed-holdout-v1",
+   "stoppedAt": 429,
+   "secPerStep": 8.8157,
+   "steps": 731,
+   "bpc": 3.6055,
+   "charsPerTok": 1.2189,
+   "score": 2.1585,
+   "scoreW": 2.0,
+   "scoreMode": "talk",
+   "finishMix": 0.85,
+   "lineage": "L2",
+   "layers": 11,
+   "params": 37890560,
+   "chars": 1045308899,
+   "tokens": 857567631,
+   "grew": 0,
+   "rolledBack": false,
+   "ownVal": null,
+   "ownScore": null,
+   "d": 512,
+   "loops": 1,
+   "spread": 3.2696,
+   "bytes": 454783041,
+   "heads": 8,
+   "ctx": 512,
+   "vocab": 6000,
+   "kind": "bpe",
+   "arch": "tpp-loop",
+   "wantWider": false,
+   "layerCap": 16,
+   "mixChanged": false,
+   "bySrc": {
+    "laws": 4.3163,
+    "wiki": 3.1883,
+    "aozora": 3.5371,
+    "hanrei": 3.6796,
+    "kokkai": 2.824,
+    "web": 3.0804,
+    "talk": 2.1585
+   },
+   "wrote": [
+    {
+     "start": "わたしは",
+     "text": "わたしは、一度は、週末ゴールドワークでお話しします。」 BY「ゴールドワークは、ちょっと気になります。」 BW「そうですね、お仕事とかはしていますか？」 BY「はい、買い物に行くと、遠いので、しつつ買ってしまいます。」 BW「お"
+    },
+    {
+     "start": "第一条",
+     "text": "第一条退職年金制度を導入して、ごく少数者の単独教材と交換することによって研究が進められる。 2020年頃までは、今度はウィングを通じて人間ともに集めた将来心理学が結成され、人間の祖先は大きりな駆逐艦のような運命的な役割を果たしている。 2023年にアンソニー・ジ"
+    },
+    {
+     "start": "この法律において",
+     "text": "この法律において「外国語」という意味では、2021年4月27日に「外国語」が用いられている [ 21 ] 。 日本においても、2007年7月17日に、日本国内で1975年1月16日に日本国際で開催された「国語辞典」の例を検討するなど、一部の国語辞典も含まれている。 2008年度以"
+    }
+   ],
+   "loopPct": 4.71,
+   "movedBody": false
   }
  ],
  "bestVal": 2.8173,
@@ -10781,5 +10842,5 @@
  ],
  "wantWider": false,
  "nextD": 512,
- "bad": 1
+ "bad": 2
 }
