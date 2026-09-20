@@ -11341,6 +11341,67 @@
    ],
    "loopPct": 17.1,
    "movedBody": false
+  },
+  {
+   "at": "2026-09-20T13:35:44Z",
+   "val": 2.9992,
+   "prev": 2.9992,
+   "valTag": "fixed-holdout-v1",
+   "stoppedAt": 477,
+   "secPerStep": 7.8855,
+   "steps": 737,
+   "bpc": 3.5499,
+   "charsPerTok": 1.2189,
+   "score": 2.1163,
+   "scoreW": 2.0,
+   "scoreMode": "talk",
+   "finishMix": 0.85,
+   "lineage": "L2",
+   "layers": 11,
+   "params": 37890560,
+   "chars": 1045308899,
+   "tokens": 857567631,
+   "grew": 0,
+   "rolledBack": true,
+   "ownVal": 2.9895,
+   "ownScore": 2.2488,
+   "d": 512,
+   "loops": 1,
+   "spread": 3.0266,
+   "bytes": 454783041,
+   "heads": 8,
+   "ctx": 512,
+   "vocab": 6000,
+   "kind": "bpe",
+   "arch": "tpp-loop",
+   "wantWider": false,
+   "layerCap": 16,
+   "mixChanged": false,
+   "bySrc": {
+    "laws": 4.3864,
+    "wiki": 3.1775,
+    "aozora": 3.575,
+    "hanrei": 3.6001,
+    "kokkai": 2.7528,
+    "web": 3.1055,
+    "talk": 2.2488
+   },
+   "wrote": [
+    {
+     "start": "わたしは",
+     "text": "わたしは、気象庁が統合しています。」 AA「そうなんですね。年に数回しかないので、今日は必ずしもそうです。」 HA「２時間ですか？そうなんですか？」 AA「そうなんです。一日3時間しかなあ」 HA「私は2時間です。結構長くなる夜ともに"
+    },
+    {
+     "start": "第一条",
+     "text": "第一条の規定による者について、次に掲げる基準に従って、その適用期限が経過後二年以内休止する。 当該改正前の��に係る適用期限が経過後十年間（法の施行後年私立学校大学大学院間を除く。）から前条各号に掲げる基準に従って入学するため、��校舎等高等専門学校卒業生等列車指定する要件を満たすことにより、当該廃校又は廃校。 当該改正前の事業年度書には、次の各号に掲げる基準に従い、当該改正前の任期満了の日（施行期日が施行範囲内で制度化され、又は施行期"
+    },
+    {
+     "start": "この法律において",
+     "text": "この法律において「yabbed」という」という漫画へ入ります。 なお、近辺の駅からまだよいです。 なお、モントーリー・デッカー JapanA JapanA JapanA JapanA JapanA JapanA JapanA JapanA Jap"
+    }
+   ],
+   "loopPct": 23.85,
+   "movedBody": false
   }
  ],
  "bestVal": 2.8173,
@@ -11391,5 +11452,5 @@
  ],
  "wantWider": false,
  "nextD": 512,
- "bad": 6
+ "bad": 3
 }
