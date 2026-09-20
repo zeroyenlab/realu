@@ -1,63 +1,6 @@
 {
  "runs": [
   {
-   "at": "2026-09-09T22:45:05Z",
-   "val": 3.1284,
-   "prev": 3.0293,
-   "valTag": "fixed-holdout-v1",
-   "stoppedAt": 1015,
-   "secPerStep": 3.6265,
-   "steps": 2114,
-   "bpc": 3.6989,
-   "charsPerTok": 1.2202,
-   "score": 2.5482,
-   "scoreW": 2.0,
-   "layers": 8,
-   "params": 16483968,
-   "chars": 1037515847,
-   "tokens": 850289863,
-   "grew": 1,
-   "rolledBack": false,
-   "ownVal": null,
-   "ownScore": null,
-   "d": 384,
-   "loops": 1,
-   "spread": 3.0124,
-   "bytes": 197879125,
-   "heads": 6,
-   "ctx": 256,
-   "vocab": 6000,
-   "kind": "bpe",
-   "arch": "tpp-loop",
-   "wantWider": false,
-   "layerCap": 16,
-   "mixChanged": false,
-   "bySrc": {
-    "laws": 4.6765,
-    "wiki": 3.3098,
-    "aozora": 3.7429,
-    "hanrei": 3.939,
-    "kokkai": 2.7763,
-    "web": 3.2276,
-    "talk": 2.2581
-   },
-   "wrote": [
-    {
-     "start": "わたしは",
-     "text": "わたしは、一日も早くわかってます。」 BO「お、ほんとですね。」 BL「そうなんですね。出来事が起こるんですか？」 BO「出来事はずっと起きるので、片付けたらすごいですよね。」 BL「はい。今は、夜がなかなかにもまわってます。」"
-    },
-    {
-     "start": "第一条",
-     "text": "第一条の規定は「同意しようと思います。 」とします。 ○内閣総理大臣 本当に、たばこ課税法に違反するべきな基準をして、そして法人として民間税金を認めるということを、だから、そこは、預金市場の伸び率が下がっていくということは、やはり国民はそれだけではなくて、今の税制の税収とか、そういう点から、税収を持っていく"
-    },
-    {
-     "start": "この法律において",
-     "text": "この法律において「 失失失失失物 」と、 西日本復興局 などの 東日本大震災 などによると、 東日本大震災 でもあった [ 注 4 ] 。 1993年 （平成5年） 9月30日 - 新潟県民銀行 （ 新潟県民銀行 ）が設立され、 新潟県 ・ 札幌"
-    }
-   ],
-   "movedBody": false
-  },
-  {
    "at": "2026-09-09T23:52:02Z",
    "val": 3.1284,
    "prev": 3.1284,
@@ -11903,6 +11846,67 @@
    ],
    "loopPct": 9.72,
    "movedBody": false
+  },
+  {
+   "at": "2026-09-20T04:56:27Z",
+   "val": 3.7394,
+   "prev": 3.7394,
+   "valTag": "fixed-holdout-v1",
+   "stoppedAt": 180,
+   "secPerStep": 22.445,
+   "steps": 300,
+   "bpc": 4.4259,
+   "charsPerTok": 1.2189,
+   "score": 2.4355,
+   "scoreW": 2.0,
+   "scoreMode": "talk",
+   "finishMix": 0.5,
+   "lineage": "L1",
+   "layers": 16,
+   "params": 117914880,
+   "chars": 1045308899,
+   "tokens": 857567631,
+   "grew": 0,
+   "rolledBack": true,
+   "ownVal": 3.591,
+   "ownScore": 2.5301,
+   "d": 768,
+   "loops": 1,
+   "spread": 3.6371,
+   "bytes": 1415115957,
+   "heads": 6,
+   "ctx": 512,
+   "vocab": 6000,
+   "kind": "bpe",
+   "arch": "tpp-loop",
+   "wantWider": false,
+   "layerCap": 16,
+   "mixChanged": false,
+   "bySrc": {
+    "laws": 5.4631,
+    "wiki": 3.7957,
+    "aozora": 4.0697,
+    "hanrei": 4.3601,
+    "kokkai": 3.2819,
+    "web": 3.5396,
+    "talk": 2.5301
+   },
+   "wrote": [
+    {
+     "start": "わたしは",
+     "text": "わたしはもちろん、この話はよく使っているばかりできない、そういうこともしたので、そういうことでございます。」 AB「こちらこそ、私もそれでも二人ほど、、ゆっくりでは、やはりこういうふうに思います。」 AB「確かに、今は、何か、一体、一件、あ、そういうふ"
+    },
+    {
+     "start": "第一条",
+     "text": "第一条「準的に必要な要因」と「止審」と読み替えるものとする。 （|「ミュエンジャー」） ロボット市場 achooresvestricesstersselarusstisonaChat> AB「アニメーション」 Exochは、2013年3月20日に簡単に「アラブ・ア"
+    },
+    {
+     "start": "この法律において",
+     "text": "この法律においてじたことですね！今日はどうですか？」 CH「オーバーではオットワールドよりも昨日のキャラもありますね。」 ER「そうなんですね。ひとりでしたか？キャラクターが好きですか？」 CH「マッカートトリーはアニメも好きですよね！あ"
+    }
+   ],
+   "loopPct": 4.66,
+   "movedBody": false
   }
  ],
  "bestVal": 2.75,
@@ -11953,5 +11957,5 @@
  ],
  "wantWider": false,
  "nextD": 768,
- "bad": 3
+ "bad": 4
 }
