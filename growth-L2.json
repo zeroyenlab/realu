@@ -11463,6 +11463,67 @@
    ],
    "loopPct": 14.51,
    "movedBody": false
+  },
+  {
+   "at": "2026-09-20T15:59:16Z",
+   "val": 2.9992,
+   "prev": 2.9992,
+   "valTag": "fixed-holdout-v1",
+   "stoppedAt": 414,
+   "secPerStep": 9.1404,
+   "steps": 737,
+   "bpc": 3.5499,
+   "charsPerTok": 1.2189,
+   "score": 2.1163,
+   "scoreW": 2.0,
+   "scoreMode": "talk",
+   "finishMix": 0.85,
+   "lineage": "L2",
+   "layers": 11,
+   "params": 37890560,
+   "chars": 1045308899,
+   "tokens": 857567631,
+   "grew": 0,
+   "rolledBack": true,
+   "ownVal": 3.1539,
+   "ownScore": 2.2254,
+   "d": 512,
+   "loops": 1,
+   "spread": 2.9227,
+   "bytes": 454783041,
+   "heads": 8,
+   "ctx": 512,
+   "vocab": 6000,
+   "kind": "bpe",
+   "arch": "tpp-loop",
+   "wantWider": false,
+   "layerCap": 16,
+   "mixChanged": false,
+   "bySrc": {
+    "laws": 4.511,
+    "wiki": 3.2351,
+    "aozora": 3.5635,
+    "hanrei": 3.7767,
+    "kokkai": 2.8158,
+    "web": 3.0906,
+    "talk": 2.2254
+   },
+   "wrote": [
+    {
+     "start": "わたしは",
+     "text": "わたしは、どこかに来られると思うと、面白いんですよね。」 HA「そんなに長いんですかね。どこかの、長野の町でもすごくお好きなんですか？」 BP「いえいえ、最近は宝くじが趣味です。」 HA「そうなんですね！そっちが趣味"
+    },
+    {
+     "start": "第一条",
+     "text": "第一条議決の期間。 ] チャーリー・サッカー選手権 - 1995年にイギリス連邦軍 が アヴァント・マージーニー と ラヴァン・クラーク が結成。 マージーザ - 1975年に アヴァン・クラーク がキューディザ - 7"
+    },
+    {
+     "start": "この法律において",
+     "text": "この法律において「 」という。）のうち、 1970年 （昭和45年）の 1970年 （昭和55年）の 南海ホーム を開設した。 1985年（昭和50年）の ユニバーサル の「 マナー・マナー 」は、 ロシア などの 国境 では イギリス から 北インド会社 に移"
+    }
+   ],
+   "loopPct": 3.52,
+   "movedBody": false
   }
  ],
  "bestVal": 2.8173,
@@ -11513,5 +11574,5 @@
  ],
  "wantWider": false,
  "nextD": 512,
- "bad": 1
+ "bad": 7
 }
