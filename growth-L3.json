@@ -11331,6 +11331,67 @@
    ],
    "loopPct": 35.99,
    "movedBody": false
+  },
+  {
+   "at": "2026-09-20T06:06:50Z",
+   "val": 3.0674,
+   "prev": 3.0674,
+   "valTag": "fixed-holdout-v1",
+   "stoppedAt": 564,
+   "secPerStep": 6.6111,
+   "steps": 1055,
+   "bpc": 3.6305,
+   "charsPerTok": 1.2189,
+   "score": 2.2317,
+   "scoreW": 2.0,
+   "scoreMode": "talk",
+   "finishMix": 0.2,
+   "lineage": "L3",
+   "layers": 13,
+   "params": 25335168,
+   "chars": 1045308899,
+   "tokens": 857567631,
+   "grew": 0,
+   "rolledBack": true,
+   "ownVal": 3.1656,
+   "ownScore": 2.3375,
+   "d": 384,
+   "loops": 1,
+   "spread": 2.9389,
+   "bytes": 304134729,
+   "heads": 6,
+   "ctx": 512,
+   "vocab": 6000,
+   "kind": "bpe",
+   "arch": "tpp-loop",
+   "wantWider": false,
+   "layerCap": 16,
+   "mixChanged": false,
+   "bySrc": {
+    "laws": 4.4632,
+    "wiki": 3.3419,
+    "aozora": 3.6831,
+    "hanrei": 3.9339,
+    "kokkai": 2.8473,
+    "web": 3.151,
+    "talk": 2.3375
+   },
+   "wrote": [
+    {
+     "start": "わたしは",
+     "text": "わたしはあります。それが世界で何よりも大きいドイツ系のソ連もまず、米米間では組織的な判断ができなければならなくなってしまうと、米米間ではみずからが普通の会社を買ったり、しかもこの石油の買い立てを買い取りするということになっています。このこと、今日、日本の今日、アメ"
+    },
+    {
+     "start": "第一条",
+     "text": "第一条及びの周辺の地域地域地域地域地域地域地域地域地域地域地域地域地域地域地域地域地域地域地域地域地域帯地域地域地域地域の調査を網羽川地域地域地域地域地域地域における地域地域地域地域地域地域地域における地域地域地域地域地域において、地域地域地域地域と地域地域地域地域地域地域の皆様や地域地域地域づけの推進を図りつつ、地域地域地域地域地域社会事業へと言及することが必要であると考えております。 次に、"
+    },
+    {
+     "start": "この法律において",
+     "text": "この法律において簼細胞系(YAMA)と呼称される。 CICL como i Somo i Somota, CICL comota, Newalris, Newalds, Newallybyra, Newallybyra, Newally"
+    }
+   ],
+   "loopPct": 34.95,
+   "movedBody": false
   }
  ],
  "bestVal": 2.8344,
@@ -11381,5 +11442,5 @@
  ],
  "wantWider": false,
  "nextD": 384,
- "bad": 0
+ "bad": 4
 }
