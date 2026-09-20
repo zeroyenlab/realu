@@ -10792,6 +10792,67 @@
    ],
    "loopPct": 4.71,
    "movedBody": false
+  },
+  {
+   "at": "2026-09-20T02:26:18Z",
+   "val": 3.0463,
+   "prev": 3.0463,
+   "valTag": "fixed-holdout-v1",
+   "stoppedAt": 425,
+   "secPerStep": 8.8958,
+   "steps": 732,
+   "bpc": 3.6055,
+   "charsPerTok": 1.2189,
+   "score": 2.1585,
+   "scoreW": 2.0,
+   "scoreMode": "talk",
+   "finishMix": 0.85,
+   "lineage": "L2",
+   "layers": 11,
+   "params": 37890560,
+   "chars": 1045308899,
+   "tokens": 857567631,
+   "grew": 0,
+   "rolledBack": true,
+   "ownVal": 3.0615,
+   "ownScore": 2.2695,
+   "d": 512,
+   "loops": 1,
+   "spread": 2.9973,
+   "bytes": 454783041,
+   "heads": 8,
+   "ctx": 512,
+   "vocab": 6000,
+   "kind": "bpe",
+   "arch": "tpp-loop",
+   "wantWider": false,
+   "layerCap": 16,
+   "mixChanged": false,
+   "bySrc": {
+    "laws": 4.2182,
+    "wiki": 3.1352,
+    "aozora": 3.4587,
+    "hanrei": 3.7333,
+    "kokkai": 2.7749,
+    "web": 3.0927,
+    "talk": 2.2695
+   },
+   "wrote": [
+    {
+     "start": "わたしは",
+     "text": "わたしはアップル麺が好きです」 BF「アップル麺いいですね！」 BR「はい、アップル麺が好きです！」 BF「おいしいですよねー。昔は好きでしたが、カレーフィン派！」 BR「カレーとか、カレーとかよく食べます。」 B"
+    },
+    {
+     "start": "第一条",
+     "text": "第一条第一号 �辺ため、平日日曜日曜日の時間帯が真の年金です。」 AB「いやいや、不満です。」 EB「本当ですね、他に何かされますか？」 AB「スナックでフルーツを買います。」 EB「おおー！フルーツじゃないですか！！」 AB「"
+    },
+    {
+     "start": "この法律において",
+     "text": "この法律において「たんごんですか？」 BA「今は冷蔵庫にあるんですが、今はパンデミックを買ったんです」 ED「いいですね！パンデミックなんですか？」 BA「最近だと、ホントになります」 ED「色々楽しいですね！私もたとえば、食べたことない"
+    }
+   ],
+   "loopPct": 7.33,
+   "movedBody": false
   }
  ],
  "bestVal": 2.8173,
@@ -10842,5 +10903,5 @@
  ],
  "wantWider": false,
  "nextD": 512,
- "bad": 2
+ "bad": 1
 }
