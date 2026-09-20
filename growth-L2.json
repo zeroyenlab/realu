@@ -10853,6 +10853,67 @@
    ],
    "loopPct": 7.33,
    "movedBody": false
+  },
+  {
+   "at": "2026-09-20T03:43:08Z",
+   "val": 3.0463,
+   "prev": 3.0463,
+   "valTag": "fixed-holdout-v1",
+   "stoppedAt": 480,
+   "secPerStep": 7.844,
+   "steps": 732,
+   "bpc": 3.6055,
+   "charsPerTok": 1.2189,
+   "score": 2.1585,
+   "scoreW": 2.0,
+   "scoreMode": "talk",
+   "finishMix": 0.85,
+   "lineage": "L2",
+   "layers": 11,
+   "params": 37890560,
+   "chars": 1045308899,
+   "tokens": 857567631,
+   "grew": 0,
+   "rolledBack": true,
+   "ownVal": 3.1194,
+   "ownScore": 2.2189,
+   "d": 512,
+   "loops": 1,
+   "spread": 2.8202,
+   "bytes": 454783041,
+   "heads": 8,
+   "ctx": 512,
+   "vocab": 6000,
+   "kind": "bpe",
+   "arch": "tpp-loop",
+   "wantWider": false,
+   "layerCap": 16,
+   "mixChanged": false,
+   "bySrc": {
+    "laws": 4.4021,
+    "wiki": 3.2494,
+    "aozora": 3.5501,
+    "hanrei": 3.7121,
+    "kokkai": 2.808,
+    "web": 3.1128,
+    "talk": 2.2189
+   },
+   "wrote": [
+    {
+     "start": "わたしは",
+     "text": "わたしは、韓国料理といった、イギリス料理がございまして、今後、、今後、日本料理が好きなのではないかというふうに思います。」 AB「大変重いと言われておりますが、しなが平和と安定は、イギリスが大韓民国になります。しながわは、スーパー"
+    },
+    {
+     "start": "第一条",
+     "text": "第一条ずる。 明治10年（1820年）11月、文学の生涯と日本文学の芸術作品が『帝国文学』を読んでいる。 日本文学は朝日文学、朝日文学の「仏語の音頭」を暗刻した朝日文学と同様に「世界一意」と呼ばれた。 日本文学は1974年"
+    },
+    {
+     "start": "この法律において",
+     "text": "この法律において「ガニジン」ではありますが、好きなんですね。私も。」 AB「ほんとに、今はお仕事ですかね。」 AF「そうですね、仕事で色々大変ですよね。」 AB「はい、私はある程度カクテルとかも大変です。」 AF「あ、それは楽しみですね"
+    }
+   ],
+   "loopPct": 4.38,
+   "movedBody": false
   }
  ],
  "bestVal": 2.8173,
@@ -10903,5 +10964,5 @@
  ],
  "wantWider": false,
  "nextD": 512,
- "bad": 1
+ "bad": 3
 }
