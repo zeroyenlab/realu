@@ -11402,6 +11402,67 @@
    ],
    "loopPct": 23.85,
    "movedBody": false
+  },
+  {
+   "at": "2026-09-20T14:51:13Z",
+   "val": 2.9992,
+   "prev": 2.9992,
+   "valTag": "fixed-holdout-v1",
+   "stoppedAt": 428,
+   "secPerStep": 8.8356,
+   "steps": 737,
+   "bpc": 3.5499,
+   "charsPerTok": 1.2189,
+   "score": 2.1163,
+   "scoreW": 2.0,
+   "scoreMode": "talk",
+   "finishMix": 0.85,
+   "lineage": "L2",
+   "layers": 11,
+   "params": 37890560,
+   "chars": 1045308899,
+   "tokens": 857567631,
+   "grew": 0,
+   "rolledBack": true,
+   "ownVal": 3.023,
+   "ownScore": 2.3028,
+   "d": 512,
+   "loops": 1,
+   "spread": 3.1431,
+   "bytes": 454783041,
+   "heads": 8,
+   "ctx": 512,
+   "vocab": 6000,
+   "kind": "bpe",
+   "arch": "tpp-loop",
+   "wantWider": false,
+   "layerCap": 16,
+   "mixChanged": false,
+   "bySrc": {
+    "laws": 4.1129,
+    "wiki": 3.1823,
+    "aozora": 3.5351,
+    "hanrei": 3.6423,
+    "kokkai": 2.7368,
+    "web": 3.0341,
+    "talk": 2.3028
+   },
+   "wrote": [
+    {
+     "start": "わたしは",
+     "text": "わたしは、どこかにいっても買い物する場所もありませんでしたね。」 CY「あまり買わないですね。」 DF「本当ですね。」 CY「ですよね！でも買います。」 DF「さんは何を食べましたか？」 CY「私はパスタであるカラッとしてしまったので、カラッとしてて食べ"
+    },
+    {
+     "start": "第一条",
+     "text": "第一条の規定並びにそれぞれ当該各号に定める事項に係る当該主務省令で定める事項に係る当該主務省令で定める事項に係る当該事項をに該当して、当該岸部警察署を設けてその秘密が漏らされてしまうこと。 当該岸部警察署が、当該岸部警察署が、十及びその部署が、遂行する対策上障害者等（その部署が、Ｃが自ら自らの長を含む濱口の上住民をそれぞれ各省庁に置き、かつ、当該岸部警察署が、Ｇ及びＡの監査役にそれぞれ負わせて、"
+    },
+    {
+     "start": "この法律において",
+     "text": "この法律において「Ci in Pland Partive Raal Partive Ral Pland」をベースとして、ベースもPartive Partipe Piie Partive Lated Partive Partive Partive"
+    }
+   ],
+   "loopPct": 14.51,
+   "movedBody": false
   }
  ],
  "bestVal": 2.8173,
@@ -11452,5 +11513,5 @@
  ],
  "wantWider": false,
  "nextD": 512,
- "bad": 3
+ "bad": 1
 }
