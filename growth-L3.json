@@ -1,63 +1,6 @@
 {
  "runs": [
   {
-   "at": "2026-09-09T22:45:05Z",
-   "val": 3.1284,
-   "prev": 3.0293,
-   "valTag": "fixed-holdout-v1",
-   "stoppedAt": 1015,
-   "secPerStep": 3.6265,
-   "steps": 2114,
-   "bpc": 3.6989,
-   "charsPerTok": 1.2202,
-   "score": 2.5482,
-   "scoreW": 2.0,
-   "layers": 8,
-   "params": 16483968,
-   "chars": 1037515847,
-   "tokens": 850289863,
-   "grew": 1,
-   "rolledBack": false,
-   "ownVal": null,
-   "ownScore": null,
-   "d": 384,
-   "loops": 1,
-   "spread": 3.0124,
-   "bytes": 197879125,
-   "heads": 6,
-   "ctx": 256,
-   "vocab": 6000,
-   "kind": "bpe",
-   "arch": "tpp-loop",
-   "wantWider": false,
-   "layerCap": 16,
-   "mixChanged": false,
-   "bySrc": {
-    "laws": 4.6765,
-    "wiki": 3.3098,
-    "aozora": 3.7429,
-    "hanrei": 3.939,
-    "kokkai": 2.7763,
-    "web": 3.2276,
-    "talk": 2.2581
-   },
-   "wrote": [
-    {
-     "start": "わたしは",
-     "text": "わたしは、一日も早くわかってます。」 BO「お、ほんとですね。」 BL「そうなんですね。出来事が起こるんですか？」 BO「出来事はずっと起きるので、片付けたらすごいですよね。」 BL「はい。今は、夜がなかなかにもまわってます。」"
-    },
-    {
-     "start": "第一条",
-     "text": "第一条の規定は「同意しようと思います。 」とします。 ○内閣総理大臣 本当に、たばこ課税法に違反するべきな基準をして、そして法人として民間税金を認めるということを、だから、そこは、預金市場の伸び率が下がっていくということは、やはり国民はそれだけではなくて、今の税制の税収とか、そういう点から、税収を持っていく"
-    },
-    {
-     "start": "この法律において",
-     "text": "この法律において「 失失失失失物 」と、 西日本復興局 などの 東日本大震災 などによると、 東日本大震災 でもあった [ 注 4 ] 。 1993年 （平成5年） 9月30日 - 新潟県民銀行 （ 新潟県民銀行 ）が設立され、 新潟県 ・ 札幌"
-    }
-   ],
-   "movedBody": false
-  },
-  {
    "at": "2026-09-09T23:52:02Z",
    "val": 3.1284,
    "prev": 3.1284,
@@ -11959,6 +11902,67 @@
    ],
    "loopPct": 8.44,
    "movedBody": false
+  },
+  {
+   "at": "2026-09-21T14:27:33Z",
+   "val": 3.0459,
+   "prev": 3.0459,
+   "valTag": "fixed-holdout-v1",
+   "stoppedAt": 0,
+   "secPerStep": 3.3217,
+   "steps": 982,
+   "bpc": 3.605,
+   "charsPerTok": 1.2189,
+   "score": 2.1306,
+   "scoreW": 2.0,
+   "scoreMode": "talk",
+   "finishMix": 0.2,
+   "lineage": "L3",
+   "layers": 13,
+   "params": 25335168,
+   "chars": 1045308899,
+   "tokens": 857567631,
+   "grew": 0,
+   "rolledBack": true,
+   "ownVal": 3.0172,
+   "ownScore": 2.3067,
+   "d": 384,
+   "loops": 1,
+   "spread": 3.1342,
+   "bytes": 304134729,
+   "heads": 6,
+   "ctx": 512,
+   "vocab": 6000,
+   "kind": "bpe",
+   "arch": "tpp-loop",
+   "wantWider": false,
+   "layerCap": 16,
+   "mixChanged": false,
+   "bySrc": {
+    "laws": 4.3194,
+    "wiki": 3.1933,
+    "aozora": 3.5445,
+    "hanrei": 3.8438,
+    "kokkai": 2.7562,
+    "web": 3.0007,
+    "talk": 2.3067
+   },
+   "wrote": [
+    {
+     "start": "わたしは",
+     "text": "わたしはこれを処理するだけでなく、��画像交換方式、実際に、そういう形で、今大変重要な問題で、その評価が十分に行われているわけです。 中国でも、調査にもおつき合いましたが、その上でどのようにお考えでしょうか。」 AB「国務大臣 国際競争力会議が開かれたことについて、やはり、今後も、国際競争力会議"
+    },
+    {
+     "start": "第一条",
+     "text": "第一条又は同条面積十五条第一項又は同条面積g{{}otako{}}\\naton{{}{\\naton{{{}\\naton{\\naton\\naton{in{\\naton_{}riftin{\\naton_{}}}}\\naton}\\{f\\naton}}{}"
+    },
+    {
+     "start": "この法律において",
+     "text": "この法律においてノベルルゲオオオオオンジオンストーンズ等所定のガイドラインを基本に、前記のガイドラインを採用しており、エンストリーのカバーやディズニーホールが特徴となっている。 グレートブッシュは、ABSでは100インチモジュール（コンテンツユーザに触れる特"
+    }
+   ],
+   "loopPct": 14.53,
+   "movedBody": false
   }
  ],
  "bestVal": 2.8344,
@@ -12009,5 +12013,5 @@
  ],
  "wantWider": false,
  "nextD": 384,
- "bad": 4
+ "bad": 7
 }
