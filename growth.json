@@ -1,65 +1,6 @@
 {
  "runs": [
   {
-   "at": "2026-09-11T05:06:12Z",
-   "val": 3.0552,
-   "prev": 3.0552,
-   "valTag": "fixed-holdout-v1",
-   "stoppedAt": 704,
-   "secPerStep": 5.2669,
-   "steps": 1400,
-   "bpc": 3.6124,
-   "charsPerTok": 1.2202,
-   "score": 2.125,
-   "scoreW": 2.0,
-   "scoreMode": "talk",
-   "layers": 10,
-   "params": 20024448,
-   "chars": 1037515847,
-   "tokens": 850289863,
-   "grew": 0,
-   "rolledBack": true,
-   "ownVal": 2.8581,
-   "ownScore": 2.1789,
-   "d": 384,
-   "loops": 1,
-   "spread": 2.6317,
-   "bytes": 240381341,
-   "heads": 6,
-   "ctx": 512,
-   "vocab": 6000,
-   "kind": "bpe",
-   "arch": "tpp-loop",
-   "wantWider": false,
-   "layerCap": 16,
-   "mixChanged": false,
-   "bySrc": {
-    "laws": 4.0824,
-    "wiki": 3.0348,
-    "aozora": 3.4652,
-    "hanrei": 3.6382,
-    "kokkai": 2.5519,
-    "web": 2.9728,
-    "talk": 2.1789
-   },
-   "wrote": [
-    {
-     "start": "わたしは",
-     "text": "わたしは、夜通りですか？」 EW「朝じゅうりになってるので、飲みきれないかなぁ」 FJ「それはいいですねー。夜に何時頃って、昨日のお昼にいっぱい食べました！」 EW「お昼は毎日食べました？」 FJ「そうですそうです！�"
-    },
-    {
-     "start": "第一条",
-     "text": "第一条の規定には、相当な罰則を適用するというふうに考えるもので、これをやっているんですから、ぜひ、ここで判断をさせていただきたいと思います。 関税定率の上で。先ほどのお話でもありますが、要するに、これから、今度は日本の経済情勢と、そして国際競争力といいますか、この中でどういう意味で、"
-    },
-    {
-     "start": "この法律において",
-     "text": "この法律において「RCOT」という。）を含む。 （man） － Windows Mixicht は、寡que（man）と呼称する。 ベント（man） - ソロモン・クライアント（min）のようなものである。 Mixicht Mixicht は、形態を"
-    }
-   ],
-   "loopPct": 11.25,
-   "movedBody": false
-  },
-  {
    "at": "2026-09-11T06:12:55Z",
    "val": 3.0552,
    "prev": 3.0552,
@@ -12005,6 +11946,67 @@
    ],
    "loopPct": 7.71,
    "movedBody": false
+  },
+  {
+   "at": "2026-09-21T15:58:38Z",
+   "val": 3.293,
+   "prev": 3.293,
+   "valTag": "fixed-holdout-v1",
+   "stoppedAt": 156,
+   "secPerStep": 26.2317,
+   "steps": 300,
+   "bpc": 3.8975,
+   "charsPerTok": 1.2189,
+   "score": 2.2926,
+   "scoreW": 2.0,
+   "scoreMode": "talk",
+   "finishMix": 0.5,
+   "lineage": "L1",
+   "layers": 16,
+   "params": 117914880,
+   "chars": 1045308899,
+   "tokens": 857567631,
+   "grew": 0,
+   "rolledBack": true,
+   "ownVal": 3.4463,
+   "ownScore": 2.4097,
+   "d": 768,
+   "loops": 1,
+   "spread": 3.5692,
+   "bytes": 1415115957,
+   "heads": 6,
+   "ctx": 512,
+   "vocab": 6000,
+   "kind": "bpe",
+   "arch": "tpp-loop",
+   "wantWider": false,
+   "layerCap": 16,
+   "mixChanged": false,
+   "bySrc": {
+    "laws": 5.2698,
+    "wiki": 3.6888,
+    "aozora": 3.875,
+    "hanrei": 4.1212,
+    "kokkai": 3.1698,
+    "web": 3.3874,
+    "talk": 2.4097
+   },
+   "wrote": [
+    {
+     "start": "わたしは",
+     "text": "わたしはよいよ。」 AA「そうなんですか。今日は、一千億円もの結構、二千億円、二億二千七百億円、これは、さらに、これは、破壊費で、国籍税でかなり約三百億円ですから、それから四十五兆六百億円ですから、その上で、それから環境大臣は、一兆三千億円ということで、当然なんということは、"
+    },
+    {
+     "start": "第一条",
+     "text": "第一条 契約を締結した詳細 につき作成したとおり (2) 本件 原告らの主張 ウ被告ｂＳｇｇｃ ｂｄのとおり，本件土地の保護に関する 原告Ｂ の主張は認められないから，平成５年１１月１７日 <原告旨主張するが，同 １原告５１０ その予定はない。 （１"
+    },
+    {
+     "start": "この法律において",
+     "text": "この法律においております。 また、領土は、中国から、かつてから、日本は、日本と同時に亜勢をやり、全く安心、中国と中国に国益を始めることとなり、私に発言した。」 AA「安保条約の導入条件は、国産海峡で自動改革を推進するため、今後とも、不安を抑制し、国が入り、国連に"
+    }
+   ],
+   "loopPct": 3.85,
+   "movedBody": false
   }
  ],
  "bestVal": 2.75,
@@ -12055,5 +12057,5 @@
  ],
  "wantWider": false,
  "nextD": 768,
- "bad": 8
+ "bad": 9
 }
