@@ -1,63 +1,6 @@
 {
  "runs": [
   {
-   "at": "2026-09-10T08:46:08Z",
-   "val": 2.948,
-   "prev": 2.965,
-   "valTag": "fixed-holdout-v1",
-   "stoppedAt": 840,
-   "secPerStep": 4.39,
-   "steps": 1563,
-   "bpc": 3.4856,
-   "charsPerTok": 1.2202,
-   "score": 2.4804,
-   "scoreW": 2.0,
-   "layers": 8,
-   "params": 16483968,
-   "chars": 1037515847,
-   "tokens": 850289863,
-   "grew": 0,
-   "rolledBack": false,
-   "ownVal": null,
-   "ownScore": null,
-   "d": 384,
-   "loops": 1,
-   "spread": 2.8744,
-   "bytes": 197879189,
-   "heads": 6,
-   "ctx": 512,
-   "vocab": 6000,
-   "kind": "bpe",
-   "arch": "tpp-loop",
-   "wantWider": false,
-   "layerCap": 16,
-   "mixChanged": false,
-   "bySrc": {
-    "laws": 4.2814,
-    "wiki": 3.1047,
-    "aozora": 3.5859,
-    "hanrei": 3.8015,
-    "kokkai": 2.6048,
-    "web": 2.9913,
-    "talk": 2.2466
-   },
-   "wrote": [
-    {
-     "start": "わたしは",
-     "text": "わたしはね。」 EW「お金はかかるんですか？」 EK「あと、かかりますか？」 EW「はい！そうなんですねー。」 EK「バラバラでしたね！」 EW「はい！」 EW「こんにちは」"
-    },
-    {
-     "start": "第一条",
-     "text": "第一条の政令で定める量量量を消費電力量量を消費電力量として抑制するということが規定されております。 このサボタクシーが開発した海外の環境が国際的に有用な通俗であります。産業に多大な影響を与えたことは、日本経済の安定と安定のため、このサボタクシーを拡充するなど、海外で日本の経済を支える成長を遂げ、世界経済のほ"
-    },
-    {
-     "start": "この法律において",
-     "text": "この法律において「国と地方の」を区別するため「国」、「国」、「国」を「国」などと呼ぶ。 国語表記や「国」などと公語表記が変化する場合もある。 ただし、国語表記では外交官・外交官・外交官・外交官・外交官・外交官・外交官・外交官・外交官・外交官・外交官・外交"
-    }
-   ],
-   "movedBody": false
-  },
-  {
    "at": "2026-09-10T09:41:06Z",
    "val": 2.9485,
    "prev": 2.948,
@@ -12005,6 +11948,67 @@
    ],
    "loopPct": 17.92,
    "movedBody": false
+  },
+  {
+   "at": "2026-09-22T09:24:41Z",
+   "val": 2.8745,
+   "prev": 2.9702,
+   "valTag": "fixed-holdout-v1",
+   "stoppedAt": 425,
+   "secPerStep": 8.886,
+   "steps": 734,
+   "bpc": 3.4022,
+   "charsPerTok": 1.2189,
+   "score": 2.0281,
+   "scoreW": 2.0,
+   "scoreMode": "talk",
+   "finishMix": 0.85,
+   "lineage": "L2",
+   "layers": 11,
+   "params": 37890560,
+   "chars": 1045308899,
+   "tokens": 857567631,
+   "grew": 0,
+   "rolledBack": false,
+   "ownVal": null,
+   "ownScore": null,
+   "d": 512,
+   "loops": 1,
+   "spread": 3.1429,
+   "bytes": 454783041,
+   "heads": 8,
+   "ctx": 512,
+   "vocab": 6000,
+   "kind": "bpe",
+   "arch": "tpp-loop",
+   "wantWider": false,
+   "layerCap": 16,
+   "mixChanged": false,
+   "bySrc": {
+    "laws": 4.0103,
+    "wiki": 3.0235,
+    "aozora": 3.4144,
+    "hanrei": 3.5722,
+    "kokkai": 2.6791,
+    "web": 2.9531,
+    "talk": 2.0281
+   },
+   "wrote": [
+    {
+     "start": "わたしは",
+     "text": "わたしは、受動的な見直しでいろいろ対策をとっておる。」 AA「そうして、そういう時代、経済は次の日代に対する見直しをまとめたときに、これまた統一見地から、財政再建を進めていくということが第一だと思うのであります。 そういう中で、私は、今日の財政再建は当然つきりにとりまして、"
+    },
+    {
+     "start": "第一条",
+     "text": "第一条をする。 ただし、かつ、排ガス代表の国内のなかには、供給源の需要を軽減するため、かつ、輸送サービスを増設し、その残高における需要を軽減するため、この込み収入を二十億に分ける。 また、半導体 - 主力軸を維持するため、毎年度の海外生産配分を中間的に運用して有料化した。 「 運動量 」という 性 のひとつである。 一般"
+    },
+    {
+     "start": "この法律において",
+     "text": "この法律において」と、「 systational carserse 」と呼ばれる意味である。 また、 Bture （: rostational ）とは、インドでは インド の名前である。 Gight Peternal （Preational carsen"
+    }
+   ],
+   "loopPct": 4.55,
+   "movedBody": false
   }
  ],
  "bestVal": 2.8173,
@@ -12055,5 +12059,5 @@
  ],
  "wantWider": false,
  "nextD": 512,
- "bad": 2
+ "bad": 3
 }
