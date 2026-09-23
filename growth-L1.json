@@ -1,65 +1,6 @@
 {
  "runs": [
   {
-   "at": "2026-09-13T08:46:32Z",
-   "val": 2.75,
-   "prev": 2.75,
-   "valTag": "fixed-holdout-v1",
-   "stoppedAt": 931,
-   "secPerStep": 3.953,
-   "steps": 1166,
-   "bpc": 3.2514,
-   "charsPerTok": 1.2202,
-   "score": 2.0174,
-   "scoreW": 2.0,
-   "scoreMode": "talk",
-   "layers": 11,
-   "params": 21794688,
-   "chars": 1037515847,
-   "tokens": 850289863,
-   "grew": 0,
-   "rolledBack": true,
-   "ownVal": 2.8254,
-   "ownScore": 2.2652,
-   "d": 384,
-   "loops": 1,
-   "spread": 2.616,
-   "bytes": 261632513,
-   "heads": 6,
-   "ctx": 512,
-   "vocab": 6000,
-   "kind": "bpe",
-   "arch": "tpp-loop",
-   "wantWider": false,
-   "layerCap": 16,
-   "mixChanged": false,
-   "bySrc": {
-    "laws": 3.8847,
-    "wiki": 3.0119,
-    "aozora": 3.3,
-    "hanrei": 3.5323,
-    "kokkai": 2.505,
-    "web": 2.8752,
-    "talk": 2.2652
-   },
-   "wrote": [
-    {
-     "start": "わたしは",
-     "text": "わたしはいつまでも毎日のように眠くなるのです。」 DC「そうなんですよね！眠くないと谷なんですね！」 BK「そうですね。でも、黙ってると家でコロコロするのですか？」 DC「コロコロはだめなんです。暑いのが苦手です。」 B"
-    },
-    {
-     "start": "第一条",
-     "text": "第一条ただし書が樹樹樹林林林林林林林林林林林林林林林林林林林林林林林林林林林林林林林林林林宿林林林林林林林林林林林林標林林林林林林林林林林林林林林林林林林林林林林林林林林林林林林林で林林四孝林林林林林林林主林の�林林林林林林林林林"
-    },
-    {
-     "start": "この法律において",
-     "text": "この法律において「 ａ 」のような言葉を意味する語は多く、英語は「 」のようなものであるとみられる。 そして、 19世紀 中期以降、 ロンドン の カタピヤン は、多くの人々は カタピヤン を結び、19世紀初頭には ペトロニア に遷興した「"
-    }
-   ],
-   "loopPct": 34.07,
-   "movedBody": false
-  },
-  {
    "at": "2026-09-13T09:56:22Z",
    "val": 2.75,
    "prev": 2.75,
@@ -12083,6 +12024,69 @@
    ],
    "loopPct": 6.04,
    "movedBody": false
+  },
+  {
+   "at": "2026-09-23T17:36:45Z",
+   "val": 3.35,
+   "prev": 3.3743,
+   "valTag": "fixed-holdout-v1",
+   "stoppedAt": 159,
+   "stuck": 0,
+   "evalTag": "fixed-ix-v1",
+   "secPerStep": 26.2012,
+   "steps": 300,
+   "bpc": 3.965,
+   "charsPerTok": 1.2189,
+   "score": 2.3714,
+   "scoreW": 2.0,
+   "scoreMode": "talk",
+   "finishMix": 0.5,
+   "lineage": "L1",
+   "layers": 16,
+   "params": 117914880,
+   "chars": 1045308899,
+   "tokens": 857567631,
+   "grew": 0,
+   "rolledBack": false,
+   "ownVal": null,
+   "ownScore": null,
+   "d": 768,
+   "loops": 1,
+   "spread": 3.527,
+   "bytes": 1415115957,
+   "heads": 6,
+   "ctx": 512,
+   "vocab": 6000,
+   "kind": "bpe",
+   "arch": "tpp-loop",
+   "wantWider": false,
+   "layerCap": 16,
+   "mixChanged": false,
+   "bySrc": {
+    "laws": 5.0123,
+    "wiki": 3.5369,
+    "aozora": 3.8118,
+    "hanrei": 3.9363,
+    "kokkai": 3.0375,
+    "web": 3.3282,
+    "talk": 2.3714
+   },
+   "wrote": [
+    {
+     "start": "わたしは",
+     "text": "わたしはありますか？」 EJ「おいしいですね。醍醐です。」 HZ「ほんとに。最近は何を食べましたか？」 EJ「一気持ちいいです！」 HZ「自転車に入ったので、特にこだわってあります。」 EJ「ですよね。私も予報して、いいですね。」"
+    },
+    {
+     "start": "第一条",
+     "text": "第一条は48%と入学した。 なお、2023年3月28日までは、 2020年10月 2025年5月24日までは ケネディ・クワク・ディアス （ 英語版 ） などのアイデンティティ族がチャイルド・アンタワーの間を同年3月28日に アッシスプレス が開催"
+    },
+    {
+     "start": "この法律において",
+     "text": "この法律において&�る毎事業年度（|準備団体等） 鉄道組織機関（総務省） 株式会社東日本大震災における公共施設の復旧支援に移植している道路・道路��業医療センター（農業経営決議）」 <記事 1949年> 明治39年（グリーンスキー及びスユニット「 」、第3巻「スター」3号（旧級2号） 北海道新幹線（現・ ラ"
+    }
+   ],
+   "loopPct": 5.61,
+   "movedBody": false
   }
  ],
  "bestVal": 2.75,
@@ -12133,5 +12137,5 @@
  ],
  "wantWider": false,
  "nextD": 768,
- "bad": 0
+ "bad": 1
 }
