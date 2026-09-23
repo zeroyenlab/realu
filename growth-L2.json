@@ -1,65 +1,6 @@
 {
  "runs": [
   {
-   "at": "2026-09-11T23:42:51Z",
-   "val": 2.8173,
-   "prev": 2.8173,
-   "valTag": "fixed-holdout-v1",
-   "stoppedAt": 679,
-   "secPerStep": 5.4658,
-   "steps": 1273,
-   "bpc": 3.331,
-   "charsPerTok": 1.2202,
-   "score": 2.0589,
-   "scoreW": 2.0,
-   "scoreMode": "talk",
-   "layers": 10,
-   "params": 20024448,
-   "chars": 1037515847,
-   "tokens": 850289863,
-   "grew": 0,
-   "rolledBack": true,
-   "ownVal": 2.843,
-   "ownScore": 2.1876,
-   "d": 384,
-   "loops": 1,
-   "spread": 2.8405,
-   "bytes": 240381405,
-   "heads": 6,
-   "ctx": 512,
-   "vocab": 6000,
-   "kind": "bpe",
-   "arch": "tpp-loop",
-   "wantWider": false,
-   "layerCap": 16,
-   "mixChanged": false,
-   "bySrc": {
-    "laws": 4.0936,
-    "wiki": 3.0736,
-    "aozora": 3.4684,
-    "hanrei": 3.6493,
-    "kokkai": 2.5473,
-    "web": 2.9747,
-    "talk": 2.1876
-   },
-   "wrote": [
-    {
-     "start": "わたしは",
-     "text": "わたしはそうですね。」 DZ「そうなんですよ。お昼は食べましたか？」 DQ「食べました！」 DZ「食べましたか？」 DQ「いえ、いつもどうでした？」 DQ「フルーツです！」 DQ「フルーツ！私もデパートフルーツのフルーツ！」"
-    },
-    {
-     "start": "第一条",
-     "text": "第一条において同じい ています。」 AN「確かに。」 AA「そんなにいってません？」 AN「ですです。」 AA「なんか、いつもお酒です？」 AN「あー、それでも楽しいですよ！」 AA「お酒、お酒は？」 AN「うーん、素晴らしい。"
-    },
-    {
-     "start": "この法律において",
-     "text": "この法律において「 Yahooエンタテインメント 」に由来する [ 18 ] 。 アイドル は、 ジョージ・ホーレン （現： 新潟テレビ ）のMCを歌っている。 ビルディング は、 神戸市空襲 や 天守 の 大質人 が防御していたというが、主に"
-    }
-   ],
-   "loopPct": 5.21,
-   "movedBody": false
-  },
-  {
    "at": "2026-09-12T02:41:55Z",
    "val": 2.8173,
    "prev": 2.8173,
@@ -12095,6 +12036,69 @@
    ],
    "loopPct": 7.5,
    "movedBody": false
+  },
+  {
+   "at": "2026-09-23T21:14:57Z",
+   "val": 2.8296,
+   "prev": 2.8454,
+   "valTag": "fixed-holdout-v1",
+   "stoppedAt": 537,
+   "stuck": 0,
+   "evalTag": "fixed-ix-v1",
+   "secPerStep": 7.0199,
+   "steps": 760,
+   "bpc": 3.349,
+   "charsPerTok": 1.2189,
+   "score": 2.1131,
+   "scoreW": 2.0,
+   "scoreMode": "talk",
+   "finishMix": 0.85,
+   "lineage": "L2",
+   "layers": 12,
+   "params": 41053696,
+   "chars": 1045308899,
+   "tokens": 857567631,
+   "grew": 0,
+   "rolledBack": false,
+   "ownVal": null,
+   "ownScore": null,
+   "d": 512,
+   "loops": 1,
+   "spread": 3.1817,
+   "bytes": 492748901,
+   "heads": 8,
+   "ctx": 512,
+   "vocab": 6000,
+   "kind": "bpe",
+   "arch": "tpp-loop",
+   "wantWider": false,
+   "layerCap": 16,
+   "mixChanged": false,
+   "bySrc": {
+    "laws": 3.8549,
+    "wiki": 3.0143,
+    "aozora": 3.3201,
+    "hanrei": 3.5085,
+    "kokkai": 2.6237,
+    "web": 2.9122,
+    "talk": 2.1131
+   },
+   "wrote": [
+    {
+     "start": "わたしは",
+     "text": "わたしは、いつもおみきじゅうに、カプセルの風味とか、すごくおいしいです」 FW「うらやましいですー。私も好きです。検索します。」 FP「うらやましいです！私は折れないけど、そんなのもありません。」 FW「あら、期待しちゃいま"
+    },
+    {
+     "start": "第一条",
+     "text": "第一条の規定は、前項の規定は、前項の規定は、第二項の規定は、前項について準用する。 この場合において、同項中「第二項」とあるのは、「同項」と、「前項」とあるのは「前項」と、「前項」とあるのは「第二項」と、「前項」とあるのは「第一項」と、「前項」とあるのは「第一項」と読み替えるものとする。 （項外） 第十一条 積別院又は積別院又は積別院又は積別院又は積別院又は積別院又は積別院又は積別院又は積別院又は積別院又は積"
+    },
+    {
+     "start": "この法律において",
+     "text": "この法律において�彫図画画をする等を監督し、その弱行を初めとする社会観を描き下ろした。 1860年 - フォン・フランスの ヴェール・ベンヴィス・モルディ が、 ボジュウア をヴェルサイユの モルディ に規定。 1873年 - ヴェリタニアの"
+    }
+   ],
+   "loopPct": 12.48,
+   "movedBody": false
   }
  ],
  "bestVal": 2.8173,
@@ -12145,5 +12149,5 @@
  ],
  "wantWider": false,
  "nextD": 512,
- "bad": 4
+ "bad": 1
 }
