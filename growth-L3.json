@@ -1,65 +1,6 @@
 {
  "runs": [
   {
-   "at": "2026-09-11T22:57:07Z",
-   "val": 4.7739,
-   "prev": null,
-   "valTag": "fixed-holdout-v1",
-   "stoppedAt": 1953,
-   "secPerStep": 1.2395,
-   "steps": 4129,
-   "bpc": 5.0478,
-   "charsPerTok": 1.3644,
-   "score": 3.2943,
-   "scoreW": 2.0,
-   "scoreMode": "talk",
-   "layers": 4,
-   "params": 4852032,
-   "chars": 1075380775,
-   "tokens": 788163838,
-   "grew": 0,
-   "rolledBack": false,
-   "ownVal": null,
-   "ownScore": null,
-   "d": 192,
-   "loops": 1,
-   "spread": 4.8138,
-   "bytes": 58262981,
-   "heads": 6,
-   "ctx": 512,
-   "vocab": 16000,
-   "kind": "bpe",
-   "arch": "tpp-loop",
-   "wantWider": false,
-   "layerCap": 8,
-   "mixChanged": false,
-   "bySrc": {
-    "laws": 7.1491,
-    "wiki": 4.9518,
-    "aozora": 5.0446,
-    "hanrei": 5.8642,
-    "kokkai": 4.2171,
-    "web": 4.6246,
-    "talk": 3.2943
-   },
-   "wrote": [
-    {
-     "start": "わたしは",
-     "text": "わたしはありではない。あた本身は傂もできるので、そういうふうに最近のことですが、実は戦い税ですと考えてつくらいろいろなこともありがとうございます。あ、世界の反対をひとっても、裏がございまして、私は、色谷化でどうなったのですか。それで、日本は税今回のことをかってきた、"
-    },
-    {
-     "start": "第一条",
-     "text": "第一条（をしようとするときは、望設町（両）の他、各週室の谷生を奏題に、上時代と弱いので参議院で、浜大民村が有れた。 1991年『本食谷川田田崎面将居も大阪車ITEFD 195790003673」4（8845年）10月1日 - AMIV"
-    },
-    {
-     "start": "この法律において",
-     "text": "この法律において。 ○委員 私は、私は、将来的には、作品であったと思います。 ○元牧委員 今回の計画については、こういう問題がございます。 ○内閣総理大臣 今人の目然、現在では、総理に私もやはり電力育成と呼ばれるのでありますが。 けると、こしらの房時代から、その外に対しよいです。 また"
-    }
-   ],
-   "loopPct": 7.31,
-   "movedBody": false
-  },
-  {
    "at": "2026-09-12T00:27:56Z",
    "val": 4.456,
    "prev": null,
@@ -12085,6 +12026,69 @@
    ],
    "loopPct": 8.91,
    "movedBody": false
+  },
+  {
+   "at": "2026-09-23T17:29:41Z",
+   "val": 2.9438,
+   "prev": 3.0459,
+   "valTag": "fixed-holdout-v1",
+   "stoppedAt": 564,
+   "stuck": 0,
+   "evalTag": "fixed-ix-v1",
+   "secPerStep": 6.6474,
+   "steps": 982,
+   "bpc": 3.4842,
+   "charsPerTok": 1.2189,
+   "score": 2.3019,
+   "scoreW": 2.0,
+   "scoreMode": "talk",
+   "finishMix": 0.2,
+   "lineage": "L3",
+   "layers": 13,
+   "params": 25335168,
+   "chars": 1045308899,
+   "tokens": 857567631,
+   "grew": 0,
+   "rolledBack": false,
+   "ownVal": null,
+   "ownScore": null,
+   "d": 384,
+   "loops": 1,
+   "spread": 2.8774,
+   "bytes": 304134793,
+   "heads": 6,
+   "ctx": 512,
+   "vocab": 6000,
+   "kind": "bpe",
+   "arch": "tpp-loop",
+   "wantWider": false,
+   "layerCap": 16,
+   "mixChanged": false,
+   "bySrc": {
+    "laws": 4.078,
+    "wiki": 3.1318,
+    "aozora": 3.4371,
+    "hanrei": 3.6503,
+    "kokkai": 2.716,
+    "web": 3.0186,
+    "talk": 2.3019
+   },
+   "wrote": [
+    {
+     "start": "わたしは",
+     "text": "わたしは、 A・オーラム に アレンジ・ブロック （ 英語版 ） らを挙げている。 D・S・A・B・M・Eは、G・S・A・A・B・DとUが「 ジャコブ 」を指す意味で、PBとして「 ピアニスト 」「 ディートス 」のような「 リーヒル・ア"
+    },
+    {
+     "start": "第一条",
+     "text": "第一条には、昭和三十年四月に発足するまで、種々の機器、荷物等の水質系の低下が明らかになったものがある。 今日では、一般の密度を共に、 電子 といいます。 この場合、単一に用いられるための インフォム と呼ばれる。 また、西ゴート の 空気 より、固体の 電子 が誕生するのに対し、こう"
+    },
+    {
+     "start": "この法律において",
+     "text": "この法律においてにおいて保有するもの 次に掲げる場合 正常勤者等が互いに結婚することのできない場合 当該妊婦等� この妊婦等の子どもらの子どもを表するための端末 その妊婦等の子どもたちの親吉の子ども又は子どもが結婚する妊婦等の子どもにとって貧しい女性であり、かつその妊婦等の養育のために女性であるとともに当該妊婦等の子どもが育てられる"
+    }
+   ],
+   "loopPct": 5.38,
+   "movedBody": false
   }
  ],
  "bestVal": 2.9295,
@@ -12135,5 +12139,5 @@
  ],
  "wantWider": false,
  "nextD": 384,
- "bad": 3
+ "bad": 2
 }
