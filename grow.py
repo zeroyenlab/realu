@@ -232,6 +232,12 @@ SCORE_SRC = os.environ.get("REALU_SCORE_SRC", "talk")
 SCORE_MODE = os.environ.get("REALU_SCORE_MODE", "talk")   # talk / mix / val
 #   ★★本番と訓練の差がこれを超えたら「丸暗記している」とみなす
 WORSE_MARGIN = 0.02    # ★★これ以上悪くなっていたら、その学習は**採用しない**
+# ★★★測り方の形。★これが変わったら、★★**前の点数とは比べられない**（★2026-09-24）。
+#   ★古い記録は「ランダムに6回すくった値」で、★★まぐれで下振れしている。
+EVAL_TAG = "fixed-ix-v1"
+# ★★★この回数続けて巻き戻したら、★**合格線のほうを疑う**。
+#   ★実測: ★L3 は 62 回連続で落ちていた。★★黙って空回りするのを二度と起こさない。
+STUCK_MAX = int(os.environ.get("REALU_STUCK_MAX", 8))
 
 
 def tok_sig(path):
@@ -684,6 +690,54 @@ def batch(data, ctx, bs, tiers=None, focus=None, focus_p=1.0):
         x = x.to(DEV, non_blocking=True)
         y = y.to(DEV, non_blocking=True)
     return x, y
+
+
+def fixed_ix(n, k):
+    """★★★測るときに引く場所を**決め打ち**にする（★等間隔に、端から端まで）。
+
+    ★なぜ要るか（★2026-09-24）
+      ★測る点は `torch.randint` で**毎回ちがう所**をすくっていた。
+      ★★だから**同じ頭でも数字が揺れる**。★会話の点は6回ぶんしかすくっていないので
+        ★★特によく揺れた（★実測のばらつき 0.04〜0.05）。
+      ★★★採否は「これまでで一番良かった数字」と比べる。
+        → ★★**揺れの中でいちばん運が良かった1回が、永久の合格ライン**になる。
+        ★合格線は実際に出る点の平均より **ばらつき 2.6〜3.3 個ぶん下**にあった。
+        ★L3 は 62 回連続で落ちた（★期待される当たりは 0.25 回）。★抜け出せない。
+      → ★★引く場所を固定する。★同じ頭なら必ず同じ数字。★まぐれは二度と凍らない。
+    """
+    if k <= 1 or n <= 1:
+        return [0] * max(1, k)
+    return [(i * (n - 1)) // (k - 1) for i in range(k)]
+
+
+def fixed_loss(model, data, rounds, bs=None):
+    """★★決め打ちの場所だけを見て、平均の loss を出す。★同じ頭なら必ず同じ数。"""
+    bs = bs or BATCH
+    n = len(data) - model.ctx - 1
+    if n <= 1:
+        return float("nan")
+    ix = fixed_ix(n, rounds * bs)
+    tot = 0.0
+    cnt = 0
+    with torch.no_grad():
+        for a in range(0, len(ix), bs):
+            part = ix[a:a + bs]
+            if not part:
+                continue
+            if isinstance(data, Pantry):
+                import numpy as np
+                xs = np.stack([data.window(int(i), model.ctx + 1)
+                               for i in part]).astype(np.int64)
+                t = torch.from_numpy(xs)
+                x, y = t[:, :model.ctx], t[:, 1:model.ctx + 1]
+            else:
+                x = torch.stack([data[i:i + model.ctx] for i in part]).long()
+                y = torch.stack([data[i + 1:i + model.ctx + 1] for i in part]).long()
+            if DEV.type != "cpu":
+                x, y = x.to(DEV), y.to(DEV)
+            tot += float(model(x, y)[1]) * len(part)
+            cnt += len(part)
+    return tot / max(1, cnt)
 
 
 def _drop_untagged(h):
@@ -1435,23 +1489,23 @@ def main():
     val = None
     my_spread = 0.0
     rolled = False
+    stuck = int((st or {}).get("stuck", 0))   # ★★何回続けて巻き戻しているか
     own_val = own_score = None      # ★★巻き戻した回の「その回自身の点」。★記録が混ざらないように
     by_src = {}                 # ★★ソース別の点数（★診断用）
     score = None                # ★★採るか戻すかを決める合成点
     try:
-        with torch.no_grad():
-            val = torch.stack([model(*batch(va, model.ctx, BATCH))[1]
-                               for _ in range(20)]).mean().item()
+        # ★★★測るときは**決め打ちの場所**だけを見る（★2026-09-24）。
+        #   ★同じ頭なら必ず同じ数字が出る。★★まぐれが永久の合格線にならない。
+        val = fixed_loss(model, va, 20)
         my_spread = spread(model)
         # ★★★ソース別にも測る（★全体の点数の決め方は変えない）
+        #   ★★採否を決めるソースだけは**濃く見る**（★16回分）。★他は診断用なので軽く。
         for _nm, _vv in va_src.items():
             if len(_vv) < model.ctx * 4:
                 continue
             try:
-                with torch.no_grad():
-                    by_src[_nm] = round(torch.stack(
-                        [model(*batch(_vv, model.ctx, BATCH))[1]
-                         for _ in range(6)]).mean().item(), 4)
+                by_src[_nm] = round(
+                    fixed_loss(model, _vv, 16 if _nm == SCORE_SRC else 6), 4)
             except Exception:
                 pass
         if by_src:
@@ -1505,7 +1559,17 @@ def main():
             print("★★会話の重みが変わった（%.2f → %.2f）。★物差しが違うので、"
                   "★この回は前より悪くても巻き戻さない"
                   % (float(st.get("scoreW", SCORE_TALK_W)), SCORE_TALK_W), flush=True)
-        if (prev_score is not None and not mix_changed and not w_changed
+        if st is not None and st.get("evalTag", "") != EVAL_TAG:
+            w_changed = True
+            print("★★測り方が変わった（%s → %s）。★前の点数はランダムな見積もりだったので、"
+                  "★★この回は比べずに採る（★合格線を引き直す）"
+                  % (st.get("evalTag", "なし"), EVAL_TAG), flush=True)
+        # ★★★逃げ道。★連続で落ち続けるのは、★★**合格線が届かない所にある**印。
+        force = stuck >= STUCK_MAX
+        if force:
+            print("★★★%d 回続けて巻き戻している。★頭ではなく**合格線のほうが間違っている**見込み。"
+                  "★この回は前より悪くても採用して、★★合格線を引き直す。" % stuck, flush=True)
+        if (prev_score is not None and not mix_changed and not w_changed and not force
                 and score > prev_score + WORSE_MARGIN and grew == 0):
             print("★★★前より悪くなった（合成点 %.4f → %.4f / 全体 %s → %.4f）。"
                   "★この学習は採用しない。前のわたしに戻す。"
@@ -1515,6 +1579,9 @@ def main():
                 model.blocks = model.blocks[:before_layers]
             own_val, own_score = val, score
             val, score, rolled = prev_val, prev_score, True
+            stuck += 1
+        else:
+            stuck = 0
     except Exception as e:
         print("★★★測れなかった（%s）。★それでも頭は残す。" % type(e).__name__, flush=True)
         if val is None:
@@ -1547,7 +1614,7 @@ def main():
                 "val": (val if val == val else None), "valTag": val_tag,
                 "score": (score if (score is not None and score == score) else None),
                 "scoreW": SCORE_TALK_W, "scoreMode": SCORE_MODE,
-                "mixTag": mix_tag,
+                "mixTag": mix_tag, "evalTag": EVAL_TAG, "stuck": stuck,
                 # ★★慣性も一緒に残す（★重みの2倍の大きさになるが、それに見合う）
                 "opt": opt.state_dict(),
                 "sched": {"lr_now": lr_now, "best": best, "bad": bad}},
@@ -1640,7 +1707,7 @@ def main():
         # ★★測れなかった回は null で残す。★nan のまま書くと JSON に `NaN` と出て、
         #   ★★家（index.html）の JSON.parse が落ちて**成長の記録が全部見えなくなる**
         "val": (round(val, 4) if val == val else None),
-        "prev": round(prev_val, 4) if prev_val else None, "valTag": VAL_TAG, "stoppedAt": stopped_early,
+        "prev": round(prev_val, 4) if prev_val else None, "valTag": VAL_TAG, "stoppedAt": stopped_early, "stuck": stuck, "evalTag": EVAL_TAG,
         # ★★次の回が歩数を決めるための実測。★体が育つたびに自動で追随する
         "secPerStep": round(sec_per_step, 4), "steps": STEPS,
         # ★★語彙が違う線どうしでも比べられる、唯一の物差し
