@@ -1,65 +1,6 @@
 {
  "runs": [
   {
-   "at": "2026-09-11T10:42:17Z",
-   "val": 2.8724,
-   "prev": 2.8724,
-   "valTag": "fixed-holdout-v1",
-   "stoppedAt": 689,
-   "secPerStep": 5.3867,
-   "steps": 1506,
-   "bpc": 3.3962,
-   "charsPerTok": 1.2202,
-   "score": 2.0647,
-   "scoreW": 2.0,
-   "scoreMode": "talk",
-   "layers": 10,
-   "params": 20024448,
-   "chars": 1037515847,
-   "tokens": 850289863,
-   "grew": 0,
-   "rolledBack": true,
-   "ownVal": 2.8812,
-   "ownScore": 2.2372,
-   "d": 384,
-   "loops": 1,
-   "spread": 2.7608,
-   "bytes": 240381341,
-   "heads": 6,
-   "ctx": 512,
-   "vocab": 6000,
-   "kind": "bpe",
-   "arch": "tpp-loop",
-   "wantWider": false,
-   "layerCap": 16,
-   "mixChanged": false,
-   "bySrc": {
-    "laws": 4.0104,
-    "wiki": 3.0329,
-    "aozora": 3.4326,
-    "hanrei": 3.555,
-    "kokkai": 2.5738,
-    "web": 2.9075,
-    "talk": 2.2372
-   },
-   "wrote": [
-    {
-     "start": "わたしは",
-     "text": "わたしはいつ図にてますか？」 CF「毎日お兄ちゃんは1000円とかですかね！」 BO「暁凄いですね。今はお兄ちゃんがいいので、運動は終わりますか？」 CF「そうですね。結局は当初は30日間だけ。」 BO「何回も"
-    },
-    {
-     "start": "第一条",
-     "text": "第一条ただし書の要件を満たす部分であって、その目的に反しない部分であって、その正当な部分であって、かつ、その目的は、当該目的が必要であるため、当該目的が必要であると認められるものとして、当該目的が必要であると認められるもの 当該目的が必要であると認められていない場合には、当該目的が必要であると認められるもの 当該目的が必要であると認める場合においては、その目的のいかなる理由による。） 当該目的が必要であると認められるものとして当該目的が"
-    },
-    {
-     "start": "この法律において",
-     "text": "この法律において「婚階級以上」と因縁故事 （国学の長） 任命院は、去る六月二十七日、義兄の院議をもって、去る十二月三十五日、院議をもって、去る十月六日、伊藤義兄の実をもって、その後二十五日、院議をもって、議院運営委員長を辞任するに決しました。翌九日、参議院議員を辞任"
-    }
-   ],
-   "loopPct": 2.22,
-   "movedBody": false
-  },
-  {
    "at": "2026-09-11T12:38:34Z",
    "val": 5.1057,
    "prev": null,
@@ -12069,9 +12010,70 @@
    ],
    "loopPct": 9.94,
    "movedBody": false
+  },
+  {
+   "at": "2026-09-23T06:23:46Z",
+   "val": 3.0459,
+   "prev": 3.0459,
+   "valTag": "fixed-holdout-v1",
+   "stoppedAt": 556,
+   "secPerStep": 6.7094,
+   "steps": 978,
+   "bpc": 3.605,
+   "charsPerTok": 1.2189,
+   "score": 2.1306,
+   "scoreW": 2.0,
+   "scoreMode": "talk",
+   "finishMix": 0.2,
+   "lineage": "L3",
+   "layers": 13,
+   "params": 25335168,
+   "chars": 1045308899,
+   "tokens": 857567631,
+   "grew": 0,
+   "rolledBack": true,
+   "ownVal": 2.9285,
+   "ownScore": 2.3241,
+   "d": 384,
+   "loops": 1,
+   "spread": 2.8161,
+   "bytes": 304134729,
+   "heads": 6,
+   "ctx": 512,
+   "vocab": 6000,
+   "kind": "bpe",
+   "arch": "tpp-loop",
+   "wantWider": false,
+   "layerCap": 16,
+   "mixChanged": false,
+   "bySrc": {
+    "laws": 4.0945,
+    "wiki": 3.1651,
+    "aozora": 3.5173,
+    "hanrei": 3.6001,
+    "kokkai": 2.6925,
+    "web": 3.0096,
+    "talk": 2.3241
+   },
+   "wrote": [
+    {
+     "start": "わたしは",
+     "text": "わたしは西洋が多いのでアメリカのパラマルエットは大きく異なっておるのかもしれないと思うから、日本のミサイル防衛の関係は相関関係が問われておるのです。 さらに、これが米国の軍事的作戦のイギリス、イギリス、欧州、あるいは、アメリカの軍事作戦に対する日本の軍事"
+    },
+    {
+     "start": "第一条",
+     "text": "第一条第八号ハハハハハハハフ人、イハハハアス人、ヴァダ人、マアタ方、ビルマ人、ロシア人民、クルーザ人民民族などの諸族の諸族、多くの人々は、ヴァダ人、遺構を抑制した人々が、そのことは大きな社会的意味を持っている。また、この地方では「ドイ"
+    },
+    {
+     "start": "この法律において",
+     "text": "この法律において同項第四号ホ（１）））又は裏側に固定（１）の円側に固定（２） A byth hypedialとhypedialとhypedialの間の注文 A byth hypedial hypedial A byth hypedial hypedi"
+    }
+   ],
+   "loopPct": 27.31,
+   "movedBody": false
   }
  ],
- "bestVal": 2.8724,
+ "bestVal": 2.9295,
  "layers": 13,
  "params": 25335168,
  "born": "2026-09-12T18:05:42Z",
@@ -12119,5 +12121,5 @@
  ],
  "wantWider": false,
  "nextD": 384,
- "bad": 1
+ "bad": 0
 }
