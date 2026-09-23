@@ -1,65 +1,6 @@
 {
  "runs": [
   {
-   "at": "2026-09-11T06:12:50Z",
-   "val": 3.0552,
-   "prev": 3.0552,
-   "valTag": "fixed-holdout-v1",
-   "stoppedAt": 1439,
-   "secPerStep": 2.5357,
-   "steps": 1506,
-   "bpc": 3.6124,
-   "charsPerTok": 1.2202,
-   "score": 2.125,
-   "scoreW": 2.0,
-   "scoreMode": "talk",
-   "layers": 10,
-   "params": 20024448,
-   "chars": 1037515847,
-   "tokens": 850289863,
-   "grew": 0,
-   "rolledBack": true,
-   "ownVal": 2.8522,
-   "ownScore": 2.1944,
-   "d": 384,
-   "loops": 1,
-   "spread": 2.7631,
-   "bytes": 240381341,
-   "heads": 6,
-   "ctx": 512,
-   "vocab": 6000,
-   "kind": "bpe",
-   "arch": "tpp-loop",
-   "wantWider": false,
-   "layerCap": 16,
-   "mixChanged": false,
-   "bySrc": {
-    "laws": 3.9692,
-    "wiki": 3.0329,
-    "aozora": 3.4199,
-    "hanrei": 3.6213,
-    "kokkai": 2.5642,
-    "web": 2.9618,
-    "talk": 2.1944
-   },
-   "wrote": [
-    {
-     "start": "わたしは",
-     "text": "わたしは横熱を浴びせて、自分のマンションはダンスに乗りきた。 この油き替えは家 … かわり、 「 たち 」と呼ばれていたが、すぐに世話し合ってこられた。 事実上、動けないとは私は思うな。 もう一度も見る事が出来なかった。 」 いよいよ再来るが、 「朝"
-    },
-    {
-     "start": "第一条",
-     "text": "第一条�zzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzazzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzazzzzz)と、「PC」をアンボzzzzzzzzzzz"
-    },
-    {
-     "start": "この法律において",
-     "text": "この法律において「(((1)」という。）にあなたは、個人として、影響を受けながら、できる限り行動し、かつ、当該施設において運動されることが困難となる。 ただし、その緊急時において、当該施設において運動する治療方法であって、当該施設において行われる者が、当該施設において運動される指導と認められる意見が立てられることができ、かつ、当該施設において運動するように一定の指導をしなければならない。 （監督指導） 月一日には、階段等通路を新設"
-    }
-   ],
-   "loopPct": 31.75,
-   "movedBody": false
-  },
-  {
    "at": "2026-09-11T07:20:32Z",
    "val": 3.0552,
    "prev": 3.0552,
@@ -12063,6 +12004,67 @@
    ],
    "loopPct": 14.66,
    "movedBody": false
+  },
+  {
+   "at": "2026-09-23T02:43:11Z",
+   "val": 3.0459,
+   "prev": 3.0459,
+   "valTag": "fixed-holdout-v1",
+   "stoppedAt": 560,
+   "secPerStep": 6.6674,
+   "steps": 1311,
+   "bpc": 3.605,
+   "charsPerTok": 1.2189,
+   "score": 2.1306,
+   "scoreW": 2.0,
+   "scoreMode": "talk",
+   "finishMix": 0.2,
+   "lineage": "L3",
+   "layers": 13,
+   "params": 25335168,
+   "chars": 1045308899,
+   "tokens": 857567631,
+   "grew": 0,
+   "rolledBack": true,
+   "ownVal": 2.955,
+   "ownScore": 2.3151,
+   "d": 384,
+   "loops": 1,
+   "spread": 2.9349,
+   "bytes": 304134729,
+   "heads": 6,
+   "ctx": 512,
+   "vocab": 6000,
+   "kind": "bpe",
+   "arch": "tpp-loop",
+   "wantWider": false,
+   "layerCap": 16,
+   "mixChanged": false,
+   "bySrc": {
+    "laws": 4.0824,
+    "wiki": 3.15,
+    "aozora": 3.4603,
+    "hanrei": 3.6084,
+    "kokkai": 2.6917,
+    "web": 2.9207,
+    "talk": 2.3151
+   },
+   "wrote": [
+    {
+     "start": "わたしは",
+     "text": "わたしは、 洗礼 の舞が出てくると、ひとたび出るかもしれない。 しかし、 開祖 の 嘉岡義隆 などの 梅田晴起 は、 三川弘文 内閣下の 秋葉ダム内閣 を始め、 三浦京田 政権が続いた 佐野信雄 内閣の居住"
+    },
+    {
+     "start": "第一条",
+     "text": "第一条第七号第四号第四号第四号第四号第四号第四号第四号第四号第四号第四号更新第六号レー官は、当該処分を受けた後減少し、又は増因する裁判で確定した後に、延期の出動期において、前述のとおり、当該処分を受けた後退し、又は増因する裁判で確定された後退しなかった場合には、当該処分を受けた後退しなかった場合には、当該処分を受けた後退しなかった場合には、当該処分を受けた後退しなかったときは、当該処分を受けた後退しなかったときは、当該処分を受けた"
+    },
+    {
+     "start": "この法律において",
+     "text": "この法律において生母母母母母母母母母母母母母母母母、母母母性母母母母母母母母母母などの繊維母母母子 母母母母母子 と結婚する 母 の孫： 母 母 母 母 母 姉 母 母 母 母 母 母 母 母 母 母 母 母 母 母 母 母 母 母 母"
+    }
+   ],
+   "loopPct": 32.65,
+   "movedBody": false
   }
  ],
  "bestVal": 2.8724,
@@ -12113,5 +12115,5 @@
  ],
  "wantWider": false,
  "nextD": 384,
- "bad": 7
+ "bad": 2
 }
