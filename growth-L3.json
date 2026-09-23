@@ -1,65 +1,6 @@
 {
  "runs": [
   {
-   "at": "2026-09-12T04:58:56Z",
-   "val": 4.3915,
-   "prev": null,
-   "valTag": "fixed-holdout-v1",
-   "stoppedAt": 2336,
-   "secPerStep": 1.0345,
-   "steps": 3511,
-   "bpc": 4.6435,
-   "charsPerTok": 1.3644,
-   "score": 3.066,
-   "scoreW": 2.0,
-   "scoreMode": "talk",
-   "layers": 4,
-   "params": 4852032,
-   "chars": 1075380775,
-   "tokens": 788163838,
-   "grew": 0,
-   "rolledBack": false,
-   "ownVal": null,
-   "ownScore": null,
-   "d": 192,
-   "loops": 1,
-   "spread": 4.8623,
-   "bytes": 58262981,
-   "heads": 6,
-   "ctx": 512,
-   "vocab": 16000,
-   "kind": "bpe",
-   "arch": "tpp-loop",
-   "wantWider": false,
-   "layerCap": 8,
-   "mixChanged": false,
-   "bySrc": {
-    "laws": 6.9817,
-    "wiki": 4.6623,
-    "aozora": 4.7985,
-    "hanrei": 5.4029,
-    "kokkai": 3.9618,
-    "web": 4.3986,
-    "talk": 3.066
-   },
-   "wrote": [
-    {
-     "start": "わたしは",
-     "text": "わたしはお尋ねします。 今回の世界に火を持っていただいておりますが、まさに、わが国なしは、日本が日本と著作権家では、昨日、北上国から反対していく、これも大変なことでしょうか。 ○SWeala のと、ここに大阪はそれが日本から自 日本一般会計では、連合国、今、日本、�"
-    },
-    {
-     "start": "第一条",
-     "text": "第一条;.高齢十七％線 Balep Bokoserunooonmu ulisonai xercemrirters onrosonus Sinateng|パロサンチャー Rerinotatiis Caleccscaitersorinl"
-    },
-    {
-     "start": "この法律において",
-     "text": "この法律において百二一時死亡法第四にわたり、国勢調査換すみなくすることが多い。 この場合において、入出力装置は、感知器及び安全保管者が可建頪する状態がめるというものである。 ただし、錠は、麻薬が直接又はなる。 の契約を締結した必要がある。 『 式西 （ 英語版 ） ） （たまく ） （ ( ) ）。 特に、 ショー・C/tatouu odearo chapo"
-    }
-   ],
-   "loopPct": 5.29,
-   "movedBody": false
-  },
-  {
    "at": "2026-09-12T06:29:38Z",
    "val": 4.7871,
    "prev": null,
@@ -12101,9 +12042,72 @@
    ],
    "loopPct": 29.95,
    "movedBody": false
+  },
+  {
+   "at": "2026-09-23T22:28:07Z",
+   "val": 2.8952,
+   "prev": 2.903,
+   "valTag": "fixed-holdout-v1",
+   "stoppedAt": 665,
+   "stuck": 0,
+   "evalTag": "fixed-ix-v1",
+   "secPerStep": 5.6038,
+   "steps": 975,
+   "bpc": 3.4267,
+   "charsPerTok": 1.2189,
+   "score": 2.2783,
+   "scoreW": 2.0,
+   "scoreMode": "talk",
+   "finishMix": 0.2,
+   "lineage": "L3",
+   "layers": 13,
+   "params": 25335168,
+   "chars": 1045308899,
+   "tokens": 857567631,
+   "grew": 0,
+   "rolledBack": false,
+   "ownVal": null,
+   "ownScore": null,
+   "d": 384,
+   "loops": 1,
+   "spread": 3.004,
+   "bytes": 304134793,
+   "heads": 6,
+   "ctx": 512,
+   "vocab": 6000,
+   "kind": "bpe",
+   "arch": "tpp-loop",
+   "wantWider": false,
+   "layerCap": 16,
+   "mixChanged": false,
+   "bySrc": {
+    "laws": 3.9939,
+    "wiki": 3.0822,
+    "aozora": 3.3956,
+    "hanrei": 3.5982,
+    "kokkai": 2.672,
+    "web": 2.9721,
+    "talk": 2.2783
+   },
+   "wrote": [
+    {
+     "start": "わたしは",
+     "text": "わたしは、本郷を出てからは、まだまだ小さいお枝のまだ妙な暴行です」 「どこれでも黙ってますね」 「ああ、あ、お寺ですか」 「息子さんに芝居ですかと思ってますね」 「悲しいものなんですか」 「それだけ、そこで、その芝居に�"
+    },
+    {
+     "start": "第一条",
+     "text": "第一条（昭和１３年昭和１４年）７月９日ぜんぜんぜんぜんせいしふみのあんげんとうのきぼうえんのうさいせいしょうこうじゅんぼうしんてっさいぼうしんとせしむじゅんぼうだんじゅんぼうしんしん（こうしん）じゅんぼうしんとうなんきじゅんのうはん"
+    },
+    {
+     "start": "この法律において",
+     "text": "この法律においてにおいて占める場合 当該輸入された輸入することのできる量の差額（損金の計算し、途中定義した介入（焼却）場合を除く。） 当該輸入された輸入又は輸入した輸入振興に係る補給額（損金のみをしたものを除く。）が、当該輸入食品についての輸入��により居住する場合（当該輸入は、次に掲げる期間） 当該輸入取次ぎに係る輸入調整金（損金及び損金が含まれるものに限る。） 当該輸入取次ぎに係る輸入菓子輸出国（��需"
+    }
+   ],
+   "loopPct": 12.04,
+   "movedBody": false
   }
  ],
- "bestVal": 2.903,
+ "bestVal": 2.8952,
  "layers": 13,
  "params": 25335168,
  "born": "2026-09-12T18:05:42Z",
@@ -12151,5 +12155,5 @@
  ],
  "wantWider": false,
  "nextD": 384,
- "bad": 3
+ "bad": 1
 }
