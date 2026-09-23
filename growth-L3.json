@@ -1,65 +1,6 @@
 {
  "runs": [
   {
-   "at": "2026-09-12T01:57:47Z",
-   "val": 4.7552,
-   "prev": null,
-   "valTag": "fixed-holdout-v1",
-   "stoppedAt": 1958,
-   "secPerStep": 1.2365,
-   "steps": 3712,
-   "bpc": 5.028,
-   "charsPerTok": 1.3644,
-   "score": 3.2909,
-   "scoreW": 2.0,
-   "scoreMode": "talk",
-   "layers": 4,
-   "params": 4852032,
-   "chars": 1075380775,
-   "tokens": 788163838,
-   "grew": 0,
-   "rolledBack": false,
-   "ownVal": null,
-   "ownScore": null,
-   "d": 192,
-   "loops": 1,
-   "spread": 5.1721,
-   "bytes": 58262981,
-   "heads": 6,
-   "ctx": 512,
-   "vocab": 16000,
-   "kind": "bpe",
-   "arch": "tpp-loop",
-   "wantWider": false,
-   "layerCap": 8,
-   "mixChanged": false,
-   "bySrc": {
-    "laws": 7.1582,
-    "wiki": 4.9425,
-    "aozora": 5.0273,
-    "hanrei": 5.8278,
-    "kokkai": 4.2738,
-    "web": 4.6172,
-    "talk": 3.2909
-   },
-   "wrote": [
-    {
-     "start": "わたしは",
-     "text": "わたしは、そこでそこですか。」 DL「そうですね！ほんんなのとかですね。」 DC「こんなのでて！」 CR「そうですね！」 EN「つないのですね！」 ereriO「こんにちはー！」 CW「いえ、六ップスバイです！！」 EO「最近こ"
-    },
-    {
-     "start": "第一条",
-     "text": "第一条の操作入院 数を、契約に応じた支給しておるかを、残高の導入、当該前項の場合において、日本銀行の内容の地方提出、土木審査をした。 （平成平成年）3月18日：先波名（昭和7）） 当該第二十監督（受付） 工場 → Pealary Owetaaai-Qanour> GB「どんん」という。） Caoii[ 14 ]"
-    },
-    {
-     "start": "この法律において",
-     "text": "この法律において併せて等の 発電用 ウェブサイト 前項第十基盤円滑処理医薬品 者は、民間済柱等に従っていたところ l以後、アメリカ、従行の強い。 政治々は、東京国の第三者的会話 CR「説しいでございます。 <題は、本法第一号のミリーズフェウス・ギュリス・ーパーパル・アメリカ内で、コ"
-    }
-   ],
-   "loopPct": 11.62,
-   "movedBody": false
-  },
-  {
    "at": "2026-09-12T03:28:58Z",
    "val": 4.7326,
    "prev": null,
@@ -12093,9 +12034,72 @@
    ],
    "loopPct": 14.6,
    "movedBody": false
+  },
+  {
+   "at": "2026-09-23T20:04:37Z",
+   "val": 2.9093,
+   "prev": 2.929,
+   "valTag": "fixed-holdout-v1",
+   "stoppedAt": 955,
+   "stuck": 0,
+   "evalTag": "fixed-ix-v1",
+   "secPerStep": 3.8611,
+   "steps": 969,
+   "bpc": 3.4434,
+   "charsPerTok": 1.2189,
+   "score": 2.2858,
+   "scoreW": 2.0,
+   "scoreMode": "talk",
+   "finishMix": 0.2,
+   "lineage": "L3",
+   "layers": 13,
+   "params": 25335168,
+   "chars": 1045308899,
+   "tokens": 857567631,
+   "grew": 0,
+   "rolledBack": false,
+   "ownVal": null,
+   "ownScore": null,
+   "d": 384,
+   "loops": 1,
+   "spread": 2.9196,
+   "bytes": 304134793,
+   "heads": 6,
+   "ctx": 512,
+   "vocab": 6000,
+   "kind": "bpe",
+   "arch": "tpp-loop",
+   "wantWider": false,
+   "layerCap": 16,
+   "mixChanged": false,
+   "bySrc": {
+    "laws": 4.018,
+    "wiki": 3.0955,
+    "aozora": 3.4083,
+    "hanrei": 3.6127,
+    "kokkai": 2.6862,
+    "web": 2.9865,
+    "talk": 2.2858
+   },
+   "wrote": [
+    {
+     "start": "わたしは",
+     "text": "わたしは、この背筋を見ていた。これは腹をぶっているので、今でもその気かな顔をしてしまった。 ところが、その頭の中には腹のせっかく見えた。それは元の俊彦が、急に腹を上げると、腹が静かになっていた。 「御れも、綺麗に腹を向けた。"
+    },
+    {
+     "start": "第一条",
+     "text": "第一条（平成２３年１月２５日付）のとおり，原告らは原告に対し，処分を する義務が生じることを請求する。 したがって，原告は，上記証拠（甲１１の２ないし１１の１ないし２ないし２，３の１ないし３の１ないし３の１ないし２，３の１ないし３の１ないし４の１ないし４の１ないし"
+    },
+    {
+     "start": "この法律において",
+     "text": "この法律において「卒業試験試験試験試験」という。）を提出し、又は卒業試験検査が停止されたとき、がある場合には、当該試験試験試験試験試験試験試験試験試験試験試験試験試験試験試験試験試験試験試験試験試験試験試験試験試験試験試験試験試験試験試験試験試験試験試験試験試験試験試験試験試験試験試験試験試験試験試験試験試験試験試験試験試験試験試験試験試験試験試験試験試験試験試験試験試験試験試験試験（校長免許試験試験試験試験試験試験試験試験試験試験試験"
+    }
+   ],
+   "loopPct": 41.41,
+   "movedBody": false
   }
  ],
- "bestVal": 2.929,
+ "bestVal": 2.9093,
  "layers": 13,
  "params": 25335168,
  "born": "2026-09-12T18:05:42Z",
@@ -12143,5 +12147,5 @@
  ],
  "wantWider": false,
  "nextD": 384,
- "bad": 1
+ "bad": 8
 }
