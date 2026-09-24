@@ -1,65 +1,6 @@
 {
  "runs": [
   {
-   "at": "2026-09-12T10:10:46Z",
-   "val": 2.8173,
-   "prev": 2.8173,
-   "valTag": "fixed-holdout-v1",
-   "stoppedAt": 1246,
-   "secPerStep": 2.9355,
-   "steps": 1273,
-   "bpc": 3.331,
-   "charsPerTok": 1.2202,
-   "score": 2.0589,
-   "scoreW": 2.0,
-   "scoreMode": "talk",
-   "layers": 10,
-   "params": 20024448,
-   "chars": 1037515847,
-   "tokens": 850289863,
-   "grew": 0,
-   "rolledBack": true,
-   "ownVal": 2.9766,
-   "ownScore": 2.124,
-   "d": 384,
-   "loops": 1,
-   "spread": 3.4522,
-   "bytes": 240381405,
-   "heads": 6,
-   "ctx": 512,
-   "vocab": 6000,
-   "kind": "bpe",
-   "arch": "tpp-loop",
-   "wantWider": false,
-   "layerCap": 16,
-   "mixChanged": false,
-   "bySrc": {
-    "laws": 4.242,
-    "wiki": 3.2125,
-    "aozora": 3.5798,
-    "hanrei": 3.8701,
-    "kokkai": 2.6208,
-    "web": 2.9609,
-    "talk": 2.124
-   },
-   "wrote": [
-    {
-     "start": "わたしは",
-     "text": "わたしはお茶ですが。。」 BQ「お茶ですか。お茶はお茶ですか？」 AL「はい、冷たいお茶が飽きないんです」 BQ「なるほど。あとは、お茶井とかお茶茶ですか？」 AL「ありますよ、そんなお茶茶をお茶さんに誘"
-    },
-    {
-     "start": "第一条",
-     "text": "第一条（同条第九項に規定する確認事項で作成されているものに限る。） 次に掲げるもののほか、当該事務が困難な仮定に当たるものでないものであると認識されるものでないこと。） 次に掲げるもののほか、当該事務が困難な仮定に当たるものでないこと。 当該事務に耐える必要があること。 当該事務に耐える必要があること。 当該事務を分離して当該事務を分離して当該事務に耐える必要があること。 当該事務に耐える必要があること。 当該事務を分離して当該事務に"
-    },
-    {
-     "start": "この法律において",
-     "text": "この法律において「 Mailloodal Prosoft Prosoft 」といった用語が使われており、Radal Prosoft のようなコンパーレットを使っており、コンパーレットを使ったりイメージがある。 コードネームは、Love tosoft Prosoft"
-    }
-   ],
-   "loopPct": 15.29,
-   "movedBody": false
-  },
-  {
    "at": "2026-09-12T13:00:33Z",
    "val": 2.8173,
    "prev": 2.8173,
@@ -12111,9 +12052,72 @@
    ],
    "loopPct": 3.49,
    "movedBody": false
+  },
+  {
+   "at": "2026-09-24T02:18:35Z",
+   "val": 2.8103,
+   "prev": 2.8142,
+   "valTag": "fixed-holdout-v1",
+   "stoppedAt": 396,
+   "stuck": 0,
+   "evalTag": "fixed-ix-v1",
+   "secPerStep": 9.6474,
+   "steps": 920,
+   "bpc": 3.3262,
+   "charsPerTok": 1.2189,
+   "score": 2.1066,
+   "scoreW": 2.0,
+   "scoreMode": "talk",
+   "finishMix": 0.85,
+   "lineage": "L2",
+   "layers": 12,
+   "params": 41053696,
+   "chars": 1045308899,
+   "tokens": 857567631,
+   "grew": 0,
+   "rolledBack": false,
+   "ownVal": null,
+   "ownScore": null,
+   "d": 512,
+   "loops": 1,
+   "spread": 2.9322,
+   "bytes": 492748901,
+   "heads": 8,
+   "ctx": 512,
+   "vocab": 6000,
+   "kind": "bpe",
+   "arch": "tpp-loop",
+   "wantWider": false,
+   "layerCap": 16,
+   "mixChanged": false,
+   "bySrc": {
+    "laws": 3.8173,
+    "wiki": 2.9945,
+    "aozora": 3.2942,
+    "hanrei": 3.4915,
+    "kokkai": 2.6051,
+    "web": 2.8945,
+    "talk": 2.1066
+   },
+   "wrote": [
+    {
+     "start": "わたしは",
+     "text": "わたしはマルグレームではないとか。」 FM「マルグレームってなんですか」 FU「マルグレームです」 FM「マルグレームってどんなストーリーですか？」 FU「シュピークリームが好きですね」 FM「シュピークリームっていうとどんなの見ますか？」 FU「め"
+    },
+    {
+     "start": "第一条",
+     "text": "第一条第七三十ころ 植物化学工業等は、機関の磁石でしばしば孔質の複合体を形成する。８００ミリ秒以上の土地では、人体形状のうち、動物化学のβ-282個の水のうち、酵母、ーフミン酸などを形成する。 <記事 新潟県> 新潟県（しょうかわやく）は、新潟県（しょうどうさい）の県。"
+    },
+    {
+     "start": "この法律において",
+     "text": "この法律においてした危険な政策を実現するためには、地域の行政または金融・金融の役割分担を十分に足下に置いて、その名のもとに、広く国民の理解を得ながら協調、発展していくことが重要であると考えております。」 AB「また、金融・金融政策については、これまでも継続的な金融政策を総合的に策定したところですが、今後とも、金融"
+    }
+   ],
+   "loopPct": 2.22,
+   "movedBody": false
   }
  ],
- "bestVal": 2.8142,
+ "bestVal": 2.8103,
  "layers": 12,
  "params": 41053696,
  "born": "2026-09-08T15:11:54Z",
@@ -12161,5 +12165,5 @@
  ],
  "wantWider": false,
  "nextD": 512,
- "bad": 3
+ "bad": 6
 }
