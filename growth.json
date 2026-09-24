@@ -1,65 +1,6 @@
 {
  "runs": [
   {
-   "at": "2026-09-14T10:48:21Z",
-   "val": 2.75,
-   "prev": 2.75,
-   "valTag": "fixed-holdout-v1",
-   "stoppedAt": 668,
-   "secPerStep": 5.5575,
-   "steps": 1159,
-   "bpc": 3.2514,
-   "charsPerTok": 1.2202,
-   "score": 2.0174,
-   "scoreW": 2.0,
-   "scoreMode": "talk",
-   "layers": 11,
-   "params": 21794688,
-   "chars": 1037515847,
-   "tokens": 850289863,
-   "grew": 0,
-   "rolledBack": true,
-   "ownVal": 2.8279,
-   "ownScore": 2.1947,
-   "d": 384,
-   "loops": 1,
-   "spread": 2.7047,
-   "bytes": 261632513,
-   "heads": 6,
-   "ctx": 512,
-   "vocab": 6000,
-   "kind": "bpe",
-   "arch": "tpp-loop",
-   "wantWider": false,
-   "layerCap": 16,
-   "mixChanged": false,
-   "bySrc": {
-    "laws": 3.8886,
-    "wiki": 3.0012,
-    "aozora": 3.3533,
-    "hanrei": 3.6172,
-    "kokkai": 2.5589,
-    "web": 2.9016,
-    "talk": 2.1947
-   },
-   "wrote": [
-    {
-     "start": "わたしは",
-     "text": "わたしは」 BV「なるほど、夏の原作のエピソードが大好きなんですが、ハロウィンの方がたくさんで、是非！」 BU「たくさんテレビで見てましたね！」 BV「たくさん見てましたね！」 BU「そうなんです。まだ楽しそうですね。」"
-    },
-    {
-     "start": "第一条",
-     "text": "第一条行う費用は、前条の事業額が、前条の事業っては、前条の事業額が、事業計画期間に係る負担とする。 （事業費） 第七十四条 事業費は、費用又は費用を負担せず、又は予算を負担せず、又は予算を負担していること。 事業費は、事業費及び補助金を支出する現金等に係る負担とする。 （事業費） 第七十五条 事業費は、事業費、事業費及び補助金の減額としたほか、事業費、事業費、事業費"
-    },
-    {
-     "start": "この法律において",
-     "text": "この法律においてに関連しては、本件航空会社に対する誤解の発生があったため、同社はそれ自体に「共同する」こと、社外は「鉄道会社」と命名した。 また、鉄道会社は、鉄道会社が鉄道会社に証券会社を譲渡して2012年3月10日に誕生した 。 このため、鉄道会社を日本では名古屋まで鉄道会社を扱っていたことがある。 1911年（明治44年"
-    }
-   ],
-   "loopPct": 11.62,
-   "movedBody": false
-  },
-  {
    "at": "2026-09-14T11:57:07Z",
    "val": 2.9341,
    "prev": 2.75,
@@ -12175,9 +12116,72 @@
    ],
    "loopPct": 1.54,
    "movedBody": false
+  },
+  {
+   "at": "2026-09-24T22:39:59Z",
+   "val": 3.2483,
+   "prev": 3.2511,
+   "valTag": "fixed-holdout-v1",
+   "stoppedAt": 143,
+   "stuck": 0,
+   "evalTag": "fixed-ix-v1",
+   "secPerStep": 29.6164,
+   "steps": 300,
+   "bpc": 3.8446,
+   "charsPerTok": 1.2189,
+   "score": 2.3202,
+   "scoreW": 2.0,
+   "scoreMode": "talk",
+   "finishMix": 0.5,
+   "lineage": "L1",
+   "layers": 16,
+   "params": 117914880,
+   "chars": 1045308899,
+   "tokens": 857567631,
+   "grew": 0,
+   "rolledBack": false,
+   "ownVal": null,
+   "ownScore": null,
+   "d": 768,
+   "loops": 1,
+   "spread": 3.4507,
+   "bytes": 1415115957,
+   "heads": 6,
+   "ctx": 512,
+   "vocab": 6000,
+   "kind": "bpe",
+   "arch": "tpp-loop",
+   "wantWider": false,
+   "layerCap": 16,
+   "mixChanged": false,
+   "bySrc": {
+    "laws": 4.8414,
+    "wiki": 3.4307,
+    "aozora": 3.7237,
+    "hanrei": 3.8294,
+    "kokkai": 2.9529,
+    "web": 3.2329,
+    "talk": 2.3202
+   },
+   "wrote": [
+    {
+     "start": "わたしは",
+     "text": "わたしは、今後もこの議定書において全く今日わけではないと思います。したがって、先ほども申し上げましたように、このとおりであります。」 AB「いずれにいたしましても、今回のような高校への働きかけを始め、そうした学校を生かして、この際、中小部隊に戻って、近代の教科書も非常に多いわけ"
+    },
+    {
+     "start": "第一条",
+     "text": "第一条u。） （特定型型） Lakinko-Jamanasage for denter, アイリアン・ドリイト オッシュ＝ブライアン・グローガン Googlex (Livesseals) <記事 Ruthingyoung> L"
+    },
+    {
+     "start": "この法律において",
+     "text": "この法律においてい込まれました。 このため、我が国としては、全体として、世界ではなく、自由民主党・新党・新同館・鹿児島担当国務大臣に伺います。 このため、かつての世論調査が見られることは、自由民主党・新党・民主党・新党・新党・政治・国民・民主主義者と共同自由と民主党・民"
+    }
+   ],
+   "loopPct": 10.8,
+   "movedBody": false
   }
  ],
- "bestVal": 2.75,
+ "bestVal": 2.7794,
  "layers": 16,
  "params": 117914880,
  "born": "2026-09-08T15:11:54Z",
@@ -12225,5 +12229,5 @@
  ],
  "wantWider": false,
  "nextD": 768,
- "bad": 3
+ "bad": 4
 }
