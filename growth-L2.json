@@ -1,65 +1,6 @@
 {
  "runs": [
   {
-   "at": "2026-09-14T07:24:15Z",
-   "val": 4.6057,
-   "prev": null,
-   "valTag": "fixed-holdout-v1",
-   "stoppedAt": 473,
-   "secPerStep": 7.9503,
-   "steps": 1249,
-   "bpc": 5.4456,
-   "charsPerTok": 1.2202,
-   "score": 2.8032,
-   "scoreW": 2.0,
-   "scoreMode": "talk",
-   "layers": 10,
-   "params": 34727424,
-   "chars": 1037515847,
-   "tokens": 850289863,
-   "grew": 0,
-   "rolledBack": false,
-   "ownVal": null,
-   "ownScore": null,
-   "d": 512,
-   "loops": 1,
-   "spread": 4.7958,
-   "bytes": 416817117,
-   "heads": 8,
-   "ctx": 512,
-   "vocab": 6000,
-   "kind": "bpe",
-   "arch": "tpp-loop",
-   "wantWider": false,
-   "layerCap": 16,
-   "mixChanged": false,
-   "bySrc": {
-    "laws": 6.7184,
-    "wiki": 4.7918,
-    "aozora": 4.8292,
-    "hanrei": 5.341,
-    "kokkai": 4.2029,
-    "web": 4.4586,
-    "talk": 2.8032
-   },
-   "wrote": [
-    {
-     "start": "わたしは",
-     "text": "わたしはありますか？」 BL「そうですね！そうですよね！食べました。」 AJ「一敵においても私も教えていますね。」 BJ「んゃいます。」 FQ「こんばんは！」 DA「えうなことあってなんですか？」 AR「私も海わからないです」 CS"
-    },
-    {
-     "start": "第一条",
-     "text": "第一条は測しているらず、そこかに、またまず明日のこうした山間で、悩みてないです。 また、今年が、風寄りに�見、、自由に決定されていただきました。 当日の中共に身って、その報の風に、一話仕組みを見ます。 ○鉄 いかがでは、まだ音楽は、伺います。 本日"
-    },
-    {
-     "start": "この法律において",
-     "text": "この法律においてしたり、実施したようになった教育のご案をします。（拍手） ↑ 今も、何か承知しました。それをお願いします。」 店「はい、その条件では、NRFOKAIOK NORIDMBATALZiOGDC」 BM「こんばんは。」 AY「そうなんです。あ"
-    }
-   ],
-   "loopPct": 0.81,
-   "movedBody": false
-  },
-  {
    "at": "2026-09-14T08:31:41Z",
    "val": 4.1031,
    "prev": null,
@@ -12163,9 +12104,72 @@
    ],
    "loopPct": 12.1,
    "movedBody": false
+  },
+  {
+   "at": "2026-09-24T18:28:26Z",
+   "val": 2.7901,
+   "prev": 2.793,
+   "valTag": "fixed-holdout-v1",
+   "stoppedAt": 0,
+   "stuck": 0,
+   "evalTag": "fixed-ix-v1",
+   "secPerStep": 4.4606,
+   "steps": 667,
+   "bpc": 3.3023,
+   "charsPerTok": 1.2189,
+   "score": 2.101,
+   "scoreW": 2.0,
+   "scoreMode": "talk",
+   "finishMix": 0.85,
+   "lineage": "L2",
+   "layers": 12,
+   "params": 41053696,
+   "chars": 1045308899,
+   "tokens": 857567631,
+   "grew": 0,
+   "rolledBack": false,
+   "ownVal": null,
+   "ownScore": null,
+   "d": 512,
+   "loops": 1,
+   "spread": 2.7225,
+   "bytes": 492748901,
+   "heads": 8,
+   "ctx": 512,
+   "vocab": 6000,
+   "kind": "bpe",
+   "arch": "tpp-loop",
+   "wantWider": false,
+   "layerCap": 16,
+   "mixChanged": false,
+   "bySrc": {
+    "laws": 3.7859,
+    "wiki": 2.9728,
+    "aozora": 3.2739,
+    "hanrei": 3.4725,
+    "kokkai": 2.5909,
+    "web": 2.8743,
+    "talk": 2.101
+   },
+   "wrote": [
+    {
+     "start": "わたしは",
+     "text": "わたしは、ここで私は、大いに前進をされて、大いに大きなプレゼントをつくりました。 総理、この間、参議院で、やはり国会に法案を出すということは、まことにきちっと実現されるということで、十月から、そのときにも、当時の大臣から民主党が立法したこと、そして自民党の抜本的な改革、こういう決意を"
+    },
+    {
+     "start": "第一条",
+     "text": "第一条第六号に規定する旅旅旅旅旅旅旅旅旅旅旅旅特別旅旅旅旅旅旅日」という。） 旅行先の船生アミューズ船（船生アミューズ船など） 旅行先の船に乗った旅館（船生アミューズ船を含む。ジュース船と大船船（船生アミューズ船）との間には、駐車場（船生アミューズ船と船生アミューズ"
+    },
+    {
+     "start": "この法律において",
+     "text": "この法律において「テレポテト」 」は、2020年10月1日（土）に設置された 。 2021年7月26日、テレビ朝日系列「テレビ朝日系列『テレビ朝日』 」がレギュラー放送を行っており、2021年12月25日をもって放送が終了した。 2021年3月30日"
+    }
+   ],
+   "loopPct": 8.82,
+   "movedBody": false
   }
  ],
- "bestVal": 2.793,
+ "bestVal": 2.7901,
  "layers": 12,
  "params": 41053696,
  "born": "2026-09-08T15:11:54Z",
@@ -12213,5 +12217,5 @@
  ],
  "wantWider": false,
  "nextD": 512,
- "bad": 2
+ "bad": 1
 }
