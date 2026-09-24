@@ -1,65 +1,6 @@
 {
  "runs": [
   {
-   "at": "2026-09-13T18:59:41Z",
-   "val": 2.75,
-   "prev": 2.75,
-   "valTag": "fixed-holdout-v1",
-   "stoppedAt": 653,
-   "secPerStep": 5.6851,
-   "steps": 1159,
-   "bpc": 3.2514,
-   "charsPerTok": 1.2202,
-   "score": 2.0174,
-   "scoreW": 2.0,
-   "scoreMode": "talk",
-   "layers": 11,
-   "params": 21794688,
-   "chars": 1037515847,
-   "tokens": 850289863,
-   "grew": 0,
-   "rolledBack": true,
-   "ownVal": 2.8663,
-   "ownScore": 2.2028,
-   "d": 384,
-   "loops": 1,
-   "spread": 2.7613,
-   "bytes": 261632513,
-   "heads": 6,
-   "ctx": 512,
-   "vocab": 6000,
-   "kind": "bpe",
-   "arch": "tpp-loop",
-   "wantWider": false,
-   "layerCap": 16,
-   "mixChanged": false,
-   "bySrc": {
-    "laws": 3.8575,
-    "wiki": 3.0516,
-    "aozora": 3.3527,
-    "hanrei": 3.5728,
-    "kokkai": 2.4884,
-    "web": 2.9624,
-    "talk": 2.2028
-   },
-   "wrote": [
-    {
-     "start": "わたしは",
-     "text": "わたしは レア もバナナーに乗っ取る。 すごい快適なデスアーカイブ [ 15 ] 。 そのため、一連の風景がゲーションに集まった。 高校では、サイコマンドを教えようとWindows Servierを利用して、サイコマンドを設計する。 また、サ"
-    },
-    {
-     "start": "第一条",
-     "text": "第一条–– ”. 映像コンピュータ. 2024年3月22日閲覧。 ↑ “ 多代的価値観 ”. 映像システムズ . 2024年3月22日閲覧。 ↑ “ 『 色田真一郎・註服 ～ このジャンプリクエストテープ 1"
-    },
-    {
-     "start": "この法律において",
-     "text": "この法律において「宇宙空間」の第3号機を中心とする。 2006年6月11日、「東北新幹線」の運行開始。 2007年3月15日「東北新幹線 新幹線」の運行を開始。 2010年7月25日：南海新幹線が「東北新幹線」、新幹線に「東北新幹線」を使用 。 2"
-    }
-   ],
-   "loopPct": 6.13,
-   "movedBody": false
-  },
-  {
    "at": "2026-09-13T19:59:37Z",
    "val": 2.75,
    "prev": 2.75,
@@ -12119,6 +12060,69 @@
    ],
    "loopPct": 3.64,
    "movedBody": false
+  },
+  {
+   "at": "2026-09-24T05:01:34Z",
+   "val": 3.2896,
+   "prev": 3.292,
+   "valTag": "fixed-holdout-v1",
+   "stoppedAt": 159,
+   "stuck": 0,
+   "evalTag": "fixed-ix-v1",
+   "secPerStep": 26.2141,
+   "steps": 300,
+   "bpc": 3.8935,
+   "charsPerTok": 1.2189,
+   "score": 2.3446,
+   "scoreW": 2.0,
+   "scoreMode": "talk",
+   "finishMix": 0.5,
+   "lineage": "L1",
+   "layers": 16,
+   "params": 117914880,
+   "chars": 1045308899,
+   "tokens": 857567631,
+   "grew": 0,
+   "rolledBack": false,
+   "ownVal": null,
+   "ownScore": null,
+   "d": 768,
+   "loops": 1,
+   "spread": 3.5936,
+   "bytes": 1415115957,
+   "heads": 6,
+   "ctx": 512,
+   "vocab": 6000,
+   "kind": "bpe",
+   "arch": "tpp-loop",
+   "wantWider": false,
+   "layerCap": 16,
+   "mixChanged": false,
+   "bySrc": {
+    "laws": 4.9206,
+    "wiki": 3.4753,
+    "aozora": 3.7549,
+    "hanrei": 3.8767,
+    "kokkai": 2.986,
+    "web": 3.2705,
+    "talk": 2.3446
+   },
+   "wrote": [
+    {
+     "start": "わたしは",
+     "text": "わたしはまってしまいますね！」 CJ「いえいえ、大丈夫ですね。」 EK「あら、いろいろ時間かかりますもんね 小さい原因ですよね」 CJ「そうなんですね。今度逃げてみたいですよねー。」 EK「いやいやいやいやですよね」 <"
+    },
+    {
+     "start": "第一条",
+     "text": "第一条の支払税の説明に推進する。 捜査する特別編集部の「出出版物」の2種を調査する。 また、 夏季 の 快適 の「 昼夜動画イフリーアクション 」を参照。 2004年 に ブラックホール ・ 映画 ・ 映画指導者 の大"
+    },
+    {
+     "start": "この法律において",
+     "text": "この法律においてはならない。 （保障制度） 第二十五条 財務局が、各都市局、臨時措置法、地方自治法案、公職外局、市における専門的人権及びその方法内容及び厚生省、吸入起庁、合併、従業員、介護及び同条、特別区及び地方公共団体、四国中央部、自立活性化策、産業支援等、身体性の確保、医療及び国際情勢について、各種金融指導その他重要な施設、産業の独立、機能的、経済"
+    }
+   ],
+   "loopPct": 14.6,
+   "movedBody": false
   }
  ],
  "bestVal": 2.75,
@@ -12169,5 +12173,5 @@
  ],
  "wantWider": false,
  "nextD": 768,
- "bad": 0
+ "bad": 1
 }
