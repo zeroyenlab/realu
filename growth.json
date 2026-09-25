@@ -1,65 +1,6 @@
 {
  "runs": [
   {
-   "at": "2026-09-15T06:21:14Z",
-   "val": 2.8755,
-   "prev": 2.8755,
-   "valTag": "fixed-holdout-v1",
-   "stoppedAt": 498,
-   "secPerStep": 7.5433,
-   "steps": 1323,
-   "bpc": 3.3999,
-   "charsPerTok": 1.2202,
-   "score": 2.1642,
-   "scoreW": 2.0,
-   "scoreMode": "talk",
-   "layers": 14,
-   "params": 27105408,
-   "chars": 1037515847,
-   "tokens": 850289863,
-   "grew": 0,
-   "rolledBack": true,
-   "ownVal": 2.78,
-   "ownScore": 2.2388,
-   "d": 384,
-   "loops": 1,
-   "spread": 2.8087,
-   "bytes": 325385773,
-   "heads": 6,
-   "ctx": 512,
-   "vocab": 6000,
-   "kind": "bpe",
-   "arch": "tpp-loop",
-   "wantWider": false,
-   "layerCap": 16,
-   "mixChanged": false,
-   "bySrc": {
-    "laws": 3.8242,
-    "wiki": 3.0101,
-    "aozora": 3.2242,
-    "hanrei": 3.5175,
-    "kokkai": 2.513,
-    "web": 2.8906,
-    "talk": 2.2388
-   },
-   "wrote": [
-    {
-     "start": "わたしは",
-     "text": "わたしは、瞬時にスタートして、またそのあたりの体験に成功するようになりました。」 DF「それは、あれ、自分の子供のところが、やっぱり色々といいので、自分の子供の体験を全く変えていないんです。」 GQ「決して子供の体験は何なのですか？」 DF「子供の体験？"
-    },
-    {
-     "start": "第一条",
-     "text": "第一条第二号第一号の武力が、�かるの（英称Ｑ）る。 （例） 「 ： 」は、 非合法 （ 英語 ）と フランス語 （ 英語 ）の間にのみ使われる。 — 「 提� （ 英語 ）」は、 英語 （ 英語 ）と「 英語 」で、 英語"
-    },
-    {
-     "start": "この法律において",
-     "text": "この法律において、石灰岩質利用の軽減に資するため、林産物の全量生産量を増強することとする修正案が提出されました。 ○政府委員 ただいま委員が御指摘になりましたＣＲＣの海域におきまして、一部の地域において大規模な輸送を促進するため、務めております。 御指摘のＣＲＣの海域e便便については、九月十五日"
-    }
-   ],
-   "loopPct": 2.14,
-   "movedBody": false
-  },
-  {
    "at": "2026-09-15T07:30:16Z",
    "val": 2.8286,
    "prev": 2.8755,
@@ -12243,6 +12184,69 @@
    ],
    "loopPct": 2.27,
    "movedBody": false
+  },
+  {
+   "at": "2026-09-25T20:19:36Z",
+   "val": 3.2169,
+   "prev": 3.2211,
+   "valTag": "fixed-holdout-v1",
+   "stoppedAt": 158,
+   "stuck": 0,
+   "evalTag": "fixed-ix-v1",
+   "secPerStep": 26.3204,
+   "steps": 300,
+   "bpc": 3.8074,
+   "charsPerTok": 1.2189,
+   "score": 2.3027,
+   "scoreW": 2.0,
+   "scoreMode": "talk",
+   "finishMix": 0.5,
+   "lineage": "L1",
+   "layers": 16,
+   "params": 117914880,
+   "chars": 1045308899,
+   "tokens": 857567631,
+   "grew": 0,
+   "rolledBack": false,
+   "ownVal": null,
+   "ownScore": null,
+   "d": 768,
+   "loops": 1,
+   "spread": 3.3802,
+   "bytes": 1415115957,
+   "heads": 6,
+   "ctx": 512,
+   "vocab": 6000,
+   "kind": "bpe",
+   "arch": "tpp-loop",
+   "wantWider": false,
+   "layerCap": 16,
+   "mixChanged": false,
+   "bySrc": {
+    "laws": 4.7863,
+    "wiki": 3.4006,
+    "aozora": 3.6947,
+    "hanrei": 3.8034,
+    "kokkai": 2.9255,
+    "web": 3.2044,
+    "talk": 2.3027
+   },
+   "wrote": [
+    {
+     "start": "わたしは",
+     "text": "わたしは、今後、我が国は、あわせては、これまでに一兆円程度という目標を、いわば、これはもうこれは決して、日本の経済にとっても海外の経済状況を踏まえながら、我が国の経済が九十三兆の改革に取り組むということではないのであります。 最後に、手数料といいますか、これは池田総理"
+    },
+    {
+     "start": "第一条",
+     "text": "第一条PXXXXXXXXXXX「タイコペンタイトルーライド アタイプタイム セリフはタイジャイアンカー。 0 / TXXMO-XRX（ニュース） - 会社デジタルタイプレスを採用。 2019年10月 - 株式会社アナトライアン 金曜 NE"
+    },
+    {
+     "start": "この法律において",
+     "text": "この法律において�別になるものですね。」 AK「そうなんですね、私は14kmほどになってしまうのですが、ひとつです。」 BW「私もかわいいですよね、あとは、恐らくも観ました。」 AK「素敵ですが、もう一つお金がかからないので、どこか行ったりしていましたか"
+    }
+   ],
+   "loopPct": 7.36,
+   "movedBody": false
   }
  ],
  "bestVal": 2.7794,
@@ -12293,5 +12297,5 @@
  ],
  "wantWider": false,
  "nextD": 768,
- "bad": 1
+ "bad": 2
 }
