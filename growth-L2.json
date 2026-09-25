@@ -1,65 +1,6 @@
 {
  "runs": [
   {
-   "at": "2026-09-14T16:35:09Z",
-   "val": 5.1253,
-   "prev": null,
-   "valTag": "fixed-holdout-v1",
-   "stoppedAt": 513,
-   "secPerStep": 7.2817,
-   "steps": 559,
-   "bpc": 6.06,
-   "charsPerTok": 1.2202,
-   "score": 3.0029,
-   "scoreW": 2.0,
-   "scoreMode": "talk",
-   "layers": 12,
-   "params": 41053696,
-   "chars": 1037515847,
-   "tokens": 850289863,
-   "grew": 0,
-   "rolledBack": false,
-   "ownVal": null,
-   "ownScore": null,
-   "d": 512,
-   "loops": 1,
-   "spread": 5.2635,
-   "bytes": 492748837,
-   "heads": 8,
-   "ctx": 512,
-   "vocab": 6000,
-   "kind": "bpe",
-   "arch": "tpp-loop",
-   "wantWider": false,
-   "layerCap": 16,
-   "mixChanged": false,
-   "bySrc": {
-    "laws": 7.2606,
-    "wiki": 5.1632,
-    "aozora": 5.1104,
-    "hanrei": 5.9407,
-    "kokkai": 4.835,
-    "web": 4.8989,
-    "talk": 3.0029
-   },
-   "wrote": [
-    {
-     "start": "わたしは",
-     "text": "わたしは行きつです。」 AJ「それえは石がしますね。」 FX「ですね、大からゃいます。Lhat> CI「ですよね。」 DB「こんにちは！」 GI「やっちゃいます！あですか？」 D残「そうですよね。」 CH「ですよ。野変だと"
-    },
-    {
-     "start": "第一条",
-     "text": "第一条「か貸付け、そこに行くのが回さい！」 DY「そうですね、勝宇が好きなんですよね。」 AQ「そうなんですねー。でもいて土聞きました。私は徒量をこで、開発が行きたいです。」 EZ「その自由ですよね。」 FP「こんばんはなりました、�"
-    },
-    {
-     "start": "この法律において",
-     "text": "この法律においてとしてはなくないですね！」 AC「いえ、いろいと何かすぎまいます！」 CA「あ！○」 AU「いたいよが近くだと思います。」 CS「もう行きえんですよね。私は！さんは達致します。」 CW「それはなんですね！」 ES「かし"
-    }
-   ],
-   "loopPct": 0.0,
-   "movedBody": true
-  },
-  {
    "at": "2026-09-14T17:44:06Z",
    "val": 8.1333,
    "prev": null,
@@ -12195,9 +12136,72 @@
    ],
    "loopPct": 0.65,
    "movedBody": false
+  },
+  {
+   "at": "2026-09-25T04:48:38Z",
+   "val": 2.7789,
+   "prev": 2.7798,
+   "valTag": "fixed-holdout-v1",
+   "stoppedAt": 0,
+   "stuck": 0,
+   "evalTag": "fixed-ix-v1",
+   "secPerStep": 4.8459,
+   "steps": 676,
+   "bpc": 3.2891,
+   "charsPerTok": 1.2189,
+   "score": 2.093,
+   "scoreW": 2.0,
+   "scoreMode": "talk",
+   "finishMix": 0.85,
+   "lineage": "L2",
+   "layers": 12,
+   "params": 41053696,
+   "chars": 1045308899,
+   "tokens": 857567631,
+   "grew": 0,
+   "rolledBack": false,
+   "ownVal": null,
+   "ownScore": null,
+   "d": 512,
+   "loops": 1,
+   "spread": 2.8327,
+   "bytes": 492748901,
+   "heads": 8,
+   "ctx": 512,
+   "vocab": 6000,
+   "kind": "bpe",
+   "arch": "tpp-loop",
+   "wantWider": false,
+   "layerCap": 16,
+   "mixChanged": false,
+   "bySrc": {
+    "laws": 3.7645,
+    "wiki": 2.9624,
+    "aozora": 3.2635,
+    "hanrei": 3.4659,
+    "kokkai": 2.579,
+    "web": 2.8654,
+    "talk": 2.093
+   },
+   "wrote": [
+    {
+     "start": "わたしは",
+     "text": "わたしはあまり詳しくないんですが、そこに出ていませんよね。」 CI「出てる時、1時間あったら2時間だったので、1時間じゃできません。」 BI「最近の休みなら1時間ですか？」 CI「1時間ですか、1時間でもかかるかも。」 BI「3時間とか、あまり時間かか"
+    },
+    {
+     "start": "第一条",
+     "text": "第一条の審議を行う。 一 一 一 一 一・五一一 放送局 一 日テレ朝ドラマ放送局 一 一 放送局 一 一 放送局 一 一 放送局 一 一 放送局 一 放送局 一 日本放送協会 一 放送局 一 局 二 放送局 一 放送会 一 日本放送協会 二 放送局 一 放送局 一"
+    },
+    {
+     "start": "この法律において",
+     "text": "この法律において各事業年度撃電電池駅にて9.5%を送電する。 「 電車 」は、電車で1000m反対1車輌の電車を放電する。 電車では、電車で1000mを電車で1000mに改造する。 撤去のため、 電車 では電車で1000mを電車で10両台にし、いずれ"
+    }
+   ],
+   "loopPct": 24.94,
+   "movedBody": false
   }
  ],
- "bestVal": 2.7798,
+ "bestVal": 2.7789,
  "layers": 12,
  "params": 41053696,
  "born": "2026-09-08T15:11:54Z",
