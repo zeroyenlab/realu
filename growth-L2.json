@@ -1,65 +1,6 @@
 {
  "runs": [
   {
-   "at": "2026-09-14T21:08:47Z",
-   "val": 6.0385,
-   "prev": null,
-   "valTag": "fixed-holdout-v1",
-   "stoppedAt": 336,
-   "secPerStep": 11.3218,
-   "steps": 481,
-   "bpc": 7.1396,
-   "charsPerTok": 1.2202,
-   "score": 3.9482,
-   "scoreW": 2.0,
-   "scoreMode": "talk",
-   "layers": 14,
-   "params": 47379968,
-   "chars": 1037515847,
-   "tokens": 850289863,
-   "grew": 0,
-   "rolledBack": false,
-   "ownVal": null,
-   "ownScore": null,
-   "d": 512,
-   "loops": 1,
-   "spread": 6.4762,
-   "bytes": 568680493,
-   "heads": 8,
-   "ctx": 512,
-   "vocab": 6000,
-   "kind": "bpe",
-   "arch": "tpp-loop",
-   "wantWider": false,
-   "layerCap": 16,
-   "mixChanged": false,
-   "bySrc": {
-    "laws": 7.9424,
-    "wiki": 6.0698,
-    "aozora": 5.7902,
-    "hanrei": 6.7846,
-    "kokkai": 5.8129,
-    "web": 5.8411,
-    "talk": 3.9482
-   },
-   "wrote": [
-    {
-     "start": "わたしは",
-     "text": "わたしは。」 E帰「そうくもいますか？」 Eh「があなんですね、も見もらさんですね。」 K E「卩やりますかに連私よりきりますね！」 ED「そうのです？」 EA「さいます選るいます。」 A。」 X「そうですRealt> AG"
-    },
-    {
-     "start": "第一条",
-     "text": "第一条） （ B「イル記、1558759202月022211�年2717A雌お駅があります。」 BN「とようでした。」 ET「それいだました、原は日議名 。大えごぶは厚生労働大臣が日本ます。」 客「そうですか？」 「ディス名地全国がと、一当に請求結"
-    },
-    {
-     "start": "この法律において",
-     "text": "この法律において以下対策挙、十四免家�に、、コン）から感情報通信、の� ホ、同法の加対なる人に、は予算までの３リはニものにあつては事故いか頬れず対してい、、。 が額を評価 国点�。 02Y B日Al� WOhaoonannat> AE「ため、日？ 店が、。 結であたようにしです。こう"
-    }
-   ],
-   "loopPct": 5.24,
-   "movedBody": true
-  },
-  {
    "at": "2026-09-14T22:18:49Z",
    "val": 8.308,
    "prev": null,
@@ -12211,9 +12152,72 @@
    ],
    "loopPct": 29.93,
    "movedBody": false
+  },
+  {
+   "at": "2026-09-25T09:53:57Z",
+   "val": 2.7751,
+   "prev": 2.7772,
+   "valTag": "fixed-holdout-v1",
+   "stoppedAt": 0,
+   "stuck": 0,
+   "evalTag": "fixed-ix-v1",
+   "secPerStep": 4.8286,
+   "steps": 673,
+   "bpc": 3.2846,
+   "charsPerTok": 1.2189,
+   "score": 2.0937,
+   "scoreW": 2.0,
+   "scoreMode": "talk",
+   "finishMix": 0.85,
+   "lineage": "L2",
+   "layers": 12,
+   "params": 41053696,
+   "chars": 1045308899,
+   "tokens": 857567631,
+   "grew": 0,
+   "rolledBack": false,
+   "ownVal": null,
+   "ownScore": null,
+   "d": 512,
+   "loops": 1,
+   "spread": 2.9578,
+   "bytes": 492748901,
+   "heads": 8,
+   "ctx": 512,
+   "vocab": 6000,
+   "kind": "bpe",
+   "arch": "tpp-loop",
+   "wantWider": false,
+   "layerCap": 16,
+   "mixChanged": false,
+   "bySrc": {
+    "laws": 3.7594,
+    "wiki": 2.9572,
+    "aozora": 3.2581,
+    "hanrei": 3.4622,
+    "kokkai": 2.5773,
+    "web": 2.8598,
+    "talk": 2.0937
+   },
+   "wrote": [
+    {
+     "start": "わたしは",
+     "text": "わたしは学校です。」 BY「すぐに、学校でもやりたくなってきたんですよね。」 CX「そうですね、でも今は学校もありません。」 BY「ですよね！私も今0年以上になって学校とかに入っています。」 CX「そういうところもありますもんね。」 BY「そうな"
+    },
+    {
+     "start": "第一条",
+     "text": "第一条第二号並びに資産等を積み立てて十五条第一項��の\u001aについて認可を得た場合において、その認可を受けた場合には、せて、当該認定を受けることがさせるものとする。 主務大臣は、前項の規定による認可を受けた場合において、当該認可を受けた�獣医師が二月毎月十日に唐突に到達しているときは、当該指定を受けたおうが、について準用する。 この場合において、当該認可を受けた國内大学（以下「大学」という。）が、令第三条及び第二十九条分の一の方法により認定"
+    },
+    {
+     "start": "この法律において",
+     "text": "この法律において。 <法令 中小企業等協同組合法> 平成二十四年中小企業金融公庫法 かせていしょんほう 金融機関の さいほどのこくきげんとうのきかいほうのにきそく 国土開発 平成十三年の巨額なんばないですかっいせいんぽんにさいもむのぎんとうのきじゅんのきょうしょほうりのきのみかぎんとうのしきんにかんするほうりつ 中小企業"
+    }
+   ],
+   "loopPct": 0.91,
+   "movedBody": false
   }
  ],
- "bestVal": 2.7754,
+ "bestVal": 2.7751,
  "layers": 12,
  "params": 41053696,
  "born": "2026-09-08T15:11:54Z",
@@ -12261,5 +12265,5 @@
  ],
  "wantWider": false,
  "nextD": 512,
- "bad": 0
+ "bad": 5
 }
