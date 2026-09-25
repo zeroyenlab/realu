@@ -1,65 +1,6 @@
 {
  "runs": [
   {
-   "at": "2026-09-14T19:54:16Z",
-   "val": 4.9701,
-   "prev": null,
-   "valTag": "fixed-holdout-v1",
-   "stoppedAt": 0,
-   "secPerStep": 6.4807,
-   "steps": 517,
-   "bpc": 5.8764,
-   "charsPerTok": 1.2202,
-   "score": 2.9522,
-   "scoreW": 2.0,
-   "scoreMode": "talk",
-   "layers": 13,
-   "params": 44216832,
-   "chars": 1037515847,
-   "tokens": 850289863,
-   "grew": 0,
-   "rolledBack": false,
-   "ownVal": null,
-   "ownScore": null,
-   "d": 512,
-   "loops": 1,
-   "spread": 5.1813,
-   "bytes": 530714633,
-   "heads": 8,
-   "ctx": 512,
-   "vocab": 6000,
-   "kind": "bpe",
-   "arch": "tpp-loop",
-   "wantWider": false,
-   "layerCap": 16,
-   "mixChanged": false,
-   "bySrc": {
-    "laws": 7.0895,
-    "wiki": 5.0509,
-    "aozora": 4.9792,
-    "hanrei": 5.907,
-    "kokkai": 4.6164,
-    "web": 4.748,
-    "talk": 2.9522
-   },
-   "wrote": [
-    {
-     "start": "わたしは",
-     "text": "わたしはなったったですよね。」 BR「お探ですね。私は距離の教、そんな私も丁みちゃうです。」 AU「いいですね、たらのさんですよね、AFOでしたか」 GG「したら、そうなんですね」 AQ「そうですね。パンとかですね！」"
-    },
-    {
-     "start": "第一条",
-     "text": "第一条。 慦 な や 滓 して 」 Re 曲 - プスプ クル 裏 は [ 5 ] 。 アクブミ は ゲッードク 立 ビロン が トッチソン なひ に 『 ボリアイス 、 ロウアダタマ 、 ム ーベイ"
-    },
-    {
-     "start": "この法律において",
-     "text": "この法律において計算した。）させる習を養して同年月、、平成年） 1月2性、平成1年） ） （経過市） - 4 - 和統学駅。 1922年11月2日 - 二沢敵洔 をJDFiが、合わかります。 1294年1月22日 - 世界記国からし、2095年、4"
-    }
-   ],
-   "loopPct": 8.51,
-   "movedBody": true
-  },
-  {
    "at": "2026-09-14T21:08:47Z",
    "val": 6.0385,
    "prev": null,
@@ -12206,6 +12147,69 @@
     }
    ],
    "loopPct": 21.89,
+   "movedBody": false
+  },
+  {
+   "at": "2026-09-25T08:47:23Z",
+   "val": 2.7772,
+   "prev": 2.7754,
+   "valTag": "fixed-holdout-v1",
+   "stoppedAt": 538,
+   "stuck": 0,
+   "evalTag": "fixed-ix-v1",
+   "secPerStep": 7.0064,
+   "steps": 673,
+   "bpc": 3.287,
+   "charsPerTok": 1.2189,
+   "score": 2.0952,
+   "scoreW": 2.0,
+   "scoreMode": "talk",
+   "finishMix": 0.85,
+   "lineage": "L2",
+   "layers": 12,
+   "params": 41053696,
+   "chars": 1045308899,
+   "tokens": 857567631,
+   "grew": 0,
+   "rolledBack": false,
+   "ownVal": null,
+   "ownScore": null,
+   "d": 512,
+   "loops": 1,
+   "spread": 2.9388,
+   "bytes": 492748901,
+   "heads": 8,
+   "ctx": 512,
+   "vocab": 6000,
+   "kind": "bpe",
+   "arch": "tpp-loop",
+   "wantWider": false,
+   "layerCap": 16,
+   "mixChanged": false,
+   "bySrc": {
+    "laws": 3.7583,
+    "wiki": 2.9605,
+    "aozora": 3.2614,
+    "hanrei": 3.464,
+    "kokkai": 2.5786,
+    "web": 2.8634,
+    "talk": 2.0952
+   },
+   "wrote": [
+    {
+     "start": "わたしは",
+     "text": "わたしはばっちりなんです。」 BR「楽しいですね！何か楽器やってるのですか？」 BX「女子高校生です。勉強になりました。」 BR「いいですね！私も好きなピアノとかはときどきです！」 BX「ピアノがするんですね！演奏されてま"
+    },
+    {
+     "start": "第一条",
+     "text": "第一条第十二項に規定する法律に基づき、この法律の施行及び施行に関する事項を定めるものとする。 <法令 特定事業者に対し、特定事業者に対し、特定事業者に対し、特定事業者に対し、特定事業者に対し、特定地方定義掲示板、特定事業者に対し、特定事業者に対し、特定事業者に対し、特定事業者に対し、特定事業者に対し、特定事業者に対し、特定事業者に対し特定事業者に対し、特定事業者に対し、特定事業者に対し、特定事業者に対し、特定事業者に対し、特定事業者に対"
+    },
+    {
+     "start": "この法律において",
+     "text": "この法律において路線をめぐる諸問題が生じておるのであります。」 AA「これら諸問題は、日本の行政、行政、経済のあり方のとるべき政策であると思うが、総理並びに労働大臣の御答弁を求めます。（拍手） 労働大臣、あなたは、労働政策の一環としての行政政策の転換に万全を期すべきであります。政府は、この法"
+    }
+   ],
+   "loopPct": 29.93,
    "movedBody": false
   }
  ],
