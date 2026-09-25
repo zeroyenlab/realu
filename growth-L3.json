@@ -1,65 +1,6 @@
 {
  "runs": [
   {
-   "at": "2026-09-15T05:13:42Z",
-   "val": 4.2322,
-   "prev": null,
-   "valTag": "fixed-holdout-v1",
-   "stoppedAt": 882,
-   "secPerStep": 4.1736,
-   "steps": 2294,
-   "bpc": 5.004,
-   "charsPerTok": 1.2202,
-   "score": 2.9721,
-   "scoreW": 2.0,
-   "scoreMode": "talk",
-   "layers": 8,
-   "params": 16483968,
-   "chars": 1037515847,
-   "tokens": 850289863,
-   "grew": 0,
-   "rolledBack": false,
-   "ownVal": null,
-   "ownScore": null,
-   "d": 384,
-   "loops": 1,
-   "spread": 4.7806,
-   "bytes": 197879253,
-   "heads": 6,
-   "ctx": 512,
-   "vocab": 6000,
-   "kind": "bpe",
-   "arch": "tpp-loop",
-   "wantWider": false,
-   "layerCap": 16,
-   "mixChanged": false,
-   "bySrc": {
-    "laws": 6.3981,
-    "wiki": 4.4188,
-    "aozora": 4.5788,
-    "hanrei": 5.0067,
-    "kokkai": 3.8797,
-    "web": 4.0406,
-    "talk": 2.9721
-   },
-   "wrote": [
-    {
-     "start": "わたしは",
-     "text": "わたしはまった。 しかし、かもしいかもありがとうございまして、もう一つ上げていただきたいと思います。 ○約 了体に知ってきたいです"
-    },
-    {
-     "start": "第一条",
-     "text": "第一条が回続けている。 その人間が集業する「 刊 放送 」 と 衆 を挙げたことで ” . 楽生触 . 2024年4月2日閲覧 . 2026年3月1日閲覧。 ↑ “ ”. 2025年7月6日閲覧。 ↑ 2019年2月20日閲覧"
-    },
-    {
-     "start": "この法律において",
-     "text": "この法律において熱�格の共和党の独立合が話します。 ○○○�限市場の軌道一災害のあり方がずつつありませんか。 ○国務大臣 そして、自分にお答えの意味ですよね。一方のでありますけど、一度も、○国務大臣 そこです。私、そして、いつお願いように見"
-    }
-   ],
-   "loopPct": 1.94,
-   "movedBody": false
-  },
-  {
    "at": "2026-09-15T06:19:32Z",
    "val": 4.2311,
    "prev": null,
@@ -12236,6 +12177,69 @@
     }
    ],
    "loopPct": 23.17,
+   "movedBody": false
+  },
+  {
+   "at": "2026-09-25T17:42:36Z",
+   "val": 2.8221,
+   "prev": 2.8214,
+   "valTag": "fixed-holdout-v1",
+   "stoppedAt": 566,
+   "stuck": 0,
+   "evalTag": "fixed-ix-v1",
+   "secPerStep": 6.6301,
+   "steps": 959,
+   "bpc": 3.3402,
+   "charsPerTok": 1.2189,
+   "score": 2.2362,
+   "scoreW": 2.0,
+   "scoreMode": "talk",
+   "finishMix": 0.2,
+   "lineage": "L3",
+   "layers": 13,
+   "params": 25335168,
+   "chars": 1045308899,
+   "tokens": 857567631,
+   "grew": 0,
+   "rolledBack": false,
+   "ownVal": null,
+   "ownScore": null,
+   "d": 384,
+   "loops": 1,
+   "spread": 3.1429,
+   "bytes": 304134793,
+   "heads": 6,
+   "ctx": 512,
+   "vocab": 6000,
+   "kind": "bpe",
+   "arch": "tpp-loop",
+   "wantWider": false,
+   "layerCap": 16,
+   "mixChanged": false,
+   "bySrc": {
+    "laws": 3.8667,
+    "wiki": 3.0044,
+    "aozora": 3.3258,
+    "hanrei": 3.5228,
+    "kokkai": 2.6081,
+    "web": 2.9023,
+    "talk": 2.2362
+   },
+   "wrote": [
+    {
+     "start": "わたしは",
+     "text": "わたしは、全く同じ性質のものである。 ↑ 日本では、 東日本大震災 後は1999年（平成11年）6月17日放映の『 ゆめくんじゃん 』（ 日本テレビ ）が放送開始されている。 ↑ 4年生記念日 の規定により、同じ性質のものにしたら2008年（平成20年）3月"
+    },
+    {
+     "start": "第一条",
+     "text": "第一条ているにある。 このうち、チャンポンの名は 南岸 に由来する。 チャンネルの名は 南西 から 南西 まで南西に由来する [ 11 ] 。 チャンネルの名は 1975年 （8000年）に 北西 に由来する。 南西の名は"
+    },
+    {
+     "start": "この法律において",
+     "text": "この法律において複合催催催を開催するなど、様々な工夫を取っていただいています。 昨年七月、四月は、一月二十六日、三月にはＳＬＯがＰＣＣで[採択宣言」を、昨年十一月の「ＳＬＯ参加登録者総会」、ＡＰＯから報道がさらに誤りをかけています。中国とオ"
+    }
+   ],
+   "loopPct": 6.63,
    "movedBody": false
   }
  ],
