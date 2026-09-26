@@ -1,65 +1,6 @@
 {
  "runs": [
   {
-   "at": "2026-09-16T01:43:56Z",
-   "val": 2.8841,
-   "prev": 2.8841,
-   "valTag": "fixed-holdout-v1",
-   "stoppedAt": 599,
-   "secPerStep": 6.2248,
-   "steps": 848,
-   "bpc": 3.4101,
-   "charsPerTok": 1.2202,
-   "score": 2.0674,
-   "scoreW": 2.0,
-   "scoreMode": "talk",
-   "layers": 15,
-   "params": 28875648,
-   "chars": 1037515847,
-   "tokens": 850289863,
-   "grew": 0,
-   "rolledBack": true,
-   "ownVal": 2.8509,
-   "ownScore": 2.1833,
-   "d": 384,
-   "loops": 1,
-   "spread": 2.6184,
-   "bytes": 346636881,
-   "heads": 6,
-   "ctx": 512,
-   "vocab": 6000,
-   "kind": "bpe",
-   "arch": "tpp-loop",
-   "wantWider": false,
-   "layerCap": 16,
-   "mixChanged": false,
-   "bySrc": {
-    "laws": 3.8881,
-    "wiki": 2.9096,
-    "aozora": 3.3677,
-    "hanrei": 3.463,
-    "kokkai": 2.5428,
-    "web": 2.9158,
-    "talk": 2.1833
-   },
-   "wrote": [
-    {
-     "start": "わたしは",
-     "text": "わたしは、温泉です。」 EW「あ、いいですね。ただ熱いし僕は昔より温泉が好きです」 CK「そうですね。」 EW「いえいえ、たしかに、温泉は好きです！」 CK「温泉いいですね。この対策は？」 EW「ずっと温泉が好きです！」 C"
-    },
-    {
-     "start": "第一条",
-     "text": "第一条の決算書が発表された後初めての放送であった。 第二次大戦終了後の1919年9月23日、 オストルザーク （ 英語版 ） の語源となった。 アラブ人種は アラブ人 と スイス人種 である。 第一"
-    },
-    {
-     "start": "この法律において",
-     "text": "この法律において革命（，革命）が起り，これが革命の危険であった，革命の危険地であ る，革命の危険を回避し，革命の存在を否定，革命の危険を回避するなどの社会的 情勢は，革命の危険を回避し，革命以降の革命と革命を実行 するな"
-    }
-   ],
-   "loopPct": 5.59,
-   "movedBody": false
-  },
-  {
    "at": "2026-09-16T02:51:35Z",
    "val": 2.8841,
    "prev": 2.8841,
@@ -12311,6 +12252,69 @@
    ],
    "loopPct": 0.72,
    "movedBody": false
+  },
+  {
+   "at": "2026-09-26T17:36:52Z",
+   "val": 3.1818,
+   "prev": 3.183,
+   "valTag": "fixed-holdout-v1",
+   "stoppedAt": 159,
+   "stuck": 0,
+   "evalTag": "fixed-ix-v1",
+   "secPerStep": 26.2257,
+   "steps": 300,
+   "bpc": 3.7659,
+   "charsPerTok": 1.2189,
+   "score": 2.2842,
+   "scoreW": 2.0,
+   "scoreMode": "talk",
+   "finishMix": 0.5,
+   "lineage": "L1",
+   "layers": 16,
+   "params": 117914880,
+   "chars": 1045308899,
+   "tokens": 857567631,
+   "grew": 0,
+   "rolledBack": false,
+   "ownVal": null,
+   "ownScore": null,
+   "d": 768,
+   "loops": 1,
+   "spread": 3.5441,
+   "bytes": 1415115957,
+   "heads": 6,
+   "ctx": 512,
+   "vocab": 6000,
+   "kind": "bpe",
+   "arch": "tpp-loop",
+   "wantWider": false,
+   "layerCap": 16,
+   "mixChanged": false,
+   "bySrc": {
+    "laws": 4.7211,
+    "wiki": 3.358,
+    "aozora": 3.6589,
+    "hanrei": 3.7657,
+    "kokkai": 2.8974,
+    "web": 3.1739,
+    "talk": 2.2842
+   },
+   "wrote": [
+    {
+     "start": "わたしは",
+     "text": "わたしは、ジーズーVSは酸味ですが、シーズンのオリジナルキャラクターです。」 FW「そうなんですね！それで実家にいるとちょっと近いので、ちょっとここがいいです。」 FV「つらいですよね。私もスタバはそうなので、シャアワーが野菜って感じな"
+    },
+    {
+     "start": "第一条",
+     "text": "第一条ぶつひろしろ 彼らは、彼の顔を見るにつけだめた。 人間は、俺を見かけ、人をやると断ったので、彼は何を言えば、それはそれを聞いた。顔面をある中には、殺することはなかった。 暗人に対して、自分を見つめ切ってしまったのは、娘の魔法�かった"
+    },
+    {
+     "start": "この法律において",
+     "text": "この法律において「称」「」を「（」「）「（」「いや」「」「（」）」「宜」「天地」「」「い」「早」」「橘」「夕方」「好」「が」「釜」」「桜」「「桜」「貞」「ち」」「古い」「酸」「晩」「晴」「」「第七」「古」"
+    }
+   ],
+   "loopPct": 14.11,
+   "movedBody": false
   }
  ],
  "bestVal": 2.7794,
@@ -12361,5 +12365,5 @@
  ],
  "wantWider": false,
  "nextD": 768,
- "bad": 2
+ "bad": 3
 }
