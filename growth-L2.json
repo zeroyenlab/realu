@@ -1,65 +1,6 @@
 {
  "runs": [
   {
-   "at": "2026-09-15T18:42:56Z",
-   "val": 3.6978,
-   "prev": 3.7837,
-   "valTag": "fixed-holdout-v1",
-   "stoppedAt": 0,
-   "secPerStep": 3.7477,
-   "steps": 808,
-   "bpc": 4.3721,
-   "charsPerTok": 1.2202,
-   "score": 2.4442,
-   "scoreW": 2.0,
-   "scoreMode": "talk",
-   "layers": 10,
-   "params": 34727424,
-   "chars": 1037515847,
-   "tokens": 850289863,
-   "grew": 0,
-   "rolledBack": false,
-   "ownVal": null,
-   "ownScore": null,
-   "d": 512,
-   "loops": 1,
-   "spread": 3.6514,
-   "bytes": 416817117,
-   "heads": 8,
-   "ctx": 512,
-   "vocab": 6000,
-   "kind": "bpe",
-   "arch": "tpp-loop",
-   "wantWider": false,
-   "layerCap": 16,
-   "mixChanged": false,
-   "bySrc": {
-    "laws": 5.6446,
-    "wiki": 3.8697,
-    "aozora": 4.1212,
-    "hanrei": 4.3623,
-    "kokkai": 3.2638,
-    "web": 3.6242,
-    "talk": 2.4442
-   },
-   "wrote": [
-    {
-     "start": "わたしは",
-     "text": "わたしはいっしょっちなにという企業にしかなかったのも大変そうです」 DN「そうなんですね！そういうことはありますか？」 DY「初めて聞きました」 DN「そうなんですねー。私は自分がおすすめだったんですが、お金かけは。」 DN「はい、私もそんな見"
-    },
-    {
-     "start": "第一条",
-     "text": "第一条の上に降らなかったです」 CI「そうなんですね、ARIATARPANARNAGE LIFA、」 CI「そうなんですね。それは本当に」 CI「丑紋ですかね、私も全然ずっと職別的なものはないですよ」 CI「夏はそういう名過ぎですね」 C"
-    },
-    {
-     "start": "この法律において",
-     "text": "この法律において内国章職員への幸電気通信百万円とする。 出力移行の際には、データの鉄蘭範文化式のジャンル横浜学科になり、アレルギーが併設されている。 東京では、アーティストではプロセスが流行った [ 52 ] 。 中学校漬けの賞は、 北海道 1年前100時40分だった"
-    }
-   ],
-   "loopPct": 1.57,
-   "movedBody": false
-  },
-  {
    "at": "2026-09-15T20:03:10Z",
    "val": 3.5809,
    "prev": 3.6978,
@@ -12287,9 +12228,72 @@
    ],
    "loopPct": 7.25,
    "movedBody": false
+  },
+  {
+   "at": "2026-09-26T11:07:44Z",
+   "val": 2.7579,
+   "prev": 2.7601,
+   "valTag": "fixed-holdout-v1",
+   "stoppedAt": 439,
+   "stuck": 0,
+   "evalTag": "fixed-ix-v1",
+   "secPerStep": 8.6615,
+   "steps": 673,
+   "bpc": 3.2642,
+   "charsPerTok": 1.2189,
+   "score": 2.0848,
+   "scoreW": 2.0,
+   "scoreMode": "talk",
+   "finishMix": 0.85,
+   "lineage": "L2",
+   "layers": 12,
+   "params": 41053696,
+   "chars": 1045308899,
+   "tokens": 857567631,
+   "grew": 0,
+   "rolledBack": false,
+   "ownVal": null,
+   "ownScore": null,
+   "d": 512,
+   "loops": 1,
+   "spread": 2.9042,
+   "bytes": 492748901,
+   "heads": 8,
+   "ctx": 512,
+   "vocab": 6000,
+   "kind": "bpe",
+   "arch": "tpp-loop",
+   "wantWider": false,
+   "layerCap": 16,
+   "mixChanged": false,
+   "bySrc": {
+    "laws": 3.7314,
+    "wiki": 2.9391,
+    "aozora": 3.2415,
+    "hanrei": 3.4487,
+    "kokkai": 2.559,
+    "web": 2.844,
+    "talk": 2.0848
+   },
+   "wrote": [
+    {
+     "start": "わたしは",
+     "text": "わたしは20年前から活動していたが、今も劇場やテレビ、アニメなどではなく、テレビ、ハイドラマ、パソコン、テレビ、サブスクなどのサブスクエアやTBS系を放送するようになった 。2024年6月31日までは、2024年9月30日のCS放送では、第12話から『大�"
+    },
+    {
+     "start": "第一条",
+     "text": "第一条第一号、第二号、第二号、第二号、第二号、第三号、第三号、補正予算案に反対、委員長報告のとおり附帯決議案に賛成の諸君の起立を求めます。」 AA「副議長 起立多数。よって、四条案は委員長報告のとおり附帯決議案は委員長報告のとおり附帯決議案は委員長報告のとおり修正議決せられました。」 AB「副議長 よって"
+    },
+    {
+     "start": "この法律において",
+     "text": "この法律において得定する会議」 AA「議長 ただいまから予算委員会を開会いたします。 各委員会から申し出のあった日程は、全会一致をもって、同日午前十時より委員会の審査を省略して、各委員から趣旨説明を聴取した後、二十五日、質疑を行います。三案を一括して採決いたします。 三案の委員長の報告はいずれも可決であります。三"
+    }
+   ],
+   "loopPct": 7.39,
+   "movedBody": false
   }
  ],
- "bestVal": 2.7601,
+ "bestVal": 2.7579,
  "layers": 12,
  "params": 41053696,
  "born": "2026-09-08T15:11:54Z",
@@ -12337,5 +12341,5 @@
  ],
  "wantWider": false,
  "nextD": 512,
- "bad": 2
+ "bad": 0
 }
