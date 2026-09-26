@@ -238,6 +238,8 @@ EVAL_TAG = "fixed-ix-v1"
 # ★★★この回数続けて巻き戻したら、★**合格線のほうを疑う**。
 #   ★実測: ★L3 は 62 回連続で落ちていた。★★黙って空回りするのを二度と起こさない。
 STUCK_MAX = int(os.environ.get("REALU_STUCK_MAX", 8))
+# ★★保存先（GitHub Release）は1ファイル 2GiB まで。★暗号化の分と余裕を見て 1.8GB
+WIDE_SAVE_MAX = float(os.environ.get("REALU_WIDE_SAVE_MAX", 1.8e9))
 
 
 def tok_sig(path):
@@ -1470,9 +1472,34 @@ def main():
                       % r, flush=True)
             else:
                 # ★② ★★これ以上は細長くなる。★「幅が欲しい」と自分で言う
-                want_wider = True
-                print("  ★★★これ以上、層を足すと細長くなる（%d 幅 / %d 層）。"
-                      "★★次は**幅を広げたい**。" % (model.d, len(model.blocks)), flush=True)
+                # ★★★ただし**入れない体には引っ越さない**（★2026-09-27）。
+                #   ★層を足す時には「遅くなりすぎないか」を見ていたのに、★★幅には無かった。
+                #   ★幅を倍にすると大きさも速さもおよそ4倍。★L1（768幅で16層）だと
+                #     ★保存が約5.6GB ★★置き場（Release）は1ファイル 2GB まで。★歩数も 160 → 約40。
+                #   ★★★伸びが止まった瞬間、★**自分で入れない体に引っ越そうとして壊れる**所だった。
+                why = ""
+                try:
+                    cur_p = model.n_params()
+                    wide_p = cur_p * 4                       # ★多めに見積もる
+                    per_p = (os.path.getsize(ckpt) / cur_p) if os.path.exists(ckpt) else 12.0
+                    wide_bytes = wide_p * per_p
+                    if wide_bytes > WIDE_SAVE_MAX:
+                        why = "保存が約 %.1fGB になる（置き場は %.1fGB まで）" % (
+                            wide_bytes / 1e9, WIDE_SAVE_MAX / 1e9)
+                    elif done_steps >= 20:
+                        sec_w = (time.time() - t_loop) / done_steps * 4
+                        steps_w = int(budget * 0.92 / sec_w)
+                        if steps_w < EVAL_EVERY * 2:
+                            why = "次の回が %d 歩になる（評価は %d 歩ごと）" % (steps_w, EVAL_EVERY)
+                except Exception as _e:
+                    why = "見積もれなかった（%s）" % type(_e).__name__
+                if why:
+                    print("  ★★★幅を広げたいが、★いまの機械では入れない（%s）。"
+                          "★★この体のまま学び続ける。★速い機械が要る" % why, flush=True)
+                else:
+                    want_wider = True
+                    print("  ★★★これ以上、層を足すと細長くなる（%d 幅 / %d 層）。"
+                          "★★次は**幅を広げたい**。" % (model.d, len(model.blocks)), flush=True)
                 bad = 0
 
     # ★★★ここから「残す」までの間で転んだら、★学習が丸ごと消える。
