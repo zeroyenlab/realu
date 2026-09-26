@@ -1,65 +1,6 @@
 {
  "runs": [
   {
-   "at": "2026-09-15T17:47:24Z",
-   "val": 3.7837,
-   "prev": 3.9467,
-   "valTag": "fixed-holdout-v1",
-   "stoppedAt": 467,
-   "secPerStep": 8.0764,
-   "steps": 808,
-   "bpc": 4.4737,
-   "charsPerTok": 1.2202,
-   "score": 2.4484,
-   "scoreW": 2.0,
-   "scoreMode": "talk",
-   "layers": 10,
-   "params": 34727424,
-   "chars": 1037515847,
-   "tokens": 850289863,
-   "grew": 0,
-   "rolledBack": false,
-   "ownVal": null,
-   "ownScore": null,
-   "d": 512,
-   "loops": 1,
-   "spread": 3.9102,
-   "bytes": 416817117,
-   "heads": 8,
-   "ctx": 512,
-   "vocab": 6000,
-   "kind": "bpe",
-   "arch": "tpp-loop",
-   "wantWider": false,
-   "layerCap": 16,
-   "mixChanged": false,
-   "bySrc": {
-    "laws": 5.8107,
-    "wiki": 3.9174,
-    "aozora": 4.2422,
-    "hanrei": 4.5137,
-    "kokkai": 3.3357,
-    "web": 3.6815,
-    "talk": 2.4484
-   },
-   "wrote": [
-    {
-     "start": "わたしは",
-     "text": "わたしはいましたけど、それは暖かくないです。」 CY「そうなんですね。沢山なのってるんですか？」 CZ「そうですね。焼きそばもう人気ですが。」 CB「そうですね。」 CZ「そうなんですが、そうなんですね。」 CB「あー！でも、それ"
-    },
-    {
-     "start": "第一条",
-     "text": "第一条 様式 国立株式会社が消化するのは、 造区業 が少なく、それぞれ改正された日本における呼称を使い方を捹持している。 この際、 阿北学 名古屋市民部 にある 宮城県 の第4件。 ↑ 昭和225年8月7日（JR東北6002） 芸能虫 ↑ 『 新三 1"
-    },
-    {
-     "start": "この法律において",
-     "text": "この法律において「日本と安全法」という。）の「日本の「日本共産党」と言うまでも、日程のした日のは、日本ではなく、子供の方は、先進的なとともに言っていますよ。」 客「わかりました。」 店「かしこまりました。では、ありがとうございました。」 客「夏"
-    }
-   ],
-   "loopPct": 5.69,
-   "movedBody": false
-  },
-  {
    "at": "2026-09-15T18:42:56Z",
    "val": 3.6978,
    "prev": 3.7837,
@@ -12283,9 +12224,72 @@
    ],
    "loopPct": 30.27,
    "movedBody": false
+  },
+  {
+   "at": "2026-09-26T09:44:51Z",
+   "val": 2.7601,
+   "prev": 2.7609,
+   "valTag": "fixed-holdout-v1",
+   "stoppedAt": 0,
+   "stuck": 0,
+   "evalTag": "fixed-ix-v1",
+   "secPerStep": 4.8889,
+   "steps": 663,
+   "bpc": 3.2668,
+   "charsPerTok": 1.2189,
+   "score": 2.082,
+   "scoreW": 2.0,
+   "scoreMode": "talk",
+   "finishMix": 0.85,
+   "lineage": "L2",
+   "layers": 12,
+   "params": 41053696,
+   "chars": 1045308899,
+   "tokens": 857567631,
+   "grew": 0,
+   "rolledBack": false,
+   "ownVal": null,
+   "ownScore": null,
+   "d": 512,
+   "loops": 1,
+   "spread": 2.9875,
+   "bytes": 492748901,
+   "heads": 8,
+   "ctx": 512,
+   "vocab": 6000,
+   "kind": "bpe",
+   "arch": "tpp-loop",
+   "wantWider": false,
+   "layerCap": 16,
+   "mixChanged": false,
+   "bySrc": {
+    "laws": 3.7337,
+    "wiki": 2.9407,
+    "aozora": 3.2441,
+    "hanrei": 3.4497,
+    "kokkai": 2.5635,
+    "web": 2.8459,
+    "talk": 2.082
+   },
+   "wrote": [
+    {
+     "start": "わたしは",
+     "text": "わたしは眼が悪くなり、鼻の鼻の鼻を死んでゼリと シャンプー を働いている。 しかし、彼女は 黒い鼻 で ビーダ をつけてゼリとシャンプーが言った。 彼女は鼻の姿もあり、 背中に 頭がゼリと絡んだ"
+    },
+    {
+     "start": "第一条",
+     "text": "第一条由してϛ, ※G匠 3 - 4 - 13月17日（月曜日）に発生した淡路島沖海戦で、日中戦争に巻き込まれた戦後、西暦10月1日（月曜日）に発生した淡路島沖海戦で、18日（月曜日）に発生した夏季オイルショックで、3"
+    },
+    {
+     "start": "この法律において",
+     "text": "この法律において�週月月曜日であると解されると解されるが、最終的には第1回目以降の5年間の攻撃の可能性があるという 。 1981年（昭和56年）1月19日 - 日本民間放送協会篇「JX放送」がナビゲーターとして出演 2月10日 - FNN刊行物試写会を開催 。初回は横浜"
+    }
+   ],
+   "loopPct": 7.25,
+   "movedBody": false
   }
  ],
- "bestVal": 2.7609,
+ "bestVal": 2.7601,
  "layers": 12,
  "params": 41053696,
  "born": "2026-09-08T15:11:54Z",
@@ -12333,5 +12337,5 @@
  ],
  "wantWider": false,
  "nextD": 512,
- "bad": 0
+ "bad": 2
 }
