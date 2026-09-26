@@ -1,65 +1,6 @@
 {
  "runs": [
   {
-   "at": "2026-09-15T14:22:19Z",
-   "val": 4.6235,
-   "prev": null,
-   "valTag": "fixed-holdout-v1",
-   "stoppedAt": 467,
-   "secPerStep": 8.0653,
-   "steps": 809,
-   "bpc": 5.4666,
-   "charsPerTok": 1.2202,
-   "score": 2.8311,
-   "scoreW": 2.0,
-   "scoreMode": "talk",
-   "layers": 10,
-   "params": 34727424,
-   "chars": 1037515847,
-   "tokens": 850289863,
-   "grew": 0,
-   "rolledBack": false,
-   "ownVal": null,
-   "ownScore": null,
-   "d": 512,
-   "loops": 1,
-   "spread": 4.9248,
-   "bytes": 416817117,
-   "heads": 8,
-   "ctx": 512,
-   "vocab": 6000,
-   "kind": "bpe",
-   "arch": "tpp-loop",
-   "wantWider": false,
-   "layerCap": 16,
-   "mixChanged": false,
-   "bySrc": {
-    "laws": 6.7451,
-    "wiki": 4.7888,
-    "aozora": 4.8361,
-    "hanrei": 5.4236,
-    "kokkai": 4.2161,
-    "web": 4.5023,
-    "talk": 2.8311
-   },
-   "wrote": [
-    {
-     "start": "わたしは",
-     "text": "わたしはですが、おいしそうなんですね。」 EZ「そうなんですね。政府はにも、そういう直が好きではないですね。」 BL「じゃあまりですね。お出がしました。」 BR「そうですね、大線ですね。よろしくお願いします。」 EC「わかりますね。で"
-    },
-    {
-     "start": "第一条",
-     "text": "第一条 （当該厚生年金作物5） 示法 族 市線 買い引会CZult> 客「業務」のうち、緒に話される。 景子は、400334に 墓物 影 を十二5753では 駅 - 天気 失移された。 1998年 - 革野�巻（1967年） - 194"
-    },
-    {
-     "start": "この法律において",
-     "text": "この法律においていなかります。」 客「そんなんですよね。見ますよね。最近は行かったりしましょう」 BF「今日は福郎珍しいですね！」 BZ「ありがとうございますが、小さいの社会に搭地は趣味です」 DW「おはようかなと思ってます！でもあ"
-    }
-   ],
-   "loopPct": 2.26,
-   "movedBody": false
-  },
-  {
    "at": "2026-09-15T15:31:48Z",
    "val": 4.2855,
    "prev": null,
@@ -12271,6 +12212,69 @@
    ],
    "loopPct": 1.75,
    "movedBody": false
+  },
+  {
+   "at": "2026-09-26T06:13:02Z",
+   "val": 2.7622,
+   "prev": 2.7621,
+   "valTag": "fixed-holdout-v1",
+   "stoppedAt": 398,
+   "stuck": 0,
+   "evalTag": "fixed-ix-v1",
+   "secPerStep": 9.5961,
+   "steps": 931,
+   "bpc": 3.2693,
+   "charsPerTok": 1.2189,
+   "score": 2.0861,
+   "scoreW": 2.0,
+   "scoreMode": "talk",
+   "finishMix": 0.85,
+   "lineage": "L2",
+   "layers": 12,
+   "params": 41053696,
+   "chars": 1045308899,
+   "tokens": 857567631,
+   "grew": 0,
+   "rolledBack": false,
+   "ownVal": null,
+   "ownScore": null,
+   "d": 512,
+   "loops": 1,
+   "spread": 2.9052,
+   "bytes": 492748901,
+   "heads": 8,
+   "ctx": 512,
+   "vocab": 6000,
+   "kind": "bpe",
+   "arch": "tpp-loop",
+   "wantWider": false,
+   "layerCap": 16,
+   "mixChanged": false,
+   "bySrc": {
+    "laws": 3.7383,
+    "wiki": 2.943,
+    "aozora": 3.2438,
+    "hanrei": 3.4516,
+    "kokkai": 2.5655,
+    "web": 2.85,
+    "talk": 2.0861
+   },
+   "wrote": [
+    {
+     "start": "わたしは",
+     "text": "わたしは、」 FI「なにが好きですか？」 FL「なんですかねー。海外の人って、チョコレートのやつが好きです。」 FI「良いですね！日本人だと田舎の人います。」 FL「あはは。私も大好きです！」 FI「ですよね！うちの子は"
+    },
+    {
+     "start": "第一条",
+     "text": "第一条��務（以下「\u0011」という。） 第一条の二 交付税法第二条第六項に規定する特例交付税をいう。以下同じ。）は、交付税特別会計から交付税特別会計から交付税交付金の額をそれぞれ百八十億円（国税庁長官が交付税特別会計に交付することがあるものを除く。）又はを下回って、交付税特別会計から負担すべきを受け取っております」 AB「また、交付税特別会計から交付税交付金交付金交付金事業に係る交付税特別会計から交付税特別会計への繰入れとは別に交付税特別会"
+    },
+    {
+     "start": "この法律において",
+     "text": "この法律において)」とあります。 その中には、 クラウド・ジャパン 、 ナチス・ドイツ 、 カナダ 、 ミッキーニュージック 、 チャールズ・ライト 、 ブロック・ローズ などがある。 日本語では、日本では 日本語では ジャパンライフ 、 アイスランド・リ�"
+    }
+   ],
+   "loopPct": 7.27,
+   "movedBody": false
   }
  ],
  "bestVal": 2.7621,
@@ -12321,5 +12325,5 @@
  ],
  "wantWider": false,
  "nextD": 512,
- "bad": 1
+ "bad": 4
 }
