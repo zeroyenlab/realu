@@ -1,65 +1,6 @@
 {
  "runs": [
   {
-   "at": "2026-09-15T11:54:30Z",
-   "val": 4.1721,
-   "prev": null,
-   "valTag": "fixed-holdout-v1",
-   "stoppedAt": 0,
-   "secPerStep": 3.6275,
-   "steps": 809,
-   "bpc": 4.9328,
-   "charsPerTok": 1.2202,
-   "score": 2.5724,
-   "scoreW": 2.0,
-   "scoreMode": "talk",
-   "layers": 10,
-   "params": 34727424,
-   "chars": 1037515847,
-   "tokens": 850289863,
-   "grew": 0,
-   "rolledBack": false,
-   "ownVal": null,
-   "ownScore": null,
-   "d": 512,
-   "loops": 1,
-   "spread": 4.3297,
-   "bytes": 416817117,
-   "heads": 8,
-   "ctx": 512,
-   "vocab": 6000,
-   "kind": "bpe",
-   "arch": "tpp-loop",
-   "wantWider": false,
-   "layerCap": 16,
-   "mixChanged": false,
-   "bySrc": {
-    "laws": 6.3833,
-    "wiki": 4.398,
-    "aozora": 4.5399,
-    "hanrei": 4.9638,
-    "kokkai": 3.8726,
-    "web": 4.1178,
-    "talk": 2.5724
-   },
-   "wrote": [
-    {
-     "start": "わたしは",
-     "text": "わたしは、西西が好きですね。」 BM「そうですね。加西の試みが多いですね。」 BX「遠くが無料でそういう近くになってください。」 BB「ひっと出総理は結構行きました。」 BI「本当に、ちょっと最近は残念ですね。」 B"
-    },
-    {
-     "start": "第一条",
-     "text": "第一条敷地事項 前二項 第三無線局 第五号 第六十五十六号 （試験基準） 第七交付 平成��khhelbertibersonaChat> 客「こんばんは，原工佐北山が出来るみたいです。」 CI「おもしれません、お願いします」 店「申し訳ございました。」 客「ありがとう"
-    },
-    {
-     "start": "この法律において",
-     "text": "この法律においてめてました。」 客「ありがとうございます。」 客「こんにちは！」 店「はい、ここは？」 店「とりあえますか？」 客「ありますか？」 客「お子艦悔インドラス/お願いします�"
-    }
-   ],
-   "loopPct": 4.42,
-   "movedBody": false
-  },
-  {
    "at": "2026-09-15T13:13:21Z",
    "val": 4.5712,
    "prev": null,
@@ -12263,9 +12204,72 @@
    ],
    "loopPct": 4.46,
    "movedBody": false
+  },
+  {
+   "at": "2026-09-26T03:38:03Z",
+   "val": 2.7623,
+   "prev": 2.7636,
+   "valTag": "fixed-holdout-v1",
+   "stoppedAt": 392,
+   "stuck": 0,
+   "evalTag": "fixed-ix-v1",
+   "secPerStep": 9.7489,
+   "steps": 765,
+   "bpc": 3.2694,
+   "charsPerTok": 1.2189,
+   "score": 2.0889,
+   "scoreW": 2.0,
+   "scoreMode": "talk",
+   "finishMix": 0.85,
+   "lineage": "L2",
+   "layers": 12,
+   "params": 41053696,
+   "chars": 1045308899,
+   "tokens": 857567631,
+   "grew": 0,
+   "rolledBack": false,
+   "ownVal": null,
+   "ownScore": null,
+   "d": 512,
+   "loops": 1,
+   "spread": 2.9037,
+   "bytes": 492748901,
+   "heads": 8,
+   "ctx": 512,
+   "vocab": 6000,
+   "kind": "bpe",
+   "arch": "tpp-loop",
+   "wantWider": false,
+   "layerCap": 16,
+   "mixChanged": false,
+   "bySrc": {
+    "laws": 3.7336,
+    "wiki": 2.9443,
+    "aozora": 3.2452,
+    "hanrei": 3.451,
+    "kokkai": 2.5675,
+    "web": 2.8487,
+    "talk": 2.0889
+   },
+   "wrote": [
+    {
+     "start": "わたしは",
+     "text": "わたしはすごく満足しています」 DV「そういう機会だったら便利ですよね！」 DW「便利ですよね、、、、。」 DW「よろしくおねがいします！」 DV「よろしくお願いします！」 DW「好"
+    },
+    {
+     "start": "第一条",
+     "text": "第一条第二号の申請に係る別表一のものに限る。） 第二号 令第六条の五第二項 令第六条の五集団法（昭和四十一年法律第四号）市町村は、前項の申請に係る令第六条の五集団Z又はろころくの洪水の防止が図られるよう、当該命令により行われる特定の環境の刑等注意義務を課することができないときは、当該命令により行われる特定の環境刑等六十三次刑を課することができないときは、当該命令により行われる特定の環境刑等六十三次刑は、次の各号に掲げる規定から当該各号に"
+    },
+    {
+     "start": "この法律において",
+     "text": "この法律においてにある教授等でございます。 これまでも、国及び地方公共団体の実態調査によるところですが、その調査によると、一定期間を経た場合でも、実際に、入学金制度が定められております。 これはなぜですか。今回も、入学金制度の廃止や入学金制度廃止に向けて、入学金制度の創設、さらには、地元の皆様"
+    }
+   ],
+   "loopPct": 2.2,
+   "movedBody": false
   }
  ],
- "bestVal": 2.7636,
+ "bestVal": 2.7623,
  "layers": 12,
  "params": 41053696,
  "born": "2026-09-08T15:11:54Z",
@@ -12313,5 +12317,5 @@
  ],
  "wantWider": false,
  "nextD": 512,
- "bad": 4
+ "bad": 1
 }
