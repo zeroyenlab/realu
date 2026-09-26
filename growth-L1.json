@@ -1,67 +1,6 @@
 {
  "runs": [
   {
-   "at": "2026-09-16T05:09:45Z",
-   "val": 2.8841,
-   "prev": 2.8841,
-   "valTag": "fixed-holdout-v1",
-   "stoppedAt": 469,
-   "secPerStep": 8.0331,
-   "steps": 863,
-   "bpc": 3.4101,
-   "charsPerTok": 1.2202,
-   "score": 2.0674,
-   "scoreW": 2.0,
-   "scoreMode": "talk",
-   "finishMix": 0.5,
-   "lineage": "L1",
-   "layers": 15,
-   "params": 28875648,
-   "chars": 1037515847,
-   "tokens": 850289863,
-   "grew": 0,
-   "rolledBack": true,
-   "ownVal": 2.7968,
-   "ownScore": 2.2314,
-   "d": 384,
-   "loops": 1,
-   "spread": 2.8344,
-   "bytes": 346636881,
-   "heads": 6,
-   "ctx": 512,
-   "vocab": 6000,
-   "kind": "bpe",
-   "arch": "tpp-loop",
-   "wantWider": false,
-   "layerCap": 16,
-   "mixChanged": false,
-   "bySrc": {
-    "laws": 3.9128,
-    "wiki": 3.0085,
-    "aozora": 3.3761,
-    "hanrei": 3.5458,
-    "kokkai": 2.5304,
-    "web": 2.8959,
-    "talk": 2.2314
-   },
-   "wrote": [
-    {
-     "start": "わたしは",
-     "text": "わたしは、かなりの道具ですね！」 DK「はい！いろんな具材ありますか？」 EV「これは主に好きです」 DK「いいですね！」 EV「そうなんです」 DK「赤と緑のてそうです」 D"
-    },
-    {
-     "start": "第一条",
-     "text": "第一条の規定の適用は、広島県・長崎県・長崎県・長崎県・長崎県で構成される。 2018年4月より、長崎県・長崎県・長崎県・長崎県で構成され、長崎県が長崎県に置かれた。 2018年4月現在、長崎県で構成されている。長崎県の2地域で構成されている。 2026"
-    },
-    {
-     "start": "この法律において",
-     "text": "この法律において当時臨済航空の方から前進しております、また、鉄道、電鉄、電鉄、電鉄、電化及び電化、電化のさなか等、これは国鉄、電電等、電電、電車、電車、電車、電車、電車、電車等、電車、電車、電化、電車、電車、電車、電車等によって、電車、電車、電車、電車、電車、"
-    }
-   ],
-   "loopPct": 31.72,
-   "movedBody": false
-  },
-  {
    "at": "2026-09-16T06:17:55Z",
    "val": 2.8841,
    "prev": 2.8841,
@@ -12319,6 +12258,69 @@
    ],
    "loopPct": 4.55,
    "movedBody": false
+  },
+  {
+   "at": "2026-09-26T21:18:21Z",
+   "val": 3.1772,
+   "prev": 3.182,
+   "valTag": "fixed-holdout-v1",
+   "stoppedAt": 180,
+   "stuck": 0,
+   "evalTag": "fixed-ix-v1",
+   "secPerStep": 22.814,
+   "steps": 300,
+   "bpc": 3.7605,
+   "charsPerTok": 1.2189,
+   "score": 2.2849,
+   "scoreW": 2.0,
+   "scoreMode": "talk",
+   "finishMix": 0.5,
+   "lineage": "L1",
+   "layers": 16,
+   "params": 117914880,
+   "chars": 1045308899,
+   "tokens": 857567631,
+   "grew": 0,
+   "rolledBack": false,
+   "ownVal": null,
+   "ownScore": null,
+   "d": 768,
+   "loops": 1,
+   "spread": 3.1527,
+   "bytes": 1415115957,
+   "heads": 6,
+   "ctx": 512,
+   "vocab": 6000,
+   "kind": "bpe",
+   "arch": "tpp-loop",
+   "wantWider": false,
+   "layerCap": 16,
+   "mixChanged": false,
+   "bySrc": {
+    "laws": 4.7113,
+    "wiki": 3.3545,
+    "aozora": 3.6578,
+    "hanrei": 3.7593,
+    "kokkai": 2.892,
+    "web": 3.1696,
+    "talk": 2.2849
+   },
+   "wrote": [
+    {
+     "start": "わたしは",
+     "text": "わたしはたいほどありません、そういう意味のありますよ。」 AA「それが、もう、総理、この三月と、今の仮に、イギリスの経済成長率が生じます。これは、経済成長率が課せられた第三次補正ですとか、そこを私はそういうことは大変なことだと思います。 そこで、今まで政府"
+    },
+    {
+     "start": "第一条",
+     "text": "第一条」と、「第三節」を「」と「」とも呼ぶ。 「自」とは、「それ」とは、同額（「○」（なお、「明」は4か所抗争の日）の内閣府ではないが、ただし、その人々は「安全」を「「黄」などといたし、いまだに「あ」を「こい」と呼んでも「鍵」となげる。 「なの」「"
+    },
+    {
+     "start": "この法律において",
+     "text": "この法律において」とするようになっています。」 BH「なるほど。でも、夕飯は食べるのがいいです。」 EU「そうですよね。食べるとお食べになりますしね。」 BH「ですね。ではまた。」 EU「さんは、食べる観光名所で見たいです。」 BH「わかります。私"
+    }
+   ],
+   "loopPct": 4.81,
+   "movedBody": false
   }
  ],
  "bestVal": 2.7794,
@@ -12369,5 +12371,5 @@
  ],
  "wantWider": false,
  "nextD": 768,
- "bad": 2
+ "bad": 0
 }
