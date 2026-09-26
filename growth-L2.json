@@ -1,65 +1,6 @@
 {
  "runs": [
   {
-   "at": "2026-09-15T13:13:21Z",
-   "val": 4.5712,
-   "prev": null,
-   "valTag": "fixed-holdout-v1",
-   "stoppedAt": 471,
-   "secPerStep": 7.9975,
-   "steps": 806,
-   "bpc": 5.4048,
-   "charsPerTok": 1.2202,
-   "score": 2.8293,
-   "scoreW": 2.0,
-   "scoreMode": "talk",
-   "layers": 10,
-   "params": 34727424,
-   "chars": 1037515847,
-   "tokens": 850289863,
-   "grew": 0,
-   "rolledBack": false,
-   "ownVal": null,
-   "ownScore": null,
-   "d": 512,
-   "loops": 1,
-   "spread": 5.1241,
-   "bytes": 416817117,
-   "heads": 8,
-   "ctx": 512,
-   "vocab": 6000,
-   "kind": "bpe",
-   "arch": "tpp-loop",
-   "wantWider": false,
-   "layerCap": 16,
-   "mixChanged": false,
-   "bySrc": {
-    "laws": 6.8254,
-    "wiki": 4.831,
-    "aozora": 4.8855,
-    "hanrei": 5.2344,
-    "kokkai": 4.1734,
-    "web": 4.5108,
-    "talk": 2.8293
-   },
-   "wrote": [
-    {
-     "start": "わたしは",
-     "text": "わたしはありますか？」 CN「そうですね！コロチルははないですよ。」 FE「そうです！私もよいよかったです。」 FI「こんにちは！」 BZ「それはほとんどですか？」 BT「そうですね！！」 FJ「こんにちは」 FF「アホ"
-    },
-    {
-     "start": "第一条",
-     "text": "第一条する金の相当の文化が廃られたのであるを進めゾロナを持ってない。 しかし一般的には起きたりに行くので、カールラマは大阪でも何が一つになりました。」 客「そこは、台健はもありますが、デロナ配で出てくつけて、私は自由が宣見分し、またいる方がもつきたいです"
-    },
-    {
-     "start": "この法律において",
-     "text": "この法律においてじえます。」 CI「あ、探してる地に問題も見てます！」 FF「バラマはアニアですね。どんなゲームです。」 AB「小さいですね！」 GV「あは！」 AC「なるほど。ありがとうございました。」 FR「そうなんですね！"
-    }
-   ],
-   "loopPct": 3.6,
-   "movedBody": false
-  },
-  {
    "at": "2026-09-15T14:22:19Z",
    "val": 4.6235,
    "prev": null,
@@ -12267,9 +12208,72 @@
    ],
    "loopPct": 2.2,
    "movedBody": false
+  },
+  {
+   "at": "2026-09-26T04:55:54Z",
+   "val": 2.7621,
+   "prev": 2.7623,
+   "valTag": "fixed-holdout-v1",
+   "stoppedAt": 401,
+   "stuck": 0,
+   "evalTag": "fixed-ix-v1",
+   "secPerStep": 9.588,
+   "steps": 931,
+   "bpc": 3.2692,
+   "charsPerTok": 1.2189,
+   "score": 2.0879,
+   "scoreW": 2.0,
+   "scoreMode": "talk",
+   "finishMix": 0.85,
+   "lineage": "L2",
+   "layers": 12,
+   "params": 41053696,
+   "chars": 1045308899,
+   "tokens": 857567631,
+   "grew": 0,
+   "rolledBack": false,
+   "ownVal": null,
+   "ownScore": null,
+   "d": 512,
+   "loops": 1,
+   "spread": 2.7528,
+   "bytes": 492748901,
+   "heads": 8,
+   "ctx": 512,
+   "vocab": 6000,
+   "kind": "bpe",
+   "arch": "tpp-loop",
+   "wantWider": false,
+   "layerCap": 16,
+   "mixChanged": false,
+   "bySrc": {
+    "laws": 3.7375,
+    "wiki": 2.9433,
+    "aozora": 3.2449,
+    "hanrei": 3.4491,
+    "kokkai": 2.5661,
+    "web": 2.8489,
+    "talk": 2.0879
+   },
+   "wrote": [
+    {
+     "start": "わたしは",
+     "text": "わたしは、戦争の終結後も、戦争が終結した1941年、第二次中戦争時の反乱が激化していった [ 7 ] 。 1943年、第一次中戦争では、近代化戦争（ 民族戦線 ）が終結し、アイルランド緊急軍への流入が終結し、アイルランド連邦が中国に軍事的停戦を�"
+    },
+    {
+     "start": "第一条",
+     "text": "第一条」と発表した [ 136 ] 。 12月20日 - 天皇のお基さんに天皇と皇后（皇明皇）が 即位 。 12月15日 - 天皇が 幕府 で暮らす [ 139 ] 。 12月11日 - 幕府が 幕府 に"
+    },
+    {
+     "start": "この法律において",
+     "text": "この法律においてデータを視聴していただけるのでしょうか。」 AA「国務大臣 今申し上げましたようなライブデータの中に、私も、昨日、四月の日曜日、そして九州で朝日放送を見ているところでございます。そして、夕方には、四月の日曜日に、かつて日曜日、昼間の日曜日のリポ"
+    }
+   ],
+   "loopPct": 1.75,
+   "movedBody": false
   }
  ],
- "bestVal": 2.7623,
+ "bestVal": 2.7621,
  "layers": 12,
  "params": 41053696,
  "born": "2026-09-08T15:11:54Z",
