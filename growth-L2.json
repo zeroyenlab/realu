@@ -1,67 +1,6 @@
 {
  "runs": [
   {
-   "at": "2026-09-16T02:52:58Z",
-   "val": 3.4403,
-   "prev": 3.4403,
-   "valTag": "fixed-holdout-v1",
-   "stoppedAt": 466,
-   "secPerStep": 8.0787,
-   "steps": 798,
-   "bpc": 4.0676,
-   "charsPerTok": 1.2202,
-   "score": 2.301,
-   "scoreW": 2.0,
-   "scoreMode": "talk",
-   "finishMix": 0.85,
-   "lineage": "L2",
-   "layers": 10,
-   "params": 34727424,
-   "chars": 1037515847,
-   "tokens": 850289863,
-   "grew": 0,
-   "rolledBack": true,
-   "ownVal": 3.4361,
-   "ownScore": 2.4326,
-   "d": 512,
-   "loops": 1,
-   "spread": 3.2123,
-   "bytes": 416817117,
-   "heads": 8,
-   "ctx": 512,
-   "vocab": 6000,
-   "kind": "bpe",
-   "arch": "tpp-loop",
-   "wantWider": false,
-   "layerCap": 16,
-   "mixChanged": false,
-   "bySrc": {
-    "laws": 5.1922,
-    "wiki": 3.5917,
-    "aozora": 4.0095,
-    "hanrei": 3.9976,
-    "kokkai": 3.0137,
-    "web": 3.4331,
-    "talk": 2.4326
-   },
-   "wrote": [
-    {
-     "start": "わたしは",
-     "text": "わたしは自分の言葉を言ったと思うのです。」 DY「そうなんですね。私はおよそナエア図書館は感染や、あるいは教師はなんでしょう。」 CH「そうですよね。どのくらい放置されるんですか？」 DY「いえいえ、もう長いので、寝るから、食べると思います。」"
-    },
-    {
-     "start": "第一条",
-     "text": "第一条」の担い手がついているところがいいですね。」 DF「そうなんですよね、今はブラックが出ないですね」 DL「なんだかフレンチェンが好きです！」 DF「ピッケルとか好きです！」 DF「こ"
-    },
-    {
-     "start": "この法律において",
-     "text": "この法律において��ですね！」 HW「こちらこそ！人気だーでいけます！」 ED「結構お好きですか？」 HW「あんまり」 ED「チョココロナ暑かったですね。」 HW「確かにパソコンかわいいです」 ED「ちょっとこいきませんよね、続"
-    }
-   ],
-   "loopPct": 5.33,
-   "movedBody": false
-  },
-  {
    "at": "2026-09-16T04:01:59Z",
    "val": 3.4403,
    "prev": 3.4403,
@@ -12314,6 +12253,69 @@
     }
    ],
    "loopPct": 3.8,
+   "movedBody": false
+  },
+  {
+   "at": "2026-09-26T20:04:06Z",
+   "val": 2.93,
+   "prev": 3.0142,
+   "valTag": "fixed-holdout-v1",
+   "stoppedAt": 499,
+   "stuck": 0,
+   "evalTag": "fixed-ix-v1",
+   "secPerStep": 7.5723,
+   "steps": 761,
+   "bpc": 3.4679,
+   "charsPerTok": 1.2189,
+   "score": 2.1587,
+   "scoreW": 2.0,
+   "scoreMode": "talk",
+   "finishMix": 0.85,
+   "lineage": "L2",
+   "layers": 13,
+   "params": 44216832,
+   "chars": 1045308899,
+   "tokens": 857567631,
+   "grew": 0,
+   "rolledBack": false,
+   "ownVal": null,
+   "ownScore": null,
+   "d": 512,
+   "loops": 1,
+   "spread": 2.7972,
+   "bytes": 530714761,
+   "heads": 8,
+   "ctx": 512,
+   "vocab": 6000,
+   "kind": "bpe",
+   "arch": "tpp-loop",
+   "wantWider": false,
+   "layerCap": 16,
+   "mixChanged": false,
+   "bySrc": {
+    "laws": 4.0814,
+    "wiki": 3.1116,
+    "aozora": 3.3933,
+    "hanrei": 3.6282,
+    "kokkai": 2.7035,
+    "web": 3.0009,
+    "talk": 2.1587
+   },
+   "wrote": [
+    {
+     "start": "わたしは",
+     "text": "わたしは他人で、友人と対面すると、どちらへ行くかを知ってると、お祭り申し込みながら、「勝手になりますか？」お祭りとか、「お祭り・いつだってもいいのかな」と。」 BV「あぁー、しかし、すごいですよね。」 AE「あぁまぁでもあんまり"
+    },
+    {
+     "start": "第一条",
+     "text": "第一条の旅客客と電話番号を教えてください。」 店「電話番号は0524334131です。」 客「ありがとうございます。」 店「他にご用件はございますか。」 客「大丈夫です。ありがとうございます。」 店「承知しました。ありがとうございました"
+    },
+    {
+     "start": "この法律において",
+     "text": "この法律において「九州」にある（前身は九州）。 日本国有鉄道（国鉄）の利用を開始し、同社がJR北海道（後述）に続く国鉄線の高速化に合意した。 1979年（昭和54年）の航空会社法改正により、州道（赤松）、北海道（東海道）・南北（北海道）・北海道（国鉄）とトンネル（"
+    }
+   ],
+   "loopPct": 2.57,
    "movedBody": false
   }
  ],
