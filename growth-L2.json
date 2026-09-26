@@ -1,65 +1,6 @@
 {
  "runs": [
   {
-   "at": "2026-09-16T01:44:11Z",
-   "val": 3.4403,
-   "prev": 3.4403,
-   "valTag": "fixed-holdout-v1",
-   "stoppedAt": 434,
-   "secPerStep": 8.7155,
-   "steps": 798,
-   "bpc": 4.0676,
-   "charsPerTok": 1.2202,
-   "score": 2.301,
-   "scoreW": 2.0,
-   "scoreMode": "talk",
-   "layers": 10,
-   "params": 34727424,
-   "chars": 1037515847,
-   "tokens": 850289863,
-   "grew": 0,
-   "rolledBack": true,
-   "ownVal": 3.2955,
-   "ownScore": 2.4005,
-   "d": 512,
-   "loops": 1,
-   "spread": 3.506,
-   "bytes": 416817117,
-   "heads": 8,
-   "ctx": 512,
-   "vocab": 6000,
-   "kind": "bpe",
-   "arch": "tpp-loop",
-   "wantWider": false,
-   "layerCap": 16,
-   "mixChanged": false,
-   "bySrc": {
-    "laws": 5.2049,
-    "wiki": 3.5331,
-    "aozora": 3.8951,
-    "hanrei": 4.0091,
-    "kokkai": 2.9823,
-    "web": 3.3804,
-    "talk": 2.4005
-   },
-   "wrote": [
-    {
-     "start": "わたしは",
-     "text": "わたしは個々の世界ですね。」 CY「そうなんですよね、友達とお茶を塗ってしまいます。」 CE「あ、それも好きですね。今太ったりします。」 CY「今日も暑かったですね。」 CE「けっこう大変ですね！」 CY「ありがとうござ"
-    },
-    {
-     "start": "第一条",
-     "text": "第一条、参考人、ギムレーナー、カップーター、タイトー、バーグマーが好きなんです。ただ、アクションなど、チャープルを知ることはできない、、と言ってもいいです。」 DW「ライブですね！私もフルーツだと、F-1つのアルバムが結構なんです。」 FZ「バーグマ"
-    },
-    {
-     "start": "この法律において",
-     "text": "この法律において「かしこまりました」 CY「こんにちは！」 EJ「こんにちは！」 CY「朝食とかしてましたか？」 EJ「結構何でしょうね」 CY「朝何食べましたか？」 EJ「うちは抵抗ができてきま"
-    }
-   ],
-   "loopPct": 1.6,
-   "movedBody": false
-  },
-  {
    "at": "2026-09-16T02:52:58Z",
    "val": 3.4403,
    "prev": 3.4403,
@@ -12311,6 +12252,69 @@
    ],
    "loopPct": 28.2,
    "movedBody": false
+  },
+  {
+   "at": "2026-09-26T18:47:57Z",
+   "val": 3.0142,
+   "prev": 3.0867,
+   "valTag": "fixed-holdout-v1",
+   "stoppedAt": 365,
+   "stuck": 0,
+   "evalTag": "fixed-ix-v1",
+   "secPerStep": 10.5322,
+   "steps": 761,
+   "bpc": 3.5676,
+   "charsPerTok": 1.2189,
+   "score": 2.1983,
+   "scoreW": 2.0,
+   "scoreMode": "talk",
+   "finishMix": 0.85,
+   "lineage": "L2",
+   "layers": 13,
+   "params": 44216832,
+   "chars": 1045308899,
+   "tokens": 857567631,
+   "grew": 0,
+   "rolledBack": false,
+   "ownVal": null,
+   "ownScore": null,
+   "d": 512,
+   "loops": 1,
+   "spread": 2.8491,
+   "bytes": 530714761,
+   "heads": 8,
+   "ctx": 512,
+   "vocab": 6000,
+   "kind": "bpe",
+   "arch": "tpp-loop",
+   "wantWider": false,
+   "layerCap": 16,
+   "mixChanged": false,
+   "bySrc": {
+    "laws": 4.2165,
+    "wiki": 3.1952,
+    "aozora": 3.4708,
+    "hanrei": 3.6955,
+    "kokkai": 2.786,
+    "web": 3.0726,
+    "talk": 2.1983
+   },
+   "wrote": [
+    {
+     "start": "わたしは",
+     "text": "わたしはショーに行ってます。」 DL「ショーいいですね。私はカフェオレではないので、ショックではないと思いますよ。私はカフェオレで行ったことがあるので、おすすめです。」 DN「カフェオレは何度もコロナでネットで行きたいと気になっています。」 DL「そ"
+    },
+    {
+     "start": "第一条",
+     "text": "第一条第三号中「今日は」って、あのときあげてちゃうんです。」 BR「もうすぐ外食してしまいますけど。」 DF「たしかに！私もそうしてみます。」 BR「ぜひぜひ！」 BR「こんにちは�"
+    },
+    {
+     "start": "この法律において",
+     "text": "この法律において、「東京都心から東京都心まで」と定義されていた 。 浅川池と烏丸川などを流れる湖を、千葉県道175号鶴見川部分が大多数残った。 現在の東京都心からは都心と都心への伝承が多い。 浅川は現在の川水浅川、南東京都は浅川と北"
+    }
+   ],
+   "loopPct": 3.8,
+   "movedBody": false
   }
  ],
  "bestVal": 2.7562,
@@ -12361,5 +12365,5 @@
  ],
  "wantWider": false,
  "nextD": 512,
- "bad": 0
+ "bad": 1
 }
