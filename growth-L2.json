@@ -1,65 +1,6 @@
 {
  "runs": [
   {
-   "at": "2026-09-15T10:57:29Z",
-   "val": 4.5509,
-   "prev": null,
-   "valTag": "fixed-holdout-v1",
-   "stoppedAt": 469,
-   "secPerStep": 8.0134,
-   "steps": 809,
-   "bpc": 5.3808,
-   "charsPerTok": 1.2202,
-   "score": 2.8545,
-   "scoreW": 2.0,
-   "scoreMode": "talk",
-   "layers": 10,
-   "params": 34727424,
-   "chars": 1037515847,
-   "tokens": 850289863,
-   "grew": 0,
-   "rolledBack": false,
-   "ownVal": null,
-   "ownScore": null,
-   "d": 512,
-   "loops": 1,
-   "spread": 4.6492,
-   "bytes": 416817117,
-   "heads": 8,
-   "ctx": 512,
-   "vocab": 6000,
-   "kind": "bpe",
-   "arch": "tpp-loop",
-   "wantWider": false,
-   "layerCap": 16,
-   "mixChanged": false,
-   "bySrc": {
-    "laws": 6.7903,
-    "wiki": 4.7568,
-    "aozora": 4.8188,
-    "hanrei": 5.3191,
-    "kokkai": 4.1705,
-    "web": 4.5009,
-    "talk": 2.8545
-   },
-   "wrote": [
-    {
-     "start": "わたしは",
-     "text": "わたしは�科です。」 GI「少し！そうです！ても！」 D確かに。なおどのいてみたいですね。」 BK「おはようございます！」 AE「すこそあけだと、今回は近くに行ったんですか？」 GX「ってみたいな！塩なのですか？」 A"
-    },
-    {
-     "start": "第一条",
-     "text": "第一条（平成） 20条） - 頃号方諸修銀行鋀 高催当 。 → 2022年 - 1908年 - �ebelsos Fira - 大学 以降 - 魚等（ 。 また、 主要村・ - 魚夜 ） - JTSAOZ で唚"
-    },
-    {
-     "start": "この法律において",
-     "text": "この法律において番号"
-    }
-   ],
-   "loopPct": 0.95,
-   "movedBody": false
-  },
-  {
    "at": "2026-09-15T11:54:30Z",
    "val": 4.1721,
    "prev": null,
@@ -12259,9 +12200,72 @@
    ],
    "loopPct": 6.15,
    "movedBody": false
+  },
+  {
+   "at": "2026-09-26T02:22:54Z",
+   "val": 2.7636,
+   "prev": 2.7647,
+   "valTag": "fixed-holdout-v1",
+   "stoppedAt": 0,
+   "stuck": 0,
+   "evalTag": "fixed-ix-v1",
+   "secPerStep": 4.3692,
+   "steps": 765,
+   "bpc": 3.2709,
+   "charsPerTok": 1.2189,
+   "score": 2.0883,
+   "scoreW": 2.0,
+   "scoreMode": "talk",
+   "finishMix": 0.85,
+   "lineage": "L2",
+   "layers": 12,
+   "params": 41053696,
+   "chars": 1045308899,
+   "tokens": 857567631,
+   "grew": 0,
+   "rolledBack": false,
+   "ownVal": null,
+   "ownScore": null,
+   "d": 512,
+   "loops": 1,
+   "spread": 2.6368,
+   "bytes": 492748901,
+   "heads": 8,
+   "ctx": 512,
+   "vocab": 6000,
+   "kind": "bpe",
+   "arch": "tpp-loop",
+   "wantWider": false,
+   "layerCap": 16,
+   "mixChanged": false,
+   "bySrc": {
+    "laws": 3.7361,
+    "wiki": 2.9447,
+    "aozora": 3.2471,
+    "hanrei": 3.4508,
+    "kokkai": 2.5694,
+    "web": 2.8493,
+    "talk": 2.0883
+   },
+   "wrote": [
+    {
+     "start": "わたしは",
+     "text": "わたしは、最後まで、The Portvaに悩まされても、オリンピックの金曜日だから、続けてきたんです。」 AT「地域とは違う演出ですね。私もよく見てます。」 CV「私も今年、長いスタジオご存じですか？」 AT「スタジオばっかり見てます。"
+    },
+    {
+     "start": "第一条",
+     "text": "第一条の規定並びに同法賃金、双子賃金及び賃上げに関する法律（昭和二十四年法律第二十五号）の規定に基づき、六月三十日、参議院議員として日本共産党中央委員会委員三名を、衆議院議員として日本共産党中央委員会委員二名、参議院議員として日本共産党中央委員会委員四名、参議院議員として日本共産党中央委員会委員二名、社会民主党中央委員会委員二名を、それぞれ一人、自由党中央委員会委員二名、衆議院議員として日本共産党中央"
+    },
+    {
+     "start": "この法律において",
+     "text": "この法律において」と、「自衛隊」とあるのは「自衛隊」と、「自衛隊」とあるのは「自衛隊に」と、「自衛隊」とあるのは「自衛隊」と、「自衛隊」とあるのは「自衛隊」と、>「自衛隊」とあるのは「自衛隊」と、「自衛隊」とあるのは「自衛隊」と、半分事実を承知し、又は判断した。 自衛隊が部隊を編成し、又は編成し、又は編成し、又は編成する。 自衛隊は、��上自衛隊の自衛隊が部隊を編成し、又は編成する。 自衛隊は、自衛隊"
+    }
+   ],
+   "loopPct": 4.46,
+   "movedBody": false
   }
  ],
- "bestVal": 2.7647,
+ "bestVal": 2.7636,
  "layers": 12,
  "params": 41053696,
  "born": "2026-09-08T15:11:54Z",
