@@ -1,67 +1,6 @@
 {
  "runs": [
   {
-   "at": "2026-09-17T04:13:37Z",
-   "val": 3.2092,
-   "prev": 3.2092,
-   "valTag": "fixed-holdout-v1",
-   "stoppedAt": 474,
-   "secPerStep": 7.9405,
-   "steps": 816,
-   "bpc": 3.7236,
-   "charsPerTok": 1.2434,
-   "score": 2.2243,
-   "scoreW": 2.0,
-   "scoreMode": "talk",
-   "finishMix": 0.85,
-   "lineage": "L2",
-   "layers": 10,
-   "params": 34727424,
-   "chars": 1700683524,
-   "tokens": 1367789210,
-   "grew": 0,
-   "rolledBack": true,
-   "ownVal": 3.1399,
-   "ownScore": 2.3776,
-   "d": 512,
-   "loops": 1,
-   "spread": 3.6582,
-   "bytes": 416817181,
-   "heads": 8,
-   "ctx": 512,
-   "vocab": 6000,
-   "kind": "bpe",
-   "arch": "tpp-loop",
-   "wantWider": false,
-   "layerCap": 16,
-   "mixChanged": false,
-   "bySrc": {
-    "laws": 4.9535,
-    "wiki": 3.4457,
-    "aozora": 3.8302,
-    "hanrei": 3.8788,
-    "kokkai": 2.7918,
-    "web": 3.1964,
-    "talk": 2.3776
-   },
-   "wrote": [
-    {
-     "start": "わたしは",
-     "text": "わたしは、将来に残り、それをきめ細かく発達してます。 そして、どうしても、一番時ごろのずいささのことは、あまりやめなさいのですが、いろんな時代がございました。」 AA「どうしても、先ほど来言ったようですから、そういうことは、、中学は結構だったのですが、登"
-    },
-    {
-     "start": "第一条",
-     "text": "第一条 跡地 跡地，道光設計施設，他 にホテル東京のホテル テレビハウスを務めていた。 2020年10月10日，大阪フェスティバル号を応援しており，阿久坂が地面に来ていた。 2022年4月20日，東京再生用センターで開催されたアルプ"
-    },
-    {
-     "start": "この法律において",
-     "text": "この法律において「フェル・アント・ツェルレー・アンド・ホルエン」（2023年） - スマート・ド・アンド・アンド・ブッグ・ボー・ケンのカントニア・レースを、全世界のカントニア・キングの大量（2023年） - フランス・マッカーン・スナック・ハーター"
-    }
-   ],
-   "loopPct": 10.76,
-   "movedBody": false
-  },
-  {
    "at": "2026-09-17T05:23:12Z",
    "val": 3.2092,
    "prev": 3.2092,
@@ -12357,9 +12296,72 @@
    ],
    "loopPct": 7.88,
    "movedBody": false
+  },
+  {
+   "at": "2026-09-27T22:34:33Z",
+   "val": 2.7543,
+   "prev": 2.7562,
+   "valTag": "fixed-holdout-v1",
+   "stoppedAt": 365,
+   "stuck": 0,
+   "evalTag": "fixed-ix-v1",
+   "secPerStep": 10.5277,
+   "steps": 621,
+   "bpc": 3.2599,
+   "charsPerTok": 1.2189,
+   "score": 2.0851,
+   "scoreW": 2.0,
+   "scoreMode": "talk",
+   "finishMix": 0.85,
+   "lineage": "L2",
+   "layers": 13,
+   "params": 44216832,
+   "chars": 1045308899,
+   "tokens": 857567631,
+   "grew": 0,
+   "rolledBack": false,
+   "ownVal": null,
+   "ownScore": null,
+   "d": 512,
+   "loops": 1,
+   "spread": 2.7464,
+   "bytes": 530714761,
+   "heads": 8,
+   "ctx": 512,
+   "vocab": 6000,
+   "kind": "bpe",
+   "arch": "tpp-loop",
+   "wantWider": false,
+   "layerCap": 16,
+   "mixChanged": false,
+   "bySrc": {
+    "laws": 3.7215,
+    "wiki": 2.9319,
+    "aozora": 3.2359,
+    "hanrei": 3.4406,
+    "kokkai": 2.5536,
+    "web": 2.8393,
+    "talk": 2.0851
+   },
+   "wrote": [
+    {
+     "start": "わたしは",
+     "text": "わたしは都道府県知事は、たった一つの赤ロを押すことに対して、その赤ロを押せんとするために、既に大変なことになってきているということを強く申し上げまして、質疑を終わらせていただきます。」 AB「山本委員新三君 新藤君、時間が過ぎます。」 AA「中井委員長 これにて佐々木君の質疑は終了いたし"
+    },
+    {
+     "start": "第一条",
+     "text": "第一条第一号イイイで介護サービスサービスの提供を開始した。 2011年（平成23年）3月23日：4thシングル「NORTS BATS (NORTS BATSS COME)」を上回るサービスを開始 。 3月23日：4thシングル「NORTS COME」をリリース。 1月2"
+    },
+    {
+     "start": "この法律において",
+     "text": "この法律において頭に付置した。 広義には、 青森県 出身の 祖父母 や 佐渡出身の 兄弟姉妹 、 小田原公 などがいた。 天正 4年（ 1587年 ）に父の 伊勢国 御用邸に移し、その下に 藤原秀親 が所領を包囲した。"
+    }
+   ],
+   "loopPct": 6.87,
+   "movedBody": false
   }
  ],
- "bestVal": 2.7562,
+ "bestVal": 2.7543,
  "layers": 13,
  "params": 44216832,
  "born": "2026-09-08T15:11:54Z",
@@ -12407,5 +12409,5 @@
  ],
  "wantWider": false,
  "nextD": 512,
- "bad": 3
+ "bad": 1
 }
