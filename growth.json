@@ -1,67 +1,6 @@
 {
  "runs": [
   {
-   "at": "2026-09-16T09:42:24Z",
-   "val": 2.8841,
-   "prev": 2.8841,
-   "valTag": "fixed-holdout-v1",
-   "stoppedAt": 587,
-   "secPerStep": 6.357,
-   "steps": 1034,
-   "bpc": 3.4101,
-   "charsPerTok": 1.2202,
-   "score": 2.0674,
-   "scoreW": 2.0,
-   "scoreMode": "talk",
-   "finishMix": 0.5,
-   "lineage": "L1",
-   "layers": 15,
-   "params": 28875648,
-   "chars": 1037515847,
-   "tokens": 850289863,
-   "grew": 0,
-   "rolledBack": true,
-   "ownVal": 2.7823,
-   "ownScore": 2.1491,
-   "d": 384,
-   "loops": 1,
-   "spread": 3.0486,
-   "bytes": 346636881,
-   "heads": 6,
-   "ctx": 512,
-   "vocab": 6000,
-   "kind": "bpe",
-   "arch": "tpp-loop",
-   "wantWider": false,
-   "layerCap": 16,
-   "mixChanged": false,
-   "bySrc": {
-    "laws": 4.0504,
-    "wiki": 2.9874,
-    "aozora": 3.2712,
-    "hanrei": 3.5553,
-    "kokkai": 2.5307,
-    "web": 2.9001,
-    "talk": 2.1491
-   },
-   "wrote": [
-    {
-     "start": "わたしは",
-     "text": "わたしは、本日はいつもすぐに過ごします。」 FS「そうなのですね。お昼は何を食べましたか？」 DV「朝はパンを食べました」 FS「パンいいですねー！朝ごはんが食べたいです！」 DV「パンいいですね、食べづらいですか？」 F"
-    },
-    {
-     "start": "第一条",
-     "text": "第一条の傍給付金を払ったときは、その額調整はしない、あるいはそれによつても通算退職年金し、またはその額調整ができないということになると、そこに集まるからには、ちょうど各方面における行政監視を促進するということになるのでありますから、これは大蔵大臣とこれは別として、そういういわゆる行政監視のようなものをできるだけ行政監視といいますか、今度の行政監視の"
-    },
-    {
-     "start": "この法律において",
-     "text": "この法律において国家交通政策会議が設置されておりまするので、この点につきましては、私の考え方に沿いまして、ただいまの御意見につきまして御理解を賜りたいと存じます。 次に、労働農林.liptoryの問題についてお話を申し上げたいと思います。 まず、労働組合の問題についてお尋ねをいたしま"
-    }
-   ],
-   "loopPct": 3.52,
-   "movedBody": false
-  },
-  {
    "at": "2026-09-16T10:50:28Z",
    "val": 2.8841,
    "prev": 2.8841,
@@ -12327,6 +12266,69 @@
    ],
    "loopPct": 3.2,
    "movedBody": false
+  },
+  {
+   "at": "2026-09-27T02:25:58Z",
+   "val": 3.1707,
+   "prev": 3.1733,
+   "valTag": "fixed-holdout-v1",
+   "stoppedAt": 159,
+   "stuck": 0,
+   "evalTag": "fixed-ix-v1",
+   "secPerStep": 26.2447,
+   "steps": 300,
+   "bpc": 3.7528,
+   "charsPerTok": 1.2189,
+   "score": 2.2812,
+   "scoreW": 2.0,
+   "scoreMode": "talk",
+   "finishMix": 0.5,
+   "lineage": "L1",
+   "layers": 16,
+   "params": 117914880,
+   "chars": 1045308899,
+   "tokens": 857567631,
+   "grew": 0,
+   "rolledBack": false,
+   "ownVal": null,
+   "ownScore": null,
+   "d": 768,
+   "loops": 1,
+   "spread": 3.444,
+   "bytes": 1415115957,
+   "heads": 6,
+   "ctx": 512,
+   "vocab": 6000,
+   "kind": "bpe",
+   "arch": "tpp-loop",
+   "wantWider": false,
+   "layerCap": 16,
+   "mixChanged": false,
+   "bySrc": {
+    "laws": 4.7036,
+    "wiki": 3.3461,
+    "aozora": 3.6457,
+    "hanrei": 3.755,
+    "kokkai": 2.8874,
+    "web": 3.1636,
+    "talk": 2.2812
+   },
+   "wrote": [
+    {
+     "start": "わたしは",
+     "text": "わたしは、もってこの暴行を見るのである。 日本では 新規開発 の フルシチョフ が、 コロナ の ブルガリア語 に近いオスマン帝国がさっている。 1930年 （ 昭和 5年） 6月27日 、 第二"
+    },
+    {
+     "start": "第一条",
+     "text": "第一条ラールル（847） 間接タール（766 km/h） - 90 - 726 開発・販売開始 。 基本的に同年、集英社の編集権DASIDL支部にて、第16 - 第53回本塁西 にて100 cm で初めて応用された。 大阪のOCIDA を"
+    },
+    {
+     "start": "この法律において",
+     "text": "この法律において、自治体と連携していこうと思うんですが、いかがですか。」 AA「国務大臣 その歳は、今までの国益というのは、今の国民そのものを平成靖国、当該国政を目指すということでございます。そういう中で、そういった意味で、先ほど申し上げましたように、私もそうですけれども、�"
+    }
+   ],
+   "loopPct": 3.25,
+   "movedBody": false
   }
  ],
  "bestVal": 2.7794,
@@ -12377,5 +12379,5 @@
  ],
  "wantWider": false,
  "nextD": 768,
- "bad": 2
+ "bad": 3
 }
