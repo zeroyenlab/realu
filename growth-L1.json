@@ -1,67 +1,6 @@
 {
  "runs": [
   {
-   "at": "2026-09-16T18:08:57Z",
-   "val": 2.7794,
-   "prev": 2.7794,
-   "valTag": "fixed-holdout-v1",
-   "stoppedAt": 468,
-   "secPerStep": 8.0495,
-   "steps": 1017,
-   "bpc": 3.2862,
-   "charsPerTok": 1.2202,
-   "score": 2.0687,
-   "scoreW": 2.0,
-   "scoreMode": "talk",
-   "finishMix": 0.5,
-   "lineage": "L1",
-   "layers": 15,
-   "params": 28875648,
-   "chars": 1037515847,
-   "tokens": 850289863,
-   "grew": 0,
-   "rolledBack": true,
-   "ownVal": 2.7887,
-   "ownScore": 2.183,
-   "d": 384,
-   "loops": 1,
-   "spread": 2.9752,
-   "bytes": 346636881,
-   "heads": 6,
-   "ctx": 512,
-   "vocab": 6000,
-   "kind": "bpe",
-   "arch": "tpp-loop",
-   "wantWider": false,
-   "layerCap": 16,
-   "mixChanged": false,
-   "bySrc": {
-    "laws": 3.8585,
-    "wiki": 3.0016,
-    "aozora": 3.2821,
-    "hanrei": 3.4695,
-    "kokkai": 2.4966,
-    "web": 2.8594,
-    "talk": 2.183
-   },
-   "wrote": [
-    {
-     "start": "わたしは",
-     "text": "わたしは、そのたびに無意味なために、就寝といって、何らかの仕事をやっていた。人間は、やはり苦労をして、途方に自分ばかりが必要であった。 「さ、ねえ、自分の「噂では、お前もなさんとか嫌い」――、まだなんともいえない。 「なんとも、嫌いはしっかりと"
-    },
-    {
-     "start": "第一条",
-     "text": "第一条に属して の演奏に参加したことがあった。 のような状態が、被告人と しても，被告人と しても，被告人と，被告人と しても，被告人とともに，被告人といった自宅を訪れ，出張や，さらには，被告人と 連絡が大きく変わった。 ２被告人と被告人との間の連絡は，被告人"
-    },
-    {
-     "start": "この法律において",
-     "text": "この法律において小型小型中小型自動車関連自動車産業を設立する者の三分の二は、第三種自動車部品工場を設立する者の三分の二は、四分の一の配給業者のうち十億円以内というものであります。 第二イ 自動車産業振興臨時措置法の一部を改正する法律案 第四 名鉄自動車株式会社及び大阪ガス工事関係臨時措置法の一部を改正する法律案 第五 国際自動車産業振興臨時措置法の一部を改正する法律案 第五 東京電力株式会社及び大阪ガス工事関係臨時措置法の"
-    }
-   ],
-   "loopPct": 13.81,
-   "movedBody": false
-  },
-  {
    "at": "2026-09-16T19:22:16Z",
    "val": 2.7794,
    "prev": 2.7794,
@@ -12341,6 +12280,69 @@
    ],
    "loopPct": 0.68,
    "movedBody": false
+  },
+  {
+   "at": "2026-09-27T11:14:29Z",
+   "val": 3.1587,
+   "prev": 3.1613,
+   "valTag": "fixed-holdout-v1",
+   "stoppedAt": 158,
+   "stuck": 0,
+   "evalTag": "fixed-ix-v1",
+   "secPerStep": 26.4567,
+   "steps": 300,
+   "bpc": 3.7385,
+   "charsPerTok": 1.2189,
+   "score": 2.2743,
+   "scoreW": 2.0,
+   "scoreMode": "talk",
+   "finishMix": 0.5,
+   "lineage": "L1",
+   "layers": 16,
+   "params": 117914880,
+   "chars": 1045308899,
+   "tokens": 857567631,
+   "grew": 0,
+   "rolledBack": false,
+   "ownVal": null,
+   "ownScore": null,
+   "d": 768,
+   "loops": 1,
+   "spread": 3.4783,
+   "bytes": 1415115957,
+   "heads": 6,
+   "ctx": 512,
+   "vocab": 6000,
+   "kind": "bpe",
+   "arch": "tpp-loop",
+   "wantWider": false,
+   "layerCap": 16,
+   "mixChanged": false,
+   "bySrc": {
+    "laws": 4.6758,
+    "wiki": 3.3344,
+    "aozora": 3.6313,
+    "hanrei": 3.7401,
+    "kokkai": 2.8805,
+    "web": 3.1533,
+    "talk": 2.2743
+   },
+   "wrote": [
+    {
+     "start": "わたしは",
+     "text": "わたしは、何が好きですか？」 CJ「好きです！今日は、今日はどこですか？」 CQ「私は、バリ部とかですね。」 CJ「ピザも好きですか？」 CQ「すごい好きです。」 CJ「チェリー！いいですね。」 CQ「そ"
+    },
+    {
+     "start": "第一条",
+     "text": "第一条に違反した。 <記事 ジャイ・ホーツ> チャン・バーグ（Roiran de on lird）は、アラビア語で「恐れのおよそ3つの居方言ではない」。 ウィーン・ストリーミングは1943年に「ヨーロッパ・ニュージーランド」に由"
+    },
+    {
+     "start": "この法律において",
+     "text": "この法律において「採択」という。） U-III（「U-II」という。） UI（「URI」という。） U-IIIらしい1 URI「UNII HIAI」 BI「SII UI」 CI「よろしくおねがいします！」 C"
+    }
+   ],
+   "loopPct": 6.43,
+   "movedBody": false
   }
  ],
  "bestVal": 2.7794,
@@ -12391,5 +12393,5 @@
  ],
  "wantWider": false,
  "nextD": 768,
- "bad": 0
+ "bad": 1
 }
