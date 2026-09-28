@@ -1,67 +1,6 @@
 {
  "runs": [
   {
-   "at": "2026-09-18T09:26:21Z",
-   "val": 3.2877,
-   "prev": 3.0155,
-   "valTag": "fixed-holdout-v1",
-   "stoppedAt": 613,
-   "secPerStep": 6.0771,
-   "steps": 1139,
-   "bpc": 3.8913,
-   "charsPerTok": 1.2189,
-   "score": 2.4142,
-   "scoreW": 2.0,
-   "scoreMode": "talk",
-   "finishMix": 0.2,
-   "lineage": "L3",
-   "layers": 12,
-   "params": 23564928,
-   "chars": 1045308899,
-   "tokens": 857567631,
-   "grew": 1,
-   "rolledBack": false,
-   "ownVal": null,
-   "ownScore": null,
-   "d": 384,
-   "loops": 1,
-   "spread": 3.1387,
-   "bytes": 282883685,
-   "heads": 6,
-   "ctx": 512,
-   "vocab": 6000,
-   "kind": "bpe",
-   "arch": "tpp-loop",
-   "wantWider": false,
-   "layerCap": 16,
-   "mixChanged": false,
-   "bySrc": {
-    "laws": 4.6995,
-    "wiki": 3.3905,
-    "aozora": 3.8133,
-    "hanrei": 3.9851,
-    "kokkai": 2.9041,
-    "web": 3.2663,
-    "talk": 2.4142
-   },
-   "wrote": [
-    {
-     "start": "わたしは",
-     "text": "わたしは大変そうですね。」 BL「私もそんな感じですね。」 BL「こんにちは！」 DU「こんにちは。」 BL「好きな食べ物ありますか？」 DU「好きです。」 BL「私もです。あ"
-    },
-    {
-     "start": "第一条",
-     "text": "第一条本文の規定により条第一項の規定により条第一項の規定により知事に提出しなければならない。 （委員長報告） 第二百五十四条第一項の規定により幹事長は、委員長報告を失ったことにより、理事会に出席するよう努力することなく、理事会を開催しない。 理事会は、委員長報告のとおり出席することなく、理事会の目的により、理事会で理事会に出席することに決まった。 理事会でない場合において、理事会は、理事会において理事会に付した理事会において理事会として"
-    },
-    {
-     "start": "この法律において",
-     "text": "この法律においてプレスなスペースですが、ジャングルトはそこまで無いシージンプレイスチャンネルで撮影された個人が多い。 漫画 声明端順 たいぶん 声明の間 声がくっつりながら無い。 太陽系のメーカーは、まれにパシシージンの音声のデータ"
-    }
-   ],
-   "loopPct": 5.41,
-   "movedBody": false
-  },
-  {
    "at": "2026-09-18T10:43:21Z",
    "val": 3.2382,
    "prev": 3.2877,
@@ -12395,9 +12334,72 @@
    ],
    "loopPct": 6.52,
    "movedBody": false
+  },
+  {
+   "at": "2026-09-28T21:21:11Z",
+   "val": 2.7738,
+   "prev": 2.7759,
+   "valTag": "fixed-holdout-v1",
+   "stoppedAt": 526,
+   "stuck": 0,
+   "evalTag": "fixed-ix-v1",
+   "secPerStep": 7.1496,
+   "steps": 975,
+   "bpc": 3.283,
+   "charsPerTok": 1.2189,
+   "score": 2.2023,
+   "scoreW": 2.0,
+   "scoreMode": "talk",
+   "finishMix": 0.2,
+   "lineage": "L3",
+   "layers": 13,
+   "params": 25335168,
+   "chars": 1045308899,
+   "tokens": 857567631,
+   "grew": 0,
+   "rolledBack": false,
+   "ownVal": null,
+   "ownScore": null,
+   "d": 384,
+   "loops": 1,
+   "spread": 2.6425,
+   "bytes": 304134793,
+   "heads": 6,
+   "ctx": 512,
+   "vocab": 6000,
+   "kind": "bpe",
+   "arch": "tpp-loop",
+   "wantWider": false,
+   "layerCap": 16,
+   "mixChanged": false,
+   "bySrc": {
+    "laws": 3.7826,
+    "wiki": 2.9491,
+    "aozora": 3.2744,
+    "hanrei": 3.4789,
+    "kokkai": 2.5697,
+    "web": 2.8532,
+    "talk": 2.2023
+   },
+   "wrote": [
+    {
+     "start": "わたしは",
+     "text": "わたしは記憶を聞いて感じました。」 AO「なるほど！そんなに記憶は有りませんが。」 AD「あははは。そうでしたか！」 AO「今はそこまで見るのですが、最近は見てないです。」 AD「私もたまには見てないですが、僕は安定性が必要ですしね。"
+    },
+    {
+     "start": "第一条",
+     "text": "第一条方法は、当該の六の負担を軽減する観点から、当該負担を軽減する観点から、その負担を軽減することといたしております。 次に、道路整備割合五割廃止についての御質問がございましたが、現行法では道路整備割合五割停止を検討しております。 道路整備割合八割負担の効果がございます。 道路整備割合五割廃止については、自動車の自動車と同様"
+    },
+    {
+     "start": "この法律において",
+     "text": "この法律において「ore and prower」と呼ばれる具体的な内容は、1950年代でも「ore and prower」と呼ばれている。 1950年代以降の日本では、同種のインターフェイス用モデルとして、 1990年代 以前に V-C Mitser Ser"
+    }
+   ],
+   "loopPct": 2.53,
+   "movedBody": false
   }
  ],
- "bestVal": 2.7757,
+ "bestVal": 2.7738,
  "layers": 13,
  "params": 25335168,
  "born": "2026-09-12T18:05:42Z",
@@ -12445,5 +12447,5 @@
  ],
  "wantWider": false,
  "nextD": 384,
- "bad": 5
+ "bad": 2
 }
