@@ -1,67 +1,6 @@
 {
  "runs": [
   {
-   "at": "2026-09-18T08:12:33Z",
-   "val": 3.0155,
-   "prev": 3.0155,
-   "valTag": "fixed-holdout-v1",
-   "stoppedAt": 628,
-   "secPerStep": 5.9208,
-   "steps": 1139,
-   "bpc": 3.569,
-   "charsPerTok": 1.2189,
-   "score": 2.2433,
-   "scoreW": 2.0,
-   "scoreMode": "talk",
-   "finishMix": 0.2,
-   "lineage": "L3",
-   "layers": 11,
-   "params": 21794688,
-   "chars": 1045308899,
-   "tokens": 857567631,
-   "grew": 0,
-   "rolledBack": true,
-   "ownVal": 3.1745,
-   "ownScore": 2.3546,
-   "d": 384,
-   "loops": 1,
-   "spread": 2.9648,
-   "bytes": 261632577,
-   "heads": 6,
-   "ctx": 512,
-   "vocab": 6000,
-   "kind": "bpe",
-   "arch": "tpp-loop",
-   "wantWider": false,
-   "layerCap": 16,
-   "mixChanged": false,
-   "bySrc": {
-    "laws": 4.5904,
-    "wiki": 3.3015,
-    "aozora": 3.6231,
-    "hanrei": 3.8009,
-    "kokkai": 2.8311,
-    "web": 3.2188,
-    "talk": 2.3546
-   },
-   "wrote": [
-    {
-     "start": "わたしは",
-     "text": "わたしは、そこは何人とも一致しているからですか」 IH「まぁ、すごいですよね。私もおかしいです」 BO「めちゃくちゃすごいですね、、」 IH「うらやましいです。でも、面白いですね」 BO「ですね。結構は車でにいますね」 IH「そう"
-    },
-    {
-     "start": "第一条",
-     "text": "第一条第四号ニ没収収収録。 ↑ “ 第77回は菊池田光美、大阪農水大臣、大阪農水大臣、大阪農水大臣、大阪農水大臣、大阪農水大臣、大阪農水大臣、大阪農水大臣、大阪農水大臣、大阪農水大臣、大阪農水大臣、大阪半島首相は現"
-    },
-    {
-     "start": "この法律において",
-     "text": "この法律において公益財団法人ウェブブラウザー （ 英語版 ） （ 英語版 ） ）が支持率は1864年大使館で1646年に起きたが、1866年には正式に 1865年 に 1877年 に アメリカ合衆国 の フランス語版 を開いた [ 17 ]"
-    }
-   ],
-   "loopPct": 36.2,
-   "movedBody": false
-  },
-  {
    "at": "2026-09-18T09:26:21Z",
    "val": 3.2877,
    "prev": 3.0155,
@@ -12393,6 +12332,69 @@
    ],
    "loopPct": 14.29,
    "movedBody": false
+  },
+  {
+   "at": "2026-09-28T20:03:31Z",
+   "val": 2.7759,
+   "prev": 2.7757,
+   "valTag": "fixed-holdout-v1",
+   "stoppedAt": 671,
+   "stuck": 0,
+   "evalTag": "fixed-ix-v1",
+   "secPerStep": 5.561,
+   "steps": 967,
+   "bpc": 3.2855,
+   "charsPerTok": 1.2189,
+   "score": 2.2045,
+   "scoreW": 2.0,
+   "scoreMode": "talk",
+   "finishMix": 0.2,
+   "lineage": "L3",
+   "layers": 13,
+   "params": 25335168,
+   "chars": 1045308899,
+   "tokens": 857567631,
+   "grew": 0,
+   "rolledBack": false,
+   "ownVal": null,
+   "ownScore": null,
+   "d": 384,
+   "loops": 1,
+   "spread": 2.5996,
+   "bytes": 304134793,
+   "heads": 6,
+   "ctx": 512,
+   "vocab": 6000,
+   "kind": "bpe",
+   "arch": "tpp-loop",
+   "wantWider": false,
+   "layerCap": 16,
+   "mixChanged": false,
+   "bySrc": {
+    "laws": 3.7836,
+    "wiki": 2.9503,
+    "aozora": 3.2756,
+    "hanrei": 3.4768,
+    "kokkai": 2.5716,
+    "web": 2.8546,
+    "talk": 2.2045
+   },
+   "wrote": [
+    {
+     "start": "わたしは",
+     "text": "わたしは二、二度とすぐに突然生産しているが、今でもって、全体の生産が阻害されている。 アメリカ合衆国では、古代中国では、 シウェル が世界で「 ガリガリ帝国 」を目指す概念を指す。 オバマは、 クウェル を自伝しており、 アラビア の マリン"
+    },
+    {
+     "start": "第一条",
+     "text": "第一条 断固として，本件第１祯顆 １２月２日付けで，朝日地球学会場を出（被告Ａ），同月１日付けで，本件第１祯顆 １２月２日付けで，朝日地球球部の際，北朝鮮系の，宇宙飛行士及び日本人，朝日地球球 球連合，日本人"
+    },
+    {
+     "start": "この法律において",
+     "text": "この法律において「日本」の文書で、渡邉大輔「日本」の文書ではないと記述しておきたい。 機械・機械・機械・器官・工官を参考にして「 日持丘 」という文字を使った概念として広く用いられる。 また、発達する部品を 日立製作所 製の 製作所 にアカウントして自社制作を行っている。"
+    }
+   ],
+   "loopPct": 6.52,
+   "movedBody": false
   }
  ],
  "bestVal": 2.7757,
@@ -12443,5 +12445,5 @@
  ],
  "wantWider": false,
  "nextD": 384,
- "bad": 3
+ "bad": 5
 }
