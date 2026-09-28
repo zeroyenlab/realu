@@ -1,67 +1,6 @@
 {
  "runs": [
   {
-   "at": "2026-09-17T21:34:06Z",
-   "val": 3.2819,
-   "prev": 3.1976,
-   "valTag": "fixed-holdout-v1",
-   "stoppedAt": 535,
-   "secPerStep": 7.0013,
-   "steps": 808,
-   "bpc": 3.8843,
-   "charsPerTok": 1.2189,
-   "score": 2.2402,
-   "scoreW": 2.0,
-   "scoreMode": "talk",
-   "finishMix": 0.85,
-   "lineage": "L2",
-   "layers": 10,
-   "params": 34727424,
-   "chars": 1045308899,
-   "tokens": 857567631,
-   "grew": 0,
-   "rolledBack": false,
-   "ownVal": null,
-   "ownScore": null,
-   "d": 512,
-   "loops": 1,
-   "spread": 3.0336,
-   "bytes": 416817181,
-   "heads": 8,
-   "ctx": 512,
-   "vocab": 6000,
-   "kind": "bpe",
-   "arch": "tpp-loop",
-   "wantWider": false,
-   "layerCap": 16,
-   "mixChanged": false,
-   "bySrc": {
-    "laws": 4.7164,
-    "wiki": 3.4419,
-    "aozora": 3.839,
-    "hanrei": 3.8593,
-    "kokkai": 3.0085,
-    "web": 3.3052,
-    "talk": 2.2402
-   },
-   "wrote": [
-    {
-     "start": "わたしは",
-     "text": "わたしはハンターハンターハンターハンターハンターハンターハンターハンターハンターハンターハンターハンターハンターハンターハンターハンターハンターハンターハンターハンターハンターハイウォンにハンターハンターハンターハンターハンターハンターハンターハンターハンターハンターハンターハンターハンターハ"
-    },
-    {
-     "start": "第一条",
-     "text": "第一条どちらかといったものですね。」 DQ「そうなんですか、頑張ってください。」 CP「はい。確かに、数日寄っているから、足が気になるならば。」 DQ「お母さんがいらっしゃるので、子供は大きくなってるので、大丈夫ですよ。」 CP「確かに"
-    },
-    {
-     "start": "この法律において",
-     "text": "この法律において�さんですが、おすすめありますか？」 AV「お疲れ様です！」 AW「例えばどんなものをもらえたりするんですか？」 AV「カレーにしか食べてないですねー」 AW「カレーですか？」 AV「です！相性あります！」 AW「手軽で"
-    }
-   ],
-   "loopPct": 33.27,
-   "movedBody": false
-  },
-  {
    "at": "2026-09-17T22:56:29Z",
    "val": 3.1757,
    "prev": 3.2819,
@@ -12377,9 +12316,72 @@
    ],
    "loopPct": 31.3,
    "movedBody": false
+  },
+  {
+   "at": "2026-09-28T11:10:15Z",
+   "val": 2.7464,
+   "prev": 2.7469,
+   "valTag": "fixed-holdout-v1",
+   "stoppedAt": 366,
+   "stuck": 0,
+   "evalTag": "fixed-ix-v1",
+   "secPerStep": 10.5028,
+   "steps": 610,
+   "bpc": 3.2506,
+   "charsPerTok": 1.2189,
+   "score": 2.0808,
+   "scoreW": 2.0,
+   "scoreMode": "talk",
+   "finishMix": 0.85,
+   "lineage": "L2",
+   "layers": 13,
+   "params": 44216832,
+   "chars": 1045308899,
+   "tokens": 857567631,
+   "grew": 0,
+   "rolledBack": false,
+   "ownVal": null,
+   "ownScore": null,
+   "d": 512,
+   "loops": 1,
+   "spread": 2.6649,
+   "bytes": 530714761,
+   "heads": 8,
+   "ctx": 512,
+   "vocab": 6000,
+   "kind": "bpe",
+   "arch": "tpp-loop",
+   "wantWider": false,
+   "layerCap": 16,
+   "mixChanged": false,
+   "bySrc": {
+    "laws": 3.7082,
+    "wiki": 2.9232,
+    "aozora": 3.2285,
+    "hanrei": 3.433,
+    "kokkai": 2.5469,
+    "web": 2.8303,
+    "talk": 2.0808
+   },
+   "wrote": [
+    {
+     "start": "わたしは",
+     "text": "わたしは自分で作ることが多いです。」 AV「それは自分で作られる自分で作れるんですね？」 GQ「私は手作りをするときも、自分で作ったりします。出来る限り。」 AV「自分で作るとお手作りできるんですね！なんか都会だって感じなんですね。」 GQ「そうですね"
+    },
+    {
+     "start": "第一条",
+     "text": "第一条第二号イ（１）イ（２）イ（３）イ（２）イ（２）イ（３）イ（４）イ（２）イ（３）イ（２）イ（３）イ（３）イ（４）イ（５）イ（３）イ（３）イ（３）イ（２）イ（３）イ（３）イ（３）イ（４）イ（５）イ（４）イ（３）イ（４）イ（３）イ"
+    },
+    {
+     "start": "この法律において",
+     "text": "この法律において２０年間以下 （平成１４年１１月１９日） 昭和４０年１１月１９日 平成４年１１月１７日 平成４年１月１８日 平成４年１１月１１日 平成４年１２月１６日 平成８年１１月１７日 平成４年１月１９日 平成５年１１月１８日 平成５年１１月１１日 平成４"
+    }
+   ],
+   "loopPct": 31.85,
+   "movedBody": false
   }
  ],
- "bestVal": 2.7469,
+ "bestVal": 2.7464,
  "layers": 13,
  "params": 44216832,
  "born": "2026-09-08T15:11:54Z",
