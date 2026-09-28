@@ -1,67 +1,6 @@
 {
  "runs": [
   {
-   "at": "2026-09-17T12:59:51Z",
-   "val": 3.3097,
-   "prev": 3.4844,
-   "valTag": "fixed-holdout-v1",
-   "stoppedAt": 654,
-   "secPerStep": 5.6902,
-   "steps": 804,
-   "bpc": 3.9173,
-   "charsPerTok": 1.2189,
-   "score": 2.2605,
-   "scoreW": 2.0,
-   "scoreMode": "talk",
-   "finishMix": 0.85,
-   "lineage": "L2",
-   "layers": 10,
-   "params": 34727424,
-   "chars": 1045308899,
-   "tokens": 857567631,
-   "grew": 0,
-   "rolledBack": false,
-   "ownVal": null,
-   "ownScore": null,
-   "d": 512,
-   "loops": 1,
-   "spread": 3.2982,
-   "bytes": 416817181,
-   "heads": 8,
-   "ctx": 512,
-   "vocab": 6000,
-   "kind": "bpe",
-   "arch": "tpp-loop",
-   "wantWider": false,
-   "layerCap": 16,
-   "mixChanged": false,
-   "bySrc": {
-    "laws": 5.044,
-    "wiki": 3.4374,
-    "aozora": 3.771,
-    "hanrei": 4.0136,
-    "kokkai": 3.0506,
-    "web": 3.3123,
-    "talk": 2.2605
-   },
-   "wrote": [
-    {
-     "start": "わたしは",
-     "text": "わたしはお昼食べますか？」 EW「はい、食べようかと思います。」 DT「ほんと1日帯ですか？」 EW「はい！はやくしゃぶのでしてますね」 DT「そうですよ。楽しくなります！」 EW「ですね」 DT「今、私も今日は"
-    },
-    {
-     "start": "第一条",
-     "text": "第一条の規定ですが。」 店「ありがとうございます。またお待ちしております。」 客「では最寄り駅を教えてください。」 店「はい、最寄り駅が天神駅でございます。」 客「そちらの住所を教えてください。」 店「住所は北海道札幌市古ノ川区"
-    },
-    {
-     "start": "この法律において",
-     "text": "この法律において < 事 ジェリー> <記事 ヴィルディ・ヴィルディ> <記事 シナリオ> <記事 フェレディ> ヴィルディ> <記事 ヴィルディオヌット> <記事 ヴィルディオヴィッツ> ヴィルディオヴィッツバック（Wi"
-    }
-   ],
-   "loopPct": 0.0,
-   "movedBody": false
-  },
-  {
    "at": "2026-09-17T14:08:23Z",
    "val": 3.2765,
    "prev": 3.3097,
@@ -12371,9 +12310,72 @@
    ],
    "loopPct": 18.53,
    "movedBody": false
+  },
+  {
+   "at": "2026-09-28T07:21:56Z",
+   "val": 2.7493,
+   "prev": 2.7498,
+   "valTag": "fixed-holdout-v1",
+   "stoppedAt": 362,
+   "stuck": 0,
+   "evalTag": "fixed-ix-v1",
+   "secPerStep": 10.6141,
+   "steps": 611,
+   "bpc": 3.254,
+   "charsPerTok": 1.2189,
+   "score": 2.0788,
+   "scoreW": 2.0,
+   "scoreMode": "talk",
+   "finishMix": 0.85,
+   "lineage": "L2",
+   "layers": 13,
+   "params": 44216832,
+   "chars": 1045308899,
+   "tokens": 857567631,
+   "grew": 0,
+   "rolledBack": false,
+   "ownVal": null,
+   "ownScore": null,
+   "d": 512,
+   "loops": 1,
+   "spread": 2.8757,
+   "bytes": 530714761,
+   "heads": 8,
+   "ctx": 512,
+   "vocab": 6000,
+   "kind": "bpe",
+   "arch": "tpp-loop",
+   "wantWider": false,
+   "layerCap": 16,
+   "mixChanged": false,
+   "bySrc": {
+    "laws": 3.7116,
+    "wiki": 2.9263,
+    "aozora": 3.2304,
+    "hanrei": 3.4394,
+    "kokkai": 2.5484,
+    "web": 2.836,
+    "talk": 2.0788
+   },
+   "wrote": [
+    {
+     "start": "わたしは",
+     "text": "わたしは右手ではないのですが、背後を指してロッコリーと戦っているので右手の相手に右手で入れています。」 CL「右手ですか？どちらですか？」 BI「左手なので、右手です。右手ではなく右手です。」 CL「お右側ですか。右手"
+    },
+    {
+     "start": "第一条",
+     "text": "第一条第六号に掲げる事業に係る事業者又は事業者又は事業者又は事業者又は事業者又は事業者又は事業者又は事業者又は事業者又は事業者又は事業者又は事業者又は事業者又は事業者又は事業者又は事業者又は事業者又は事業者又は事業者又は事業者又は事業者又は事業者又は事業者又は事業者又は事業者又は事業者又は事業者及び事業者又は事業者又は事業者又は事業者又は事業者又は事業者又は事業者又は事業者又は事業者又は事業者又は事業者又は事業者又は事業者又は事業者又は"
+    },
+    {
+     "start": "この法律において",
+     "text": "この法律において公認公認公認公認公認公認公認公認公認公認公認公認公認公認公認公認公認公認公認公認公認公認公認公認公認公認公認公認公認公認公認公認公認公認公認公認公認公認公認公認公認公認公認公認公認公認公認公認公認公認公認公認公認公認公認"
+    }
+   ],
+   "loopPct": 62.13,
+   "movedBody": false
   }
  ],
- "bestVal": 2.7498,
+ "bestVal": 2.7493,
  "layers": 13,
  "params": 44216832,
  "born": "2026-09-08T15:11:54Z",
@@ -12421,5 +12423,5 @@
  ],
  "wantWider": false,
  "nextD": 512,
- "bad": 4
+ "bad": 0
 }
