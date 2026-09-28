@@ -1,67 +1,6 @@
 {
  "runs": [
   {
-   "at": "2026-09-18T10:49:26Z",
-   "val": 3.8961,
-   "prev": 3.8942,
-   "valTag": "fixed-holdout-v1",
-   "stoppedAt": 158,
-   "secPerStep": 25.9692,
-   "steps": 300,
-   "bpc": 4.6114,
-   "charsPerTok": 1.2189,
-   "score": 2.4947,
-   "scoreW": 2.0,
-   "scoreMode": "talk",
-   "finishMix": 0.5,
-   "lineage": "L1",
-   "layers": 16,
-   "params": 117914880,
-   "chars": 1045308899,
-   "tokens": 857567631,
-   "grew": 0,
-   "rolledBack": false,
-   "ownVal": null,
-   "ownScore": null,
-   "d": 768,
-   "loops": 1,
-   "spread": 3.9845,
-   "bytes": 1415115957,
-   "heads": 6,
-   "ctx": 512,
-   "vocab": 6000,
-   "kind": "bpe",
-   "arch": "tpp-loop",
-   "wantWider": false,
-   "layerCap": 16,
-   "mixChanged": false,
-   "bySrc": {
-    "laws": 5.9985,
-    "wiki": 3.9481,
-    "aozora": 4.3032,
-    "hanrei": 4.4731,
-    "kokkai": 3.4562,
-    "web": 3.646,
-    "talk": 2.4947
-   },
-   "wrote": [
-    {
-     "start": "わたしは",
-     "text": "わたしはないですよね」 AD「ですね！残公益金を税するんですよね。」 AD「そうなんですね！」 AD「本当ですね！食べ物は海外間みたいなにおける飼いました！」 AD「おうだと思います！返すぎます！」 AD「そうなんですね！あなたは"
-    },
-    {
-     "start": "第一条",
-     "text": "第一条者に対してをした。 （競合意者） 善伴動原告も 言語 も含まれる。 Onev は クラシア語 と アンシュル の ニュータイ （ 管大臣 ） ・ コミュニケーション の ポリア では「 ライブパクチー 」を「 フーリップ 」と発表した。 200"
-    },
-    {
-     "start": "この法律において",
-     "text": "この法律においての健康したことになるが、そのような解消体験といった意味である。 ↑ 「 新体人およびhica 人名版と『 ↑ 歌茂インフラ (2011年7月25日). 2012年12月5日閲覧。 ↑ “ 日本の11月11日 ”. 斎�"
-    }
-   ],
-   "loopPct": 3.1,
-   "movedBody": false
-  },
-  {
    "at": "2026-09-18T12:05:15Z",
    "val": 3.8961,
    "prev": 3.8961,
@@ -12397,9 +12336,72 @@
    ],
    "loopPct": 10.09,
    "movedBody": false
+  },
+  {
+   "at": "2026-09-28T22:45:57Z",
+   "val": 3.1214,
+   "prev": 3.1219,
+   "valTag": "fixed-holdout-v1",
+   "stoppedAt": 146,
+   "stuck": 0,
+   "evalTag": "fixed-ix-v1",
+   "secPerStep": 29.0008,
+   "steps": 300,
+   "bpc": 3.6945,
+   "charsPerTok": 1.2189,
+   "score": 2.2556,
+   "scoreW": 2.0,
+   "scoreMode": "talk",
+   "finishMix": 0.5,
+   "lineage": "L1",
+   "layers": 16,
+   "params": 117914880,
+   "chars": 1045308899,
+   "tokens": 857567631,
+   "grew": 0,
+   "rolledBack": false,
+   "ownVal": null,
+   "ownScore": null,
+   "d": 768,
+   "loops": 1,
+   "spread": 3.2764,
+   "bytes": 1415115957,
+   "heads": 6,
+   "ctx": 512,
+   "vocab": 6000,
+   "kind": "bpe",
+   "arch": "tpp-loop",
+   "wantWider": false,
+   "layerCap": 16,
+   "mixChanged": false,
+   "bySrc": {
+    "laws": 4.606,
+    "wiki": 3.2891,
+    "aozora": 3.6007,
+    "hanrei": 3.7037,
+    "kokkai": 2.8515,
+    "web": 3.1215,
+    "talk": 2.2556
+   },
+   "wrote": [
+    {
+     "start": "わたしは",
+     "text": "わたしは、商品やテーブルや、いつも違うのかな。」 AA「そういうことは知らなかったそうですよね、アニメ、そういうことで、あのあとで、そういうことについて、アニメも、気分がかかって、これはもうアニメの話なんですけれども、映像や見てみたいという話などもあります。"
+    },
+    {
+     "start": "第一条",
+     "text": "第一条 商標の地形 もののほか、遵牧師の数 医学的存 となる距離 租税 琴焼 用地 租税 ものについては、。）。 代理人、取得及び売買 酸素 物資者又は生徒 重要な医学の解釈及び公害 可解する捨て たこと及びきつかい っては、これを最大限に見るとき、 が二週間とする。 <法令 なかつた場合を除く> つて、所管する法律 ちくしょっぴんり"
+    },
+    {
+     "start": "この法律において",
+     "text": "この法律においてジャンルは全国でも2014年8月以降3本を東京都港区内と本社を置く内容を取って、2015年3月場所で10本強に発表した 。 地下鉄株式会社北海道・ほぼ同様、名神、 のひとつ。 町名はここから「 」。 町内会は東名正古木の「東」と「 」のように"
+    }
+   ],
+   "loopPct": 2.92,
+   "movedBody": false
   }
  ],
- "bestVal": 3.1219,
+ "bestVal": 3.1214,
  "layers": 16,
  "params": 117914880,
  "born": "2026-09-08T15:11:54Z",
@@ -12447,5 +12449,5 @@
  ],
  "wantWider": false,
  "nextD": 768,
- "bad": 0
+ "bad": 1
 }
