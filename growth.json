@@ -1,67 +1,6 @@
 {
  "runs": [
   {
-   "at": "2026-09-17T23:35:20Z",
-   "val": 4.3018,
-   "prev": 4.8639,
-   "valTag": "fixed-holdout-v1",
-   "stoppedAt": 303,
-   "secPerStep": 12.7007,
-   "steps": 804,
-   "bpc": 5.0915,
-   "charsPerTok": 1.2189,
-   "score": 2.744,
-   "scoreW": 2.0,
-   "scoreMode": "talk",
-   "finishMix": 0.5,
-   "lineage": "L1",
-   "layers": 16,
-   "params": 117914880,
-   "chars": 1045308899,
-   "tokens": 857567631,
-   "grew": 0,
-   "rolledBack": false,
-   "ownVal": null,
-   "ownScore": null,
-   "d": 768,
-   "loops": 1,
-   "spread": 4.5074,
-   "bytes": 1415115957,
-   "heads": 6,
-   "ctx": 512,
-   "vocab": 6000,
-   "kind": "bpe",
-   "arch": "tpp-loop",
-   "wantWider": false,
-   "layerCap": 16,
-   "mixChanged": false,
-   "bySrc": {
-    "laws": 6.5138,
-    "wiki": 4.4346,
-    "aozora": 4.658,
-    "hanrei": 4.9814,
-    "kokkai": 4.0634,
-    "web": 4.1287,
-    "talk": 2.744
-   },
-   "wrote": [
-    {
-     "start": "わたしは",
-     "text": "わたしはツートに帰ったが、00,38011が8188 では1414年に1800年まで1963年にベーントと開発した。 1990年に、1968年に、2014年1月12日、2012年の1931年の10月16日、1199年 3月12日 - 19"
-    },
-    {
-     "start": "第一条",
-     "text": "第一条次これを、次に掲げるときは、これを徹兆らめて、丸城は骩きや、おいしいです。」 AA「あ、にそんな考えいと思いますよね。」 AA「こんにちは。」 AX「先ほど、楽しかな、何かありませんけど、私はおいしいらってみたいなのです。」 AL「そ"
-    },
-    {
-     "start": "この法律において",
-     "text": "この法律において、検合を続けるようにしかもしれません。」 客「いというふうに思います。」 AU「こちらは、お願いします。」 BL「すごい。」 AY「こんにちは！劇によるところは、カティカですか？」 AI「ほ"
-    }
-   ],
-   "loopPct": 8.95,
-   "movedBody": false
-  },
-  {
    "at": "2026-09-18T00:51:07Z",
    "val": 4.2374,
    "prev": 4.3018,
@@ -12379,9 +12318,72 @@
    ],
    "loopPct": 0.64,
    "movedBody": false
+  },
+  {
+   "at": "2026-09-28T11:14:32Z",
+   "val": 3.1347,
+   "prev": 3.1378,
+   "valTag": "fixed-holdout-v1",
+   "stoppedAt": 157,
+   "stuck": 0,
+   "evalTag": "fixed-ix-v1",
+   "secPerStep": 26.617,
+   "steps": 300,
+   "bpc": 3.7102,
+   "charsPerTok": 1.2189,
+   "score": 2.2611,
+   "scoreW": 2.0,
+   "scoreMode": "talk",
+   "finishMix": 0.5,
+   "lineage": "L1",
+   "layers": 16,
+   "params": 117914880,
+   "chars": 1045308899,
+   "tokens": 857567631,
+   "grew": 0,
+   "rolledBack": false,
+   "ownVal": null,
+   "ownScore": null,
+   "d": 768,
+   "loops": 1,
+   "spread": 3.4029,
+   "bytes": 1415115957,
+   "heads": 6,
+   "ctx": 512,
+   "vocab": 6000,
+   "kind": "bpe",
+   "arch": "tpp-loop",
+   "wantWider": false,
+   "layerCap": 16,
+   "mixChanged": false,
+   "bySrc": {
+    "laws": 4.6312,
+    "wiki": 3.3054,
+    "aozora": 3.6112,
+    "hanrei": 3.7213,
+    "kokkai": 2.8588,
+    "web": 3.1354,
+    "talk": 2.2611
+   },
+   "wrote": [
+    {
+     "start": "わたしは",
+     "text": "わたしは、ひとまんではなかろうか。 本日のお日のお宝永さん、おれは、どこかのお話を伺いたいと思います。」 AB「国務大臣 はい、私も、江田さんもこの問題としてということを言われましたけれども、それは結局、民主党というのは、かなり私は大変大変だ"
+    },
+    {
+     "start": "第一条",
+     "text": "第一条 �月三十一 1952年 - 1953年 - 1965年 の ガアン・マン ローズ の パン 中心になった「 ワン 」 。 1966年 - アズラ の 中国 と 四国 を結成し、1964年の 日本 で 三国志 の優勝を果たした。"
+    },
+    {
+     "start": "この法律において",
+     "text": "この法律において、現在の要領から独立国となる国、中国、中国、中国など、かつて元に入った国宝と会談している 。 2018年4月24日、結国、三国志、中国、中国、西、中国、中国、中国、中国、中国、中国、中国、中国、中国、中国、中国、中国、中国、中国、中"
+    }
+   ],
+   "loopPct": 21.92,
+   "movedBody": false
   }
  ],
- "bestVal": 3.1378,
+ "bestVal": 3.1347,
  "layers": 16,
  "params": 117914880,
  "born": "2026-09-08T15:11:54Z",
