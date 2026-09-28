@@ -1,67 +1,6 @@
 {
  "runs": [
   {
-   "at": "2026-09-17T23:30:07Z",
-   "val": 3.0155,
-   "prev": 3.0783,
-   "valTag": "fixed-holdout-v1",
-   "stoppedAt": 644,
-   "secPerStep": 5.7678,
-   "steps": 1124,
-   "bpc": 3.569,
-   "charsPerTok": 1.2189,
-   "score": 2.2433,
-   "scoreW": 2.0,
-   "scoreMode": "talk",
-   "finishMix": 0.2,
-   "lineage": "L3",
-   "layers": 11,
-   "params": 21794688,
-   "chars": 1045308899,
-   "tokens": 857567631,
-   "grew": 0,
-   "rolledBack": false,
-   "ownVal": null,
-   "ownScore": null,
-   "d": 384,
-   "loops": 1,
-   "spread": 2.9464,
-   "bytes": 261632577,
-   "heads": 6,
-   "ctx": 512,
-   "vocab": 6000,
-   "kind": "bpe",
-   "arch": "tpp-loop",
-   "wantWider": false,
-   "layerCap": 16,
-   "mixChanged": false,
-   "bySrc": {
-    "laws": 4.4957,
-    "wiki": 3.2768,
-    "aozora": 3.607,
-    "hanrei": 3.7729,
-    "kokkai": 2.8298,
-    "web": 3.0478,
-    "talk": 2.2433
-   },
-   "wrote": [
-    {
-     "start": "わたしは",
-     "text": "わたしは、これはまだ何にならない。そして、なぜここでエリアはどういう状況か。」 AA「このとき、そこで、ちょうど北海道言い方で、エリア、日本海峡、テレビで、たったぞい、ちょっと起きたいと思いましたが、そのときの山口徹太郎氏が、何とかそういうふうに言"
-    },
-    {
-     "start": "第一条",
-     "text": "第一条員は、当委員会に付託した。 こうした答弁は、会話のようなモデルや副題を内容とするものである。 日本の会話は、会話は、関連する問題である。 日本のCD-BOXに、韓国のCD-BOX証言により北米東京司法裁判所 (1980年) に、北米西方領土問題に関する議論を行い、"
-    },
-    {
-     "start": "この法律において",
-     "text": "この法律においての出航時から生じている。 13日には、アメリカの ニューヨーク の トローマウス・ヴォルフ へと出如した。 この時は、アメリカの トゥーツン の モリィヒ・ウッド と トゥーヌ が出現し、5日前には ニューヨーク を 13日 に"
-    }
-   ],
-   "loopPct": 4.58,
-   "movedBody": false
-  },
-  {
    "at": "2026-09-18T00:26:46Z",
    "val": 3.0155,
    "prev": 3.0155,
@@ -12379,6 +12318,69 @@
    ],
    "loopPct": 38.04,
    "movedBody": false
+  },
+  {
+   "at": "2026-09-28T11:08:05Z",
+   "val": 2.7787,
+   "prev": 2.7783,
+   "valTag": "fixed-holdout-v1",
+   "stoppedAt": 533,
+   "stuck": 0,
+   "evalTag": "fixed-ix-v1",
+   "secPerStep": 7.0615,
+   "steps": 967,
+   "bpc": 3.2888,
+   "charsPerTok": 1.2189,
+   "score": 2.2083,
+   "scoreW": 2.0,
+   "scoreMode": "talk",
+   "finishMix": 0.2,
+   "lineage": "L3",
+   "layers": 13,
+   "params": 25335168,
+   "chars": 1045308899,
+   "tokens": 857567631,
+   "grew": 0,
+   "rolledBack": false,
+   "ownVal": null,
+   "ownScore": null,
+   "d": 384,
+   "loops": 1,
+   "spread": 2.7767,
+   "bytes": 304134793,
+   "heads": 6,
+   "ctx": 512,
+   "vocab": 6000,
+   "kind": "bpe",
+   "arch": "tpp-loop",
+   "wantWider": false,
+   "layerCap": 16,
+   "mixChanged": false,
+   "bySrc": {
+    "laws": 3.792,
+    "wiki": 2.9561,
+    "aozora": 3.2825,
+    "hanrei": 3.4835,
+    "kokkai": 2.5736,
+    "web": 2.8585,
+    "talk": 2.2083
+   },
+   "wrote": [
+    {
+     "start": "わたしは",
+     "text": "わたしは生れてから生れて来るばかりでなく、例えば、いわゆる京都市の住人男性が住んでいると云うのが青木さんなんです。私が居る時分からなんで、男性は山人になって、はっきりと後ろを向けているわけだ。しかし、女性は京都の住人男性のお子さんが"
+    },
+    {
+     "start": "第一条",
+     "text": "第一条 �月金金金金 �金 旅費 金及びその金 旅費 店費 費 支 金 旅費 旅費 旅費 旅費 旅費及び旅費 旅費 旅費 旅費 旅費 旅費（旅費及び旅費 旅費 旅費 旅費 旅費及び旅費 旅費 旅費 旅費 旅費 旅費 旅費及び旅費 旅費 旅費"
+    },
+    {
+     "start": "この法律において",
+     "text": "この法律において「電気ル」とは、純電流を中心とした電気ルールの共通点に転送して、電気ルールに従って電気ルールを空間化させるために酸素化した中間電圧で、電気ルールを電圧で電気ルールに交換し、電圧を電圧で送っている方式である。 また、電気ルールは、の確認などの信頼性が高く、電源解析や電源解析が不要の電圧であり"
+    }
+   ],
+   "loopPct": 25.83,
+   "movedBody": false
   }
  ],
  "bestVal": 2.7783,
@@ -12429,5 +12431,5 @@
  ],
  "wantWider": false,
  "nextD": 384,
- "bad": 3
+ "bad": 0
 }
