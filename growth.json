@@ -1,67 +1,6 @@
 {
  "runs": [
   {
-   "at": "2026-09-17T10:42:13Z",
-   "val": 2.9158,
-   "prev": 2.9158,
-   "valTag": "fixed-holdout-v1",
-   "stoppedAt": 462,
-   "secPerStep": 8.1344,
-   "steps": 780,
-   "bpc": 3.4511,
-   "charsPerTok": 1.2189,
-   "score": 2.1256,
-   "scoreW": 2.0,
-   "scoreMode": "talk",
-   "finishMix": 0.5,
-   "lineage": "L1",
-   "layers": 16,
-   "params": 30645888,
-   "chars": 1045308899,
-   "tokens": 857567631,
-   "grew": 0,
-   "rolledBack": true,
-   "ownVal": 2.8432,
-   "ownScore": 2.223,
-   "d": 384,
-   "loops": 1,
-   "spread": 2.6729,
-   "bytes": 367888053,
-   "heads": 6,
-   "ctx": 512,
-   "vocab": 6000,
-   "kind": "bpe",
-   "arch": "tpp-loop",
-   "wantWider": false,
-   "layerCap": 16,
-   "mixChanged": false,
-   "bySrc": {
-    "laws": 3.9316,
-    "wiki": 2.9434,
-    "aozora": 3.3495,
-    "hanrei": 3.5127,
-    "kokkai": 2.5009,
-    "web": 2.8362,
-    "talk": 2.223
-   },
-   "wrote": [
-    {
-     "start": "わたしは",
-     "text": "わたしは夜だ！」 BB「こんばんは！」 DG「こんばんはー！」 BB「ご飯何食べましたか？」 DG「今日はカレーでしたー！」 BB「カレーいいですね！食べるときはカレーにしました！」"
-    },
-    {
-     "start": "第一条",
-     "text": "第一条は、特定の製品に占める新技術についての評価、手続開始の決定、失業を理由に、特定の製品に占める新技術についての評価及び�立、建設及び貿易における産業の利用の活用、個別の業務に重要な影響を与えるものであります。また、特定の製品の開発、新技術の開発も、特定の格差をもたらした広範な技術革新を推進し、新技術を整備することも併せて決して行なわくはないと考えま"
-    },
-    {
-     "start": "この法律において",
-     "text": "この法律においてりつづづづくと思うのであります。」 AB「それはわかります。 しかし、この間の中で、このような事態が、まさに過去に行われていなかったというようなことは、なかったのであります。今日、私、ここで、いまいらないようにすることは、その上で、まず第一にお尋ねしたいと思うのであります。"
-    }
-   ],
-   "loopPct": 6.0,
-   "movedBody": false
-  },
-  {
    "at": "2026-09-17T11:50:30Z",
    "val": 2.7881,
    "prev": 2.9158,
@@ -12367,6 +12306,69 @@
    ],
    "loopPct": 4.19,
    "movedBody": false
+  },
+  {
+   "at": "2026-09-28T03:39:03Z",
+   "val": 3.1442,
+   "prev": 3.149,
+   "valTag": "fixed-holdout-v1",
+   "stoppedAt": 157,
+   "stuck": 0,
+   "evalTag": "fixed-ix-v1",
+   "secPerStep": 26.4951,
+   "steps": 300,
+   "bpc": 3.7214,
+   "charsPerTok": 1.2189,
+   "score": 2.2677,
+   "scoreW": 2.0,
+   "scoreMode": "talk",
+   "finishMix": 0.5,
+   "lineage": "L1",
+   "layers": 16,
+   "params": 117914880,
+   "chars": 1045308899,
+   "tokens": 857567631,
+   "grew": 0,
+   "rolledBack": false,
+   "ownVal": null,
+   "ownScore": null,
+   "d": 768,
+   "loops": 1,
+   "spread": 3.131,
+   "bytes": 1415115957,
+   "heads": 6,
+   "ctx": 512,
+   "vocab": 6000,
+   "kind": "bpe",
+   "arch": "tpp-loop",
+   "wantWider": false,
+   "layerCap": 16,
+   "mixChanged": false,
+   "bySrc": {
+    "laws": 4.6422,
+    "wiki": 3.3189,
+    "aozora": 3.6205,
+    "hanrei": 3.7285,
+    "kokkai": 2.8702,
+    "web": 3.1424,
+    "talk": 2.2677
+   },
+   "wrote": [
+    {
+     "start": "わたしは",
+     "text": "わたしは、ジスクニーズですれ違いですよ。」 CN「シングルんだりもするのに食べたいところを探してください。」 AN「はい、日本の食べたいものです。」 CN「はい、たしかに！」 CN「こんばんは！」"
+    },
+    {
+     "start": "第一条",
+     "text": "第一条ターハアースターオブジェクトマイク」にて、1983年に「左名 」した「NATE」をオープン 。 1982年には「IAL CONE MOENTER AFNEKENLLEND」が収録された。また、シニアの「IALN」たらしを「エクアドレス」"
+    },
+    {
+     "start": "この法律において",
+     "text": "この法律において、利用者も含め、市場の安定を上げる、そうしてきた人間が、総合的な、家計が強いと思っております。」 AA「今、小渕内閣総理大臣 今、先ほど申し上げましたように、今、一番目には、実質的には、まさに人間等も含めた考え方ですけれども、新規の人材が、安定的な人材を�"
+    }
+   ],
+   "loopPct": 1.56,
+   "movedBody": false
   }
  ],
  "bestVal": 2.7881,
@@ -12417,5 +12419,5 @@
  ],
  "wantWider": false,
  "nextD": 768,
- "bad": 0
+ "bad": 1
 }
