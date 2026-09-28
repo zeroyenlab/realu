@@ -1,67 +1,6 @@
 {
  "runs": [
   {
-   "at": "2026-09-18T05:38:21Z",
-   "val": 3.1455,
-   "prev": 3.1455,
-   "valTag": "fixed-holdout-v1",
-   "stoppedAt": 464,
-   "secPerStep": 8.1067,
-   "steps": 806,
-   "bpc": 3.723,
-   "charsPerTok": 1.2189,
-   "score": 2.1636,
-   "scoreW": 2.0,
-   "scoreMode": "talk",
-   "finishMix": 0.85,
-   "lineage": "L2",
-   "layers": 10,
-   "params": 34727424,
-   "chars": 1045308899,
-   "tokens": 857567631,
-   "grew": 0,
-   "rolledBack": true,
-   "ownVal": 3.286,
-   "ownScore": 2.1947,
-   "d": 512,
-   "loops": 1,
-   "spread": 2.8996,
-   "bytes": 416817181,
-   "heads": 8,
-   "ctx": 512,
-   "vocab": 6000,
-   "kind": "bpe",
-   "arch": "tpp-loop",
-   "wantWider": false,
-   "layerCap": 16,
-   "mixChanged": false,
-   "bySrc": {
-    "laws": 4.623,
-    "wiki": 3.3176,
-    "aozora": 3.6906,
-    "hanrei": 3.8291,
-    "kokkai": 2.9606,
-    "web": 3.1288,
-    "talk": 2.1947
-   },
-   "wrote": [
-    {
-     "start": "わたしは",
-     "text": "わたしはわいわれています。」 AG「ちょっと違うと、ファミコンが外で違うのですね。」 AG「私も、大推しなこともあったら自分の方がいいと思います。」 AG「ですよねー。私は、あまりアビが必要です。」 AG「それがかわいくて、20代のポケモンは"
-    },
-    {
-     "start": "第一条",
-     "text": "第一条の規定は、族族、集団、国家、人民、国家、価値観の台所法は、民間人（国際法上、法制上、国際法上、日本法上1条規定）とする。 「他」とは、国連上位の作法と項目の領域関係を統制的に評価する法律（重要法制上 両法律 ）は、日本法上、日本法上、飲食力、飲食力、飲食力、飲"
-    },
-    {
-     "start": "この法律において",
-     "text": "この法律において怪しいですが。」 AB「たしかに。思い出は、どんな風になるか、もう少し気になっているのか。」 BI「そうなんです。そっかー！」 AB「今まで、いろいろ倒していく時は、私が世界に通っております。」 BI「そうなんですね。私、"
-    }
-   ],
-   "loopPct": 9.27,
-   "movedBody": false
-  },
-  {
    "at": "2026-09-18T06:55:17Z",
    "val": 3.1455,
    "prev": 3.1455,
@@ -12389,9 +12328,72 @@
    ],
    "loopPct": 0.0,
    "movedBody": false
+  },
+  {
+   "at": "2026-09-28T18:52:51Z",
+   "val": 2.7415,
+   "prev": 2.7455,
+   "valTag": "fixed-holdout-v1",
+   "stoppedAt": 360,
+   "stuck": 0,
+   "evalTag": "fixed-ix-v1",
+   "secPerStep": 10.692,
+   "steps": 613,
+   "bpc": 3.2447,
+   "charsPerTok": 1.2189,
+   "score": 2.0783,
+   "scoreW": 2.0,
+   "scoreMode": "talk",
+   "finishMix": 0.85,
+   "lineage": "L2",
+   "layers": 13,
+   "params": 44216832,
+   "chars": 1045308899,
+   "tokens": 857567631,
+   "grew": 0,
+   "rolledBack": false,
+   "ownVal": null,
+   "ownScore": null,
+   "d": 512,
+   "loops": 1,
+   "spread": 3.028,
+   "bytes": 530714761,
+   "heads": 8,
+   "ctx": 512,
+   "vocab": 6000,
+   "kind": "bpe",
+   "arch": "tpp-loop",
+   "wantWider": false,
+   "layerCap": 16,
+   "mixChanged": false,
+   "bySrc": {
+    "laws": 3.7043,
+    "wiki": 2.9177,
+    "aozora": 3.2282,
+    "hanrei": 3.4352,
+    "kokkai": 2.5441,
+    "web": 2.8307,
+    "talk": 2.0783
+   },
+   "wrote": [
+    {
+     "start": "わたしは",
+     "text": "わたしはカレーうどんを作りました。」 DQ「カレーうどん、カレーうどん、スパイス、そうごまだ、それもおいしそうです。」 CJ「こちらもカレーうどんでした。スパイスカレーうどん、スパイスって名前のカレーうどんが美味しかったです。」 DQ「あれ、スパイ"
+    },
+    {
+     "start": "第一条",
+     "text": "第一条に編合した曲を収録した曲 ( pomeseer ) 。 1975年、『Studio Nation ムー』のブームが起き、『Toose Toosear the the sour stite at for 』でも、19"
+    },
+    {
+     "start": "この法律において",
+     "text": "この法律において当該行政組織」という。）が、当該行政組織が、当該行政組織が、当該行政組織に分かりやすく、又はこれらの機能を果たしたことがないようにするため、当該行政組織に分かれていた者を、当該行政組織に分かれて、当該行政組織に分かれて、当該行政組織に再編され、をしなければならない。 （行政組織の指導及び産業組織） 第六十二条 行政組織は、当該行政組織の決定、意思決定、意思"
+    }
+   ],
+   "loopPct": 25.91,
+   "movedBody": false
   }
  ],
- "bestVal": 2.7432,
+ "bestVal": 2.7415,
  "layers": 13,
  "params": 44216832,
  "born": "2026-09-08T15:11:54Z",
@@ -12439,5 +12441,5 @@
  ],
  "wantWider": false,
  "nextD": 512,
- "bad": 6
+ "bad": 1
 }
