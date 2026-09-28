@@ -1,67 +1,6 @@
 {
  "runs": [
   {
-   "at": "2026-09-18T04:25:40Z",
-   "val": 4.004,
-   "prev": 4.0609,
-   "valTag": "fixed-holdout-v1",
-   "stoppedAt": 0,
-   "secPerStep": 11.2396,
-   "steps": 300,
-   "bpc": 4.7391,
-   "charsPerTok": 1.2189,
-   "score": 2.5785,
-   "scoreW": 2.0,
-   "scoreMode": "talk",
-   "finishMix": 0.5,
-   "lineage": "L1",
-   "layers": 16,
-   "params": 117914880,
-   "chars": 1045308899,
-   "tokens": 857567631,
-   "grew": 0,
-   "rolledBack": false,
-   "ownVal": null,
-   "ownScore": null,
-   "d": 768,
-   "loops": 1,
-   "spread": 4.193,
-   "bytes": 1415115957,
-   "heads": 6,
-   "ctx": 512,
-   "vocab": 6000,
-   "kind": "bpe",
-   "arch": "tpp-loop",
-   "wantWider": false,
-   "layerCap": 16,
-   "mixChanged": false,
-   "bySrc": {
-    "laws": 6.1819,
-    "wiki": 4.1466,
-    "aozora": 4.2874,
-    "hanrei": 4.6265,
-    "kokkai": 3.6202,
-    "web": 3.74,
-    "talk": 2.5785
-   },
-   "wrote": [
-    {
-     "start": "わたしは",
-     "text": "わたしはない。」 AK「こんばんは。」 AA「あ、いいですねー。」 CP「一生物だと、もっと大変だ。」 AB「すごかったので。嵐労働人で買い物を変えていたことがありますか？」 AB「少しよさそうで、私もおいしいですね！」 AB「どんなが"
-    },
-    {
-     "start": "第一条",
-     "text": "第一条第三研究は、ここで、このような気がしていました。」 客「ありがとうございます。」 店「では、こちらのお店はございます。」 客「そんなに、ご希望でしょうか。」 客「お場でした。ご希望はご利用ありがとうございました。"
-    },
-    {
-     "start": "この法律において",
-     "text": "この法律においておりである。 「 法 0 」は「 u 19 Winuti Calay 金の使いはない。 1 2 3 2 「 マッコャプレス 』 1960年 （ ディミュージシリア ） 2025年 （ アンドサイ （ 英語版 ） と地元の オリ"
-    }
-   ],
-   "loopPct": 2.61,
-   "movedBody": false
-  },
-  {
    "at": "2026-09-18T05:43:42Z",
    "val": 3.9926,
    "prev": 4.004,
@@ -12387,6 +12326,69 @@
    ],
    "loopPct": 2.35,
    "movedBody": false
+  },
+  {
+   "at": "2026-09-28T16:20:48Z",
+   "val": 3.1335,
+   "prev": 3.1297,
+   "valTag": "fixed-holdout-v1",
+   "stoppedAt": 0,
+   "stuck": 0,
+   "evalTag": "fixed-ix-v1",
+   "secPerStep": 12.4891,
+   "steps": 300,
+   "bpc": 3.7088,
+   "charsPerTok": 1.2189,
+   "score": 2.2615,
+   "scoreW": 2.0,
+   "scoreMode": "talk",
+   "finishMix": 0.5,
+   "lineage": "L1",
+   "layers": 16,
+   "params": 117914880,
+   "chars": 1045308899,
+   "tokens": 857567631,
+   "grew": 0,
+   "rolledBack": false,
+   "ownVal": null,
+   "ownScore": null,
+   "d": 768,
+   "loops": 1,
+   "spread": 3.1166,
+   "bytes": 1415115957,
+   "heads": 6,
+   "ctx": 512,
+   "vocab": 6000,
+   "kind": "bpe",
+   "arch": "tpp-loop",
+   "wantWider": false,
+   "layerCap": 16,
+   "mixChanged": false,
+   "bySrc": {
+    "laws": 4.6191,
+    "wiki": 3.3015,
+    "aozora": 3.6107,
+    "hanrei": 3.717,
+    "kokkai": 2.8629,
+    "web": 3.1334,
+    "talk": 2.2615
+   },
+   "wrote": [
+    {
+     "start": "わたしは",
+     "text": "わたしは、むしろ何か言っても、通常竜は無いよ、侮辱する、自分も、大きくもあり、何も取り入れられないか、と云うのである。それはただ自分にどういうふうに、自分が御苦労いただきたいと思っている。僕は今は吉田を叩いて行こうと思った。 「お母さん、こんな"
+    },
+    {
+     "start": "第一条",
+     "text": "第一条第一号に掲げる�リットグル（リン酸・ガス床時間を除く。） 爆発足時におけるX線（百分の四）に掲げる政治的輸入を１０．３．９ウィリアム・オウガン及びウエスタン・ロッドブランド（Cas Story）の存在を防ぐために爆発的なを図ってきたこと (2020年4月4日) ウィリアム・フォン・ス"
+    },
+    {
+     "start": "この法律において",
+     "text": "この法律において二日、二回目は二日目の経済実情勢が、経済政策は一日も早く受け止められました。 後、二日の経済成長率は、五日間の経済政策によって、二十一世紀に向けた経済対策を立て直しました。しかしながら、財政投融資は、十五日になりました。」 AA「しかしながら、そのような"
+    }
+   ],
+   "loopPct": 2.12,
+   "movedBody": false
   }
  ],
  "bestVal": 3.1297,
@@ -12437,5 +12439,5 @@
  ],
  "wantWider": false,
  "nextD": 768,
- "bad": 0
+ "bad": 1
 }
