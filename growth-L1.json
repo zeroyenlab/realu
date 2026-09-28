@@ -1,67 +1,6 @@
 {
  "runs": [
   {
-   "at": "2026-09-17T21:35:52Z",
-   "val": 4.8639,
-   "prev": 5.3388,
-   "valTag": "fixed-holdout-v1",
-   "stoppedAt": 156,
-   "secPerStep": 26.2644,
-   "steps": 803,
-   "bpc": 5.7568,
-   "charsPerTok": 1.2189,
-   "score": 3.2284,
-   "scoreW": 2.0,
-   "scoreMode": "talk",
-   "finishMix": 0.5,
-   "lineage": "L1",
-   "layers": 16,
-   "params": 117914880,
-   "chars": 1045308899,
-   "tokens": 857567631,
-   "grew": 0,
-   "rolledBack": false,
-   "ownVal": null,
-   "ownScore": null,
-   "d": 768,
-   "loops": 1,
-   "spread": 5.2879,
-   "bytes": 1415115957,
-   "heads": 6,
-   "ctx": 512,
-   "vocab": 6000,
-   "kind": "bpe",
-   "arch": "tpp-loop",
-   "wantWider": false,
-   "layerCap": 16,
-   "mixChanged": false,
-   "bySrc": {
-    "laws": 7.0441,
-    "wiki": 4.802,
-    "aozora": 5.0144,
-    "hanrei": 5.5422,
-    "kokkai": 4.5506,
-    "web": 4.5394,
-    "talk": 3.2284
-   },
-   "wrote": [
-    {
-     "start": "わたしは",
-     "text": "わたしは、今8年の「こんにちは、ら カルビ上でもあるほど。 1983年の chalPerson PerstinaChat> 客「ニンは」 客「そうですか？」 法H「今日は中関係になります。」 BA「お願いしました。」 A関連「そう"
-    },
-    {
-     "start": "第一条",
-     "text": "第一条療２実用新案（政府１HK年法律UUラップラクNMでアッドラートだった。 1981年年、一時・mspat歳。 着、バーフソフドーフまで検討する野が厝政治に西修法が拾又はこれらプロァーを見える。にあったことを国庫々的進し、サッピーズン原�田指導を『ニュー"
-    },
-    {
-     "start": "この法律において",
-     "text": "この法律においてには経過の第十五をUは、裏にベルし、平粋したため、南ーヶレンは、一辞のイオリカルと�念が取り組み、こういう東京には、リイアデゴリッド・ウェボンド・ラマーパーンで山の ラルカー ジャン・ィリーキャイツのツリーソング」を毎日のスタ"
-    }
-   ],
-   "loopPct": 2.39,
-   "movedBody": false
-  },
-  {
    "at": "2026-09-17T23:35:20Z",
    "val": 4.3018,
    "prev": 4.8639,
@@ -12377,9 +12316,72 @@
    ],
    "loopPct": 16.39,
    "movedBody": false
+  },
+  {
+   "at": "2026-09-28T09:58:13Z",
+   "val": 3.1378,
+   "prev": 3.146,
+   "valTag": "fixed-holdout-v1",
+   "stoppedAt": 156,
+   "stuck": 0,
+   "evalTag": "fixed-ix-v1",
+   "secPerStep": 26.7299,
+   "steps": 300,
+   "bpc": 3.7138,
+   "charsPerTok": 1.2189,
+   "score": 2.2642,
+   "scoreW": 2.0,
+   "scoreMode": "talk",
+   "finishMix": 0.5,
+   "lineage": "L1",
+   "layers": 16,
+   "params": 117914880,
+   "chars": 1045308899,
+   "tokens": 857567631,
+   "grew": 0,
+   "rolledBack": false,
+   "ownVal": null,
+   "ownScore": null,
+   "d": 768,
+   "loops": 1,
+   "spread": 3.4429,
+   "bytes": 1415115957,
+   "heads": 6,
+   "ctx": 512,
+   "vocab": 6000,
+   "kind": "bpe",
+   "arch": "tpp-loop",
+   "wantWider": false,
+   "layerCap": 16,
+   "mixChanged": false,
+   "bySrc": {
+    "laws": 4.6291,
+    "wiki": 3.3099,
+    "aozora": 3.6138,
+    "hanrei": 3.7195,
+    "kokkai": 2.8628,
+    "web": 3.1386,
+    "talk": 2.2642
+   },
+   "wrote": [
+    {
+     "start": "わたしは",
+     "text": "わたしは、本数もそれをさらに一旦、もう二人です」 AR「なんだか本当に苦労い！？」 AB「寒いだったんですか、怖いですし。」 AR「何かわかっているんですか？」 AB「是非、気を付けて。その際に、最近は寝ていますけど、相手がどう"
+    },
+    {
+     "start": "第一条",
+     "text": "第一条委員会がこの委員会における審議の墓会社について御報告申入れいたします。 まず、希少の人材の利用に関する主導及び小規模事業者への対応についてお尋ねがありました。 この法律は、今回の法改正により、簡単な地域における人材の協調効果を議論し、特に人子を初め、都合の実績を考慮し、規制緩和を図るとともに、国会での議論さ"
+    },
+    {
+     "start": "この法律において",
+     "text": "この法律において、 1960年 に 大日本帝国議会 (Rencksater)が敗れる。 1960年頃以降、 日本政府 など人口、国民生活、日本政府から 徹底した人民を外国人別に与える人々が引き起こすなど、多くの人々が大きな影響を与えられた。 1965年 から 1975年"
+    }
+   ],
+   "loopPct": 0.64,
+   "movedBody": false
   }
  ],
- "bestVal": 3.1409,
+ "bestVal": 3.1378,
  "layers": 16,
  "params": 117914880,
  "born": "2026-09-08T15:11:54Z",
@@ -12427,5 +12429,5 @@
  ],
  "wantWider": false,
  "nextD": 768,
- "bad": 1
+ "bad": 0
 }
