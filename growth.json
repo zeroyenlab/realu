@@ -1,67 +1,6 @@
 {
  "runs": [
   {
-   "at": "2026-09-18T05:43:42Z",
-   "val": 3.9926,
-   "prev": 4.004,
-   "valTag": "fixed-holdout-v1",
-   "stoppedAt": 177,
-   "secPerStep": 22.8519,
-   "steps": 300,
-   "bpc": 4.7255,
-   "charsPerTok": 1.2189,
-   "score": 2.5635,
-   "scoreW": 2.0,
-   "scoreMode": "talk",
-   "finishMix": 0.5,
-   "lineage": "L1",
-   "layers": 16,
-   "params": 117914880,
-   "chars": 1045308899,
-   "tokens": 857567631,
-   "grew": 0,
-   "rolledBack": false,
-   "ownVal": null,
-   "ownScore": null,
-   "d": 768,
-   "loops": 1,
-   "spread": 4.1378,
-   "bytes": 1415115957,
-   "heads": 6,
-   "ctx": 512,
-   "vocab": 6000,
-   "kind": "bpe",
-   "arch": "tpp-loop",
-   "wantWider": false,
-   "layerCap": 16,
-   "mixChanged": false,
-   "bySrc": {
-    "laws": 6.0362,
-    "wiki": 4.0408,
-    "aozora": 4.2947,
-    "hanrei": 4.6642,
-    "kokkai": 3.619,
-    "web": 3.7649,
-    "talk": 2.5635
-   },
-   "wrote": [
-    {
-     "start": "わたしは",
-     "text": "わたしはよく持つ決定が多い。」 IT「そうですね！それはありますか？」 EW「あ、いいですね！」 IG「そちらは見てるんですか？」 IH「それはいいですね。今までやるのが、どんなな在日かな。」 EO「いいですね！どこはそうなんで"
-    },
-    {
-     "start": "第一条",
-     "text": "第一条管車線の駅線線に当駅し陵として駅線が全駅始仰駅から駅から直駅が、口駅駅を線に改入された。 2月1日発領駅で、駅駅は、東京駅の駅から駅の駅住民駅間で、同駅駅法が、駅名の駅から駅は駅駅で開"
-    },
-    {
-     "start": "この法律において",
-     "text": "この法律において円滑に示された。 そのこと。 しかし、この薬性がどんどのような、 音楽 （ 英語版 ） などを過ぎない。 批判は 最根後は 南藩軍 による 文学 、 山道 的 非正規 の 分類 を中心とした 清工 が 務 とした。 換気等 は 大佐"
-    }
-   ],
-   "loopPct": 11.93,
-   "movedBody": false
-  },
-  {
    "at": "2026-09-18T07:00:50Z",
    "val": 3.8942,
    "prev": 3.9926,
@@ -12389,9 +12328,72 @@
    ],
    "loopPct": 2.12,
    "movedBody": false
+  },
+  {
+   "at": "2026-09-28T17:39:04Z",
+   "val": 3.1276,
+   "prev": 3.1335,
+   "valTag": "fixed-holdout-v1",
+   "stoppedAt": 159,
+   "stuck": 0,
+   "evalTag": "fixed-ix-v1",
+   "secPerStep": 26.234,
+   "steps": 300,
+   "bpc": 3.7018,
+   "charsPerTok": 1.2189,
+   "score": 2.2553,
+   "scoreW": 2.0,
+   "scoreMode": "talk",
+   "finishMix": 0.5,
+   "lineage": "L1",
+   "layers": 16,
+   "params": 117914880,
+   "chars": 1045308899,
+   "tokens": 857567631,
+   "grew": 0,
+   "rolledBack": false,
+   "ownVal": null,
+   "ownScore": null,
+   "d": 768,
+   "loops": 1,
+   "spread": 3.5466,
+   "bytes": 1415115957,
+   "heads": 6,
+   "ctx": 512,
+   "vocab": 6000,
+   "kind": "bpe",
+   "arch": "tpp-loop",
+   "wantWider": false,
+   "layerCap": 16,
+   "mixChanged": false,
+   "bySrc": {
+    "laws": 4.6154,
+    "wiki": 3.2972,
+    "aozora": 3.6077,
+    "hanrei": 3.7099,
+    "kokkai": 2.8587,
+    "web": 3.1287,
+    "talk": 2.2553
+   },
+   "wrote": [
+    {
+     "start": "わたしは",
+     "text": "わたしは、これは、これだけを見ていたのであります。」 AA「（拍手） また、早期現に、政府といたしましては、政府方にとって、やはり政府側から説明するまで、このような提案になっておるのであります。ところが、政府は、本年十二月に、これが真剣に試行いたしますと、本来の背景"
+    },
+    {
+     "start": "第一条",
+     "text": "第一条 次号 <法令 国立 六> 平成六年 緊急利子 五プス 五 当該八、九九ないし八 医、健康 件 の五 六件 六件 二四件 二件 二件 七件、給付 四件 三件 二件 一件につき 一件二件 二件 二件、札 二件二件 四件 三件 二件 選挙運動 二件"
+    },
+    {
+     "start": "この法律において",
+     "text": "この法律においてやむを得ない場合にあっては、当該財産の委託に係る財産の係数及び財産区内に支給する。） 第一項において準用する８分の十三 帆津寺院主選挙（以下「古今」という。）が、その管轄区域に、唐津勢弓派となる。 漢津時代の古。 双子の始まり。 中世貴族院議員（元・亦堂南洲区夫人）"
+    }
+   ],
+   "loopPct": 13.36,
+   "movedBody": false
   }
  ],
- "bestVal": 3.1297,
+ "bestVal": 3.1276,
  "layers": 16,
  "params": 117914880,
  "born": "2026-09-08T15:11:54Z",
@@ -12439,5 +12441,5 @@
  ],
  "wantWider": false,
  "nextD": 768,
- "bad": 1
+ "bad": 0
 }
