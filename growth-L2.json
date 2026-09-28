@@ -1,67 +1,6 @@
 {
  "runs": [
   {
-   "at": "2026-09-17T22:56:29Z",
-   "val": 3.1757,
-   "prev": 3.2819,
-   "valTag": "fixed-holdout-v1",
-   "stoppedAt": 421,
-   "secPerStep": 8.9857,
-   "steps": 807,
-   "bpc": 3.7587,
-   "charsPerTok": 1.2189,
-   "score": 2.2349,
-   "scoreW": 2.0,
-   "scoreMode": "talk",
-   "finishMix": 0.85,
-   "lineage": "L2",
-   "layers": 10,
-   "params": 34727424,
-   "chars": 1045308899,
-   "tokens": 857567631,
-   "grew": 0,
-   "rolledBack": false,
-   "ownVal": null,
-   "ownScore": null,
-   "d": 512,
-   "loops": 1,
-   "spread": 3.206,
-   "bytes": 416817181,
-   "heads": 8,
-   "ctx": 512,
-   "vocab": 6000,
-   "kind": "bpe",
-   "arch": "tpp-loop",
-   "wantWider": false,
-   "layerCap": 16,
-   "mixChanged": false,
-   "bySrc": {
-    "laws": 4.5678,
-    "wiki": 3.2341,
-    "aozora": 3.6514,
-    "hanrei": 3.8586,
-    "kokkai": 2.8296,
-    "web": 3.1276,
-    "talk": 2.2349
-   },
-   "wrote": [
-    {
-     "start": "わたしは",
-     "text": "わたしは好きなので好きです」 AB「そうなんですね。好きな食べ物はありますか？」 BG「あー、昔は、好きですね。」 AB「おいしいですよね。私も好きです。」 BG「あはは、いろいろ！そういえば、どんなお菓子がお�"
-    },
-    {
-     "start": "第一条",
-     "text": "第一条において準用する旨 当該原告らは、当該原告らに対し、請求を受けて、請求若しくは原告ら負当する旨の申出を申し上げる等の措置を講じる。 <法令 民事再生法> 平成阪神・淡路大震災済みにわたる法律・改正 ーいしんろくきとうしょう、ほうほうぞとくいむそちほう 以上 昭和60年代の法則 大阪国際会館の建設規則 ひ"
-    },
-    {
-     "start": "この法律において",
-     "text": "この法律において株式会社（888））。 後述の1080巻のモーンデザイン（400巻）。 30巻のモーンデザインが発売。2015年に発売。 4000系のモーンデザイン。 モーンデザイン・デッドランプがソフト化される。 モーンデザイン が発売さ"
-    }
-   ],
-   "loopPct": 7.73,
-   "movedBody": false
-  },
-  {
    "at": "2026-09-18T00:45:54Z",
    "val": 3.1455,
    "prev": 3.1757,
@@ -12379,9 +12318,72 @@
    ],
    "loopPct": 31.85,
    "movedBody": false
+  },
+  {
+   "at": "2026-09-28T12:25:16Z",
+   "val": 2.7439,
+   "prev": 2.7464,
+   "valTag": "fixed-holdout-v1",
+   "stoppedAt": 362,
+   "stuck": 0,
+   "evalTag": "fixed-ix-v1",
+   "secPerStep": 10.6293,
+   "steps": 615,
+   "bpc": 3.2476,
+   "charsPerTok": 1.2189,
+   "score": 2.0798,
+   "scoreW": 2.0,
+   "scoreMode": "talk",
+   "finishMix": 0.85,
+   "lineage": "L2",
+   "layers": 13,
+   "params": 44216832,
+   "chars": 1045308899,
+   "tokens": 857567631,
+   "grew": 0,
+   "rolledBack": false,
+   "ownVal": null,
+   "ownScore": null,
+   "d": 512,
+   "loops": 1,
+   "spread": 2.7583,
+   "bytes": 530714761,
+   "heads": 8,
+   "ctx": 512,
+   "vocab": 6000,
+   "kind": "bpe",
+   "arch": "tpp-loop",
+   "wantWider": false,
+   "layerCap": 16,
+   "mixChanged": false,
+   "bySrc": {
+    "laws": 3.7064,
+    "wiki": 2.9203,
+    "aozora": 3.2262,
+    "hanrei": 3.4328,
+    "kokkai": 2.5443,
+    "web": 2.8291,
+    "talk": 2.0798
+   },
+   "wrote": [
+    {
+     "start": "わたしは",
+     "text": "わたしは何かやりたいことをやりたいと思ってます。」 AD「私も同じです。何か作られたことはありますか？」 EM「いいですね。あまり作れないですが。何か作ったことはありますか？」 AD「作ったことはないのですが、今はあまり作ったことなくて。」 EM「簡単に作れると"
+    },
+    {
+     "start": "第一条",
+     "text": "第一条の規定は、前項の特定複合業務をするかどうかにつき、それぞれについて準用する。 この場合において、型式番号は、にかんするでない。 特定複合業務を行う方法 特定複合業務を行う方法 特定複合業務を行う方法 特定複合業務を行う方法 特定複合業務を行う方法 特定複合業務を行う方法 特定複合業務を行う方法 特定複合業務を行う方法 特定複合業務を行う方法 特定複合業務を行う方法 特定複合業務を行う方法 特定複合業務を行う方法 特定"
+    },
+    {
+     "start": "この法律において",
+     "text": "この法律において��式。 ただし、RPG色・DTA自体に取り付けられている場合は「RPG色」と呼称し、 BL2 サーキットを実装した。 RPGはRPGと比べて、RPGの2種類がなかった。 RPGと1つのサーキットのこと。 XPGのソフトウェアがRPGを実装しており、RPG"
+    }
+   ],
+   "loopPct": 24.5,
+   "movedBody": false
   }
  ],
- "bestVal": 2.7464,
+ "bestVal": 2.7439,
  "layers": 13,
  "params": 44216832,
  "born": "2026-09-08T15:11:54Z",
@@ -12429,5 +12431,5 @@
  ],
  "wantWider": false,
  "nextD": 512,
- "bad": 1
+ "bad": 2
 }
