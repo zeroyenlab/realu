@@ -1,67 +1,6 @@
 {
  "runs": [
   {
-   "at": "2026-09-18T13:14:46Z",
-   "val": 3.1184,
-   "prev": 3.1455,
-   "valTag": "fixed-holdout-v1",
-   "stoppedAt": 471,
-   "secPerStep": 7.9956,
-   "steps": 803,
-   "bpc": 3.6909,
-   "charsPerTok": 1.2189,
-   "score": 2.1632,
-   "scoreW": 2.0,
-   "scoreMode": "talk",
-   "finishMix": 0.85,
-   "lineage": "L2",
-   "layers": 10,
-   "params": 34727424,
-   "chars": 1045308899,
-   "tokens": 857567631,
-   "grew": 0,
-   "rolledBack": false,
-   "ownVal": null,
-   "ownScore": null,
-   "d": 512,
-   "loops": 1,
-   "spread": 3.1058,
-   "bytes": 416817181,
-   "heads": 8,
-   "ctx": 512,
-   "vocab": 6000,
-   "kind": "bpe",
-   "arch": "tpp-loop",
-   "wantWider": false,
-   "layerCap": 16,
-   "mixChanged": false,
-   "bySrc": {
-    "laws": 4.5027,
-    "wiki": 3.2739,
-    "aozora": 3.6922,
-    "hanrei": 3.6951,
-    "kokkai": 2.8452,
-    "web": 3.0499,
-    "talk": 2.1632
-   },
-   "wrote": [
-    {
-     "start": "わたしは",
-     "text": "わたしはどうでしょう？」 BV「この前やってたんですが、スチュワークをやってました。」 BF「何かお好きなんですか？」 BV「チョコはしかもカツつつ。」 BF「焼肉じゃがいしか食べないです。」 BV「チョコはお好きですか？」"
-    },
-    {
-     "start": "第一条",
-     "text": "第一条」 CS「確かに、凄いですね。」 CF「深夜はさっき笑ってました。」 CS「そうですよね。高校生の時はあれすごいと思ってました。」 CF「高校生の頃って、どうでしたか。今は、辛いですよね。」 CS「子供もなってました。」 CF"
-    },
-    {
-     "start": "この法律において",
-     "text": "この法律において�式条の二第四項てころがたいでい てしまっておいてみる場合にもよりました。」 店「ありがとうございます。そういたしますと、Tague Tagues Tagu Station hone Anter Station Station Station 1"
-    }
-   ],
-   "loopPct": 7.51,
-   "movedBody": false
-  },
-  {
    "at": "2026-09-18T14:30:35Z",
    "val": 3.1184,
    "prev": 3.1184,
@@ -12401,6 +12340,69 @@
    ],
    "loopPct": 33.47,
    "movedBody": false
+  },
+  {
+   "at": "2026-09-29T02:30:33Z",
+   "val": 2.7364,
+   "prev": 2.7364,
+   "valTag": "fixed-holdout-v1",
+   "stoppedAt": 361,
+   "stuck": 0,
+   "evalTag": "fixed-ix-v1",
+   "secPerStep": 10.6425,
+   "steps": 611,
+   "bpc": 3.2388,
+   "charsPerTok": 1.2189,
+   "score": 2.0725,
+   "scoreW": 2.0,
+   "scoreMode": "talk",
+   "finishMix": 0.85,
+   "lineage": "L2",
+   "layers": 13,
+   "params": 44216832,
+   "chars": 1045308899,
+   "tokens": 857567631,
+   "grew": 0,
+   "rolledBack": false,
+   "ownVal": null,
+   "ownScore": null,
+   "d": 512,
+   "loops": 1,
+   "spread": 3.066,
+   "bytes": 530714761,
+   "heads": 8,
+   "ctx": 512,
+   "vocab": 6000,
+   "kind": "bpe",
+   "arch": "tpp-loop",
+   "wantWider": false,
+   "layerCap": 16,
+   "mixChanged": false,
+   "bySrc": {
+    "laws": 3.6933,
+    "wiki": 2.9116,
+    "aozora": 3.2209,
+    "hanrei": 3.4306,
+    "kokkai": 2.5417,
+    "web": 2.824,
+    "talk": 2.0725
+   },
+   "wrote": [
+    {
+     "start": "わたしは",
+     "text": "わたしは1人でございます。」 店「申し訳ございません。その条件で案内できるところがございませんでした。いかがなさいますか。」 客「では、駐車場はなくてもいいです。」 店「ではまいばすけというお店はいかがでしょうか。」 客「そこに行ってみようかな。あと当日食事ができるところも"
+    },
+    {
+     "start": "第一条",
+     "text": "第一条第三号、第四号及び第四号から第四号まで、第四号から第四号までの用する用語で、この法律の規定により英語をグリカに、英語を母語とする者は、英語を母語とする者は、英語を母語とする者は、英語を母語とする者は、英語を母語とする者は、英語を母語とする者は、英語が母語（母語）及び母語であるかどうかを突き刺激することになる。"
+    },
+    {
+     "start": "この法律において",
+     "text": "この法律において脊髄障害の部位である 日華華 （ 英語版 ） 、 天空襲 、 特殊部位 の4つである。 また、北米と同様に小さな環状に近接する地域では、現在では 栄養素 を成分として使用することが多い。 栄養素は32歳以上で 栄養素 が多く、 栄"
+    }
+   ],
+   "loopPct": 17.79,
+   "movedBody": false
   }
  ],
  "bestVal": 2.7363,
@@ -12451,5 +12453,5 @@
  ],
  "wantWider": false,
  "nextD": 512,
- "bad": 5
+ "bad": 1
 }
