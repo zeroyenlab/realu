@@ -1,67 +1,6 @@
 {
  "runs": [
   {
-   "at": "2026-09-19T09:02:18Z",
-   "val": 3.8151,
-   "prev": 3.8151,
-   "valTag": "fixed-holdout-v1",
-   "stoppedAt": 159,
-   "secPerStep": 25.7557,
-   "steps": 300,
-   "bpc": 4.5155,
-   "charsPerTok": 1.2189,
-   "score": 2.4712,
-   "scoreW": 2.0,
-   "scoreMode": "talk",
-   "finishMix": 0.5,
-   "lineage": "L1",
-   "layers": 16,
-   "params": 117914880,
-   "chars": 1045308899,
-   "tokens": 857567631,
-   "grew": 0,
-   "rolledBack": true,
-   "ownVal": 3.814,
-   "ownScore": 2.5931,
-   "d": 768,
-   "loops": 1,
-   "spread": 4.1666,
-   "bytes": 1415115957,
-   "heads": 6,
-   "ctx": 512,
-   "vocab": 6000,
-   "kind": "bpe",
-   "arch": "tpp-loop",
-   "wantWider": false,
-   "layerCap": 16,
-   "mixChanged": false,
-   "bySrc": {
-    "laws": 6.0076,
-    "wiki": 3.9986,
-    "aozora": 4.21,
-    "hanrei": 4.5261,
-    "kokkai": 3.5811,
-    "web": 3.6593,
-    "talk": 2.5931
-   },
-   "wrote": [
-    {
-     "start": "わたしは",
-     "text": "わたしはまだまず米国のため、また今、また北端自衛隊 一、多健康後、参議院の独立するなどの 一次 、 質問 の、ここでも高い第一次は、 1933年 に オフランス と 1990年 には 1870年 に 法改正 、 1980年 で 第30回 の一部が 東京都"
-    },
-    {
-     "start": "第一条",
-     "text": "第一条�昭和29年7月10日閲覧。 2005年（平成26年）9月18日 。 2003年（平成18年）1月10日 - テレビ） 藤井・寿�芸（2006年 - 東京都町�山、日本学館、1995年 - 1980年（昭和44年）10月"
-    },
-    {
-     "start": "この法律において",
-     "text": "この法律において ３９４４９１２６ １００１１６１，同Ａは，被告Ａの１２４１条第三項３７８０２号３１．１４ ４１００２７３万円， 同９７７日， 同被告１０００方，１２５６リング暗号５０9０万円の請求 ３９０万円 １２７８３０必要なと認められるを廃止 及 あ後の の場合の"
-    }
-   ],
-   "loopPct": 11.23,
-   "movedBody": false
-  },
-  {
    "at": "2026-09-19T10:17:51Z",
    "val": 3.7812,
    "prev": 3.8151,
@@ -12433,9 +12372,72 @@
    ],
    "loopPct": 3.99,
    "movedBody": false
+  },
+  {
+   "at": "2026-09-29T21:22:10Z",
+   "val": 3.0894,
+   "prev": 3.0914,
+   "valTag": "fixed-holdout-v1",
+   "stoppedAt": 178,
+   "stuck": 0,
+   "evalTag": "fixed-ix-v1",
+   "secPerStep": 23.1168,
+   "steps": 300,
+   "bpc": 3.6565,
+   "charsPerTok": 1.2189,
+   "score": 2.2363,
+   "scoreW": 2.0,
+   "scoreMode": "talk",
+   "finishMix": 0.5,
+   "lineage": "L1",
+   "layers": 16,
+   "params": 117914880,
+   "chars": 1045308899,
+   "tokens": 857567631,
+   "grew": 0,
+   "rolledBack": false,
+   "ownVal": null,
+   "ownScore": null,
+   "d": 768,
+   "loops": 1,
+   "spread": 3.0443,
+   "bytes": 1415115957,
+   "heads": 6,
+   "ctx": 512,
+   "vocab": 6000,
+   "kind": "bpe",
+   "arch": "tpp-loop",
+   "wantWider": false,
+   "layerCap": 16,
+   "mixChanged": false,
+   "bySrc": {
+    "laws": 4.5292,
+    "wiki": 3.2612,
+    "aozora": 3.5803,
+    "hanrei": 3.6699,
+    "kokkai": 2.8219,
+    "web": 3.0994,
+    "talk": 2.2363
+   },
+   "wrote": [
+    {
+     "start": "わたしは",
+     "text": "わたしは、何故なら何をか言ってもいいですか？」 BJ「お酒飲みたいものが、なんでしょう、何が天気ですか？」 BG「お寿司。休みは、私はよく食べます？」 BJ「料理があっていいですね！」 BG「いいですねー。何かお好きな食べ物はありま"
+    },
+    {
+     "start": "第一条",
+     "text": "第一条をする場合については、それぞれ、当該説明書きやすい答弁を行う者のITT商事の理念を抑制し得るようということを言っているわけです。」 AA「岩本委員 もうそうもいますよ。 これは、事前に、事前に、事件の逮捕されれば、ここで市販前項各号に掲げる機会を持って、その中枢条のセグメントのところに、厳密な"
+    },
+    {
+     "start": "この法律において",
+     "text": "この法律においててきた。 1877年 （明治3年）11月25日： 丹羽三郡 の町として開町。 1887年 （明治2年）8月1日： 中央郡 南部 に 北条郡 の 宮古 、 南部 （ 久保村 ）、 耕作村 （現在の 泉百�町 ）の"
+    }
+   ],
+   "loopPct": 11.46,
+   "movedBody": false
   }
  ],
- "bestVal": 3.0914,
+ "bestVal": 3.0894,
  "layers": 16,
  "params": 117914880,
  "born": "2026-09-08T15:11:54Z",
@@ -12483,5 +12485,5 @@
  ],
  "wantWider": false,
  "nextD": 768,
- "bad": 1
+ "bad": 0
 }
