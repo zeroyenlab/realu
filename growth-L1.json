@@ -1,67 +1,6 @@
 {
  "runs": [
   {
-   "at": "2026-09-18T20:36:52Z",
-   "val": 3.8151,
-   "prev": 3.8151,
-   "valTag": "fixed-holdout-v1",
-   "stoppedAt": 0,
-   "secPerStep": 11.6635,
-   "steps": 300,
-   "bpc": 4.5155,
-   "charsPerTok": 1.2189,
-   "score": 2.4712,
-   "scoreW": 2.0,
-   "scoreMode": "talk",
-   "finishMix": 0.5,
-   "lineage": "L1",
-   "layers": 16,
-   "params": 117914880,
-   "chars": 1045308899,
-   "tokens": 857567631,
-   "grew": 0,
-   "rolledBack": true,
-   "ownVal": 3.9653,
-   "ownScore": 2.568,
-   "d": 768,
-   "loops": 1,
-   "spread": 4.3188,
-   "bytes": 1415115957,
-   "heads": 6,
-   "ctx": 512,
-   "vocab": 6000,
-   "kind": "bpe",
-   "arch": "tpp-loop",
-   "wantWider": false,
-   "layerCap": 16,
-   "mixChanged": false,
-   "bySrc": {
-    "laws": 6.0982,
-    "wiki": 4.0862,
-    "aozora": 4.3723,
-    "hanrei": 4.6217,
-    "kokkai": 3.6698,
-    "web": 3.8123,
-    "talk": 2.568
-   },
-   "wrote": [
-    {
-     "start": "わたしは",
-     "text": "わたしはいるのであれば、やはり日本の諸点での色や枠を見て、どういうのは従来のことができ、1980年代初頭から1984年（明治10年）にかけて→北方面戦でも、同年10月26日には永谷村郷労働敗、政策を御自身の元町(1986)43丁目に、1979"
-    },
-    {
-     "start": "第一条",
-     "text": "第一条等細井郷井郎3 冊木郎町 - 山井久山山 - 桩川田、山北山 - 澛梁 - 橘山町 - 新版 - 田日本地中編 - 山本坙岡は、東京、ヤマドヤレストは、橘関、橘山、文化放送"
-    },
-    {
-     "start": "この法律において",
-     "text": "この法律において��介買い [ 33 ] 。 マイナム ガアのミサイルは、1500年代時まで805000-600%400,0000,800,000,000,0100 ,0000,6000,900,000,968,0000,198,400,10"
-    }
-   ],
-   "loopPct": 19.58,
-   "movedBody": false
-  },
-  {
    "at": "2026-09-18T21:52:29Z",
    "val": 3.8151,
    "prev": 3.8151,
@@ -12413,6 +12352,69 @@
    ],
    "loopPct": 5.26,
    "movedBody": false
+  },
+  {
+   "at": "2026-09-29T08:38:51Z",
+   "val": 3.1191,
+   "prev": 3.1153,
+   "valTag": "fixed-holdout-v1",
+   "stoppedAt": 0,
+   "stuck": 0,
+   "evalTag": "fixed-ix-v1",
+   "secPerStep": 11.0138,
+   "steps": 320,
+   "bpc": 3.6917,
+   "charsPerTok": 1.2189,
+   "score": 2.2455,
+   "scoreW": 2.0,
+   "scoreMode": "talk",
+   "finishMix": 0.5,
+   "lineage": "L1",
+   "layers": 16,
+   "params": 117914880,
+   "chars": 1045308899,
+   "tokens": 857567631,
+   "grew": 0,
+   "rolledBack": false,
+   "ownVal": null,
+   "ownScore": null,
+   "d": 768,
+   "loops": 1,
+   "spread": 3.5713,
+   "bytes": 1415115957,
+   "heads": 6,
+   "ctx": 512,
+   "vocab": 6000,
+   "kind": "bpe",
+   "arch": "tpp-loop",
+   "wantWider": false,
+   "layerCap": 16,
+   "mixChanged": false,
+   "bySrc": {
+    "laws": 4.5814,
+    "wiki": 3.2928,
+    "aozora": 3.6036,
+    "hanrei": 3.6907,
+    "kokkai": 2.851,
+    "web": 3.1233,
+    "talk": 2.2455
+   },
+   "wrote": [
+    {
+     "start": "わたしは",
+     "text": "わたしは、浪瀬さんは、勇者さんに、八月から八月まで、そこでまことに実はまだ言っておられるのか、そういうふうに思ったのでございます。」 AB「棚澤国務大臣 確かに二回目の、透明性というか、この手を出すということではなくて、この六回目の史上、そして"
+    },
+    {
+     "start": "第一条",
+     "text": "第一条「国土交通大臣」という。）が、これに対する財務大臣のお考えをお示し申し上げます。 政府は、庫出しますが、世界の魅力を強力に推進して、世界の世界が深刻化する役割との連携を絞って、心を抱えながら、国民の信頼を充実し、進展を期するなど、なぜ多くの骨格を届けるべきです。"
+    },
+    {
+     "start": "この法律において",
+     "text": "この法律において「ji」を「Pa」に改めたのであり、ホームでは1980年のJapan Bring coster of Vol.6では当初からFlaysはThe CPUに19800ドルを和解し、この年に1980年代に本格化したGPUではトップがデザ"
+    }
+   ],
+   "loopPct": 0.81,
+   "movedBody": false
   }
  ],
  "bestVal": 3.1153,
@@ -12463,5 +12465,5 @@
  ],
  "wantWider": false,
  "nextD": 768,
- "bad": 0
+ "bad": 3
 }
