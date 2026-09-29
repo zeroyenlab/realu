@@ -1,67 +1,6 @@
 {
  "runs": [
   {
-   "at": "2026-09-19T07:47:26Z",
-   "val": 3.8151,
-   "prev": 3.8151,
-   "valTag": "fixed-holdout-v1",
-   "stoppedAt": 144,
-   "secPerStep": 28.9044,
-   "steps": 300,
-   "bpc": 4.5155,
-   "charsPerTok": 1.2189,
-   "score": 2.4712,
-   "scoreW": 2.0,
-   "scoreMode": "talk",
-   "finishMix": 0.5,
-   "lineage": "L1",
-   "layers": 16,
-   "params": 117914880,
-   "chars": 1045308899,
-   "tokens": 857567631,
-   "grew": 0,
-   "rolledBack": true,
-   "ownVal": 3.7834,
-   "ownScore": 2.5038,
-   "d": 768,
-   "loops": 1,
-   "spread": 4.0068,
-   "bytes": 1415115957,
-   "heads": 6,
-   "ctx": 512,
-   "vocab": 6000,
-   "kind": "bpe",
-   "arch": "tpp-loop",
-   "wantWider": false,
-   "layerCap": 16,
-   "mixChanged": false,
-   "bySrc": {
-    "laws": 5.903,
-    "wiki": 3.9284,
-    "aozora": 4.2321,
-    "hanrei": 4.4032,
-    "kokkai": 3.5106,
-    "web": 3.7235,
-    "talk": 2.5038
-   },
-   "wrote": [
-    {
-     "start": "わたしは",
-     "text": "わたしはちたいですよね。 それは多くにもう一つは知らないときに、そのように思います。 私は、、長派の経緯もはなくなってしまいますね。」 AA「そこで、マラーニューは、后�はスダッキングと言うように思います。 次に、ラーボードのお話でございますけれども"
-    },
-    {
-     "start": "第一条",
-     "text": "第一条時4つですか？」 客「コクサウンドがすごい」 店「ありがとうございました。」 店「承知しました。」 客「ありがとうございます。」 店「電話番号は、11856です。」 客「ありがとうございました。」"
-    },
-    {
-     "start": "この法律において",
-     "text": "この法律において （渡刑） 閲覧（名称の詩RRUNE-PG IP７A-6000として開催され、聖料で利用した「BSHAE」（2007年10月14日、NHK） 講談社の名前（2021年4月1日。 NHKBS） NHK「たしかに、。ケイベント」 20"
-    }
-   ],
-   "loopPct": 5.3,
-   "movedBody": false
-  },
-  {
    "at": "2026-09-19T09:02:18Z",
    "val": 3.8151,
    "prev": 3.8151,
@@ -12431,9 +12370,72 @@
    ],
    "loopPct": 5.02,
    "movedBody": false
+  },
+  {
+   "at": "2026-09-29T20:04:47Z",
+   "val": 3.0914,
+   "prev": 3.0936,
+   "valTag": "fixed-holdout-v1",
+   "stoppedAt": 179,
+   "stuck": 0,
+   "evalTag": "fixed-ix-v1",
+   "secPerStep": 23.0066,
+   "steps": 300,
+   "bpc": 3.659,
+   "charsPerTok": 1.2189,
+   "score": 2.244,
+   "scoreW": 2.0,
+   "scoreMode": "talk",
+   "finishMix": 0.5,
+   "lineage": "L1",
+   "layers": 16,
+   "params": 117914880,
+   "chars": 1045308899,
+   "tokens": 857567631,
+   "grew": 0,
+   "rolledBack": false,
+   "ownVal": null,
+   "ownScore": null,
+   "d": 768,
+   "loops": 1,
+   "spread": 3.2878,
+   "bytes": 1415115957,
+   "heads": 6,
+   "ctx": 512,
+   "vocab": 6000,
+   "kind": "bpe",
+   "arch": "tpp-loop",
+   "wantWider": false,
+   "layerCap": 16,
+   "mixChanged": false,
+   "bySrc": {
+    "laws": 4.5294,
+    "wiki": 3.261,
+    "aozora": 3.5829,
+    "hanrei": 3.6711,
+    "kokkai": 2.8237,
+    "web": 3.098,
+    "talk": 2.244
+   },
+   "wrote": [
+    {
+     "start": "わたしは",
+     "text": "わたしは、このようなわが国が、あなた方向に伝わり得るようになった、いや、私は、私は、これまた国民の苦しむる自由主義の道であります。 それでは、加藤議員から堅実な政府といたしますると、今日、政府は、今回のスピンオフと、これは私どもが総理を続けておりますが"
+    },
+    {
+     "start": "第一条",
+     "text": "第一条「冬休研究」の美しさ。さんまはいっぱいのお話を聞く。」 AA「次いで、いつかお話をしたいと思うのですが、私の背後からやっているといってほしいです。あまりに、夫婦の話は、あくまでもおなじいですか。」 AB「やばいです。最近は、子供は"
+    },
+    {
+     "start": "この法律において",
+     "text": "この法律においてまして、今後とも、コロナ、ネコナスに比べて、今日は長い間、天下りが激しい侵入をはじめ、このおもまま周囲を見つけますと、数十個のイングローブが約四百キログラムであるという言葉をいまだにして、それは透明化する途中でもなく、まことに遺憾であるから、特に"
+    }
+   ],
+   "loopPct": 3.99,
+   "movedBody": false
   }
  ],
- "bestVal": 3.0936,
+ "bestVal": 3.0914,
  "layers": 16,
  "params": 117914880,
  "born": "2026-09-08T15:11:54Z",
@@ -12481,5 +12483,5 @@
  ],
  "wantWider": false,
  "nextD": 768,
- "bad": 0
+ "bad": 1
 }
