@@ -1,67 +1,6 @@
 {
  "runs": [
   {
-   "at": "2026-09-19T11:27:11Z",
-   "val": 2.9295,
-   "prev": 3.0205,
-   "valTag": "fixed-holdout-v1",
-   "stoppedAt": 577,
-   "secPerStep": 6.4657,
-   "steps": 1041,
-   "bpc": 3.4673,
-   "charsPerTok": 1.2189,
-   "score": 2.2323,
-   "scoreW": 2.0,
-   "scoreMode": "talk",
-   "finishMix": 0.2,
-   "lineage": "L3",
-   "layers": 12,
-   "params": 23564928,
-   "chars": 1045308899,
-   "tokens": 857567631,
-   "grew": 0,
-   "rolledBack": false,
-   "ownVal": null,
-   "ownScore": null,
-   "d": 384,
-   "loops": 1,
-   "spread": 2.855,
-   "bytes": 282883685,
-   "heads": 6,
-   "ctx": 512,
-   "vocab": 6000,
-   "kind": "bpe",
-   "arch": "tpp-loop",
-   "wantWider": false,
-   "layerCap": 16,
-   "mixChanged": false,
-   "bySrc": {
-    "laws": 4.1958,
-    "wiki": 3.1406,
-    "aozora": 3.5433,
-    "hanrei": 3.6893,
-    "kokkai": 2.6591,
-    "web": 3.042,
-    "talk": 2.2323
-   },
-   "wrote": [
-    {
-     "start": "わたしは",
-     "text": "わたしは、恰好きですねー」 DF「もしかして、恋人自身が嬉しかったです！」 DL「あーそれはお店に行ってみたら、楽しみです！」 DF「本当にここは、天気がよかったかもしれませんねー。」 DL「そうですねー、おととしくらいですか"
-    },
-    {
-     "start": "第一条",
-     "text": "第一条の規定に基づき、第一号及び衆参りまして、その都度、現場の人となってハーロードに置かれているものと、毎年に四年間にわたって挙げられております。 二月二十四日、国鉄航空株式会社AXで、事故による特急列車車両が運転がされました。 福岡国際空港ダイヤ改正では、今夜、当初から急行列車で車名になりましたが、"
-    },
-    {
-     "start": "この法律において",
-     "text": "この法律においてにおいてこれを拒絶したら、すべての測定された場合は、委員長報告の通り錯誤もなく補足を得なければ、いずれも全く公共事業をの労働条件改革特別区域といたしません。」 AA「議長 ただいまの趣旨説明に対しまして、質疑の通り、討論に入りましたところ、日本社会党を代表いたしまして、ただいま趣旨説明させていただきました法律案"
-    }
-   ],
-   "loopPct": 5.48,
-   "movedBody": false
-  },
-  {
    "at": "2026-09-19T12:38:56Z",
    "val": 2.9295,
    "prev": 2.9295,
@@ -12437,9 +12376,72 @@
    ],
    "loopPct": 14.75,
    "movedBody": false
+  },
+  {
+   "at": "2026-09-29T23:49:51Z",
+   "val": 2.7627,
+   "prev": 2.7635,
+   "valTag": "fixed-holdout-v1",
+   "stoppedAt": 558,
+   "stuck": 0,
+   "evalTag": "fixed-ix-v1",
+   "secPerStep": 6.7216,
+   "steps": 965,
+   "bpc": 3.2699,
+   "charsPerTok": 1.2189,
+   "score": 2.1924,
+   "scoreW": 2.0,
+   "scoreMode": "talk",
+   "finishMix": 0.2,
+   "lineage": "L3",
+   "layers": 13,
+   "params": 25335168,
+   "chars": 1045308899,
+   "tokens": 857567631,
+   "grew": 0,
+   "rolledBack": false,
+   "ownVal": null,
+   "ownScore": null,
+   "d": 384,
+   "loops": 1,
+   "spread": 2.6881,
+   "bytes": 304134793,
+   "heads": 6,
+   "ctx": 512,
+   "vocab": 6000,
+   "kind": "bpe",
+   "arch": "tpp-loop",
+   "wantWider": false,
+   "layerCap": 16,
+   "mixChanged": false,
+   "bySrc": {
+    "laws": 3.7616,
+    "wiki": 2.938,
+    "aozora": 3.2633,
+    "hanrei": 3.4733,
+    "kokkai": 2.5591,
+    "web": 2.8435,
+    "talk": 2.1924
+   },
+   "wrote": [
+    {
+     "start": "わたしは",
+     "text": "わたしは今日は午前中から暴風雨でした。」 AD「いや、夏休みは、お休みですか？」 AG「休みは、夏駅ぐらいです。」 AD「私は、、、、、。」 AG「私は、衝えたので、ヨーグルトで、体力が気に入りました。」 AD「あら"
+    },
+    {
+     "start": "第一条",
+     "text": "第一条（ジグリグリグリグリグリ市町村に分かるもの） の区間（県道の東船橋内の高架の交差点）になっている。 2011年（平成23年）4月に工事終了後に工事終了（前述の通り、昭和8年6月に中止）。 2012年（平成24年）10月11日の「1・2"
+    },
+    {
+     "start": "この法律において",
+     "text": "この法律において「小規模破壊兵器等」を分離しており、このような核兵器を母体としていると思われる。 また、 核兵器 を持ち、多くの 核兵器 を持ち込んだという現象もある [ 45 ] 。 核兵器を母体としている 核兵器 は再攻撃軍の 潜水艦 である。 核兵"
+    }
+   ],
+   "loopPct": 6.85,
+   "movedBody": false
   }
  ],
- "bestVal": 2.763,
+ "bestVal": 2.7627,
  "layers": 13,
  "params": 25335168,
  "born": "2026-09-12T18:05:42Z",
@@ -12487,5 +12489,5 @@
  ],
  "wantWider": false,
  "nextD": 384,
- "bad": 1
+ "bad": 6
 }
