@@ -1,67 +1,6 @@
 {
  "runs": [
   {
-   "at": "2026-09-19T11:32:30Z",
-   "val": 3.7812,
-   "prev": 3.7812,
-   "valTag": "fixed-holdout-v1",
-   "stoppedAt": 160,
-   "secPerStep": 25.6051,
-   "steps": 300,
-   "bpc": 4.4753,
-   "charsPerTok": 1.2189,
-   "score": 2.4862,
-   "scoreW": 2.0,
-   "scoreMode": "talk",
-   "finishMix": 0.5,
-   "lineage": "L1",
-   "layers": 16,
-   "params": 117914880,
-   "chars": 1045308899,
-   "tokens": 857567631,
-   "grew": 0,
-   "rolledBack": true,
-   "ownVal": 3.8242,
-   "ownScore": 2.5149,
-   "d": 768,
-   "loops": 1,
-   "spread": 4.3419,
-   "bytes": 1415115957,
-   "heads": 6,
-   "ctx": 512,
-   "vocab": 6000,
-   "kind": "bpe",
-   "arch": "tpp-loop",
-   "wantWider": false,
-   "layerCap": 16,
-   "mixChanged": false,
-   "bySrc": {
-    "laws": 5.8576,
-    "wiki": 3.9783,
-    "aozora": 4.1385,
-    "hanrei": 4.4702,
-    "kokkai": 3.5032,
-    "web": 3.6127,
-    "talk": 2.5149
-   },
-   "wrote": [
-    {
-     "start": "わたしは",
-     "text": "わたしはまだまた不正に反対していただいたことは、一番大縮に向かう一つは、ここで、このことは、一つは一万財団料理の会見を考えているんだろう。こうしたことから、それをもう一つ、経済に上がっているところでございます。」 AA「ただ、二％が自由な園の問題ですけれども、三体、どの"
-    },
-    {
-     "start": "第一条",
-     "text": "第一条条の四信用金庫の周額の措置だと思います。」 AB「以上の努力ということでありますけれども、当該時間は問題になっております。 いずれにせよ、政府から、日銀の特性が当然だと思います。これは本当にないんですが、これまで金の開発を問う事案はありませんが、そしてこれからも、今�"
-    },
-    {
-     "start": "この法律において",
-     "text": "この法律においてガス等等についてその時認定されるのであります。 本案は案内準案を賛成の限りいたしますが、中小企業における事業について投げ理由があったことから、了承すべきであります。 」 AB「議長 御異議ありません。 昨年度の住民及原案、分の一及び無放理否をお願いします。 新防衛大臣の明確なこと。」 AA「議長"
-    }
-   ],
-   "loopPct": 3.49,
-   "movedBody": false
-  },
-  {
    "at": "2026-09-19T12:46:41Z",
    "val": 3.6412,
    "prev": 3.7812,
@@ -12437,9 +12376,72 @@
    ],
    "loopPct": 0.0,
    "movedBody": false
+  },
+  {
+   "at": "2026-09-29T23:54:32Z",
+   "val": 3.085,
+   "prev": 3.0862,
+   "valTag": "fixed-holdout-v1",
+   "stoppedAt": 178,
+   "stuck": 0,
+   "evalTag": "fixed-ix-v1",
+   "secPerStep": 23.1358,
+   "steps": 300,
+   "bpc": 3.6513,
+   "charsPerTok": 1.2189,
+   "score": 2.2401,
+   "scoreW": 2.0,
+   "scoreMode": "talk",
+   "finishMix": 0.5,
+   "lineage": "L1",
+   "layers": 16,
+   "params": 117914880,
+   "chars": 1045308899,
+   "tokens": 857567631,
+   "grew": 0,
+   "rolledBack": false,
+   "ownVal": null,
+   "ownScore": null,
+   "d": 768,
+   "loops": 1,
+   "spread": 3.4817,
+   "bytes": 1415115957,
+   "heads": 6,
+   "ctx": 512,
+   "vocab": 6000,
+   "kind": "bpe",
+   "arch": "tpp-loop",
+   "wantWider": false,
+   "layerCap": 16,
+   "mixChanged": false,
+   "bySrc": {
+    "laws": 4.5231,
+    "wiki": 3.2592,
+    "aozora": 3.5784,
+    "hanrei": 3.6662,
+    "kokkai": 2.8165,
+    "web": 3.0977,
+    "talk": 2.2401
+   },
+   "wrote": [
+    {
+     "start": "わたしは",
+     "text": "わたしは、さきに三人つけで、あらゆるゆえんで、足を緩めるということで、一つの目をさしています。 ただ、二十三日のほど自民党は、ここまででは、今日のこの総人件費は、公約的な権力で、国民は、有給率の比率をやめて、来年度の太平洋戦争に参加する政策を、そして"
+    },
+    {
+     "start": "第一条",
+     "text": "第一条ール編 (UTC) CECEO [ 122 ] (PECFE) SSCEED 2022年12月18日発売 [ 121 ] 。 （TOTUCOCKのOCKCOME 3521を） ISCORK DEARTO 2013年12月2"
+    },
+    {
+     "start": "この法律において",
+     "text": "この法律において「国土・地域」として知られる。 新海否定とは、コンベアのクリンゼリオでも「結局は600どちらが、かつて、2004年（平成16年）5月26日のオールナイトニッポン資料会議で、2005年（平成15年）3月26日に「エンダの梅と白の元の人（OVA）」、「エン"
+    }
+   ],
+   "loopPct": 9.1,
+   "movedBody": false
   }
  ],
- "bestVal": 3.0862,
+ "bestVal": 3.085,
  "layers": 16,
  "params": 117914880,
  "born": "2026-09-08T15:11:54Z",
@@ -12487,5 +12489,5 @@
  ],
  "wantWider": false,
  "nextD": 768,
- "bad": 0
+ "bad": 1
 }
