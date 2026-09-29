@@ -1,67 +1,6 @@
 {
  "runs": [
   {
-   "at": "2026-09-18T23:03:02Z",
-   "val": 3.0396,
-   "prev": 3.0396,
-   "valTag": "fixed-holdout-v1",
-   "stoppedAt": 604,
-   "secPerStep": 6.166,
-   "steps": 1048,
-   "bpc": 3.5976,
-   "charsPerTok": 1.2189,
-   "score": 2.211,
-   "scoreW": 2.0,
-   "scoreMode": "talk",
-   "finishMix": 0.2,
-   "lineage": "L3",
-   "layers": 12,
-   "params": 23564928,
-   "chars": 1045308899,
-   "tokens": 857567631,
-   "grew": 0,
-   "rolledBack": true,
-   "ownVal": 3.0314,
-   "ownScore": 2.3874,
-   "d": 384,
-   "loops": 1,
-   "spread": 2.9154,
-   "bytes": 282883685,
-   "heads": 6,
-   "ctx": 512,
-   "vocab": 6000,
-   "kind": "bpe",
-   "arch": "tpp-loop",
-   "wantWider": false,
-   "layerCap": 16,
-   "mixChanged": false,
-   "bySrc": {
-    "laws": 4.2813,
-    "wiki": 3.1748,
-    "aozora": 3.5546,
-    "hanrei": 3.7446,
-    "kokkai": 2.6889,
-    "web": 3.0302,
-    "talk": 2.3874
-   },
-   "wrote": [
-    {
-     "start": "わたしは",
-     "text": "わたしは！！」 DY「私は二回目にココとけばそうですね。」 CV「でも、キャンプもココとか、悩ましいですよ。」 DY「そうなんですね！お子さんはお好きですか？」 CV「料理はお得意です。」 DY「料理好きです！お子"
-    },
-    {
-     "start": "第一条",
-     "text": "第一条ようよう年齢基準を分離する。 ↑ 原辻, 落合将、大丸太、大丸太、大丸太、大丸太、大丸太、大きな宝塚、大丸太、生鐘、大またな、天下、日活がひこ、鐘、大江。 ↑ 「 三太、つまり、"
-    },
-    {
-     "start": "この法律において",
-     "text": "この法律においてにより設立されたことは、その五十五にして、次の十八にいうケースのある領域を、全ての領域としていうことが、現実世界の領域と考えられたことなどからいうものであります。 第三に、第二に、新しい領域の領域を中心とする領域を、あるいは領域とする、あるいは領域と長い領域をJ・K・ゴシュヴェヴェの大"
-    }
-   ],
-   "loopPct": 15.0,
-   "movedBody": false
-  },
-  {
    "at": "2026-09-19T00:06:29Z",
    "val": 3.0396,
    "prev": 3.0396,
@@ -12417,6 +12356,69 @@
    ],
    "loopPct": 34.09,
    "movedBody": false
+  },
+  {
+   "at": "2026-09-29T11:09:53Z",
+   "val": 2.7702,
+   "prev": 2.7718,
+   "valTag": "fixed-holdout-v1",
+   "stoppedAt": 559,
+   "stuck": 0,
+   "evalTag": "fixed-ix-v1",
+   "secPerStep": 6.713,
+   "steps": 968,
+   "bpc": 3.2788,
+   "charsPerTok": 1.2189,
+   "score": 2.2025,
+   "scoreW": 2.0,
+   "scoreMode": "talk",
+   "finishMix": 0.2,
+   "lineage": "L3",
+   "layers": 13,
+   "params": 25335168,
+   "chars": 1045308899,
+   "tokens": 857567631,
+   "grew": 0,
+   "rolledBack": false,
+   "ownVal": null,
+   "ownScore": null,
+   "d": 384,
+   "loops": 1,
+   "spread": 2.7418,
+   "bytes": 304134793,
+   "heads": 6,
+   "ctx": 512,
+   "vocab": 6000,
+   "kind": "bpe",
+   "arch": "tpp-loop",
+   "wantWider": false,
+   "layerCap": 16,
+   "mixChanged": false,
+   "bySrc": {
+    "laws": 3.7765,
+    "wiki": 2.945,
+    "aozora": 3.2711,
+    "hanrei": 3.4759,
+    "kokkai": 2.5658,
+    "web": 2.8513,
+    "talk": 2.2025
+   },
+   "wrote": [
+    {
+     "start": "わたしは",
+     "text": "わたしはガムラーで指揮したが、その中で数千数百名もの弱点を決めるために、軍が自由にオーバーさせて異国を奪取する。 合体した彼は幻の人物であり、自分の肉体が凍結し、彼らの既存の人物としての役割を果たす。 また、ゴーゴルーンのゴーゴルーンは"
+    },
+    {
+     "start": "第一条",
+     "text": "第一条を受けているとされる 。 2022年5月24日、日本で初めての計5500万枚を達成した 。 2023年 - 山陰アンドロメラ（山陽北部）から日本向けの「京王」が発売する 。 2024年 - 桜江風会が行われている。2025年に発売するアップデ"
+    },
+    {
+     "start": "この法律において",
+     "text": "この法律においてけんそりつづけんせつづけんせつせつけんせつうのだれのしょうほうだけんせつけんせつけんせつせつけんせつけんせつけんせつけんせつけんせつせつぎんせつてきんせつけんせつけんせつせつけんせつせつけんせつけんせつける （すないせつけんせつけ"
+    }
+   ],
+   "loopPct": 24.37,
+   "movedBody": false
   }
  ],
  "bestVal": 2.7695,
@@ -12467,5 +12469,5 @@
  ],
  "wantWider": false,
  "nextD": 384,
- "bad": 1
+ "bad": 0
 }
