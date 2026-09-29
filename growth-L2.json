@@ -1,67 +1,6 @@
 {
  "runs": [
   {
-   "at": "2026-09-19T01:28:17Z",
-   "val": 3.1184,
-   "prev": 3.1184,
-   "valTag": "fixed-holdout-v1",
-   "stoppedAt": 462,
-   "secPerStep": 8.1456,
-   "steps": 905,
-   "bpc": 3.6909,
-   "charsPerTok": 1.2189,
-   "score": 2.1632,
-   "scoreW": 2.0,
-   "scoreMode": "talk",
-   "finishMix": 0.85,
-   "lineage": "L2",
-   "layers": 10,
-   "params": 34727424,
-   "chars": 1045308899,
-   "tokens": 857567631,
-   "grew": 0,
-   "rolledBack": true,
-   "ownVal": 3.1393,
-   "ownScore": 2.213,
-   "d": 512,
-   "loops": 1,
-   "spread": 2.902,
-   "bytes": 416817181,
-   "heads": 8,
-   "ctx": 512,
-   "vocab": 6000,
-   "kind": "bpe",
-   "arch": "tpp-loop",
-   "wantWider": false,
-   "layerCap": 16,
-   "mixChanged": false,
-   "bySrc": {
-    "laws": 4.5305,
-    "wiki": 3.3278,
-    "aozora": 3.6467,
-    "hanrei": 3.8459,
-    "kokkai": 2.8655,
-    "web": 3.1604,
-    "talk": 2.213
-   },
-   "wrote": [
-    {
-     "start": "わたしは",
-     "text": "わたしはそういう時はありましたが、あっという間に眠ってました。」 AB「それは、あちらの方が響きして、過ぎましたね。」 AF「そうですね、なんか、どうしてもいけないと思います。」 AB「ありがとうございました。」"
-    },
-    {
-     "start": "第一条",
-     "text": "第一条」 EN「はじめまして、よろしくお願いします！」 DC「よろしくお願いします！」 EN「今日はお休みですか？」 DC「お休みです！お休みですか？」 EN「今日は家賃�"
-    },
-    {
-     "start": "この法律において",
-     "text": "この法律において読替え欠陥念なりからせちっと踪磨ましいです」 EW「毎日仕事は終わるとこでも食べられないんですね」 EU「はい、いつも何時ごろやってるんですかね」 EW「私は家で休みたいと思っているので今日はご飯食べてます」 EU「私は"
-    }
-   ],
-   "loopPct": 0.0,
-   "movedBody": false
-  },
-  {
    "at": "2026-09-19T02:29:21Z",
    "val": 3.1184,
    "prev": 3.1184,
@@ -12421,9 +12360,72 @@
    ],
    "loopPct": 5.07,
    "movedBody": false
+  },
+  {
+   "at": "2026-09-29T14:54:41Z",
+   "val": 2.7285,
+   "prev": 2.7319,
+   "valTag": "fixed-holdout-v1",
+   "stoppedAt": 361,
+   "stuck": 0,
+   "evalTag": "fixed-ix-v1",
+   "secPerStep": 10.6437,
+   "steps": 691,
+   "bpc": 3.2293,
+   "charsPerTok": 1.2189,
+   "score": 2.0689,
+   "scoreW": 2.0,
+   "scoreMode": "talk",
+   "finishMix": 0.85,
+   "lineage": "L2",
+   "layers": 13,
+   "params": 44216832,
+   "chars": 1045308899,
+   "tokens": 857567631,
+   "grew": 0,
+   "rolledBack": false,
+   "ownVal": null,
+   "ownScore": null,
+   "d": 512,
+   "loops": 1,
+   "spread": 2.6773,
+   "bytes": 530714761,
+   "heads": 8,
+   "ctx": 512,
+   "vocab": 6000,
+   "kind": "bpe",
+   "arch": "tpp-loop",
+   "wantWider": false,
+   "layerCap": 16,
+   "mixChanged": false,
+   "bySrc": {
+    "laws": 3.6798,
+    "wiki": 2.9046,
+    "aozora": 3.2131,
+    "hanrei": 3.4255,
+    "kokkai": 2.5327,
+    "web": 2.8174,
+    "talk": 2.0689
+   },
+   "wrote": [
+    {
+     "start": "わたしは",
+     "text": "わたしは昨日はお茶を飲みました」 AC「お茶はビールですか！」 AD「ビールです。お酒は飲めないですね」 AC「お酒！私もビールだとビール、しゃぶしゃぶ！」 AD「ビール、夏になるとビール？」 AC「どうなんでしょう？」"
+    },
+    {
+     "start": "第一条",
+     "text": "第一条第六租税次に掲げる税となるものに限る。以下この号において同じ。）に係る法務省令で定める届出書を欧州擁護委員会に提出してタル。以下この項において同じ。）又は極東通貨危機管理委員会に提出してクリルのームンドに流出させたリンク（以下「注射」という。）をした者が、当該リンクのなかに覆いがないときは、これらの爆発事故が発生した月に振り向けることができ、当該リンクが、当該リンクから破損した衡鉾骨"
+    },
+    {
+     "start": "この法律において",
+     "text": "この法律において溜めに焼きかけるおそれがありますことを要する要因と考えます。」 AA「今、岩國議員がおっしゃられたように、やはり、これから日米安保条約の内容には、その後の国際情勢を見ますと、それを踏まえても、日米安保条約に関連して、我が国政府が日本側に手を差し伸べるということは"
+    }
+   ],
+   "loopPct": 3.45,
+   "movedBody": false
   }
  ],
- "bestVal": 2.7309,
+ "bestVal": 2.7285,
  "layers": 13,
  "params": 44216832,
  "born": "2026-09-08T15:11:54Z",
