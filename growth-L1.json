@@ -1,67 +1,6 @@
 {
  "runs": [
   {
-   "at": "2026-09-20T08:42:22Z",
-   "val": 3.48,
-   "prev": 3.5476,
-   "valTag": "fixed-holdout-v1",
-   "stoppedAt": 159,
-   "secPerStep": 25.7632,
-   "steps": 300,
-   "bpc": 4.1188,
-   "charsPerTok": 1.2189,
-   "score": 2.4168,
-   "scoreW": 2.0,
-   "scoreMode": "talk",
-   "finishMix": 0.5,
-   "lineage": "L1",
-   "layers": 16,
-   "params": 117914880,
-   "chars": 1045308899,
-   "tokens": 857567631,
-   "grew": 0,
-   "rolledBack": false,
-   "ownVal": null,
-   "ownScore": null,
-   "d": 768,
-   "loops": 1,
-   "spread": 3.443,
-   "bytes": 1415115957,
-   "heads": 6,
-   "ctx": 512,
-   "vocab": 6000,
-   "kind": "bpe",
-   "arch": "tpp-loop",
-   "wantWider": false,
-   "layerCap": 16,
-   "mixChanged": false,
-   "bySrc": {
-    "laws": 5.2722,
-    "wiki": 3.6904,
-    "aozora": 3.9458,
-    "hanrei": 4.1065,
-    "kokkai": 3.1689,
-    "web": 3.4022,
-    "talk": 2.4168
-   },
-   "wrote": [
-    {
-     "start": "わたしは",
-     "text": "わたしはないのですが、わたしは絶対的に旅行に行く、いまだになっているのか。そうしますよ。」 店「ですね、ご利用いただいたします。」 DL「こんにちは。」 AB「こんにちは。」 DY「今日の日に行くんで"
-    },
-    {
-     "start": "第一条",
-     "text": "第一条に関する事務の額に係る事業につき承認その期間の処理等の規定に限る。 （,情報形成支援団体） 第三十五条 以下「血街型科学技術研究所」の旧公衆航空機又は行政大学（令和四年度） ↑ 航空医学研究所（* 1972年） ↑ 小学生、都市部、いいこのうち三大学校（* 1975年） ↑ 東京都学部中学校（1977年"
-    },
-    {
-     "start": "この法律において",
-     "text": "この法律において（指定基準） 第十五条 昭和二十六号（電子書籍において「数」と恐怖（音等） 第四十二条 ガンダム（ブラック・ベクトル、チャールズ、モニター、ヘイトラーール、スーパーレース、インスタンス、愛称） エイセックス!（レディーゼ、レディアム（ニューマンス） ロッテ（パネル、"
-    }
-   ],
-   "loopPct": 2.0,
-   "movedBody": false
-  },
-  {
    "at": "2026-09-20T09:57:10Z",
    "val": 3.4966,
    "prev": 3.48,
@@ -12470,6 +12409,69 @@
     }
    ],
    "loopPct": 2.75,
+   "movedBody": false
+  },
+  {
+   "at": "2026-09-30T21:30:42Z",
+   "val": 3.0631,
+   "prev": 3.0626,
+   "valTag": "fixed-holdout-v1",
+   "stoppedAt": 143,
+   "stuck": 0,
+   "evalTag": "fixed-ix-v1",
+   "secPerStep": 29.6656,
+   "steps": 300,
+   "bpc": 3.6255,
+   "charsPerTok": 1.2189,
+   "score": 2.2233,
+   "scoreW": 2.0,
+   "scoreMode": "talk",
+   "finishMix": 0.5,
+   "lineage": "L1",
+   "layers": 16,
+   "params": 117914880,
+   "chars": 1045308899,
+   "tokens": 857567631,
+   "grew": 0,
+   "rolledBack": false,
+   "ownVal": null,
+   "ownScore": null,
+   "d": 768,
+   "loops": 1,
+   "spread": 3.2816,
+   "bytes": 1415115957,
+   "heads": 6,
+   "ctx": 512,
+   "vocab": 6000,
+   "kind": "bpe",
+   "arch": "tpp-loop",
+   "wantWider": false,
+   "layerCap": 16,
+   "mixChanged": false,
+   "bySrc": {
+    "laws": 4.4729,
+    "wiki": 3.2389,
+    "aozora": 3.5546,
+    "hanrei": 3.6482,
+    "kokkai": 2.7999,
+    "web": 3.0774,
+    "talk": 2.2233
+   },
+   "wrote": [
+    {
+     "start": "わたしは",
+     "text": "わたしは，被告人が被告人らに内容を見受け，被告人が憲法上法律上認め，その 適用を認 否するにあたり，我が国からも被告人らに被告人両名を同一性としながら，被告人の 被告人として，被告人や被告人が本件犯行に貴重な人格であるとべ，被告人に向かって，被告人の背後を表 し，"
+    },
+    {
+     "start": "第一条",
+     "text": "第一条敷地においても同様に熊頭溜まりはなくなることはない [ 194 ] 。 また、もともとは 大体の 元 が 2015年 （ 平成 22年）ごろから一部は、 1998年 （平成10年）まで、 1999年 （平成11年）までに 2008年 （平成19年）度に6000"
+    },
+    {
+     "start": "この法律において",
+     "text": "この法律において「/ ファンタジー」を意味する「ガンディー」は 直前に入った状態であり、当時の「ミー・ガン」は「ガッチャギタ」と呼ばれる 。 BSGは、大人向けのエンディングで「T-PART TRENG」を意味する「CLART」を意味する「T-Line」を"
+    }
+   ],
+   "loopPct": 6.27,
    "movedBody": false
   }
  ],
