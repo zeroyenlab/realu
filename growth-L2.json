@@ -1,67 +1,6 @@
 {
  "runs": [
   {
-   "at": "2026-09-20T04:51:55Z",
-   "val": 3.08,
-   "prev": 3.0463,
-   "valTag": "fixed-holdout-v1",
-   "stoppedAt": 388,
-   "secPerStep": 9.7996,
-   "steps": 731,
-   "bpc": 3.6454,
-   "charsPerTok": 1.2189,
-   "score": 2.1313,
-   "scoreW": 2.0,
-   "scoreMode": "talk",
-   "finishMix": 0.85,
-   "lineage": "L2",
-   "layers": 11,
-   "params": 37890560,
-   "chars": 1045308899,
-   "tokens": 857567631,
-   "grew": 0,
-   "rolledBack": false,
-   "ownVal": null,
-   "ownScore": null,
-   "d": 512,
-   "loops": 1,
-   "spread": 2.9117,
-   "bytes": 454783041,
-   "heads": 8,
-   "ctx": 512,
-   "vocab": 6000,
-   "kind": "bpe",
-   "arch": "tpp-loop",
-   "wantWider": false,
-   "layerCap": 16,
-   "mixChanged": false,
-   "bySrc": {
-    "laws": 4.279,
-    "wiki": 3.2503,
-    "aozora": 3.563,
-    "hanrei": 3.7187,
-    "kokkai": 2.7673,
-    "web": 3.1259,
-    "talk": 2.1313
-   },
-   "wrote": [
-    {
-     "start": "わたしは",
-     "text": "わたしはスマホのスマホは、一音がラタですね。」 AB「確かに。スマホのラタで円安が出てくるのだよね。」 AC「ほんとですよね。ソフトウェアのラタが急に落ちつきます。」 AB「なるほど。」"
-    },
-    {
-     "start": "第一条",
-     "text": "第一条第五号ロロンですか」 DR「ゲーム機は多いですか？」 DF「はい、ゲーム機も多いです。」 DR「どんなゲーム機がお得ですか」 DF「そうなんです。マウントライフなんですが、マウントライフが多いですね。」 DR「そうなんです"
-    },
-    {
-     "start": "この法律において",
-     "text": "この法律において「スペインは、イタリアンを中心に、イタリア人の尊敬を信濃とすることをはっきり聞きます」 DR「そうなんですね！アジア人のほうがおいしいですね！」 DM「アジア人の感染をもたらすものがおいしくて好きです．」 DR「そうなんですね"
-    }
-   ],
-   "loopPct": 0.88,
-   "movedBody": false
-  },
-  {
    "at": "2026-09-20T06:06:52Z",
    "val": 3.0587,
    "prev": 3.08,
@@ -12465,9 +12404,72 @@
    ],
    "loopPct": 5.29,
    "movedBody": false
+  },
+  {
+   "at": "2026-09-30T18:50:13Z",
+   "val": 2.717,
+   "prev": 2.7182,
+   "valTag": "fixed-holdout-v1",
+   "stoppedAt": 368,
+   "stuck": 0,
+   "evalTag": "fixed-ix-v1",
+   "secPerStep": 10.4248,
+   "steps": 1091,
+   "bpc": 3.2158,
+   "charsPerTok": 1.2189,
+   "score": 2.0651,
+   "scoreW": 2.0,
+   "scoreMode": "talk",
+   "finishMix": 0.85,
+   "lineage": "L2",
+   "layers": 13,
+   "params": 44216832,
+   "chars": 1045308899,
+   "tokens": 857567631,
+   "grew": 0,
+   "rolledBack": false,
+   "ownVal": null,
+   "ownScore": null,
+   "d": 512,
+   "loops": 1,
+   "spread": 2.8085,
+   "bytes": 530714761,
+   "heads": 8,
+   "ctx": 512,
+   "vocab": 6000,
+   "kind": "bpe",
+   "arch": "tpp-loop",
+   "wantWider": false,
+   "layerCap": 16,
+   "mixChanged": false,
+   "bySrc": {
+    "laws": 3.6562,
+    "wiki": 2.8903,
+    "aozora": 3.2014,
+    "hanrei": 3.4168,
+    "kokkai": 2.5261,
+    "web": 2.8039,
+    "talk": 2.0651
+   },
+   "wrote": [
+    {
+     "start": "わたしは",
+     "text": "わたしは安全なそうですね」 AX「それはそうですね。すぐに目に入ってしまいます。」 AY「ね。最近は目が入ってるので、気分的に気になってしまいます。」 AX「そうなんですよね。でも今となってはスマホで売ってる感じです。」 AY「あー！スマホ"
+    },
+    {
+     "start": "第一条",
+     "text": "第一条ただし書、料精を中で占める邦菜、ピストル、キムチ、カルボナーラ、ピストル、キムチなどの賞味など、アレモン、フセイで広く普及しています。」 AA「日本の伝統芸能人、映画監督を務める日本の代表選手が、イタリアのバンコクでアニメーター上位に"
+    },
+    {
+     "start": "この法律において",
+     "text": "この法律においてんだものに限る。） 刑法（受給権が得られる規定を含む。） 刑法（明治三十九年法律第八十九号）第三十五条に規定する刑法（昭和四十二年法律第六十五号）第六条第二項（刑法（明治三十九年法律第八十六号）、第七条第二項（同法第四十六条（同法第四十九条を除く。）、第七条第三項（同法第六十四条において準用する場合を含む。）及び第六条第二項（同法第五十四条第一項において準用する場合を含む。）に規定する刑法（明治三十九年法律第八十二号）第"
+    }
+   ],
+   "loopPct": 0.83,
+   "movedBody": false
   }
  ],
- "bestVal": 2.7182,
+ "bestVal": 2.717,
  "layers": 13,
  "params": 44216832,
  "born": "2026-09-08T15:11:54Z",
@@ -12515,5 +12517,5 @@
  ],
  "wantWider": false,
  "nextD": 512,
- "bad": 2
+ "bad": 5
 }
