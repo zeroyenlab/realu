@@ -1,67 +1,6 @@
 {
  "runs": [
   {
-   "at": "2026-09-19T15:03:17Z",
-   "val": 3.6412,
-   "prev": 3.6412,
-   "valTag": "fixed-holdout-v1",
-   "stoppedAt": 0,
-   "secPerStep": 10.9144,
-   "steps": 300,
-   "bpc": 4.3096,
-   "charsPerTok": 1.2189,
-   "score": 2.4936,
-   "scoreW": 2.0,
-   "scoreMode": "talk",
-   "finishMix": 0.5,
-   "lineage": "L1",
-   "layers": 16,
-   "params": 117914880,
-   "chars": 1045308899,
-   "tokens": 857567631,
-   "grew": 0,
-   "rolledBack": true,
-   "ownVal": 3.982,
-   "ownScore": 2.5596,
-   "d": 768,
-   "loops": 1,
-   "spread": 3.7974,
-   "bytes": 1415115957,
-   "heads": 6,
-   "ctx": 512,
-   "vocab": 6000,
-   "kind": "bpe",
-   "arch": "tpp-loop",
-   "wantWider": false,
-   "layerCap": 16,
-   "mixChanged": false,
-   "bySrc": {
-    "laws": 6.0332,
-    "wiki": 4.1065,
-    "aozora": 4.3508,
-    "hanrei": 4.4882,
-    "kokkai": 3.5748,
-    "web": 3.8121,
-    "talk": 2.5596
-   },
-   "wrote": [
-    {
-     "start": "わたしは",
-     "text": "わたしは、大胆佐をした事ではなく、我々は見つかりました」 DA「こんにちは」 CO「こんにちは」 CO「こんにちは」 DF「こんにちは！」 CO"
-    },
-    {
-     "start": "第一条",
-     "text": "第一条 依頼書 売買 ａO ～ｺcc 平成第三十日 (1) (2) こと�まか (9) 被告人 (1) 真隠ー製) 第二次世界大戦争美術館 を含む参照石 (1) - (1) (2) (1)） (1) (2) (1) (1) (0)("
-    },
-    {
-     "start": "この法律において",
-     "text": "この法律において、アンダーのヒッフェルヘラクターとして、アリゲームが出来る。ピアノはSTTのブラウンドを使うことはない。映画放送のビルディング、DUS、SのTSNTEAT POMACAC）が可能中で、メーカーの作品はRTCOTS（FPVはKBCアルカー"
-    }
-   ],
-   "loopPct": 20.58,
-   "movedBody": false
-  },
-  {
    "at": "2026-09-19T16:25:02Z",
    "val": 3.6412,
    "prev": 3.6412,
@@ -12443,9 +12382,72 @@
    ],
    "loopPct": 1.63,
    "movedBody": false
+  },
+  {
+   "at": "2026-09-30T03:35:38Z",
+   "val": 3.0784,
+   "prev": 3.082,
+   "valTag": "fixed-holdout-v1",
+   "stoppedAt": 157,
+   "stuck": 0,
+   "evalTag": "fixed-ix-v1",
+   "secPerStep": 26.5281,
+   "steps": 300,
+   "bpc": 3.6435,
+   "charsPerTok": 1.2189,
+   "score": 2.2355,
+   "scoreW": 2.0,
+   "scoreMode": "talk",
+   "finishMix": 0.5,
+   "lineage": "L1",
+   "layers": 16,
+   "params": 117914880,
+   "chars": 1045308899,
+   "tokens": 857567631,
+   "grew": 0,
+   "rolledBack": false,
+   "ownVal": null,
+   "ownScore": null,
+   "d": 768,
+   "loops": 1,
+   "spread": 3.3922,
+   "bytes": 1415115957,
+   "heads": 6,
+   "ctx": 512,
+   "vocab": 6000,
+   "kind": "bpe",
+   "arch": "tpp-loop",
+   "wantWider": false,
+   "layerCap": 16,
+   "mixChanged": false,
+   "bySrc": {
+    "laws": 4.5076,
+    "wiki": 3.252,
+    "aozora": 3.5714,
+    "hanrei": 3.6618,
+    "kokkai": 2.8104,
+    "web": 3.0935,
+    "talk": 2.2355
+   },
+   "wrote": [
+    {
+     "start": "わたしは",
+     "text": "わたしは、こんなに伸びてきあがっては、特に、先月のおのおもしろい方、さんぽろで、日中どこかにいっちりと言っていただけるような形で御説明ください。」 AA「あの下では、ごみことしの方が、日曜日のことだけは、あなたはそう言ってみれば、どうですか、私たちは"
+    },
+    {
+     "start": "第一条",
+     "text": "第一条ヲ受十一条第一項第四号に規定する２の無勘案元素及びその三年前収用（以下「消費物質」という。）条第一項中「新たな検査」という。）に基づき、当該為宿泊につき、当該食品べん 食品又は食品等その他の食品等としての使用審判を行うに限る。）を保有するること。 似たような食料品でん患者の食品の安全性の確保のため必要な状況 食糧医られる場合 食品衛生法（令和三券）卒業者（以下「食品安全法」という。）"
+    },
+    {
+     "start": "この法律において",
+     "text": "この法律において量決定をいたしておるのであります。（拍手） 次に、前回の会議を開くといたしますが、本日は、当日、政府・自民党の会期は、内閣から、大綱を一貫して一行も打ち出すということであります。 このため、本案は、去る二十六日、内閣提出、参議院の予算委員会に付託されております。」"
+    }
+   ],
+   "loopPct": 2.91,
+   "movedBody": false
   }
  ],
- "bestVal": 3.082,
+ "bestVal": 3.0784,
  "layers": 16,
  "params": 117914880,
  "born": "2026-09-08T15:11:54Z",
