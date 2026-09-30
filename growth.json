@@ -1,67 +1,6 @@
 {
  "runs": [
   {
-   "at": "2026-09-19T14:01:34Z",
-   "val": 3.6412,
-   "prev": 3.6412,
-   "valTag": "fixed-holdout-v1",
-   "stoppedAt": 158,
-   "secPerStep": 26.0011,
-   "steps": 300,
-   "bpc": 4.3096,
-   "charsPerTok": 1.2189,
-   "score": 2.4936,
-   "scoreW": 2.0,
-   "scoreMode": "talk",
-   "finishMix": 0.5,
-   "lineage": "L1",
-   "layers": 16,
-   "params": 117914880,
-   "chars": 1045308899,
-   "tokens": 857567631,
-   "grew": 0,
-   "rolledBack": true,
-   "ownVal": 3.798,
-   "ownScore": 2.5861,
-   "d": 768,
-   "loops": 1,
-   "spread": 4.363,
-   "bytes": 1415115957,
-   "heads": 6,
-   "ctx": 512,
-   "vocab": 6000,
-   "kind": "bpe",
-   "arch": "tpp-loop",
-   "wantWider": false,
-   "layerCap": 16,
-   "mixChanged": false,
-   "bySrc": {
-    "laws": 5.8475,
-    "wiki": 3.9873,
-    "aozora": 4.2113,
-    "hanrei": 4.3936,
-    "kokkai": 3.544,
-    "web": 3.6729,
-    "talk": 2.5861
-   },
-   "wrote": [
-    {
-     "start": "わたしは",
-     "text": "わたしは知ってました」 BG「わたしは帰ってしまいました。あとですか？」 HG「いやいえば、夏はそうでした」 CG「そうなんですね！なんかすぎて、もう、何ですか」 HG「孝も、ありがとうございます！」"
-    },
-    {
-     "start": "第一条",
-     "text": "第一条のミルフルアップのダイエーは、アルレノールではルンのトルブレーの乱を大きく保有する。 ルーマンは、(e ) は家庭と音楽の運命が大きいです。 スーパーファーゲ、アニメのパトを一般に彼の人気を認識した。 また、ボンドはCrosham"
-    },
-    {
-     "start": "この法律において",
-     "text": "この法律において、養組、小林島、明治2004年11月、2008年12月26日閲覧。 キャラクターンの2020年6月5日閲覧。 カジノールガレカイズ チャールズ・ビリジッピー (2006年4月28日). 日本テレビドラマ、2007年6月18日閲覧。 <w"
-    }
-   ],
-   "loopPct": 5.56,
-   "movedBody": false
-  },
-  {
    "at": "2026-09-19T15:03:17Z",
    "val": 3.6412,
    "prev": 3.6412,
@@ -12441,9 +12380,72 @@
    ],
    "loopPct": 1.06,
    "movedBody": false
+  },
+  {
+   "at": "2026-09-30T02:19:44Z",
+   "val": 3.082,
+   "prev": 3.0892,
+   "valTag": "fixed-holdout-v1",
+   "stoppedAt": 177,
+   "stuck": 0,
+   "evalTag": "fixed-ix-v1",
+   "secPerStep": 23.2392,
+   "steps": 300,
+   "bpc": 3.6478,
+   "charsPerTok": 1.2189,
+   "score": 2.2351,
+   "scoreW": 2.0,
+   "scoreMode": "talk",
+   "finishMix": 0.5,
+   "lineage": "L1",
+   "layers": 16,
+   "params": 117914880,
+   "chars": 1045308899,
+   "tokens": 857567631,
+   "grew": 0,
+   "rolledBack": false,
+   "ownVal": null,
+   "ownScore": null,
+   "d": 768,
+   "loops": 1,
+   "spread": 3.4636,
+   "bytes": 1415115957,
+   "heads": 6,
+   "ctx": 512,
+   "vocab": 6000,
+   "kind": "bpe",
+   "arch": "tpp-loop",
+   "wantWider": false,
+   "layerCap": 16,
+   "mixChanged": false,
+   "bySrc": {
+    "laws": 4.5156,
+    "wiki": 3.2547,
+    "aozora": 3.5766,
+    "hanrei": 3.6641,
+    "kokkai": 2.8131,
+    "web": 3.097,
+    "talk": 2.2351
+   },
+   "wrote": [
+    {
+     "start": "わたしは",
+     "text": "わたしは、３月１４日には、これを受けて、その３月１０日には、その３月１日以降に、１２日間に一日１回目のカンテルを巻き起こし、カンタベリーしていた。 １１日午後６時３０分、Ｈに対し、カントリーヌ合金減免を行い、同日午後１０時ころに、カントリーディングに起きた"
+    },
+    {
+     "start": "第一条",
+     "text": "第一条又ハ通知書ISJ』リンケー ファイル:IP電子able.jpg|ロックオフィシャルフィッシュ ファイル:Intender-band.jpg|ピーター・オブ・ザ・ホール ファイル:Insingendny-Tackensiod Osakanisu-ba"
+    },
+    {
+     "start": "この法律において",
+     "text": "この法律において斧な意味を持っていて、柑橘の神を殺すのは、すでに19世紀後半に世界のなかでもトルコが大事な女性に根付いていたという。 1988年 - デイヴィッド・エレクトリックス・メルティングス （ 英語版 ） が開けていた オーズ・"
+    }
+   ],
+   "loopPct": 1.63,
+   "movedBody": false
   }
  ],
- "bestVal": 3.085,
+ "bestVal": 3.082,
  "layers": 16,
  "params": 117914880,
  "born": "2026-09-08T15:11:54Z",
@@ -12491,5 +12493,5 @@
  ],
  "wantWider": false,
  "nextD": 768,
- "bad": 2
+ "bad": 0
 }
