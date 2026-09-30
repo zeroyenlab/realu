@@ -1,67 +1,6 @@
 {
  "runs": [
   {
-   "at": "2026-09-20T04:56:27Z",
-   "val": 3.7394,
-   "prev": 3.7394,
-   "valTag": "fixed-holdout-v1",
-   "stoppedAt": 180,
-   "secPerStep": 22.445,
-   "steps": 300,
-   "bpc": 4.4259,
-   "charsPerTok": 1.2189,
-   "score": 2.4355,
-   "scoreW": 2.0,
-   "scoreMode": "talk",
-   "finishMix": 0.5,
-   "lineage": "L1",
-   "layers": 16,
-   "params": 117914880,
-   "chars": 1045308899,
-   "tokens": 857567631,
-   "grew": 0,
-   "rolledBack": true,
-   "ownVal": 3.591,
-   "ownScore": 2.5301,
-   "d": 768,
-   "loops": 1,
-   "spread": 3.6371,
-   "bytes": 1415115957,
-   "heads": 6,
-   "ctx": 512,
-   "vocab": 6000,
-   "kind": "bpe",
-   "arch": "tpp-loop",
-   "wantWider": false,
-   "layerCap": 16,
-   "mixChanged": false,
-   "bySrc": {
-    "laws": 5.4631,
-    "wiki": 3.7957,
-    "aozora": 4.0697,
-    "hanrei": 4.3601,
-    "kokkai": 3.2819,
-    "web": 3.5396,
-    "talk": 2.5301
-   },
-   "wrote": [
-    {
-     "start": "わたしは",
-     "text": "わたしはもちろん、この話はよく使っているばかりできない、そういうこともしたので、そういうことでございます。」 AB「こちらこそ、私もそれでも二人ほど、、ゆっくりでは、やはりこういうふうに思います。」 AB「確かに、今は、何か、一体、一件、あ、そういうふ"
-    },
-    {
-     "start": "第一条",
-     "text": "第一条「準的に必要な要因」と「止審」と読み替えるものとする。 （|「ミュエンジャー」） ロボット市場 achooresvestricesstersselarusstisonaChat> AB「アニメーション」 Exochは、2013年3月20日に簡単に「アラブ・ア"
-    },
-    {
-     "start": "この法律において",
-     "text": "この法律においてじたことですね！今日はどうですか？」 CH「オーバーではオットワールドよりも昨日のキャラもありますね。」 ER「そうなんですね。ひとりでしたか？キャラクターが好きですか？」 CH「マッカートトリーはアニメも好きですよね！あ"
-    }
-   ],
-   "loopPct": 4.66,
-   "movedBody": false
-  },
-  {
    "at": "2026-09-20T06:11:58Z",
    "val": 3.6533,
    "prev": 3.7394,
@@ -12465,6 +12404,69 @@
    ],
    "loopPct": 3.26,
    "movedBody": false
+  },
+  {
+   "at": "2026-09-30T17:37:30Z",
+   "val": 3.071,
+   "prev": 3.0704,
+   "valTag": "fixed-holdout-v1",
+   "stoppedAt": 0,
+   "stuck": 0,
+   "evalTag": "fixed-ix-v1",
+   "secPerStep": 12.9293,
+   "steps": 300,
+   "bpc": 3.6347,
+   "charsPerTok": 1.2189,
+   "score": 2.2253,
+   "scoreW": 2.0,
+   "scoreMode": "talk",
+   "finishMix": 0.5,
+   "lineage": "L1",
+   "layers": 16,
+   "params": 117914880,
+   "chars": 1045308899,
+   "tokens": 857567631,
+   "grew": 0,
+   "rolledBack": false,
+   "ownVal": null,
+   "ownScore": null,
+   "d": 768,
+   "loops": 1,
+   "spread": 3.6072,
+   "bytes": 1415115957,
+   "heads": 6,
+   "ctx": 512,
+   "vocab": 6000,
+   "kind": "bpe",
+   "arch": "tpp-loop",
+   "wantWider": false,
+   "layerCap": 16,
+   "mixChanged": false,
+   "bySrc": {
+    "laws": 4.483,
+    "wiki": 3.2471,
+    "aozora": 3.5671,
+    "hanrei": 3.6519,
+    "kokkai": 2.8064,
+    "web": 3.0876,
+    "talk": 2.2253
+   },
+   "wrote": [
+    {
+     "start": "わたしは",
+     "text": "わたしは、ドイツ政府にはドイツ政府といたしまして、政府としての審議を重ねておるところのこの予算を各会派から成立しなければ、これは当然に私は求められております。そうして、その実態に即ち、私の反対というものは、その道を開くべきだ、こういうことのもとに、私はそのことを、または政治の信任を果たさなければなりま"
+    },
+    {
+     "start": "第一条",
+     "text": "第一条によって、その実実は古代よりもこの古代で、後世中の王国は常に古代ギリシア人と古代ギリシア人の古代に変賅されている。 加古代は後期に、エジプト世界をはじめ王国を結成しており、古代ギリシア人にはもたらされる。 ギリシア人 （ 英語版"
+    },
+    {
+     "start": "この法律において",
+     "text": "この法律において「 」は「 」に由来する。 これらは「 」（しかん ）と呼ばれた [ 27 ] 。 このため、成功した「 Dobe Seven 」は、中世以前には ロシア や 1972年 に コンスタンティン で、 大規模 などから 独立 した。 イギリス では、"
+    }
+   ],
+   "loopPct": 0.85,
+   "movedBody": false
   }
  ],
  "bestVal": 3.0704,
@@ -12515,5 +12517,5 @@
  ],
  "wantWider": false,
  "nextD": 768,
- "bad": 1
+ "bad": 2
 }
