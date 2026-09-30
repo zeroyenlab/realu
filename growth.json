@@ -1,67 +1,6 @@
 {
  "runs": [
   {
-   "at": "2026-09-20T06:11:58Z",
-   "val": 3.6533,
-   "prev": 3.7394,
-   "valTag": "fixed-holdout-v1",
-   "stoppedAt": 180,
-   "secPerStep": 22.4737,
-   "steps": 300,
-   "bpc": 4.3239,
-   "charsPerTok": 1.2189,
-   "score": 2.3954,
-   "scoreW": 2.0,
-   "scoreMode": "talk",
-   "finishMix": 0.5,
-   "lineage": "L1",
-   "layers": 16,
-   "params": 117914880,
-   "chars": 1045308899,
-   "tokens": 857567631,
-   "grew": 0,
-   "rolledBack": false,
-   "ownVal": null,
-   "ownScore": null,
-   "d": 768,
-   "loops": 1,
-   "spread": 3.5617,
-   "bytes": 1415115957,
-   "heads": 6,
-   "ctx": 512,
-   "vocab": 6000,
-   "kind": "bpe",
-   "arch": "tpp-loop",
-   "wantWider": false,
-   "layerCap": 16,
-   "mixChanged": false,
-   "bySrc": {
-    "laws": 5.4323,
-    "wiki": 3.7418,
-    "aozora": 3.9748,
-    "hanrei": 4.2478,
-    "kokkai": 3.1541,
-    "web": 3.5097,
-    "talk": 2.3954
-   },
-   "wrote": [
-    {
-     "start": "わたしは",
-     "text": "わたしは暑くなるようだろうし。」 DF「そうなんですよね。すぐやつになってしまったら穴力とかも好きだったんですか？」 DF「見ることができるんですね、今日は勉強に行ったのですが、田舎は頭を嫌って山とかも好きです。」 DF「そうなんですね"
-    },
-    {
-     "start": "第一条",
-     "text": "第一条監理であるときに、使用する者に対し、法人いない場合は、当該十五歳（船員保険の議決権又は第百十一年に移転しなければならない。 中小企業運営災害を添えて、に採決をして司法法の施行の際第三十六条第一項又は第二十三条第一項及び当該同条に規定する範囲所得税を除く。）又は海上保安庁は、当該が発生させることができる。 （区域法第五十六条第二項第一号） 第二十四条の三十七第二項及び第十五条第二項（被合併らかじめ、第七十条第三項に規定する検察署でな"
-    },
-    {
-     "start": "この法律において",
-     "text": "この法律においてダタタミ�業ラタジオ14 2017年3月11日閲覧。 ↑ 闇田生 「 鳥取のち山 」『 3月31日時点の オリジナル よりアーク 2018年12月5日。 ↑ 『 日本神社 』水空気がNHKに多くあり、ネット中"
-    }
-   ],
-   "loopPct": 2.24,
-   "movedBody": false
-  },
-  {
    "at": "2026-09-20T07:27:32Z",
    "val": 3.5476,
    "prev": 3.6533,
@@ -12467,9 +12406,72 @@
    ],
    "loopPct": 0.85,
    "movedBody": false
+  },
+  {
+   "at": "2026-09-30T18:54:06Z",
+   "val": 3.0657,
+   "prev": 3.071,
+   "valTag": "fixed-holdout-v1",
+   "stoppedAt": 158,
+   "stuck": 0,
+   "evalTag": "fixed-ix-v1",
+   "secPerStep": 26.3782,
+   "steps": 300,
+   "bpc": 3.6285,
+   "charsPerTok": 1.2189,
+   "score": 2.2253,
+   "scoreW": 2.0,
+   "scoreMode": "talk",
+   "finishMix": 0.5,
+   "lineage": "L1",
+   "layers": 16,
+   "params": 117914880,
+   "chars": 1045308899,
+   "tokens": 857567631,
+   "grew": 0,
+   "rolledBack": false,
+   "ownVal": null,
+   "ownScore": null,
+   "d": 768,
+   "loops": 1,
+   "spread": 3.2066,
+   "bytes": 1415115957,
+   "heads": 6,
+   "ctx": 512,
+   "vocab": 6000,
+   "kind": "bpe",
+   "arch": "tpp-loop",
+   "wantWider": false,
+   "layerCap": 16,
+   "mixChanged": false,
+   "bySrc": {
+    "laws": 4.4822,
+    "wiki": 3.2408,
+    "aozora": 3.5599,
+    "hanrei": 3.6523,
+    "kokkai": 2.8017,
+    "web": 3.0816,
+    "talk": 2.2253
+   },
+   "wrote": [
+    {
+     "start": "わたしは",
+     "text": "わたしは、日本は日本のように日本から全面的に戦略的取り組みはないのであります。 次に、日本のＥＥＣ、Ｆ七二三、日米安保三三四と日本の参加国と、今後の国際情勢等を通じたラッケを含め、国際社会の安全保障と一体とならざるを得ないのであります。 日本を守るという程度の経済反対も、世界の平和"
+    },
+    {
+     "start": "第一条",
+     "text": "第一条られていることである。 <記事 ニスノン> ニュージャージャージー（ ）は、フランスそのものの考えで、1960年代のロンドンに絵画を描いたイギリス、アンダージュに出版した「オレンジ」の言語策定によって、1967年にはロンドンのフランス語版に用"
+    },
+    {
+     "start": "この法律において",
+     "text": "この法律において「CMNN WINCIR」の「CMR-POR」が登場し、CMSの「LAMINON FM」が開催されることとなった。 2017年9月24日、ECMRON7が「Linux ROM ROCARID ROM」にて、同年11月23日にNetf"
+    }
+   ],
+   "loopPct": 7.06,
+   "movedBody": false
   }
  ],
- "bestVal": 3.0704,
+ "bestVal": 3.0657,
  "layers": 16,
  "params": 117914880,
  "born": "2026-09-08T15:11:54Z",
@@ -12517,5 +12519,5 @@
  ],
  "wantWider": false,
  "nextD": 768,
- "bad": 2
+ "bad": 3
 }
