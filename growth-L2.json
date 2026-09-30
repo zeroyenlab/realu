@@ -1,67 +1,6 @@
 {
  "runs": [
   {
-   "at": "2026-09-19T18:50:22Z",
-   "val": 3.3375,
-   "prev": 3.3375,
-   "valTag": "fixed-holdout-v1",
-   "stoppedAt": 427,
-   "secPerStep": 8.8569,
-   "steps": 878,
-   "bpc": 3.9502,
-   "charsPerTok": 1.2189,
-   "score": 2.2526,
-   "scoreW": 2.0,
-   "scoreMode": "talk",
-   "finishMix": 0.85,
-   "lineage": "L2",
-   "layers": 11,
-   "params": 37890560,
-   "chars": 1045308899,
-   "tokens": 857567631,
-   "grew": 0,
-   "rolledBack": true,
-   "ownVal": 3.2938,
-   "ownScore": 2.3672,
-   "d": 512,
-   "loops": 1,
-   "spread": 3.0028,
-   "bytes": 454783041,
-   "heads": 8,
-   "ctx": 512,
-   "vocab": 6000,
-   "kind": "bpe",
-   "arch": "tpp-loop",
-   "wantWider": false,
-   "layerCap": 16,
-   "mixChanged": false,
-   "bySrc": {
-    "laws": 4.6522,
-    "wiki": 3.3652,
-    "aozora": 3.713,
-    "hanrei": 4.0062,
-    "kokkai": 2.9515,
-    "web": 3.2589,
-    "talk": 2.3672
-   },
-   "wrote": [
-    {
-     "start": "わたしは",
-     "text": "わたしはお咒めです。」 EC「私は唐揚げのお嬢い出かけて、咒めになりました。」 EB「お嬢様、魚牛乳かわいいかも！いい最新作でしたね！」 EC「確かに魚牛乳って言います」 EB「わかります！うちも結構好き"
-    },
-    {
-     "start": "第一条",
-     "text": "第一条署名ので、二〇二年一月に開催された。 2009年にはNNNN系列と非対式系列で、CRUBENTV、12/10の3.9.9×19:30～12:30～19:30～12:30～12:10～14:30～14:30～12:40�"
-    },
-    {
-     "start": "この法律において",
-     "text": "この法律において「今日はお仕事ですか？」 DE「今日はお休みでした。お休みの日って、お休みの日ってあります。」 DV「お休みの日は何にしますか？」 DE「特に予定の日は仕事の日ですが、最近は学校の趣旨とかにしました。」 DV「そうなんですね！今な"
-    }
-   ],
-   "loopPct": 19.82,
-   "movedBody": false
-  },
-  {
    "at": "2026-09-19T20:07:33Z",
    "val": 3.3375,
    "prev": 3.3375,
@@ -12449,6 +12388,69 @@
    ],
    "loopPct": 34.52,
    "movedBody": false
+  },
+  {
+   "at": "2026-09-30T08:37:17Z",
+   "val": 2.7202,
+   "prev": 2.7188,
+   "valTag": "fixed-holdout-v1",
+   "stoppedAt": 363,
+   "stuck": 0,
+   "evalTag": "fixed-ix-v1",
+   "secPerStep": 10.6067,
+   "steps": 611,
+   "bpc": 3.2196,
+   "charsPerTok": 1.2189,
+   "score": 2.0654,
+   "scoreW": 2.0,
+   "scoreMode": "talk",
+   "finishMix": 0.85,
+   "lineage": "L2",
+   "layers": 13,
+   "params": 44216832,
+   "chars": 1045308899,
+   "tokens": 857567631,
+   "grew": 0,
+   "rolledBack": false,
+   "ownVal": null,
+   "ownScore": null,
+   "d": 512,
+   "loops": 1,
+   "spread": 2.7499,
+   "bytes": 530714761,
+   "heads": 8,
+   "ctx": 512,
+   "vocab": 6000,
+   "kind": "bpe",
+   "arch": "tpp-loop",
+   "wantWider": false,
+   "layerCap": 16,
+   "mixChanged": false,
+   "bySrc": {
+    "laws": 3.6631,
+    "wiki": 2.8931,
+    "aozora": 3.2041,
+    "hanrei": 3.4161,
+    "kokkai": 2.5277,
+    "web": 2.8084,
+    "talk": 2.0654
+   },
+   "wrote": [
+    {
+     "start": "わたしは",
+     "text": "わたしは1848年の10月に、東条市（後の宮ノ島町）に西条市（後の宮ノ島町）に、西条市（後の宮ノ島町）に編入された 。 宮ノ島連盟は1871年（明治5年）までは西条市となっていたが、1882年（明治15年）に西条市（後の宮ノ"
+    },
+    {
+     "start": "第一条",
+     "text": "第一条」と「条及び」とあるのは「及び」と、同号中「」とあるのは「」と、「」とあるのは「（１）から（３）まで」と、同条第三項中「」とあるのは「（２）から（２）まで」と、「」とあるのは「（３）から（３）まで」と、遂に「（２）から（３）まで」とあるのは「（３）から（３）までに掲げる場合には」と、「（３）から（３）まで」とあるのは「（３）から（４）まで"
+    },
+    {
+     "start": "この法律において",
+     "text": "この法律において命名権や印章権等の性質、すなわち 紀元前326年 - 紀元前300年 ） - 第4次小笠原の戦いで紀元前341年に勝利。 紀元前214年 - 紀元前600年に勝利。 紀元前324年 - 紀元前325年、紀"
+    }
+   ],
+   "loopPct": 2.71,
+   "movedBody": false
   }
  ],
  "bestVal": 2.7188,
@@ -12499,5 +12501,5 @@
  ],
  "wantWider": false,
  "nextD": 512,
- "bad": 2
+ "bad": 0
 }
