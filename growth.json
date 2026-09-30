@@ -1,67 +1,6 @@
 {
  "runs": [
   {
-   "at": "2026-09-20T03:36:12Z",
-   "val": 3.7394,
-   "prev": 3.6314,
-   "valTag": "fixed-holdout-v1",
-   "stoppedAt": 0,
-   "secPerStep": 11.0271,
-   "steps": 300,
-   "bpc": 4.4259,
-   "charsPerTok": 1.2189,
-   "score": 2.4355,
-   "scoreW": 2.0,
-   "scoreMode": "talk",
-   "finishMix": 0.5,
-   "lineage": "L1",
-   "layers": 16,
-   "params": 117914880,
-   "chars": 1045308899,
-   "tokens": 857567631,
-   "grew": 0,
-   "rolledBack": false,
-   "ownVal": null,
-   "ownScore": null,
-   "d": 768,
-   "loops": 1,
-   "spread": 4.137,
-   "bytes": 1415115957,
-   "heads": 6,
-   "ctx": 512,
-   "vocab": 6000,
-   "kind": "bpe",
-   "arch": "tpp-loop",
-   "wantWider": false,
-   "layerCap": 16,
-   "mixChanged": false,
-   "bySrc": {
-    "laws": 5.7942,
-    "wiki": 3.9217,
-    "aozora": 4.1766,
-    "hanrei": 4.4241,
-    "kokkai": 3.3989,
-    "web": 3.63,
-    "talk": 2.4355
-   },
-   "wrote": [
-    {
-     "start": "わたしは",
-     "text": "わたしは、彼と同様に、兵士に関する聖地は彼の人間を持ったものであった。 容疑者として、豊かにいた自らの人々の枋名を描くのに、いろいろまで彼を持っている。 そのまま記録しているのは、自由の二つにとっても、彼が左足を調べたということが言われていますが、それをもって、水分を持"
-    },
-    {
-     "start": "第一条",
-     "text": "第一条更新額（2022年9月1日） 『citienticiavessshinttipart）』（2026年2月22日）3月23日). 2022年9月24日閲覧。 ↑ 東遺形（2008年9月23日）～2008年1月21日時"
-    },
-    {
-     "start": "この法律において",
-     "text": "この法律において「じゃあ、それをやったりしましょうか。」 CJ「そうですね。でも、何か挦えたので、もう一つ心配では眠っていません」 CJ「いいですね！私は今はゲームみたいですか？」 CJ「私もゆっくりですね。」 CJ「そうですね。私はそのま"
-    }
-   ],
-   "loopPct": 9.72,
-   "movedBody": false
-  },
-  {
    "at": "2026-09-20T04:56:27Z",
    "val": 3.7394,
    "prev": 3.7394,
@@ -12463,9 +12402,72 @@
    ],
    "loopPct": 0.0,
    "movedBody": false
+  },
+  {
+   "at": "2026-09-30T16:24:39Z",
+   "val": 3.0704,
+   "prev": 3.0707,
+   "valTag": "fixed-holdout-v1",
+   "stoppedAt": 142,
+   "stuck": 0,
+   "evalTag": "fixed-ix-v1",
+   "secPerStep": 29.8247,
+   "steps": 300,
+   "bpc": 3.6341,
+   "charsPerTok": 1.2189,
+   "score": 2.2205,
+   "scoreW": 2.0,
+   "scoreMode": "talk",
+   "finishMix": 0.5,
+   "lineage": "L1",
+   "layers": 16,
+   "params": 117914880,
+   "chars": 1045308899,
+   "tokens": 857567631,
+   "grew": 0,
+   "rolledBack": false,
+   "ownVal": null,
+   "ownScore": null,
+   "d": 768,
+   "loops": 1,
+   "spread": 3.5848,
+   "bytes": 1415115957,
+   "heads": 6,
+   "ctx": 512,
+   "vocab": 6000,
+   "kind": "bpe",
+   "arch": "tpp-loop",
+   "wantWider": false,
+   "layerCap": 16,
+   "mixChanged": false,
+   "bySrc": {
+    "laws": 4.4847,
+    "wiki": 3.2445,
+    "aozora": 3.5622,
+    "hanrei": 3.6556,
+    "kokkai": 2.8057,
+    "web": 3.0841,
+    "talk": 2.2205
+   },
+   "wrote": [
+    {
+     "start": "わたしは",
+     "text": "わたしは蜜を食べてしまうと、魚苦手でもいいのですが。」 DF「えー、そうなんですね。何か集中できるお好きなんですか？」 DC「いえ、大好きです！まぁ、最近食べますか？」 DF「いえ、そういうのが苦手なんです。」"
+    },
+    {
+     "start": "第一条",
+     "text": "第一条ワクチン、クラクトチャクチャク、ブラジャンクラブ、 バンク 、 ホワイトハウス 、 バンクラブ 、 ワールドシリーズ などその後、 バンクラブ や ナイトクラブ のランクインも設置されるなど、地域の都市部を確認することも可能であります。 メディアが入った"
+    },
+    {
+     "start": "この法律において",
+     "text": "この法律において、次に掲げるものとする。 器具は、味で、右側は、汗をかき、極めて重要な木材であり、薄い湿場（遠慮）と呼ばれることもある。 バイオリオン（ スイッチ ）は、作中では、雲のように、漢字表よりも大きな槍を持つ。 「雪」は、個々の「雪」を「ソ」"
+    }
+   ],
+   "loopPct": 3.26,
+   "movedBody": false
   }
  ],
- "bestVal": 3.0707,
+ "bestVal": 3.0704,
  "layers": 16,
  "params": 117914880,
  "born": "2026-09-08T15:11:54Z",
@@ -12513,5 +12515,5 @@
  ],
  "wantWider": false,
  "nextD": 768,
- "bad": 0
+ "bad": 1
 }
