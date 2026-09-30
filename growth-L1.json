@@ -1,67 +1,6 @@
 {
  "runs": [
   {
-   "at": "2026-09-19T20:12:45Z",
-   "val": 3.65,
-   "prev": 3.7597,
-   "valTag": "fixed-holdout-v1",
-   "stoppedAt": 158,
-   "secPerStep": 25.9254,
-   "steps": 300,
-   "bpc": 4.3201,
-   "charsPerTok": 1.2189,
-   "score": 2.4591,
-   "scoreW": 2.0,
-   "scoreMode": "talk",
-   "finishMix": 0.5,
-   "lineage": "L1",
-   "layers": 16,
-   "params": 117914880,
-   "chars": 1045308899,
-   "tokens": 857567631,
-   "grew": 0,
-   "rolledBack": false,
-   "ownVal": null,
-   "ownScore": null,
-   "d": 768,
-   "loops": 1,
-   "spread": 3.837,
-   "bytes": 1415115957,
-   "heads": 6,
-   "ctx": 512,
-   "vocab": 6000,
-   "kind": "bpe",
-   "arch": "tpp-loop",
-   "wantWider": false,
-   "layerCap": 16,
-   "mixChanged": false,
-   "bySrc": {
-    "laws": 5.6795,
-    "wiki": 3.8372,
-    "aozora": 4.0895,
-    "hanrei": 4.3049,
-    "kokkai": 3.3572,
-    "web": 3.5837,
-    "talk": 2.4591
-   },
-   "wrote": [
-    {
-     "start": "わたしは",
-     "text": "わたしは男のように自分はもう一度のおいで、母のことだとで、これだけ聞いたのではないので、それはあいまおに聞いたいんですよ。それをやって、みんなが分かってしまうと言わなかったのですが、まだ私たちは、今度合い、明日でやってくるということは、一度も心をつくるというふ"
-    },
-    {
-     "start": "第一条",
-     "text": "第一条ヲ役員ガラャマンタジャンゼンノンに「Beeko」「わざるし」「おお？」 店「答えますが、結局、ご案内可能です」 客「そうなんですか？」 店「はい、駐車場が無料で利用できるのが出来ないです」 客「そうなんですね。では、何かありま"
-    },
-    {
-     "start": "この法律において",
-     "text": "この法律において主務次条第三項から施行令間の規定によりそに該当する場合キャッシュタ�林クショップパークシーウィンドカードスタジオダニスモードが良いんですよ」 BO「およそ2年末のスタッフは全く魚が増えました」 GH「長い/チャンプンですか？」 BO「BOKAYO POXがいいですね"
-    }
-   ],
-   "loopPct": 2.43,
-   "movedBody": false
-  },
-  {
    "at": "2026-09-19T21:28:37Z",
    "val": 3.7043,
    "prev": 3.65,
@@ -12451,6 +12390,69 @@
    ],
    "loopPct": 2.28,
    "movedBody": false
+  },
+  {
+   "at": "2026-09-30T08:43:11Z",
+   "val": 3.077,
+   "prev": 3.0761,
+   "valTag": "fixed-holdout-v1",
+   "stoppedAt": 159,
+   "stuck": 0,
+   "evalTag": "fixed-ix-v1",
+   "secPerStep": 26.1804,
+   "steps": 300,
+   "bpc": 3.6419,
+   "charsPerTok": 1.2189,
+   "score": 2.2265,
+   "scoreW": 2.0,
+   "scoreMode": "talk",
+   "finishMix": 0.5,
+   "lineage": "L1",
+   "layers": 16,
+   "params": 117914880,
+   "chars": 1045308899,
+   "tokens": 857567631,
+   "grew": 0,
+   "rolledBack": false,
+   "ownVal": null,
+   "ownScore": null,
+   "d": 768,
+   "loops": 1,
+   "spread": 3.0281,
+   "bytes": 1415115957,
+   "heads": 6,
+   "ctx": 512,
+   "vocab": 6000,
+   "kind": "bpe",
+   "arch": "tpp-loop",
+   "wantWider": false,
+   "layerCap": 16,
+   "mixChanged": false,
+   "bySrc": {
+    "laws": 4.5006,
+    "wiki": 3.2498,
+    "aozora": 3.5716,
+    "hanrei": 3.656,
+    "kokkai": 2.8096,
+    "web": 3.0899,
+    "talk": 2.2265
+   },
+   "wrote": [
+    {
+     "start": "わたしは",
+     "text": "わたしは、わが軍でありましても、軍事的的中軍なり、自由主義に追い込まれてしまうという、戦闘をつくったわけであります。 今回、国の軍事運用、この点をお尋ねしているところであります。」 AB「国民の秘書は、軍事力を持って軍事力を持って、東南アジアの軍事力がわ"
+    },
+    {
+     "start": "第一条",
+     "text": "第一条提出書hpg|監察翼彩書 ファイル:Shahor of Shript|小田急電鉄 ファイル:Shirako審査選書 form.jpg|関西急行線 ファイル:Romachi Shidako Stranchrow.jpg|横浜大浜�"
+    },
+    {
+     "start": "この法律において",
+     "text": "この法律において「大量幼児」を結ぶようになる。 清酒の首を封生じるとき、これは、周りの光をあらわしている。 三味線の組み合わせを「てんたちのかき」と呼ぶ。 「こはちょ」「おかしい」と「か……」は、何の主人は二度と呼び、道具は何をしている。 この間、配合"
+    }
+   ],
+   "loopPct": 7.09,
+   "movedBody": false
   }
  ],
  "bestVal": 3.0761,
@@ -12501,5 +12503,5 @@
  ],
  "wantWider": false,
  "nextD": 768,
- "bad": 2
+ "bad": 0
 }
