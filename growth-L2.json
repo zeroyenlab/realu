@@ -1,67 +1,6 @@
 {
  "runs": [
   {
-   "at": "2026-09-19T23:55:40Z",
-   "val": 3.0757,
-   "prev": 3.1931,
-   "valTag": "fixed-holdout-v1",
-   "stoppedAt": 430,
-   "secPerStep": 8.7812,
-   "steps": 729,
-   "bpc": 3.6403,
-   "charsPerTok": 1.2189,
-   "score": 2.1661,
-   "scoreW": 2.0,
-   "scoreMode": "talk",
-   "finishMix": 0.85,
-   "lineage": "L2",
-   "layers": 11,
-   "params": 37890560,
-   "chars": 1045308899,
-   "tokens": 857567631,
-   "grew": 0,
-   "rolledBack": false,
-   "ownVal": null,
-   "ownScore": null,
-   "d": 512,
-   "loops": 1,
-   "spread": 3.1997,
-   "bytes": 454783041,
-   "heads": 8,
-   "ctx": 512,
-   "vocab": 6000,
-   "kind": "bpe",
-   "arch": "tpp-loop",
-   "wantWider": false,
-   "layerCap": 16,
-   "mixChanged": false,
-   "bySrc": {
-    "laws": 4.3284,
-    "wiki": 3.2006,
-    "aozora": 3.4984,
-    "hanrei": 3.8156,
-    "kokkai": 2.7895,
-    "web": 3.0978,
-    "talk": 2.1661
-   },
-   "wrote": [
-    {
-     "start": "わたしは",
-     "text": "わたしは、心近感とぞわれてもいいですね。」 GM「ありがとうございます。でも心の高いいところは苦手です。私も実は家出していたところが、あまり頑張ってないのは苦手です。」 GM「なるほど。心が痛いのですね。周りが苦手です。」 GM「個人的なところで"
-    },
-    {
-     "start": "第一条",
-     "text": "第一条協議会議長、 岩本春夫 、 井崎博幸 、 福島武雄 裁判長、 筑波 第二支部長、 紀野均 、 藤沢ジュニア と結婚 [ 36 ] 。 2015年9月11日、 神奈川県 立川市 のファンだった 柳田一次"
-    },
-    {
-     "start": "この法律において",
-     "text": "この法律において「ジャンボタクシー」が意外になる可能性がある。 5月15日 - 日本企業が「ジャンボタクシー株式会社」設立。実況者名の「ジャンボタクシー株式会社」設立。 9月15日 - 小泉春二が首相の首相会議に面会。 1月15日 - 福岡空港駅舎設置。日本航空株式会社"
-    }
-   ],
-   "loopPct": 2.6,
-   "movedBody": false
-  },
-  {
    "at": "2026-09-20T01:09:56Z",
    "val": 3.0463,
    "prev": 3.0757,
@@ -12457,6 +12396,69 @@
    ],
    "loopPct": 3.42,
    "movedBody": false
+  },
+  {
+   "at": "2026-09-30T13:51:46Z",
+   "val": 2.7188,
+   "prev": 2.7217,
+   "valTag": "fixed-holdout-v1",
+   "stoppedAt": 330,
+   "stuck": 0,
+   "evalTag": "fixed-ix-v1",
+   "secPerStep": 11.7253,
+   "steps": 611,
+   "bpc": 3.2179,
+   "charsPerTok": 1.2189,
+   "score": 2.0649,
+   "scoreW": 2.0,
+   "scoreMode": "talk",
+   "finishMix": 0.85,
+   "lineage": "L2",
+   "layers": 13,
+   "params": 44216832,
+   "chars": 1045308899,
+   "tokens": 857567631,
+   "grew": 0,
+   "rolledBack": false,
+   "ownVal": null,
+   "ownScore": null,
+   "d": 512,
+   "loops": 1,
+   "spread": 2.7898,
+   "bytes": 530714761,
+   "heads": 8,
+   "ctx": 512,
+   "vocab": 6000,
+   "kind": "bpe",
+   "arch": "tpp-loop",
+   "wantWider": false,
+   "layerCap": 16,
+   "mixChanged": false,
+   "bySrc": {
+    "laws": 3.6607,
+    "wiki": 2.8911,
+    "aozora": 3.2021,
+    "hanrei": 3.4148,
+    "kokkai": 2.5261,
+    "web": 2.8068,
+    "talk": 2.0649
+   },
+   "wrote": [
+    {
+     "start": "わたしは",
+     "text": "わたしはまだ暑いです」 FL「そうなんですね。私はいつも暑いんですが、暑いのが苦手で。。」 ED「そうなんですか！暑いですよね。」 FL「そうなんですよ。あなたは暑いのは苦手ですか？」 ED「苦手ですねー、私は"
+    },
+    {
+     "start": "第一条",
+     "text": "第一条第二号」と、「２５６万８７８６円」とあるのは「２５９万４５９４円」と、~砲弾１日２．４９１円のそれぞれ８２７万２８００円」とあるのは「２５８万４９００円」 <会議 2025-10-28 本会議> AB「第一 子ども・子育て支援法案（第２回国会衆議院送付）」 AA「議長"
+    },
+    {
+     "start": "この法律において",
+     "text": "この法律において年法律第三国外炒め物にする。 （定義） っては、民法（明治43年法律第18号） 民法（明治52年法律第15号） 民法（明治53年法律第2号） 民法（明治53年法律第1号） 民法（明治52年法律第20号） 民法（明治64年法律第1号） 民法（明治54年法律第1号） 民法（明治50年法律"
+    }
+   ],
+   "loopPct": 3.14,
+   "movedBody": false
   }
  ],
  "bestVal": 2.7188,
@@ -12507,5 +12509,5 @@
  ],
  "wantWider": false,
  "nextD": 512,
- "bad": 2
+ "bad": 5
 }
