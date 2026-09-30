@@ -1,67 +1,6 @@
 {
  "runs": [
   {
-   "at": "2026-09-20T06:06:50Z",
-   "val": 3.0674,
-   "prev": 3.0674,
-   "valTag": "fixed-holdout-v1",
-   "stoppedAt": 564,
-   "secPerStep": 6.6111,
-   "steps": 1055,
-   "bpc": 3.6305,
-   "charsPerTok": 1.2189,
-   "score": 2.2317,
-   "scoreW": 2.0,
-   "scoreMode": "talk",
-   "finishMix": 0.2,
-   "lineage": "L3",
-   "layers": 13,
-   "params": 25335168,
-   "chars": 1045308899,
-   "tokens": 857567631,
-   "grew": 0,
-   "rolledBack": true,
-   "ownVal": 3.1656,
-   "ownScore": 2.3375,
-   "d": 384,
-   "loops": 1,
-   "spread": 2.9389,
-   "bytes": 304134729,
-   "heads": 6,
-   "ctx": 512,
-   "vocab": 6000,
-   "kind": "bpe",
-   "arch": "tpp-loop",
-   "wantWider": false,
-   "layerCap": 16,
-   "mixChanged": false,
-   "bySrc": {
-    "laws": 4.4632,
-    "wiki": 3.3419,
-    "aozora": 3.6831,
-    "hanrei": 3.9339,
-    "kokkai": 2.8473,
-    "web": 3.151,
-    "talk": 2.3375
-   },
-   "wrote": [
-    {
-     "start": "わたしは",
-     "text": "わたしはあります。それが世界で何よりも大きいドイツ系のソ連もまず、米米間では組織的な判断ができなければならなくなってしまうと、米米間ではみずからが普通の会社を買ったり、しかもこの石油の買い立てを買い取りするということになっています。このこと、今日、日本の今日、アメ"
-    },
-    {
-     "start": "第一条",
-     "text": "第一条及びの周辺の地域地域地域地域地域地域地域地域地域地域地域地域地域地域地域地域地域地域地域地域地域帯地域地域地域地域の調査を網羽川地域地域地域地域地域地域における地域地域地域地域地域地域地域における地域地域地域地域地域において、地域地域地域地域と地域地域地域地域地域地域の皆様や地域地域地域づけの推進を図りつつ、地域地域地域地域地域社会事業へと言及することが必要であると考えております。 次に、"
-    },
-    {
-     "start": "この法律において",
-     "text": "この法律において簼細胞系(YAMA)と呼称される。 CICL como i Somo i Somota, CICL comota, Newalris, Newalds, Newallybyra, Newallybyra, Newally"
-    }
-   ],
-   "loopPct": 34.95,
-   "movedBody": false
-  },
-  {
    "at": "2026-09-20T07:07:55Z",
    "val": 3.0674,
    "prev": 3.0674,
@@ -12467,9 +12406,72 @@
    ],
    "loopPct": 31.58,
    "movedBody": false
+  },
+  {
+   "at": "2026-09-30T18:48:41Z",
+   "val": 2.7552,
+   "prev": 2.7555,
+   "valTag": "fixed-holdout-v1",
+   "stoppedAt": 557,
+   "stuck": 0,
+   "evalTag": "fixed-ix-v1",
+   "secPerStep": 6.7416,
+   "steps": 1152,
+   "bpc": 3.2611,
+   "charsPerTok": 1.2189,
+   "score": 2.1885,
+   "scoreW": 2.0,
+   "scoreMode": "talk",
+   "finishMix": 0.2,
+   "lineage": "L3",
+   "layers": 13,
+   "params": 25335168,
+   "chars": 1045308899,
+   "tokens": 857567631,
+   "grew": 0,
+   "rolledBack": false,
+   "ownVal": null,
+   "ownScore": null,
+   "d": 384,
+   "loops": 1,
+   "spread": 2.712,
+   "bytes": 304134793,
+   "heads": 6,
+   "ctx": 512,
+   "vocab": 6000,
+   "kind": "bpe",
+   "arch": "tpp-loop",
+   "wantWider": false,
+   "layerCap": 16,
+   "mixChanged": false,
+   "bySrc": {
+    "laws": 3.7496,
+    "wiki": 2.9304,
+    "aozora": 3.256,
+    "hanrei": 3.4622,
+    "kokkai": 2.5549,
+    "web": 2.8373,
+    "talk": 2.1885
+   },
+   "wrote": [
+    {
+     "start": "わたしは",
+     "text": "わたしは、職員の職能をほんとうに使わず、研究課長として活動を始めた [ 43 ] 。 アメリカ議会議員が日本には「日本人、中国を含む諸国」と呼ばれるようになり、日本政府は、「アフリカが中国、台湾、台湾などと呼んでいる者に、日本人が中国をはじめとして日本人が中国を分離した [ 44 ] 。"
+    },
+    {
+     "start": "第一条",
+     "text": "第一条されている造船施設で、日本海側では、ほぼ現場に配置されている。 国鉄時代の1958年（昭和33年）に台風第1号が 第95号 を 計226トン で破損したことを公表したため、地元では「コスモス」が 第1号 となり、「 週の1000円 」を 土 で購入したという [ 3"
+    },
+    {
+     "start": "この法律において",
+     "text": "この法律において「勅語」（後述）と号号（詳細は「勅語」）を参照。 勅語は「勅語」（れんじゅ）と呼ばれ、勅語は「勅語」（詳細は「勅語」）である。 勅語と呼ばれるものは勅語の前には勅語の語であるが、勅語と呼ばれるとも称されることが多い。「勅語"
+    }
+   ],
+   "loopPct": 6.8,
+   "movedBody": false
   }
  ],
- "bestVal": 2.7555,
+ "bestVal": 2.7552,
  "layers": 13,
  "params": 25335168,
  "born": "2026-09-12T18:05:42Z",
@@ -12517,5 +12519,5 @@
  ],
  "wantWider": false,
  "nextD": 384,
- "bad": 4
+ "bad": 1
 }
