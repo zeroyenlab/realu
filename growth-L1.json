@@ -1,67 +1,6 @@
 {
  "runs": [
   {
-   "at": "2026-09-21T08:30:12Z",
-   "val": 3.293,
-   "prev": 3.293,
-   "valTag": "fixed-holdout-v1",
-   "stoppedAt": 159,
-   "secPerStep": 25.7918,
-   "steps": 300,
-   "bpc": 3.8975,
-   "charsPerTok": 1.2189,
-   "score": 2.2926,
-   "scoreW": 2.0,
-   "scoreMode": "talk",
-   "finishMix": 0.5,
-   "lineage": "L1",
-   "layers": 16,
-   "params": 117914880,
-   "chars": 1045308899,
-   "tokens": 857567631,
-   "grew": 0,
-   "rolledBack": true,
-   "ownVal": 3.4105,
-   "ownScore": 2.4129,
-   "d": 768,
-   "loops": 1,
-   "spread": 3.326,
-   "bytes": 1415115957,
-   "heads": 6,
-   "ctx": 512,
-   "vocab": 6000,
-   "kind": "bpe",
-   "arch": "tpp-loop",
-   "wantWider": false,
-   "layerCap": 16,
-   "mixChanged": false,
-   "bySrc": {
-    "laws": 5.1418,
-    "wiki": 3.6127,
-    "aozora": 3.901,
-    "hanrei": 4.0121,
-    "kokkai": 3.0212,
-    "web": 3.3485,
-    "talk": 2.4129
-   },
-   "wrote": [
-    {
-     "start": "わたしは",
-     "text": "わたしはいかがですか？」 店「はい、ご利用ありがとうございました。」 客「京都への旅行を計画中でお願いします。」 店「かしこまりました。お待ちしております。」 客「では、駐車場が無料で利用できるところがいいです。」"
-    },
-    {
-     "start": "第一条",
-     "text": "第一条臨時措置法の改正は、この法案を一括して議題とし、全会一致をもって附帯決議をするのであります。」 AA「議長 これにて討論は、議長の質問の、日程は終了いたします。 政府は、日程は追加の緊急動議を提出いたします。 まず、委員長の報告を求めます。運輸委員長引輪男君。」 AB"
-    },
-    {
-     "start": "この法律において",
-     "text": "この法律において高い。 作品と言われる おや。」と言った 。 1954年（昭和6年）4月1日：『Sale Paros Station No.1』と、中央公一郎とのかけの黄江と見た男。 2010年 （平成23年）1月1日：『ちゃ"
-    }
-   ],
-   "loopPct": 1.66,
-   "movedBody": false
-  },
-  {
    "at": "2026-09-21T09:45:59Z",
    "val": 3.293,
    "prev": 3.293,
@@ -12509,9 +12448,72 @@
    ],
    "loopPct": 3.22,
    "movedBody": false
+  },
+  {
+   "at": "2026-10-01T21:29:12Z",
+   "val": 3.0441,
+   "prev": 3.0517,
+   "valTag": "fixed-holdout-v1",
+   "stoppedAt": 143,
+   "stuck": 0,
+   "evalTag": "fixed-ix-v1",
+   "secPerStep": 29.596,
+   "steps": 452,
+   "bpc": 3.603,
+   "charsPerTok": 1.2189,
+   "score": 2.2147,
+   "scoreW": 2.0,
+   "scoreMode": "talk",
+   "finishMix": 0.5,
+   "lineage": "L1",
+   "layers": 16,
+   "params": 117914880,
+   "chars": 1045308899,
+   "tokens": 857567631,
+   "grew": 0,
+   "rolledBack": false,
+   "ownVal": null,
+   "ownScore": null,
+   "d": 768,
+   "loops": 1,
+   "spread": 3.2226,
+   "bytes": 1415115957,
+   "heads": 6,
+   "ctx": 512,
+   "vocab": 6000,
+   "kind": "bpe",
+   "arch": "tpp-loop",
+   "wantWider": false,
+   "layerCap": 16,
+   "mixChanged": false,
+   "bySrc": {
+    "laws": 4.4325,
+    "wiki": 3.2174,
+    "aozora": 3.5387,
+    "hanrei": 3.6358,
+    "kokkai": 2.7826,
+    "web": 3.0621,
+    "talk": 2.2147
+   },
+   "wrote": [
+    {
+     "start": "わたしは",
+     "text": "わたしはその親しい女性であった。 2001年の10月には『 大総地方 』の中でも次のような出来事が出来た。 2002年の 2003年 のち、30の「 東京都 」の10280番台の 東京地方 で、『 大阪府 』の2003年の 東京都"
+    },
+    {
+     "start": "第一条",
+     "text": "第一条ディバスターは、藤子大学の訓練士、JR東日本大学が、JR東日本のPR神戸大学を中心とした、大学院横断でデータを利用して、2012年4月から2021年3月まで、コーポレートラインでは多くのテレビドラマがあった。 2014年 - 郊外のキャスト・ライダーにて"
+    },
+    {
+     "start": "この法律において",
+     "text": "この法律においてズーム臨時戦）：2012年9月28日。 ↑ “ 沖田と浜英一 ”. 大Ｃ徴用法. 2016年8月30日閲覧。 ↑ “ 「良いことし得る道」開幕戦に登場回 - 「古いゲリラ」昇進 ”. 三菱線 ("
+    }
+   ],
+   "loopPct": 3.48,
+   "movedBody": false
   }
  ],
- "bestVal": 3.0473,
+ "bestVal": 3.0441,
  "layers": 16,
  "params": 117914880,
  "born": "2026-09-08T15:11:54Z",
@@ -12559,5 +12561,5 @@
  ],
  "wantWider": false,
  "nextD": 768,
- "bad": 2
+ "bad": 0
 }
