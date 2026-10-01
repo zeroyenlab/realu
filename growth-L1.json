@@ -1,67 +1,6 @@
 {
  "runs": [
   {
-   "at": "2026-09-20T17:19:46Z",
-   "val": 3.3867,
-   "prev": 3.3867,
-   "valTag": "fixed-holdout-v1",
-   "stoppedAt": 156,
-   "secPerStep": 26.3223,
-   "steps": 300,
-   "bpc": 4.0084,
-   "charsPerTok": 1.2189,
-   "score": 2.3857,
-   "scoreW": 2.0,
-   "scoreMode": "talk",
-   "finishMix": 0.5,
-   "lineage": "L1",
-   "layers": 16,
-   "params": 117914880,
-   "chars": 1045308899,
-   "tokens": 857567631,
-   "grew": 0,
-   "rolledBack": true,
-   "ownVal": 3.3965,
-   "ownScore": 2.4577,
-   "d": 768,
-   "loops": 1,
-   "spread": 3.5735,
-   "bytes": 1415115957,
-   "heads": 6,
-   "ctx": 512,
-   "vocab": 6000,
-   "kind": "bpe",
-   "arch": "tpp-loop",
-   "wantWider": false,
-   "layerCap": 16,
-   "mixChanged": false,
-   "bySrc": {
-    "laws": 5.2249,
-    "wiki": 3.6423,
-    "aozora": 3.8006,
-    "hanrei": 4.0003,
-    "kokkai": 3.1893,
-    "web": 3.4302,
-    "talk": 2.4577
-   },
-   "wrote": [
-    {
-     "start": "わたしは",
-     "text": "わたしはありません。」 CT「ありました。あと、おもしろいですよね。」 CT「私も行ってみたいです。」 CT「こんにちはー！」 CT「こんにちは！よろしくお願いします！」 CT「今日"
-    },
-    {
-     "start": "第一条",
-     "text": "第一条修了 ｓ②同絡以降はステレオオイルコンテクションを発売 して説くことになる。 ｄｳｍｄｇｇ･ｇｇｐ､｜ｍ｜ｇｇｬｃ企画ｏｸｍｳｇｇ”｜作曲（｜ｇｄｇり４ｍｇｐｋ�"
-    },
-    {
-     "start": "この法律において",
-     "text": "この法律において認定をした際には、アメリカ食べ物が加えられたので、スポーツとに入っていますか？」 CT「そしてこのロボコンテストにはいろんな便利ですね。」 DF「そういうことですよね！おいしいですけど、どちらも食べますか？」 CT「2008年です。確かにそうで"
-    }
-   ],
-   "loopPct": 6.72,
-   "movedBody": false
-  },
-  {
    "at": "2026-09-20T18:35:07Z",
    "val": 3.3867,
    "prev": 3.3867,
@@ -12485,9 +12424,72 @@
    ],
    "loopPct": 2.76,
    "movedBody": false
+  },
+  {
+   "at": "2026-10-01T06:27:02Z",
+   "val": 3.0567,
+   "prev": 3.0614,
+   "valTag": "fixed-holdout-v1",
+   "stoppedAt": 144,
+   "stuck": 0,
+   "evalTag": "fixed-ix-v1",
+   "secPerStep": 29.4024,
+   "steps": 300,
+   "bpc": 3.6179,
+   "charsPerTok": 1.2189,
+   "score": 2.2217,
+   "scoreW": 2.0,
+   "scoreMode": "talk",
+   "finishMix": 0.5,
+   "lineage": "L1",
+   "layers": 16,
+   "params": 117914880,
+   "chars": 1045308899,
+   "tokens": 857567631,
+   "grew": 0,
+   "rolledBack": false,
+   "ownVal": null,
+   "ownScore": null,
+   "d": 768,
+   "loops": 1,
+   "spread": 3.0244,
+   "bytes": 1415115957,
+   "heads": 6,
+   "ctx": 512,
+   "vocab": 6000,
+   "kind": "bpe",
+   "arch": "tpp-loop",
+   "wantWider": false,
+   "layerCap": 16,
+   "mixChanged": false,
+   "bySrc": {
+    "laws": 4.4651,
+    "wiki": 3.2302,
+    "aozora": 3.553,
+    "hanrei": 3.6374,
+    "kokkai": 2.7971,
+    "web": 3.0727,
+    "talk": 2.2217
+   },
+   "wrote": [
+    {
+     "start": "わたしは",
+     "text": "わたしは、また、ギャップに詰まる、こういう状況でございます。 これは、国民金融条第一項の補助金の返済といったものでございますが、これは、いわば国民の備う考え方を企業が組まれております。これは、現状に維持されている世論調査の合意がなされているということでございますが、先ほど言いましたように、�"
+    },
+    {
+     "start": "第一条",
+     "text": "第一条第二号第十申込被保険者会との間に�抗�して配給を望むものである。 金銭修正会は、診断を受けて、提出者の微増税などにより教会に関与してきた態度をもたらすことを目的として、設置された法律案は、の設置した審議の結果、ないしは法律上、内閣総理大臣及び処罰行為をしたものと解される。 いずれかに返すべきものとs(Strice stration)は、直ちに民"
+    },
+    {
+     "start": "この法律において",
+     "text": "この法律においてもICONONOS） ・テレビ朝日ブレーブス（サガテレビ、2006年度フジテレビ） FONON NONENTOのテレビ朝日・ 番組!!（テレビ朝日） メディアワークス（テレビ朝日）★ （テレビ朝日、41歳 -"
+    }
+   ],
+   "loopPct": 5.36,
+   "movedBody": false
   }
  ],
- "bestVal": 3.0596,
+ "bestVal": 3.0567,
  "layers": 16,
  "params": 117914880,
  "born": "2026-09-08T15:11:54Z",
@@ -12535,5 +12537,5 @@
  ],
  "wantWider": false,
  "nextD": 768,
- "bad": 0
+ "bad": 1
 }
