@@ -1,67 +1,6 @@
 {
  "runs": [
   {
-   "at": "2026-09-21T09:45:59Z",
-   "val": 3.293,
-   "prev": 3.293,
-   "valTag": "fixed-holdout-v1",
-   "stoppedAt": 176,
-   "secPerStep": 22.9823,
-   "steps": 300,
-   "bpc": 3.8975,
-   "charsPerTok": 1.2189,
-   "score": 2.2926,
-   "scoreW": 2.0,
-   "scoreMode": "talk",
-   "finishMix": 0.5,
-   "lineage": "L1",
-   "layers": 16,
-   "params": 117914880,
-   "chars": 1045308899,
-   "tokens": 857567631,
-   "grew": 0,
-   "rolledBack": true,
-   "ownVal": 3.5031,
-   "ownScore": 2.4556,
-   "d": 768,
-   "loops": 1,
-   "spread": 3.3696,
-   "bytes": 1415115957,
-   "heads": 6,
-   "ctx": 512,
-   "vocab": 6000,
-   "kind": "bpe",
-   "arch": "tpp-loop",
-   "wantWider": false,
-   "layerCap": 16,
-   "mixChanged": false,
-   "bySrc": {
-    "laws": 5.2145,
-    "wiki": 3.6141,
-    "aozora": 3.9346,
-    "hanrei": 4.0314,
-    "kokkai": 3.1629,
-    "web": 3.4214,
-    "talk": 2.4556
-   },
-   "wrote": [
-    {
-     "start": "わたしは",
-     "text": "わたしは、しかし、大規模な競争を持ちつつ、侵略戦略等の際に支援を進めていると考えますが、総理大臣の見解をお聞かせください。」 AA「国務大臣 この資格について、やはり各国との間で、そして、米国では、国連経済の国民と主張してまいりましたが、国民石破国といった言葉をまとめて総理"
-    },
-    {
-     "start": "第一条",
-     "text": "第一条) <記事 04:30> 午前、小坂生まがさし かしこんなき。お名前はおいしいですか？」 IV「どうやって光しますか？」 IN「私は7/25、。あと、PC。名古屋ですね。」 IV「どちらもおもいますか？」 IN"
-    },
-    {
-     "start": "この法律において",
-     "text": "この法律においてを務めた。 1929年（大正3年）12月、東西線の開業（ 伊藤線 ） - 広北線直通運転が開業した。 1993年（平成2年）6月1日、東京線と東京線開業により、東京線（現：雅事線） - 山口駅間を、東海道線へ"
-    }
-   ],
-   "loopPct": 2.35,
-   "movedBody": false
-  },
-  {
    "at": "2026-09-21T11:02:25Z",
    "val": 3.293,
    "prev": 3.293,
@@ -12511,9 +12450,72 @@
    ],
    "loopPct": 3.48,
    "movedBody": false
+  },
+  {
+   "at": "2026-10-01T22:47:17Z",
+   "val": 3.0421,
+   "prev": 3.0441,
+   "valTag": "fixed-holdout-v1",
+   "stoppedAt": 158,
+   "stuck": 0,
+   "evalTag": "fixed-ix-v1",
+   "secPerStep": 26.4327,
+   "steps": 300,
+   "bpc": 3.6006,
+   "charsPerTok": 1.2189,
+   "score": 2.2127,
+   "scoreW": 2.0,
+   "scoreMode": "talk",
+   "finishMix": 0.5,
+   "lineage": "L1",
+   "layers": 16,
+   "params": 117914880,
+   "chars": 1045308899,
+   "tokens": 857567631,
+   "grew": 0,
+   "rolledBack": false,
+   "ownVal": null,
+   "ownScore": null,
+   "d": 768,
+   "loops": 1,
+   "spread": 3.5051,
+   "bytes": 1415115957,
+   "heads": 6,
+   "ctx": 512,
+   "vocab": 6000,
+   "kind": "bpe",
+   "arch": "tpp-loop",
+   "wantWider": false,
+   "layerCap": 16,
+   "mixChanged": false,
+   "bySrc": {
+    "laws": 4.4357,
+    "wiki": 3.2148,
+    "aozora": 3.5383,
+    "hanrei": 3.6359,
+    "kokkai": 2.7805,
+    "web": 3.0605,
+    "talk": 2.2127
+   },
+   "wrote": [
+    {
+     "start": "わたしは",
+     "text": "わたしは本格的な姿勢を表すわけでございますが、総理が、今、先ほどさまざまな御主張をお聞かせください。」 AA「内閣総理大臣 今、先ほどの答弁を聞きましたが、私は、確かに、ここは、今のような、しっかりと議論していただいて、そして、予算委員会で今申し"
+    },
+    {
+     "start": "第一条",
+     "text": "第一条とあるのは、「核核兵器��業法」とあるのは「核兵器」と、核兵器験ソフトウェアハウス機能を強化した際には、核兵器や負傷者たちは、核兵器の開発のためにも、核兵器を開発し、核兵器開発とを教育を通じて、核実験を行った。 そして、核兵器の開発や、核兵器開発などによって、縮小"
+    },
+    {
+     "start": "この法律において",
+     "text": "この法律において「ラスト2004-09-00」を発売した。 速度チェルソニア - G14シリーズとしてリリース。 2004年 - 2004年 初めに「572」をリリース。 2006年 - AS110 シリーズ終了。 2009年 - 2009年 リリ"
+    }
+   ],
+   "loopPct": 11.71,
+   "movedBody": false
   }
  ],
- "bestVal": 3.0441,
+ "bestVal": 3.0421,
  "layers": 16,
  "params": 117914880,
  "born": "2026-09-08T15:11:54Z",
@@ -12561,5 +12563,5 @@
  ],
  "wantWider": false,
  "nextD": 768,
- "bad": 0
+ "bad": 1
 }
