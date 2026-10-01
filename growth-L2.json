@@ -1,67 +1,6 @@
 {
  "runs": [
   {
-   "at": "2026-09-20T15:59:16Z",
-   "val": 2.9992,
-   "prev": 2.9992,
-   "valTag": "fixed-holdout-v1",
-   "stoppedAt": 414,
-   "secPerStep": 9.1404,
-   "steps": 737,
-   "bpc": 3.5499,
-   "charsPerTok": 1.2189,
-   "score": 2.1163,
-   "scoreW": 2.0,
-   "scoreMode": "talk",
-   "finishMix": 0.85,
-   "lineage": "L2",
-   "layers": 11,
-   "params": 37890560,
-   "chars": 1045308899,
-   "tokens": 857567631,
-   "grew": 0,
-   "rolledBack": true,
-   "ownVal": 3.1539,
-   "ownScore": 2.2254,
-   "d": 512,
-   "loops": 1,
-   "spread": 2.9227,
-   "bytes": 454783041,
-   "heads": 8,
-   "ctx": 512,
-   "vocab": 6000,
-   "kind": "bpe",
-   "arch": "tpp-loop",
-   "wantWider": false,
-   "layerCap": 16,
-   "mixChanged": false,
-   "bySrc": {
-    "laws": 4.511,
-    "wiki": 3.2351,
-    "aozora": 3.5635,
-    "hanrei": 3.7767,
-    "kokkai": 2.8158,
-    "web": 3.0906,
-    "talk": 2.2254
-   },
-   "wrote": [
-    {
-     "start": "わたしは",
-     "text": "わたしは、どこかに来られると思うと、面白いんですよね。」 HA「そんなに長いんですかね。どこかの、長野の町でもすごくお好きなんですか？」 BP「いえいえ、最近は宝くじが趣味です。」 HA「そうなんですね！そっちが趣味"
-    },
-    {
-     "start": "第一条",
-     "text": "第一条議決の期間。 ] チャーリー・サッカー選手権 - 1995年にイギリス連邦軍 が アヴァント・マージーニー と ラヴァン・クラーク が結成。 マージーザ - 1975年に アヴァン・クラーク がキューディザ - 7"
-    },
-    {
-     "start": "この法律において",
-     "text": "この法律において「 」という。）のうち、 1970年 （昭和45年）の 1970年 （昭和55年）の 南海ホーム を開設した。 1985年（昭和50年）の ユニバーサル の「 マナー・マナー 」は、 ロシア などの 国境 では イギリス から 北インド会社 に移"
-    }
-   ],
-   "loopPct": 3.52,
-   "movedBody": false
-  },
-  {
    "at": "2026-09-20T17:14:59Z",
    "val": 2.9992,
    "prev": 2.9992,
@@ -12483,9 +12422,72 @@
    ],
    "loopPct": 12.27,
    "movedBody": false
+  },
+  {
+   "at": "2026-10-01T06:20:22Z",
+   "val": 2.712,
+   "prev": 2.7128,
+   "valTag": "fixed-holdout-v1",
+   "stoppedAt": 406,
+   "stuck": 0,
+   "evalTag": "fixed-ix-v1",
+   "secPerStep": 9.4077,
+   "steps": 624,
+   "bpc": 3.2099,
+   "charsPerTok": 1.2189,
+   "score": 2.0654,
+   "scoreW": 2.0,
+   "scoreMode": "talk",
+   "finishMix": 0.85,
+   "lineage": "L2",
+   "layers": 13,
+   "params": 44216832,
+   "chars": 1045308899,
+   "tokens": 857567631,
+   "grew": 0,
+   "rolledBack": false,
+   "ownVal": null,
+   "ownScore": null,
+   "d": 512,
+   "loops": 1,
+   "spread": 2.7351,
+   "bytes": 530714761,
+   "heads": 8,
+   "ctx": 512,
+   "vocab": 6000,
+   "kind": "bpe",
+   "arch": "tpp-loop",
+   "wantWider": false,
+   "layerCap": 16,
+   "mixChanged": false,
+   "bySrc": {
+    "laws": 3.6466,
+    "wiki": 2.8825,
+    "aozora": 3.1924,
+    "hanrei": 3.4084,
+    "kokkai": 2.5255,
+    "web": 2.7994,
+    "talk": 2.0654
+   },
+   "wrote": [
+    {
+     "start": "わたしは",
+     "text": "わたしは21歳の時に、売り気であることがわかる と言っても、あまりのようには違うことになった。 「もう大切なことは、この手本に、みんなの事を考えているからだ。もしかして、続いてきたのかな。もしかして、この本を見てみると、この手本に、見えてきたのかな」 と言ったところでは、「もう"
+    },
+    {
+     "start": "第一条",
+     "text": "第一条各号に掲げる事項を、停止する。 （事後通知） 第三十三条 相続人は、ワット又は�遣人を選任しなければならない。 （婚前保育の職名） 第四十四条 妊産婦又は妊産婦又は妊産婦又は妊産婦が、妊産婦又は妊産婦又は妊産婦又は妊産婦又は妊産婦又は妊産婦又は妊産婦又は妊産婦又は妊産婦又は妊産婦又は"
+    },
+    {
+     "start": "この法律において",
+     "text": "この法律においてon to Ulational Confile）と呼ばれる 。 一般的に、二段階はXPPの精度を保ち、構文を越えたMPGは組み立てができる。DPGは、IPPによって構文を�ント化する 。このため、MPGはDPGのダムを全周共通のサイクルで実行"
+    }
+   ],
+   "loopPct": 17.64,
+   "movedBody": false
   }
  ],
- "bestVal": 2.7128,
+ "bestVal": 2.712,
  "layers": 13,
  "params": 44216832,
  "born": "2026-09-08T15:11:54Z",
@@ -12533,5 +12535,5 @@
  ],
  "wantWider": false,
  "nextD": 512,
- "bad": 1
+ "bad": 3
 }
