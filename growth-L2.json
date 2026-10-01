@@ -1,67 +1,6 @@
 {
  "runs": [
   {
-   "at": "2026-09-20T13:35:44Z",
-   "val": 2.9992,
-   "prev": 2.9992,
-   "valTag": "fixed-holdout-v1",
-   "stoppedAt": 477,
-   "secPerStep": 7.8855,
-   "steps": 737,
-   "bpc": 3.5499,
-   "charsPerTok": 1.2189,
-   "score": 2.1163,
-   "scoreW": 2.0,
-   "scoreMode": "talk",
-   "finishMix": 0.85,
-   "lineage": "L2",
-   "layers": 11,
-   "params": 37890560,
-   "chars": 1045308899,
-   "tokens": 857567631,
-   "grew": 0,
-   "rolledBack": true,
-   "ownVal": 2.9895,
-   "ownScore": 2.2488,
-   "d": 512,
-   "loops": 1,
-   "spread": 3.0266,
-   "bytes": 454783041,
-   "heads": 8,
-   "ctx": 512,
-   "vocab": 6000,
-   "kind": "bpe",
-   "arch": "tpp-loop",
-   "wantWider": false,
-   "layerCap": 16,
-   "mixChanged": false,
-   "bySrc": {
-    "laws": 4.3864,
-    "wiki": 3.1775,
-    "aozora": 3.575,
-    "hanrei": 3.6001,
-    "kokkai": 2.7528,
-    "web": 3.1055,
-    "talk": 2.2488
-   },
-   "wrote": [
-    {
-     "start": "わたしは",
-     "text": "わたしは、気象庁が統合しています。」 AA「そうなんですね。年に数回しかないので、今日は必ずしもそうです。」 HA「２時間ですか？そうなんですか？」 AA「そうなんです。一日3時間しかなあ」 HA「私は2時間です。結構長くなる夜ともに"
-    },
-    {
-     "start": "第一条",
-     "text": "第一条の規定による者について、次に掲げる基準に従って、その適用期限が経過後二年以内休止する。 当該改正前の��に係る適用期限が経過後十年間（法の施行後年私立学校大学大学院間を除く。）から前条各号に掲げる基準に従って入学するため、��校舎等高等専門学校卒業生等列車指定する要件を満たすことにより、当該廃校又は廃校。 当該改正前の事業年度書には、次の各号に掲げる基準に従い、当該改正前の任期満了の日（施行期日が施行範囲内で制度化され、又は施行期"
-    },
-    {
-     "start": "この法律において",
-     "text": "この法律において「yabbed」という」という漫画へ入ります。 なお、近辺の駅からまだよいです。 なお、モントーリー・デッカー JapanA JapanA JapanA JapanA JapanA JapanA JapanA JapanA Jap"
-    }
-   ],
-   "loopPct": 23.85,
-   "movedBody": false
-  },
-  {
    "at": "2026-09-20T14:51:13Z",
    "val": 2.9992,
    "prev": 2.9992,
@@ -12479,9 +12418,72 @@
    ],
    "loopPct": 13.07,
    "movedBody": false
+  },
+  {
+   "at": "2026-10-01T03:50:23Z",
+   "val": 2.713,
+   "prev": 2.7147,
+   "valTag": "fixed-holdout-v1",
+   "stoppedAt": 516,
+   "stuck": 0,
+   "evalTag": "fixed-ix-v1",
+   "secPerStep": 7.321,
+   "steps": 872,
+   "bpc": 3.211,
+   "charsPerTok": 1.2189,
+   "score": 2.0639,
+   "scoreW": 2.0,
+   "scoreMode": "talk",
+   "finishMix": 0.85,
+   "lineage": "L2",
+   "layers": 13,
+   "params": 44216832,
+   "chars": 1045308899,
+   "tokens": 857567631,
+   "grew": 0,
+   "rolledBack": false,
+   "ownVal": null,
+   "ownScore": null,
+   "d": 512,
+   "loops": 1,
+   "spread": 2.5829,
+   "bytes": 530714761,
+   "heads": 8,
+   "ctx": 512,
+   "vocab": 6000,
+   "kind": "bpe",
+   "arch": "tpp-loop",
+   "wantWider": false,
+   "layerCap": 16,
+   "mixChanged": false,
+   "bySrc": {
+    "laws": 3.6436,
+    "wiki": 2.8843,
+    "aozora": 3.1943,
+    "hanrei": 3.4125,
+    "kokkai": 2.5245,
+    "web": 2.8024,
+    "talk": 2.0639
+   },
+   "wrote": [
+    {
+     "start": "わたしは",
+     "text": "わたしは今のような風習がでていったので、今日はちょっとチェックだなと。」 DY「今日は、もう忘れてしまいました！朝からなんですかね。」 FF「はい。でもそういう時はいつも忘れます。」 DY「いつもより早く起きるようになるのですか�"
+    },
+    {
+     "start": "第一条",
+     "text": "第一条会の議事を組む国、地方については、 保安庁設置法 、 国務省設置法 、 国務省設置法 、 国務省設置法 、 日本の行政機構 及び 安全保障会議 、 連合国政策委員会 、 日本共産党 、 日本共産党 、 国民民主党 、 日本共産党 の 国会議員 、 民主党 、 日本共産党 、 日本"
+    },
+    {
+     "start": "この法律において",
+     "text": "この法律において第二号に掲げるものをいう。以下同じ。）又は勅令第五条第五項の規定による薄滑りその他取引等（以下この条において「取引等」という。）から輸入された取引（輸入又は輸入を除く。）に係る取引又は上場取引に係る取引（これらに係る取引を含む。）をいう。以下同じ。）の取引（輸入又は輸入を除く。以下同じ。）又は外国貿易法（昭和三十七年法律第百十五号）の規定による承認を受けた取引（輸入又は輸入を除く。以下同じ。）に係る取引の額若しくは取引（"
+    }
+   ],
+   "loopPct": 14.86,
+   "movedBody": false
   }
  ],
- "bestVal": 2.7141,
+ "bestVal": 2.713,
  "layers": 13,
  "params": 44216832,
  "born": "2026-09-08T15:11:54Z",
@@ -12529,5 +12531,5 @@
  ],
  "wantWider": false,
  "nextD": 512,
- "bad": 3
+ "bad": 0
 }
