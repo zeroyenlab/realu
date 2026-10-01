@@ -1,67 +1,6 @@
 {
  "runs": [
   {
-   "at": "2026-09-20T14:51:13Z",
-   "val": 2.9992,
-   "prev": 2.9992,
-   "valTag": "fixed-holdout-v1",
-   "stoppedAt": 428,
-   "secPerStep": 8.8356,
-   "steps": 737,
-   "bpc": 3.5499,
-   "charsPerTok": 1.2189,
-   "score": 2.1163,
-   "scoreW": 2.0,
-   "scoreMode": "talk",
-   "finishMix": 0.85,
-   "lineage": "L2",
-   "layers": 11,
-   "params": 37890560,
-   "chars": 1045308899,
-   "tokens": 857567631,
-   "grew": 0,
-   "rolledBack": true,
-   "ownVal": 3.023,
-   "ownScore": 2.3028,
-   "d": 512,
-   "loops": 1,
-   "spread": 3.1431,
-   "bytes": 454783041,
-   "heads": 8,
-   "ctx": 512,
-   "vocab": 6000,
-   "kind": "bpe",
-   "arch": "tpp-loop",
-   "wantWider": false,
-   "layerCap": 16,
-   "mixChanged": false,
-   "bySrc": {
-    "laws": 4.1129,
-    "wiki": 3.1823,
-    "aozora": 3.5351,
-    "hanrei": 3.6423,
-    "kokkai": 2.7368,
-    "web": 3.0341,
-    "talk": 2.3028
-   },
-   "wrote": [
-    {
-     "start": "わたしは",
-     "text": "わたしは、どこかにいっても買い物する場所もありませんでしたね。」 CY「あまり買わないですね。」 DF「本当ですね。」 CY「ですよね！でも買います。」 DF「さんは何を食べましたか？」 CY「私はパスタであるカラッとしてしまったので、カラッとしてて食べ"
-    },
-    {
-     "start": "第一条",
-     "text": "第一条の規定並びにそれぞれ当該各号に定める事項に係る当該主務省令で定める事項に係る当該主務省令で定める事項に係る当該事項をに該当して、当該岸部警察署を設けてその秘密が漏らされてしまうこと。 当該岸部警察署が、当該岸部警察署が、十及びその部署が、遂行する対策上障害者等（その部署が、Ｃが自ら自らの長を含む濱口の上住民をそれぞれ各省庁に置き、かつ、当該岸部警察署が、Ｇ及びＡの監査役にそれぞれ負わせて、"
-    },
-    {
-     "start": "この法律において",
-     "text": "この法律において「Ci in Pland Partive Raal Partive Ral Pland」をベースとして、ベースもPartive Partipe Piie Partive Lated Partive Partive Partive"
-    }
-   ],
-   "loopPct": 14.51,
-   "movedBody": false
-  },
-  {
    "at": "2026-09-20T15:59:16Z",
    "val": 2.9992,
    "prev": 2.9992,
@@ -12481,9 +12420,72 @@
    ],
    "loopPct": 14.86,
    "movedBody": false
+  },
+  {
+   "at": "2026-10-01T05:03:53Z",
+   "val": 2.7128,
+   "prev": 2.713,
+   "valTag": "fixed-holdout-v1",
+   "stoppedAt": 371,
+   "stuck": 0,
+   "evalTag": "fixed-ix-v1",
+   "secPerStep": 10.3539,
+   "steps": 883,
+   "bpc": 3.2108,
+   "charsPerTok": 1.2189,
+   "score": 2.0638,
+   "scoreW": 2.0,
+   "scoreMode": "talk",
+   "finishMix": 0.85,
+   "lineage": "L2",
+   "layers": 13,
+   "params": 44216832,
+   "chars": 1045308899,
+   "tokens": 857567631,
+   "grew": 0,
+   "rolledBack": false,
+   "ownVal": null,
+   "ownScore": null,
+   "d": 512,
+   "loops": 1,
+   "spread": 3.3149,
+   "bytes": 530714761,
+   "heads": 8,
+   "ctx": 512,
+   "vocab": 6000,
+   "kind": "bpe",
+   "arch": "tpp-loop",
+   "wantWider": false,
+   "layerCap": 16,
+   "mixChanged": false,
+   "bySrc": {
+    "laws": 3.6473,
+    "wiki": 2.8831,
+    "aozora": 3.1936,
+    "hanrei": 3.4091,
+    "kokkai": 2.5253,
+    "web": 2.8002,
+    "talk": 2.0638
+   },
+   "wrote": [
+    {
+     "start": "わたしは",
+     "text": "わたしは現役時代に処分されました。どうでしたか？」 DW「私は現役時代にやってました。」 FU「やってなかったんですね、確かに。」 DW「また現役引退してきたなって思いましたね。」 FU「来月以降になったんですか。」 DW「はい、内装とか狭かったですよ。"
+    },
+    {
+     "start": "第一条",
+     "text": "第一条月額」と、ことができる。 第二に、住所並びに修学園活動において、所持する者（以下この条において「授業料」という。）の返還を受ける余裕を除く。 第三に、同条第三項において同じ。）が、当該授業料のうち授業料のうち授業料の返還を受ける余裕を除く。 第三に、授業料のうち授業料の返還を受ける余裕を除く。 其の趣旨は、前項とし、第一項及び第二項本文に規定する授業料の請求権の額（以下"
+    },
+    {
+     "start": "この法律において",
+     "text": "この法律において動物を処理する方法。 第二百二十六条の二 十七条、第十六条、第十八条第一項、第十九条第一項、第二十四条、第二十三条、第二十四条、第二十五条、第二十五条、第二十三条、第二十五条、第二十六条、第二十六条、第二十六条、第二十五条の七、第二十六条、第二十五条、第二十六条から第二十九条まで、第十九条第三項、第二十五条の二、第二十五条、第二十五条、第二十六条から第二十九条まで、昭和二十六条から第三十条まで、第二十七条及び第二十九条、"
+    }
+   ],
+   "loopPct": 12.27,
+   "movedBody": false
   }
  ],
- "bestVal": 2.713,
+ "bestVal": 2.7128,
  "layers": 13,
  "params": 44216832,
  "born": "2026-09-08T15:11:54Z",
@@ -12531,5 +12533,5 @@
  ],
  "wantWider": false,
  "nextD": 512,
- "bad": 0
+ "bad": 1
 }
