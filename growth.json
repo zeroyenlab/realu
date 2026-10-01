@@ -1,67 +1,6 @@
 {
  "runs": [
   {
-   "at": "2026-09-20T23:37:49Z",
-   "val": 3.3845,
-   "prev": 3.3867,
-   "valTag": "fixed-holdout-v1",
-   "stoppedAt": 155,
-   "secPerStep": 26.4392,
-   "steps": 300,
-   "bpc": 4.0059,
-   "charsPerTok": 1.2189,
-   "score": 2.3933,
-   "scoreW": 2.0,
-   "scoreMode": "talk",
-   "finishMix": 0.5,
-   "lineage": "L1",
-   "layers": 16,
-   "params": 117914880,
-   "chars": 1045308899,
-   "tokens": 857567631,
-   "grew": 0,
-   "rolledBack": false,
-   "ownVal": null,
-   "ownScore": null,
-   "d": 768,
-   "loops": 1,
-   "spread": 3.3141,
-   "bytes": 1415115957,
-   "heads": 6,
-   "ctx": 512,
-   "vocab": 6000,
-   "kind": "bpe",
-   "arch": "tpp-loop",
-   "wantWider": false,
-   "layerCap": 16,
-   "mixChanged": false,
-   "bySrc": {
-    "laws": 5.1113,
-    "wiki": 3.5152,
-    "aozora": 3.8488,
-    "hanrei": 4.0499,
-    "kokkai": 3.0584,
-    "web": 3.3311,
-    "talk": 2.3933
-   },
-   "wrote": [
-    {
-     "start": "わたしは",
-     "text": "わたしはよくお願いします。」 AB「久しぶりに！」 AB「どこまで寝てれば、まだ鼻骨がおかけてます。」 AB「鳩山元内閣はあっても、あれって、もうあんまり知らないことだなと思いました。」 AB「私は、もちろん、私も早期に行って"
-    },
-    {
-     "start": "第一条",
-     "text": "第一条承継月所属の12月29日に東京で放送していた一部「東京の日」を放送（出演）放送は「トーリー・トーズ」が放送されたが、これは2013年から2010年から2010年に��境市場で当時の3400番台を19220年までは4両の『デビュー ヤング・ヴァットーリーグ"
-    },
-    {
-     "start": "この法律において",
-     "text": "この法律においての日からの期限を認めることとなった。 一方、 2008年 2月に展望を取得した [ 1 ] 。 2004年 は「 第2部 」。 2007年に 第36回 （ 2009年 ）に 第10回 （ 2000年 ）でドームを記録。 2001年 に 第31回 （"
-    }
-   ],
-   "loopPct": 12.48,
-   "movedBody": false
-  },
-  {
    "at": "2026-09-21T00:53:28Z",
    "val": 3.3845,
    "prev": 3.3845,
@@ -12495,9 +12434,72 @@
    ],
    "loopPct": 8.48,
    "movedBody": false
+  },
+  {
+   "at": "2026-10-01T12:43:13Z",
+   "val": 3.0545,
+   "prev": 3.0549,
+   "valTag": "fixed-holdout-v1",
+   "stoppedAt": 158,
+   "stuck": 0,
+   "evalTag": "fixed-ix-v1",
+   "secPerStep": 26.3014,
+   "steps": 300,
+   "bpc": 3.6152,
+   "charsPerTok": 1.2189,
+   "score": 2.2164,
+   "scoreW": 2.0,
+   "scoreMode": "talk",
+   "finishMix": 0.5,
+   "lineage": "L1",
+   "layers": 16,
+   "params": 117914880,
+   "chars": 1045308899,
+   "tokens": 857567631,
+   "grew": 0,
+   "rolledBack": false,
+   "ownVal": null,
+   "ownScore": null,
+   "d": 768,
+   "loops": 1,
+   "spread": 2.8721,
+   "bytes": 1415115957,
+   "heads": 6,
+   "ctx": 512,
+   "vocab": 6000,
+   "kind": "bpe",
+   "arch": "tpp-loop",
+   "wantWider": false,
+   "layerCap": 16,
+   "mixChanged": false,
+   "bySrc": {
+    "laws": 4.4547,
+    "wiki": 3.2267,
+    "aozora": 3.5471,
+    "hanrei": 3.6382,
+    "kokkai": 2.795,
+    "web": 3.0708,
+    "talk": 2.2164
+   },
+   "wrote": [
+    {
+     "start": "わたしは",
+     "text": "わたしは、事件を商標に出したと言ったので、これを知ったのであります。私としては、今日、自分は結構です。」 AB「国民の安心と貴重な態度を示して、やっと嘆いたいと思うとき、おやりになしたくても、今度は何をやったのか。それとも、これは、やはり日本の国境というのは、今"
+    },
+    {
+     "start": "第一条",
+     "text": "第一条タルキノフルノキノルノルグリッチノーションノルガノンツェノフスキノン (FINAGOMA) は「インターネット」「インターネットアーカイブ」「インターネットアーカイブ」のメリット。 大阪府 西日本 、 宮城県 発足。 下ICカード の定義は、"
+    },
+    {
+     "start": "この法律において",
+     "text": "この法律において、歳入税、社会保障関係事務などを注視しながら、財政改革をまとめると、今回の補正では、税制改革は、税外にホームページを送り込んでいきたいと、財政原則を考えているところであります。 このような観点から、税制改革は各国の財政運営にみずからの意欲を持ちながら、財政の�"
+    }
+   ],
+   "loopPct": 1.61,
+   "movedBody": false
   }
  ],
- "bestVal": 3.0549,
+ "bestVal": 3.0545,
  "layers": 16,
  "params": 117914880,
  "born": "2026-09-08T15:11:54Z",
@@ -12545,5 +12547,5 @@
  ],
  "wantWider": false,
  "nextD": 768,
- "bad": 0
+ "bad": 1
 }
