@@ -1,67 +1,6 @@
 {
  "runs": [
   {
-   "at": "2026-09-21T17:13:25Z",
-   "val": 3.293,
-   "prev": 3.293,
-   "valTag": "fixed-holdout-v1",
-   "stoppedAt": 178,
-   "secPerStep": 22.7129,
-   "steps": 300,
-   "bpc": 3.8975,
-   "charsPerTok": 1.2189,
-   "score": 2.2926,
-   "scoreW": 2.0,
-   "scoreMode": "talk",
-   "finishMix": 0.5,
-   "lineage": "L1",
-   "layers": 16,
-   "params": 117914880,
-   "chars": 1045308899,
-   "tokens": 857567631,
-   "grew": 0,
-   "rolledBack": true,
-   "ownVal": 3.4398,
-   "ownScore": 2.4226,
-   "d": 768,
-   "loops": 1,
-   "spread": 3.8342,
-   "bytes": 1415115957,
-   "heads": 6,
-   "ctx": 512,
-   "vocab": 6000,
-   "kind": "bpe",
-   "arch": "tpp-loop",
-   "wantWider": false,
-   "layerCap": 16,
-   "mixChanged": false,
-   "bySrc": {
-    "laws": 5.1111,
-    "wiki": 3.6413,
-    "aozora": 3.9497,
-    "hanrei": 4.0416,
-    "kokkai": 3.0811,
-    "web": 3.3794,
-    "talk": 2.4226
-   },
-   "wrote": [
-    {
-     "start": "わたしは",
-     "text": "わたしはありますか？」 CU「イメージですね。私は今もありますもんね。」 BZ「あ、そうなんですか。じゃあブリッジは素敵です？」 CU「ネットパッドです。ヘルクレットとかはあっという間に多いですね！」 BZ「そうですね。すご"
-    },
-    {
-     "start": "第一条",
-     "text": "第一条アルハーチューナーティングnine Bangalis Sport.jpg|ローランド ラウンドハートカップ - リモコンピューミングストーリー フィリピンソン - フレームロングプレイ - 1989年（昭和29年） ロボット -"
-    },
-    {
-     "start": "この法律において",
-     "text": "この法律においてきました。」 CZ「わかりました。ではまた行きたいですが。」 BY「おいしかったですね。でもその人では買っていたようなのはありましたか？」 CZ「そうですね。私は元気は結構シーズンになりました。」 BY「私もです。あなたは自分で作りましたか�"
-    }
-   ],
-   "loopPct": 0.0,
-   "movedBody": false
-  },
-  {
    "at": "2026-09-21T18:16:00Z",
    "val": 3.293,
    "prev": 3.293,
@@ -12522,6 +12461,69 @@
     }
    ],
    "loopPct": 6.09,
+   "movedBody": false
+  },
+  {
+   "at": "2026-10-02T06:17:52Z",
+   "val": 3.0421,
+   "prev": 3.0376,
+   "valTag": "fixed-holdout-v1",
+   "stoppedAt": 0,
+   "stuck": 0,
+   "evalTag": "fixed-ix-v1",
+   "secPerStep": 11.1741,
+   "steps": 300,
+   "bpc": 3.6005,
+   "charsPerTok": 1.2189,
+   "score": 2.2116,
+   "scoreW": 2.0,
+   "scoreMode": "talk",
+   "finishMix": 0.5,
+   "lineage": "L1",
+   "layers": 16,
+   "params": 117914880,
+   "chars": 1045308899,
+   "tokens": 857567631,
+   "grew": 0,
+   "rolledBack": false,
+   "ownVal": null,
+   "ownScore": null,
+   "d": 768,
+   "loops": 1,
+   "spread": 3.393,
+   "bytes": 1415115957,
+   "heads": 6,
+   "ctx": 512,
+   "vocab": 6000,
+   "kind": "bpe",
+   "arch": "tpp-loop",
+   "wantWider": false,
+   "layerCap": 16,
+   "mixChanged": false,
+   "bySrc": {
+    "laws": 4.4226,
+    "wiki": 3.2142,
+    "aozora": 3.5366,
+    "hanrei": 3.6305,
+    "kokkai": 2.7816,
+    "web": 3.0598,
+    "talk": 2.2116
+   },
+   "wrote": [
+    {
+     "start": "わたしは",
+     "text": "わたしはいます。」 EW「なるほど」 EW「コロナですぐ入れないです」 EW「私もです」 EW「そうなんですか。どれくらいかかりました？」 EW「割高です」 EW「おいしそうです！」 EW「"
+    },
+    {
+     "start": "第一条",
+     "text": "第一条（特定特定特定第三十一条の規定）には、特定特定交通父母（属門）を受けることがある。 従業員（指定父の前身である教皇長（以下「教皇」）には、新たに30年以上にわたり、または5年（70年）には64歳までの1年）に、75歳（8歳）が選ばれ、28歳であった（8歳以上の奴隷制は19歳である）。なお"
+    },
+    {
+     "start": "この法律において",
+     "text": "この法律において「坐さん菜さん」が取り付けられている。 会話中に登場する一般的な体質を示していたといわれる [ 5 ] 。 初期の時計を見ると、国内に マンガ を用い、国営放送枠で運用している。 各国では、西洋放送に 西洋平権 を宣言する。 日本国内での JR西日本 は"
+    }
+   ],
+   "loopPct": 4.23,
    "movedBody": false
   }
  ],
