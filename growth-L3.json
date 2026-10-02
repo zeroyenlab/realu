@@ -1,67 +1,6 @@
 {
  "runs": [
   {
-   "at": "2026-09-21T18:23:31Z",
-   "val": 3.0459,
-   "prev": 3.0459,
-   "valTag": "fixed-holdout-v1",
-   "stoppedAt": 553,
-   "secPerStep": 6.7472,
-   "steps": 971,
-   "bpc": 3.605,
-   "charsPerTok": 1.2189,
-   "score": 2.1306,
-   "scoreW": 2.0,
-   "scoreMode": "talk",
-   "finishMix": 0.2,
-   "lineage": "L3",
-   "layers": 13,
-   "params": 25335168,
-   "chars": 1045308899,
-   "tokens": 857567631,
-   "grew": 0,
-   "rolledBack": true,
-   "ownVal": 2.9025,
-   "ownScore": 2.2241,
-   "d": 384,
-   "loops": 1,
-   "spread": 2.7527,
-   "bytes": 304134729,
-   "heads": 6,
-   "ctx": 512,
-   "vocab": 6000,
-   "kind": "bpe",
-   "arch": "tpp-loop",
-   "wantWider": false,
-   "layerCap": 16,
-   "mixChanged": false,
-   "bySrc": {
-    "laws": 4.16,
-    "wiki": 3.0226,
-    "aozora": 3.4146,
-    "hanrei": 3.6237,
-    "kokkai": 2.6674,
-    "web": 2.9757,
-    "talk": 2.2241
-   },
-   "wrote": [
-    {
-     "start": "わたしは",
-     "text": "わたしは、町の町を東口の宮津市に行き、元亀2年（1556年）に金岩を渡って1878年（明治11年）に城内から本社を合併した。九州市長となる。 1883年（明治15年）に8代目の城中で、中華人民共和国大公と、中華人民共和国の首都"
-    },
-    {
-     "start": "第一条",
-     "text": "第一条、ndhenternets officeatine hopelledsと呼ばれる。 現在は、 ローマ教皇 や ローマ皇帝 が 皇族 である [ 2 ] 、 ローマ教皇 の ローマ と ローマ帝国 の憨敗ではなく ロ"
-    },
-    {
-     "start": "この法律において",
-     "text": "この法律において、るべきを受けた委員は、速やかに、その嵷産管理者に対し、当該物品の使用に関し、当該物品の使用が行われ、又は他の工場において、当該物品の使用を強化するための措置を講ずるものとする。 （登録事件等） 第二十一条 第四十三条 第六十一条 第五十一条 第六十二条 第六十二条 第六十一条 第六十二条 第六十二条 第六十二条 第六十二条 第八十三条 第六十二条 第十十二条 第六十二条 第六十三条 第六十三条 第八十四条 第七十三条 "
-    }
-   ],
-   "loopPct": 15.53,
-   "movedBody": false
-  },
-  {
    "at": "2026-09-21T19:33:06Z",
    "val": 3.0459,
    "prev": 3.0459,
@@ -12525,9 +12464,72 @@
    ],
    "loopPct": 23.15,
    "movedBody": false
+  },
+  {
+   "at": "2026-10-02T07:32:29Z",
+   "val": 2.7424,
+   "prev": 2.7432,
+   "valTag": "fixed-holdout-v1",
+   "stoppedAt": 797,
+   "stuck": 0,
+   "evalTag": "fixed-ix-v1",
+   "secPerStep": 4.6522,
+   "steps": 968,
+   "bpc": 3.2458,
+   "charsPerTok": 1.2189,
+   "score": 2.176,
+   "scoreW": 2.0,
+   "scoreMode": "talk",
+   "finishMix": 0.2,
+   "lineage": "L3",
+   "layers": 13,
+   "params": 25335168,
+   "chars": 1045308899,
+   "tokens": 857567631,
+   "grew": 0,
+   "rolledBack": false,
+   "ownVal": null,
+   "ownScore": null,
+   "d": 384,
+   "loops": 1,
+   "spread": 2.6123,
+   "bytes": 304134793,
+   "heads": 6,
+   "ctx": 512,
+   "vocab": 6000,
+   "kind": "bpe",
+   "arch": "tpp-loop",
+   "wantWider": false,
+   "layerCap": 16,
+   "mixChanged": false,
+   "bySrc": {
+    "laws": 3.7291,
+    "wiki": 2.9131,
+    "aozora": 3.2404,
+    "hanrei": 3.4505,
+    "kokkai": 2.5438,
+    "web": 2.8236,
+    "talk": 2.176
+   },
+   "wrote": [
+    {
+     "start": "わたしは",
+     "text": "わたしは、私は全く派閥からどこまでも不返事に思っているんだと思うんですか。 私は二つのコーチで、そして、これは、総務省は、昨年の十二月の二十三日に、金融再生委員会先生が、そのときの大臣さん、国の金融安定化推進に関する議長のあなたと昨年の十二月の二十八日の中にも、コーチは、「南スーダ"
+    },
+    {
+     "start": "第一条",
+     "text": "第一条 観測ブロック 観測ブロック 大気汚染 大気汚染 大気汚染 大気汚染 大気汚染 大気汚染 大気汚染 大気汚染 大気汚染等 大気汚染 大気汚染又は大気汚染 大気汚染 大気汚染 大気汚染 大気汚染 大気汚染 大気汚染 大気汚染 大気汚染 大気汚染 大気汚染 大気汚染 大気汚染"
+    },
+    {
+     "start": "この法律において",
+     "text": "この法律において「オンの 岸信介 」（ 大阪市 ）をはじめとする同市内の旅客客向けに用いられている。 2004年 （平成16年） 3月13日 ： 新潟県 新潟市 に新潟市の 安田川 が開通 [ 16 ] 。 また、新潟市内の地名は「 千葉県"
+    }
+   ],
+   "loopPct": 34.28,
+   "movedBody": false
   }
  ],
- "bestVal": 2.7432,
+ "bestVal": 2.7424,
  "layers": 13,
  "params": 25335168,
  "born": "2026-09-12T18:05:42Z",
@@ -12575,5 +12577,5 @@
  ],
  "wantWider": false,
  "nextD": 384,
- "bad": 1
+ "bad": 4
 }
