@@ -1,67 +1,6 @@
 {
  "runs": [
   {
-   "at": "2026-09-21T14:27:33Z",
-   "val": 3.0459,
-   "prev": 3.0459,
-   "valTag": "fixed-holdout-v1",
-   "stoppedAt": 0,
-   "secPerStep": 3.3217,
-   "steps": 982,
-   "bpc": 3.605,
-   "charsPerTok": 1.2189,
-   "score": 2.1306,
-   "scoreW": 2.0,
-   "scoreMode": "talk",
-   "finishMix": 0.2,
-   "lineage": "L3",
-   "layers": 13,
-   "params": 25335168,
-   "chars": 1045308899,
-   "tokens": 857567631,
-   "grew": 0,
-   "rolledBack": true,
-   "ownVal": 3.0172,
-   "ownScore": 2.3067,
-   "d": 384,
-   "loops": 1,
-   "spread": 3.1342,
-   "bytes": 304134729,
-   "heads": 6,
-   "ctx": 512,
-   "vocab": 6000,
-   "kind": "bpe",
-   "arch": "tpp-loop",
-   "wantWider": false,
-   "layerCap": 16,
-   "mixChanged": false,
-   "bySrc": {
-    "laws": 4.3194,
-    "wiki": 3.1933,
-    "aozora": 3.5445,
-    "hanrei": 3.8438,
-    "kokkai": 2.7562,
-    "web": 3.0007,
-    "talk": 2.3067
-   },
-   "wrote": [
-    {
-     "start": "わたしは",
-     "text": "わたしはこれを処理するだけでなく、��画像交換方式、実際に、そういう形で、今大変重要な問題で、その評価が十分に行われているわけです。 中国でも、調査にもおつき合いましたが、その上でどのようにお考えでしょうか。」 AB「国務大臣 国際競争力会議が開かれたことについて、やはり、今後も、国際競争力会議"
-    },
-    {
-     "start": "第一条",
-     "text": "第一条又は同条面積十五条第一項又は同条面積g{{}otako{}}\\naton{{}{\\naton{{{}\\naton{\\naton\\naton{in{\\naton_{}riftin{\\naton_{}}}}\\naton}\\{f\\naton}}{}"
-    },
-    {
-     "start": "この法律において",
-     "text": "この法律においてノベルルゲオオオオオンジオンストーンズ等所定のガイドラインを基本に、前記のガイドラインを採用しており、エンストリーのカバーやディズニーホールが特徴となっている。 グレートブッシュは、ABSでは100インチモジュール（コンテンツユーザに触れる特"
-    }
-   ],
-   "loopPct": 14.53,
-   "movedBody": false
-  },
-  {
    "at": "2026-09-21T15:50:59Z",
    "val": 3.0459,
    "prev": 3.0459,
@@ -12519,6 +12458,69 @@
    ],
    "loopPct": 9.9,
    "movedBody": false
+  },
+  {
+   "at": "2026-10-02T03:50:24Z",
+   "val": 2.7462,
+   "prev": 2.7468,
+   "valTag": "fixed-holdout-v1",
+   "stoppedAt": 562,
+   "stuck": 0,
+   "evalTag": "fixed-ix-v1",
+   "secPerStep": 6.6781,
+   "steps": 964,
+   "bpc": 3.2503,
+   "charsPerTok": 1.2189,
+   "score": 2.1799,
+   "scoreW": 2.0,
+   "scoreMode": "talk",
+   "finishMix": 0.2,
+   "lineage": "L3",
+   "layers": 13,
+   "params": 25335168,
+   "chars": 1045308899,
+   "tokens": 857567631,
+   "grew": 0,
+   "rolledBack": false,
+   "ownVal": null,
+   "ownScore": null,
+   "d": 384,
+   "loops": 1,
+   "spread": 2.6423,
+   "bytes": 304134793,
+   "heads": 6,
+   "ctx": 512,
+   "vocab": 6000,
+   "kind": "bpe",
+   "arch": "tpp-loop",
+   "wantWider": false,
+   "layerCap": 16,
+   "mixChanged": false,
+   "bySrc": {
+    "laws": 3.7363,
+    "wiki": 2.9185,
+    "aozora": 3.2421,
+    "hanrei": 3.4501,
+    "kokkai": 2.5456,
+    "web": 2.8276,
+    "talk": 2.1799
+   },
+   "wrote": [
+    {
+     "start": "わたしは",
+     "text": "わたしは、日本には、私は、しゃべりたい、そういう、この思いとは違った立場からはいっぱいいたします。」 AA「ただ、野田総理、日本として、暴力団の人たちに、日本は、日本が、日本は平和と民主主義の守護、そして、日本は平和と繁栄のためになりたいという、日本は平和としても"
+    },
+    {
+     "start": "第一条",
+     "text": "第一条 海上保安本部 略号 ）及び翼面胴り掛け 機体の燃料輛 使用する用具は、取手めくり器用具であるため、粉末を揚げてスケープしやすくし、呼吸器、口首を切り出し、入口から出るスケープスペースに架かる構造のこと。 出気器は、外観上、正面から洗い出す。 （"
+    },
+    {
+     "start": "この法律において",
+     "text": "この法律において「返還前」を「返還前」とする旨を取り消すことができる（乙４）」と「返還前」を「返還前」とする旨の表示がある）。 そして，同日，同月４日，同日，GHzbookを「タイムスピーカー」に改めると，同月１０日，同 日，「タイムスピーカー」を「タイムスピーカー"
+    }
+   ],
+   "loopPct": 3.02,
+   "movedBody": false
   }
  ],
  "bestVal": 2.7458,
@@ -12569,5 +12571,5 @@
  ],
  "wantWider": false,
  "nextD": 384,
- "bad": 0
+ "bad": 4
 }
