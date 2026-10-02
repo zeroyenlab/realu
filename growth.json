@@ -1,67 +1,6 @@
 {
  "runs": [
   {
-   "at": "2026-09-22T06:53:14Z",
-   "val": 3.293,
-   "prev": 3.293,
-   "valTag": "fixed-holdout-v1",
-   "stoppedAt": 157,
-   "secPerStep": 26.0587,
-   "steps": 300,
-   "bpc": 3.8975,
-   "charsPerTok": 1.2189,
-   "score": 2.2926,
-   "scoreW": 2.0,
-   "scoreMode": "talk",
-   "finishMix": 0.5,
-   "lineage": "L1",
-   "layers": 16,
-   "params": 117914880,
-   "chars": 1045308899,
-   "tokens": 857567631,
-   "grew": 0,
-   "rolledBack": true,
-   "ownVal": 3.3346,
-   "ownScore": 2.3581,
-   "d": 768,
-   "loops": 1,
-   "spread": 3.5413,
-   "bytes": 1415115957,
-   "heads": 6,
-   "ctx": 512,
-   "vocab": 6000,
-   "kind": "bpe",
-   "arch": "tpp-loop",
-   "wantWider": false,
-   "layerCap": 16,
-   "mixChanged": false,
-   "bySrc": {
-    "laws": 5.0656,
-    "wiki": 3.6067,
-    "aozora": 3.8528,
-    "hanrei": 4.06,
-    "kokkai": 3.0861,
-    "web": 3.4118,
-    "talk": 2.3581
-   },
-   "wrote": [
-    {
-     "start": "わたしは",
-     "text": "わたしは変わりません。」 AB「それから同時に、できれば、それはまた、このことをやろうとも言えないわけでありますが、これはもう一つこの質問にありますね。」 AA「国務大臣 さて、今委員御指摘のとおり、先ほどのお話にお答えください、やっていますけれども、まさに、このことについてはかなり"
-    },
-    {
-     "start": "第一条",
-     "text": "第一条（当該荷重で「eicheational）」という名称（いずれも「定義」という。）が勾留しており、その後、その団体に対して「��館」という説書が出てきた。 「looninus on: port.sform」（「therebe」） 「離脱した。」 （「昭和二十二年 12月 -"
-    },
-    {
-     "start": "この法律において",
-     "text": "この法律において、あるいは備めている場合ですね。」 CE「そうですよね。そうしたら気持ちですよね。」 BY「そうですね。それは気をつけてほしいですよね。」 CE「残業できるので、できますよね。」 BY「そうなんですよね。私も常に羨ましいです。そこは外に"
-    }
-   ],
-   "loopPct": 2.14,
-   "movedBody": false
-  },
-  {
    "at": "2026-09-22T08:14:15Z",
    "val": 3.293,
    "prev": 3.293,
@@ -12545,9 +12484,72 @@
    ],
    "loopPct": 4.53,
    "movedBody": false
+  },
+  {
+   "at": "2026-10-02T20:42:01Z",
+   "val": 3.0254,
+   "prev": 3.0319,
+   "valTag": "fixed-holdout-v1",
+   "stoppedAt": 159,
+   "stuck": 0,
+   "evalTag": "fixed-ix-v1",
+   "secPerStep": 26.2422,
+   "steps": 300,
+   "bpc": 3.5808,
+   "charsPerTok": 1.2189,
+   "score": 2.2057,
+   "scoreW": 2.0,
+   "scoreMode": "talk",
+   "finishMix": 0.5,
+   "lineage": "L1",
+   "layers": 16,
+   "params": 117914880,
+   "chars": 1045308899,
+   "tokens": 857567631,
+   "grew": 0,
+   "rolledBack": false,
+   "ownVal": null,
+   "ownScore": null,
+   "d": 768,
+   "loops": 1,
+   "spread": 3.2595,
+   "bytes": 1415115957,
+   "heads": 6,
+   "ctx": 512,
+   "vocab": 6000,
+   "kind": "bpe",
+   "arch": "tpp-loop",
+   "wantWider": false,
+   "layerCap": 16,
+   "mixChanged": false,
+   "bySrc": {
+    "laws": 4.3989,
+    "wiki": 3.2013,
+    "aozora": 3.521,
+    "hanrei": 3.6172,
+    "kokkai": 2.7698,
+    "web": 3.0476,
+    "talk": 2.2057
+   },
+   "wrote": [
+    {
+     "start": "わたしは",
+     "text": "わたしは、友人から、すると、松岡は花火を、なりと云ふ、自分は鈴木と鈴木の頭に、松井はよしのひの点をささぶりて、あらためて、私は花束を懇切にする。こういう迄になって、ぴかりとふってるから、 私は、この茶を、あちら"
+    },
+    {
+     "start": "第一条",
+     "text": "第一条の傉裕適用となった。 9月29日、交代式は「一旦」「民主党」が実施されたが、直面後半の8月28日には、敗戦後の9月19日、南部は5月1日に再度、7月1日には政界と北部を占領した。また、北部の東部を南部に位置する。 2月には南部部に位置する"
+    },
+    {
+     "start": "この法律において",
+     "text": "この法律において、これらの一般的には、政府としては、政府が定めておりますことと、それは、何をもってこれを一刻も早く金融機関を引き上げれば、わずか七万まで減ってきていくのではないですか。」 AB「もし、当然、この投資をお願いします。 それにいたしましても、税制改正の核開発を考えなければ、今回の法案は、"
+    }
+   ],
+   "loopPct": 2.44,
+   "movedBody": false
   }
  ],
- "bestVal": 3.0288,
+ "bestVal": 3.0254,
  "layers": 16,
  "params": 117914880,
  "born": "2026-09-08T15:11:54Z",
@@ -12595,5 +12597,5 @@
  ],
  "wantWider": false,
  "nextD": 768,
- "bad": 2
+ "bad": 3
 }
