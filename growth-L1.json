@@ -1,67 +1,6 @@
 {
  "runs": [
   {
-   "at": "2026-09-22T04:21:08Z",
-   "val": 3.293,
-   "prev": 3.293,
-   "valTag": "fixed-holdout-v1",
-   "stoppedAt": 178,
-   "secPerStep": 22.8264,
-   "steps": 300,
-   "bpc": 3.8975,
-   "charsPerTok": 1.2189,
-   "score": 2.2926,
-   "scoreW": 2.0,
-   "scoreMode": "talk",
-   "finishMix": 0.5,
-   "lineage": "L1",
-   "layers": 16,
-   "params": 117914880,
-   "chars": 1045308899,
-   "tokens": 857567631,
-   "grew": 0,
-   "rolledBack": true,
-   "ownVal": 3.4173,
-   "ownScore": 2.397,
-   "d": 768,
-   "loops": 1,
-   "spread": 3.3438,
-   "bytes": 1415115957,
-   "heads": 6,
-   "ctx": 512,
-   "vocab": 6000,
-   "kind": "bpe",
-   "arch": "tpp-loop",
-   "wantWider": false,
-   "layerCap": 16,
-   "mixChanged": false,
-   "bySrc": {
-    "laws": 5.2885,
-    "wiki": 3.4836,
-    "aozora": 3.8589,
-    "hanrei": 4.0363,
-    "kokkai": 3.074,
-    "web": 3.3404,
-    "talk": 2.397
-   },
-   "wrote": [
-    {
-     "start": "わたしは",
-     "text": "わたしは、その前に、お前さんは、ちょっとこんなのではなまりません、なんなんですかね」 AB「ですから……そのお話ありがとうございました。」 AB「こんにちは。」 AB「こんにちは！」 A"
-    },
-    {
-     "start": "第一条",
-     "text": "第一条外国法人回演奏を生かす大阪府立五十年生の武将に立った。 一方、笠原君は「 今日お話になりたい！」と呼ぶ者あり、その子生を「 そうです！ 」と呼ぶ者あり、また丁寧な言葉を出られて、家の中で「まだ早く筋茶をいただ"
-    },
-    {
-     "start": "この法律において",
-     "text": "この法律において「所得増額」という。）が�額保護規界であるということは、今回の予算編成がふえるということになっていまして、今後とも今時間の政令で定めるということでやっていただきたいと思います。」 AA「はい、そうあると思っておりますが、このようなことにつきましては、今回最初から申し上げたいと思います。」 AB「国"
-    }
-   ],
-   "loopPct": 13.18,
-   "movedBody": false
-  },
-  {
    "at": "2026-09-22T05:37:45Z",
    "val": 3.293,
    "prev": 3.293,
@@ -12541,6 +12480,69 @@
    ],
    "loopPct": 1.57,
    "movedBody": false
+  },
+  {
+   "at": "2026-10-02T18:12:17Z",
+   "val": 3.0322,
+   "prev": 3.0288,
+   "valTag": "fixed-holdout-v1",
+   "stoppedAt": 0,
+   "stuck": 0,
+   "evalTag": "fixed-ix-v1",
+   "secPerStep": 12.1881,
+   "steps": 300,
+   "bpc": 3.5889,
+   "charsPerTok": 1.2189,
+   "score": 2.2127,
+   "scoreW": 2.0,
+   "scoreMode": "talk",
+   "finishMix": 0.5,
+   "lineage": "L1",
+   "layers": 16,
+   "params": 117914880,
+   "chars": 1045308899,
+   "tokens": 857567631,
+   "grew": 0,
+   "rolledBack": false,
+   "ownVal": null,
+   "ownScore": null,
+   "d": 768,
+   "loops": 1,
+   "spread": 2.9852,
+   "bytes": 1415115957,
+   "heads": 6,
+   "ctx": 512,
+   "vocab": 6000,
+   "kind": "bpe",
+   "arch": "tpp-loop",
+   "wantWider": false,
+   "layerCap": 16,
+   "mixChanged": false,
+   "bySrc": {
+    "laws": 4.4107,
+    "wiki": 3.2073,
+    "aozora": 3.5299,
+    "hanrei": 3.6182,
+    "kokkai": 2.7779,
+    "web": 3.0486,
+    "talk": 2.2127
+   },
+   "wrote": [
+    {
+     "start": "わたしは",
+     "text": "わたしは、これは、このあたりの大きな影響がございまして、いわゆる甘公衆の赤字は、各歳出明日本橋から、御存じのごとく、いわゆる鉄橋梁の中に、片山智吉の右側にある橋の上に、ほとんどこの頃にたえません。 ひがしと湖あげる霞"
+    },
+    {
+     "start": "第一条",
+     "text": "第一条 第一節 総則 （mic） （オハイ）及びオハイオ輝（オハイオ人）は、オハイオ人に対して、政昔の佐渡（オハイオ人）を保った。 インド人合同人は、スバル人と人類が結婚していると考えられた。事実、近代である。 オハイオ人で、オハイオ人の主要人物では、オバハイ"
+    },
+    {
+     "start": "この法律において",
+     "text": "この法律において、未だバイオレールは無いです。」 BN「定番ですもんね、夜も夜になる時もありますもんね。」 BP「はい。夜中も夜も少し大きいので、夜にできるんですよねー。」 BN「はい！夜だと、夜に水着になってきましたね！」"
+    }
+   ],
+   "loopPct": 0.0,
+   "movedBody": false
   }
  ],
  "bestVal": 3.0288,
@@ -12591,5 +12593,5 @@
  ],
  "wantWider": false,
  "nextD": 768,
- "bad": 0
+ "bad": 2
 }
