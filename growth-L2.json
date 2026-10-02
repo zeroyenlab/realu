@@ -1,67 +1,6 @@
 {
  "runs": [
   {
-   "at": "2026-09-21T23:14:48Z",
-   "val": 3.0186,
-   "prev": 3.0186,
-   "valTag": "fixed-holdout-v1",
-   "stoppedAt": 483,
-   "secPerStep": 7.7945,
-   "steps": 1377,
-   "bpc": 3.5728,
-   "charsPerTok": 1.2189,
-   "score": 2.0555,
-   "scoreW": 2.0,
-   "scoreMode": "talk",
-   "finishMix": 0.85,
-   "lineage": "L2",
-   "layers": 11,
-   "params": 37890560,
-   "chars": 1045308899,
-   "tokens": 857567631,
-   "grew": 0,
-   "rolledBack": true,
-   "ownVal": 2.9782,
-   "ownScore": 2.1699,
-   "d": 512,
-   "loops": 1,
-   "spread": 2.8613,
-   "bytes": 454783041,
-   "heads": 8,
-   "ctx": 512,
-   "vocab": 6000,
-   "kind": "bpe",
-   "arch": "tpp-loop",
-   "wantWider": false,
-   "layerCap": 16,
-   "mixChanged": false,
-   "bySrc": {
-    "laws": 4.1871,
-    "wiki": 3.094,
-    "aozora": 3.4292,
-    "hanrei": 3.6415,
-    "kokkai": 2.6626,
-    "web": 2.9568,
-    "talk": 2.1699
-   },
-   "wrote": [
-    {
-     "start": "わたしは",
-     "text": "わたしは流行るので大好きです。」 DY「そうなんですね、流行って私も流行りました！あとスイカゲも流行りますが。」 AU「スイカゲも流行りますよね。 スイカゲとか、すごく流行っているんですか？」 DY「両方メーカーが流行っている"
-    },
-    {
-     "start": "第一条",
-     "text": "第一条等に関する場合におけるものに限る。ズボラ俊介介介『ジェイク』では『イジェ』では『ジェイク』と『ジェイク』を『ジェイク』では『ジェイク』では『ジェイク』『ジェイク』を『ジェイク』では『ジェ"
-    },
-    {
-     "start": "この法律において",
-     "text": "この法律において「諵瑩」という。） 第一〇 東京都瑩区瑩擦 第一〇 東京都瑩区瑩北側瑩 東京都瑩南町瑩区瑩中央出張所瑩北側瑩北側瑩北側瑩猟して瑩北側瑩北側瑩北側瑩北"
-    }
-   ],
-   "loopPct": 22.54,
-   "movedBody": false
-  },
-  {
    "at": "2026-09-22T00:31:37Z",
    "val": 3.0186,
    "prev": 3.0186,
@@ -12533,6 +12472,69 @@
    ],
    "loopPct": 27.16,
    "movedBody": false
+  },
+  {
+   "at": "2026-10-02T15:39:53Z",
+   "val": 2.7008,
+   "prev": 2.7017,
+   "valTag": "fixed-holdout-v1",
+   "stoppedAt": 417,
+   "stuck": 0,
+   "evalTag": "fixed-ix-v1",
+   "secPerStep": 9.1552,
+   "steps": 614,
+   "bpc": 3.1966,
+   "charsPerTok": 1.2189,
+   "score": 2.056,
+   "scoreW": 2.0,
+   "scoreMode": "talk",
+   "finishMix": 0.85,
+   "lineage": "L2",
+   "layers": 13,
+   "params": 44216832,
+   "chars": 1045308899,
+   "tokens": 857567631,
+   "grew": 0,
+   "rolledBack": false,
+   "ownVal": null,
+   "ownScore": null,
+   "d": 512,
+   "loops": 1,
+   "spread": 2.8113,
+   "bytes": 530714761,
+   "heads": 8,
+   "ctx": 512,
+   "vocab": 6000,
+   "kind": "bpe",
+   "arch": "tpp-loop",
+   "wantWider": false,
+   "layerCap": 16,
+   "mixChanged": false,
+   "bySrc": {
+    "laws": 3.6252,
+    "wiki": 2.8676,
+    "aozora": 3.1807,
+    "hanrei": 3.4031,
+    "kokkai": 2.5146,
+    "web": 2.7875,
+    "talk": 2.056
+   },
+   "wrote": [
+    {
+     "start": "わたしは",
+     "text": "わたしは！」 AG「そうなんですか！さすがに、最近苦手なお母さんが、嬉しいなーと頑張っています。」 AO「嬉しいですよね。うちは、テレビか…」 AG「テレビで見ていましたが、奥さんは、テレビで見てるのだけでも、無理で"
+    },
+    {
+     "start": "第一条",
+     "text": "第一条（７）並びに１２条の二（１３） ３争点は，起訴原告が，別紙「原告本人」欄に１１ないし２７記載のとおり否認 する。 (3) 原告は，原告の主張するとおり，被告は，原告に対し，Ｄが 本件各不法行為により，原告が原告を連れて追放されたとしても，原告が本"
+    },
+    {
+     "start": "この法律において",
+     "text": "この法律において舎速やかに移転する。 その他要遺の長さをもつ改修代金（ メガヒット 、 シェルビーリング 、 人工知能 、 フルオーバブ 、 バウンドオーバー 、 フェンダー 、 カメラ 、 DOS 、 グリーンランド 、 新世紀 、 イギリス 、 コロンビ"
+    }
+   ],
+   "loopPct": 0.79,
+   "movedBody": false
   }
  ],
  "bestVal": 2.7008,
@@ -12583,5 +12585,5 @@
  ],
  "wantWider": false,
  "nextD": 512,
- "bad": 2
+ "bad": 3
 }
