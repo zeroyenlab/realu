@@ -1,67 +1,6 @@
 {
  "runs": [
   {
-   "at": "2026-09-21T20:51:27Z",
-   "val": 3.293,
-   "prev": 3.293,
-   "valTag": "fixed-holdout-v1",
-   "stoppedAt": 158,
-   "secPerStep": 25.9116,
-   "steps": 343,
-   "bpc": 3.8975,
-   "charsPerTok": 1.2189,
-   "score": 2.2926,
-   "scoreW": 2.0,
-   "scoreMode": "talk",
-   "finishMix": 0.5,
-   "lineage": "L1",
-   "layers": 16,
-   "params": 117914880,
-   "chars": 1045308899,
-   "tokens": 857567631,
-   "grew": 0,
-   "rolledBack": true,
-   "ownVal": 3.5054,
-   "ownScore": 2.4308,
-   "d": 768,
-   "loops": 1,
-   "spread": 3.5803,
-   "bytes": 1415115957,
-   "heads": 6,
-   "ctx": 512,
-   "vocab": 6000,
-   "kind": "bpe",
-   "arch": "tpp-loop",
-   "wantWider": false,
-   "layerCap": 16,
-   "mixChanged": false,
-   "bySrc": {
-    "laws": 5.2683,
-    "wiki": 3.5722,
-    "aozora": 3.9645,
-    "hanrei": 4.156,
-    "kokkai": 3.1064,
-    "web": 3.4018,
-    "talk": 2.4308
-   },
-   "wrote": [
-    {
-     "start": "わたしは",
-     "text": "わたしは此訳してしまったということで、私は、もう私はあれは政府が交渉すべき考えを考えてきたというふうに思っております。 さらに、今、今、総理も、これは政府としてはこれに関しては、判断ということでもなく、そして、私のこの予算の慣行というのは、今総理御答弁をいただきたいというふうに思っておりま"
-    },
-    {
-     "start": "第一条",
-     "text": "第一条 （第三十一条において準用する第二十四条第一項にかかわらず考えられる債務の支払を受けることを勘案し、及び生じた知識を怠った場合には、その信用を利用した部分 必要な事項 （特定資金の貸付け） 第二十条 簡易賃金債務は、環境保全規則に必要な措置についての自己資本を決定し、又は向上のために必要な事項（及び第三項に規定する定款（以下この条において「紛争」という。）との関係を疑われること。 地方公共団体は、その利用する者から、認定統計調査と"
-    },
-    {
-     "start": "この法律において",
-     "text": "この法律において封印しながらも、後ろでも一度もお出、そして、今度の、ちょっと後ろに進めたうるみたいな事をやった、もう一つおるのですが、しかし、あれしました。私は、指摘のようで、私は、そして、電車の黄金が、大きな返事が出てくるのではないか"
-    }
-   ],
-   "loopPct": 1.83,
-   "movedBody": false
-  },
-  {
    "at": "2026-09-21T22:05:28Z",
    "val": 3.293,
    "prev": 3.293,
@@ -12529,6 +12468,69 @@
    ],
    "loopPct": 1.21,
    "movedBody": false
+  },
+  {
+   "at": "2026-10-02T10:11:38Z",
+   "val": 3.0361,
+   "prev": 3.0367,
+   "valTag": "fixed-holdout-v1",
+   "stoppedAt": 160,
+   "stuck": 0,
+   "evalTag": "fixed-ix-v1",
+   "secPerStep": 25.9437,
+   "steps": 300,
+   "bpc": 3.5935,
+   "charsPerTok": 1.2189,
+   "score": 2.2076,
+   "scoreW": 2.0,
+   "scoreMode": "talk",
+   "finishMix": 0.5,
+   "lineage": "L1",
+   "layers": 16,
+   "params": 117914880,
+   "chars": 1045308899,
+   "tokens": 857567631,
+   "grew": 0,
+   "rolledBack": false,
+   "ownVal": null,
+   "ownScore": null,
+   "d": 768,
+   "loops": 1,
+   "spread": 3.3695,
+   "bytes": 1415115957,
+   "heads": 6,
+   "ctx": 512,
+   "vocab": 6000,
+   "kind": "bpe",
+   "arch": "tpp-loop",
+   "wantWider": false,
+   "layerCap": 16,
+   "mixChanged": false,
+   "bySrc": {
+    "laws": 4.4151,
+    "wiki": 3.2107,
+    "aozora": 3.5331,
+    "hanrei": 3.6286,
+    "kokkai": 2.7781,
+    "web": 3.0556,
+    "talk": 2.2076
+   },
+   "wrote": [
+    {
+     "start": "わたしは",
+     "text": "わたしはたいつなんですか？」 CU「なんというか、動画見たんですか？」 BV「そうなんですよ。仕事がないです。」 CU「それはあるんですね。私は最近はいつも話題になっています。」 BV「私のところはあまり対応できないんですが、自分のとき僕は厳密には"
+    },
+    {
+     "start": "第一条",
+     "text": "第一条の未建具・VIIIIALANALIAL AUIA』にて、MISALIVI「AUTY ANIMAINASHIC」にて、MICUICUIといったショーでは、MIUMICUE ANIROWではMINEが入手できなかった。 MIOSの"
+    },
+    {
+     "start": "この法律において",
+     "text": "この法律において「内面社会地域」を買い、約11万900人。 1949年に バングラデシュ大統領 の 日本大震災 で初の 東大震災 により、日本のニュース・ローカル等で 日本大震災 を行った。 9月10日 に 東京ム短期大学 に 東京大学 で意見を送り、 東京大学"
+    }
+   ],
+   "loopPct": 5.84,
+   "movedBody": false
   }
  ],
  "bestVal": 3.0357,
@@ -12579,5 +12581,5 @@
  ],
  "wantWider": false,
  "nextD": 768,
- "bad": 2
+ "bad": 0
 }
