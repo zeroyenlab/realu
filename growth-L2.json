@@ -1,67 +1,6 @@
 {
  "runs": [
   {
-   "at": "2026-09-22T09:24:41Z",
-   "val": 2.8745,
-   "prev": 2.9702,
-   "valTag": "fixed-holdout-v1",
-   "stoppedAt": 425,
-   "secPerStep": 8.886,
-   "steps": 734,
-   "bpc": 3.4022,
-   "charsPerTok": 1.2189,
-   "score": 2.0281,
-   "scoreW": 2.0,
-   "scoreMode": "talk",
-   "finishMix": 0.85,
-   "lineage": "L2",
-   "layers": 11,
-   "params": 37890560,
-   "chars": 1045308899,
-   "tokens": 857567631,
-   "grew": 0,
-   "rolledBack": false,
-   "ownVal": null,
-   "ownScore": null,
-   "d": 512,
-   "loops": 1,
-   "spread": 3.1429,
-   "bytes": 454783041,
-   "heads": 8,
-   "ctx": 512,
-   "vocab": 6000,
-   "kind": "bpe",
-   "arch": "tpp-loop",
-   "wantWider": false,
-   "layerCap": 16,
-   "mixChanged": false,
-   "bySrc": {
-    "laws": 4.0103,
-    "wiki": 3.0235,
-    "aozora": 3.4144,
-    "hanrei": 3.5722,
-    "kokkai": 2.6791,
-    "web": 2.9531,
-    "talk": 2.0281
-   },
-   "wrote": [
-    {
-     "start": "わたしは",
-     "text": "わたしは、受動的な見直しでいろいろ対策をとっておる。」 AA「そうして、そういう時代、経済は次の日代に対する見直しをまとめたときに、これまた統一見地から、財政再建を進めていくということが第一だと思うのであります。 そういう中で、私は、今日の財政再建は当然つきりにとりまして、"
-    },
-    {
-     "start": "第一条",
-     "text": "第一条をする。 ただし、かつ、排ガス代表の国内のなかには、供給源の需要を軽減するため、かつ、輸送サービスを増設し、その残高における需要を軽減するため、この込み収入を二十億に分ける。 また、半導体 - 主力軸を維持するため、毎年度の海外生産配分を中間的に運用して有料化した。 「 運動量 」という 性 のひとつである。 一般"
-    },
-    {
-     "start": "この法律において",
-     "text": "この法律において」と、「 systational carserse 」と呼ばれる意味である。 また、 Bture （: rostational ）とは、インドでは インド の名前である。 Gight Peternal （Preational carsen"
-    }
-   ],
-   "loopPct": 4.55,
-   "movedBody": false
-  },
-  {
    "at": "2026-09-22T10:41:38Z",
    "val": 2.8745,
    "prev": 2.8745,
@@ -12549,9 +12488,72 @@
    ],
    "loopPct": 6.86,
    "movedBody": false
+  },
+  {
+   "at": "2026-10-03T01:43:02Z",
+   "val": 2.698,
+   "prev": 2.6982,
+   "valTag": "fixed-holdout-v1",
+   "stoppedAt": 506,
+   "stuck": 0,
+   "evalTag": "fixed-ix-v1",
+   "secPerStep": 7.465,
+   "steps": 684,
+   "bpc": 3.1933,
+   "charsPerTok": 1.2189,
+   "score": 2.0539,
+   "scoreW": 2.0,
+   "scoreMode": "talk",
+   "finishMix": 0.85,
+   "lineage": "L2",
+   "layers": 13,
+   "params": 44216832,
+   "chars": 1045308899,
+   "tokens": 857567631,
+   "grew": 0,
+   "rolledBack": false,
+   "ownVal": null,
+   "ownScore": null,
+   "d": 512,
+   "loops": 1,
+   "spread": 2.5801,
+   "bytes": 530714761,
+   "heads": 8,
+   "ctx": 512,
+   "vocab": 6000,
+   "kind": "bpe",
+   "arch": "tpp-loop",
+   "wantWider": false,
+   "layerCap": 16,
+   "mixChanged": false,
+   "bySrc": {
+    "laws": 3.6235,
+    "wiki": 2.866,
+    "aozora": 3.1775,
+    "hanrei": 3.4004,
+    "kokkai": 2.5105,
+    "web": 2.7846,
+    "talk": 2.0539
+   },
+   "wrote": [
+    {
+     "start": "わたしは",
+     "text": "わたしは3人分は3人分で20分しかないです。」 HB「そうなんですね。ほんとに3匹待ちくわしたんですね。」 GM「そうなんです。ずっと一時間くらいは一人ですが。」 HB「一時間くらいはいつまで続くんですか？」 GM「今まで一時間とかまで"
+    },
+    {
+     "start": "第一条",
+     "text": "第一条入れて、を利用するために、患者に対しても周りのおしみを感じさせるとともに、患者のために、その患者に対しては、病気等のために、患者のために、凶悪で健康を害するおそれを感じさせるように周知徹底を行ってまいります。 また、患者的手法については、患者の皆さんの協力を得て担当者の方々の理解を得るようにと思いますが、"
+    },
+    {
+     "start": "この法律において",
+     "text": "この法律において」と、「三月十四日」とあるのは「六月十四日」と読み替えるものとする。 （火災等による火災等による災害の防止のための措置） 内閣官房長官は、操作等に伴う変更による災害の防止のための措置を講ずるよう要請しなければならない。 （業者による気象hamantisted des by smaticationss） 自衛官の風俗に関する情報の収集、管理及び管理、防犯等の状況その他の�"
+    }
+   ],
+   "loopPct": 7.64,
+   "movedBody": false
   }
  ],
- "bestVal": 2.6982,
+ "bestVal": 2.698,
  "layers": 13,
  "params": 44216832,
  "born": "2026-09-08T15:11:54Z",
@@ -12599,5 +12601,5 @@
  ],
  "wantWider": false,
  "nextD": 512,
- "bad": 1
+ "bad": 3
 }
