@@ -1,67 +1,6 @@
 {
  "runs": [
   {
-   "at": "2026-09-22T14:24:36Z",
-   "val": 3.3743,
-   "prev": 3.3743,
-   "valTag": "fixed-holdout-v1",
-   "stoppedAt": 202,
-   "secPerStep": 19.784,
-   "steps": 300,
-   "bpc": 3.9937,
-   "charsPerTok": 1.2189,
-   "score": 2.2214,
-   "scoreW": 2.0,
-   "scoreMode": "talk",
-   "finishMix": 0.5,
-   "lineage": "L1",
-   "layers": 16,
-   "params": 117914880,
-   "chars": 1045308899,
-   "tokens": 857567631,
-   "grew": 0,
-   "rolledBack": true,
-   "ownVal": 3.3488,
-   "ownScore": 2.4188,
-   "d": 768,
-   "loops": 1,
-   "spread": 3.8462,
-   "bytes": 1415115957,
-   "heads": 6,
-   "ctx": 512,
-   "vocab": 6000,
-   "kind": "bpe",
-   "arch": "tpp-loop",
-   "wantWider": false,
-   "layerCap": 16,
-   "mixChanged": false,
-   "bySrc": {
-    "laws": 5.036,
-    "wiki": 3.523,
-    "aozora": 3.8221,
-    "hanrei": 3.961,
-    "kokkai": 3.0389,
-    "web": 3.2618,
-    "talk": 2.4188
-   },
-   "wrote": [
-    {
-     "start": "わたしは",
-     "text": "わたしは何か何度も答えられて、全く違つたのではないでしょうか。」 AB「尊敬は、通りの角がおしい。その際、わかりました。一日も早く会ったことになりましたが、ざま。していません。」 AA「それを出してから、しかし、こんにゃくにする。鳩山中華も、"
-    },
-    {
-     "start": "第一条",
-     "text": "第一条番号 本店 ４（２）１７時７０分ころ，(8)ア被告は，�料債務２４０万円を 年６月11日より１００万円として趣旨と する。 (2) 同日，原告に被控訴人Ａ１０の１５００万円，Ａ１４，２９３万１５００円，２０月１０日，Ａ８ ０万１１"
-    },
-    {
-     "start": "この法律において",
-     "text": "この法律においておかなのですか？」 CL「はい。体がです！」 GV「そうなんです、それならいいのに近いですね。」 CL「そうなんですね。白鷺ができてる。」 GV「こんにちは！」 CL「今、鍋がきれいだと会いますか？」 GV「"
-    }
-   ],
-   "loopPct": 5.67,
-   "movedBody": false
-  },
-  {
    "at": "2026-09-22T15:32:20Z",
    "val": 3.3743,
    "prev": 3.3743,
@@ -12557,9 +12496,72 @@
    ],
    "loopPct": 1.38,
    "movedBody": false
+  },
+  {
+   "at": "2026-10-03T04:20:18Z",
+   "val": 3.0197,
+   "prev": 3.0248,
+   "valTag": "fixed-holdout-v1",
+   "stoppedAt": 180,
+   "stuck": 0,
+   "evalTag": "fixed-ix-v1",
+   "secPerStep": 22.8603,
+   "steps": 300,
+   "bpc": 3.5741,
+   "charsPerTok": 1.2189,
+   "score": 2.207,
+   "scoreW": 2.0,
+   "scoreMode": "talk",
+   "finishMix": 0.5,
+   "lineage": "L1",
+   "layers": 16,
+   "params": 117914880,
+   "chars": 1045308899,
+   "tokens": 857567631,
+   "grew": 0,
+   "rolledBack": false,
+   "ownVal": null,
+   "ownScore": null,
+   "d": 768,
+   "loops": 1,
+   "spread": 3.0829,
+   "bytes": 1415115957,
+   "heads": 6,
+   "ctx": 512,
+   "vocab": 6000,
+   "kind": "bpe",
+   "arch": "tpp-loop",
+   "wantWider": false,
+   "layerCap": 16,
+   "mixChanged": false,
+   "bySrc": {
+    "laws": 4.3832,
+    "wiki": 3.1963,
+    "aozora": 3.518,
+    "hanrei": 3.6106,
+    "kokkai": 2.7633,
+    "web": 3.0438,
+    "talk": 2.207
+   },
+   "wrote": [
+    {
+     "start": "わたしは",
+     "text": "わたしは、二人でない人を投還し、成功させた。 初代ヘルマンに抜き起こらない人間は、18歳でシャルル・ヘルマンに起因し、18歳になると感心する18歳から18歳の父親を圭と称する。 しかし、サンフランシスコは草原を訪ねていた。しかし、ピーナッツは18"
+    },
+    {
+     "start": "第一条",
+     "text": "第一条リニ却書類（光庫）は、日本における軍事力を強化するために、ダイレクト・アラブ・アラブ・シェートと、その実行力をICOCAの開発・販売といった推奨を実現するためには、その医療環境や予防などのリリースが高まり、かつての「産地資本等」は、日本として、日本における人材開発の重点的な運用を実"
+    },
+    {
+     "start": "この法律において",
+     "text": "この法律において「日本」から定義された「日本」（日本） 日本 (FIRA) グループ「日本の市ユニット」（日本・日本国内） 日本 の ユニット ロジック 日本 日本の ユニット 株式会社 日本 が誕生した ユニット 。 ICLA の 日本野球 の ロジック や 日本 の 日本 グループ 、 日本 の"
+    }
+   ],
+   "loopPct": 6.29,
+   "movedBody": false
   }
  ],
- "bestVal": 3.022,
+ "bestVal": 3.0197,
  "layers": 16,
  "params": 117914880,
  "born": "2026-09-08T15:11:54Z",
@@ -12607,5 +12609,5 @@
  ],
  "wantWider": false,
  "nextD": 768,
- "bad": 2
+ "bad": 3
 }
