@@ -1,67 +1,6 @@
 {
  "runs": [
   {
-   "at": "2026-09-23T02:41:28Z",
-   "val": 2.8525,
-   "prev": 2.8525,
-   "valTag": "fixed-holdout-v1",
-   "stoppedAt": 488,
-   "secPerStep": 7.7109,
-   "steps": 729,
-   "bpc": 3.3761,
-   "charsPerTok": 1.2189,
-   "score": 1.9843,
-   "scoreW": 2.0,
-   "scoreMode": "talk",
-   "finishMix": 0.85,
-   "lineage": "L2",
-   "layers": 11,
-   "params": 37890560,
-   "chars": 1045308899,
-   "tokens": 857567631,
-   "grew": 0,
-   "rolledBack": true,
-   "ownVal": 2.8709,
-   "ownScore": 2.0956,
-   "d": 512,
-   "loops": 1,
-   "spread": 2.6396,
-   "bytes": 454783041,
-   "heads": 8,
-   "ctx": 512,
-   "vocab": 6000,
-   "kind": "bpe",
-   "arch": "tpp-loop",
-   "wantWider": false,
-   "layerCap": 16,
-   "mixChanged": false,
-   "bySrc": {
-    "laws": 4.0273,
-    "wiki": 2.9605,
-    "aozora": 3.4052,
-    "hanrei": 3.5484,
-    "kokkai": 2.6102,
-    "web": 2.8763,
-    "talk": 2.0956
-   },
-   "wrote": [
-    {
-     "start": "わたしは",
-     "text": "わたしは夜の感じではなく、カニを買って帰ってきた。カニも何もない。けれども食べたら飛んできたり暮らして泣きながら食べたりしますよ。」 HV「そうなんですね。何自分で食べるんですか？」 AZ「何ならわからないですが、カニだけです。」 HV"
-    },
-    {
-     "start": "第一条",
-     "text": "第一条x]] けては，我が国のＦＮＡＰの騒音により，ＦＮＡＦＡＰＵ を出して，ＦＮＡＦＡＰＵに近い名目に突入する。さらに，ＦＮＡＦＡＮＡＦＡＥＮＡＮＡＥＱ ＰＳＦＡＮＡＥ"
-    },
-    {
-     "start": "この法律において",
-     "text": "この法律において「子」は、一人一人。 また、同朝には「どらお」「いちご」「くだ」「くだ」「くだ」「くだ」「くだ」「くだ」「くだ」「くだ」「くだ」「つぐ」「くだ」「くだ」「くだ」「くだ」「くだ」「くだ」「くだ」「くだ」などがある。 なお「くだ」「く"
-    }
-   ],
-   "loopPct": 30.37,
-   "movedBody": false
-  },
-  {
    "at": "2026-09-23T03:56:23Z",
    "val": 2.8525,
    "prev": 2.8525,
@@ -12577,6 +12516,69 @@
    ],
    "loopPct": 3.88,
    "movedBody": false
+  },
+  {
+   "at": "2026-10-03T19:20:07Z",
+   "val": 2.6922,
+   "prev": 2.6914,
+   "valTag": "fixed-holdout-v1",
+   "stoppedAt": 359,
+   "stuck": 0,
+   "evalTag": "fixed-ix-v1",
+   "secPerStep": 10.7073,
+   "steps": 695,
+   "bpc": 3.1865,
+   "charsPerTok": 1.2189,
+   "score": 2.0545,
+   "scoreW": 2.0,
+   "scoreMode": "talk",
+   "finishMix": 0.85,
+   "lineage": "L2",
+   "layers": 13,
+   "params": 44216832,
+   "chars": 1045308899,
+   "tokens": 857567631,
+   "grew": 0,
+   "rolledBack": false,
+   "ownVal": null,
+   "ownScore": null,
+   "d": 512,
+   "loops": 1,
+   "spread": 2.6847,
+   "bytes": 530714761,
+   "heads": 8,
+   "ctx": 512,
+   "vocab": 6000,
+   "kind": "bpe",
+   "arch": "tpp-loop",
+   "wantWider": false,
+   "layerCap": 16,
+   "mixChanged": false,
+   "bySrc": {
+    "laws": 3.6159,
+    "wiki": 2.8618,
+    "aozora": 3.1756,
+    "hanrei": 3.396,
+    "kokkai": 2.5072,
+    "web": 2.7805,
+    "talk": 2.0545
+   },
+   "wrote": [
+    {
+     "start": "わたしは",
+     "text": "わたしは私が誤解しているから苦しいからといってこの近所で言っていながら、露に参加しようよと。」 AB「そういう話をしていると、私どもは今だって、連日、全員集会、そして、おっしゃるように、ボランティアの方で集まって、ここでこの近所でやりなさいよと言っておられると。 こういう通りで"
+    },
+    {
+     "start": "第一条",
+     "text": "第一条第七十一年」とあり、引き続き「特称・歴史・歴史・歴史・歴史・歴史・歴史」「特称・歴史・歴史・歴史・歴史・歴史・歴史・歴史・歴史・歴史・歴史・歴史・歴史・歴史・歴史・歴史・歴史・歴史・歴�"
+    },
+    {
+     "start": "この法律において",
+     "text": "この法律において爀球場で行われる。 ボールを付けて、ボールを上げる。 その後、ボールの上へ（ボールの上へ）と見なす。 鉄骨や鉄骨などのような複雑な空間で、ボールを張り付けて、ボールを引っかけて走りながら、ボールを締めながら立つ。 ボールを中心に、軸を内側に"
+    }
+   ],
+   "loopPct": 27.11,
+   "movedBody": false
   }
  ],
  "bestVal": 2.6914,
@@ -12627,5 +12629,5 @@
  ],
  "wantWider": false,
  "nextD": 512,
- "bad": 2
+ "bad": 1
 }
