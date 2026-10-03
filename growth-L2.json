@@ -1,67 +1,6 @@
 {
  "runs": [
   {
-   "at": "2026-09-23T03:56:23Z",
-   "val": 2.8525,
-   "prev": 2.8525,
-   "valTag": "fixed-holdout-v1",
-   "stoppedAt": 429,
-   "secPerStep": 8.809,
-   "steps": 729,
-   "bpc": 3.3761,
-   "charsPerTok": 1.2189,
-   "score": 1.9843,
-   "scoreW": 2.0,
-   "scoreMode": "talk",
-   "finishMix": 0.85,
-   "lineage": "L2",
-   "layers": 11,
-   "params": 37890560,
-   "chars": 1045308899,
-   "tokens": 857567631,
-   "grew": 0,
-   "rolledBack": true,
-   "ownVal": 2.8985,
-   "ownScore": 2.085,
-   "d": 512,
-   "loops": 1,
-   "spread": 2.9289,
-   "bytes": 454783041,
-   "heads": 8,
-   "ctx": 512,
-   "vocab": 6000,
-   "kind": "bpe",
-   "arch": "tpp-loop",
-   "wantWider": false,
-   "layerCap": 16,
-   "mixChanged": false,
-   "bySrc": {
-    "laws": 3.8548,
-    "wiki": 2.9899,
-    "aozora": 3.4236,
-    "hanrei": 3.5452,
-    "kokkai": 2.5783,
-    "web": 2.9565,
-    "talk": 2.085
-   },
-   "wrote": [
-    {
-     "start": "わたしは",
-     "text": "わたしは好きです。ただ、好きな食べ物は何ですか？」 CA「サラダ、きれいですね。いつも毎日食べてます！」 BS「うわー、いいですね！私も同じです。。でも野菜が好きです。」 CA「野菜もいいですよね、、うどん派です。野菜"
-    },
-    {
-     "start": "第一条",
-     "text": "第一条�出託証証ばかりしております。」 AB「しかしながら、私は、あなたが本件については、完全に金融セキュリティーを開示し、いわゆる評価をいたします。 また、五月七日、社会党は、金融行政改革本部を設置して、官民の皆さんに、あなたが感謝の意思をお聞きいたします"
-    },
-    {
-     "start": "この法律において",
-     "text": "この法律において��、生徒、生徒、生徒、生徒、生徒に対する負担、役割等、または学生人材の少なさ等とともに、個人のための使途として、いわゆる国が行い、将来の世代が社会にできる限り利益を上げることができるようにするため、先進国が発足するひとりでもあります。これは、我が国が発足する以前の私立大学における学習の成果を理解"
-    }
-   ],
-   "loopPct": 9.33,
-   "movedBody": false
-  },
-  {
    "at": "2026-09-23T05:09:41Z",
    "val": 2.8525,
    "prev": 2.8525,
@@ -12579,6 +12518,69 @@
    ],
    "loopPct": 27.11,
    "movedBody": false
+  },
+  {
+   "at": "2026-10-03T20:18:48Z",
+   "val": 2.697,
+   "prev": 2.6922,
+   "valTag": "fixed-holdout-v1",
+   "stoppedAt": 0,
+   "stuck": 0,
+   "evalTag": "fixed-ix-v1",
+   "secPerStep": 4.7678,
+   "steps": 603,
+   "bpc": 3.1921,
+   "charsPerTok": 1.2189,
+   "score": 2.0524,
+   "scoreW": 2.0,
+   "scoreMode": "talk",
+   "finishMix": 0.85,
+   "lineage": "L2",
+   "layers": 13,
+   "params": 44216832,
+   "chars": 1045308899,
+   "tokens": 857567631,
+   "grew": 0,
+   "rolledBack": false,
+   "ownVal": null,
+   "ownScore": null,
+   "d": 512,
+   "loops": 1,
+   "spread": 2.6911,
+   "bytes": 530714761,
+   "heads": 8,
+   "ctx": 512,
+   "vocab": 6000,
+   "kind": "bpe",
+   "arch": "tpp-loop",
+   "wantWider": false,
+   "layerCap": 16,
+   "mixChanged": false,
+   "bySrc": {
+    "laws": 3.621,
+    "wiki": 2.8658,
+    "aozora": 3.1791,
+    "hanrei": 3.4079,
+    "kokkai": 2.5125,
+    "web": 2.7828,
+    "talk": 2.0524
+   },
+   "wrote": [
+    {
+     "start": "わたしは",
+     "text": "わたしは、フィリピンの街でワインが擬態していました。」 BY「むしろ、ホッケ水に味わっていく感じがしますね。白いのに。」 AZ「そうなんです！行ってみたいです。」 BY「私もです！この間の食べ物、そしてお腹が空いてきました。」 A"
+    },
+    {
+     "start": "第一条",
+     "text": "第一条第二号（日本語） 日本語の in cyple（英称： ）は、日本語の serrica 。2003年に日本語で発売した 。 日本語は、英語と日本語を中心に、英語圏では英語で serrica 、 、 といった cegelic と同じように"
+    },
+    {
+     "start": "この法律において",
+     "text": "この法律においての禁止を含む。じょうほう、ほうじょうさい、いつしかやたらとましょうか、こういうようなものをやめておるのかというようなことから、まだ慎重に、各社ともやったわけではございません。」 AB「西村委員 まあＴＰＰは何をやったり使ったんだということで、それじゃ、やはり政府がやる"
+    }
+   ],
+   "loopPct": 4.87,
+   "movedBody": false
   }
  ],
  "bestVal": 2.6914,
@@ -12629,5 +12631,5 @@
  ],
  "wantWider": false,
  "nextD": 512,
- "bad": 1
+ "bad": 0
 }
