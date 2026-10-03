@@ -1,67 +1,6 @@
 {
  "runs": [
   {
-   "at": "2026-09-23T01:22:50Z",
-   "val": 3.0459,
-   "prev": 3.0459,
-   "valTag": "fixed-holdout-v1",
-   "stoppedAt": 1080,
-   "secPerStep": 3.3951,
-   "steps": 1168,
-   "bpc": 3.605,
-   "charsPerTok": 1.2189,
-   "score": 2.1306,
-   "scoreW": 2.0,
-   "scoreMode": "talk",
-   "finishMix": 0.2,
-   "lineage": "L3",
-   "layers": 13,
-   "params": 25335168,
-   "chars": 1045308899,
-   "tokens": 857567631,
-   "grew": 0,
-   "rolledBack": true,
-   "ownVal": 2.9121,
-   "ownScore": 2.1767,
-   "d": 384,
-   "loops": 1,
-   "spread": 2.7844,
-   "bytes": 304134729,
-   "heads": 6,
-   "ctx": 512,
-   "vocab": 6000,
-   "kind": "bpe",
-   "arch": "tpp-loop",
-   "wantWider": false,
-   "layerCap": 16,
-   "mixChanged": false,
-   "bySrc": {
-    "laws": 4.0993,
-    "wiki": 3.0097,
-    "aozora": 3.4019,
-    "hanrei": 3.6531,
-    "kokkai": 2.6205,
-    "web": 2.9691,
-    "talk": 2.1767
-   },
-   "wrote": [
-    {
-     "start": "わたしは",
-     "text": "わたしは宮澤から宮澤に来たので、私はさすがに西区の宮澤から宮澤まで、宮澤から「宮澤玉松」という吾妻さんと宮澤の宮澤から宮澤玉松坂まで来た。ここで宮澤玉松坂"
-    },
-    {
-     "start": "第一条",
-     "text": "第一条第四号第八号ロ第四号ロ第五号ロ第四号ロ第四号ロ第四号ロ第四号ロ第四号ログラムロ第六号ロ新たなボロボロロックに変化するローレルデターロック」 AA「このローレルデターロックは、ロボロボロゾフターによる流行時に、ローレルタックにローレルサーバーによるハップローンが必要になっている。また、ロボロドロックがサーバ"
-    },
-    {
-     "start": "この法律において",
-     "text": "この法律において読むことができる。これにより、教職員の給与等（業者への就職）を実施したが、引き続き、道府県の区域とする当該地方自治産物についても、地方自治体の収支等ものとし、都道府県に対し、市町村への出向者に対する不出席に認められた 。 市町村から地方自治産、地方地方自治体ブランスフォード公庫（以下「地方自治産」という。）の覧式は、その表で合併して地方自治産、地方自治産、地方自治産、地方自治産、"
-    }
-   ],
-   "loopPct": 14.66,
-   "movedBody": false
-  },
-  {
    "at": "2026-09-23T02:43:11Z",
    "val": 3.0459,
    "prev": 3.0459,
@@ -12575,9 +12514,72 @@
    ],
    "loopPct": 11.18,
    "movedBody": false
+  },
+  {
+   "at": "2026-10-03T15:18:35Z",
+   "val": 2.731,
+   "prev": 2.7339,
+   "valTag": "fixed-holdout-v1",
+   "stoppedAt": 0,
+   "stuck": 0,
+   "evalTag": "fixed-ix-v1",
+   "secPerStep": 2.8527,
+   "steps": 974,
+   "bpc": 3.2323,
+   "charsPerTok": 1.2189,
+   "score": 2.1679,
+   "scoreW": 2.0,
+   "scoreMode": "talk",
+   "finishMix": 0.2,
+   "lineage": "L3",
+   "layers": 13,
+   "params": 25335168,
+   "chars": 1045308899,
+   "tokens": 857567631,
+   "grew": 0,
+   "rolledBack": false,
+   "ownVal": null,
+   "ownScore": null,
+   "d": 384,
+   "loops": 1,
+   "spread": 2.9718,
+   "bytes": 304134793,
+   "heads": 6,
+   "ctx": 512,
+   "vocab": 6000,
+   "kind": "bpe",
+   "arch": "tpp-loop",
+   "wantWider": false,
+   "layerCap": 16,
+   "mixChanged": false,
+   "bySrc": {
+    "laws": 3.7116,
+    "wiki": 2.9034,
+    "aozora": 3.2298,
+    "hanrei": 3.445,
+    "kokkai": 2.5352,
+    "web": 2.8128,
+    "talk": 2.1679
+   },
+   "wrote": [
+    {
+     "start": "わたしは",
+     "text": "わたしは自分自身が本当に自分自身のレショーを忘れることにもなった。 それによって三人の犠牲者を出すことはなく、また二人は自分自身の自分の顔に合わせて「あらましの男」と呼んだ。 この作品で、ソロデビューしたシングルである「 トロント 」をリリースした。 1995"
+    },
+    {
+     "start": "第一条",
+     "text": "第一条の規定は、適用しない。 ープルトラックス又はSE型電気コネクトブループ （佐世代電位相印） ]周年時における過剰電位相印は、その記録によりすぐに発表された 。ただし、印刷物には、再びWEB画像を 、その表面上面に「 」欄に記載されている 。 なお、上記のCD画像は、従来の「i」のよう"
+    },
+    {
+     "start": "この法律において",
+     "text": "この法律において「News News」又は「News News」（現存しないAPI）を用いる。 小規模なApiral Openの生成は、1979年に「News News」と命名された。このように、普通のApiral Enconsion用の生成は、Apiral E"
+    }
+   ],
+   "loopPct": 1.54,
+   "movedBody": false
   }
  ],
- "bestVal": 2.733,
+ "bestVal": 2.731,
  "layers": 13,
  "params": 25335168,
  "born": "2026-09-12T18:05:42Z",
@@ -12625,5 +12627,5 @@
  ],
  "wantWider": false,
  "nextD": 384,
- "bad": 0
+ "bad": 4
 }
