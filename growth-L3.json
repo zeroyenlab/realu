@@ -1,67 +1,6 @@
 {
  "runs": [
   {
-   "at": "2026-09-23T08:55:48Z",
-   "val": 3.0459,
-   "prev": 3.0459,
-   "valTag": "fixed-holdout-v1",
-   "stoppedAt": 528,
-   "secPerStep": 7.0827,
-   "steps": 969,
-   "bpc": 3.605,
-   "charsPerTok": 1.2189,
-   "score": 2.1306,
-   "scoreW": 2.0,
-   "scoreMode": "talk",
-   "finishMix": 0.2,
-   "lineage": "L3",
-   "layers": 13,
-   "params": 25335168,
-   "chars": 1045308899,
-   "tokens": 857567631,
-   "grew": 0,
-   "rolledBack": true,
-   "ownVal": 2.9069,
-   "ownScore": 2.2254,
-   "d": 384,
-   "loops": 1,
-   "spread": 2.9476,
-   "bytes": 304134729,
-   "heads": 6,
-   "ctx": 512,
-   "vocab": 6000,
-   "kind": "bpe",
-   "arch": "tpp-loop",
-   "wantWider": false,
-   "layerCap": 16,
-   "mixChanged": false,
-   "bySrc": {
-    "laws": 4.0776,
-    "wiki": 3.1375,
-    "aozora": 3.5056,
-    "hanrei": 3.6681,
-    "kokkai": 2.6957,
-    "web": 2.9135,
-    "talk": 2.2254
-   },
-   "wrote": [
-    {
-     "start": "わたしは",
-     "text": "わたしは、まさにそうです。」 AJ「それはいいですね、私もです！」 AJ「色々と違うところです！」 AJ「そうですね。なんかそういうのが楽しいですし。」 AJ「みたいな、あっ、それはよくわかります！」 AJ「はい。最近は、まさに考えるの"
-    },
-    {
-     "start": "第一条",
-     "text": "第一条航路駅である。 奥羳列車（Kamatachi Halkaata） - 2009年 - 10月17日、三重県川谷市にて快速「バス」が発車し、2002年 - 2004年と2014年 - 2014年と2015年は7月2"
-    },
-    {
-     "start": "この法律において",
-     "text": "この法律において「当該対象会計年度が同項に規定する地域」とあるのは「地域」と、第一項各号にあつては、同条第一号及び第五号から第四号まで（第二号から第四号まで、第十三条第一項を除き、住民基本法に基づく難民助成金及び難民蔓延防止法の特例に関する法律に基づく難民助成金を除く。）とする。 （市町村ごとの自治支援指導者への支援） 第十四条の二 この法律で、都内市町村が市町村ごとの自治支援指導者への支援を行う場合には、市町村以外の市町村は市町村機器"
-    }
-   ],
-   "loopPct": 4.52,
-   "movedBody": false
-  },
-  {
    "at": "2026-09-23T11:15:01Z",
    "val": 3.0459,
    "prev": 3.0459,
@@ -12587,6 +12526,69 @@
    ],
    "loopPct": 1.14,
    "movedBody": false
+  },
+  {
+   "at": "2026-10-03T23:02:44Z",
+   "val": 2.729,
+   "prev": 2.7288,
+   "valTag": "fixed-holdout-v1",
+   "stoppedAt": 556,
+   "stuck": 0,
+   "evalTag": "fixed-ix-v1",
+   "secPerStep": 6.7594,
+   "steps": 975,
+   "bpc": 3.23,
+   "charsPerTok": 1.2189,
+   "score": 2.1684,
+   "scoreW": 2.0,
+   "scoreMode": "talk",
+   "finishMix": 0.2,
+   "lineage": "L3",
+   "layers": 13,
+   "params": 25335168,
+   "chars": 1045308899,
+   "tokens": 857567631,
+   "grew": 0,
+   "rolledBack": false,
+   "ownVal": null,
+   "ownScore": null,
+   "d": 384,
+   "loops": 1,
+   "spread": 2.6963,
+   "bytes": 304134793,
+   "heads": 6,
+   "ctx": 512,
+   "vocab": 6000,
+   "kind": "bpe",
+   "arch": "tpp-loop",
+   "wantWider": false,
+   "layerCap": 16,
+   "mixChanged": false,
+   "bySrc": {
+    "laws": 3.7102,
+    "wiki": 2.9011,
+    "aozora": 3.2255,
+    "hanrei": 3.4453,
+    "kokkai": 2.5331,
+    "web": 2.8109,
+    "talk": 2.1684
+   },
+   "wrote": [
+    {
+     "start": "わたしは",
+     "text": "わたしは、もうやめたと思います。」 IB「あの人もおられるのお腹がすごくなりますからね。」 HK「はい、もう終わりになりますよね。」 IB「楽しいときには、全くですよ。」 HK「はい。あと、平日でもいいですね。」 IB「そうですよね、"
+    },
+    {
+     "start": "第一条",
+     "text": "第一条を及ぼすATSドココココロコロコミューション経済学 YHOP Project Scial startics/theatentis Workerstrictus Of National comment Sciencle Sound."
+    },
+    {
+     "start": "この法律において",
+     "text": "この法律において「関係法律」とを所管する。 石油自動車・地方ガス連合（日本IC）は、1924年9月に国連サッカーリーグのAFC BLBにて、日本の 初のオーストラリア・イギリス連邦 （ 英語版 ） で、日本の イングランド ・ アリゾナ大学 （ 英語版 ） に"
+    }
+   ],
+   "loopPct": 4.53,
+   "movedBody": false
   }
  ],
  "bestVal": 2.7288,
@@ -12637,5 +12639,5 @@
  ],
  "wantWider": false,
  "nextD": 384,
- "bad": 4
+ "bad": 3
 }
