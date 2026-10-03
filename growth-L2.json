@@ -1,67 +1,6 @@
 {
  "runs": [
   {
-   "at": "2026-09-22T10:41:38Z",
-   "val": 2.8745,
-   "prev": 2.8745,
-   "valTag": "fixed-holdout-v1",
-   "stoppedAt": 480,
-   "secPerStep": 7.8305,
-   "steps": 733,
-   "bpc": 3.4022,
-   "charsPerTok": 1.2189,
-   "score": 2.0281,
-   "scoreW": 2.0,
-   "scoreMode": "talk",
-   "finishMix": 0.85,
-   "lineage": "L2",
-   "layers": 11,
-   "params": 37890560,
-   "chars": 1045308899,
-   "tokens": 857567631,
-   "grew": 0,
-   "rolledBack": true,
-   "ownVal": 2.9196,
-   "ownScore": 2.2244,
-   "d": 512,
-   "loops": 1,
-   "spread": 2.8474,
-   "bytes": 454783041,
-   "heads": 8,
-   "ctx": 512,
-   "vocab": 6000,
-   "kind": "bpe",
-   "arch": "tpp-loop",
-   "wantWider": false,
-   "layerCap": 16,
-   "mixChanged": false,
-   "bySrc": {
-    "laws": 4.0089,
-    "wiki": 2.9872,
-    "aozora": 3.3375,
-    "hanrei": 3.622,
-    "kokkai": 2.6216,
-    "web": 2.9367,
-    "talk": 2.2244
-   },
-   "wrote": [
-    {
-     "start": "わたしは",
-     "text": "わたしはいつも目標を達成しようとしているのでございます。」 AB「しかし、政府がいかなる努力をしているかという、いわゆる我々が確かに言うべきでございますので、この点につきましては、この点はどういうふうに具体的に判断をしておりますか。」 AA「安倍内閣総理大臣 私の質問は、新井委員"
-    },
-    {
-     "start": "第一条",
-     "text": "第一条第四号キロキロロールプライム（2022年10月） ”. 太陽 . 太陽 (2022年11月). 2023年11月3日閲覧。 ↑ “ 昨今、極東 太陽と比べると、昭和慣習が大きくなり、日本は太陽太陽にな"
-    },
-    {
-     "start": "この法律において",
-     "text": "この法律において「クラウド生出動者」」として知られる。 僕は、最近は被写体に入れ替わる際に、この運動がもっぱら「 クラウド生出動者 」として知られる。 ドメスペンションは、状態が悪く、その関係から取るのは意識しない。 「ドメスペンション」と「Centrum」と「Centru"
-    }
-   ],
-   "loopPct": 13.42,
-   "movedBody": false
-  },
-  {
    "at": "2026-09-22T11:59:27Z",
    "val": 2.8525,
    "prev": 2.8745,
@@ -12551,9 +12490,72 @@
    ],
    "loopPct": 7.64,
    "movedBody": false
+  },
+  {
+   "at": "2026-10-03T02:51:52Z",
+   "val": 2.6977,
+   "prev": 2.698,
+   "valTag": "fixed-holdout-v1",
+   "stoppedAt": 0,
+   "stuck": 0,
+   "evalTag": "fixed-ix-v1",
+   "secPerStep": 4.6623,
+   "steps": 703,
+   "bpc": 3.1929,
+   "charsPerTok": 1.2189,
+   "score": 2.0569,
+   "scoreW": 2.0,
+   "scoreMode": "talk",
+   "finishMix": 0.85,
+   "lineage": "L2",
+   "layers": 13,
+   "params": 44216832,
+   "chars": 1045308899,
+   "tokens": 857567631,
+   "grew": 0,
+   "rolledBack": false,
+   "ownVal": null,
+   "ownScore": null,
+   "d": 512,
+   "loops": 1,
+   "spread": 2.8827,
+   "bytes": 530714761,
+   "heads": 8,
+   "ctx": 512,
+   "vocab": 6000,
+   "kind": "bpe",
+   "arch": "tpp-loop",
+   "wantWider": false,
+   "layerCap": 16,
+   "mixChanged": false,
+   "bySrc": {
+    "laws": 3.6181,
+    "wiki": 2.8665,
+    "aozora": 3.1759,
+    "hanrei": 3.4033,
+    "kokkai": 2.51,
+    "web": 2.7854,
+    "talk": 2.0569
+   },
+   "wrote": [
+    {
+     "start": "わたしは",
+     "text": "わたしは美味しそうです。」 CT「これまで食べたラーメン屋さんでもらえるんですよね。」 BQ「へぇ。すごいですね。10月ごろに食べたんですよね。」 CT「そうなんです。私も今年食べてないかも。。なにたべます？」 BQ「今年は"
+    },
+    {
+     "start": "第一条",
+     "text": "第一条第二号」 客「電話番号を教えてください。」 店「電話番号は0570056121です。」 客「ありがとうございます。」 店「はい。他にご用件はありますか？」 客「いえ、大丈夫です。色々ありがとうございました。」 店「よい旅を」 <"
+    },
+    {
+     "start": "この法律において",
+     "text": "この法律において「マスク」とは、マスク又はマスク、マスクその他の飼育用遊離品、事故関連産業用水域内のマスク、マスク又はマスクを、多数の習得物を、自ら用いるマスク、マスクその他の子遊離品、事故関連産業用水域外で資産を譲り受け、若しくは修理、渡航、貸し付け、販売、販売の必要性、子遊離品、事故関連産業用水域外で資産を譲り受け"
+    }
+   ],
+   "loopPct": 3.62,
+   "movedBody": false
   }
  ],
- "bestVal": 2.698,
+ "bestVal": 2.6977,
  "layers": 13,
  "params": 44216832,
  "born": "2026-09-08T15:11:54Z",
@@ -12601,5 +12603,5 @@
  ],
  "wantWider": false,
  "nextD": 512,
- "bad": 3
+ "bad": 5
 }
