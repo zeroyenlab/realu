@@ -1,67 +1,6 @@
 {
  "runs": [
   {
-   "at": "2026-09-22T20:36:09Z",
-   "val": 3.3743,
-   "prev": 3.3743,
-   "valTag": "fixed-holdout-v1",
-   "stoppedAt": 158,
-   "secPerStep": 25.9324,
-   "steps": 326,
-   "bpc": 3.9937,
-   "charsPerTok": 1.2189,
-   "score": 2.2214,
-   "scoreW": 2.0,
-   "scoreMode": "talk",
-   "finishMix": 0.5,
-   "lineage": "L1",
-   "layers": 16,
-   "params": 117914880,
-   "chars": 1045308899,
-   "tokens": 857567631,
-   "grew": 0,
-   "rolledBack": true,
-   "ownVal": 3.3329,
-   "ownScore": 2.393,
-   "d": 768,
-   "loops": 1,
-   "spread": 4.1234,
-   "bytes": 1415115957,
-   "heads": 6,
-   "ctx": 512,
-   "vocab": 6000,
-   "kind": "bpe",
-   "arch": "tpp-loop",
-   "wantWider": false,
-   "layerCap": 16,
-   "mixChanged": false,
-   "bySrc": {
-    "laws": 5.0106,
-    "wiki": 3.569,
-    "aozora": 3.8032,
-    "hanrei": 3.9451,
-    "kokkai": 3.0068,
-    "web": 3.2774,
-    "talk": 2.393
-   },
-   "wrote": [
-    {
-     "start": "わたしは",
-     "text": "わたしはないのです。」 EP「ありがとうございます！」 FA「こちらこそ、あと、今度見てみました。」 FA「こんにちはー。」 EP「こんにちは！」 FA「いいですね。最近は何を見てます"
-    },
-    {
-     "start": "第一条",
-     "text": "第一条トイズトフトフェッショップ（映像） 2011年3月1日閲覧。 ↑ “ 「主人公が 2021年5月16日 」 ”. 加賀茂一 (2021年9月10日). 2020年9月12日閲覧。 ↑ “ 「三重西き"
-    },
-    {
-     "start": "この法律において",
-     "text": "この法律においてに仕立てたいと思うんですか。 その上で、この辺に立って、そこで、私は、日銀の、それも先ほど申し上げたいと思います。それから、そういうことで、総理、これは提出しておりますが、これはどうですか、総理、いかがでしょうか。」 AB「国務大臣 まず、総理、この点について一つ、後からお話"
-    }
-   ],
-   "loopPct": 5.99,
-   "movedBody": false
-  },
-  {
    "at": "2026-09-22T21:51:30Z",
    "val": 3.3743,
    "prev": 3.3743,
@@ -12567,6 +12506,69 @@
    ],
    "loopPct": 4.93,
    "movedBody": false
+  },
+  {
+   "at": "2026-10-03T10:41:58Z",
+   "val": 3.0175,
+   "prev": 3.0154,
+   "valTag": "fixed-holdout-v1",
+   "stoppedAt": 293,
+   "stuck": 0,
+   "evalTag": "fixed-ix-v1",
+   "secPerStep": 13.2938,
+   "steps": 300,
+   "bpc": 3.5714,
+   "charsPerTok": 1.2189,
+   "score": 2.2018,
+   "scoreW": 2.0,
+   "scoreMode": "talk",
+   "finishMix": 0.5,
+   "lineage": "L1",
+   "layers": 16,
+   "params": 117914880,
+   "chars": 1045308899,
+   "tokens": 857567631,
+   "grew": 0,
+   "rolledBack": false,
+   "ownVal": null,
+   "ownScore": null,
+   "d": 768,
+   "loops": 1,
+   "spread": 2.8767,
+   "bytes": 1415115957,
+   "heads": 6,
+   "ctx": 512,
+   "vocab": 6000,
+   "kind": "bpe",
+   "arch": "tpp-loop",
+   "wantWider": false,
+   "layerCap": 16,
+   "mixChanged": false,
+   "bySrc": {
+    "laws": 4.3832,
+    "wiki": 3.1937,
+    "aozora": 3.5209,
+    "hanrei": 3.5989,
+    "kokkai": 2.7659,
+    "web": 3.0432,
+    "talk": 2.2018
+   },
+   "wrote": [
+    {
+     "start": "わたしは",
+     "text": "わたしは心配を持っております。しかし、やはり一番上に立っておるものが、まず、或るところの間、及川、山梨、湯川、川水、小河、小川、石川、小川、山川、八里川、五川があるかとのお話は、いずれもわかりませました。」 AB「小川、国鉄は、当時、本年度より起納政"
+    },
+    {
+     "start": "第一条",
+     "text": "第一条キットキットキットを依存して実現できる 。 JR 1978年に発社された「ライックスピッツスペシャルスペシャル」 の日本レコード大賞会場を開催したが、1988年に2001年にスペシャルスペシャルスイッチを開催した。 同年12月4日に、2004年3"
+    },
+    {
+     "start": "この法律において",
+     "text": "この法律においてけたんですね。」 AB「与謝野国務大臣 私も、今申し上げましたとおり、わが国がどういうべきかというのは、あくまでも、国がもっとテロになる、そういうことも含まれるということ。 そうしますと、確かにテロの国々がいろんな形で設立していますので、これは新しい国とかそういう地域"
+    }
+   ],
+   "loopPct": 13.49,
+   "movedBody": false
   }
  ],
  "bestVal": 3.0154,
@@ -12617,5 +12619,5 @@
  ],
  "wantWider": false,
  "nextD": 768,
- "bad": 0
+ "bad": 1
 }
