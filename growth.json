@@ -1,67 +1,6 @@
 {
  "runs": [
   {
-   "at": "2026-09-22T19:20:11Z",
-   "val": 3.3743,
-   "prev": 3.3743,
-   "valTag": "fixed-holdout-v1",
-   "stoppedAt": 158,
-   "secPerStep": 25.8642,
-   "steps": 452,
-   "bpc": 3.9937,
-   "charsPerTok": 1.2189,
-   "score": 2.2214,
-   "scoreW": 2.0,
-   "scoreMode": "talk",
-   "finishMix": 0.5,
-   "lineage": "L1",
-   "layers": 16,
-   "params": 117914880,
-   "chars": 1045308899,
-   "tokens": 857567631,
-   "grew": 0,
-   "rolledBack": true,
-   "ownVal": 3.3622,
-   "ownScore": 2.4066,
-   "d": 768,
-   "loops": 1,
-   "spread": 3.8284,
-   "bytes": 1415115957,
-   "heads": 6,
-   "ctx": 512,
-   "vocab": 6000,
-   "kind": "bpe",
-   "arch": "tpp-loop",
-   "wantWider": false,
-   "layerCap": 16,
-   "mixChanged": false,
-   "bySrc": {
-    "laws": 5.0309,
-    "wiki": 3.4795,
-    "aozora": 3.7564,
-    "hanrei": 4.0044,
-    "kokkai": 3.0138,
-    "web": 3.3025,
-    "talk": 2.4066
-   },
-   "wrote": [
-    {
-     "start": "わたしは",
-     "text": "わたしはして、いろいろありますので、そういうことで、これは総理の答弁です。 改革の理解をなさっているということで、それが是非、できる限りですとか、あるいは地方が大変苦となる、企業改革、これもそれで、和ですよというのは、それで、私は、国民が一番安いのを見ますと、そういうふう"
-    },
-    {
-     "start": "第一条",
-     "text": "第一条ヲ再生機 キハ14・ハットハウェルハードホルモン-Moray Soundio Metcenter,DS Musc Rectiedye-Arcanters Macasic-Stass-phater-thees, emanama"
-    },
-    {
-     "start": "この法律において",
-     "text": "この法律においてください」 客「では１回、駐車場無料の駐車場が無料で利用できるところがいいですよ。」 店「予約をお願いできますか？」 客「はい、駐車場とYouTuber、Wi-Fiが無料で利用できるところを探していくので、カップヌードルキューヌ 昼間ははなさそうで"
-    }
-   ],
-   "loopPct": 4.72,
-   "movedBody": false
-  },
-  {
    "at": "2026-09-22T20:36:09Z",
    "val": 3.3743,
    "prev": 3.3743,
@@ -12565,9 +12504,72 @@
    ],
    "loopPct": 1.53,
    "movedBody": false
+  },
+  {
+   "at": "2026-10-03T09:28:22Z",
+   "val": 3.0154,
+   "prev": 3.0167,
+   "valTag": "fixed-holdout-v1",
+   "stoppedAt": 158,
+   "stuck": 0,
+   "evalTag": "fixed-ix-v1",
+   "secPerStep": 26.2894,
+   "steps": 300,
+   "bpc": 3.569,
+   "charsPerTok": 1.2189,
+   "score": 2.2075,
+   "scoreW": 2.0,
+   "scoreMode": "talk",
+   "finishMix": 0.5,
+   "lineage": "L1",
+   "layers": 16,
+   "params": 117914880,
+   "chars": 1045308899,
+   "tokens": 857567631,
+   "grew": 0,
+   "rolledBack": false,
+   "ownVal": null,
+   "ownScore": null,
+   "d": 768,
+   "loops": 1,
+   "spread": 3.5869,
+   "bytes": 1415115957,
+   "heads": 6,
+   "ctx": 512,
+   "vocab": 6000,
+   "kind": "bpe",
+   "arch": "tpp-loop",
+   "wantWider": false,
+   "layerCap": 16,
+   "mixChanged": false,
+   "bySrc": {
+    "laws": 4.3789,
+    "wiki": 3.1913,
+    "aozora": 3.5167,
+    "hanrei": 3.6018,
+    "kokkai": 2.7616,
+    "web": 3.0371,
+    "talk": 2.2075
+   },
+   "wrote": [
+    {
+     "start": "わたしは",
+     "text": "わたしは、ジョージ・ホールです。」 EJ「ジャズですか？」 EM「はい。ちなみに、コロナを行うのははなんです。」 EJ「そうなんですね。でも一番お気に入りのことを思い出しました。」 EM「いつも聞き取りに行ったんですか？」 EJ「結構長くて、"
+    },
+    {
+     "start": "第一条",
+     "text": "第一条第一号及び第二号 第二号 説明書 第二十一条第三項 自然法 法�余機関が法行為を行ったときは、その事業についても、を設けた外国の法令の適用につき、同条第四項の規定による定めがあると認められる。 法一月及びews��業法 同条に規定するもののほか、この法律により傷病権者が上欄に掲げる事業に当該都道府県知事又は営業所の所在地 院が地方公共団体に譲渡することができる事業 （法律の適用除外） 第十四条 法又は法上の原則に照らし、かつ、当該"
+    },
+    {
+     "start": "この法律において",
+     "text": "この法律において見えたのでしょうか。」 AB「岸田内閣総理大臣 いただいて、今回の条件がかかるだけではないかと思います。」 AA「その中で、この間、いろんな法律から見れば、今回そのものはやはり変わっていないかもしれませんから、それは。」 AB「私は、後で、この法案の国会には、あと、この法案"
+    }
+   ],
+   "loopPct": 4.93,
+   "movedBody": false
   }
  ],
- "bestVal": 3.0167,
+ "bestVal": 3.0154,
  "layers": 16,
  "params": 117914880,
  "born": "2026-09-08T15:11:54Z",
@@ -12615,5 +12617,5 @@
  ],
  "wantWider": false,
  "nextD": 768,
- "bad": 6
+ "bad": 0
 }
