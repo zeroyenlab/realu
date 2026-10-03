@@ -1,67 +1,6 @@
 {
  "runs": [
   {
-   "at": "2026-09-22T21:47:13Z",
-   "val": 2.8525,
-   "prev": 2.8525,
-   "valTag": "fixed-holdout-v1",
-   "stoppedAt": 393,
-   "secPerStep": 9.6498,
-   "steps": 733,
-   "bpc": 3.3761,
-   "charsPerTok": 1.2189,
-   "score": 1.9843,
-   "scoreW": 2.0,
-   "scoreMode": "talk",
-   "finishMix": 0.85,
-   "lineage": "L2",
-   "layers": 11,
-   "params": 37890560,
-   "chars": 1045308899,
-   "tokens": 857567631,
-   "grew": 0,
-   "rolledBack": true,
-   "ownVal": 2.8644,
-   "ownScore": 2.1584,
-   "d": 512,
-   "loops": 1,
-   "spread": 3.1343,
-   "bytes": 454783041,
-   "heads": 8,
-   "ctx": 512,
-   "vocab": 6000,
-   "kind": "bpe",
-   "arch": "tpp-loop",
-   "wantWider": false,
-   "layerCap": 16,
-   "mixChanged": false,
-   "bySrc": {
-    "laws": 4.0326,
-    "wiki": 2.9821,
-    "aozora": 3.4448,
-    "hanrei": 3.6197,
-    "kokkai": 2.6261,
-    "web": 2.9505,
-    "talk": 2.1584
-   },
-   "wrote": [
-    {
-     "start": "わたしは",
-     "text": "わたしはごはんに出てるそうだ。」 FK「そうなんですね」 GU「ゆっくりとがりで」 FK「すごい、いいなあ」 GU「わかりますー！」 FK「あなたもです？」 GU「お昼ご飯はします！」 FK「なにがします？」 GU「"
-    },
-    {
-     "start": "第一条",
-     "text": "第一条第一号までどのように強力な指示を取ってもらうのか分からないですね」 EZ「そうですね。今は途中で、かなり早かったりして。」 BJ「そうですね。気を付けないとですね。」 EZ「もうやめましたね。」 BJ「私もです。気を付けます。」"
-    },
-    {
-     "start": "この法律において",
-     "text": "この法律において「LOVEE」を執り行った作品が多く、もっぱらそのグループで活動している。 2006年、東京スカパークラブから2008年まで 新章のキャラクターとして登場。 なお、『E-LOVEE PELS』のイメージキャラクターとして、「RIXEN E」、『キャラクター"
-    }
-   ],
-   "loopPct": 3.87,
-   "movedBody": false
-  },
-  {
    "at": "2026-09-22T23:00:59Z",
    "val": 2.8525,
    "prev": 2.8525,
@@ -12569,6 +12508,69 @@
    ],
    "loopPct": 29.02,
    "movedBody": false
+  },
+  {
+   "at": "2026-10-03T14:17:54Z",
+   "val": 2.6926,
+   "prev": 2.6921,
+   "valTag": "fixed-holdout-v1",
+   "stoppedAt": 355,
+   "stuck": 0,
+   "evalTag": "fixed-ix-v1",
+   "secPerStep": 10.863,
+   "steps": 618,
+   "bpc": 3.1869,
+   "charsPerTok": 1.2189,
+   "score": 2.0559,
+   "scoreW": 2.0,
+   "scoreMode": "talk",
+   "finishMix": 0.85,
+   "lineage": "L2",
+   "layers": 13,
+   "params": 44216832,
+   "chars": 1045308899,
+   "tokens": 857567631,
+   "grew": 0,
+   "rolledBack": false,
+   "ownVal": null,
+   "ownScore": null,
+   "d": 512,
+   "loops": 1,
+   "spread": 3.0899,
+   "bytes": 530714761,
+   "heads": 8,
+   "ctx": 512,
+   "vocab": 6000,
+   "kind": "bpe",
+   "arch": "tpp-loop",
+   "wantWider": false,
+   "layerCap": 16,
+   "mixChanged": false,
+   "bySrc": {
+    "laws": 3.6146,
+    "wiki": 2.8621,
+    "aozora": 3.1748,
+    "hanrei": 3.4008,
+    "kokkai": 2.505,
+    "web": 2.78,
+    "talk": 2.0559
+   },
+   "wrote": [
+    {
+     "start": "わたしは",
+     "text": "わたしは、あまり僕を治療で辞めてないので、殺人療法をやってみたいんですけど……」 AC「さっきから、瞑想です笑 そうなんですよ、このテーママイクがあるのが面白い。」 AL「すみません、すみません！」 AC「……アメリカの"
+    },
+    {
+     "start": "第一条",
+     "text": "第一条十二号（前項において準用する場合を含む。）の規定により同項に係る部分に限る。）又は第七条第一項（第三号に係る部分に限る。）に掲げる事項を認めることができる。 令第八器具 令第八器具 令第八計算書（第一項ただし書を除く。）又は第七条第一項（第二号に係る部分に限る。）に掲げる事項を認めることができる 令第八器具 令第八従事者 令第八器具 令第八十三号（第一項ただし書を除く。）又は第七条第一項（第一号に係る部分に限る。）に掲げる事項を認"
+    },
+    {
+     "start": "この法律において",
+     "text": "この法律においていている者でございますので、これを除いたものでございます。」 AA「理事 以上で大塚勇君の質疑は終了いたしました。（拍手）」 AB「委員長 次に、安藤松太郎君の質疑を行います。安藤松太郎君。 これまで総理からお話ござい"
+    }
+   ],
+   "loopPct": 8.02,
+   "movedBody": false
   }
  ],
  "bestVal": 2.6921,
@@ -12619,5 +12621,5 @@
  ],
  "wantWider": false,
  "nextD": 512,
- "bad": 6
+ "bad": 2
 }
