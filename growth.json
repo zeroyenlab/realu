@@ -1,67 +1,6 @@
 {
  "runs": [
   {
-   "at": "2026-09-23T12:35:31Z",
-   "val": 3.3743,
-   "prev": 3.3743,
-   "valTag": "fixed-holdout-v1",
-   "stoppedAt": 158,
-   "secPerStep": 25.8424,
-   "steps": 300,
-   "bpc": 3.9937,
-   "charsPerTok": 1.2189,
-   "score": 2.2214,
-   "scoreW": 2.0,
-   "scoreMode": "talk",
-   "finishMix": 0.5,
-   "lineage": "L1",
-   "layers": 16,
-   "params": 117914880,
-   "chars": 1045308899,
-   "tokens": 857567631,
-   "grew": 0,
-   "rolledBack": true,
-   "ownVal": 3.2806,
-   "ownScore": 2.3851,
-   "d": 768,
-   "loops": 1,
-   "spread": 3.5701,
-   "bytes": 1415115957,
-   "heads": 6,
-   "ctx": 512,
-   "vocab": 6000,
-   "kind": "bpe",
-   "arch": "tpp-loop",
-   "wantWider": false,
-   "layerCap": 16,
-   "mixChanged": false,
-   "bySrc": {
-    "laws": 5.0366,
-    "wiki": 3.493,
-    "aozora": 3.7678,
-    "hanrei": 3.9371,
-    "kokkai": 3.0636,
-    "web": 3.32,
-    "talk": 2.3851
-   },
-   "wrote": [
-    {
-     "start": "わたしは",
-     "text": "わたしはやってますよね。」 DA「いや、今まで、それを出してくださってありますよね。」 FE「こちらこそ全然でしたか？」 DA「そうです。あと、やっぱりそうで。」 FE「はい、試してみます！」 DA「今日は暑いですね！」 <会"
-    },
-    {
-     "start": "第一条",
-     "text": "第一条UUUSir Bikery Chatky-chencessackyatore, w:Ginewerenter, w:No.1/Homanita Macc Chatew:Statere-Mented Mucherax Th"
-    },
-    {
-     "start": "この法律において",
-     "text": "この法律において、金額は、薬、引表せん、補償、経済長高度化について、これは実質的にお答えを申し上げたいと思います。 そこで、まず、日本がμを推薦していただいて、日本の国が十字社に広く反省し、支援するということを言うのでございます。しかも、この大綱は、まず、防衛庁というのを十分に抱"
-    }
-   ],
-   "loopPct": 2.95,
-   "movedBody": false
-  },
-  {
    "at": "2026-09-23T13:50:39Z",
    "val": 3.3743,
    "prev": 3.3743,
@@ -12590,6 +12529,69 @@
     }
    ],
    "loopPct": 4.5,
+   "movedBody": false
+  },
+  {
+   "at": "2026-10-04T01:39:34Z",
+   "val": 3.0167,
+   "prev": 3.0192,
+   "valTag": "fixed-holdout-v1",
+   "stoppedAt": 212,
+   "stuck": 0,
+   "evalTag": "fixed-ix-v1",
+   "secPerStep": 18.9826,
+   "steps": 300,
+   "bpc": 3.5705,
+   "charsPerTok": 1.2189,
+   "score": 2.2031,
+   "scoreW": 2.0,
+   "scoreMode": "talk",
+   "finishMix": 0.5,
+   "lineage": "L1",
+   "layers": 16,
+   "params": 117914880,
+   "chars": 1045308899,
+   "tokens": 857567631,
+   "grew": 0,
+   "rolledBack": false,
+   "ownVal": null,
+   "ownScore": null,
+   "d": 768,
+   "loops": 1,
+   "spread": 3.1423,
+   "bytes": 1415115957,
+   "heads": 6,
+   "ctx": 512,
+   "vocab": 6000,
+   "kind": "bpe",
+   "arch": "tpp-loop",
+   "wantWider": false,
+   "layerCap": 16,
+   "mixChanged": false,
+   "bySrc": {
+    "laws": 4.3691,
+    "wiki": 3.1825,
+    "aozora": 3.5225,
+    "hanrei": 3.5991,
+    "kokkai": 2.7701,
+    "web": 3.0369,
+    "talk": 2.2031
+   },
+   "wrote": [
+    {
+     "start": "わたしは",
+     "text": "わたしは、新制発指定都市を直撃するのなら、ひいてはさほど遠い地域の中でもあるわけです。 ここに、本当に、こういった点ではまさに新しい地域でもあるわけですが、そういう意味においては、地方行政をやっていく、実際が悪化するということが大事だ、こう思うわけでございます。 、仮に"
+    },
+    {
+     "start": "第一条",
+     "text": "第一条中「狂のしめい」と題する組織が行われていた。 <記事 アンナウンサー> アンナウンサー（ ）は、 、アワンマン（ ） 。 オランダ領の任務を務め、アンナウンサーの師官になった。 ギリシア・アビーンサー（ ） - バスケットボール選"
+    },
+    {
+     "start": "この法律において",
+     "text": "この法律において「」「」「」「」」「」「」「」「め」「」など」「相武」「製」を「ぢや」から「せ」「 」「 」を「 」「 」（ ）」に由来 ）「 」「 」も参照 その後、 1960年 （ 昭和 15年）11月18日にまで開かれた [ 24 ]"
+    }
+   ],
+   "loopPct": 14.91,
    "movedBody": false
   }
  ],
