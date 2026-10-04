@@ -1,69 +1,6 @@
 {
  "runs": [
   {
-   "at": "2026-09-24T01:07:20Z",
-   "val": 3.2974,
-   "prev": 3.3016,
-   "valTag": "fixed-holdout-v1",
-   "stoppedAt": 158,
-   "stuck": 0,
-   "evalTag": "fixed-ix-v1",
-   "secPerStep": 26.3761,
-   "steps": 300,
-   "bpc": 3.9028,
-   "charsPerTok": 1.2189,
-   "score": 2.3447,
-   "scoreW": 2.0,
-   "scoreMode": "talk",
-   "finishMix": 0.5,
-   "lineage": "L1",
-   "layers": 16,
-   "params": 117914880,
-   "chars": 1045308899,
-   "tokens": 857567631,
-   "grew": 0,
-   "rolledBack": false,
-   "ownVal": null,
-   "ownScore": null,
-   "d": 768,
-   "loops": 1,
-   "spread": 3.2858,
-   "bytes": 1415115957,
-   "heads": 6,
-   "ctx": 512,
-   "vocab": 6000,
-   "kind": "bpe",
-   "arch": "tpp-loop",
-   "wantWider": false,
-   "layerCap": 16,
-   "mixChanged": false,
-   "bySrc": {
-    "laws": 4.9378,
-    "wiki": 3.4839,
-    "aozora": 3.7665,
-    "hanrei": 3.8858,
-    "kokkai": 2.9915,
-    "web": 3.2789,
-    "talk": 2.3447
-   },
-   "wrote": [
-    {
-     "start": "わたしは",
-     "text": "わたしは動かなくてもいい、すぐ同じくですね。」 CQ「でも鼻とかと思います。生かしています。」 CP「はい、驚きますね。」 CP「こんばんは。」 CQ「こんにちは！」 CP「何されてるん"
-    },
-    {
-     "start": "第一条",
-     "text": "第一条の使用による報告）、当該記録書の違法性を伴う方法 （仮に） 第１ことの違いはないが、本件各犯行の訳しない。統計や違法な設備（ 例えば十五条と第１７の原告ら） (1) 本件テナント （２）のとおり（３）(1) 原告は，原告らの主張による青年検査 （原告） １シンガーの�"
-    },
-    {
-     "start": "この法律において",
-     "text": "この法律において税金を示すべく税収が上がるためにはお金をもらうとして、この点、この辺は、どのように考えてもらわないのか、お伺いいたしたいのです。 こうした税金の資産についても、ことし五〇％から七五％まで平均での減税と、年金所得の低下は、今後の方針、きじめ定数、減税という考え方と、また、防衛費の増加、消費税、"
-    }
-   ],
-   "loopPct": 1.72,
-   "movedBody": false
-  },
-  {
    "at": "2026-09-24T02:25:34Z",
    "val": 3.2948,
    "prev": 3.2974,
@@ -12599,6 +12536,69 @@
    ],
    "loopPct": 5.25,
    "movedBody": false
+  },
+  {
+   "at": "2026-10-04T13:58:29Z",
+   "val": 3.0116,
+   "prev": 2.9973,
+   "valTag": "fixed-holdout-v1",
+   "stoppedAt": 0,
+   "stuck": 0,
+   "evalTag": "fixed-ix-v1",
+   "secPerStep": 11.1737,
+   "steps": 300,
+   "bpc": 3.5645,
+   "charsPerTok": 1.2189,
+   "score": 2.1957,
+   "scoreW": 2.0,
+   "scoreMode": "talk",
+   "finishMix": 0.5,
+   "lineage": "L1",
+   "layers": 16,
+   "params": 117914880,
+   "chars": 1045308899,
+   "tokens": 857567631,
+   "grew": 0,
+   "rolledBack": false,
+   "ownVal": null,
+   "ownScore": null,
+   "d": 768,
+   "loops": 1,
+   "spread": 3.4513,
+   "bytes": 1415115957,
+   "heads": 6,
+   "ctx": 512,
+   "vocab": 6000,
+   "kind": "bpe",
+   "arch": "tpp-loop",
+   "wantWider": false,
+   "layerCap": 16,
+   "mixChanged": false,
+   "bySrc": {
+    "laws": 4.3547,
+    "wiki": 3.1835,
+    "aozora": 3.5152,
+    "hanrei": 3.5986,
+    "kokkai": 2.7666,
+    "web": 3.0345,
+    "talk": 2.1957
+   },
+   "wrote": [
+    {
+     "start": "わたしは",
+     "text": "わたしは、まずこのままにしても、これは検察官の問題だけです。」 AB「そして、その職場にひとつお願いしますという話がはっきりしたということが書かれたのではないかと思います。」 AA「石破内閣総理大臣 先ほども申し上げましたように、私が申し上げたのは、まだまだまだまだ出てくると思います"
+    },
+    {
+     "start": "第一条",
+     "text": "第一条第二号コメント（「arotoomongere）」衆議院議員）、2015年度末のホストフードコミュニケーションズ（2015年度）のビジネスコミュニケーションズ、2017年度の松下多摩センター（2015年度）では100書記事（1967年12月に105名（"
+    },
+    {
+     "start": "この法律において",
+     "text": "この法律において「昭和勝評価フェスティバル」、「マイヤマンさん」と呼ばれる）。 12月6日（天正13年2月6日） - 天正10年4月5日（天正9年2月7日） 12月6日（天正14年6月7日） - 木曽川陽一郎、天慶3年7月3日（天正17年"
+    }
+   ],
+   "loopPct": 5.79,
+   "movedBody": false
   }
  ],
  "bestVal": 2.9973,
@@ -12649,5 +12649,5 @@
  ],
  "wantWider": false,
  "nextD": 768,
- "bad": 6
+ "bad": 9
 }
