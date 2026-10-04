@@ -1,67 +1,6 @@
 {
  "runs": [
   {
-   "at": "2026-09-23T11:19:36Z",
-   "val": 3.3743,
-   "prev": 3.3743,
-   "valTag": "fixed-holdout-v1",
-   "stoppedAt": 202,
-   "secPerStep": 19.7977,
-   "steps": 300,
-   "bpc": 3.9937,
-   "charsPerTok": 1.2189,
-   "score": 2.2214,
-   "scoreW": 2.0,
-   "scoreMode": "talk",
-   "finishMix": 0.5,
-   "lineage": "L1",
-   "layers": 16,
-   "params": 117914880,
-   "chars": 1045308899,
-   "tokens": 857567631,
-   "grew": 0,
-   "rolledBack": true,
-   "ownVal": 3.2814,
-   "ownScore": 2.4418,
-   "d": 768,
-   "loops": 1,
-   "spread": 3.5158,
-   "bytes": 1415115957,
-   "heads": 6,
-   "ctx": 512,
-   "vocab": 6000,
-   "kind": "bpe",
-   "arch": "tpp-loop",
-   "wantWider": false,
-   "layerCap": 16,
-   "mixChanged": false,
-   "bySrc": {
-    "laws": 5.0568,
-    "wiki": 3.4607,
-    "aozora": 3.8262,
-    "hanrei": 3.9437,
-    "kokkai": 2.9806,
-    "web": 3.2734,
-    "talk": 2.4418
-   },
-   "wrote": [
-    {
-     "start": "わたしは",
-     "text": "わたしはたその縁を分かるところでございます。」 AB「私は、いろいろとお話しいたします。 この点につきましては、まず御承知のように、ＧＤＰは、この辺、みんなの金融機関をつくっていることはないのか、それが本当に許されるのか、また、こういう御答弁をいただきたいと思います。 した"
-    },
-    {
-     "start": "第一条",
-     "text": "第一条ターターラーシシティバイルと称する。 齋谷愛 - 片谷 - 50000 - 500000000000年頃 - 事前1500石。 どの芳三路線が2000年からに、鳴平重の伊豆腐敗。 <記事 龍"
-    },
-    {
-     "start": "この法律において",
-     "text": "この法律において、道路、沖縄、道路、学校、団体、住民のため、旧道路、同法に対応する都合で六十四、四、五、地方、水道、一時、九、八、地域、小学校、学校、三に該当するり、三など、都市環境で、全国的に連結、地域における地域の関係高い地域の都市部が地域の間に広まっているということを指摘されております。 以上です。 私は、このような制度の中で、地域"
-    }
-   ],
-   "loopPct": 19.03,
-   "movedBody": false
-  },
-  {
    "at": "2026-09-23T12:35:31Z",
    "val": 3.3743,
    "prev": 3.3743,
@@ -12588,6 +12527,69 @@
     }
    ],
    "loopPct": 5.27,
+   "movedBody": false
+  },
+  {
+   "at": "2026-10-04T00:25:35Z",
+   "val": 3.0192,
+   "prev": 3.0231,
+   "valTag": "fixed-holdout-v1",
+   "stoppedAt": 157,
+   "stuck": 0,
+   "evalTag": "fixed-ix-v1",
+   "secPerStep": 26.5576,
+   "steps": 300,
+   "bpc": 3.5735,
+   "charsPerTok": 1.2189,
+   "score": 2.2004,
+   "scoreW": 2.0,
+   "scoreMode": "talk",
+   "finishMix": 0.5,
+   "lineage": "L1",
+   "layers": 16,
+   "params": 117914880,
+   "chars": 1045308899,
+   "tokens": 857567631,
+   "grew": 0,
+   "rolledBack": false,
+   "ownVal": null,
+   "ownScore": null,
+   "d": 768,
+   "loops": 1,
+   "spread": 3.0719,
+   "bytes": 1415115957,
+   "heads": 6,
+   "ctx": 512,
+   "vocab": 6000,
+   "kind": "bpe",
+   "arch": "tpp-loop",
+   "wantWider": false,
+   "layerCap": 16,
+   "mixChanged": false,
+   "bySrc": {
+    "laws": 4.3787,
+    "wiki": 3.1884,
+    "aozora": 3.5201,
+    "hanrei": 3.6016,
+    "kokkai": 2.7713,
+    "web": 3.0367,
+    "talk": 2.2004
+   },
+   "wrote": [
+    {
+     "start": "わたしは",
+     "text": "わたしは、午後４時５分ですけど、午後１時３３分ころに入っています。」 DG「ですね！私もしんどいです！まさに！」 CH「私は最近だと、日本にいました。」 DG「いいですね！だいたい夜が嫌になってきました。」 CH「朝は、朝"
+    },
+    {
+     "start": "第一条",
+     "text": "第一条DDDDDDUN「こんなページだったんですか？」 CL「実は私は最近だと思います。」 BO「やはりセーフですか？」 CL「やっぱりプロです。」 BO「いやー。どんなものが好きですか？」 CL「何かポケモンとかですか�"
+    },
+    {
+     "start": "この法律において",
+     "text": "この法律において「特定の施設」を目指す「特定 特定勅令 」 [ 注釈 1 ] と区別するため、特定危険豊かさを翻訳した [ 10 ] 。 特定の 公共機関 に注力し、 自然科学 を生むようにその店舗を地下に転じて 独立行政法人 及び 里ex へ 借りていった。 直近の「 職業 」と「 百五十"
+    }
+   ],
+   "loopPct": 4.5,
    "movedBody": false
   }
  ],
