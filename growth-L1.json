@@ -1,69 +1,6 @@
 {
  "runs": [
   {
-   "at": "2026-09-24T09:51:40Z",
-   "val": 3.2752,
-   "prev": 3.2801,
-   "valTag": "fixed-holdout-v1",
-   "stoppedAt": 158,
-   "stuck": 0,
-   "evalTag": "fixed-ix-v1",
-   "secPerStep": 26.2937,
-   "steps": 300,
-   "bpc": 3.8765,
-   "charsPerTok": 1.2189,
-   "score": 2.3307,
-   "scoreW": 2.0,
-   "scoreMode": "talk",
-   "finishMix": 0.5,
-   "lineage": "L1",
-   "layers": 16,
-   "params": 117914880,
-   "chars": 1045308899,
-   "tokens": 857567631,
-   "grew": 0,
-   "rolledBack": false,
-   "ownVal": null,
-   "ownScore": null,
-   "d": 768,
-   "loops": 1,
-   "spread": 3.4643,
-   "bytes": 1415115957,
-   "heads": 6,
-   "ctx": 512,
-   "vocab": 6000,
-   "kind": "bpe",
-   "arch": "tpp-loop",
-   "wantWider": false,
-   "layerCap": 16,
-   "mixChanged": false,
-   "bySrc": {
-    "laws": 4.8926,
-    "wiki": 3.4626,
-    "aozora": 3.7513,
-    "hanrei": 3.8634,
-    "kokkai": 2.9739,
-    "web": 3.2562,
-    "talk": 2.3307
-   },
-   "wrote": [
-    {
-     "start": "わたしは",
-     "text": "わたしは、北海道内の南西の戦いで、東海道の行き過ぎた東海道と申しますと、南北アメリカまでは、アメリカ軍が東南アフリカ海軍を攻勢し、アメリカ軍に逃れて、海軍は約束といたしまして、南東アメリカで出配して、オッラ南東からは、�"
-    },
-    {
-     "start": "第一条",
-     "text": "第一条（主としてpiledia）においてされている。 また、2021年7月21日に、2022年3月21日までは「2025年4月28日」（「2023年5月号」）も参照 。 2021年4月25日 : 「 ララヴァンゲリラ 」（2023年4月1日 : ）"
-    },
-    {
-     "start": "この法律において",
-     "text": "この法律において、「広く合っていますよ。」 EZ「そうなんですよ。でも、いろいろな違いが分かります。」 CJ「今はマインドとかなんで」 EZ「そうですね。いろいろとおもいます。」 CJ「私も同じマンションに行ったライフで。」 EZ「昼間ですね。」"
-    }
-   ],
-   "loopPct": 4.86,
-   "movedBody": false
-  },
-  {
    "at": "2026-09-24T11:08:56Z",
    "val": 3.2707,
    "prev": 3.2752,
@@ -12598,6 +12535,69 @@
     }
    ],
    "loopPct": 15.23,
+   "movedBody": false
+  },
+  {
+   "at": "2026-10-04T23:00:16Z",
+   "val": 2.9981,
+   "prev": 2.9958,
+   "valTag": "fixed-holdout-v1",
+   "stoppedAt": 179,
+   "stuck": 0,
+   "evalTag": "fixed-ix-v1",
+   "secPerStep": 22.9641,
+   "steps": 300,
+   "bpc": 3.5485,
+   "charsPerTok": 1.2189,
+   "score": 2.1791,
+   "scoreW": 2.0,
+   "scoreMode": "talk",
+   "finishMix": 0.5,
+   "lineage": "L1",
+   "layers": 16,
+   "params": 117914880,
+   "chars": 1045308899,
+   "tokens": 857567631,
+   "grew": 0,
+   "rolledBack": false,
+   "ownVal": null,
+   "ownScore": null,
+   "d": 768,
+   "loops": 1,
+   "spread": 3.0059,
+   "bytes": 1415115957,
+   "heads": 6,
+   "ctx": 512,
+   "vocab": 6000,
+   "kind": "bpe",
+   "arch": "tpp-loop",
+   "wantWider": false,
+   "layerCap": 16,
+   "mixChanged": false,
+   "bySrc": {
+    "laws": 4.336,
+    "wiki": 3.1623,
+    "aozora": 3.5022,
+    "hanrei": 3.5885,
+    "kokkai": 2.7565,
+    "web": 3.0226,
+    "talk": 2.1791
+   },
+   "wrote": [
+    {
+     "start": "わたしは",
+     "text": "わたしは、いやいや、あなたはどうしても、ひとつお知らせしまじゃありませんよ。」 AB「そういった日が、こういう時代に来たのも、いつの間にか、いつになっても、あたしも、いや、こんなに食われなくても、その肉食は食べれらない。」 AB「もう、私は、私は、"
+    },
+    {
+     "start": "第一条",
+     "text": "第一条数は、当該提示の内容をbhasakersiten alishikokamatorminis.jpg|改装 ファイル:Idusprientove.jpg|改札口（2025年10月） ファイル:Intellation of Intellato-j"
+    },
+    {
+     "start": "この法律において",
+     "text": "この法律においてよいこと、あるいは、これも後を生かしながら、いろいろなところで、いろいろな問題がございます。」 AA「それから、じゃ、また、日米関係、もう一度、日米安保体制というのをこれからこれはできておりますけれども、私ども、これまでの地下鉄とか、いろいろな御"
+    }
+   ],
+   "loopPct": 10.45,
    "movedBody": false
   }
  ],
