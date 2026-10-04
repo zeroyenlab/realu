@@ -1,69 +1,6 @@
 {
  "runs": [
   {
-   "at": "2026-09-24T07:26:26Z",
-   "val": 3.2846,
-   "prev": 3.2865,
-   "valTag": "fixed-holdout-v1",
-   "stoppedAt": 160,
-   "stuck": 0,
-   "evalTag": "fixed-ix-v1",
-   "secPerStep": 26.0553,
-   "steps": 300,
-   "bpc": 3.8875,
-   "charsPerTok": 1.2189,
-   "score": 2.3306,
-   "scoreW": 2.0,
-   "scoreMode": "talk",
-   "finishMix": 0.5,
-   "lineage": "L1",
-   "layers": 16,
-   "params": 117914880,
-   "chars": 1045308899,
-   "tokens": 857567631,
-   "grew": 0,
-   "rolledBack": false,
-   "ownVal": null,
-   "ownScore": null,
-   "d": 768,
-   "loops": 1,
-   "spread": 3.581,
-   "bytes": 1415115957,
-   "heads": 6,
-   "ctx": 512,
-   "vocab": 6000,
-   "kind": "bpe",
-   "arch": "tpp-loop",
-   "wantWider": false,
-   "layerCap": 16,
-   "mixChanged": false,
-   "bySrc": {
-    "laws": 4.9082,
-    "wiki": 3.4696,
-    "aozora": 3.7529,
-    "hanrei": 3.8662,
-    "kokkai": 2.9832,
-    "web": 3.2644,
-    "talk": 2.3306
-   },
-   "wrote": [
-    {
-     "start": "わたしは",
-     "text": "わたしは、如何なるものでもあるのであって、それを支えるということは、まことに医療にはおりません。」 AB「そういうことで、そのために、もう入ってないということにちょっと。 そして、それから、こんなことが、海外の研究を開始するわけですから、今のところ、だから、例えば武器を使ったり、海軍のような�"
-    },
-    {
-     "start": "第一条",
-     "text": "第一条条第二項の規定により候補第十条第一項の規定により申請をした事項について同条第三項の規定により記載しなければならない。 譲渡人は、この限りでない。 の前身において、譲渡した資産については、当該株式を十八年に確定した時及び歳入の賃金とする。 ただし、著しく否定的な職員に対しては、払い込みのないことから、これをウィンダウンの電流とする。 国家社会の日本主義者の所在地は、その他の基本的認知度が実行するが、かつ、当該団体に携わるまれることに"
-    },
-    {
-     "start": "この法律において",
-     "text": "この法律においていて、一つの人が、あしたとしても、かなり返っていれば、二十一世紀が、これはちゃんと入っています。そして、二十二歳から九月のお制度をやっていることは、いろいろな議論をしながら、あなたがいろいろな形で、総理の取り組みが悪いということであります。 そして、これまでどういうふ"
-    }
-   ],
-   "loopPct": 4.68,
-   "movedBody": false
-  },
-  {
    "at": "2026-09-24T08:27:34Z",
    "val": 3.2801,
    "prev": 3.2846,
@@ -12599,6 +12536,69 @@
    ],
    "loopPct": 1.12,
    "movedBody": false
+  },
+  {
+   "at": "2026-10-04T20:29:03Z",
+   "val": 3.0015,
+   "prev": 2.9958,
+   "valTag": "fixed-holdout-v1",
+   "stoppedAt": 157,
+   "stuck": 0,
+   "evalTag": "fixed-ix-v1",
+   "secPerStep": 26.5221,
+   "steps": 300,
+   "bpc": 3.5525,
+   "charsPerTok": 1.2189,
+   "score": 2.1871,
+   "scoreW": 2.0,
+   "scoreMode": "talk",
+   "finishMix": 0.5,
+   "lineage": "L1",
+   "layers": 16,
+   "params": 117914880,
+   "chars": 1045308899,
+   "tokens": 857567631,
+   "grew": 0,
+   "rolledBack": false,
+   "ownVal": null,
+   "ownScore": null,
+   "d": 768,
+   "loops": 1,
+   "spread": 3.1751,
+   "bytes": 1415115957,
+   "heads": 6,
+   "ctx": 512,
+   "vocab": 6000,
+   "kind": "bpe",
+   "arch": "tpp-loop",
+   "wantWider": false,
+   "layerCap": 16,
+   "mixChanged": false,
+   "bySrc": {
+    "laws": 4.3472,
+    "wiki": 3.1655,
+    "aozora": 3.5006,
+    "hanrei": 3.5866,
+    "kokkai": 2.7565,
+    "web": 3.0238,
+    "talk": 2.1871
+   },
+   "wrote": [
+    {
+     "start": "わたしは",
+     "text": "わたしはいません。」 AU「ただ、ちょうどこの辺は、昨日はこの辺も知りたかったのですね。」 BM「もしかして大変なことになったのですか？」 AU「そうです。 何を探してもらえたのですか？ わたしは最後までやってました。」 BM「1000円くらい"
+    },
+    {
+     "start": "第一条",
+     "text": "第一条リスク自衛隊キット・キット・キット・キット・アメリカ・キット・キット・カバリ・G・サウジアラビア・ジオパーク・ジェット・アメリカ合衆国 (Band For Heritic Force) “Flay/Fikir Recordy”のバージョンア"
+    },
+    {
+     "start": "この法律において",
+     "text": "この法律において「グリーンサイト」を参照 [ 7 ] 。 フランスの コミカル・コミックス では、1960年にテレビを収録。 日本では未利用のコミカルなジャンルとして活躍している。 フランスの設立時はその世界で最も人気があるため、日本では1990年に連載 [ 8 ]"
+    }
+   ],
+   "loopPct": 10.52,
+   "movedBody": false
   }
  ],
  "bestVal": 2.9958,
@@ -12649,5 +12649,5 @@
  ],
  "wantWider": false,
  "nextD": 768,
- "bad": 0
+ "bad": 1
 }
