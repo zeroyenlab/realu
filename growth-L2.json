@@ -1,67 +1,6 @@
 {
  "runs": [
   {
-   "at": "2026-09-23T15:01:07Z",
-   "val": 2.9309,
-   "prev": 2.984,
-   "valTag": "fixed-holdout-v1",
-   "stoppedAt": 444,
-   "secPerStep": 8.5084,
-   "steps": 674,
-   "bpc": 3.469,
-   "charsPerTok": 1.2189,
-   "score": 2.1103,
-   "scoreW": 2.0,
-   "scoreMode": "talk",
-   "finishMix": 0.85,
-   "lineage": "L2",
-   "layers": 12,
-   "params": 41053696,
-   "chars": 1045308899,
-   "tokens": 857567631,
-   "grew": 0,
-   "rolledBack": false,
-   "ownVal": null,
-   "ownScore": null,
-   "d": 512,
-   "loops": 1,
-   "spread": 2.8264,
-   "bytes": 492748901,
-   "heads": 8,
-   "ctx": 512,
-   "vocab": 6000,
-   "kind": "bpe",
-   "arch": "tpp-loop",
-   "wantWider": false,
-   "layerCap": 16,
-   "mixChanged": false,
-   "bySrc": {
-    "laws": 3.9266,
-    "wiki": 2.9955,
-    "aozora": 3.4697,
-    "hanrei": 3.5298,
-    "kokkai": 2.6763,
-    "web": 2.9729,
-    "talk": 2.1103
-   },
-   "wrote": [
-    {
-     "start": "わたしは",
-     "text": "わたしは花粉症でよく飲みます。」 BL「あ、あぁ、最高ですね！」 CJ「自分もあのグラタはよく飲みますが、あまり飲まないです。」 BL「お酒とか飲まれますか？」 CJ「飲みますよ。Youtubeでは飲みます。」 B"
-    },
-    {
-     "start": "第一条",
-     "text": "第一条航海砲撃撃隊を立てて、いわゆる戦闘機で攻撃を続けるというのが現実であります。」 AA「これは、どのように戦闘機で撃墜するかということですが、米国に攻撃を導いた国民の方は、戦闘機に粘り強い戦闘機を持っていくという考え方を示したのが"
-    },
-    {
-     "start": "この法律において",
-     "text": "この法律において自ら，当該者の経済的難 如を解除したことに満足している。 ａ被告らは，社会主義の観点からは，連帯 的であると主張していたのであるから，被告らは，連帯的かつ合理的な主張を 実行した上に，連帯的かつ独立した共同体の行動を考えるのが相当であるとは到底信じ難い。 したがって，被告"
-    }
-   ],
-   "loopPct": 2.56,
-   "movedBody": false
-  },
-  {
    "at": "2026-09-23T16:16:19Z",
    "val": 2.9309,
    "prev": 2.9309,
@@ -12595,6 +12534,69 @@
    ],
    "loopPct": 8.45,
    "movedBody": false
+  },
+  {
+   "at": "2026-10-04T07:44:45Z",
+   "val": 2.6895,
+   "prev": 2.6895,
+   "valTag": "fixed-holdout-v1",
+   "stoppedAt": 368,
+   "stuck": 0,
+   "evalTag": "fixed-ix-v1",
+   "secPerStep": 10.4453,
+   "steps": 610,
+   "bpc": 3.1832,
+   "charsPerTok": 1.2189,
+   "score": 2.0509,
+   "scoreW": 2.0,
+   "scoreMode": "talk",
+   "finishMix": 0.85,
+   "lineage": "L2",
+   "layers": 13,
+   "params": 44216832,
+   "chars": 1045308899,
+   "tokens": 857567631,
+   "grew": 0,
+   "rolledBack": false,
+   "ownVal": null,
+   "ownScore": null,
+   "d": 512,
+   "loops": 1,
+   "spread": 2.6156,
+   "bytes": 530714761,
+   "heads": 8,
+   "ctx": 512,
+   "vocab": 6000,
+   "kind": "bpe",
+   "arch": "tpp-loop",
+   "wantWider": false,
+   "layerCap": 16,
+   "mixChanged": false,
+   "bySrc": {
+    "laws": 3.6071,
+    "wiki": 2.8548,
+    "aozora": 3.1696,
+    "hanrei": 3.3943,
+    "kokkai": 2.506,
+    "web": 2.7751,
+    "talk": 2.0509
+   },
+   "wrote": [
+    {
+     "start": "わたしは",
+     "text": "わたしは勘違いしてました。」 BX「私も初めてしました。」 DQ「大家族ですからね！」 BX「はい。お互い特別なところは違うのでしょうかね。」 DQ「特に好きな食べ物はなんですか？」 BX「牛丼が好きなので、辛くももの食べちゃいます。」"
+    },
+    {
+     "start": "第一条",
+     "text": "第一条、�登録証のに付加される。 2024年（令和6年）10月、NHKでは、スポーツニュースにて、NHK BSで放送されたテレビ番組『NHKニュース』のCMに番組アナウンサーを務めた。 2024年（令和6年）にNHK教育テレビで放送された『NHKニュ"
+    },
+    {
+     "start": "この法律において",
+     "text": "この法律においてする場合には、当該法第六十六条第一項第一号（当該��面）の状況 当該��の申出を行う期間 当該提出を受けた年度の前事業年度末の時における籍地等（当該の明細書に係る日本国と台湾との間の相互協力のため必要な事項にあっては、当該事項に変更があった日から三十日間） 当該提出を受けた年度の前事業年度末の時における籍地等（当該提出った年度の前事業年度末の時における籍地等が当該との間の相互協力のため必要なものに限る。） 当該提出を受け"
+    }
+   ],
+   "loopPct": 1.76,
+   "movedBody": false
   }
  ],
  "bestVal": 2.6895,
@@ -12645,5 +12647,5 @@
  ],
  "wantWider": false,
  "nextD": 512,
- "bad": 0
+ "bad": 1
 }
