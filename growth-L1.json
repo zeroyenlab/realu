@@ -1,69 +1,6 @@
 {
  "runs": [
   {
-   "at": "2026-09-23T17:36:45Z",
-   "val": 3.35,
-   "prev": 3.3743,
-   "valTag": "fixed-holdout-v1",
-   "stoppedAt": 159,
-   "stuck": 0,
-   "evalTag": "fixed-ix-v1",
-   "secPerStep": 26.2012,
-   "steps": 300,
-   "bpc": 3.965,
-   "charsPerTok": 1.2189,
-   "score": 2.3714,
-   "scoreW": 2.0,
-   "scoreMode": "talk",
-   "finishMix": 0.5,
-   "lineage": "L1",
-   "layers": 16,
-   "params": 117914880,
-   "chars": 1045308899,
-   "tokens": 857567631,
-   "grew": 0,
-   "rolledBack": false,
-   "ownVal": null,
-   "ownScore": null,
-   "d": 768,
-   "loops": 1,
-   "spread": 3.527,
-   "bytes": 1415115957,
-   "heads": 6,
-   "ctx": 512,
-   "vocab": 6000,
-   "kind": "bpe",
-   "arch": "tpp-loop",
-   "wantWider": false,
-   "layerCap": 16,
-   "mixChanged": false,
-   "bySrc": {
-    "laws": 5.0123,
-    "wiki": 3.5369,
-    "aozora": 3.8118,
-    "hanrei": 3.9363,
-    "kokkai": 3.0375,
-    "web": 3.3282,
-    "talk": 2.3714
-   },
-   "wrote": [
-    {
-     "start": "わたしは",
-     "text": "わたしはありますか？」 EJ「おいしいですね。醍醐です。」 HZ「ほんとに。最近は何を食べましたか？」 EJ「一気持ちいいです！」 HZ「自転車に入ったので、特にこだわってあります。」 EJ「ですよね。私も予報して、いいですね。」"
-    },
-    {
-     "start": "第一条",
-     "text": "第一条は48%と入学した。 なお、2023年3月28日までは、 2020年10月 2025年5月24日までは ケネディ・クワク・ディアス （ 英語版 ） などのアイデンティティ族がチャイルド・アンタワーの間を同年3月28日に アッシスプレス が開催"
-    },
-    {
-     "start": "この法律において",
-     "text": "この法律において&�る毎事業年度（|準備団体等） 鉄道組織機関（総務省） 株式会社東日本大震災における公共施設の復旧支援に移植している道路・道路��業医療センター（農業経営決議）」 <記事 1949年> 明治39年（グリーンスキー及びスユニット「 」、第3巻「スター」3号（旧級2号） 北海道新幹線（現・ ラ"
-    }
-   ],
-   "loopPct": 5.61,
-   "movedBody": false
-  },
-  {
    "at": "2026-09-23T18:54:57Z",
    "val": 3.3388,
    "prev": 3.35,
@@ -12599,9 +12536,72 @@
    ],
    "loopPct": 11.33,
    "movedBody": false
+  },
+  {
+   "at": "2026-10-04T06:34:00Z",
+   "val": 3.0011,
+   "prev": 3.0057,
+   "valTag": "fixed-holdout-v1",
+   "stoppedAt": 160,
+   "stuck": 0,
+   "evalTag": "fixed-ix-v1",
+   "secPerStep": 26.055,
+   "steps": 340,
+   "bpc": 3.552,
+   "charsPerTok": 1.2189,
+   "score": 2.1892,
+   "scoreW": 2.0,
+   "scoreMode": "talk",
+   "finishMix": 0.5,
+   "lineage": "L1",
+   "layers": 16,
+   "params": 117914880,
+   "chars": 1045308899,
+   "tokens": 857567631,
+   "grew": 0,
+   "rolledBack": false,
+   "ownVal": null,
+   "ownScore": null,
+   "d": 768,
+   "loops": 1,
+   "spread": 2.9456,
+   "bytes": 1415115957,
+   "heads": 6,
+   "ctx": 512,
+   "vocab": 6000,
+   "kind": "bpe",
+   "arch": "tpp-loop",
+   "wantWider": false,
+   "layerCap": 16,
+   "mixChanged": false,
+   "bySrc": {
+    "laws": 4.3509,
+    "wiki": 3.169,
+    "aozora": 3.5057,
+    "hanrei": 3.5977,
+    "kokkai": 2.7543,
+    "web": 3.0245,
+    "talk": 2.1892
+   },
+   "wrote": [
+    {
+     "start": "わたしは",
+     "text": "わたしは、 1985年 に イギリス代表 に、西欧の アルゼンチン 付人が出てくる中部アメリカの エンゲルス で受け取った。 1997年 に アメリカ合衆国 でアメリカの ビジネス の フィレンツェ に話を伝えたが、 1997年 に"
+    },
+    {
+     "start": "第一条",
+     "text": "第一条キハ1822年11月21日号。同年11月11日付で、同月14日付の「派遣令」を「舗装」に改め、同年11月1日付で返却 。 「録音内容」は「番組のテーマが作られた 」と書かれ 、『週刊少年サンデー』にて『現代日本人伝』に出"
+    },
+    {
+     "start": "この法律において",
+     "text": "この法律において、これらの土地輸送力強化を図りつつ、これらの計画を策定することができるようにということを、全会一致の議題とし、その趣旨を今回の議案では、総理に対し、条の規定により、共産党を代表して国会に対して、議長においてこれを作成しなければならない。 次に、賛成の諸君の起立を求めます。」 AA「議長 起立多数。よって、本案は可決いたしました。 次"
+    }
+   ],
+   "loopPct": 7.29,
+   "movedBody": false
   }
  ],
- "bestVal": 3.0057,
+ "bestVal": 3.0011,
  "layers": 16,
  "params": 117914880,
  "born": "2026-09-08T15:11:54Z",
@@ -12649,5 +12649,5 @@
  ],
  "wantWider": false,
  "nextD": 768,
- "bad": 0
+ "bad": 1
 }
