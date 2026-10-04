@@ -1,69 +1,6 @@
 {
  "runs": [
   {
-   "at": "2026-09-23T23:46:47Z",
-   "val": 2.8186,
-   "prev": 2.8244,
-   "valTag": "fixed-holdout-v1",
-   "stoppedAt": 360,
-   "stuck": 0,
-   "evalTag": "fixed-ix-v1",
-   "secPerStep": 10.6748,
-   "steps": 663,
-   "bpc": 3.3361,
-   "charsPerTok": 1.2189,
-   "score": 2.1115,
-   "scoreW": 2.0,
-   "scoreMode": "talk",
-   "finishMix": 0.85,
-   "lineage": "L2",
-   "layers": 12,
-   "params": 41053696,
-   "chars": 1045308899,
-   "tokens": 857567631,
-   "grew": 0,
-   "rolledBack": false,
-   "ownVal": null,
-   "ownScore": null,
-   "d": 512,
-   "loops": 1,
-   "spread": 3.1723,
-   "bytes": 492748901,
-   "heads": 8,
-   "ctx": 512,
-   "vocab": 6000,
-   "kind": "bpe",
-   "arch": "tpp-loop",
-   "wantWider": false,
-   "layerCap": 16,
-   "mixChanged": false,
-   "bySrc": {
-    "laws": 3.8305,
-    "wiki": 3.0017,
-    "aozora": 3.3029,
-    "hanrei": 3.5011,
-    "kokkai": 2.613,
-    "web": 2.9018,
-    "talk": 2.1115
-   },
-   "wrote": [
-    {
-     "start": "わたしは",
-     "text": "わたしは梅雨だったのですが、そこから詳しい。」 AY「なるほど！そういうこと、私は関東なので」 AS「関東なので、関東は台風が来てたので、そこはまだ今年はありませんでした。」 AY「えー！そんなことだったんですか？」 AS「実はまだ"
-    },
-    {
-     "start": "第一条",
-     "text": "第一条の規定により被被被被被害被被害者被被被害者被害者被被害者被被害者被被被害者被害者被害者被被害者を被害者被害者被控訴人被控訴人被控訴人裁判物と被控訴人被控訴人被控訴人被控訴人被控訴人Ｄ１（以下「控訴人被控訴人」という。）及び"
-    },
-    {
-     "start": "この法律において",
-     "text": "この法律において「テレビ朝日」のご案内」をございます。」 客「ありがとうございます。そちらはキャッシュレス払い可能なタクシー会社を探しています。キャッシュレス払い可能なところはありませんか？」 店「はい。キャッシュレス対応ですね。」 客「ありがとうござ"
-    }
-   ],
-   "loopPct": 25.15,
-   "movedBody": false
-  },
-  {
    "at": "2026-09-24T00:43:56Z",
    "val": 2.8142,
    "prev": 2.8186,
@@ -12599,9 +12536,72 @@
    ],
    "loopPct": 1.96,
    "movedBody": false
+  },
+  {
+   "at": "2026-10-04T16:33:19Z",
+   "val": 2.6868,
+   "prev": 2.6871,
+   "valTag": "fixed-holdout-v1",
+   "stoppedAt": 365,
+   "stuck": 0,
+   "evalTag": "fixed-ix-v1",
+   "secPerStep": 10.5436,
+   "steps": 609,
+   "bpc": 3.18,
+   "charsPerTok": 1.2189,
+   "score": 2.052,
+   "scoreW": 2.0,
+   "scoreMode": "talk",
+   "finishMix": 0.85,
+   "lineage": "L2",
+   "layers": 13,
+   "params": 44216832,
+   "chars": 1045308899,
+   "tokens": 857567631,
+   "grew": 0,
+   "rolledBack": false,
+   "ownVal": null,
+   "ownScore": null,
+   "d": 512,
+   "loops": 1,
+   "spread": 2.5249,
+   "bytes": 530714761,
+   "heads": 8,
+   "ctx": 512,
+   "vocab": 6000,
+   "kind": "bpe",
+   "arch": "tpp-loop",
+   "wantWider": false,
+   "layerCap": 16,
+   "mixChanged": false,
+   "bySrc": {
+    "laws": 3.5965,
+    "wiki": 2.8521,
+    "aozora": 3.1655,
+    "hanrei": 3.3931,
+    "kokkai": 2.5032,
+    "web": 2.7706,
+    "talk": 2.052
+   },
+   "wrote": [
+    {
+     "start": "わたしは",
+     "text": "わたしは甘みが強くなり強くなりがちですよ。」 DH「そういうイメージはあるけど、お勧めです！」 EN「そうなんです。にんにくとか、ほとんど食べない方かもしれません。」 DH「食べない方も多いですよね。」 EN「そうなんです。1つも食べ"
+    },
+    {
+     "start": "第一条",
+     "text": "第一条中「消防団」とあるのは、「消防団」とする。 消防団長は、消防団からの子どもの部隊を出撃させ、出撃させ、又は出撃させようとするときは、その部隊兵と比べて供給がきっと少ないと思われる。 消防団は、出撃直後に、出撃した警察署に、出撃させようとするときは、警察署に�砕して、出動を命じた。 等又は消防団長は、出撃者に対して、出撃"
+    },
+    {
+     "start": "この法律において",
+     "text": "この法律においてにつきましては、公文書管理委員会、区画整理委員会等、関係機関等との連絡調整、きめ細かく調整、調査、検討等のあり方等について慎重に検討する必要があると監査報告をいたしまして、その結果を質疑通告させていただきます。」 AB「委員長 この際、池田洋一君から関連質疑の申出があります。田中君の持ち時間"
+    }
+   ],
+   "loopPct": 6.49,
+   "movedBody": false
   }
  ],
- "bestVal": 2.6871,
+ "bestVal": 2.6868,
  "layers": 13,
  "params": 44216832,
  "born": "2026-09-08T15:11:54Z",
@@ -12649,5 +12649,5 @@
  ],
  "wantWider": false,
  "nextD": 512,
- "bad": 0
+ "bad": 1
 }
