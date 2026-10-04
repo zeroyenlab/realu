@@ -1,69 +1,6 @@
 {
  "runs": [
   {
-   "at": "2026-09-23T21:17:00Z",
-   "val": 3.3112,
-   "prev": 3.3239,
-   "valTag": "fixed-holdout-v1",
-   "stoppedAt": 0,
-   "stuck": 0,
-   "evalTag": "fixed-ix-v1",
-   "secPerStep": 12.9159,
-   "steps": 300,
-   "bpc": 3.9191,
-   "charsPerTok": 1.2189,
-   "score": 2.3516,
-   "scoreW": 2.0,
-   "scoreMode": "talk",
-   "finishMix": 0.5,
-   "lineage": "L1",
-   "layers": 16,
-   "params": 117914880,
-   "chars": 1045308899,
-   "tokens": 857567631,
-   "grew": 0,
-   "rolledBack": false,
-   "ownVal": null,
-   "ownScore": null,
-   "d": 768,
-   "loops": 1,
-   "spread": 3.4233,
-   "bytes": 1415115957,
-   "heads": 6,
-   "ctx": 512,
-   "vocab": 6000,
-   "kind": "bpe",
-   "arch": "tpp-loop",
-   "wantWider": false,
-   "layerCap": 16,
-   "mixChanged": false,
-   "bySrc": {
-    "laws": 4.9538,
-    "wiki": 3.5001,
-    "aozora": 3.7732,
-    "hanrei": 3.894,
-    "kokkai": 3.0022,
-    "web": 3.2939,
-    "talk": 2.3516
-   },
-   "wrote": [
-    {
-     "start": "わたしは",
-     "text": "わたしは眠らないわけです。」 AA「魔帰ってくるのを見たら、何かばっかり？」 AC「まあ、そこから何というか、、、コメントも多そうです。」 AA「あと一緒に見たんですが、ダメ行かれました？」 AC「え！！！！ 見たことないん"
-    },
-    {
-     "start": "第一条",
-     "text": "第一条店店「それではジャンボタクシー対応しています。」 店「ありがとうございました。ご予約番号は、92318です。」 客「札幌へ旅行に行きます。十一月１１日の１件ご案内可能です。」 店「承知しました。何かご案内できる"
-    },
-    {
-     "start": "この法律において",
-     "text": "この法律においてってます。また、普通のアニメを見てみますと、その二つになると思います。」 AB「三条先生、これは原則ではＥＡＮＴＡＰＰの事情についてどのようなのかということを目のにわたってもＪＲＯＤＰ交渉としてやっていただきたいと思います。 そうすると、これは"
-    }
-   ],
-   "loopPct": 7.38,
-   "movedBody": false
-  },
-  {
    "at": "2026-09-23T22:34:09Z",
    "val": 3.3055,
    "prev": 3.3112,
@@ -12599,9 +12536,72 @@
    ],
    "loopPct": 9.5,
    "movedBody": false
+  },
+  {
+   "at": "2026-10-04T10:22:49Z",
+   "val": 2.9987,
+   "prev": 3.0015,
+   "valTag": "fixed-holdout-v1",
+   "stoppedAt": 158,
+   "stuck": 0,
+   "evalTag": "fixed-ix-v1",
+   "secPerStep": 26.311,
+   "steps": 300,
+   "bpc": 3.5492,
+   "charsPerTok": 1.2189,
+   "score": 2.1929,
+   "scoreW": 2.0,
+   "scoreMode": "talk",
+   "finishMix": 0.5,
+   "lineage": "L1",
+   "layers": 16,
+   "params": 117914880,
+   "chars": 1045308899,
+   "tokens": 857567631,
+   "grew": 0,
+   "rolledBack": false,
+   "ownVal": null,
+   "ownScore": null,
+   "d": 768,
+   "loops": 1,
+   "spread": 3.3575,
+   "bytes": 1415115957,
+   "heads": 6,
+   "ctx": 512,
+   "vocab": 6000,
+   "kind": "bpe",
+   "arch": "tpp-loop",
+   "wantWider": false,
+   "layerCap": 16,
+   "mixChanged": false,
+   "bySrc": {
+    "laws": 4.3446,
+    "wiki": 3.1688,
+    "aozora": 3.5025,
+    "hanrei": 3.597,
+    "kokkai": 2.7546,
+    "web": 3.0198,
+    "talk": 2.1929
+   },
+   "wrote": [
+    {
+     "start": "わたしは",
+     "text": "わたしは、現在の人々の反映者、ニューヨークではナショナリズムの考えを批判した [ 119 ] 。 古い作品でも、新しい作品が主人公の人気を学ぶとともに、ストーリーの500年代のログシンド王数『ニカイアの世界』を刊行した。"
+    },
+    {
+     "start": "第一条",
+     "text": "第一条」並びに再び行われるものであった。 →詳細は「 読売新聞 」を参照。 ↑ 一部の読売新聞は 日清新聞 、 日刊新聞 、DVD、 日本新聞 、 日刊新聞 、 読売新聞 、 日刊新聞 、 日刊新聞 、 日刊紙 、 日刊"
+    },
+    {
+     "start": "この法律において",
+     "text": "この法律においてのときに、いわば、これは非常に簡単な問題です。 私は、資金援助するとして、先ほども答弁をさせなければいけないということは、マイナンバーカードとか、あるいはマイナンバーカードとか、マイナンバーカードとか、あるいはソフトバンクという社交関係を把握して、そして事後的な事態になってくる"
+    }
+   ],
+   "loopPct": 19.07,
+   "movedBody": false
   }
  ],
- "bestVal": 3.0004,
+ "bestVal": 2.9987,
  "layers": 16,
  "params": 117914880,
  "born": "2026-09-08T15:11:54Z",
@@ -12649,5 +12649,5 @@
  ],
  "wantWider": false,
  "nextD": 768,
- "bad": 3
+ "bad": 4
 }
