@@ -1,69 +1,6 @@
 {
  "runs": [
   {
-   "at": "2026-09-23T22:34:09Z",
-   "val": 3.3055,
-   "prev": 3.3112,
-   "valTag": "fixed-holdout-v1",
-   "stoppedAt": 178,
-   "stuck": 0,
-   "evalTag": "fixed-ix-v1",
-   "secPerStep": 23.1108,
-   "steps": 469,
-   "bpc": 3.9123,
-   "charsPerTok": 1.2189,
-   "score": 2.349,
-   "scoreW": 2.0,
-   "scoreMode": "talk",
-   "finishMix": 0.5,
-   "lineage": "L1",
-   "layers": 16,
-   "params": 117914880,
-   "chars": 1045308899,
-   "tokens": 857567631,
-   "grew": 0,
-   "rolledBack": false,
-   "ownVal": null,
-   "ownScore": null,
-   "d": 768,
-   "loops": 1,
-   "spread": 3.5652,
-   "bytes": 1415115957,
-   "heads": 6,
-   "ctx": 512,
-   "vocab": 6000,
-   "kind": "bpe",
-   "arch": "tpp-loop",
-   "wantWider": false,
-   "layerCap": 16,
-   "mixChanged": false,
-   "bySrc": {
-    "laws": 4.9476,
-    "wiki": 3.4931,
-    "aozora": 3.7708,
-    "hanrei": 3.8931,
-    "kokkai": 2.9986,
-    "web": 3.2869,
-    "talk": 2.349
-   },
-   "wrote": [
-    {
-     "start": "わたしは",
-     "text": "わたしは そうです。」 AB「しかし、そのときに、今回のときは、この前のことなのかどうか、そして、今は環境省にとって若干のように、今度は雨の先生とに近づいていると思ったと言っています。 その上で、今回の資料は、なかなか今のおっしゃっていますが、まだ、時間がないでしょう"
-    },
-    {
-     "start": "第一条",
-     "text": "第一条ルト͢γ救命・健康・金融機関・三・五兆円・雇用歯科」 １ 各契約の利用に関する総満な運営の改善に補強を行う。 原告らは、１２０円，原告Ｃに，同月１７日午後６時２０分ころ， Ｄに同ら協力して原告Ａ１（第二，２３，同１４（１１５，３９，２）を�"
-    },
-    {
-     "start": "この法律において",
-     "text": "この法律においてカカカカカカカカカカンカウルディカカンカガニカカンカンカガンダーカカンブラリアンズアボカンはハカカウンカーとジェネズ JACA CACS （スキーアカウンター）やEACAGA HACANACASTARAATAND SANS"
-    }
-   ],
-   "loopPct": 11.83,
-   "movedBody": false
-  },
-  {
    "at": "2026-09-23T23:50:21Z",
    "val": 3.3016,
    "prev": 3.3055,
@@ -12599,9 +12536,72 @@
    ],
    "loopPct": 19.07,
    "movedBody": false
+  },
+  {
+   "at": "2026-10-04T11:38:44Z",
+   "val": 2.9977,
+   "prev": 2.9987,
+   "valTag": "fixed-holdout-v1",
+   "stoppedAt": 177,
+   "stuck": 0,
+   "evalTag": "fixed-ix-v1",
+   "secPerStep": 23.2149,
+   "steps": 300,
+   "bpc": 3.548,
+   "charsPerTok": 1.2189,
+   "score": 2.1942,
+   "scoreW": 2.0,
+   "scoreMode": "talk",
+   "finishMix": 0.5,
+   "lineage": "L1",
+   "layers": 16,
+   "params": 117914880,
+   "chars": 1045308899,
+   "tokens": 857567631,
+   "grew": 0,
+   "rolledBack": false,
+   "ownVal": null,
+   "ownScore": null,
+   "d": 768,
+   "loops": 1,
+   "spread": 3.1964,
+   "bytes": 1415115957,
+   "heads": 6,
+   "ctx": 512,
+   "vocab": 6000,
+   "kind": "bpe",
+   "arch": "tpp-loop",
+   "wantWider": false,
+   "layerCap": 16,
+   "mixChanged": false,
+   "bySrc": {
+    "laws": 4.3435,
+    "wiki": 3.1677,
+    "aozora": 3.5035,
+    "hanrei": 3.5911,
+    "kokkai": 2.7521,
+    "web": 3.0203,
+    "talk": 2.1942
+   },
+   "wrote": [
+    {
+     "start": "わたしは",
+     "text": "わたしは、日米両条約は、日米関係の協力を求めてきておるのでございます。」 AA「それから、日米両国関係は、このようなことがないように、日米同盟を結んでおります。したがって、この件は、少子化・護�その内部外交をなすものでございますから、これを審査し、また、日米首�"
+    },
+    {
+     "start": "第一条",
+     "text": "第一条ロロヴァトスロヴォトスロヴィーニョ (2011年8月1日). 2016年7月26日閲覧。 ↑ 小田健次郎『小学6年生』（小学館）1973年、小学館、2007年、248頁。 ↑ 小学館属の女子"
+    },
+    {
+     "start": "この法律において",
+     "text": "この法律において「口い合わせ」（2022年6月16日 - 2025年3月26日）は、同年9月26日の「北陸函館」（現在の「北陸」、「南陸」）。 2024年7月27日 - 北陸単独で導入。 北陸本線の南海本線は横須賀線と北陸本線との共通乗"
+    }
+   ],
+   "loopPct": 4.67,
+   "movedBody": false
   }
  ],
- "bestVal": 2.9987,
+ "bestVal": 2.9977,
  "layers": 16,
  "params": 117914880,
  "born": "2026-09-08T15:11:54Z",
@@ -12649,5 +12649,5 @@
  ],
  "wantWider": false,
  "nextD": 768,
- "bad": 4
+ "bad": 5
 }
