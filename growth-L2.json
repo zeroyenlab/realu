@@ -1,69 +1,6 @@
 {
  "runs": [
   {
-   "at": "2026-09-24T21:15:46Z",
-   "val": 2.7859,
-   "prev": 2.7881,
-   "valTag": "fixed-holdout-v1",
-   "stoppedAt": 388,
-   "stuck": 0,
-   "evalTag": "fixed-ix-v1",
-   "secPerStep": 9.8579,
-   "steps": 604,
-   "bpc": 3.2973,
-   "charsPerTok": 1.2189,
-   "score": 2.0975,
-   "scoreW": 2.0,
-   "scoreMode": "talk",
-   "finishMix": 0.85,
-   "lineage": "L2",
-   "layers": 12,
-   "params": 41053696,
-   "chars": 1045308899,
-   "tokens": 857567631,
-   "grew": 0,
-   "rolledBack": false,
-   "ownVal": null,
-   "ownScore": null,
-   "d": 512,
-   "loops": 1,
-   "spread": 3.059,
-   "bytes": 492748901,
-   "heads": 8,
-   "ctx": 512,
-   "vocab": 6000,
-   "kind": "bpe",
-   "arch": "tpp-loop",
-   "wantWider": false,
-   "layerCap": 16,
-   "mixChanged": false,
-   "bySrc": {
-    "laws": 3.7796,
-    "wiki": 2.9694,
-    "aozora": 3.2693,
-    "hanrei": 3.4711,
-    "kokkai": 2.5871,
-    "web": 2.8716,
-    "talk": 2.0975
-   },
-   "wrote": [
-    {
-     "start": "わたしは",
-     "text": "わたしはわたしもわからないので、16時から終夜まで。」 AK「そうなのですね。それでも一日も早く終夜に行かれるのに。」 AN「早いですよね。給食の思い出とかってありますか？」 AK「秋なので、朝から夕方までです。あとは昼食ですか"
-    },
-    {
-     "start": "第一条",
-     "text": "第一条比比比比比率比比率が五％を占める平均三％と比べても大きな割合であり、実質賃金の低下は必然的に比較して高い水準ではないからであります。実質賃金、比率が低下したこともあります。これは、国民の生活をどういうふうに見直すかということではなくて、各国、国が出現できるようになったこともあ"
-    },
-    {
-     "start": "この法律において",
-     "text": "この法律においていたされたこともあり、優れた表現と目的と考えている。 この意味で、ローマ時代の トルコ語 などで用いられていた、 フランス語 の 文明 の中でも、 ローマ 、 アレクサンドロス 、 ヴィルヘルム2世 などの 王朝 の 王朝 この時代"
-    }
-   ],
-   "loopPct": 7.48,
-   "movedBody": false
-  },
-  {
    "at": "2026-09-24T22:33:04Z",
    "val": 2.7856,
    "prev": 2.7859,
@@ -12599,6 +12536,69 @@
    ],
    "loopPct": 9.18,
    "movedBody": false
+  },
+  {
+   "at": "2026-10-05T14:11:56Z",
+   "val": 2.6825,
+   "prev": 2.6826,
+   "valTag": "fixed-holdout-v1",
+   "stoppedAt": 365,
+   "stuck": 0,
+   "evalTag": "fixed-ix-v1",
+   "secPerStep": 10.5394,
+   "steps": 613,
+   "bpc": 3.175,
+   "charsPerTok": 1.2189,
+   "score": 2.0501,
+   "scoreW": 2.0,
+   "scoreMode": "talk",
+   "finishMix": 0.85,
+   "lineage": "L2",
+   "layers": 13,
+   "params": 44216832,
+   "chars": 1045308899,
+   "tokens": 857567631,
+   "grew": 0,
+   "rolledBack": false,
+   "ownVal": null,
+   "ownScore": null,
+   "d": 512,
+   "loops": 1,
+   "spread": 2.6498,
+   "bytes": 530714761,
+   "heads": 8,
+   "ctx": 512,
+   "vocab": 6000,
+   "kind": "bpe",
+   "arch": "tpp-loop",
+   "wantWider": false,
+   "layerCap": 16,
+   "mixChanged": false,
+   "bySrc": {
+    "laws": 3.5972,
+    "wiki": 2.8478,
+    "aozora": 3.1588,
+    "hanrei": 3.3877,
+    "kokkai": 2.4999,
+    "web": 2.7672,
+    "talk": 2.0501
+   },
+   "wrote": [
+    {
+     "start": "わたしは",
+     "text": "わたしはよく「おいしい」って言います。」 FZ「そうなんですね、私も何故かおしゃれなコーヒーは飲みます」 FQ「お水を飲むと、私も飲んでるから、おしゃれですね。」 FZ「そうですよね、コーヒーは飲みますか？」 FQ「�"
+    },
+    {
+     "start": "第一条",
+     "text": "第一条%、模型、温床、ウラン、アウイルス、バラスト、コロナ、エアコン、さらにはアウイルス、マグネシウム、ＴＰＰ、アメリカ、バラスト、いろいろあるんですが、このグラフを今、アメリカのＤＶ、ＴＰＰ等々、そういう方がずっと基本計画をしているのかなと"
+    },
+    {
+     "start": "この法律において",
+     "text": "この法律において「勤続展開促進等」とは、受け入れの得票数の減少を補うための社会的課題として移行したものである。 また、社会的課題としては、上格者や上位者による離婚を前提とするならば、就労と我が国の経済的活動の進展を指摘し、慎重に検討していくことにしている。 ここでは、 国民議会 において 第"
+    }
+   ],
+   "loopPct": 3.99,
+   "movedBody": false
   }
  ],
  "bestVal": 2.6824,
@@ -12649,5 +12649,5 @@
  ],
  "wantWider": false,
  "nextD": 512,
- "bad": 2
+ "bad": 5
 }
