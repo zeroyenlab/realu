@@ -1,69 +1,6 @@
 {
  "runs": [
   {
-   "at": "2026-09-24T14:52:39Z",
-   "val": 2.7959,
-   "prev": 2.7973,
-   "valTag": "fixed-holdout-v1",
-   "stoppedAt": 360,
-   "stuck": 0,
-   "evalTag": "fixed-ix-v1",
-   "secPerStep": 10.6919,
-   "steps": 663,
-   "bpc": 3.3091,
-   "charsPerTok": 1.2189,
-   "score": 2.1002,
-   "scoreW": 2.0,
-   "scoreMode": "talk",
-   "finishMix": 0.85,
-   "lineage": "L2",
-   "layers": 12,
-   "params": 41053696,
-   "chars": 1045308899,
-   "tokens": 857567631,
-   "grew": 0,
-   "rolledBack": false,
-   "ownVal": null,
-   "ownScore": null,
-   "d": 512,
-   "loops": 1,
-   "spread": 2.8416,
-   "bytes": 492748901,
-   "heads": 8,
-   "ctx": 512,
-   "vocab": 6000,
-   "kind": "bpe",
-   "arch": "tpp-loop",
-   "wantWider": false,
-   "layerCap": 16,
-   "mixChanged": false,
-   "bySrc": {
-    "laws": 3.7953,
-    "wiki": 2.9786,
-    "aozora": 3.2801,
-    "hanrei": 3.4758,
-    "kokkai": 2.5944,
-    "web": 2.8805,
-    "talk": 2.1002
-   },
-   "wrote": [
-    {
-     "start": "わたしは",
-     "text": "わたしはミニミュージアムでよく出てます」 GF「ミントだと、彼村でもう１ぐらいですか？」 GF「１名ずつ出てきますよ！」 GF「結構！生まれてきたらどうなりますか？」 GF「すごいですよ！」 GF「略すぎません！！�"
-    },
-    {
-     "start": "第一条",
-     "text": "第一条第一号又は第六号の規定により閲覧に供し、又は差し引いて必要な事項の荷重ため�けた翌日から四週間以内に申請書の提出を要した事項の当該届出を延期することを要することができる。 （特約書の提出） 第十九条 法第八十五条の四第一項に規定する安倍内閣は、購入し、又は差し引いて必要な事項は、書面により、押印してしなければならない。 （畑又は交差点の氏名） 第二十条 法第八十五条の四第一項に規定する安倍内閣は、盛岡県及び岡山県及び岐"
-    },
-    {
-     "start": "この法律において",
-     "text": "この法律において「知的障害」と、「知的障害」の「知的障害」の「知的障害」の「知的障害」の「知的障害」の「知的障害」の「知的障害」の「知的障害・知的障害」の「知的障害」の「知的障害」の「知的障害」の「知的障害」の「知的障害」の「知的障害」の「知的障害」の「知的障害」の「知的障害"
-    }
-   ],
-   "loopPct": 30.39,
-   "movedBody": false
-  },
-  {
    "at": "2026-09-24T15:52:52Z",
    "val": 2.7945,
    "prev": 2.7959,
@@ -12599,6 +12536,69 @@
    ],
    "loopPct": 0.45,
    "movedBody": false
+  },
+  {
+   "at": "2026-10-05T07:43:25Z",
+   "val": 2.6836,
+   "prev": 2.6826,
+   "valTag": "fixed-holdout-v1",
+   "stoppedAt": 493,
+   "stuck": 0,
+   "evalTag": "fixed-ix-v1",
+   "secPerStep": 7.6697,
+   "steps": 617,
+   "bpc": 3.1762,
+   "charsPerTok": 1.2189,
+   "score": 2.0539,
+   "scoreW": 2.0,
+   "scoreMode": "talk",
+   "finishMix": 0.85,
+   "lineage": "L2",
+   "layers": 13,
+   "params": 44216832,
+   "chars": 1045308899,
+   "tokens": 857567631,
+   "grew": 0,
+   "rolledBack": false,
+   "ownVal": null,
+   "ownScore": null,
+   "d": 512,
+   "loops": 1,
+   "spread": 2.951,
+   "bytes": 530714761,
+   "heads": 8,
+   "ctx": 512,
+   "vocab": 6000,
+   "kind": "bpe",
+   "arch": "tpp-loop",
+   "wantWider": false,
+   "layerCap": 16,
+   "mixChanged": false,
+   "bySrc": {
+    "laws": 3.5948,
+    "wiki": 2.8488,
+    "aozora": 3.1611,
+    "hanrei": 3.3874,
+    "kokkai": 2.5007,
+    "web": 2.7698,
+    "talk": 2.0539
+   },
+   "wrote": [
+    {
+     "start": "わたしは",
+     "text": "わたしは連れてこられた絵までに毎度を置いています。あなたは馬鹿ですか？」 BS「馬鹿です。犬も猫も飼えないので、�ぶかりたいです。」 BB「猫飼いたいです。期間限定の1匹とか、飼うのですか？」 BS「はい、もう1匹、も"
+    },
+    {
+     "start": "第一条",
+     "text": "第一条（存続会社第一号又はにおいて同じ。）場合には、課税標準月を支給するものとする。 第一項の規定は、前項の場合について準用する。 （for of the radionsmantive） 第三十一条 for of the the de lipponsmantive in the and for the mant"
+    },
+    {
+     "start": "この法律において",
+     "text": "この法律においてずる規則（平成十一年事業団法施行令（平成二十五年政令第四十四号）附則第十条第三項及び第三項の規定は、前項の月数及び月数並びに月数及び月数並びに月数について準用する。 この場合において、同条第四項おり、同条第一項第一号（同条第一項第一号を除く。）中「平成二十九年度」とあるのは、「平成二十九年度及び三十四年度」とする。 （財源） 第一条の三 財源の財源として、財源をれる財源のうち、財源として財源として編成しなければならない。"
+    }
+   ],
+   "loopPct": 10.49,
+   "movedBody": false
   }
  ],
  "bestVal": 2.6826,
@@ -12649,5 +12649,5 @@
  ],
  "wantWider": false,
  "nextD": 512,
- "bad": 0
+ "bad": 3
 }
