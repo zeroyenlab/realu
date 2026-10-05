@@ -1,69 +1,6 @@
 {
  "runs": [
   {
-   "at": "2026-09-24T13:40:46Z",
-   "val": 3.2701,
-   "prev": 3.2665,
-   "valTag": "fixed-holdout-v1",
-   "stoppedAt": 178,
-   "stuck": 0,
-   "evalTag": "fixed-ix-v1",
-   "secPerStep": 23.0632,
-   "steps": 300,
-   "bpc": 3.8704,
-   "charsPerTok": 1.2189,
-   "score": 2.3296,
-   "scoreW": 2.0,
-   "scoreMode": "talk",
-   "finishMix": 0.5,
-   "lineage": "L1",
-   "layers": 16,
-   "params": 117914880,
-   "chars": 1045308899,
-   "tokens": 857567631,
-   "grew": 0,
-   "rolledBack": false,
-   "ownVal": null,
-   "ownScore": null,
-   "d": 768,
-   "loops": 1,
-   "spread": 3.4065,
-   "bytes": 1415115957,
-   "heads": 6,
-   "ctx": 512,
-   "vocab": 6000,
-   "kind": "bpe",
-   "arch": "tpp-loop",
-   "wantWider": false,
-   "layerCap": 16,
-   "mixChanged": false,
-   "bySrc": {
-    "laws": 4.876,
-    "wiki": 3.4543,
-    "aozora": 3.7403,
-    "hanrei": 3.8601,
-    "kokkai": 2.9715,
-    "web": 3.2558,
-    "talk": 2.3296
-   },
-   "wrote": [
-    {
-     "start": "わたしは",
-     "text": "わたしは。」 AB「これは、うん。今、なかんなか大事にしてくれていたから。これは、ああなるほど、もうその面を見てみたら、あなたは、あれの考え方をやっていた。今のこの危機感を持つわけじゃないで、だんだん、やっぱり、なすくなってくれ。そのためにも、今御答弁を"
-    },
-    {
-     "start": "第一条",
-     "text": "第一条」と、「労働力の対応」労働者難民労働関係者のÌ包化改善のため、自由化されず、行政、地方公共団体の大きさを守る運営状況を行うこともできない。」とあり、そこに、総理、自由民主党を代表して、この点を明確に表明し、民主党の代表者統制の解決と経済立法案が提案され、日本共産党を代表して、日本共産党・自民党・"
-    },
-    {
-     "start": "この法律において",
-     "text": "この法律において色が遊ぶ、その点では最も多い。 1978年に東京都で一部の東京都日陵が主流となっている。 1985年（昭和58年）に成功し、現在も東京都 東京区 の 越前市 に制定し、それまでの 岡山県 福山市 と 高知県 の 東京�"
-    }
-   ],
-   "loopPct": 2.36,
-   "movedBody": false
-  },
-  {
    "at": "2026-09-24T14:56:55Z",
    "val": 3.2635,
    "prev": 3.2701,
@@ -12599,6 +12536,69 @@
    ],
    "loopPct": 15.59,
    "movedBody": false
+  },
+  {
+   "at": "2026-10-05T02:49:26Z",
+   "val": 2.9977,
+   "prev": 3.0002,
+   "valTag": "fixed-holdout-v1",
+   "stoppedAt": 158,
+   "stuck": 0,
+   "evalTag": "fixed-ix-v1",
+   "secPerStep": 26.4369,
+   "steps": 300,
+   "bpc": 3.548,
+   "charsPerTok": 1.2189,
+   "score": 2.188,
+   "scoreW": 2.0,
+   "scoreMode": "talk",
+   "finishMix": 0.5,
+   "lineage": "L1",
+   "layers": 16,
+   "params": 117914880,
+   "chars": 1045308899,
+   "tokens": 857567631,
+   "grew": 0,
+   "rolledBack": false,
+   "ownVal": null,
+   "ownScore": null,
+   "d": 768,
+   "loops": 1,
+   "spread": 3.1049,
+   "bytes": 1415115957,
+   "heads": 6,
+   "ctx": 512,
+   "vocab": 6000,
+   "kind": "bpe",
+   "arch": "tpp-loop",
+   "wantWider": false,
+   "layerCap": 16,
+   "mixChanged": false,
+   "bySrc": {
+    "laws": 4.341,
+    "wiki": 3.1619,
+    "aozora": 3.5013,
+    "hanrei": 3.5934,
+    "kokkai": 2.7551,
+    "web": 3.0244,
+    "talk": 2.188
+   },
+   "wrote": [
+    {
+     "start": "わたしは",
+     "text": "わたしはいつもおかしいです。」 BZ「そうでしたか！まだまだまだ弾けないですよね。」 CV「はい、ありがとうございました。」 CV「よろしくお願いします！」 BZ「こちらこそよろしくお"
+    },
+    {
+     "start": "第一条",
+     "text": "第一条ルートとして、各ドルド・フェイス、ドイツ・フェイス、アルフレート・フェイスがオーストロール・ラインに鉄道・鉄道の駅として開発された。 2010年11月18日、現在のドイツ連邦政府との相互関係が活発化し、 2014年 10月28日には ドイツ首相 が、ドイツと"
+    },
+    {
+     "start": "この法律において",
+     "text": "この法律においてましたし、もしあいますね！」 BU「自分は自分でも自分でも買って、自分にやるようになりました。」 DY「ですよねー。自分も自分が自分で作ったのですが、プランターで買ってしまいましたか？」 BU「お料理はこれからも作ります。」 DY「そうなん"
+    }
+   ],
+   "loopPct": 6.78,
+   "movedBody": false
   }
  ],
  "bestVal": 2.9946,
@@ -12649,5 +12649,5 @@
  ],
  "wantWider": false,
  "nextD": 768,
- "bad": 1
+ "bad": 2
 }
