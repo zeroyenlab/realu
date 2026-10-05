@@ -1,69 +1,6 @@
 {
  "runs": [
   {
-   "at": "2026-09-24T22:39:59Z",
-   "val": 3.2483,
-   "prev": 3.2511,
-   "valTag": "fixed-holdout-v1",
-   "stoppedAt": 143,
-   "stuck": 0,
-   "evalTag": "fixed-ix-v1",
-   "secPerStep": 29.6164,
-   "steps": 300,
-   "bpc": 3.8446,
-   "charsPerTok": 1.2189,
-   "score": 2.3202,
-   "scoreW": 2.0,
-   "scoreMode": "talk",
-   "finishMix": 0.5,
-   "lineage": "L1",
-   "layers": 16,
-   "params": 117914880,
-   "chars": 1045308899,
-   "tokens": 857567631,
-   "grew": 0,
-   "rolledBack": false,
-   "ownVal": null,
-   "ownScore": null,
-   "d": 768,
-   "loops": 1,
-   "spread": 3.4507,
-   "bytes": 1415115957,
-   "heads": 6,
-   "ctx": 512,
-   "vocab": 6000,
-   "kind": "bpe",
-   "arch": "tpp-loop",
-   "wantWider": false,
-   "layerCap": 16,
-   "mixChanged": false,
-   "bySrc": {
-    "laws": 4.8414,
-    "wiki": 3.4307,
-    "aozora": 3.7237,
-    "hanrei": 3.8294,
-    "kokkai": 2.9529,
-    "web": 3.2329,
-    "talk": 2.3202
-   },
-   "wrote": [
-    {
-     "start": "わたしは",
-     "text": "わたしは、今後もこの議定書において全く今日わけではないと思います。したがって、先ほども申し上げましたように、このとおりであります。」 AB「いずれにいたしましても、今回のような高校への働きかけを始め、そうした学校を生かして、この際、中小部隊に戻って、近代の教科書も非常に多いわけ"
-    },
-    {
-     "start": "第一条",
-     "text": "第一条u。） （特定型型） Lakinko-Jamanasage for denter, アイリアン・ドリイト オッシュ＝ブライアン・グローガン Googlex (Livesseals) <記事 Ruthingyoung> L"
-    },
-    {
-     "start": "この法律において",
-     "text": "この法律においてい込まれました。 このため、我が国としては、全体として、世界ではなく、自由民主党・新党・新同館・鹿児島担当国務大臣に伺います。 このため、かつての世論調査が見られることは、自由民主党・新党・民主党・新党・新党・政治・国民・民主主義者と共同自由と民主党・民"
-    }
-   ],
-   "loopPct": 10.8,
-   "movedBody": false
-  },
-  {
    "at": "2026-09-24T23:56:43Z",
    "val": 3.2445,
    "prev": 3.2483,
@@ -12599,9 +12536,72 @@
    ],
    "loopPct": 2.48,
    "movedBody": false
+  },
+  {
+   "at": "2026-10-05T11:40:04Z",
+   "val": 2.9793,
+   "prev": 2.9818,
+   "valTag": "fixed-holdout-v1",
+   "stoppedAt": 159,
+   "stuck": 0,
+   "evalTag": "fixed-ix-v1",
+   "secPerStep": 26.2658,
+   "steps": 300,
+   "bpc": 3.5263,
+   "charsPerTok": 1.2189,
+   "score": 2.1794,
+   "scoreW": 2.0,
+   "scoreMode": "talk",
+   "finishMix": 0.5,
+   "lineage": "L1",
+   "layers": 16,
+   "params": 117914880,
+   "chars": 1045308899,
+   "tokens": 857567631,
+   "grew": 0,
+   "rolledBack": false,
+   "ownVal": null,
+   "ownScore": null,
+   "d": 768,
+   "loops": 1,
+   "spread": 3.3188,
+   "bytes": 1415115957,
+   "heads": 6,
+   "ctx": 512,
+   "vocab": 6000,
+   "kind": "bpe",
+   "arch": "tpp-loop",
+   "wantWider": false,
+   "layerCap": 16,
+   "mixChanged": false,
+   "bySrc": {
+    "laws": 4.3091,
+    "wiki": 3.1448,
+    "aozora": 3.484,
+    "hanrei": 3.5692,
+    "kokkai": 2.7342,
+    "web": 3.0047,
+    "talk": 2.1794
+   },
+   "wrote": [
+    {
+     "start": "わたしは",
+     "text": "わたしはまたその人たちが、この一件が、これはほとんどはいまや一件のおもな人々のこんな世界にたくさんの人々らしい人物ですから、こういうことをおっしゃいましたけれども、この皆さん方のお姉さんは、一応この言葉を、少なくとも私は民主党も含めたあなたを、私"
+    },
+    {
+     "start": "第一条",
+     "text": "第一条」とする。 2024年（令和7年）2月26日、旧新潟県から、新潟県及び福岡県、福岡県及びBS、新潟県の中央区となっている。 2025年（令和7年）7月19日、新潟県、新潟県及び新潟県に統合された新潟県の県立新潟県に新潟県立新�"
+    },
+    {
+     "start": "この法律において",
+     "text": "この法律において「この章に関する省令」と「ѷ」が主な転換点として据えられるようになったが、満足した「その業務」が本格的に影響を与えることになった。 民事訴訟 では、端末に応じて、株式会社AMAとのカバーを使うが 移行・運営 に多くのAMA受け入れが行われ、設立当初は 全国各地 でのIMAの サイバー同士 で"
+    }
+   ],
+   "loopPct": 3.45,
+   "movedBody": false
   }
  ],
- "bestVal": 2.9818,
+ "bestVal": 2.9793,
  "layers": 16,
  "params": 117914880,
  "born": "2026-09-08T15:11:54Z",
