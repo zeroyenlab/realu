@@ -1,69 +1,6 @@
 {
  "runs": [
   {
-   "at": "2026-09-25T04:48:38Z",
-   "val": 2.7789,
-   "prev": 2.7798,
-   "valTag": "fixed-holdout-v1",
-   "stoppedAt": 0,
-   "stuck": 0,
-   "evalTag": "fixed-ix-v1",
-   "secPerStep": 4.8459,
-   "steps": 676,
-   "bpc": 3.2891,
-   "charsPerTok": 1.2189,
-   "score": 2.093,
-   "scoreW": 2.0,
-   "scoreMode": "talk",
-   "finishMix": 0.85,
-   "lineage": "L2",
-   "layers": 12,
-   "params": 41053696,
-   "chars": 1045308899,
-   "tokens": 857567631,
-   "grew": 0,
-   "rolledBack": false,
-   "ownVal": null,
-   "ownScore": null,
-   "d": 512,
-   "loops": 1,
-   "spread": 2.8327,
-   "bytes": 492748901,
-   "heads": 8,
-   "ctx": 512,
-   "vocab": 6000,
-   "kind": "bpe",
-   "arch": "tpp-loop",
-   "wantWider": false,
-   "layerCap": 16,
-   "mixChanged": false,
-   "bySrc": {
-    "laws": 3.7645,
-    "wiki": 2.9624,
-    "aozora": 3.2635,
-    "hanrei": 3.4659,
-    "kokkai": 2.579,
-    "web": 2.8654,
-    "talk": 2.093
-   },
-   "wrote": [
-    {
-     "start": "わたしは",
-     "text": "わたしはあまり詳しくないんですが、そこに出ていませんよね。」 CI「出てる時、1時間あったら2時間だったので、1時間じゃできません。」 BI「最近の休みなら1時間ですか？」 CI「1時間ですか、1時間でもかかるかも。」 BI「3時間とか、あまり時間かか"
-    },
-    {
-     "start": "第一条",
-     "text": "第一条の審議を行う。 一 一 一 一 一・五一一 放送局 一 日テレ朝ドラマ放送局 一 一 放送局 一 一 放送局 一 一 放送局 一 一 放送局 一 放送局 一 日本放送協会 一 放送局 一 局 二 放送局 一 放送会 一 日本放送協会 二 放送局 一 放送局 一"
-    },
-    {
-     "start": "この法律において",
-     "text": "この法律において各事業年度撃電電池駅にて9.5%を送電する。 「 電車 」は、電車で1000m反対1車輌の電車を放電する。 電車では、電車で1000mを電車で1000mに改造する。 撤去のため、 電車 では電車で1000mを電車で10両台にし、いずれ"
-    }
-   ],
-   "loopPct": 24.94,
-   "movedBody": false
-  },
-  {
    "at": "2026-09-25T06:14:56Z",
    "val": 2.7784,
    "prev": 2.7789,
@@ -12599,6 +12536,69 @@
    ],
    "loopPct": 3.67,
    "movedBody": false
+  },
+  {
+   "at": "2026-10-05T21:53:34Z",
+   "val": 3.109,
+   "prev": 3.0552,
+   "valTag": "fixed-holdout-v1",
+   "stoppedAt": 342,
+   "stuck": 0,
+   "evalTag": "fixed-ix-v1",
+   "secPerStep": 11.2823,
+   "steps": 873,
+   "bpc": 3.6798,
+   "charsPerTok": 1.2189,
+   "score": 2.2372,
+   "scoreW": 2.0,
+   "scoreMode": "talk",
+   "finishMix": 0.85,
+   "lineage": "L2",
+   "layers": 14,
+   "params": 47379968,
+   "chars": 1045308899,
+   "tokens": 857567631,
+   "grew": 0,
+   "rolledBack": false,
+   "ownVal": null,
+   "ownScore": null,
+   "d": 512,
+   "loops": 1,
+   "spread": 3.2224,
+   "bytes": 568680621,
+   "heads": 8,
+   "ctx": 512,
+   "vocab": 6000,
+   "kind": "bpe",
+   "arch": "tpp-loop",
+   "wantWider": false,
+   "layerCap": 16,
+   "mixChanged": false,
+   "bySrc": {
+    "laws": 4.441,
+    "wiki": 3.2744,
+    "aozora": 3.5466,
+    "hanrei": 3.8157,
+    "kokkai": 2.8733,
+    "web": 3.1625,
+    "talk": 2.2372
+   },
+   "wrote": [
+    {
+     "start": "わたしは",
+     "text": "わたしはしんどいですね。。」 BM「えらいですね。エアコンが弾くのですか？」 BR「はい。わかります。」 BM「私もエアコンはエアコン付けてないです。」 BR「そうなんですね。エアコンが弾いていたので、普段使うこととかありますか？」 BR"
+    },
+    {
+     "start": "第一条",
+     "text": "第一条の意見の前提の下で、政府系金融機関、政府系金融機関、政府系金融機関の融資額の総額をリンクとしてまいりました。」 AB「加えて、政府系金融機関の融資導入等、企業系金融機関の融資額の総額は、政府系金融機関、政府系金融機関の融資額の総額に四七兆四千億円の融資が伝わっております。また、政府系金融機関による融資は、政府系金融機関ではなく、企業が融資をする金融機関の融資"
+    },
+    {
+     "start": "この法律において",
+     "text": "この法律において行われるグルグルグルームは、全てを収録する。 （アルバム収録後） 2014年3月31日 - ラストエリア版 アルバム収録後 - ラストエリア版 アルバム収録後の皆さんのおみえとりをお披露目にして配信。 アルバム収録後 - アルバム収録後 - アル"
+    }
+   ],
+   "loopPct": 19.77,
+   "movedBody": false
   }
  ],
  "bestVal": 2.6809,
@@ -12649,5 +12649,5 @@
  ],
  "wantWider": false,
  "nextD": 512,
- "bad": 0
+ "bad": 2
 }
