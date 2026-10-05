@@ -1,69 +1,6 @@
 {
  "runs": [
   {
-   "at": "2026-09-24T12:25:39Z",
-   "val": 3.2665,
-   "prev": 3.2707,
-   "valTag": "fixed-holdout-v1",
-   "stoppedAt": 156,
-   "stuck": 0,
-   "evalTag": "fixed-ix-v1",
-   "secPerStep": 26.7819,
-   "steps": 300,
-   "bpc": 3.8662,
-   "charsPerTok": 1.2189,
-   "score": 2.3283,
-   "scoreW": 2.0,
-   "scoreMode": "talk",
-   "finishMix": 0.5,
-   "lineage": "L1",
-   "layers": 16,
-   "params": 117914880,
-   "chars": 1045308899,
-   "tokens": 857567631,
-   "grew": 0,
-   "rolledBack": false,
-   "ownVal": null,
-   "ownScore": null,
-   "d": 768,
-   "loops": 1,
-   "spread": 3.2496,
-   "bytes": 1415115957,
-   "heads": 6,
-   "ctx": 512,
-   "vocab": 6000,
-   "kind": "bpe",
-   "arch": "tpp-loop",
-   "wantWider": false,
-   "layerCap": 16,
-   "mixChanged": false,
-   "bySrc": {
-    "laws": 4.8774,
-    "wiki": 3.4517,
-    "aozora": 3.7416,
-    "hanrei": 3.8528,
-    "kokkai": 2.9665,
-    "web": 3.2485,
-    "talk": 2.3283
-   },
-   "wrote": [
-    {
-     "start": "わたしは",
-     "text": "わたしはない、あるいはまた、まさに、明治時代のことは、日本の貿易協定の締結になります。」 AB「しかし、日本維新の会は、日本経済が国際社会における政府の転換をはかるのか、また、今日、通産大臣のお考えを伺います。 総理のお言葉もありますが、あなたは、皆さんの御意見を"
-    },
-    {
-     "start": "第一条",
-     "text": "第一条レーンを更新して上越し、2017年10月20日年12月28日のダウンロードマティアン・バレーフェリードを開催。 2010年 1月17日、同年11月18日、パリでのカウントダウンロードについて、ウルトラマンが使われています。 2015年 3月"
-    },
-    {
-     "start": "この法律において",
-     "text": "この法律において、他の日本の経済に関連する財政安定議員から、より世界の経済対策を進めてまいります。 その中で、国内でいろんな方針についてどのように考えているところでございます。」 AA「政府参考人 今、日銀に、「我が国経済質疑」というのは現在の財政再建の流通であると考えております。 その一方、また、ストックオプション、"
-    }
-   ],
-   "loopPct": 1.44,
-   "movedBody": false
-  },
-  {
    "at": "2026-09-24T13:40:46Z",
    "val": 3.2701,
    "prev": 3.2665,
@@ -12599,6 +12536,69 @@
    ],
    "loopPct": 1.72,
    "movedBody": false
+  },
+  {
+   "at": "2026-10-05T01:32:10Z",
+   "val": 3.0002,
+   "prev": 2.9946,
+   "valTag": "fixed-holdout-v1",
+   "stoppedAt": 178,
+   "stuck": 0,
+   "evalTag": "fixed-ix-v1",
+   "secPerStep": 23.1208,
+   "steps": 300,
+   "bpc": 3.5509,
+   "charsPerTok": 1.2189,
+   "score": 2.1912,
+   "scoreW": 2.0,
+   "scoreMode": "talk",
+   "finishMix": 0.5,
+   "lineage": "L1",
+   "layers": 16,
+   "params": 117914880,
+   "chars": 1045308899,
+   "tokens": 857567631,
+   "grew": 0,
+   "rolledBack": false,
+   "ownVal": null,
+   "ownScore": null,
+   "d": 768,
+   "loops": 1,
+   "spread": 3.5284,
+   "bytes": 1415115957,
+   "heads": 6,
+   "ctx": 512,
+   "vocab": 6000,
+   "kind": "bpe",
+   "arch": "tpp-loop",
+   "wantWider": false,
+   "layerCap": 16,
+   "mixChanged": false,
+   "bySrc": {
+    "laws": 4.3398,
+    "wiki": 3.167,
+    "aozora": 3.5026,
+    "hanrei": 3.5942,
+    "kokkai": 2.7574,
+    "web": 3.029,
+    "talk": 2.1912
+   },
+   "wrote": [
+    {
+     "start": "わたしは",
+     "text": "わたしはひいて少し強いのですが。」 FF「そうですね！こちらは面白いです。」 FF「きっとお高いですよね。」 FF「わかります。」 FF「こんにちは！」 DF「こんにちはー。」"
+    },
+    {
+     "start": "第一条",
+     "text": "第一条ネュネットワークアート CRPY-1500 も参照） CRT-10 CRT-1100 CR-16a CH-1000 CR-1200 CR-21009 CR-107 CR-1010 TZ-1100 CR-1000A-1 CR-"
+    },
+    {
+     "start": "この法律において",
+     "text": "この法律においてターンというものがいるわけでございまして、それはなかなかデータができなくなっているわけでございまして、それをデータで確認しますと、これはデータがでございます。」 AB「なるほど、データは、データがデータでデータをデータで表しております。データがデータデー"
+    }
+   ],
+   "loopPct": 15.59,
+   "movedBody": false
   }
  ],
  "bestVal": 2.9946,
@@ -12649,5 +12649,5 @@
  ],
  "wantWider": false,
  "nextD": 768,
- "bad": 0
+ "bad": 1
 }
