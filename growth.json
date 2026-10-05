@@ -1,69 +1,6 @@
 {
  "runs": [
   {
-   "at": "2026-09-25T02:30:32Z",
-   "val": 3.2403,
-   "prev": 3.244,
-   "valTag": "fixed-holdout-v1",
-   "stoppedAt": 158,
-   "stuck": 0,
-   "evalTag": "fixed-ix-v1",
-   "secPerStep": 26.3424,
-   "steps": 300,
-   "bpc": 3.8351,
-   "charsPerTok": 1.2189,
-   "score": 2.3187,
-   "scoreW": 2.0,
-   "scoreMode": "talk",
-   "finishMix": 0.5,
-   "lineage": "L1",
-   "layers": 16,
-   "params": 117914880,
-   "chars": 1045308899,
-   "tokens": 857567631,
-   "grew": 0,
-   "rolledBack": false,
-   "ownVal": null,
-   "ownScore": null,
-   "d": 768,
-   "loops": 1,
-   "spread": 3.6158,
-   "bytes": 1415115957,
-   "heads": 6,
-   "ctx": 512,
-   "vocab": 6000,
-   "kind": "bpe",
-   "arch": "tpp-loop",
-   "wantWider": false,
-   "layerCap": 16,
-   "mixChanged": false,
-   "bySrc": {
-    "laws": 4.8306,
-    "wiki": 3.4247,
-    "aozora": 3.7159,
-    "hanrei": 3.8301,
-    "kokkai": 2.9457,
-    "web": 3.2283,
-    "talk": 2.3187
-   },
-   "wrote": [
-    {
-     "start": "わたしは",
-     "text": "わたしは、本件は、本件土地対策に関する基本的な方針に立ち立てます。」 AB「本件は、本件について、間もなく、本件は水をやめることは、本件はいずれも全くないです。 さらに、本件は、これら等において、原告の小さな湯沢、牛肉に通じ、男性、受入れを閉じております。そのような危険性を持つた"
-    },
-    {
-     "start": "第一条",
-     "text": "第一条」 客「ありがとうございます。ではそこの電話番号を教えてください。」 客「横浜へ行こうと思っています。」 店「かしこまりました。 その条件ではお探しすることが出来ませんでした。」 客「では、そこにします。では、ホ"
-    },
-    {
-     "start": "この法律において",
-     "text": "この法律において、地域の負担と一体となって、地域の食糧の小さくは一層の国民の疲弊であり、政府は、当然の公平な結論を抑えているのでしょうか。 第十一条と、このため、本来、災害の需要は、市場の安定と地理的なのでき切れ、さらに、これを、交通の強化が進んでいるのに、政府の説明を求めたいと思います。（"
-    }
-   ],
-   "loopPct": 2.86,
-   "movedBody": false
-  },
-  {
    "at": "2026-09-25T03:46:30Z",
    "val": 3.2391,
    "prev": 3.2403,
@@ -12598,6 +12535,69 @@
     }
    ],
    "loopPct": 8.19,
+   "movedBody": false
+  },
+  {
+   "at": "2026-10-05T15:35:18Z",
+   "val": 2.9777,
+   "prev": 2.9777,
+   "valTag": "fixed-holdout-v1",
+   "stoppedAt": 177,
+   "stuck": 0,
+   "evalTag": "fixed-ix-v1",
+   "secPerStep": 23.3159,
+   "steps": 300,
+   "bpc": 3.5243,
+   "charsPerTok": 1.2189,
+   "score": 2.1827,
+   "scoreW": 2.0,
+   "scoreMode": "talk",
+   "finishMix": 0.5,
+   "lineage": "L1",
+   "layers": 16,
+   "params": 117914880,
+   "chars": 1045308899,
+   "tokens": 857567631,
+   "grew": 0,
+   "rolledBack": false,
+   "ownVal": null,
+   "ownScore": null,
+   "d": 768,
+   "loops": 1,
+   "spread": 2.9465,
+   "bytes": 1415115957,
+   "heads": 6,
+   "ctx": 512,
+   "vocab": 6000,
+   "kind": "bpe",
+   "arch": "tpp-loop",
+   "wantWider": false,
+   "layerCap": 16,
+   "mixChanged": false,
+   "bySrc": {
+    "laws": 4.3048,
+    "wiki": 3.1426,
+    "aozora": 3.4854,
+    "hanrei": 3.5669,
+    "kokkai": 2.7349,
+    "web": 3.0022,
+    "talk": 2.1827
+   },
+   "wrote": [
+    {
+     "start": "わたしは",
+     "text": "わたしは、多くの人々の合法性を共にして、自分の怒りを喜ばしました。まず、政治の信頼を回復したのが、行政団体が消費税を上回っております。ここに、公明党は、民主党の公明党の公明党の一つとして、一つのガバナンスを守ってきたことです。このように、政党そのものについて、国家おもな例えば"
+    },
+    {
+     "start": "第一条",
+     "text": "第一条 2008年11月21日 - イギリスのイギリス国内で開催されるコーヒー競技選手権大会。 2020年12月25日 - イギリスのアイドル・パレードのコーヒー演奏を契機に 映画「ショッピング・バーベル」として開催される。 2009年"
+    },
+    {
+     "start": "この法律において",
+     "text": "この法律において「LUUUUUUUUULUUE」とMUUNUEが似たような発言をしている。 4Dエンジンは全て、FUUSHOUNDAUUSにエンジンとして購入するようになる。 2023年12月、2022年12月末まで、エクイジンを「AUU」に変更。 eR seral"
+    }
+   ],
+   "loopPct": 14.88,
    "movedBody": false
   }
  ],
