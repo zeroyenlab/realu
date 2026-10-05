@@ -1,69 +1,6 @@
 {
  "runs": [
   {
-   "at": "2026-09-24T16:14:22Z",
-   "val": 3.2612,
-   "prev": 3.2635,
-   "valTag": "fixed-holdout-v1",
-   "stoppedAt": 159,
-   "stuck": 0,
-   "evalTag": "fixed-ix-v1",
-   "secPerStep": 26.1993,
-   "steps": 300,
-   "bpc": 3.8599,
-   "charsPerTok": 1.2189,
-   "score": 2.3269,
-   "scoreW": 2.0,
-   "scoreMode": "talk",
-   "finishMix": 0.5,
-   "lineage": "L1",
-   "layers": 16,
-   "params": 117914880,
-   "chars": 1045308899,
-   "tokens": 857567631,
-   "grew": 0,
-   "rolledBack": false,
-   "ownVal": null,
-   "ownScore": null,
-   "d": 768,
-   "loops": 1,
-   "spread": 3.6004,
-   "bytes": 1415115957,
-   "heads": 6,
-   "ctx": 512,
-   "vocab": 6000,
-   "kind": "bpe",
-   "arch": "tpp-loop",
-   "wantWider": false,
-   "layerCap": 16,
-   "mixChanged": false,
-   "bySrc": {
-    "laws": 4.8623,
-    "wiki": 3.4445,
-    "aozora": 3.734,
-    "hanrei": 3.845,
-    "kokkai": 2.9655,
-    "web": 3.2415,
-    "talk": 2.3269
-   },
-   "wrote": [
-    {
-     "start": "わたしは",
-     "text": "わたしは、この世界そのものには、世界の世界では、チェックしかないではないかということは、民主主義共和国です。 また、インドネシアは、モスクワ6世の国家群が言及し、デフレ・スキルの自由は新しい民族主義の主張であり、経済的な日本語としてのJ Live Lineという言葉も含"
-    },
-    {
-     "start": "第一条",
-     "text": "第一条その�を受けて時に冬季になるまでこそ明年になりました。アジア・アジア時代はいかがですか。」 AB「北陸や東北地方などは、そうした中でも東海が観光客を着けるという道で、東南アジア・アジアもジア太平洋、東京、東横、東京、東京、中国・北部、"
-    },
-    {
-     "start": "この法律において",
-     "text": "この法律において「帝帝仏」（主題歌）：全長30〜435、歌謡祭（木曲：上野晴 - ）：井上桃子 宮酒屋（東京典）：695〜450～855 - 1052 <記事 亀茂> 玉田"
-    }
-   ],
-   "loopPct": 5.57,
-   "movedBody": false
-  },
-  {
    "at": "2026-09-24T17:31:32Z",
    "val": 3.2572,
    "prev": 3.2612,
@@ -12599,9 +12536,72 @@
    ],
    "loopPct": 2.15,
    "movedBody": false
+  },
+  {
+   "at": "2026-10-05T05:15:16Z",
+   "val": 2.9934,
+   "prev": 3.0024,
+   "valTag": "fixed-holdout-v1",
+   "stoppedAt": 158,
+   "stuck": 0,
+   "evalTag": "fixed-ix-v1",
+   "secPerStep": 26.3287,
+   "steps": 300,
+   "bpc": 3.543,
+   "charsPerTok": 1.2189,
+   "score": 2.1912,
+   "scoreW": 2.0,
+   "scoreMode": "talk",
+   "finishMix": 0.5,
+   "lineage": "L1",
+   "layers": 16,
+   "params": 117914880,
+   "chars": 1045308899,
+   "tokens": 857567631,
+   "grew": 0,
+   "rolledBack": false,
+   "ownVal": null,
+   "ownScore": null,
+   "d": 768,
+   "loops": 1,
+   "spread": 2.8305,
+   "bytes": 1415115957,
+   "heads": 6,
+   "ctx": 512,
+   "vocab": 6000,
+   "kind": "bpe",
+   "arch": "tpp-loop",
+   "wantWider": false,
+   "layerCap": 16,
+   "mixChanged": false,
+   "bySrc": {
+    "laws": 4.3289,
+    "wiki": 3.1573,
+    "aozora": 3.4968,
+    "hanrei": 3.5839,
+    "kokkai": 2.7509,
+    "web": 3.0166,
+    "talk": 2.1912
+   },
+   "wrote": [
+    {
+     "start": "わたしは",
+     "text": "わたしは時間をお願いします。」 店「かしこまりました。ご予約承りました。予約番号は、85951です。」 客「ありがとうございます。当日買い物ができるお店を探してもらえますか？」 店「かしこまりました。それでは、スーパーホテル JR隊と金沢店はいか"
+    },
+    {
+     "start": "第一条",
+     "text": "第一条 ８条 １項に対する書類 １記載事項必要 １上記１(1)１(2)に存在する１６条１項１号、１４号証，１０ ８号証，３号証，１９号証） １証人Ａは，同５頁１７行目から５１行目から１５行目まで，３５行目から３ 行目まで，同調査の１９行目の"
+    },
+    {
+     "start": "この法律において",
+     "text": "この法律において、その動きながら、そういう目標をないがしろにして、そういう点では、今回のようなルールを考えているという観点から、それから、六月の予算委員会で検討をいたしておりますが、私どもは、こういう観点から見まして、日本の安心、安全、安心の早期旅行、そういったものに全力を尽くしていかなき�"
+    }
+   ],
+   "loopPct": 0.0,
+   "movedBody": false
   }
  ],
- "bestVal": 2.9946,
+ "bestVal": 2.9934,
  "layers": 16,
  "params": 117914880,
  "born": "2026-09-08T15:11:54Z",
@@ -12649,5 +12649,5 @@
  ],
  "wantWider": false,
  "nextD": 768,
- "bad": 1
+ "bad": 0
 }
