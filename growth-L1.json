@@ -1,69 +1,6 @@
 {
  "runs": [
   {
-   "at": "2026-09-24T14:56:55Z",
-   "val": 3.2635,
-   "prev": 3.2701,
-   "valTag": "fixed-holdout-v1",
-   "stoppedAt": 158,
-   "stuck": 0,
-   "evalTag": "fixed-ix-v1",
-   "secPerStep": 26.3018,
-   "steps": 300,
-   "bpc": 3.8626,
-   "charsPerTok": 1.2189,
-   "score": 2.3293,
-   "scoreW": 2.0,
-   "scoreMode": "talk",
-   "finishMix": 0.5,
-   "lineage": "L1",
-   "layers": 16,
-   "params": 117914880,
-   "chars": 1045308899,
-   "tokens": 857567631,
-   "grew": 0,
-   "rolledBack": false,
-   "ownVal": null,
-   "ownScore": null,
-   "d": 768,
-   "loops": 1,
-   "spread": 3.3734,
-   "bytes": 1415115957,
-   "heads": 6,
-   "ctx": 512,
-   "vocab": 6000,
-   "kind": "bpe",
-   "arch": "tpp-loop",
-   "wantWider": false,
-   "layerCap": 16,
-   "mixChanged": false,
-   "bySrc": {
-    "laws": 4.8673,
-    "wiki": 3.4488,
-    "aozora": 3.7383,
-    "hanrei": 3.8501,
-    "kokkai": 2.9676,
-    "web": 3.2451,
-    "talk": 2.3293
-   },
-   "wrote": [
-    {
-     "start": "わたしは",
-     "text": "わたしは、まず、私に、この問題を見ているのではないかと私は思うのであります。 例えば、私たちは、副大臣、いかなる扱い書を、どのようなことは、もう一つ、非常に重いことは、基本的に、この政治資金規正法にする必要があるのであります。これは、国家安全保障法がなかなか難しいのに、私たちは、"
-    },
-    {
-     "start": "第一条",
-     "text": "第一条 ウラシアニア大王 - 目黒者 ウラジノス - 世界大戦で敗戦する余深さだったヨーロッパ有能年のロシア - ナポレオン・メンマルク・ジャパン、ユダヤ教徒 タカフェ・ヴァイイタリア - アメリカのカロリー"
-    },
-    {
-     "start": "この法律において",
-     "text": "この法律においてこうしておるとか、あなたはエンジェルズに推移しておるわけですよ。 私は、少ないですか。」 AA「ジェールズじゃないです。くずしい一つこいつで、例えば、やっぱり密集しかないといけないということでございます。 そういうなれば、これは、今のよう"
-    }
-   ],
-   "loopPct": 3.18,
-   "movedBody": false
-  },
-  {
    "at": "2026-09-24T16:14:22Z",
    "val": 3.2612,
    "prev": 3.2635,
@@ -12599,6 +12536,69 @@
    ],
    "loopPct": 6.78,
    "movedBody": false
+  },
+  {
+   "at": "2026-10-05T03:58:22Z",
+   "val": 3.0024,
+   "prev": 2.9977,
+   "valTag": "fixed-holdout-v1",
+   "stoppedAt": 0,
+   "stuck": 0,
+   "evalTag": "fixed-ix-v1",
+   "secPerStep": 12.2319,
+   "steps": 300,
+   "bpc": 3.5536,
+   "charsPerTok": 1.2189,
+   "score": 2.1973,
+   "scoreW": 2.0,
+   "scoreMode": "talk",
+   "finishMix": 0.5,
+   "lineage": "L1",
+   "layers": 16,
+   "params": 117914880,
+   "chars": 1045308899,
+   "tokens": 857567631,
+   "grew": 0,
+   "rolledBack": false,
+   "ownVal": null,
+   "ownScore": null,
+   "d": 768,
+   "loops": 1,
+   "spread": 3.4506,
+   "bytes": 1415115957,
+   "heads": 6,
+   "ctx": 512,
+   "vocab": 6000,
+   "kind": "bpe",
+   "arch": "tpp-loop",
+   "wantWider": false,
+   "layerCap": 16,
+   "mixChanged": false,
+   "bySrc": {
+    "laws": 4.3406,
+    "wiki": 3.1679,
+    "aozora": 3.5092,
+    "hanrei": 3.5904,
+    "kokkai": 2.7577,
+    "web": 3.0278,
+    "talk": 2.1973
+   },
+   "wrote": [
+    {
+     "start": "わたしは",
+     "text": "わたしは沈黙もしくは魂を浮かした。娘は魂の底で、1798年に松嶋茂雄と週刊文春と共に開いている。 「龍王」的な顔は、娘・山本雄集 龍王との共著で、MVPでは、「子供のときになかなからな」"
+    },
+    {
+     "start": "第一条",
+     "text": "第一条アルファベット・ブルー』ではペン社が追加されており、同社はクラブと同様にモンゴルの予算編成に盛り込まれており、2012年の『アンゴラ・メカニズム』ではデビューで同社の講演を果たすために村に残した、このときラブ・バンドが名を志向するシーン"
+    },
+    {
+     "start": "この法律において",
+     "text": "この法律において百員の〇・一二三となっている。その代わりには、一万四千三百十万人で、今年の十年間、二千七百三十五万人になる。それが、二千万のとき、かつての第二次大戦に入ると、日本に出るも、三千万人うすだけで、大戦が終われば、そこから最後まで出て、日本は七十年間でございます。"
+    }
+   ],
+   "loopPct": 2.15,
+   "movedBody": false
   }
  ],
  "bestVal": 2.9946,
@@ -12649,5 +12649,5 @@
  ],
  "wantWider": false,
  "nextD": 768,
- "bad": 2
+ "bad": 1
 }
