@@ -1,69 +1,6 @@
 {
  "runs": [
   {
-   "at": "2026-09-25T06:04:11Z",
-   "val": 2.8327,
-   "prev": 2.8341,
-   "valTag": "fixed-holdout-v1",
-   "stoppedAt": 0,
-   "stuck": 0,
-   "evalTag": "fixed-ix-v1",
-   "secPerStep": 3.2508,
-   "steps": 975,
-   "bpc": 3.3528,
-   "charsPerTok": 1.2189,
-   "score": 2.2485,
-   "scoreW": 2.0,
-   "scoreMode": "talk",
-   "finishMix": 0.2,
-   "lineage": "L3",
-   "layers": 13,
-   "params": 25335168,
-   "chars": 1045308899,
-   "tokens": 857567631,
-   "grew": 0,
-   "rolledBack": false,
-   "ownVal": null,
-   "ownScore": null,
-   "d": 384,
-   "loops": 1,
-   "spread": 3.0686,
-   "bytes": 304134793,
-   "heads": 6,
-   "ctx": 512,
-   "vocab": 6000,
-   "kind": "bpe",
-   "arch": "tpp-loop",
-   "wantWider": false,
-   "layerCap": 16,
-   "mixChanged": false,
-   "bySrc": {
-    "laws": 3.8781,
-    "wiki": 3.0149,
-    "aozora": 3.3338,
-    "hanrei": 3.5326,
-    "kokkai": 2.6161,
-    "web": 2.9131,
-    "talk": 2.2485
-   },
-   "wrote": [
-    {
-     "start": "わたしは",
-     "text": "わたしは、いくつかの団体からも、いくつかの団体が集まってきた。こういうスタッフが、公共分野では、こういうところに集まった、そういうものでしょう。 先ほど申しましたような、そういうようなものが多いですね、こういうふうになった。 ところが、先ほど総理とかしておっしゃったんです。」 AA「私が申し"
-    },
-    {
-     "start": "第一条",
-     "text": "第一条第四号第二号イ（ロ、ハ、ハ、ハ、ハ、ハ、ハ、ハ、ハ、ハ、ハモ、ハ、ハ、ハ） （ハ、ハ、ハ、ハ、ハ、ハ、ハ、ハ、ハ、ハ、ハ、ハ、リ、ハ、ハ、ハ、ハ、ハ、ハ、ハ、ハ、ハ、ハ、ハ、ハ、ハ、ハ、ハ、ハ、ハ、ハ、ハ、ハ、ハ、ハ、ハ、ハ、ハ"
-    },
-    {
-     "start": "この法律において",
-     "text": "この法律において「駅前号」と、そのほかの駅の改札口に多少の窓口があった。 2006年（平成18年）12月29日：駅ナカダ - 千代田区にある、鳥取駅前停留場（2006年3月）が開業。 2006年（平成18年）3月14日：駅ナカダ -"
-    }
-   ],
-   "loopPct": 33.19,
-   "movedBody": false
-  },
-  {
    "at": "2026-09-25T07:27:53Z",
    "val": 2.8308,
    "prev": 2.8327,
@@ -12599,9 +12536,72 @@
    ],
    "loopPct": 3.04,
    "movedBody": false
+  },
+  {
+   "at": "2026-10-05T19:18:17Z",
+   "val": 2.7156,
+   "prev": 2.7171,
+   "valTag": "fixed-holdout-v1",
+   "stoppedAt": 1010,
+   "stuck": 0,
+   "evalTag": "fixed-ix-v1",
+   "secPerStep": 3.6447,
+   "steps": 1136,
+   "bpc": 3.2141,
+   "charsPerTok": 1.2189,
+   "score": 2.1561,
+   "scoreW": 2.0,
+   "scoreMode": "talk",
+   "finishMix": 0.2,
+   "lineage": "L3",
+   "layers": 13,
+   "params": 25335168,
+   "chars": 1045308899,
+   "tokens": 857567631,
+   "grew": 0,
+   "rolledBack": false,
+   "ownVal": null,
+   "ownScore": null,
+   "d": 384,
+   "loops": 1,
+   "spread": 2.8795,
+   "bytes": 304134793,
+   "heads": 6,
+   "ctx": 512,
+   "vocab": 6000,
+   "kind": "bpe",
+   "arch": "tpp-loop",
+   "wantWider": false,
+   "layerCap": 16,
+   "mixChanged": false,
+   "bySrc": {
+    "laws": 3.6887,
+    "wiki": 2.883,
+    "aozora": 3.2096,
+    "hanrei": 3.4316,
+    "kokkai": 2.5223,
+    "web": 2.7978,
+    "talk": 2.1561
+   },
+   "wrote": [
+    {
+     "start": "わたしは",
+     "text": "わたしは？」 CZ「なぜか、ハンバーガーに乗ってます。」 AJ「なんか、マンロクっぽいですね。だから、一度もマンロクって思い出すと忙しくて。」 CZ「なるほど、それがちょっと気になります。」 AJ「映画も結構多いですね。」 CZ「そ"
+    },
+    {
+     "start": "第一条",
+     "text": "第一条の適用照らに少額化する要因になることがあっては、�ＴＲＣＡの質的変化を暴露するということであり、これまたショックを受けたことはないと考えております。 次に、ガイドライン改革法案についてお尋ねがございました。 ガイドラインの改正は、我が国の領土や領土、領土、領海、領"
+    },
+    {
+     "start": "この法律において",
+     "text": "この法律において「株式会社」とあるのは「株式会社」と読み替えるものとする。 （商号） quiror portropper der signity （以下「本件株式会社」という。）は、いずれも株式会社（以下「本件株式会社」という。）が株式会社を設立する株式会社（以下「本件株式会社」という。）及び株式会社（以下「本件株式会社」という。）とする。 （同法第十三条１ １項の認めのうちの会社"
+    }
+   ],
+   "loopPct": 2.74,
+   "movedBody": false
   }
  ],
- "bestVal": 2.7159,
+ "bestVal": 2.7156,
  "layers": 13,
  "params": 25335168,
  "born": "2026-09-12T18:05:42Z",
@@ -12649,5 +12649,5 @@
  ],
  "wantWider": false,
  "nextD": 384,
- "bad": 0
+ "bad": 8
 }
