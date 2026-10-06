@@ -1,69 +1,6 @@
 {
  "runs": [
   {
-   "at": "2026-09-25T20:19:36Z",
-   "val": 3.2169,
-   "prev": 3.2211,
-   "valTag": "fixed-holdout-v1",
-   "stoppedAt": 158,
-   "stuck": 0,
-   "evalTag": "fixed-ix-v1",
-   "secPerStep": 26.3204,
-   "steps": 300,
-   "bpc": 3.8074,
-   "charsPerTok": 1.2189,
-   "score": 2.3027,
-   "scoreW": 2.0,
-   "scoreMode": "talk",
-   "finishMix": 0.5,
-   "lineage": "L1",
-   "layers": 16,
-   "params": 117914880,
-   "chars": 1045308899,
-   "tokens": 857567631,
-   "grew": 0,
-   "rolledBack": false,
-   "ownVal": null,
-   "ownScore": null,
-   "d": 768,
-   "loops": 1,
-   "spread": 3.3802,
-   "bytes": 1415115957,
-   "heads": 6,
-   "ctx": 512,
-   "vocab": 6000,
-   "kind": "bpe",
-   "arch": "tpp-loop",
-   "wantWider": false,
-   "layerCap": 16,
-   "mixChanged": false,
-   "bySrc": {
-    "laws": 4.7863,
-    "wiki": 3.4006,
-    "aozora": 3.6947,
-    "hanrei": 3.8034,
-    "kokkai": 2.9255,
-    "web": 3.2044,
-    "talk": 2.3027
-   },
-   "wrote": [
-    {
-     "start": "わたしは",
-     "text": "わたしは、今後、我が国は、あわせては、これまでに一兆円程度という目標を、いわば、これはもうこれは決して、日本の経済にとっても海外の経済状況を踏まえながら、我が国の経済が九十三兆の改革に取り組むということではないのであります。 最後に、手数料といいますか、これは池田総理"
-    },
-    {
-     "start": "第一条",
-     "text": "第一条PXXXXXXXXXXX「タイコペンタイトルーライド アタイプタイム セリフはタイジャイアンカー。 0 / TXXMO-XRX（ニュース） - 会社デジタルタイプレスを採用。 2019年10月 - 株式会社アナトライアン 金曜 NE"
-    },
-    {
-     "start": "この法律において",
-     "text": "この法律において�別になるものですね。」 AK「そうなんですね、私は14kmほどになってしまうのですが、ひとつです。」 BW「私もかわいいですよね、あとは、恐らくも観ました。」 AK「素敵ですが、もう一つお金がかからないので、どこか行ったりしていましたか"
-    }
-   ],
-   "loopPct": 7.36,
-   "movedBody": false
-  },
-  {
    "at": "2026-09-25T21:29:56Z",
    "val": 3.219,
    "prev": 3.2169,
@@ -12599,6 +12536,69 @@
    ],
    "loopPct": 0.75,
    "movedBody": false
+  },
+  {
+   "at": "2026-10-06T11:49:56Z",
+   "val": 2.9674,
+   "prev": 2.9657,
+   "valTag": "fixed-holdout-v1",
+   "stoppedAt": 158,
+   "stuck": 0,
+   "evalTag": "fixed-ix-v1",
+   "secPerStep": 26.2993,
+   "steps": 300,
+   "bpc": 3.5122,
+   "charsPerTok": 1.2189,
+   "score": 2.173,
+   "scoreW": 2.0,
+   "scoreMode": "talk",
+   "finishMix": 0.5,
+   "lineage": "L1",
+   "layers": 16,
+   "params": 117914880,
+   "chars": 1045308899,
+   "tokens": 857567631,
+   "grew": 0,
+   "rolledBack": false,
+   "ownVal": null,
+   "ownScore": null,
+   "d": 768,
+   "loops": 1,
+   "spread": 2.9317,
+   "bytes": 1415115957,
+   "heads": 6,
+   "ctx": 512,
+   "vocab": 6000,
+   "kind": "bpe",
+   "arch": "tpp-loop",
+   "wantWider": false,
+   "layerCap": 16,
+   "mixChanged": false,
+   "bySrc": {
+    "laws": 4.2795,
+    "wiki": 3.1315,
+    "aozora": 3.4738,
+    "hanrei": 3.5577,
+    "kokkai": 2.7293,
+    "web": 2.9919,
+    "talk": 2.173
+   },
+   "wrote": [
+    {
+     "start": "わたしは",
+     "text": "わたしは彼を見ていいような気がします。」 AC「あー、そうめん！ですけどね。」 AD「おー！そうなんですね！」 AC「それは、あれ、デメリットあるので。あなたはどうですか？」 AD「私もデメリットあります。」 AC「それは大事ですね！」"
+    },
+    {
+     "start": "第一条",
+     "text": "第一条職業安定所（以下「第一項及び第七条の二等」という。）の内容 （源泉取引） 昭和二十五年六�十四一級五十三掌保険制度及び郵政民営化に伴う農地の分割内取得権に係る土地の実施状況及び所有権の保護措置の強化に関する法律（相応の池田何召集）」 AA「議長 岡田順雄君外三名発議（委員長報告） 記号 貨物輪場の重量の可否に関する件（・"
+    },
+    {
+     "start": "この法律において",
+     "text": "この法律においておくになりますね。」 HH「ほんとに。」 AT「私はブラックですが、ブラックとかですかね、きついです。」 HH「ブラックですか。」 AT「ちょっと普段使ってますもんね。」 HH「そうなんですよね。コロッケは気が変わってしまいます"
+    }
+   ],
+   "loopPct": 3.92,
+   "movedBody": false
   }
  ],
  "bestVal": 2.9657,
@@ -12649,5 +12649,5 @@
  ],
  "wantWider": false,
  "nextD": 768,
- "bad": 1
+ "bad": 2
 }
