@@ -1,69 +1,6 @@
 {
  "runs": [
   {
-   "at": "2026-09-26T03:44:18Z",
-   "val": 3.2018,
-   "prev": 3.2074,
-   "valTag": "fixed-holdout-v1",
-   "stoppedAt": 143,
-   "stuck": 0,
-   "evalTag": "fixed-ix-v1",
-   "secPerStep": 29.6354,
-   "steps": 300,
-   "bpc": 3.7896,
-   "charsPerTok": 1.2189,
-   "score": 2.2942,
-   "scoreW": 2.0,
-   "scoreMode": "talk",
-   "finishMix": 0.5,
-   "lineage": "L1",
-   "layers": 16,
-   "params": 117914880,
-   "chars": 1045308899,
-   "tokens": 857567631,
-   "grew": 0,
-   "rolledBack": false,
-   "ownVal": null,
-   "ownScore": null,
-   "d": 768,
-   "loops": 1,
-   "spread": 3.3403,
-   "bytes": 1415115957,
-   "heads": 6,
-   "ctx": 512,
-   "vocab": 6000,
-   "kind": "bpe",
-   "arch": "tpp-loop",
-   "wantWider": false,
-   "layerCap": 16,
-   "mixChanged": false,
-   "bySrc": {
-    "laws": 4.7665,
-    "wiki": 3.3811,
-    "aozora": 3.6798,
-    "hanrei": 3.7876,
-    "kokkai": 2.9151,
-    "web": 3.1928,
-    "talk": 2.2942
-   },
-   "wrote": [
-    {
-     "start": "わたしは",
-     "text": "わたしは、次に、海外社会の貢献については、あるいは日本の経済の基本、核心の育成に向けたお考えいただきたいと存じます。」 AA「ただいま議題となりました国際協調の拡大についてお尋ねがありました。 今日、ターゲット業界は、世界の先進国では、世界の経済に貢献さ"
-    },
-    {
-     "start": "第一条",
-     "text": "第一条のみにおいても、クグート部門としては2013年3月13日で、グレークタベースでは、アクションデルタ内のクラスだったものの、開発部に直接運営していた部隊を活かした部隊の好意を守る。 「全身に、アクアンの左衛部隊・日空レーザー（アクセス部隊員）が部隊長兼部隊に任せ"
-    },
-    {
-     "start": "この法律において",
-     "text": "この法律においてるといった寝れてしまっちゃ怖くないですか？」 AZ「そうです。なんか私も好きです。」 AN「おいしそうです！」 AZ「好きですか？」 AN「もう寝ぐらいですか？」 AZ「はい。にって周りは寝ます。」 A"
-    }
-   ],
-   "loopPct": 1.54,
-   "movedBody": false
-  },
-  {
    "at": "2026-09-26T05:01:11Z",
    "val": 3.2015,
    "prev": 3.2018,
@@ -12599,6 +12536,69 @@
    ],
    "loopPct": 8.85,
    "movedBody": false
+  },
+  {
+   "at": "2026-10-06T19:04:34Z",
+   "val": 2.9707,
+   "prev": 2.9712,
+   "valTag": "fixed-holdout-v1",
+   "stoppedAt": 0,
+   "stuck": 0,
+   "evalTag": "fixed-ix-v1",
+   "secPerStep": 10.9768,
+   "steps": 300,
+   "bpc": 3.5161,
+   "charsPerTok": 1.2189,
+   "score": 2.1839,
+   "scoreW": 2.0,
+   "scoreMode": "talk",
+   "finishMix": 0.5,
+   "lineage": "L1",
+   "layers": 16,
+   "params": 117914880,
+   "chars": 1045308899,
+   "tokens": 857567631,
+   "grew": 0,
+   "rolledBack": false,
+   "ownVal": null,
+   "ownScore": null,
+   "d": 768,
+   "loops": 1,
+   "spread": 2.9687,
+   "bytes": 1415115957,
+   "heads": 6,
+   "ctx": 512,
+   "vocab": 6000,
+   "kind": "bpe",
+   "arch": "tpp-loop",
+   "wantWider": false,
+   "layerCap": 16,
+   "mixChanged": false,
+   "bySrc": {
+    "laws": 4.2875,
+    "wiki": 3.1366,
+    "aozora": 3.4815,
+    "hanrei": 3.5667,
+    "kokkai": 2.7318,
+    "web": 2.9989,
+    "talk": 2.1839
+   },
+   "wrote": [
+    {
+     "start": "わたしは",
+     "text": "わたしは、きょうもって、どんなことを言われても、これをやめないと思いますよ。」 AB「麻生国務大臣 総理は、これまで、昨年の四月、七月の大臣、ＣＴＰＰの参加、ＰＫＯの核実験に、我々は、昨年十二月に、ギョーゲン・レイモンド・フランス・ス"
+    },
+    {
+     "start": "第一条",
+     "text": "第一条 被告会社は，本件会社ほか３社による原告会社である調査保険会社（以下，「平成１７年度 体育会社」という。） (1) 原告は，平成６年度から平成１３年度までの間，平成１３年度から平成６年度までート ウ平成１４年度においては，平成１２年度から平成５年度事業費として１億３７４３ ０億３ 万円と，平成１０年度は"
+    },
+    {
+     "start": "この法律において",
+     "text": "この法律において「FatsonaCat> FC「こんにちは！」 FO「こんにちは、よろしくお願いします。」 FC「もう少し早く帰りたいですね。」 FO「いや、なんかこっちから勿論、なかなか掃除ってないです。」 FC「そうですか！もう日本の"
+    }
+   ],
+   "loopPct": 2.54,
+   "movedBody": false
   }
  ],
  "bestVal": 2.963,
@@ -12649,5 +12649,5 @@
  ],
  "wantWider": false,
  "nextD": 768,
- "bad": 2
+ "bad": 5
 }
