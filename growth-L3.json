@@ -1,69 +1,6 @@
 {
  "runs": [
   {
-   "at": "2026-09-25T13:48:02Z",
-   "val": 2.8255,
-   "prev": 2.8266,
-   "valTag": "fixed-holdout-v1",
-   "stoppedAt": 531,
-   "stuck": 0,
-   "evalTag": "fixed-ix-v1",
-   "secPerStep": 7.0932,
-   "steps": 962,
-   "bpc": 3.3442,
-   "charsPerTok": 1.2189,
-   "score": 2.2435,
-   "scoreW": 2.0,
-   "scoreMode": "talk",
-   "finishMix": 0.2,
-   "lineage": "L3",
-   "layers": 13,
-   "params": 25335168,
-   "chars": 1045308899,
-   "tokens": 857567631,
-   "grew": 0,
-   "rolledBack": false,
-   "ownVal": null,
-   "ownScore": null,
-   "d": 384,
-   "loops": 1,
-   "spread": 2.7596,
-   "bytes": 304134793,
-   "heads": 6,
-   "ctx": 512,
-   "vocab": 6000,
-   "kind": "bpe",
-   "arch": "tpp-loop",
-   "wantWider": false,
-   "layerCap": 16,
-   "mixChanged": false,
-   "bySrc": {
-    "laws": 3.8713,
-    "wiki": 3.0092,
-    "aozora": 3.3304,
-    "hanrei": 3.5279,
-    "kokkai": 2.6109,
-    "web": 2.9065,
-    "talk": 2.2435
-   },
-   "wrote": [
-    {
-     "start": "わたしは",
-     "text": "わたしはここでは、あの党内の暫定的な対立が深刻と言ってくるのです。 そこで、総理は、この国会の中に、何度も例外を出しても、多くの方々が、その前に、今回の改正案が結ばれて、その根拠が明確になってしまう。 今回の改正案は、自民党幹事長を中心に、"
-    },
-    {
-     "start": "第一条",
-     "text": "第一条規則> 平成十四年政令第四動機 （欠陥に関する差止に関する差止手続等） いかんせんべつしんせんべつしんしんはんがいしゃべつそうれいにしんとうにしょうはんじょうそうれい 平成十四年政令第四十二号 平成十四年政令第四十四号 平成十四年政令第四十三号 平成十四年政令第六十一号 平成十四年政令第四十一号 平成十四年政令第四区画 平成十四年政令第四十一号 平成十四年政令第四十五号"
-    },
-    {
-     "start": "この法律において",
-     "text": "この法律において「英国人」とは、日本の政府迫害に対し憲法は解釈しない。 しかし、「日本が独立してほしい」といった憲法は、日本が対外的にはこの縦割りを決めようとするものである。 そこで「諸君」は、すでに日本が条約の内容を明確にさせること、が日本の外交上の態度を表すための国際的な立場を"
-    }
-   ],
-   "loopPct": 7.18,
-   "movedBody": false
-  },
-  {
    "at": "2026-09-25T14:47:07Z",
    "val": 2.8236,
    "prev": 2.8255,
@@ -12599,6 +12536,69 @@
    ],
    "loopPct": 48.95,
    "movedBody": false
+  },
+  {
+   "at": "2026-10-06T04:09:30Z",
+   "val": 2.7135,
+   "prev": 2.7123,
+   "valTag": "fixed-holdout-v1",
+   "stoppedAt": 665,
+   "stuck": 0,
+   "evalTag": "fixed-ix-v1",
+   "secPerStep": 5.6051,
+   "steps": 937,
+   "bpc": 3.2117,
+   "charsPerTok": 1.2189,
+   "score": 2.1567,
+   "scoreW": 2.0,
+   "scoreMode": "talk",
+   "finishMix": 0.2,
+   "lineage": "L3",
+   "layers": 13,
+   "params": 25335168,
+   "chars": 1045308899,
+   "tokens": 857567631,
+   "grew": 0,
+   "rolledBack": false,
+   "ownVal": null,
+   "ownScore": null,
+   "d": 384,
+   "loops": 1,
+   "spread": 2.7554,
+   "bytes": 304134793,
+   "heads": 6,
+   "ctx": 512,
+   "vocab": 6000,
+   "kind": "bpe",
+   "arch": "tpp-loop",
+   "wantWider": false,
+   "layerCap": 16,
+   "mixChanged": false,
+   "bySrc": {
+    "laws": 3.6857,
+    "wiki": 2.8803,
+    "aozora": 3.2079,
+    "hanrei": 3.4303,
+    "kokkai": 2.5187,
+    "web": 2.7952,
+    "talk": 2.1567
+   },
+   "wrote": [
+    {
+     "start": "わたしは",
+     "text": "わたしはそうも知らずに気がつくと、みんなはそうまで理解しがたいと云う事に答える。そして、それは、一つだけの事ではありません。どう受け止められるのですか、通気です。理屈ではありませんから、まあこの胸からは斜めに奔走しましょう、そう答える。人類は人類に入って"
+    },
+    {
+     "start": "第一条",
+     "text": "第一条を次のように定める。 （日本語による教育・教育の別） 日本語による教育・教育においては、日本語による教育・教育・教育・教育・教育・教育・教育・教育・教育・教育・教育・教育・文化・教育・教育・教育・教育・教育・教育・教育・教育の諸系統に係る教育・教育・教育・教育・教育・教育・教育・教育・教育・教育・教育・教育・教育・教育・教育・教育・教育・教育・教育・教育・"
+    },
+    {
+     "start": "この法律において",
+     "text": "この法律において「現行銀行」とは、会社法（業�債券、貨幣発行権、信託管理権、formanicational、リストラル管理権、リストラル管理権、bourdel、:en:National、オンライン・コミュニケーションズ、National Platforman"
+    }
+   ],
+   "loopPct": 30.6,
+   "movedBody": false
   }
  ],
  "bestVal": 2.7123,
@@ -12649,5 +12649,5 @@
  ],
  "wantWider": false,
  "nextD": 384,
- "bad": 4
+ "bad": 5
 }
