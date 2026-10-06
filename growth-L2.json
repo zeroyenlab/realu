@@ -1,69 +1,6 @@
 {
  "runs": [
   {
-   "at": "2026-09-26T01:14:02Z",
-   "val": 2.7647,
-   "prev": 2.7664,
-   "valTag": "fixed-holdout-v1",
-   "stoppedAt": 542,
-   "stuck": 0,
-   "evalTag": "fixed-ix-v1",
-   "secPerStep": 6.9424,
-   "steps": 661,
-   "bpc": 3.2722,
-   "charsPerTok": 1.2189,
-   "score": 2.0905,
-   "scoreW": 2.0,
-   "scoreMode": "talk",
-   "finishMix": 0.85,
-   "lineage": "L2",
-   "layers": 12,
-   "params": 41053696,
-   "chars": 1045308899,
-   "tokens": 857567631,
-   "grew": 0,
-   "rolledBack": false,
-   "ownVal": null,
-   "ownScore": null,
-   "d": 512,
-   "loops": 1,
-   "spread": 2.6102,
-   "bytes": 492748901,
-   "heads": 8,
-   "ctx": 512,
-   "vocab": 6000,
-   "kind": "bpe",
-   "arch": "tpp-loop",
-   "wantWider": false,
-   "layerCap": 16,
-   "mixChanged": false,
-   "bySrc": {
-    "laws": 3.7385,
-    "wiki": 2.9475,
-    "aozora": 3.2499,
-    "hanrei": 3.4521,
-    "kokkai": 2.5681,
-    "web": 2.8521,
-    "talk": 2.0905
-   },
-   "wrote": [
-    {
-     "start": "わたしは",
-     "text": "わたしは、日食を食べたいと思いました。あとは、次の日の食べ放題ワクワクします！」 CY「お腹がすいてきますよね？」 DQ「はい、暑くなりました。」 CY「暑いのはつらいですよね。じゃあマジックなものも食べられていいですね。」 DQ「"
-    },
-    {
-     "start": "第一条",
-     "text": "第一条ものとし、ゅんきょうじん、暗くなつてしまつたものが、これたんとしても、むろん青瓜のほうが仲房のつらいものではないかと考えるのであります。」 AB「私は、働く人たちは、もうまれて、その人がどうぞ、どうしても、或いはこういうような事態になつてしまつては、どうしても、どうしても"
-    },
-    {
-     "start": "この法律において",
-     "text": "この法律において新聞」と、「新報」とあるのは「新報」と、「新報」とあるのは「新報」と読み替えるものとする。 民進党・新報」と、QUQ-FAMSS（民進党・新報）は、新報を初めとする新報携帯の開き方や各行き方について、首都圏の人道支援、民進党・新聞社への支援、各行き方ごとに、各行き方を、首都�"
-    }
-   ],
-   "loopPct": 6.15,
-   "movedBody": false
-  },
-  {
    "at": "2026-09-26T02:22:54Z",
    "val": 2.7636,
    "prev": 2.7647,
@@ -12599,6 +12536,69 @@
    ],
    "loopPct": 4.89,
    "movedBody": false
+  },
+  {
+   "at": "2026-10-06T18:02:50Z",
+   "val": 2.7217,
+   "prev": 2.7159,
+   "valTag": "fixed-holdout-v1",
+   "stoppedAt": 341,
+   "stuck": 0,
+   "evalTag": "fixed-ix-v1",
+   "secPerStep": 11.3145,
+   "steps": 661,
+   "bpc": 3.2213,
+   "charsPerTok": 1.2189,
+   "score": 2.0756,
+   "scoreW": 2.0,
+   "scoreMode": "talk",
+   "finishMix": 0.85,
+   "lineage": "L2",
+   "layers": 14,
+   "params": 47379968,
+   "chars": 1045308899,
+   "tokens": 857567631,
+   "grew": 0,
+   "rolledBack": false,
+   "ownVal": null,
+   "ownScore": null,
+   "d": 512,
+   "loops": 1,
+   "spread": 2.7577,
+   "bytes": 568680621,
+   "heads": 8,
+   "ctx": 512,
+   "vocab": 6000,
+   "kind": "bpe",
+   "arch": "tpp-loop",
+   "wantWider": false,
+   "layerCap": 16,
+   "mixChanged": false,
+   "bySrc": {
+    "laws": 3.6582,
+    "wiki": 2.8909,
+    "aozora": 3.208,
+    "hanrei": 3.4345,
+    "kokkai": 2.5332,
+    "web": 2.8109,
+    "talk": 2.0756
+   },
+   "wrote": [
+    {
+     "start": "わたしは",
+     "text": "わたしは、日本人の生活を送りたいと思ってます。」 EI「はい、イライラしてますね！沿岸の人は大変ですよね」 EF「そうなんですよ、あと最近は歴史とか良さそうなので心配になりました」 EI「そうですね、でも私は地方なので、味も色々あります」"
+    },
+    {
+     "start": "第一条",
+     "text": "第一条第四号（第六を講じたカードを含む。）又は登録疾患者が過去に締結し、又は又は途絶すれば、当該保護者 個人が、当該保護者となることのないよう、必要な措置を講じなければならない。 （監視官及び判明） 第十三条 指導官は、前項の監視官又は判明の後、当該指導官は、前項の監視官は、その閣議で、その監督当時に、当該指導官は、命を受けて、その意見を理解し、又は理解し、又は判断されることを"
+    },
+    {
+     "start": "この法律において",
+     "text": "この法律において……」 AA「……こんな考えは……こんな顧問……」 AB「……ここまで沙汰はしますか？」 AC「ああ、いや、なんだか気になる」 AA「あれ、本当かな……？」 AC「……どっちからも言われませんで"
+    }
+   ],
+   "loopPct": 16.05,
+   "movedBody": false
   }
  ],
  "bestVal": 2.6809,
@@ -12649,5 +12649,5 @@
  ],
  "wantWider": false,
  "nextD": 512,
- "bad": 2
+ "bad": 5
 }
