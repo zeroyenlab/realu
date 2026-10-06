@@ -1,69 +1,6 @@
 {
  "runs": [
   {
-   "at": "2026-09-26T02:20:06Z",
-   "val": 3.2074,
-   "prev": 3.2047,
-   "valTag": "fixed-holdout-v1",
-   "stoppedAt": 0,
-   "stuck": 0,
-   "evalTag": "fixed-ix-v1",
-   "secPerStep": 10.5715,
-   "steps": 300,
-   "bpc": 3.7963,
-   "charsPerTok": 1.2189,
-   "score": 2.2965,
-   "scoreW": 2.0,
-   "scoreMode": "talk",
-   "finishMix": 0.5,
-   "lineage": "L1",
-   "layers": 16,
-   "params": 117914880,
-   "chars": 1045308899,
-   "tokens": 857567631,
-   "grew": 0,
-   "rolledBack": false,
-   "ownVal": null,
-   "ownScore": null,
-   "d": 768,
-   "loops": 1,
-   "spread": 3.2652,
-   "bytes": 1415115957,
-   "heads": 6,
-   "ctx": 512,
-   "vocab": 6000,
-   "kind": "bpe",
-   "arch": "tpp-loop",
-   "wantWider": false,
-   "layerCap": 16,
-   "mixChanged": false,
-   "bySrc": {
-    "laws": 4.7719,
-    "wiki": 3.3857,
-    "aozora": 3.6816,
-    "hanrei": 3.7939,
-    "kokkai": 2.9237,
-    "web": 3.1993,
-    "talk": 2.2965
-   },
-   "wrote": [
-    {
-     "start": "わたしは",
-     "text": "わたしは、政府は、ここに、一回の予算をかり、どこまでもなく、できないのではないか、どのような施策を進めてまいりました。 この間、今回の法案こそ、予算委員会に付託のしろに、これをまず書いたものであります。」 AA「率直に申し上げましたが、今回の予算案は、当初予算の予算額を努めることは"
-    },
-    {
-     "start": "第一条",
-     "text": "第一条ございます。」 客「これで大丈夫です。」 店「ありがとうございます。」 客「ありがとうございました。」 店「ありがとうございました。」 客「京都へ旅行するのですが、鮮高いところがいいです。」"
-    },
-    {
-     "start": "この法律において",
-     "text": "この法律において、外国及び十三の私たちの疑問が安心して結構なことである。 「ある意味では、国が平和にとっては、これは日本の兵も、そしてこういう話をした」と語っている [ 6 ] 。 「そして、政治の査察」の制約を言いながら、これは「戦争のような女を、皇帝は一員、二度と余り"
-    }
-   ],
-   "loopPct": 2.44,
-   "movedBody": false
-  },
-  {
    "at": "2026-09-26T03:44:18Z",
    "val": 3.2018,
    "prev": 3.2074,
@@ -12599,6 +12536,69 @@
    ],
    "loopPct": 5.82,
    "movedBody": false
+  },
+  {
+   "at": "2026-10-06T17:54:49Z",
+   "val": 2.9712,
+   "prev": 2.9696,
+   "valTag": "fixed-holdout-v1",
+   "stoppedAt": 0,
+   "stuck": 0,
+   "evalTag": "fixed-ix-v1",
+   "secPerStep": 11.0258,
+   "steps": 300,
+   "bpc": 3.5166,
+   "charsPerTok": 1.2189,
+   "score": 2.1704,
+   "scoreW": 2.0,
+   "scoreMode": "talk",
+   "finishMix": 0.5,
+   "lineage": "L1",
+   "layers": 16,
+   "params": 117914880,
+   "chars": 1045308899,
+   "tokens": 857567631,
+   "grew": 0,
+   "rolledBack": false,
+   "ownVal": null,
+   "ownScore": null,
+   "d": 768,
+   "loops": 1,
+   "spread": 3.4668,
+   "bytes": 1415115957,
+   "heads": 6,
+   "ctx": 512,
+   "vocab": 6000,
+   "kind": "bpe",
+   "arch": "tpp-loop",
+   "wantWider": false,
+   "layerCap": 16,
+   "mixChanged": false,
+   "bySrc": {
+    "laws": 4.2836,
+    "wiki": 3.1355,
+    "aozora": 3.4798,
+    "hanrei": 3.5601,
+    "kokkai": 2.7321,
+    "web": 3.0015,
+    "talk": 2.1704
+   },
+   "wrote": [
+    {
+     "start": "わたしは",
+     "text": "わたしは、その口から何かかわり合っています。」 BZ「愚痴ったりもいたしますよね。やはり検討してみます！」 CE「はい！愛知県の東北ホテルを！」 BZ「東北、羽田は結構ラーメンですね。おいしいお店ありますか？」 CE「"
+    },
+    {
+     "start": "第一条",
+     "text": "第一条LISS Serear は、各種規模でより多くの生成物が発達した [ 4 ] 。 生物的または生物状況や生物など 生物 物 （ 生物 ）の影響により生物は マクロ と 生物 によって生物に入っており、生態系が生物の生物と 重� とされる [ 6 ] 。"
+    },
+    {
+     "start": "この法律において",
+     "text": "この法律において�2013年11月28日閲覧。 ↑ 「 「 30000年前、身体障害者の人気ダウンロード、愛知県や 生涯を享受 」『日本経済新聞』2012年12月29日、250頁。 ↑ 「 平年値の7000点前後 」『日経新聞"
+    }
+   ],
+   "loopPct": 8.85,
+   "movedBody": false
   }
  ],
  "bestVal": 2.963,
@@ -12649,5 +12649,5 @@
  ],
  "wantWider": false,
  "nextD": 768,
- "bad": 1
+ "bad": 2
 }
