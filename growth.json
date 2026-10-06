@@ -1,69 +1,6 @@
 {
  "runs": [
   {
-   "at": "2026-09-26T05:01:11Z",
-   "val": 3.2015,
-   "prev": 3.2018,
-   "valTag": "fixed-holdout-v1",
-   "stoppedAt": 158,
-   "stuck": 0,
-   "evalTag": "fixed-ix-v1",
-   "secPerStep": 26.3719,
-   "steps": 300,
-   "bpc": 3.7892,
-   "charsPerTok": 1.2189,
-   "score": 2.2911,
-   "scoreW": 2.0,
-   "scoreMode": "talk",
-   "finishMix": 0.5,
-   "lineage": "L1",
-   "layers": 16,
-   "params": 117914880,
-   "chars": 1045308899,
-   "tokens": 857567631,
-   "grew": 0,
-   "rolledBack": false,
-   "ownVal": null,
-   "ownScore": null,
-   "d": 768,
-   "loops": 1,
-   "spread": 3.2726,
-   "bytes": 1415115957,
-   "heads": 6,
-   "ctx": 512,
-   "vocab": 6000,
-   "kind": "bpe",
-   "arch": "tpp-loop",
-   "wantWider": false,
-   "layerCap": 16,
-   "mixChanged": false,
-   "bySrc": {
-    "laws": 4.7618,
-    "wiki": 3.3798,
-    "aozora": 3.6795,
-    "hanrei": 3.7892,
-    "kokkai": 2.9155,
-    "web": 3.1938,
-    "talk": 2.2911
-   },
-   "wrote": [
-    {
-     "start": "わたしは",
-     "text": "わたしは、多くの小さい彼ふうに、あるいはさくらが来るように何かすると、それが、やはりパンになります。しかし、私は、たくさんこの言葉の言葉をあげると思うのです。しかし、その事は、今は兄の事が沈んでいないというので、我々の立場からはひとり海に"
-    },
-    {
-     "start": "第一条",
-     "text": "第一条ロ締結ル・マンチェスター・ロックス・グレチナ・ガルマス・レッジ・マンガルーの国防大臣共同体をテニスト・ライドヴィルを最後まで拡散し、矢のヒルズにとってノルウェーのアージャ兄弟のコルミュージシャンを後退させた。このときスペインは、サ"
-    },
-    {
-     "start": "この法律において",
-     "text": "この法律において、給与が結ばれていない。しかし、一体何は欄がほとんどで、例えば、使うのは、一本の人では、そのうち一人ずつ、二人とも一切改善できない。将来にわたって、六本の人々は、六本の人々から一人の人が入って、小規模な風食を主にして、一旦二人なのか、あるいはまた、その等に五三に"
-    }
-   ],
-   "loopPct": 2.52,
-   "movedBody": false
-  },
-  {
    "at": "2026-09-26T06:05:01Z",
    "val": 3.1999,
    "prev": 3.2015,
@@ -12599,6 +12536,69 @@
    ],
    "loopPct": 2.54,
    "movedBody": false
+  },
+  {
+   "at": "2026-10-06T20:28:08Z",
+   "val": 2.9684,
+   "prev": 2.9707,
+   "valTag": "fixed-holdout-v1",
+   "stoppedAt": 178,
+   "stuck": 0,
+   "evalTag": "fixed-ix-v1",
+   "secPerStep": 23.0946,
+   "steps": 586,
+   "bpc": 3.5133,
+   "charsPerTok": 1.2189,
+   "score": 2.181,
+   "scoreW": 2.0,
+   "scoreMode": "talk",
+   "finishMix": 0.5,
+   "lineage": "L1",
+   "layers": 16,
+   "params": 117914880,
+   "chars": 1045308899,
+   "tokens": 857567631,
+   "grew": 0,
+   "rolledBack": false,
+   "ownVal": null,
+   "ownScore": null,
+   "d": 768,
+   "loops": 1,
+   "spread": 2.9953,
+   "bytes": 1415115957,
+   "heads": 6,
+   "ctx": 512,
+   "vocab": 6000,
+   "kind": "bpe",
+   "arch": "tpp-loop",
+   "wantWider": false,
+   "layerCap": 16,
+   "mixChanged": false,
+   "bySrc": {
+    "laws": 4.2867,
+    "wiki": 3.1338,
+    "aozora": 3.4757,
+    "hanrei": 3.557,
+    "kokkai": 2.7274,
+    "web": 2.9993,
+    "talk": 2.181
+   },
+   "wrote": [
+    {
+     "start": "わたしは",
+     "text": "わたしはですが波を押さえていました。」 DM「おおおおおおおおおおしいお話ありがとうございます！」 FL「こちらこそ、何かお調べいただきありがとうございました。」 FL「こんばんわ。」 DM"
+    },
+    {
+     "start": "第一条",
+     "text": "第一条（10月23日） いつものたい - 名古屋市博物館 - なめのザ・ロンドン <記事 栗の起点駅> �屋駅（もらたくらわかんけいえんえき）は、石野町大字水原駅である。 嵐山駅から、千葉駅を中心に、フランスを中"
+    },
+    {
+     "start": "この法律において",
+     "text": "この法律において同法２９条に違反して，同 第３１人は，同日（同日，同日），同日，同日，同日，同月 １２日，同日，同日，同日，同日，同日に原告が同日，同日，同日 日に本件犯行をさせ，同日，同日，同日，同日午後８時"
+    }
+   ],
+   "loopPct": 22.72,
+   "movedBody": false
   }
  ],
  "bestVal": 2.963,
@@ -12649,5 +12649,5 @@
  ],
  "wantWider": false,
  "nextD": 768,
- "bad": 5
+ "bad": 6
 }
