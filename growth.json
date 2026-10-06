@@ -1,69 +1,6 @@
 {
  "runs": [
   {
-   "at": "2026-09-25T21:29:56Z",
-   "val": 3.219,
-   "prev": 3.2169,
-   "valTag": "fixed-holdout-v1",
-   "stoppedAt": 0,
-   "stuck": 0,
-   "evalTag": "fixed-ix-v1",
-   "secPerStep": 12.5554,
-   "steps": 300,
-   "bpc": 3.81,
-   "charsPerTok": 1.2189,
-   "score": 2.3025,
-   "scoreW": 2.0,
-   "scoreMode": "talk",
-   "finishMix": 0.5,
-   "lineage": "L1",
-   "layers": 16,
-   "params": 117914880,
-   "chars": 1045308899,
-   "tokens": 857567631,
-   "grew": 0,
-   "rolledBack": false,
-   "ownVal": null,
-   "ownScore": null,
-   "d": 768,
-   "loops": 1,
-   "spread": 3.2967,
-   "bytes": 1415115957,
-   "heads": 6,
-   "ctx": 512,
-   "vocab": 6000,
-   "kind": "bpe",
-   "arch": "tpp-loop",
-   "wantWider": false,
-   "layerCap": 16,
-   "mixChanged": false,
-   "bySrc": {
-    "laws": 4.7885,
-    "wiki": 3.398,
-    "aozora": 3.6955,
-    "hanrei": 3.8003,
-    "kokkai": 2.9308,
-    "web": 3.2043,
-    "talk": 2.3025
-   },
-   "wrote": [
-    {
-     "start": "わたしは",
-     "text": "わたしはしばしばかりでしている。 2010年5月7日、山口県で西山県南部を開所 大坂 として開憑性が高く、 豊橋市 に近い。 2018年4月1日、 金山市 と そこから下野町 の 勅任 により、 西山 の 高価 の秋に"
-    },
-    {
-     "start": "第一条",
-     "text": "第一条に関する十三年九月七日までのック・ミュルト決議案及び同年二十五月二十九日、衆議院議員総選挙の公約と同様、指定自民党の選挙に子供たちが流れ、消費者候補者が本当に大きな態度を示さず、実現を目指して再び不安を感じ、あるいは最後の姿勢をいたしました。」 AA「そして、充実する、"
-    },
-    {
-     "start": "この法律において",
-     "text": "この法律においていただきたいと思います。」 AB「石破委員 その上で、今回の予算委員会で、そういうふうに招かれるようにということで、今度はどういう話なんですか。」 AA「川崎国務大臣 今、二番目に、やはり今度は、北方領土問題に関して、自衛隊が政府と見直して、二番目のとき"
-    }
-   ],
-   "loopPct": 3.3,
-   "movedBody": false
-  },
-  {
    "at": "2026-09-25T22:47:20Z",
    "val": 3.2118,
    "prev": 3.219,
@@ -12599,6 +12536,69 @@
    ],
    "loopPct": 3.92,
    "movedBody": false
+  },
+  {
+   "at": "2026-10-06T13:06:00Z",
+   "val": 2.967,
+   "prev": 2.9674,
+   "valTag": "fixed-holdout-v1",
+   "stoppedAt": 179,
+   "stuck": 0,
+   "evalTag": "fixed-ix-v1",
+   "secPerStep": 22.9613,
+   "steps": 300,
+   "bpc": 3.5117,
+   "charsPerTok": 1.2189,
+   "score": 2.1747,
+   "scoreW": 2.0,
+   "scoreMode": "talk",
+   "finishMix": 0.5,
+   "lineage": "L1",
+   "layers": 16,
+   "params": 117914880,
+   "chars": 1045308899,
+   "tokens": 857567631,
+   "grew": 0,
+   "rolledBack": false,
+   "ownVal": null,
+   "ownScore": null,
+   "d": 768,
+   "loops": 1,
+   "spread": 3.0023,
+   "bytes": 1415115957,
+   "heads": 6,
+   "ctx": 512,
+   "vocab": 6000,
+   "kind": "bpe",
+   "arch": "tpp-loop",
+   "wantWider": false,
+   "layerCap": 16,
+   "mixChanged": false,
+   "bySrc": {
+    "laws": 4.2755,
+    "wiki": 3.131,
+    "aozora": 3.4704,
+    "hanrei": 3.5584,
+    "kokkai": 2.7298,
+    "web": 2.9923,
+    "talk": 2.1747
+   },
+   "wrote": [
+    {
+     "start": "わたしは",
+     "text": "わたしは、、 日本経済 の�に強く敵対する成長傾向にある。 日本経済に見られる、薄い力士がいる。 また、 ゴールドプラン には日本の世界の圏に パリ 、 レナ 、 ストラクション 、 アーニー 、 オーディオ 、 アーニャ などが開発されており、 日本経済 は 日本"
+    },
+    {
+     "start": "第一条",
+     "text": "第一条クローズXXXXXXXX「一応、オーディションでしか、一応出ました。」 CX「実はストーリーム、DXXXXXXXXXXX。」 CX「実は探偵はずっと一緒に観ました。」 CX「ですよね、でもコロナで観たことありますか？」 CX「"
+    },
+    {
+     "start": "この法律において",
+     "text": "この法律において「旅客鉄道」については「 鉄道 」をご覧ください。 鉄道は 鉄道 の 貨物鉄道 であるが、鉄道 は現在 鉄道 が 鉄道 、 鉄道 、 鉄道 （ JR ）を建設する。 鉄道 は 京橋 や 京橋 へ出入りし、 鉄道 事業の研究機関として 東京エアポート ガリントン が行わ"
+    }
+   ],
+   "loopPct": 12.03,
+   "movedBody": false
   }
  ],
  "bestVal": 2.9657,
@@ -12649,5 +12649,5 @@
  ],
  "wantWider": false,
  "nextD": 768,
- "bad": 2
+ "bad": 3
 }
