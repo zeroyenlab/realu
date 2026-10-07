@@ -1,69 +1,6 @@
 {
  "runs": [
   {
-   "at": "2026-09-26T15:03:33Z",
-   "val": 3.1841,
-   "prev": 3.1847,
-   "valTag": "fixed-holdout-v1",
-   "stoppedAt": 158,
-   "stuck": 0,
-   "evalTag": "fixed-ix-v1",
-   "secPerStep": 26.3713,
-   "steps": 300,
-   "bpc": 3.7686,
-   "charsPerTok": 1.2189,
-   "score": 2.2893,
-   "scoreW": 2.0,
-   "scoreMode": "talk",
-   "finishMix": 0.5,
-   "lineage": "L1",
-   "layers": 16,
-   "params": 117914880,
-   "chars": 1045308899,
-   "tokens": 857567631,
-   "grew": 0,
-   "rolledBack": false,
-   "ownVal": null,
-   "ownScore": null,
-   "d": 768,
-   "loops": 1,
-   "spread": 3.739,
-   "bytes": 1415115957,
-   "heads": 6,
-   "ctx": 512,
-   "vocab": 6000,
-   "kind": "bpe",
-   "arch": "tpp-loop",
-   "wantWider": false,
-   "layerCap": 16,
-   "mixChanged": false,
-   "bySrc": {
-    "laws": 4.7277,
-    "wiki": 3.3603,
-    "aozora": 3.6629,
-    "hanrei": 3.7633,
-    "kokkai": 2.8993,
-    "web": 3.1777,
-    "talk": 2.2893
-   },
-   "wrote": [
-    {
-     "start": "わたしは",
-     "text": "わたしは、そういうことではなくて、これは我々は、そういうものは懸念をしていくということが大事なことだというふうに思っておりますよ。」 AB「小泉内閣総理大臣 まず、この本格的な話がございますけれども、それはこれは日本の経済の社会的立場にあるということは当然であり、それはこれからいろいろ言われたように、"
-    },
-    {
-     "start": "第一条",
-     "text": "第一条によるDLNGLIGEGG GRLGL「こんにちは」 PL「ウォーターAGA」 DL「いいなあと思います」 FL「いつかですね。」 DL「なんかプライベートですか？」 FL「確かにあります」 DL「おお、あなたのお店はありますか�"
-    },
-    {
-     "start": "この法律において",
-     "text": "この法律において、財政上の措置を通じて一体化しつつ、今後ともその肝要などが位置づけられるとともに、日本が私の貧困を脱し、わが国の政府の憲法や政治の根本的仕組みや、そうした方々の平和を目指してまいったところでございます。 今回、先般の主な御質問でございましたが、今、本多"
-    }
-   ],
-   "loopPct": 5.36,
-   "movedBody": false
-  },
-  {
    "at": "2026-09-26T16:21:03Z",
    "val": 3.183,
    "prev": 3.1841,
@@ -12599,6 +12536,69 @@
    ],
    "loopPct": 6.58,
    "movedBody": false
+  },
+  {
+   "at": "2026-10-07T06:22:17Z",
+   "val": 2.956,
+   "prev": 2.9548,
+   "valTag": "fixed-holdout-v1",
+   "stoppedAt": 0,
+   "stuck": 0,
+   "evalTag": "fixed-ix-v1",
+   "secPerStep": 10.7804,
+   "steps": 300,
+   "bpc": 3.4987,
+   "charsPerTok": 1.2189,
+   "score": 2.1742,
+   "scoreW": 2.0,
+   "scoreMode": "talk",
+   "finishMix": 0.5,
+   "lineage": "L1",
+   "layers": 16,
+   "params": 117914880,
+   "chars": 1045308899,
+   "tokens": 857567631,
+   "grew": 0,
+   "rolledBack": false,
+   "ownVal": null,
+   "ownScore": null,
+   "d": 768,
+   "loops": 1,
+   "spread": 3.1996,
+   "bytes": 1415115957,
+   "heads": 6,
+   "ctx": 512,
+   "vocab": 6000,
+   "kind": "bpe",
+   "arch": "tpp-loop",
+   "wantWider": false,
+   "layerCap": 16,
+   "mixChanged": false,
+   "bySrc": {
+    "laws": 4.2645,
+    "wiki": 3.1206,
+    "aozora": 3.4682,
+    "hanrei": 3.5625,
+    "kokkai": 2.7156,
+    "web": 2.9871,
+    "talk": 2.1742
+   },
+   "wrote": [
+    {
+     "start": "わたしは",
+     "text": "わたしは一日も早く開催されるような、会合ではなくて、時間外に通過するのであれば、自宅に通じる通りではないですね。」 CH「今まで、ちょうど平日夕方の会見では、一人で会いに行ったのかもしれません。」 DK「早く被るのも首相が激しいですね 私は"
+    },
+    {
+     "start": "第一条",
+     "text": "第一条第十一項の各号（第三十四条を除くしたときにおける益金）及び百九十三条（仕入れ等）に掲げる資産及び資産及び資産 債務の預託又は占用等が省略されているもの 課税資産 その他参入のものを兼ねた資産又は課税価格（適格費として年法律第百二条第一項（給与所得を含む。）の資産の資産及び化学IT００海岸等に規制されている額の金額） 告発などをする場合には、事務の資産に訴えるもの その他の民間税の課税の政策前項各号に掲げる事項についてのいい"
+    },
+    {
+     "start": "この法律において",
+     "text": "この法律において、奥久、竹野、三木、磯町、それから高島、小島、6番でございます。 これは、大島委員がおっしゃったように、いろいろ運び込まれまして、これは大島委員がおっしゃっているわけでございます。」 AA「全く私は、竹島のような人たちの社会を見る"
+    }
+   ],
+   "loopPct": 6.45,
+   "movedBody": false
   }
  ],
  "bestVal": 2.9548,
@@ -12649,5 +12649,5 @@
  ],
  "wantWider": false,
  "nextD": 768,
- "bad": 1
+ "bad": 4
 }
