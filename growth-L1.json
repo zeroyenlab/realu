@@ -1,69 +1,6 @@
 {
  "runs": [
   {
-   "at": "2026-09-26T13:47:24Z",
-   "val": 3.1847,
-   "prev": 3.1873,
-   "valTag": "fixed-holdout-v1",
-   "stoppedAt": 156,
-   "stuck": 0,
-   "evalTag": "fixed-ix-v1",
-   "secPerStep": 26.7756,
-   "steps": 300,
-   "bpc": 3.7693,
-   "charsPerTok": 1.2189,
-   "score": 2.2903,
-   "scoreW": 2.0,
-   "scoreMode": "talk",
-   "finishMix": 0.5,
-   "lineage": "L1",
-   "layers": 16,
-   "params": 117914880,
-   "chars": 1045308899,
-   "tokens": 857567631,
-   "grew": 0,
-   "rolledBack": false,
-   "ownVal": null,
-   "ownScore": null,
-   "d": 768,
-   "loops": 1,
-   "spread": 3.1658,
-   "bytes": 1415115957,
-   "heads": 6,
-   "ctx": 512,
-   "vocab": 6000,
-   "kind": "bpe",
-   "arch": "tpp-loop",
-   "wantWider": false,
-   "layerCap": 16,
-   "mixChanged": false,
-   "bySrc": {
-    "laws": 4.7311,
-    "wiki": 3.3615,
-    "aozora": 3.6628,
-    "hanrei": 3.7664,
-    "kokkai": 2.8995,
-    "web": 3.1789,
-    "talk": 2.2903
-   },
-   "wrote": [
-    {
-     "start": "わたしは",
-     "text": "わたしは、その終わったといわれるような、さらに、人種育成のもとへと入れて、いや、日本の人々の生活を、一定の議員も、そういうふうな意味で、そういうふうに見ていただきましたけれども、まさに、あるいは日本の社会が非常に役立つのは、日米主導の先集としては唐突でござ"
-    },
-    {
-     "start": "第一条",
-     "text": "第一条ファイル（2011年12月） サイドホールディングス（2012年12月 - 2015年10月） Plange Station Vol.9（2013年10月 - 2015年1月） Palk Focter（2014年10月 - 201"
-    },
-    {
-     "start": "この法律において",
-     "text": "この法律において「大衆」「人類」「社会人」「伝統」「経済」「化学者」「社会」「社会」「経済」「非人」記事」において「文人」「国家（Sultu）」「社会主義の「社会学」「経済的・社会的」「社会経済が発展してきた「人権」に関する 、「社会学」「社会主義」「社会主義」「社会主義」「人間・社会」「"
-    }
-   ],
-   "loopPct": 9.12,
-   "movedBody": false
-  },
-  {
    "at": "2026-09-26T15:03:33Z",
    "val": 3.1841,
    "prev": 3.1847,
@@ -12599,9 +12536,72 @@
    ],
    "loopPct": 0.0,
    "movedBody": false
+  },
+  {
+   "at": "2026-10-07T05:20:41Z",
+   "val": 2.9548,
+   "prev": 2.956,
+   "valTag": "fixed-holdout-v1",
+   "stoppedAt": 158,
+   "stuck": 0,
+   "evalTag": "fixed-ix-v1",
+   "secPerStep": 26.3981,
+   "steps": 300,
+   "bpc": 3.4972,
+   "charsPerTok": 1.2189,
+   "score": 2.1723,
+   "scoreW": 2.0,
+   "scoreMode": "talk",
+   "finishMix": 0.5,
+   "lineage": "L1",
+   "layers": 16,
+   "params": 117914880,
+   "chars": 1045308899,
+   "tokens": 857567631,
+   "grew": 0,
+   "rolledBack": false,
+   "ownVal": null,
+   "ownScore": null,
+   "d": 768,
+   "loops": 1,
+   "spread": 3.4161,
+   "bytes": 1415115957,
+   "heads": 6,
+   "ctx": 512,
+   "vocab": 6000,
+   "kind": "bpe",
+   "arch": "tpp-loop",
+   "wantWider": false,
+   "layerCap": 16,
+   "mixChanged": false,
+   "bySrc": {
+    "laws": 4.2576,
+    "wiki": 3.117,
+    "aozora": 3.4647,
+    "hanrei": 3.5551,
+    "kokkai": 2.714,
+    "web": 2.9854,
+    "talk": 2.1723
+   },
+   "wrote": [
+    {
+     "start": "わたしは",
+     "text": "わたしは、政府は、政府としては、今後の今後の施策を深く良心にしていくわけであります。 このような立場から、このためには、全く同感であります。」 AB「そこで、私は、今回の補正予算を編成し、、多様な景気の回復に向かっていくためにも、これからの子ども・子育て支援策を強化していくこと"
+    },
+    {
+     "start": "第一条",
+     "text": "第一条の面積の異なるかに二分の一以上であると考えるものであります。 また、不正処分につきましては、委員御指摘のとおり、本法案は、公明党よりも、旧公明民主党を初め、公明党を代表して、提出者の趣旨説明に対して質疑が行われました。」 AB「次いで、この際、公明党を代表して、前項時に公明党を代表して、国立国会"
+    },
+    {
+     "start": "この法律において",
+     "text": "この法律において「2011年」と、共同通信社のロシア語圏・海外の共同通信社が発表。 アメリカの『ニュース記 Famil Corporation Center FultiWOZ> FI「今日も黄色のスタイルに合わせて思い切った作品が多いので、また"
+    }
+   ],
+   "loopPct": 6.58,
+   "movedBody": false
   }
  ],
- "bestVal": 2.956,
+ "bestVal": 2.9548,
  "layers": 16,
  "params": 117914880,
  "born": "2026-09-08T15:11:54Z",
@@ -12649,5 +12649,5 @@
  ],
  "wantWider": false,
  "nextD": 768,
- "bad": 0
+ "bad": 1
 }
