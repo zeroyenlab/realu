@@ -1,69 +1,6 @@
 {
  "runs": [
   {
-   "at": "2026-09-26T17:36:52Z",
-   "val": 3.1818,
-   "prev": 3.183,
-   "valTag": "fixed-holdout-v1",
-   "stoppedAt": 159,
-   "stuck": 0,
-   "evalTag": "fixed-ix-v1",
-   "secPerStep": 26.2257,
-   "steps": 300,
-   "bpc": 3.7659,
-   "charsPerTok": 1.2189,
-   "score": 2.2842,
-   "scoreW": 2.0,
-   "scoreMode": "talk",
-   "finishMix": 0.5,
-   "lineage": "L1",
-   "layers": 16,
-   "params": 117914880,
-   "chars": 1045308899,
-   "tokens": 857567631,
-   "grew": 0,
-   "rolledBack": false,
-   "ownVal": null,
-   "ownScore": null,
-   "d": 768,
-   "loops": 1,
-   "spread": 3.5441,
-   "bytes": 1415115957,
-   "heads": 6,
-   "ctx": 512,
-   "vocab": 6000,
-   "kind": "bpe",
-   "arch": "tpp-loop",
-   "wantWider": false,
-   "layerCap": 16,
-   "mixChanged": false,
-   "bySrc": {
-    "laws": 4.7211,
-    "wiki": 3.358,
-    "aozora": 3.6589,
-    "hanrei": 3.7657,
-    "kokkai": 2.8974,
-    "web": 3.1739,
-    "talk": 2.2842
-   },
-   "wrote": [
-    {
-     "start": "わたしは",
-     "text": "わたしは、ジーズーVSは酸味ですが、シーズンのオリジナルキャラクターです。」 FW「そうなんですね！それで実家にいるとちょっと近いので、ちょっとここがいいです。」 FV「つらいですよね。私もスタバはそうなので、シャアワーが野菜って感じな"
-    },
-    {
-     "start": "第一条",
-     "text": "第一条ぶつひろしろ 彼らは、彼の顔を見るにつけだめた。 人間は、俺を見かけ、人をやると断ったので、彼は何を言えば、それはそれを聞いた。顔面をある中には、殺することはなかった。 暗人に対して、自分を見つめ切ってしまったのは、娘の魔法�かった"
-    },
-    {
-     "start": "この法律において",
-     "text": "この法律において「称」「」を「（」「）「（」「いや」「」「（」）」「宜」「天地」「」「い」「早」」「橘」「夕方」「好」「が」「釜」」「桜」「「桜」「貞」「ち」」「古い」「酸」「晩」「晴」「」「第七」「古」"
-    }
-   ],
-   "loopPct": 14.11,
-   "movedBody": false
-  },
-  {
    "at": "2026-09-26T18:53:31Z",
    "val": 3.18,
    "prev": 3.1818,
@@ -12599,9 +12536,72 @@
    ],
    "loopPct": 13.71,
    "movedBody": false
+  },
+  {
+   "at": "2026-10-07T09:06:21Z",
+   "val": 2.951,
+   "prev": 2.9541,
+   "valTag": "fixed-holdout-v1",
+   "stoppedAt": 158,
+   "stuck": 0,
+   "evalTag": "fixed-ix-v1",
+   "secPerStep": 26.3863,
+   "steps": 300,
+   "bpc": 3.4928,
+   "charsPerTok": 1.2189,
+   "score": 2.1748,
+   "scoreW": 2.0,
+   "scoreMode": "talk",
+   "finishMix": 0.5,
+   "lineage": "L1",
+   "layers": 16,
+   "params": 117914880,
+   "chars": 1045308899,
+   "tokens": 857567631,
+   "grew": 0,
+   "rolledBack": false,
+   "ownVal": null,
+   "ownScore": null,
+   "d": 768,
+   "loops": 1,
+   "spread": 3.0611,
+   "bytes": 1415115957,
+   "heads": 6,
+   "ctx": 512,
+   "vocab": 6000,
+   "kind": "bpe",
+   "arch": "tpp-loop",
+   "wantWider": false,
+   "layerCap": 16,
+   "mixChanged": false,
+   "bySrc": {
+    "laws": 4.2513,
+    "wiki": 3.1171,
+    "aozora": 3.4595,
+    "hanrei": 3.5479,
+    "kokkai": 2.7125,
+    "web": 2.979,
+    "talk": 2.1748
+   },
+   "wrote": [
+    {
+     "start": "わたしは",
+     "text": "わたしは、後にアメリカと一緒に行くということになりますと、そこから大きな声はなかったと思います。」 AB「そういうことも含めて、今度、さらに把握して、本当に大変な危機感を持ってこられたんですよね。今、そういうことをやっていくということ、どういうことになったかというと、私"
+    },
+    {
+     "start": "第一条",
+     "text": "第一条ベンチャー・ベンチャーズズ・オブ・オブ・シンソンズ・バンド、9000アーキテクチャーズ・バンド、1996年 ウィル・コレクション バンド、1995年 - 1999年 ガーディアンズ・1996年 - 1998年、日本国内でも初めて"
+    },
+    {
+     "start": "この法律において",
+     "text": "この法律において，肝臓の動物及び肝炎及び肝炎を じたり，また，日常的，約８％を高麗 料理に比べて高いと認められる。 (5) 原告は，上記「現金券を券面に影響し，原告の右肝炎に 低下すれば，その余を同時にＢの注射器に回材するのは当"
+    }
+   ],
+   "loopPct": 12.34,
+   "movedBody": false
   }
  ],
- "bestVal": 2.9541,
+ "bestVal": 2.951,
  "layers": 16,
  "params": 117914880,
  "born": "2026-09-08T15:11:54Z",
@@ -12649,5 +12649,5 @@
  ],
  "wantWider": false,
  "nextD": 768,
- "bad": 5
+ "bad": 0
 }
