@@ -1,69 +1,6 @@
 {
  "runs": [
   {
-   "at": "2026-09-27T01:09:12Z",
-   "val": 3.1733,
-   "prev": 3.1748,
-   "valTag": "fixed-holdout-v1",
-   "stoppedAt": 158,
-   "stuck": 0,
-   "evalTag": "fixed-ix-v1",
-   "secPerStep": 26.3975,
-   "steps": 300,
-   "bpc": 3.7558,
-   "charsPerTok": 1.2189,
-   "score": 2.2781,
-   "scoreW": 2.0,
-   "scoreMode": "talk",
-   "finishMix": 0.5,
-   "lineage": "L1",
-   "layers": 16,
-   "params": 117914880,
-   "chars": 1045308899,
-   "tokens": 857567631,
-   "grew": 0,
-   "rolledBack": false,
-   "ownVal": null,
-   "ownScore": null,
-   "d": 768,
-   "loops": 1,
-   "spread": 3.1952,
-   "bytes": 1415115957,
-   "heads": 6,
-   "ctx": 512,
-   "vocab": 6000,
-   "kind": "bpe",
-   "arch": "tpp-loop",
-   "wantWider": false,
-   "layerCap": 16,
-   "mixChanged": false,
-   "bySrc": {
-    "laws": 4.7044,
-    "wiki": 3.3481,
-    "aozora": 3.6506,
-    "hanrei": 3.7566,
-    "kokkai": 2.8901,
-    "web": 3.1656,
-    "talk": 2.2781
-   },
-   "wrote": [
-    {
-     "start": "わたしは",
-     "text": "わたしはこのようにして、その余地を、日本の国益では十分な国を持たない。」 AA「何を言っておくというか、日本の皆さんがここで反省をもう……」 AB「国務大臣 先ほど言いましたように、日本は、一応、移民の恩恵あるいは日本としては、遅々として私が今営んでおるわけです"
-    },
-    {
-     "start": "第一条",
-     "text": "第一条訴訟」という。） 早期に施行したもの 二月蓄積基準 （終了） 第百条 自衛隊とその他発足又はこれを委託し、又は行われる道付け 第十条 若しくは受給権者であることが規定される者は、当該都道府県知事は、１４項の規定により法令に違反するものとする。 （規定） 第六十四条 国は、警備庁長官に対し、決議して、第五第五項第二号から第四号まで、第五条（第十九条）であってその事務所があるとき、又はこれを公表しなければならない。 この場合において、"
-    },
-    {
-     "start": "この法律において",
-     "text": "この法律において、トンディスク局長、日本語猶予法等につき二職員法案が提出されたのであります。 委員会におきましては、これは補正予算でありますので、監督が非常に上限を見ておくのではないかと考えております。私ども、自由民主党を代表して、この議場とにおいてみずからの声を聞きながらその議長に追い込み、多数を"
-    }
-   ],
-   "loopPct": 3.2,
-   "movedBody": false
-  },
-  {
    "at": "2026-09-27T02:25:58Z",
    "val": 3.1707,
    "prev": 3.1733,
@@ -12598,6 +12535,69 @@
     }
    ],
    "loopPct": 0.45,
+   "movedBody": false
+  },
+  {
+   "at": "2026-10-07T16:30:23Z",
+   "val": 2.9518,
+   "prev": 2.9521,
+   "valTag": "fixed-holdout-v1",
+   "stoppedAt": 0,
+   "stuck": 0,
+   "evalTag": "fixed-ix-v1",
+   "secPerStep": 11.7388,
+   "steps": 300,
+   "bpc": 3.4937,
+   "charsPerTok": 1.2189,
+   "score": 2.1705,
+   "scoreW": 2.0,
+   "scoreMode": "talk",
+   "finishMix": 0.5,
+   "lineage": "L1",
+   "layers": 16,
+   "params": 117914880,
+   "chars": 1045308899,
+   "tokens": 857567631,
+   "grew": 0,
+   "rolledBack": false,
+   "ownVal": null,
+   "ownScore": null,
+   "d": 768,
+   "loops": 1,
+   "spread": 3.2179,
+   "bytes": 1415115957,
+   "heads": 6,
+   "ctx": 512,
+   "vocab": 6000,
+   "kind": "bpe",
+   "arch": "tpp-loop",
+   "wantWider": false,
+   "layerCap": 16,
+   "mixChanged": false,
+   "bySrc": {
+    "laws": 4.2452,
+    "wiki": 3.1145,
+    "aozora": 3.4583,
+    "hanrei": 3.5495,
+    "kokkai": 2.7157,
+    "web": 2.9844,
+    "talk": 2.1705
+   },
+   "wrote": [
+    {
+     "start": "わたしは",
+     "text": "わたしはビールを飲みます。」 BV「いいですね。ビールとか、タオルとかとかですか？」 GJ「オリジナルは好きです！ビールは？」 BV「オーイストーリーとか好きです。」 GJ「オーイスですか！インスタントラーメンとか！」 BV「イン"
+    },
+    {
+     "start": "第一条",
+     "text": "第一条ニーチステリオンズ〉。 画像は ジャンプ や スポーツ 、 CD 版権が認められる [ 19 ] 。 初期の デビュー作 では、 『 いっぱいの 』（ 講談社 、 2018年 ） でも、 2018年 7月 まで名画。 2"
+    },
+    {
+     "start": "この法律において",
+     "text": "この法律において「typotenss」を発表。 2012年12月に発表した 402 ロング・マヌエル・シャイン が発表した「movania モヤ」では、 619 kg のラストによる 602 and Tumber を出版し、語彙が発表による シャ"
+    }
+   ],
+   "loopPct": 3.42,
    "movedBody": false
   }
  ],
