@@ -1,69 +1,6 @@
 {
  "runs": [
   {
-   "at": "2026-09-26T09:55:54Z",
-   "val": 3.1933,
-   "prev": 3.1931,
-   "valTag": "fixed-holdout-v1",
-   "stoppedAt": 293,
-   "stuck": 0,
-   "evalTag": "fixed-ix-v1",
-   "secPerStep": 13.3062,
-   "steps": 300,
-   "bpc": 3.7795,
-   "charsPerTok": 1.2189,
-   "score": 2.2936,
-   "scoreW": 2.0,
-   "scoreMode": "talk",
-   "finishMix": 0.5,
-   "lineage": "L1",
-   "layers": 16,
-   "params": 117914880,
-   "chars": 1045308899,
-   "tokens": 857567631,
-   "grew": 0,
-   "rolledBack": false,
-   "ownVal": null,
-   "ownScore": null,
-   "d": 768,
-   "loops": 1,
-   "spread": 3.437,
-   "bytes": 1415115957,
-   "heads": 6,
-   "ctx": 512,
-   "vocab": 6000,
-   "kind": "bpe",
-   "arch": "tpp-loop",
-   "wantWider": false,
-   "layerCap": 16,
-   "mixChanged": false,
-   "bySrc": {
-    "laws": 4.7426,
-    "wiki": 3.3729,
-    "aozora": 3.6719,
-    "hanrei": 3.7805,
-    "kokkai": 2.9044,
-    "web": 3.187,
-    "talk": 2.2936
-   },
-   "wrote": [
-    {
-     "start": "わたしは",
-     "text": "わたしは、そのとき、かなり人間とどまらずに、子どもたちが人間性を生み出しつつ、人間性の生き方に争いを浄化したのである。 こうした人間 「やめられた人間族別に日本人」 このような形で、働き方改造は日本人と大きな食材に組み合う。 アメリカ大陸におけるウクライナ人 の主人"
-    },
-    {
-     "start": "第一条",
-     "text": "第一条ズームとしている。 コミュニケーションズ（ノート） ザ・ギャグリュース（カミス）3000y（ザ・ワードとゴダウンテント） 2001年8月31日（ハマース） 3000系ユニット0000形（トランスシート） [ 40 ] 。 5000系200"
-    },
-    {
-     "start": "この法律において",
-     "text": "この法律において「むしろ、ひたすら、もう、やっぱりわいひとつ大きな雰囲気がゆくしましょうし」 <記事 タワサゾン> シノシナラシオン、ベトナム、オスマンタイトル、カオリーブオリンピックなど、アメリカントリーグから大きな影響を与え、人類の�"
-    }
-   ],
-   "loopPct": 7.04,
-   "movedBody": false
-  },
-  {
    "at": "2026-09-26T11:12:13Z",
    "val": 3.1896,
    "prev": 3.1933,
@@ -12598,6 +12535,69 @@
     }
    ],
    "loopPct": 2.1,
+   "movedBody": false
+  },
+  {
+   "at": "2026-10-07T01:30:42Z",
+   "val": 2.9634,
+   "prev": 2.9748,
+   "valTag": "fixed-holdout-v1",
+   "stoppedAt": 157,
+   "stuck": 0,
+   "evalTag": "fixed-ix-v1",
+   "secPerStep": 26.5217,
+   "steps": 316,
+   "bpc": 3.5075,
+   "charsPerTok": 1.2189,
+   "score": 2.178,
+   "scoreW": 2.0,
+   "scoreMode": "talk",
+   "finishMix": 0.5,
+   "lineage": "L1",
+   "layers": 16,
+   "params": 117914880,
+   "chars": 1045308899,
+   "tokens": 857567631,
+   "grew": 0,
+   "rolledBack": false,
+   "ownVal": null,
+   "ownScore": null,
+   "d": 768,
+   "loops": 1,
+   "spread": 3.1056,
+   "bytes": 1415115957,
+   "heads": 6,
+   "ctx": 512,
+   "vocab": 6000,
+   "kind": "bpe",
+   "arch": "tpp-loop",
+   "wantWider": false,
+   "layerCap": 16,
+   "mixChanged": false,
+   "bySrc": {
+    "laws": 4.2712,
+    "wiki": 3.1285,
+    "aozora": 3.4734,
+    "hanrei": 3.5559,
+    "kokkai": 2.7193,
+    "web": 2.9953,
+    "talk": 2.178
+   },
+   "wrote": [
+    {
+     "start": "わたしは",
+     "text": "わたしは、下級下級級者によって遭遇した若い娘。 折りきりして、手をひぱりしめんどす。 男女を見ると、男性と一緒にやってきた。 彼女に見つからねばならないと断りをつけたものの、女の子が夫婦役で出ている。 女子生徒は女性の若手女性だと思い"
+    },
+    {
+     "start": "第一条",
+     "text": "第一条ナナリーネットズム、2005年10月16日。 2006年10月17日閲覧。 ↑ 「 “ 全国辞退!? ”. 小学館. 2016年10月17日閲覧。 ↑ “ パナソニック ”. 小学館. 2016年10月3日閲覧。"
+    },
+    {
+     "start": "この法律において",
+     "text": "この法律においてられている。 日本では、 ジャンボタクシー のような ネタバレーヤー 、 オーストロニクス などで、「ボス」という意味である。 日本では ハリケーン のような政治的意味での言語が、 ハリケーン と呼ばれる。 ボストーン 、 ファスト・ドメイン 、 MD"
+    }
+   ],
+   "loopPct": 5.32,
    "movedBody": false
   }
  ],
