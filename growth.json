@@ -1,69 +1,6 @@
 {
  "runs": [
   {
-   "at": "2026-09-26T21:18:21Z",
-   "val": 3.1772,
-   "prev": 3.182,
-   "valTag": "fixed-holdout-v1",
-   "stoppedAt": 180,
-   "stuck": 0,
-   "evalTag": "fixed-ix-v1",
-   "secPerStep": 22.814,
-   "steps": 300,
-   "bpc": 3.7605,
-   "charsPerTok": 1.2189,
-   "score": 2.2849,
-   "scoreW": 2.0,
-   "scoreMode": "talk",
-   "finishMix": 0.5,
-   "lineage": "L1",
-   "layers": 16,
-   "params": 117914880,
-   "chars": 1045308899,
-   "tokens": 857567631,
-   "grew": 0,
-   "rolledBack": false,
-   "ownVal": null,
-   "ownScore": null,
-   "d": 768,
-   "loops": 1,
-   "spread": 3.1527,
-   "bytes": 1415115957,
-   "heads": 6,
-   "ctx": 512,
-   "vocab": 6000,
-   "kind": "bpe",
-   "arch": "tpp-loop",
-   "wantWider": false,
-   "layerCap": 16,
-   "mixChanged": false,
-   "bySrc": {
-    "laws": 4.7113,
-    "wiki": 3.3545,
-    "aozora": 3.6578,
-    "hanrei": 3.7593,
-    "kokkai": 2.892,
-    "web": 3.1696,
-    "talk": 2.2849
-   },
-   "wrote": [
-    {
-     "start": "わたしは",
-     "text": "わたしはたいほどありません、そういう意味のありますよ。」 AA「それが、もう、総理、この三月と、今の仮に、イギリスの経済成長率が生じます。これは、経済成長率が課せられた第三次補正ですとか、そこを私はそういうことは大変なことだと思います。 そこで、今まで政府"
-    },
-    {
-     "start": "第一条",
-     "text": "第一条」と、「第三節」を「」と「」とも呼ぶ。 「自」とは、「それ」とは、同額（「○」（なお、「明」は4か所抗争の日）の内閣府ではないが、ただし、その人々は「安全」を「「黄」などといたし、いまだに「あ」を「こい」と呼んでも「鍵」となげる。 「なの」「"
-    },
-    {
-     "start": "この法律において",
-     "text": "この法律において」とするようになっています。」 BH「なるほど。でも、夕飯は食べるのがいいです。」 EU「そうですよね。食べるとお食べになりますしね。」 BH「ですね。ではまた。」 EU「さんは、食べる観光名所で見たいです。」 BH「わかります。私"
-    }
-   ],
-   "loopPct": 4.81,
-   "movedBody": false
-  },
-  {
    "at": "2026-09-26T22:35:20Z",
    "val": 3.1749,
    "prev": 3.1772,
@@ -12599,9 +12536,72 @@
    ],
    "loopPct": 12.54,
    "movedBody": false
+  },
+  {
+   "at": "2026-10-07T12:53:10Z",
+   "val": 2.9482,
+   "prev": 2.9506,
+   "valTag": "fixed-holdout-v1",
+   "stoppedAt": 159,
+   "stuck": 0,
+   "evalTag": "fixed-ix-v1",
+   "secPerStep": 26.2032,
+   "steps": 300,
+   "bpc": 3.4894,
+   "charsPerTok": 1.2189,
+   "score": 2.1757,
+   "scoreW": 2.0,
+   "scoreMode": "talk",
+   "finishMix": 0.5,
+   "lineage": "L1",
+   "layers": 16,
+   "params": 117914880,
+   "chars": 1045308899,
+   "tokens": 857567631,
+   "grew": 0,
+   "rolledBack": false,
+   "ownVal": null,
+   "ownScore": null,
+   "d": 768,
+   "loops": 1,
+   "spread": 3.2419,
+   "bytes": 1415115957,
+   "heads": 6,
+   "ctx": 512,
+   "vocab": 6000,
+   "kind": "bpe",
+   "arch": "tpp-loop",
+   "wantWider": false,
+   "layerCap": 16,
+   "mixChanged": false,
+   "bySrc": {
+    "laws": 4.2392,
+    "wiki": 3.1113,
+    "aozora": 3.4574,
+    "hanrei": 3.5529,
+    "kokkai": 2.7112,
+    "web": 2.9774,
+    "talk": 2.1757
+   },
+   "wrote": [
+    {
+     "start": "わたしは",
+     "text": "わたしはあきらめておわかりますか？」 AS「白黒です」 BT「おお！！」 AS「なんか、抽選ですか？」 BT「うーん、お話ししましょう！今まで見てなかったので。」 AS「うわあ、正確にはわからないですね」 BT「この夏まで、来"
+    },
+    {
+     "start": "第一条",
+     "text": "第一条条第二項及び法第六十四の請求の額は、競走業従事者に、公告に従がないものとしてちょうとする。 （nimbox） 第五百一条 条第二項において準用するवటพญఌསँఁ用途業器具（第一項において準用する場合を含む。）に規定する扱いに関しては、その業務を行うのいずれかが�ることをいう。 （confight） 。）」とあるのは「極人売却時間」と、「+第十二条」とあるのは"
+    },
+    {
+     "start": "この法律において",
+     "text": "この法律において「旧旧統領」と改称される。 明治初年時点の完成時期を除いた文章に通じた「旧制漢文#旧制文定」が含まれ、当時の 自ら 。 明治33年（1908年）1月1日 - 明治憲法 が改正され、提出された。 明治2年（1909年） - 明治天皇が、明治天皇に鎌倉"
+    }
+   ],
+   "loopPct": 4.42,
+   "movedBody": false
   }
  ],
- "bestVal": 2.9506,
+ "bestVal": 2.9482,
  "layers": 16,
  "params": 117914880,
  "born": "2026-09-08T15:11:54Z",
@@ -12649,5 +12649,5 @@
  ],
  "wantWider": false,
  "nextD": 768,
- "bad": 3
+ "bad": 4
 }
