@@ -1,69 +1,6 @@
 {
  "runs": [
   {
-   "at": "2026-09-27T11:06:32Z",
-   "val": 2.7911,
-   "prev": 2.7915,
-   "valTag": "fixed-holdout-v1",
-   "stoppedAt": 556,
-   "stuck": 0,
-   "evalTag": "fixed-ix-v1",
-   "secPerStep": 6.7454,
-   "steps": 972,
-   "bpc": 3.3034,
-   "charsPerTok": 1.2189,
-   "score": 2.2172,
-   "scoreW": 2.0,
-   "scoreMode": "talk",
-   "finishMix": 0.2,
-   "lineage": "L3",
-   "layers": 13,
-   "params": 25335168,
-   "chars": 1045308899,
-   "tokens": 857567631,
-   "grew": 0,
-   "rolledBack": false,
-   "ownVal": null,
-   "ownScore": null,
-   "d": 384,
-   "loops": 1,
-   "spread": 2.7928,
-   "bytes": 304134793,
-   "heads": 6,
-   "ctx": 512,
-   "vocab": 6000,
-   "kind": "bpe",
-   "arch": "tpp-loop",
-   "wantWider": false,
-   "layerCap": 16,
-   "mixChanged": false,
-   "bySrc": {
-    "laws": 3.8175,
-    "wiki": 2.9679,
-    "aozora": 3.291,
-    "hanrei": 3.4923,
-    "kokkai": 2.585,
-    "web": 2.8703,
-    "talk": 2.2172
-   },
-   "wrote": [
-    {
-     "start": "わたしは",
-     "text": "わたしは，Ｄ浅草の埋葬，シンボル（マイク，ウィーク，ラム），けんびま 食べる，Ｄ浅草に食べる，また食べる，」（別紙，同 月２２日発行）といった，原告Ａらは，平成６年１１月１７日，大阪に被告人から言われた�"
-    },
-    {
-     "start": "第一条",
-     "text": "第一条次に掲げるもの 令第七条第一項（顧致致たされた者） 第五十六条 令第七条第二項（顧致致した者） 第七十六条第三項（顧致した者） 第七十七条第二項（顧致した者） 第七十六条第三項（顧致した者） 第七十六条の二第一項（顧致した者） 第七十七条第三項（顧致された者） 第七十七条の二 令第七条第二項（顧致された者） 第七十七条第二項（顧致した者） 第九十七条の三 令第七条第二項（"
-    },
-    {
-     "start": "この法律において",
-     "text": "この法律において、RSILERRRYOSHISENEMIT ESILESIMIDEENE（インターネットアーカイブ）を利用して、RSILEDSSのデジタル化されたデジタル化を組んだ。 MC401 WebSandards - 2007年にWebSandards"
-    }
-   ],
-   "loopPct": 6.37,
-   "movedBody": false
-  },
-  {
    "at": "2026-09-27T12:25:39Z",
    "val": 2.7897,
    "prev": 2.7911,
@@ -12599,9 +12536,72 @@
    ],
    "loopPct": 7.28,
    "movedBody": false
+  },
+  {
+   "at": "2026-10-08T01:22:28Z",
+   "val": 2.7025,
+   "prev": 2.7029,
+   "valTag": "fixed-holdout-v1",
+   "stoppedAt": 786,
+   "stuck": 0,
+   "evalTag": "fixed-ix-v1",
+   "secPerStep": 4.7183,
+   "steps": 1152,
+   "bpc": 3.1986,
+   "charsPerTok": 1.2189,
+   "score": 2.1484,
+   "scoreW": 2.0,
+   "scoreMode": "talk",
+   "finishMix": 0.2,
+   "lineage": "L3",
+   "layers": 13,
+   "params": 25335168,
+   "chars": 1045308899,
+   "tokens": 857567631,
+   "grew": 0,
+   "rolledBack": false,
+   "ownVal": null,
+   "ownScore": null,
+   "d": 384,
+   "loops": 1,
+   "spread": 2.5558,
+   "bytes": 304134793,
+   "heads": 6,
+   "ctx": 512,
+   "vocab": 6000,
+   "kind": "bpe",
+   "arch": "tpp-loop",
+   "wantWider": false,
+   "layerCap": 16,
+   "mixChanged": false,
+   "bySrc": {
+    "laws": 3.6658,
+    "wiki": 2.8671,
+    "aozora": 3.1963,
+    "hanrei": 3.4243,
+    "kokkai": 2.5105,
+    "web": 2.7822,
+    "talk": 2.1484
+   },
+   "wrote": [
+    {
+     "start": "わたしは",
+     "text": "わたしは最後まで今は一緒に食べています」 FT「そうなんですか！一緒に食べたいなって思います。」 FO「水分食べましたか！」 FT「水分のほうが美味しかったですか？」 FO「海鮮食べたいですね。」 FT「水分食べたいですね"
+    },
+    {
+     "start": "第一条",
+     "text": "第一条の改正についても、内部審査における審査委員会の議決を経なければ、これを審査し、これを審査する。 （審査員の採用） 第十四条 審査官は、審査員の採用を決定する機会を与えようとするとき、又は審査員の採用を決定する機会を与えたときは、審査員の採用は、審査員の採用をし、かつ、審査員の採用を決定する機会を与えようとするときは、審査員の採用を決定する機会を与えようとするときは、前総裁"
+    },
+    {
+     "start": "この法律において",
+     "text": "この法律において「オオズ」を「オオズ」（五模種）といい、「オオズ」（五模種）を「オオズ」（溶け）といい、三模種を「オオズ」（五模種）といい、「オオズ」（五模種）は「オオズ」（五模種）といい、三模種では「オオズ」（五模種）が「オオズ」（五模種）といい、"
+    }
+   ],
+   "loopPct": 15.41,
+   "movedBody": false
   }
  ],
- "bestVal": 2.7029,
+ "bestVal": 2.7025,
  "layers": 13,
  "params": 25335168,
  "born": "2026-09-12T18:05:42Z",
@@ -12649,5 +12649,5 @@
  ],
  "wantWider": false,
  "nextD": 384,
- "bad": 5
+ "bad": 1
 }
