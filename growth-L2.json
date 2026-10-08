@@ -1,69 +1,6 @@
 {
  "runs": [
   {
-   "at": "2026-09-27T17:24:35Z",
-   "val": 2.7609,
-   "prev": 2.7617,
-   "valTag": "fixed-holdout-v1",
-   "stoppedAt": 363,
-   "stuck": 0,
-   "evalTag": "fixed-ix-v1",
-   "secPerStep": 10.5797,
-   "steps": 614,
-   "bpc": 3.2678,
-   "charsPerTok": 1.2189,
-   "score": 2.0865,
-   "scoreW": 2.0,
-   "scoreMode": "talk",
-   "finishMix": 0.85,
-   "lineage": "L2",
-   "layers": 13,
-   "params": 44216832,
-   "chars": 1045308899,
-   "tokens": 857567631,
-   "grew": 0,
-   "rolledBack": false,
-   "ownVal": null,
-   "ownScore": null,
-   "d": 512,
-   "loops": 1,
-   "spread": 2.9368,
-   "bytes": 530714761,
-   "heads": 8,
-   "ctx": 512,
-   "vocab": 6000,
-   "kind": "bpe",
-   "arch": "tpp-loop",
-   "wantWider": false,
-   "layerCap": 16,
-   "mixChanged": false,
-   "bySrc": {
-    "laws": 3.7343,
-    "wiki": 2.9395,
-    "aozora": 3.2409,
-    "hanrei": 3.4474,
-    "kokkai": 2.5597,
-    "web": 2.8452,
-    "talk": 2.0865
-   },
-   "wrote": [
-    {
-     "start": "わたしは",
-     "text": "わたしは甘いものは食べます」 EY「ドラム式のなんですか？」 EV「そうですね、ドラム式のやつです」 EY「それは結構好きなんですか？」 EV「あまり大好きではないですね。」 EY「なるほど。ドラム式のはあまり好きじゃないんで"
-    },
-    {
-     "start": "第一条",
-     "text": "第一条第二号ハ又は第二号ハ（日本語言語言語言語言語言語言語言語言語言語言語言語言語言語言語言語言語APS言語言語言語、英語言語言語変語言語言語言語言語言語言語言語言語言語言語で改めた言語言語言語である 。 アメリカでは「アラビア語言語言語言"
-    },
-    {
-     "start": "この法律において",
-     "text": "この法律において整理研究研究研究会、2019年2月31日閲覧。 ↑ 『農村地域の食料安全保障体制と生産拠点の開発、生産体制の拡大と生産性向上に寄与し、発展途上国を代表する農家の役割を担う。 ↑ 世界居住者の多くが「食料安全保障」にちなんでいることで、大きな問題点を残して"
-    }
-   ],
-   "loopPct": 26.7,
-   "movedBody": false
-  },
-  {
    "at": "2026-09-27T18:31:22Z",
    "val": 2.7599,
    "prev": 2.7609,
@@ -12599,6 +12536,69 @@
    ],
    "loopPct": 1.71,
    "movedBody": false
+  },
+  {
+   "at": "2026-10-08T10:25:25Z",
+   "val": 2.6681,
+   "prev": 2.6711,
+   "valTag": "fixed-holdout-v1",
+   "stoppedAt": 342,
+   "stuck": 0,
+   "evalTag": "fixed-ix-v1",
+   "secPerStep": 11.2829,
+   "steps": 571,
+   "bpc": 3.1579,
+   "charsPerTok": 1.2189,
+   "score": 2.0466,
+   "scoreW": 2.0,
+   "scoreMode": "talk",
+   "finishMix": 0.85,
+   "lineage": "L2",
+   "layers": 14,
+   "params": 47379968,
+   "chars": 1045308899,
+   "tokens": 857567631,
+   "grew": 0,
+   "rolledBack": false,
+   "ownVal": null,
+   "ownScore": null,
+   "d": 512,
+   "loops": 1,
+   "spread": 2.9908,
+   "bytes": 568680621,
+   "heads": 8,
+   "ctx": 512,
+   "vocab": 6000,
+   "kind": "bpe",
+   "arch": "tpp-loop",
+   "wantWider": false,
+   "layerCap": 16,
+   "mixChanged": false,
+   "bySrc": {
+    "laws": 3.5614,
+    "wiki": 2.8357,
+    "aozora": 3.1508,
+    "hanrei": 3.3896,
+    "kokkai": 2.488,
+    "web": 2.7555,
+    "talk": 2.0466
+   },
+   "wrote": [
+    {
+     "start": "わたしは",
+     "text": "わたしは、あなたのことをやるのか、あなたのことを思い出すわけには行かない、そういったことをやるのか。あるいは、あなたのことをかぐらいお話しなさい、こういったことを一生懸命考えながらやっておりましたが、あなたは今もお話を伺っております。 総理は、私が申し上げたようなこと"
+    },
+    {
+     "start": "第一条",
+     "text": "第一条第七号）に加えて、大正の制限を開始するごとに大正の区画をもって作成したものであった。 なお、 1885年 （明治18年）の『 大正ニューリフレクション 』では 三谷幸治 が『 大正ニューリフレクション 』を批判した。 関西では、 大阪府 内を中心に"
+    },
+    {
+     "start": "この法律において",
+     "text": "この法律において「申告げる」と、「話す」とは、 言語学 を 言語学 と定義する。 言語学が 言語学 にとって非常に使用されているため、言語学では 言語学 という言語学にとって 言語学 を定義できる。 言語学は、言語学によって 言語学 あるいは言語学によって言語学にとって最も近似的。 言"
+    }
+   ],
+   "loopPct": 0.79,
+   "movedBody": false
   }
  ],
  "bestVal": 2.6668,
@@ -12649,5 +12649,5 @@
  ],
  "wantWider": false,
  "nextD": 512,
- "bad": 1
+ "bad": 2
 }
