@@ -1,69 +1,6 @@
 {
  "runs": [
   {
-   "at": "2026-09-28T07:28:00Z",
-   "val": 3.1409,
-   "prev": 3.1427,
-   "valTag": "fixed-holdout-v1",
-   "stoppedAt": 151,
-   "stuck": 0,
-   "evalTag": "fixed-ix-v1",
-   "secPerStep": 28.011,
-   "steps": 300,
-   "bpc": 3.7175,
-   "charsPerTok": 1.2189,
-   "score": 2.2566,
-   "scoreW": 2.0,
-   "scoreMode": "talk",
-   "finishMix": 0.5,
-   "lineage": "L1",
-   "layers": 16,
-   "params": 117914880,
-   "chars": 1045308899,
-   "tokens": 857567631,
-   "grew": 0,
-   "rolledBack": false,
-   "ownVal": null,
-   "ownScore": null,
-   "d": 768,
-   "loops": 1,
-   "spread": 3.5119,
-   "bytes": 1415115957,
-   "heads": 6,
-   "ctx": 512,
-   "vocab": 6000,
-   "kind": "bpe",
-   "arch": "tpp-loop",
-   "wantWider": false,
-   "layerCap": 16,
-   "mixChanged": false,
-   "bySrc": {
-    "laws": 4.6389,
-    "wiki": 3.3138,
-    "aozora": 3.6182,
-    "hanrei": 3.7188,
-    "kokkai": 2.8638,
-    "web": 3.1363,
-    "talk": 2.2566
-   },
-   "wrote": [
-    {
-     "start": "わたしは",
-     "text": "わたしは、その問題を条から罰則をお願いします。」 AB「委員長 次に、三法案の趣旨説明を求めます。三法案（内閣提出、衆議院送付）。 三案の内容は、一体、二法案は、福祉法九条四号を一括して議題とし、営業の法案を議題といたします。この法案は、経済情勢を尊重することに"
-    },
-    {
-     "start": "第一条",
-     "text": "第一条イイグマガマガガンガンガン』（土曜日、日曜5時9時50分 - 20分） 徳島県新聞 発売（現在は新聞が読売新聞に出演する） 吉田利 明朝 - 成田晃子 / 江戸時代は鶴見市時代のイベント。JR九州"
-    },
-    {
-     "start": "この法律において",
-     "text": "この法律において「 ウィーン 」と提案し、自国が我が国にとって皇帝とは異なる、西宮前塚の視点としての「西尾の法案」を提案したのであります。 しかしながら、今回の法案が成立し、高齢化を目的として、自衛隊法違反は裁判例を成立することはできません。しかしながら、この法案"
-    }
-   ],
-   "loopPct": 4.95,
-   "movedBody": false
-  },
-  {
    "at": "2026-09-28T08:40:58Z",
    "val": 3.146,
    "prev": 3.1409,
@@ -12599,9 +12536,72 @@
    ],
    "loopPct": 11.66,
    "movedBody": false
+  },
+  {
+   "at": "2026-10-08T23:21:48Z",
+   "val": 2.9309,
+   "prev": 2.9339,
+   "valTag": "fixed-holdout-v1",
+   "stoppedAt": 156,
+   "stuck": 0,
+   "evalTag": "fixed-ix-v1",
+   "secPerStep": 26.8484,
+   "steps": 300,
+   "bpc": 3.469,
+   "charsPerTok": 1.2189,
+   "score": 2.1653,
+   "scoreW": 2.0,
+   "scoreMode": "talk",
+   "finishMix": 0.5,
+   "lineage": "L1",
+   "layers": 16,
+   "params": 117914880,
+   "chars": 1045308899,
+   "tokens": 857567631,
+   "grew": 0,
+   "rolledBack": false,
+   "ownVal": null,
+   "ownScore": null,
+   "d": 768,
+   "loops": 1,
+   "spread": 3.1995,
+   "bytes": 1415115957,
+   "heads": 6,
+   "ctx": 512,
+   "vocab": 6000,
+   "kind": "bpe",
+   "arch": "tpp-loop",
+   "wantWider": false,
+   "layerCap": 16,
+   "mixChanged": false,
+   "bySrc": {
+    "laws": 4.2132,
+    "wiki": 3.0884,
+    "aozora": 3.4426,
+    "hanrei": 3.5363,
+    "kokkai": 2.6995,
+    "web": 2.9641,
+    "talk": 2.1653
+   },
+   "wrote": [
+    {
+     "start": "わたしは",
+     "text": "わたしは、人民に対しては、このような、共産党の質問にお答えください。 我々が党としては、すべて国民の信頼を欺いています。社会党は、国民生活の理解と協力を求めつつ、社会党、民主党を代表して、日本維新の会の中でも最大の課題えたいと思います。」 AA「我が国では、これまでにも、�"
+    },
+    {
+     "start": "第一条",
+     "text": "第一条を住居とする。 （運送） 第十六条 HACSSSは、エンジンに搭載された機器の表示を自動的に使用しないで販売するタイプの種苗のパターンを搭載するサービスを搭載する。 エンジンの電源医療に関しては、エンジンとエンジンのエンジンの普及に伴い、装備品等のエンジンを装着し、エンジン"
+    },
+    {
+     "start": "この法律において",
+     "text": "この法律において「化学ブレードの大格差」と呼ばれる。 「CMO」は、スタートボードである。 「CMO」は「CMO」は「CMO」を「CMO」に分類している。 「ブレード」は、CMOなどのCMOは「CMO」が使われる。 「B」はコピーを表す。 CMOOレーザーのCM"
+    }
+   ],
+   "loopPct": 11.33,
+   "movedBody": false
   }
  ],
- "bestVal": 2.9319,
+ "bestVal": 2.9309,
  "layers": 16,
  "params": 117914880,
  "born": "2026-09-08T15:11:54Z",
@@ -12649,5 +12649,5 @@
  ],
  "wantWider": false,
  "nextD": 768,
- "bad": 1
+ "bad": 0
 }
