@@ -1,69 +1,6 @@
 {
  "runs": [
   {
-   "at": "2026-09-27T21:22:13Z",
-   "val": 3.1448,
-   "prev": 3.1486,
-   "valTag": "fixed-holdout-v1",
-   "stoppedAt": 157,
-   "stuck": 0,
-   "evalTag": "fixed-ix-v1",
-   "secPerStep": 26.4862,
-   "steps": 300,
-   "bpc": 3.7221,
-   "charsPerTok": 1.2189,
-   "score": 2.2686,
-   "scoreW": 2.0,
-   "scoreMode": "talk",
-   "finishMix": 0.5,
-   "lineage": "L1",
-   "layers": 16,
-   "params": 117914880,
-   "chars": 1045308899,
-   "tokens": 857567631,
-   "grew": 0,
-   "rolledBack": false,
-   "ownVal": null,
-   "ownScore": null,
-   "d": 768,
-   "loops": 1,
-   "spread": 3.3965,
-   "bytes": 1415115957,
-   "heads": 6,
-   "ctx": 512,
-   "vocab": 6000,
-   "kind": "bpe",
-   "arch": "tpp-loop",
-   "wantWider": false,
-   "layerCap": 16,
-   "mixChanged": false,
-   "bySrc": {
-    "laws": 4.65,
-    "wiki": 3.3218,
-    "aozora": 3.6237,
-    "hanrei": 3.7321,
-    "kokkai": 2.865,
-    "web": 3.1434,
-    "talk": 2.2686
-   },
-   "wrote": [
-    {
-     "start": "わたしは",
-     "text": "わたしは、残念ながら、弱者さんが一番いいことをやりたいということを申し上げたいと思うんです。 それから、今の質問に対して、様々な、私、是非よろしくお願いしたいと思います。 ぜひ、当時のことの顔をしていただくと、それから、自分の問題、先般来、自分たちでやったので"
-    },
-    {
-     "start": "第一条",
-     "text": "第一条ナル 表示願書ブリュッセル #PEFQOON「PETONEWS」の語源として、COLODHONDLONKENTZONETSONEWSXTENDHONDTONHK FNS78000RANST（イメージロー）が制作された。 COVE「C"
-    },
-    {
-     "start": "この法律において",
-     "text": "この法律において、の技術............... 2025年11月31日閲覧。 ↑ “ 「生、生地の悲劇 (2015年) ”. 2016年1月27日閲覧。 ↑ “ イスラエル ”. 日本経済新聞 (2025年11月22日)"
-    }
-   ],
-   "loopPct": 11.5,
-   "movedBody": false
-  },
-  {
    "at": "2026-09-27T22:40:53Z",
    "val": 3.1419,
    "prev": 3.1448,
@@ -12599,9 +12536,72 @@
    ],
    "loopPct": 28.63,
    "movedBody": false
+  },
+  {
+   "at": "2026-10-08T13:05:07Z",
+   "val": 2.9325,
+   "prev": 2.934,
+   "valTag": "fixed-holdout-v1",
+   "stoppedAt": 157,
+   "stuck": 0,
+   "evalTag": "fixed-ix-v1",
+   "secPerStep": 26.6316,
+   "steps": 300,
+   "bpc": 3.4708,
+   "charsPerTok": 1.2189,
+   "score": 2.1661,
+   "scoreW": 2.0,
+   "scoreMode": "talk",
+   "finishMix": 0.5,
+   "lineage": "L1",
+   "layers": 16,
+   "params": 117914880,
+   "chars": 1045308899,
+   "tokens": 857567631,
+   "grew": 0,
+   "rolledBack": false,
+   "ownVal": null,
+   "ownScore": null,
+   "d": 768,
+   "loops": 1,
+   "spread": 3.0114,
+   "bytes": 1415115957,
+   "heads": 6,
+   "ctx": 512,
+   "vocab": 6000,
+   "kind": "bpe",
+   "arch": "tpp-loop",
+   "wantWider": false,
+   "layerCap": 16,
+   "mixChanged": false,
+   "bySrc": {
+    "laws": 4.2205,
+    "wiki": 3.0941,
+    "aozora": 3.4472,
+    "hanrei": 3.5265,
+    "kokkai": 2.6985,
+    "web": 2.9628,
+    "talk": 2.1661
+   },
+   "wrote": [
+    {
+     "start": "わたしは",
+     "text": "わたしは、かつて、この曲を、わが党の皆さんに、税金がかかるのではないか。 これより、民主党が、自由党にとり、自由党の諸君が、彼らはもちろん、自由党は、きめのうから、全く、どのような問題点を問うたのであるか。（拍手） しかも、この際、東�"
+    },
+    {
+     "start": "第一条",
+     "text": "第一条年法律第百二床特例政令第六の明細は、昭和四十年四場合であつて所めぐちかつきめ細工期においても、一番四つずつ、このことが極めて拡大をさらに進めるものであります。（拍手）」 AA「議長 これにて討論の通告者の発言は、上程せられました。（拍手） これにて討論の通告ごろ、本案の委員長の報告は可"
+    },
+    {
+     "start": "この法律において",
+     "text": "この法律において「特定特定特定事業者」とする。 （特定事業者に対する特定特定事業者に対する求人者） 第十六条 特定地域会社（特定特定事業者及び特定管理会社（特定事業者及び特定企業型年金加入者）に規定する特定事業者（特定特定保証者の特定業務のための場ことができないときは、特定幌作用以外の地下業を特定することができる要件に照らして特定続行等停止等財務の特定事業被害を受けた特定事業者等で、特定特定本文を特定対象事業者である特定業者その他特定対"
+    }
+   ],
+   "loopPct": 6.38,
+   "movedBody": false
   }
  ],
- "bestVal": 2.934,
+ "bestVal": 2.9325,
  "layers": 16,
  "params": 117914880,
  "born": "2026-09-08T15:11:54Z",
