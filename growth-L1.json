@@ -1,69 +1,6 @@
 {
  "runs": [
   {
-   "at": "2026-09-28T04:54:31Z",
-   "val": 3.141,
-   "prev": 3.1442,
-   "valTag": "fixed-holdout-v1",
-   "stoppedAt": 158,
-   "stuck": 0,
-   "evalTag": "fixed-ix-v1",
-   "secPerStep": 26.3914,
-   "steps": 300,
-   "bpc": 3.7176,
-   "charsPerTok": 1.2189,
-   "score": 2.2658,
-   "scoreW": 2.0,
-   "scoreMode": "talk",
-   "finishMix": 0.5,
-   "lineage": "L1",
-   "layers": 16,
-   "params": 117914880,
-   "chars": 1045308899,
-   "tokens": 857567631,
-   "grew": 0,
-   "rolledBack": false,
-   "ownVal": null,
-   "ownScore": null,
-   "d": 768,
-   "loops": 1,
-   "spread": 3.4643,
-   "bytes": 1415115957,
-   "heads": 6,
-   "ctx": 512,
-   "vocab": 6000,
-   "kind": "bpe",
-   "arch": "tpp-loop",
-   "wantWider": false,
-   "layerCap": 16,
-   "mixChanged": false,
-   "bySrc": {
-    "laws": 4.6366,
-    "wiki": 3.3153,
-    "aozora": 3.6169,
-    "hanrei": 3.7208,
-    "kokkai": 2.8679,
-    "web": 3.1397,
-    "talk": 2.2658
-   },
-   "wrote": [
-    {
-     "start": "わたしは",
-     "text": "わたしは、われわれの家臣であるということは、まことに今御審議を願いたいと存じます。（拍手）」 AA「議長 ただいまの趣旨説明を聴取いたしました。 よつて、本日は、本日一日程追加の緊急動議を提出いたします。」 <会議 2010-05-00 本会議> AB「第一 国"
-    },
-    {
-     "start": "第一条",
-     "text": "第一条ール件が統合されることはない。 ↑ 当時、ソ連の ソ連軍 は、 アメリカ と ソ連軍 を結成する。 ↑ しかし、 ソ連 の ソ連軍 ではなく、 ソ連 の 責任 が含まれ、アメリカ軍は1926年に 国内軍 に終わり、 19"
-    },
-    {
-     "start": "この法律において",
-     "text": "この法律においてとしては、さらに自衛隊機の量を細かい飲食用機ではなく、詳細なペーストレント機での運用もございません。 先ほど申し上げましたとおり、隊員レンタル業界では、配備等、仕組みに改められているところでございます。 これは、紛争のできない場合に、機動性と同様に、将来の戦略的な機体"
-    }
-   ],
-   "loopPct": 3.05,
-   "movedBody": false
-  },
-  {
    "at": "2026-09-28T06:10:51Z",
    "val": 3.1427,
    "prev": 3.141,
@@ -12599,9 +12536,72 @@
    ],
    "loopPct": 8.23,
    "movedBody": false
+  },
+  {
+   "at": "2026-10-08T20:44:42Z",
+   "val": 2.9319,
+   "prev": 2.9359,
+   "valTag": "fixed-holdout-v1",
+   "stoppedAt": 159,
+   "stuck": 0,
+   "evalTag": "fixed-ix-v1",
+   "secPerStep": 26.2357,
+   "steps": 319,
+   "bpc": 3.4701,
+   "charsPerTok": 1.2189,
+   "score": 2.1628,
+   "scoreW": 2.0,
+   "scoreMode": "talk",
+   "finishMix": 0.5,
+   "lineage": "L1",
+   "layers": 16,
+   "params": 117914880,
+   "chars": 1045308899,
+   "tokens": 857567631,
+   "grew": 0,
+   "rolledBack": false,
+   "ownVal": null,
+   "ownScore": null,
+   "d": 768,
+   "loops": 1,
+   "spread": 3.1465,
+   "bytes": 1415115957,
+   "heads": 6,
+   "ctx": 512,
+   "vocab": 6000,
+   "kind": "bpe",
+   "arch": "tpp-loop",
+   "wantWider": false,
+   "layerCap": 16,
+   "mixChanged": false,
+   "bySrc": {
+    "laws": 4.2167,
+    "wiki": 3.0928,
+    "aozora": 3.442,
+    "hanrei": 3.5371,
+    "kokkai": 2.698,
+    "web": 2.9628,
+    "talk": 2.1628
+   },
+   "wrote": [
+    {
+     "start": "わたしは",
+     "text": "わたしは、現在、小池田古田事務所が対立とも言われている。 『ストレッチ替え前編』（1983年12月10日）・『ストレッチ』（1993年12月12日・1994年11月11日） <記事 池田唄> 江戸幕府（うたんちゅう）"
+    },
+    {
+     "start": "第一条",
+     "text": "第一条ディバムトアルバム『紅白歌合戦』下、短編バラエティ番組 。 菅原哲夫 - アメリカのユダヤ人マグロにバラエティー番組「マンビュー」が登場。 アイドルマスター - クレジットカードでバラエティ - スーパーロボットマスターで"
+    },
+    {
+     "start": "この法律において",
+     "text": "この法律において「日本への変身」として、日本が中国に移住した(日本が書かれる)。 日本では2020年（令和2年）7月2日付、日本では日本が2020年（令和2年）6月10日までの2021年（令和2年）9月14日の第100期米国による日本国内では、日本国内では2023年（令和5年）3"
+    }
+   ],
+   "loopPct": 7.28,
+   "movedBody": false
   }
  ],
- "bestVal": 2.9325,
+ "bestVal": 2.9319,
  "layers": 16,
  "params": 117914880,
  "born": "2026-09-08T15:11:54Z",
