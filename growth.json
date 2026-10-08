@@ -1,69 +1,6 @@
 {
  "runs": [
   {
-   "at": "2026-09-27T11:14:29Z",
-   "val": 3.1587,
-   "prev": 3.1613,
-   "valTag": "fixed-holdout-v1",
-   "stoppedAt": 158,
-   "stuck": 0,
-   "evalTag": "fixed-ix-v1",
-   "secPerStep": 26.4567,
-   "steps": 300,
-   "bpc": 3.7385,
-   "charsPerTok": 1.2189,
-   "score": 2.2743,
-   "scoreW": 2.0,
-   "scoreMode": "talk",
-   "finishMix": 0.5,
-   "lineage": "L1",
-   "layers": 16,
-   "params": 117914880,
-   "chars": 1045308899,
-   "tokens": 857567631,
-   "grew": 0,
-   "rolledBack": false,
-   "ownVal": null,
-   "ownScore": null,
-   "d": 768,
-   "loops": 1,
-   "spread": 3.4783,
-   "bytes": 1415115957,
-   "heads": 6,
-   "ctx": 512,
-   "vocab": 6000,
-   "kind": "bpe",
-   "arch": "tpp-loop",
-   "wantWider": false,
-   "layerCap": 16,
-   "mixChanged": false,
-   "bySrc": {
-    "laws": 4.6758,
-    "wiki": 3.3344,
-    "aozora": 3.6313,
-    "hanrei": 3.7401,
-    "kokkai": 2.8805,
-    "web": 3.1533,
-    "talk": 2.2743
-   },
-   "wrote": [
-    {
-     "start": "わたしは",
-     "text": "わたしは、何が好きですか？」 CJ「好きです！今日は、今日はどこですか？」 CQ「私は、バリ部とかですね。」 CJ「ピザも好きですか？」 CQ「すごい好きです。」 CJ「チェリー！いいですね。」 CQ「そ"
-    },
-    {
-     "start": "第一条",
-     "text": "第一条に違反した。 <記事 ジャイ・ホーツ> チャン・バーグ（Roiran de on lird）は、アラビア語で「恐れのおよそ3つの居方言ではない」。 ウィーン・ストリーミングは1943年に「ヨーロッパ・ニュージーランド」に由"
-    },
-    {
-     "start": "この法律において",
-     "text": "この法律において「採択」という。） U-III（「U-II」という。） UI（「URI」という。） U-IIIらしい1 URI「UNII HIAI」 BI「SII UI」 CI「よろしくおねがいします！」 C"
-    }
-   ],
-   "loopPct": 6.43,
-   "movedBody": false
-  },
-  {
    "at": "2026-09-27T12:19:39Z",
    "val": 3.1654,
    "prev": 3.1587,
@@ -12599,9 +12536,72 @@
    ],
    "loopPct": 1.59,
    "movedBody": false
+  },
+  {
+   "at": "2026-10-08T02:51:35Z",
+   "val": 2.9405,
+   "prev": 2.9441,
+   "valTag": "fixed-holdout-v1",
+   "stoppedAt": 158,
+   "stuck": 0,
+   "evalTag": "fixed-ix-v1",
+   "secPerStep": 26.3704,
+   "steps": 300,
+   "bpc": 3.4803,
+   "charsPerTok": 1.2189,
+   "score": 2.1659,
+   "scoreW": 2.0,
+   "scoreMode": "talk",
+   "finishMix": 0.5,
+   "lineage": "L1",
+   "layers": 16,
+   "params": 117914880,
+   "chars": 1045308899,
+   "tokens": 857567631,
+   "grew": 0,
+   "rolledBack": false,
+   "ownVal": null,
+   "ownScore": null,
+   "d": 768,
+   "loops": 1,
+   "spread": 3.3099,
+   "bytes": 1415115957,
+   "heads": 6,
+   "ctx": 512,
+   "vocab": 6000,
+   "kind": "bpe",
+   "arch": "tpp-loop",
+   "wantWider": false,
+   "layerCap": 16,
+   "mixChanged": false,
+   "bySrc": {
+    "laws": 4.2295,
+    "wiki": 3.0988,
+    "aozora": 3.4495,
+    "hanrei": 3.5344,
+    "kokkai": 2.705,
+    "web": 2.9707,
+    "talk": 2.1659
+   },
+   "wrote": [
+    {
+     "start": "わたしは",
+     "text": "わたしは、この際、議員連盟ではなく、来日または記者会見で選挙会を開いた。これでは、三党を代表して、議員連盟の議員を辞職するのが大切。国会議員の懇談会において、こうした議論が始まった。 今回、二つの議論では、議員連盟との戦いに参加してはいない。それから、共有された捜査のため、イギリス"
+    },
+    {
+     "start": "第一条",
+     "text": "第一条ンセス前提となる。 （目的） 第十一条 湯沸静（又はこれに基づく） 第十六条 合同潮流突入については、それぞれ、次の事項を定める。 （充て） 第十三条 第四条の菓子は、次の各号に掲げる区分ぎょうせいのきほうれいのとする。 （届出書を提出するものとされた場合又はその議定書） 解散を決定する時に、当該申請をした者の名称、名称、材料及び土壌の調達等に寄与すること"
+    },
+    {
+     "start": "この法律において",
+     "text": "この法律において「平成１１年４月１９日」を「平成１４年３月２１日」という。 第１ 平成９年１２月１１日 第３ 平成１４年２月２５日 第１回１回目 第１課長野県知事 平成６年１２月１５日 第３結論 平成１２年１０月１７日 第２回目の「第１審被告② 第５"
+    }
+   ],
+   "loopPct": 4.85,
+   "movedBody": false
   }
  ],
- "bestVal": 2.9433,
+ "bestVal": 2.9405,
  "layers": 16,
  "params": 117914880,
  "born": "2026-09-08T15:11:54Z",
@@ -12649,5 +12649,5 @@
  ],
  "wantWider": false,
  "nextD": 768,
- "bad": 1
+ "bad": 2
 }
