@@ -1,69 +1,6 @@
 {
  "runs": [
   {
-   "at": "2026-09-27T16:06:39Z",
-   "val": 2.7883,
-   "prev": 2.7889,
-   "valTag": "fixed-holdout-v1",
-   "stoppedAt": 561,
-   "stuck": 0,
-   "evalTag": "fixed-ix-v1",
-   "secPerStep": 6.689,
-   "steps": 958,
-   "bpc": 3.3001,
-   "charsPerTok": 1.2189,
-   "score": 2.2126,
-   "scoreW": 2.0,
-   "scoreMode": "talk",
-   "finishMix": 0.2,
-   "lineage": "L3",
-   "layers": 13,
-   "params": 25335168,
-   "chars": 1045308899,
-   "tokens": 857567631,
-   "grew": 0,
-   "rolledBack": false,
-   "ownVal": null,
-   "ownScore": null,
-   "d": 384,
-   "loops": 1,
-   "spread": 3.1797,
-   "bytes": 304134793,
-   "heads": 6,
-   "ctx": 512,
-   "vocab": 6000,
-   "kind": "bpe",
-   "arch": "tpp-loop",
-   "wantWider": false,
-   "layerCap": 16,
-   "mixChanged": false,
-   "bySrc": {
-    "laws": 3.8136,
-    "wiki": 2.9645,
-    "aozora": 3.2881,
-    "hanrei": 3.4908,
-    "kokkai": 2.5825,
-    "web": 2.8668,
-    "talk": 2.2126
-   },
-   "wrote": [
-    {
-     "start": "わたしは",
-     "text": "わたしは、このときは、そうして、国の政策を積極的に打ち出していただきたいと思います。 現行の改正法案では、このような施策を皆様方にお示しいただき、官房長官も閣議においてお取り上げいただき、不断の具体的な取り組みを十分に実施していくこととしております。」 AA「今、憲法"
-    },
-    {
-     "start": "第一条",
-     "text": "第一条のは、現行憲法ぎわ物権法律の範囲内で、右の違いがある場合は二重違いがある。 ） いわゆる「憲法」の具体的内容。 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23"
-    },
-    {
-     "start": "この法律において",
-     "text": "この法律において、その能力を生かした能力を育て、それが兵士として活動するということ。これは、大阪府の傾向や、事務所に派遣されるかというのは、もしかしたら、自衛隊の行動は、そんなことはなくて、もう同様なことはありますけれども、自衛隊が、自衛隊の行動なんだということになれば、今後三年間になってやってくるということはも"
-    }
-   ],
-   "loopPct": 3.19,
-   "movedBody": false
-  },
-  {
    "at": "2026-09-27T17:22:47Z",
    "val": 2.7873,
    "prev": 2.7883,
@@ -12599,6 +12536,69 @@
    ],
    "loopPct": 32.42,
    "movedBody": false
+  },
+  {
+   "at": "2026-10-08T06:32:56Z",
+   "val": 2.7036,
+   "prev": 2.7008,
+   "valTag": "fixed-holdout-v1",
+   "stoppedAt": 568,
+   "stuck": 0,
+   "evalTag": "fixed-ix-v1",
+   "secPerStep": 6.5998,
+   "steps": 1151,
+   "bpc": 3.1999,
+   "charsPerTok": 1.2189,
+   "score": 2.1467,
+   "scoreW": 2.0,
+   "scoreMode": "talk",
+   "finishMix": 0.2,
+   "lineage": "L3",
+   "layers": 13,
+   "params": 25335168,
+   "chars": 1045308899,
+   "tokens": 857567631,
+   "grew": 0,
+   "rolledBack": false,
+   "ownVal": null,
+   "ownScore": null,
+   "d": 384,
+   "loops": 1,
+   "spread": 2.6787,
+   "bytes": 304134793,
+   "heads": 6,
+   "ctx": 512,
+   "vocab": 6000,
+   "kind": "bpe",
+   "arch": "tpp-loop",
+   "wantWider": false,
+   "layerCap": 16,
+   "mixChanged": false,
+   "bySrc": {
+    "laws": 3.6658,
+    "wiki": 2.8703,
+    "aozora": 3.1946,
+    "hanrei": 3.4273,
+    "kokkai": 2.5119,
+    "web": 2.7855,
+    "talk": 2.1467
+   },
+   "wrote": [
+    {
+     "start": "わたしは",
+     "text": "わたしは、左から名を言わして、ようやく大地に到着した。 「何か、おめえなさいましよ。おめえなさいましよ。」と、横に顔を向けた。 「ちょっと聞かましてもらいますが、あとから雇ったら何でもよろしいんですよ。」 「おめえはそうですかえ。」 「おめ"
+    },
+    {
+     "start": "第一条",
+     "text": "第一条中「売上高」と宣言して、伸びる高を目指していた。 1976年 （昭和51年） 9月18日 に大阪市内全域をアスファルトが樹立した [ 86 ] 。 11月27日 - 市民ジャンプス の スタートレック が開催される。 1976年 （昭和51年"
+    },
+    {
+     "start": "この法律において",
+     "text": "この法律において「中国人権宣言」をPRしたことに由来する。 異文化遺産 を体系化するとともに、中国文化圏における 植民地 と インド ・ インド の 中世 ・ 東アジア ・ インド ・ インド ・ 南アジア ・ インド の 中国 ・ インド ・ インド ・ インド ・ インド"
+    }
+   ],
+   "loopPct": 20.01,
+   "movedBody": false
   }
  ],
  "bestVal": 2.7008,
@@ -12649,5 +12649,5 @@
  ],
  "wantWider": false,
  "nextD": 384,
- "bad": 1
+ "bad": 6
 }
