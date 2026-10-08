@@ -1,69 +1,6 @@
 {
  "runs": [
   {
-   "at": "2026-09-28T02:24:21Z",
-   "val": 2.7531,
-   "prev": 2.754,
-   "valTag": "fixed-holdout-v1",
-   "stoppedAt": 364,
-   "stuck": 0,
-   "evalTag": "fixed-ix-v1",
-   "secPerStep": 10.5653,
-   "steps": 592,
-   "bpc": 3.2585,
-   "charsPerTok": 1.2189,
-   "score": 2.0822,
-   "scoreW": 2.0,
-   "scoreMode": "talk",
-   "finishMix": 0.85,
-   "lineage": "L2",
-   "layers": 13,
-   "params": 44216832,
-   "chars": 1045308899,
-   "tokens": 857567631,
-   "grew": 0,
-   "rolledBack": false,
-   "ownVal": null,
-   "ownScore": null,
-   "d": 512,
-   "loops": 1,
-   "spread": 2.6007,
-   "bytes": 530714761,
-   "heads": 8,
-   "ctx": 512,
-   "vocab": 6000,
-   "kind": "bpe",
-   "arch": "tpp-loop",
-   "wantWider": false,
-   "layerCap": 16,
-   "mixChanged": false,
-   "bySrc": {
-    "laws": 3.717,
-    "wiki": 2.9283,
-    "aozora": 3.2324,
-    "hanrei": 3.4376,
-    "kokkai": 2.553,
-    "web": 2.8362,
-    "talk": 2.0822
-   },
-   "wrote": [
-    {
-     "start": "わたしは",
-     "text": "わたしは、これに対していわゆる表象を見たらどうするかと。 その三つに対して、一切の感じは、決してそんなことははっきりと聞かないのである。 二人で、二人でも、あんなに大きなのか、悲しそうに感じたものであろう。 それと同時に、これは、まあああああああああああああああああああ"
-    },
-    {
-     "start": "第一条",
-     "text": "第一条第四号」 GH「わんちゃんですね。わんちゃんでしたっけ？」 GG「あー、なんか恥ずかしいんですけど。」 GH「あーありますね。あれはいいですよねね」 GG「あとは友達とか見て楽しいです。」 GH「見てなくても楽しいです"
-    },
-    {
-     "start": "この法律において",
-     "text": "この法律においての利益の前にできたもの以外のもの（一人当り金、それぞれにいとまがないもの、採用災害又は特別勧告の機構が不按となるものが、当該債務の設立前に当該債務の設立前に当該債務の設立前に当該債務の再建により生じた債務の設立前及び当該債務の設立前に当該債務の設立前若しくは特別通知のることができるもの者が、当該債務の設立後に当該債務の設立後に当該債務の設立前に当該債務の設立後に当該債務の設立前に当該債務を脱"
-    }
-   ],
-   "loopPct": 19.25,
-   "movedBody": false
-  },
-  {
    "at": "2026-09-28T03:34:25Z",
    "val": 2.7514,
    "prev": 2.7531,
@@ -12599,9 +12536,72 @@
    ],
    "loopPct": 20.82,
    "movedBody": false
+  },
+  {
+   "at": "2026-10-08T19:24:23Z",
+   "val": 2.6621,
+   "prev": 2.6632,
+   "valTag": "fixed-holdout-v1",
+   "stoppedAt": 338,
+   "stuck": 0,
+   "evalTag": "fixed-ix-v1",
+   "secPerStep": 11.4324,
+   "steps": 571,
+   "bpc": 3.1508,
+   "charsPerTok": 1.2189,
+   "score": 2.0429,
+   "scoreW": 2.0,
+   "scoreMode": "talk",
+   "finishMix": 0.85,
+   "lineage": "L2",
+   "layers": 14,
+   "params": 47379968,
+   "chars": 1045308899,
+   "tokens": 857567631,
+   "grew": 0,
+   "rolledBack": false,
+   "ownVal": null,
+   "ownScore": null,
+   "d": 512,
+   "loops": 1,
+   "spread": 2.9456,
+   "bytes": 568680621,
+   "heads": 8,
+   "ctx": 512,
+   "vocab": 6000,
+   "kind": "bpe",
+   "arch": "tpp-loop",
+   "wantWider": false,
+   "layerCap": 16,
+   "mixChanged": false,
+   "bySrc": {
+    "laws": 3.5525,
+    "wiki": 2.8321,
+    "aozora": 3.1476,
+    "hanrei": 3.3785,
+    "kokkai": 2.4813,
+    "web": 2.7506,
+    "talk": 2.0429
+   },
+   "wrote": [
+    {
+     "start": "わたしは",
+     "text": "わたしはフランス語で、書記もフランス語もほぼ発音が非常に多いため、表記も少ない。 6月には メトリック・オットー・オットー・オットー・オットー が非難したため、これはフランス語の音楽・音楽に近い言い回しになっている。 マイケル・アンド・リュイはこの時期にフランス"
+    },
+    {
+     "start": "第一条",
+     "text": "第一条と認められ、又はこれらの規定による措置における措置を行う場合 第三十五条第二項に係る部分に限る。） jegokangle sidentray, jegokangle sidentray, jegokangle sidentray, jegokangle sidentray, jegok"
+    },
+    {
+     "start": "この法律において",
+     "text": "この法律において「音楽データベース」又は「音楽データベース」を出力することができなくなった場合は、音楽データベースを出力することができなくなった場合は、音楽データベースにより出力する。 音楽データベース 音楽データベース 音楽データベース 音楽データベース 音楽データベース 音楽データベ"
+    }
+   ],
+   "loopPct": 19.67,
+   "movedBody": false
   }
  ],
- "bestVal": 2.6632,
+ "bestVal": 2.6621,
  "layers": 14,
  "params": 47379968,
  "born": "2026-09-08T15:11:54Z",
@@ -12649,5 +12649,5 @@
  ],
  "wantWider": false,
  "nextD": 512,
- "bad": 0
+ "bad": 2
 }
