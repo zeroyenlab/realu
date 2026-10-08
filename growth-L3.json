@@ -1,69 +1,6 @@
 {
  "runs": [
   {
-   "at": "2026-09-27T23:51:15Z",
-   "val": 2.786,
-   "prev": 2.786,
-   "valTag": "fixed-holdout-v1",
-   "stoppedAt": 532,
-   "stuck": 0,
-   "evalTag": "fixed-ix-v1",
-   "secPerStep": 7.0691,
-   "steps": 977,
-   "bpc": 3.2975,
-   "charsPerTok": 1.2189,
-   "score": 2.2143,
-   "scoreW": 2.0,
-   "scoreMode": "talk",
-   "finishMix": 0.2,
-   "lineage": "L3",
-   "layers": 13,
-   "params": 25335168,
-   "chars": 1045308899,
-   "tokens": 857567631,
-   "grew": 0,
-   "rolledBack": false,
-   "ownVal": null,
-   "ownScore": null,
-   "d": 384,
-   "loops": 1,
-   "spread": 2.6554,
-   "bytes": 304134793,
-   "heads": 6,
-   "ctx": 512,
-   "vocab": 6000,
-   "kind": "bpe",
-   "arch": "tpp-loop",
-   "wantWider": false,
-   "layerCap": 16,
-   "mixChanged": false,
-   "bySrc": {
-    "laws": 3.8075,
-    "wiki": 2.9619,
-    "aozora": 3.2857,
-    "hanrei": 3.4876,
-    "kokkai": 2.5796,
-    "web": 2.8651,
-    "talk": 2.2143
-   },
-   "wrote": [
-    {
-     "start": "わたしは",
-     "text": "わたしは、この飛行場に飛び込んで動くうちに、フォラクルに発展する。 が、この飛行場には、 宇宙船 と フランス海軍 の アメリカ海軍 の ジッド・バニラ が入り、これが原爆になってしまった。 しかし、 ジョルジュ・オブ・ウェイジー （ 英語"
-    },
-    {
-     "start": "第一条",
-     "text": "第一条a)のように、大雨のために降雨が起こるというのは非常に大きい。 降雨が起きた時は、大雨や大雨が起こる。 そこでは、降雨命中の対流部などが降雨が起き、やがて降雨が起きる。 降雨が起こって、降雨も起こる。 降雨が起こると"
-    },
-    {
-     "start": "この法律において",
-     "text": "この法律においてにおいても、電電公社、電電公社、電電公社、電電公社、電電公社、電電公社、電電公社、電電公社、電電公社、電電公社、電電公社等のそれぞれで、電電公社、電充ネットワーク、電信電話ネットワーク、電電公社、電電公社、電光公社、電電公社等と、電電公社、電光公社等とがございます。電電公社とは"
-    }
-   ],
-   "loopPct": 21.77,
-   "movedBody": false
-  },
-  {
    "at": "2026-09-28T01:06:31Z",
    "val": 2.7839,
    "prev": 2.786,
@@ -12599,9 +12536,72 @@
    ],
    "loopPct": 6.36,
    "movedBody": false
+  },
+  {
+   "at": "2026-10-08T14:15:09Z",
+   "val": 2.6992,
+   "prev": 2.6994,
+   "valTag": "fixed-holdout-v1",
+   "stoppedAt": 527,
+   "stuck": 0,
+   "evalTag": "fixed-ix-v1",
+   "secPerStep": 7.1352,
+   "steps": 974,
+   "bpc": 3.1947,
+   "charsPerTok": 1.2189,
+   "score": 2.1444,
+   "scoreW": 2.0,
+   "scoreMode": "talk",
+   "finishMix": 0.2,
+   "lineage": "L3",
+   "layers": 13,
+   "params": 25335168,
+   "chars": 1045308899,
+   "tokens": 857567631,
+   "grew": 0,
+   "rolledBack": false,
+   "ownVal": null,
+   "ownScore": null,
+   "d": 384,
+   "loops": 1,
+   "spread": 2.6907,
+   "bytes": 304134793,
+   "heads": 6,
+   "ctx": 512,
+   "vocab": 6000,
+   "kind": "bpe",
+   "arch": "tpp-loop",
+   "wantWider": false,
+   "layerCap": 16,
+   "mixChanged": false,
+   "bySrc": {
+    "laws": 3.663,
+    "wiki": 2.8633,
+    "aozora": 3.1941,
+    "hanrei": 3.4246,
+    "kokkai": 2.5082,
+    "web": 2.7802,
+    "talk": 2.1444
+   },
+   "wrote": [
+    {
+     "start": "わたしは",
+     "text": "わたしはもう一人で、その友人としての苦労を忘れてしまって。 夏、夏、それに苦労するさまを見て、また見るもないんだ。 唐の潟里が恵んでいるのを見て、自分がまだ憤ってもらったんだ。 夏の潟里は自分が言ったのだろう。 夏とはあくまでも、"
+    },
+    {
+     "start": "第一条",
+     "text": "第一条 �喜喜喜喜喜喜喜喜喜喜喜喜喜喜喜喜喜喜喜喜喜喜喜喜喜喜喜喜喜喜喜喜喜喜喜喜喜喜喜喜喜喜喜喜喜喜喜喜喜喜喜喜喜喜"
+    },
+    {
+     "start": "この法律において",
+     "text": "この法律においての文案は、これを結び、その結論を得たいと思います。 以上が、委員長の報告に対する質疑の趣旨でございます。」 AA「本日は、自由民主党を代表して、ただいま議題となりました日本社会党提出の社会保障・税一体改革特別委員会における審査の経過と結果の報告について御報告申し上げます。 まず、本法案の�"
+    }
+   ],
+   "loopPct": 32.9,
+   "movedBody": false
   }
  ],
- "bestVal": 2.6994,
+ "bestVal": 2.6992,
  "layers": 13,
  "params": 25335168,
  "born": "2026-09-12T18:05:42Z",
@@ -12649,5 +12649,5 @@
  ],
  "wantWider": false,
  "nextD": 384,
- "bad": 1
+ "bad": 2
 }
