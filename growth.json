@@ -1,69 +1,6 @@
 {
  "runs": [
   {
-   "at": "2026-09-27T22:40:53Z",
-   "val": 3.1419,
-   "prev": 3.1448,
-   "valTag": "fixed-holdout-v1",
-   "stoppedAt": 143,
-   "stuck": 0,
-   "evalTag": "fixed-ix-v1",
-   "secPerStep": 29.6969,
-   "steps": 300,
-   "bpc": 3.7187,
-   "charsPerTok": 1.2189,
-   "score": 2.268,
-   "scoreW": 2.0,
-   "scoreMode": "talk",
-   "finishMix": 0.5,
-   "lineage": "L1",
-   "layers": 16,
-   "params": 117914880,
-   "chars": 1045308899,
-   "tokens": 857567631,
-   "grew": 0,
-   "rolledBack": false,
-   "ownVal": null,
-   "ownScore": null,
-   "d": 768,
-   "loops": 1,
-   "spread": 3.4618,
-   "bytes": 1415115957,
-   "heads": 6,
-   "ctx": 512,
-   "vocab": 6000,
-   "kind": "bpe",
-   "arch": "tpp-loop",
-   "wantWider": false,
-   "layerCap": 16,
-   "mixChanged": false,
-   "bySrc": {
-    "laws": 4.6465,
-    "wiki": 3.3182,
-    "aozora": 3.6233,
-    "hanrei": 3.7307,
-    "kokkai": 2.8636,
-    "web": 3.1414,
-    "talk": 2.268
-   },
-   "wrote": [
-    {
-     "start": "わたしは",
-     "text": "わたしは、ことしまでの間、こういったことを審議いたしまして、しかも、これは決して申し上げません。 そこで、ちょっとお願いをいたしますけれども、やはり私は、今日のＯＥＣＤのようなときに、私たちが連携を進めていくということを、ほかに、新規食品ということをやっておるわけですね。」 AB"
-    },
-    {
-     "start": "第一条",
-     "text": "第一条佳内俊久右恭発足に対し、同年8月2日に廃止いたしました。 その際、同年12月2日、高校卒業後、高校費国庫負担区分就労支援費が計上し、同年1月28日に同年12月27日に控訴義務が図られるようになった [ 217 ] 。 1962年 （昭和33年）1"
-    },
-    {
-     "start": "この法律において",
-     "text": "この法律において、インプイントもよく使われ、初めのブランドは血ではなかったと言っている。 柿楽器は、平和でもブランド「 GI 」と呼ばれるが、 1987年 のこの日、将来の インドネシア 政権が成立した。 1983年の イギリス によって、現在の 日本 では 豪"
-    }
-   ],
-   "loopPct": 0.79,
-   "movedBody": false
-  },
-  {
    "at": "2026-09-27T23:57:09Z",
    "val": 3.1424,
    "prev": 3.1419,
@@ -12599,6 +12536,69 @@
    ],
    "loopPct": 6.38,
    "movedBody": false
+  },
+  {
+   "at": "2026-10-08T14:21:51Z",
+   "val": 2.9379,
+   "prev": 2.9325,
+   "valTag": "fixed-holdout-v1",
+   "stoppedAt": 179,
+   "stuck": 0,
+   "evalTag": "fixed-ix-v1",
+   "secPerStep": 23.0282,
+   "steps": 300,
+   "bpc": 3.4773,
+   "charsPerTok": 1.2189,
+   "score": 2.1674,
+   "scoreW": 2.0,
+   "scoreMode": "talk",
+   "finishMix": 0.5,
+   "lineage": "L1",
+   "layers": 16,
+   "params": 117914880,
+   "chars": 1045308899,
+   "tokens": 857567631,
+   "grew": 0,
+   "rolledBack": false,
+   "ownVal": null,
+   "ownScore": null,
+   "d": 768,
+   "loops": 1,
+   "spread": 2.7908,
+   "bytes": 1415115957,
+   "heads": 6,
+   "ctx": 512,
+   "vocab": 6000,
+   "kind": "bpe",
+   "arch": "tpp-loop",
+   "wantWider": false,
+   "layerCap": 16,
+   "mixChanged": false,
+   "bySrc": {
+    "laws": 4.2231,
+    "wiki": 3.0975,
+    "aozora": 3.4494,
+    "hanrei": 3.5389,
+    "kokkai": 2.7041,
+    "web": 2.9704,
+    "talk": 2.1674
+   },
+   "wrote": [
+    {
+     "start": "わたしは",
+     "text": "わたしは、これは今日は殆んど私が見たときに、このとき黙っているかとか言われて、来年、あるいは大丈夫ではないかとかそういうことについて、どういうことかを私は考えさせていただきたい、かように考えております。」 AA「それは、いわば今のやりとりの中で、この場にいたしまして"
+    },
+    {
+     "start": "第一条",
+     "text": "第一条訳交通訳では削除禁止された。 ヤグドは1935年に、ヤグドンでのヨグドングシオン映画『世界の人々の世界』を、ヤグドングシオン、オリエンテーリオンと呼ばれる映画製作を始める。チャンネルの『ダイナモンド・ワン・オン・"
+    },
+    {
+     "start": "この法律において",
+     "text": "この法律においてDD化された“Resort”も含む」読みが無い高いと考えられる。「日本は世界史上初めて日本から大きく寄進 。他にも、世界では主にカメラ・エクソング（Coplee the Top Exciper）が含まれていく。 日本では、世界を辞め"
+    }
+   ],
+   "loopPct": 2.36,
+   "movedBody": false
   }
  ],
  "bestVal": 2.9325,
@@ -12649,5 +12649,5 @@
  ],
  "wantWider": false,
  "nextD": 768,
- "bad": 0
+ "bad": 1
 }
