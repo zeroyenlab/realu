@@ -1,69 +1,6 @@
 {
  "runs": [
   {
-   "at": "2026-09-27T22:34:28Z",
-   "val": 2.786,
-   "prev": 2.7874,
-   "valTag": "fixed-holdout-v1",
-   "stoppedAt": 567,
-   "stuck": 0,
-   "evalTag": "fixed-ix-v1",
-   "secPerStep": 6.6112,
-   "steps": 971,
-   "bpc": 3.2975,
-   "charsPerTok": 1.2189,
-   "score": 2.2126,
-   "scoreW": 2.0,
-   "scoreMode": "talk",
-   "finishMix": 0.2,
-   "lineage": "L3",
-   "layers": 13,
-   "params": 25335168,
-   "chars": 1045308899,
-   "tokens": 857567631,
-   "grew": 0,
-   "rolledBack": false,
-   "ownVal": null,
-   "ownScore": null,
-   "d": 384,
-   "loops": 1,
-   "spread": 2.9862,
-   "bytes": 304134793,
-   "heads": 6,
-   "ctx": 512,
-   "vocab": 6000,
-   "kind": "bpe",
-   "arch": "tpp-loop",
-   "wantWider": false,
-   "layerCap": 16,
-   "mixChanged": false,
-   "bySrc": {
-    "laws": 3.8055,
-    "wiki": 2.9617,
-    "aozora": 3.2856,
-    "hanrei": 3.4849,
-    "kokkai": 2.5801,
-    "web": 2.8653,
-    "talk": 2.2126
-   },
-   "wrote": [
-    {
-     "start": "わたしは",
-     "text": "わたしは！」 BR「あぁ、私も強くです！」 BR「こんにちは！」 DN「こんにちはー！」 BR「今日は何をされてますか？」 DN「今日は、お盆、たまに行きました。」 BR「"
-    },
-    {
-     "start": "第一条",
-     "text": "第一条めていただきたいと思います。 次に、先ほど来議論をさせていただきましたけれども、先ほど言われましたように、今、今日、新しい実態が問題になれば、そういうふうに記者会見ではできません。 そういう中で、私も先生のお言葉を申し上げておりましたが、国会でお"
-    },
-    {
-     "start": "この法律において",
-     "text": "この法律において、公選法等による公職選挙法上保障規定（仮称）による選挙制度の適用を受けることが想定される場合がある又は一定の要件に該当する場合であっても、公選法等で第三者に内閣として存続させることが想定される場合がある。 2007年（平成19年）度の 1961年 （ 昭和 37年）以降に禁止申請がなされると、公選法等では2010年度から10"
-    }
-   ],
-   "loopPct": 2.17,
-   "movedBody": false
-  },
-  {
    "at": "2026-09-27T23:51:15Z",
    "val": 2.786,
    "prev": 2.786,
@@ -12599,9 +12536,72 @@
    ],
    "loopPct": 40.81,
    "movedBody": false
+  },
+  {
+   "at": "2026-10-08T12:57:42Z",
+   "val": 2.6994,
+   "prev": 2.7027,
+   "valTag": "fixed-holdout-v1",
+   "stoppedAt": 962,
+   "stuck": 0,
+   "evalTag": "fixed-ix-v1",
+   "secPerStep": 3.8305,
+   "steps": 974,
+   "bpc": 3.195,
+   "charsPerTok": 1.2189,
+   "score": 2.1453,
+   "scoreW": 2.0,
+   "scoreMode": "talk",
+   "finishMix": 0.2,
+   "lineage": "L3",
+   "layers": 13,
+   "params": 25335168,
+   "chars": 1045308899,
+   "tokens": 857567631,
+   "grew": 0,
+   "rolledBack": false,
+   "ownVal": null,
+   "ownScore": null,
+   "d": 384,
+   "loops": 1,
+   "spread": 2.5493,
+   "bytes": 304134793,
+   "heads": 6,
+   "ctx": 512,
+   "vocab": 6000,
+   "kind": "bpe",
+   "arch": "tpp-loop",
+   "wantWider": false,
+   "layerCap": 16,
+   "mixChanged": false,
+   "bySrc": {
+    "laws": 3.6653,
+    "wiki": 2.8641,
+    "aozora": 3.1933,
+    "hanrei": 3.4283,
+    "kokkai": 2.5074,
+    "web": 2.7803,
+    "talk": 2.1453
+   },
+   "wrote": [
+    {
+     "start": "わたしは",
+     "text": "わたしはカバンを外すのは、もはやコロムビア・ルパンのような言い方ではない。 「信濃」を「 くん 」という。 石川県 （つげろきょう）については「 石川県 」をご覧ください。 石川県 （ふじしょうめん）については、 石川県 （つげろきょう）"
+    },
+    {
+     "start": "第一条",
+     "text": "第一条欄りになり始めた。」 AC「……『座ってますか？ まだなんですか？」 BJ「うーん、つい思い出せないです。」 AC「まぁ、立派な夏場っ子がいるんですかね。」 BJ「自分が小学校の先生とです。」 AC「今日も多"
+    },
+    {
+     "start": "この法律において",
+     "text": "この法律において「情勢」に関して扱う則を含む。 <法令 自動車交通事業法> 平成十三年総理府・運輸省・整合図企画課 自動車交通事業法 かせんとくていしゃのつちょうそうゆうどうぼつとしてんのうのりしんにかんするほうりつ 自動車交通事業法 平成二十三年総理府・運輸省・整合図企画課 自動車交通事業法 自動車交通事業法 平成仲介官 自動車"
+    }
+   ],
+   "loopPct": 6.36,
+   "movedBody": false
   }
  ],
- "bestVal": 2.7008,
+ "bestVal": 2.6994,
  "layers": 13,
  "params": 25335168,
  "born": "2026-09-12T18:05:42Z",
@@ -12649,5 +12649,5 @@
  ],
  "wantWider": false,
  "nextD": 384,
- "bad": 3
+ "bad": 1
 }
