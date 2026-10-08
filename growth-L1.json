@@ -1,69 +1,6 @@
 {
  "runs": [
   {
-   "at": "2026-09-28T03:39:03Z",
-   "val": 3.1442,
-   "prev": 3.149,
-   "valTag": "fixed-holdout-v1",
-   "stoppedAt": 157,
-   "stuck": 0,
-   "evalTag": "fixed-ix-v1",
-   "secPerStep": 26.4951,
-   "steps": 300,
-   "bpc": 3.7214,
-   "charsPerTok": 1.2189,
-   "score": 2.2677,
-   "scoreW": 2.0,
-   "scoreMode": "talk",
-   "finishMix": 0.5,
-   "lineage": "L1",
-   "layers": 16,
-   "params": 117914880,
-   "chars": 1045308899,
-   "tokens": 857567631,
-   "grew": 0,
-   "rolledBack": false,
-   "ownVal": null,
-   "ownScore": null,
-   "d": 768,
-   "loops": 1,
-   "spread": 3.131,
-   "bytes": 1415115957,
-   "heads": 6,
-   "ctx": 512,
-   "vocab": 6000,
-   "kind": "bpe",
-   "arch": "tpp-loop",
-   "wantWider": false,
-   "layerCap": 16,
-   "mixChanged": false,
-   "bySrc": {
-    "laws": 4.6422,
-    "wiki": 3.3189,
-    "aozora": 3.6205,
-    "hanrei": 3.7285,
-    "kokkai": 2.8702,
-    "web": 3.1424,
-    "talk": 2.2677
-   },
-   "wrote": [
-    {
-     "start": "わたしは",
-     "text": "わたしは、ジスクニーズですれ違いですよ。」 CN「シングルんだりもするのに食べたいところを探してください。」 AN「はい、日本の食べたいものです。」 CN「はい、たしかに！」 CN「こんばんは！」"
-    },
-    {
-     "start": "第一条",
-     "text": "第一条ターハアースターオブジェクトマイク」にて、1983年に「左名 」した「NATE」をオープン 。 1982年には「IAL CONE MOENTER AFNEKENLLEND」が収録された。また、シニアの「IALN」たらしを「エクアドレス」"
-    },
-    {
-     "start": "この法律において",
-     "text": "この法律において、利用者も含め、市場の安定を上げる、そうしてきた人間が、総合的な、家計が強いと思っております。」 AA「今、小渕内閣総理大臣 今、先ほど申し上げましたように、今、一番目には、実質的には、まさに人間等も含めた考え方ですけれども、新規の人材が、安定的な人材を�"
-    }
-   ],
-   "loopPct": 1.56,
-   "movedBody": false
-  },
-  {
    "at": "2026-09-28T04:54:31Z",
    "val": 3.141,
    "prev": 3.1442,
@@ -12599,6 +12536,69 @@
    ],
    "loopPct": 4.44,
    "movedBody": false
+  },
+  {
+   "at": "2026-10-08T19:26:25Z",
+   "val": 2.9359,
+   "prev": 2.9349,
+   "valTag": "fixed-holdout-v1",
+   "stoppedAt": 212,
+   "stuck": 0,
+   "evalTag": "fixed-ix-v1",
+   "secPerStep": 18.9564,
+   "steps": 300,
+   "bpc": 3.4749,
+   "charsPerTok": 1.2189,
+   "score": 2.1684,
+   "scoreW": 2.0,
+   "scoreMode": "talk",
+   "finishMix": 0.5,
+   "lineage": "L1",
+   "layers": 16,
+   "params": 117914880,
+   "chars": 1045308899,
+   "tokens": 857567631,
+   "grew": 0,
+   "rolledBack": false,
+   "ownVal": null,
+   "ownScore": null,
+   "d": 768,
+   "loops": 1,
+   "spread": 3.1899,
+   "bytes": 1415115957,
+   "heads": 6,
+   "ctx": 512,
+   "vocab": 6000,
+   "kind": "bpe",
+   "arch": "tpp-loop",
+   "wantWider": false,
+   "layerCap": 16,
+   "mixChanged": false,
+   "bySrc": {
+    "laws": 4.2178,
+    "wiki": 3.1017,
+    "aozora": 3.4491,
+    "hanrei": 3.5327,
+    "kokkai": 2.6963,
+    "web": 2.9701,
+    "talk": 2.1684
+   },
+   "wrote": [
+    {
+     "start": "わたしは",
+     "text": "わたしは帝国の敵対的基調を計画していますが、それはあなたの行動は、本当に実現すればいいと思いますよ。ここ数年一千万件だと、こういうふうに思います。そして、私は、この問題は、国民を守ると、一体何だってしないということを申し上げているのかな、これはまだ大変なことなのかな"
+    },
+    {
+     "start": "第一条",
+     "text": "第一条７条（譲吸弁債等が定めた値） 2020年1月18日、ツイス・バロン大使館が就任した際に、京都大使館は、「いずれも大使館から河内にあった。」と報告された。 2023年11月1日、京都府下茂戴平海兵隊長の近藤稔彦と鬼丸を"
+    },
+    {
+     "start": "この法律において",
+     "text": "この法律においての高温高原、高麗には約3000 mでは3つあった 。 2000年代には、1番の高熱などの豪華な低気圧に入り、本体や低温で大幅に増大した高熱では多くの海底が遅れた。 2007年 には、豆の44%の豪華高級時計を10万台"
+    }
+   ],
+   "loopPct": 8.23,
+   "movedBody": false
   }
  ],
  "bestVal": 2.9325,
@@ -12649,5 +12649,5 @@
  ],
  "wantWider": false,
  "nextD": 768,
- "bad": 1
+ "bad": 0
 }
