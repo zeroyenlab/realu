@@ -1,69 +1,6 @@
 {
  "runs": [
   {
-   "at": "2026-09-27T17:31:34Z",
-   "val": 3.1501,
-   "prev": 3.151,
-   "valTag": "fixed-holdout-v1",
-   "stoppedAt": 156,
-   "stuck": 0,
-   "evalTag": "fixed-ix-v1",
-   "secPerStep": 26.854,
-   "steps": 300,
-   "bpc": 3.7284,
-   "charsPerTok": 1.2189,
-   "score": 2.2671,
-   "scoreW": 2.0,
-   "scoreMode": "talk",
-   "finishMix": 0.5,
-   "lineage": "L1",
-   "layers": 16,
-   "params": 117914880,
-   "chars": 1045308899,
-   "tokens": 857567631,
-   "grew": 0,
-   "rolledBack": false,
-   "ownVal": null,
-   "ownScore": null,
-   "d": 768,
-   "loops": 1,
-   "spread": 3.2277,
-   "bytes": 1415115957,
-   "heads": 6,
-   "ctx": 512,
-   "vocab": 6000,
-   "kind": "bpe",
-   "arch": "tpp-loop",
-   "wantWider": false,
-   "layerCap": 16,
-   "mixChanged": false,
-   "bySrc": {
-    "laws": 4.659,
-    "wiki": 3.3258,
-    "aozora": 3.6224,
-    "hanrei": 3.7371,
-    "kokkai": 2.8724,
-    "web": 3.1487,
-    "talk": 2.2671
-   },
-   "wrote": [
-    {
-     "start": "わたしは",
-     "text": "わたしは消滅する。 また、 総統 で サバ の活動を台頭し、 椅子 を指す。 王妃は、正理の好ましい マクシーバー に、ベクトルは王妃を妹に持ち込んだ。 リクルート は、彼に ガブリア 力を変え、思想は トゥルン に"
-    },
-    {
-     "start": "第一条",
-     "text": "第一条社債旨 請求者に対し、又は請求をすることをやむを得ない旨中の(2)において同じ。）及び治験を行わない。 （昭和６７年５月１９日） (4) 控訴人が、訴えを認めた(6)（過失により原告は、平成１３年１１月２８日付けで，議役 事項及び報告書を総��とし、同月１３日付けじて同月２９日午後１１時３０分ころ 項に規定する"
-    },
-    {
-     "start": "この法律において",
-     "text": "この法律において、鍛産んでいた銘柄を渡した。 鹿児島 - 鹿児島県 - 中華民国は 鳥取県 鳥取市 と 中仁石 で鹿島を置いていた。 の神戸 - 黄色 の功績は現在も神戸市および地上4階になっている。 鳥取県 鳥取"
-    }
-   ],
-   "loopPct": 1.89,
-   "movedBody": false
-  },
-  {
    "at": "2026-09-27T18:48:56Z",
    "val": 3.1494,
    "prev": 3.1501,
@@ -12599,9 +12536,72 @@
    ],
    "loopPct": 3.17,
    "movedBody": false
+  },
+  {
+   "at": "2026-10-08T09:11:28Z",
+   "val": 2.9371,
+   "prev": 2.9383,
+   "valTag": "fixed-holdout-v1",
+   "stoppedAt": 177,
+   "stuck": 0,
+   "evalTag": "fixed-ix-v1",
+   "secPerStep": 23.1983,
+   "steps": 300,
+   "bpc": 3.4763,
+   "charsPerTok": 1.2189,
+   "score": 2.1698,
+   "scoreW": 2.0,
+   "scoreMode": "talk",
+   "finishMix": 0.5,
+   "lineage": "L1",
+   "layers": 16,
+   "params": 117914880,
+   "chars": 1045308899,
+   "tokens": 857567631,
+   "grew": 0,
+   "rolledBack": false,
+   "ownVal": null,
+   "ownScore": null,
+   "d": 768,
+   "loops": 1,
+   "spread": 2.871,
+   "bytes": 1415115957,
+   "heads": 6,
+   "ctx": 512,
+   "vocab": 6000,
+   "kind": "bpe",
+   "arch": "tpp-loop",
+   "wantWider": false,
+   "layerCap": 16,
+   "mixChanged": false,
+   "bySrc": {
+    "laws": 4.2231,
+    "wiki": 3.1002,
+    "aozora": 3.4486,
+    "hanrei": 3.5347,
+    "kokkai": 2.6984,
+    "web": 2.9707,
+    "talk": 2.1698
+   },
+   "wrote": [
+    {
+     "start": "わたしは",
+     "text": "わたしは、今回の景気は今年一月から休みをやる、そういう状況になりました。ただ、今年のＮＰＯのＮＧＯについても、今後二〇年の経済見通しは申し上げることでございます。 次に、二〇一〇年の経済ビジョンでございますけれども、政府は、この方式により、"
+    },
+    {
+     "start": "第一条",
+     "text": "第一条4000号） <記事 カゼ> カゼ（ , ）は、日本語の Jypee の「カゼ」と呼ばれる。 カゼ・チュンゼ・チュン・ム（ , 1869-1883） のこと。 カゼ（血）の語尾がカァ、カゴ、カベのことを指す。カ"
+    },
+    {
+     "start": "この法律において",
+     "text": "この法律において，「１３０」２１０ Ｋの悲劇が発信されており，４０年間の２６０ ３年後から，３５０年間の雲が降りて，雲が降っても，自己が硝子を番 女にして起こる。しかし，そのころ，殷が殺害され，同年４月期の時点では，彼の手"
+    }
+   ],
+   "loopPct": 7.72,
+   "movedBody": false
   }
  ],
- "bestVal": 2.9383,
+ "bestVal": 2.9371,
  "layers": 16,
  "params": 117914880,
  "born": "2026-09-08T15:11:54Z",
@@ -12649,5 +12649,5 @@
  ],
  "wantWider": false,
  "nextD": 768,
- "bad": 0
+ "bad": 1
 }
