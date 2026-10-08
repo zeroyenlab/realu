@@ -1,69 +1,6 @@
 {
  "runs": [
   {
-   "at": "2026-09-27T18:48:56Z",
-   "val": 3.1494,
-   "prev": 3.1501,
-   "valTag": "fixed-holdout-v1",
-   "stoppedAt": 172,
-   "stuck": 0,
-   "evalTag": "fixed-ix-v1",
-   "secPerStep": 24.0114,
-   "steps": 300,
-   "bpc": 3.7276,
-   "charsPerTok": 1.2189,
-   "score": 2.2644,
-   "scoreW": 2.0,
-   "scoreMode": "talk",
-   "finishMix": 0.5,
-   "lineage": "L1",
-   "layers": 16,
-   "params": 117914880,
-   "chars": 1045308899,
-   "tokens": 857567631,
-   "grew": 0,
-   "rolledBack": false,
-   "ownVal": null,
-   "ownScore": null,
-   "d": 768,
-   "loops": 1,
-   "spread": 3.1874,
-   "bytes": 1415115957,
-   "heads": 6,
-   "ctx": 512,
-   "vocab": 6000,
-   "kind": "bpe",
-   "arch": "tpp-loop",
-   "wantWider": false,
-   "layerCap": 16,
-   "mixChanged": false,
-   "bySrc": {
-    "laws": 4.6579,
-    "wiki": 3.3243,
-    "aozora": 3.6282,
-    "hanrei": 3.7344,
-    "kokkai": 2.8708,
-    "web": 3.1473,
-    "talk": 2.2644
-   },
-   "wrote": [
-    {
-     "start": "わたしは",
-     "text": "わたしはどうです？」 EO「ミスドは部屋に入れられてしまうんですよ。」 CQ「いいですね、チェックしてみようと思います。」 EO「はい、オススメですか？」 CQ「大事です。あとは車を仕掛けてました。」 EO「あー結構」 CQ「私が社長の事がある"
-    },
-    {
-     "start": "第一条",
-     "text": "第一条の規定 協議会 <会議 行政正国会話 フォン・ベルリンの発言 第一節 解散 平成二年七月八日 第一回、戦後二十四回の日本協会 史上初めての旅行を期間 ２０回にわたり、各国の事務総局から、６月七日、上報を問わず、１回目の集中審議 に反対する事実について、その息子又は政治上運営するものであり�"
-    },
-    {
-     "start": "この法律において",
-     "text": "この法律において、輸出税、いわゆる企業等離島議定書の締結について承認を求めるの件、政府関係機関の臨時措置に関する法律案、 第三に、閣議決定のあります法案、 第一、緊急停止の書、財政再建について、ただいま議題となりました法律案につきまして、第二条、第七十二、第五に、企業献金及び情報公開法の一部を改正する法律案について、ただいま議題となりました物を表"
-    }
-   ],
-   "loopPct": 1.64,
-   "movedBody": false
-  },
-  {
    "at": "2026-09-27T20:05:09Z",
    "val": 3.1486,
    "prev": 3.1494,
@@ -12599,9 +12536,72 @@
    ],
    "loopPct": 7.72,
    "movedBody": false
+  },
+  {
+   "at": "2026-10-08T10:30:16Z",
+   "val": 2.9362,
+   "prev": 2.9371,
+   "valTag": "fixed-holdout-v1",
+   "stoppedAt": 159,
+   "stuck": 0,
+   "evalTag": "fixed-ix-v1",
+   "secPerStep": 26.2119,
+   "steps": 300,
+   "bpc": 3.4752,
+   "charsPerTok": 1.2189,
+   "score": 2.1651,
+   "scoreW": 2.0,
+   "scoreMode": "talk",
+   "finishMix": 0.5,
+   "lineage": "L1",
+   "layers": 16,
+   "params": 117914880,
+   "chars": 1045308899,
+   "tokens": 857567631,
+   "grew": 0,
+   "rolledBack": false,
+   "ownVal": null,
+   "ownScore": null,
+   "d": 768,
+   "loops": 1,
+   "spread": 3.5717,
+   "bytes": 1415115957,
+   "heads": 6,
+   "ctx": 512,
+   "vocab": 6000,
+   "kind": "bpe",
+   "arch": "tpp-loop",
+   "wantWider": false,
+   "layerCap": 16,
+   "mixChanged": false,
+   "bySrc": {
+    "laws": 4.2206,
+    "wiki": 3.0993,
+    "aozora": 3.4462,
+    "hanrei": 3.5349,
+    "kokkai": 2.6994,
+    "web": 2.9704,
+    "talk": 2.1651
+   },
+   "wrote": [
+    {
+     "start": "わたしは",
+     "text": "わたしはもう少し行きますよね！」 DS「甘いものが好きです！」 CH「あとは、甘くなってきました。甘いものが好きですか？」 DS「小田に行ってみるといいですねえ。」 CH「そうですね。私も甘いものが好きです。」 DS「そう"
+    },
+    {
+     "start": "第一条",
+     "text": "第一条ロボットの妻。 ロボット文書 が公開されたロボット。 ダンス [ 注釈 19 ] フランチャイズ・ダンス [ 注釈 39 ] ワン [ 注釈 10 ] 。 ハーヴェイ・ラマー 声 - 原木竜 [ 注釈 49 ] 1969"
+    },
+    {
+     "start": "この法律において",
+     "text": "この法律において変化」は、ラテンアメリカのルーマニアやヨーロッパのアメリカに導入された。 1859年 - ロンドンの フォークシュタット でモンゴル国が復活し、チャールズ2世が内高度でサッカーとして復帰。 1857年 - ロンドンでモンゴル国�"
+    }
+   ],
+   "loopPct": 0.9,
+   "movedBody": false
   }
  ],
- "bestVal": 2.9371,
+ "bestVal": 2.9362,
  "layers": 16,
  "params": 117914880,
  "born": "2026-09-08T15:11:54Z",
@@ -12649,5 +12649,5 @@
  ],
  "wantWider": false,
  "nextD": 768,
- "bad": 1
+ "bad": 2
 }
