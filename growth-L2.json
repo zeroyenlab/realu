@@ -1,69 +1,6 @@
 {
  "runs": [
   {
-   "at": "2026-09-29T01:13:48Z",
-   "val": 2.7364,
-   "prev": 2.7363,
-   "valTag": "fixed-holdout-v1",
-   "stoppedAt": 361,
-   "stuck": 0,
-   "evalTag": "fixed-ix-v1",
-   "secPerStep": 10.6424,
-   "steps": 611,
-   "bpc": 3.2387,
-   "charsPerTok": 1.2189,
-   "score": 2.0729,
-   "scoreW": 2.0,
-   "scoreMode": "talk",
-   "finishMix": 0.85,
-   "lineage": "L2",
-   "layers": 13,
-   "params": 44216832,
-   "chars": 1045308899,
-   "tokens": 857567631,
-   "grew": 0,
-   "rolledBack": false,
-   "ownVal": null,
-   "ownScore": null,
-   "d": 512,
-   "loops": 1,
-   "spread": 3.047,
-   "bytes": 530714761,
-   "heads": 8,
-   "ctx": 512,
-   "vocab": 6000,
-   "kind": "bpe",
-   "arch": "tpp-loop",
-   "wantWider": false,
-   "layerCap": 16,
-   "mixChanged": false,
-   "bySrc": {
-    "laws": 3.6916,
-    "wiki": 2.912,
-    "aozora": 3.2223,
-    "hanrei": 3.4274,
-    "kokkai": 2.5409,
-    "web": 2.8236,
-    "talk": 2.0729
-   },
-   "wrote": [
-    {
-     "start": "わたしは",
-     "text": "わたしはどんなものでしたか？」 CS「まずは、焼けるだけですね」 BB「焼けるだけですか？」 CS「だめですね。すごく必ず食べてます」 BB「焼いてるだけで、なるべくは吸いますしね。」 CS「最近は何を食べるかも気になります。」"
-    },
-    {
-     "start": "第一条",
-     "text": "第一条ことができるものとされています。」 AB「政府としては、中央省庁等改革におきましても、政府としては、また、地方行政の主導による行政の総合化、地方分権の導入、行政改革の進展等々、地方分権・地方分権を以てまいりつつ、地方分権を推進し、地方分権を推進する考えであります。 地方公共団体職員制度が充実した見地"
-    },
-    {
-     "start": "この法律において",
-     "text": "この法律においてれた金及びその金若しくは他の金若しくは他の金若しくは他の金若しくは他の金若しくは他の金若しくは他の金若しくは他の金若しくは他の金若しくは他の金若しくは他の金若しくは他の金若しくは他の金若しくは他の金若しくはその他の金若しくは他の金若しくは他の金若しくは他の金若しくは他の金若しくは他の金若しくは他の金若しくは他の金若しくは他の金若しくは他の金若しくは他の金若しくは他の金若しくは他の金若しくは他の金若しくは他の金若しくは他の"
-    }
-   ],
-   "loopPct": 33.47,
-   "movedBody": false
-  },
-  {
    "at": "2026-09-29T02:30:33Z",
    "val": 2.7364,
    "prev": 2.7364,
@@ -12599,6 +12536,69 @@
    ],
    "loopPct": 8.57,
    "movedBody": false
+  },
+  {
+   "at": "2026-10-09T18:36:28Z",
+   "val": 2.6593,
+   "prev": 2.6613,
+   "valTag": "fixed-holdout-v1",
+   "stoppedAt": 311,
+   "stuck": 0,
+   "evalTag": "fixed-ix-v1",
+   "secPerStep": 12.4978,
+   "steps": 569,
+   "bpc": 3.1475,
+   "charsPerTok": 1.2189,
+   "score": 2.0454,
+   "scoreW": 2.0,
+   "scoreMode": "talk",
+   "finishMix": 0.85,
+   "lineage": "L2",
+   "layers": 14,
+   "params": 47379968,
+   "chars": 1045308899,
+   "tokens": 857567631,
+   "grew": 0,
+   "rolledBack": false,
+   "ownVal": null,
+   "ownScore": null,
+   "d": 512,
+   "loops": 1,
+   "spread": 2.6805,
+   "bytes": 568680621,
+   "heads": 8,
+   "ctx": 512,
+   "vocab": 6000,
+   "kind": "bpe",
+   "arch": "tpp-loop",
+   "wantWider": false,
+   "layerCap": 16,
+   "mixChanged": false,
+   "bySrc": {
+    "laws": 3.5464,
+    "wiki": 2.8293,
+    "aozora": 3.1429,
+    "hanrei": 3.3849,
+    "kokkai": 2.4781,
+    "web": 2.748,
+    "talk": 2.0454
+   },
+   "wrote": [
+    {
+     "start": "わたしは",
+     "text": "わたしは母をもかねてちょくちょく笑った。けれどもそれ以てここに、それからそれを見ると、彼は例の鍋に黒い素材を使うと、彼は手をかけた。けれども、胸をかけた上に、会おうと思ったので、どうしたのかと、魚はいくらかの黒く鳴った。そ"
+    },
+    {
+     "start": "第一条",
+     "text": "第一条第一号ハイマガジン」を参照） 。 JR Suzukawa Chu.jpg|ドライブルー（2009年7月） JR Suzukawa Chu.jpg|駅名標（2009年8月） JR Suzukawa chu.jpg|駅名標（"
+    },
+    {
+     "start": "この法律において",
+     "text": "この法律においてされないと思います。 そこで、今回の法案で、憲法二十四条に明記されております本法案は、憲法違反の要件を受け、その次に憲法二十五条に明記されています。それで、憲法二十六条は、憲法３条の変遷について規定し、憲法違反に含まれる憲法上の制約は言語道断で"
+    }
+   ],
+   "loopPct": 5.37,
+   "movedBody": false
   }
  ],
  "bestVal": 2.6565,
@@ -12649,5 +12649,5 @@
  ],
  "wantWider": false,
  "nextD": 512,
- "bad": 0
+ "bad": 3
 }
