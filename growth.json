@@ -1,69 +1,6 @@
 {
  "runs": [
   {
-   "at": "2026-09-28T17:39:04Z",
-   "val": 3.1276,
-   "prev": 3.1335,
-   "valTag": "fixed-holdout-v1",
-   "stoppedAt": 159,
-   "stuck": 0,
-   "evalTag": "fixed-ix-v1",
-   "secPerStep": 26.234,
-   "steps": 300,
-   "bpc": 3.7018,
-   "charsPerTok": 1.2189,
-   "score": 2.2553,
-   "scoreW": 2.0,
-   "scoreMode": "talk",
-   "finishMix": 0.5,
-   "lineage": "L1",
-   "layers": 16,
-   "params": 117914880,
-   "chars": 1045308899,
-   "tokens": 857567631,
-   "grew": 0,
-   "rolledBack": false,
-   "ownVal": null,
-   "ownScore": null,
-   "d": 768,
-   "loops": 1,
-   "spread": 3.5466,
-   "bytes": 1415115957,
-   "heads": 6,
-   "ctx": 512,
-   "vocab": 6000,
-   "kind": "bpe",
-   "arch": "tpp-loop",
-   "wantWider": false,
-   "layerCap": 16,
-   "mixChanged": false,
-   "bySrc": {
-    "laws": 4.6154,
-    "wiki": 3.2972,
-    "aozora": 3.6077,
-    "hanrei": 3.7099,
-    "kokkai": 2.8587,
-    "web": 3.1287,
-    "talk": 2.2553
-   },
-   "wrote": [
-    {
-     "start": "わたしは",
-     "text": "わたしは、これは、これだけを見ていたのであります。」 AA「（拍手） また、早期現に、政府といたしましては、政府方にとって、やはり政府側から説明するまで、このような提案になっておるのであります。ところが、政府は、本年十二月に、これが真剣に試行いたしますと、本来の背景"
-    },
-    {
-     "start": "第一条",
-     "text": "第一条 次号 <法令 国立 六> 平成六年 緊急利子 五プス 五 当該八、九九ないし八 医、健康 件 の五 六件 六件 二四件 二件 二件 七件、給付 四件 三件 二件 一件につき 一件二件 二件 二件、札 二件二件 四件 三件 二件 選挙運動 二件"
-    },
-    {
-     "start": "この法律において",
-     "text": "この法律においてやむを得ない場合にあっては、当該財産の委託に係る財産の係数及び財産区内に支給する。） 第一項において準用する８分の十三 帆津寺院主選挙（以下「古今」という。）が、その管轄区域に、唐津勢弓派となる。 漢津時代の古。 双子の始まり。 中世貴族院議員（元・亦堂南洲区夫人）"
-    }
-   ],
-   "loopPct": 13.36,
-   "movedBody": false
-  },
-  {
    "at": "2026-09-28T18:53:01Z",
    "val": 3.1286,
    "prev": 3.1276,
@@ -12599,9 +12536,72 @@
    ],
    "loopPct": 12.9,
    "movedBody": false
+  },
+  {
+   "at": "2026-10-09T09:33:26Z",
+   "val": 2.9242,
+   "prev": 2.9259,
+   "valTag": "fixed-holdout-v1",
+   "stoppedAt": 177,
+   "stuck": 0,
+   "evalTag": "fixed-ix-v1",
+   "secPerStep": 23.2439,
+   "steps": 300,
+   "bpc": 3.4611,
+   "charsPerTok": 1.2189,
+   "score": 2.1588,
+   "scoreW": 2.0,
+   "scoreMode": "talk",
+   "finishMix": 0.5,
+   "lineage": "L1",
+   "layers": 16,
+   "params": 117914880,
+   "chars": 1045308899,
+   "tokens": 857567631,
+   "grew": 0,
+   "rolledBack": false,
+   "ownVal": null,
+   "ownScore": null,
+   "d": 768,
+   "loops": 1,
+   "spread": 2.9284,
+   "bytes": 1415115957,
+   "heads": 6,
+   "ctx": 512,
+   "vocab": 6000,
+   "kind": "bpe",
+   "arch": "tpp-loop",
+   "wantWider": false,
+   "layerCap": 16,
+   "mixChanged": false,
+   "bySrc": {
+    "laws": 4.1999,
+    "wiki": 3.0872,
+    "aozora": 3.4339,
+    "hanrei": 3.5247,
+    "kokkai": 2.693,
+    "web": 2.9568,
+    "talk": 2.1588
+   },
+   "wrote": [
+    {
+     "start": "わたしは",
+     "text": "わたしはピーは無いので、たまにいつまでも、金魚の元に向かいます。」 EB「あとになりますねー！そういうことは、有名人もいるのですね」 FA「いえいえ。とてもいいですね。」 EB「もうメッセージですね！めっちゃそれですねー」 FA「あ"
+    },
+    {
+     "start": "第一条",
+     "text": "第一条は、甚だ適性の視覚と理性を文理的に読み取定めることを意味して、男性、さらには女性の結婚を強調し、そのときの男女性はいなさることを推認申し上げ、感情的な精神を持ってもらった、女性は女性である、しきりにその男性は、女性が自分を嘆願するよりも、女性が弱意されている"
+    },
+    {
+     "start": "この法律において",
+     "text": "この法律において「交渉」を結び、交渉が進んだ [ 208 ] 。 1982年 （昭和57年） 2月 - 東京都民会館（東京都五薬会館）が開館する [ 209 ] 。 同月 - 株式会社東京都中央裁判所 （ 東京都中央区 ）が 日本科学技術協会 に復興プロ"
+    }
+   ],
+   "loopPct": 2.59,
+   "movedBody": false
   }
  ],
- "bestVal": 2.9259,
+ "bestVal": 2.9242,
  "layers": 16,
  "params": 117914880,
  "born": "2026-09-08T15:11:54Z",
@@ -12649,5 +12649,5 @@
  ],
  "wantWider": false,
  "nextD": 768,
- "bad": 5
+ "bad": 6
 }
