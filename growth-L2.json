@@ -1,69 +1,6 @@
 {
  "runs": [
   {
-   "at": "2026-09-28T18:52:51Z",
-   "val": 2.7415,
-   "prev": 2.7455,
-   "valTag": "fixed-holdout-v1",
-   "stoppedAt": 360,
-   "stuck": 0,
-   "evalTag": "fixed-ix-v1",
-   "secPerStep": 10.692,
-   "steps": 613,
-   "bpc": 3.2447,
-   "charsPerTok": 1.2189,
-   "score": 2.0783,
-   "scoreW": 2.0,
-   "scoreMode": "talk",
-   "finishMix": 0.85,
-   "lineage": "L2",
-   "layers": 13,
-   "params": 44216832,
-   "chars": 1045308899,
-   "tokens": 857567631,
-   "grew": 0,
-   "rolledBack": false,
-   "ownVal": null,
-   "ownScore": null,
-   "d": 512,
-   "loops": 1,
-   "spread": 3.028,
-   "bytes": 530714761,
-   "heads": 8,
-   "ctx": 512,
-   "vocab": 6000,
-   "kind": "bpe",
-   "arch": "tpp-loop",
-   "wantWider": false,
-   "layerCap": 16,
-   "mixChanged": false,
-   "bySrc": {
-    "laws": 3.7043,
-    "wiki": 2.9177,
-    "aozora": 3.2282,
-    "hanrei": 3.4352,
-    "kokkai": 2.5441,
-    "web": 2.8307,
-    "talk": 2.0783
-   },
-   "wrote": [
-    {
-     "start": "わたしは",
-     "text": "わたしはカレーうどんを作りました。」 DQ「カレーうどん、カレーうどん、スパイス、そうごまだ、それもおいしそうです。」 CJ「こちらもカレーうどんでした。スパイスカレーうどん、スパイスって名前のカレーうどんが美味しかったです。」 DQ「あれ、スパイ"
-    },
-    {
-     "start": "第一条",
-     "text": "第一条に編合した曲を収録した曲 ( pomeseer ) 。 1975年、『Studio Nation ムー』のブームが起き、『Toose Toosear the the sour stite at for 』でも、19"
-    },
-    {
-     "start": "この法律において",
-     "text": "この法律において当該行政組織」という。）が、当該行政組織が、当該行政組織が、当該行政組織に分かりやすく、又はこれらの機能を果たしたことがないようにするため、当該行政組織に分かれていた者を、当該行政組織に分かれて、当該行政組織に分かれて、当該行政組織に再編され、をしなければならない。 （行政組織の指導及び産業組織） 第六十二条 行政組織は、当該行政組織の決定、意思決定、意思"
-    }
-   ],
-   "loopPct": 25.91,
-   "movedBody": false
-  },
-  {
    "at": "2026-09-28T20:05:21Z",
    "val": 2.74,
    "prev": 2.7415,
@@ -12598,6 +12535,69 @@
     }
    ],
    "loopPct": 30.22,
+   "movedBody": false
+  },
+  {
+   "at": "2026-10-09T11:47:44Z",
+   "val": 2.6578,
+   "prev": 2.6565,
+   "valTag": "fixed-holdout-v1",
+   "stoppedAt": 0,
+   "stuck": 0,
+   "evalTag": "fixed-ix-v1",
+   "secPerStep": 4.9334,
+   "steps": 567,
+   "bpc": 3.1457,
+   "charsPerTok": 1.2189,
+   "score": 2.0451,
+   "scoreW": 2.0,
+   "scoreMode": "talk",
+   "finishMix": 0.85,
+   "lineage": "L2",
+   "layers": 14,
+   "params": 47379968,
+   "chars": 1045308899,
+   "tokens": 857567631,
+   "grew": 0,
+   "rolledBack": false,
+   "ownVal": null,
+   "ownScore": null,
+   "d": 512,
+   "loops": 1,
+   "spread": 2.8474,
+   "bytes": 568680621,
+   "heads": 8,
+   "ctx": 512,
+   "vocab": 6000,
+   "kind": "bpe",
+   "arch": "tpp-loop",
+   "wantWider": false,
+   "layerCap": 16,
+   "mixChanged": false,
+   "bySrc": {
+    "laws": 3.541,
+    "wiki": 2.8278,
+    "aozora": 3.1405,
+    "hanrei": 3.375,
+    "kokkai": 2.4773,
+    "web": 2.7467,
+    "talk": 2.0451
+   },
+   "wrote": [
+    {
+     "start": "わたしは",
+     "text": "わたしは、ほぼここでというのかな、参考になったのかなという感じはあります。」 DG「そうなんですね。レコードで出てくるとちょっと気になるんですがとても調べてみます！それってやっぱりレコードで出てくると思いますよ！」 DG「そうですよね！"
+    },
+    {
+     "start": "第一条",
+     "text": "第一条（第三号及びの区分に応じ、それぞれそれぞれイルューブルースタンド） 三月間を約四十四キロメートル速度で走行する車両 ただし、車両局の車両は3000系で、4000系と同時に走行する車両は2800系で、4000系では走行できないPROSモデル（車輌の窓上）が使用されている。2012年以降、検査キットとして、30"
+    },
+    {
+     "start": "この法律において",
+     "text": "この法律において「国務大臣の賞」を創設し、及びその成果を七月十日間請け負っていたが、その後、去る三月十四日、内閣総理大臣より、小泉総理大臣に会期を延長した 。 国の基本方針に私は、国会議員の選挙によって当選した参議院議員では、参議院議員まで国会議員を務め、また、国会議員から構成される国会議員 になろうといたしておらず、総理大臣の選挙"
+    }
+   ],
+   "loopPct": 6.58,
    "movedBody": false
   }
  ],
