@@ -1,69 +1,6 @@
 {
  "runs": [
   {
-   "at": "2026-09-29T02:23:36Z",
-   "val": 3.121,
-   "prev": 3.1199,
-   "valTag": "fixed-holdout-v1",
-   "stoppedAt": 0,
-   "stuck": 0,
-   "evalTag": "fixed-ix-v1",
-   "secPerStep": 11.3055,
-   "steps": 300,
-   "bpc": 3.6939,
-   "charsPerTok": 1.2189,
-   "score": 2.2572,
-   "scoreW": 2.0,
-   "scoreMode": "talk",
-   "finishMix": 0.5,
-   "lineage": "L1",
-   "layers": 16,
-   "params": 117914880,
-   "chars": 1045308899,
-   "tokens": 857567631,
-   "grew": 0,
-   "rolledBack": false,
-   "ownVal": null,
-   "ownScore": null,
-   "d": 768,
-   "loops": 1,
-   "spread": 3.3808,
-   "bytes": 1415115957,
-   "heads": 6,
-   "ctx": 512,
-   "vocab": 6000,
-   "kind": "bpe",
-   "arch": "tpp-loop",
-   "wantWider": false,
-   "layerCap": 16,
-   "mixChanged": false,
-   "bySrc": {
-    "laws": 4.5991,
-    "wiki": 3.2876,
-    "aozora": 3.603,
-    "hanrei": 3.701,
-    "kokkai": 2.8509,
-    "web": 3.1214,
-    "talk": 2.2572
-   },
-   "wrote": [
-    {
-     "start": "わたしは",
-     "text": "わたしは、本協定の国会、反対の並みを、公共交通機関を補うために、質疑をいたします。さらに、ここに本案を提案いたします。 本案は、翌二十二日のルールにおいて、政府といたしまして、本案に対し、本案を二十一日採決いたしましたところ、全会一致をもって原案のとおり可決すべきものと決しました。 次に、"
-    },
-    {
-     "start": "第一条",
-     "text": "第一条 校内科において、当該校舎内の利用者は、当該分野、学園付き校舎（当該自己最大の都市廃止前権利を守っていた。 この場合、同時期、環状道路を設けて、硫酸病原体に大きく貫かれていたが、ここまでも失われていた。 <記事 北海道> 北海道（ちょうどようえき）は、北海道（きょう"
-    },
-    {
-     "start": "この法律において",
-     "text": "この法律において「用品」）。 1800年（明治22年）、八幡宮「伊那」で「坂」「清」「玄」「朝」「玉」「大本」「御慶」「法竜」「中」「王」「王」「荒野」「桜」「王」「雅」「名」「王」「共」」"
-    }
-   ],
-   "loopPct": 7.39,
-   "movedBody": false
-  },
-  {
    "at": "2026-09-29T03:37:30Z",
    "val": 3.1204,
    "prev": 3.121,
@@ -12599,9 +12536,72 @@
    ],
    "loopPct": 12.14,
    "movedBody": false
+  },
+  {
+   "at": "2026-10-09T18:42:18Z",
+   "val": 2.9193,
+   "prev": 2.9219,
+   "valTag": "fixed-holdout-v1",
+   "stoppedAt": 153,
+   "stuck": 0,
+   "evalTag": "fixed-ix-v1",
+   "secPerStep": 27.3824,
+   "steps": 300,
+   "bpc": 3.4552,
+   "charsPerTok": 1.2189,
+   "score": 2.161,
+   "scoreW": 2.0,
+   "scoreMode": "talk",
+   "finishMix": 0.5,
+   "lineage": "L1",
+   "layers": 16,
+   "params": 117914880,
+   "chars": 1045308899,
+   "tokens": 857567631,
+   "grew": 0,
+   "rolledBack": false,
+   "ownVal": null,
+   "ownScore": null,
+   "d": 768,
+   "loops": 1,
+   "spread": 3.0011,
+   "bytes": 1415115957,
+   "heads": 6,
+   "ctx": 512,
+   "vocab": 6000,
+   "kind": "bpe",
+   "arch": "tpp-loop",
+   "wantWider": false,
+   "layerCap": 16,
+   "mixChanged": false,
+   "bySrc": {
+    "laws": 4.1881,
+    "wiki": 3.0812,
+    "aozora": 3.426,
+    "hanrei": 3.5169,
+    "kokkai": 2.6868,
+    "web": 2.9534,
+    "talk": 2.161
+   },
+   "wrote": [
+    {
+     "start": "わたしは",
+     "text": "わたしは、このようにして新たな人権侵害を断絶する必要があるのではないかという意見があったと思うのです。」 AB「そして、これは、このように、その人権を確立するという言葉が得られていますけれども、ただ、破滅的な建前をなす人権というのは、これは、当然、今度は、そのことについて、従来は、一つの人権というのは、"
+    },
+    {
+     "start": "第一条",
+     "text": "第一条途中だったのに対して、それはまた悩むのに不良な調子で、それがなぜ付く間に振り向いて行くかもしれないから、それが強調の大きな問題ではないか。 第二には、吉田総理、これが大きいわけです。これは民間の何らのケースではないか。総理、お答えください。」 AB「吉田"
+    },
+    {
+     "start": "この法律において",
+     "text": "この法律において「裁定距離」と編纂するため死亡爆撃「 Raillagenel 」と呼ばれる。 2000年9月、全日本最長の CD-ROM を務めたが、2010年10月、同年10月に『 Hallo 』を連載。 2000年代に発生した Deraton"
+    }
+   ],
+   "loopPct": 3.79,
+   "movedBody": false
   }
  ],
- "bestVal": 2.9219,
+ "bestVal": 2.9193,
  "layers": 16,
  "params": 117914880,
  "born": "2026-09-08T15:11:54Z",
