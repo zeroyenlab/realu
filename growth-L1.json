@@ -1,69 +1,6 @@
 {
  "runs": [
   {
-   "at": "2026-09-29T06:13:30Z",
-   "val": 3.1225,
-   "prev": 3.1168,
-   "valTag": "fixed-holdout-v1",
-   "stoppedAt": 201,
-   "stuck": 0,
-   "evalTag": "fixed-ix-v1",
-   "secPerStep": 20.1638,
-   "steps": 337,
-   "bpc": 3.6957,
-   "charsPerTok": 1.2189,
-   "score": 2.2576,
-   "scoreW": 2.0,
-   "scoreMode": "talk",
-   "finishMix": 0.5,
-   "lineage": "L1",
-   "layers": 16,
-   "params": 117914880,
-   "chars": 1045308899,
-   "tokens": 857567631,
-   "grew": 0,
-   "rolledBack": false,
-   "ownVal": null,
-   "ownScore": null,
-   "d": 768,
-   "loops": 1,
-   "spread": 3.4896,
-   "bytes": 1415115957,
-   "heads": 6,
-   "ctx": 512,
-   "vocab": 6000,
-   "kind": "bpe",
-   "arch": "tpp-loop",
-   "wantWider": false,
-   "layerCap": 16,
-   "mixChanged": false,
-   "bySrc": {
-    "laws": 4.6007,
-    "wiki": 3.2974,
-    "aozora": 3.6018,
-    "hanrei": 3.7125,
-    "kokkai": 2.8508,
-    "web": 3.128,
-    "talk": 2.2576
-   },
-   "wrote": [
-    {
-     "start": "わたしは",
-     "text": "わたしは、もう一人があたしになっておられるんだろう。それは、すぐに見せているのだろう。しかし、あるいは、もしかしたら、これは、いまだなるべくそれを書いてあるんだったら、ちょっと、と言って、私は、あのすぐに、ちゃんと絞って、あたしにはこう言われるよ。」 と、私は、これはもう当"
-    },
-    {
-     "start": "第一条",
-     "text": "第一条 消護申請 公表第五十一の認定の請求 当該短期取引について 特定z繊維文書の変更 当該業務に係る認定に提出した通知 又は検 化学兵器を築くことのできない要因 解製されているもの （特定院の信頼性） 第三十三条 市町村又は処分は、次に掲げる場合には、当該証拠金を支払っていることについて、それぞれの委員会が特例この限りでない。 ただし、当該報告に係る事項は、当該請求により当該請求が協議していること。 ただし、当該認識"
-    },
-    {
-     "start": "この法律において",
-     "text": "この法律において「ココレーション」と「ココモンズ」と呼ぶ。 基本的にプレイヤーが使用されている場合、コラムは有料配布される。 コロナウイルス感染症 （ 英語版 ） と呼ばれる。 プレイヤー （ 英語版 ） はコナンで、 コロナ になるとコロナが流行してしまっている"
-    }
-   ],
-   "loopPct": 1.52,
-   "movedBody": false
-  },
-  {
    "at": "2026-09-29T07:31:46Z",
    "val": 3.1153,
    "prev": 3.1225,
@@ -12599,9 +12536,72 @@
    ],
    "loopPct": 1.62,
    "movedBody": false
+  },
+  {
+   "at": "2026-10-09T22:35:25Z",
+   "val": 2.917,
+   "prev": 2.9172,
+   "valTag": "fixed-holdout-v1",
+   "stoppedAt": 158,
+   "stuck": 0,
+   "evalTag": "fixed-ix-v1",
+   "secPerStep": 26.322,
+   "steps": 300,
+   "bpc": 3.4525,
+   "charsPerTok": 1.2189,
+   "score": 2.161,
+   "scoreW": 2.0,
+   "scoreMode": "talk",
+   "finishMix": 0.5,
+   "lineage": "L1",
+   "layers": 16,
+   "params": 117914880,
+   "chars": 1045308899,
+   "tokens": 857567631,
+   "grew": 0,
+   "rolledBack": false,
+   "ownVal": null,
+   "ownScore": null,
+   "d": 768,
+   "loops": 1,
+   "spread": 3.1786,
+   "bytes": 1415115957,
+   "heads": 6,
+   "ctx": 512,
+   "vocab": 6000,
+   "kind": "bpe",
+   "arch": "tpp-loop",
+   "wantWider": false,
+   "layerCap": 16,
+   "mixChanged": false,
+   "bySrc": {
+    "laws": 4.1837,
+    "wiki": 3.0813,
+    "aozora": 3.4249,
+    "hanrei": 3.5179,
+    "kokkai": 2.683,
+    "web": 2.9514,
+    "talk": 2.161
+   },
+   "wrote": [
+    {
+     "start": "わたしは",
+     "text": "わたしは、各国の首脳会議で、この場では、あなたのようなコメントを入れました。こういうことを言われるところでは、どうしても早くやっていこうということで、私は総理のところは、私は非常に簡単な、そういうつもりはありません、あそこまでやってきたんです。それを決断で打ち出しておきたいのは、"
+    },
+    {
+     "start": "第一条",
+     "text": "第一条（orebord） 500 strobe（メタ） 300 pp.3 – 42 – 75 – 70 – 102 – 57 – 54 メタノール – 55 – 75 – 50 – 55 – 55 – 5"
+    },
+    {
+     "start": "この法律において",
+     "text": "この法律において「 」が代表的で、近年とも「 」と呼ばれることもある。 また、2001年以降に発売された「 KN-POP-F 」 [ 8 ] 、「 愛の がナノコ 」「 KN-FM 」など、主に「 かずい 」を新しく知られるようになった。 また、 愛知県"
+    }
+   ],
+   "loopPct": 9.28,
+   "movedBody": false
   }
  ],
- "bestVal": 2.9172,
+ "bestVal": 2.917,
  "layers": 16,
  "params": 117914880,
  "born": "2026-09-08T15:11:54Z",
@@ -12649,5 +12649,5 @@
  ],
  "wantWider": false,
  "nextD": 768,
- "bad": 1
+ "bad": 2
 }
