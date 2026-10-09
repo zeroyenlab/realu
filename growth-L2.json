@@ -1,69 +1,6 @@
 {
  "runs": [
   {
-   "at": "2026-09-29T06:10:30Z",
-   "val": 2.7361,
-   "prev": 2.7363,
-   "valTag": "fixed-holdout-v1",
-   "stoppedAt": 360,
-   "stuck": 0,
-   "evalTag": "fixed-ix-v1",
-   "secPerStep": 10.6989,
-   "steps": 607,
-   "bpc": 3.2384,
-   "charsPerTok": 1.2189,
-   "score": 2.0732,
-   "scoreW": 2.0,
-   "scoreMode": "talk",
-   "finishMix": 0.85,
-   "lineage": "L2",
-   "layers": 13,
-   "params": 44216832,
-   "chars": 1045308899,
-   "tokens": 857567631,
-   "grew": 0,
-   "rolledBack": false,
-   "ownVal": null,
-   "ownScore": null,
-   "d": 512,
-   "loops": 1,
-   "spread": 2.8999,
-   "bytes": 530714761,
-   "heads": 8,
-   "ctx": 512,
-   "vocab": 6000,
-   "kind": "bpe",
-   "arch": "tpp-loop",
-   "wantWider": false,
-   "layerCap": 16,
-   "mixChanged": false,
-   "bySrc": {
-    "laws": 3.6935,
-    "wiki": 2.9096,
-    "aozora": 3.2189,
-    "hanrei": 3.4263,
-    "kokkai": 2.541,
-    "web": 2.8236,
-    "talk": 2.0732
-   },
-   "wrote": [
-    {
-     "start": "わたしは",
-     "text": "わたしは、放送日を、文字どお話ししました。」 EB「そうなんですね！すごい暇つぶしになってます。」 DV「テレビでも一般放送されてますか？」 EB「テレビではなくて、テレビでもう放送なんですが、ユーチューブでは放送していないのです」 DV「ユー�"
-    },
-    {
-     "start": "第一条",
-     "text": "第一条> アウグストゥス・マリア （ 英語版 ） 、 シリア・スペア 、 サウス・アーナー"
-    },
-    {
-     "start": "この法律において",
-     "text": "この法律において千九十万人の雇用を守るために、労働組合に対する支援金の支援金の支援金の支援の要請が行われたことは、関係者の間に十分に承知をいたしております。」 AB「そこで、vivenal of the Phackに言うがごとく、労働組合の好きな人々の願いと受けとめられたのではないでしょうか。 また、労働"
-    }
-   ],
-   "loopPct": 4.3,
-   "movedBody": false
-  },
-  {
    "at": "2026-09-29T07:24:35Z",
    "val": 2.7343,
    "prev": 2.7361,
@@ -12599,9 +12536,72 @@
    ],
    "loopPct": 8.84,
    "movedBody": false
+  },
+  {
+   "at": "2026-10-09T23:45:27Z",
+   "val": 2.6547,
+   "prev": 2.6552,
+   "valTag": "fixed-holdout-v1",
+   "stoppedAt": 472,
+   "stuck": 0,
+   "evalTag": "fixed-ix-v1",
+   "secPerStep": 8.0296,
+   "steps": 557,
+   "bpc": 3.142,
+   "charsPerTok": 1.2189,
+   "score": 2.045,
+   "scoreW": 2.0,
+   "scoreMode": "talk",
+   "finishMix": 0.85,
+   "lineage": "L2",
+   "layers": 14,
+   "params": 47379968,
+   "chars": 1045308899,
+   "tokens": 857567631,
+   "grew": 0,
+   "rolledBack": false,
+   "ownVal": null,
+   "ownScore": null,
+   "d": 512,
+   "loops": 1,
+   "spread": 2.711,
+   "bytes": 568680621,
+   "heads": 8,
+   "ctx": 512,
+   "vocab": 6000,
+   "kind": "bpe",
+   "arch": "tpp-loop",
+   "wantWider": false,
+   "layerCap": 16,
+   "mixChanged": false,
+   "bySrc": {
+    "laws": 3.5385,
+    "wiki": 2.8253,
+    "aozora": 3.1361,
+    "hanrei": 3.3799,
+    "kokkai": 2.4737,
+    "web": 2.7424,
+    "talk": 2.045
+   },
+   "wrote": [
+    {
+     "start": "わたしは",
+     "text": "わたしはクリミュールさんのお店でお願いします！」 EZ「お願いします！今度アウトドアやってみます。ドライブとかは行ったことありますか？」 ED「ドライブは、ビールとバイトで行ってみたいなーって思ってます。」 EZ「いいですよね。楽しそうで"
+    },
+    {
+     "start": "第一条",
+     "text": "第一条（第六十五条において準用する場合を含む。）の規定は、第一項に規定する上場株式等（した日から一年前項に規定する厚生労働省令で定める報酬その他までの当該都道府県の示す永住暴動の範囲の盗難をするおそれがある場合において、当該測永住害に迅速に発生することにより、当該測永住永住暴動の範囲を拡大し、かつ、その残余又は毀損をしたことができない者（当該測永住暴動の範囲を拡大したにあるに限る。）は、第一項に規定するこれに準ずるものとして政令で定める"
+    },
+    {
+     "start": "この法律において",
+     "text": "この法律において、国会議員の定員は、次の二万一千議席を占めているのであります。」 AB「国会議員の定員は、その定員を大幅に増加しつつありますので、国会議員の定員を大幅に縮減することとなるのであります。 その第一、以上、国会の議決を経て制定される国会議員の定員に関するものであります。 行政事務総長を代理して、国会の議決"
+    }
+   ],
+   "loopPct": 3.01,
+   "movedBody": false
   }
  ],
- "bestVal": 2.6552,
+ "bestVal": 2.6547,
  "layers": 14,
  "params": 47379968,
  "born": "2026-09-08T15:11:54Z",
@@ -12649,5 +12649,5 @@
  ],
  "wantWider": false,
  "nextD": 512,
- "bad": 4
+ "bad": 2
 }
