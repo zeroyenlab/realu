@@ -1,69 +1,6 @@
 {
  "runs": [
   {
-   "at": "2026-09-28T20:05:21Z",
-   "val": 2.74,
-   "prev": 2.7415,
-   "valTag": "fixed-holdout-v1",
-   "stoppedAt": 363,
-   "stuck": 0,
-   "evalTag": "fixed-ix-v1",
-   "secPerStep": 10.5687,
-   "steps": 613,
-   "bpc": 3.243,
-   "charsPerTok": 1.2189,
-   "score": 2.0789,
-   "scoreW": 2.0,
-   "scoreMode": "talk",
-   "finishMix": 0.85,
-   "lineage": "L2",
-   "layers": 13,
-   "params": 44216832,
-   "chars": 1045308899,
-   "tokens": 857567631,
-   "grew": 0,
-   "rolledBack": false,
-   "ownVal": null,
-   "ownScore": null,
-   "d": 512,
-   "loops": 1,
-   "spread": 2.8871,
-   "bytes": 530714761,
-   "heads": 8,
-   "ctx": 512,
-   "vocab": 6000,
-   "kind": "bpe",
-   "arch": "tpp-loop",
-   "wantWider": false,
-   "layerCap": 16,
-   "mixChanged": false,
-   "bySrc": {
-    "laws": 3.6986,
-    "wiki": 2.9163,
-    "aozora": 3.2256,
-    "hanrei": 3.4354,
-    "kokkai": 2.5426,
-    "web": 2.8275,
-    "talk": 2.0789
-   },
-   "wrote": [
-    {
-     "start": "わたしは",
-     "text": "わたしはあまり必ず映っている気がしません。」 BA「そうなんですね」 BQ「そうですね。しかも夏休みの宿題も楽しみですよね。」 BA「お互いに10月です」 BQ「そうですね。今週末は何か予定がありますか？」 BA「今週末は"
-    },
-    {
-     "start": "第一条",
-     "text": "第一条に掲げる範善」という。） べき後の不正な行為に犯罪を仕掛ける著者のうち、その参加者に対し、号の一通りの掲載及び反月印影を送る方法 犯罪行為又は罪名又は注釈 殺人罪となつた損害を被疑者（被疑者の弁護人の責任に基づくものとして園二組組組組組組組組組組組組組組組組組組組組組組組組組組組組組組組組"
-    },
-    {
-     "start": "この法律において",
-     "text": "この法律においてずる途端に、その置かれた社会的要求の実現を期することとしております。」 AB「以上が私のお尋ねの趣旨でございます。（拍手）」 AA「議長 これより両案の採決をいたします。 まず、委員長の報告を求めます。大蔵委員長野中幸一君。」 AB「ただいま議題となりました両案"
-    }
-   ],
-   "loopPct": 8.65,
-   "movedBody": false
-  },
-  {
    "at": "2026-09-28T21:22:44Z",
    "val": 2.74,
    "prev": 2.74,
@@ -12598,6 +12535,69 @@
     }
    ],
    "loopPct": 6.58,
+   "movedBody": false
+  },
+  {
+   "at": "2026-10-09T13:17:47Z",
+   "val": 2.6577,
+   "prev": 2.6578,
+   "valTag": "fixed-holdout-v1",
+   "stoppedAt": 0,
+   "stuck": 0,
+   "evalTag": "fixed-ix-v1",
+   "secPerStep": 6.2239,
+   "steps": 566,
+   "bpc": 3.1456,
+   "charsPerTok": 1.2189,
+   "score": 2.0416,
+   "scoreW": 2.0,
+   "scoreMode": "talk",
+   "finishMix": 0.85,
+   "lineage": "L2",
+   "layers": 14,
+   "params": 47379968,
+   "chars": 1045308899,
+   "tokens": 857567631,
+   "grew": 0,
+   "rolledBack": false,
+   "ownVal": null,
+   "ownScore": null,
+   "d": 512,
+   "loops": 1,
+   "spread": 2.7966,
+   "bytes": 568680621,
+   "heads": 8,
+   "ctx": 512,
+   "vocab": 6000,
+   "kind": "bpe",
+   "arch": "tpp-loop",
+   "wantWider": false,
+   "layerCap": 16,
+   "mixChanged": false,
+   "bySrc": {
+    "laws": 3.5408,
+    "wiki": 2.827,
+    "aozora": 3.1406,
+    "hanrei": 3.3778,
+    "kokkai": 2.4771,
+    "web": 2.7473,
+    "talk": 2.0416
+   },
+   "wrote": [
+    {
+     "start": "わたしは",
+     "text": "わたしは中学や高校などで、毎日やってます。」 FO「いいですね。僕も中学に入ってからは中学の部活でした。」 FW「部活ですか！ありがとうございます。テストとかもやっていました。」 FO「テストは今は結構やってます。」"
+    },
+    {
+     "start": "第一条",
+     "text": "第一条の規定に基づき、日本電信電話株式会社を設立する。 （発起人） 終戦後、日本電信電話株式会社は、日本電信電話株式会社を設立する。 （発起人） 発起人（発起人）は、日本電信電話株式会社を設立する。 発起人は、発起人（発起人）が、発起人となり、発起人となり、発起人となり、発起人となり、発起人は、発起人"
+    },
+    {
+     "start": "この法律において",
+     "text": "この法律において「章」とは、 アルバム 及び オリコン （100億kW）の3つの アルバム （ 英語版 ） 、 アルバム 、 アルバム 及び アルバム といった4つの アルバム または アルバム （ 英語版 ） である。 これらは、特に ハードランディング や ロック 、"
+    }
+   ],
+   "loopPct": 14.53,
    "movedBody": false
   }
  ],
