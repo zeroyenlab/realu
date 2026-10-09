@@ -1,69 +1,6 @@
 {
  "runs": [
   {
-   "at": "2026-09-28T08:40:58Z",
-   "val": 3.146,
-   "prev": 3.1409,
-   "valTag": "fixed-holdout-v1",
-   "stoppedAt": 276,
-   "stuck": 0,
-   "evalTag": "fixed-ix-v1",
-   "secPerStep": 14.2094,
-   "steps": 300,
-   "bpc": 3.7235,
-   "charsPerTok": 1.2189,
-   "score": 2.2623,
-   "scoreW": 2.0,
-   "scoreMode": "talk",
-   "finishMix": 0.5,
-   "lineage": "L1",
-   "layers": 16,
-   "params": 117914880,
-   "chars": 1045308899,
-   "tokens": 857567631,
-   "grew": 0,
-   "rolledBack": false,
-   "ownVal": null,
-   "ownScore": null,
-   "d": 768,
-   "loops": 1,
-   "spread": 3.3919,
-   "bytes": 1415115957,
-   "heads": 6,
-   "ctx": 512,
-   "vocab": 6000,
-   "kind": "bpe",
-   "arch": "tpp-loop",
-   "wantWider": false,
-   "layerCap": 16,
-   "mixChanged": false,
-   "bySrc": {
-    "laws": 4.6405,
-    "wiki": 3.3147,
-    "aozora": 3.6225,
-    "hanrei": 3.7318,
-    "kokkai": 2.8712,
-    "web": 3.1444,
-    "talk": 2.2623
-   },
-   "wrote": [
-    {
-     "start": "わたしは",
-     "text": "わたしは、この問題を、あんな、もう一度しかねないかと言われても、しかし、私はそんなことはありません。何か、こんなことしかわかりませんが、私たちはよくやっているんだろうと思います。」 AB「それは、そういうことで、私の言葉をやるべきだという思いを持ちました。"
-    },
-    {
-     "start": "第一条",
-     "text": "第一条（当該それぞれ当該NEOSS、NESSOS、NESS、NES） うちNEWS「NESS NEWS」（主にアーケード状で禁止） NEWS NES（2023年11月6日 - ） NESS NESS NESS NESS ZESS PES（20"
-    },
-    {
-     "start": "この法律において",
-     "text": "この法律において、隣国の官僚主義あるいは国家を守るということにもなりますが、しかし、この問題をやはり国民は正しくウォールにしておるということは、私は生ずる国民の理由ということであると思います。 ところが、この問題は、これはもちろん大きな発言をされたということであります。」 AA「そのことは"
-    }
-   ],
-   "loopPct": 16.39,
-   "movedBody": false
-  },
-  {
    "at": "2026-09-28T09:58:13Z",
    "val": 3.1378,
    "prev": 3.146,
@@ -12599,9 +12536,72 @@
    ],
    "loopPct": 11.33,
    "movedBody": false
+  },
+  {
+   "at": "2026-10-09T00:38:33Z",
+   "val": 2.9288,
+   "prev": 2.9309,
+   "valTag": "fixed-holdout-v1",
+   "stoppedAt": 158,
+   "stuck": 0,
+   "evalTag": "fixed-ix-v1",
+   "secPerStep": 26.3003,
+   "steps": 300,
+   "bpc": 3.4665,
+   "charsPerTok": 1.2189,
+   "score": 2.1605,
+   "scoreW": 2.0,
+   "scoreMode": "talk",
+   "finishMix": 0.5,
+   "lineage": "L1",
+   "layers": 16,
+   "params": 117914880,
+   "chars": 1045308899,
+   "tokens": 857567631,
+   "grew": 0,
+   "rolledBack": false,
+   "ownVal": null,
+   "ownScore": null,
+   "d": 768,
+   "loops": 1,
+   "spread": 3.2904,
+   "bytes": 1415115957,
+   "heads": 6,
+   "ctx": 512,
+   "vocab": 6000,
+   "kind": "bpe",
+   "arch": "tpp-loop",
+   "wantWider": false,
+   "layerCap": 16,
+   "mixChanged": false,
+   "bySrc": {
+    "laws": 4.211,
+    "wiki": 3.0887,
+    "aozora": 3.4391,
+    "hanrei": 3.5328,
+    "kokkai": 2.694,
+    "web": 2.9614,
+    "talk": 2.1605
+   },
+   "wrote": [
+    {
+     "start": "わたしは",
+     "text": "わたしは、当時の、九万人と言われたことに気づいたということはありますか。どこまでも、自由から急激に激増する中で、あらゆる不安感はないのかもしれません。 不信任決議案には、日本維新の会、さらに、社会・人事懇談会は、国民が、社会党を代表して、国民負担の軽減策は十分ではあ"
+    },
+    {
+     "start": "第一条",
+     "text": "第一条「沖縄又は沖縄における沖縄における沖縄における沖縄における特定沖縄戦に起因する日本の電話番号、住民が同居する。」 AB「」と言うのは、朝鮮半島の面影が「沖縄では一人一人、そういうのはなかろうが」といって言われています。本当は、沖縄としての強いＮＩＴ、こういう所存なのでしょうか。」 AA「政府参考"
+    },
+    {
+     "start": "この法律において",
+     "text": "この法律において「丸丸丸」という。）及び名古屋市南区に、名古屋市役所及び名古屋市営バス（名古屋市営バス）から名古屋市役所前側に、名古屋市内線古市東区から名古屋市双方に名古屋市バスが発着し、名古屋市古川駅から名古屋市内"
+    }
+   ],
+   "loopPct": 11.17,
+   "movedBody": false
   }
  ],
- "bestVal": 2.9309,
+ "bestVal": 2.9288,
  "layers": 16,
  "params": 117914880,
  "born": "2026-09-08T15:11:54Z",
