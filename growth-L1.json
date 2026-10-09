@@ -1,69 +1,6 @@
 {
  "runs": [
   {
-   "at": "2026-09-28T15:09:43Z",
-   "val": 3.1297,
-   "prev": 3.1301,
-   "valTag": "fixed-holdout-v1",
-   "stoppedAt": 144,
-   "stuck": 0,
-   "evalTag": "fixed-ix-v1",
-   "secPerStep": 29.3738,
-   "steps": 300,
-   "bpc": 3.7042,
-   "charsPerTok": 1.2189,
-   "score": 2.2598,
-   "scoreW": 2.0,
-   "scoreMode": "talk",
-   "finishMix": 0.5,
-   "lineage": "L1",
-   "layers": 16,
-   "params": 117914880,
-   "chars": 1045308899,
-   "tokens": 857567631,
-   "grew": 0,
-   "rolledBack": false,
-   "ownVal": null,
-   "ownScore": null,
-   "d": 768,
-   "loops": 1,
-   "spread": 3.1355,
-   "bytes": 1415115957,
-   "heads": 6,
-   "ctx": 512,
-   "vocab": 6000,
-   "kind": "bpe",
-   "arch": "tpp-loop",
-   "wantWider": false,
-   "layerCap": 16,
-   "mixChanged": false,
-   "bySrc": {
-    "laws": 4.6181,
-    "wiki": 3.3004,
-    "aozora": 3.6094,
-    "hanrei": 3.7133,
-    "kokkai": 2.8568,
-    "web": 3.1298,
-    "talk": 2.2598
-   },
-   "wrote": [
-    {
-     "start": "わたしは",
-     "text": "わたしは、血をよく食べるのですか？」 CY「かわいいですよね。いつも海外にはうらやましいです。」 EJ「いや、きれいな海外ですからね。」 CY「はい、紅葉も暑いですよね。」 EJ「そうですね。。私も行ってみたいものです。」 CY「そ"
-    },
-    {
-     "start": "第一条",
-     "text": "第一条旨の記載もございます。」 AB「議長 御異議なしと認めます。よって、日程は追加せられました。 日程第二 全国労働者共済法の一部を改正する法律案（内閣提出）」 AA「議長 日程第二、政府案及び同報告書」 AB「ただいま議題となりました法律案につきまして、法務委員会における審査の経過並びに結果を御報告いたします。 ま"
-    },
-    {
-     "start": "この法律において",
-     "text": "この法律において「ホール等」を参照。 2013年に死去 [ 24 ] 。 2010年には「 ラーマ・ルーマニア 」を合わせた「 シャーリー・パリーシリーズ 」を放送したが、2012年に ライアン・アルファリー の『 ライター・ラヴィットーリャ』を"
-    }
-   ],
-   "loopPct": 2.35,
-   "movedBody": false
-  },
-  {
    "at": "2026-09-28T16:20:48Z",
    "val": 3.1335,
    "prev": 3.1297,
@@ -12599,6 +12536,69 @@
    ],
    "loopPct": 6.34,
    "movedBody": false
+  },
+  {
+   "at": "2026-10-09T06:50:03Z",
+   "val": 2.9312,
+   "prev": 2.9271,
+   "valTag": "fixed-holdout-v1",
+   "stoppedAt": 0,
+   "stuck": 0,
+   "evalTag": "fixed-ix-v1",
+   "secPerStep": 10.7264,
+   "steps": 300,
+   "bpc": 3.4693,
+   "charsPerTok": 1.2189,
+   "score": 2.1699,
+   "scoreW": 2.0,
+   "scoreMode": "talk",
+   "finishMix": 0.5,
+   "lineage": "L1",
+   "layers": 16,
+   "params": 117914880,
+   "chars": 1045308899,
+   "tokens": 857567631,
+   "grew": 0,
+   "rolledBack": false,
+   "ownVal": null,
+   "ownScore": null,
+   "d": 768,
+   "loops": 1,
+   "spread": 3.3278,
+   "bytes": 1415115957,
+   "heads": 6,
+   "ctx": 512,
+   "vocab": 6000,
+   "kind": "bpe",
+   "arch": "tpp-loop",
+   "wantWider": false,
+   "layerCap": 16,
+   "mixChanged": false,
+   "bySrc": {
+    "laws": 4.213,
+    "wiki": 3.0934,
+    "aozora": 3.4389,
+    "hanrei": 3.536,
+    "kokkai": 2.6967,
+    "web": 2.9647,
+    "talk": 2.1699
+   },
+   "wrote": [
+    {
+     "start": "わたしは",
+     "text": "わたしはヒトラーと言われたようで、そういうことを言ったのにすぎないですね。」 AU「あら、それは、お前はあまり行かなくて、私も今度行ってみようかと思っています。」 AJ「おかずは、何かきっかけがあって、日々がきついと思っていて、私たちはまた行きます。」 AU「日"
+    },
+    {
+     "start": "第一条",
+     "text": "第一条 [ 129 ] 。 2022年12月27日、 アラビアン・ライプツィヒ （ 英語版 ） が、 ソクラテス・ライプツィヒ （ 英語版 ） に港を向ける [ 221 ] 。 この他、 ソクラテス と ラテン語 と"
+    },
+    {
+     "start": "この法律において",
+     "text": "この法律において「つている者」という。）は、当事者の推薦者のみに、国家疾病又は以下この号において「第一次世界大戦」とは、日本が支援する国家及び国民の同盟国の組織において、世界の平和と繁栄に対応するための事態に対処するとともに、国家戦略特区に関する推進及び住民の験り込み及び得られた行動に関する協力の具体的な施策並びに秩序ある安全対策等に対する安全確保を図るため、その成果の性質及び第十一"
+    }
+   ],
+   "loopPct": 2.37,
+   "movedBody": false
   }
  ],
  "bestVal": 2.9259,
@@ -12649,5 +12649,5 @@
  ],
  "wantWider": false,
  "nextD": 768,
- "bad": 1
+ "bad": 4
 }
