@@ -1,69 +1,6 @@
 {
  "runs": [
   {
-   "at": "2026-09-29T16:17:31Z",
-   "val": 3.0981,
-   "prev": 3.101,
-   "valTag": "fixed-holdout-v1",
-   "stoppedAt": 157,
-   "stuck": 0,
-   "evalTag": "fixed-ix-v1",
-   "secPerStep": 26.5355,
-   "steps": 300,
-   "bpc": 3.6669,
-   "charsPerTok": 1.2189,
-   "score": 2.2454,
-   "scoreW": 2.0,
-   "scoreMode": "talk",
-   "finishMix": 0.5,
-   "lineage": "L1",
-   "layers": 16,
-   "params": 117914880,
-   "chars": 1045308899,
-   "tokens": 857567631,
-   "grew": 0,
-   "rolledBack": false,
-   "ownVal": null,
-   "ownScore": null,
-   "d": 768,
-   "loops": 1,
-   "spread": 3.3775,
-   "bytes": 1415115957,
-   "heads": 6,
-   "ctx": 512,
-   "vocab": 6000,
-   "kind": "bpe",
-   "arch": "tpp-loop",
-   "wantWider": false,
-   "layerCap": 16,
-   "mixChanged": false,
-   "bySrc": {
-    "laws": 4.5498,
-    "wiki": 3.2687,
-    "aozora": 3.5894,
-    "hanrei": 3.6802,
-    "kokkai": 2.8303,
-    "web": 3.1075,
-    "talk": 2.2454
-   },
-   "wrote": [
-    {
-     "start": "わたしは",
-     "text": "わたしは、クントンの奴隷となっています。」 AA「なんの言うほど仲間なのです。」 AD「いいですね！自分が大変なことになりますね。」 AA「そうなんですよ！女の子は他にもなってるみたいで、せっかくとやってみたいです。」 AD「えー！そう"
-    },
-    {
-     "start": "第一条",
-     "text": "第一条ノノノノノノノノズリノノノシノ及びノノズローノノガスノ女ノルノノグジノ州ノスロノジノ島ノノ所ノースノポシノス領ノノキノスノキノスノノ第一項ノ所ノボノン溥道スニノノの契約ノ所ニノ所ノ島ノノボニノノマンノミノスチノミノノツミノノサノア"
-    },
-    {
-     "start": "この法律において",
-     "text": "この法律においてネードダウンズ用シリーズを採用して無料のシリーズを離脱（後述）。 ただし若干シリーズは国策ではなく、 花王プロダクション （場合によっては 花王 がしたシリーズと同じく相対称デストロンズ）での利用が多く、第1回で神奈川県西部では第8"
-    }
-   ],
-   "loopPct": 17.8,
-   "movedBody": false
-  },
-  {
    "at": "2026-09-29T17:33:33Z",
    "val": 3.0947,
    "prev": 3.0981,
@@ -12599,9 +12536,72 @@
    ],
    "loopPct": 4.01,
    "movedBody": false
+  },
+  {
+   "at": "2026-10-10T08:49:30Z",
+   "val": 2.913,
+   "prev": 2.9131,
+   "valTag": "fixed-holdout-v1",
+   "stoppedAt": 158,
+   "stuck": 0,
+   "evalTag": "fixed-ix-v1",
+   "secPerStep": 26.4006,
+   "steps": 300,
+   "bpc": 3.4477,
+   "charsPerTok": 1.2189,
+   "score": 2.1634,
+   "scoreW": 2.0,
+   "scoreMode": "talk",
+   "finishMix": 0.5,
+   "lineage": "L1",
+   "layers": 16,
+   "params": 117914880,
+   "chars": 1045308899,
+   "tokens": 857567631,
+   "grew": 0,
+   "rolledBack": false,
+   "ownVal": null,
+   "ownScore": null,
+   "d": 768,
+   "loops": 1,
+   "spread": 2.9944,
+   "bytes": 1415115957,
+   "heads": 6,
+   "ctx": 512,
+   "vocab": 6000,
+   "kind": "bpe",
+   "arch": "tpp-loop",
+   "wantWider": false,
+   "layerCap": 16,
+   "mixChanged": false,
+   "bySrc": {
+    "laws": 4.1783,
+    "wiki": 3.0749,
+    "aozora": 3.4219,
+    "hanrei": 3.513,
+    "kokkai": 2.6825,
+    "web": 2.9474,
+    "talk": 2.1634
+   },
+   "wrote": [
+    {
+     "start": "わたしは",
+     "text": "わたしは、これはいつまでも頭を悲しがるかと思います。 例えば、法改正後、ここから物がなくなったら、状況が悪いからですよね。いや、これでは、事業所がまだ行ってないから、さっきの自己意欲が出てきましたから、それを選別して、そして今回、多くの場合どうなるかわからない、それから、そんな"
+    },
+    {
+     "start": "第一条",
+     "text": "第一条の委員会の多数委員並びに委員長の報告を求めます。取引委員長竹中本太田君。」 AB「ただいま議題となりましたFNNスーパーカーというものにつきまして、FNNスーパーカーの会長に、資金管理団体に、そして、その資金管理団体に、いかに取引すべきか、あるいは、その資金として、医療を改善し、これを可能な限り来"
+    },
+    {
+     "start": "この法律において",
+     "text": "この法律において「」とは、メコンテンツを意味する言語を迎えた覚えがあった。 そして、メインテーマの『 退治 』、 白黒 のような「 ゆめ 」の 特典 が追加される。 これは、 重力 は「 験 」「 た 」「 す 」という意味である。 後者には 十九年 や"
+    }
+   ],
+   "loopPct": 2.04,
+   "movedBody": false
   }
  ],
- "bestVal": 2.9131,
+ "bestVal": 2.913,
  "layers": 16,
  "params": 117914880,
  "born": "2026-09-08T15:11:54Z",
@@ -12649,5 +12649,5 @@
  ],
  "wantWider": false,
  "nextD": 768,
- "bad": 1
+ "bad": 0
 }
