@@ -1,69 +1,6 @@
 {
  "runs": [
   {
-   "at": "2026-09-29T23:54:32Z",
-   "val": 3.085,
-   "prev": 3.0862,
-   "valTag": "fixed-holdout-v1",
-   "stoppedAt": 178,
-   "stuck": 0,
-   "evalTag": "fixed-ix-v1",
-   "secPerStep": 23.1358,
-   "steps": 300,
-   "bpc": 3.6513,
-   "charsPerTok": 1.2189,
-   "score": 2.2401,
-   "scoreW": 2.0,
-   "scoreMode": "talk",
-   "finishMix": 0.5,
-   "lineage": "L1",
-   "layers": 16,
-   "params": 117914880,
-   "chars": 1045308899,
-   "tokens": 857567631,
-   "grew": 0,
-   "rolledBack": false,
-   "ownVal": null,
-   "ownScore": null,
-   "d": 768,
-   "loops": 1,
-   "spread": 3.4817,
-   "bytes": 1415115957,
-   "heads": 6,
-   "ctx": 512,
-   "vocab": 6000,
-   "kind": "bpe",
-   "arch": "tpp-loop",
-   "wantWider": false,
-   "layerCap": 16,
-   "mixChanged": false,
-   "bySrc": {
-    "laws": 4.5231,
-    "wiki": 3.2592,
-    "aozora": 3.5784,
-    "hanrei": 3.6662,
-    "kokkai": 2.8165,
-    "web": 3.0977,
-    "talk": 2.2401
-   },
-   "wrote": [
-    {
-     "start": "わたしは",
-     "text": "わたしは、さきに三人つけで、あらゆるゆえんで、足を緩めるということで、一つの目をさしています。 ただ、二十三日のほど自民党は、ここまででは、今日のこの総人件費は、公約的な権力で、国民は、有給率の比率をやめて、来年度の太平洋戦争に参加する政策を、そして"
-    },
-    {
-     "start": "第一条",
-     "text": "第一条ール編 (UTC) CECEO [ 122 ] (PECFE) SSCEED 2022年12月18日発売 [ 121 ] 。 （TOTUCOCKのOCKCOME 3521を） ISCORK DEARTO 2013年12月2"
-    },
-    {
-     "start": "この法律において",
-     "text": "この法律において「国土・地域」として知られる。 新海否定とは、コンベアのクリンゼリオでも「結局は600どちらが、かつて、2004年（平成16年）5月26日のオールナイトニッポン資料会議で、2005年（平成15年）3月26日に「エンダの梅と白の元の人（OVA）」、「エン"
-    }
-   ],
-   "loopPct": 9.1,
-   "movedBody": false
-  },
-  {
    "at": "2026-09-30T00:58:55Z",
    "val": 3.0892,
    "prev": 3.085,
@@ -12599,6 +12536,69 @@
    ],
    "loopPct": 13.68,
    "movedBody": false
+  },
+  {
+   "at": "2026-10-10T16:21:15Z",
+   "val": 2.919,
+   "prev": 2.9096,
+   "valTag": "fixed-holdout-v1",
+   "stoppedAt": 0,
+   "stuck": 0,
+   "evalTag": "fixed-ix-v1",
+   "secPerStep": 11.5581,
+   "steps": 300,
+   "bpc": 3.4548,
+   "charsPerTok": 1.2189,
+   "score": 2.1537,
+   "scoreW": 2.0,
+   "scoreMode": "talk",
+   "finishMix": 0.5,
+   "lineage": "L1",
+   "layers": 16,
+   "params": 117914880,
+   "chars": 1045308899,
+   "tokens": 857567631,
+   "grew": 0,
+   "rolledBack": false,
+   "ownVal": null,
+   "ownScore": null,
+   "d": 768,
+   "loops": 1,
+   "spread": 3.1534,
+   "bytes": 1415115957,
+   "heads": 6,
+   "ctx": 512,
+   "vocab": 6000,
+   "kind": "bpe",
+   "arch": "tpp-loop",
+   "wantWider": false,
+   "layerCap": 16,
+   "mixChanged": false,
+   "bySrc": {
+    "laws": 4.1829,
+    "wiki": 3.0803,
+    "aozora": 3.4279,
+    "hanrei": 3.5208,
+    "kokkai": 2.6836,
+    "web": 2.9547,
+    "talk": 2.1537
+   },
+   "wrote": [
+    {
+     "start": "わたしは",
+     "text": "わたしはアニメではなく、主人公も連載作品でもある [ 20 ] 。 『 愛の素敵な人生 』（2007年2月） - 『 天空の闇 』では、 森田有吉 、 八ツ橋橋 、 新宿 、 鈴木毅 、 大阪"
+    },
+    {
+     "start": "第一条",
+     "text": "第一条号の自らが強調した [ 102 ] 。 1885年 （ 明治 10年）には 1889年 （明治12年）に 1900年 （明治33年）に 三多摩川 が 1900年 （明治33年）に暗殺されたが、この時には 1909年 （明治42年）に 中国"
+    },
+    {
+     "start": "この法律において",
+     "text": "この法律において、法人税も、景気を向上させるために、ガス事業間の合理化が必要になった。 1991年 （平成3年） 3月 - FMエンタテインメントが開通。 1992年 （平成4年） 1月9日 - 道路特定交通事業による道路交通事業化事業により、 の規定は道路交通法 施行、道路交通法（平成27年法律第"
+    }
+   ],
+   "loopPct": 8.33,
+   "movedBody": false
   }
  ],
  "bestVal": 2.9096,
@@ -12649,5 +12649,5 @@
  ],
  "wantWider": false,
  "nextD": 768,
- "bad": 0
+ "bad": 3
 }
