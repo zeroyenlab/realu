@@ -1,69 +1,6 @@
 {
  "runs": [
   {
-   "at": "2026-09-29T22:31:45Z",
-   "val": 2.7236,
-   "prev": 2.7247,
-   "valTag": "fixed-holdout-v1",
-   "stoppedAt": 0,
-   "stuck": 0,
-   "evalTag": "fixed-ix-v1",
-   "secPerStep": 5.2443,
-   "steps": 701,
-   "bpc": 3.2236,
-   "charsPerTok": 1.2189,
-   "score": 2.0665,
-   "scoreW": 2.0,
-   "scoreMode": "talk",
-   "finishMix": 0.85,
-   "lineage": "L2",
-   "layers": 13,
-   "params": 44216832,
-   "chars": 1045308899,
-   "tokens": 857567631,
-   "grew": 0,
-   "rolledBack": false,
-   "ownVal": null,
-   "ownScore": null,
-   "d": 512,
-   "loops": 1,
-   "spread": 2.5901,
-   "bytes": 530714761,
-   "heads": 8,
-   "ctx": 512,
-   "vocab": 6000,
-   "kind": "bpe",
-   "arch": "tpp-loop",
-   "wantWider": false,
-   "layerCap": 16,
-   "mixChanged": false,
-   "bySrc": {
-    "laws": 3.6713,
-    "wiki": 2.8978,
-    "aozora": 3.2087,
-    "hanrei": 3.4179,
-    "kokkai": 2.5319,
-    "web": 2.8117,
-    "talk": 2.0665
-   },
-   "wrote": [
-    {
-     "start": "わたしは",
-     "text": "わたしは漫画を読んでます。」 FV「どんな本を読まれるんですか？」 FA「漫画を読むのが好きです。」 FV「うわぁ、最近読んでます？」 FA「漫画ですか！」 FV「漫画ですか？」 FA「いや、漫画ではないですが、"
-    },
-    {
-     "start": "第一条",
-     "text": "第一条第二号ニハハハハハハハ ハ ハアレハンは、2008年10月1日、イギリス法で「 KUSTA は、政府からしばしば公布された法律によって、国が賛成する規定に基いて、国が 属性することを認め、施策を打ち出す意思があると申し上げている。 2008年に アメリカ合衆国憲法"
-    },
-    {
-     "start": "この法律において",
-     "text": "この法律においてデジタル放送局を放送しているされている。 <記事 フィンランド> フィンランド（Dreamnicial hodelic and dessum）は、ローマ教皇の官僚。ウォルター・ド・ベルトン大公は、1791年に元のフランスの天津宗教において大神であるとする考"
-    }
-   ],
-   "loopPct": 6.66,
-   "movedBody": false
-  },
-  {
    "at": "2026-09-29T23:51:14Z",
    "val": 2.7229,
    "prev": 2.7236,
@@ -12599,6 +12536,69 @@
    ],
    "loopPct": 14.5,
    "movedBody": false
+  },
+  {
+   "at": "2026-10-10T17:37:05Z",
+   "val": 2.6513,
+   "prev": 2.649,
+   "valTag": "fixed-holdout-v1",
+   "stoppedAt": 455,
+   "stuck": 0,
+   "evalTag": "fixed-ix-v1",
+   "secPerStep": 8.3386,
+   "steps": 645,
+   "bpc": 3.138,
+   "charsPerTok": 1.2189,
+   "score": 2.0439,
+   "scoreW": 2.0,
+   "scoreMode": "talk",
+   "finishMix": 0.85,
+   "lineage": "L2",
+   "layers": 14,
+   "params": 47379968,
+   "chars": 1045308899,
+   "tokens": 857567631,
+   "grew": 0,
+   "rolledBack": false,
+   "ownVal": null,
+   "ownScore": null,
+   "d": 512,
+   "loops": 1,
+   "spread": 2.605,
+   "bytes": 568680621,
+   "heads": 8,
+   "ctx": 512,
+   "vocab": 6000,
+   "kind": "bpe",
+   "arch": "tpp-loop",
+   "wantWider": false,
+   "layerCap": 16,
+   "mixChanged": false,
+   "bySrc": {
+    "laws": 3.5277,
+    "wiki": 2.8169,
+    "aozora": 3.1328,
+    "hanrei": 3.3683,
+    "kokkai": 2.4731,
+    "web": 2.7376,
+    "talk": 2.0439
+   },
+   "wrote": [
+    {
+     "start": "わたしは",
+     "text": "わたしは北海道ですが、いろいろな種類があるのですね！」 AF「北海道以外でも美味しい物はありますか？」 BJ「関東ですかね。海鮮がおいしいです」 AF「なるほど、ソーセージとかに頼れるものばかりですよね。」 BJ「ありますね。あれ"
+    },
+    {
+     "start": "第一条",
+     "text": "第一条、なければならない。 （年政令様式） 二月三十日 令第六条第三項（令第六条第三項において準用する場合を含む。）ようとするときその他昭和二十六年十月一日 令第七条第三項（令第七条第二項において準用する場合を含む。）の規定による経過措置は、令第六条第三項（令第七条第二項において準用する場合を含む。）の規定により指示する。 令第七条第三項（令第七条第二項において準用する場合を含む。）の規定による指示に関する業務を行う者は、令第七条第二項"
+    },
+    {
+     "start": "この法律において",
+     "text": "この法律において「平成二十一年度」とあるのは「平成二十二年度」とする。 （平成二十一年度から平成二十一年度までの各年度の税源移譲の特例） 第三十九条 平成二十一年度以降の各年度の税源移譲の特例は、平成二十三年度以後の各年度の税源移譲の特例をもって行う。 （平成二十一年度から平成二十一年度までの各年度の税源移譲の特例） 第三十一条 平成二十一年度以降の各年度の税源移譲の特例は、平成二十一年度以"
+    }
+   ],
+   "loopPct": 1.74,
+   "movedBody": false
   }
  ],
  "bestVal": 2.649,
@@ -12649,5 +12649,5 @@
  ],
  "wantWider": false,
  "nextD": 512,
- "bad": 0
+ "bad": 8
 }
