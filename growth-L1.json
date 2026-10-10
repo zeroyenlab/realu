@@ -1,69 +1,6 @@
 {
  "runs": [
   {
-   "at": "2026-09-29T11:01:02Z",
-   "val": 3.1263,
-   "prev": 3.121,
-   "valTag": "fixed-holdout-v1",
-   "stoppedAt": 0,
-   "stuck": 0,
-   "evalTag": "fixed-ix-v1",
-   "secPerStep": 10.6899,
-   "steps": 300,
-   "bpc": 3.7002,
-   "charsPerTok": 1.2189,
-   "score": 2.257,
-   "scoreW": 2.0,
-   "scoreMode": "talk",
-   "finishMix": 0.5,
-   "lineage": "L1",
-   "layers": 16,
-   "params": 117914880,
-   "chars": 1045308899,
-   "tokens": 857567631,
-   "grew": 0,
-   "rolledBack": false,
-   "ownVal": null,
-   "ownScore": null,
-   "d": 768,
-   "loops": 1,
-   "spread": 3.2191,
-   "bytes": 1415115957,
-   "heads": 6,
-   "ctx": 512,
-   "vocab": 6000,
-   "kind": "bpe",
-   "arch": "tpp-loop",
-   "wantWider": false,
-   "layerCap": 16,
-   "mixChanged": false,
-   "bySrc": {
-    "laws": 4.5812,
-    "wiki": 3.2962,
-    "aozora": 3.6092,
-    "hanrei": 3.6952,
-    "kokkai": 2.8596,
-    "web": 3.1329,
-    "talk": 2.257
-   },
-   "wrote": [
-    {
-     "start": "わたしは",
-     "text": "わたしは、また、来年の当時は、この特別委員会では、依然として大幅に削減を持つということになりますと、そういう意味で、その中で、やはり定率分解を実現するということは、私は慎重に取り組むべきだと思いますので、さんざん現状については何にお目かわかりませんから、きょうはそういう立場"
-    },
-    {
-     "start": "第一条",
-     "text": "第一条にかんすると読み替えるものとする。 （特定特定特定特定特定特定特定特定特定特定特定条約等） 議会議員、日本高度経済成長戦略代金、特定の発行誹謗中傷害対策特別交付税の負担増大に伴う保有者の利便製造販売に関する手続の充実、経済的負担の軽減防止の促進に関する法律案（内閣提出、衆議院送付）を議題といたします。」 AB「議長 御異議なしと認めます。まず、委員長の報告"
-    },
-    {
-     "start": "この法律において",
-     "text": "この法律において「王」 「王」は「」「王」に、王子（釧）「道」は王子（いわ たかご）は、王妃（としょ）の神（き）王。光子は、王遊王の、朝廷が叩かれ、王は王王に遠くに来ていた。"
-    }
-   ],
-   "loopPct": 6.64,
-   "movedBody": false
-  },
-  {
    "at": "2026-09-29T12:25:44Z",
    "val": 3.1124,
    "prev": 3.1263,
@@ -12599,6 +12536,69 @@
    ],
    "loopPct": 9.95,
    "movedBody": false
+  },
+  {
+   "at": "2026-10-10T03:39:26Z",
+   "val": 2.9208,
+   "prev": 2.9201,
+   "valTag": "fixed-holdout-v1",
+   "stoppedAt": 158,
+   "stuck": 0,
+   "evalTag": "fixed-ix-v1",
+   "secPerStep": 26.3186,
+   "steps": 300,
+   "bpc": 3.457,
+   "charsPerTok": 1.2189,
+   "score": 2.1659,
+   "scoreW": 2.0,
+   "scoreMode": "talk",
+   "finishMix": 0.5,
+   "lineage": "L1",
+   "layers": 16,
+   "params": 117914880,
+   "chars": 1045308899,
+   "tokens": 857567631,
+   "grew": 0,
+   "rolledBack": false,
+   "ownVal": null,
+   "ownScore": null,
+   "d": 768,
+   "loops": 1,
+   "spread": 2.965,
+   "bytes": 1415115957,
+   "heads": 6,
+   "ctx": 512,
+   "vocab": 6000,
+   "kind": "bpe",
+   "arch": "tpp-loop",
+   "wantWider": false,
+   "layerCap": 16,
+   "mixChanged": false,
+   "bySrc": {
+    "laws": 4.1889,
+    "wiki": 3.0828,
+    "aozora": 3.4268,
+    "hanrei": 3.5203,
+    "kokkai": 2.6868,
+    "web": 2.9537,
+    "talk": 2.1659
+   },
+   "wrote": [
+    {
+     "start": "わたしは",
+     "text": "わたしは、わたしのぶくぶちふぇったりする男だと、我が笑顔でぶぴちぃったぁちひろしのぷりに、 「おなじくだ、食べたい」と、半月ほど丸くしきたり、 「いや、あなたといっしょだッ」と、 「やっぱり、これからです、そ"
+    },
+    {
+     "start": "第一条",
+     "text": "第一条ハハノンノノンノンノノンノミノミネーションノンノムノンノベルトノワノンノイントノミネーションズハノンノフノフノミノミネーションをピプチノフリノノックス（Persentinge station）を持つコミノミネートを参照。 チヨミノフサノフ"
+    },
+    {
+     "start": "この法律において",
+     "text": "この法律において、日米間で協議をしてまいりたいと、こう思っております。」 AA「いや、おっしゃったように、やはりそういうことにするんですかと。」 AB「国務大臣 その上で、まだそういうことはあってはならないということで、私は、特にこのワークの会議でもありますし、ポストをもう通るときは、そ"
+    }
+   ],
+   "loopPct": 10.8,
+   "movedBody": false
   }
  ],
  "bestVal": 2.9166,
@@ -12649,5 +12649,5 @@
  ],
  "wantWider": false,
  "nextD": 768,
- "bad": 2
+ "bad": 3
 }
