@@ -1,69 +1,6 @@
 {
  "runs": [
   {
-   "at": "2026-09-29T09:59:19Z",
-   "val": 3.121,
-   "prev": 3.1191,
-   "valTag": "fixed-holdout-v1",
-   "stoppedAt": 178,
-   "stuck": 0,
-   "evalTag": "fixed-ix-v1",
-   "secPerStep": 23.1428,
-   "steps": 320,
-   "bpc": 3.694,
-   "charsPerTok": 1.2189,
-   "score": 2.2557,
-   "scoreW": 2.0,
-   "scoreMode": "talk",
-   "finishMix": 0.5,
-   "lineage": "L1",
-   "layers": 16,
-   "params": 117914880,
-   "chars": 1045308899,
-   "tokens": 857567631,
-   "grew": 0,
-   "rolledBack": false,
-   "ownVal": null,
-   "ownScore": null,
-   "d": 768,
-   "loops": 1,
-   "spread": 3.3283,
-   "bytes": 1415115957,
-   "heads": 6,
-   "ctx": 512,
-   "vocab": 6000,
-   "kind": "bpe",
-   "arch": "tpp-loop",
-   "wantWider": false,
-   "layerCap": 16,
-   "mixChanged": false,
-   "bySrc": {
-    "laws": 4.5891,
-    "wiki": 3.2919,
-    "aozora": 3.602,
-    "hanrei": 3.6933,
-    "kokkai": 2.8518,
-    "web": 3.1253,
-    "talk": 2.2557
-   },
-   "wrote": [
-    {
-     "start": "わたしは",
-     "text": "わたしは、最初の奨励会でもあった。そうして、その役所だけ、中国でも大阪でもございます。アメリカで大阪に行けるのが好きですが、こちらのときは、今、好きではないですが、そこは、大阪に行こうと思っております。」 AB「中学では、中学から"
-    },
-    {
-     "start": "第一条",
-     "text": "第一条十一条による運用�に定める基準とした申告手続に関する法律（平成十一年法律第百三号）第八十五条第一項の規定による特別措置法第五十四条第二項において準用する会社法第五十四条第三項の規定により吸収占める割合（平成二十五生計売却法）第二条の規定により消滅する場合にあっては、当該LEDところにより行う貸付金の支払うものとする。 （独立行政法人派遣） ウサービスとは、特定グリーンサービス等の開発及び設置に関する法律（平成十五年法律第百八号）第"
-    },
-    {
-     "start": "この法律において",
-     "text": "この法律において「裏」を意味する文字をつけている。 原画 の 2002年 （ 平成 20年 ） 10月 - 10月 - 12月 - 1903年 （明治 4年） - 1903年 （明治42年）の 2002年 （平成19年） 3月 - 1908年 （"
-    }
-   ],
-   "loopPct": 6.5,
-   "movedBody": false
-  },
-  {
    "at": "2026-09-29T11:01:02Z",
    "val": 3.1263,
    "prev": 3.121,
@@ -12599,6 +12536,69 @@
    ],
    "loopPct": 10.21,
    "movedBody": false
+  },
+  {
+   "at": "2026-10-10T02:22:08Z",
+   "val": 2.9201,
+   "prev": 2.9166,
+   "valTag": "fixed-holdout-v1",
+   "stoppedAt": 213,
+   "stuck": 0,
+   "evalTag": "fixed-ix-v1",
+   "secPerStep": 18.8525,
+   "steps": 300,
+   "bpc": 3.4562,
+   "charsPerTok": 1.2189,
+   "score": 2.1616,
+   "scoreW": 2.0,
+   "scoreMode": "talk",
+   "finishMix": 0.5,
+   "lineage": "L1",
+   "layers": 16,
+   "params": 117914880,
+   "chars": 1045308899,
+   "tokens": 857567631,
+   "grew": 0,
+   "rolledBack": false,
+   "ownVal": null,
+   "ownScore": null,
+   "d": 768,
+   "loops": 1,
+   "spread": 2.9922,
+   "bytes": 1415115957,
+   "heads": 6,
+   "ctx": 512,
+   "vocab": 6000,
+   "kind": "bpe",
+   "arch": "tpp-loop",
+   "wantWider": false,
+   "layerCap": 16,
+   "mixChanged": false,
+   "bySrc": {
+    "laws": 4.1859,
+    "wiki": 3.0869,
+    "aozora": 3.4239,
+    "hanrei": 3.5191,
+    "kokkai": 2.6845,
+    "web": 2.9539,
+    "talk": 2.1616
+   },
+   "wrote": [
+    {
+     "start": "わたしは",
+     "text": "わたしは、あなたの両方がいらっしゃいます。」 AB「私は、江田さんが母親とが行って、母親とかと一緒になって、 「もう怖い、あい。暑い日もありました。どうぞ」と、あまりにも暑い。 ただ、あなたは、とうとうそぶかなんとか思っていた。」"
+    },
+    {
+     "start": "第一条",
+     "text": "第一条は、に提出しなければならない。 �プロ野球選手 投手深夜にBBCライブを立てるのは、現在、BBCでリーグ最多発売である。 BBCのBCでは2001年から2001年まで、BBCとCBCを結成しており、BBCと同様にBBC（EFBC）ではBBCがBBCに改めてBBC"
+    },
+    {
+     "start": "この法律において",
+     "text": "この法律において「ジョブ・ブラック」が存在する。 ドロップする形式は、プライムが富士通で日立と交互に合わない形で光を送るといった道具は潰えてきている。 ドロップを使ったサイドは「 ドロップ 」や「ゼリーフ」と呼ばれるもので、いくつかのメンバーが世界で初めて"
+    }
+   ],
+   "loopPct": 9.95,
+   "movedBody": false
   }
  ],
  "bestVal": 2.9166,
@@ -12649,5 +12649,5 @@
  ],
  "wantWider": false,
  "nextD": 768,
- "bad": 0
+ "bad": 2
 }
