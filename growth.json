@@ -1,69 +1,6 @@
 {
  "runs": [
   {
-   "at": "2026-09-29T08:38:51Z",
-   "val": 3.1191,
-   "prev": 3.1153,
-   "valTag": "fixed-holdout-v1",
-   "stoppedAt": 0,
-   "stuck": 0,
-   "evalTag": "fixed-ix-v1",
-   "secPerStep": 11.0138,
-   "steps": 320,
-   "bpc": 3.6917,
-   "charsPerTok": 1.2189,
-   "score": 2.2455,
-   "scoreW": 2.0,
-   "scoreMode": "talk",
-   "finishMix": 0.5,
-   "lineage": "L1",
-   "layers": 16,
-   "params": 117914880,
-   "chars": 1045308899,
-   "tokens": 857567631,
-   "grew": 0,
-   "rolledBack": false,
-   "ownVal": null,
-   "ownScore": null,
-   "d": 768,
-   "loops": 1,
-   "spread": 3.5713,
-   "bytes": 1415115957,
-   "heads": 6,
-   "ctx": 512,
-   "vocab": 6000,
-   "kind": "bpe",
-   "arch": "tpp-loop",
-   "wantWider": false,
-   "layerCap": 16,
-   "mixChanged": false,
-   "bySrc": {
-    "laws": 4.5814,
-    "wiki": 3.2928,
-    "aozora": 3.6036,
-    "hanrei": 3.6907,
-    "kokkai": 2.851,
-    "web": 3.1233,
-    "talk": 2.2455
-   },
-   "wrote": [
-    {
-     "start": "わたしは",
-     "text": "わたしは、浪瀬さんは、勇者さんに、八月から八月まで、そこでまことに実はまだ言っておられるのか、そういうふうに思ったのでございます。」 AB「棚澤国務大臣 確かに二回目の、透明性というか、この手を出すということではなくて、この六回目の史上、そして"
-    },
-    {
-     "start": "第一条",
-     "text": "第一条「国土交通大臣」という。）が、これに対する財務大臣のお考えをお示し申し上げます。 政府は、庫出しますが、世界の魅力を強力に推進して、世界の世界が深刻化する役割との連携を絞って、心を抱えながら、国民の信頼を充実し、進展を期するなど、なぜ多くの骨格を届けるべきです。"
-    },
-    {
-     "start": "この法律において",
-     "text": "この法律において「ji」を「Pa」に改めたのであり、ホームでは1980年のJapan Bring coster of Vol.6では当初からFlaysはThe CPUに19800ドルを和解し、この年に1980年代に本格化したGPUではトップがデザ"
-    }
-   ],
-   "loopPct": 0.81,
-   "movedBody": false
-  },
-  {
    "at": "2026-09-29T09:59:19Z",
    "val": 3.121,
    "prev": 3.1191,
@@ -12599,9 +12536,72 @@
    ],
    "loopPct": 4.17,
    "movedBody": false
+  },
+  {
+   "at": "2026-10-10T01:07:01Z",
+   "val": 2.9166,
+   "prev": 2.919,
+   "valTag": "fixed-holdout-v1",
+   "stoppedAt": 160,
+   "stuck": 0,
+   "evalTag": "fixed-ix-v1",
+   "secPerStep": 26.0238,
+   "steps": 300,
+   "bpc": 3.452,
+   "charsPerTok": 1.2189,
+   "score": 2.1557,
+   "scoreW": 2.0,
+   "scoreMode": "talk",
+   "finishMix": 0.5,
+   "lineage": "L1",
+   "layers": 16,
+   "params": 117914880,
+   "chars": 1045308899,
+   "tokens": 857567631,
+   "grew": 0,
+   "rolledBack": false,
+   "ownVal": null,
+   "ownScore": null,
+   "d": 768,
+   "loops": 1,
+   "spread": 3.5106,
+   "bytes": 1415115957,
+   "heads": 6,
+   "ctx": 512,
+   "vocab": 6000,
+   "kind": "bpe",
+   "arch": "tpp-loop",
+   "wantWider": false,
+   "layerCap": 16,
+   "mixChanged": false,
+   "bySrc": {
+    "laws": 4.1842,
+    "wiki": 3.081,
+    "aozora": 3.4301,
+    "hanrei": 3.5179,
+    "kokkai": 2.6843,
+    "web": 2.9502,
+    "talk": 2.1557
+   },
+   "wrote": [
+    {
+     "start": "わたしは",
+     "text": "わたしは、まさに無法律なことだったのです。でも、（中野）そうではありませんでした。いかにして、自分でお金を払っていました。」 AA「だから、そうじゃないですよ。 では、どうしてもいつの間にか、そして、ケアをするときに、そのときに、細野さんとか、そういうことを言っていました。そのときに"
+    },
+    {
+     "start": "第一条",
+     "text": "第一条アルベル鉄道がそれぞれ契約する軽距離を負う。 1991年 - 日本航空 が T.L. で開催される。 1991年 - 大阪航空局 が 大阪航空局 に移転。 1992年 - 日本航空の ミライミッド 、 シェル といった中央航空へのアクセス化を行った。 1994年"
+    },
+    {
+     "start": "この法律において",
+     "text": "この法律において「被告人が被告人が本件いわれてきました」と聞かれた。 (ｱ) 被告人は，原告の被告人が，本件事故を起こしたことがあったことから， 被告が被告に逮捕されたことを知ったが，被告は，原告が逮捕したため，原告に対し て，原告の子供に対して，被告が，原告が，原告を回避し"
+    }
+   ],
+   "loopPct": 10.21,
+   "movedBody": false
   }
  ],
- "bestVal": 2.917,
+ "bestVal": 2.9166,
  "layers": 16,
  "params": 117914880,
  "born": "2026-09-08T15:11:54Z",
