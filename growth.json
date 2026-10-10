@@ -1,69 +1,6 @@
 {
  "runs": [
   {
-   "at": "2026-09-29T17:33:33Z",
-   "val": 3.0947,
-   "prev": 3.0981,
-   "valTag": "fixed-holdout-v1",
-   "stoppedAt": 159,
-   "stuck": 0,
-   "evalTag": "fixed-ix-v1",
-   "secPerStep": 26.1233,
-   "steps": 300,
-   "bpc": 3.6628,
-   "charsPerTok": 1.2189,
-   "score": 2.2418,
-   "scoreW": 2.0,
-   "scoreMode": "talk",
-   "finishMix": 0.5,
-   "lineage": "L1",
-   "layers": 16,
-   "params": 117914880,
-   "chars": 1045308899,
-   "tokens": 857567631,
-   "grew": 0,
-   "rolledBack": false,
-   "ownVal": null,
-   "ownScore": null,
-   "d": 768,
-   "loops": 1,
-   "spread": 3.6751,
-   "bytes": 1415115957,
-   "heads": 6,
-   "ctx": 512,
-   "vocab": 6000,
-   "kind": "bpe",
-   "arch": "tpp-loop",
-   "wantWider": false,
-   "layerCap": 16,
-   "mixChanged": false,
-   "bySrc": {
-    "laws": 4.5453,
-    "wiki": 3.2676,
-    "aozora": 3.5869,
-    "hanrei": 3.6796,
-    "kokkai": 2.8255,
-    "web": 3.1042,
-    "talk": 2.2418
-   },
-   "wrote": [
-    {
-     "start": "わたしは",
-     "text": "わたしは、このため、現在のソ連政府の侵略的な勢力を誓っていくべきであると考えます。」 AA「（拍手） 国民が一体どこでも、政治に対する多数の問題は、国民全体で保障したらこそ、国民の理解を得るよりも、言わば国民の理解を深めながら、景気にはまだ実行に悪化して"
-    },
-    {
-     "start": "第一条",
-     "text": "第一条に対し、�音ができればいいのであって、それは否定においてはなく、何もなく、それらがどうも、もはや、当時は欺瞞のような形で書かれたものだと思う。そうして、それが日本の宗教とは異なっているわけですね。」 AA「こうして、いや、今度、国を教えるカンボジアの国々は、その名前を何ら"
-    },
-    {
-     "start": "この法律において",
-     "text": "この法律において「⑩ソフト」を駆使し、駆け付けてもらい、執筆中にヘッドランプを書く。 『 節 』（1965年） - イギリスの駅名に対する報道が記されている。 『 平和5年鑑 』（1962年） - 1977年の『 鄧光の両法"
-    }
-   ],
-   "loopPct": 3.12,
-   "movedBody": false
-  },
-  {
    "at": "2026-09-29T18:46:42Z",
    "val": 3.0936,
    "prev": 3.0947,
@@ -12599,6 +12536,69 @@
    ],
    "loopPct": 2.04,
    "movedBody": false
+  },
+  {
+   "at": "2026-10-10T10:08:19Z",
+   "val": 2.9136,
+   "prev": 2.913,
+   "valTag": "fixed-holdout-v1",
+   "stoppedAt": 157,
+   "stuck": 0,
+   "evalTag": "fixed-ix-v1",
+   "secPerStep": 26.6996,
+   "steps": 300,
+   "bpc": 3.4484,
+   "charsPerTok": 1.2189,
+   "score": 2.158,
+   "scoreW": 2.0,
+   "scoreMode": "talk",
+   "finishMix": 0.5,
+   "lineage": "L1",
+   "layers": 16,
+   "params": 117914880,
+   "chars": 1045308899,
+   "tokens": 857567631,
+   "grew": 0,
+   "rolledBack": false,
+   "ownVal": null,
+   "ownScore": null,
+   "d": 768,
+   "loops": 1,
+   "spread": 2.8538,
+   "bytes": 1415115957,
+   "heads": 6,
+   "ctx": 512,
+   "vocab": 6000,
+   "kind": "bpe",
+   "arch": "tpp-loop",
+   "wantWider": false,
+   "layerCap": 16,
+   "mixChanged": false,
+   "bySrc": {
+    "laws": 4.179,
+    "wiki": 3.0753,
+    "aozora": 3.4225,
+    "hanrei": 3.5161,
+    "kokkai": 2.6842,
+    "web": 2.9457,
+    "talk": 2.158
+   },
+   "wrote": [
+    {
+     "start": "わたしは",
+     "text": "わたしは、」 AE「ま、それをひるまんざりして」 AD「そんな感じなんですね。今日はこんなことを言っているんですか？」 AE「選べなければそうですね。」 AD「はい。毎日もうお盆休みですか。」 AE「お疲れ様です！」 AD「夕飯"
+    },
+    {
+     "start": "第一条",
+     "text": "第一条に基づく治療ことを確認し、これを了承した。 その後、アメリカ手術時に、アメリカがフランスに出たとき、歴史家は、アメリカに注意を払って、アジアを始め、アメリカの進撃を模索した。 クーデターは、 1936年 にイギリス西部戦線 ( C.P. ) を打"
+    },
+    {
+     "start": "この法律において",
+     "text": "この法律において「日本の戦争責任」を認めた国民が、戦争責任放棄を唱えた「戦争の解決に安保理」を回避した。 イラク戦争 では、 イラク戦争 が起きたとき、 1960年代 以降の イラク戦争 では、 オーストリア戦争 が始まる。 2000年代 、イラクがイ"
+    }
+   ],
+   "loopPct": 1.06,
+   "movedBody": false
   }
  ],
  "bestVal": 2.913,
@@ -12649,5 +12649,5 @@
  ],
  "wantWider": false,
  "nextD": 768,
- "bad": 0
+ "bad": 1
 }
