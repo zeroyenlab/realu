@@ -1,69 +1,6 @@
 {
  "runs": [
   {
-   "at": "2026-09-29T11:09:53Z",
-   "val": 2.7702,
-   "prev": 2.7718,
-   "valTag": "fixed-holdout-v1",
-   "stoppedAt": 559,
-   "stuck": 0,
-   "evalTag": "fixed-ix-v1",
-   "secPerStep": 6.713,
-   "steps": 968,
-   "bpc": 3.2788,
-   "charsPerTok": 1.2189,
-   "score": 2.2025,
-   "scoreW": 2.0,
-   "scoreMode": "talk",
-   "finishMix": 0.2,
-   "lineage": "L3",
-   "layers": 13,
-   "params": 25335168,
-   "chars": 1045308899,
-   "tokens": 857567631,
-   "grew": 0,
-   "rolledBack": false,
-   "ownVal": null,
-   "ownScore": null,
-   "d": 384,
-   "loops": 1,
-   "spread": 2.7418,
-   "bytes": 304134793,
-   "heads": 6,
-   "ctx": 512,
-   "vocab": 6000,
-   "kind": "bpe",
-   "arch": "tpp-loop",
-   "wantWider": false,
-   "layerCap": 16,
-   "mixChanged": false,
-   "bySrc": {
-    "laws": 3.7765,
-    "wiki": 2.945,
-    "aozora": 3.2711,
-    "hanrei": 3.4759,
-    "kokkai": 2.5658,
-    "web": 2.8513,
-    "talk": 2.2025
-   },
-   "wrote": [
-    {
-     "start": "わたしは",
-     "text": "わたしはガムラーで指揮したが、その中で数千数百名もの弱点を決めるために、軍が自由にオーバーさせて異国を奪取する。 合体した彼は幻の人物であり、自分の肉体が凍結し、彼らの既存の人物としての役割を果たす。 また、ゴーゴルーンのゴーゴルーンは"
-    },
-    {
-     "start": "第一条",
-     "text": "第一条を受けているとされる 。 2022年5月24日、日本で初めての計5500万枚を達成した 。 2023年 - 山陰アンドロメラ（山陽北部）から日本向けの「京王」が発売する 。 2024年 - 桜江風会が行われている。2025年に発売するアップデ"
-    },
-    {
-     "start": "この法律において",
-     "text": "この法律においてけんそりつづけんせつづけんせつせつけんせつうのだれのしょうほうだけんせつけんせつけんせつせつけんせつけんせつけんせつけんせつけんせつせつぎんせつてきんせつけんせつけんせつせつけんせつせつけんせつけんせつける （すないせつけんせつけ"
-    }
-   ],
-   "loopPct": 24.37,
-   "movedBody": false
-  },
-  {
    "at": "2026-09-29T12:08:55Z",
    "val": 2.7686,
    "prev": 2.7702,
@@ -12599,6 +12536,69 @@
    ],
    "loopPct": 22.98,
    "movedBody": false
+  },
+  {
+   "at": "2026-10-10T02:17:59Z",
+   "val": 2.6911,
+   "prev": 2.6895,
+   "valTag": "fixed-holdout-v1",
+   "stoppedAt": 657,
+   "stuck": 0,
+   "evalTag": "fixed-ix-v1",
+   "secPerStep": 5.6844,
+   "steps": 963,
+   "bpc": 3.1852,
+   "charsPerTok": 1.2189,
+   "score": 2.1438,
+   "scoreW": 2.0,
+   "scoreMode": "talk",
+   "finishMix": 0.2,
+   "lineage": "L3",
+   "layers": 13,
+   "params": 25335168,
+   "chars": 1045308899,
+   "tokens": 857567631,
+   "grew": 0,
+   "rolledBack": false,
+   "ownVal": null,
+   "ownScore": null,
+   "d": 384,
+   "loops": 1,
+   "spread": 2.479,
+   "bytes": 304134793,
+   "heads": 6,
+   "ctx": 512,
+   "vocab": 6000,
+   "kind": "bpe",
+   "arch": "tpp-loop",
+   "wantWider": false,
+   "layerCap": 16,
+   "mixChanged": false,
+   "bySrc": {
+    "laws": 3.6517,
+    "wiki": 2.8535,
+    "aozora": 3.1815,
+    "hanrei": 3.4207,
+    "kokkai": 2.5017,
+    "web": 2.7712,
+    "talk": 2.1438
+   },
+   "wrote": [
+    {
+     "start": "わたしは",
+     "text": "わたしは、最終的には多少切りかえを願い、勢いよくこれは疲弊してしまう、あまり思われない、悲しい、ダスト！ 」と自身の名前を挙げて、「あなたの人生に向けて、懐かしい、リップイニングな人物になりそうなのが上手だ」と述べている [ 133"
+    },
+    {
+     "start": "第一条",
+     "text": "第一条（２）の２の２の２の２の２の２の２の２の２の２の２の２の２の２の１の２の２の２の２の２の１の２を１の１ほど の２の２の２の２の３の２の２の２の２の２の２を１，２の２の２の２の２の２の２の１の２の２，２の２の２の２の１"
+    },
+    {
+     "start": "この法律において",
+     "text": "この法律において「宝永年間」とは、火花を蒸し合わせたもので、その対象を惜しまないので、火花を木に押し上げた場合、火花を加工したり、火花を蒸し合わせたり、火花を噴出させ、火花を取るのではないかと推測される。このような火花は火花を蒸すのに十分"
+    }
+   ],
+   "loopPct": 29.4,
+   "movedBody": false
   }
  ],
  "bestVal": 2.6895,
@@ -12649,5 +12649,5 @@
  ],
  "wantWider": false,
  "nextD": 384,
- "bad": 3
+ "bad": 4
 }
