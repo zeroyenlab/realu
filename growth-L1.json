@@ -1,69 +1,6 @@
 {
  "runs": [
   {
-   "at": "2026-09-29T13:42:22Z",
-   "val": 3.1058,
-   "prev": 3.1124,
-   "valTag": "fixed-holdout-v1",
-   "stoppedAt": 155,
-   "stuck": 0,
-   "evalTag": "fixed-ix-v1",
-   "secPerStep": 26.986,
-   "steps": 300,
-   "bpc": 3.676,
-   "charsPerTok": 1.2189,
-   "score": 2.2506,
-   "scoreW": 2.0,
-   "scoreMode": "talk",
-   "finishMix": 0.5,
-   "lineage": "L1",
-   "layers": 16,
-   "params": 117914880,
-   "chars": 1045308899,
-   "tokens": 857567631,
-   "grew": 0,
-   "rolledBack": false,
-   "ownVal": null,
-   "ownScore": null,
-   "d": 768,
-   "loops": 1,
-   "spread": 3.252,
-   "bytes": 1415115957,
-   "heads": 6,
-   "ctx": 512,
-   "vocab": 6000,
-   "kind": "bpe",
-   "arch": "tpp-loop",
-   "wantWider": false,
-   "layerCap": 16,
-   "mixChanged": false,
-   "bySrc": {
-    "laws": 4.5584,
-    "wiki": 3.2765,
-    "aozora": 3.5955,
-    "hanrei": 3.6799,
-    "kokkai": 2.8377,
-    "web": 3.1152,
-    "talk": 2.2506
-   },
-   "wrote": [
-    {
-     "start": "わたしは",
-     "text": "わたしは、先日、二域にわたって、ここで、昨年の三月に、五月の暮れを指摘した。 一度、四月の二日、婦人攻撃隊は、大連隊への安全確保のため、東北地方の防衛大綱となっていた。これは、二度をきめるだけに、もっと大きい、大規模な人民を二度と起きて幅を上げる技能を振り"
-    },
-    {
-     "start": "第一条",
-     "text": "第一条リアルタイルが主体である。 日本では、1930年6月に日本で初めてベビリキュールが発表された。 その中で、これらは1930年代まで続いていたが、日本では日本、日本では1933年のワシントンでは、1930年から1940年代にかけて日本、東ローマ帝国の中世には1932年には"
-    },
-    {
-     "start": "この法律において",
-     "text": "この法律において「グニチキチキチキング」で、普段からビガンダム機を増強し、それを救出するほか、気管向けにも戻す。 ペンギンおよびフィールドボックスソフトの スピッチ や スニングキドキ などが発売されている。 ただし、今年はサンプリングシステムが開発されたものの、基本的にはリアルタ"
-    }
-   ],
-   "loopPct": 4.11,
-   "movedBody": false
-  },
-  {
    "at": "2026-09-29T14:59:43Z",
    "val": 3.101,
    "prev": 3.1058,
@@ -12599,9 +12536,72 @@
    ],
    "loopPct": 4.96,
    "movedBody": false
+  },
+  {
+   "at": "2026-10-10T06:15:37Z",
+   "val": 2.9144,
+   "prev": 2.9166,
+   "valTag": "fixed-holdout-v1",
+   "stoppedAt": 157,
+   "stuck": 0,
+   "evalTag": "fixed-ix-v1",
+   "secPerStep": 26.5113,
+   "steps": 300,
+   "bpc": 3.4495,
+   "charsPerTok": 1.2189,
+   "score": 2.1626,
+   "scoreW": 2.0,
+   "scoreMode": "talk",
+   "finishMix": 0.5,
+   "lineage": "L1",
+   "layers": 16,
+   "params": 117914880,
+   "chars": 1045308899,
+   "tokens": 857567631,
+   "grew": 0,
+   "rolledBack": false,
+   "ownVal": null,
+   "ownScore": null,
+   "d": 768,
+   "loops": 1,
+   "spread": 3.2759,
+   "bytes": 1415115957,
+   "heads": 6,
+   "ctx": 512,
+   "vocab": 6000,
+   "kind": "bpe",
+   "arch": "tpp-loop",
+   "wantWider": false,
+   "layerCap": 16,
+   "mixChanged": false,
+   "bySrc": {
+    "laws": 4.1792,
+    "wiki": 3.0751,
+    "aozora": 3.4245,
+    "hanrei": 3.5156,
+    "kokkai": 2.6836,
+    "web": 2.9481,
+    "talk": 2.1626
+   },
+   "wrote": [
+    {
+     "start": "わたしは",
+     "text": "わたしはそうです。」 FV「わからないです、、、、」 FI「今度探してみます。」 FF「こんばんは、よろしくお願いします！」 FV「こんばんは、よろしくお願いします。」 FF「最近の�"
+    },
+    {
+     "start": "第一条",
+     "text": "第一条同表のBTSTDENT Grook 2006年11月1日 - 2007年11月29日） 1991年4月1日 - ケインズ・キャット・エリア 2008年12月29日 1992年1月30日 - 2009年9月29日 1992年9月6日"
+    },
+    {
+     "start": "この法律において",
+     "text": "この法律においてしている。 一般論としては、 ダライアス・キエルシュタイニック のような荒れにオープンソースを見ることができる。 アニメソングは「 アーニャック・コミュニケーション 」と呼んでいる [ 2 ] 。 そのアニメーションは、2年間で最大のアニメーションを観ていた [ 4"
+    }
+   ],
+   "loopPct": 12.82,
+   "movedBody": false
   }
  ],
- "bestVal": 2.9166,
+ "bestVal": 2.9144,
  "layers": 16,
  "params": 117914880,
  "born": "2026-09-08T15:11:54Z",
