@@ -1,69 +1,6 @@
 {
  "runs": [
   {
-   "at": "2026-09-30T21:30:42Z",
-   "val": 3.0631,
-   "prev": 3.0626,
-   "valTag": "fixed-holdout-v1",
-   "stoppedAt": 143,
-   "stuck": 0,
-   "evalTag": "fixed-ix-v1",
-   "secPerStep": 29.6656,
-   "steps": 300,
-   "bpc": 3.6255,
-   "charsPerTok": 1.2189,
-   "score": 2.2233,
-   "scoreW": 2.0,
-   "scoreMode": "talk",
-   "finishMix": 0.5,
-   "lineage": "L1",
-   "layers": 16,
-   "params": 117914880,
-   "chars": 1045308899,
-   "tokens": 857567631,
-   "grew": 0,
-   "rolledBack": false,
-   "ownVal": null,
-   "ownScore": null,
-   "d": 768,
-   "loops": 1,
-   "spread": 3.2816,
-   "bytes": 1415115957,
-   "heads": 6,
-   "ctx": 512,
-   "vocab": 6000,
-   "kind": "bpe",
-   "arch": "tpp-loop",
-   "wantWider": false,
-   "layerCap": 16,
-   "mixChanged": false,
-   "bySrc": {
-    "laws": 4.4729,
-    "wiki": 3.2389,
-    "aozora": 3.5546,
-    "hanrei": 3.6482,
-    "kokkai": 2.7999,
-    "web": 3.0774,
-    "talk": 2.2233
-   },
-   "wrote": [
-    {
-     "start": "わたしは",
-     "text": "わたしは，被告人が被告人らに内容を見受け，被告人が憲法上法律上認め，その 適用を認 否するにあたり，我が国からも被告人らに被告人両名を同一性としながら，被告人の 被告人として，被告人や被告人が本件犯行に貴重な人格であるとべ，被告人に向かって，被告人の背後を表 し，"
-    },
-    {
-     "start": "第一条",
-     "text": "第一条敷地においても同様に熊頭溜まりはなくなることはない [ 194 ] 。 また、もともとは 大体の 元 が 2015年 （ 平成 22年）ごろから一部は、 1998年 （平成10年）まで、 1999年 （平成11年）までに 2008年 （平成19年）度に6000"
-    },
-    {
-     "start": "この法律において",
-     "text": "この法律において「/ ファンタジー」を意味する「ガンディー」は 直前に入った状態であり、当時の「ミー・ガン」は「ガッチャギタ」と呼ばれる 。 BSGは、大人向けのエンディングで「T-PART TRENG」を意味する「CLART」を意味する「T-Line」を"
-    }
-   ],
-   "loopPct": 6.27,
-   "movedBody": false
-  },
-  {
    "at": "2026-09-30T22:45:32Z",
    "val": 3.0673,
    "prev": 3.0631,
@@ -12599,9 +12536,72 @@
    ],
    "loopPct": 2.95,
    "movedBody": false
+  },
+  {
+   "at": "2026-10-11T14:00:36Z",
+   "val": 2.9042,
+   "prev": 2.9045,
+   "valTag": "fixed-holdout-v1",
+   "stoppedAt": 159,
+   "stuck": 0,
+   "evalTag": "fixed-ix-v1",
+   "secPerStep": 26.2206,
+   "steps": 300,
+   "bpc": 3.4374,
+   "charsPerTok": 1.2189,
+   "score": 2.1481,
+   "scoreW": 2.0,
+   "scoreMode": "talk",
+   "finishMix": 0.5,
+   "lineage": "L1",
+   "layers": 16,
+   "params": 117914880,
+   "chars": 1045308899,
+   "tokens": 857567631,
+   "grew": 0,
+   "rolledBack": false,
+   "ownVal": null,
+   "ownScore": null,
+   "d": 768,
+   "loops": 1,
+   "spread": 3.0737,
+   "bytes": 1415115957,
+   "heads": 6,
+   "ctx": 512,
+   "vocab": 6000,
+   "kind": "bpe",
+   "arch": "tpp-loop",
+   "wantWider": false,
+   "layerCap": 16,
+   "mixChanged": false,
+   "bySrc": {
+    "laws": 4.1494,
+    "wiki": 3.0638,
+    "aozora": 3.411,
+    "hanrei": 3.5134,
+    "kokkai": 2.6774,
+    "web": 2.9394,
+    "talk": 2.1481
+   },
+   "wrote": [
+    {
+     "start": "わたしは",
+     "text": "わたしは生死も催されまして、聖武天皇を仔心に伊達宗羅を祈願する香料を取る事はありますか。」 AA「（拍手） 私は、政治家として、勉強する方向で一切の事を思い起こし、私たちの政治家の責任を感謝します。（拍手） まず、"
+    },
+    {
+     "start": "第一条",
+     "text": "第一条キキキキキキンキキイ スキーキング キッズキラ カンニグリーン キラーシリーズ ワールドカップ カンニングケア キットキット キットコア キットダム カンニングスクール カンニングドライヤー キットキット キットキット - クライアント クライ"
+    },
+    {
+     "start": "この法律において",
+     "text": "この法律において「 Harbami （オロス）」とは、元々プライドが「 Hanataki 」と呼び掛けていたのだった。 1980年代末に Oracolor と マドリード を統合した指令により、プライドを二分した。 1980年代後半には ゲルマン・フォン"
+    }
+   ],
+   "loopPct": 11.6,
+   "movedBody": false
   }
  ],
- "bestVal": 2.9045,
+ "bestVal": 2.9042,
  "layers": 16,
  "params": 117914880,
  "born": "2026-09-08T15:11:54Z",
@@ -12649,5 +12649,5 @@
  ],
  "wantWider": false,
  "nextD": 768,
- "bad": 1
+ "bad": 0
 }
