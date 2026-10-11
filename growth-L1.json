@@ -1,69 +1,6 @@
 {
  "runs": [
   {
-   "at": "2026-09-30T08:43:11Z",
-   "val": 3.077,
-   "prev": 3.0761,
-   "valTag": "fixed-holdout-v1",
-   "stoppedAt": 159,
-   "stuck": 0,
-   "evalTag": "fixed-ix-v1",
-   "secPerStep": 26.1804,
-   "steps": 300,
-   "bpc": 3.6419,
-   "charsPerTok": 1.2189,
-   "score": 2.2265,
-   "scoreW": 2.0,
-   "scoreMode": "talk",
-   "finishMix": 0.5,
-   "lineage": "L1",
-   "layers": 16,
-   "params": 117914880,
-   "chars": 1045308899,
-   "tokens": 857567631,
-   "grew": 0,
-   "rolledBack": false,
-   "ownVal": null,
-   "ownScore": null,
-   "d": 768,
-   "loops": 1,
-   "spread": 3.0281,
-   "bytes": 1415115957,
-   "heads": 6,
-   "ctx": 512,
-   "vocab": 6000,
-   "kind": "bpe",
-   "arch": "tpp-loop",
-   "wantWider": false,
-   "layerCap": 16,
-   "mixChanged": false,
-   "bySrc": {
-    "laws": 4.5006,
-    "wiki": 3.2498,
-    "aozora": 3.5716,
-    "hanrei": 3.656,
-    "kokkai": 2.8096,
-    "web": 3.0899,
-    "talk": 2.2265
-   },
-   "wrote": [
-    {
-     "start": "わたしは",
-     "text": "わたしは、わが軍でありましても、軍事的的中軍なり、自由主義に追い込まれてしまうという、戦闘をつくったわけであります。 今回、国の軍事運用、この点をお尋ねしているところであります。」 AB「国民の秘書は、軍事力を持って軍事力を持って、東南アジアの軍事力がわ"
-    },
-    {
-     "start": "第一条",
-     "text": "第一条提出書hpg|監察翼彩書 ファイル:Shahor of Shript|小田急電鉄 ファイル:Shirako審査選書 form.jpg|関西急行線 ファイル:Romachi Shidako Stranchrow.jpg|横浜大浜�"
-    },
-    {
-     "start": "この法律において",
-     "text": "この法律において「大量幼児」を結ぶようになる。 清酒の首を封生じるとき、これは、周りの光をあらわしている。 三味線の組み合わせを「てんたちのかき」と呼ぶ。 「こはちょ」「おかしい」と「か……」は、何の主人は二度と呼び、道具は何をしている。 この間、配合"
-    }
-   ],
-   "loopPct": 7.09,
-   "movedBody": false
-  },
-  {
    "at": "2026-09-30T10:04:38Z",
    "val": 3.073,
    "prev": 3.077,
@@ -12599,6 +12536,69 @@
    ],
    "loopPct": 5.1,
    "movedBody": false
+  },
+  {
+   "at": "2026-10-11T01:16:41Z",
+   "val": 2.9147,
+   "prev": 2.9192,
+   "valTag": "fixed-holdout-v1",
+   "stoppedAt": 180,
+   "stuck": 0,
+   "evalTag": "fixed-ix-v1",
+   "secPerStep": 22.8266,
+   "steps": 300,
+   "bpc": 3.4497,
+   "charsPerTok": 1.2189,
+   "score": 2.1548,
+   "scoreW": 2.0,
+   "scoreMode": "talk",
+   "finishMix": 0.5,
+   "lineage": "L1",
+   "layers": 16,
+   "params": 117914880,
+   "chars": 1045308899,
+   "tokens": 857567631,
+   "grew": 0,
+   "rolledBack": false,
+   "ownVal": null,
+   "ownScore": null,
+   "d": 768,
+   "loops": 1,
+   "spread": 2.8108,
+   "bytes": 1415115957,
+   "heads": 6,
+   "ctx": 512,
+   "vocab": 6000,
+   "kind": "bpe",
+   "arch": "tpp-loop",
+   "wantWider": false,
+   "layerCap": 16,
+   "mixChanged": false,
+   "bySrc": {
+    "laws": 4.163,
+    "wiki": 3.0688,
+    "aozora": 3.4202,
+    "hanrei": 3.5127,
+    "kokkai": 2.6898,
+    "web": 2.9471,
+    "talk": 2.1548
+   },
+   "wrote": [
+    {
+     "start": "わたしは",
+     "text": "わたしはそのようなことを申し上げたいと思います。」 AB「総理、御存じないとおり、財政再建は、もう私たちが先頭に立ってやり過ぎた日本がどう観察するかということを指摘したいと思うんですが、総理にお尋ねをいたします。 まず、今回の補正につきまして、総理の御決意をお聞かせください"
+    },
+    {
+     "start": "第一条",
+     "text": "第一条ロハハハ2016年10月27日閲覧。 ↑ 『 ウィーン会議においても大界一が「東大大犯行」をテーマにしたいと報告 』（プレスリリース）ポーツコレクション よりアーカイブ 。 ↑ 『 ウィーン・ メール 』の経営統合を実現 『 消費"
+    },
+    {
+     "start": "この法律において",
+     "text": "この法律において計画に従って指針を示し、実施計画と相対的にあわせて頂ける計画を立てる事案が出てくるのとされてきたのであります。そして同時に、再建計画、再建計画などの計画を構造化しても、いわゆる戦略的計画、あるいは再建計画を切り開くことも、なぜならば、他国に対する幾つかのような見通しが中心"
+    }
+   ],
+   "loopPct": 6.3,
+   "movedBody": false
   }
  ],
  "bestVal": 2.9094,
@@ -12649,5 +12649,5 @@
  ],
  "wantWider": false,
  "nextD": 768,
- "bad": 1
+ "bad": 0
 }
