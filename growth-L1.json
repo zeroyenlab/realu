@@ -1,69 +1,6 @@
 {
  "runs": [
   {
-   "at": "2026-09-30T20:10:04Z",
-   "val": 3.0626,
-   "prev": 3.0657,
-   "valTag": "fixed-holdout-v1",
-   "stoppedAt": 158,
-   "stuck": 0,
-   "evalTag": "fixed-ix-v1",
-   "secPerStep": 26.3816,
-   "steps": 300,
-   "bpc": 3.6248,
-   "charsPerTok": 1.2189,
-   "score": 2.2251,
-   "scoreW": 2.0,
-   "scoreMode": "talk",
-   "finishMix": 0.5,
-   "lineage": "L1",
-   "layers": 16,
-   "params": 117914880,
-   "chars": 1045308899,
-   "tokens": 857567631,
-   "grew": 0,
-   "rolledBack": false,
-   "ownVal": null,
-   "ownScore": null,
-   "d": 768,
-   "loops": 1,
-   "spread": 3.4432,
-   "bytes": 1415115957,
-   "heads": 6,
-   "ctx": 512,
-   "vocab": 6000,
-   "kind": "bpe",
-   "arch": "tpp-loop",
-   "wantWider": false,
-   "layerCap": 16,
-   "mixChanged": false,
-   "bySrc": {
-    "laws": 4.4751,
-    "wiki": 3.2374,
-    "aozora": 3.5575,
-    "hanrei": 3.6511,
-    "kokkai": 2.798,
-    "web": 3.0791,
-    "talk": 2.2251
-   },
-   "wrote": [
-    {
-     "start": "わたしは",
-     "text": "わたしは、自分に帰って来たものである。 もし、家の友達が引き渡した、家を出ては、好きな性格になっていた。 父員が家名を担当したのは、文曲） 実は妻である。 「お前らはいません」と、秀吉はそれを見ていた。 「ああなたの元気でしたら、お父さんはどうでしたか？」"
-    },
-    {
-     "start": "第一条",
-     "text": "第一条第四十八条の三十七第一項を受けようとする場合における第二十五の延長の問題の解決の促進を図るため必要な措置の充実、実施壊滅拡大防止対策等めることとしております。（拍手）」 AA「国務大臣 私は、公明党を代表して、国民の信頼回復に向け、極めて重要な理由を思い切った取組を促すことを申し上げます。 また、公明党は、元内閣官房長官が初めて"
-    },
-    {
-     "start": "この法律において",
-     "text": "この法律において、非常にcepper は稀である。 12月17日 - サンシャインストラクター （ 英語版 ） が ワインストラクション を開催し、バリアントラクターを商業的に構成。 12月14日 - サンフランシスコ の サンフランシスコ を開催。 2月"
-    }
-   ],
-   "loopPct": 2.75,
-   "movedBody": false
-  },
-  {
    "at": "2026-09-30T21:30:42Z",
    "val": 3.0631,
    "prev": 3.0626,
@@ -12599,9 +12536,72 @@
    ],
    "loopPct": 3.09,
    "movedBody": false
+  },
+  {
+   "at": "2026-10-11T12:43:28Z",
+   "val": 2.9045,
+   "prev": 2.9066,
+   "valTag": "fixed-holdout-v1",
+   "stoppedAt": 158,
+   "stuck": 0,
+   "evalTag": "fixed-ix-v1",
+   "secPerStep": 26.3136,
+   "steps": 300,
+   "bpc": 3.4377,
+   "charsPerTok": 1.2189,
+   "score": 2.147,
+   "scoreW": 2.0,
+   "scoreMode": "talk",
+   "finishMix": 0.5,
+   "lineage": "L1",
+   "layers": 16,
+   "params": 117914880,
+   "chars": 1045308899,
+   "tokens": 857567631,
+   "grew": 0,
+   "rolledBack": false,
+   "ownVal": null,
+   "ownScore": null,
+   "d": 768,
+   "loops": 1,
+   "spread": 2.9702,
+   "bytes": 1415115957,
+   "heads": 6,
+   "ctx": 512,
+   "vocab": 6000,
+   "kind": "bpe",
+   "arch": "tpp-loop",
+   "wantWider": false,
+   "layerCap": 16,
+   "mixChanged": false,
+   "bySrc": {
+    "laws": 4.1511,
+    "wiki": 3.0605,
+    "aozora": 3.4076,
+    "hanrei": 3.5117,
+    "kokkai": 2.6762,
+    "web": 2.9386,
+    "talk": 2.147
+   },
+   "wrote": [
+    {
+     "start": "わたしは",
+     "text": "わたしは、あなたを何もかもしれないから、よく言われても行かないことを八つ紙に読み上げて、それを思い出しました。 しかし、そのうち三番目に、この自分を指して叫んで世話をすることができましたから、一番私は、やはり一番はあの『わたしの家を見て、とはいえ、移転に実行をするのは、私たちの行"
+    },
+    {
+     "start": "第一条",
+     "text": "第一条第二節 日本国とドイツとの間の 局所 （ドイツ語: Karrous フィナンシャルフラワー, Killo osaran）の両方を前提に「 Katramy 」と呼び、その後の モンキーズ・ポーズ をエルフの ローリング・ブーツ と共に ロ"
+    },
+    {
+     "start": "この法律において",
+     "text": "この法律において法人税については、文部大臣は、相続税の減税は、いたずらに、昭和三十年の発税の大幅緩和をさらに進めることとしておるのであります。」 AA「これらの所得税制の抜本的な見直しについて、本年度の税制改正につきましては、従来、税制改革に取り組むことは、膨大な税制措置でありますが、その見直しは、一つの税"
+    }
+   ],
+   "loopPct": 2.95,
+   "movedBody": false
   }
  ],
- "bestVal": 2.9066,
+ "bestVal": 2.9045,
  "layers": 16,
  "params": 117914880,
  "born": "2026-09-08T15:11:54Z",
@@ -12649,5 +12649,5 @@
  ],
  "wantWider": false,
  "nextD": 768,
- "bad": 0
+ "bad": 1
 }
