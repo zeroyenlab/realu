@@ -1,69 +1,6 @@
 {
  "runs": [
   {
-   "at": "2026-09-30T17:37:30Z",
-   "val": 3.071,
-   "prev": 3.0704,
-   "valTag": "fixed-holdout-v1",
-   "stoppedAt": 0,
-   "stuck": 0,
-   "evalTag": "fixed-ix-v1",
-   "secPerStep": 12.9293,
-   "steps": 300,
-   "bpc": 3.6347,
-   "charsPerTok": 1.2189,
-   "score": 2.2253,
-   "scoreW": 2.0,
-   "scoreMode": "talk",
-   "finishMix": 0.5,
-   "lineage": "L1",
-   "layers": 16,
-   "params": 117914880,
-   "chars": 1045308899,
-   "tokens": 857567631,
-   "grew": 0,
-   "rolledBack": false,
-   "ownVal": null,
-   "ownScore": null,
-   "d": 768,
-   "loops": 1,
-   "spread": 3.6072,
-   "bytes": 1415115957,
-   "heads": 6,
-   "ctx": 512,
-   "vocab": 6000,
-   "kind": "bpe",
-   "arch": "tpp-loop",
-   "wantWider": false,
-   "layerCap": 16,
-   "mixChanged": false,
-   "bySrc": {
-    "laws": 4.483,
-    "wiki": 3.2471,
-    "aozora": 3.5671,
-    "hanrei": 3.6519,
-    "kokkai": 2.8064,
-    "web": 3.0876,
-    "talk": 2.2253
-   },
-   "wrote": [
-    {
-     "start": "わたしは",
-     "text": "わたしは、ドイツ政府にはドイツ政府といたしまして、政府としての審議を重ねておるところのこの予算を各会派から成立しなければ、これは当然に私は求められております。そうして、その実態に即ち、私の反対というものは、その道を開くべきだ、こういうことのもとに、私はそのことを、または政治の信任を果たさなければなりま"
-    },
-    {
-     "start": "第一条",
-     "text": "第一条によって、その実実は古代よりもこの古代で、後世中の王国は常に古代ギリシア人と古代ギリシア人の古代に変賅されている。 加古代は後期に、エジプト世界をはじめ王国を結成しており、古代ギリシア人にはもたらされる。 ギリシア人 （ 英語版"
-    },
-    {
-     "start": "この法律において",
-     "text": "この法律において「 」は「 」に由来する。 これらは「 」（しかん ）と呼ばれた [ 27 ] 。 このため、成功した「 Dobe Seven 」は、中世以前には ロシア や 1972年 に コンスタンティン で、 大規模 などから 独立 した。 イギリス では、"
-    }
-   ],
-   "loopPct": 0.85,
-   "movedBody": false
-  },
-  {
    "at": "2026-09-30T18:54:06Z",
    "val": 3.0657,
    "prev": 3.071,
@@ -12599,9 +12536,72 @@
    ],
    "loopPct": 7.0,
    "movedBody": false
+  },
+  {
+   "at": "2026-10-11T10:07:21Z",
+   "val": 2.9072,
+   "prev": 2.9106,
+   "valTag": "fixed-holdout-v1",
+   "stoppedAt": 159,
+   "stuck": 0,
+   "evalTag": "fixed-ix-v1",
+   "secPerStep": 26.1774,
+   "steps": 300,
+   "bpc": 3.441,
+   "charsPerTok": 1.2189,
+   "score": 2.1529,
+   "scoreW": 2.0,
+   "scoreMode": "talk",
+   "finishMix": 0.5,
+   "lineage": "L1",
+   "layers": 16,
+   "params": 117914880,
+   "chars": 1045308899,
+   "tokens": 857567631,
+   "grew": 0,
+   "rolledBack": false,
+   "ownVal": null,
+   "ownScore": null,
+   "d": 768,
+   "loops": 1,
+   "spread": 2.9371,
+   "bytes": 1415115957,
+   "heads": 6,
+   "ctx": 512,
+   "vocab": 6000,
+   "kind": "bpe",
+   "arch": "tpp-loop",
+   "wantWider": false,
+   "layerCap": 16,
+   "mixChanged": false,
+   "bySrc": {
+    "laws": 4.1524,
+    "wiki": 3.0661,
+    "aozora": 3.4143,
+    "hanrei": 3.5112,
+    "kokkai": 2.6759,
+    "web": 2.9427,
+    "talk": 2.1529
+   },
+   "wrote": [
+    {
+     "start": "わたしは",
+     "text": "わたしはブレストで肉を食べました！」 CO「ブルーはおいしそうですね。ダイエットがまだ大変ですね」 AB「もうすぐだと思います！」 AA「こんにちは」 CO「こんにちは」 AA「最近"
+    },
+    {
+     "start": "第一条",
+     "text": "第一条 は 2001年 3月20日 に行われ、 リアルタイム・ダグラス のライバル がこれまで3番目に成功していたことが発表された。 1967年 4月12日 に 神戸三宮 で開催された、神戸三宮駅前デザイン演出の選曲「 J-JR 」に果たした"
+    },
+    {
+     "start": "この法律において",
+     "text": "この法律において「新型コロナ対策において、新型コロナ対策推進区域の整備に全力で取り組んでまいります。 新型コロナの新型コロナウイルス感染症対策推進事業、デジタル庁と連携して、新型コロナウイルス感染症対策等を踏まえて、新型コロナウイルス感染症対策を進めてまいります。 来年度予算、これは二〇一七年度の一・二％"
+    }
+   ],
+   "loopPct": 3.02,
+   "movedBody": false
   }
  ],
- "bestVal": 2.9094,
+ "bestVal": 2.9072,
  "layers": 16,
  "params": 117914880,
  "born": "2026-09-08T15:11:54Z",
@@ -12649,5 +12649,5 @@
  ],
  "wantWider": false,
  "nextD": 768,
- "bad": 1
+ "bad": 2
 }
