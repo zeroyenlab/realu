@@ -1,69 +1,6 @@
 {
  "runs": [
   {
-   "at": "2026-09-30T09:50:08Z",
-   "val": 2.7217,
-   "prev": 2.7202,
-   "valTag": "fixed-holdout-v1",
-   "stoppedAt": 0,
-   "stuck": 0,
-   "evalTag": "fixed-ix-v1",
-   "secPerStep": 5.7339,
-   "steps": 609,
-   "bpc": 3.2213,
-   "charsPerTok": 1.2189,
-   "score": 2.0668,
-   "scoreW": 2.0,
-   "scoreMode": "talk",
-   "finishMix": 0.85,
-   "lineage": "L2",
-   "layers": 13,
-   "params": 44216832,
-   "chars": 1045308899,
-   "tokens": 857567631,
-   "grew": 0,
-   "rolledBack": false,
-   "ownVal": null,
-   "ownScore": null,
-   "d": 512,
-   "loops": 1,
-   "spread": 2.5876,
-   "bytes": 530714761,
-   "heads": 8,
-   "ctx": 512,
-   "vocab": 6000,
-   "kind": "bpe",
-   "arch": "tpp-loop",
-   "wantWider": false,
-   "layerCap": 16,
-   "mixChanged": false,
-   "bySrc": {
-    "laws": 3.6626,
-    "wiki": 2.8946,
-    "aozora": 3.2047,
-    "hanrei": 3.4172,
-    "kokkai": 2.5286,
-    "web": 2.8092,
-    "talk": 2.0668
-   },
-   "wrote": [
-    {
-     "start": "わたしは",
-     "text": "わたしは喧嘩です。」 AA「嫌がるのですねえ。大人になったら、それが必要なんでしょうね」 AJ「はい。大人になったら、残念です。」 AA「たしかに、本当に大人になっても、いつも俺と行きに行っていたようです」 AJ「そうですよね。子供の頃は、"
-    },
-    {
-     "start": "第一条",
-     "text": "第一条餃子様ければ、そうでないものの根絶を目指す。」 AA「さらに、経費節減の整備であります。 次に、健康増進計画についてお尋ねがありました。 昨年末、健康増進計画は、国民の健康を守るため、健康増進計画、健康増進計画、健康増進計画の策定など、国民の誇りだと考えます。 このように、い"
-    },
-    {
-     "start": "この法律において",
-     "text": "この法律において「公共大学等」という。）の運営に関しては、当該公共大学等（簿記、童謡、映画、映画、吾川弘文館、体育館、文学館、劇場、劇場、演劇、立川弘文館、美術館、芸術館、絵画館又は劇場、劇場、音楽、映画、映画館、音楽、演劇"
-    }
-   ],
-   "loopPct": 20.12,
-   "movedBody": false
-  },
-  {
    "at": "2026-09-30T11:18:17Z",
    "val": 2.7225,
    "prev": 2.7217,
@@ -12599,9 +12536,72 @@
    ],
    "loopPct": 4.78,
    "movedBody": false
+  },
+  {
+   "at": "2026-10-11T05:02:05Z",
+   "val": 2.6454,
+   "prev": 2.646,
+   "valTag": "fixed-holdout-v1",
+   "stoppedAt": 342,
+   "stuck": 0,
+   "evalTag": "fixed-ix-v1",
+   "secPerStep": 11.2988,
+   "steps": 663,
+   "bpc": 3.1311,
+   "charsPerTok": 1.2189,
+   "score": 2.0384,
+   "scoreW": 2.0,
+   "scoreMode": "talk",
+   "finishMix": 0.85,
+   "lineage": "L2",
+   "layers": 14,
+   "params": 47379968,
+   "chars": 1045308899,
+   "tokens": 857567631,
+   "grew": 0,
+   "rolledBack": false,
+   "ownVal": null,
+   "ownScore": null,
+   "d": 512,
+   "loops": 1,
+   "spread": 2.5818,
+   "bytes": 568680621,
+   "heads": 8,
+   "ctx": 512,
+   "vocab": 6000,
+   "kind": "bpe",
+   "arch": "tpp-loop",
+   "wantWider": false,
+   "layerCap": 16,
+   "mixChanged": false,
+   "bySrc": {
+    "laws": 3.5202,
+    "wiki": 2.8093,
+    "aozora": 3.1291,
+    "hanrei": 3.368,
+    "kokkai": 2.4675,
+    "web": 2.7329,
+    "talk": 2.0384
+   },
+   "wrote": [
+    {
+     "start": "わたしは",
+     "text": "わたしは絶対にバリバリやる気がしないでいます」 CR「うまくいくと長く感じるようになりますかね」 FR「そうですね。」 CR「もうどれくらいの間を回すのでしょうか」 FR「2000円でもしますね。」 CR「気に入らないですよね」 FR「そうですね"
+    },
+    {
+     "start": "第一条",
+     "text": "第一条いいんですよ。」 IH「あら！なんだかみんな怒られちゃいますね。」 IH「よく分からないんですよね、怒ってても怒らないです。」 IH「私も気づけば嘘だとは思ってるんですけど、それで怒られちゃったりします。」 IH「いやあ、それ"
+    },
+    {
+     "start": "この法律において",
+     "text": "この法律において、歌手、俳優、使用名、外国人関係といった人材を対象とする 技術 や、 国際交流 ・ 国際交流 を目的とした外国人向けの 観覧車 （ 英語版 ） が用いられる。 2019年 には、世界で最も知られている 国際交流 の 国際交流都市 になった。 輸出規制 は、 2012年"
+    }
+   ],
+   "loopPct": 4.43,
+   "movedBody": false
   }
  ],
- "bestVal": 2.646,
+ "bestVal": 2.6454,
  "layers": 14,
  "params": 47379968,
  "born": "2026-09-08T15:11:54Z",
@@ -12649,5 +12649,5 @@
  ],
  "wantWider": false,
  "nextD": 512,
- "bad": 2
+ "bad": 5
 }
