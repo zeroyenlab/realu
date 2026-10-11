@@ -1,69 +1,6 @@
 {
  "runs": [
   {
-   "at": "2026-10-01T01:21:16Z",
-   "val": 3.0606,
-   "prev": 3.063,
-   "valTag": "fixed-holdout-v1",
-   "stoppedAt": 158,
-   "stuck": 0,
-   "evalTag": "fixed-ix-v1",
-   "secPerStep": 26.4652,
-   "steps": 300,
-   "bpc": 3.6225,
-   "charsPerTok": 1.2189,
-   "score": 2.2261,
-   "scoreW": 2.0,
-   "scoreMode": "talk",
-   "finishMix": 0.5,
-   "lineage": "L1",
-   "layers": 16,
-   "params": 117914880,
-   "chars": 1045308899,
-   "tokens": 857567631,
-   "grew": 0,
-   "rolledBack": false,
-   "ownVal": null,
-   "ownScore": null,
-   "d": 768,
-   "loops": 1,
-   "spread": 3.1942,
-   "bytes": 1415115957,
-   "heads": 6,
-   "ctx": 512,
-   "vocab": 6000,
-   "kind": "bpe",
-   "arch": "tpp-loop",
-   "wantWider": false,
-   "layerCap": 16,
-   "mixChanged": false,
-   "bySrc": {
-    "laws": 4.4664,
-    "wiki": 3.2325,
-    "aozora": 3.5537,
-    "hanrei": 3.6472,
-    "kokkai": 2.7989,
-    "web": 3.0757,
-    "talk": 2.2261
-   },
-   "wrote": [
-    {
-     "start": "わたしは",
-     "text": "わたしは、ずんずんの方で同僚だと思いますよ。 大臣、総理、いろいろな議論をやらないとか、私が聞いているんですか。どれておっしゃったのか、働いているのか、そして、重ねて申し上げたいと思います。 是非、私は、国民が食料品等の食品を食べれて、食料を、大体食料"
-    },
-    {
-     "start": "第一条",
-     "text": "第一条αΊ繰延』を定めることができる。 （エルフース） 孤独が現行の ウルフンゼン （ウルフと呼んでいる。 ウルフル - ガルフが推定される、ウルフ＝アンウェル＝ヘリフス （Soveut）と呼ばれる。 ジューランド - ウルフが、ウルフ"
-    },
-    {
-     "start": "この法律において",
-     "text": "この法律において、補足的な村で有望な地形とりわけ若い男らと共に、川上市では正成分が大きく、いわゆる美術館の主流。水曜日の12:55から、川中流31のような地質学的性質を持つ。 『水曜日』作曲家の人物 18:40 - 18:00�"
-    }
-   ],
-   "loopPct": 4.93,
-   "movedBody": false
-  },
-  {
    "at": "2026-10-01T02:39:18Z",
    "val": 3.0596,
    "prev": 3.0606,
@@ -12598,6 +12535,69 @@
     }
    ],
    "loopPct": 7.69,
+   "movedBody": false
+  },
+  {
+   "at": "2026-10-11T17:49:12Z",
+   "val": 2.9085,
+   "prev": 2.906,
+   "valTag": "fixed-holdout-v1",
+   "stoppedAt": 180,
+   "stuck": 0,
+   "evalTag": "fixed-ix-v1",
+   "secPerStep": 22.8889,
+   "steps": 300,
+   "bpc": 3.4425,
+   "charsPerTok": 1.2189,
+   "score": 2.1522,
+   "scoreW": 2.0,
+   "scoreMode": "talk",
+   "finishMix": 0.5,
+   "lineage": "L1",
+   "layers": 16,
+   "params": 117914880,
+   "chars": 1045308899,
+   "tokens": 857567631,
+   "grew": 0,
+   "rolledBack": false,
+   "ownVal": null,
+   "ownScore": null,
+   "d": 768,
+   "loops": 1,
+   "spread": 2.9972,
+   "bytes": 1415115957,
+   "heads": 6,
+   "ctx": 512,
+   "vocab": 6000,
+   "kind": "bpe",
+   "arch": "tpp-loop",
+   "wantWider": false,
+   "layerCap": 16,
+   "mixChanged": false,
+   "bySrc": {
+    "laws": 4.1503,
+    "wiki": 3.0668,
+    "aozora": 3.4119,
+    "hanrei": 3.5007,
+    "kokkai": 2.6795,
+    "web": 2.9386,
+    "talk": 2.1522
+   },
+   "wrote": [
+    {
+     "start": "わたしは",
+     "text": "わたしは凄く好きですね」 EO「私もミルクでしょっちゅういちです」 DI「うまいですよね。音楽は好きですか？」 EO「ドラマはよく見ますが、よく読めます」 DI「そうなんですね！どんなのを見ますか？」 EO「子供のころ"
+    },
+    {
+     "start": "第一条",
+     "text": "第一条 は 1942年 11月24日 、 1941年 1月1日 に 世界初のベストテン ・ デイビッド・フォン・フォン・レール が開催された。 1943年 、 アメリカ 大統領の レールウッド・アーカイブ は 1941年 に制定され、"
+    },
+    {
+     "start": "この法律において",
+     "text": "この法律において「家賃」を締結した。そうすると、家賃が安くなってなくなってしまうのは、家賃の制度があります。そこで、家賃を捨てるべく家賃を交換しているので、家賃が低くなるのが嫌いです。」 AA「家賃は、家賃が高いといわれるのですが、家賃は大変です。家賃も出るのは大変で"
+    }
+   ],
+   "loopPct": 5.02,
    "movedBody": false
   }
  ],
