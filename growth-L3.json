@@ -1,69 +1,6 @@
 {
  "runs": [
   {
-   "at": "2026-10-01T07:37:11Z",
-   "val": 2.7517,
-   "prev": 2.752,
-   "valTag": "fixed-holdout-v1",
-   "stoppedAt": 565,
-   "stuck": 0,
-   "evalTag": "fixed-ix-v1",
-   "secPerStep": 6.6381,
-   "steps": 966,
-   "bpc": 3.2568,
-   "charsPerTok": 1.2189,
-   "score": 2.1849,
-   "scoreW": 2.0,
-   "scoreMode": "talk",
-   "finishMix": 0.2,
-   "lineage": "L3",
-   "layers": 13,
-   "params": 25335168,
-   "chars": 1045308899,
-   "tokens": 857567631,
-   "grew": 0,
-   "rolledBack": false,
-   "ownVal": null,
-   "ownScore": null,
-   "d": 384,
-   "loops": 1,
-   "spread": 2.8546,
-   "bytes": 304134793,
-   "heads": 6,
-   "ctx": 512,
-   "vocab": 6000,
-   "kind": "bpe",
-   "arch": "tpp-loop",
-   "wantWider": false,
-   "layerCap": 16,
-   "mixChanged": false,
-   "bySrc": {
-    "laws": 3.7466,
-    "wiki": 2.9269,
-    "aozora": 3.2495,
-    "hanrei": 3.4619,
-    "kokkai": 2.5513,
-    "web": 2.8344,
-    "talk": 2.1849
-   },
-   "wrote": [
-    {
-     "start": "わたしは",
-     "text": "わたしは、どこまでもその組織をやっていくようにも考えております。 そこで、私は、この点で、私、二日に申し上げてまいりましたのは、いかなる制度、話題を措置していくかというのは、とにかく私たちは、この夏の時点で、政治、経済、経済、経済が統合していって、みずからいい政治をやっていくべきだということを御指�"
-    },
-    {
-     "start": "第一条",
-     "text": "第一条レーレーレーレーレーション 1967年10月 - スカウト：スカウト：Black.134 shot.145 the Station frenks 1968年2月 - フクール：ハエル・クーンズ - パッシング・ノア / サングラス・"
-    },
-    {
-     "start": "この法律において",
-     "text": "この法律において「新�良郡印章町」を、 伊勢市 と 岡山市 に昇格させており、同年3月に 伊勢市 から 伊勢市 に昇格させており、 伊勢市 と 伊勢市 と 伊勢市 に到着した 伊勢市 は、同地に新市を移転。 伊勢市"
-    }
-   ],
-   "loopPct": 16.5,
-   "movedBody": false
-  },
-  {
    "at": "2026-10-01T08:57:09Z",
    "val": 2.7506,
    "prev": 2.7517,
@@ -12599,6 +12536,69 @@
    ],
    "loopPct": 26.56,
    "movedBody": false
+  },
+  {
+   "at": "2026-10-11T22:49:51Z",
+   "val": 2.6802,
+   "prev": 2.6798,
+   "valTag": "fixed-holdout-v1",
+   "stoppedAt": 564,
+   "stuck": 0,
+   "evalTag": "fixed-ix-v1",
+   "secPerStep": 6.6621,
+   "steps": 967,
+   "bpc": 3.1722,
+   "charsPerTok": 1.2189,
+   "score": 2.1285,
+   "scoreW": 2.0,
+   "scoreMode": "talk",
+   "finishMix": 0.2,
+   "lineage": "L3",
+   "layers": 13,
+   "params": 25335168,
+   "chars": 1045308899,
+   "tokens": 857567631,
+   "grew": 0,
+   "rolledBack": false,
+   "ownVal": null,
+   "ownScore": null,
+   "d": 384,
+   "loops": 1,
+   "spread": 2.8795,
+   "bytes": 304134793,
+   "heads": 6,
+   "ctx": 512,
+   "vocab": 6000,
+   "kind": "bpe",
+   "arch": "tpp-loop",
+   "wantWider": false,
+   "layerCap": 16,
+   "mixChanged": false,
+   "bySrc": {
+    "laws": 3.64,
+    "wiki": 2.8443,
+    "aozora": 3.1738,
+    "hanrei": 3.4171,
+    "kokkai": 2.4884,
+    "web": 2.7646,
+    "talk": 2.1285
+   },
+   "wrote": [
+    {
+     "start": "わたしは",
+     "text": "わたしは、今日はよっぽどな旅館などで、そこからは大変なことになりますものね。あれは、私があの人たちは、講義のまま行けるだけですよ。そこに、これからにしてもいいのか、そこから時代が来るのか。」 AA「しかし、日本では、最近は、その先の地元の人たちが集"
+    },
+    {
+     "start": "第一条",
+     "text": "第一条附属障害福祉福祉福祉福祉福祉福祉福祉福祉福祉福祉福祉福祉福祉施設は、住宅の所有、施設の建設及び管理、爬虫害の防止及び医療の確保並びに生活の自由を確保するものであり、できる限りその構造的整備が必要であります。」 AB「以上、本法律案の内容につきまして、その要旨及びその内容を御説明申し上げます。 第一は、住宅の供給を円滑にするため、住宅の供給を促進するため、住宅の供給を"
+    },
+    {
+     "start": "この法律において",
+     "text": "この法律において「国」を「国」（通常国の場合は「国」）と呼ぶ。 国においても「国」の表記がしばしば用いられる。 国においては、国（国を除く）の国（国）は国・国・国・各国・各国・地域・地域・地域・地域のそれぞれで国・地域のそれぞれの地域を指す場合が多い。 国においては国・国・地域の、「国」の表記は国・地域・地域"
+    }
+   ],
+   "loopPct": 18.94,
+   "movedBody": false
   }
  ],
  "bestVal": 2.6791,
@@ -12649,5 +12649,5 @@
  ],
  "wantWider": false,
  "nextD": 384,
- "bad": 3
+ "bad": 0
 }
