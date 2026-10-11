@@ -1,69 +1,6 @@
 {
  "runs": [
   {
-   "at": "2026-09-30T18:54:06Z",
-   "val": 3.0657,
-   "prev": 3.071,
-   "valTag": "fixed-holdout-v1",
-   "stoppedAt": 158,
-   "stuck": 0,
-   "evalTag": "fixed-ix-v1",
-   "secPerStep": 26.3782,
-   "steps": 300,
-   "bpc": 3.6285,
-   "charsPerTok": 1.2189,
-   "score": 2.2253,
-   "scoreW": 2.0,
-   "scoreMode": "talk",
-   "finishMix": 0.5,
-   "lineage": "L1",
-   "layers": 16,
-   "params": 117914880,
-   "chars": 1045308899,
-   "tokens": 857567631,
-   "grew": 0,
-   "rolledBack": false,
-   "ownVal": null,
-   "ownScore": null,
-   "d": 768,
-   "loops": 1,
-   "spread": 3.2066,
-   "bytes": 1415115957,
-   "heads": 6,
-   "ctx": 512,
-   "vocab": 6000,
-   "kind": "bpe",
-   "arch": "tpp-loop",
-   "wantWider": false,
-   "layerCap": 16,
-   "mixChanged": false,
-   "bySrc": {
-    "laws": 4.4822,
-    "wiki": 3.2408,
-    "aozora": 3.5599,
-    "hanrei": 3.6523,
-    "kokkai": 2.8017,
-    "web": 3.0816,
-    "talk": 2.2253
-   },
-   "wrote": [
-    {
-     "start": "わたしは",
-     "text": "わたしは、日本は日本のように日本から全面的に戦略的取り組みはないのであります。 次に、日本のＥＥＣ、Ｆ七二三、日米安保三三四と日本の参加国と、今後の国際情勢等を通じたラッケを含め、国際社会の安全保障と一体とならざるを得ないのであります。 日本を守るという程度の経済反対も、世界の平和"
-    },
-    {
-     "start": "第一条",
-     "text": "第一条られていることである。 <記事 ニスノン> ニュージャージャージー（ ）は、フランスそのものの考えで、1960年代のロンドンに絵画を描いたイギリス、アンダージュに出版した「オレンジ」の言語策定によって、1967年にはロンドンのフランス語版に用"
-    },
-    {
-     "start": "この法律において",
-     "text": "この法律において「CMNN WINCIR」の「CMR-POR」が登場し、CMSの「LAMINON FM」が開催されることとなった。 2017年9月24日、ECMRON7が「Linux ROM ROCARID ROM」にて、同年11月23日にNetf"
-    }
-   ],
-   "loopPct": 7.06,
-   "movedBody": false
-  },
-  {
    "at": "2026-09-30T20:10:04Z",
    "val": 3.0626,
    "prev": 3.0657,
@@ -12599,9 +12536,72 @@
    ],
    "loopPct": 3.02,
    "movedBody": false
+  },
+  {
+   "at": "2026-10-11T11:25:37Z",
+   "val": 2.9066,
+   "prev": 2.9072,
+   "valTag": "fixed-holdout-v1",
+   "stoppedAt": 159,
+   "stuck": 0,
+   "evalTag": "fixed-ix-v1",
+   "secPerStep": 26.2352,
+   "steps": 300,
+   "bpc": 3.4401,
+   "charsPerTok": 1.2189,
+   "score": 2.1529,
+   "scoreW": 2.0,
+   "scoreMode": "talk",
+   "finishMix": 0.5,
+   "lineage": "L1",
+   "layers": 16,
+   "params": 117914880,
+   "chars": 1045308899,
+   "tokens": 857567631,
+   "grew": 0,
+   "rolledBack": false,
+   "ownVal": null,
+   "ownScore": null,
+   "d": 768,
+   "loops": 1,
+   "spread": 3.0154,
+   "bytes": 1415115957,
+   "heads": 6,
+   "ctx": 512,
+   "vocab": 6000,
+   "kind": "bpe",
+   "arch": "tpp-loop",
+   "wantWider": false,
+   "layerCap": 16,
+   "mixChanged": false,
+   "bySrc": {
+    "laws": 4.1488,
+    "wiki": 3.0633,
+    "aozora": 3.414,
+    "hanrei": 3.5084,
+    "kokkai": 2.6775,
+    "web": 2.9393,
+    "talk": 2.1529
+   },
+   "wrote": [
+    {
+     "start": "わたしは",
+     "text": "わたしはそうですよね。」 DH「そうですね。キラキラすれば結構いると、できるんだろうなぁ。」 DB「確かにサンドしちゃいますよね。サンドも本当にセットになるんじゃないですか！」 DH「凄いですよね、でも便利なのはありがたいですね。」 DB"
+    },
+    {
+     "start": "第一条",
+     "text": "第一条第一号第三十項本文第十四号（運送法（昭和五十識別号）第四条第三項及びX経済産業省令第一号 第八条の二第四項（同法第六百四十九条第一項において準用する場合を含む。）又は第二十四条第一項並びに第十二号に規定する用地処理法（平成十六年法律第百五号）第五条第二項、第四十三条、第五十九識別番号及び第五運行報告書 第六十一条 第五十六条（[第八十号）及び第六条第一項（法第三十九にその運行に係る工事を実施するための措置）の規定による工事又は施行"
+    },
+    {
+     "start": "この法律において",
+     "text": "この法律において「 日本電信電話株式会社 」参照。 ↑ 日本電信電話電話株式会社 （NHK） ↑ 『日本電信電話株式会社』（NHK総合） - NHK 、2021年9月20日。 ↑ “ 日本電信電話株式会社 ［都市電信電話株式会社 - 株式（NHK及び日本電信電話株式会社） ”. 日本"
+    }
+   ],
+   "loopPct": 3.09,
+   "movedBody": false
   }
  ],
- "bestVal": 2.9072,
+ "bestVal": 2.9066,
  "layers": 16,
  "params": 117914880,
  "born": "2026-09-08T15:11:54Z",
@@ -12649,5 +12649,5 @@
  ],
  "wantWider": false,
  "nextD": 768,
- "bad": 2
+ "bad": 0
 }
