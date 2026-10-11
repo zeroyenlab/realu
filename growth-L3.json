@@ -1,69 +1,6 @@
 {
  "runs": [
   {
-   "at": "2026-09-30T13:49:51Z",
-   "val": 2.7565,
-   "prev": 2.7581,
-   "valTag": "fixed-holdout-v1",
-   "stoppedAt": 556,
-   "stuck": 0,
-   "evalTag": "fixed-ix-v1",
-   "secPerStep": 6.7417,
-   "steps": 965,
-   "bpc": 3.2625,
-   "charsPerTok": 1.2189,
-   "score": 2.1922,
-   "scoreW": 2.0,
-   "scoreMode": "talk",
-   "finishMix": 0.2,
-   "lineage": "L3",
-   "layers": 13,
-   "params": 25335168,
-   "chars": 1045308899,
-   "tokens": 857567631,
-   "grew": 0,
-   "rolledBack": false,
-   "ownVal": null,
-   "ownScore": null,
-   "d": 384,
-   "loops": 1,
-   "spread": 2.9439,
-   "bytes": 304134793,
-   "heads": 6,
-   "ctx": 512,
-   "vocab": 6000,
-   "kind": "bpe",
-   "arch": "tpp-loop",
-   "wantWider": false,
-   "layerCap": 16,
-   "mixChanged": false,
-   "bySrc": {
-    "laws": 3.748,
-    "wiki": 2.9312,
-    "aozora": 3.2569,
-    "hanrei": 3.4646,
-    "kokkai": 2.5556,
-    "web": 2.8386,
-    "talk": 2.1922
-   },
-   "wrote": [
-    {
-     "start": "わたしは",
-     "text": "わたしは南北朝時代の黒猫の女性を一緒にしている。 3人の星がパイプラインと一緒になったことで、また歩けなかった。 エルフは、現象を二重で想像してあっという間に、そうした人間を焼くことは考えていなかった。 エルフは、『 殺人 』の作曲以来"
-    },
-    {
-     "start": "第一条",
-     "text": "第一条の提出がされる可能性がある。 願望は Giodom1 (Missed Beled) と呼ばれる。 1998年 、 フィギュアスケート は、 ラジオ・ドラマ の公演中に、 広報誌 （ プロレスリング法 、 学術文献 ）と呼ばれるマスメディアの"
-    },
-    {
-     "start": "この法律において",
-     "text": "この法律において「コンピュータ 」という。）の作成した用語 （英語） Ｇは、英語を表すコード（英語）の返信をしている。例えば、英語の発音では、英語を表す言語としては、英語を表すコード（英語）の発音ではなく、英語を表すコード（英語）を表すコード（英語）とい"
-    }
-   ],
-   "loopPct": 7.4,
-   "movedBody": false
-  },
-  {
    "at": "2026-09-30T14:59:31Z",
    "val": 2.7561,
    "prev": 2.7565,
@@ -12599,9 +12536,72 @@
    ],
    "loopPct": 4.2,
    "movedBody": false
+  },
+  {
+   "at": "2026-10-11T04:51:00Z",
+   "val": 2.6849,
+   "prev": 2.6858,
+   "valTag": "fixed-holdout-v1",
+   "stoppedAt": 0,
+   "stuck": 0,
+   "evalTag": "fixed-ix-v1",
+   "secPerStep": 2.7214,
+   "steps": 1167,
+   "bpc": 3.1778,
+   "charsPerTok": 1.2189,
+   "score": 2.1335,
+   "scoreW": 2.0,
+   "scoreMode": "talk",
+   "finishMix": 0.2,
+   "lineage": "L3",
+   "layers": 13,
+   "params": 25335168,
+   "chars": 1045308899,
+   "tokens": 857567631,
+   "grew": 0,
+   "rolledBack": false,
+   "ownVal": null,
+   "ownScore": null,
+   "d": 384,
+   "loops": 1,
+   "spread": 2.8136,
+   "bytes": 304134793,
+   "heads": 6,
+   "ctx": 512,
+   "vocab": 6000,
+   "kind": "bpe",
+   "arch": "tpp-loop",
+   "wantWider": false,
+   "layerCap": 16,
+   "mixChanged": false,
+   "bySrc": {
+    "laws": 3.6429,
+    "wiki": 2.8454,
+    "aozora": 3.1757,
+    "hanrei": 3.4206,
+    "kokkai": 2.4955,
+    "web": 2.7645,
+    "talk": 2.1335
+   },
+   "wrote": [
+    {
+     "start": "わたしは",
+     "text": "わたしは、赤字公債を発行して、国民生活に重大な疑惑を詭弁せしめ、ここに大きな不信感を抱く、このことは大きな特色であると私は考えるのであります。（拍手）」 AB「議長 三案に対し、討論の通告がございます。発言を許します。政府原案町田志郎�"
+    },
+    {
+     "start": "第一条",
+     "text": "第一条（x）の規定による確認（発売されたことによる。 ただし、 の文字は mix であるが、 com であるが、 com は mix である。 高速通信の tv は mix であるが、 mix で mix である。 mix の mix では mix であるが、mix では mi"
+    },
+    {
+     "start": "この法律において",
+     "text": "この法律において「地方交付税�」又は「地方交付税」又は「地方交付税」又は「地方交付税」又は「地方交付税」又は「地方交付税」又は「地方交付税」又は「地方交付税」又は「地方交付税」又は「地方交付税」又は「地方交付税」又は「地方交付税」又は「地方交付税」又は「地方交付税」又は「地方交付税」又は「地方交付税」又は「地方交付税」又は「地方交付税」又は「"
+    }
+   ],
+   "loopPct": 42.78,
+   "movedBody": false
   }
  ],
- "bestVal": 2.6858,
+ "bestVal": 2.6849,
  "layers": 13,
  "params": 25335168,
  "born": "2026-09-12T18:05:42Z",
@@ -12649,5 +12649,5 @@
  ],
  "wantWider": false,
  "nextD": 384,
- "bad": 4
+ "bad": 3
 }
