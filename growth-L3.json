@@ -1,69 +1,6 @@
 {
  "runs": [
   {
-   "at": "2026-10-01T05:01:51Z",
-   "val": 2.7513,
-   "prev": 2.7528,
-   "valTag": "fixed-holdout-v1",
-   "stoppedAt": 563,
-   "stuck": 0,
-   "evalTag": "fixed-ix-v1",
-   "secPerStep": 6.6675,
-   "steps": 950,
-   "bpc": 3.2564,
-   "charsPerTok": 1.2189,
-   "score": 2.1872,
-   "scoreW": 2.0,
-   "scoreMode": "talk",
-   "finishMix": 0.2,
-   "lineage": "L3",
-   "layers": 13,
-   "params": 25335168,
-   "chars": 1045308899,
-   "tokens": 857567631,
-   "grew": 0,
-   "rolledBack": false,
-   "ownVal": null,
-   "ownScore": null,
-   "d": 384,
-   "loops": 1,
-   "spread": 2.8163,
-   "bytes": 304134793,
-   "heads": 6,
-   "ctx": 512,
-   "vocab": 6000,
-   "kind": "bpe",
-   "arch": "tpp-loop",
-   "wantWider": false,
-   "layerCap": 16,
-   "mixChanged": false,
-   "bySrc": {
-    "laws": 3.7417,
-    "wiki": 2.926,
-    "aozora": 3.2511,
-    "hanrei": 3.4581,
-    "kokkai": 2.5507,
-    "web": 2.8328,
-    "talk": 2.1872
-   },
-   "wrote": [
-    {
-     "start": "わたしは",
-     "text": "わたしは、ソ連の友好関係を維持するために、外交、軍事力に異常な武力をもたらすナショナリストだったと思います。 このナショナリストの国会で、西川省二総務課長といいます。 自民党は、いや、いつもに、自民党が衆議院の予算委員会でも、アメリカの国防総省の現地"
-    },
-    {
-     "start": "第一条",
-     "text": "第一条」である。 ウェルヴァン・サンディエ （ 英語版 ） （1905年、 フランス の フィリップ・ボナー ） [ 16 ] 。 1919年のヨーロッパ大陸では、ウェルヴァン・サンディエの フェニックス・ラウフォン （"
-    },
-    {
-     "start": "この法律において",
-     "text": "この法律において「平和の院」ローマ皇太子は、前会主席のマクドナルド・ルネサンス伯爵、王太子の次男である（第53回読売新聞社長の笹川文夫）。 吉田謙三は、1960年代後半にローマ皇太子と対峙しており、この年に入ると"
-    }
-   ],
-   "loopPct": 2.62,
-   "movedBody": false
-  },
-  {
    "at": "2026-10-01T06:19:19Z",
    "val": 2.752,
    "prev": 2.7513,
@@ -12599,6 +12536,69 @@
    ],
    "loopPct": 0.0,
    "movedBody": false
+  },
+  {
+   "at": "2026-10-11T20:18:04Z",
+   "val": 2.6797,
+   "prev": 2.6791,
+   "valTag": "fixed-holdout-v1",
+   "stoppedAt": 562,
+   "stuck": 0,
+   "evalTag": "fixed-ix-v1",
+   "secPerStep": 6.6793,
+   "steps": 1385,
+   "bpc": 3.1716,
+   "charsPerTok": 1.2189,
+   "score": 2.1315,
+   "scoreW": 2.0,
+   "scoreMode": "talk",
+   "finishMix": 0.2,
+   "lineage": "L3",
+   "layers": 13,
+   "params": 25335168,
+   "chars": 1045308899,
+   "tokens": 857567631,
+   "grew": 0,
+   "rolledBack": false,
+   "ownVal": null,
+   "ownScore": null,
+   "d": 384,
+   "loops": 1,
+   "spread": 2.6397,
+   "bytes": 304134793,
+   "heads": 6,
+   "ctx": 512,
+   "vocab": 6000,
+   "kind": "bpe",
+   "arch": "tpp-loop",
+   "wantWider": false,
+   "layerCap": 16,
+   "mixChanged": false,
+   "bySrc": {
+    "laws": 3.6374,
+    "wiki": 2.8419,
+    "aozora": 3.1717,
+    "hanrei": 3.4114,
+    "kokkai": 2.491,
+    "web": 2.7624,
+    "talk": 2.1315
+   },
+   "wrote": [
+    {
+     "start": "わたしは",
+     "text": "わたしは、タッチもあって、それから、今までしこんなことをやったのです。」 CA「タッチも時々あって！」 BI「まぁ。そういう時は、キュウリのくたが高いですね。」 CA「ですよね！でもお気に入りの遊びですか？」 BI「私はレンジとか、"
+    },
+    {
+     "start": "第一条",
+     "text": "第一条」などとしている [ 29 ] 。 2018年（平成30年） 4月27日 ：東海道新幹線新幹線が、新潟県内のJR西日本へ乗車する [ 30 ] 。 2020年（令和2年） 3月16日 ：高崎線の 東海道線 が、 東海道本線"
+    },
+    {
+     "start": "この法律において",
+     "text": "この法律において、特定賃貸住宅の供給に関する法律による一般会計から繰入れるべき雑則は、一般会計から繰入れるべき経費については、一般会計から繰入れるべき経費として、一般会計から繰入れるべき雑則は除くものとする。 一般会計から繰入れを受けられるべき経費には、一般会計から繰入れるべき経費として、一般会計から繰入れるべき費用については、一般会計から繰入れるべき費用については、一般会計から繰入れるべき経費として、一般会計から繰入"
+    }
+   ],
+   "loopPct": 4.39,
+   "movedBody": false
   }
  ],
  "bestVal": 2.6791,
@@ -12649,5 +12649,5 @@
  ],
  "wantWider": false,
  "nextD": 384,
- "bad": 1
+ "bad": 4
 }
