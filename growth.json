@@ -1,69 +1,6 @@
 {
  "runs": [
   {
-   "at": "2026-10-01T20:06:49Z",
-   "val": 3.0517,
-   "prev": 3.05,
-   "valTag": "fixed-holdout-v1",
-   "stoppedAt": 0,
-   "stuck": 0,
-   "evalTag": "fixed-ix-v1",
-   "secPerStep": 11.7737,
-   "steps": 300,
-   "bpc": 3.6119,
-   "charsPerTok": 1.2189,
-   "score": 2.2159,
-   "scoreW": 2.0,
-   "scoreMode": "talk",
-   "finishMix": 0.5,
-   "lineage": "L1",
-   "layers": 16,
-   "params": 117914880,
-   "chars": 1045308899,
-   "tokens": 857567631,
-   "grew": 0,
-   "rolledBack": false,
-   "ownVal": null,
-   "ownScore": null,
-   "d": 768,
-   "loops": 1,
-   "spread": 3.0796,
-   "bytes": 1415115957,
-   "heads": 6,
-   "ctx": 512,
-   "vocab": 6000,
-   "kind": "bpe",
-   "arch": "tpp-loop",
-   "wantWider": false,
-   "layerCap": 16,
-   "mixChanged": false,
-   "bySrc": {
-    "laws": 4.4449,
-    "wiki": 3.2252,
-    "aozora": 3.5458,
-    "hanrei": 3.6404,
-    "kokkai": 2.7911,
-    "web": 3.0699,
-    "talk": 2.2159
-   },
-   "wrote": [
-    {
-     "start": "わたしは",
-     "text": "わたしは、まだ気持ち悪いときにゃくなってるわけですが、そのまま死ぬとか、人間を嫌景にしてもらいたいんだろうと思うんです。」 AB「これは、もし政府が考えれば、景気の体験、中心的な、多少の国民生活を自然にとっては、これは自衛隊の悪い調査体制へとついてい"
-    },
-    {
-     "start": "第一条",
-     "text": "第一条リャタールから改造された煎産に食事を入れたもの（上記のタイヤルは上記のように管理）。 1932年：中国文化遺産委員会（1933年：中国文学会）が開催される。 1946年：中国文学研究所（Conser Holla Ston of Callita"
-    },
-    {
-     "start": "この法律において",
-     "text": "この法律において「依田馬伝説 」を参照 日本大百科事典 では「日本の名産根」という表記が設けられているが、これは「日本の名前」と「キャンプ・アレ」の名となっている。 日本では「名」の名を「名字」という名前として「名」の名字がつけられている。 「名ゆ」の名前に「名」という名の他名の名前"
-    }
-   ],
-   "loopPct": 3.22,
-   "movedBody": false
-  },
-  {
    "at": "2026-10-01T21:29:12Z",
    "val": 3.0441,
    "prev": 3.0517,
@@ -12599,6 +12536,69 @@
    ],
    "loopPct": 5.52,
    "movedBody": false
+  },
+  {
+   "at": "2026-10-12T13:04:40Z",
+   "val": 2.8981,
+   "prev": 2.904,
+   "valTag": "fixed-holdout-v1",
+   "stoppedAt": 159,
+   "stuck": 0,
+   "evalTag": "fixed-ix-v1",
+   "secPerStep": 26.0993,
+   "steps": 300,
+   "bpc": 3.4302,
+   "charsPerTok": 1.2189,
+   "score": 2.1434,
+   "scoreW": 2.0,
+   "scoreMode": "talk",
+   "finishMix": 0.5,
+   "lineage": "L1",
+   "layers": 16,
+   "params": 117914880,
+   "chars": 1045308899,
+   "tokens": 857567631,
+   "grew": 0,
+   "rolledBack": false,
+   "ownVal": null,
+   "ownScore": null,
+   "d": 768,
+   "loops": 1,
+   "spread": 3.0343,
+   "bytes": 1415115957,
+   "heads": 6,
+   "ctx": 512,
+   "vocab": 6000,
+   "kind": "bpe",
+   "arch": "tpp-loop",
+   "wantWider": false,
+   "layerCap": 16,
+   "mixChanged": false,
+   "bySrc": {
+    "laws": 4.1364,
+    "wiki": 3.0584,
+    "aozora": 3.4067,
+    "hanrei": 3.5057,
+    "kokkai": 2.6727,
+    "web": 2.9347,
+    "talk": 2.1434
+   },
+   "wrote": [
+    {
+     "start": "わたしは",
+     "text": "わたしは、梅谷市をはじめ、三田線より鮮明に、新しい発祥地が存在し、これが�る宮城県でもあり、三田線が中心となって東京都池袋市（現・東京都）の一部となっている。これらの中でも、新しい社名を「東京都」というと、「新幹線」「新鮮など"
+    },
+    {
+     "start": "第一条",
+     "text": "第一条各項 以下この章 （年法律第七収集任意発行債権） 第三十条 条第一項又は第八号は、法第百九十三条第一項の規定による都道府県知事の取調べを求めて、を請求することができる。 （注記） 第十六条 となつた者又は譲与を受けたっては、回線を購入した機関は、6月以前から200特別百円から2000円を超える取締りを行った（以下「算入しない）」と、届け出た年齢を2000ドルに上げる6月から4月までととなる。 ただし、以�同号に規定する"
+    },
+    {
+     "start": "この法律において",
+     "text": "この法律において「犯行現金」を上回り、失当に改正された。 1948年 （昭和23年） 1月25日 ： 福島市 への光大券券を発行、 福島県 のインターチェンジを開設 [ 18 ] 。 2月23日 ： 福島市 の 遠野町 の 春豊 が 小去町 ・"
+    }
+   ],
+   "loopPct": 3.0,
+   "movedBody": false
   }
  ],
  "bestVal": 2.8971,
@@ -12649,5 +12649,5 @@
  ],
  "wantWider": false,
  "nextD": 768,
- "bad": 1
+ "bad": 0
 }
