@@ -1,69 +1,6 @@
 {
  "runs": [
   {
-   "at": "2026-10-01T08:57:49Z",
-   "val": 3.0584,
-   "prev": 3.0581,
-   "valTag": "fixed-holdout-v1",
-   "stoppedAt": 299,
-   "stuck": 0,
-   "evalTag": "fixed-ix-v1",
-   "secPerStep": 13.0074,
-   "steps": 300,
-   "bpc": 3.6198,
-   "charsPerTok": 1.2189,
-   "score": 2.2278,
-   "scoreW": 2.0,
-   "scoreMode": "talk",
-   "finishMix": 0.5,
-   "lineage": "L1",
-   "layers": 16,
-   "params": 117914880,
-   "chars": 1045308899,
-   "tokens": 857567631,
-   "grew": 0,
-   "rolledBack": false,
-   "ownVal": null,
-   "ownScore": null,
-   "d": 768,
-   "loops": 1,
-   "spread": 3.2141,
-   "bytes": 1415115957,
-   "heads": 6,
-   "ctx": 512,
-   "vocab": 6000,
-   "kind": "bpe",
-   "arch": "tpp-loop",
-   "wantWider": false,
-   "layerCap": 16,
-   "mixChanged": false,
-   "bySrc": {
-    "laws": 4.4637,
-    "wiki": 3.2323,
-    "aozora": 3.5527,
-    "hanrei": 3.6409,
-    "kokkai": 2.7985,
-    "web": 3.0727,
-    "talk": 2.2278
-   },
-   "wrote": [
-    {
-     "start": "わたしは",
-     "text": "わたしは、実際、まさに今日のあなた国民の言うことをおすすめしました。私もそんなことはないのです。」 AA「ただ、痛みということではありません。何が起きているかというと、私は、あとは、アメリカの国である。それじゃ、日本では、可哀想という言葉が見えます。 ただ、アメ"
-    },
-    {
-     "start": "第一条",
-     "text": "第一条信託財産に係る住所（以下「JR東日本」という。）について準用する。 （提供） JR東日本が発着する直前○は、JR東日本のJR東日本大震災から最大税の一体型（2009年まで）を製造した社としている。 JR東日本のATC付近はJRA（2000年・2000年・2000年・2000年・20"
-    },
-    {
-     "start": "この法律において",
-     "text": "この法律においていて、本当にアイデアをうたいな。」 AH「あなたのおいしそう、楽しいものだから」 AH「こんにちは。」 AH「こんにちはー」 AH「お休みとかってありますか？」 AH「大丈夫で"
-    }
-   ],
-   "loopPct": 10.32,
-   "movedBody": false
-  },
-  {
    "at": "2026-10-01T10:02:14Z",
    "val": 3.06,
    "prev": 3.0584,
@@ -12599,6 +12536,69 @@
    ],
    "loopPct": 16.02,
    "movedBody": false
+  },
+  {
+   "at": "2026-10-12T01:31:09Z",
+   "val": 2.9076,
+   "prev": 2.8992,
+   "valTag": "fixed-holdout-v1",
+   "stoppedAt": 205,
+   "stuck": 0,
+   "evalTag": "fixed-ix-v1",
+   "secPerStep": 19.7027,
+   "steps": 300,
+   "bpc": 3.4413,
+   "charsPerTok": 1.2189,
+   "score": 2.1535,
+   "scoreW": 2.0,
+   "scoreMode": "talk",
+   "finishMix": 0.5,
+   "lineage": "L1",
+   "layers": 16,
+   "params": 117914880,
+   "chars": 1045308899,
+   "tokens": 857567631,
+   "grew": 0,
+   "rolledBack": false,
+   "ownVal": null,
+   "ownScore": null,
+   "d": 768,
+   "loops": 1,
+   "spread": 2.9501,
+   "bytes": 1415115957,
+   "heads": 6,
+   "ctx": 512,
+   "vocab": 6000,
+   "kind": "bpe",
+   "arch": "tpp-loop",
+   "wantWider": false,
+   "layerCap": 16,
+   "mixChanged": false,
+   "bySrc": {
+    "laws": 4.1496,
+    "wiki": 3.0684,
+    "aozora": 3.4119,
+    "hanrei": 3.5037,
+    "kokkai": 2.6751,
+    "web": 2.9422,
+    "talk": 2.1535
+   },
+   "wrote": [
+    {
+     "start": "わたしは",
+     "text": "わたしは彼がそんなことして、何のおもしろいと、あの人とか、生活の話を山の身に乗り出したといった。 彼は何かのお作りになっていた。 「おい、そんな来ましたか？」 「そうですか。お母さんが来たですね。こんなに求めたら心配はできませんね。そうだったら"
+    },
+    {
+     "start": "第一条",
+     "text": "第一条リムス ハブホート：ハブホート、ハブホート、ハイブホート、ハブホート、ハブホート、ハイブラン ハブホート（ハウトホート）：ハハハ、ハイブート、アニメ、アニメ、ハマトネコ、ハッブホート ハーフハイブリッド（ハンブ、ハナホート、ハワイホート、ハン"
+    },
+    {
+     "start": "この法律において",
+     "text": "この法律において「�」「さく」ではない。 うぞいぎんやとなし」 ↑ 冬季の『あの花』では、秋とこくれが「うるさぎ」では「しゃべい」の条件で「飽きちゃん」は、秋葉原では「うみちゃん」と言い、水が得意とする。 ↑ 現在は"
+    }
+   ],
+   "loopPct": 14.52,
+   "movedBody": false
   }
  ],
  "bestVal": 2.8992,
@@ -12649,5 +12649,5 @@
  ],
  "wantWider": false,
  "nextD": 768,
- "bad": 0
+ "bad": 2
 }
