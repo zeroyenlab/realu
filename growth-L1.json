@@ -1,69 +1,6 @@
 {
  "runs": [
   {
-   "at": "2026-10-01T12:43:13Z",
-   "val": 3.0545,
-   "prev": 3.0549,
-   "valTag": "fixed-holdout-v1",
-   "stoppedAt": 158,
-   "stuck": 0,
-   "evalTag": "fixed-ix-v1",
-   "secPerStep": 26.3014,
-   "steps": 300,
-   "bpc": 3.6152,
-   "charsPerTok": 1.2189,
-   "score": 2.2164,
-   "scoreW": 2.0,
-   "scoreMode": "talk",
-   "finishMix": 0.5,
-   "lineage": "L1",
-   "layers": 16,
-   "params": 117914880,
-   "chars": 1045308899,
-   "tokens": 857567631,
-   "grew": 0,
-   "rolledBack": false,
-   "ownVal": null,
-   "ownScore": null,
-   "d": 768,
-   "loops": 1,
-   "spread": 2.8721,
-   "bytes": 1415115957,
-   "heads": 6,
-   "ctx": 512,
-   "vocab": 6000,
-   "kind": "bpe",
-   "arch": "tpp-loop",
-   "wantWider": false,
-   "layerCap": 16,
-   "mixChanged": false,
-   "bySrc": {
-    "laws": 4.4547,
-    "wiki": 3.2267,
-    "aozora": 3.5471,
-    "hanrei": 3.6382,
-    "kokkai": 2.795,
-    "web": 3.0708,
-    "talk": 2.2164
-   },
-   "wrote": [
-    {
-     "start": "わたしは",
-     "text": "わたしは、事件を商標に出したと言ったので、これを知ったのであります。私としては、今日、自分は結構です。」 AB「国民の安心と貴重な態度を示して、やっと嘆いたいと思うとき、おやりになしたくても、今度は何をやったのか。それとも、これは、やはり日本の国境というのは、今"
-    },
-    {
-     "start": "第一条",
-     "text": "第一条タルキノフルノキノルノルグリッチノーションノルガノンツェノフスキノン (FINAGOMA) は「インターネット」「インターネットアーカイブ」「インターネットアーカイブ」のメリット。 大阪府 西日本 、 宮城県 発足。 下ICカード の定義は、"
-    },
-    {
-     "start": "この法律において",
-     "text": "この法律において、歳入税、社会保障関係事務などを注視しながら、財政改革をまとめると、今回の補正では、税制改革は、税外にホームページを送り込んでいきたいと、財政原則を考えているところであります。 このような観点から、税制改革は各国の財政運営にみずからの意欲を持ちながら、財政の�"
-    }
-   ],
-   "loopPct": 1.61,
-   "movedBody": false
-  },
-  {
    "at": "2026-10-01T14:02:52Z",
    "val": 3.0516,
    "prev": 3.0545,
@@ -12599,9 +12536,72 @@
    ],
    "loopPct": 18.12,
    "movedBody": false
+  },
+  {
+   "at": "2026-10-12T05:25:38Z",
+   "val": 2.8971,
+   "prev": 2.8996,
+   "valTag": "fixed-holdout-v1",
+   "stoppedAt": 158,
+   "stuck": 0,
+   "evalTag": "fixed-ix-v1",
+   "secPerStep": 26.3905,
+   "steps": 300,
+   "bpc": 3.429,
+   "charsPerTok": 1.2189,
+   "score": 2.1454,
+   "scoreW": 2.0,
+   "scoreMode": "talk",
+   "finishMix": 0.5,
+   "lineage": "L1",
+   "layers": 16,
+   "params": 117914880,
+   "chars": 1045308899,
+   "tokens": 857567631,
+   "grew": 0,
+   "rolledBack": false,
+   "ownVal": null,
+   "ownScore": null,
+   "d": 768,
+   "loops": 1,
+   "spread": 3.1829,
+   "bytes": 1415115957,
+   "heads": 6,
+   "ctx": 512,
+   "vocab": 6000,
+   "kind": "bpe",
+   "arch": "tpp-loop",
+   "wantWider": false,
+   "layerCap": 16,
+   "mixChanged": false,
+   "bySrc": {
+    "laws": 4.1399,
+    "wiki": 3.0554,
+    "aozora": 3.4053,
+    "hanrei": 3.4956,
+    "kokkai": 2.6684,
+    "web": 2.9335,
+    "talk": 2.1454
+   },
+   "wrote": [
+    {
+     "start": "わたしは",
+     "text": "わたしはブーンのおいでをかけて、お好きなんですね！」 EA「どちらもいいです！西日本で何を食べてるのでしょうか？」 FI「うーん、懐かしいのですね！」 EA「そうなんですね。たまたま西日本で食べます。」 FI「なんと�"
+    },
+    {
+     "start": "第一条",
+     "text": "第一条ベルチョフの最初の時点で、ボタンを表す「ボインカラー」と表記される。 なお、ビッグバンド『ボタンカラー』時代のボタンはベース・ボタンを奏でる。 （ボタンは「ボタン」「ボタン」の意）は「ボタン」は「ボタン」である。 ボタンはボタンがボタンで付けるが、ボタンはボタンということがある"
+    },
+    {
+     "start": "この法律において",
+     "text": "この法律において「ハニ衣」案内器を成立させる。 同時に3つのパイロットから4つのパイロットをピラミッドに提出する。 また、ディスクマネージメント（2019年11月22日発売）では、1990年代初頭に チャンピオンシップ などの展開を表明した。 特に、 メガネ の"
+    }
+   ],
+   "loopPct": 12.32,
+   "movedBody": false
   }
  ],
- "bestVal": 2.8992,
+ "bestVal": 2.8971,
  "layers": 16,
  "params": 117914880,
  "born": "2026-09-08T15:11:54Z",
@@ -12649,5 +12649,5 @@
  ],
  "wantWider": false,
  "nextD": 768,
- "bad": 0
+ "bad": 1
 }
