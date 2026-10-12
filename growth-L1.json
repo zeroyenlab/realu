@@ -1,69 +1,6 @@
 {
  "runs": [
   {
-   "at": "2026-10-01T16:29:38Z",
-   "val": 3.0473,
-   "prev": 3.0527,
-   "valTag": "fixed-holdout-v1",
-   "stoppedAt": 144,
-   "stuck": 0,
-   "evalTag": "fixed-ix-v1",
-   "secPerStep": 29.4904,
-   "steps": 300,
-   "bpc": 3.6067,
-   "charsPerTok": 1.2189,
-   "score": 2.2186,
-   "scoreW": 2.0,
-   "scoreMode": "talk",
-   "finishMix": 0.5,
-   "lineage": "L1",
-   "layers": 16,
-   "params": 117914880,
-   "chars": 1045308899,
-   "tokens": 857567631,
-   "grew": 0,
-   "rolledBack": false,
-   "ownVal": null,
-   "ownScore": null,
-   "d": 768,
-   "loops": 1,
-   "spread": 3.1188,
-   "bytes": 1415115957,
-   "heads": 6,
-   "ctx": 512,
-   "vocab": 6000,
-   "kind": "bpe",
-   "arch": "tpp-loop",
-   "wantWider": false,
-   "layerCap": 16,
-   "mixChanged": false,
-   "bySrc": {
-    "laws": 4.4438,
-    "wiki": 3.2216,
-    "aozora": 3.543,
-    "hanrei": 3.6418,
-    "kokkai": 2.7832,
-    "web": 3.0644,
-    "talk": 2.2186
-   },
-   "wrote": [
-    {
-     "start": "わたしは",
-     "text": "わたしは、自食を食べられずに、たらとざまに食べるのではないでしょうか。」 AB「委員長 では、昭和六十年以来、日本国内では、日本の食糧、食軽減する栄養価、薬価、食品産業への影響などを極めて重要です。また、日本では、こういう米の食品生産量を中心として、米や食品な"
-    },
-    {
-     "start": "第一条",
-     "text": "第一条法第四十四条の十二の二第二項において準用する会社禍男爵薬品 (日本登用) 日本貸倒者皇帝 キリスト教徒 (日本語版) 北条義昭 (南光記念館) 念王座 <記事 李井駅> 李尾駅（さいがとうけいえき）は、北楚市中町にある。"
-    },
-    {
-     "start": "この法律において",
-     "text": "この法律において「若松」という呼称が使われている。 2009年10月27日には、北海道新幹線では、2010年10月26日に地域保険を実施している。 富山市民カルテ は、 1919年 に新幹線が地上デジタル化され、 2000年 11月11日 に13周期を迎えてきた [ 4"
-    }
-   ],
-   "loopPct": 4.69,
-   "movedBody": false
-  },
-  {
    "at": "2026-10-01T17:42:46Z",
    "val": 3.0511,
    "prev": 3.0473,
@@ -12599,6 +12536,69 @@
    ],
    "loopPct": 24.22,
    "movedBody": false
+  },
+  {
+   "at": "2026-10-12T09:17:17Z",
+   "val": 2.8993,
+   "prev": 2.9005,
+   "valTag": "fixed-holdout-v1",
+   "stoppedAt": 157,
+   "stuck": 0,
+   "evalTag": "fixed-ix-v1",
+   "secPerStep": 26.5028,
+   "steps": 300,
+   "bpc": 3.4316,
+   "charsPerTok": 1.2189,
+   "score": 2.1423,
+   "scoreW": 2.0,
+   "scoreMode": "talk",
+   "finishMix": 0.5,
+   "lineage": "L1",
+   "layers": 16,
+   "params": 117914880,
+   "chars": 1045308899,
+   "tokens": 857567631,
+   "grew": 0,
+   "rolledBack": false,
+   "ownVal": null,
+   "ownScore": null,
+   "d": 768,
+   "loops": 1,
+   "spread": 3.4504,
+   "bytes": 1415115957,
+   "heads": 6,
+   "ctx": 512,
+   "vocab": 6000,
+   "kind": "bpe",
+   "arch": "tpp-loop",
+   "wantWider": false,
+   "layerCap": 16,
+   "mixChanged": false,
+   "bySrc": {
+    "laws": 4.1385,
+    "wiki": 3.0571,
+    "aozora": 3.4076,
+    "hanrei": 3.5017,
+    "kokkai": 2.6719,
+    "web": 2.934,
+    "talk": 2.1423
+   },
+   "wrote": [
+    {
+     "start": "わたしは",
+     "text": "わたしはピューリッティという女子が、世界の競技者や誕生日が多かったような冗談で、音楽のたった作品は日記をてらっしゃいました。」 AD「そうだったんですね。でも、日記というのは新聞のキングダムクラブやってましたね。」 AD「それは大変ですね。あとは、昔"
+    },
+    {
+     "start": "第一条",
+     "text": "第一条代表者の氏名 oudonardonialdentaliary androidentylockoratoria（スラムバックアップ） Elumonolite Black norted Archiothronicasting Strie"
+    },
+    {
+     "start": "この法律において",
+     "text": "この法律において「�称�」という。）に留まり、当該土地の供用が難航し、かつ、当該土地の入所者の役割が明確になってきていること。 当該土地の返還等のために土地が住む土地がの事業主から買い取る場合には、当該土地が買い取った土地に隣接して土地の買いかえ及び土地に買い取れること。 当該土地は、当該土地の料金を買い取るような土地を買"
+    }
+   ],
+   "loopPct": 0.0,
+   "movedBody": false
   }
  ],
  "bestVal": 2.8971,
@@ -12649,5 +12649,5 @@
  ],
  "wantWider": false,
  "nextD": 768,
- "bad": 3
+ "bad": 4
 }
