@@ -1,69 +1,6 @@
 {
  "runs": [
   {
-   "at": "2026-10-02T02:32:06Z",
-   "val": 2.704,
-   "prev": 2.7055,
-   "valTag": "fixed-holdout-v1",
-   "stoppedAt": 0,
-   "stuck": 0,
-   "evalTag": "fixed-ix-v1",
-   "secPerStep": 5.8679,
-   "steps": 621,
-   "bpc": 3.2004,
-   "charsPerTok": 1.2189,
-   "score": 2.0564,
-   "scoreW": 2.0,
-   "scoreMode": "talk",
-   "finishMix": 0.85,
-   "lineage": "L2",
-   "layers": 13,
-   "params": 44216832,
-   "chars": 1045308899,
-   "tokens": 857567631,
-   "grew": 0,
-   "rolledBack": false,
-   "ownVal": null,
-   "ownScore": null,
-   "d": 512,
-   "loops": 1,
-   "spread": 2.7089,
-   "bytes": 530714761,
-   "heads": 8,
-   "ctx": 512,
-   "vocab": 6000,
-   "kind": "bpe",
-   "arch": "tpp-loop",
-   "wantWider": false,
-   "layerCap": 16,
-   "mixChanged": false,
-   "bySrc": {
-    "laws": 3.6325,
-    "wiki": 2.8741,
-    "aozora": 3.1858,
-    "hanrei": 3.4056,
-    "kokkai": 2.5134,
-    "web": 2.7895,
-    "talk": 2.0564
-   },
-   "wrote": [
-    {
-     "start": "わたしは",
-     "text": "わたしはずっと包丁で行ってきました。」 FF「わかります！私も自分で行ったら全然行きません。」 DT「10分で延々と歩いて行って見てしまいます。」 FF「そうなんですね！でもやっぱりそうなんですね！」 DT「だからまだやっぱり歩かない"
-    },
-    {
-     "start": "第一条",
-     "text": "第一条法第百前段の規定（の行為いかんののううううううううううううううううううううううううううううう、ううううふうですね。」 AB「そうなのね。もう一度待ってくださいね。」 AA「国務大臣 まず、私ども、申しわけありませんが、事務場合には何度も考えていただきました。"
-    },
-    {
-     "start": "この法律において",
-     "text": "この法律において第一号に規定する外国における外国における外国における外国における外国における外国における外国における外国における外国における外国における外国居住における外国における外国における外国の出国時における外国における外国貿易に係る外国における外国における外国貿易に係る外国における外国における外国為替の実質的崩壊の届出に対する外国における外国為替及び外国貿易に係る外国為替の取引のの関係です。」 AA「（拍手） 外国貿易に関する日本"
-    }
-   ],
-   "loopPct": 34.03,
-   "movedBody": false
-  },
-  {
    "at": "2026-10-02T03:51:04Z",
    "val": 2.7036,
    "prev": 2.704,
@@ -12599,6 +12536,69 @@
    ],
    "loopPct": 1.06,
    "movedBody": false
+  },
+  {
+   "at": "2026-10-12T21:58:39Z",
+   "val": 2.6369,
+   "prev": 2.6359,
+   "valTag": "fixed-holdout-v1",
+   "stoppedAt": 384,
+   "stuck": 0,
+   "evalTag": "fixed-ix-v1",
+   "secPerStep": 10.0148,
+   "steps": 562,
+   "bpc": 3.121,
+   "charsPerTok": 1.2189,
+   "score": 2.0371,
+   "scoreW": 2.0,
+   "scoreMode": "talk",
+   "finishMix": 0.85,
+   "lineage": "L2",
+   "layers": 14,
+   "params": 47379968,
+   "chars": 1045308899,
+   "tokens": 857567631,
+   "grew": 0,
+   "rolledBack": false,
+   "ownVal": null,
+   "ownScore": null,
+   "d": 512,
+   "loops": 1,
+   "spread": 2.7928,
+   "bytes": 568680621,
+   "heads": 8,
+   "ctx": 512,
+   "vocab": 6000,
+   "kind": "bpe",
+   "arch": "tpp-loop",
+   "wantWider": false,
+   "layerCap": 16,
+   "mixChanged": false,
+   "bySrc": {
+    "laws": 3.5055,
+    "wiki": 2.7992,
+    "aozora": 3.1166,
+    "hanrei": 3.3693,
+    "kokkai": 2.4626,
+    "web": 2.7231,
+    "talk": 2.0371
+   },
+   "wrote": [
+    {
+     "start": "わたしは",
+     "text": "わたしはさむしろさむのではないかと思います。」 CE「わかりますー！私もなんかそういうのとかよくやります。」 DY「そうなんですか！今はもうお肉で作らないとやってないなーと思ってます。あなたは何をやってますか？」 CE「私は8月にSN"
+    },
+    {
+     "start": "第一条",
+     "text": "第一条第六章までに書き直します。 シルヴァーマーミル （ 英語版 ） の ユダヤ人 （ 英語版 ） と ユダヤ人 （ 英語版 ） の間の ユダヤ人 （ 英語版 ）"
+    },
+    {
+     "start": "この法律において",
+     "text": "この法律において「令和八年度編」という。）以後、令和八年度以後、令和八年度以降の各年度分の各年度のひずみが戦後最大規模の経済力を維持し、世界経済全体の安定的な成長を期していく考え方です。」 AB「また、海外市場における第二次前期財政計画の策定に向けては、体系的な考え方に沿った効果が期待されます。"
+    }
+   ],
+   "loopPct": 5.41,
+   "movedBody": false
   }
  ],
  "bestVal": 2.6358,
@@ -12649,5 +12649,5 @@
  ],
  "wantWider": false,
  "nextD": 512,
- "bad": 3
+ "bad": 2
 }
