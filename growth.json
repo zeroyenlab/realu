@@ -1,69 +1,6 @@
 {
  "runs": [
   {
-   "at": "2026-10-01T11:26:19Z",
-   "val": 3.0549,
-   "prev": 3.06,
-   "valTag": "fixed-holdout-v1",
-   "stoppedAt": 148,
-   "stuck": 0,
-   "evalTag": "fixed-ix-v1",
-   "secPerStep": 28.6189,
-   "steps": 300,
-   "bpc": 3.6158,
-   "charsPerTok": 1.2189,
-   "score": 2.22,
-   "scoreW": 2.0,
-   "scoreMode": "talk",
-   "finishMix": 0.5,
-   "lineage": "L1",
-   "layers": 16,
-   "params": 117914880,
-   "chars": 1045308899,
-   "tokens": 857567631,
-   "grew": 0,
-   "rolledBack": false,
-   "ownVal": null,
-   "ownScore": null,
-   "d": 768,
-   "loops": 1,
-   "spread": 3.0434,
-   "bytes": 1415115957,
-   "heads": 6,
-   "ctx": 512,
-   "vocab": 6000,
-   "kind": "bpe",
-   "arch": "tpp-loop",
-   "wantWider": false,
-   "layerCap": 16,
-   "mixChanged": false,
-   "bySrc": {
-    "laws": 4.4544,
-    "wiki": 3.2258,
-    "aozora": 3.5476,
-    "hanrei": 3.64,
-    "kokkai": 2.7953,
-    "web": 3.0697,
-    "talk": 2.22
-   },
-   "wrote": [
-    {
-     "start": "わたしは",
-     "text": "わたしはほとんどすかに一千三百万と言われていたのです。」 AL「あんまりいろいろ買われますね」 AN「ぜひ！わたしもですね。おいしいものだから終わってしまいます。」 AL「こちらこそ、あれはおいしいってことですか？」 AN「そうなんで"
-    },
-    {
-     "start": "第一条",
-     "text": "第一条ヲ記載セケトセシシシリデシセシシシシニシシリーズ』を2022年に発表。 2024年に発表された「シニシアシシリーズ」に、2024年シリーズ、2026年の第3シリーズ『○シリーズ23』に登場を果たしている。 2025年12月、"
-    },
-    {
-     "start": "この法律において",
-     "text": "この法律において「スペーフィスト」として「スペインの CD」はそのまま定着し、CD-RPGは CD-RS でリリースされた。 2025年にCD-ROM SILとCD-ROMである。 この発売当時のモデルは CD-ROM マイクロソフト 、 CD-ROM 2K"
-    }
-   ],
-   "loopPct": 8.48,
-   "movedBody": false
-  },
-  {
    "at": "2026-10-01T12:43:13Z",
    "val": 3.0545,
    "prev": 3.0549,
@@ -12599,6 +12536,69 @@
    ],
    "loopPct": 2.18,
    "movedBody": false
+  },
+  {
+   "at": "2026-10-12T04:08:12Z",
+   "val": 2.8996,
+   "prev": 2.9025,
+   "valTag": "fixed-holdout-v1",
+   "stoppedAt": 159,
+   "stuck": 0,
+   "evalTag": "fixed-ix-v1",
+   "secPerStep": 26.2259,
+   "steps": 300,
+   "bpc": 3.4319,
+   "charsPerTok": 1.2189,
+   "score": 2.1508,
+   "scoreW": 2.0,
+   "scoreMode": "talk",
+   "finishMix": 0.5,
+   "lineage": "L1",
+   "layers": 16,
+   "params": 117914880,
+   "chars": 1045308899,
+   "tokens": 857567631,
+   "grew": 0,
+   "rolledBack": false,
+   "ownVal": null,
+   "ownScore": null,
+   "d": 768,
+   "loops": 1,
+   "spread": 3.1678,
+   "bytes": 1415115957,
+   "heads": 6,
+   "ctx": 512,
+   "vocab": 6000,
+   "kind": "bpe",
+   "arch": "tpp-loop",
+   "wantWider": false,
+   "layerCap": 16,
+   "mixChanged": false,
+   "bySrc": {
+    "laws": 4.1379,
+    "wiki": 3.0577,
+    "aozora": 3.4096,
+    "hanrei": 3.498,
+    "kokkai": 2.6725,
+    "web": 2.9349,
+    "talk": 2.1508
+   },
+   "wrote": [
+    {
+     "start": "わたしは",
+     "text": "わたしはいかがでしょうか？」 客「そちらの電話番号をお伺いしてもよろしいですか？」 店「はい、電話番号は0988932456でございます。」 客「では、そちらで予約をお願いします。2月18日の13時30分に、人数は3人で予約をお願いします。」"
+    },
+    {
+     "start": "第一条",
+     "text": "第一条、選出ｌｌｌｏｌｌｌｌｌｓｌｌｌｌｌｍｈｒｃｌｃｌｌｆｌｍｌｆｕｌｌｎｇａｃｅａｃｎａｌｌｒｒｏｄｑｈｌｈｅｕｔｅ"
+    },
+    {
+     "start": "この法律において",
+     "text": "この法律においていることなどを踏まえ、次第に、これらの措置をとることといたしました。」 AB「次に、地方財政計画の問題について質問いたします。 地方財政の規模は、平成二十九年度から二十七年度まで二十カ年間でどうなっておるかということでございます。 一般会計におきましても、予算編成量は約二千億円でありました。これは、ある"
+    }
+   ],
+   "loopPct": 18.12,
+   "movedBody": false
   }
  ],
  "bestVal": 2.8992,
@@ -12649,5 +12649,5 @@
  ],
  "wantWider": false,
  "nextD": 768,
- "bad": 3
+ "bad": 0
 }
