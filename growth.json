@@ -1,69 +1,6 @@
 {
  "runs": [
   {
-   "at": "2026-10-01T07:45:29Z",
-   "val": 3.0581,
-   "prev": 3.0567,
-   "valTag": "fixed-holdout-v1",
-   "stoppedAt": 157,
-   "stuck": 0,
-   "evalTag": "fixed-ix-v1",
-   "secPerStep": 26.5158,
-   "steps": 300,
-   "bpc": 3.6195,
-   "charsPerTok": 1.2189,
-   "score": 2.2246,
-   "scoreW": 2.0,
-   "scoreMode": "talk",
-   "finishMix": 0.5,
-   "lineage": "L1",
-   "layers": 16,
-   "params": 117914880,
-   "chars": 1045308899,
-   "tokens": 857567631,
-   "grew": 0,
-   "rolledBack": false,
-   "ownVal": null,
-   "ownScore": null,
-   "d": 768,
-   "loops": 1,
-   "spread": 3.0684,
-   "bytes": 1415115957,
-   "heads": 6,
-   "ctx": 512,
-   "vocab": 6000,
-   "kind": "bpe",
-   "arch": "tpp-loop",
-   "wantWider": false,
-   "layerCap": 16,
-   "mixChanged": false,
-   "bySrc": {
-    "laws": 4.4645,
-    "wiki": 3.2319,
-    "aozora": 3.5498,
-    "hanrei": 3.6404,
-    "kokkai": 2.7966,
-    "web": 3.0722,
-    "talk": 2.2246
-   },
-   "wrote": [
-    {
-     "start": "わたしは",
-     "text": "わたしは、関係条件を基本的にできる限り、委員長の理事の委員長のおっしゃいます。 今回の補正予算三案は、補正予算の趣旨を推すということでございます。 政府は、この予算を拡大し、今まで生産約二十九億円を計上しております。それが今後の経済大国で島をつくっておるわけでご"
-    },
-    {
-     "start": "第一条",
-     "text": "第一条「特定に関する特定特定特定特定特定特定特定特定特定特定特定特定特定特定特定特定特定特定特定特定行為による特定運用特定乙特定特定根拠相距離改正から、特定相場の特定目的金額を特定目的としている [ 4 ] 。 特定特定特定特定基盤整備機構 - 特定特定特定損失の促進に関する法律案（内閣提出）の趣旨説明を聴取し、 昭和三十七年 春四月二十四日 提案理由の説明 [ 4"
-    },
-    {
-     "start": "この法律において",
-     "text": "この法律においてDiverter.との交流が進展し、グリーンチャンネルとしての「D」や「SS System Tano Destral SSS」などと表記されている。 SSS-02は、ソーン5でも、SSSに特別なシステムを持っていた。 SSSシリーズ CIA と同様"
-    }
-   ],
-   "loopPct": 18.57,
-   "movedBody": false
-  },
-  {
    "at": "2026-10-01T08:57:49Z",
    "val": 3.0584,
    "prev": 3.0581,
@@ -12599,9 +12536,72 @@
    ],
    "loopPct": 3.13,
    "movedBody": false
+  },
+  {
+   "at": "2026-10-12T00:15:41Z",
+   "val": 2.8992,
+   "prev": 2.902,
+   "valTag": "fixed-holdout-v1",
+   "stoppedAt": 157,
+   "stuck": 0,
+   "evalTag": "fixed-ix-v1",
+   "secPerStep": 26.5185,
+   "steps": 300,
+   "bpc": 3.4314,
+   "charsPerTok": 1.2189,
+   "score": 2.147,
+   "scoreW": 2.0,
+   "scoreMode": "talk",
+   "finishMix": 0.5,
+   "lineage": "L1",
+   "layers": 16,
+   "params": 117914880,
+   "chars": 1045308899,
+   "tokens": 857567631,
+   "grew": 0,
+   "rolledBack": false,
+   "ownVal": null,
+   "ownScore": null,
+   "d": 768,
+   "loops": 1,
+   "spread": 3.0594,
+   "bytes": 1415115957,
+   "heads": 6,
+   "ctx": 512,
+   "vocab": 6000,
+   "kind": "bpe",
+   "arch": "tpp-loop",
+   "wantWider": false,
+   "layerCap": 16,
+   "mixChanged": false,
+   "bySrc": {
+    "laws": 4.1405,
+    "wiki": 3.057,
+    "aozora": 3.4091,
+    "hanrei": 3.5009,
+    "kokkai": 2.67,
+    "web": 2.9385,
+    "talk": 2.147
+   },
+   "wrote": [
+    {
+     "start": "わたしは",
+     "text": "わたしは、現在はアメリカのサン＝サミットに見舞われている。 アメリカそうでは、ネパールの木曰く、現代のバーがビジョンで、サントに戻ってきた。アメリカのコロナは、アメリカ軍による2006年、アメリカ軍は作成したインドに渡っている。 2007年、アメリカ"
+    },
+    {
+     "start": "第一条",
+     "text": "第一条フェスティバル 大日本帝国軍 （大日本帝国憲法） - 大日本帝国憲法 、 大日本帝国憲法 、 大日本帝国憲法 など。 コンキスト （ 英語版 ） は 電気データ ( Am"
+    },
+    {
+     "start": "この法律において",
+     "text": "この法律において「事業主者」と呼ばれるものもある。 顧客の不具合が生じ、労働者によっては異なる場合がある。 個人の 個人の責任 や業務に関する要領によると、個人の宅地の設定を後退させないため、その他の者に必要があるべく、個人の双方から追加された様々な制約がある。"
+    }
+   ],
+   "loopPct": 16.02,
+   "movedBody": false
   }
  ],
- "bestVal": 2.902,
+ "bestVal": 2.8992,
  "layers": 16,
  "params": 117914880,
  "born": "2026-09-08T15:11:54Z",
