@@ -1,69 +1,6 @@
 {
  "runs": [
   {
-   "at": "2026-10-01T15:07:13Z",
-   "val": 3.0527,
-   "prev": 3.0516,
-   "valTag": "fixed-holdout-v1",
-   "stoppedAt": 0,
-   "stuck": 0,
-   "evalTag": "fixed-ix-v1",
-   "secPerStep": 11.1633,
-   "steps": 300,
-   "bpc": 3.6131,
-   "charsPerTok": 1.2189,
-   "score": 2.2163,
-   "scoreW": 2.0,
-   "scoreMode": "talk",
-   "finishMix": 0.5,
-   "lineage": "L1",
-   "layers": 16,
-   "params": 117914880,
-   "chars": 1045308899,
-   "tokens": 857567631,
-   "grew": 0,
-   "rolledBack": false,
-   "ownVal": null,
-   "ownScore": null,
-   "d": 768,
-   "loops": 1,
-   "spread": 2.8798,
-   "bytes": 1415115957,
-   "heads": 6,
-   "ctx": 512,
-   "vocab": 6000,
-   "kind": "bpe",
-   "arch": "tpp-loop",
-   "wantWider": false,
-   "layerCap": 16,
-   "mixChanged": false,
-   "bySrc": {
-    "laws": 4.4472,
-    "wiki": 3.2273,
-    "aozora": 3.5485,
-    "hanrei": 3.6411,
-    "kokkai": 2.7891,
-    "web": 3.07,
-    "talk": 2.2163
-   },
-   "wrote": [
-    {
-     "start": "わたしは",
-     "text": "わたしは、さいわば国際情勢について、そして国際最終的には国際経済関係費というものが進められておりまして、そういった財政の面からもしっかりと取り組んでいく必要があると思います。」 AB「国務大臣 今私が申し上げたようなことでございますが、講じている試算も果たしておりますので、子ども・子育てを"
-    },
-    {
-     "start": "第一条",
-     "text": "第一条」とされる。これが、パンチョ (Beren) と呼ばれる。 日本のパンチョットは、パンチョットのパンチョットの解釈に布極で行っていたが、パンチョットの存在またはパンチョット、パンダ、パンチョット、パンチョットは、パンダ (Sarch"
-    },
-    {
-     "start": "この法律において",
-     "text": "この法律においておくが、世界初の世界貿易経済は、このアジアの単独での経済運営や国家としての経済運営を結んでいるのであります。それは、一つの経済情勢であります。最近、我が国の経済の経済政策に追い込まれたサイバーセキンが経済政策で、近代化に拡大し、経済成長など大きな政府が、事故"
-    }
-   ],
-   "loopPct": 13.95,
-   "movedBody": false
-  },
-  {
    "at": "2026-10-01T16:29:38Z",
    "val": 3.0473,
    "prev": 3.0527,
@@ -12599,6 +12536,69 @@
    ],
    "loopPct": 3.28,
    "movedBody": false
+  },
+  {
+   "at": "2026-10-12T07:59:19Z",
+   "val": 2.9005,
+   "prev": 2.8988,
+   "valTag": "fixed-holdout-v1",
+   "stoppedAt": 159,
+   "stuck": 0,
+   "evalTag": "fixed-ix-v1",
+   "secPerStep": 26.2744,
+   "steps": 300,
+   "bpc": 3.433,
+   "charsPerTok": 1.2189,
+   "score": 2.1502,
+   "scoreW": 2.0,
+   "scoreMode": "talk",
+   "finishMix": 0.5,
+   "lineage": "L1",
+   "layers": 16,
+   "params": 117914880,
+   "chars": 1045308899,
+   "tokens": 857567631,
+   "grew": 0,
+   "rolledBack": false,
+   "ownVal": null,
+   "ownScore": null,
+   "d": 768,
+   "loops": 1,
+   "spread": 2.9577,
+   "bytes": 1415115957,
+   "heads": 6,
+   "ctx": 512,
+   "vocab": 6000,
+   "kind": "bpe",
+   "arch": "tpp-loop",
+   "wantWider": false,
+   "layerCap": 16,
+   "mixChanged": false,
+   "bySrc": {
+    "laws": 4.1378,
+    "wiki": 3.0612,
+    "aozora": 3.4073,
+    "hanrei": 3.5035,
+    "kokkai": 2.6694,
+    "web": 2.9398,
+    "talk": 2.1502
+   },
+   "wrote": [
+    {
+     "start": "わたしは",
+     "text": "わたしは泳ぎましたね。」 CA「チャレンジしてみます！よく見ましたー！」 AI「チャレンジしてみます！」 BR「こんにちは！よろしくお願いします。」 CB「よろしくお願いします。」"
+    },
+    {
+     "start": "第一条",
+     "text": "第一条（株式会社社長） 著名会社青梅博・L・S・エンジン・エンジン・エンジン・エンジン・エンジン・エンジン エンジン・エンジン・エンジン・エンジン・エンジン・エンジンのエンジンを搭載したエンジンエンジン。 エンジンストア・エンジンと"
+    },
+    {
+     "start": "この法律において",
+     "text": "この法律において「防災関連監視装備」と意味を持っている。 太田製作所が2006年11月に設立された「 ヤマハ号 」は2007年以降、2010年以降は「 ウソ温泉 」と呼ばれていた [ 10 ] 。 さらに、2024年10月から2025年3月までは「出生"
+    }
+   ],
+   "loopPct": 24.22,
+   "movedBody": false
   }
  ],
  "bestVal": 2.8971,
@@ -12649,5 +12649,5 @@
  ],
  "wantWider": false,
  "nextD": 768,
- "bad": 2
+ "bad": 3
 }
