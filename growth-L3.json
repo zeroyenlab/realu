@@ -1,69 +1,6 @@
 {
  "runs": [
   {
-   "at": "2026-10-02T04:47:37Z",
-   "val": 2.7438,
-   "prev": 2.7462,
-   "valTag": "fixed-holdout-v1",
-   "stoppedAt": 0,
-   "stuck": 0,
-   "evalTag": "fixed-ix-v1",
-   "secPerStep": 2.6795,
-   "steps": 965,
-   "bpc": 3.2476,
-   "charsPerTok": 1.2189,
-   "score": 2.1778,
-   "scoreW": 2.0,
-   "scoreMode": "talk",
-   "finishMix": 0.2,
-   "lineage": "L3",
-   "layers": 13,
-   "params": 25335168,
-   "chars": 1045308899,
-   "tokens": 857567631,
-   "grew": 0,
-   "rolledBack": false,
-   "ownVal": null,
-   "ownScore": null,
-   "d": 384,
-   "loops": 1,
-   "spread": 2.7747,
-   "bytes": 304134793,
-   "heads": 6,
-   "ctx": 512,
-   "vocab": 6000,
-   "kind": "bpe",
-   "arch": "tpp-loop",
-   "wantWider": false,
-   "layerCap": 16,
-   "mixChanged": false,
-   "bySrc": {
-    "laws": 3.7343,
-    "wiki": 2.9167,
-    "aozora": 3.2418,
-    "hanrei": 3.4511,
-    "kokkai": 2.5455,
-    "web": 2.8255,
-    "talk": 2.1778
-   },
-   "wrote": [
-    {
-     "start": "わたしは",
-     "text": "わたしはサイクロン糸を使いたいと言われていたのです、それではまだ着物も使う、そういうことなんです。」 AI「ああす、シリンダになるだけですね。」 AO「そうですよね、なんだか体型が違うので、それはかなり違うんじゃないかと思います。」 AI「実体は"
-    },
-    {
-     "start": "第一条",
-     "text": "第一条 更生更生更生更生更生更生更生更生更生更生更生更生更生更生更生更生更生更生更生更生更生更生更生更生更生更生更生更生更生更生更生更生更生更生更生更生更生更生更生更生更生更生更生更生更生更生更生更生更生更生更生更生更生更生更"
-    },
-    {
-     "start": "この法律において",
-     "text": "この法律において「教会」がブラジルの人口を上回ることになる。 また、 アメリカ合衆国 、 イギリス 、 フランス 、 イタリア 、 ロシア 、 フランス 、 イタリア 、 ヴェストファーレン など、 アメリカ合衆国 の 北部 でもある。 北部の アメリカ 、"
-    }
-   ],
-   "loopPct": 32.97,
-   "movedBody": false
-  },
-  {
    "at": "2026-10-02T06:24:26Z",
    "val": 2.7432,
    "prev": 2.7438,
@@ -12599,6 +12536,69 @@
    ],
    "loopPct": 28.79,
    "movedBody": false
+  },
+  {
+   "at": "2026-10-12T20:40:59Z",
+   "val": 2.6788,
+   "prev": 2.6801,
+   "valTag": "fixed-holdout-v1",
+   "stoppedAt": 552,
+   "stuck": 0,
+   "evalTag": "fixed-ix-v1",
+   "secPerStep": 6.8094,
+   "steps": 961,
+   "bpc": 3.1706,
+   "charsPerTok": 1.2189,
+   "score": 2.1277,
+   "scoreW": 2.0,
+   "scoreMode": "talk",
+   "finishMix": 0.2,
+   "lineage": "L3",
+   "layers": 13,
+   "params": 25335168,
+   "chars": 1045308899,
+   "tokens": 857567631,
+   "grew": 0,
+   "rolledBack": false,
+   "ownVal": null,
+   "ownScore": null,
+   "d": 384,
+   "loops": 1,
+   "spread": 2.7285,
+   "bytes": 304134793,
+   "heads": 6,
+   "ctx": 512,
+   "vocab": 6000,
+   "kind": "bpe",
+   "arch": "tpp-loop",
+   "wantWider": false,
+   "layerCap": 16,
+   "mixChanged": false,
+   "bySrc": {
+    "laws": 3.6394,
+    "wiki": 2.8407,
+    "aozora": 3.1696,
+    "hanrei": 3.4099,
+    "kokkai": 2.4901,
+    "web": 2.7577,
+    "talk": 2.1277
+   },
+   "wrote": [
+    {
+     "start": "わたしは",
+     "text": "わたしは、アメリカ軍が潜水艦を押さえつけ、イギリスの西部 ヴォルフランス の イギリス 海軍艦船 を、 アメリカ海軍 の イギリス海軍 の Miche Eropes を駆逐艦険 航空地 で撃沈した。 8月23日"
+    },
+    {
+     "start": "第一条",
+     "text": "第一条の廊下で買いましたけれども、それでも相当短期的にお金を貸してもらって買いますということは、これはなかったんです。利息は持っておるし、いわゆる利息は持っております。ですから、利息は基本的に普通のお金で買います。」 AB「そうすると、この高利息は本当にいいかなというふう"
+    },
+    {
+     "start": "この法律において",
+     "text": "この法律において「日本人」をもつことを�し、中国関連の製品、 大韓航空機 、 日中労働機関 などの 相互に促し、 中国 では 中国 の 南シナ海 、 九州 などの シンガポール では 中華人民共和国 、 北朝鮮 、 台湾 などの 外交 ・ 書記"
+    }
+   ],
+   "loopPct": 0.74,
+   "movedBody": false
   }
  ],
  "bestVal": 2.6772,
@@ -12649,5 +12649,5 @@
  ],
  "wantWider": false,
  "nextD": 384,
- "bad": 3
+ "bad": 0
 }
