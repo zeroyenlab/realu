@@ -1,69 +1,6 @@
 {
  "runs": [
   {
-   "at": "2026-10-01T14:02:52Z",
-   "val": 3.0516,
-   "prev": 3.0545,
-   "valTag": "fixed-holdout-v1",
-   "stoppedAt": 158,
-   "stuck": 0,
-   "evalTag": "fixed-ix-v1",
-   "secPerStep": 26.401,
-   "steps": 300,
-   "bpc": 3.6119,
-   "charsPerTok": 1.2189,
-   "score": 2.2164,
-   "scoreW": 2.0,
-   "scoreMode": "talk",
-   "finishMix": 0.5,
-   "lineage": "L1",
-   "layers": 16,
-   "params": 117914880,
-   "chars": 1045308899,
-   "tokens": 857567631,
-   "grew": 0,
-   "rolledBack": false,
-   "ownVal": null,
-   "ownScore": null,
-   "d": 768,
-   "loops": 1,
-   "spread": 3.2715,
-   "bytes": 1415115957,
-   "heads": 6,
-   "ctx": 512,
-   "vocab": 6000,
-   "kind": "bpe",
-   "arch": "tpp-loop",
-   "wantWider": false,
-   "layerCap": 16,
-   "mixChanged": false,
-   "bySrc": {
-    "laws": 4.4514,
-    "wiki": 3.223,
-    "aozora": 3.5439,
-    "hanrei": 3.6366,
-    "kokkai": 2.792,
-    "web": 3.0683,
-    "talk": 2.2164
-   },
-   "wrote": [
-    {
-     "start": "わたしは",
-     "text": "わたしは、強い間違いありませんか。」 AA「国務大臣 法規に対する政府一体の具体的な検討は、この点について、いわゆる法制局ではないかという点についても、政府は、今後そうした検討を進めていくつもりか、そういうところにあると考えます。」 AB「竹中国務大臣 まず、これは先ほども"
-    },
-    {
-     "start": "第一条",
-     "text": "第一条においても、民間企業の金融業界においても、企業の金利、心配分もあります。これは、企業の企業もベースが一番大事です。 もう一つは、企業需要返還を減らすというのを急ぐべきではない。」 AA「しかも、今、企業の企業の企業の他企業が終了する、企業と。企業が企業が得ても、企業になり、企業が、企業"
-    },
-    {
-     "start": "この法律において",
-     "text": "この法律において「 生地 」が平地となった。 1960年（昭和45年）に、小国市と市内にあった広島市が「創隣」（「NEL」「ニュータウン」）に統合され、1970年（昭和45年）に「 NETプロジェクト 」（1980年）が発見された。 1980年（昭和65"
-    }
-   ],
-   "loopPct": 6.21,
-   "movedBody": false
-  },
-  {
    "at": "2026-10-01T15:07:13Z",
    "val": 3.0527,
    "prev": 3.0516,
@@ -12599,6 +12536,69 @@
    ],
    "loopPct": 12.32,
    "movedBody": false
+  },
+  {
+   "at": "2026-10-12T06:41:59Z",
+   "val": 2.8988,
+   "prev": 2.8971,
+   "valTag": "fixed-holdout-v1",
+   "stoppedAt": 180,
+   "stuck": 0,
+   "evalTag": "fixed-ix-v1",
+   "secPerStep": 22.8753,
+   "steps": 300,
+   "bpc": 3.4309,
+   "charsPerTok": 1.2189,
+   "score": 2.1468,
+   "scoreW": 2.0,
+   "scoreMode": "talk",
+   "finishMix": 0.5,
+   "lineage": "L1",
+   "layers": 16,
+   "params": 117914880,
+   "chars": 1045308899,
+   "tokens": 857567631,
+   "grew": 0,
+   "rolledBack": false,
+   "ownVal": null,
+   "ownScore": null,
+   "d": 768,
+   "loops": 1,
+   "spread": 3.096,
+   "bytes": 1415115957,
+   "heads": 6,
+   "ctx": 512,
+   "vocab": 6000,
+   "kind": "bpe",
+   "arch": "tpp-loop",
+   "wantWider": false,
+   "layerCap": 16,
+   "mixChanged": false,
+   "bySrc": {
+    "laws": 4.1377,
+    "wiki": 3.0573,
+    "aozora": 3.408,
+    "hanrei": 3.5013,
+    "kokkai": 2.6718,
+    "web": 2.9344,
+    "talk": 2.1468
+   },
+   "wrote": [
+    {
+     "start": "わたしは",
+     "text": "わたしは、つまり二十八日の会見で「さあ」と明言したのだろう。 この会合は、そこでは何らの会合がここに来るのである。 「この会話は、どうしては大成しろのことだ。それを聞こう」 「これは、ただ一つのことがまさしく……」 「そうだよ、あの……」 「まさしく�"
+    },
+    {
+     "start": "第一条",
+     "text": "第一条市街警備隊が鳴らせ、1932年（昭和7年）12月、警備隊（聴取）はイギリス海軍基地（1932年）に南アジア海軍艦隊（1937年に東アジア海軍は日本軍、南西アジア勢力と激しい戦力を強めており、国防軍は1933年まで国防"
+    },
+    {
+     "start": "この法律において",
+     "text": "この法律において」と、『百科事典』は「本来の事を考えているのは、なぜならば」と書かれている 。 1960年代以降のストレスに対して、spopの観点から創設したパズルゲームは、本来のストレスが観測されるようになった 。このストレスは、Spickintendo 27"
+    }
+   ],
+   "loopPct": 3.28,
+   "movedBody": false
   }
  ],
  "bestVal": 2.8971,
@@ -12649,5 +12649,5 @@
  ],
  "wantWider": false,
  "nextD": 768,
- "bad": 1
+ "bad": 2
 }
