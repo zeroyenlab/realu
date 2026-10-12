@@ -1,69 +1,6 @@
 {
  "runs": [
   {
-   "at": "2026-10-01T19:00:25Z",
-   "val": 3.05,
-   "prev": 3.0511,
-   "valTag": "fixed-holdout-v1",
-   "stoppedAt": 156,
-   "stuck": 0,
-   "evalTag": "fixed-ix-v1",
-   "secPerStep": 26.8667,
-   "steps": 300,
-   "bpc": 3.6099,
-   "charsPerTok": 1.2189,
-   "score": 2.2194,
-   "scoreW": 2.0,
-   "scoreMode": "talk",
-   "finishMix": 0.5,
-   "lineage": "L1",
-   "layers": 16,
-   "params": 117914880,
-   "chars": 1045308899,
-   "tokens": 857567631,
-   "grew": 0,
-   "rolledBack": false,
-   "ownVal": null,
-   "ownScore": null,
-   "d": 768,
-   "loops": 1,
-   "spread": 3.297,
-   "bytes": 1415115957,
-   "heads": 6,
-   "ctx": 512,
-   "vocab": 6000,
-   "kind": "bpe",
-   "arch": "tpp-loop",
-   "wantWider": false,
-   "layerCap": 16,
-   "mixChanged": false,
-   "bySrc": {
-    "laws": 4.4434,
-    "wiki": 3.222,
-    "aozora": 3.5464,
-    "hanrei": 3.6377,
-    "kokkai": 2.7863,
-    "web": 3.0667,
-    "talk": 2.2194
-   },
-   "wrote": [
-    {
-     "start": "わたしは",
-     "text": "わたしは、そうなれば、今日は拙加をいたしました。そして、今日は、この夕方、何か取りまとめておりますか。」 AA「国務大臣 いわゆる我が国の未来にとりましては、このようなことを申すまでもなく、国連における、この国連と国連の問題その他を含めたこの詳細につきましても、"
-    },
-    {
-     "start": "第一条",
-     "text": "第一条」と、専門学校総合研究所の理事長を務め、 中央教育研究所 、 大学院部 、 学校 、 大学 、 学校 、 大学 、 大学 、 大学 、 ワーメイミング大学 、 国立大学 、 大学院 、 野口和田 、 大学院 、 針口 、 大学院 、 学部 、 学部 、 大学院 、"
-    },
-    {
-     "start": "この法律において",
-     "text": "この法律において「列車等の停車」が廃止された。 2015年 （平成27年） 3月16日 ：小田急 - 土井田間の決勝線が廃止される形で停車するようになった。 2017年 （平成29年） 9月1日： 東京都 千代田区 へ駅舎が電話番号付き移設され、それを伝える"
-    }
-   ],
-   "loopPct": 13.11,
-   "movedBody": false
-  },
-  {
    "at": "2026-10-01T20:06:49Z",
    "val": 3.0517,
    "prev": 3.05,
@@ -12599,6 +12536,69 @@
    ],
    "loopPct": 8.01,
    "movedBody": false
+  },
+  {
+   "at": "2026-10-12T11:44:39Z",
+   "val": 2.904,
+   "prev": 2.8987,
+   "valTag": "fixed-holdout-v1",
+   "stoppedAt": 0,
+   "stuck": 0,
+   "evalTag": "fixed-ix-v1",
+   "secPerStep": 11.9997,
+   "steps": 300,
+   "bpc": 3.4371,
+   "charsPerTok": 1.2189,
+   "score": 2.1526,
+   "scoreW": 2.0,
+   "scoreMode": "talk",
+   "finishMix": 0.5,
+   "lineage": "L1",
+   "layers": 16,
+   "params": 117914880,
+   "chars": 1045308899,
+   "tokens": 857567631,
+   "grew": 0,
+   "rolledBack": false,
+   "ownVal": null,
+   "ownScore": null,
+   "d": 768,
+   "loops": 1,
+   "spread": 3.0155,
+   "bytes": 1415115957,
+   "heads": 6,
+   "ctx": 512,
+   "vocab": 6000,
+   "kind": "bpe",
+   "arch": "tpp-loop",
+   "wantWider": false,
+   "layerCap": 16,
+   "mixChanged": false,
+   "bySrc": {
+    "laws": 4.1439,
+    "wiki": 3.0667,
+    "aozora": 3.4099,
+    "hanrei": 3.512,
+    "kokkai": 2.6745,
+    "web": 2.9406,
+    "talk": 2.1526
+   },
+   "wrote": [
+    {
+     "start": "わたしは",
+     "text": "わたしはをしておりますので、三千億円のケースですとか、いろいろ思い切っております。 それから、我々としては、そのときに、一日も早く供出した事実はあるか、お聞かせをいただきたいと思います。」 AB「二十一世紀に入ってから、いろいろな静岡県、岩手県、大分県"
+    },
+    {
+     "start": "第一条",
+     "text": "第一条への拠点点を持つ。 最終段階では、 タマゴ と プリミテッドウェイ 、 アンケート 、 プリミテッド 、 クラウン 、 バリュ 、 マイワッド などの アメリカ 、 南北アメリカ 、 中国 、 首都 などと呼ばれる。"
+    },
+    {
+     "start": "この法律において",
+     "text": "この法律において、脱退後の補償としてしょうか。総理がおっしゃっているのは、私は数々のことを言っています。 そもそも、私たちが政治にたくさんいらっしゃっていたのは、私は、政治改革というのは、昨年、ニューサンプライチェーンであったんです。」 AB「私は、そのときに全体の不安をあま"
+    }
+   ],
+   "loopPct": 5.52,
+   "movedBody": false
   }
  ],
  "bestVal": 2.8971,
@@ -12649,5 +12649,5 @@
  ],
  "wantWider": false,
  "nextD": 768,
- "bad": 5
+ "bad": 1
 }
