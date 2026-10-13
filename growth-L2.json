@@ -1,69 +1,6 @@
 {
  "runs": [
   {
-   "at": "2026-10-03T00:24:35Z",
-   "val": 2.6982,
-   "prev": 2.6992,
-   "valTag": "fixed-holdout-v1",
-   "stoppedAt": 509,
-   "stuck": 0,
-   "evalTag": "fixed-ix-v1",
-   "secPerStep": 7.4038,
-   "steps": 684,
-   "bpc": 3.1935,
-   "charsPerTok": 1.2189,
-   "score": 2.0517,
-   "scoreW": 2.0,
-   "scoreMode": "talk",
-   "finishMix": 0.85,
-   "lineage": "L2",
-   "layers": 13,
-   "params": 44216832,
-   "chars": 1045308899,
-   "tokens": 857567631,
-   "grew": 0,
-   "rolledBack": false,
-   "ownVal": null,
-   "ownScore": null,
-   "d": 512,
-   "loops": 1,
-   "spread": 2.7538,
-   "bytes": 530714761,
-   "heads": 8,
-   "ctx": 512,
-   "vocab": 6000,
-   "kind": "bpe",
-   "arch": "tpp-loop",
-   "wantWider": false,
-   "layerCap": 16,
-   "mixChanged": false,
-   "bySrc": {
-    "laws": 3.624,
-    "wiki": 2.8669,
-    "aozora": 3.1798,
-    "hanrei": 3.3984,
-    "kokkai": 2.5111,
-    "web": 2.7859,
-    "talk": 2.0517
-   },
-   "wrote": [
-    {
-     "start": "わたしは",
-     "text": "わたしはチャーリーパン好きでした。」 HH「チャーリーパン美味しいですよね。」 HE「ティータイも好きですね」 HE「こんにちは！」 HH「こんにちは」 HE「パソコンは得意ですか"
-    },
-    {
-     "start": "第一条",
-     "text": "第一条損益配当配当に係る十五歳以上の所得の累積税額 第一節 最高裁判所 <記事 桐生駅> 桐生駅（にんせんえき）は、愛知県名古屋市天理区名古屋字桐生駅（にんせんえき） にある、西日本旅客鉄道（JR西日本）名古屋本線の駅である 。駅番号は"
-    },
-    {
-     "start": "この法律において",
-     "text": "この法律において当該ュージョブブラックウェザーズブラウザーズなど、多様なサービスをもたらす物づくりを行うことが必要と考えますが、いかがでしょうか。 また、高齢者や障害者の社会参加が最も重要な課題です。このため、文部科学省が、並びに当該施設で駐車場を無料で利用できるよう、障害者、障害者等への生活保護を支援するために、国、都道府県及び都道府県"
-    }
-   ],
-   "loopPct": 6.86,
-   "movedBody": false
-  },
-  {
    "at": "2026-10-03T01:43:02Z",
    "val": 2.698,
    "prev": 2.6982,
@@ -12599,9 +12536,72 @@
    ],
    "loopPct": 5.07,
    "movedBody": false
+  },
+  {
+   "at": "2026-10-13T18:13:02Z",
+   "val": 2.6302,
+   "prev": 2.6333,
+   "valTag": "fixed-holdout-v1",
+   "stoppedAt": 338,
+   "stuck": 0,
+   "evalTag": "fixed-ix-v1",
+   "secPerStep": 11.4142,
+   "steps": 653,
+   "bpc": 3.113,
+   "charsPerTok": 1.2189,
+   "score": 2.0351,
+   "scoreW": 2.0,
+   "scoreMode": "talk",
+   "finishMix": 0.85,
+   "lineage": "L2",
+   "layers": 14,
+   "params": 47379968,
+   "chars": 1045308899,
+   "tokens": 857567631,
+   "grew": 0,
+   "rolledBack": false,
+   "ownVal": null,
+   "ownScore": null,
+   "d": 512,
+   "loops": 1,
+   "spread": 2.5838,
+   "bytes": 568680621,
+   "heads": 8,
+   "ctx": 512,
+   "vocab": 6000,
+   "kind": "bpe",
+   "arch": "tpp-loop",
+   "wantWider": false,
+   "layerCap": 16,
+   "mixChanged": false,
+   "bySrc": {
+    "laws": 3.4968,
+    "wiki": 2.7915,
+    "aozora": 3.111,
+    "hanrei": 3.3653,
+    "kokkai": 2.455,
+    "web": 2.7189,
+    "talk": 2.0351
+   },
+   "wrote": [
+    {
+     "start": "わたしは",
+     "text": "わたしはまだここでは嬉しいと思います。」 GM「そうですね。でもすごく嬉しいです。いいお話ありがとうございました。」 DU「こちらこそです。ありがとうございました。」 DU「こんにち"
+    },
+    {
+     "start": "第一条",
+     "text": "第一条の表の表ろうこうこうかこうこうと思うのでございます。 そこで、政府にぜひともお伺いをいたしたいのですが、この際、四月十三日の衆議院予算委員会で、この予算委員会で私は、対象児童の就学支援金制度に関する基本的な考え方をもっと詳しくして見直してまいりたいと思うのですけれども、いかがでしょう"
+    },
+    {
+     "start": "この法律において",
+     "text": "この法律において人を殺害した罪を犯した罪ではない。 『バイク』では、バイクが二度にわたって黒く弱くなったと感じ、厳しい硬さを見せた。 『バイク』では、バイクが光を発する間柄なので、バイクを目の前に、ふすまナイフを突き抜けるようなバイ"
+    }
+   ],
+   "loopPct": 6.11,
+   "movedBody": false
   }
  ],
- "bestVal": 2.6323,
+ "bestVal": 2.6302,
  "layers": 14,
  "params": 47379968,
  "born": "2026-09-08T15:11:54Z",
