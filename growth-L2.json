@@ -1,69 +1,6 @@
 {
  "runs": [
   {
-   "at": "2026-10-03T02:51:52Z",
-   "val": 2.6977,
-   "prev": 2.698,
-   "valTag": "fixed-holdout-v1",
-   "stoppedAt": 0,
-   "stuck": 0,
-   "evalTag": "fixed-ix-v1",
-   "secPerStep": 4.6623,
-   "steps": 703,
-   "bpc": 3.1929,
-   "charsPerTok": 1.2189,
-   "score": 2.0569,
-   "scoreW": 2.0,
-   "scoreMode": "talk",
-   "finishMix": 0.85,
-   "lineage": "L2",
-   "layers": 13,
-   "params": 44216832,
-   "chars": 1045308899,
-   "tokens": 857567631,
-   "grew": 0,
-   "rolledBack": false,
-   "ownVal": null,
-   "ownScore": null,
-   "d": 512,
-   "loops": 1,
-   "spread": 2.8827,
-   "bytes": 530714761,
-   "heads": 8,
-   "ctx": 512,
-   "vocab": 6000,
-   "kind": "bpe",
-   "arch": "tpp-loop",
-   "wantWider": false,
-   "layerCap": 16,
-   "mixChanged": false,
-   "bySrc": {
-    "laws": 3.6181,
-    "wiki": 2.8665,
-    "aozora": 3.1759,
-    "hanrei": 3.4033,
-    "kokkai": 2.51,
-    "web": 2.7854,
-    "talk": 2.0569
-   },
-   "wrote": [
-    {
-     "start": "わたしは",
-     "text": "わたしは美味しそうです。」 CT「これまで食べたラーメン屋さんでもらえるんですよね。」 BQ「へぇ。すごいですね。10月ごろに食べたんですよね。」 CT「そうなんです。私も今年食べてないかも。。なにたべます？」 BQ「今年は"
-    },
-    {
-     "start": "第一条",
-     "text": "第一条第二号」 客「電話番号を教えてください。」 店「電話番号は0570056121です。」 客「ありがとうございます。」 店「はい。他にご用件はありますか？」 客「いえ、大丈夫です。色々ありがとうございました。」 店「よい旅を」 <"
-    },
-    {
-     "start": "この法律において",
-     "text": "この法律において「マスク」とは、マスク又はマスク、マスクその他の飼育用遊離品、事故関連産業用水域内のマスク、マスク又はマスクを、多数の習得物を、自ら用いるマスク、マスクその他の子遊離品、事故関連産業用水域外で資産を譲り受け、若しくは修理、渡航、貸し付け、販売、販売の必要性、子遊離品、事故関連産業用水域外で資産を譲り受け"
-    }
-   ],
-   "loopPct": 3.62,
-   "movedBody": false
-  },
-  {
    "at": "2026-10-03T04:15:36Z",
    "val": 2.6957,
    "prev": 2.6977,
@@ -12599,6 +12536,69 @@
    ],
    "loopPct": 0.95,
    "movedBody": false
+  },
+  {
+   "at": "2026-10-13T20:42:07Z",
+   "val": 2.6334,
+   "prev": 2.6344,
+   "valTag": "fixed-holdout-v1",
+   "stoppedAt": 336,
+   "stuck": 0,
+   "evalTag": "fixed-ix-v1",
+   "secPerStep": 11.5097,
+   "steps": 786,
+   "bpc": 3.1169,
+   "charsPerTok": 1.2189,
+   "score": 2.0368,
+   "scoreW": 2.0,
+   "scoreMode": "talk",
+   "finishMix": 0.85,
+   "lineage": "L2",
+   "layers": 14,
+   "params": 47379968,
+   "chars": 1045308899,
+   "tokens": 857567631,
+   "grew": 0,
+   "rolledBack": false,
+   "ownVal": null,
+   "ownScore": null,
+   "d": 512,
+   "loops": 1,
+   "spread": 2.7334,
+   "bytes": 568680621,
+   "heads": 8,
+   "ctx": 512,
+   "vocab": 6000,
+   "kind": "bpe",
+   "arch": "tpp-loop",
+   "wantWider": false,
+   "layerCap": 16,
+   "mixChanged": false,
+   "bySrc": {
+    "laws": 3.501,
+    "wiki": 2.7923,
+    "aozora": 3.1139,
+    "hanrei": 3.3629,
+    "kokkai": 2.4596,
+    "web": 2.7228,
+    "talk": 2.0368
+   },
+   "wrote": [
+    {
+     "start": "わたしは",
+     "text": "わたしは！」 AU「こんばんは、よろしくお願いします。」 EY「こんばんは、よろしくお願いします。」 AU「今日は、何をしていましたか？」 EY「今日は出社けでしたね。」 AU「お疲"
+    },
+    {
+     "start": "第一条",
+     "text": "第一条の撒水自給率は、年々低下傾向にあるため、一般家庭の終末処理も充実しているとされている。 一方で、ゆるやかな水族館、女性のグループや学校が保護対象となっているため、第五項の撒沢地帯（地域の住民や生徒などと共に親戚、生活困窮者、中学生など）の家族が、子供を稼ぐニーズが高いとしている"
+    },
+    {
+     "start": "この法律において",
+     "text": "この法律において「令和四年度補正予算」とあるのは「令和四年度補正予算（令和八年度補正予算（令和五年度補正予算（第２号）」と、令和四年度補正予算（特第２号）は、いずれも平成十九年度補正予算（第２号）ほか、令和四年度補正予算（特第２号）及び令和五年度補正予算（特第２号）ほか、令和四年度補正予算（第２号）ほか、令和四年度補正予算（特第２号）及び令和"
+    }
+   ],
+   "loopPct": 0.0,
+   "movedBody": false
   }
  ],
  "bestVal": 2.6302,
@@ -12649,5 +12649,5 @@
  ],
  "wantWider": false,
  "nextD": 512,
- "bad": 3
+ "bad": 2
 }
