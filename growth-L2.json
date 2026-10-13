@@ -1,69 +1,6 @@
 {
  "runs": [
   {
-   "at": "2026-10-02T17:59:27Z",
-   "val": 2.6989,
-   "prev": 2.7008,
-   "valTag": "fixed-holdout-v1",
-   "stoppedAt": 0,
-   "stuck": 0,
-   "evalTag": "fixed-ix-v1",
-   "secPerStep": 4.7683,
-   "steps": 614,
-   "bpc": 3.1944,
-   "charsPerTok": 1.2189,
-   "score": 2.0547,
-   "scoreW": 2.0,
-   "scoreMode": "talk",
-   "finishMix": 0.85,
-   "lineage": "L2",
-   "layers": 13,
-   "params": 44216832,
-   "chars": 1045308899,
-   "tokens": 857567631,
-   "grew": 0,
-   "rolledBack": false,
-   "ownVal": null,
-   "ownScore": null,
-   "d": 512,
-   "loops": 1,
-   "spread": 2.6052,
-   "bytes": 530714761,
-   "heads": 8,
-   "ctx": 512,
-   "vocab": 6000,
-   "kind": "bpe",
-   "arch": "tpp-loop",
-   "wantWider": false,
-   "layerCap": 16,
-   "mixChanged": false,
-   "bySrc": {
-    "laws": 3.6243,
-    "wiki": 2.8675,
-    "aozora": 3.1825,
-    "hanrei": 3.4,
-    "kokkai": 2.5101,
-    "web": 2.7857,
-    "talk": 2.0547
-   },
-   "wrote": [
-    {
-     "start": "わたしは",
-     "text": "わたしは、ここに、下りて、いつまでも夜が過ぎる、これが必至のことである。 夜明け後、夜明けに打ち明ける日も、晩はまた余りに早かった。そうして、そうして、夜明けに打ち明ける日も、さすがにこの日は本当に涙を流し、夜明けに打ち明け"
-    },
-    {
-     "start": "第一条",
-     "text": "第一条�、「又は当該第二十二の段階（以下「累計計算書類」という。）をもって作成することができる。 （合格証） 第三十七条 没収した箇条第一項、ボーイズライン及び�圧力は、当該就職に係る所得が、当該就職に係る同項各号に掲げる期間（当該就職に係る原子核融合物（以下「核融合物」という。）の質量んでいるエネルギーが、その評価に移行する単位面積の細分事項について、その構成による比率（"
-    },
-    {
-     "start": "この法律において",
-     "text": "この法律においての八の促進の総合相業 - 1.8%、1.8%、1.5%、2.5%、1.8%、2.3%、3.5%、3.5%、3.5%、4.5%、3.9% 2.5%、4.5%、2.9%、4.5%、2.6%、2.4%、3.8%、3.8%、2.2%、2"
-    }
-   ],
-   "loopPct": 19.55,
-   "movedBody": false
-  },
-  {
    "at": "2026-10-02T19:24:08Z",
    "val": 2.699,
    "prev": 2.6989,
@@ -12599,6 +12536,69 @@
    ],
    "loopPct": 22.28,
    "movedBody": false
+  },
+  {
+   "at": "2026-10-13T11:53:23Z",
+   "val": 2.6353,
+   "prev": 2.6337,
+   "valTag": "fixed-holdout-v1",
+   "stoppedAt": 335,
+   "stuck": 0,
+   "evalTag": "fixed-ix-v1",
+   "secPerStep": 11.5404,
+   "steps": 650,
+   "bpc": 3.1191,
+   "charsPerTok": 1.2189,
+   "score": 2.0363,
+   "scoreW": 2.0,
+   "scoreMode": "talk",
+   "finishMix": 0.85,
+   "lineage": "L2",
+   "layers": 14,
+   "params": 47379968,
+   "chars": 1045308899,
+   "tokens": 857567631,
+   "grew": 0,
+   "rolledBack": false,
+   "ownVal": null,
+   "ownScore": null,
+   "d": 512,
+   "loops": 1,
+   "spread": 2.7695,
+   "bytes": 568680621,
+   "heads": 8,
+   "ctx": 512,
+   "vocab": 6000,
+   "kind": "bpe",
+   "arch": "tpp-loop",
+   "wantWider": false,
+   "layerCap": 16,
+   "mixChanged": false,
+   "bySrc": {
+    "laws": 3.5001,
+    "wiki": 2.7944,
+    "aozora": 3.1142,
+    "hanrei": 3.3666,
+    "kokkai": 2.4624,
+    "web": 2.7214,
+    "talk": 2.0363
+   },
+   "wrote": [
+    {
+     "start": "わたしは",
+     "text": "わたしは服を買ったことがあります！」 EB「服はどうですか？」 DN「好きなものってのは、口にするチントが少なくて、、」 EB「いいじゃないですか、、」 DN「そうですね。紙にはまっているものがありますね。」 EB「わかります！おすすめのアイスがたく"
+    },
+    {
+     "start": "第一条",
+     "text": "第一条第一号ロからヘビペイトグループ） リボルバー（スミレックス） プロフェッショナルヘビ（スミレックス）- プロフェッショナルヘビ プロフェッショナルヘビ（スミレックス）- プロフェッショナルヘビ プロフェッショナルヘビ（スミレックス）- プロフェッショナルヘビ プロフ�"
+    },
+    {
+     "start": "この法律において",
+     "text": "この法律においてにおいて使用する有形文化財（BRICO TECHINYO DYOTECHINYO DYOTECHINYO DYOTECHINYO DYOTECHINYO DYOTECHINYO DYOTECHINYO DYOTECHINYO DYOTE"
+    }
+   ],
+   "loopPct": 49.09,
+   "movedBody": false
   }
  ],
  "bestVal": 2.6337,
@@ -12649,5 +12649,5 @@
  ],
  "wantWider": false,
  "nextD": 512,
- "bad": 5
+ "bad": 0
 }
