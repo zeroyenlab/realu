@@ -1,69 +1,6 @@
 {
  "runs": [
   {
-   "at": "2026-10-02T23:09:31Z",
-   "val": 2.738,
-   "prev": 2.7393,
-   "valTag": "fixed-holdout-v1",
-   "stoppedAt": 821,
-   "stuck": 0,
-   "evalTag": "fixed-ix-v1",
-   "secPerStep": 4.5112,
-   "steps": 976,
-   "bpc": 3.2407,
-   "charsPerTok": 1.2189,
-   "score": 2.1719,
-   "scoreW": 2.0,
-   "scoreMode": "talk",
-   "finishMix": 0.2,
-   "lineage": "L3",
-   "layers": 13,
-   "params": 25335168,
-   "chars": 1045308899,
-   "tokens": 857567631,
-   "grew": 0,
-   "rolledBack": false,
-   "ownVal": null,
-   "ownScore": null,
-   "d": 384,
-   "loops": 1,
-   "spread": 2.723,
-   "bytes": 304134793,
-   "heads": 6,
-   "ctx": 512,
-   "vocab": 6000,
-   "kind": "bpe",
-   "arch": "tpp-loop",
-   "wantWider": false,
-   "layerCap": 16,
-   "mixChanged": false,
-   "bySrc": {
-    "laws": 3.7235,
-    "wiki": 2.9081,
-    "aozora": 3.2349,
-    "hanrei": 3.4466,
-    "kokkai": 2.5415,
-    "web": 2.8178,
-    "talk": 2.1719
-   },
-   "wrote": [
-    {
-     "start": "わたしは",
-     "text": "わたしは厭いことに感謝を申し寄せたが、おまえは痛みを感じた。 しかし、もしも痛みを軽視したらしい、しかし肉が強くなって、白いから痛みを感じた結果、痛みを感じた。そして腰を助けると、痛みを感じた。そしてその左右に痛みを感じたのであ"
-    },
-    {
-     "start": "第一条",
-     "text": "第一条ほうほうほうほうりつ 閲覧宿泊施設等における利用施設の整備に関する法律（平成二十四製造販売話合宿舎による利用施設の整備に関する法律（平成十七年法律第八十三号）第二条の規定に基づき、被催者の保護を図るため、関係法律を所管する大臣をいう。以下この条において同じ。）に設置した施設の新設、管理、設置その他関係機関の連携及び連携を図るとともに、関係行政機関の長その他関係機関の連携を図りつつ、関係行政機関の長その他関係機関の連携を図りつつ、関"
-    },
-    {
-     "start": "この法律において",
-     "text": "この法律において「 安楽死 」を「 安楽死 」に改めた。 同年 4月 - 1981年 （昭和56年） 9月 - 1993年 （平成5年） 8月 - 1997年 （昭和52年） 10月 - 1999年 （平成11年） 11月 - 1997"
-    }
-   ],
-   "loopPct": 8.55,
-   "movedBody": false
-  },
-  {
    "at": "2026-10-03T00:24:11Z",
    "val": 2.7377,
    "prev": 2.738,
@@ -12599,9 +12536,72 @@
    ],
    "loopPct": 24.9,
    "movedBody": false
+  },
+  {
+   "at": "2026-10-13T14:25:16Z",
+   "val": 2.6718,
+   "prev": 2.6731,
+   "valTag": "fixed-holdout-v1",
+   "stoppedAt": 1084,
+   "stuck": 0,
+   "evalTag": "fixed-ix-v1",
+   "secPerStep": 3.393,
+   "steps": 1631,
+   "bpc": 3.1623,
+   "charsPerTok": 1.2189,
+   "score": 2.1288,
+   "scoreW": 2.0,
+   "scoreMode": "talk",
+   "finishMix": 0.2,
+   "lineage": "L3",
+   "layers": 13,
+   "params": 25335168,
+   "chars": 1045308899,
+   "tokens": 857567631,
+   "grew": 0,
+   "rolledBack": false,
+   "ownVal": null,
+   "ownScore": null,
+   "d": 384,
+   "loops": 1,
+   "spread": 2.5434,
+   "bytes": 304134793,
+   "heads": 6,
+   "ctx": 512,
+   "vocab": 6000,
+   "kind": "bpe",
+   "arch": "tpp-loop",
+   "wantWider": false,
+   "layerCap": 16,
+   "mixChanged": false,
+   "bySrc": {
+    "laws": 3.6168,
+    "wiki": 2.8327,
+    "aozora": 3.1627,
+    "hanrei": 3.4052,
+    "kokkai": 2.4834,
+    "web": 2.7523,
+    "talk": 2.1288
+   },
+   "wrote": [
+    {
+     "start": "わたしは",
+     "text": "わたしは、黒い雨が、天井の中に水を流すだけの風が鳴って、火山が上昇し、我ながらに火を放つことがある。 11月は巣のあたりで、火山はこの名産地である。 金橋市は現在も奇岩に埋葬されているが、この地の中にダイヤルバスの粘土が敷かれている"
+    },
+    {
+     "start": "第一条",
+     "text": "第一条（ただし、法令及び同法）、この法律、法律を提出する規定を盛り込む規定を盛り込むものです。 日本学術会議の創設に向けて、新しい学術論文として、教育改革、広報活動、研究活動、教育活動、政治活動、社会活動、科学活動、行政活動等を通じた学術論文の評価を行っていくこと等を通じて、改革を推進するとともに、学術論文等を通じて"
+    },
+    {
+     "start": "この法律において",
+     "text": "この法律において「命令」として、これらングルy＝リモクセリ、ティーカーフリーム＝アングリアの「メリヤシ」、ヒロの「メリヤシ」の「大メリヤシ」 irmus birdation tighters fullist collector on Miss"
+    }
+   ],
+   "loopPct": 8.1,
+   "movedBody": false
   }
  ],
- "bestVal": 2.6731,
+ "bestVal": 2.6718,
  "layers": 13,
  "params": 25335168,
  "born": "2026-09-12T18:05:42Z",
@@ -12649,5 +12649,5 @@
  ],
  "wantWider": false,
  "nextD": 384,
- "bad": 3
+ "bad": 1
 }
