@@ -1,69 +1,6 @@
 {
  "runs": [
   {
-   "at": "2026-10-03T15:18:35Z",
-   "val": 2.731,
-   "prev": 2.7339,
-   "valTag": "fixed-holdout-v1",
-   "stoppedAt": 0,
-   "stuck": 0,
-   "evalTag": "fixed-ix-v1",
-   "secPerStep": 2.8527,
-   "steps": 974,
-   "bpc": 3.2323,
-   "charsPerTok": 1.2189,
-   "score": 2.1679,
-   "scoreW": 2.0,
-   "scoreMode": "talk",
-   "finishMix": 0.2,
-   "lineage": "L3",
-   "layers": 13,
-   "params": 25335168,
-   "chars": 1045308899,
-   "tokens": 857567631,
-   "grew": 0,
-   "rolledBack": false,
-   "ownVal": null,
-   "ownScore": null,
-   "d": 384,
-   "loops": 1,
-   "spread": 2.9718,
-   "bytes": 304134793,
-   "heads": 6,
-   "ctx": 512,
-   "vocab": 6000,
-   "kind": "bpe",
-   "arch": "tpp-loop",
-   "wantWider": false,
-   "layerCap": 16,
-   "mixChanged": false,
-   "bySrc": {
-    "laws": 3.7116,
-    "wiki": 2.9034,
-    "aozora": 3.2298,
-    "hanrei": 3.445,
-    "kokkai": 2.5352,
-    "web": 2.8128,
-    "talk": 2.1679
-   },
-   "wrote": [
-    {
-     "start": "わたしは",
-     "text": "わたしは自分自身が本当に自分自身のレショーを忘れることにもなった。 それによって三人の犠牲者を出すことはなく、また二人は自分自身の自分の顔に合わせて「あらましの男」と呼んだ。 この作品で、ソロデビューしたシングルである「 トロント 」をリリースした。 1995"
-    },
-    {
-     "start": "第一条",
-     "text": "第一条の規定は、適用しない。 ープルトラックス又はSE型電気コネクトブループ （佐世代電位相印） ]周年時における過剰電位相印は、その記録によりすぐに発表された 。ただし、印刷物には、再びWEB画像を 、その表面上面に「 」欄に記載されている 。 なお、上記のCD画像は、従来の「i」のよう"
-    },
-    {
-     "start": "この法律において",
-     "text": "この法律において「News News」又は「News News」（現存しないAPI）を用いる。 小規模なApiral Openの生成は、1979年に「News News」と命名された。このように、普通のApiral Enconsion用の生成は、Apiral E"
-    }
-   ],
-   "loopPct": 1.54,
-   "movedBody": false
-  },
-  {
    "at": "2026-10-03T16:43:39Z",
    "val": 2.7317,
    "prev": 2.731,
@@ -12599,6 +12536,69 @@
    ],
    "loopPct": 29.62,
    "movedBody": false
+  },
+  {
+   "at": "2026-10-14T08:16:02Z",
+   "val": 2.8841,
+   "prev": 2.8841,
+   "valTag": "fixed-holdout-v1",
+   "stoppedAt": 759,
+   "stuck": 1,
+   "evalTag": "fixed-ix-v1",
+   "secPerStep": 4.8946,
+   "steps": 972,
+   "bpc": 3.4136,
+   "charsPerTok": 1.2189,
+   "score": 2.2628,
+   "scoreW": 2.0,
+   "scoreMode": "talk",
+   "finishMix": 0.2,
+   "lineage": "L3",
+   "layers": 14,
+   "params": 27105408,
+   "chars": 1045308899,
+   "tokens": 857567631,
+   "grew": 0,
+   "rolledBack": true,
+   "ownVal": 2.8826,
+   "ownScore": 2.2846,
+   "d": 384,
+   "loops": 1,
+   "spread": 2.8678,
+   "bytes": 325385901,
+   "heads": 6,
+   "ctx": 512,
+   "vocab": 6000,
+   "kind": "bpe",
+   "arch": "tpp-loop",
+   "wantWider": false,
+   "layerCap": 16,
+   "mixChanged": false,
+   "bySrc": {
+    "laws": 4.0021,
+    "wiki": 3.0612,
+    "aozora": 3.3696,
+    "hanrei": 3.6037,
+    "kokkai": 2.6618,
+    "web": 2.968,
+    "talk": 2.2846
+   },
+   "wrote": [
+    {
+     "start": "わたしは",
+     "text": "わたしは春というチャンネルを転覆させていた。 2019年8月26日、佐賀市の渡辺郷で「Deen On Antoshics of Wild Me of the Antoshics Gost Mobiles of Wild Spone"
+    },
+    {
+     "start": "第一条",
+     "text": "第一条各号に掲げるものは、次に掲げるをし、又はれることができる。 （特定特定特定特定特定特定特定特定特定特定特定特定特定特定特定特定特定特定特定特定特定特定特定特定特定特定特定特定特定特定�る特定特定特定特定特定特定特定特定特定特定特定特定特定特定特定特定特定特定特定特定特定特定特定特定特定特定特定特定特定特定特定特定特定特定特定特定特定特定特定特定特定特定特定特定特定特定特定特定特定特定特定特定特定特定特定特定特定特定特定特定特定特定"
+    },
+    {
+     "start": "この法律において",
+     "text": "この法律において「危険防止等地域型社会」という。）に位置づけられている。 ローマ字 はローマ字（ 英 : sfréscherlus, hullixna sicech ）。 この他に、 ローマ字 （ 英語 : hullixna sic"
+    }
+   ],
+   "loopPct": 30.78,
+   "movedBody": false
   }
  ],
  "bestVal": 2.6708,
@@ -12649,5 +12649,5 @@
  ],
  "wantWider": false,
  "nextD": 384,
- "bad": 2
+ "bad": 9
 }
