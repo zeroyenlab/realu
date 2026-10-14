@@ -1,69 +1,6 @@
 {
  "runs": [
   {
-   "at": "2026-10-03T13:06:18Z",
-   "val": 3.0178,
-   "prev": 3.0191,
-   "valTag": "fixed-holdout-v1",
-   "stoppedAt": 203,
-   "stuck": 0,
-   "evalTag": "fixed-ix-v1",
-   "secPerStep": 19.9575,
-   "steps": 300,
-   "bpc": 3.5718,
-   "charsPerTok": 1.2189,
-   "score": 2.1988,
-   "scoreW": 2.0,
-   "scoreMode": "talk",
-   "finishMix": 0.5,
-   "lineage": "L1",
-   "layers": 16,
-   "params": 117914880,
-   "chars": 1045308899,
-   "tokens": 857567631,
-   "grew": 0,
-   "rolledBack": false,
-   "ownVal": null,
-   "ownScore": null,
-   "d": 768,
-   "loops": 1,
-   "spread": 3.1284,
-   "bytes": 1415115957,
-   "heads": 6,
-   "ctx": 512,
-   "vocab": 6000,
-   "kind": "bpe",
-   "arch": "tpp-loop",
-   "wantWider": false,
-   "layerCap": 16,
-   "mixChanged": false,
-   "bySrc": {
-    "laws": 4.3811,
-    "wiki": 3.1919,
-    "aozora": 3.5187,
-    "hanrei": 3.6062,
-    "kokkai": 2.7629,
-    "web": 3.0359,
-    "talk": 2.1988
-   },
-   "wrote": [
-    {
-     "start": "わたしは",
-     "text": "わたしはあれです、あれを拝見してみたいと思います。」 AB「最後は、大藏大臣をやっていますので、そういったことを考えるのではなくて、大体一番は大変な状況を考えますと、もはや、何を共にするのか、そういうことを言ってきますと、これからもやはり大藏大臣の住専"
-    },
-    {
-     "start": "第一条",
-     "text": "第一条画像（2014年10月18日 - 1999年12月10日）は、日本独人女優、私学題の「絶対峠」（2001年1月25日 - 1991年12月17日）と、1992年に日本人受験人賞（日本人賞）を受賞。 その後、日本野球の来日映"
-    },
-    {
-     "start": "この法律において",
-     "text": "この法律においてしている。 原付上麻点 : 1988年4月1日 : 日本人が「大正期…」となり、1964年9月1日付で但し、原画は全15本を付着していた。 1976年8月1日 : 1986年9月27日 : 「日本のヨーロッパ」（日本）を中心に、日本に発表された。"
-    }
-   ],
-   "loopPct": 4.56,
-   "movedBody": false
-  },
-  {
    "at": "2026-10-03T14:23:34Z",
    "val": 3.0141,
    "prev": 3.0178,
@@ -12599,6 +12536,69 @@
    ],
    "loopPct": 8.6,
    "movedBody": false
+  },
+  {
+   "at": "2026-10-14T05:51:21Z",
+   "val": 2.8824,
+   "prev": 2.8801,
+   "valTag": "fixed-holdout-v1",
+   "stoppedAt": 201,
+   "stuck": 0,
+   "evalTag": "fixed-ix-v1",
+   "secPerStep": 20.1629,
+   "steps": 300,
+   "bpc": 3.4116,
+   "charsPerTok": 1.2189,
+   "score": 2.1477,
+   "scoreW": 2.0,
+   "scoreMode": "talk",
+   "finishMix": 0.5,
+   "lineage": "L1",
+   "layers": 16,
+   "params": 117914880,
+   "chars": 1045308899,
+   "tokens": 857567631,
+   "grew": 0,
+   "rolledBack": false,
+   "ownVal": null,
+   "ownScore": null,
+   "d": 768,
+   "loops": 1,
+   "spread": 3.0948,
+   "bytes": 1415115957,
+   "heads": 6,
+   "ctx": 512,
+   "vocab": 6000,
+   "kind": "bpe",
+   "arch": "tpp-loop",
+   "wantWider": false,
+   "layerCap": 16,
+   "mixChanged": false,
+   "bySrc": {
+    "laws": 4.1065,
+    "wiki": 3.0409,
+    "aozora": 3.3941,
+    "hanrei": 3.4838,
+    "kokkai": 2.6561,
+    "web": 2.9179,
+    "talk": 2.1477
+   },
+   "wrote": [
+    {
+     "start": "わたしは",
+     "text": "わたしは ブランド・バロイゼンバーグ である。 ブランドの メンバー が 1822年 に ブランド の ボローニャ で発行していた バルセロナ の フェルディナント・アンド・マスカル の レイク・ウィリアムズ が 1823年 の アンチウェイズ"
+    },
+    {
+     "start": "第一条",
+     "text": "第一条 設立時刻を グラビア に改め、 10月2日 に設立。 1962年 （昭和37年）に 新製鉄所 に コーポレートツェ と改称。 1967年 （昭和42年）に ガソリンスタンド を開設。 1967年 （昭和42年）に完成した 鉄道事業 の 鉄道事業"
+    },
+    {
+     "start": "この法律において",
+     "text": "この法律において。 1960年代のアメリカ合衆国ではインディアンは世界初のアメリカ合衆国では 2010年代 には欧州では 1903年 に ポルトガル で発足し、 1965年 の パリ では世界的に イタリア で イタリア 、 ロシア 、 ドイツ 、"
+    }
+   ],
+   "loopPct": 0.82,
+   "movedBody": false
   }
  ],
  "bestVal": 2.8801,
@@ -12649,5 +12649,5 @@
  ],
  "wantWider": false,
  "nextD": 768,
- "bad": 1
+ "bad": 0
 }
