@@ -1,69 +1,6 @@
 {
  "runs": [
   {
-   "at": "2026-10-03T23:02:44Z",
-   "val": 2.729,
-   "prev": 2.7288,
-   "valTag": "fixed-holdout-v1",
-   "stoppedAt": 556,
-   "stuck": 0,
-   "evalTag": "fixed-ix-v1",
-   "secPerStep": 6.7594,
-   "steps": 975,
-   "bpc": 3.23,
-   "charsPerTok": 1.2189,
-   "score": 2.1684,
-   "scoreW": 2.0,
-   "scoreMode": "talk",
-   "finishMix": 0.2,
-   "lineage": "L3",
-   "layers": 13,
-   "params": 25335168,
-   "chars": 1045308899,
-   "tokens": 857567631,
-   "grew": 0,
-   "rolledBack": false,
-   "ownVal": null,
-   "ownScore": null,
-   "d": 384,
-   "loops": 1,
-   "spread": 2.6963,
-   "bytes": 304134793,
-   "heads": 6,
-   "ctx": 512,
-   "vocab": 6000,
-   "kind": "bpe",
-   "arch": "tpp-loop",
-   "wantWider": false,
-   "layerCap": 16,
-   "mixChanged": false,
-   "bySrc": {
-    "laws": 3.7102,
-    "wiki": 2.9011,
-    "aozora": 3.2255,
-    "hanrei": 3.4453,
-    "kokkai": 2.5331,
-    "web": 2.8109,
-    "talk": 2.1684
-   },
-   "wrote": [
-    {
-     "start": "わたしは",
-     "text": "わたしは、もうやめたと思います。」 IB「あの人もおられるのお腹がすごくなりますからね。」 HK「はい、もう終わりになりますよね。」 IB「楽しいときには、全くですよ。」 HK「はい。あと、平日でもいいですね。」 IB「そうですよね、"
-    },
-    {
-     "start": "第一条",
-     "text": "第一条を及ぼすATSドココココロコロコミューション経済学 YHOP Project Scial startics/theatentis Workerstrictus Of National comment Sciencle Sound."
-    },
-    {
-     "start": "この法律において",
-     "text": "この法律において「関係法律」とを所管する。 石油自動車・地方ガス連合（日本IC）は、1924年9月に国連サッカーリーグのAFC BLBにて、日本の 初のオーストラリア・イギリス連邦 （ 英語版 ） で、日本の イングランド ・ アリゾナ大学 （ 英語版 ） に"
-    }
-   ],
-   "loopPct": 4.53,
-   "movedBody": false
-  },
-  {
    "at": "2026-10-04T00:08:45Z",
    "val": 2.7286,
    "prev": 2.729,
@@ -12599,6 +12536,69 @@
    ],
    "loopPct": 30.3,
    "movedBody": false
+  },
+  {
+   "at": "2026-10-14T15:54:59Z",
+   "val": 2.7152,
+   "prev": 2.735,
+   "valTag": "fixed-holdout-v1",
+   "stoppedAt": 894,
+   "stuck": 0,
+   "evalTag": "fixed-ix-v1",
+   "secPerStep": 4.1313,
+   "steps": 1054,
+   "bpc": 3.2137,
+   "charsPerTok": 1.2189,
+   "score": 2.1733,
+   "scoreW": 2.0,
+   "scoreMode": "talk",
+   "finishMix": 0.2,
+   "lineage": "L3",
+   "layers": 14,
+   "params": 27105408,
+   "chars": 1045308899,
+   "tokens": 857567631,
+   "grew": 0,
+   "rolledBack": false,
+   "ownVal": null,
+   "ownScore": null,
+   "d": 384,
+   "loops": 1,
+   "spread": 3.3106,
+   "bytes": 325385901,
+   "heads": 6,
+   "ctx": 512,
+   "vocab": 6000,
+   "kind": "bpe",
+   "arch": "tpp-loop",
+   "wantWider": false,
+   "layerCap": 16,
+   "mixChanged": false,
+   "bySrc": {
+    "laws": 3.6832,
+    "wiki": 2.8762,
+    "aozora": 3.2056,
+    "hanrei": 3.4375,
+    "kokkai": 2.5185,
+    "web": 2.8017,
+    "talk": 2.1733
+   },
+   "wrote": [
+    {
+     "start": "わたしは",
+     "text": "わたしは、このときに、サン・マルタという言葉を使うことの意味を持っているのです。」 AA「アメリカでも、英語の問題はございませんよね。アメリカだと、英語という言葉を使うことが日本語の問題ではないでしょうか。 それで、イギリス、フランス、オランダ、イ"
+    },
+    {
+     "start": "第一条",
+     "text": "第一条第二号ハ（２）及び（１）中「１」（２）中「２」（２）中「３」（２）中「１」（２）中「２」（２）中「３」（２）中「１」（３）中「２」（２）中「４」（２）中「７」中「１」（３）中「２（２）中「３」中「３（３）」中「３」中「４」中「５"
+    },
+    {
+     "start": "この法律において",
+     "text": "この法律においてにおいて、当該報告及び報告をすること。 特定生命保険会社（信託事業に関する法律第二条第八項に規定する外国生命保険会社をいう。）が、特定生命保険会社（信託事業に関する法律第二条第十項に規定する外国生命保険会社をいう。）又は特定生命保険会社（信託事業に関する法律第二条第十九項に規定する外国生命保険会社をいう。）が、特定生命保険会社金額の合計額（第七項に規定する特定生命保険会社の法人その他の法人その他の法人その他の法人その他の"
+    }
+   ],
+   "loopPct": 6.41,
+   "movedBody": false
   }
  ],
  "bestVal": 2.6708,
@@ -12649,5 +12649,5 @@
  ],
  "wantWider": false,
  "nextD": 384,
- "bad": 1
+ "bad": 3
 }
