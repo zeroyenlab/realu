@@ -1,69 +1,6 @@
 {
  "runs": [
   {
-   "at": "2026-10-03T19:17:30Z",
-   "val": 2.7312,
-   "prev": 2.732,
-   "valTag": "fixed-holdout-v1",
-   "stoppedAt": 554,
-   "stuck": 0,
-   "evalTag": "fixed-ix-v1",
-   "secPerStep": 6.7724,
-   "steps": 975,
-   "bpc": 3.2326,
-   "charsPerTok": 1.2189,
-   "score": 2.1697,
-   "scoreW": 2.0,
-   "scoreMode": "talk",
-   "finishMix": 0.2,
-   "lineage": "L3",
-   "layers": 13,
-   "params": 25335168,
-   "chars": 1045308899,
-   "tokens": 857567631,
-   "grew": 0,
-   "rolledBack": false,
-   "ownVal": null,
-   "ownScore": null,
-   "d": 384,
-   "loops": 1,
-   "spread": 2.7497,
-   "bytes": 304134793,
-   "heads": 6,
-   "ctx": 512,
-   "vocab": 6000,
-   "kind": "bpe",
-   "arch": "tpp-loop",
-   "wantWider": false,
-   "layerCap": 16,
-   "mixChanged": false,
-   "bySrc": {
-    "laws": 3.71,
-    "wiki": 2.905,
-    "aozora": 3.2304,
-    "hanrei": 3.4444,
-    "kokkai": 2.534,
-    "web": 2.8144,
-    "talk": 2.1697
-   },
-   "wrote": [
-    {
-     "start": "わたしは",
-     "text": "わたしは折に、女筆を驚かせたかもしれません。 政府の眼先に、これほど拘りくれた時には、彼の眼先でも、何か、どんな目にも、下手な顔を、自分を見た中で、昨夜の若いお礼などを頼まれたというのがわかりにくいものです。 しかし、それは"
-    },
-    {
-     "start": "第一条",
-     "text": "第一条> 神社 （ししがおか） は、1891年（明治24年）に神西町として発足した神社。平成天皇宮前では小御神社（松平神社）が建っている。 日本神話の伝統を知らせられた神社。日本では「神社神社」を神社神祇神社として祀り、現在は神社神社とも呼ば"
-    },
-    {
-     "start": "この法律において",
-     "text": "この法律において「行財政法」又は「行財政法」と総称する。 （他の式よりは、行財政法は、現行の行財政法では一般的で、行財政法とは何ら別個の法律と呼んでいるが、国家という法文は、行財政法との関係を一体化するものである。行財政法は、行財政法（行財政法）である。行財政法は、行財政法及び行財政法、行財政法とも表し"
-    }
-   ],
-   "loopPct": 4.13,
-   "movedBody": false
-  },
-  {
    "at": "2026-10-03T20:18:57Z",
    "val": 2.73,
    "prev": 2.7312,
@@ -12599,6 +12536,69 @@
    ],
    "loopPct": 11.06,
    "movedBody": false
+  },
+  {
+   "at": "2026-10-14T12:06:39Z",
+   "val": 2.7636,
+   "prev": 2.7959,
+   "valTag": "fixed-holdout-v1",
+   "stoppedAt": 743,
+   "stuck": 0,
+   "evalTag": "fixed-ix-v1",
+   "secPerStep": 5.0083,
+   "steps": 905,
+   "bpc": 3.271,
+   "charsPerTok": 1.2189,
+   "score": 2.1998,
+   "scoreW": 2.0,
+   "scoreMode": "talk",
+   "finishMix": 0.2,
+   "lineage": "L3",
+   "layers": 14,
+   "params": 27105408,
+   "chars": 1045308899,
+   "tokens": 857567631,
+   "grew": 0,
+   "rolledBack": false,
+   "ownVal": null,
+   "ownScore": null,
+   "d": 384,
+   "loops": 1,
+   "spread": 2.8302,
+   "bytes": 325385901,
+   "heads": 6,
+   "ctx": 512,
+   "vocab": 6000,
+   "kind": "bpe",
+   "arch": "tpp-loop",
+   "wantWider": false,
+   "layerCap": 16,
+   "mixChanged": false,
+   "bySrc": {
+    "laws": 3.7632,
+    "wiki": 2.9292,
+    "aozora": 3.2557,
+    "hanrei": 3.4773,
+    "kokkai": 2.563,
+    "web": 2.8517,
+    "talk": 2.1998
+   },
+   "wrote": [
+    {
+     "start": "わたしは",
+     "text": "わたしはなに一つ、1000以上という高い数字を持ち上げた。 それ以前は1000以上で本を売り込んだり、一方で アントニオ王立寺院 の一つとして、1000以上の山々を買ったりしたりしている [ 注 1 ] 。 1930年代 に ベンガル を挟んだ 汽車 が"
+    },
+    {
+     "start": "第一条",
+     "text": "第一条（作業をしてticcommetrich）という）も含まれているが、これは日本でも初期的な名称である。 なお、日本では「 side 」というのは、日本語では「side」（例：「cade」ということ）を指す場合や、言葉を表し、言葉を表す場合と同じである。 日本においては 「side」"
+    },
+    {
+     "start": "この法律において",
+     "text": "この法律において「船」の一覧 （船舶局長） 第十五条 船舶局長は、船舶局長に対し、船長の指定を受けることができる。 （船舶局長） 第十七条 船舶局長、船舶敷広局、船舶局及び船舶局（船舶局を除く。以下同じ。）は、船舶局長及び船舶局長され、又は船舶局を置く。 船舶局は、船舶局長及び船舶局長が船舶局長され、又は船舶局に置かれる。 船舶局長、船舶局長、船舶局、船舶局、船舶局、船舶"
+    }
+   ],
+   "loopPct": 11.19,
+   "movedBody": false
   }
  ],
  "bestVal": 2.6708,
@@ -12649,5 +12649,5 @@
  ],
  "wantWider": false,
  "nextD": 384,
- "bad": 3
+ "bad": 6
 }
