@@ -1,69 +1,6 @@
 {
  "runs": [
   {
-   "at": "2026-10-03T21:44:56Z",
-   "val": 2.7288,
-   "prev": 2.73,
-   "valTag": "fixed-holdout-v1",
-   "stoppedAt": 556,
-   "stuck": 0,
-   "evalTag": "fixed-ix-v1",
-   "secPerStep": 6.7393,
-   "steps": 2184,
-   "bpc": 3.2298,
-   "charsPerTok": 1.2189,
-   "score": 2.1701,
-   "scoreW": 2.0,
-   "scoreMode": "talk",
-   "finishMix": 0.2,
-   "lineage": "L3",
-   "layers": 13,
-   "params": 25335168,
-   "chars": 1045308899,
-   "tokens": 857567631,
-   "grew": 0,
-   "rolledBack": false,
-   "ownVal": null,
-   "ownScore": null,
-   "d": 384,
-   "loops": 1,
-   "spread": 2.6796,
-   "bytes": 304134793,
-   "heads": 6,
-   "ctx": 512,
-   "vocab": 6000,
-   "kind": "bpe",
-   "arch": "tpp-loop",
-   "wantWider": false,
-   "layerCap": 16,
-   "mixChanged": false,
-   "bySrc": {
-    "laws": 3.7101,
-    "wiki": 2.901,
-    "aozora": 3.227,
-    "hanrei": 3.4436,
-    "kokkai": 2.5326,
-    "web": 2.8114,
-    "talk": 2.1701
-   },
-   "wrote": [
-    {
-     "start": "わたしは",
-     "text": "わたしはただ武器としてのお詫びです。」 CN「おー！それはいいですね！」 DS「ありがとうございます！」 DS「こんにちは！」 CN「こんにちは！」 DS「今日はお仕事ですか？"
-    },
-    {
-     "start": "第一条",
-     "text": "第一条> （定義） 本件犯行と本件犯行が違法であること。」 （行政庁が責任を持ち，その責任を負うのは，前記のとおりであるから，本件犯行とは器会的な予定では ないが，すでに何らかの対策をもってこれを行っていなかったのであり，被告人がその責任を負 わせるかもしれない。しかし，前記のとおり，本"
-    },
-    {
-     "start": "この法律において",
-     "text": "この法律において「�」を日本に出した。 このパートナーンライフは 大日本帝国海軍 が 帝国海軍 の 海軍 に配備されており、日本の占領下になってからは 第二次世界大戦 が終わり、ソ連軍の エルバーナント・ホイッグ と アルディアン・プーチン （ 英語版"
-    }
-   ],
-   "loopPct": 1.14,
-   "movedBody": false
-  },
-  {
    "at": "2026-10-03T23:02:44Z",
    "val": 2.729,
    "prev": 2.7288,
@@ -12599,6 +12536,69 @@
    ],
    "loopPct": 25.45,
    "movedBody": false
+  },
+  {
+   "at": "2026-10-14T14:37:15Z",
+   "val": 2.735,
+   "prev": 2.7457,
+   "valTag": "fixed-holdout-v1",
+   "stoppedAt": 611,
+   "stuck": 0,
+   "evalTag": "fixed-ix-v1",
+   "secPerStep": 6.1326,
+   "steps": 1083,
+   "bpc": 3.2371,
+   "charsPerTok": 1.2189,
+   "score": 2.1832,
+   "scoreW": 2.0,
+   "scoreMode": "talk",
+   "finishMix": 0.2,
+   "lineage": "L3",
+   "layers": 14,
+   "params": 27105408,
+   "chars": 1045308899,
+   "tokens": 857567631,
+   "grew": 0,
+   "rolledBack": false,
+   "ownVal": null,
+   "ownScore": null,
+   "d": 384,
+   "loops": 1,
+   "spread": 2.6647,
+   "bytes": 325385901,
+   "heads": 6,
+   "ctx": 512,
+   "vocab": 6000,
+   "kind": "bpe",
+   "arch": "tpp-loop",
+   "wantWider": false,
+   "layerCap": 16,
+   "mixChanged": false,
+   "bySrc": {
+    "laws": 3.7065,
+    "wiki": 2.8946,
+    "aozora": 3.2235,
+    "hanrei": 3.4585,
+    "kokkai": 2.5348,
+    "web": 2.8206,
+    "talk": 2.1832
+   },
+   "wrote": [
+    {
+     "start": "わたしは",
+     "text": "わたしは絶対にKDDI双方の観客を見たらいいです。」 FC「そうですね、絶対に自信があると思ったらしいです。」 DE「でも自信がないって感じなんです。探してみます。」 DE「こんにちは！」 FA"
+    },
+    {
+     "start": "第一条",
+     "text": "第一条�|古代から鎧を集め、葉は地面に白い花で青い花が、緑は白い花。 彼らは雨の後、死んでおり、そこに眉が隠されている。 また、黄色く吹き書きでは、かつて黒い花を産んでいた。 青虫は、黄色く毛を覆っ"
+    },
+    {
+     "start": "この法律において",
+     "text": "この法律においてにおいて航空機の船体等の設置及び艦船等の設置及び艦船等の設置及び艦船等の設置及び艦船等の設置又は艦船等の配置及び艦船等の設置及び艦船等の設置、艦船等の設置及び艦船等の設置、艦船等の設置及び艦船等の設置及び艦船等の設置及び艦船等の設置及び艦船等の設置並びに履行並びに艦船等の設置及び艦船等の設置及び艦"
+    }
+   ],
+   "loopPct": 30.3,
+   "movedBody": false
   }
  ],
  "bestVal": 2.6708,
@@ -12649,5 +12649,5 @@
  ],
  "wantWider": false,
  "nextD": 384,
- "bad": 0
+ "bad": 1
 }
