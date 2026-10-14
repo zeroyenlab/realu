@@ -1,69 +1,6 @@
 {
  "runs": [
   {
-   "at": "2026-10-03T23:08:36Z",
-   "val": 3.0231,
-   "prev": 3.0292,
-   "valTag": "fixed-holdout-v1",
-   "stoppedAt": 158,
-   "stuck": 0,
-   "evalTag": "fixed-ix-v1",
-   "secPerStep": 26.4457,
-   "steps": 300,
-   "bpc": 3.5781,
-   "charsPerTok": 1.2189,
-   "score": 2.2032,
-   "scoreW": 2.0,
-   "scoreMode": "talk",
-   "finishMix": 0.5,
-   "lineage": "L1",
-   "layers": 16,
-   "params": 117914880,
-   "chars": 1045308899,
-   "tokens": 857567631,
-   "grew": 0,
-   "rolledBack": false,
-   "ownVal": null,
-   "ownScore": null,
-   "d": 768,
-   "loops": 1,
-   "spread": 3.1312,
-   "bytes": 1415115957,
-   "heads": 6,
-   "ctx": 512,
-   "vocab": 6000,
-   "kind": "bpe",
-   "arch": "tpp-loop",
-   "wantWider": false,
-   "layerCap": 16,
-   "mixChanged": false,
-   "bySrc": {
-    "laws": 4.3859,
-    "wiki": 3.1911,
-    "aozora": 3.523,
-    "hanrei": 3.6028,
-    "kokkai": 2.7757,
-    "web": 3.0398,
-    "talk": 2.2032
-   },
-   "wrote": [
-    {
-     "start": "わたしは",
-     "text": "わたしは、先ほど来、さまざまな状況でございました。 しかし、安倍総理が、自民党首会談で、社民党貴族院議員が、大変厳しいことで知ったわけでございます。昨年、�保国党当初、大統領選挙で自民党政権が行った政策は、無責任で、政治家が責任を持って法"
-    },
-    {
-     "start": "第一条",
-     "text": "第一条に係る業務及び財産に係る業務に関する事業（当該業務に係る業務を含む。以下「事業に関する業務」という。）を行う業務（いずれもその場所又は法（平成十二年法律第八十九号）第二条各号に掲げる業務をいう。以下同じ。）をいう。以下同じ。） 相談役員の職場における業務における利用者の監督 業務に係る業務上のこの場合において、当該担当料（最終百分の十を超えるものに限る。）及び事務所等の事務所、前三号に掲げる業務（当該業務に係る業務の内容（当該業務"
-    },
-    {
-     "start": "この法律において",
-     "text": "この法律においても、その一例として、実際に新型コロナウイルスの二字を眺めたという内容で、今日はこの四字名を出したということですね。」 AB「それでは、こっそり、半分は分からないということになりますね。」 AA「しかし、それでもきちんと出てきて、定額視点がそれなりになっています"
-    }
-   ],
-   "loopPct": 5.27,
-   "movedBody": false
-  },
-  {
    "at": "2026-10-04T00:25:35Z",
    "val": 3.0192,
    "prev": 3.0231,
@@ -12599,9 +12536,72 @@
    ],
    "loopPct": 2.36,
    "movedBody": false
+  },
+  {
+   "at": "2026-10-14T16:03:27Z",
+   "val": 2.8753,
+   "prev": 2.878,
+   "valTag": "fixed-holdout-v1",
+   "stoppedAt": 141,
+   "stuck": 0,
+   "evalTag": "fixed-ix-v1",
+   "secPerStep": 30.0851,
+   "steps": 300,
+   "bpc": 3.4032,
+   "charsPerTok": 1.2189,
+   "score": 2.1455,
+   "scoreW": 2.0,
+   "scoreMode": "talk",
+   "finishMix": 0.5,
+   "lineage": "L1",
+   "layers": 16,
+   "params": 117914880,
+   "chars": 1045308899,
+   "tokens": 857567631,
+   "grew": 0,
+   "rolledBack": false,
+   "ownVal": null,
+   "ownScore": null,
+   "d": 768,
+   "loops": 1,
+   "spread": 3.3086,
+   "bytes": 1415115957,
+   "heads": 6,
+   "ctx": 512,
+   "vocab": 6000,
+   "kind": "bpe",
+   "arch": "tpp-loop",
+   "wantWider": false,
+   "layerCap": 16,
+   "mixChanged": false,
+   "bySrc": {
+    "laws": 4.0872,
+    "wiki": 3.0295,
+    "aozora": 3.3888,
+    "hanrei": 3.4813,
+    "kokkai": 2.6515,
+    "web": 2.9127,
+    "talk": 2.1455
+   },
+   "wrote": [
+    {
+     "start": "わたしは",
+     "text": "わたしは大阪でもやっていますよ。」 BS「えぇ！美味しいですよね。」 BZ「そうですね。ちょっとお腹がすいてきました。」 BS「私もです。あなたはどんなご褒美ですか？」 BZ「お腹すきました。」 BS「え？」 B"
+    },
+    {
+     "start": "第一条",
+     "text": "第一条核燃料物質農林水産大臣に提出しなければならない。 （銚子真機選択含有量） 高等学校は、発達障害の一方の刷り込みを防ごうとする。 （用語） （表現の自粛） 身長1949.41ak（発感度表数02.5、裏面数（約210）） （富士重工）部長は、単位数（約38.6万）に分け"
+    },
+    {
+     "start": "この法律において",
+     "text": "この法律において「紙youthyotories」（40年）」としている [ 38 ] 。 2023年3月 - 「 情報ソフトウェア 」（8月）「 AV 」（8月 - 7月）が、 情報・サービス を、AVCDとのコンテンツサービス「 AVCD 」（9月）へのIV"
+    }
+   ],
+   "loopPct": 0.73,
+   "movedBody": false
   }
  ],
- "bestVal": 2.8771,
+ "bestVal": 2.8753,
  "layers": 16,
  "params": 117914880,
  "born": "2026-09-08T15:11:54Z",
@@ -12649,5 +12649,5 @@
  ],
  "wantWider": false,
  "nextD": 768,
- "bad": 2
+ "bad": 3
 }
