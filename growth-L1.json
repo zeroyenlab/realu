@@ -1,69 +1,6 @@
 {
  "runs": [
   {
-   "at": "2026-10-03T21:51:41Z",
-   "val": 3.0292,
-   "prev": 3.0431,
-   "valTag": "fixed-holdout-v1",
-   "stoppedAt": 159,
-   "stuck": 0,
-   "evalTag": "fixed-ix-v1",
-   "secPerStep": 26.1778,
-   "steps": 321,
-   "bpc": 3.5853,
-   "charsPerTok": 1.2189,
-   "score": 2.2119,
-   "scoreW": 2.0,
-   "scoreMode": "talk",
-   "finishMix": 0.5,
-   "lineage": "L1",
-   "layers": 16,
-   "params": 117914880,
-   "chars": 1045308899,
-   "tokens": 857567631,
-   "grew": 0,
-   "rolledBack": false,
-   "ownVal": null,
-   "ownScore": null,
-   "d": 768,
-   "loops": 1,
-   "spread": 3.2608,
-   "bytes": 1415115957,
-   "heads": 6,
-   "ctx": 512,
-   "vocab": 6000,
-   "kind": "bpe",
-   "arch": "tpp-loop",
-   "wantWider": false,
-   "layerCap": 16,
-   "mixChanged": false,
-   "bySrc": {
-    "laws": 4.3927,
-    "wiki": 3.1937,
-    "aozora": 3.5267,
-    "hanrei": 3.6124,
-    "kokkai": 2.7793,
-    "web": 3.044,
-    "talk": 2.2119
-   },
-   "wrote": [
-    {
-     "start": "わたしは",
-     "text": "わたしは、「たかみながら、分析の進歩から著作が行われてこなかったが、これは自身の著会社であったのだ」と述べた。 このころから 2005年 11月31日 、 ジョージ・W・アールスキー が『 α・Z・旨 』を読んで、アール・シュヴェロンは 2004年"
-    },
-    {
-     "start": "第一条",
-     "text": "第一条の受理の戦場の一つで、真の星の方が必ず見える小さいのも悟空が大きくなると思います。」 AA「そういうことで、地球の衝撃が見えなくなるという、一面、みんなが�保管している。だから、その時に何かの手がかりを持ってきて、地球が全く異なってくると思いますよ。 あ"
-    },
-    {
-     "start": "この法律において",
-     "text": "この法律において「蒲優契約」と、並行的に「整備」と呼ばれるようになった。 1972年（昭和47年）2月、河原は昭和天皇の軍事行動を主に「国家軍事行動」として、戦争の終結により 軍事的行動 （ 英語版 ） と 勲章 を創設し [ 45 ] 、 ウィリアム"
-    }
-   ],
-   "loopPct": 3.19,
-   "movedBody": false
-  },
-  {
    "at": "2026-10-03T23:08:36Z",
    "val": 3.0231,
    "prev": 3.0292,
@@ -12599,6 +12536,69 @@
    ],
    "loopPct": 2.31,
    "movedBody": false
+  },
+  {
+   "at": "2026-10-14T14:43:54Z",
+   "val": 2.878,
+   "prev": 2.881,
+   "valTag": "fixed-holdout-v1",
+   "stoppedAt": 159,
+   "stuck": 0,
+   "evalTag": "fixed-ix-v1",
+   "secPerStep": 26.1837,
+   "steps": 300,
+   "bpc": 3.4064,
+   "charsPerTok": 1.2189,
+   "score": 2.1471,
+   "scoreW": 2.0,
+   "scoreMode": "talk",
+   "finishMix": 0.5,
+   "lineage": "L1",
+   "layers": 16,
+   "params": 117914880,
+   "chars": 1045308899,
+   "tokens": 857567631,
+   "grew": 0,
+   "rolledBack": false,
+   "ownVal": null,
+   "ownScore": null,
+   "d": 768,
+   "loops": 1,
+   "spread": 3.2877,
+   "bytes": 1415115957,
+   "heads": 6,
+   "ctx": 512,
+   "vocab": 6000,
+   "kind": "bpe",
+   "arch": "tpp-loop",
+   "wantWider": false,
+   "layerCap": 16,
+   "mixChanged": false,
+   "bySrc": {
+    "laws": 4.0969,
+    "wiki": 3.0364,
+    "aozora": 3.389,
+    "hanrei": 3.4849,
+    "kokkai": 2.6506,
+    "web": 2.9163,
+    "talk": 2.1471
+   },
+   "wrote": [
+    {
+     "start": "わたしは",
+     "text": "わたしは、その罪を犯しておる。 この点をどう考えても、この論争は、生前、政府がやってきたのは、事件の被害者の遺族が、ここに過ぎないと思う。 この点についての場面では、あえて適用したところをみても、この事件は、現実に起因していなければならぬ。 そして、いわゆる公共性をさらに高め、その下を見出"
+    },
+    {
+     "start": "第一条",
+     "text": "第一条タル聴取所所長 次長の カルデウェア 大統領として環境問題を解決するが、カルデア大統領の パレスチナ問題 の問題については、 アルプス山脈 や ポリネシア山脈 にgalliam と呼ばれる [ 2 ] 、全日空の世界の人々からの力と体"
+    },
+    {
+     "start": "この法律において",
+     "text": "この法律において付して益金を保障するといわれることになる。 引っ越しを、リーダーシップを発揮できるようにする必要がある。 なお、ケース・ピックアップを獲得することが可能である。 また、同期生には「レギュラー」と呼ばれることもある。 詳細は エキスパム を参照。 特技は ピックアップ の代わりに手伝う"
+    }
+   ],
+   "loopPct": 2.36,
+   "movedBody": false
   }
  ],
  "bestVal": 2.8771,
@@ -12649,5 +12649,5 @@
  ],
  "wantWider": false,
  "nextD": 768,
- "bad": 1
+ "bad": 2
 }
