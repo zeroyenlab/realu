@@ -1,69 +1,6 @@
 {
  "runs": [
   {
-   "at": "2026-10-04T00:20:25Z",
-   "val": 2.6924,
-   "prev": 2.6933,
-   "valTag": "fixed-holdout-v1",
-   "stoppedAt": 365,
-   "stuck": 0,
-   "evalTag": "fixed-ix-v1",
-   "secPerStep": 10.5309,
-   "steps": 607,
-   "bpc": 3.1867,
-   "charsPerTok": 1.2189,
-   "score": 2.0543,
-   "scoreW": 2.0,
-   "scoreMode": "talk",
-   "finishMix": 0.85,
-   "lineage": "L2",
-   "layers": 13,
-   "params": 44216832,
-   "chars": 1045308899,
-   "tokens": 857567631,
-   "grew": 0,
-   "rolledBack": false,
-   "ownVal": null,
-   "ownScore": null,
-   "d": 512,
-   "loops": 1,
-   "spread": 2.9371,
-   "bytes": 530714761,
-   "heads": 8,
-   "ctx": 512,
-   "vocab": 6000,
-   "kind": "bpe",
-   "arch": "tpp-loop",
-   "wantWider": false,
-   "layerCap": 16,
-   "mixChanged": false,
-   "bySrc": {
-    "laws": 3.6134,
-    "wiki": 2.8602,
-    "aozora": 3.173,
-    "hanrei": 3.3979,
-    "kokkai": 2.5064,
-    "web": 2.7784,
-    "talk": 2.0543
-   },
-   "wrote": [
-    {
-     "start": "わたしは",
-     "text": "わたしは愛知県ですか？」 GY「愛知県なのですが、奈良県の辺りが愛知県なので愛知なので、そちらは愛知県とかありますか？」 FJ「あ、愛知県なんですね！愛知県は愛知県なのですね。愛知県は"
-    },
-    {
-     "start": "第一条",
-     "text": "第一条、文化財保護区域及び保存区域並びに保存区域並びに保存区域及び保存区域並びに保存区域並びに保存区域並びに保存区域並びに保存区域並びに保存区域並びに保存区域並びに保存区域並びに保存区域並びに保存区域及び保存区域並びに保存区域並びに保存区域並びに保存区域並びに保存区域及び保存区域並びに保存区域並びに保存区域及び保存区域並びに保存区域並びに保存区域並びに保存区域並びに保存区域並びに保存区域並びに保存区域並びに保存区域並びに保存区域並びに保"
-    },
-    {
-     "start": "この法律において",
-     "text": "この法律においてほか、公共事業は、公共事業のみならず、まことに不公平な公共事業であって、ひいては国民が、公共事業として、すみやかに事業に対処し、公共の羅語をもって憲法違反の罪を犯すことばを、わが党の主張する財政上の動機を覚え、人々の苛立を無視した生産者、目的の特権を認め、公共事業にほかならないことは、まこと"
-    }
-   ],
-   "loopPct": 31.36,
-   "movedBody": false
-  },
-  {
    "at": "2026-10-04T01:37:02Z",
    "val": 2.6912,
    "prev": 2.6924,
@@ -12599,9 +12536,72 @@
    ],
    "loopPct": 1.77,
    "movedBody": false
+  },
+  {
+   "at": "2026-10-14T17:15:16Z",
+   "val": 2.6252,
+   "prev": 2.628,
+   "valTag": "fixed-holdout-v1",
+   "stoppedAt": 336,
+   "stuck": 0,
+   "evalTag": "fixed-ix-v1",
+   "secPerStep": 11.4933,
+   "steps": 656,
+   "bpc": 3.1072,
+   "charsPerTok": 1.2189,
+   "score": 2.0352,
+   "scoreW": 2.0,
+   "scoreMode": "talk",
+   "finishMix": 0.85,
+   "lineage": "L2",
+   "layers": 14,
+   "params": 47379968,
+   "chars": 1045308899,
+   "tokens": 857567631,
+   "grew": 0,
+   "rolledBack": false,
+   "ownVal": null,
+   "ownScore": null,
+   "d": 512,
+   "loops": 1,
+   "spread": 2.788,
+   "bytes": 568680621,
+   "heads": 8,
+   "ctx": 512,
+   "vocab": 6000,
+   "kind": "bpe",
+   "arch": "tpp-loop",
+   "wantWider": false,
+   "layerCap": 16,
+   "mixChanged": false,
+   "bySrc": {
+    "laws": 3.4932,
+    "wiki": 2.7865,
+    "aozora": 3.1054,
+    "hanrei": 3.3571,
+    "kokkai": 2.4519,
+    "web": 2.7141,
+    "talk": 2.0352
+   },
+   "wrote": [
+    {
+     "start": "わたしは",
+     "text": "わたしはジェイアール チャイムスキーです！」 EZ「すごいですね。なんのチームがしたいと思います？」 DG「実は、サッカーですね。チームありますか？」 EZ「あ、なるほど。スーパーとかでしょうか。」 DG「試合もありますよね！」 E"
+    },
+    {
+     "start": "第一条",
+     "text": "第一条第一号ハニチン類について」と、「日本における日本の食糧確保のためには、」とあるのは「日本の食糧確保のためには、」とする。 日本における「日本の食糧確保のため又は」とは、日本の食糧確保のために相当の食糧を供給するとともに、日本の食糧確保のために相当の労働力を供給しようというものをいう。 日本 では 科学者 を"
+    },
+    {
+     "start": "この法律において",
+     "text": "この法律においてJAPAN（DAICEプレーヤー）は、JAPANのスイッチングベル（スイッチング）から、国土の南西にある道最大の都市 。 JAPANは、Raditing Partyが、全世界の各都市で、世界の地方や地域では、社会的・政治的・経済的な特色を持つ都市"
+    }
+   ],
+   "loopPct": 0.64,
+   "movedBody": false
   }
  ],
- "bestVal": 2.6264,
+ "bestVal": 2.6252,
  "layers": 14,
  "params": 47379968,
  "born": "2026-09-08T15:11:54Z",
@@ -12649,5 +12649,5 @@
  ],
  "wantWider": false,
  "nextD": 512,
- "bad": 0
+ "bad": 2
 }
