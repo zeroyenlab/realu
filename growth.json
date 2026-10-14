@@ -1,69 +1,6 @@
 {
  "runs": [
   {
-   "at": "2026-10-03T15:39:17Z",
-   "val": 3.0151,
-   "prev": 3.0141,
-   "valTag": "fixed-holdout-v1",
-   "stoppedAt": 202,
-   "stuck": 0,
-   "evalTag": "fixed-ix-v1",
-   "secPerStep": 20.0777,
-   "steps": 324,
-   "bpc": 3.5687,
-   "charsPerTok": 1.2189,
-   "score": 2.2022,
-   "scoreW": 2.0,
-   "scoreMode": "talk",
-   "finishMix": 0.5,
-   "lineage": "L1",
-   "layers": 16,
-   "params": 117914880,
-   "chars": 1045308899,
-   "tokens": 857567631,
-   "grew": 0,
-   "rolledBack": false,
-   "ownVal": null,
-   "ownScore": null,
-   "d": 768,
-   "loops": 1,
-   "spread": 3.1293,
-   "bytes": 1415115957,
-   "heads": 6,
-   "ctx": 512,
-   "vocab": 6000,
-   "kind": "bpe",
-   "arch": "tpp-loop",
-   "wantWider": false,
-   "layerCap": 16,
-   "mixChanged": false,
-   "bySrc": {
-    "laws": 4.3795,
-    "wiki": 3.1896,
-    "aozora": 3.515,
-    "hanrei": 3.609,
-    "kokkai": 2.7588,
-    "web": 3.0365,
-    "talk": 2.2022
-   },
-   "wrote": [
-    {
-     "start": "わたしは",
-     "text": "わたしは、第二次世界大戦の終結後、イギリスでは1970年代以降の歴史を持っていた。 日米同盟に関するイギリスの方々は、自由貿易はヨーロッパ各国のイギリスと中首脳が多く、ヨーロッパでは元々テオバトがトルコに渡って在日米地位を占めた。"
-    },
-    {
-     "start": "第一条",
-     "text": "第一条第三号ロ ナルHDD ボートーローがハッタンローとしてボートリッヒを持ち、ボートの上に建てられたボートがボートレースになったとし、ボートレースのボートレースの途中で巡回されたボートでオープニングから退団したボートに乗って シーズン8からコーラスのスタイダーのデザインを拓くこと"
-    },
-    {
-     "start": "この法律において",
-     "text": "この法律において「近代化成俗化したり、山形市場に導入したりするやり方は？」 AB「ありがとうございました！」 AA「こちらこそ、ありがとうございました！」 AB「こちらこそ、ありがとうございました！」"
-    }
-   ],
-   "loopPct": 6.67,
-   "movedBody": false
-  },
-  {
    "at": "2026-10-03T16:55:13Z",
    "val": 3.0153,
    "prev": 3.0151,
@@ -12598,6 +12535,69 @@
     }
    ],
    "loopPct": 7.66,
+   "movedBody": false
+  },
+  {
+   "at": "2026-10-14T08:21:52Z",
+   "val": 2.8835,
+   "prev": 2.8809,
+   "valTag": "fixed-holdout-v1",
+   "stoppedAt": 202,
+   "stuck": 0,
+   "evalTag": "fixed-ix-v1",
+   "secPerStep": 20.0676,
+   "steps": 300,
+   "bpc": 3.4128,
+   "charsPerTok": 1.2189,
+   "score": 2.1418,
+   "scoreW": 2.0,
+   "scoreMode": "talk",
+   "finishMix": 0.5,
+   "lineage": "L1",
+   "layers": 16,
+   "params": 117914880,
+   "chars": 1045308899,
+   "tokens": 857567631,
+   "grew": 0,
+   "rolledBack": false,
+   "ownVal": null,
+   "ownScore": null,
+   "d": 768,
+   "loops": 1,
+   "spread": 2.8569,
+   "bytes": 1415115957,
+   "heads": 6,
+   "ctx": 512,
+   "vocab": 6000,
+   "kind": "bpe",
+   "arch": "tpp-loop",
+   "wantWider": false,
+   "layerCap": 16,
+   "mixChanged": false,
+   "bySrc": {
+    "laws": 4.1079,
+    "wiki": 3.0393,
+    "aozora": 3.3945,
+    "hanrei": 3.4856,
+    "kokkai": 2.656,
+    "web": 2.919,
+    "talk": 2.1418
+   },
+   "wrote": [
+    {
+     "start": "わたしは",
+     "text": "わたしは、ちょっと僕は前私が、おかしなことに、どういう事かといっても、私は、僕がそういうことを言う気持ちを私としては考えますと、昨日の議論でもこの問題をまずこれは、おとしい従兄弟の中で一切まざるを得ないと思います。そうして、日本がそういう対処を知ら"
+    },
+    {
+     "start": "第一条",
+     "text": "第一条、「国際条第一項第二号」は、国際機関としての連携を強化し、国際連合の国際機関、国際機関等、国際機関の協力により国際機関、国際連合機関、国際機関砲（国際連合機関）の国際機関であると表明している。 国際機関としては、国際機関、国際機関、国際機関、国際機関、国際機関、国際機関、国際機関、国際機関、国際機関等、国際機関、国際機関、国際機関、国際機関、国際機関、国際機関、国際機関、"
+    },
+    {
+     "start": "この法律において",
+     "text": "この法律において「HEA」「UNIVE」「UNIVER」「SUNIVERVER」「SUVERVER」「UNIVERVER」「100h」「2002年9月」「100th」「2003年9月」「ユニフォーム」「100VER」「100RVER」「"
+    }
+   ],
+   "loopPct": 33.03,
    "movedBody": false
   }
  ],
