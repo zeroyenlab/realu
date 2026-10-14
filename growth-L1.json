@@ -1,69 +1,6 @@
 {
  "runs": [
   {
-   "at": "2026-10-04T00:25:35Z",
-   "val": 3.0192,
-   "prev": 3.0231,
-   "valTag": "fixed-holdout-v1",
-   "stoppedAt": 157,
-   "stuck": 0,
-   "evalTag": "fixed-ix-v1",
-   "secPerStep": 26.5576,
-   "steps": 300,
-   "bpc": 3.5735,
-   "charsPerTok": 1.2189,
-   "score": 2.2004,
-   "scoreW": 2.0,
-   "scoreMode": "talk",
-   "finishMix": 0.5,
-   "lineage": "L1",
-   "layers": 16,
-   "params": 117914880,
-   "chars": 1045308899,
-   "tokens": 857567631,
-   "grew": 0,
-   "rolledBack": false,
-   "ownVal": null,
-   "ownScore": null,
-   "d": 768,
-   "loops": 1,
-   "spread": 3.0719,
-   "bytes": 1415115957,
-   "heads": 6,
-   "ctx": 512,
-   "vocab": 6000,
-   "kind": "bpe",
-   "arch": "tpp-loop",
-   "wantWider": false,
-   "layerCap": 16,
-   "mixChanged": false,
-   "bySrc": {
-    "laws": 4.3787,
-    "wiki": 3.1884,
-    "aozora": 3.5201,
-    "hanrei": 3.6016,
-    "kokkai": 2.7713,
-    "web": 3.0367,
-    "talk": 2.2004
-   },
-   "wrote": [
-    {
-     "start": "わたしは",
-     "text": "わたしは、午後４時５分ですけど、午後１時３３分ころに入っています。」 DG「ですね！私もしんどいです！まさに！」 CH「私は最近だと、日本にいました。」 DG「いいですね！だいたい夜が嫌になってきました。」 CH「朝は、朝"
-    },
-    {
-     "start": "第一条",
-     "text": "第一条DDDDDDUN「こんなページだったんですか？」 CL「実は私は最近だと思います。」 BO「やはりセーフですか？」 CL「やっぱりプロです。」 BO「いやー。どんなものが好きですか？」 CL「何かポケモンとかですか�"
-    },
-    {
-     "start": "この法律において",
-     "text": "この法律において「特定の施設」を目指す「特定 特定勅令 」 [ 注釈 1 ] と区別するため、特定危険豊かさを翻訳した [ 10 ] 。 特定の 公共機関 に注力し、 自然科学 を生むようにその店舗を地下に転じて 独立行政法人 及び 里ex へ 借りていった。 直近の「 職業 」と「 百五十"
-    }
-   ],
-   "loopPct": 4.5,
-   "movedBody": false
-  },
-  {
    "at": "2026-10-04T01:39:34Z",
    "val": 3.0167,
    "prev": 3.0192,
@@ -12599,6 +12536,69 @@
    ],
    "loopPct": 0.73,
    "movedBody": false
+  },
+  {
+   "at": "2026-10-14T17:20:33Z",
+   "val": 2.8761,
+   "prev": 2.8753,
+   "valTag": "fixed-holdout-v1",
+   "stoppedAt": 176,
+   "stuck": 0,
+   "evalTag": "fixed-ix-v1",
+   "secPerStep": 23.3388,
+   "steps": 300,
+   "bpc": 3.404,
+   "charsPerTok": 1.2189,
+   "score": 2.1436,
+   "scoreW": 2.0,
+   "scoreMode": "talk",
+   "finishMix": 0.5,
+   "lineage": "L1",
+   "layers": 16,
+   "params": 117914880,
+   "chars": 1045308899,
+   "tokens": 857567631,
+   "grew": 0,
+   "rolledBack": false,
+   "ownVal": null,
+   "ownScore": null,
+   "d": 768,
+   "loops": 1,
+   "spread": 2.8505,
+   "bytes": 1415115957,
+   "heads": 6,
+   "ctx": 512,
+   "vocab": 6000,
+   "kind": "bpe",
+   "arch": "tpp-loop",
+   "wantWider": false,
+   "layerCap": 16,
+   "mixChanged": false,
+   "bySrc": {
+    "laws": 4.0927,
+    "wiki": 3.032,
+    "aozora": 3.386,
+    "hanrei": 3.4845,
+    "kokkai": 2.6501,
+    "web": 2.9156,
+    "talk": 2.1436
+   },
+   "wrote": [
+    {
+     "start": "わたしは",
+     "text": "わたしは田中康郎さんですか？」 AL「いえ、田中さん、あとは驚きました。」 BA「田中さんは素敵です！」 AL「田中造さん、トロトロ大使館、台湾大使館まで行きました」 BA「へー！！」 AL「あの知り合いの息子で"
+    },
+    {
+     "start": "第一条",
+     "text": "第一条アルベルベルグ、スパークス、スパイイ、スパイイ及びスパイジー、スパイス、スパイス、スパイス、スパイス、スパイス、苦富ビジティア、スパイス、スパイス、スポンサー。スパイスはスパイスと呼ばれる。 スパイスはスパイスとC系のスパイスに換装"
+    },
+    {
+     "start": "この法律において",
+     "text": "この法律においてよくなってます。」 AQ「いいですね！」 AQ「こんばんは。」 CH「こんばんは、こちらこそ。」 AQ「しょっぱいの匂いが好きですか？」 CH「ちょっと親戚が好きですよ"
+    }
+   ],
+   "loopPct": 22.4,
+   "movedBody": false
   }
  ],
  "bestVal": 2.8753,
@@ -12649,5 +12649,5 @@
  ],
  "wantWider": false,
  "nextD": 768,
- "bad": 3
+ "bad": 0
 }
