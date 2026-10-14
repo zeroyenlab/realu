@@ -1,69 +1,6 @@
 {
  "runs": [
   {
-   "at": "2026-10-03T08:11:33Z",
-   "val": 3.0167,
-   "prev": 3.0208,
-   "valTag": "fixed-holdout-v1",
-   "stoppedAt": 144,
-   "stuck": 0,
-   "evalTag": "fixed-ix-v1",
-   "secPerStep": 29.4886,
-   "steps": 300,
-   "bpc": 3.5705,
-   "charsPerTok": 1.2189,
-   "score": 2.2024,
-   "scoreW": 2.0,
-   "scoreMode": "talk",
-   "finishMix": 0.5,
-   "lineage": "L1",
-   "layers": 16,
-   "params": 117914880,
-   "chars": 1045308899,
-   "tokens": 857567631,
-   "grew": 0,
-   "rolledBack": false,
-   "ownVal": null,
-   "ownScore": null,
-   "d": 768,
-   "loops": 1,
-   "spread": 2.9899,
-   "bytes": 1415115957,
-   "heads": 6,
-   "ctx": 512,
-   "vocab": 6000,
-   "kind": "bpe",
-   "arch": "tpp-loop",
-   "wantWider": false,
-   "layerCap": 16,
-   "mixChanged": false,
-   "bySrc": {
-    "laws": 4.3815,
-    "wiki": 3.1935,
-    "aozora": 3.5154,
-    "hanrei": 3.6021,
-    "kokkai": 2.7635,
-    "web": 3.039,
-    "talk": 2.2024
-   },
-   "wrote": [
-    {
-     "start": "わたしは",
-     "text": "わたしは！」 DK「主人はいますか？」 AI「私は、やっぱり自由ですね」 DK「はい できるだけ使ってます」 AI「そうですか、私もこの前コーナーを読んでいました」 DK「テレビとかはどうですか？」 AI「私は仕事基本で、嫌いなもの"
-    },
-    {
-     "start": "第一条",
-     "text": "第一条�における�長となる。 無楽に、 中日大会 （ 中日日新聞 ）加藤日夕刊の高月広告写真。 『本日大使』（ 日本実業覧 ）を代表する。 日本経済新聞社の 日本経済新聞 は、 インフルエンザ （家庭用）「 生切りる 」を参照。 「 海江"
-    },
-    {
-     "start": "この法律において",
-     "text": "この法律においていたのであります。一たんするものであるとすれば、これは破綻するものであります。」 AB「また、三党から三党共同提案の要旨を論じまして、私は、今回、石破総理に、御自身の責任をどういうふうに協力するか、これをいかに問題として、さらにまた具体的に、ここに、伺いたいのであります。"
-    }
-   ],
-   "loopPct": 1.53,
-   "movedBody": false
-  },
-  {
    "at": "2026-10-03T09:28:22Z",
    "val": 3.0154,
    "prev": 3.0167,
@@ -12599,9 +12536,72 @@
    ],
    "loopPct": 1.51,
    "movedBody": false
+  },
+  {
+   "at": "2026-10-14T00:40:59Z",
+   "val": 2.8828,
+   "prev": 2.8859,
+   "valTag": "fixed-holdout-v1",
+   "stoppedAt": 160,
+   "stuck": 0,
+   "evalTag": "fixed-ix-v1",
+   "secPerStep": 25.9469,
+   "steps": 300,
+   "bpc": 3.412,
+   "charsPerTok": 1.2189,
+   "score": 2.1408,
+   "scoreW": 2.0,
+   "scoreMode": "talk",
+   "finishMix": 0.5,
+   "lineage": "L1",
+   "layers": 16,
+   "params": 117914880,
+   "chars": 1045308899,
+   "tokens": 857567631,
+   "grew": 0,
+   "rolledBack": false,
+   "ownVal": null,
+   "ownScore": null,
+   "d": 768,
+   "loops": 1,
+   "spread": 2.625,
+   "bytes": 1415115957,
+   "heads": 6,
+   "ctx": 512,
+   "vocab": 6000,
+   "kind": "bpe",
+   "arch": "tpp-loop",
+   "wantWider": false,
+   "layerCap": 16,
+   "mixChanged": false,
+   "bySrc": {
+    "laws": 4.1078,
+    "wiki": 3.0413,
+    "aozora": 3.3979,
+    "hanrei": 3.4878,
+    "kokkai": 2.6533,
+    "web": 2.9205,
+    "talk": 2.1408
+   },
+   "wrote": [
+    {
+     "start": "わたしは",
+     "text": "わたしは、沖縄などでも、西日本新聞の頃から「福岡県民」という名称の由来であることは、きわめて大通りまで、「東日本大震災による県民の生活」に比べても、厳しいwikiのレジェンド化が進み、1980年代後半のことで、地元同然の東日本大震災、北海道の県民のために取り組ま"
+    },
+    {
+     "start": "第一条",
+     "text": "第一条ロズメント（ 英語版 ） で、家電量販店（白い第二十七号）は、リソース食品を製造するコンテンツプロダクション、整形外科、ココアなどの企業の暮らしで、家電を買うためのレジャー施設であるが、この企業は1990年代後半から、アセットハック、使い間違いな"
+    },
+    {
+     "start": "この法律において",
+     "text": "この法律において「「「梅干し」、「新者」をはじめとする大衆 - ADG-366 2021年7月30日時点の オリジナル よりアーカイブ。 ↑ “ 奥田食品を「好きになれる食べ物」 奥田と奥田は食べたい ”. ADG-15 (2"
+    }
+   ],
+   "loopPct": 3.65,
+   "movedBody": false
   }
  ],
- "bestVal": 2.8857,
+ "bestVal": 2.8828,
  "layers": 16,
  "params": 117914880,
  "born": "2026-09-08T15:11:54Z",
@@ -12649,5 +12649,5 @@
  ],
  "wantWider": false,
  "nextD": 768,
- "bad": 5
+ "bad": 0
 }
