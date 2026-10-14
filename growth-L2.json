@@ -1,69 +1,6 @@
 {
  "runs": [
   {
-   "at": "2026-10-03T20:18:48Z",
-   "val": 2.697,
-   "prev": 2.6922,
-   "valTag": "fixed-holdout-v1",
-   "stoppedAt": 0,
-   "stuck": 0,
-   "evalTag": "fixed-ix-v1",
-   "secPerStep": 4.7678,
-   "steps": 603,
-   "bpc": 3.1921,
-   "charsPerTok": 1.2189,
-   "score": 2.0524,
-   "scoreW": 2.0,
-   "scoreMode": "talk",
-   "finishMix": 0.85,
-   "lineage": "L2",
-   "layers": 13,
-   "params": 44216832,
-   "chars": 1045308899,
-   "tokens": 857567631,
-   "grew": 0,
-   "rolledBack": false,
-   "ownVal": null,
-   "ownScore": null,
-   "d": 512,
-   "loops": 1,
-   "spread": 2.6911,
-   "bytes": 530714761,
-   "heads": 8,
-   "ctx": 512,
-   "vocab": 6000,
-   "kind": "bpe",
-   "arch": "tpp-loop",
-   "wantWider": false,
-   "layerCap": 16,
-   "mixChanged": false,
-   "bySrc": {
-    "laws": 3.621,
-    "wiki": 2.8658,
-    "aozora": 3.1791,
-    "hanrei": 3.4079,
-    "kokkai": 2.5125,
-    "web": 2.7828,
-    "talk": 2.0524
-   },
-   "wrote": [
-    {
-     "start": "わたしは",
-     "text": "わたしは、フィリピンの街でワインが擬態していました。」 BY「むしろ、ホッケ水に味わっていく感じがしますね。白いのに。」 AZ「そうなんです！行ってみたいです。」 BY「私もです！この間の食べ物、そしてお腹が空いてきました。」 A"
-    },
-    {
-     "start": "第一条",
-     "text": "第一条第二号（日本語） 日本語の in cyple（英称： ）は、日本語の serrica 。2003年に日本語で発売した 。 日本語は、英語と日本語を中心に、英語圏では英語で serrica 、 、 といった cegelic と同じように"
-    },
-    {
-     "start": "この法律において",
-     "text": "この法律においての禁止を含む。じょうほう、ほうじょうさい、いつしかやたらとましょうか、こういうようなものをやめておるのかというようなことから、まだ慎重に、各社ともやったわけではございません。」 AB「西村委員 まあＴＰＰは何をやったり使ったんだということで、それじゃ、やはり政府がやる"
-    }
-   ],
-   "loopPct": 4.87,
-   "movedBody": false
-  },
-  {
    "at": "2026-10-03T23:04:39Z",
    "val": 2.6933,
    "prev": 2.6927,
@@ -12599,6 +12536,69 @@
    ],
    "loopPct": 1.79,
    "movedBody": false
+  },
+  {
+   "at": "2026-10-14T14:37:04Z",
+   "val": 2.6272,
+   "prev": 2.627,
+   "valTag": "fixed-holdout-v1",
+   "stoppedAt": 554,
+   "stuck": 0,
+   "evalTag": "fixed-ix-v1",
+   "secPerStep": 6.7675,
+   "steps": 654,
+   "bpc": 3.1095,
+   "charsPerTok": 1.2189,
+   "score": 2.0326,
+   "scoreW": 2.0,
+   "scoreMode": "talk",
+   "finishMix": 0.85,
+   "lineage": "L2",
+   "layers": 14,
+   "params": 47379968,
+   "chars": 1045308899,
+   "tokens": 857567631,
+   "grew": 0,
+   "rolledBack": false,
+   "ownVal": null,
+   "ownScore": null,
+   "d": 512,
+   "loops": 1,
+   "spread": 2.73,
+   "bytes": 568680621,
+   "heads": 8,
+   "ctx": 512,
+   "vocab": 6000,
+   "kind": "bpe",
+   "arch": "tpp-loop",
+   "wantWider": false,
+   "layerCap": 16,
+   "mixChanged": false,
+   "bySrc": {
+    "laws": 3.4963,
+    "wiki": 2.7862,
+    "aozora": 3.1075,
+    "hanrei": 3.3604,
+    "kokkai": 2.4541,
+    "web": 2.7143,
+    "talk": 2.0326
+   },
+   "wrote": [
+    {
+     "start": "わたしは",
+     "text": "わたしは食べました」 FA「そうでしたか！食べたことはありますか？」 FA「はい！おなかすいた時もありました！」 FA「何食べたんですか？」 FA「チョコレートです！」 FA「食べたことないのでお勧めです。」 FA「すみません！」"
+    },
+    {
+     "start": "第一条",
+     "text": "第一条、第十三条、第十四条、第十四条、第十四条、第三十条、第三十三条、第四十五条、第四十六条、第四十九条、第四十一条、第四十九条、第四十一条、第五十一条、第五十五条、第五十六条並びに第五十四条及び第九十七条 この法律若しくはこの法律の規定（以下「この法律又はこの法律の規定」という。）は、この法律又はこの法律に相当する部分に相当する部分に相当する部分に相当する部分に相当する部分に相当する部分に相当する部分に相当する部分に相当する部分に相当"
+    },
+    {
+     "start": "この法律において",
+     "text": "この法律において「令和三年度国税関係年度一般会計等予備費使用総調書（第１」 AA「議長 令和五年度国土調査、令和五年度国土調査、令和五年度府縣国全体常識調査、令和五年度国土調査、令和五年度国土調査、令和五年度国土調査、令和五年度国土調査、令和五年度国土調査、令和五年度国土調査、令和五年度国土調査、令和五年度国土調査、令和五年度国土調査、令和五年度国土調査"
+    }
+   ],
+   "loopPct": 45.89,
+   "movedBody": false
   }
  ],
  "bestVal": 2.6264,
@@ -12649,5 +12649,5 @@
  ],
  "wantWider": false,
  "nextD": 512,
- "bad": 5
+ "bad": 3
 }
