@@ -1,69 +1,6 @@
 {
  "runs": [
   {
-   "at": "2026-10-04T11:38:44Z",
-   "val": 2.9977,
-   "prev": 2.9987,
-   "valTag": "fixed-holdout-v1",
-   "stoppedAt": 177,
-   "stuck": 0,
-   "evalTag": "fixed-ix-v1",
-   "secPerStep": 23.2149,
-   "steps": 300,
-   "bpc": 3.548,
-   "charsPerTok": 1.2189,
-   "score": 2.1942,
-   "scoreW": 2.0,
-   "scoreMode": "talk",
-   "finishMix": 0.5,
-   "lineage": "L1",
-   "layers": 16,
-   "params": 117914880,
-   "chars": 1045308899,
-   "tokens": 857567631,
-   "grew": 0,
-   "rolledBack": false,
-   "ownVal": null,
-   "ownScore": null,
-   "d": 768,
-   "loops": 1,
-   "spread": 3.1964,
-   "bytes": 1415115957,
-   "heads": 6,
-   "ctx": 512,
-   "vocab": 6000,
-   "kind": "bpe",
-   "arch": "tpp-loop",
-   "wantWider": false,
-   "layerCap": 16,
-   "mixChanged": false,
-   "bySrc": {
-    "laws": 4.3435,
-    "wiki": 3.1677,
-    "aozora": 3.5035,
-    "hanrei": 3.5911,
-    "kokkai": 2.7521,
-    "web": 3.0203,
-    "talk": 2.1942
-   },
-   "wrote": [
-    {
-     "start": "わたしは",
-     "text": "わたしは、日米両条約は、日米関係の協力を求めてきておるのでございます。」 AA「それから、日米両国関係は、このようなことがないように、日米同盟を結んでおります。したがって、この件は、少子化・護�その内部外交をなすものでございますから、これを審査し、また、日米首�"
-    },
-    {
-     "start": "第一条",
-     "text": "第一条ロロヴァトスロヴォトスロヴィーニョ (2011年8月1日). 2016年7月26日閲覧。 ↑ 小田健次郎『小学6年生』（小学館）1973年、小学館、2007年、248頁。 ↑ 小学館属の女子"
-    },
-    {
-     "start": "この法律において",
-     "text": "この法律において「口い合わせ」（2022年6月16日 - 2025年3月26日）は、同年9月26日の「北陸函館」（現在の「北陸」、「南陸」）。 2024年7月27日 - 北陸単独で導入。 北陸本線の南海本線は横須賀線と北陸本線との共通乗"
-    }
-   ],
-   "loopPct": 4.67,
-   "movedBody": false
-  },
-  {
    "at": "2026-10-04T12:55:50Z",
    "val": 2.9973,
    "prev": 2.9977,
@@ -12599,6 +12536,69 @@
    ],
    "loopPct": 7.65,
    "movedBody": false
+  },
+  {
+   "at": "2026-10-15T04:46:10Z",
+   "val": 2.8832,
+   "prev": 2.8742,
+   "valTag": "fixed-holdout-v1",
+   "stoppedAt": 0,
+   "stuck": 0,
+   "evalTag": "fixed-ix-v1",
+   "secPerStep": 10.5608,
+   "steps": 300,
+   "bpc": 3.4125,
+   "charsPerTok": 1.2189,
+   "score": 2.1443,
+   "scoreW": 2.0,
+   "scoreMode": "talk",
+   "finishMix": 0.5,
+   "lineage": "L1",
+   "layers": 16,
+   "params": 117914880,
+   "chars": 1045308899,
+   "tokens": 857567631,
+   "grew": 0,
+   "rolledBack": false,
+   "ownVal": null,
+   "ownScore": null,
+   "d": 768,
+   "loops": 1,
+   "spread": 3.2004,
+   "bytes": 1415115957,
+   "heads": 6,
+   "ctx": 512,
+   "vocab": 6000,
+   "kind": "bpe",
+   "arch": "tpp-loop",
+   "wantWider": false,
+   "layerCap": 16,
+   "mixChanged": false,
+   "bySrc": {
+    "laws": 4.1026,
+    "wiki": 3.04,
+    "aozora": 3.3931,
+    "hanrei": 3.4894,
+    "kokkai": 2.6574,
+    "web": 2.9192,
+    "talk": 2.1443
+   },
+   "wrote": [
+    {
+     "start": "わたしは",
+     "text": "わたしは、地下を回り、また、日本人も、ヒグマを強く思います。 しかし、京都では、貴重な人気が強まっております。 沖縄は、そういった地域で、女性の父親、母にとっては、やはり今、子供たちが源に乗っていらっしゃいますよね。それが、田舎だ、そういう"
+    },
+    {
+     "start": "第一条",
+     "text": "第一条において、そのように申し上げなければならぬのでございますけれども、これはきわめて遺憾であると考えておる次第でございます。」 AA「いや、どうぞ御承知のように、一体、四年前、四年、四年と言うんですかね、十年、十七年と言うんですよ。こういうことをやったら、まあ、"
+    },
+    {
+     "start": "この法律において",
+     "text": "この法律において、オーストラリア州の遺跡、オーストラリア州 で、第二次世界大戦後には、オーストラリア、オーストラリア、カプピア、ウクライナ、ロシア、アメリカ、オーストラリア、オーストラリア、オーストラリア、カウフタウン、バンド、エクスポラ、ブローチ"
+    }
+   ],
+   "loopPct": 18.08,
+   "movedBody": false
   }
  ],
  "bestVal": 2.8718,
@@ -12649,5 +12649,5 @@
  ],
  "wantWider": false,
  "nextD": 768,
- "bad": 0
+ "bad": 2
 }
