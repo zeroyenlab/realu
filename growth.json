@@ -1,69 +1,6 @@
 {
  "runs": [
   {
-   "at": "2026-10-05T09:06:23Z",
-   "val": 2.9818,
-   "prev": 2.985,
-   "valTag": "fixed-holdout-v1",
-   "stoppedAt": 142,
-   "stuck": 0,
-   "evalTag": "fixed-ix-v1",
-   "secPerStep": 29.8582,
-   "steps": 300,
-   "bpc": 3.5292,
-   "charsPerTok": 1.2189,
-   "score": 2.1866,
-   "scoreW": 2.0,
-   "scoreMode": "talk",
-   "finishMix": 0.5,
-   "lineage": "L1",
-   "layers": 16,
-   "params": 117914880,
-   "chars": 1045308899,
-   "tokens": 857567631,
-   "grew": 0,
-   "rolledBack": false,
-   "ownVal": null,
-   "ownScore": null,
-   "d": 768,
-   "loops": 1,
-   "spread": 2.9253,
-   "bytes": 1415115957,
-   "heads": 6,
-   "ctx": 512,
-   "vocab": 6000,
-   "kind": "bpe",
-   "arch": "tpp-loop",
-   "wantWider": false,
-   "layerCap": 16,
-   "mixChanged": false,
-   "bySrc": {
-    "laws": 4.3118,
-    "wiki": 3.1467,
-    "aozora": 3.4911,
-    "hanrei": 3.5724,
-    "kokkai": 2.7384,
-    "web": 3.0078,
-    "talk": 2.1866
-   },
-   "wrote": [
-    {
-     "start": "わたしは",
-     "text": "わたしは、かえって、こんな、、かなりの事である。 従って、今度は、この解剖で、まだまだ二法人に及ぶ公共施設を製造しているのであろうか。そして、その嵐等から、ずっと、やはり、来る者は、やっと、その中で、日本のくらい、もっと、これから一つ一つしかない。だけれども、やはり重要な要"
-    },
-    {
-     "start": "第一条",
-     "text": "第一条車を実施して著しく困難な重大な要望に、廃止をなすことになっております。」 AA「国務大臣 ただいま議題になりました各種の暗号化対策等々、各国が客室に設置されたいうこともあると思います。是非、こうした国連における緊密な連携を強化していただきたい、このように考えているところでございます。"
-    },
-    {
-     "start": "この法律において",
-     "text": "この法律においてまして、この中で、インドネシア、ウクライナ問題について議論していただきたいというふうに思っております。 もう不可解なものですから、今、日米間で関係がおくれたということでありますが、ぜひ、北朝鮮と北朝鮮の主張の諸君、これは我々も今後検�"
-    }
-   ],
-   "loopPct": 4.34,
-   "movedBody": false
-  },
-  {
    "at": "2026-10-05T10:23:08Z",
    "val": 2.9818,
    "prev": 2.9818,
@@ -12599,9 +12536,72 @@
    ],
    "loopPct": 10.13,
    "movedBody": false
+  },
+  {
+   "at": "2026-10-16T16:48:23Z",
+   "val": 2.8633,
+   "prev": 2.8644,
+   "valTag": "fixed-holdout-v1",
+   "stoppedAt": 158,
+   "stuck": 0,
+   "evalTag": "fixed-ix-v1",
+   "secPerStep": 26.3272,
+   "steps": 300,
+   "bpc": 3.389,
+   "charsPerTok": 1.2189,
+   "score": 2.1398,
+   "scoreW": 2.0,
+   "scoreMode": "talk",
+   "finishMix": 0.5,
+   "lineage": "L1",
+   "layers": 16,
+   "params": 117914880,
+   "chars": 1045308899,
+   "tokens": 857567631,
+   "grew": 0,
+   "rolledBack": false,
+   "ownVal": null,
+   "ownScore": null,
+   "d": 768,
+   "loops": 1,
+   "spread": 2.9221,
+   "bytes": 1415115957,
+   "heads": 6,
+   "ctx": 512,
+   "vocab": 6000,
+   "kind": "bpe",
+   "arch": "tpp-loop",
+   "wantWider": false,
+   "layerCap": 16,
+   "mixChanged": false,
+   "bySrc": {
+    "laws": 4.0669,
+    "wiki": 3.0216,
+    "aozora": 3.374,
+    "hanrei": 3.4684,
+    "kokkai": 2.6408,
+    "web": 2.9009,
+    "talk": 2.1398
+   },
+   "wrote": [
+    {
+     "start": "わたしは",
+     "text": "わたしは夜更かしです！」 FG「夜は欲しいんですね！」 AG「そうですね！夜はご飯は食べないので、食べたくなります。」 FG「夜は夜は食べるのが割といつも自分で作るのですが、あまり食べないけどめちゃくちゃあ々"
+    },
+    {
+     "start": "第一条",
+     "text": "第一条に寡演劇場からそれぞれ参加していた。 かつての ニューヨーク から 中国 を始め、 ポーランド から 中国 から80年間、シャロン及びオーストリアの ケネディ と共に リュー する。 このときネルソンは ヨーガ と マンビネー を首都と呼んだ。 pas"
+    },
+    {
+     "start": "この法律において",
+     "text": "この法律において「希望条件」とも、利用者に利用できなくても大変な状況になります。」 客「そうなんですね。それでは、予約をお願いします。8/21で2泊でお願いいたします。」 店「お待たせ致しました。予約番号44370でお取りさせていただきました。」 客「ごめんなさい、大"
+    }
+   ],
+   "loopPct": 3.42,
+   "movedBody": false
   }
  ],
- "bestVal": 2.8644,
+ "bestVal": 2.8633,
  "layers": 16,
  "params": 117914880,
  "born": "2026-09-08T15:11:54Z",
@@ -12649,5 +12649,5 @@
  ],
  "wantWider": false,
  "nextD": 768,
- "bad": 2
+ "bad": 0
 }
