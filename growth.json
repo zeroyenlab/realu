@@ -1,69 +1,6 @@
 {
  "runs": [
   {
-   "at": "2026-10-05T01:32:10Z",
-   "val": 3.0002,
-   "prev": 2.9946,
-   "valTag": "fixed-holdout-v1",
-   "stoppedAt": 178,
-   "stuck": 0,
-   "evalTag": "fixed-ix-v1",
-   "secPerStep": 23.1208,
-   "steps": 300,
-   "bpc": 3.5509,
-   "charsPerTok": 1.2189,
-   "score": 2.1912,
-   "scoreW": 2.0,
-   "scoreMode": "talk",
-   "finishMix": 0.5,
-   "lineage": "L1",
-   "layers": 16,
-   "params": 117914880,
-   "chars": 1045308899,
-   "tokens": 857567631,
-   "grew": 0,
-   "rolledBack": false,
-   "ownVal": null,
-   "ownScore": null,
-   "d": 768,
-   "loops": 1,
-   "spread": 3.5284,
-   "bytes": 1415115957,
-   "heads": 6,
-   "ctx": 512,
-   "vocab": 6000,
-   "kind": "bpe",
-   "arch": "tpp-loop",
-   "wantWider": false,
-   "layerCap": 16,
-   "mixChanged": false,
-   "bySrc": {
-    "laws": 4.3398,
-    "wiki": 3.167,
-    "aozora": 3.5026,
-    "hanrei": 3.5942,
-    "kokkai": 2.7574,
-    "web": 3.029,
-    "talk": 2.1912
-   },
-   "wrote": [
-    {
-     "start": "わたしは",
-     "text": "わたしはひいて少し強いのですが。」 FF「そうですね！こちらは面白いです。」 FF「きっとお高いですよね。」 FF「わかります。」 FF「こんにちは！」 DF「こんにちはー。」"
-    },
-    {
-     "start": "第一条",
-     "text": "第一条ネュネットワークアート CRPY-1500 も参照） CRT-10 CRT-1100 CR-16a CH-1000 CR-1200 CR-21009 CR-107 CR-1010 TZ-1100 CR-1000A-1 CR-"
-    },
-    {
-     "start": "この法律において",
-     "text": "この法律においてターンというものがいるわけでございまして、それはなかなかデータができなくなっているわけでございまして、それをデータで確認しますと、これはデータがでございます。」 AB「なるほど、データは、データがデータでデータをデータで表しております。データがデータデー"
-    }
-   ],
-   "loopPct": 15.59,
-   "movedBody": false
-  },
-  {
    "at": "2026-10-05T02:49:26Z",
    "val": 2.9977,
    "prev": 3.0002,
@@ -12599,6 +12536,69 @@
    ],
    "loopPct": 4.69,
    "movedBody": false
+  },
+  {
+   "at": "2026-10-16T09:01:14Z",
+   "val": 2.8748,
+   "prev": 2.8727,
+   "valTag": "fixed-holdout-v1",
+   "stoppedAt": 158,
+   "stuck": 0,
+   "evalTag": "fixed-ix-v1",
+   "secPerStep": 26.3424,
+   "steps": 300,
+   "bpc": 3.4026,
+   "charsPerTok": 1.2189,
+   "score": 2.1363,
+   "scoreW": 2.0,
+   "scoreMode": "talk",
+   "finishMix": 0.5,
+   "lineage": "L1",
+   "layers": 16,
+   "params": 117914880,
+   "chars": 1045308899,
+   "tokens": 857567631,
+   "grew": 0,
+   "rolledBack": false,
+   "ownVal": null,
+   "ownScore": null,
+   "d": 768,
+   "loops": 1,
+   "spread": 3.1323,
+   "bytes": 1415115957,
+   "heads": 6,
+   "ctx": 512,
+   "vocab": 6000,
+   "kind": "bpe",
+   "arch": "tpp-loop",
+   "wantWider": false,
+   "layerCap": 16,
+   "mixChanged": false,
+   "bySrc": {
+    "laws": 4.0868,
+    "wiki": 3.0305,
+    "aozora": 3.3839,
+    "hanrei": 3.4842,
+    "kokkai": 2.6477,
+    "web": 2.9155,
+    "talk": 2.1363
+   },
+   "wrote": [
+    {
+     "start": "わたしは",
+     "text": "わたしは一番お祝いしかいませんでした。」 EF「子供はよくお子さんお肉が好きですね！」 BS「お子さんはお肉のお肉ですね。」 EF「お肉も好きですよ！肉が多いのでいけますよね」 BS「ですね。私はお肉が好きな"
+    },
+    {
+     "start": "第一条",
+     "text": "第一条ロボットボタンボンボンボンボンボンボンバ『DE HOT』に改題された際、2017年1月23日公開の第5話を収録。 2026年4月1日付、VS A. C. B.S. C. 2025年11月27日発売。 2026年2月25日発売"
+    },
+    {
+     "start": "この法律において",
+     "text": "この法律において、新設分割を除く。）は、都道府県知事に提出して、その変更を検討し、又は取り消すことができる。 （鉄道事業者は、国民の中央旗の出宗等の引渡し及び鉄道の前面等に置かれるもの） 第四十三条 鉄道の駅は、鉄道費及び鉄道事業費の確認を受けた国鉄&鉄道事業費方法により、鉄道事業費又は鉄道事業費の編成に移譲することにより、鉄道事業費の計上を図るために、鉄道・鉄道事業費、鉄道費、鉄道事業"
+    }
+   ],
+   "loopPct": 7.8,
+   "movedBody": false
   }
  ],
  "bestVal": 2.8688,
@@ -12649,5 +12649,5 @@
  ],
  "wantWider": false,
  "nextD": 768,
- "bad": 3
+ "bad": 4
 }
