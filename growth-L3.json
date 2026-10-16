@@ -1,69 +1,6 @@
 {
  "runs": [
   {
-   "at": "2026-10-05T03:58:49Z",
-   "val": 2.7191,
-   "prev": 2.7205,
-   "valTag": "fixed-holdout-v1",
-   "stoppedAt": 789,
-   "stuck": 0,
-   "evalTag": "fixed-ix-v1",
-   "secPerStep": 4.6992,
-   "steps": 984,
-   "bpc": 3.2182,
-   "charsPerTok": 1.2189,
-   "score": 2.1606,
-   "scoreW": 2.0,
-   "scoreMode": "talk",
-   "finishMix": 0.2,
-   "lineage": "L3",
-   "layers": 13,
-   "params": 25335168,
-   "chars": 1045308899,
-   "tokens": 857567631,
-   "grew": 0,
-   "rolledBack": false,
-   "ownVal": null,
-   "ownScore": null,
-   "d": 384,
-   "loops": 1,
-   "spread": 2.7133,
-   "bytes": 304134793,
-   "heads": 6,
-   "ctx": 512,
-   "vocab": 6000,
-   "kind": "bpe",
-   "arch": "tpp-loop",
-   "wantWider": false,
-   "layerCap": 16,
-   "mixChanged": false,
-   "bySrc": {
-    "laws": 3.6959,
-    "wiki": 2.8887,
-    "aozora": 3.2142,
-    "hanrei": 3.4358,
-    "kokkai": 2.5228,
-    "web": 2.8027,
-    "talk": 2.1606
-   },
-   "wrote": [
-    {
-     "start": "わたしは",
-     "text": "わたしは、既に二回にわたって話し合いをやりました。 しかし、�海岸をめぐる問題もあります。地蔵島の南部沖の高橋川の舟運は、長さ六メートルというのです。これは、今は瓦れきが深いのが、とんでもない。もう一つの交流もすごくある。 日本の領土、"
-    },
-    {
-     "start": "第一条",
-     "text": "第一条（２）のとおり�・・・・・・・ ・・・（独・ 奪・ ・ ・ ・ ・ ・ ・ ）には、 洞窟 （ 奏・ ・ ・ ・ ・ ・ ・・ ・ ・ ・ ・ ・ ・・ ）が用いられ、 、 ・ ・ ・ ・ ・・ ・ ・ ・・ ・ ・ ・"
-    },
-    {
-     "start": "この法律において",
-     "text": "この法律において「民法」の項目を、その意味において「民法」の項目を参照のこと。 民法は、民法の報道における民法に関する法規上の主権を行使する権利を認めるために国家の範囲内で市民の権利を侵害するという裁判の趣旨である。 また、民法は六月二十三日、国会が定める。 民法は、国民の権利を侵害する。 法律は、国民の権利を制限すること、すな"
-    }
-   ],
-   "loopPct": 26.84,
-   "movedBody": false
-  },
-  {
    "at": "2026-10-05T05:08:59Z",
    "val": 2.7197,
    "prev": 2.7191,
@@ -12599,6 +12536,69 @@
    ],
    "loopPct": 2.87,
    "movedBody": false
+  },
+  {
+   "at": "2026-10-16T10:11:48Z",
+   "val": 2.6801,
+   "prev": 2.6798,
+   "valTag": "fixed-holdout-v1",
+   "stoppedAt": 520,
+   "stuck": 0,
+   "evalTag": "fixed-ix-v1",
+   "secPerStep": 7.2338,
+   "steps": 897,
+   "bpc": 3.1721,
+   "charsPerTok": 1.2189,
+   "score": 2.1399,
+   "scoreW": 2.0,
+   "scoreMode": "talk",
+   "finishMix": 0.2,
+   "lineage": "L3",
+   "layers": 14,
+   "params": 27105408,
+   "chars": 1045308899,
+   "tokens": 857567631,
+   "grew": 0,
+   "rolledBack": false,
+   "ownVal": null,
+   "ownScore": null,
+   "d": 384,
+   "loops": 1,
+   "spread": 2.6193,
+   "bytes": 325385901,
+   "heads": 6,
+   "ctx": 512,
+   "vocab": 6000,
+   "kind": "bpe",
+   "arch": "tpp-loop",
+   "wantWider": false,
+   "layerCap": 16,
+   "mixChanged": false,
+   "bySrc": {
+    "laws": 3.6184,
+    "wiki": 2.8375,
+    "aozora": 3.1697,
+    "hanrei": 3.4114,
+    "kokkai": 2.4912,
+    "web": 2.7651,
+    "talk": 2.1399
+   },
+   "wrote": [
+    {
+     "start": "わたしは",
+     "text": "わたしはインドのイタリア人入植者たちから飲み込まれた。 1945年に日本でイタリアの サン・オペラ で ハーマン を飲み込んだ。 1946年 の『 イタリア日記 』では、イタリア人作家ハーマン・アルテルートの説を中心に描かれている。 ヴ"
+    },
+    {
+     "start": "第一条",
+     "text": "第一条（２）及び（２）にいう。）及びれる補償金及び補償金 （１）から（３）までの規定に基づいて�又は評価（１）から（５）までの規定に基づいての計算の基礎となっている。 (ｲ) 戦災復興支援事業 戦災復興支援事業 戦災復興支援事業 戦災復興支援事業 戦災復興支援事業 戦災復興支援事業 戦災復興支援事業 戦災"
+    },
+    {
+     "start": "この法律において",
+     "text": "この法律において「反日逃亡防止法」（Solden Promore Imperies）とは、 ベルギー や リベラル の社会科学者 オックスフォード・フォン・ジョンソン の著書『反デュオ革命などの歴史家 常に大きな影響を与えたのは、プラハのアイデンティティ"
+    }
+   ],
+   "loopPct": 15.43,
+   "movedBody": false
   }
  ],
  "bestVal": 2.6708,
@@ -12649,5 +12649,5 @@
  ],
  "wantWider": false,
  "nextD": 384,
- "bad": 2
+ "bad": 4
 }
