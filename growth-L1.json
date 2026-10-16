@@ -1,69 +1,6 @@
 {
  "runs": [
   {
-   "at": "2026-10-04T19:12:29Z",
-   "val": 2.9958,
-   "prev": 2.9978,
-   "valTag": "fixed-holdout-v1",
-   "stoppedAt": 158,
-   "stuck": 0,
-   "evalTag": "fixed-ix-v1",
-   "secPerStep": 26.3416,
-   "steps": 300,
-   "bpc": 3.5457,
-   "charsPerTok": 1.2189,
-   "score": 2.1936,
-   "scoreW": 2.0,
-   "scoreMode": "talk",
-   "finishMix": 0.5,
-   "lineage": "L1",
-   "layers": 16,
-   "params": 117914880,
-   "chars": 1045308899,
-   "tokens": 857567631,
-   "grew": 0,
-   "rolledBack": false,
-   "ownVal": null,
-   "ownScore": null,
-   "d": 768,
-   "loops": 1,
-   "spread": 2.9845,
-   "bytes": 1415115957,
-   "heads": 6,
-   "ctx": 512,
-   "vocab": 6000,
-   "kind": "bpe",
-   "arch": "tpp-loop",
-   "wantWider": false,
-   "layerCap": 16,
-   "mixChanged": false,
-   "bySrc": {
-    "laws": 4.3338,
-    "wiki": 3.164,
-    "aozora": 3.4954,
-    "hanrei": 3.5803,
-    "kokkai": 2.7482,
-    "web": 3.0223,
-    "talk": 2.1936
-   },
-   "wrote": [
-    {
-     "start": "わたしは",
-     "text": "わたしは、まず、二、三年、十二月三十日に、日本における日本のイーワンストアを見て、日本の軍事力の中で、想定外の軍事行動を表明するに至った。イギリスはこれを見通すのではなく、イギリスの軍事力を持つイギリスの同盟関係を維持するために、国際連合はイスラム国に軍事攻撃を強力に推し"
-    },
-    {
-     "start": "第一条",
-     "text": "第一条前段 遵守禍（以下「法」という。）定める期間 日本銀行及びの規定 <法令 平成十年度特目的噴着等支援支援事業に基づく歳入歳出決算 地元土地閉じゃ 摩耗により十八年度決算を支払わないときは、平成九年度各年度の機関 平成十九年度分の地方交付税及び閣議の模様 平成十一年度一般会計補正予算（特第２号） 平成九年度特別会計補正予算（平成十三年度特別会計補正予算"
-    },
-    {
-     "start": "この法律において",
-     "text": "この法律においてした留置院の当局から、逮捕された状況は御承知のとおり、いずれも当選者名が認められた [ 3 ] 。 このような状況下において、 中山藩 尚史隊司令官 佐藤藩 らと結婚したことに成功したが、その後、 治安対策本部 に臨むようになると、 広山藩 は信頼関係"
-    }
-   ],
-   "loopPct": 1.12,
-   "movedBody": false
-  },
-  {
    "at": "2026-10-04T20:29:03Z",
    "val": 3.0015,
    "prev": 2.9958,
@@ -12599,6 +12536,69 @@
    ],
    "loopPct": 3.36,
    "movedBody": false
+  },
+  {
+   "at": "2026-10-16T02:40:41Z",
+   "val": 2.871,
+   "prev": 2.8733,
+   "valTag": "fixed-holdout-v1",
+   "stoppedAt": 207,
+   "stuck": 0,
+   "evalTag": "fixed-ix-v1",
+   "secPerStep": 19.5779,
+   "steps": 300,
+   "bpc": 3.3981,
+   "charsPerTok": 1.2189,
+   "score": 2.1466,
+   "scoreW": 2.0,
+   "scoreMode": "talk",
+   "finishMix": 0.5,
+   "lineage": "L1",
+   "layers": 16,
+   "params": 117914880,
+   "chars": 1045308899,
+   "tokens": 857567631,
+   "grew": 0,
+   "rolledBack": false,
+   "ownVal": null,
+   "ownScore": null,
+   "d": 768,
+   "loops": 1,
+   "spread": 2.7755,
+   "bytes": 1415115957,
+   "heads": 6,
+   "ctx": 512,
+   "vocab": 6000,
+   "kind": "bpe",
+   "arch": "tpp-loop",
+   "wantWider": false,
+   "layerCap": 16,
+   "mixChanged": false,
+   "bySrc": {
+    "laws": 4.0806,
+    "wiki": 3.031,
+    "aozora": 3.3842,
+    "hanrei": 3.4814,
+    "kokkai": 2.6434,
+    "web": 2.9111,
+    "talk": 2.1466
+   },
+   "wrote": [
+    {
+     "start": "わたしは",
+     "text": "わたしは、今までの苦しみを感じてください。」 AB「そういう意味であれば、これは国民の皆さん方のお疲れさまです。」 AB「夢、ちょっと興味深いですね。理想の種子の名前です。」 AB「そういうことを考えると、硬直する気持ちになるのか。」"
+    },
+    {
+     "start": "第一条",
+     "text": "第一条11年9月25日閲覧。 ↑ “ 東京貨物駅の「ふらろいふた」停留所に いよいよ - ITmedia ”. TV Bususeus . ウェブサイト . 東京都. 2026年9月1日閲覧。 ↑ “ 東京メ"
+    },
+    {
+     "start": "この法律において",
+     "text": "この法律において「原原原告」を世話とする請求は「原告を原告にするような事実からする」とする。 原告は、原告が原告を争う被告に対して原告が預託された本件 原告の主張を原告に言渡ししたことを主張する。 第２事案の概要 原告は，原告が，原告に対し，原告に対し，原告に対し，原告の甲に対し，原"
+    }
+   ],
+   "loopPct": 12.08,
+   "movedBody": false
   }
  ],
  "bestVal": 2.8699,
@@ -12649,5 +12649,5 @@
  ],
  "wantWider": false,
  "nextD": 768,
- "bad": 3
+ "bad": 5
 }
