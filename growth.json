@@ -1,69 +1,6 @@
 {
  "runs": [
   {
-   "at": "2026-10-04T20:29:03Z",
-   "val": 3.0015,
-   "prev": 2.9958,
-   "valTag": "fixed-holdout-v1",
-   "stoppedAt": 157,
-   "stuck": 0,
-   "evalTag": "fixed-ix-v1",
-   "secPerStep": 26.5221,
-   "steps": 300,
-   "bpc": 3.5525,
-   "charsPerTok": 1.2189,
-   "score": 2.1871,
-   "scoreW": 2.0,
-   "scoreMode": "talk",
-   "finishMix": 0.5,
-   "lineage": "L1",
-   "layers": 16,
-   "params": 117914880,
-   "chars": 1045308899,
-   "tokens": 857567631,
-   "grew": 0,
-   "rolledBack": false,
-   "ownVal": null,
-   "ownScore": null,
-   "d": 768,
-   "loops": 1,
-   "spread": 3.1751,
-   "bytes": 1415115957,
-   "heads": 6,
-   "ctx": 512,
-   "vocab": 6000,
-   "kind": "bpe",
-   "arch": "tpp-loop",
-   "wantWider": false,
-   "layerCap": 16,
-   "mixChanged": false,
-   "bySrc": {
-    "laws": 4.3472,
-    "wiki": 3.1655,
-    "aozora": 3.5006,
-    "hanrei": 3.5866,
-    "kokkai": 2.7565,
-    "web": 3.0238,
-    "talk": 2.1871
-   },
-   "wrote": [
-    {
-     "start": "わたしは",
-     "text": "わたしはいません。」 AU「ただ、ちょうどこの辺は、昨日はこの辺も知りたかったのですね。」 BM「もしかして大変なことになったのですか？」 AU「そうです。 何を探してもらえたのですか？ わたしは最後までやってました。」 BM「1000円くらい"
-    },
-    {
-     "start": "第一条",
-     "text": "第一条リスク自衛隊キット・キット・キット・キット・アメリカ・キット・キット・カバリ・G・サウジアラビア・ジオパーク・ジェット・アメリカ合衆国 (Band For Heritic Force) “Flay/Fikir Recordy”のバージョンア"
-    },
-    {
-     "start": "この法律において",
-     "text": "この法律において「グリーンサイト」を参照 [ 7 ] 。 フランスの コミカル・コミックス では、1960年にテレビを収録。 日本では未利用のコミカルなジャンルとして活躍している。 フランスの設立時はその世界で最も人気があるため、日本では1990年に連載 [ 8 ]"
-    }
-   ],
-   "loopPct": 10.52,
-   "movedBody": false
-  },
-  {
    "at": "2026-10-04T21:44:23Z",
    "val": 2.9958,
    "prev": 3.0015,
@@ -12599,9 +12536,72 @@
    ],
    "loopPct": 12.08,
    "movedBody": false
+  },
+  {
+   "at": "2026-10-16T03:58:24Z",
+   "val": 2.8688,
+   "prev": 2.871,
+   "valTag": "fixed-holdout-v1",
+   "stoppedAt": 158,
+   "stuck": 0,
+   "evalTag": "fixed-ix-v1",
+   "secPerStep": 26.3273,
+   "steps": 330,
+   "bpc": 3.3954,
+   "charsPerTok": 1.2189,
+   "score": 2.148,
+   "scoreW": 2.0,
+   "scoreMode": "talk",
+   "finishMix": 0.5,
+   "lineage": "L1",
+   "layers": 16,
+   "params": 117914880,
+   "chars": 1045308899,
+   "tokens": 857567631,
+   "grew": 0,
+   "rolledBack": false,
+   "ownVal": null,
+   "ownScore": null,
+   "d": 768,
+   "loops": 1,
+   "spread": 2.9952,
+   "bytes": 1415115957,
+   "heads": 6,
+   "ctx": 512,
+   "vocab": 6000,
+   "kind": "bpe",
+   "arch": "tpp-loop",
+   "wantWider": false,
+   "layerCap": 16,
+   "mixChanged": false,
+   "bySrc": {
+    "laws": 4.0754,
+    "wiki": 3.0269,
+    "aozora": 3.3807,
+    "hanrei": 3.4856,
+    "kokkai": 2.6431,
+    "web": 2.9091,
+    "talk": 2.148
+   },
+   "wrote": [
+    {
+     "start": "わたしは",
+     "text": "わたしは、赤字ですねー。」 CJ「網は赤字になりますが、無益なところもあって、それなら赤字がいいですね。」 CJ「小さいころは、金利もありますけど、赤字がなくなりました。」 CJ「金利が高いですね。」 CJ「ですね。ご飯買いに行きたい"
+    },
+    {
+     "start": "第一条",
+     "text": "第一条の列車は、 ロータリー の人気が出来る。 1977年 6月23日 - ロータリー賞 を受賞。 1979年 3月25日 - PS2用ソフト『 ロータリー 』を開発。 1979年 5月3日 - 日本のロータリー・ローター・ロ"
+    },
+    {
+     "start": "この法律において",
+     "text": "この法律において「近年」と呼ばれる勝利を収めることによってあらゆる問題を抱え、各々の交流が開始されたことなどが挙げられる。 当初、多くの課題が残ることが起き始めているが、 2015年 、党首討論によると、 2017年 の 第2次安倍内閣 では、常任翌年の 第2"
+    }
+   ],
+   "loopPct": 1.74,
+   "movedBody": false
   }
  ],
- "bestVal": 2.8699,
+ "bestVal": 2.8688,
  "layers": 16,
  "params": 117914880,
  "born": "2026-09-08T15:11:54Z",
@@ -12649,5 +12649,5 @@
  ],
  "wantWider": false,
  "nextD": 768,
- "bad": 5
+ "bad": 0
 }
