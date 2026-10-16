@@ -1,69 +1,6 @@
 {
  "runs": [
   {
-   "at": "2026-10-05T15:35:18Z",
-   "val": 2.9777,
-   "prev": 2.9777,
-   "valTag": "fixed-holdout-v1",
-   "stoppedAt": 177,
-   "stuck": 0,
-   "evalTag": "fixed-ix-v1",
-   "secPerStep": 23.3159,
-   "steps": 300,
-   "bpc": 3.5243,
-   "charsPerTok": 1.2189,
-   "score": 2.1827,
-   "scoreW": 2.0,
-   "scoreMode": "talk",
-   "finishMix": 0.5,
-   "lineage": "L1",
-   "layers": 16,
-   "params": 117914880,
-   "chars": 1045308899,
-   "tokens": 857567631,
-   "grew": 0,
-   "rolledBack": false,
-   "ownVal": null,
-   "ownScore": null,
-   "d": 768,
-   "loops": 1,
-   "spread": 2.9465,
-   "bytes": 1415115957,
-   "heads": 6,
-   "ctx": 512,
-   "vocab": 6000,
-   "kind": "bpe",
-   "arch": "tpp-loop",
-   "wantWider": false,
-   "layerCap": 16,
-   "mixChanged": false,
-   "bySrc": {
-    "laws": 4.3048,
-    "wiki": 3.1426,
-    "aozora": 3.4854,
-    "hanrei": 3.5669,
-    "kokkai": 2.7349,
-    "web": 3.0022,
-    "talk": 2.1827
-   },
-   "wrote": [
-    {
-     "start": "わたしは",
-     "text": "わたしは、多くの人々の合法性を共にして、自分の怒りを喜ばしました。まず、政治の信頼を回復したのが、行政団体が消費税を上回っております。ここに、公明党は、民主党の公明党の公明党の一つとして、一つのガバナンスを守ってきたことです。このように、政党そのものについて、国家おもな例えば"
-    },
-    {
-     "start": "第一条",
-     "text": "第一条 2008年11月21日 - イギリスのイギリス国内で開催されるコーヒー競技選手権大会。 2020年12月25日 - イギリスのアイドル・パレードのコーヒー演奏を契機に 映画「ショッピング・バーベル」として開催される。 2009年"
-    },
-    {
-     "start": "この法律において",
-     "text": "この法律において「LUUUUUUUUULUUE」とMUUNUEが似たような発言をしている。 4Dエンジンは全て、FUUSHOUNDAUUSにエンジンとして購入するようになる。 2023年12月、2022年12月末まで、エクイジンを「AUU」に変更。 eR seral"
-    }
-   ],
-   "loopPct": 14.88,
-   "movedBody": false
-  },
-  {
    "at": "2026-10-05T16:53:01Z",
    "val": 2.9801,
    "prev": 2.9777,
@@ -12599,6 +12536,69 @@
    ],
    "loopPct": 1.16,
    "movedBody": false
+  },
+  {
+   "at": "2026-10-16T23:15:12Z",
+   "val": 2.8605,
+   "prev": 2.8602,
+   "valTag": "fixed-holdout-v1",
+   "stoppedAt": 153,
+   "stuck": 0,
+   "evalTag": "fixed-ix-v1",
+   "secPerStep": 27.3263,
+   "steps": 300,
+   "bpc": 3.3856,
+   "charsPerTok": 1.2189,
+   "score": 2.1348,
+   "scoreW": 2.0,
+   "scoreMode": "talk",
+   "finishMix": 0.5,
+   "lineage": "L1",
+   "layers": 16,
+   "params": 117914880,
+   "chars": 1045308899,
+   "tokens": 857567631,
+   "grew": 0,
+   "rolledBack": false,
+   "ownVal": null,
+   "ownScore": null,
+   "d": 768,
+   "loops": 1,
+   "spread": 3.1789,
+   "bytes": 1415115957,
+   "heads": 6,
+   "ctx": 512,
+   "vocab": 6000,
+   "kind": "bpe",
+   "arch": "tpp-loop",
+   "wantWider": false,
+   "layerCap": 16,
+   "mixChanged": false,
+   "bySrc": {
+    "laws": 4.0649,
+    "wiki": 3.0211,
+    "aozora": 3.3742,
+    "hanrei": 3.4661,
+    "kokkai": 2.6346,
+    "web": 2.8995,
+    "talk": 2.1348
+   },
+   "wrote": [
+    {
+     "start": "わたしは",
+     "text": "わたしは忘れてしまいましたね。」 AL「ほんとですよね。」 CB「普段妻が食べたりするので。」 AL「うらやましいです。意外と大変ですもん」 CB「確かにそうですね。」 AL「よろしく"
+    },
+    {
+     "start": "第一条",
+     "text": "第一条ロロケーブルの置き換えが可能な国際的な措置としてみられる。 イＥ，第１審被告ＪＶＸの交渉は，第１審原告と金 前記ＪＶＸ戦略派，第２次，第１，第２審被告ＦＫＥと黒色白の交渉参加国の戦略的対応によるご いかんじ"
+    },
+    {
+     "start": "この法律において",
+     "text": "この法律において「日本海通商産業省」と呼ばれるものは、日本海外局長が通つた場合、日本単独銀行である+日本政府に対し日本航空の送金として使われることが可能である。 <記事 日本のソウル大学> 日本のソウル大学（とくに ソウル ）とは、中国人の学級を行い、日本の独立、中国国民党の理想的な行政運営に利用されている。 19"
+    }
+   ],
+   "loopPct": 1.58,
+   "movedBody": false
   }
  ],
  "bestVal": 2.8602,
@@ -12649,5 +12649,5 @@
  ],
  "wantWider": false,
  "nextD": 768,
- "bad": 0
+ "bad": 1
 }
