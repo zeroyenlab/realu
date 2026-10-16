@@ -1,69 +1,6 @@
 {
  "runs": [
   {
-   "at": "2026-10-05T07:43:25Z",
-   "val": 2.6836,
-   "prev": 2.6826,
-   "valTag": "fixed-holdout-v1",
-   "stoppedAt": 493,
-   "stuck": 0,
-   "evalTag": "fixed-ix-v1",
-   "secPerStep": 7.6697,
-   "steps": 617,
-   "bpc": 3.1762,
-   "charsPerTok": 1.2189,
-   "score": 2.0539,
-   "scoreW": 2.0,
-   "scoreMode": "talk",
-   "finishMix": 0.85,
-   "lineage": "L2",
-   "layers": 13,
-   "params": 44216832,
-   "chars": 1045308899,
-   "tokens": 857567631,
-   "grew": 0,
-   "rolledBack": false,
-   "ownVal": null,
-   "ownScore": null,
-   "d": 512,
-   "loops": 1,
-   "spread": 2.951,
-   "bytes": 530714761,
-   "heads": 8,
-   "ctx": 512,
-   "vocab": 6000,
-   "kind": "bpe",
-   "arch": "tpp-loop",
-   "wantWider": false,
-   "layerCap": 16,
-   "mixChanged": false,
-   "bySrc": {
-    "laws": 3.5948,
-    "wiki": 2.8488,
-    "aozora": 3.1611,
-    "hanrei": 3.3874,
-    "kokkai": 2.5007,
-    "web": 2.7698,
-    "talk": 2.0539
-   },
-   "wrote": [
-    {
-     "start": "わたしは",
-     "text": "わたしは連れてこられた絵までに毎度を置いています。あなたは馬鹿ですか？」 BS「馬鹿です。犬も猫も飼えないので、�ぶかりたいです。」 BB「猫飼いたいです。期間限定の1匹とか、飼うのですか？」 BS「はい、もう1匹、も"
-    },
-    {
-     "start": "第一条",
-     "text": "第一条（存続会社第一号又はにおいて同じ。）場合には、課税標準月を支給するものとする。 第一項の規定は、前項の場合について準用する。 （for of the radionsmantive） 第三十一条 for of the the de lipponsmantive in the and for the mant"
-    },
-    {
-     "start": "この法律において",
-     "text": "この法律においてずる規則（平成十一年事業団法施行令（平成二十五年政令第四十四号）附則第十条第三項及び第三項の規定は、前項の月数及び月数並びに月数及び月数並びに月数について準用する。 この場合において、同条第四項おり、同条第一項第一号（同条第一項第一号を除く。）中「平成二十九年度」とあるのは、「平成二十九年度及び三十四年度」とする。 （財源） 第一条の三 財源の財源として、財源をれる財源のうち、財源として財源として編成しなければならない。"
-    }
-   ],
-   "loopPct": 10.49,
-   "movedBody": false
-  },
-  {
    "at": "2026-10-05T08:57:41Z",
    "val": 2.6853,
    "prev": 2.6836,
@@ -12598,6 +12535,69 @@
     }
    ],
    "loopPct": 2.39,
+   "movedBody": false
+  },
+  {
+   "at": "2026-10-16T14:08:35Z",
+   "val": 2.6229,
+   "prev": 2.6233,
+   "valTag": "fixed-holdout-v1",
+   "stoppedAt": 342,
+   "stuck": 0,
+   "evalTag": "fixed-ix-v1",
+   "secPerStep": 11.2788,
+   "steps": 569,
+   "bpc": 3.1044,
+   "charsPerTok": 1.2189,
+   "score": 2.0359,
+   "scoreW": 2.0,
+   "scoreMode": "talk",
+   "finishMix": 0.85,
+   "lineage": "L2",
+   "layers": 14,
+   "params": 47379968,
+   "chars": 1045308899,
+   "tokens": 857567631,
+   "grew": 0,
+   "rolledBack": false,
+   "ownVal": null,
+   "ownScore": null,
+   "d": 512,
+   "loops": 1,
+   "spread": 2.9278,
+   "bytes": 568680621,
+   "heads": 8,
+   "ctx": 512,
+   "vocab": 6000,
+   "kind": "bpe",
+   "arch": "tpp-loop",
+   "wantWider": false,
+   "layerCap": 16,
+   "mixChanged": false,
+   "bySrc": {
+    "laws": 3.4824,
+    "wiki": 2.7815,
+    "aozora": 3.1037,
+    "hanrei": 3.357,
+    "kokkai": 2.4528,
+    "web": 2.7096,
+    "talk": 2.0359
+   },
+   "wrote": [
+    {
+     "start": "わたしは",
+     "text": "わたしは、この「日本経済にとって日本経済は、経済成長率が高く、いろいろな国々が 世界的な経済成長 を続け、経済の先行きは依然として変化し、その過程で日本は 国際的 ・ 国際 ・ 内外 に対する内外の 不安定要因 が台頭した。 西欧諸国では、ベトナムの経済政策の根本は"
+    },
+    {
+     "start": "第一条",
+     "text": "第一条、第九ブタブタブローズを差出した西ドイツでは、次期ドイツ国内での不祥事もあって、アメリカ合衆国では、ドイツがイギリス軍駆逐隊を停戦してからも、ドイツ軍の侵入を伝えることが禁じられている 。 ドイツは、1956年から1961年にかけて、ドイツ軍"
+    },
+    {
+     "start": "この法律において",
+     "text": "この法律において「国民年金等添加物」について、当該年金及び年金の問題の解決を目指すとともに、保険金額の減少に見られる給付の執行状況及び保険料の国庫負担等に対してどういうふうになるのかについて、どのような認識をお持ちか、答弁を求めます。（拍手） また、本法律案による給付は、将来保険料を計算する上で極めて重要です。」 AA「しかし"
+    }
+   ],
+   "loopPct": 4.34,
    "movedBody": false
   }
  ],
