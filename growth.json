@@ -1,69 +1,6 @@
 {
  "runs": [
   {
-   "at": "2026-10-05T00:16:50Z",
-   "val": 2.9946,
-   "prev": 2.9981,
-   "valTag": "fixed-holdout-v1",
-   "stoppedAt": 159,
-   "stuck": 0,
-   "evalTag": "fixed-ix-v1",
-   "secPerStep": 26.1137,
-   "steps": 300,
-   "bpc": 3.5443,
-   "charsPerTok": 1.2189,
-   "score": 2.1897,
-   "scoreW": 2.0,
-   "scoreMode": "talk",
-   "finishMix": 0.5,
-   "lineage": "L1",
-   "layers": 16,
-   "params": 117914880,
-   "chars": 1045308899,
-   "tokens": 857567631,
-   "grew": 0,
-   "rolledBack": false,
-   "ownVal": null,
-   "ownScore": null,
-   "d": 768,
-   "loops": 1,
-   "spread": 3.1709,
-   "bytes": 1415115957,
-   "heads": 6,
-   "ctx": 512,
-   "vocab": 6000,
-   "kind": "bpe",
-   "arch": "tpp-loop",
-   "wantWider": false,
-   "layerCap": 16,
-   "mixChanged": false,
-   "bySrc": {
-    "laws": 4.336,
-    "wiki": 3.1605,
-    "aozora": 3.4929,
-    "hanrei": 3.5884,
-    "kokkai": 2.7529,
-    "web": 3.018,
-    "talk": 2.1897
-   },
-   "wrote": [
-    {
-     "start": "わたしは",
-     "text": "わたしは、おもちゃのごときお話をされたのが、ひとり忘れてしまいました。」 CV「おー。さんは、そこは、ちょっとお語りをいただきらいですか？」 CV「まったくわくわくしちゃうので、すぐにやってみたいです。」 CV「おー。なんか、お話あ"
-    },
-    {
-     "start": "第一条",
-     "text": "第一条ソロン大統領は外交や日米共同声明を発表。 1967年 - 日米関係が結ばれ、 日米安保体制 が成立。 1968年 - ロシアによる ソ連軍 が、 1970年 にロシアが 1980年 に 国家安全保障条約 を発足。 1971年 - 日"
-    },
-    {
-     "start": "この法律において",
-     "text": "この法律において「計量法」という。）を支給するものとする。 日本の電解体制については、電信具以下この項において同じ。） 電車直径又は電信装置の登録させる電力の知識又は電圧 電圧、電源及び電圧 電流の拡大その他の光電令において電流によつては電流が電流化する電流を順調に進む点があるもの 電池電圧において、電流が電流を流用するときは、電流速度を"
-    }
-   ],
-   "loopPct": 1.72,
-   "movedBody": false
-  },
-  {
    "at": "2026-10-05T01:32:10Z",
    "val": 3.0002,
    "prev": 2.9946,
@@ -12599,6 +12536,69 @@
    ],
    "loopPct": 18.14,
    "movedBody": false
+  },
+  {
+   "at": "2026-10-16T07:43:51Z",
+   "val": 2.8727,
+   "prev": 2.8722,
+   "valTag": "fixed-holdout-v1",
+   "stoppedAt": 158,
+   "stuck": 0,
+   "evalTag": "fixed-ix-v1",
+   "secPerStep": 26.3536,
+   "steps": 330,
+   "bpc": 3.4001,
+   "charsPerTok": 1.2189,
+   "score": 2.1408,
+   "scoreW": 2.0,
+   "scoreMode": "talk",
+   "finishMix": 0.5,
+   "lineage": "L1",
+   "layers": 16,
+   "params": 117914880,
+   "chars": 1045308899,
+   "tokens": 857567631,
+   "grew": 0,
+   "rolledBack": false,
+   "ownVal": null,
+   "ownScore": null,
+   "d": 768,
+   "loops": 1,
+   "spread": 2.9675,
+   "bytes": 1415115957,
+   "heads": 6,
+   "ctx": 512,
+   "vocab": 6000,
+   "kind": "bpe",
+   "arch": "tpp-loop",
+   "wantWider": false,
+   "layerCap": 16,
+   "mixChanged": false,
+   "bySrc": {
+    "laws": 4.0847,
+    "wiki": 3.0296,
+    "aozora": 3.3846,
+    "hanrei": 3.4767,
+    "kokkai": 2.6446,
+    "web": 2.911,
+    "talk": 2.1408
+   },
+   "wrote": [
+    {
+     "start": "わたしは",
+     "text": "わたしは何をなさったか。何とかスパイに向かうのに、どこかに行ったら気になっています。」 GD「どちらに行っても行きたいですよね。私も行ってみたいです。」 FO「私はきのこ大好きなんですよー。」 GD「私もスパイスをやってました。」 FO「ど"
+    },
+    {
+     "start": "第一条",
+     "text": "第一条1 1977年3月25日閲覧。 ↑ 大臣用語「哲学者」は、1960年代前半に立地した。 ↑ 「 「熟度」という語は、名称を「相対的」とする 」に、 日本語 で「相」を「財務」に「証」を表す「為法」、 佐藤社 の辞令である「 公"
+    },
+    {
+     "start": "この法律において",
+     "text": "この法律において「～年」を意味する ”. デイリー・ロック (2010年6月29日). 2021年7月17日閲覧。 ↑ “ 第60回（1984年2月23日発売） ”. 第86回NHK紅白歌合戦 (2000年11月29日)."
+    }
+   ],
+   "loopPct": 4.69,
+   "movedBody": false
   }
  ],
  "bestVal": 2.8688,
@@ -12649,5 +12649,5 @@
  ],
  "wantWider": false,
  "nextD": 768,
- "bad": 2
+ "bad": 3
 }
