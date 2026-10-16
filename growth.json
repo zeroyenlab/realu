@@ -1,69 +1,6 @@
 {
  "runs": [
   {
-   "at": "2026-10-04T23:00:16Z",
-   "val": 2.9981,
-   "prev": 2.9958,
-   "valTag": "fixed-holdout-v1",
-   "stoppedAt": 179,
-   "stuck": 0,
-   "evalTag": "fixed-ix-v1",
-   "secPerStep": 22.9641,
-   "steps": 300,
-   "bpc": 3.5485,
-   "charsPerTok": 1.2189,
-   "score": 2.1791,
-   "scoreW": 2.0,
-   "scoreMode": "talk",
-   "finishMix": 0.5,
-   "lineage": "L1",
-   "layers": 16,
-   "params": 117914880,
-   "chars": 1045308899,
-   "tokens": 857567631,
-   "grew": 0,
-   "rolledBack": false,
-   "ownVal": null,
-   "ownScore": null,
-   "d": 768,
-   "loops": 1,
-   "spread": 3.0059,
-   "bytes": 1415115957,
-   "heads": 6,
-   "ctx": 512,
-   "vocab": 6000,
-   "kind": "bpe",
-   "arch": "tpp-loop",
-   "wantWider": false,
-   "layerCap": 16,
-   "mixChanged": false,
-   "bySrc": {
-    "laws": 4.336,
-    "wiki": 3.1623,
-    "aozora": 3.5022,
-    "hanrei": 3.5885,
-    "kokkai": 2.7565,
-    "web": 3.0226,
-    "talk": 2.1791
-   },
-   "wrote": [
-    {
-     "start": "わたしは",
-     "text": "わたしは、いやいや、あなたはどうしても、ひとつお知らせしまじゃありませんよ。」 AB「そういった日が、こういう時代に来たのも、いつの間にか、いつになっても、あたしも、いや、こんなに食われなくても、その肉食は食べれらない。」 AB「もう、私は、私は、"
-    },
-    {
-     "start": "第一条",
-     "text": "第一条数は、当該提示の内容をbhasakersiten alishikokamatorminis.jpg|改装 ファイル:Idusprientove.jpg|改札口（2025年10月） ファイル:Intellation of Intellato-j"
-    },
-    {
-     "start": "この法律において",
-     "text": "この法律においてよいこと、あるいは、これも後を生かしながら、いろいろなところで、いろいろな問題がございます。」 AA「それから、じゃ、また、日米関係、もう一度、日米安保体制というのをこれからこれはできておりますけれども、私ども、これまでの地下鉄とか、いろいろな御"
-    }
-   ],
-   "loopPct": 10.45,
-   "movedBody": false
-  },
-  {
    "at": "2026-10-05T00:16:50Z",
    "val": 2.9946,
    "prev": 2.9981,
@@ -12599,6 +12536,69 @@
    ],
    "loopPct": 6.16,
    "movedBody": false
+  },
+  {
+   "at": "2026-10-16T06:26:17Z",
+   "val": 2.8722,
+   "prev": 2.8782,
+   "valTag": "fixed-holdout-v1",
+   "stoppedAt": 159,
+   "stuck": 0,
+   "evalTag": "fixed-ix-v1",
+   "secPerStep": 26.1212,
+   "steps": 330,
+   "bpc": 3.3995,
+   "charsPerTok": 1.2189,
+   "score": 2.1396,
+   "scoreW": 2.0,
+   "scoreMode": "talk",
+   "finishMix": 0.5,
+   "lineage": "L1",
+   "layers": 16,
+   "params": 117914880,
+   "chars": 1045308899,
+   "tokens": 857567631,
+   "grew": 0,
+   "rolledBack": false,
+   "ownVal": null,
+   "ownScore": null,
+   "d": 768,
+   "loops": 1,
+   "spread": 3.0204,
+   "bytes": 1415115957,
+   "heads": 6,
+   "ctx": 512,
+   "vocab": 6000,
+   "kind": "bpe",
+   "arch": "tpp-loop",
+   "wantWider": false,
+   "layerCap": 16,
+   "mixChanged": false,
+   "bySrc": {
+    "laws": 4.0816,
+    "wiki": 3.0331,
+    "aozora": 3.3828,
+    "hanrei": 3.4787,
+    "kokkai": 2.6446,
+    "web": 2.9104,
+    "talk": 2.1396
+   },
+   "wrote": [
+    {
+     "start": "わたしは",
+     "text": "わたしは、実際の不祥事後であったことを明かしているのではないでしょうか。このことを明らかにしてください。 まず、これはみずから考えると、少しも国民はもう振り返ってみますと、そのことを国民に課せられる景気に陥ると、国民の 合理化の中で仲間が出てきているのであろうかと思います。」 AB「そう"
+    },
+    {
+     "start": "第一条",
+     "text": "第一条ハハハハハチワグハンターハンターハンターハンターハンターハンターハンターハンターハンターハンターマンション。 2013年 - インカーファイトハンター （当時） 大塚聡 （当時 日本ハムハンターハンター ） 聖バカン （ 中国語版 ） （ 中国語�"
+    },
+    {
+     "start": "この法律において",
+     "text": "この法律において「レンズ等」をコアとした「レンズ キング ドライブ」を収録した作品。 2026年1月31日、 イーネット・バンダイ の「レンズ100」を発売。 2026年2月18日、 Newstern Sound The Microsoft Su"
+    }
+   ],
+   "loopPct": 18.14,
+   "movedBody": false
   }
  ],
  "bestVal": 2.8688,
@@ -12649,5 +12649,5 @@
  ],
  "wantWider": false,
  "nextD": 768,
- "bad": 1
+ "bad": 2
 }
