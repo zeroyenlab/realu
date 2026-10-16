@@ -1,69 +1,6 @@
 {
  "runs": [
   {
-   "at": "2026-10-04T21:44:23Z",
-   "val": 2.9958,
-   "prev": 3.0015,
-   "valTag": "fixed-holdout-v1",
-   "stoppedAt": 159,
-   "stuck": 0,
-   "evalTag": "fixed-ix-v1",
-   "secPerStep": 26.1281,
-   "steps": 300,
-   "bpc": 3.5458,
-   "charsPerTok": 1.2189,
-   "score": 2.1931,
-   "scoreW": 2.0,
-   "scoreMode": "talk",
-   "finishMix": 0.5,
-   "lineage": "L1",
-   "layers": 16,
-   "params": 117914880,
-   "chars": 1045308899,
-   "tokens": 857567631,
-   "grew": 0,
-   "rolledBack": false,
-   "ownVal": null,
-   "ownScore": null,
-   "d": 768,
-   "loops": 1,
-   "spread": 3.3511,
-   "bytes": 1415115957,
-   "heads": 6,
-   "ctx": 512,
-   "vocab": 6000,
-   "kind": "bpe",
-   "arch": "tpp-loop",
-   "wantWider": false,
-   "layerCap": 16,
-   "mixChanged": false,
-   "bySrc": {
-    "laws": 4.3451,
-    "wiki": 3.1625,
-    "aozora": 3.5006,
-    "hanrei": 3.5906,
-    "kokkai": 2.7484,
-    "web": 3.0233,
-    "talk": 2.1931
-   },
-   "wrote": [
-    {
-     "start": "わたしは",
-     "text": "わたしは、州住へ行くので、阿蘇（ライアン）を見た。その蘇山は、このような地域で、唇を取雇い、いわゆる椽山川のようなもので、それに借りを清め、梅山川を見ると、ちくわ北側に、この、北側は、本州から海境へと落ち込んだ。このかつて、"
-    },
-    {
-     "start": "第一条",
-     "text": "第一条（乙５），Ｄ，ＤＫＥ及びＤＤＮＬＮＡＴＴＮＴ；ＮＴＴのＮＴＴ株式会社をターミナルビルに包出する ＮＴＴ会社であるＮＴＴＮＴＴ会社に留まっていたＴＰＰ11ＫＯＤＡは，Ｎ"
-    },
-    {
-     "start": "この法律において",
-     "text": "この法律において「B」「So」を意識した。 2010年（平成22年）4月7日：「SOO DAY」WS『RODAY』第1回（2021年） 。 2016年（平成28年）：第三セクター オープン。 「SOW PS」「SOUDAY BARD」「SO"
-    }
-   ],
-   "loopPct": 15.23,
-   "movedBody": false
-  },
-  {
    "at": "2026-10-04T23:00:16Z",
    "val": 2.9981,
    "prev": 2.9958,
@@ -12599,6 +12536,69 @@
    ],
    "loopPct": 1.74,
    "movedBody": false
+  },
+  {
+   "at": "2026-10-16T05:06:39Z",
+   "val": 2.8782,
+   "prev": 2.8688,
+   "valTag": "fixed-holdout-v1",
+   "stoppedAt": 0,
+   "stuck": 0,
+   "evalTag": "fixed-ix-v1",
+   "secPerStep": 10.8879,
+   "steps": 330,
+   "bpc": 3.4066,
+   "charsPerTok": 1.2189,
+   "score": 2.1416,
+   "scoreW": 2.0,
+   "scoreMode": "talk",
+   "finishMix": 0.5,
+   "lineage": "L1",
+   "layers": 16,
+   "params": 117914880,
+   "chars": 1045308899,
+   "tokens": 857567631,
+   "grew": 0,
+   "rolledBack": false,
+   "ownVal": null,
+   "ownScore": null,
+   "d": 768,
+   "loops": 1,
+   "spread": 3.2223,
+   "bytes": 1415115957,
+   "heads": 6,
+   "ctx": 512,
+   "vocab": 6000,
+   "kind": "bpe",
+   "arch": "tpp-loop",
+   "wantWider": false,
+   "layerCap": 16,
+   "mixChanged": false,
+   "bySrc": {
+    "laws": 4.0955,
+    "wiki": 3.0375,
+    "aozora": 3.3914,
+    "hanrei": 3.4827,
+    "kokkai": 2.6525,
+    "web": 2.9159,
+    "talk": 2.1416
+   },
+   "wrote": [
+    {
+     "start": "わたしは",
+     "text": "わたしは、しばしば、むしろ、それはようございます。」 AA「しかし、ここですよね、こちらは。」 AB「このような状況をつくると、もうかるのだろうかと思う。」 AA「そして、それがどこかに書いてあるかとそういうことです。」 AB「ですから、これは差し控えたい"
+    },
+    {
+     "start": "第一条",
+     "text": "第一条リスクナルモデル幹部では、2002年にローレンス・トゥ・サン・カン・ヤーコプターと呼ばれる、1998年にアメリカ合衆国のバルカンで外国人を設立 。 第二次世界大戦後、平和条約を結ぶことは、自国との友好関係を築き上げた。 （ポーランドの現代の"
+    },
+    {
+     "start": "この法律において",
+     "text": "この法律において並�亡すべき義務があるというふうに考えられるわけでございます。」 AA「したがいまして、基本的に今まで何度も申し上げましたように、このような無駄遣いを取っていただくということが政治的な問題であるということは、私は委員長、そしてその復興法aの改正の一つとしての責任は極めて重大でございまして、そのようなこと"
+    }
+   ],
+   "loopPct": 6.16,
+   "movedBody": false
   }
  ],
  "bestVal": 2.8688,
@@ -12649,5 +12649,5 @@
  ],
  "wantWider": false,
  "nextD": 768,
- "bad": 0
+ "bad": 1
 }
