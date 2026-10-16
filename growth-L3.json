@@ -1,69 +1,6 @@
 {
  "runs": [
   {
-   "at": "2026-10-04T19:06:23Z",
-   "val": 2.7214,
-   "prev": 2.7226,
-   "valTag": "fixed-holdout-v1",
-   "stoppedAt": 558,
-   "stuck": 0,
-   "evalTag": "fixed-ix-v1",
-   "secPerStep": 6.7217,
-   "steps": 966,
-   "bpc": 3.221,
-   "charsPerTok": 1.2189,
-   "score": 2.1643,
-   "scoreW": 2.0,
-   "scoreMode": "talk",
-   "finishMix": 0.2,
-   "lineage": "L3",
-   "layers": 13,
-   "params": 25335168,
-   "chars": 1045308899,
-   "tokens": 857567631,
-   "grew": 0,
-   "rolledBack": false,
-   "ownVal": null,
-   "ownScore": null,
-   "d": 384,
-   "loops": 1,
-   "spread": 2.5716,
-   "bytes": 304134793,
-   "heads": 6,
-   "ctx": 512,
-   "vocab": 6000,
-   "kind": "bpe",
-   "arch": "tpp-loop",
-   "wantWider": false,
-   "layerCap": 16,
-   "mixChanged": false,
-   "bySrc": {
-    "laws": 3.6989,
-    "wiki": 2.8904,
-    "aozora": 3.2197,
-    "hanrei": 3.4329,
-    "kokkai": 2.5241,
-    "web": 2.8041,
-    "talk": 2.1643
-   },
-   "wrote": [
-    {
-     "start": "わたしは",
-     "text": "わたしはこんな私に近付くことが出来なかった。 そう考えていたら、窓はけっすがいかにも見えると言って、あっせんもたれても、まるでほんとうに刈り込んで来た。しかし、何ともやらない。 「君は、怖いです」と御答弁した。 「君は、こんな事でもないでしょう。どうして君の"
-    },
-    {
-     "start": "第一条",
-     "text": "第一条ノノドノドノドニラ 天皇の元号（天皇の意） 天皇の元号（天皇の元号） 天皇の元号（天皇の元号） 天皇の元号（天皇が元号） 天皇の元号（天皇の元号） 天皇の元号（天皇の元号） 天皇の元号（天皇の元"
-    },
-    {
-     "start": "この法律において",
-     "text": "この法律において「国際人権医療機関」とは、国際人権委員会において国際人権規約（�安全保障博士論議）を採択し、株式会社の国連人権規約（以下「国連人権規約」という。）の締結により、国際人権規約により、国際人権規約（理事会によって構成される国際人権規約をいう。以下同じ。）に署名した国際人権規約（以下「国際人権規約」という。）によって、国際人権規約（年数分の締結の日前における国際"
-    }
-   ],
-   "loopPct": 8.35,
-   "movedBody": false
-  },
-  {
    "at": "2026-10-04T20:23:12Z",
    "val": 2.7232,
    "prev": 2.7214,
@@ -12599,6 +12536,69 @@
    ],
    "loopPct": 25.27,
    "movedBody": false
+  },
+  {
+   "at": "2026-10-16T01:21:55Z",
+   "val": 2.6833,
+   "prev": 2.6854,
+   "valTag": "fixed-holdout-v1",
+   "stoppedAt": 519,
+   "stuck": 0,
+   "evalTag": "fixed-ix-v1",
+   "secPerStep": 7.2409,
+   "steps": 903,
+   "bpc": 3.1759,
+   "charsPerTok": 1.2189,
+   "score": 2.1454,
+   "scoreW": 2.0,
+   "scoreMode": "talk",
+   "finishMix": 0.2,
+   "lineage": "L3",
+   "layers": 14,
+   "params": 27105408,
+   "chars": 1045308899,
+   "tokens": 857567631,
+   "grew": 0,
+   "rolledBack": false,
+   "ownVal": null,
+   "ownScore": null,
+   "d": 384,
+   "loops": 1,
+   "spread": 2.8164,
+   "bytes": 325385901,
+   "heads": 6,
+   "ctx": 512,
+   "vocab": 6000,
+   "kind": "bpe",
+   "arch": "tpp-loop",
+   "wantWider": false,
+   "layerCap": 16,
+   "mixChanged": false,
+   "bySrc": {
+    "laws": 3.621,
+    "wiki": 2.8426,
+    "aozora": 3.1759,
+    "hanrei": 3.4128,
+    "kokkai": 2.4952,
+    "web": 2.7682,
+    "talk": 2.1454
+   },
+   "wrote": [
+    {
+     "start": "わたしは",
+     "text": "わたしは小さな生活で、それから一つ大きな人間を生み出したことだと思われる。 それを実際に「雨」ウイルスを生み出す。これは「雲」の恋の名のひとつである。 といわれる「雷」の名は、「雪」の名のひとつである。 （ ） 古代ギリシャ語の 「r」 （"
+    },
+    {
+     "start": "第一条",
+     "text": "第一条を受けているため、毎年3月中には土曜日の『コングニア』を『ひかりのけんさん』で放送した。 2004年 - イギリス大統領選挙 : パリ アシド の メアリー・マーシュ 大統領が41年ぶりに オーストラリア を抜群に分裂。 200"
+    },
+    {
+     "start": "この法律において",
+     "text": "この法律において「株式会社KEIKO」とあるのは「株式会社KEIKO」と、それぞれ「株式会社KEIKO」とあるのは「株式会社KEIKO」と、「株式会社KEIKO」とあるのは「株式会社KEIKO」と、「株式会社KEIKO」とあるのは「株式会社KEIKO」と、それぞれ「株式会社KEIKO」とあるのは「株式会社KEIKO」と、それぞれ「株式会社KEIKO」とあるのは「株式会社KEI"
+    }
+   ],
+   "loopPct": 1.42,
+   "movedBody": false
   }
  ],
  "bestVal": 2.6708,
@@ -12649,5 +12649,5 @@
  ],
  "wantWider": false,
  "nextD": 384,
- "bad": 2
+ "bad": 1
 }
