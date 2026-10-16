@@ -1,69 +1,6 @@
 {
  "runs": [
   {
-   "at": "2026-10-05T03:58:22Z",
-   "val": 3.0024,
-   "prev": 2.9977,
-   "valTag": "fixed-holdout-v1",
-   "stoppedAt": 0,
-   "stuck": 0,
-   "evalTag": "fixed-ix-v1",
-   "secPerStep": 12.2319,
-   "steps": 300,
-   "bpc": 3.5536,
-   "charsPerTok": 1.2189,
-   "score": 2.1973,
-   "scoreW": 2.0,
-   "scoreMode": "talk",
-   "finishMix": 0.5,
-   "lineage": "L1",
-   "layers": 16,
-   "params": 117914880,
-   "chars": 1045308899,
-   "tokens": 857567631,
-   "grew": 0,
-   "rolledBack": false,
-   "ownVal": null,
-   "ownScore": null,
-   "d": 768,
-   "loops": 1,
-   "spread": 3.4506,
-   "bytes": 1415115957,
-   "heads": 6,
-   "ctx": 512,
-   "vocab": 6000,
-   "kind": "bpe",
-   "arch": "tpp-loop",
-   "wantWider": false,
-   "layerCap": 16,
-   "mixChanged": false,
-   "bySrc": {
-    "laws": 4.3406,
-    "wiki": 3.1679,
-    "aozora": 3.5092,
-    "hanrei": 3.5904,
-    "kokkai": 2.7577,
-    "web": 3.0278,
-    "talk": 2.1973
-   },
-   "wrote": [
-    {
-     "start": "わたしは",
-     "text": "わたしは沈黙もしくは魂を浮かした。娘は魂の底で、1798年に松嶋茂雄と週刊文春と共に開いている。 「龍王」的な顔は、娘・山本雄集 龍王との共著で、MVPでは、「子供のときになかなからな」"
-    },
-    {
-     "start": "第一条",
-     "text": "第一条アルファベット・ブルー』ではペン社が追加されており、同社はクラブと同様にモンゴルの予算編成に盛り込まれており、2012年の『アンゴラ・メカニズム』ではデビューで同社の講演を果たすために村に残した、このときラブ・バンドが名を志向するシーン"
-    },
-    {
-     "start": "この法律において",
-     "text": "この法律において百員の〇・一二三となっている。その代わりには、一万四千三百十万人で、今年の十年間、二千七百三十五万人になる。それが、二千万のとき、かつての第二次大戦に入ると、日本に出るも、三千万人うすだけで、大戦が終われば、そこから最後まで出て、日本は七十年間でございます。"
-    }
-   ],
-   "loopPct": 2.15,
-   "movedBody": false
-  },
-  {
    "at": "2026-10-05T05:15:16Z",
    "val": 2.9934,
    "prev": 3.0024,
@@ -12599,6 +12536,69 @@
    ],
    "loopPct": 5.44,
    "movedBody": false
+  },
+  {
+   "at": "2026-10-16T11:36:25Z",
+   "val": 2.8728,
+   "prev": 2.8724,
+   "valTag": "fixed-holdout-v1",
+   "stoppedAt": 159,
+   "stuck": 0,
+   "evalTag": "fixed-ix-v1",
+   "secPerStep": 26.2337,
+   "steps": 300,
+   "bpc": 3.4002,
+   "charsPerTok": 1.2189,
+   "score": 2.1403,
+   "scoreW": 2.0,
+   "scoreMode": "talk",
+   "finishMix": 0.5,
+   "lineage": "L1",
+   "layers": 16,
+   "params": 117914880,
+   "chars": 1045308899,
+   "tokens": 857567631,
+   "grew": 0,
+   "rolledBack": false,
+   "ownVal": null,
+   "ownScore": null,
+   "d": 768,
+   "loops": 1,
+   "spread": 3.1462,
+   "bytes": 1415115957,
+   "heads": 6,
+   "ctx": 512,
+   "vocab": 6000,
+   "kind": "bpe",
+   "arch": "tpp-loop",
+   "wantWider": false,
+   "layerCap": 16,
+   "mixChanged": false,
+   "bySrc": {
+    "laws": 4.0841,
+    "wiki": 3.0273,
+    "aozora": 3.3806,
+    "hanrei": 3.4835,
+    "kokkai": 2.6466,
+    "web": 2.9084,
+    "talk": 2.1403
+   },
+   "wrote": [
+    {
+     "start": "わたしは",
+     "text": "わたしは4人で、それ以降は「2人で」。 1984年 2月19日 - 「第1回 ロンドン・ソフトバンクホークス」開催。 2月18日 - 第1回「第2回 アジア 危機」公演開催。 3月12日 - 第1回日本アジア大会 開催。 3月15"
+    },
+    {
+     "start": "第一条",
+     "text": "第一条都道府県知事は、同様とする。 第九章 行政法（以下「法」という。）第九条の三に規定する行政処分に関し、行政処分、行政DPRの日本行政japanashiba-coation of Borubarystation.jpg|千葉県行政サービス United Boy of Harble Bevin"
+    },
+    {
+     "start": "この法律において",
+     "text": "この法律において「和名等」という。）の登録を受けた後も、その名称又は種類ごとにそれぞれその間に介在する場合においてさせた場合には、その決意を確認することができる。 第三節 特定社会の専門家 （特定社会の力士） 第三十六条 特定社会、社会、社会、国民及び社会的共生の交流に関する国際社会資本整備を添付しなければならない。 特定社会資本の整備に関する基本的事項についての生産性の安定に関する規定 第三節 事業活動、事業活動の内容 （"
+    }
+   ],
+   "loopPct": 1.87,
+   "movedBody": false
   }
  ],
  "bestVal": 2.8688,
@@ -12649,5 +12649,5 @@
  ],
  "wantWider": false,
  "nextD": 768,
- "bad": 5
+ "bad": 6
 }
