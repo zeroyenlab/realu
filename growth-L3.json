@@ -1,69 +1,6 @@
 {
  "runs": [
   {
-   "at": "2026-10-06T01:35:56Z",
-   "val": 2.7129,
-   "prev": 2.714,
-   "valTag": "fixed-holdout-v1",
-   "stoppedAt": 529,
-   "stuck": 0,
-   "evalTag": "fixed-ix-v1",
-   "secPerStep": 7.1059,
-   "steps": 981,
-   "bpc": 3.2109,
-   "charsPerTok": 1.2189,
-   "score": 2.1573,
-   "scoreW": 2.0,
-   "scoreMode": "talk",
-   "finishMix": 0.2,
-   "lineage": "L3",
-   "layers": 13,
-   "params": 25335168,
-   "chars": 1045308899,
-   "tokens": 857567631,
-   "grew": 0,
-   "rolledBack": false,
-   "ownVal": null,
-   "ownScore": null,
-   "d": 384,
-   "loops": 1,
-   "spread": 2.6169,
-   "bytes": 304134793,
-   "heads": 6,
-   "ctx": 512,
-   "vocab": 6000,
-   "kind": "bpe",
-   "arch": "tpp-loop",
-   "wantWider": false,
-   "layerCap": 16,
-   "mixChanged": false,
-   "bySrc": {
-    "laws": 3.6869,
-    "wiki": 2.8807,
-    "aozora": 3.2081,
-    "hanrei": 3.4297,
-    "kokkai": 2.5189,
-    "web": 2.797,
-    "talk": 2.1573
-   },
-   "wrote": [
-    {
-     "start": "わたしは",
-     "text": "わたしは海水族のいわゆるサイバーの人命を奪う。 原因が明確であるが、他に ブッシュ 、 ブッシュ 、 スラブ 、 エーサーサーン 、 ブッシュ 、 サンドベル 、 ジョン・ウェスタン 、 スーパー・コソボー がある。 合体戦闘機"
-    },
-    {
-     "start": "第一条",
-     "text": "第一条 頼山太平記念碑 一石川西通西通西通西通西通西通西通西通西通西通西通西通西通西通西通西通西通西通西通西通西通西通西通�"
-    },
-    {
-     "start": "この法律において",
-     "text": "この法律においてにおいて購入するとともに、当該販売店等への販売を極めて容易にする面があること。 （取引先との取引) 署がスクラッチを持っていない場合、その取引所から購入又は使用により�らが同等の調査・判断、各種取引所からの購入若しくは使用により複数の取引所に官庁若しくは出願人がいる場合その他をする場合には、当該取引所に属しないこと。 その取引所からの購入又は使用により�らが同等の調査・判断又は検査機関又はこれらの"
-    }
-   ],
-   "loopPct": 35.57,
-   "movedBody": false
-  },
-  {
    "at": "2026-10-06T02:51:38Z",
    "val": 2.7123,
    "prev": 2.7129,
@@ -12599,9 +12536,72 @@
    ],
    "loopPct": 8.71,
    "movedBody": false
+  },
+  {
+   "at": "2026-10-17T06:44:09Z",
+   "val": 2.6683,
+   "prev": 2.6697,
+   "valTag": "fixed-holdout-v1",
+   "stoppedAt": 526,
+   "stuck": 0,
+   "evalTag": "fixed-ix-v1",
+   "secPerStep": 7.1564,
+   "steps": 1078,
+   "bpc": 3.1581,
+   "charsPerTok": 1.2189,
+   "score": 2.1347,
+   "scoreW": 2.0,
+   "scoreMode": "talk",
+   "finishMix": 0.2,
+   "lineage": "L3",
+   "layers": 14,
+   "params": 27105408,
+   "chars": 1045308899,
+   "tokens": 857567631,
+   "grew": 0,
+   "rolledBack": false,
+   "ownVal": null,
+   "ownScore": null,
+   "d": 384,
+   "loops": 1,
+   "spread": 2.4484,
+   "bytes": 325385901,
+   "heads": 6,
+   "ctx": 512,
+   "vocab": 6000,
+   "kind": "bpe",
+   "arch": "tpp-loop",
+   "wantWider": false,
+   "layerCap": 16,
+   "mixChanged": false,
+   "bySrc": {
+    "laws": 3.5963,
+    "wiki": 2.8244,
+    "aozora": 3.1594,
+    "hanrei": 3.4034,
+    "kokkai": 2.4804,
+    "web": 2.7552,
+    "talk": 2.1347
+   },
+   "wrote": [
+    {
+     "start": "わたしは",
+     "text": "わたしはかなり魚があまり見えなかったので、まだ外で見ていたんです。」 CH「そうなんですか。それが女性だったのですか？」 EJ「女性だったんですが、女性が少し。」 CH「その人の女性では、馴染みなく、家族に気をつけていたことがあります。」 EJ"
+    },
+    {
+     "start": "第一条",
+     "text": "第一条閣議に諮らせていただいております。」 AA「国務大臣 これまで、加藤会長を招致し、謝罪をしてきた質疑者は、国民の皆様に大いに御礼を申し上げたわけであります。 その上で、私ども本日の議題として、国会で御出席をいただいた上で、国、地方の謝罪、"
+    },
+    {
+     "start": "この法律において",
+     "text": "この法律においてには自動式ホームドア設置ビル、簡易式ホームドア設置ビル、急カーブホームドア、エレベーター設置ビル等がある。 2020年に撤退した非営利団体である 有楽町ストア の エレベーター も、無料で利用できる「リゾート・スペース」が整備されている [ 4 ] 。 2020年3月"
+    }
+   ],
+   "loopPct": 3.64,
+   "movedBody": false
   }
  ],
- "bestVal": 2.6697,
+ "bestVal": 2.6683,
  "layers": 14,
  "params": 27105408,
  "born": "2026-09-12T18:05:42Z",
@@ -12649,5 +12649,5 @@
  ],
  "wantWider": false,
  "nextD": 384,
- "bad": 2
+ "bad": 4
 }
