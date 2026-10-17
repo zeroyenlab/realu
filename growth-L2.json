@@ -1,69 +1,6 @@
 {
  "runs": [
   {
-   "at": "2026-10-06T06:43:45Z",
-   "val": 2.8039,
-   "prev": 2.8261,
-   "valTag": "fixed-holdout-v1",
-   "stoppedAt": 338,
-   "stuck": 0,
-   "evalTag": "fixed-ix-v1",
-   "secPerStep": 11.4461,
-   "steps": 928,
-   "bpc": 3.3187,
-   "charsPerTok": 1.2189,
-   "score": 2.1148,
-   "scoreW": 2.0,
-   "scoreMode": "talk",
-   "finishMix": 0.85,
-   "lineage": "L2",
-   "layers": 14,
-   "params": 47379968,
-   "chars": 1045308899,
-   "tokens": 857567631,
-   "grew": 0,
-   "rolledBack": false,
-   "ownVal": null,
-   "ownScore": null,
-   "d": 512,
-   "loops": 1,
-   "spread": 2.872,
-   "bytes": 568680621,
-   "heads": 8,
-   "ctx": 512,
-   "vocab": 6000,
-   "kind": "bpe",
-   "arch": "tpp-loop",
-   "wantWider": false,
-   "layerCap": 16,
-   "mixChanged": false,
-   "bySrc": {
-    "laws": 3.8209,
-    "wiki": 2.9833,
-    "aozora": 3.2768,
-    "hanrei": 3.5096,
-    "kokkai": 2.5978,
-    "web": 2.8928,
-    "talk": 2.1148
-   },
-   "wrote": [
-    {
-     "start": "わたしは",
-     "text": "わたしは、ドアを開いてゆっくり見えるところを見たが、「お客さんは、ドアを開いてゆっくり見えるんですよ。ウチがいると、ホームセンターに行って。」 AA「そして、こんにちは、あれは、今25分ですか？」 AB「いえいえ、まだそれです。」 AA「休みますか�"
-    },
-    {
-     "start": "第一条",
-     "text": "第一条欄、第二号から第八号まで、協定提出子会社（協定子会社湘南日本株式会社、協定設立書面、協定提出子会社（協定制程表）、特定の個人の協定章、協定締結書面又は協定締結書面の表、五月三十日、協定提出子会社（協定分離して協定締結書面及び協定締結書面又は協定締結書面の表）、三月三十日、協定提出子会社（協定締結書面又は協定締結書面の割合）、特定の個人の協定締結書面又は協定の締結書面 協定会社加盟して"
-    },
-    {
-     "start": "この法律において",
-     "text": "この法律において「本件事故を機に」という。）及びＡ型（Ｂ型） ・Ｂ型（Ｂ型） ・Ｂ型平成元年１１月１７日目のＣ型のオプション車両において，Ｃ型直前操作 等を行うプロジェクトＣ型のオプション車両 としては，本件事故の先頭に立つユーザーから，Ｃ型） ・Ｂ型及びＢ型のⅠのよう"
-    }
-   ],
-   "loopPct": 9.13,
-   "movedBody": false
-  },
-  {
    "at": "2026-10-06T08:00:35Z",
    "val": 2.799,
    "prev": 2.8039,
@@ -12599,6 +12536,69 @@
    ],
    "loopPct": 9.13,
    "movedBody": false
+  },
+  {
+   "at": "2026-10-17T11:51:11Z",
+   "val": 2.6193,
+   "prev": 2.619,
+   "valTag": "fixed-holdout-v1",
+   "stoppedAt": 341,
+   "stuck": 0,
+   "evalTag": "fixed-ix-v1",
+   "secPerStep": 11.3158,
+   "steps": 636,
+   "bpc": 3.1001,
+   "charsPerTok": 1.2189,
+   "score": 2.0313,
+   "scoreW": 2.0,
+   "scoreMode": "talk",
+   "finishMix": 0.85,
+   "lineage": "L2",
+   "layers": 14,
+   "params": 47379968,
+   "chars": 1045308899,
+   "tokens": 857567631,
+   "grew": 0,
+   "rolledBack": false,
+   "ownVal": null,
+   "ownScore": null,
+   "d": 512,
+   "loops": 1,
+   "spread": 2.6245,
+   "bytes": 568680621,
+   "heads": 8,
+   "ctx": 512,
+   "vocab": 6000,
+   "kind": "bpe",
+   "arch": "tpp-loop",
+   "wantWider": false,
+   "layerCap": 16,
+   "mixChanged": false,
+   "bySrc": {
+    "laws": 3.4838,
+    "wiki": 2.776,
+    "aozora": 3.0977,
+    "hanrei": 3.3587,
+    "kokkai": 2.4496,
+    "web": 2.7059,
+    "talk": 2.0313
+   },
+   "wrote": [
+    {
+     "start": "わたしは",
+     "text": "わたしはまた、光のくせに、光のくせに、この家を出て、こっちの桜の釣りに行った。ここで、まだ一つだけは、庭先に行ったらしい。あの、面白い体験のようなものが、どこから来たか、まだ／＼と見えながら、また、それだけの、ふたりで、あいつは、なに"
+    },
+    {
+     "start": "第一条",
+     "text": "第一条には、公共施設への対応、�たい医療、医療、介護、福祉、医療、教育、電気、ガス、三月への対応、国と国が連携しながら、国民全体に説明責任を果たしていただきたい。」 AA「政府としては、これまでも、国民生活にとって、まさに国民全体の理解が得られるような成長がないように、国民の理解を深めながら、"
+    },
+    {
+     "start": "この法律において",
+     "text": "この法律において「平成二十七年沖縄負傷市」に、平成二十七年沖縄従事者k-b-d-d-d-d-d-d-d-d-d-d-d-d-d-d-d-d-d-d-d-d-d-d-d-d-d-d-d-d-d-d-d-d-d-d-d-d-d-d-d-d-d-d-d-d-d-d-"
+    }
+   ],
+   "loopPct": 32.55,
+   "movedBody": false
   }
  ],
  "bestVal": 2.6185,
@@ -12649,5 +12649,5 @@
  ],
  "wantWider": false,
  "nextD": 512,
- "bad": 4
+ "bad": 2
 }
