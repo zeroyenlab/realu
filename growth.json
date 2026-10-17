@@ -1,69 +1,6 @@
 {
  "runs": [
   {
-   "at": "2026-10-06T13:06:00Z",
-   "val": 2.967,
-   "prev": 2.9674,
-   "valTag": "fixed-holdout-v1",
-   "stoppedAt": 179,
-   "stuck": 0,
-   "evalTag": "fixed-ix-v1",
-   "secPerStep": 22.9613,
-   "steps": 300,
-   "bpc": 3.5117,
-   "charsPerTok": 1.2189,
-   "score": 2.1747,
-   "scoreW": 2.0,
-   "scoreMode": "talk",
-   "finishMix": 0.5,
-   "lineage": "L1",
-   "layers": 16,
-   "params": 117914880,
-   "chars": 1045308899,
-   "tokens": 857567631,
-   "grew": 0,
-   "rolledBack": false,
-   "ownVal": null,
-   "ownScore": null,
-   "d": 768,
-   "loops": 1,
-   "spread": 3.0023,
-   "bytes": 1415115957,
-   "heads": 6,
-   "ctx": 512,
-   "vocab": 6000,
-   "kind": "bpe",
-   "arch": "tpp-loop",
-   "wantWider": false,
-   "layerCap": 16,
-   "mixChanged": false,
-   "bySrc": {
-    "laws": 4.2755,
-    "wiki": 3.131,
-    "aozora": 3.4704,
-    "hanrei": 3.5584,
-    "kokkai": 2.7298,
-    "web": 2.9923,
-    "talk": 2.1747
-   },
-   "wrote": [
-    {
-     "start": "わたしは",
-     "text": "わたしは、、 日本経済 の�に強く敵対する成長傾向にある。 日本経済に見られる、薄い力士がいる。 また、 ゴールドプラン には日本の世界の圏に パリ 、 レナ 、 ストラクション 、 アーニー 、 オーディオ 、 アーニャ などが開発されており、 日本経済 は 日本"
-    },
-    {
-     "start": "第一条",
-     "text": "第一条クローズXXXXXXXX「一応、オーディションでしか、一応出ました。」 CX「実はストーリーム、DXXXXXXXXXXX。」 CX「実は探偵はずっと一緒に観ました。」 CX「ですよね、でもコロナで観たことありますか？」 CX「"
-    },
-    {
-     "start": "この法律において",
-     "text": "この法律において「旅客鉄道」については「 鉄道 」をご覧ください。 鉄道は 鉄道 の 貨物鉄道 であるが、鉄道 は現在 鉄道 が 鉄道 、 鉄道 、 鉄道 （ JR ）を建設する。 鉄道 は 京橋 や 京橋 へ出入りし、 鉄道 事業の研究機関として 東京エアポート ガリントン が行わ"
-    }
-   ],
-   "loopPct": 12.03,
-   "movedBody": false
-  },
-  {
    "at": "2026-10-06T14:23:05Z",
    "val": 2.963,
    "prev": 2.967,
@@ -12599,6 +12536,69 @@
    ],
    "loopPct": 3.99,
    "movedBody": false
+  },
+  {
+   "at": "2026-10-17T18:06:48Z",
+   "val": 2.8601,
+   "prev": 2.8592,
+   "valTag": "fixed-holdout-v1",
+   "stoppedAt": 202,
+   "stuck": 0,
+   "evalTag": "fixed-ix-v1",
+   "secPerStep": 20.0057,
+   "steps": 324,
+   "bpc": 3.3851,
+   "charsPerTok": 1.2189,
+   "score": 2.1463,
+   "scoreW": 2.0,
+   "scoreMode": "talk",
+   "finishMix": 0.5,
+   "lineage": "L1",
+   "layers": 16,
+   "params": 117914880,
+   "chars": 1045308899,
+   "tokens": 857567631,
+   "grew": 0,
+   "rolledBack": false,
+   "ownVal": null,
+   "ownScore": null,
+   "d": 768,
+   "loops": 1,
+   "spread": 2.7663,
+   "bytes": 1415115957,
+   "heads": 6,
+   "ctx": 512,
+   "vocab": 6000,
+   "kind": "bpe",
+   "arch": "tpp-loop",
+   "wantWider": false,
+   "layerCap": 16,
+   "mixChanged": false,
+   "bySrc": {
+    "laws": 4.0577,
+    "wiki": 3.0181,
+    "aozora": 3.3703,
+    "hanrei": 3.4723,
+    "kokkai": 2.6355,
+    "web": 2.8974,
+    "talk": 2.1463
+   },
+   "wrote": [
+    {
+     "start": "わたしは",
+     "text": "わたしは写真撮影だった。 ストーリーは、マイクとトワイライトが、竹原と、ひとたびの都市の多角化、ヘイモイライトの持ち物に、数人の名前が記憶されているジェットなどもある。 のちに ストーリーのような日本人 のデザインなどが書き込まれている。 1"
+    },
+    {
+     "start": "第一条",
+     "text": "第一条「事件」のものと正義であるとする。 （ 2019年10月 ） 三つの事件 （ 2000年 （ 平成 19年 ） 7月 の 第5回参議院議員通常選挙 では、 2000年 （ 平成 10年）の 第5回参議院議員通常選挙 で 2013年 （ 平成 25年）の 第29回"
+    },
+    {
+     "start": "この法律において",
+     "text": "この法律において「締結清算人」という。）について、国際��境センターの講師及び指導員�を監督する教員及び業務取締役又は検査官の選任又は監査に関して、官房及び教員を組織する。 （修業年限） 第七十六条 指定医第七条第一項（指定医）の居宅及び五年間は、償産業及び医学の運営について、教育に関する事務をつかさどる。 研究の状況に関する検討の結果、予算の解説及び編集、助成その他その他の教育の協同組合による"
+    }
+   ],
+   "loopPct": 4.0,
+   "movedBody": false
   }
  ],
  "bestVal": 2.8557,
@@ -12649,5 +12649,5 @@
  ],
  "wantWider": false,
  "nextD": 768,
- "bad": 0
+ "bad": 2
 }
