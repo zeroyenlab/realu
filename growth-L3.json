@@ -1,69 +1,6 @@
 {
  "runs": [
   {
-   "at": "2026-10-06T14:16:59Z",
-   "val": 2.7112,
-   "prev": 2.7114,
-   "valTag": "fixed-holdout-v1",
-   "stoppedAt": 651,
-   "stuck": 0,
-   "evalTag": "fixed-ix-v1",
-   "secPerStep": 5.7384,
-   "steps": 961,
-   "bpc": 3.2089,
-   "charsPerTok": 1.2189,
-   "score": 2.1519,
-   "scoreW": 2.0,
-   "scoreMode": "talk",
-   "finishMix": 0.2,
-   "lineage": "L3",
-   "layers": 13,
-   "params": 25335168,
-   "chars": 1045308899,
-   "tokens": 857567631,
-   "grew": 0,
-   "rolledBack": false,
-   "ownVal": null,
-   "ownScore": null,
-   "d": 384,
-   "loops": 1,
-   "spread": 2.6078,
-   "bytes": 304134793,
-   "heads": 6,
-   "ctx": 512,
-   "vocab": 6000,
-   "kind": "bpe",
-   "arch": "tpp-loop",
-   "wantWider": false,
-   "layerCap": 16,
-   "mixChanged": false,
-   "bySrc": {
-    "laws": 3.6796,
-    "wiki": 2.8773,
-    "aozora": 3.206,
-    "hanrei": 3.4275,
-    "kokkai": 2.517,
-    "web": 2.7932,
-    "talk": 2.1519
-   },
-   "wrote": [
-    {
-     "start": "わたしは",
-     "text": "わたしはフォートリクエストです！」 DL「今は前もっていましたが、フォートリクエストですか？」 AV「そうなんです。とりあえずフォートリクエストしてみました。」 DL「あ！いいですね。最近はもう大変でしたね。」 AV「そうなんですよね。最"
-    },
-    {
-     "start": "第一条",
-     "text": "第一条（借金））） 令第六条第二項（借金） 令第六条第二項（借金） 令第六条第二項（借金）、 令第六条第二項（借金） 令第六条第二項（借金） 令第六条第二項（借金） 令第六条第二項（借金） 令第六条第二項（借金） 令第六条第二項（借金） 令第六条第二項（借金） 令第六条第二項（借金） 令第七条第二項（借金） 令第六条第二項（借金）"
-    },
-    {
-     "start": "この法律において",
-     "text": "この法律において「ロ」を、の規定により「ロ」又は「ロ」の2種類から「ロ」を、それぞれ「ロ」と呼ぶこともある。 <記事 ナチス・ドイツ> ナチス・ドイツ（ユダヤ人。1826年 - 1850年）は、ドイツ帝国時代のフランスの農民。 ドイツの天文学者、東京大学"
-    }
-   ],
-   "loopPct": 30.56,
-   "movedBody": false
-  },
-  {
    "at": "2026-10-06T15:32:06Z",
    "val": 2.7103,
    "prev": 2.7112,
@@ -12599,9 +12536,72 @@
    ],
    "loopPct": 5.95,
    "movedBody": false
+  },
+  {
+   "at": "2026-10-17T19:18:36Z",
+   "val": 2.6643,
+   "prev": 2.6648,
+   "valTag": "fixed-holdout-v1",
+   "stoppedAt": 500,
+   "stuck": 0,
+   "evalTag": "fixed-ix-v1",
+   "secPerStep": 7.5404,
+   "steps": 1069,
+   "bpc": 3.1534,
+   "charsPerTok": 1.2189,
+   "score": 2.1306,
+   "scoreW": 2.0,
+   "scoreMode": "talk",
+   "finishMix": 0.2,
+   "lineage": "L3",
+   "layers": 14,
+   "params": 27105408,
+   "chars": 1045308899,
+   "tokens": 857567631,
+   "grew": 0,
+   "rolledBack": false,
+   "ownVal": null,
+   "ownScore": null,
+   "d": 384,
+   "loops": 1,
+   "spread": 2.5973,
+   "bytes": 325385901,
+   "heads": 6,
+   "ctx": 512,
+   "vocab": 6000,
+   "kind": "bpe",
+   "arch": "tpp-loop",
+   "wantWider": false,
+   "layerCap": 16,
+   "mixChanged": false,
+   "bySrc": {
+    "laws": 3.5855,
+    "wiki": 2.8197,
+    "aozora": 3.154,
+    "hanrei": 3.3985,
+    "kokkai": 2.4779,
+    "web": 2.7508,
+    "talk": 2.1306
+   },
+   "wrote": [
+    {
+     "start": "わたしは",
+     "text": "わたしは病気になると思います。」 GC「それはすごいですね！残念です笑」 EN「こちらこそありがとうございました！」 GC「はい、お話しありがとうございました！」 GC「こんにちは�"
+    },
+    {
+     "start": "第一条",
+     "text": "第一条（査部）及び章令（明治四二月閣令息、昭和六十年法律第九スル捕獲場等広令いずれも電報、電報及び電報の両照射器の電報、電報及び電報の両照射器の電報及び電報の両照射器の電報とは、電報の電報又は電報の電報の電報をいう。 「電報、電報、電報及び電報の電報及び電報の電報をいう"
+    },
+    {
+     "start": "この法律において",
+     "text": "この法律においてでは、設備が設置されている接続対象外である 。しかし、但書の「中小企業の買収」と同様に、一般向けの設備では、鉄塔や鉄塔が建てられた 。 日本においては、2006年（平成18年）に鉄塔が完成した1727年（経典）に「鉄塔」という名称で安置されるようになった 。民間では鉄塔を設けないため、"
+    }
+   ],
+   "loopPct": 17.95,
+   "movedBody": false
   }
  ],
- "bestVal": 2.6646,
+ "bestVal": 2.6643,
  "layers": 14,
  "params": 27105408,
  "born": "2026-09-12T18:05:42Z",
@@ -12649,5 +12649,5 @@
  ],
  "wantWider": false,
  "nextD": 384,
- "bad": 2
+ "bad": 0
 }
