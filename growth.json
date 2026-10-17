@@ -1,69 +1,6 @@
 {
  "runs": [
   {
-   "at": "2026-10-06T06:48:57Z",
-   "val": 2.9678,
-   "prev": 2.9677,
-   "valTag": "fixed-holdout-v1",
-   "stoppedAt": 158,
-   "stuck": 0,
-   "evalTag": "fixed-ix-v1",
-   "secPerStep": 26.36,
-   "steps": 300,
-   "bpc": 3.5126,
-   "charsPerTok": 1.2189,
-   "score": 2.1788,
-   "scoreW": 2.0,
-   "scoreMode": "talk",
-   "finishMix": 0.5,
-   "lineage": "L1",
-   "layers": 16,
-   "params": 117914880,
-   "chars": 1045308899,
-   "tokens": 857567631,
-   "grew": 0,
-   "rolledBack": false,
-   "ownVal": null,
-   "ownScore": null,
-   "d": 768,
-   "loops": 1,
-   "spread": 3.0648,
-   "bytes": 1415115957,
-   "heads": 6,
-   "ctx": 512,
-   "vocab": 6000,
-   "kind": "bpe",
-   "arch": "tpp-loop",
-   "wantWider": false,
-   "layerCap": 16,
-   "mixChanged": false,
-   "bySrc": {
-    "laws": 4.2857,
-    "wiki": 3.1329,
-    "aozora": 3.4778,
-    "hanrei": 3.5574,
-    "kokkai": 2.7295,
-    "web": 2.9956,
-    "talk": 2.1788
-   },
-   "wrote": [
-    {
-     "start": "わたしは",
-     "text": "わたしは、それなりに何も、もっと大阪ではなくて、何だか新しいペースではないと思うんですね。ですから、そういったところは、もう少し高くなることが多いということをやっているんです。 そういう中で、大阪でも、同じペースでも、大阪では、計画を立てていっても、この思いのおっし"
-    },
-    {
-     "start": "第一条",
-     "text": "第一条その圏Ｈが２万８１０２円であるという考慮である。なお、１万５０００円は，１万７０００円となっている（２）のとおりである。 (3) 原告Ａが１回の数字があり，原告Ａが平成２年度以降，原告Ａが２人愛媛県知事に ついて１回の年間ードルを取ると，１０年間，本"
-    },
-    {
-     "start": "この法律において",
-     "text": "この法律において「和」を表記する。 1892年 - 1899年 （ 1891年 ） - 絶滅危惧種で、 1802年 - 1896年 （明治18年）・第4代 藤原文雄 が 1890年 （明治17年）に制定。 1898年 - 1891年"
-    }
-   ],
-   "loopPct": 3.7,
-   "movedBody": false
-  },
-  {
    "at": "2026-10-06T07:50:58Z",
    "val": 2.973,
    "prev": 2.9678,
@@ -12599,6 +12536,69 @@
    ],
    "loopPct": 4.76,
    "movedBody": false
+  },
+  {
+   "at": "2026-10-17T11:52:00Z",
+   "val": 2.8571,
+   "prev": 2.8571,
+   "valTag": "fixed-holdout-v1",
+   "stoppedAt": 293,
+   "stuck": 1,
+   "evalTag": "fixed-ix-v1",
+   "secPerStep": 13.2874,
+   "steps": 300,
+   "bpc": 3.3816,
+   "charsPerTok": 1.2189,
+   "score": 2.1365,
+   "scoreW": 2.0,
+   "scoreMode": "talk",
+   "finishMix": 0.5,
+   "lineage": "L1",
+   "layers": 16,
+   "params": 117914880,
+   "chars": 1045308899,
+   "tokens": 857567631,
+   "grew": 0,
+   "rolledBack": true,
+   "ownVal": 2.8781,
+   "ownScore": 2.1602,
+   "d": 768,
+   "loops": 1,
+   "spread": 2.7989,
+   "bytes": 1415115957,
+   "heads": 6,
+   "ctx": 512,
+   "vocab": 6000,
+   "kind": "bpe",
+   "arch": "tpp-loop",
+   "wantWider": false,
+   "layerCap": 16,
+   "mixChanged": false,
+   "bySrc": {
+    "laws": 4.0831,
+    "wiki": 3.0421,
+    "aozora": 3.3866,
+    "hanrei": 3.4935,
+    "kokkai": 2.6566,
+    "web": 2.9171,
+    "talk": 2.1602
+   },
+   "wrote": [
+    {
+     "start": "わたしは",
+     "text": "わたしはいいところですよね！」 CZ「どっちがお好きですか？」 CJ「私はジムに通いますが、お好きなんです。」 CZ「ジム通いですか？」 CJ「はい、通勤ですよ。うちはコーヒー飲みます。」 CZ「長いですね。１回目は最長です"
+    },
+    {
+     "start": "第一条",
+     "text": "第一条リポポポポポポポポポポポポポポポポートの露出を目指している。 ポールポジションは1970年代に遡るようになり、20世紀初頭にはポールポジションを作り出すことはなかった 。 また、パルポートフォリオのインタビューでは、1973年に、ポールポジションはポールポジション"
+    },
+    {
+     "start": "この法律において",
+     "text": "この法律において「工事」を装備している [ 17 ] 。 しかし、 1975年 （昭和50年）10月22日に瀬戸内海で発生した瀬戸内海のオレンジバスも、前述の 瀬戸内海 での「瀬戸内海のバス」がある程度、往路も多用され、後述する [ 7 ] 。"
+    }
+   ],
+   "loopPct": 7.64,
+   "movedBody": false
   }
  ],
  "bestVal": 2.8557,
@@ -12649,5 +12649,5 @@
  ],
  "wantWider": false,
  "nextD": 768,
- "bad": 0
+ "bad": 2
 }
