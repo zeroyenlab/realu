@@ -1,69 +1,6 @@
 {
  "runs": [
   {
-   "at": "2026-10-06T04:09:30Z",
-   "val": 2.7135,
-   "prev": 2.7123,
-   "valTag": "fixed-holdout-v1",
-   "stoppedAt": 665,
-   "stuck": 0,
-   "evalTag": "fixed-ix-v1",
-   "secPerStep": 5.6051,
-   "steps": 937,
-   "bpc": 3.2117,
-   "charsPerTok": 1.2189,
-   "score": 2.1567,
-   "scoreW": 2.0,
-   "scoreMode": "talk",
-   "finishMix": 0.2,
-   "lineage": "L3",
-   "layers": 13,
-   "params": 25335168,
-   "chars": 1045308899,
-   "tokens": 857567631,
-   "grew": 0,
-   "rolledBack": false,
-   "ownVal": null,
-   "ownScore": null,
-   "d": 384,
-   "loops": 1,
-   "spread": 2.7554,
-   "bytes": 304134793,
-   "heads": 6,
-   "ctx": 512,
-   "vocab": 6000,
-   "kind": "bpe",
-   "arch": "tpp-loop",
-   "wantWider": false,
-   "layerCap": 16,
-   "mixChanged": false,
-   "bySrc": {
-    "laws": 3.6857,
-    "wiki": 2.8803,
-    "aozora": 3.2079,
-    "hanrei": 3.4303,
-    "kokkai": 2.5187,
-    "web": 2.7952,
-    "talk": 2.1567
-   },
-   "wrote": [
-    {
-     "start": "わたしは",
-     "text": "わたしはそうも知らずに気がつくと、みんなはそうまで理解しがたいと云う事に答える。そして、それは、一つだけの事ではありません。どう受け止められるのですか、通気です。理屈ではありませんから、まあこの胸からは斜めに奔走しましょう、そう答える。人類は人類に入って"
-    },
-    {
-     "start": "第一条",
-     "text": "第一条を次のように定める。 （日本語による教育・教育の別） 日本語による教育・教育においては、日本語による教育・教育・教育・教育・教育・教育・教育・教育・教育・教育・教育・教育・文化・教育・教育・教育・教育・教育・教育・教育・教育の諸系統に係る教育・教育・教育・教育・教育・教育・教育・教育・教育・教育・教育・教育・教育・教育・教育・教育・教育・教育・教育・教育・"
-    },
-    {
-     "start": "この法律において",
-     "text": "この法律において「現行銀行」とは、会社法（業�債券、貨幣発行権、信託管理権、formanicational、リストラル管理権、リストラル管理権、bourdel、:en:National、オンライン・コミュニケーションズ、National Platforman"
-    }
-   ],
-   "loopPct": 30.6,
-   "movedBody": false
-  },
-  {
    "at": "2026-10-06T05:25:49Z",
    "val": 2.7133,
    "prev": 2.7135,
@@ -12599,6 +12536,69 @@
    ],
    "loopPct": 13.65,
    "movedBody": false
+  },
+  {
+   "at": "2026-10-17T09:17:01Z",
+   "val": 2.6684,
+   "prev": 2.6687,
+   "valTag": "fixed-holdout-v1",
+   "stoppedAt": 522,
+   "stuck": 0,
+   "evalTag": "fixed-ix-v1",
+   "secPerStep": 7.2105,
+   "steps": 903,
+   "bpc": 3.1582,
+   "charsPerTok": 1.2189,
+   "score": 2.1343,
+   "scoreW": 2.0,
+   "scoreMode": "talk",
+   "finishMix": 0.2,
+   "lineage": "L3",
+   "layers": 14,
+   "params": 27105408,
+   "chars": 1045308899,
+   "tokens": 857567631,
+   "grew": 0,
+   "rolledBack": false,
+   "ownVal": null,
+   "ownScore": null,
+   "d": 384,
+   "loops": 1,
+   "spread": 2.4613,
+   "bytes": 325385901,
+   "heads": 6,
+   "ctx": 512,
+   "vocab": 6000,
+   "kind": "bpe",
+   "arch": "tpp-loop",
+   "wantWider": false,
+   "layerCap": 16,
+   "mixChanged": false,
+   "bySrc": {
+    "laws": 3.5967,
+    "wiki": 2.8233,
+    "aozora": 3.1584,
+    "hanrei": 3.3977,
+    "kokkai": 2.4821,
+    "web": 2.7554,
+    "talk": 2.1343
+   },
+   "wrote": [
+    {
+     "start": "わたしは",
+     "text": "わたしは、私のところに喜んでおります。」 AB「それで、ここに、皆さん方のこの面をよく承って、ぜひ皆さん方とお話をしていただきたいのは、これは……（発言する者多し）私のところへ、国民の皆さん方のお話を、ここで聞いてもらいたいということを、総理だってやっているわけじ"
+    },
+    {
+     "start": "第一条",
+     "text": "第一条第二号ハ（２）及びロのうち、昭和三十七年六月二十二日に業務を行ったもの又は森林保護法等改正後の労働者農業者年金法（昭和二十九年法律第百六号）第三号ハの規定の中に............... .. ] ↑ 弁護士協議会番号 .... 2025年9月26日閲覧。 ↑ 丹羽光彦（ 1988 ,"
+    },
+    {
+     "start": "この法律において",
+     "text": "この法律において「サンクチュアンの描画」を所蔵している。 京都郡生まれ。田沼と澤家の小さな場所では、漆の肉や醤油を醤油と混ぜて食べる人もいる。 季節と季節の関係から、日本ではふれあいのように食べるものが多く見られる。 桃や醤油、"
+    }
+   ],
+   "loopPct": 9.03,
+   "movedBody": false
   }
  ],
  "bestVal": 2.6683,
@@ -12649,5 +12649,5 @@
  ],
  "wantWider": false,
  "nextD": 384,
- "bad": 2
+ "bad": 4
 }
