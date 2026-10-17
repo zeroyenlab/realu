@@ -1,69 +1,6 @@
 {
  "runs": [
   {
-   "at": "2026-10-06T11:49:56Z",
-   "val": 2.9674,
-   "prev": 2.9657,
-   "valTag": "fixed-holdout-v1",
-   "stoppedAt": 158,
-   "stuck": 0,
-   "evalTag": "fixed-ix-v1",
-   "secPerStep": 26.2993,
-   "steps": 300,
-   "bpc": 3.5122,
-   "charsPerTok": 1.2189,
-   "score": 2.173,
-   "scoreW": 2.0,
-   "scoreMode": "talk",
-   "finishMix": 0.5,
-   "lineage": "L1",
-   "layers": 16,
-   "params": 117914880,
-   "chars": 1045308899,
-   "tokens": 857567631,
-   "grew": 0,
-   "rolledBack": false,
-   "ownVal": null,
-   "ownScore": null,
-   "d": 768,
-   "loops": 1,
-   "spread": 2.9317,
-   "bytes": 1415115957,
-   "heads": 6,
-   "ctx": 512,
-   "vocab": 6000,
-   "kind": "bpe",
-   "arch": "tpp-loop",
-   "wantWider": false,
-   "layerCap": 16,
-   "mixChanged": false,
-   "bySrc": {
-    "laws": 4.2795,
-    "wiki": 3.1315,
-    "aozora": 3.4738,
-    "hanrei": 3.5577,
-    "kokkai": 2.7293,
-    "web": 2.9919,
-    "talk": 2.173
-   },
-   "wrote": [
-    {
-     "start": "わたしは",
-     "text": "わたしは彼を見ていいような気がします。」 AC「あー、そうめん！ですけどね。」 AD「おー！そうなんですね！」 AC「それは、あれ、デメリットあるので。あなたはどうですか？」 AD「私もデメリットあります。」 AC「それは大事ですね！」"
-    },
-    {
-     "start": "第一条",
-     "text": "第一条職業安定所（以下「第一項及び第七条の二等」という。）の内容 （源泉取引） 昭和二十五年六�十四一級五十三掌保険制度及び郵政民営化に伴う農地の分割内取得権に係る土地の実施状況及び所有権の保護措置の強化に関する法律（相応の池田何召集）」 AA「議長 岡田順雄君外三名発議（委員長報告） 記号 貨物輪場の重量の可否に関する件（・"
-    },
-    {
-     "start": "この法律において",
-     "text": "この法律においておくになりますね。」 HH「ほんとに。」 AT「私はブラックですが、ブラックとかですかね、きついです。」 HH「ブラックですか。」 AT「ちょっと普段使ってますもんね。」 HH「そうなんですよね。コロッケは気が変わってしまいます"
-    }
-   ],
-   "loopPct": 3.92,
-   "movedBody": false
-  },
-  {
    "at": "2026-10-06T13:06:00Z",
    "val": 2.967,
    "prev": 2.9674,
@@ -12599,6 +12536,69 @@
    ],
    "loopPct": 3.95,
    "movedBody": false
+  },
+  {
+   "at": "2026-10-17T16:52:12Z",
+   "val": 2.8592,
+   "prev": 2.8603,
+   "valTag": "fixed-holdout-v1",
+   "stoppedAt": 158,
+   "stuck": 0,
+   "evalTag": "fixed-ix-v1",
+   "secPerStep": 26.4039,
+   "steps": 324,
+   "bpc": 3.3841,
+   "charsPerTok": 1.2189,
+   "score": 2.141,
+   "scoreW": 2.0,
+   "scoreMode": "talk",
+   "finishMix": 0.5,
+   "lineage": "L1",
+   "layers": 16,
+   "params": 117914880,
+   "chars": 1045308899,
+   "tokens": 857567631,
+   "grew": 0,
+   "rolledBack": false,
+   "ownVal": null,
+   "ownScore": null,
+   "d": 768,
+   "loops": 1,
+   "spread": 2.8361,
+   "bytes": 1415115957,
+   "heads": 6,
+   "ctx": 512,
+   "vocab": 6000,
+   "kind": "bpe",
+   "arch": "tpp-loop",
+   "wantWider": false,
+   "layerCap": 16,
+   "mixChanged": false,
+   "bySrc": {
+    "laws": 4.0593,
+    "wiki": 3.0172,
+    "aozora": 3.3716,
+    "hanrei": 3.4738,
+    "kokkai": 2.6366,
+    "web": 2.8981,
+    "talk": 2.141
+   },
+   "wrote": [
+    {
+     "start": "わたしは",
+     "text": "わたしはぼくといたします。」 AB「それは、黒ビールのお店でも、黒いとこがタッチしてしまうということで、今回はひとつ尻を出さないということで、いつまでも五日、六日、こういうことになりますね。そうすると、若い人は、わたし、もう九日後の、そういうことで、�"
+    },
+    {
+     "start": "第一条",
+     "text": "第一条り（顧客廷公務員）により いえば，顧客においては，それ以前に１か月間かかった部分を選択する ために，保険会社については，保険会社から資金調達がなされ，当然のことなが ら，不況を極力把握しようとしたことから，未決勾留日数中， 保険会社の方が既得権を奪い，多額の損失を免"
+    },
+    {
+     "start": "この法律において",
+     "text": "この法律において「一般保険料」が86.0万円に 10.0% と 20.0% が2023年 2月期 からの3年間、 2023年 3月期 に 2026年 3月期 [ 注釈 1 ] が2020年代末期に 2020年 3月期以降は、各年代の天皇にメインメ"
+    }
+   ],
+   "loopPct": 3.99,
+   "movedBody": false
   }
  ],
  "bestVal": 2.8557,
@@ -12649,5 +12649,5 @@
  ],
  "wantWider": false,
  "nextD": 768,
- "bad": 3
+ "bad": 0
 }
