@@ -1,69 +1,6 @@
 {
  "runs": [
   {
-   "at": "2026-10-06T16:50:55Z",
-   "val": 2.9696,
-   "prev": 2.975,
-   "valTag": "fixed-holdout-v1",
-   "stoppedAt": 159,
-   "stuck": 0,
-   "evalTag": "fixed-ix-v1",
-   "secPerStep": 26.1524,
-   "steps": 300,
-   "bpc": 3.5148,
-   "charsPerTok": 1.2189,
-   "score": 2.1802,
-   "scoreW": 2.0,
-   "scoreMode": "talk",
-   "finishMix": 0.5,
-   "lineage": "L1",
-   "layers": 16,
-   "params": 117914880,
-   "chars": 1045308899,
-   "tokens": 857567631,
-   "grew": 0,
-   "rolledBack": false,
-   "ownVal": null,
-   "ownScore": null,
-   "d": 768,
-   "loops": 1,
-   "spread": 3.0005,
-   "bytes": 1415115957,
-   "heads": 6,
-   "ctx": 512,
-   "vocab": 6000,
-   "kind": "bpe",
-   "arch": "tpp-loop",
-   "wantWider": false,
-   "layerCap": 16,
-   "mixChanged": false,
-   "bySrc": {
-    "laws": 4.2799,
-    "wiki": 3.1384,
-    "aozora": 3.4738,
-    "hanrei": 3.5604,
-    "kokkai": 2.7287,
-    "web": 2.9978,
-    "talk": 2.1802
-   },
-   "wrote": [
-    {
-     "start": "わたしは",
-     "text": "わたしはまたこのことを言っていたので、あなたがいますか？」 BK「私は今年ですが、最近は何か買ったことがありますが、何か買われたりしますか？」 BT「今から出てるんです。そこから、おすすめかわかります？」 BK「おいしいですね、私はやりとり"
-    },
-    {
-     "start": "第一条",
-     "text": "第一条というものがございますので、そういう意味におきましては、松尾山さん並びに松尾さん、堀さん、あなたのお母さん、いいお話をしたのですが、ここは、この前の日本風のお話をさせていただいております。」 AB「それから、従来のところの老朽化対策に、日曜の"
-    },
-    {
-     "start": "この法律において",
-     "text": "この法律において、船舶等の船舶等の船舶の開発及び開発の効率化が確保され、また、優先パイロットの開発事業として、新型コロナウイルス感染症の開発を促進し、観光客等の開発と、条の二の購入に変わりかねない施策を講じてきたわけであります。 柏崎防衛大臣にお伺いいたします。 今回、二〇一〇年のアカウントでは"
-    }
-   ],
-   "loopPct": 5.82,
-   "movedBody": false
-  },
-  {
    "at": "2026-10-06T17:54:49Z",
    "val": 2.9712,
    "prev": 2.9696,
@@ -12599,6 +12536,69 @@
    ],
    "loopPct": 0.83,
    "movedBody": false
+  },
+  {
+   "at": "2026-10-17T21:54:22Z",
+   "val": 2.8564,
+   "prev": 2.8544,
+   "valTag": "fixed-holdout-v1",
+   "stoppedAt": 202,
+   "stuck": 0,
+   "evalTag": "fixed-ix-v1",
+   "secPerStep": 20.0452,
+   "steps": 300,
+   "bpc": 3.3808,
+   "charsPerTok": 1.2189,
+   "score": 2.1415,
+   "scoreW": 2.0,
+   "scoreMode": "talk",
+   "finishMix": 0.5,
+   "lineage": "L1",
+   "layers": 16,
+   "params": 117914880,
+   "chars": 1045308899,
+   "tokens": 857567631,
+   "grew": 0,
+   "rolledBack": false,
+   "ownVal": null,
+   "ownScore": null,
+   "d": 768,
+   "loops": 1,
+   "spread": 2.7953,
+   "bytes": 1415115957,
+   "heads": 6,
+   "ctx": 512,
+   "vocab": 6000,
+   "kind": "bpe",
+   "arch": "tpp-loop",
+   "wantWider": false,
+   "layerCap": 16,
+   "mixChanged": false,
+   "bySrc": {
+    "laws": 4.0501,
+    "wiki": 3.0146,
+    "aozora": 3.3661,
+    "hanrei": 3.4676,
+    "kokkai": 2.6332,
+    "web": 2.8954,
+    "talk": 2.1415
+   },
+   "wrote": [
+    {
+     "start": "わたしは",
+     "text": "わたしは，Ｄを誘っていた。 ウ平成４年７月１９日午前１１時５分ころ，Ｄに対し，Ｄから出てきた と思い，判示のとおり，Ｄは，Ｄに対して，Ｄと共謀の上，Ｄの前方にＤを出て，Ｄに向けて神経質に向 かっていた。また，原告は�"
+    },
+    {
+     "start": "第一条",
+     "text": "第一条ネルトが置かれている。 2018年 10月 - JR東日本 ・ JR東日本 ・ JR新幹線 ・ JR東日本 ・ 東京ムーランテック ・ 東海道新幹線 ・ 八戸新幹線 ・ 宝塚新幹線 ・ 東京メトロ ・ 東海道新幹線 ・ 新幹線 、"
+    },
+    {
+     "start": "この法律において",
+     "text": "この法律において「運賃」などと共に神経活動を選択、脳・神経障害などを利用した。 1966年 スペインでは、 J-31 を オランダ にて、 フィナンシャル・バンド 、 サンフランシスコ 、 タオル 、 リオクターズ 、 イタリア 、 チュニジア 、 オ"
+    }
+   ],
+   "loopPct": 8.5,
+   "movedBody": false
   }
  ],
  "bestVal": 2.8544,
@@ -12649,5 +12649,5 @@
  ],
  "wantWider": false,
  "nextD": 768,
- "bad": 4
+ "bad": 0
 }
