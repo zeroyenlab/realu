@@ -1,69 +1,6 @@
 {
  "runs": [
   {
-   "at": "2026-10-06T17:54:49Z",
-   "val": 2.9712,
-   "prev": 2.9696,
-   "valTag": "fixed-holdout-v1",
-   "stoppedAt": 0,
-   "stuck": 0,
-   "evalTag": "fixed-ix-v1",
-   "secPerStep": 11.0258,
-   "steps": 300,
-   "bpc": 3.5166,
-   "charsPerTok": 1.2189,
-   "score": 2.1704,
-   "scoreW": 2.0,
-   "scoreMode": "talk",
-   "finishMix": 0.5,
-   "lineage": "L1",
-   "layers": 16,
-   "params": 117914880,
-   "chars": 1045308899,
-   "tokens": 857567631,
-   "grew": 0,
-   "rolledBack": false,
-   "ownVal": null,
-   "ownScore": null,
-   "d": 768,
-   "loops": 1,
-   "spread": 3.4668,
-   "bytes": 1415115957,
-   "heads": 6,
-   "ctx": 512,
-   "vocab": 6000,
-   "kind": "bpe",
-   "arch": "tpp-loop",
-   "wantWider": false,
-   "layerCap": 16,
-   "mixChanged": false,
-   "bySrc": {
-    "laws": 4.2836,
-    "wiki": 3.1355,
-    "aozora": 3.4798,
-    "hanrei": 3.5601,
-    "kokkai": 2.7321,
-    "web": 3.0015,
-    "talk": 2.1704
-   },
-   "wrote": [
-    {
-     "start": "わたしは",
-     "text": "わたしは、その口から何かかわり合っています。」 BZ「愚痴ったりもいたしますよね。やはり検討してみます！」 CE「はい！愛知県の東北ホテルを！」 BZ「東北、羽田は結構ラーメンですね。おいしいお店ありますか？」 CE「"
-    },
-    {
-     "start": "第一条",
-     "text": "第一条LISS Serear は、各種規模でより多くの生成物が発達した [ 4 ] 。 生物的または生物状況や生物など 生物 物 （ 生物 ）の影響により生物は マクロ と 生物 によって生物に入っており、生態系が生物の生物と 重� とされる [ 6 ] 。"
-    },
-    {
-     "start": "この法律において",
-     "text": "この法律において�2013年11月28日閲覧。 ↑ 「 「 30000年前、身体障害者の人気ダウンロード、愛知県や 生涯を享受 」『日本経済新聞』2012年12月29日、250頁。 ↑ 「 平年値の7000点前後 」『日経新聞"
-    }
-   ],
-   "loopPct": 8.85,
-   "movedBody": false
-  },
-  {
    "at": "2026-10-06T19:04:34Z",
    "val": 2.9707,
    "prev": 2.9712,
@@ -12598,6 +12535,69 @@
     }
    ],
    "loopPct": 8.5,
+   "movedBody": false
+  },
+  {
+   "at": "2026-10-17T23:07:40Z",
+   "val": 2.8601,
+   "prev": 2.8564,
+   "valTag": "fixed-holdout-v1",
+   "stoppedAt": 275,
+   "stuck": 0,
+   "evalTag": "fixed-ix-v1",
+   "secPerStep": 14.2472,
+   "steps": 300,
+   "bpc": 3.3852,
+   "charsPerTok": 1.2189,
+   "score": 2.1322,
+   "scoreW": 2.0,
+   "scoreMode": "talk",
+   "finishMix": 0.5,
+   "lineage": "L1",
+   "layers": 16,
+   "params": 117914880,
+   "chars": 1045308899,
+   "tokens": 857567631,
+   "grew": 0,
+   "rolledBack": false,
+   "ownVal": null,
+   "ownScore": null,
+   "d": 768,
+   "loops": 1,
+   "spread": 2.816,
+   "bytes": 1415115957,
+   "heads": 6,
+   "ctx": 512,
+   "vocab": 6000,
+   "kind": "bpe",
+   "arch": "tpp-loop",
+   "wantWider": false,
+   "layerCap": 16,
+   "mixChanged": false,
+   "bySrc": {
+    "laws": 4.0491,
+    "wiki": 3.0186,
+    "aozora": 3.3673,
+    "hanrei": 3.4729,
+    "kokkai": 2.6375,
+    "web": 2.8995,
+    "talk": 2.1322
+   },
+   "wrote": [
+    {
+     "start": "わたしは",
+     "text": "わたしは、その男女平月一日に北海道の町長を辞任していたが、そのため、その主人公を辞職して以来は名誉を立てた。 新聞の愛称は、『黒羽の町長』などと『黒い道』でもある。 マックス・ハーンは、様々な町の町を歩くような 愛知県 の"
+    },
+    {
+     "start": "第一条",
+     "text": "第一条 （胆膜炎及び胆膜炎） 波背，玉妹固有の血腫，弁護人らが 同年１１月２０日午前１１時３０分ころ，同年８月２３日午後１１時５０分ころ，同 日午前１１時５０分ころ，本件死体直後両名の血�"
+    },
+    {
+     "start": "この法律において",
+     "text": "この法律において「2年」 1996年（平成8年）12月12日 - 青森 - 日本の 宇産地 （現・ 宇宙開発探査機 ）にて千葉 - 千葉 間で開業 [ 10 ] 。 2004年（平成16年） 1月3日 - 佐渡 - 江ノ島 （"
+    }
+   ],
+   "loopPct": 6.03,
    "movedBody": false
   }
  ],
