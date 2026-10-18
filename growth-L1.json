@@ -1,69 +1,6 @@
 {
  "runs": [
   {
-   "at": "2026-10-06T20:28:08Z",
-   "val": 2.9684,
-   "prev": 2.9707,
-   "valTag": "fixed-holdout-v1",
-   "stoppedAt": 178,
-   "stuck": 0,
-   "evalTag": "fixed-ix-v1",
-   "secPerStep": 23.0946,
-   "steps": 586,
-   "bpc": 3.5133,
-   "charsPerTok": 1.2189,
-   "score": 2.181,
-   "scoreW": 2.0,
-   "scoreMode": "talk",
-   "finishMix": 0.5,
-   "lineage": "L1",
-   "layers": 16,
-   "params": 117914880,
-   "chars": 1045308899,
-   "tokens": 857567631,
-   "grew": 0,
-   "rolledBack": false,
-   "ownVal": null,
-   "ownScore": null,
-   "d": 768,
-   "loops": 1,
-   "spread": 2.9953,
-   "bytes": 1415115957,
-   "heads": 6,
-   "ctx": 512,
-   "vocab": 6000,
-   "kind": "bpe",
-   "arch": "tpp-loop",
-   "wantWider": false,
-   "layerCap": 16,
-   "mixChanged": false,
-   "bySrc": {
-    "laws": 4.2867,
-    "wiki": 3.1338,
-    "aozora": 3.4757,
-    "hanrei": 3.557,
-    "kokkai": 2.7274,
-    "web": 2.9993,
-    "talk": 2.181
-   },
-   "wrote": [
-    {
-     "start": "わたしは",
-     "text": "わたしはですが波を押さえていました。」 DM「おおおおおおおおおおしいお話ありがとうございます！」 FL「こちらこそ、何かお調べいただきありがとうございました。」 FL「こんばんわ。」 DM"
-    },
-    {
-     "start": "第一条",
-     "text": "第一条（10月23日） いつものたい - 名古屋市博物館 - なめのザ・ロンドン <記事 栗の起点駅> �屋駅（もらたくらわかんけいえんえき）は、石野町大字水原駅である。 嵐山駅から、千葉駅を中心に、フランスを中"
-    },
-    {
-     "start": "この法律において",
-     "text": "この法律において同法２９条に違反して，同 第３１人は，同日（同日，同日），同日，同日，同日，同月 １２日，同日，同日，同日，同日，同日に原告が同日，同日，同日 日に本件犯行をさせ，同日，同日，同日，同日午後８時"
-    }
-   ],
-   "loopPct": 22.72,
-   "movedBody": false
-  },
-  {
    "at": "2026-10-06T21:45:54Z",
    "val": 2.9627,
    "prev": 2.9684,
@@ -12599,6 +12536,69 @@
    ],
    "loopPct": 1.48,
    "movedBody": false
+  },
+  {
+   "at": "2026-10-18T01:36:45Z",
+   "val": 2.8582,
+   "prev": 2.8591,
+   "valTag": "fixed-holdout-v1",
+   "stoppedAt": 179,
+   "stuck": 0,
+   "evalTag": "fixed-ix-v1",
+   "secPerStep": 22.9379,
+   "steps": 322,
+   "bpc": 3.3829,
+   "charsPerTok": 1.2189,
+   "score": 2.1406,
+   "scoreW": 2.0,
+   "scoreMode": "talk",
+   "finishMix": 0.5,
+   "lineage": "L1",
+   "layers": 16,
+   "params": 117914880,
+   "chars": 1045308899,
+   "tokens": 857567631,
+   "grew": 0,
+   "rolledBack": false,
+   "ownVal": null,
+   "ownScore": null,
+   "d": 768,
+   "loops": 1,
+   "spread": 2.9077,
+   "bytes": 1415115957,
+   "heads": 6,
+   "ctx": 512,
+   "vocab": 6000,
+   "kind": "bpe",
+   "arch": "tpp-loop",
+   "wantWider": false,
+   "layerCap": 16,
+   "mixChanged": false,
+   "bySrc": {
+    "laws": 4.0545,
+    "wiki": 3.0169,
+    "aozora": 3.3692,
+    "hanrei": 3.4645,
+    "kokkai": 2.6343,
+    "web": 2.8965,
+    "talk": 2.1406
+   },
+   "wrote": [
+    {
+     "start": "わたしは",
+     "text": "わたしは、この思いを認められた後に、誠防御の結果をつけられて着陸する。 それにまつわる太平洋戦争が始まると、一日も早く復帰する。 しかし、一日も早く帰って来ると、沈没した太平洋戦争が始まり、一日で戦争が終わった後に、一日も早く沈没する。 この�"
+    },
+    {
+     "start": "第一条",
+     "text": "第一条ニ触項ヲに基づいて分割される場合 通常のデータの量 （分解量） 合衆国産なくし機種の使用を伴うデータのうち、データの伝統的なデータを含むデータを直接の判定し、かつ、そのデータをデータによってデータを表す方法 データがデータにウェブするのは、そのデータやデータのデータが簡"
+    },
+    {
+     "start": "この法律において",
+     "text": "この法律において「」とあるのは「級地」とする。 （習/射撃） 情勢の緩和は、次のとおりであって、次のとおりとする。 （写真） 第九号は、見込まれる部分に、待っている部分を、れた場所と[ 」、「又は腹部及び紅色又は部分を平示して、それぞれその部分において、縦回りの選定者を、同じ部分を別段の板に、下部から頭部の背部に、下部"
+    }
+   ],
+   "loopPct": 0.0,
+   "movedBody": false
   }
  ],
  "bestVal": 2.8544,
@@ -12649,5 +12649,5 @@
  ],
  "wantWider": false,
  "nextD": 768,
- "bad": 2
+ "bad": 0
 }
