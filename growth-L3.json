@@ -1,69 +1,6 @@
 {
  "runs": [
   {
-   "at": "2026-10-07T14:02:21Z",
-   "val": 2.7037,
-   "prev": 2.7058,
-   "valTag": "fixed-holdout-v1",
-   "stoppedAt": 786,
-   "stuck": 0,
-   "evalTag": "fixed-ix-v1",
-   "secPerStep": 4.7251,
-   "steps": 949,
-   "bpc": 3.2001,
-   "charsPerTok": 1.2189,
-   "score": 2.1473,
-   "scoreW": 2.0,
-   "scoreMode": "talk",
-   "finishMix": 0.2,
-   "lineage": "L3",
-   "layers": 13,
-   "params": 25335168,
-   "chars": 1045308899,
-   "tokens": 857567631,
-   "grew": 0,
-   "rolledBack": false,
-   "ownVal": null,
-   "ownScore": null,
-   "d": 384,
-   "loops": 1,
-   "spread": 2.7387,
-   "bytes": 304134793,
-   "heads": 6,
-   "ctx": 512,
-   "vocab": 6000,
-   "kind": "bpe",
-   "arch": "tpp-loop",
-   "wantWider": false,
-   "layerCap": 16,
-   "mixChanged": false,
-   "bySrc": {
-    "laws": 3.6679,
-    "wiki": 2.8697,
-    "aozora": 3.1968,
-    "hanrei": 3.4262,
-    "kokkai": 2.5142,
-    "web": 2.7849,
-    "talk": 2.1473
-   },
-   "wrote": [
-    {
-     "start": "わたしは",
-     "text": "わたしは、キャラクターのライトノベルを持つヤマトソンと日本テレビのラジオドラマを見る。 ★そんなロマンで、いま頭が悪い、「私はあれにしてもらった」「あれはかなりのゆ、私はなんでもない」という考えから発していた。ただ、このシーンで「私のりは本当に大�"
-    },
-    {
-     "start": "第一条",
-     "text": "第一条すいけけね、これは、法律を規定するものであるということを申し上げております。」 AB「それでは、この点の話がございますが、五十年前から年金炭鉱のような、あるいは石炭、セルフセル期において住宅のベッドを作っておりまして、この税金は相当な災害等も起こらないような状況であったというところでございます。"
-    },
-    {
-     "start": "この法律において",
-     "text": "この法律において「優良な人生と安心な人生を送り」を指す。 （ 2026年5月 ） ↑ 「 ：：：：：：：：：：：：：：：：：：：：：：：：：：：：：：単独では：：：�"
-    }
-   ],
-   "loopPct": 15.92,
-   "movedBody": false
-  },
-  {
    "at": "2026-10-07T15:21:33Z",
    "val": 2.7043,
    "prev": 2.7037,
@@ -12599,6 +12536,69 @@
    ],
    "loopPct": 4.37,
    "movedBody": false
+  },
+  {
+   "at": "2026-10-18T19:23:26Z",
+   "val": 2.6574,
+   "prev": 2.6574,
+   "valTag": "fixed-holdout-v1",
+   "stoppedAt": 792,
+   "stuck": 0,
+   "evalTag": "fixed-ix-v1",
+   "secPerStep": 4.6804,
+   "steps": 895,
+   "bpc": 3.1453,
+   "charsPerTok": 1.2189,
+   "score": 2.1207,
+   "scoreW": 2.0,
+   "scoreMode": "talk",
+   "finishMix": 0.2,
+   "lineage": "L3",
+   "layers": 14,
+   "params": 27105408,
+   "chars": 1045308899,
+   "tokens": 857567631,
+   "grew": 0,
+   "rolledBack": false,
+   "ownVal": null,
+   "ownScore": null,
+   "d": 384,
+   "loops": 1,
+   "spread": 2.8938,
+   "bytes": 325385901,
+   "heads": 6,
+   "ctx": 512,
+   "vocab": 6000,
+   "kind": "bpe",
+   "arch": "tpp-loop",
+   "wantWider": false,
+   "layerCap": 16,
+   "mixChanged": false,
+   "bySrc": {
+    "laws": 3.5747,
+    "wiki": 2.8119,
+    "aozora": 3.1455,
+    "hanrei": 3.392,
+    "kokkai": 2.4755,
+    "web": 2.7417,
+    "talk": 2.1207
+   },
+   "wrote": [
+    {
+     "start": "わたしは",
+     "text": "わたしは高校の時から友達と親交を深めた。 もっとも、ワーナーは、そのドラマ『JAMAN』では、妻と出会うはずだった。 1964年にフジテレビから集まった『 ANNニュース 』では、当時のバットボンバーの他、TBS系列各局でスピンオフ作品"
+    },
+    {
+     "start": "第一条",
+     "text": "第一条（急峻口回路） 第八十二条の二 更新医又は側面呼吸器外科医又は側面呼吸器外科医又は側面呼吸器外科医又は側面呼吸器外科医若しくは側面呼吸器外科医又は側面呼吸器外科医又は側面呼吸器外科医若しくは側面呼吸器外科医又は側面呼吸器外科医又は側面呼吸器外科医又は側面呼"
+    },
+    {
+     "start": "この法律において",
+     "text": "この法律において「中華民国」を「中華民国」と言ったことがあり、中華民国の要請に反対する中華民国に対しては「中華民国」と言われたが、中華民国は反対することはなかった 。 これにより、中華民国が台湾からアメリカを追放したことは、台湾と比較して大きな違いがあった。中華民国が"
+    }
+   ],
+   "loopPct": 28.33,
+   "movedBody": false
   }
  ],
  "bestVal": 2.6569,
@@ -12649,5 +12649,5 @@
  ],
  "wantWider": false,
  "nextD": 384,
- "bad": 0
+ "bad": 4
 }
