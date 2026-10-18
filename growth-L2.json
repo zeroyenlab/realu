@@ -1,69 +1,6 @@
 {
  "runs": [
   {
-   "at": "2026-10-06T23:57:44Z",
-   "val": 2.6971,
-   "prev": 2.708,
-   "valTag": "fixed-holdout-v1",
-   "stoppedAt": 0,
-   "stuck": 0,
-   "evalTag": "fixed-ix-v1",
-   "secPerStep": 5.1398,
-   "steps": 571,
-   "bpc": 3.1923,
-   "charsPerTok": 1.2189,
-   "score": 2.0634,
-   "scoreW": 2.0,
-   "scoreMode": "talk",
-   "finishMix": 0.85,
-   "lineage": "L2",
-   "layers": 14,
-   "params": 47379968,
-   "chars": 1045308899,
-   "tokens": 857567631,
-   "grew": 0,
-   "rolledBack": false,
-   "ownVal": null,
-   "ownScore": null,
-   "d": 512,
-   "loops": 1,
-   "spread": 2.8035,
-   "bytes": 568680621,
-   "heads": 8,
-   "ctx": 512,
-   "vocab": 6000,
-   "kind": "bpe",
-   "arch": "tpp-loop",
-   "wantWider": false,
-   "layerCap": 16,
-   "mixChanged": false,
-   "bySrc": {
-    "laws": 3.6141,
-    "wiki": 2.8689,
-    "aozora": 3.1839,
-    "hanrei": 3.4135,
-    "kokkai": 2.5126,
-    "web": 2.7863,
-    "talk": 2.0634
-   },
-   "wrote": [
-    {
-     "start": "わたしは",
-     "text": "わたしは遺伝子が多いとよく聞きます。」 DT「そうなんですね。アイスクリームが好きなんですね。」 BH「アイスクリームが好きなので、私はアイスクリームが好きです。」 DT「良いですね。よく食べるのは好きですか？」 BH「私はWebで"
-    },
-    {
-     "start": "第一条",
-     "text": "第一条ネルネル （NRV）は、 1986年 （昭和61年）から 1987年 （昭和62年）にかけて、 1987年 （昭和62年）から 2015年 （平成27年）にかけて、 2025年 （令和7年） 3月15日 、 2026年 （令和8年） 4月20日"
-    },
-    {
-     "start": "この法律において",
-     "text": "この法律において、その目的を達成するため、その原価を前提として、その目的を達成するため、相手の相当な利益を享受し、るべきこと、すなわち、この目的を達成するため業者の経営等を許可しないに至ったとき、これを裁判所及び仕事場にすること。 ただし、当事者間の関係が、操作、運転、操作、航空機、航空機等が火災の区分に応じ、かつ、これと同様に、その手段として、法律上、その目的を達成するために必要となるもので"
-    }
-   ],
-   "loopPct": 3.62,
-   "movedBody": false
-  },
-  {
    "at": "2026-10-07T01:24:51Z",
    "val": 2.6913,
    "prev": 2.6971,
@@ -12599,6 +12536,69 @@
    ],
    "loopPct": 1.99,
    "movedBody": false
+  },
+  {
+   "at": "2026-10-18T05:07:40Z",
+   "val": 2.6184,
+   "prev": 2.6172,
+   "valTag": "fixed-holdout-v1",
+   "stoppedAt": 0,
+   "stuck": 0,
+   "evalTag": "fixed-ix-v1",
+   "secPerStep": 5.4054,
+   "steps": 562,
+   "bpc": 3.0991,
+   "charsPerTok": 1.2189,
+   "score": 2.029,
+   "scoreW": 2.0,
+   "scoreMode": "talk",
+   "finishMix": 0.85,
+   "lineage": "L2",
+   "layers": 14,
+   "params": 47379968,
+   "chars": 1045308899,
+   "tokens": 857567631,
+   "grew": 0,
+   "rolledBack": false,
+   "ownVal": null,
+   "ownScore": null,
+   "d": 512,
+   "loops": 1,
+   "spread": 2.3492,
+   "bytes": 568680621,
+   "heads": 8,
+   "ctx": 512,
+   "vocab": 6000,
+   "kind": "bpe",
+   "arch": "tpp-loop",
+   "wantWider": false,
+   "layerCap": 16,
+   "mixChanged": false,
+   "bySrc": {
+    "laws": 3.4807,
+    "wiki": 2.7714,
+    "aozora": 3.097,
+    "hanrei": 3.356,
+    "kokkai": 2.449,
+    "web": 2.7035,
+    "talk": 2.029
+   },
+   "wrote": [
+    {
+     "start": "わたしは",
+     "text": "わたしは。」 DA「あはは、見るくらいですよね笑」 DF「そうなのですね！どんなの見るのですか？」 DA「水曜日に演劇見るので、夫が見ていたので！」 DF「なるほど！水曜日の主題歌とかも？」 DA「そうです！」"
+    },
+    {
+     "start": "第一条",
+     "text": "第一条に規定されております。 それから、小麦の生産技術面においては、その生産性の向上は、単に生産技術で作るということが最大限必要であると考えますが、政府はこの小麦の生産をどうするかということについて、どうお考えになるのか、その点についてお伺いいたします。」 AA「第三に、今回のような米の生産の規制の問題、"
+    },
+    {
+     "start": "この法律において",
+     "text": "この法律において「音楽活動」と総称される [ 1 ] 。 音楽活動の意義については、音楽活動家の アントニー・カーミューリング に理論家の エマーソン・カーミューリング がいる。 農林業 がんをはじめとした 奇跡 に遭遇して、病気を治したり、奇跡の サッ"
+    }
+   ],
+   "loopPct": 2.26,
+   "movedBody": false
   }
  ],
  "bestVal": 2.6157,
@@ -12649,5 +12649,5 @@
  ],
  "wantWider": false,
  "nextD": 512,
- "bad": 0
+ "bad": 3
 }
