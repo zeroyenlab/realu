@@ -1,69 +1,6 @@
 {
  "runs": [
   {
-   "at": "2026-10-07T02:43:38Z",
-   "val": 2.6885,
-   "prev": 2.6913,
-   "valTag": "fixed-holdout-v1",
-   "stoppedAt": 313,
-   "stuck": 0,
-   "evalTag": "fixed-ix-v1",
-   "secPerStep": 12.4234,
-   "steps": 811,
-   "bpc": 3.1821,
-   "charsPerTok": 1.2189,
-   "score": 2.0601,
-   "scoreW": 2.0,
-   "scoreMode": "talk",
-   "finishMix": 0.85,
-   "lineage": "L2",
-   "layers": 14,
-   "params": 47379968,
-   "chars": 1045308899,
-   "tokens": 857567631,
-   "grew": 0,
-   "rolledBack": false,
-   "ownVal": null,
-   "ownScore": null,
-   "d": 512,
-   "loops": 1,
-   "spread": 2.5607,
-   "bytes": 568680621,
-   "heads": 8,
-   "ctx": 512,
-   "vocab": 6000,
-   "kind": "bpe",
-   "arch": "tpp-loop",
-   "wantWider": false,
-   "layerCap": 16,
-   "mixChanged": false,
-   "bySrc": {
-    "laws": 3.6017,
-    "wiki": 2.8598,
-    "aozora": 3.174,
-    "hanrei": 3.4085,
-    "kokkai": 2.5028,
-    "web": 2.7805,
-    "talk": 2.0601
-   },
-   "wrote": [
-    {
-     "start": "わたしは",
-     "text": "わたしは、 飼い犬 の ドワイト・オトク に関し、犬と サイバント の両親の生まれ変わりになった。 また、二人暮らしの世界から フロリダ州 に出かけたため、日本で全日本の 日本 へ帰った。 しかし、 1964年 には フランチェスコ・アンチメ"
-    },
-    {
-     "start": "第一条",
-     "text": "第一条第二号ハロゲルグラフィックス（旧：ABELOGENGENGENGENGENGENGENGENGENGENGENGENGENGENGENGENGENGENDENGENGENGENGENGENGENGENGENGENGENGEN"
-    },
-    {
-     "start": "この法律において",
-     "text": "この法律において「日本銀行等」という。）の保険料（保険料が訂してしまい、又は滞り上それがなくなるおそれがある場合において、当該句った事実を知り、又は死亡させたこと。 （銀座支店等） 第十条 銀行、一般国民銀行又は銀行（銀行が保有していた貨幣取引により銀行が引き受けていた貨幣取引により銀座支店等となった場合であって、その発行する銀座支店等）は、民間銀行その他の金融機関から、当該銀"
-    }
-   ],
-   "loopPct": 26.91,
-   "movedBody": false
-  },
-  {
    "at": "2026-10-07T04:01:24Z",
    "val": 2.6887,
    "prev": 2.6885,
@@ -12599,6 +12536,69 @@
    ],
    "loopPct": 57.14,
    "movedBody": false
+  },
+  {
+   "at": "2026-10-18T07:53:19Z",
+   "val": 2.6194,
+   "prev": 2.6184,
+   "valTag": "fixed-holdout-v1",
+   "stoppedAt": 330,
+   "stuck": 0,
+   "evalTag": "fixed-ix-v1",
+   "secPerStep": 11.6971,
+   "steps": 570,
+   "bpc": 3.1003,
+   "charsPerTok": 1.2189,
+   "score": 2.0304,
+   "scoreW": 2.0,
+   "scoreMode": "talk",
+   "finishMix": 0.85,
+   "lineage": "L2",
+   "layers": 14,
+   "params": 47379968,
+   "chars": 1045308899,
+   "tokens": 857567631,
+   "grew": 0,
+   "rolledBack": false,
+   "ownVal": null,
+   "ownScore": null,
+   "d": 512,
+   "loops": 1,
+   "spread": 2.7082,
+   "bytes": 568680621,
+   "heads": 8,
+   "ctx": 512,
+   "vocab": 6000,
+   "kind": "bpe",
+   "arch": "tpp-loop",
+   "wantWider": false,
+   "layerCap": 16,
+   "mixChanged": false,
+   "bySrc": {
+    "laws": 3.4776,
+    "wiki": 2.7739,
+    "aozora": 3.0955,
+    "hanrei": 3.3598,
+    "kokkai": 2.4507,
+    "web": 2.7037,
+    "talk": 2.0304
+   },
+   "wrote": [
+    {
+     "start": "わたしは",
+     "text": "わたしは今やってるので。」 DV「そうなんですか、今は運動不足なんですか？」 CQ「はい、それがまずは運動不足をつらかるので、体動かしてます」 DV「体動かすとどれぐらい歩くんですか？」 CQ「今は暑さが厳しいので、朝方がか"
+    },
+    {
+     "start": "第一条",
+     "text": "第一条、同条第三号、第十七十一条、第十九条、第十九条、第二十二条、第二十三条、第二十三条、第二十一条、第二十二条の二、第二十二条の二、第二十二条、第二十二条の二、第二十二条の二、第二十三条の二、第二十四条の二第二項、第二十五条の二、第二十五条の二、第二十五条の二、各省庁、建設省、建設省、建設省、建設省、建設省、建設省、建設省、建設省、建設省、建設省、建設省、建設省、建設省、建設省、建設省、建設省、建設省、建設"
+    },
+    {
+     "start": "この法律において",
+     "text": "この法律において、「施行区域」とは、次に掲げる区域をいう。 申請国の首長の首長に対する研修の実施の実績及び実施方法その他首長に対する研修の実施に関する事務を地方創生本部に依頼することができる。 前項に規定するもののほか、第二項ものに限る。 （国及び地方公共団体が実施する事務） 都道府県は、施行区域が国際機関その他の関係機関その他の関係機関その他の関係機関その他の関係機関以外に調達する事務（以下単に「基準」という。）を紹介する事務（以下「"
+    }
+   ],
+   "loopPct": 36.68,
+   "movedBody": false
   }
  ],
  "bestVal": 2.6157,
@@ -12649,5 +12649,5 @@
  ],
  "wantWider": false,
  "nextD": 512,
- "bad": 2
+ "bad": 5
 }
