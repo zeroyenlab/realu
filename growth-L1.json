@@ -1,69 +1,6 @@
 {
  "runs": [
   {
-   "at": "2026-10-07T15:19:34Z",
-   "val": 2.9521,
-   "prev": 2.9456,
-   "valTag": "fixed-holdout-v1",
-   "stoppedAt": 0,
-   "stuck": 0,
-   "evalTag": "fixed-ix-v1",
-   "secPerStep": 11.8385,
-   "steps": 300,
-   "bpc": 3.4941,
-   "charsPerTok": 1.2189,
-   "score": 2.1713,
-   "scoreW": 2.0,
-   "scoreMode": "talk",
-   "finishMix": 0.5,
-   "lineage": "L1",
-   "layers": 16,
-   "params": 117914880,
-   "chars": 1045308899,
-   "tokens": 857567631,
-   "grew": 0,
-   "rolledBack": false,
-   "ownVal": null,
-   "ownScore": null,
-   "d": 768,
-   "loops": 1,
-   "spread": 3.2839,
-   "bytes": 1415115957,
-   "heads": 6,
-   "ctx": 512,
-   "vocab": 6000,
-   "kind": "bpe",
-   "arch": "tpp-loop",
-   "wantWider": false,
-   "layerCap": 16,
-   "mixChanged": false,
-   "bySrc": {
-    "laws": 4.2461,
-    "wiki": 3.1128,
-    "aozora": 3.4582,
-    "hanrei": 3.5515,
-    "kokkai": 2.7176,
-    "web": 2.9801,
-    "talk": 2.1713
-   },
-   "wrote": [
-    {
-     "start": "わたしは",
-     "text": "わたしは、勝ち逃げてしまったんですね。」 AC「そうですね！そんな感じです！」 AC「こんにちはー。」 EH「こんにちは！」 AC「最近、何かハンバーグとか？」 EH「私はスト"
-    },
-    {
-     "start": "第一条",
-     "text": "第一条次のいずれかに該当する。 （取締役及び執行役） 第十六条 若しくは条第二項の規定により許可があったときは、その庁・議長は、執行役及び��議業務を適正かつ確実に実施しようとする者の資格をもって、第十号クリニック又は適切に対応することができる。 ときは、当該許可の売却等の替えは、当該処分に係る申請に対する提督に反する。 （公益法人の評議員会の議事録） 第二十八条 善良の公園又は物品の資産（教職員所在地が任務を確保するために必要な）、�"
-    },
-    {
-     "start": "この法律において",
-     "text": "この法律において数のCD 架空の利用について，その受付が「無駄」のように，「不定期 」のように，それぞれの異常がなされていなかったか，また，CD型 では「うん」ので，「シ」が重いとされた。 そこで，CD型によるものである。 「セ」のとおり，「セル」と記載されている。 (3) 「"
-    }
-   ],
-   "loopPct": 0.45,
-   "movedBody": false
-  },
-  {
    "at": "2026-10-07T16:30:23Z",
    "val": 2.9518,
    "prev": 2.9521,
@@ -12598,6 +12535,69 @@
     }
    ],
    "loopPct": 1.64,
+   "movedBody": false
+  },
+  {
+   "at": "2026-10-18T20:40:44Z",
+   "val": 2.8503,
+   "prev": 2.856,
+   "valTag": "fixed-holdout-v1",
+   "stoppedAt": 180,
+   "stuck": 0,
+   "evalTag": "fixed-ix-v1",
+   "secPerStep": 22.8033,
+   "steps": 300,
+   "bpc": 3.3735,
+   "charsPerTok": 1.2189,
+   "score": 2.1405,
+   "scoreW": 2.0,
+   "scoreMode": "talk",
+   "finishMix": 0.5,
+   "lineage": "L1",
+   "layers": 16,
+   "params": 117914880,
+   "chars": 1045308899,
+   "tokens": 857567631,
+   "grew": 0,
+   "rolledBack": false,
+   "ownVal": null,
+   "ownScore": null,
+   "d": 768,
+   "loops": 1,
+   "spread": 2.9848,
+   "bytes": 1415115957,
+   "heads": 6,
+   "ctx": 512,
+   "vocab": 6000,
+   "kind": "bpe",
+   "arch": "tpp-loop",
+   "wantWider": false,
+   "layerCap": 16,
+   "mixChanged": false,
+   "bySrc": {
+    "laws": 4.0414,
+    "wiki": 3.0071,
+    "aozora": 3.3616,
+    "hanrei": 3.4631,
+    "kokkai": 2.6264,
+    "web": 2.8897,
+    "talk": 2.1405
+   },
+   "wrote": [
+    {
+     "start": "わたしは",
+     "text": "わたしは、むしろ、黄金いところで、犬がおいしかったです。」 DY「そうなんですね！黄色いモンスターです。顔色は、かわいいですが、、」 CH「ノロとか色々な隙間を合わせるということがありますが、それを使って、あまり妻には見えないです。」 DY"
+    },
+    {
+     "start": "第一条",
+     "text": "第一条、「自主行動計画」が参照）。 2022年（令和4年）には、 海軍省 には 沿岸諸国 （ 中国語版 ） （ 中国語版 ） が就役している。 海軍は 海軍 が支援した防衛問題を擬人化し、 海軍 、 海軍 が1988年に 海軍 が発布。 海"
+    },
+    {
+     "start": "この法律において",
+     "text": "この法律において「ランタン」が一番多く見えるようになった 。 2000年 - 2006年 、『 ミート 』（2007年） - 2011年 - 2012年が死去した際に、フォークが玩具の「ファイアース&フレッシュ」をサポートしていたため、 夢のハイパーティー"
+    }
+   ],
+   "loopPct": 18.61,
    "movedBody": false
   }
  ],
