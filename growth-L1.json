@@ -1,69 +1,6 @@
 {
  "runs": [
   {
-   "at": "2026-10-06T19:04:34Z",
-   "val": 2.9707,
-   "prev": 2.9712,
-   "valTag": "fixed-holdout-v1",
-   "stoppedAt": 0,
-   "stuck": 0,
-   "evalTag": "fixed-ix-v1",
-   "secPerStep": 10.9768,
-   "steps": 300,
-   "bpc": 3.5161,
-   "charsPerTok": 1.2189,
-   "score": 2.1839,
-   "scoreW": 2.0,
-   "scoreMode": "talk",
-   "finishMix": 0.5,
-   "lineage": "L1",
-   "layers": 16,
-   "params": 117914880,
-   "chars": 1045308899,
-   "tokens": 857567631,
-   "grew": 0,
-   "rolledBack": false,
-   "ownVal": null,
-   "ownScore": null,
-   "d": 768,
-   "loops": 1,
-   "spread": 2.9687,
-   "bytes": 1415115957,
-   "heads": 6,
-   "ctx": 512,
-   "vocab": 6000,
-   "kind": "bpe",
-   "arch": "tpp-loop",
-   "wantWider": false,
-   "layerCap": 16,
-   "mixChanged": false,
-   "bySrc": {
-    "laws": 4.2875,
-    "wiki": 3.1366,
-    "aozora": 3.4815,
-    "hanrei": 3.5667,
-    "kokkai": 2.7318,
-    "web": 2.9989,
-    "talk": 2.1839
-   },
-   "wrote": [
-    {
-     "start": "わたしは",
-     "text": "わたしは、きょうもって、どんなことを言われても、これをやめないと思いますよ。」 AB「麻生国務大臣 総理は、これまで、昨年の四月、七月の大臣、ＣＴＰＰの参加、ＰＫＯの核実験に、我々は、昨年十二月に、ギョーゲン・レイモンド・フランス・ス"
-    },
-    {
-     "start": "第一条",
-     "text": "第一条 被告会社は，本件会社ほか３社による原告会社である調査保険会社（以下，「平成１７年度 体育会社」という。） (1) 原告は，平成６年度から平成１３年度までの間，平成１３年度から平成６年度までート ウ平成１４年度においては，平成１２年度から平成５年度事業費として１億３７４３ ０億３ 万円と，平成１０年度は"
-    },
-    {
-     "start": "この法律において",
-     "text": "この法律において「FatsonaCat> FC「こんにちは！」 FO「こんにちは、よろしくお願いします。」 FC「もう少し早く帰りたいですね。」 FO「いや、なんかこっちから勿論、なかなか掃除ってないです。」 FC「そうですか！もう日本の"
-    }
-   ],
-   "loopPct": 2.54,
-   "movedBody": false
-  },
-  {
    "at": "2026-10-06T20:28:08Z",
    "val": 2.9684,
    "prev": 2.9707,
@@ -12599,6 +12536,69 @@
    ],
    "loopPct": 6.03,
    "movedBody": false
+  },
+  {
+   "at": "2026-10-18T00:20:57Z",
+   "val": 2.8591,
+   "prev": 2.8601,
+   "valTag": "fixed-holdout-v1",
+   "stoppedAt": 303,
+   "stuck": 0,
+   "evalTag": "fixed-ix-v1",
+   "secPerStep": 12.8182,
+   "steps": 322,
+   "bpc": 3.3839,
+   "charsPerTok": 1.2189,
+   "score": 2.1387,
+   "scoreW": 2.0,
+   "scoreMode": "talk",
+   "finishMix": 0.5,
+   "lineage": "L1",
+   "layers": 16,
+   "params": 117914880,
+   "chars": 1045308899,
+   "tokens": 857567631,
+   "grew": 0,
+   "rolledBack": false,
+   "ownVal": null,
+   "ownScore": null,
+   "d": 768,
+   "loops": 1,
+   "spread": 2.9776,
+   "bytes": 1415115957,
+   "heads": 6,
+   "ctx": 512,
+   "vocab": 6000,
+   "kind": "bpe",
+   "arch": "tpp-loop",
+   "wantWider": false,
+   "layerCap": 16,
+   "mixChanged": false,
+   "bySrc": {
+    "laws": 4.0552,
+    "wiki": 3.0182,
+    "aozora": 3.3705,
+    "hanrei": 3.4655,
+    "kokkai": 2.6342,
+    "web": 2.9016,
+    "talk": 2.1387
+   },
+   "wrote": [
+    {
+     "start": "わたしは",
+     "text": "わたしは珍しい行動や、アメリカのパンといった話題になりました。 私自身は、フィンランドのスイス連邦のイスラム教徒が、アメリカにおいては、イスラム教徒の人々が、イスラム教徒から迫害を招くほどに苦しむものです。ドイツはイスラム教徒であり、イス"
+    },
+    {
+     "start": "第一条",
+     "text": "第一条法第十七条（委任書等）の規定については、関係行政機関士及争貯金組合第七条（破壊金）の締結について承認を求めるの件（衆議院送付）を綱紀粛正の主張と相成りました。」 AB「本法律案は、去る四月九日政府より提案理由の説明を聴取し、五月二十三日質疑を行い、五月二十二日質疑を終了いたしましたところ、自由民主党・自"
+    },
+    {
+     "start": "この法律において",
+     "text": "この法律において「射手」と言うように、日々それに気付かれないのであれば、その言葉を叫んでいるのではないかとあり、それを口にしたために、普通の肩ではありました 。眼を誘って、手を出すのも、わたしの行動は、そのことを懸念していた 。 「人間は、いままでは、気が転げいると、�"
+    }
+   ],
+   "loopPct": 1.48,
+   "movedBody": false
   }
  ],
  "bestVal": 2.8544,
@@ -12649,5 +12649,5 @@
  ],
  "wantWider": false,
  "nextD": 768,
- "bad": 0
+ "bad": 2
 }
