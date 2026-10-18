@@ -1,69 +1,6 @@
 {
  "runs": [
   {
-   "at": "2026-10-06T21:39:12Z",
-   "val": 2.7088,
-   "prev": 2.7085,
-   "valTag": "fixed-holdout-v1",
-   "stoppedAt": 559,
-   "stuck": 0,
-   "evalTag": "fixed-ix-v1",
-   "secPerStep": 6.7131,
-   "steps": 1347,
-   "bpc": 3.2061,
-   "charsPerTok": 1.2189,
-   "score": 2.1543,
-   "scoreW": 2.0,
-   "scoreMode": "talk",
-   "finishMix": 0.2,
-   "lineage": "L3",
-   "layers": 13,
-   "params": 25335168,
-   "chars": 1045308899,
-   "tokens": 857567631,
-   "grew": 0,
-   "rolledBack": false,
-   "ownVal": null,
-   "ownScore": null,
-   "d": 384,
-   "loops": 1,
-   "spread": 2.61,
-   "bytes": 304134793,
-   "heads": 6,
-   "ctx": 512,
-   "vocab": 6000,
-   "kind": "bpe",
-   "arch": "tpp-loop",
-   "wantWider": false,
-   "layerCap": 16,
-   "mixChanged": false,
-   "bySrc": {
-    "laws": 3.68,
-    "wiki": 2.8754,
-    "aozora": 3.202,
-    "hanrei": 3.4274,
-    "kokkai": 2.5174,
-    "web": 2.7905,
-    "talk": 2.1543
-   },
-   "wrote": [
-    {
-     "start": "わたしは",
-     "text": "わたしは、もう少し？ まあ、もう少し」 「ここまではいけません。」 「まあ、上手なことを仕切っていらっしゃるっていう通りだったんです、ちょっと怒られますよ。」 「どこへ行っていらっしゃるんです」 「それも何もわかりません。下手ならば、おかげさ"
-    },
-    {
-     "start": "第一条",
-     "text": "第一条の上下下り線と下り線と下り線とを回送する間（各区間）を回送する荷物の専用��（各区間）を回送する荷物（各区間）が急行で回送する荷物（各区間）を乗り降ろすのみでも、各区間で回送する荷物（各区間）を回送する荷物（各区間）を回送する荷物の一部が回送する荷物（各区間）で回送"
-    },
-    {
-     "start": "この法律において",
-     "text": "この法律において、福島第一原発、福島第一原発及び福島第一原発、福島第一原発、福島第一原発、福島第一原発、福島第一原発、福島第一原発、三原発、福島第一原発、福島第一原発、福島第一原発、福島第一原発、福島第一原発、福島第一原発、福島第一原発、福島第一原発、福島第一原発、福島第一"
-    }
-   ],
-   "loopPct": 45.94,
-   "movedBody": false
-  },
-  {
    "at": "2026-10-06T22:56:28Z",
    "val": 2.7102,
    "prev": 2.7088,
@@ -12599,6 +12536,69 @@
    ],
    "loopPct": 30.23,
    "movedBody": false
+  },
+  {
+   "at": "2026-10-18T02:46:41Z",
+   "val": 2.6622,
+   "prev": 2.6624,
+   "valTag": "fixed-holdout-v1",
+   "stoppedAt": 522,
+   "stuck": 0,
+   "evalTag": "fixed-ix-v1",
+   "secPerStep": 7.2043,
+   "steps": 899,
+   "bpc": 3.151,
+   "charsPerTok": 1.2189,
+   "score": 2.1288,
+   "scoreW": 2.0,
+   "scoreMode": "talk",
+   "finishMix": 0.2,
+   "lineage": "L3",
+   "layers": 14,
+   "params": 27105408,
+   "chars": 1045308899,
+   "tokens": 857567631,
+   "grew": 0,
+   "rolledBack": false,
+   "ownVal": null,
+   "ownScore": null,
+   "d": 384,
+   "loops": 1,
+   "spread": 2.6724,
+   "bytes": 325385901,
+   "heads": 6,
+   "ctx": 512,
+   "vocab": 6000,
+   "kind": "bpe",
+   "arch": "tpp-loop",
+   "wantWider": false,
+   "layerCap": 16,
+   "mixChanged": false,
+   "bySrc": {
+    "laws": 3.5851,
+    "wiki": 2.8173,
+    "aozora": 3.1521,
+    "hanrei": 3.3954,
+    "kokkai": 2.4785,
+    "web": 2.7465,
+    "talk": 2.1288
+   },
+   "wrote": [
+    {
+     "start": "わたしは",
+     "text": "わたしは久しいです」 AH「今日の晩は、帰宅したのですが、どうしてもできません。」 AA「そっか、友達は帰宅したのですね」 AH「先月の設定を始めたのですね。」 AA「そうだったんですか。今日はもういいですね！」 AH「はい、もうこうなった"
+    },
+    {
+     "start": "第一条",
+     "text": "第一条、場合に据え置かなければならない。 （뙨） 明治七年七月四日、内閣は、昭和六年十月十二日の閣議において、平成三年八月に決定された�定予算の委員会審判に関する件について、本案及び公聴会における審議の経過並びに結果を御報告申し上げます。 まず、本案について申し上げます。 本案は、各国会において成立したものでありまして、この流れに即して"
+    },
+    {
+     "start": "この法律において",
+     "text": "この法律においてautscale.jpg|渾沢本 高速道路（北陸自動車道） - 大豊間が掛川IC（北陸自動車道） 大阪環状線 - 大阪環状線3000形・2000形 大阪環状線 - 大阪環状線3000形・2000形 大阪環状"
+    }
+   ],
+   "loopPct": 7.3,
+   "movedBody": false
   }
  ],
  "bestVal": 2.6619,
@@ -12649,5 +12649,5 @@
  ],
  "wantWider": false,
  "nextD": 384,
- "bad": 2
+ "bad": 7
 }
