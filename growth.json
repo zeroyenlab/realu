@@ -1,69 +1,6 @@
 {
  "runs": [
   {
-   "at": "2026-10-07T16:30:23Z",
-   "val": 2.9518,
-   "prev": 2.9521,
-   "valTag": "fixed-holdout-v1",
-   "stoppedAt": 0,
-   "stuck": 0,
-   "evalTag": "fixed-ix-v1",
-   "secPerStep": 11.7388,
-   "steps": 300,
-   "bpc": 3.4937,
-   "charsPerTok": 1.2189,
-   "score": 2.1705,
-   "scoreW": 2.0,
-   "scoreMode": "talk",
-   "finishMix": 0.5,
-   "lineage": "L1",
-   "layers": 16,
-   "params": 117914880,
-   "chars": 1045308899,
-   "tokens": 857567631,
-   "grew": 0,
-   "rolledBack": false,
-   "ownVal": null,
-   "ownScore": null,
-   "d": 768,
-   "loops": 1,
-   "spread": 3.2179,
-   "bytes": 1415115957,
-   "heads": 6,
-   "ctx": 512,
-   "vocab": 6000,
-   "kind": "bpe",
-   "arch": "tpp-loop",
-   "wantWider": false,
-   "layerCap": 16,
-   "mixChanged": false,
-   "bySrc": {
-    "laws": 4.2452,
-    "wiki": 3.1145,
-    "aozora": 3.4583,
-    "hanrei": 3.5495,
-    "kokkai": 2.7157,
-    "web": 2.9844,
-    "talk": 2.1705
-   },
-   "wrote": [
-    {
-     "start": "わたしは",
-     "text": "わたしはビールを飲みます。」 BV「いいですね。ビールとか、タオルとかとかですか？」 GJ「オリジナルは好きです！ビールは？」 BV「オーイストーリーとか好きです。」 GJ「オーイスですか！インスタントラーメンとか！」 BV「イン"
-    },
-    {
-     "start": "第一条",
-     "text": "第一条ニーチステリオンズ〉。 画像は ジャンプ や スポーツ 、 CD 版権が認められる [ 19 ] 。 初期の デビュー作 では、 『 いっぱいの 』（ 講談社 、 2018年 ） でも、 2018年 7月 まで名画。 2"
-    },
-    {
-     "start": "この法律において",
-     "text": "この法律において「typotenss」を発表。 2012年12月に発表した 402 ロング・マヌエル・シャイン が発表した「movania モヤ」では、 619 kg のラストによる 602 and Tumber を出版し、語彙が発表による シャ"
-    }
-   ],
-   "loopPct": 3.42,
-   "movedBody": false
-  },
-  {
    "at": "2026-10-07T17:49:20Z",
    "val": 2.9449,
    "prev": 2.9518,
@@ -12599,6 +12536,69 @@
    ],
    "loopPct": 18.61,
    "movedBody": false
+  },
+  {
+   "at": "2026-10-18T21:58:25Z",
+   "val": 2.8458,
+   "prev": 2.8503,
+   "valTag": "fixed-holdout-v1",
+   "stoppedAt": 155,
+   "stuck": 0,
+   "evalTag": "fixed-ix-v1",
+   "secPerStep": 26.933,
+   "steps": 300,
+   "bpc": 3.3682,
+   "charsPerTok": 1.2189,
+   "score": 2.1335,
+   "scoreW": 2.0,
+   "scoreMode": "talk",
+   "finishMix": 0.5,
+   "lineage": "L1",
+   "layers": 16,
+   "params": 117914880,
+   "chars": 1045308899,
+   "tokens": 857567631,
+   "grew": 0,
+   "rolledBack": false,
+   "ownVal": null,
+   "ownScore": null,
+   "d": 768,
+   "loops": 1,
+   "spread": 2.908,
+   "bytes": 1415115957,
+   "heads": 6,
+   "ctx": 512,
+   "vocab": 6000,
+   "kind": "bpe",
+   "arch": "tpp-loop",
+   "wantWider": false,
+   "layerCap": 16,
+   "mixChanged": false,
+   "bySrc": {
+    "laws": 4.0295,
+    "wiki": 3.0012,
+    "aozora": 3.3573,
+    "hanrei": 3.4558,
+    "kokkai": 2.6218,
+    "web": 2.8862,
+    "talk": 2.1335
+   },
+   "wrote": [
+    {
+     "start": "わたしは",
+     "text": "わたしはたすきです」 CN「おお、友達の家で飲んだりしますか？」 EF「楽しいですよー」 CN「お互いおいしそうですね。便利です」 EF「お互い家で何を飲んでも良いですよね。」 CN「そうですね。何食べたんですか？」"
+    },
+    {
+     "start": "第一条",
+     "text": "第一条（呼国土交通大臣は、使用済みの場合に、使用済みである旨の規定の適用を受ける書面を除く。）をしようとするときは、制限対象例（個人、法人（法人にあっては、その法人を含む。）のために使用し、又は使用しない場合にあっては、その使用者の意思を聴くために定期的に利用することができる。 第一項の規定は、第一項から第五項まで、第五十読み替える禍払い対象行為について、申請者（支払請求者が指定更新対象行為であって、その供与を受けた場合にあっては、その"
+    },
+    {
+     "start": "この法律において",
+     "text": "この法律において「ヲ崎定任家族」という」と、異動後の期間中「東京都千代田区に、それぞれ会の名古屋市に、または「東京都区部（東京都区）の名古屋市及川区」とあり、名古屋市の名古屋市に、名古屋市へ上る名古屋市内の名古屋市名古屋市に次ぐ名古"
+    }
+   ],
+   "loopPct": 4.37,
+   "movedBody": false
   }
  ],
  "bestVal": 2.8456,
@@ -12649,5 +12649,5 @@
  ],
  "wantWider": false,
  "nextD": 768,
- "bad": 0
+ "bad": 1
 }
