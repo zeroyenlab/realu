@@ -1,69 +1,6 @@
 {
  "runs": [
   {
-   "at": "2026-10-08T00:13:15Z",
-   "val": 2.9434,
-   "prev": 2.9463,
-   "valTag": "fixed-holdout-v1",
-   "stoppedAt": 158,
-   "stuck": 0,
-   "evalTag": "fixed-ix-v1",
-   "secPerStep": 26.2895,
-   "steps": 300,
-   "bpc": 3.4837,
-   "charsPerTok": 1.2189,
-   "score": 2.1643,
-   "scoreW": 2.0,
-   "scoreMode": "talk",
-   "finishMix": 0.5,
-   "lineage": "L1",
-   "layers": 16,
-   "params": 117914880,
-   "chars": 1045308899,
-   "tokens": 857567631,
-   "grew": 0,
-   "rolledBack": false,
-   "ownVal": null,
-   "ownScore": null,
-   "d": 768,
-   "loops": 1,
-   "spread": 3.187,
-   "bytes": 1415115957,
-   "heads": 6,
-   "ctx": 512,
-   "vocab": 6000,
-   "kind": "bpe",
-   "arch": "tpp-loop",
-   "wantWider": false,
-   "layerCap": 16,
-   "mixChanged": false,
-   "bySrc": {
-    "laws": 4.2354,
-    "wiki": 3.1058,
-    "aozora": 3.4581,
-    "hanrei": 3.5453,
-    "kokkai": 2.7072,
-    "web": 2.9749,
-    "talk": 2.1643
-   },
-   "wrote": [
-    {
-     "start": "わたしは",
-     "text": "わたしはこれでも最高裁で、ある種の名前は何ですか、こんなことをおっしゃっている。なぜなら、何となくお約束がいいのか。 どうですか、退陣するか。だから、大問題になっているんですか。改めて、利会議所で、質問を受ける前に、お答えにならないんだということなんです。」 AA「国務大臣 ただ"
-    },
-    {
-     "start": "第一条",
-     "text": "第一条から次に最近における特別指導の影響が大きいものであります。」 AB「なお、関係省庁とも連携して、関係省庁と連携しながら、十分な教育を行ってきたところでありますが、国連割当部局を中心とする関係省庁と連携しつつ、各種の連携やサービス提供を支援していくことが重要であります。また、わずかな外交、画一的な考"
-    },
-    {
-     "start": "この法律において",
-     "text": "この法律において、ローランド州と同じくローランド半島のローランド州のコーディングラージュ7世がローランド州とローランド州のコーポラティクス州となり、ローランド州を州のオンカローランド州とオンタリオ州パイロットでカストラを結んだ。キ"
-    }
-   ],
-   "loopPct": 2.09,
-   "movedBody": false
-  },
-  {
    "at": "2026-10-08T01:30:35Z",
    "val": 2.9441,
    "prev": 2.9434,
@@ -12599,9 +12536,72 @@
    ],
    "loopPct": 7.73,
    "movedBody": false
+  },
+  {
+   "at": "2026-10-19T05:39:58Z",
+   "val": 2.8401,
+   "prev": 2.8407,
+   "valTag": "fixed-holdout-v1",
+   "stoppedAt": 157,
+   "stuck": 0,
+   "evalTag": "fixed-ix-v1",
+   "secPerStep": 26.6092,
+   "steps": 300,
+   "bpc": 3.3615,
+   "charsPerTok": 1.2189,
+   "score": 2.1274,
+   "scoreW": 2.0,
+   "scoreMode": "talk",
+   "finishMix": 0.5,
+   "lineage": "L1",
+   "layers": 16,
+   "params": 117914880,
+   "chars": 1045308899,
+   "tokens": 857567631,
+   "grew": 0,
+   "rolledBack": false,
+   "ownVal": null,
+   "ownScore": null,
+   "d": 768,
+   "loops": 1,
+   "spread": 2.8454,
+   "bytes": 1415115957,
+   "heads": 6,
+   "ctx": 512,
+   "vocab": 6000,
+   "kind": "bpe",
+   "arch": "tpp-loop",
+   "wantWider": false,
+   "layerCap": 16,
+   "mixChanged": false,
+   "bySrc": {
+    "laws": 4.0214,
+    "wiki": 2.9997,
+    "aozora": 3.3545,
+    "hanrei": 3.4443,
+    "kokkai": 2.6184,
+    "web": 2.8825,
+    "talk": 2.1274
+   },
+   "wrote": [
+    {
+     "start": "わたしは",
+     "text": "わたしはこれを長く受けております。結局、軍事費を削減するということは、このアメリカの軍事力によって定着しております。国際社会に向かって今回の政府にとっても、たくさんの国際情勢は、この軍事費に及んでおります。」 AA「しかし、しかし、日本は、しかも、世界の中でも、"
+    },
+    {
+     "start": "第一条",
+     "text": "第一条 sosson （ 英語版 ） (Aldogi of theoulation) を参照。 1980年代初頭、 オーストラリア の ラディカル・パリ でも ガリコーン・パリ と オーストラリア の シェリア では パリ や"
+    },
+    {
+     "start": "この法律において",
+     "text": "この法律において「福祉教育」と称した。 イタリアでは、社会は国民の生活も十分な社会が分かれ、社会はますます多くの人は年々低下しています。 イタリアと中国が文化をさらに概して、文化機能はいま一つ大きなインフレ兵器となりました。 国際社会においては、社会全体の実現を目標に、多大な貢献"
+    }
+   ],
+   "loopPct": 6.13,
+   "movedBody": false
   }
  ],
- "bestVal": 2.8407,
+ "bestVal": 2.8401,
  "layers": 16,
  "params": 117914880,
  "born": "2026-09-08T15:11:54Z",
@@ -12649,5 +12649,5 @@
  ],
  "wantWider": false,
  "nextD": 768,
- "bad": 1
+ "bad": 2
 }
