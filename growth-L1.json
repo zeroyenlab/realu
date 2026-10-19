@@ -1,69 +1,6 @@
 {
  "runs": [
   {
-   "at": "2026-10-08T10:30:16Z",
-   "val": 2.9362,
-   "prev": 2.9371,
-   "valTag": "fixed-holdout-v1",
-   "stoppedAt": 159,
-   "stuck": 0,
-   "evalTag": "fixed-ix-v1",
-   "secPerStep": 26.2119,
-   "steps": 300,
-   "bpc": 3.4752,
-   "charsPerTok": 1.2189,
-   "score": 2.1651,
-   "scoreW": 2.0,
-   "scoreMode": "talk",
-   "finishMix": 0.5,
-   "lineage": "L1",
-   "layers": 16,
-   "params": 117914880,
-   "chars": 1045308899,
-   "tokens": 857567631,
-   "grew": 0,
-   "rolledBack": false,
-   "ownVal": null,
-   "ownScore": null,
-   "d": 768,
-   "loops": 1,
-   "spread": 3.5717,
-   "bytes": 1415115957,
-   "heads": 6,
-   "ctx": 512,
-   "vocab": 6000,
-   "kind": "bpe",
-   "arch": "tpp-loop",
-   "wantWider": false,
-   "layerCap": 16,
-   "mixChanged": false,
-   "bySrc": {
-    "laws": 4.2206,
-    "wiki": 3.0993,
-    "aozora": 3.4462,
-    "hanrei": 3.5349,
-    "kokkai": 2.6994,
-    "web": 2.9704,
-    "talk": 2.1651
-   },
-   "wrote": [
-    {
-     "start": "わたしは",
-     "text": "わたしはもう少し行きますよね！」 DS「甘いものが好きです！」 CH「あとは、甘くなってきました。甘いものが好きですか？」 DS「小田に行ってみるといいですねえ。」 CH「そうですね。私も甘いものが好きです。」 DS「そう"
-    },
-    {
-     "start": "第一条",
-     "text": "第一条ロボットの妻。 ロボット文書 が公開されたロボット。 ダンス [ 注釈 19 ] フランチャイズ・ダンス [ 注釈 39 ] ワン [ 注釈 10 ] 。 ハーヴェイ・ラマー 声 - 原木竜 [ 注釈 49 ] 1969"
-    },
-    {
-     "start": "この法律において",
-     "text": "この法律において変化」は、ラテンアメリカのルーマニアやヨーロッパのアメリカに導入された。 1859年 - ロンドンの フォークシュタット でモンゴル国が復活し、チャールズ2世が内高度でサッカーとして復帰。 1857年 - ロンドンでモンゴル国�"
-    }
-   ],
-   "loopPct": 0.9,
-   "movedBody": false
-  },
-  {
    "at": "2026-10-08T11:47:51Z",
    "val": 2.934,
    "prev": 2.9362,
@@ -12599,6 +12536,69 @@
    ],
    "loopPct": 4.23,
    "movedBody": false
+  },
+  {
+   "at": "2026-10-19T15:51:13Z",
+   "val": 2.8515,
+   "prev": 2.8387,
+   "valTag": "fixed-holdout-v1",
+   "stoppedAt": 0,
+   "stuck": 0,
+   "evalTag": "fixed-ix-v1",
+   "secPerStep": 12.6179,
+   "steps": 300,
+   "bpc": 3.375,
+   "charsPerTok": 1.2189,
+   "score": 2.1334,
+   "scoreW": 2.0,
+   "scoreMode": "talk",
+   "finishMix": 0.5,
+   "lineage": "L1",
+   "layers": 16,
+   "params": 117914880,
+   "chars": 1045308899,
+   "tokens": 857567631,
+   "grew": 0,
+   "rolledBack": false,
+   "ownVal": null,
+   "ownScore": null,
+   "d": 768,
+   "loops": 1,
+   "spread": 3.0927,
+   "bytes": 1415115957,
+   "heads": 6,
+   "ctx": 512,
+   "vocab": 6000,
+   "kind": "bpe",
+   "arch": "tpp-loop",
+   "wantWider": false,
+   "layerCap": 16,
+   "mixChanged": false,
+   "bySrc": {
+    "laws": 4.0333,
+    "wiki": 3.007,
+    "aozora": 3.3645,
+    "hanrei": 3.4534,
+    "kokkai": 2.6314,
+    "web": 2.8936,
+    "talk": 2.1334
+   },
+   "wrote": [
+    {
+     "start": "わたしは",
+     "text": "わたしは秋葉原ですよ」 GG「そうですか！かわいそうですが、いいですね！」 GI「そうですね。さすがです。」 GG「いい感じでしたか？」 GI「あと、好きなので、そこまでいけてないです。」 GG「奇遇ですね！」 GI「そ"
+    },
+    {
+     "start": "第一条",
+     "text": "第一条投資法人割額の総割分ばかりお願いをしております。」 AA「ちょっとお聞きしたいんですが、平成九年の当初、三年目以降、一年半の、五億円の延長のある返済振り分のうち二億円が、四億円を超えるということで、こういうことがあったんじゃないかなというふうに思っておりますが、これでもありますので、続き"
+    },
+    {
+     "start": "この法律において",
+     "text": "この法律において「明治規定要件特別措置法第六条」という。）が上記規定であるため、法令により「一応基本法」とするものではなく、cheekerにおいて「賄賂」という。 日本における「 七条 」は、一条大権が、4条に分かれて上る「一条」については、2条に基づいて「一条」となる。 なお、 1条 については「 一条二条 」を「一条」を"
+    }
+   ],
+   "loopPct": 5.84,
+   "movedBody": false
   }
  ],
  "bestVal": 2.8387,
@@ -12649,5 +12649,5 @@
  ],
  "wantWider": false,
  "nextD": 768,
- "bad": 1
+ "bad": 4
 }
