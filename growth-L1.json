@@ -1,69 +1,6 @@
 {
  "runs": [
   {
-   "at": "2026-10-08T14:21:51Z",
-   "val": 2.9379,
-   "prev": 2.9325,
-   "valTag": "fixed-holdout-v1",
-   "stoppedAt": 179,
-   "stuck": 0,
-   "evalTag": "fixed-ix-v1",
-   "secPerStep": 23.0282,
-   "steps": 300,
-   "bpc": 3.4773,
-   "charsPerTok": 1.2189,
-   "score": 2.1674,
-   "scoreW": 2.0,
-   "scoreMode": "talk",
-   "finishMix": 0.5,
-   "lineage": "L1",
-   "layers": 16,
-   "params": 117914880,
-   "chars": 1045308899,
-   "tokens": 857567631,
-   "grew": 0,
-   "rolledBack": false,
-   "ownVal": null,
-   "ownScore": null,
-   "d": 768,
-   "loops": 1,
-   "spread": 2.7908,
-   "bytes": 1415115957,
-   "heads": 6,
-   "ctx": 512,
-   "vocab": 6000,
-   "kind": "bpe",
-   "arch": "tpp-loop",
-   "wantWider": false,
-   "layerCap": 16,
-   "mixChanged": false,
-   "bySrc": {
-    "laws": 4.2231,
-    "wiki": 3.0975,
-    "aozora": 3.4494,
-    "hanrei": 3.5389,
-    "kokkai": 2.7041,
-    "web": 2.9704,
-    "talk": 2.1674
-   },
-   "wrote": [
-    {
-     "start": "わたしは",
-     "text": "わたしは、これは今日は殆んど私が見たときに、このとき黙っているかとか言われて、来年、あるいは大丈夫ではないかとかそういうことについて、どういうことかを私は考えさせていただきたい、かように考えております。」 AA「それは、いわば今のやりとりの中で、この場にいたしまして"
-    },
-    {
-     "start": "第一条",
-     "text": "第一条訳交通訳では削除禁止された。 ヤグドは1935年に、ヤグドンでのヨグドングシオン映画『世界の人々の世界』を、ヤグドングシオン、オリエンテーリオンと呼ばれる映画製作を始める。チャンネルの『ダイナモンド・ワン・オン・"
-    },
-    {
-     "start": "この法律において",
-     "text": "この法律においてDD化された“Resort”も含む」読みが無い高いと考えられる。「日本は世界史上初めて日本から大きく寄進 。他にも、世界では主にカメラ・エクソング（Coplee the Top Exciper）が含まれていく。 日本では、世界を辞め"
-    }
-   ],
-   "loopPct": 2.36,
-   "movedBody": false
-  },
-  {
    "at": "2026-10-08T15:36:18Z",
    "val": 2.9418,
    "prev": 2.9379,
@@ -12599,9 +12536,72 @@
    ],
    "loopPct": 15.84,
    "movedBody": false
+  },
+  {
+   "at": "2026-10-19T19:44:21Z",
+   "val": 2.8386,
+   "prev": 2.8417,
+   "valTag": "fixed-holdout-v1",
+   "stoppedAt": 157,
+   "stuck": 0,
+   "evalTag": "fixed-ix-v1",
+   "secPerStep": 26.6039,
+   "steps": 300,
+   "bpc": 3.3598,
+   "charsPerTok": 1.2189,
+   "score": 2.128,
+   "scoreW": 2.0,
+   "scoreMode": "talk",
+   "finishMix": 0.5,
+   "lineage": "L1",
+   "layers": 16,
+   "params": 117914880,
+   "chars": 1045308899,
+   "tokens": 857567631,
+   "grew": 0,
+   "rolledBack": false,
+   "ownVal": null,
+   "ownScore": null,
+   "d": 768,
+   "loops": 1,
+   "spread": 3.0323,
+   "bytes": 1415115957,
+   "heads": 6,
+   "ctx": 512,
+   "vocab": 6000,
+   "kind": "bpe",
+   "arch": "tpp-loop",
+   "wantWider": false,
+   "layerCap": 16,
+   "mixChanged": false,
+   "bySrc": {
+    "laws": 4.0217,
+    "wiki": 2.9927,
+    "aozora": 3.351,
+    "hanrei": 3.4459,
+    "kokkai": 2.6222,
+    "web": 2.8809,
+    "talk": 2.128
+   },
+   "wrote": [
+    {
+     "start": "わたしは",
+     "text": "わたしは、政府のコスト高が上がっておるということは、これは私は高いというふうに思っております。」 AA「高木委員 数字の、見ていますよね。（発言する者あり）この三つの点について、橋本内閣総理大臣にお聞きをいたします。 これは、小泉内閣総理大臣の首相のお尋ねですけれども、橋本"
+    },
+    {
+     "start": "第一条",
+     "text": "第一条、予備員、東北会津新幹線歩 - （2015年度） 1953年度（昭和28年度）- （八幡支社）- （2015年度） 1906年度（平成18年度）- （2006年度）- （2007年度） 1911年度（2016年度）- （2015年度）- （20"
+    },
+    {
+     "start": "この法律において",
+     "text": "この法律において「廃草」を意味する [ 31 ] 。 据置型 [ 32 ] 。 「 さらに 」は、 思想 や 心理学 、 社会学 などから知られている。 「 嗅覚 」は、「 魂 」を意味し、 嗅覚 、 蜂唐 、 中心 、 �"
+    }
+   ],
+   "loopPct": 3.13,
+   "movedBody": false
   }
  ],
- "bestVal": 2.8387,
+ "bestVal": 2.8386,
  "layers": 16,
  "params": 117914880,
  "born": "2026-09-08T15:11:54Z",
@@ -12649,5 +12649,5 @@
  ],
  "wantWider": false,
  "nextD": 768,
- "bad": 1
+ "bad": 2
 }
