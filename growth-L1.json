@@ -1,69 +1,6 @@
 {
  "runs": [
   {
-   "at": "2026-10-07T19:07:04Z",
-   "val": 2.9443,
-   "prev": 2.9449,
-   "valTag": "fixed-holdout-v1",
-   "stoppedAt": 159,
-   "stuck": 0,
-   "evalTag": "fixed-ix-v1",
-   "secPerStep": 26.2685,
-   "steps": 300,
-   "bpc": 3.4848,
-   "charsPerTok": 1.2189,
-   "score": 2.167,
-   "scoreW": 2.0,
-   "scoreMode": "talk",
-   "finishMix": 0.5,
-   "lineage": "L1",
-   "layers": 16,
-   "params": 117914880,
-   "chars": 1045308899,
-   "tokens": 857567631,
-   "grew": 0,
-   "rolledBack": false,
-   "ownVal": null,
-   "ownScore": null,
-   "d": 768,
-   "loops": 1,
-   "spread": 3.2785,
-   "bytes": 1415115957,
-   "heads": 6,
-   "ctx": 512,
-   "vocab": 6000,
-   "kind": "bpe",
-   "arch": "tpp-loop",
-   "wantWider": false,
-   "layerCap": 16,
-   "mixChanged": false,
-   "bySrc": {
-    "laws": 4.2376,
-    "wiki": 3.104,
-    "aozora": 3.4531,
-    "hanrei": 3.5452,
-    "kokkai": 2.7082,
-    "web": 2.9767,
-    "talk": 2.167
-   },
-   "wrote": [
-    {
-     "start": "わたしは",
-     "text": "わたしは、アメリカにおいて、アメリカは、ＥＵになっている。ＥＵとＥＵは、ＥＵから連行されるわけではない。 ＥＵ事件はＥＵ領土問題ではない。ＥＵはイギリス王国を愛称とする。 イＥＵはＥＣＤのＥＵに及んでいる"
-    },
-    {
-     "start": "第一条",
-     "text": "第一条の承継宣言の追加を妨害する旨の規定ができる旨の規定は、所得税第四十四条第二項組合員（億岩岩槻市）に規定する算定に係る所得税検定及び当該所得税年度市場公募都市又は宅地等その他控除後金額の経理の改定に関する方法によりされるものについては、当該同項中「扶養�軍」に、地方公営企業等連合会に対し、�過ぎる貸付金の国庫の積み立て及び相当の種別の定時精算翻書に係る法人税の繰り返し換算し、又は閉鎖する。"
-    },
-    {
-     "start": "この法律において",
-     "text": "この法律においてジタル各省調査を行っています。 是非、こうした措置が進めば、国民の皆さんがおられる、こうしたことについて、どこへ行っていくのか、また、政府としても、今後、国政調査権の拡大、できる限りではないというふうに考えています。」 AB「今回は、まだ八月の国会で、自民党が提案をするというふうに言"
-    }
-   ],
-   "loopPct": 0.51,
-   "movedBody": false
-  },
-  {
    "at": "2026-10-07T20:24:16Z",
    "val": 2.9433,
    "prev": 2.9443,
@@ -12599,6 +12536,69 @@
    ],
    "loopPct": 3.91,
    "movedBody": false
+  },
+  {
+   "at": "2026-10-19T00:31:27Z",
+   "val": 2.8445,
+   "prev": 2.8442,
+   "valTag": "fixed-holdout-v1",
+   "stoppedAt": 158,
+   "stuck": 0,
+   "evalTag": "fixed-ix-v1",
+   "secPerStep": 26.354,
+   "steps": 300,
+   "bpc": 3.3667,
+   "charsPerTok": 1.2189,
+   "score": 2.1286,
+   "scoreW": 2.0,
+   "scoreMode": "talk",
+   "finishMix": 0.5,
+   "lineage": "L1",
+   "layers": 16,
+   "params": 117914880,
+   "chars": 1045308899,
+   "tokens": 857567631,
+   "grew": 0,
+   "rolledBack": false,
+   "ownVal": null,
+   "ownScore": null,
+   "d": 768,
+   "loops": 1,
+   "spread": 3.3182,
+   "bytes": 1415115957,
+   "heads": 6,
+   "ctx": 512,
+   "vocab": 6000,
+   "kind": "bpe",
+   "arch": "tpp-loop",
+   "wantWider": false,
+   "layerCap": 16,
+   "mixChanged": false,
+   "bySrc": {
+    "laws": 4.0222,
+    "wiki": 3.0013,
+    "aozora": 3.3558,
+    "hanrei": 3.4502,
+    "kokkai": 2.6219,
+    "web": 2.8833,
+    "talk": 2.1286
+   },
+   "wrote": [
+    {
+     "start": "わたしは",
+     "text": "わたしは手を入れて飲みます？」 DC「あ、すみません。焼いて美味しいですよね。」 DY「そうなんです。あなたはどうですか？」 DC「私は、中華を食べます！」 DY「中華いいですね、一日中一緒に食べます！」 DC「一番おい"
+    },
+    {
+     "start": "第一条",
+     "text": "第一条リッターは、両子をモチーフとした模様が含まれ、その理想は伯父の影響で現れ、猪の宝石（伯爵）が挙げられる。 シャクルアーツ（Lenopron 、2015年10月7日 - ） - ゲストも登場。巨嵐子（ヤクト）が配"
+    },
+    {
+     "start": "この法律において",
+     "text": "この法律において「駅舎」業務を開始 。 2007年（平成19年）3月28日：駅舎が閉店 。 2008年（平成20年）2月1日：駅舎が変更となり、駅舎が減少 。 2009年（平成21年）4月1日：駅舎が市民向けに設置された 。 2013年（平成25"
+    }
+   ],
+   "loopPct": 3.35,
+   "movedBody": false
   }
  ],
  "bestVal": 2.8442,
@@ -12649,5 +12649,5 @@
  ],
  "wantWider": false,
  "nextD": 768,
- "bad": 0
+ "bad": 1
 }
