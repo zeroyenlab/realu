@@ -1,69 +1,6 @@
 {
  "runs": [
   {
-   "at": "2026-10-08T09:11:28Z",
-   "val": 2.9371,
-   "prev": 2.9383,
-   "valTag": "fixed-holdout-v1",
-   "stoppedAt": 177,
-   "stuck": 0,
-   "evalTag": "fixed-ix-v1",
-   "secPerStep": 23.1983,
-   "steps": 300,
-   "bpc": 3.4763,
-   "charsPerTok": 1.2189,
-   "score": 2.1698,
-   "scoreW": 2.0,
-   "scoreMode": "talk",
-   "finishMix": 0.5,
-   "lineage": "L1",
-   "layers": 16,
-   "params": 117914880,
-   "chars": 1045308899,
-   "tokens": 857567631,
-   "grew": 0,
-   "rolledBack": false,
-   "ownVal": null,
-   "ownScore": null,
-   "d": 768,
-   "loops": 1,
-   "spread": 2.871,
-   "bytes": 1415115957,
-   "heads": 6,
-   "ctx": 512,
-   "vocab": 6000,
-   "kind": "bpe",
-   "arch": "tpp-loop",
-   "wantWider": false,
-   "layerCap": 16,
-   "mixChanged": false,
-   "bySrc": {
-    "laws": 4.2231,
-    "wiki": 3.1002,
-    "aozora": 3.4486,
-    "hanrei": 3.5347,
-    "kokkai": 2.6984,
-    "web": 2.9707,
-    "talk": 2.1698
-   },
-   "wrote": [
-    {
-     "start": "わたしは",
-     "text": "わたしは、今回の景気は今年一月から休みをやる、そういう状況になりました。ただ、今年のＮＰＯのＮＧＯについても、今後二〇年の経済見通しは申し上げることでございます。 次に、二〇一〇年の経済ビジョンでございますけれども、政府は、この方式により、"
-    },
-    {
-     "start": "第一条",
-     "text": "第一条4000号） <記事 カゼ> カゼ（ , ）は、日本語の Jypee の「カゼ」と呼ばれる。 カゼ・チュンゼ・チュン・ム（ , 1869-1883） のこと。 カゼ（血）の語尾がカァ、カゴ、カベのことを指す。カ"
-    },
-    {
-     "start": "この法律において",
-     "text": "この法律において，「１３０」２１０ Ｋの悲劇が発信されており，４０年間の２６０ ３年後から，３５０年間の雲が降りて，雲が降っても，自己が硝子を番 女にして起こる。しかし，そのころ，殷が殺害され，同年４月期の時点では，彼の手"
-    }
-   ],
-   "loopPct": 7.72,
-   "movedBody": false
-  },
-  {
    "at": "2026-10-08T10:30:16Z",
    "val": 2.9362,
    "prev": 2.9371,
@@ -12599,6 +12536,69 @@
    ],
    "loopPct": 7.53,
    "movedBody": false
+  },
+  {
+   "at": "2026-10-19T14:37:58Z",
+   "val": 2.8387,
+   "prev": 2.8404,
+   "valTag": "fixed-holdout-v1",
+   "stoppedAt": 154,
+   "stuck": 0,
+   "evalTag": "fixed-ix-v1",
+   "secPerStep": 27.1871,
+   "steps": 300,
+   "bpc": 3.3598,
+   "charsPerTok": 1.2189,
+   "score": 2.1298,
+   "scoreW": 2.0,
+   "scoreMode": "talk",
+   "finishMix": 0.5,
+   "lineage": "L1",
+   "layers": 16,
+   "params": 117914880,
+   "chars": 1045308899,
+   "tokens": 857567631,
+   "grew": 0,
+   "rolledBack": false,
+   "ownVal": null,
+   "ownScore": null,
+   "d": 768,
+   "loops": 1,
+   "spread": 2.7232,
+   "bytes": 1415115957,
+   "heads": 6,
+   "ctx": 512,
+   "vocab": 6000,
+   "kind": "bpe",
+   "arch": "tpp-loop",
+   "wantWider": false,
+   "layerCap": 16,
+   "mixChanged": false,
+   "bySrc": {
+    "laws": 4.0183,
+    "wiki": 2.996,
+    "aozora": 3.3537,
+    "hanrei": 3.445,
+    "kokkai": 2.6158,
+    "web": 2.8835,
+    "talk": 2.1298
+   },
+   "wrote": [
+    {
+     "start": "わたしは",
+     "text": "わたしは、彼女は、病気な子供たちに、少女は、一切の人生を調和させようとしています。」 AB「そういう中で、この法案の開示と、したがって、無法権の中でも、大きな精神病を外しても、そういう社会的な不安感が起きます。いままでも、特殊性が、生き残った人間の方も、もちろん"
+    },
+    {
+     "start": "第一条",
+     "text": "第一条（以下「条第一項第一号」という。）の意見を聴くことができる。 （選出にかかる場合） 第七イ又はロに定める第十二項に規定する輸出者が承継した農業法第五十七条第一項の規定による承認は、当該質問による。 （を受けた納付） 第七十三条 遣�を定める者は、次に掲げる場合に限り、当該使途を豊かに解釈しなければならない。 当該農業の出資の明示又は承認を受けた農業農村振興基本法（平成十年法律第百五号）附則第四条第二項（科継続法（昭和四十六認証）の"
+    },
+    {
+     "start": "この法律において",
+     "text": "この法律において「予定金」と記述している。 また、2011年3月12日には、 発行部数 で「十分な配締結の便を決める」と発表した。 また、 2006年 には、 山下達也 を公式に発表している。 2008年 9月20日 に、 sports Damator を NTT新"
+    }
+   ],
+   "loopPct": 4.23,
+   "movedBody": false
   }
  ],
  "bestVal": 2.8387,
@@ -12649,5 +12649,5 @@
  ],
  "wantWider": false,
  "nextD": 768,
- "bad": 0
+ "bad": 1
 }
