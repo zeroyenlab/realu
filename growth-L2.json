@@ -1,69 +1,6 @@
 {
  "runs": [
   {
-   "at": "2026-10-09T18:36:28Z",
-   "val": 2.6593,
-   "prev": 2.6613,
-   "valTag": "fixed-holdout-v1",
-   "stoppedAt": 311,
-   "stuck": 0,
-   "evalTag": "fixed-ix-v1",
-   "secPerStep": 12.4978,
-   "steps": 569,
-   "bpc": 3.1475,
-   "charsPerTok": 1.2189,
-   "score": 2.0454,
-   "scoreW": 2.0,
-   "scoreMode": "talk",
-   "finishMix": 0.85,
-   "lineage": "L2",
-   "layers": 14,
-   "params": 47379968,
-   "chars": 1045308899,
-   "tokens": 857567631,
-   "grew": 0,
-   "rolledBack": false,
-   "ownVal": null,
-   "ownScore": null,
-   "d": 512,
-   "loops": 1,
-   "spread": 2.6805,
-   "bytes": 568680621,
-   "heads": 8,
-   "ctx": 512,
-   "vocab": 6000,
-   "kind": "bpe",
-   "arch": "tpp-loop",
-   "wantWider": false,
-   "layerCap": 16,
-   "mixChanged": false,
-   "bySrc": {
-    "laws": 3.5464,
-    "wiki": 2.8293,
-    "aozora": 3.1429,
-    "hanrei": 3.3849,
-    "kokkai": 2.4781,
-    "web": 2.748,
-    "talk": 2.0454
-   },
-   "wrote": [
-    {
-     "start": "わたしは",
-     "text": "わたしは母をもかねてちょくちょく笑った。けれどもそれ以てここに、それからそれを見ると、彼は例の鍋に黒い素材を使うと、彼は手をかけた。けれども、胸をかけた上に、会おうと思ったので、どうしたのかと、魚はいくらかの黒く鳴った。そ"
-    },
-    {
-     "start": "第一条",
-     "text": "第一条第一号ハイマガジン」を参照） 。 JR Suzukawa Chu.jpg|ドライブルー（2009年7月） JR Suzukawa Chu.jpg|駅名標（2009年8月） JR Suzukawa chu.jpg|駅名標（"
-    },
-    {
-     "start": "この法律において",
-     "text": "この法律においてされないと思います。 そこで、今回の法案で、憲法二十四条に明記されております本法案は、憲法違反の要件を受け、その次に憲法二十五条に明記されています。それで、憲法二十六条は、憲法３条の変遷について規定し、憲法違反に含まれる憲法上の制約は言語道断で"
-    }
-   ],
-   "loopPct": 5.37,
-   "movedBody": false
-  },
-  {
    "at": "2026-10-09T19:55:50Z",
    "val": 2.6564,
    "prev": 2.6593,
@@ -12599,9 +12536,72 @@
    ],
    "loopPct": 0.0,
    "movedBody": false
+  },
+  {
+   "at": "2026-10-20T23:27:11Z",
+   "val": 2.6066,
+   "prev": 2.6088,
+   "valTag": "fixed-holdout-v1",
+   "stoppedAt": 340,
+   "stuck": 0,
+   "evalTag": "fixed-ix-v1",
+   "secPerStep": 11.3612,
+   "steps": 645,
+   "bpc": 3.0852,
+   "charsPerTok": 1.2189,
+   "score": 2.0308,
+   "scoreW": 2.0,
+   "scoreMode": "talk",
+   "finishMix": 0.85,
+   "lineage": "L2",
+   "layers": 14,
+   "params": 47379968,
+   "chars": 1045308899,
+   "tokens": 857567631,
+   "grew": 0,
+   "rolledBack": false,
+   "ownVal": null,
+   "ownScore": null,
+   "d": 512,
+   "loops": 1,
+   "spread": 2.4919,
+   "bytes": 568680621,
+   "heads": 8,
+   "ctx": 512,
+   "vocab": 6000,
+   "kind": "bpe",
+   "arch": "tpp-loop",
+   "wantWider": false,
+   "layerCap": 16,
+   "mixChanged": false,
+   "bySrc": {
+    "laws": 3.4615,
+    "wiki": 2.7608,
+    "aozora": 3.0869,
+    "hanrei": 3.3462,
+    "kokkai": 2.4388,
+    "web": 2.6933,
+    "talk": 2.0308
+   },
+   "wrote": [
+    {
+     "start": "わたしは",
+     "text": "わたしは3年生のころから、 2001年 と 2003年 に バレーボール で行われた オールスターズカップ では1978年開幕戦で初めて FF で開催され、 2003年 からはアメリカとの ザ・ワールドカップ において年間37試合目となる [ 11 ] 。 2"
+    },
+    {
+     "start": "第一条",
+     "text": "第一条第二条第六項（老人医療法（昭和三十一年法律第百二十号）に要する費用の負担を求める同法第二条第六項に規定する酢酸豆乳等をせず，かつ、これらを合法的に勾留することができるもの） （同法第七起算して） 第四条の二 法第三の範囲内において国又は産業廃棄物 を行い、又は管理して販売された営業及び販売の業務 （期限までして�電子決済等を販売する等の届出） 第四条の二 法第三��化法人（法第三千九百九十八条第一項に規定する特定重要設備に該当する"
+    },
+    {
+     "start": "この法律において",
+     "text": "この法律において「応急仮設住宅」という。）とする。 （仮設住宅） 第十一条 仮設住宅（仮設住宅を除く。）及び仮設住宅（仮設住宅の仮設住宅（仮設住宅を除く。）は、仮設住宅の仮設住宅とする。 仮設住宅は、仮設住宅に移行する際に、仮設住宅以外の仮設住宅の本体と、仮設住宅以外の仮設住宅の仮設住宅の仮設住宅とが、仮設住宅の仮設住宅"
+    }
+   ],
+   "loopPct": 8.44,
+   "movedBody": false
   }
  ],
- "bestVal": 2.6078,
+ "bestVal": 2.6066,
  "layers": 14,
  "params": 47379968,
  "born": "2026-09-08T15:11:54Z",
@@ -12649,5 +12649,5 @@
  ],
  "wantWider": false,
  "nextD": 512,
- "bad": 1
+ "bad": 0
 }
