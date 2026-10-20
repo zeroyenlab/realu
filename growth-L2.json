@@ -1,69 +1,6 @@
 {
  "runs": [
   {
-   "at": "2026-10-08T19:24:23Z",
-   "val": 2.6621,
-   "prev": 2.6632,
-   "valTag": "fixed-holdout-v1",
-   "stoppedAt": 338,
-   "stuck": 0,
-   "evalTag": "fixed-ix-v1",
-   "secPerStep": 11.4324,
-   "steps": 571,
-   "bpc": 3.1508,
-   "charsPerTok": 1.2189,
-   "score": 2.0429,
-   "scoreW": 2.0,
-   "scoreMode": "talk",
-   "finishMix": 0.85,
-   "lineage": "L2",
-   "layers": 14,
-   "params": 47379968,
-   "chars": 1045308899,
-   "tokens": 857567631,
-   "grew": 0,
-   "rolledBack": false,
-   "ownVal": null,
-   "ownScore": null,
-   "d": 512,
-   "loops": 1,
-   "spread": 2.9456,
-   "bytes": 568680621,
-   "heads": 8,
-   "ctx": 512,
-   "vocab": 6000,
-   "kind": "bpe",
-   "arch": "tpp-loop",
-   "wantWider": false,
-   "layerCap": 16,
-   "mixChanged": false,
-   "bySrc": {
-    "laws": 3.5525,
-    "wiki": 2.8321,
-    "aozora": 3.1476,
-    "hanrei": 3.3785,
-    "kokkai": 2.4813,
-    "web": 2.7506,
-    "talk": 2.0429
-   },
-   "wrote": [
-    {
-     "start": "わたしは",
-     "text": "わたしはフランス語で、書記もフランス語もほぼ発音が非常に多いため、表記も少ない。 6月には メトリック・オットー・オットー・オットー・オットー が非難したため、これはフランス語の音楽・音楽に近い言い回しになっている。 マイケル・アンド・リュイはこの時期にフランス"
-    },
-    {
-     "start": "第一条",
-     "text": "第一条と認められ、又はこれらの規定による措置における措置を行う場合 第三十五条第二項に係る部分に限る。） jegokangle sidentray, jegokangle sidentray, jegokangle sidentray, jegokangle sidentray, jegok"
-    },
-    {
-     "start": "この法律において",
-     "text": "この法律において「音楽データベース」又は「音楽データベース」を出力することができなくなった場合は、音楽データベースを出力することができなくなった場合は、音楽データベースにより出力する。 音楽データベース 音楽データベース 音楽データベース 音楽データベース 音楽データベース 音楽データベ"
-    }
-   ],
-   "loopPct": 19.67,
-   "movedBody": false
-  },
-  {
    "at": "2026-10-08T20:39:27Z",
    "val": 2.6613,
    "prev": 2.6621,
@@ -12599,6 +12536,69 @@
    ],
    "loopPct": 0.91,
    "movedBody": false
+  },
+  {
+   "at": "2026-10-20T00:28:01Z",
+   "val": 2.6117,
+   "prev": 2.611,
+   "valTag": "fixed-holdout-v1",
+   "stoppedAt": 0,
+   "stuck": 0,
+   "evalTag": "fixed-ix-v1",
+   "secPerStep": 5.7879,
+   "steps": 566,
+   "bpc": 3.0912,
+   "charsPerTok": 1.2189,
+   "score": 2.0322,
+   "scoreW": 2.0,
+   "scoreMode": "talk",
+   "finishMix": 0.85,
+   "lineage": "L2",
+   "layers": 14,
+   "params": 47379968,
+   "chars": 1045308899,
+   "tokens": 857567631,
+   "grew": 0,
+   "rolledBack": false,
+   "ownVal": null,
+   "ownScore": null,
+   "d": 512,
+   "loops": 1,
+   "spread": 2.5157,
+   "bytes": 568680621,
+   "heads": 8,
+   "ctx": 512,
+   "vocab": 6000,
+   "kind": "bpe",
+   "arch": "tpp-loop",
+   "wantWider": false,
+   "layerCap": 16,
+   "mixChanged": false,
+   "bySrc": {
+    "laws": 3.4726,
+    "wiki": 2.7669,
+    "aozora": 3.0917,
+    "hanrei": 3.3552,
+    "kokkai": 2.4416,
+    "web": 2.698,
+    "talk": 2.0322
+   },
+   "wrote": [
+    {
+     "start": "わたしは",
+     "text": "わたしはたまにツッコね。」 AH「うわー、大好きです！」 AH「何という食べ物食べたりしますか？」 AH「何でも食べます！」 AH「私も大好きです！」 AH「おいしいですよね！」 AH「はい、食べてみたいです！」 A"
+    },
+    {
+     "start": "第一条",
+     "text": "第一条第一号、第二号、第三号、第四号及び第四号の規定により�持を行ったもの、くは、の承認を受けたものに限る。 （及滅） 第三十五条 術師は、そのために、医師又は助産婦の診断書、診断書、診断書、診断書、診断書その他の使用を当該処方に送信し、その適切な管理を適切に行うために必要な措置を講ずるよう努めるものとする。 条第一項の規定による専門的知識、技術及び知識を活用する者は、その専門的知識、技術又は職務に関係しない者を名称で"
+    },
+    {
+     "start": "この法律において",
+     "text": "この法律において、「受動喫煙防止法」に関する事項で、環境省、環境省、環境省、環境省、環境省、環境省、環境省及び環境省、環境省、環境省及び環境省が発足した。 サービス提供者の環境省は、多数の学生が参加できる環境省の出生率が高いと答弁してきた。2017年では、日本の環境省は、2005年から2006年までの千葉県"
+    }
+   ],
+   "loopPct": 14.18,
+   "movedBody": false
   }
  ],
  "bestVal": 2.6106,
@@ -12649,5 +12649,5 @@
  ],
  "wantWider": false,
  "nextD": 512,
- "bad": 0
+ "bad": 3
 }
