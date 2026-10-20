@@ -1,69 +1,6 @@
 {
  "runs": [
   {
-   "at": "2026-10-09T18:42:18Z",
-   "val": 2.9193,
-   "prev": 2.9219,
-   "valTag": "fixed-holdout-v1",
-   "stoppedAt": 153,
-   "stuck": 0,
-   "evalTag": "fixed-ix-v1",
-   "secPerStep": 27.3824,
-   "steps": 300,
-   "bpc": 3.4552,
-   "charsPerTok": 1.2189,
-   "score": 2.161,
-   "scoreW": 2.0,
-   "scoreMode": "talk",
-   "finishMix": 0.5,
-   "lineage": "L1",
-   "layers": 16,
-   "params": 117914880,
-   "chars": 1045308899,
-   "tokens": 857567631,
-   "grew": 0,
-   "rolledBack": false,
-   "ownVal": null,
-   "ownScore": null,
-   "d": 768,
-   "loops": 1,
-   "spread": 3.0011,
-   "bytes": 1415115957,
-   "heads": 6,
-   "ctx": 512,
-   "vocab": 6000,
-   "kind": "bpe",
-   "arch": "tpp-loop",
-   "wantWider": false,
-   "layerCap": 16,
-   "mixChanged": false,
-   "bySrc": {
-    "laws": 4.1881,
-    "wiki": 3.0812,
-    "aozora": 3.426,
-    "hanrei": 3.5169,
-    "kokkai": 2.6868,
-    "web": 2.9534,
-    "talk": 2.161
-   },
-   "wrote": [
-    {
-     "start": "わたしは",
-     "text": "わたしは、このようにして新たな人権侵害を断絶する必要があるのではないかという意見があったと思うのです。」 AB「そして、これは、このように、その人権を確立するという言葉が得られていますけれども、ただ、破滅的な建前をなす人権というのは、これは、当然、今度は、そのことについて、従来は、一つの人権というのは、"
-    },
-    {
-     "start": "第一条",
-     "text": "第一条途中だったのに対して、それはまた悩むのに不良な調子で、それがなぜ付く間に振り向いて行くかもしれないから、それが強調の大きな問題ではないか。 第二には、吉田総理、これが大きいわけです。これは民間の何らのケースではないか。総理、お答えください。」 AB「吉田"
-    },
-    {
-     "start": "この法律において",
-     "text": "この法律において「裁定距離」と編纂するため死亡爆撃「 Raillagenel 」と呼ばれる。 2000年9月、全日本最長の CD-ROM を務めたが、2010年10月、同年10月に『 Hallo 』を連載。 2000年代に発生した Deraton"
-    }
-   ],
-   "loopPct": 3.79,
-   "movedBody": false
-  },
-  {
    "at": "2026-10-09T20:01:17Z",
    "val": 2.9193,
    "prev": 2.9193,
@@ -12599,9 +12536,72 @@
    ],
    "loopPct": 3.91,
    "movedBody": false
+  },
+  {
+   "at": "2026-10-20T23:33:19Z",
+   "val": 2.8313,
+   "prev": 2.835,
+   "valTag": "fixed-holdout-v1",
+   "stoppedAt": 158,
+   "stuck": 0,
+   "evalTag": "fixed-ix-v1",
+   "secPerStep": 26.398,
+   "steps": 300,
+   "bpc": 3.351,
+   "charsPerTok": 1.2189,
+   "score": 2.1275,
+   "scoreW": 2.0,
+   "scoreMode": "talk",
+   "finishMix": 0.5,
+   "lineage": "L1",
+   "layers": 16,
+   "params": 117914880,
+   "chars": 1045308899,
+   "tokens": 857567631,
+   "grew": 0,
+   "rolledBack": false,
+   "ownVal": null,
+   "ownScore": null,
+   "d": 768,
+   "loops": 1,
+   "spread": 2.8556,
+   "bytes": 1415115957,
+   "heads": 6,
+   "ctx": 512,
+   "vocab": 6000,
+   "kind": "bpe",
+   "arch": "tpp-loop",
+   "wantWider": false,
+   "layerCap": 16,
+   "mixChanged": false,
+   "bySrc": {
+    "laws": 3.9905,
+    "wiki": 2.9869,
+    "aozora": 3.3451,
+    "hanrei": 3.4512,
+    "kokkai": 2.6157,
+    "web": 2.8746,
+    "talk": 2.1275
+   },
+   "wrote": [
+    {
+     "start": "わたしは",
+     "text": "わたしは、�付をあげて、かわいそうに親しくなってしまうというのを、どこへも行ったか何かと思いました。 「お殺しをしているとよばれるが、おとなる方がいいですよ。」 「あたしが一番ですが、お殺しを」 「はい。だから、泣きました。」 「ヤギなんて、わっしで"
+    },
+    {
+     "start": "第一条",
+     "text": "第一条の規定ができたり、民事偶然で結論を得る対応が無いことを強く認識し、引用しながら、どのような対応をお持ちであるかは、まず問題があるときにその場で述べたい。 安保理では、国民の理解が得られないために、一定の理解が得られることは無視できない。 しかし、国民にとっても、結局、国民や"
+    },
+    {
+     "start": "この法律において",
+     "text": "この法律において「通常、」を「年度」に改め、採決の結果、全会一致をもって原案のとおり可決すべきものと決しました。 なお、本案に対し、附帯決議が付されました。 よって、本案は全会一致をもって可決されました。」 <会議 2021-02-27 本会議> AB「第一 熱田議長 以下、 手当"
+    }
+   ],
+   "loopPct": 0.8,
+   "movedBody": false
   }
  ],
- "bestVal": 2.8317,
+ "bestVal": 2.8313,
  "layers": 16,
  "params": 117914880,
  "born": "2026-09-08T15:11:54Z",
@@ -12649,5 +12649,5 @@
  ],
  "wantWider": false,
  "nextD": 768,
- "bad": 4
+ "bad": 5
 }
