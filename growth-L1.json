@@ -1,69 +1,6 @@
 {
  "runs": [
   {
-   "at": "2026-10-09T04:28:58Z",
-   "val": 2.9259,
-   "prev": 2.9288,
-   "valTag": "fixed-holdout-v1",
-   "stoppedAt": 157,
-   "stuck": 0,
-   "evalTag": "fixed-ix-v1",
-   "secPerStep": 26.6423,
-   "steps": 300,
-   "bpc": 3.463,
-   "charsPerTok": 1.2189,
-   "score": 2.1643,
-   "scoreW": 2.0,
-   "scoreMode": "talk",
-   "finishMix": 0.5,
-   "lineage": "L1",
-   "layers": 16,
-   "params": 117914880,
-   "chars": 1045308899,
-   "tokens": 857567631,
-   "grew": 0,
-   "rolledBack": false,
-   "ownVal": null,
-   "ownScore": null,
-   "d": 768,
-   "loops": 1,
-   "spread": 2.833,
-   "bytes": 1415115957,
-   "heads": 6,
-   "ctx": 512,
-   "vocab": 6000,
-   "kind": "bpe",
-   "arch": "tpp-loop",
-   "wantWider": false,
-   "layerCap": 16,
-   "mixChanged": false,
-   "bySrc": {
-    "laws": 4.2028,
-    "wiki": 3.0869,
-    "aozora": 3.4337,
-    "hanrei": 3.5261,
-    "kokkai": 2.6953,
-    "web": 2.9576,
-    "talk": 2.1643
-   },
-   "wrote": [
-    {
-     "start": "わたしは",
-     "text": "わたしはあまり見つかりやすいです。」 GZ「カルビンですね。」 GI「ですね。どこかなんか行かれました？」 GZ「わかります。あと、ストレッチとかも大好きです。」 GI「いいですね。私も行きます。」 GZ「はい、北海道は行ったことないです。"
-    },
-    {
-     "start": "第一条",
-     "text": "第一条 仙台市役所熟練役所 一館 一丁目 二丁目 二丁目 一丁目 一丁目 三丁目 四丁目 三丁目 四丁目 一丁目 二丁目 四丁目 六丁目 十丁目 五丁目 五丁目一丁目 四丁目 二丁目"
-    },
-    {
-     "start": "この法律において",
-     "text": "この法律において「交付税」という。"
-    }
-   ],
-   "loopPct": 19.88,
-   "movedBody": false
-  },
-  {
    "at": "2026-10-09T05:47:32Z",
    "val": 2.9271,
    "prev": 2.9259,
@@ -12599,6 +12536,69 @@
    ],
    "loopPct": 3.75,
    "movedBody": false
+  },
+  {
+   "at": "2026-10-20T09:34:23Z",
+   "val": 2.8349,
+   "prev": 2.8348,
+   "valTag": "fixed-holdout-v1",
+   "stoppedAt": 179,
+   "stuck": 0,
+   "evalTag": "fixed-ix-v1",
+   "secPerStep": 23.0381,
+   "steps": 300,
+   "bpc": 3.3554,
+   "charsPerTok": 1.2189,
+   "score": 2.1269,
+   "scoreW": 2.0,
+   "scoreMode": "talk",
+   "finishMix": 0.5,
+   "lineage": "L1",
+   "layers": 16,
+   "params": 117914880,
+   "chars": 1045308899,
+   "tokens": 857567631,
+   "grew": 0,
+   "rolledBack": false,
+   "ownVal": null,
+   "ownScore": null,
+   "d": 768,
+   "loops": 1,
+   "spread": 2.7787,
+   "bytes": 1415115957,
+   "heads": 6,
+   "ctx": 512,
+   "vocab": 6000,
+   "kind": "bpe",
+   "arch": "tpp-loop",
+   "wantWider": false,
+   "layerCap": 16,
+   "mixChanged": false,
+   "bySrc": {
+    "laws": 4.0005,
+    "wiki": 2.9881,
+    "aozora": 3.3514,
+    "hanrei": 3.4485,
+    "kokkai": 2.6187,
+    "web": 2.8775,
+    "talk": 2.1269
+   },
+   "wrote": [
+    {
+     "start": "わたしは",
+     "text": "わたしは、猫をいくつもりだと思います。」 AB「猫は猫だったので、よく言われると。だから、こんなことは早くもっても、ちゃんと時間が来たら、僕はちょっと猫を飼っていましたよ。」 AB「猫猫かまたはかわいい！」 AB「そ"
+    },
+    {
+     "start": "第一条",
+     "text": "第一条えるべきであるということは、私は、したがって、この点は、さような意味で、まことに私の責任であるということは、私は、私どもは、これからもしてもよく御理解をいただけると、これはお尋ねしますが、私は、先ほど申しましたように、非常に大事なことでありますので、私どもの方針に沿っていることは、私は、"
+    },
+    {
+     "start": "この法律において",
+     "text": "この法律において「¥ 主任の目に見える - 票をもっていない人々 - - 12歳まで持つ言葉 - 13話言葉 - - マイラム - 年齢45歳 - 12歳 [ 34 ] - マイラムの作品。 12歳 - 12歳 - 12歳 [ 34 ] 。 12"
+    }
+   ],
+   "loopPct": 12.02,
+   "movedBody": false
   }
  ],
  "bestVal": 2.8348,
@@ -12649,5 +12649,5 @@
  ],
  "wantWider": false,
  "nextD": 768,
- "bad": 2
+ "bad": 0
 }
