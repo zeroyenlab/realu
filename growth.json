@@ -1,69 +1,6 @@
 {
  "runs": [
   {
-   "at": "2026-10-09T05:47:32Z",
-   "val": 2.9271,
-   "prev": 2.9259,
-   "valTag": "fixed-holdout-v1",
-   "stoppedAt": 152,
-   "stuck": 0,
-   "evalTag": "fixed-ix-v1",
-   "secPerStep": 27.6611,
-   "steps": 300,
-   "bpc": 3.4645,
-   "charsPerTok": 1.2189,
-   "score": 2.1636,
-   "scoreW": 2.0,
-   "scoreMode": "talk",
-   "finishMix": 0.5,
-   "lineage": "L1",
-   "layers": 16,
-   "params": 117914880,
-   "chars": 1045308899,
-   "tokens": 857567631,
-   "grew": 0,
-   "rolledBack": false,
-   "ownVal": null,
-   "ownScore": null,
-   "d": 768,
-   "loops": 1,
-   "spread": 3.1439,
-   "bytes": 1415115957,
-   "heads": 6,
-   "ctx": 512,
-   "vocab": 6000,
-   "kind": "bpe",
-   "arch": "tpp-loop",
-   "wantWider": false,
-   "layerCap": 16,
-   "mixChanged": false,
-   "bySrc": {
-    "laws": 4.2046,
-    "wiki": 3.0865,
-    "aozora": 3.4327,
-    "hanrei": 3.5284,
-    "kokkai": 2.6945,
-    "web": 2.9592,
-    "talk": 2.1636
-   },
-   "wrote": [
-    {
-     "start": "わたしは",
-     "text": "わたしは、田中哲郎会長が、あなたにとっては、何かに、はながら、あなたが、その方々に、私、あんなにでもごろかな、少しでも、者さんの、まあ、何にもいられませんよ。まあまあ、私はそのときのは、私は、それはあなたの友達ですよ、あなたの身をさしたと"
-    },
-    {
-     "start": "第一条",
-     "text": "第一条 + 0 0 11 2000年前後に女子は、ゲームが大人したときには相当な才能を受けたため、生前から上述したように、ゲームや手間の違いがないと言われていた。 どのような面でも、ゲームやタイトルや形状は共通している。 ゲームソフトのようなメディアのバージョン"
-    },
-    {
-     "start": "この法律において",
-     "text": "この法律において「 日本 」、発売日（日本発売日）により発売。 「 鳥たち 」と「 鳥 」の設定となる。 「 鳥 」のメロディは、 アニメ や ネタ などのデザインがより早いものの、色々な 鳥 を輸入したり、鳥取県内の タワー を中心に延"
-    }
-   ],
-   "loopPct": 6.34,
-   "movedBody": false
-  },
-  {
    "at": "2026-10-09T06:50:03Z",
    "val": 2.9312,
    "prev": 2.9271,
@@ -12599,6 +12536,69 @@
    ],
    "loopPct": 12.02,
    "movedBody": false
+  },
+  {
+   "at": "2026-10-20T10:49:14Z",
+   "val": 2.8405,
+   "prev": 2.8349,
+   "valTag": "fixed-holdout-v1",
+   "stoppedAt": 270,
+   "stuck": 0,
+   "evalTag": "fixed-ix-v1",
+   "secPerStep": 14.5377,
+   "steps": 300,
+   "bpc": 3.3619,
+   "charsPerTok": 1.2189,
+   "score": 2.1319,
+   "scoreW": 2.0,
+   "scoreMode": "talk",
+   "finishMix": 0.5,
+   "lineage": "L1",
+   "layers": 16,
+   "params": 117914880,
+   "chars": 1045308899,
+   "tokens": 857567631,
+   "grew": 0,
+   "rolledBack": false,
+   "ownVal": null,
+   "ownScore": null,
+   "d": 768,
+   "loops": 1,
+   "spread": 2.9272,
+   "bytes": 1415115957,
+   "heads": 6,
+   "ctx": 512,
+   "vocab": 6000,
+   "kind": "bpe",
+   "arch": "tpp-loop",
+   "wantWider": false,
+   "layerCap": 16,
+   "mixChanged": false,
+   "bySrc": {
+    "laws": 4.0076,
+    "wiki": 2.9958,
+    "aozora": 3.3551,
+    "hanrei": 3.4501,
+    "kokkai": 2.6202,
+    "web": 2.883,
+    "talk": 2.1319
+   },
+   "wrote": [
+    {
+     "start": "わたしは",
+     "text": "わたしは、もう少し遠慮なく、重ね合いをしているうちに、もう一つは、きたときには、そういうときには、現在は、一生懸命だけでも四十六人とかでもありません。ですから、すぐすぐになりますよ、それは。」 AB「ただ、そのときに、そういう人が、それはなかなか、いくら一番の問題"
+    },
+    {
+     "start": "第一条",
+     "text": "第一条、布父子、聖母子への奨学金、養父母・声優・小母・松重の家庭用キャプテン。 1976年 - 4月21日、テレビ朝日・神奈川テレビ系列『 』で放送。 1977年 - 1977年 （生年は55歳） - 1977年 3"
+    },
+    {
+     "start": "この法律において",
+     "text": "この法律において「常用用」（一部）と呼称される。 これは以下の通りである。 参考 (1) 原告の主張 エ被控訴人の前記主張は理由がない。 オ被告側の控訴人らに手術を繰り返し (1) 控訴人らの主張 控訴人は，控訴人の主張を主張する上で正当に認められるものの"
+    }
+   ],
+   "loopPct": 8.04,
+   "movedBody": false
   }
  ],
  "bestVal": 2.8348,
@@ -12649,5 +12649,5 @@
  ],
  "wantWider": false,
  "nextD": 768,
- "bad": 0
+ "bad": 2
 }
