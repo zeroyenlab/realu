@@ -1,69 +1,6 @@
 {
  "runs": [
   {
-   "at": "2026-10-08T23:21:48Z",
-   "val": 2.9309,
-   "prev": 2.9339,
-   "valTag": "fixed-holdout-v1",
-   "stoppedAt": 156,
-   "stuck": 0,
-   "evalTag": "fixed-ix-v1",
-   "secPerStep": 26.8484,
-   "steps": 300,
-   "bpc": 3.469,
-   "charsPerTok": 1.2189,
-   "score": 2.1653,
-   "scoreW": 2.0,
-   "scoreMode": "talk",
-   "finishMix": 0.5,
-   "lineage": "L1",
-   "layers": 16,
-   "params": 117914880,
-   "chars": 1045308899,
-   "tokens": 857567631,
-   "grew": 0,
-   "rolledBack": false,
-   "ownVal": null,
-   "ownScore": null,
-   "d": 768,
-   "loops": 1,
-   "spread": 3.1995,
-   "bytes": 1415115957,
-   "heads": 6,
-   "ctx": 512,
-   "vocab": 6000,
-   "kind": "bpe",
-   "arch": "tpp-loop",
-   "wantWider": false,
-   "layerCap": 16,
-   "mixChanged": false,
-   "bySrc": {
-    "laws": 4.2132,
-    "wiki": 3.0884,
-    "aozora": 3.4426,
-    "hanrei": 3.5363,
-    "kokkai": 2.6995,
-    "web": 2.9641,
-    "talk": 2.1653
-   },
-   "wrote": [
-    {
-     "start": "わたしは",
-     "text": "わたしは、人民に対しては、このような、共産党の質問にお答えください。 我々が党としては、すべて国民の信頼を欺いています。社会党は、国民生活の理解と協力を求めつつ、社会党、民主党を代表して、日本維新の会の中でも最大の課題えたいと思います。」 AA「我が国では、これまでにも、�"
-    },
-    {
-     "start": "第一条",
-     "text": "第一条を住居とする。 （運送） 第十六条 HACSSSは、エンジンに搭載された機器の表示を自動的に使用しないで販売するタイプの種苗のパターンを搭載するサービスを搭載する。 エンジンの電源医療に関しては、エンジンとエンジンのエンジンの普及に伴い、装備品等のエンジンを装着し、エンジン"
-    },
-    {
-     "start": "この法律において",
-     "text": "この法律において「化学ブレードの大格差」と呼ばれる。 「CMO」は、スタートボードである。 「CMO」は「CMO」は「CMO」を「CMO」に分類している。 「ブレード」は、CMOなどのCMOは「CMO」が使われる。 「B」はコピーを表す。 CMOOレーザーのCM"
-    }
-   ],
-   "loopPct": 11.33,
-   "movedBody": false
-  },
-  {
    "at": "2026-10-09T00:38:33Z",
    "val": 2.9288,
    "prev": 2.9309,
@@ -12599,9 +12536,72 @@
    ],
    "loopPct": 13.57,
    "movedBody": false
+  },
+  {
+   "at": "2026-10-20T04:29:55Z",
+   "val": 2.8374,
+   "prev": 2.8417,
+   "valTag": "fixed-holdout-v1",
+   "stoppedAt": 158,
+   "stuck": 0,
+   "evalTag": "fixed-ix-v1",
+   "secPerStep": 26.2973,
+   "steps": 300,
+   "bpc": 3.3583,
+   "charsPerTok": 1.2189,
+   "score": 2.1276,
+   "scoreW": 2.0,
+   "scoreMode": "talk",
+   "finishMix": 0.5,
+   "lineage": "L1",
+   "layers": 16,
+   "params": 117914880,
+   "chars": 1045308899,
+   "tokens": 857567631,
+   "grew": 0,
+   "rolledBack": false,
+   "ownVal": null,
+   "ownScore": null,
+   "d": 768,
+   "loops": 1,
+   "spread": 2.8037,
+   "bytes": 1415115957,
+   "heads": 6,
+   "ctx": 512,
+   "vocab": 6000,
+   "kind": "bpe",
+   "arch": "tpp-loop",
+   "wantWider": false,
+   "layerCap": 16,
+   "mixChanged": false,
+   "bySrc": {
+    "laws": 4.0106,
+    "wiki": 2.9902,
+    "aozora": 3.3492,
+    "hanrei": 3.4502,
+    "kokkai": 2.6184,
+    "web": 2.8803,
+    "talk": 2.1276
+   },
+   "wrote": [
+    {
+     "start": "わたしは",
+     "text": "わたしはまた赤木の年間少年は、出身が気軽に目立ちます。」 FE「そんなことはよくわかりませんが、黒木とゴマゴとかをよく見るんですよね。」 GO「ああ、それはすっきりすると思います。是非使ってください。」 FE「もう少し終わったらやって"
+    },
+    {
+     "start": "第一条",
+     "text": "第一条、附則附則第二条及び第八条において同じ。）に自動券売機を設置する場合及び特定券売機又は新規発行機及び新規発行機から系列に配属されている回数券を使用するもの（の記載がある場合は、当該発行機の乗車券を売却したり、発行または混同される場合にあっては、当該譲渡に用いる時刻を予定する乗車券の作成を継続すること）とする場合の配付、現行購入券人が発行された時刻の乗車券等を切り"
+    },
+    {
+     "start": "この法律において",
+     "text": "この法律において「殉」を名乗り、「L」を意味する。 1969年（昭和44年）10月1日 - 赤旗が倒壊した、赤旗では赤色をつけたthe ～song in tyne 2014-05-3が登場する。赤被告名誉会長（1965-201"
+    }
+   ],
+   "loopPct": 2.82,
+   "movedBody": false
   }
  ],
- "bestVal": 2.8375,
+ "bestVal": 2.8374,
  "layers": 16,
  "params": 117914880,
  "born": "2026-09-08T15:11:54Z",
