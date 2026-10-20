@@ -1,69 +1,6 @@
 {
  "runs": [
   {
-   "at": "2026-10-08T19:26:25Z",
-   "val": 2.9359,
-   "prev": 2.9349,
-   "valTag": "fixed-holdout-v1",
-   "stoppedAt": 212,
-   "stuck": 0,
-   "evalTag": "fixed-ix-v1",
-   "secPerStep": 18.9564,
-   "steps": 300,
-   "bpc": 3.4749,
-   "charsPerTok": 1.2189,
-   "score": 2.1684,
-   "scoreW": 2.0,
-   "scoreMode": "talk",
-   "finishMix": 0.5,
-   "lineage": "L1",
-   "layers": 16,
-   "params": 117914880,
-   "chars": 1045308899,
-   "tokens": 857567631,
-   "grew": 0,
-   "rolledBack": false,
-   "ownVal": null,
-   "ownScore": null,
-   "d": 768,
-   "loops": 1,
-   "spread": 3.1899,
-   "bytes": 1415115957,
-   "heads": 6,
-   "ctx": 512,
-   "vocab": 6000,
-   "kind": "bpe",
-   "arch": "tpp-loop",
-   "wantWider": false,
-   "layerCap": 16,
-   "mixChanged": false,
-   "bySrc": {
-    "laws": 4.2178,
-    "wiki": 3.1017,
-    "aozora": 3.4491,
-    "hanrei": 3.5327,
-    "kokkai": 2.6963,
-    "web": 2.9701,
-    "talk": 2.1684
-   },
-   "wrote": [
-    {
-     "start": "わたしは",
-     "text": "わたしは帝国の敵対的基調を計画していますが、それはあなたの行動は、本当に実現すればいいと思いますよ。ここ数年一千万件だと、こういうふうに思います。そして、私は、この問題は、国民を守ると、一体何だってしないということを申し上げているのかな、これはまだ大変なことなのかな"
-    },
-    {
-     "start": "第一条",
-     "text": "第一条７条（譲吸弁債等が定めた値） 2020年1月18日、ツイス・バロン大使館が就任した際に、京都大使館は、「いずれも大使館から河内にあった。」と報告された。 2023年11月1日、京都府下茂戴平海兵隊長の近藤稔彦と鬼丸を"
-    },
-    {
-     "start": "この法律において",
-     "text": "この法律においての高温高原、高麗には約3000 mでは3つあった 。 2000年代には、1番の高熱などの豪華な低気圧に入り、本体や低温で大幅に増大した高熱では多くの海底が遅れた。 2007年 には、豆の44%の豪華高級時計を10万台"
-    }
-   ],
-   "loopPct": 8.23,
-   "movedBody": false
-  },
-  {
    "at": "2026-10-08T20:44:42Z",
    "val": 2.9319,
    "prev": 2.9359,
@@ -12599,9 +12536,72 @@
    ],
    "loopPct": 19.61,
    "movedBody": false
+  },
+  {
+   "at": "2026-10-20T00:42:11Z",
+   "val": 2.8375,
+   "prev": 2.839,
+   "valTag": "fixed-holdout-v1",
+   "stoppedAt": 158,
+   "stuck": 0,
+   "evalTag": "fixed-ix-v1",
+   "secPerStep": 26.351,
+   "steps": 328,
+   "bpc": 3.3584,
+   "charsPerTok": 1.2189,
+   "score": 2.1274,
+   "scoreW": 2.0,
+   "scoreMode": "talk",
+   "finishMix": 0.5,
+   "lineage": "L1",
+   "layers": 16,
+   "params": 117914880,
+   "chars": 1045308899,
+   "tokens": 857567631,
+   "grew": 0,
+   "rolledBack": false,
+   "ownVal": null,
+   "ownScore": null,
+   "d": 768,
+   "loops": 1,
+   "spread": 3.255,
+   "bytes": 1415115957,
+   "heads": 6,
+   "ctx": 512,
+   "vocab": 6000,
+   "kind": "bpe",
+   "arch": "tpp-loop",
+   "wantWider": false,
+   "layerCap": 16,
+   "mixChanged": false,
+   "bySrc": {
+    "laws": 4.0114,
+    "wiki": 2.9935,
+    "aozora": 3.3527,
+    "hanrei": 3.4511,
+    "kokkai": 2.6178,
+    "web": 2.8808,
+    "talk": 2.1274
+   },
+   "wrote": [
+    {
+     "start": "わたしは",
+     "text": "わたしは。」 BY「そうなんですか？結構前からですか？」 CC「友達と行く時は、カフェに行ってみようかなと思ってます。」 BY「いいですねー。私は友達と行くときは、夫の心介を感じて行くのですが、おもしろいことですね。」 CC「お友達、"
+    },
+    {
+     "start": "第一条",
+     "text": "第一条」と改められた [ 14 ] 。 大和国 では 園芸 が主流となった [ 15 ] 。 『日本大百科全書』では「 松案 での論理は、古典的な論理を持つ 正則国 が 徳川家康 を詩人として知る」と定義しており、それによって捉えた ["
+    },
+    {
+     "start": "この法律において",
+     "text": "この法律において「補正予算を組むためには今後再び対応策を今度は尽くすべきである。」 AB「しかるに、今回の補正予算案の審議に当たっては、これは財政法改正案が本当に失業を防ぐための手当であるという、この際に、再発防止策、政府を挙げてやっていかなければならない、そして、今回の補正予算では一日も早く成立をする、"
+    }
+   ],
+   "loopPct": 2.56,
+   "movedBody": false
   }
  ],
- "bestVal": 2.8386,
+ "bestVal": 2.8375,
  "layers": 16,
  "params": 117914880,
  "born": "2026-09-08T15:11:54Z",
@@ -12649,5 +12649,5 @@
  ],
  "wantWider": false,
  "nextD": 768,
- "bad": 1
+ "bad": 0
 }
