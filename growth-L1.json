@@ -1,69 +1,6 @@
 {
  "runs": [
   {
-   "at": "2026-10-09T10:52:38Z",
-   "val": 2.9227,
-   "prev": 2.9242,
-   "valTag": "fixed-holdout-v1",
-   "stoppedAt": 157,
-   "stuck": 0,
-   "evalTag": "fixed-ix-v1",
-   "secPerStep": 26.5123,
-   "steps": 300,
-   "bpc": 3.4592,
-   "charsPerTok": 1.2189,
-   "score": 2.1582,
-   "scoreW": 2.0,
-   "scoreMode": "talk",
-   "finishMix": 0.5,
-   "lineage": "L1",
-   "layers": 16,
-   "params": 117914880,
-   "chars": 1045308899,
-   "tokens": 857567631,
-   "grew": 0,
-   "rolledBack": false,
-   "ownVal": null,
-   "ownScore": null,
-   "d": 768,
-   "loops": 1,
-   "spread": 3.1265,
-   "bytes": 1415115957,
-   "heads": 6,
-   "ctx": 512,
-   "vocab": 6000,
-   "kind": "bpe",
-   "arch": "tpp-loop",
-   "wantWider": false,
-   "layerCap": 16,
-   "mixChanged": false,
-   "bySrc": {
-    "laws": 4.1968,
-    "wiki": 3.0856,
-    "aozora": 3.4321,
-    "hanrei": 3.517,
-    "kokkai": 2.6888,
-    "web": 2.956,
-    "talk": 2.1582
-   },
-   "wrote": [
-    {
-     "start": "わたしは",
-     "text": "わたしは、今国会においては、第一次世界大戦・戦後、世界の平和と安全を強行するということが、アメリカが安保理をやめるのであります。」 AB「しかしながら、第二次世界大戦終焉後、批判を浴びた経緯を許します。あなたが、大戦を念頭に置き、戦争を真剣に指揮"
-    },
-    {
-     "start": "第一条",
-     "text": "第一条,, , , , , , , , , , , , , 1, , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , 2, , , 0, , , , 2,"
-    },
-    {
-     "start": "この法律において",
-     "text": "この法律において「 捕虜 」が含まれる。 これは、 ソウル が 1887年 にガイアナ・カーン暑王を率いて ナイジェリア を修得する。 グレンジャーの非サイレン・ソウルは 21世紀 に ドイツ と マンデル の ペルー を防衛した。"
-    }
-   ],
-   "loopPct": 33.31,
-   "movedBody": false
-  },
-  {
    "at": "2026-10-09T12:08:41Z",
    "val": 2.9252,
    "prev": 2.9227,
@@ -12599,6 +12536,69 @@
    ],
    "loopPct": 10.92,
    "movedBody": false
+  },
+  {
+   "at": "2026-10-20T15:50:10Z",
+   "val": 2.8349,
+   "prev": 2.833,
+   "valTag": "fixed-holdout-v1",
+   "stoppedAt": 157,
+   "stuck": 0,
+   "evalTag": "fixed-ix-v1",
+   "secPerStep": 26.4759,
+   "steps": 300,
+   "bpc": 3.3553,
+   "charsPerTok": 1.2189,
+   "score": 2.1282,
+   "scoreW": 2.0,
+   "scoreMode": "talk",
+   "finishMix": 0.5,
+   "lineage": "L1",
+   "layers": 16,
+   "params": 117914880,
+   "chars": 1045308899,
+   "tokens": 857567631,
+   "grew": 0,
+   "rolledBack": false,
+   "ownVal": null,
+   "ownScore": null,
+   "d": 768,
+   "loops": 1,
+   "spread": 2.9147,
+   "bytes": 1415115957,
+   "heads": 6,
+   "ctx": 512,
+   "vocab": 6000,
+   "kind": "bpe",
+   "arch": "tpp-loop",
+   "wantWider": false,
+   "layerCap": 16,
+   "mixChanged": false,
+   "bySrc": {
+    "laws": 4.0,
+    "wiki": 2.9861,
+    "aozora": 3.349,
+    "hanrei": 3.4471,
+    "kokkai": 2.6179,
+    "web": 2.8767,
+    "talk": 2.1282
+   },
+   "wrote": [
+    {
+     "start": "わたしは",
+     "text": "わたしは真夏の終わりでおしまいということで苦しんでいることになります。」 CY「そうなんですよ。平日は何をお願いしますか？」 CQ「夏は猛暑の日が多いです」 CY「私は夏にどこかにお腹が減っています。」"
+    },
+    {
+     "start": "第一条",
+     "text": "第一条この法律において「内閣総理大臣」又は「第二十一条第三項」と読み替えるものとする。 （公示） 第十九条 法第九条の五第六項及び第十五条の六の三第二項の風を内閣総理大臣に提出しなければならない。 議決権（次回る資産をいう。以下同じ。）の資産及び資産 当該資産 （資産） 喫煙（�還及びーたい又はひとつの金） 第百七条 法第六十五条の五第一項の同項に規定する資産 （株） 第十九条 法第三十四条の五第一項の規定による株の切替 株価の評価 二"
+    },
+    {
+     "start": "この法律において",
+     "text": "この法律において「ることができる意思を持つ」を意味する語となっている。 このような意味で、「前述の通り、前述のとおり、このような意味では、前述のように、前述のような意味合いを持つ語は、後述のように語義を指す言葉に由来する。 上記のように、前述のように語源としては、前述の通りに前述の途"
+    }
+   ],
+   "loopPct": 0.0,
+   "movedBody": false
   }
  ],
  "bestVal": 2.833,
@@ -12649,5 +12649,5 @@
  ],
  "wantWider": false,
  "nextD": 768,
- "bad": 0
+ "bad": 1
 }
