@@ -1,69 +1,6 @@
 {
  "runs": [
   {
-   "at": "2026-10-10T07:32:13Z",
-   "val": 2.9131,
-   "prev": 2.9144,
-   "valTag": "fixed-holdout-v1",
-   "stoppedAt": 158,
-   "stuck": 0,
-   "evalTag": "fixed-ix-v1",
-   "secPerStep": 26.4929,
-   "steps": 300,
-   "bpc": 3.4478,
-   "charsPerTok": 1.2189,
-   "score": 2.1626,
-   "scoreW": 2.0,
-   "scoreMode": "talk",
-   "finishMix": 0.5,
-   "lineage": "L1",
-   "layers": 16,
-   "params": 117914880,
-   "chars": 1045308899,
-   "tokens": 857567631,
-   "grew": 0,
-   "rolledBack": false,
-   "ownVal": null,
-   "ownScore": null,
-   "d": 768,
-   "loops": 1,
-   "spread": 2.9265,
-   "bytes": 1415115957,
-   "heads": 6,
-   "ctx": 512,
-   "vocab": 6000,
-   "kind": "bpe",
-   "arch": "tpp-loop",
-   "wantWider": false,
-   "layerCap": 16,
-   "mixChanged": false,
-   "bySrc": {
-    "laws": 4.1807,
-    "wiki": 3.0772,
-    "aozora": 3.4241,
-    "hanrei": 3.5148,
-    "kokkai": 2.6807,
-    "web": 2.9479,
-    "talk": 2.1626
-   },
-   "wrote": [
-    {
-     "start": "わたしは",
-     "text": "わたしは丁度こもったため、実際の本をひとつ口からまであけていた。 そして、小鳥のだって、一度は、あたしをひょっとする向うを、別にとどめたらしいこともあった。 長いものは、ぼくは、昔のままだと思っていた。 「ああ、あなたへ……」 「うん、そういって、"
-    },
-    {
-     "start": "第一条",
-     "text": "第一条クロ�お知り合いの少年の使命を自分で負担させ、その上で、その結果として、法律的な見直しが必要であると指摘されている [ 32 ] 。 これに対し、 飯田春子 は、 1977年 （昭和52年）の アイスランド・ヨルダン の黒人・ ジェームズ・ゴールド"
-    },
-    {
-     "start": "この法律において",
-     "text": "この法律において「東アジア諸国」と位置づける。19世紀東ロシアがイタリアに当たると、アナトリア＝アレクサンドロス1世がロンドン諸島で回復し、アレクサンドリアのアレクサンドロス、 、ドイツ、 といった大陸の都市を中心に、イタリア半島から南に向か"
-    }
-   ],
-   "loopPct": 4.01,
-   "movedBody": false
-  },
-  {
    "at": "2026-10-10T08:49:30Z",
    "val": 2.913,
    "prev": 2.9131,
@@ -12599,9 +12536,72 @@
    ],
    "loopPct": 13.4,
    "movedBody": false
+  },
+  {
+   "at": "2026-10-21T12:26:02Z",
+   "val": 2.8229,
+   "prev": 2.8253,
+   "valTag": "fixed-holdout-v1",
+   "stoppedAt": 159,
+   "stuck": 0,
+   "evalTag": "fixed-ix-v1",
+   "secPerStep": 26.2541,
+   "steps": 300,
+   "bpc": 3.3411,
+   "charsPerTok": 1.2189,
+   "score": 2.1248,
+   "scoreW": 2.0,
+   "scoreMode": "talk",
+   "finishMix": 0.5,
+   "lineage": "L1",
+   "layers": 16,
+   "params": 117914880,
+   "chars": 1045308899,
+   "tokens": 857567631,
+   "grew": 0,
+   "rolledBack": false,
+   "ownVal": null,
+   "ownScore": null,
+   "d": 768,
+   "loops": 1,
+   "spread": 2.9525,
+   "bytes": 1415115957,
+   "heads": 6,
+   "ctx": 512,
+   "vocab": 6000,
+   "kind": "bpe",
+   "arch": "tpp-loop",
+   "wantWider": false,
+   "layerCap": 16,
+   "mixChanged": false,
+   "bySrc": {
+    "laws": 3.9765,
+    "wiki": 2.9795,
+    "aozora": 3.3395,
+    "hanrei": 3.4411,
+    "kokkai": 2.6069,
+    "web": 2.8684,
+    "talk": 2.1248
+   },
+   "wrote": [
+    {
+     "start": "わたしは",
+     "text": "わたしは実は一番好きでした！」 BR「おー！！！！みんなでもうらやましいです！」 DJ「一番好きなのは、大好きなので、ビール飲みます。」 BR「そうなんですね！？九州？」 DJ「東京に住んで、今年は行った"
+    },
+    {
+     "start": "第一条",
+     "text": "第一条に区別を表す。 なお、記述式は NHKMB （当時日本放送協会）でもなく、専門の部分はほぼ同一である。 また、 NHK出版廷楽団 の ジャーナリズム 作家の ハンク・オブ・ザ・イヤー がいる。 第10回 （ 1987年 ）の コミック・"
+    },
+    {
+     "start": "この法律において",
+     "text": "この法律において「被害者保護法」とは、被害者保護のため、行うべき施策等、総合的、一体的に推進するのが当然であるが、政府は、わが国の財政、金融面等、多様な面、さらに経済面において引き続き積極的な協力を行ない、また、これらの諸課題を慎重に検討していかなければならないと考えているが、政府の責任は極めて大きいと考えます。」 AA"
+    }
+   ],
+   "loopPct": 2.37,
+   "movedBody": false
   }
  ],
- "bestVal": 2.8253,
+ "bestVal": 2.8229,
  "layers": 16,
  "params": 117914880,
  "born": "2026-09-08T15:11:54Z",
@@ -12649,5 +12649,5 @@
  ],
  "wantWider": false,
  "nextD": 768,
- "bad": 3
+ "bad": 0
 }
