@@ -1,69 +1,6 @@
 {
  "runs": [
   {
-   "at": "2026-10-10T06:15:37Z",
-   "val": 2.9144,
-   "prev": 2.9166,
-   "valTag": "fixed-holdout-v1",
-   "stoppedAt": 157,
-   "stuck": 0,
-   "evalTag": "fixed-ix-v1",
-   "secPerStep": 26.5113,
-   "steps": 300,
-   "bpc": 3.4495,
-   "charsPerTok": 1.2189,
-   "score": 2.1626,
-   "scoreW": 2.0,
-   "scoreMode": "talk",
-   "finishMix": 0.5,
-   "lineage": "L1",
-   "layers": 16,
-   "params": 117914880,
-   "chars": 1045308899,
-   "tokens": 857567631,
-   "grew": 0,
-   "rolledBack": false,
-   "ownVal": null,
-   "ownScore": null,
-   "d": 768,
-   "loops": 1,
-   "spread": 3.2759,
-   "bytes": 1415115957,
-   "heads": 6,
-   "ctx": 512,
-   "vocab": 6000,
-   "kind": "bpe",
-   "arch": "tpp-loop",
-   "wantWider": false,
-   "layerCap": 16,
-   "mixChanged": false,
-   "bySrc": {
-    "laws": 4.1792,
-    "wiki": 3.0751,
-    "aozora": 3.4245,
-    "hanrei": 3.5156,
-    "kokkai": 2.6836,
-    "web": 2.9481,
-    "talk": 2.1626
-   },
-   "wrote": [
-    {
-     "start": "わたしは",
-     "text": "わたしはそうです。」 FV「わからないです、、、、」 FI「今度探してみます。」 FF「こんばんは、よろしくお願いします！」 FV「こんばんは、よろしくお願いします。」 FF「最近の�"
-    },
-    {
-     "start": "第一条",
-     "text": "第一条同表のBTSTDENT Grook 2006年11月1日 - 2007年11月29日） 1991年4月1日 - ケインズ・キャット・エリア 2008年12月29日 1992年1月30日 - 2009年9月29日 1992年9月6日"
-    },
-    {
-     "start": "この法律において",
-     "text": "この法律においてしている。 一般論としては、 ダライアス・キエルシュタイニック のような荒れにオープンソースを見ることができる。 アニメソングは「 アーニャック・コミュニケーション 」と呼んでいる [ 2 ] 。 そのアニメーションは、2年間で最大のアニメーションを観ていた [ 4"
-    }
-   ],
-   "loopPct": 12.82,
-   "movedBody": false
-  },
-  {
    "at": "2026-10-10T07:32:13Z",
    "val": 2.9131,
    "prev": 2.9144,
@@ -12599,9 +12536,72 @@
    ],
    "loopPct": 3.15,
    "movedBody": false
+  },
+  {
+   "at": "2026-10-21T11:07:20Z",
+   "val": 2.8253,
+   "prev": 2.8274,
+   "valTag": "fixed-holdout-v1",
+   "stoppedAt": 156,
+   "stuck": 0,
+   "evalTag": "fixed-ix-v1",
+   "secPerStep": 26.8412,
+   "steps": 300,
+   "bpc": 3.344,
+   "charsPerTok": 1.2189,
+   "score": 2.1206,
+   "scoreW": 2.0,
+   "scoreMode": "talk",
+   "finishMix": 0.5,
+   "lineage": "L1",
+   "layers": 16,
+   "params": 117914880,
+   "chars": 1045308899,
+   "tokens": 857567631,
+   "grew": 0,
+   "rolledBack": false,
+   "ownVal": null,
+   "ownScore": null,
+   "d": 768,
+   "loops": 1,
+   "spread": 2.8904,
+   "bytes": 1415115957,
+   "heads": 6,
+   "ctx": 512,
+   "vocab": 6000,
+   "kind": "bpe",
+   "arch": "tpp-loop",
+   "wantWider": false,
+   "layerCap": 16,
+   "mixChanged": false,
+   "bySrc": {
+    "laws": 3.9784,
+    "wiki": 2.9844,
+    "aozora": 3.3399,
+    "hanrei": 3.44,
+    "kokkai": 2.6085,
+    "web": 2.8723,
+    "talk": 2.1206
+   },
+   "wrote": [
+    {
+     "start": "わたしは",
+     "text": "わたしは、卒中の繁栄を期待していたと、彼ら法の施行を経ていたのに対し、彼らはあくまでも正しい存在であると信じます。」 AB「（拍手） ところが、私が営利的な立場にあるのは、一体、この恩恵を受けた国の思いもあろうかと思うのであります。にもかかわらず、国政調査権を主張し、"
+    },
+    {
+     "start": "第一条",
+     "text": "第一条（次号を除く。） 前条第二項各号（第八号、地方債及び電波前の価値に関する住所を有する術（以下「本項」という。） 都市計画に関し控除された株式等 領収証 第四条の三 障害年金 字及び字 字 字 字及び字及び字 字又は字 字又は字 字又は字及び字 字の数 字の御字 字及び字番号 字及び字の字 字及び字並びに字及び字の字 字及び字及び字 字及び字"
+    },
+    {
+     "start": "この法律において",
+     "text": "この法律において「期限後」と呼ばれる仮名に「書類」、「u」と「c」を「ne」に設定している。 ここでは、 gate - hristed in allegation 、 int. voint 、 and and cientine、マントラ、 carbi"
+    }
+   ],
+   "loopPct": 13.4,
+   "movedBody": false
   }
  ],
- "bestVal": 2.8258,
+ "bestVal": 2.8253,
  "layers": 16,
  "params": 117914880,
  "born": "2026-09-08T15:11:54Z",
@@ -12649,5 +12649,5 @@
  ],
  "wantWider": false,
  "nextD": 768,
- "bad": 2
+ "bad": 3
 }
