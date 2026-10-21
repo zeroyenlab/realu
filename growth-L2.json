@@ -1,69 +1,6 @@
 {
  "runs": [
   {
-   "at": "2026-10-10T04:33:25Z",
-   "val": 2.6544,
-   "prev": 2.6539,
-   "valTag": "fixed-holdout-v1",
-   "stoppedAt": 0,
-   "stuck": 0,
-   "evalTag": "fixed-ix-v1",
-   "secPerStep": 4.9315,
-   "steps": 563,
-   "bpc": 3.1417,
-   "charsPerTok": 1.2189,
-   "score": 2.0453,
-   "scoreW": 2.0,
-   "scoreMode": "talk",
-   "finishMix": 0.85,
-   "lineage": "L2",
-   "layers": 14,
-   "params": 47379968,
-   "chars": 1045308899,
-   "tokens": 857567631,
-   "grew": 0,
-   "rolledBack": false,
-   "ownVal": null,
-   "ownScore": null,
-   "d": 512,
-   "loops": 1,
-   "spread": 2.8529,
-   "bytes": 568680621,
-   "heads": 8,
-   "ctx": 512,
-   "vocab": 6000,
-   "kind": "bpe",
-   "arch": "tpp-loop",
-   "wantWider": false,
-   "layerCap": 16,
-   "mixChanged": false,
-   "bySrc": {
-    "laws": 3.5334,
-    "wiki": 2.8209,
-    "aozora": 3.1348,
-    "hanrei": 3.3764,
-    "kokkai": 2.4766,
-    "web": 2.7411,
-    "talk": 2.0453
-   },
-   "wrote": [
-    {
-     "start": "わたしは",
-     "text": "わたしはあまり友達と遊びに行ったことないので。」 H介護おもろさんを気にかけてるんですか？」 HT「３０年ぐらい前に、やる気がなくなったのですが、まだまだ暑くて感動しています。」 HT「そうなんですね！昼間はやる気があります。こんなに暑"
-    },
-    {
-     "start": "第一条",
-     "text": "第一条、第十五条、第二十一条第一項、第二十条の規定は、に提出しなければならない。 （登録二十歳未満の子を以てられた日） 第二十四条 登録二十歳未満の子を以てられた日は、同順位が高市又は長崎県下の四次郡建築物、臨時復興施設、特定産業施設、聖域なきらずなテレビ、放送、ラジオ、音楽、音楽、音楽又は語学・学習、音楽又は演奏又は"
-    },
-    {
-     "start": "この法律において",
-     "text": "この法律においてもののほか、既存の革命家、政治家、地冬樹、魚介類、唯一の大家及び、出身活躍国の元内閣総理大臣、地域経済再建支援団体等、中央集権的な政党、政治家、名誉団体、政治家、元付省庁、各種団体、地域の人々を対象として、それぞれの団体や議員たちを対象として、それぞれ中央集権的な政党がそれぞれ参加して、一言で意思"
-    }
-   ],
-   "loopPct": 4.83,
-   "movedBody": false
-  },
-  {
    "at": "2026-10-10T06:08:41Z",
    "val": 2.6522,
    "prev": 2.6544,
@@ -12598,6 +12535,69 @@
     }
    ],
    "loopPct": 0.0,
+   "movedBody": false
+  },
+  {
+   "at": "2026-10-21T08:26:20Z",
+   "val": 2.6066,
+   "prev": 2.6083,
+   "valTag": "fixed-holdout-v1",
+   "stoppedAt": 377,
+   "stuck": 0,
+   "evalTag": "fixed-ix-v1",
+   "secPerStep": 10.1926,
+   "steps": 808,
+   "bpc": 3.0852,
+   "charsPerTok": 1.2189,
+   "score": 2.032,
+   "scoreW": 2.0,
+   "scoreMode": "talk",
+   "finishMix": 0.85,
+   "lineage": "L2",
+   "layers": 14,
+   "params": 47379968,
+   "chars": 1045308899,
+   "tokens": 857567631,
+   "grew": 0,
+   "rolledBack": false,
+   "ownVal": null,
+   "ownScore": null,
+   "d": 512,
+   "loops": 1,
+   "spread": 2.5058,
+   "bytes": 568680621,
+   "heads": 8,
+   "ctx": 512,
+   "vocab": 6000,
+   "kind": "bpe",
+   "arch": "tpp-loop",
+   "wantWider": false,
+   "layerCap": 16,
+   "mixChanged": false,
+   "bySrc": {
+    "laws": 3.4587,
+    "wiki": 2.7612,
+    "aozora": 3.0869,
+    "hanrei": 3.347,
+    "kokkai": 2.4398,
+    "web": 2.6932,
+    "talk": 2.032
+   },
+   "wrote": [
+    {
+     "start": "わたしは",
+     "text": "わたしは、苦手です。」 CZ「そうなのですね。お菓子はどのくらい食べられました？」 BJ「ダーウィンは意外と大丈夫でした。」 CZ「ダーウィン！食べたことないです。」 BJ「そうですか、甘いお菓子は好きです」 CZ「私"
+    },
+    {
+     "start": "第一条",
+     "text": "第一条編、「博覧会」「博覧会」を「博覧会」と改称し、「博覧会」を「博覧会」とする。 1961年 - 第五回英国博覧会で博覧会が開催される。 1963年 - 中華人民共和国大統領選挙で中華人民共和国を破った京都議定書が発効。 1966年"
+    },
+    {
+     "start": "この法律において",
+     "text": "この法律において取り取り取り扱いとなっている。 なお、同一緩和版のみでは「9 陽の輪廻転生 (Dining)」と指定されており、『筏 2 陰陽師』ではこの改変版を記述したものではない。 1984年 に ウィリアム・シューターン 記念館 で行われた『陰陽"
+    }
+   ],
+   "loopPct": 8.83,
    "movedBody": false
   }
  ],
