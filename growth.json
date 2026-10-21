@@ -1,69 +1,6 @@
 {
  "runs": [
   {
-   "at": "2026-10-09T22:35:25Z",
-   "val": 2.917,
-   "prev": 2.9172,
-   "valTag": "fixed-holdout-v1",
-   "stoppedAt": 158,
-   "stuck": 0,
-   "evalTag": "fixed-ix-v1",
-   "secPerStep": 26.322,
-   "steps": 300,
-   "bpc": 3.4525,
-   "charsPerTok": 1.2189,
-   "score": 2.161,
-   "scoreW": 2.0,
-   "scoreMode": "talk",
-   "finishMix": 0.5,
-   "lineage": "L1",
-   "layers": 16,
-   "params": 117914880,
-   "chars": 1045308899,
-   "tokens": 857567631,
-   "grew": 0,
-   "rolledBack": false,
-   "ownVal": null,
-   "ownScore": null,
-   "d": 768,
-   "loops": 1,
-   "spread": 3.1786,
-   "bytes": 1415115957,
-   "heads": 6,
-   "ctx": 512,
-   "vocab": 6000,
-   "kind": "bpe",
-   "arch": "tpp-loop",
-   "wantWider": false,
-   "layerCap": 16,
-   "mixChanged": false,
-   "bySrc": {
-    "laws": 4.1837,
-    "wiki": 3.0813,
-    "aozora": 3.4249,
-    "hanrei": 3.5179,
-    "kokkai": 2.683,
-    "web": 2.9514,
-    "talk": 2.161
-   },
-   "wrote": [
-    {
-     "start": "わたしは",
-     "text": "わたしは、各国の首脳会議で、この場では、あなたのようなコメントを入れました。こういうことを言われるところでは、どうしても早くやっていこうということで、私は総理のところは、私は非常に簡単な、そういうつもりはありません、あそこまでやってきたんです。それを決断で打ち出しておきたいのは、"
-    },
-    {
-     "start": "第一条",
-     "text": "第一条（orebord） 500 strobe（メタ） 300 pp.3 – 42 – 75 – 70 – 102 – 57 – 54 メタノール – 55 – 75 – 50 – 55 – 55 – 5"
-    },
-    {
-     "start": "この法律において",
-     "text": "この法律において「 」が代表的で、近年とも「 」と呼ばれることもある。 また、2001年以降に発売された「 KN-POP-F 」 [ 8 ] 、「 愛の がナノコ 」「 KN-FM 」など、主に「 かずい 」を新しく知られるようになった。 また、 愛知県"
-    }
-   ],
-   "loopPct": 9.28,
-   "movedBody": false
-  },
-  {
    "at": "2026-10-09T23:49:40Z",
    "val": 2.919,
    "prev": 2.917,
@@ -12599,9 +12536,72 @@
    ],
    "loopPct": 0.0,
    "movedBody": false
+  },
+  {
+   "at": "2026-10-21T03:21:30Z",
+   "val": 2.8309,
+   "prev": 2.8319,
+   "valTag": "fixed-holdout-v1",
+   "stoppedAt": 158,
+   "stuck": 0,
+   "evalTag": "fixed-ix-v1",
+   "secPerStep": 26.4218,
+   "steps": 300,
+   "bpc": 3.3507,
+   "charsPerTok": 1.2189,
+   "score": 2.1214,
+   "scoreW": 2.0,
+   "scoreMode": "talk",
+   "finishMix": 0.5,
+   "lineage": "L1",
+   "layers": 16,
+   "params": 117914880,
+   "chars": 1045308899,
+   "tokens": 857567631,
+   "grew": 0,
+   "rolledBack": false,
+   "ownVal": null,
+   "ownScore": null,
+   "d": 768,
+   "loops": 1,
+   "spread": 2.8071,
+   "bytes": 1415115957,
+   "heads": 6,
+   "ctx": 512,
+   "vocab": 6000,
+   "kind": "bpe",
+   "arch": "tpp-loop",
+   "wantWider": false,
+   "layerCap": 16,
+   "mixChanged": false,
+   "bySrc": {
+    "laws": 3.9826,
+    "wiki": 2.9852,
+    "aozora": 3.3434,
+    "hanrei": 3.4497,
+    "kokkai": 2.6183,
+    "web": 2.8717,
+    "talk": 2.1214
+   },
+   "wrote": [
+    {
+     "start": "わたしは",
+     "text": "わたしは�投票の九枚で、右に右組します。 次に、右に右翼が右翼から右翼現に3本ずつ、右翼は右翼に右翼を右翼に着目して、左右組み立てに右左右両後に左右接近し、右翼に再法第九条項付近に任命されて右翼的支"
+    },
+    {
+     "start": "第一条",
+     "text": "第一条 （１） 平成１１年１０月１７日付け加藤住吉９８頁参照。 （２） 平成１７年４月２７日付け時点 平成２８年６月１７日時点 平成１１年４月１２日 平成２０年４月１１日 平成１４年５月２８日 <判決 5873> 主文 事実及び"
+    },
+    {
+     "start": "この法律において",
+     "text": "この法律において「新編」をイラスト像とした。 また、 2004年度 において、ワールドマンロボを「Microsoft」に改称した。 2006年度のイラスト付きの「Microsoft Windows 4.2」とは、 2007年度 の 旧・Microsoft 当初から、"
+    }
+   ],
+   "loopPct": 4.89,
+   "movedBody": false
   }
  ],
- "bestVal": 2.8313,
+ "bestVal": 2.8309,
  "layers": 16,
  "params": 117914880,
  "born": "2026-09-08T15:11:54Z",
@@ -12649,5 +12649,5 @@
  ],
  "wantWider": false,
  "nextD": 768,
- "bad": 2
+ "bad": 3
 }
