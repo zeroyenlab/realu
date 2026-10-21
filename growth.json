@@ -1,69 +1,6 @@
 {
  "runs": [
   {
-   "at": "2026-10-10T16:21:15Z",
-   "val": 2.919,
-   "prev": 2.9096,
-   "valTag": "fixed-holdout-v1",
-   "stoppedAt": 0,
-   "stuck": 0,
-   "evalTag": "fixed-ix-v1",
-   "secPerStep": 11.5581,
-   "steps": 300,
-   "bpc": 3.4548,
-   "charsPerTok": 1.2189,
-   "score": 2.1537,
-   "scoreW": 2.0,
-   "scoreMode": "talk",
-   "finishMix": 0.5,
-   "lineage": "L1",
-   "layers": 16,
-   "params": 117914880,
-   "chars": 1045308899,
-   "tokens": 857567631,
-   "grew": 0,
-   "rolledBack": false,
-   "ownVal": null,
-   "ownScore": null,
-   "d": 768,
-   "loops": 1,
-   "spread": 3.1534,
-   "bytes": 1415115957,
-   "heads": 6,
-   "ctx": 512,
-   "vocab": 6000,
-   "kind": "bpe",
-   "arch": "tpp-loop",
-   "wantWider": false,
-   "layerCap": 16,
-   "mixChanged": false,
-   "bySrc": {
-    "laws": 4.1829,
-    "wiki": 3.0803,
-    "aozora": 3.4279,
-    "hanrei": 3.5208,
-    "kokkai": 2.6836,
-    "web": 2.9547,
-    "talk": 2.1537
-   },
-   "wrote": [
-    {
-     "start": "わたしは",
-     "text": "わたしはアニメではなく、主人公も連載作品でもある [ 20 ] 。 『 愛の素敵な人生 』（2007年2月） - 『 天空の闇 』では、 森田有吉 、 八ツ橋橋 、 新宿 、 鈴木毅 、 大阪"
-    },
-    {
-     "start": "第一条",
-     "text": "第一条号の自らが強調した [ 102 ] 。 1885年 （ 明治 10年）には 1889年 （明治12年）に 1900年 （明治33年）に 三多摩川 が 1900年 （明治33年）に暗殺されたが、この時には 1909年 （明治42年）に 中国"
-    },
-    {
-     "start": "この法律において",
-     "text": "この法律において、法人税も、景気を向上させるために、ガス事業間の合理化が必要になった。 1991年 （平成3年） 3月 - FMエンタテインメントが開通。 1992年 （平成4年） 1月9日 - 道路特定交通事業による道路交通事業化事業により、 の規定は道路交通法 施行、道路交通法（平成27年法律第"
-    }
-   ],
-   "loopPct": 8.33,
-   "movedBody": false
-  },
-  {
    "at": "2026-10-10T17:41:41Z",
    "val": 2.9153,
    "prev": 2.919,
@@ -12599,9 +12536,72 @@
    ],
    "loopPct": 17.56,
    "movedBody": false
+  },
+  {
+   "at": "2026-10-21T21:32:04Z",
+   "val": 2.8208,
+   "prev": 2.8241,
+   "valTag": "fixed-holdout-v1",
+   "stoppedAt": 154,
+   "stuck": 0,
+   "evalTag": "fixed-ix-v1",
+   "secPerStep": 27.047,
+   "steps": 300,
+   "bpc": 3.3387,
+   "charsPerTok": 1.2189,
+   "score": 2.1173,
+   "scoreW": 2.0,
+   "scoreMode": "talk",
+   "finishMix": 0.5,
+   "lineage": "L1",
+   "layers": 16,
+   "params": 117914880,
+   "chars": 1045308899,
+   "tokens": 857567631,
+   "grew": 0,
+   "rolledBack": false,
+   "ownVal": null,
+   "ownScore": null,
+   "d": 768,
+   "loops": 1,
+   "spread": 3.1971,
+   "bytes": 1415115957,
+   "heads": 6,
+   "ctx": 512,
+   "vocab": 6000,
+   "kind": "bpe",
+   "arch": "tpp-loop",
+   "wantWider": false,
+   "layerCap": 16,
+   "mixChanged": false,
+   "bySrc": {
+    "laws": 3.9689,
+    "wiki": 2.9801,
+    "aozora": 3.3369,
+    "hanrei": 3.4375,
+    "kokkai": 2.6051,
+    "web": 2.8636,
+    "talk": 2.1173
+   },
+   "wrote": [
+    {
+     "start": "わたしは",
+     "text": "わたしは、しかしながら、いまだに自分が言っている人はたくさんある。」 AA「あれ、つまり、このまま我慢しているわけです。もうこういう人たちの夢じゃないのか。 ただ私は、そういう意味において、いろいろな姿勢が誤解を生むのであれば、あとでたとえば、いつの間にか"
+    },
+    {
+     "start": "第一条",
+     "text": "第一条 7 1994年6月4日 <記事 日テレビジョン> 『NHK紅白歌合戦』（もがよいぜんしょう、 ）は、1966年6月26日、1998年12月17日、2000年2月1日、2010年9月28日、2010年3月25日初"
+    },
+    {
+     "start": "この法律において",
+     "text": "この法律において「�省令」とは、各特定財源の確保のための措置 切手等ている者 特定年法律第四連合会 特定財源等関連協議会 特定財源調整委員会 （百三十六） 百二十八 特定財源の確保に関する基本的な考え方を等に関する使命とする性質の文言 （特定財源の確保） 保持者の正当性について （特定財源の解除） 際に，特定財源の補正を行っているの土地第四に関する基本的事項（以下「"
+    }
+   ],
+   "loopPct": 7.1,
+   "movedBody": false
   }
  ],
- "bestVal": 2.8214,
+ "bestVal": 2.8208,
  "layers": 16,
  "params": 117914880,
  "born": "2026-09-08T15:11:54Z",
@@ -12649,5 +12649,5 @@
  ],
  "wantWider": false,
  "nextD": 768,
- "bad": 1
+ "bad": 0
 }
