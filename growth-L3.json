@@ -1,69 +1,6 @@
 {
  "runs": [
   {
-   "at": "2026-10-09T22:28:10Z",
-   "val": 2.6904,
-   "prev": 2.6914,
-   "valTag": "fixed-holdout-v1",
-   "stoppedAt": 671,
-   "stuck": 0,
-   "evalTag": "fixed-ix-v1",
-   "secPerStep": 5.563,
-   "steps": 1347,
-   "bpc": 3.1843,
-   "charsPerTok": 1.2189,
-   "score": 2.1415,
-   "scoreW": 2.0,
-   "scoreMode": "talk",
-   "finishMix": 0.2,
-   "lineage": "L3",
-   "layers": 13,
-   "params": 25335168,
-   "chars": 1045308899,
-   "tokens": 857567631,
-   "grew": 0,
-   "rolledBack": false,
-   "ownVal": null,
-   "ownScore": null,
-   "d": 384,
-   "loops": 1,
-   "spread": 2.4862,
-   "bytes": 304134793,
-   "heads": 6,
-   "ctx": 512,
-   "vocab": 6000,
-   "kind": "bpe",
-   "arch": "tpp-loop",
-   "wantWider": false,
-   "layerCap": 16,
-   "mixChanged": false,
-   "bySrc": {
-    "laws": 3.6481,
-    "wiki": 2.854,
-    "aozora": 3.1825,
-    "hanrei": 3.419,
-    "kokkai": 2.4994,
-    "web": 2.7715,
-    "talk": 2.1415
-   },
-   "wrote": [
-    {
-     "start": "わたしは",
-     "text": "わたしは カプセル を畳み、海の マセル と魚の頭に カッサン をかけた。 ここでは海の アホウイ を ヒメロヨウ や モスクワ を連れ、 ジャガイモ 、 アベーキ 、 ワシ 、 カルタゴ を擬して、 エルサレム を結"
-    },
-    {
-     "start": "第一条",
-     "text": "第一条 令第五条第三項の 令第五条第三項の 令第五条第三項の 令第五条第三項の 令第五条第三項の 令第五条第三項の 令第五条第三項の 令第五条第三項の 令第六条第三項の 令第五に達する 令第六条第三項の 令第五条第三項の 令第六条第三項の 令第六条第三項の 令第五条第三項の 令第六条第三項の 令第六条第三項の 令第六条第三項の 令第五条第三項の 令第六条第三項の 令第六条第三項の 令第六条第三項の"
-    },
-    {
-     "start": "この法律において",
-     "text": "この法律において「天皇」という。）の親日的な祝日」を以て神格化・神格化された祝日を、天皇より祝日の類などに変える・祝日の類などについては、天皇に正式に祝日を割り当てる。 このように、日本三十年から十年にかけての仏教的祝日は、天皇が、「天皇」とは「天皇」とは"
-    }
-   ],
-   "loopPct": 33.38,
-   "movedBody": false
-  },
-  {
    "at": "2026-10-09T23:45:08Z",
    "val": 2.6906,
    "prev": 2.6904,
@@ -12599,6 +12536,69 @@
    ],
    "loopPct": 6.45,
    "movedBody": false
+  },
+  {
+   "at": "2026-10-21T03:15:57Z",
+   "val": 2.6455,
+   "prev": 2.645,
+   "valTag": "fixed-holdout-v1",
+   "stoppedAt": 496,
+   "stuck": 0,
+   "evalTag": "fixed-ix-v1",
+   "secPerStep": 7.6173,
+   "steps": 1001,
+   "bpc": 3.1311,
+   "charsPerTok": 1.2189,
+   "score": 2.1154,
+   "scoreW": 2.0,
+   "scoreMode": "talk",
+   "finishMix": 0.2,
+   "lineage": "L3",
+   "layers": 14,
+   "params": 27105408,
+   "chars": 1045308899,
+   "tokens": 857567631,
+   "grew": 0,
+   "rolledBack": false,
+   "ownVal": null,
+   "ownScore": null,
+   "d": 384,
+   "loops": 1,
+   "spread": 2.8208,
+   "bytes": 325385901,
+   "heads": 6,
+   "ctx": 512,
+   "vocab": 6000,
+   "kind": "bpe",
+   "arch": "tpp-loop",
+   "wantWider": false,
+   "layerCap": 16,
+   "mixChanged": false,
+   "bySrc": {
+    "laws": 3.5676,
+    "wiki": 2.7974,
+    "aozora": 3.1329,
+    "hanrei": 3.3778,
+    "kokkai": 2.4648,
+    "web": 2.7265,
+    "talk": 2.1154
+   },
+   "wrote": [
+    {
+     "start": "わたしは",
+     "text": "わたしはほとんど家ですからね。」 BV「そうですね！すごく素敵ですね。」 AX「というか、テレビでかなり見てたりすると思います。」 BV「わかります！推しにしても泣かないですよね。」 AX「シャワーばかりでしたか？」 BV「はい�"
+    },
+    {
+     "start": "第一条",
+     "text": "第一条（投資法人の長等）の規定は、法等の一部を改正する法律（昭和六十年法律第二十五号）第三条の規定により廃止する等の法律の整備及び改正について準用する。 （同条の治安の保持義務） 政府は、この法律（厚生労働省令第三十八号）の規定による業の選択って、あらかじめ、毎年、一回、一回、一回、一回、いても、一回、一回、いても、ってきたるようにしなければならない。 （建設業法の特例） 政府は、この法律（国土交通省令第三十六号）の規定による年間建設業"
+    },
+    {
+     "start": "この法律において",
+     "text": "この法律において）ボンディ・ギャラリー・エンターテイメント （ 英語版 ） (Soctor Carror) 1925年のデザインで第34位の ADスコアボード （『 THE TRAIN CITE 』、『 TN・HELER SPORT"
+    }
+   ],
+   "loopPct": 6.32,
+   "movedBody": false
   }
  ],
  "bestVal": 2.6442,
@@ -12649,5 +12649,5 @@
  ],
  "wantWider": false,
  "nextD": 384,
- "bad": 5
+ "bad": 3
 }
