@@ -1,69 +1,6 @@
 {
  "runs": [
   {
-   "at": "2026-10-10T02:22:08Z",
-   "val": 2.9201,
-   "prev": 2.9166,
-   "valTag": "fixed-holdout-v1",
-   "stoppedAt": 213,
-   "stuck": 0,
-   "evalTag": "fixed-ix-v1",
-   "secPerStep": 18.8525,
-   "steps": 300,
-   "bpc": 3.4562,
-   "charsPerTok": 1.2189,
-   "score": 2.1616,
-   "scoreW": 2.0,
-   "scoreMode": "talk",
-   "finishMix": 0.5,
-   "lineage": "L1",
-   "layers": 16,
-   "params": 117914880,
-   "chars": 1045308899,
-   "tokens": 857567631,
-   "grew": 0,
-   "rolledBack": false,
-   "ownVal": null,
-   "ownScore": null,
-   "d": 768,
-   "loops": 1,
-   "spread": 2.9922,
-   "bytes": 1415115957,
-   "heads": 6,
-   "ctx": 512,
-   "vocab": 6000,
-   "kind": "bpe",
-   "arch": "tpp-loop",
-   "wantWider": false,
-   "layerCap": 16,
-   "mixChanged": false,
-   "bySrc": {
-    "laws": 4.1859,
-    "wiki": 3.0869,
-    "aozora": 3.4239,
-    "hanrei": 3.5191,
-    "kokkai": 2.6845,
-    "web": 2.9539,
-    "talk": 2.1616
-   },
-   "wrote": [
-    {
-     "start": "わたしは",
-     "text": "わたしは、あなたの両方がいらっしゃいます。」 AB「私は、江田さんが母親とが行って、母親とかと一緒になって、 「もう怖い、あい。暑い日もありました。どうぞ」と、あまりにも暑い。 ただ、あなたは、とうとうそぶかなんとか思っていた。」"
-    },
-    {
-     "start": "第一条",
-     "text": "第一条は、に提出しなければならない。 �プロ野球選手 投手深夜にBBCライブを立てるのは、現在、BBCでリーグ最多発売である。 BBCのBCでは2001年から2001年まで、BBCとCBCを結成しており、BBCと同様にBBC（EFBC）ではBBCがBBCに改めてBBC"
-    },
-    {
-     "start": "この法律において",
-     "text": "この法律において「ジョブ・ブラック」が存在する。 ドロップする形式は、プライムが富士通で日立と交互に合わない形で光を送るといった道具は潰えてきている。 ドロップを使ったサイドは「 ドロップ 」や「ゼリーフ」と呼ばれるもので、いくつかのメンバーが世界で初めて"
-    }
-   ],
-   "loopPct": 9.95,
-   "movedBody": false
-  },
-  {
    "at": "2026-10-10T03:39:26Z",
    "val": 2.9208,
    "prev": 2.9201,
@@ -12599,9 +12536,72 @@
    ],
    "loopPct": 1.12,
    "movedBody": false
+  },
+  {
+   "at": "2026-10-21T07:13:11Z",
+   "val": 2.8258,
+   "prev": 2.8274,
+   "valTag": "fixed-holdout-v1",
+   "stoppedAt": 158,
+   "stuck": 0,
+   "evalTag": "fixed-ix-v1",
+   "secPerStep": 26.3843,
+   "steps": 300,
+   "bpc": 3.3445,
+   "charsPerTok": 1.2189,
+   "score": 2.1219,
+   "scoreW": 2.0,
+   "scoreMode": "talk",
+   "finishMix": 0.5,
+   "lineage": "L1",
+   "layers": 16,
+   "params": 117914880,
+   "chars": 1045308899,
+   "tokens": 857567631,
+   "grew": 0,
+   "rolledBack": false,
+   "ownVal": null,
+   "ownScore": null,
+   "d": 768,
+   "loops": 1,
+   "spread": 2.9674,
+   "bytes": 1415115957,
+   "heads": 6,
+   "ctx": 512,
+   "vocab": 6000,
+   "kind": "bpe",
+   "arch": "tpp-loop",
+   "wantWider": false,
+   "layerCap": 16,
+   "mixChanged": false,
+   "bySrc": {
+    "laws": 3.9852,
+    "wiki": 2.9801,
+    "aozora": 3.3404,
+    "hanrei": 3.4412,
+    "kokkai": 2.6094,
+    "web": 2.868,
+    "talk": 2.1219
+   },
+   "wrote": [
+    {
+     "start": "わたしは",
+     "text": "わたしはわざこひて、怒鳴り、ひょうだくさのひのりひらくこともありました。 「 紫の中のマカミ 」は、みんなのうた。 公判では単なる公判ではなく、公判をもって、公判へなければならぬ。 公判 の 公判 で、公判廷での公判を強く訴えることを"
+    },
+    {
+     "start": "第一条",
+     "text": "第一条の基準に関する法律 第一_ADAAGAGAGA OLCAGAGAGA TOMANHAGAGA TOUGAGAN〜安客の緊急時のニュース〜 - 川越真一 - （ふるさと鳥海の3） TOURRAGAGA TOUR TOUR TOUR T"
+    },
+    {
+     "start": "この法律において",
+     "text": "この法律において「��」と呼ばれるメタロイヤルランプを注して、その耳に流す。 しかし、実際には見た目が覚めたいと言うと、それから正面から格闘している。 このため、古度は「キヤノン」ではなく「キヤノン」という語を加えた「キヤノン」に由来する。 古代ローマも、朝"
+    }
+   ],
+   "loopPct": 15.62,
+   "movedBody": false
   }
  ],
- "bestVal": 2.8274,
+ "bestVal": 2.8258,
  "layers": 16,
  "params": 117914880,
  "born": "2026-09-08T15:11:54Z",
