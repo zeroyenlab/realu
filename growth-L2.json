@@ -1,69 +1,6 @@
 {
  "runs": [
   {
-   "at": "2026-10-10T18:53:01Z",
-   "val": 2.6507,
-   "prev": 2.6513,
-   "valTag": "fixed-holdout-v1",
-   "stoppedAt": 483,
-   "stuck": 0,
-   "evalTag": "fixed-ix-v1",
-   "secPerStep": 7.84,
-   "steps": 576,
-   "bpc": 3.1374,
-   "charsPerTok": 1.2189,
-   "score": 2.0398,
-   "scoreW": 2.0,
-   "scoreMode": "talk",
-   "finishMix": 0.85,
-   "lineage": "L2",
-   "layers": 14,
-   "params": 47379968,
-   "chars": 1045308899,
-   "tokens": 857567631,
-   "grew": 0,
-   "rolledBack": false,
-   "ownVal": null,
-   "ownScore": null,
-   "d": 512,
-   "loops": 1,
-   "spread": 2.5862,
-   "bytes": 568680621,
-   "heads": 8,
-   "ctx": 512,
-   "vocab": 6000,
-   "kind": "bpe",
-   "arch": "tpp-loop",
-   "wantWider": false,
-   "layerCap": 16,
-   "mixChanged": false,
-   "bySrc": {
-    "laws": 3.5278,
-    "wiki": 2.8149,
-    "aozora": 3.1326,
-    "hanrei": 3.3727,
-    "kokkai": 2.4719,
-    "web": 2.7383,
-    "talk": 2.0398
-   },
-   "wrote": [
-    {
-     "start": "わたしは",
-     "text": "わたしはアミちゃんが好き」だった。 アミちゃんと知らないうちに話しかけていた。だまして、子供の頃はパニックで手配していた。 父は悪戦しかけてしまうほどだった。母親の死を忘れたままに帰ってきた人たちの中で唯一、父を亡くした。 母親の死を考えるのは、"
-    },
-    {
-     "start": "第一条",
-     "text": "第一条文部監理委員会」とあるのは「国会第三章」と、同条第四号中「国会議員」とあるのは「国会議員」と、「国会議員」とあるのは「国会議員」と、「国会議員」とあるのは「国会議員」と、同条第四号中「国会議員」とあるのは「国会議員」と、「国会議員」とあるのは「国会議員」と、同法第二十二条中「国会議員」とあるのは「国会議員」と、同条第四号中「国会議員」とあるのは「国会議員」と、「国会議員」とあるのは「国会議員」と、同条第四号"
-    },
-    {
-     "start": "この法律において",
-     "text": "この法律において品種あるいはパリスやクロガン、化粧品、亜細菌、不可散体DIOなどをテレビで監獄される。 ページに影響を与えるために、全ての国で、無機的である。 日本とアメリカ合衆国が共同で、社会・民族共同体を統合したIPA（コピー・オブ・ファスト・アンド・プロセス）に"
-    }
-   ],
-   "loopPct": 0.81,
-   "movedBody": false
-  },
-  {
    "at": "2026-10-10T20:07:21Z",
    "val": 2.6502,
    "prev": 2.6507,
@@ -12599,6 +12536,69 @@
    ],
    "loopPct": 35.61,
    "movedBody": false
+  },
+  {
+   "at": "2026-10-21T22:37:51Z",
+   "val": 2.606,
+   "prev": 2.6063,
+   "valTag": "fixed-holdout-v1",
+   "stoppedAt": 0,
+   "stuck": 0,
+   "evalTag": "fixed-ix-v1",
+   "secPerStep": 6.0387,
+   "steps": 559,
+   "bpc": 3.0844,
+   "charsPerTok": 1.2189,
+   "score": 2.0288,
+   "scoreW": 2.0,
+   "scoreMode": "talk",
+   "finishMix": 0.85,
+   "lineage": "L2",
+   "layers": 14,
+   "params": 47379968,
+   "chars": 1045308899,
+   "tokens": 857567631,
+   "grew": 0,
+   "rolledBack": false,
+   "ownVal": null,
+   "ownScore": null,
+   "d": 512,
+   "loops": 1,
+   "spread": 2.8346,
+   "bytes": 568680621,
+   "heads": 8,
+   "ctx": 512,
+   "vocab": 6000,
+   "kind": "bpe",
+   "arch": "tpp-loop",
+   "wantWider": false,
+   "layerCap": 16,
+   "mixChanged": false,
+   "bySrc": {
+    "laws": 3.4642,
+    "wiki": 2.7606,
+    "aozora": 3.0868,
+    "hanrei": 3.3446,
+    "kokkai": 2.4391,
+    "web": 2.6922,
+    "talk": 2.0288
+   },
+   "wrote": [
+    {
+     "start": "わたしは",
+     "text": "わたしはカジノに行きますが、中には入れるだけで成長してて楽しいです。」 ED「えーそうなんですねー。カジノも楽しそうですよね。」 CX「そうですね。自分はカジノにあまり楽しくないのですが、踊りやらせなきゃと思っています。」 ED"
+    },
+    {
+     "start": "第一条",
+     "text": "第一条第七号の年法律第五致待ち、わないでください。」 店「電話番号は、0223994445です。」 客「分かりました。ありがとうございます。」 店「他にご用件はございますか？」 客「いえ、大丈夫です。ありがとうございました。」 店「承知致し"
+    },
+    {
+     "start": "この法律において",
+     "text": "（出せない言葉が混じったので、これは出さない）"
+    }
+   ],
+   "loopPct": 3.38,
+   "movedBody": false
   }
  ],
  "bestVal": 2.603,
@@ -12649,5 +12649,5 @@
  ],
  "wantWider": false,
  "nextD": 512,
- "bad": 1
+ "bad": 3
 }
