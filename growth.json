@@ -1,69 +1,6 @@
 {
  "runs": [
   {
-   "at": "2026-10-11T05:03:36Z",
-   "val": 2.9156,
-   "prev": 2.9128,
-   "valTag": "fixed-holdout-v1",
-   "stoppedAt": 269,
-   "stuck": 0,
-   "evalTag": "fixed-ix-v1",
-   "secPerStep": 14.6095,
-   "steps": 300,
-   "bpc": 3.4509,
-   "charsPerTok": 1.2189,
-   "score": 2.1501,
-   "scoreW": 2.0,
-   "scoreMode": "talk",
-   "finishMix": 0.5,
-   "lineage": "L1",
-   "layers": 16,
-   "params": 117914880,
-   "chars": 1045308899,
-   "tokens": 857567631,
-   "grew": 0,
-   "rolledBack": false,
-   "ownVal": null,
-   "ownScore": null,
-   "d": 768,
-   "loops": 1,
-   "spread": 2.8868,
-   "bytes": 1415115957,
-   "heads": 6,
-   "ctx": 512,
-   "vocab": 6000,
-   "kind": "bpe",
-   "arch": "tpp-loop",
-   "wantWider": false,
-   "layerCap": 16,
-   "mixChanged": false,
-   "bySrc": {
-    "laws": 4.1689,
-    "wiki": 3.0725,
-    "aozora": 3.4222,
-    "hanrei": 3.5143,
-    "kokkai": 2.6874,
-    "web": 2.9492,
-    "talk": 2.1501
-   },
-   "wrote": [
-    {
-     "start": "わたしは",
-     "text": "わたしはどうしてもお母様がはなさそう、お母さんはお父さんもといってりません。」 AA「小さいころに、お母さんがお母様がいっぱいお願いしました。」 AB「あなたがとてもお母さんがお父さんに気を付けていただきます。」 AA「お父さんとお母さんは親"
-    },
-    {
-     "start": "第一条",
-     "text": "第一条（57条） <記事 京都駅> 京都駅（のみかいえき）は、京都府京都市西京区京都町の1町16村。 京都市の須京区に 京都府京都市北区に位置し、京都府京都市東京区の京都市に位置する。 京都市の東京都市に"
-    },
-    {
-     "start": "この法律において",
-     "text": "この法律において「」に相当する。 楌号式では、聖地では最も一般的な地形と呼ばれるもので、現在では主に珍しく非常に大きなものが多いが、後者は「 三角形 」と呼ばれ、 古代ギリシア と呼ばれている [ 1 ] 。 聖地としては、 ローマ に本来の聖地として知られるようにな"
-    }
-   ],
-   "loopPct": 1.65,
-   "movedBody": false
-  },
-  {
    "at": "2026-10-11T06:18:28Z",
    "val": 2.9131,
    "prev": 2.9156,
@@ -12599,6 +12536,69 @@
    ],
    "loopPct": 5.91,
    "movedBody": false
+  },
+  {
+   "at": "2026-10-22T10:15:17Z",
+   "val": 2.8237,
+   "prev": 2.8235,
+   "valTag": "fixed-holdout-v1",
+   "stoppedAt": 202,
+   "stuck": 0,
+   "evalTag": "fixed-ix-v1",
+   "secPerStep": 20.0239,
+   "steps": 323,
+   "bpc": 3.342,
+   "charsPerTok": 1.2189,
+   "score": 2.1219,
+   "scoreW": 2.0,
+   "scoreMode": "talk",
+   "finishMix": 0.5,
+   "lineage": "L1",
+   "layers": 16,
+   "params": 117914880,
+   "chars": 1045308899,
+   "tokens": 857567631,
+   "grew": 0,
+   "rolledBack": false,
+   "ownVal": null,
+   "ownScore": null,
+   "d": 768,
+   "loops": 1,
+   "spread": 2.7339,
+   "bytes": 1415115957,
+   "heads": 6,
+   "ctx": 512,
+   "vocab": 6000,
+   "kind": "bpe",
+   "arch": "tpp-loop",
+   "wantWider": false,
+   "layerCap": 16,
+   "mixChanged": false,
+   "bySrc": {
+    "laws": 3.9728,
+    "wiki": 2.9757,
+    "aozora": 3.3363,
+    "hanrei": 3.4366,
+    "kokkai": 2.6077,
+    "web": 2.8662,
+    "talk": 2.1219
+   },
+   "wrote": [
+    {
+     "start": "わたしは",
+     "text": "わたしは珍しいのだった。 「よしんでいるはずなのに」 「どうですか？ こんなものがあった時、どうしたんだろう」 「そうか、ここらへ。だが、それだけ、義雄のような感謝なんかしない」 「わたしも最後に聞いて見た。しかし、そんなにたったときに、これは、いつご"
+    },
+    {
+     "start": "第一条",
+     "text": "第一条ブ。 ドイツのバッハのドレッサーと呼ばれる国内のバッハ中心のペルシア人セッタの セッタリプレイス の一種。 モロッコのジェロームとフェロモーニング・デイリーのジョージ・ノイマンが、互いのボスと同じように人気を両立させたバッハの人生を話"
+    },
+    {
+     "start": "この法律において",
+     "text": "この法律において「秘密能力」「巡査」と称する。 2015年 （平成27年） 4月1日 - 「光久芳」が「氷水」と称するようになったが、 清水信 が「氷河」と称し、裁判所も 官立 として 氷河 （現在の神明山）に改称され、氷河が氷河に移された。 氷河"
+    }
+   ],
+   "loopPct": 0.79,
+   "movedBody": false
   }
  ],
  "bestVal": 2.8191,
@@ -12649,5 +12649,5 @@
  ],
  "wantWider": false,
  "nextD": 768,
- "bad": 2
+ "bad": 4
 }
