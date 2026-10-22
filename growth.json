@@ -1,69 +1,6 @@
 {
  "runs": [
   {
-   "at": "2026-10-11T06:18:28Z",
-   "val": 2.9131,
-   "prev": 2.9156,
-   "valTag": "fixed-holdout-v1",
-   "stoppedAt": 204,
-   "stuck": 0,
-   "evalTag": "fixed-ix-v1",
-   "secPerStep": 19.7814,
-   "steps": 300,
-   "bpc": 3.4479,
-   "charsPerTok": 1.2189,
-   "score": 2.1492,
-   "scoreW": 2.0,
-   "scoreMode": "talk",
-   "finishMix": 0.5,
-   "lineage": "L1",
-   "layers": 16,
-   "params": 117914880,
-   "chars": 1045308899,
-   "tokens": 857567631,
-   "grew": 0,
-   "rolledBack": false,
-   "ownVal": null,
-   "ownScore": null,
-   "d": 768,
-   "loops": 1,
-   "spread": 3.008,
-   "bytes": 1415115957,
-   "heads": 6,
-   "ctx": 512,
-   "vocab": 6000,
-   "kind": "bpe",
-   "arch": "tpp-loop",
-   "wantWider": false,
-   "layerCap": 16,
-   "mixChanged": false,
-   "bySrc": {
-    "laws": 4.1567,
-    "wiki": 3.0679,
-    "aozora": 3.4186,
-    "hanrei": 3.5114,
-    "kokkai": 2.6875,
-    "web": 2.9463,
-    "talk": 2.1492
-   },
-   "wrote": [
-    {
-     "start": "わたしは",
-     "text": "わたしは組合せられましたように、いわゆる幼児教育、教育など、医師間での議論を深めております。 また、政府としては、このような事態を招いたり、そうした国民に対しても、教育、日本の一層の御理解をいただくということを強く申し上げてまいりました。」 AB「なお、臨調の答申は、本法律案の内容について申し上げますと"
-    },
-    {
-     "start": "第一条",
-     "text": "第一条ともに戦争に秘密を引かれた際に、次の諸点を問わずに、「何を考えるか」という趣旨の [ 27 ] 、 2019年 3月17日 、 アメリカ合衆国 が横須賀を出発した。 アメリカ合衆国大統領の ニューディール は、 強制執行 を強制した [ 30 ]"
-    },
-    {
-     "start": "この法律において",
-     "text": "この法律において「新型コロナ」等に加えて、新型型のMS型IF型に指定されている。 2003年10月からは「新型インフルエンザ」「新型インフルエンザ対応型」「新型インフルエンザ等対策」を2004年3月末まで、新型リゾート型で「新型Vision」が導入された。 2"
-    }
-   ],
-   "loopPct": 2.31,
-   "movedBody": false
-  },
-  {
    "at": "2026-10-11T07:35:08Z",
    "val": 2.9128,
    "prev": 2.9131,
@@ -12599,6 +12536,69 @@
    ],
    "loopPct": 0.79,
    "movedBody": false
+  },
+  {
+   "at": "2026-10-22T11:31:56Z",
+   "val": 2.8263,
+   "prev": 2.8237,
+   "valTag": "fixed-holdout-v1",
+   "stoppedAt": 201,
+   "stuck": 0,
+   "evalTag": "fixed-ix-v1",
+   "secPerStep": 20.3136,
+   "steps": 322,
+   "bpc": 3.3452,
+   "charsPerTok": 1.2189,
+   "score": 2.1139,
+   "scoreW": 2.0,
+   "scoreMode": "talk",
+   "finishMix": 0.5,
+   "lineage": "L1",
+   "layers": 16,
+   "params": 117914880,
+   "chars": 1045308899,
+   "tokens": 857567631,
+   "grew": 0,
+   "rolledBack": false,
+   "ownVal": null,
+   "ownScore": null,
+   "d": 768,
+   "loops": 1,
+   "spread": 2.9013,
+   "bytes": 1415115957,
+   "heads": 6,
+   "ctx": 512,
+   "vocab": 6000,
+   "kind": "bpe",
+   "arch": "tpp-loop",
+   "wantWider": false,
+   "layerCap": 16,
+   "mixChanged": false,
+   "bySrc": {
+    "laws": 3.9757,
+    "wiki": 2.979,
+    "aozora": 3.3376,
+    "hanrei": 3.4423,
+    "kokkai": 2.6132,
+    "web": 2.8647,
+    "talk": 2.1139
+   },
+   "wrote": [
+    {
+     "start": "わたしは",
+     "text": "わたしは、これからも、あれからコンビニに行ってみて下さい。」 BP「はい、実際に行ってみたいです。虫が苦手で、ファストパスというのはありますか？」 CY「茹でたのですが、さすがに行ったことがなくて。」 BP「なるほどなるほど。今日も特にこの子は昼間は"
+    },
+    {
+     "start": "第一条",
+     "text": "第一条月分 ) １被告会社は，一定期間に係る低租税収入に係る宅配給に関す る事務作業を担当するものである。 (2) 原告ら 被告会社は，平成１２年１０月２５日，付近経済情勢の変動，厳しい財政状況の 見積り等を通じて，６年間が経過した前記ウを原告の財政状況下で術後に生じた行為を �"
+    },
+    {
+     "start": "この法律において",
+     "text": "この法律において「SIC」国の「SICカード」は、大手のアウトレットカードをユニフォームに使用している 。上記の通り、こちらはSICカードのカード設定になっている。 File:Suicaは、JavaScript Seryzentail.jpg|Nicendo Stati"
+    }
+   ],
+   "loopPct": 3.2,
+   "movedBody": false
   }
  ],
  "bestVal": 2.8191,
@@ -12649,5 +12649,5 @@
  ],
  "wantWider": false,
  "nextD": 768,
- "bad": 4
+ "bad": 6
 }
