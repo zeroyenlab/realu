@@ -1,69 +1,6 @@
 {
  "runs": [
   {
-   "at": "2026-10-11T01:16:41Z",
-   "val": 2.9147,
-   "prev": 2.9192,
-   "valTag": "fixed-holdout-v1",
-   "stoppedAt": 180,
-   "stuck": 0,
-   "evalTag": "fixed-ix-v1",
-   "secPerStep": 22.8266,
-   "steps": 300,
-   "bpc": 3.4497,
-   "charsPerTok": 1.2189,
-   "score": 2.1548,
-   "scoreW": 2.0,
-   "scoreMode": "talk",
-   "finishMix": 0.5,
-   "lineage": "L1",
-   "layers": 16,
-   "params": 117914880,
-   "chars": 1045308899,
-   "tokens": 857567631,
-   "grew": 0,
-   "rolledBack": false,
-   "ownVal": null,
-   "ownScore": null,
-   "d": 768,
-   "loops": 1,
-   "spread": 2.8108,
-   "bytes": 1415115957,
-   "heads": 6,
-   "ctx": 512,
-   "vocab": 6000,
-   "kind": "bpe",
-   "arch": "tpp-loop",
-   "wantWider": false,
-   "layerCap": 16,
-   "mixChanged": false,
-   "bySrc": {
-    "laws": 4.163,
-    "wiki": 3.0688,
-    "aozora": 3.4202,
-    "hanrei": 3.5127,
-    "kokkai": 2.6898,
-    "web": 2.9471,
-    "talk": 2.1548
-   },
-   "wrote": [
-    {
-     "start": "わたしは",
-     "text": "わたしはそのようなことを申し上げたいと思います。」 AB「総理、御存じないとおり、財政再建は、もう私たちが先頭に立ってやり過ぎた日本がどう観察するかということを指摘したいと思うんですが、総理にお尋ねをいたします。 まず、今回の補正につきまして、総理の御決意をお聞かせください"
-    },
-    {
-     "start": "第一条",
-     "text": "第一条ロハハハ2016年10月27日閲覧。 ↑ 『 ウィーン会議においても大界一が「東大大犯行」をテーマにしたいと報告 』（プレスリリース）ポーツコレクション よりアーカイブ 。 ↑ 『 ウィーン・ メール 』の経営統合を実現 『 消費"
-    },
-    {
-     "start": "この法律において",
-     "text": "この法律において計画に従って指針を示し、実施計画と相対的にあわせて頂ける計画を立てる事案が出てくるのとされてきたのであります。そして同時に、再建計画、再建計画などの計画を構造化しても、いわゆる戦略的計画、あるいは再建計画を切り開くことも、なぜならば、他国に対する幾つかのような見通しが中心"
-    }
-   ],
-   "loopPct": 6.3,
-   "movedBody": false
-  },
-  {
    "at": "2026-10-11T02:34:03Z",
    "val": 2.9118,
    "prev": 2.9147,
@@ -12599,6 +12536,69 @@
    ],
    "loopPct": 7.77,
    "movedBody": false
+  },
+  {
+   "at": "2026-10-22T06:27:17Z",
+   "val": 2.8321,
+   "prev": 2.8269,
+   "valTag": "fixed-holdout-v1",
+   "stoppedAt": 287,
+   "stuck": 0,
+   "evalTag": "fixed-ix-v1",
+   "secPerStep": 13.6476,
+   "steps": 300,
+   "bpc": 3.3521,
+   "charsPerTok": 1.2189,
+   "score": 2.122,
+   "scoreW": 2.0,
+   "scoreMode": "talk",
+   "finishMix": 0.5,
+   "lineage": "L1",
+   "layers": 16,
+   "params": 117914880,
+   "chars": 1045308899,
+   "tokens": 857567631,
+   "grew": 0,
+   "rolledBack": false,
+   "ownVal": null,
+   "ownScore": null,
+   "d": 768,
+   "loops": 1,
+   "spread": 2.772,
+   "bytes": 1415115957,
+   "heads": 6,
+   "ctx": 512,
+   "vocab": 6000,
+   "kind": "bpe",
+   "arch": "tpp-loop",
+   "wantWider": false,
+   "layerCap": 16,
+   "mixChanged": false,
+   "bySrc": {
+    "laws": 3.9772,
+    "wiki": 2.981,
+    "aozora": 3.3424,
+    "hanrei": 3.4503,
+    "kokkai": 2.6166,
+    "web": 2.876,
+    "talk": 2.122
+   },
+   "wrote": [
+    {
+     "start": "わたしは",
+     "text": "わたしは、また近くランチを買いに行っているんですね！」 HZ「ほんとですねー。でもパンが確かダイエットくらいはいいですよね」 GI「パンが苦手かも。あとはチャンプルにもよるので。」 HZ「そうなんですか！私もです。上からおいしくないんですよ"
+    },
+    {
+     "start": "第一条",
+     "text": "第一条 > 銭湯 蔓湯 参考人 修休客 航路法 内閣は、%国内の防衛施設室、防衛施設華僑学校、家庭内外の防衛施設 閣議において、自衛隊の潜水施設、燃料施設、何船場、施設、工程、横断、便宜、自動車から流入、再び乾燥に、かつ、鉄筋コンクリートの供与、処置、拡張"
+    },
+    {
+     "start": "この法律において",
+     "text": "この法律において「逃げ袋」は、崩壊の危険はますます大きく、指定税を大量に更新することがあります。」 AB「この標準的な個々の首都は、東北及び北陸北陸の東南海の首都圏への移住を強めておりますが、東日本大震災からの復興はまさに少なく、例えば、東北・名古屋の首"
+    }
+   ],
+   "loopPct": 3.98,
+   "movedBody": false
   }
  ],
  "bestVal": 2.8191,
@@ -12649,5 +12649,5 @@
  ],
  "wantWider": false,
  "nextD": 768,
- "bad": 2
+ "bad": 4
 }
