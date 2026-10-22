@@ -1,69 +1,6 @@
 {
  "runs": [
   {
-   "at": "2026-10-11T05:02:05Z",
-   "val": 2.6454,
-   "prev": 2.646,
-   "valTag": "fixed-holdout-v1",
-   "stoppedAt": 342,
-   "stuck": 0,
-   "evalTag": "fixed-ix-v1",
-   "secPerStep": 11.2988,
-   "steps": 663,
-   "bpc": 3.1311,
-   "charsPerTok": 1.2189,
-   "score": 2.0384,
-   "scoreW": 2.0,
-   "scoreMode": "talk",
-   "finishMix": 0.85,
-   "lineage": "L2",
-   "layers": 14,
-   "params": 47379968,
-   "chars": 1045308899,
-   "tokens": 857567631,
-   "grew": 0,
-   "rolledBack": false,
-   "ownVal": null,
-   "ownScore": null,
-   "d": 512,
-   "loops": 1,
-   "spread": 2.5818,
-   "bytes": 568680621,
-   "heads": 8,
-   "ctx": 512,
-   "vocab": 6000,
-   "kind": "bpe",
-   "arch": "tpp-loop",
-   "wantWider": false,
-   "layerCap": 16,
-   "mixChanged": false,
-   "bySrc": {
-    "laws": 3.5202,
-    "wiki": 2.8093,
-    "aozora": 3.1291,
-    "hanrei": 3.368,
-    "kokkai": 2.4675,
-    "web": 2.7329,
-    "talk": 2.0384
-   },
-   "wrote": [
-    {
-     "start": "わたしは",
-     "text": "わたしは絶対にバリバリやる気がしないでいます」 CR「うまくいくと長く感じるようになりますかね」 FR「そうですね。」 CR「もうどれくらいの間を回すのでしょうか」 FR「2000円でもしますね。」 CR「気に入らないですよね」 FR「そうですね"
-    },
-    {
-     "start": "第一条",
-     "text": "第一条いいんですよ。」 IH「あら！なんだかみんな怒られちゃいますね。」 IH「よく分からないんですよね、怒ってても怒らないです。」 IH「私も気づけば嘘だとは思ってるんですけど、それで怒られちゃったりします。」 IH「いやあ、それ"
-    },
-    {
-     "start": "この法律において",
-     "text": "この法律において、歌手、俳優、使用名、外国人関係といった人材を対象とする 技術 や、 国際交流 ・ 国際交流 を目的とした外国人向けの 観覧車 （ 英語版 ） が用いられる。 2019年 には、世界で最も知られている 国際交流 の 国際交流都市 になった。 輸出規制 は、 2012年"
-    }
-   ],
-   "loopPct": 4.43,
-   "movedBody": false
-  },
-  {
    "at": "2026-10-11T06:16:37Z",
    "val": 2.6514,
    "prev": 2.6454,
@@ -12599,6 +12536,69 @@
    ],
    "loopPct": 10.25,
    "movedBody": false
+  },
+  {
+   "at": "2026-10-22T08:55:03Z",
+   "val": 2.6063,
+   "prev": 2.6053,
+   "valTag": "fixed-holdout-v1",
+   "stoppedAt": 606,
+   "stuck": 0,
+   "evalTag": "fixed-ix-v1",
+   "secPerStep": 6.1566,
+   "steps": 652,
+   "bpc": 3.0848,
+   "charsPerTok": 1.2189,
+   "score": 2.0282,
+   "scoreW": 2.0,
+   "scoreMode": "talk",
+   "finishMix": 0.85,
+   "lineage": "L2",
+   "layers": 14,
+   "params": 47379968,
+   "chars": 1045308899,
+   "tokens": 857567631,
+   "grew": 0,
+   "rolledBack": false,
+   "ownVal": null,
+   "ownScore": null,
+   "d": 512,
+   "loops": 1,
+   "spread": 2.6253,
+   "bytes": 568680621,
+   "heads": 8,
+   "ctx": 512,
+   "vocab": 6000,
+   "kind": "bpe",
+   "arch": "tpp-loop",
+   "wantWider": false,
+   "layerCap": 16,
+   "mixChanged": false,
+   "bySrc": {
+    "laws": 3.4669,
+    "wiki": 2.7629,
+    "aozora": 3.0875,
+    "hanrei": 3.3505,
+    "kokkai": 2.4378,
+    "web": 2.692,
+    "talk": 2.0282
+   },
+   "wrote": [
+    {
+     "start": "わたしは",
+     "text": "わたしは、その日の歩き方を見ていたのですが、何かの前の運動をしていたような気がしました。」 EB「そうなんですね！いい運動になりましたね！」 BX「どうでしょう？」 EB「ちょっと大きいですね！運動はどちらですか？」 BX「運動はしてないんですが、�"
+    },
+    {
+     "start": "第一条",
+     "text": "第一条第六号のネルネルの部分がございます。」 客「そうなんですね。ありがとうございます。あと、タクシーでキャッシュレス払いできるところを探してもらえますか？」 店「かしこまりました。では、関西国際空港というところはいかがでしょうか？」 客「そちらの電話番号を教えて"
+    },
+    {
+     "start": "この法律において",
+     "text": "この法律において「netsugi」における「netsugi」における「netsugi」における「netsugi」は「netsugi」において「netsugi」の用語に「netsugi」をまたぎ、netsugiの「netsugi」を指して「netsugi」に「nets"
+    }
+   ],
+   "loopPct": 2.32,
+   "movedBody": false
   }
  ],
  "bestVal": 2.6022,
@@ -12649,5 +12649,5 @@
  ],
  "wantWider": false,
  "nextD": 512,
- "bad": 2
+ "bad": 0
 }
