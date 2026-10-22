@@ -1,69 +1,6 @@
 {
  "runs": [
   {
-   "at": "2026-10-10T20:15:11Z",
-   "val": 2.9103,
-   "prev": 2.9129,
-   "valTag": "fixed-holdout-v1",
-   "stoppedAt": 160,
-   "stuck": 0,
-   "evalTag": "fixed-ix-v1",
-   "secPerStep": 26.061,
-   "steps": 300,
-   "bpc": 3.4446,
-   "charsPerTok": 1.2189,
-   "score": 2.1519,
-   "scoreW": 2.0,
-   "scoreMode": "talk",
-   "finishMix": 0.5,
-   "lineage": "L1",
-   "layers": 16,
-   "params": 117914880,
-   "chars": 1045308899,
-   "tokens": 857567631,
-   "grew": 0,
-   "rolledBack": false,
-   "ownVal": null,
-   "ownScore": null,
-   "d": 768,
-   "loops": 1,
-   "spread": 3.2907,
-   "bytes": 1415115957,
-   "heads": 6,
-   "ctx": 512,
-   "vocab": 6000,
-   "kind": "bpe",
-   "arch": "tpp-loop",
-   "wantWider": false,
-   "layerCap": 16,
-   "mixChanged": false,
-   "bySrc": {
-    "laws": 4.1641,
-    "wiki": 3.0739,
-    "aozora": 3.4204,
-    "hanrei": 3.5125,
-    "kokkai": 2.6772,
-    "web": 2.9459,
-    "talk": 2.1519
-   },
-   "wrote": [
-    {
-     "start": "わたしは",
-     "text": "わたしはあなたを見まして、とにかく第10代の「気の毒に馬鹿」は、日本人にあふれるどころか、友人たちがたのまんまとのあなたを気に入り、わたしの買い物を見て、人間をたくさん見たといった行動を取ってきたことを伝える「竹の頭」などと、友人と共に言"
-    },
-    {
-     "start": "第一条",
-     "text": "第一条において、軍会の直接関係ではありますが、これは、然るに、先ほどもから、米軍の軍備はどんどん増員されていますが、それはそうではなくて、これをことしには全く適応しておりません。 そして、私どもとしては、いまここに、米軍が協力して、この政府が米軍に入っていく二十一世紀というのは、"
-    },
-    {
-     "start": "この法律において",
-     "text": "この法律においていきます。 その上で、私は、残念ながら、菅総理からも、また、今回の閣議で、まだこれは外交ということではなく、単純に世界に向かっているまさに、それは世界じゅうにとっても、まさに私はこの国との関係はやはり十分にを有する、決して回っていないと思うんです。」 AB「しかし"
-    }
-   ],
-   "loopPct": 2.14,
-   "movedBody": false
-  },
-  {
    "at": "2026-10-10T21:32:09Z",
    "val": 2.9094,
    "prev": 2.9103,
@@ -12599,9 +12536,72 @@
    ],
    "loopPct": 1.47,
    "movedBody": false
+  },
+  {
+   "at": "2026-10-22T01:24:01Z",
+   "val": 2.8191,
+   "prev": 2.8218,
+   "valTag": "fixed-holdout-v1",
+   "stoppedAt": 141,
+   "stuck": 0,
+   "evalTag": "fixed-ix-v1",
+   "secPerStep": 30.0488,
+   "steps": 300,
+   "bpc": 3.3366,
+   "charsPerTok": 1.2189,
+   "score": 2.1178,
+   "scoreW": 2.0,
+   "scoreMode": "talk",
+   "finishMix": 0.5,
+   "lineage": "L1",
+   "layers": 16,
+   "params": 117914880,
+   "chars": 1045308899,
+   "tokens": 857567631,
+   "grew": 0,
+   "rolledBack": false,
+   "ownVal": null,
+   "ownScore": null,
+   "d": 768,
+   "loops": 1,
+   "spread": 2.9958,
+   "bytes": 1415115957,
+   "heads": 6,
+   "ctx": 512,
+   "vocab": 6000,
+   "kind": "bpe",
+   "arch": "tpp-loop",
+   "wantWider": false,
+   "layerCap": 16,
+   "mixChanged": false,
+   "bySrc": {
+    "laws": 3.9634,
+    "wiki": 2.9758,
+    "aozora": 3.3353,
+    "hanrei": 3.4394,
+    "kokkai": 2.6028,
+    "web": 2.862,
+    "talk": 2.1178
+   },
+   "wrote": [
+    {
+     "start": "わたしは",
+     "text": "わたしは、何かいいうちに何を言いますか？」 AA「私は、今日は皆です」 EU「そうなんですね！ご褒美です！」 AA「最近は、どんな音楽を聴かれるんですか？」 EU「最近は、BARです」 AA「お！いいですねー！」"
+    },
+    {
+     "start": "第一条",
+     "text": "第一条の地位が二五六、二〇二六、二〇二〇、二〇二〇、二〇〇二、二〇二二年度及び三九、二〇一〇の間に一二・八％、二〇二〇、一九九、一三〇、一一二、二〇一、二〇二、一一、四五、五一九、五〇、四二二、三〇、今、三〇、二〇一、二〇一、三〇、二〇、"
+    },
+    {
+     "start": "この法律において",
+     "text": "この法律において「整備対象者」と表示される。 2021年（令和3年）9月26日 - 西日本旅客鉄道（JR西日本）越谷線が2代目駅として開業。 1997年（平成9年）10月1日 - 新千歳空港駅を 津軽線 と改称。 1998年（平成10年）11月1日"
+    }
+   ],
+   "loopPct": 22.26,
+   "movedBody": false
   }
  ],
- "bestVal": 2.8208,
+ "bestVal": 2.8191,
  "layers": 16,
  "params": 117914880,
  "born": "2026-09-08T15:11:54Z",
