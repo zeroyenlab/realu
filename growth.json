@@ -1,69 +1,6 @@
 {
  "runs": [
   {
-   "at": "2026-10-11T16:33:18Z",
-   "val": 2.906,
-   "prev": 2.908,
-   "valTag": "fixed-holdout-v1",
-   "stoppedAt": 156,
-   "stuck": 0,
-   "evalTag": "fixed-ix-v1",
-   "secPerStep": 26.7425,
-   "steps": 300,
-   "bpc": 3.4395,
-   "charsPerTok": 1.2189,
-   "score": 2.152,
-   "scoreW": 2.0,
-   "scoreMode": "talk",
-   "finishMix": 0.5,
-   "lineage": "L1",
-   "layers": 16,
-   "params": 117914880,
-   "chars": 1045308899,
-   "tokens": 857567631,
-   "grew": 0,
-   "rolledBack": false,
-   "ownVal": null,
-   "ownScore": null,
-   "d": 768,
-   "loops": 1,
-   "spread": 2.9676,
-   "bytes": 1415115957,
-   "heads": 6,
-   "ctx": 512,
-   "vocab": 6000,
-   "kind": "bpe",
-   "arch": "tpp-loop",
-   "wantWider": false,
-   "layerCap": 16,
-   "mixChanged": false,
-   "bySrc": {
-    "laws": 4.1473,
-    "wiki": 3.0639,
-    "aozora": 3.4118,
-    "hanrei": 3.4993,
-    "kokkai": 2.6804,
-    "web": 2.9379,
-    "talk": 2.152
-   },
-   "wrote": [
-    {
-     "start": "わたしは",
-     "text": "わたしはバニラと人間を着ていた。しかし、そこにはその原因は書かれていないのに、私は先祖モルディファの顔を見て来て、また呼び出して来る。もっとも、この世間の賛同者のことは、自分の姿でもあったのではないか」 こう書いてあると、さすがにその者が そう言って来るかもし"
-    },
-    {
-     "start": "第一条",
-     "text": "第一条××××××××××× マニュファニュアニュータイプカーニバル交響楽団 (6月11日). 2018年11月11日閲覧。 ↑ “ 「はいくら」に「あさぎり」『月刊新潮』1989年10月1日付 ↑ “ 「み"
-    },
-    {
-     "start": "この法律において",
-     "text": "この法律において、第一項ものとみなして、するものとする。 第四項の認定の申請は、次に掲げる事項を記載した申請書を法第五十六条第三項において準用する法第五十五条第四項の規定により交付すべき書類新設分割に係る合格者境内における法第四十八条第三項者に対する認可について準用する。 （二月十五日） 金額は、�世大名藩千民間起工区の廃止につき、国際連合規則（昭和三十六年法律第百三十一号）疎明処分を実施することができる。 （許可の申請） 第三項の閉鎖"
-    }
-   ],
-   "loopPct": 7.69,
-   "movedBody": false
-  },
-  {
    "at": "2026-10-11T17:49:12Z",
    "val": 2.9085,
    "prev": 2.906,
@@ -12599,9 +12536,72 @@
    ],
    "loopPct": 0.77,
    "movedBody": false
+  },
+  {
+   "at": "2026-10-22T21:43:48Z",
+   "val": 2.8165,
+   "prev": 2.82,
+   "valTag": "fixed-holdout-v1",
+   "stoppedAt": 179,
+   "stuck": 0,
+   "evalTag": "fixed-ix-v1",
+   "secPerStep": 22.995,
+   "steps": 300,
+   "bpc": 3.3336,
+   "charsPerTok": 1.2189,
+   "score": 2.1181,
+   "scoreW": 2.0,
+   "scoreMode": "talk",
+   "finishMix": 0.5,
+   "lineage": "L1",
+   "layers": 16,
+   "params": 117914880,
+   "chars": 1045308899,
+   "tokens": 857567631,
+   "grew": 0,
+   "rolledBack": false,
+   "ownVal": null,
+   "ownScore": null,
+   "d": 768,
+   "loops": 1,
+   "spread": 2.8511,
+   "bytes": 1415115957,
+   "heads": 6,
+   "ctx": 512,
+   "vocab": 6000,
+   "kind": "bpe",
+   "arch": "tpp-loop",
+   "wantWider": false,
+   "layerCap": 16,
+   "mixChanged": false,
+   "bySrc": {
+    "laws": 3.9654,
+    "wiki": 2.9695,
+    "aozora": 3.3362,
+    "hanrei": 3.4395,
+    "kokkai": 2.6042,
+    "web": 2.8603,
+    "talk": 2.1181
+   },
+   "wrote": [
+    {
+     "start": "わたしは",
+     "text": "わたしはそうですが。ストレッチとかですか？」 DS「いえ、そんな感じです。」 FW「はー。今、調べたらストレッチしてアレンジしてます。」 DS「ストレッチ系ですか？」 FW「クレッチは思いつかないです。なのでスマホで、生地なんです"
+    },
+    {
+     "start": "第一条",
+     "text": "第一条istory（2002年7月30日閲覧） ”. 2023年8月30日閲覧。 ↑ “ LPGのDC-Cは アイスホッケー に！ ”. 2023年9月3日閲覧。 ↑ “ ザ・フォーク、ASPANが王者・フォ"
+    },
+    {
+     "start": "この法律において",
+     "text": "この法律において「納付」鉱室等」という。）を検査する。 （課税標準等） 第十五条 線路は、線路、線路、駅、駅等の路線に並走する路線を、線路及び路線路線に改称し、かつ、々駅を従来通り路線と改称する。 （線路） 第十六条 線路は、線路直通路の東側に設置される路線、駅、駅東側"
+    }
+   ],
+   "loopPct": 6.89,
+   "movedBody": false
   }
  ],
- "bestVal": 2.8178,
+ "bestVal": 2.8165,
  "layers": 16,
  "params": 117914880,
  "born": "2026-09-08T15:11:54Z",
@@ -12649,5 +12649,5 @@
  ],
  "wantWider": false,
  "nextD": 768,
- "bad": 0
+ "bad": 1
 }
