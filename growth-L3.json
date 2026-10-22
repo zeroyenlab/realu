@@ -1,69 +1,6 @@
 {
  "runs": [
   {
-   "at": "2026-10-11T03:42:56Z",
-   "val": 2.6858,
-   "prev": 2.6865,
-   "valTag": "fixed-holdout-v1",
-   "stoppedAt": 825,
-   "stuck": 0,
-   "evalTag": "fixed-ix-v1",
-   "secPerStep": 4.4897,
-   "steps": 1168,
-   "bpc": 3.1788,
-   "charsPerTok": 1.2189,
-   "score": 2.137,
-   "scoreW": 2.0,
-   "scoreMode": "talk",
-   "finishMix": 0.2,
-   "lineage": "L3",
-   "layers": 13,
-   "params": 25335168,
-   "chars": 1045308899,
-   "tokens": 857567631,
-   "grew": 0,
-   "rolledBack": false,
-   "ownVal": null,
-   "ownScore": null,
-   "d": 384,
-   "loops": 1,
-   "spread": 2.5098,
-   "bytes": 304134793,
-   "heads": 6,
-   "ctx": 512,
-   "vocab": 6000,
-   "kind": "bpe",
-   "arch": "tpp-loop",
-   "wantWider": false,
-   "layerCap": 16,
-   "mixChanged": false,
-   "bySrc": {
-    "laws": 3.6431,
-    "wiki": 2.8471,
-    "aozora": 3.1775,
-    "hanrei": 3.4179,
-    "kokkai": 2.4961,
-    "web": 2.7642,
-    "talk": 2.137
-   },
-   "wrote": [
-    {
-     "start": "わたしは",
-     "text": "わたしはいつまでも人生を抱くのに、支え合って忍び入りたがった。そして、そのとき女は鳥の肩に倒れて、玉靴の背に腰をかけて、 「へえ！ お前さんは……」と、女は笑って、笑いながら、 「へえ、お兄さんがお前さんを"
-    },
-    {
-     "start": "第一条",
-     "text": "第一条タンクタンクタンクに取り付けた。 1985年 （昭和60年） 3月1日 - 海軍省 の 陸軍 航空部隊 （現 潜水艦 ）が 1987年 （昭和62年） 3月28日 - 海軍省 の 海軍航空隊 が 海軍 航空部隊 （ 軍艦 ）に改組する [ 2"
-    },
-    {
-     "start": "この法律において",
-     "text": "この法律において「スズキ」という。）を、スズキ（スズキを含む。）の海外掘削を、スズキから締めることができること。 （スズキ合材） 前項の規定によるセルシングスズキ合材は、映画、デジタル、写真又は撮影したもの（以下「スズキ合材」という。）を、スズキ合材�及びスズキ合材として使用したこと。 スズキ合材は、"
-    }
-   ],
-   "loopPct": 4.2,
-   "movedBody": false
-  },
-  {
    "at": "2026-10-11T04:51:00Z",
    "val": 2.6849,
    "prev": 2.6858,
@@ -12599,9 +12536,72 @@
    ],
    "loopPct": 1.16,
    "movedBody": false
+  },
+  {
+   "at": "2026-10-22T08:54:36Z",
+   "val": 2.6391,
+   "prev": 2.6404,
+   "valTag": "fixed-holdout-v1",
+   "stoppedAt": 750,
+   "stuck": 0,
+   "evalTag": "fixed-ix-v1",
+   "secPerStep": 4.9548,
+   "steps": 904,
+   "bpc": 3.1235,
+   "charsPerTok": 1.2189,
+   "score": 2.1087,
+   "scoreW": 2.0,
+   "scoreMode": "talk",
+   "finishMix": 0.2,
+   "lineage": "L3",
+   "layers": 14,
+   "params": 27105408,
+   "chars": 1045308899,
+   "tokens": 857567631,
+   "grew": 0,
+   "rolledBack": false,
+   "ownVal": null,
+   "ownScore": null,
+   "d": 384,
+   "loops": 1,
+   "spread": 2.612,
+   "bytes": 325385901,
+   "heads": 6,
+   "ctx": 512,
+   "vocab": 6000,
+   "kind": "bpe",
+   "arch": "tpp-loop",
+   "wantWider": false,
+   "layerCap": 16,
+   "mixChanged": false,
+   "bySrc": {
+    "laws": 3.5597,
+    "wiki": 2.7886,
+    "aozora": 3.1286,
+    "hanrei": 3.3786,
+    "kokkai": 2.4578,
+    "web": 2.721,
+    "talk": 2.1087
+   },
+   "wrote": [
+    {
+     "start": "わたしは",
+     "text": "わたしはそう思っています。 地域の実態、こちらのお尋ねですけれども、特定地域における地域における人口の集中的な減少傾向というのが大きいと思われるのです。」 AB「これらの課題に対して、地域の特性を考えると、この地域の活力を増大させていくということが大きな課題、これは大きな柱になっていくというふ"
+    },
+    {
+     "start": "第一条",
+     "text": "第一条��餌食餌をできる限り維持管理を期しておられることを実感し、その方針、対策に全力を尽くしてまいります。」 AB「また、今後詳細に検討してまいりたいと存じます。 最後に、再チャレンジについてお話がありました。私は、自民党に指摘された事実の原因の一つは、ベトナ"
+    },
+    {
+     "start": "この法律において",
+     "text": "この法律において「株式会社すき�さん株式会社」を設立し、株式会社中野工業株式会社を設立。 2001年（平成13年）10月 - 株式会社ふるさと情報専門部を設立。 2004年（平成16年）4月 - 株式会社ふるさと情報、株式会社ふるさと情報、株式会社ふるさと情報、COUNDY、株式会社SOUND ENEOS、株式会社つ"
+    }
+   ],
+   "loopPct": 15.33,
+   "movedBody": false
   }
  ],
- "bestVal": 2.6404,
+ "bestVal": 2.6391,
  "layers": 14,
  "params": 27105408,
  "born": "2026-09-12T18:05:42Z",
@@ -12649,5 +12649,5 @@
  ],
  "wantWider": false,
  "nextD": 384,
- "bad": 0
+ "bad": 3
 }
