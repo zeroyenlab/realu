@@ -1,69 +1,6 @@
 {
  "runs": [
   {
-   "at": "2026-10-11T10:07:21Z",
-   "val": 2.9072,
-   "prev": 2.9106,
-   "valTag": "fixed-holdout-v1",
-   "stoppedAt": 159,
-   "stuck": 0,
-   "evalTag": "fixed-ix-v1",
-   "secPerStep": 26.1774,
-   "steps": 300,
-   "bpc": 3.441,
-   "charsPerTok": 1.2189,
-   "score": 2.1529,
-   "scoreW": 2.0,
-   "scoreMode": "talk",
-   "finishMix": 0.5,
-   "lineage": "L1",
-   "layers": 16,
-   "params": 117914880,
-   "chars": 1045308899,
-   "tokens": 857567631,
-   "grew": 0,
-   "rolledBack": false,
-   "ownVal": null,
-   "ownScore": null,
-   "d": 768,
-   "loops": 1,
-   "spread": 2.9371,
-   "bytes": 1415115957,
-   "heads": 6,
-   "ctx": 512,
-   "vocab": 6000,
-   "kind": "bpe",
-   "arch": "tpp-loop",
-   "wantWider": false,
-   "layerCap": 16,
-   "mixChanged": false,
-   "bySrc": {
-    "laws": 4.1524,
-    "wiki": 3.0661,
-    "aozora": 3.4143,
-    "hanrei": 3.5112,
-    "kokkai": 2.6759,
-    "web": 2.9427,
-    "talk": 2.1529
-   },
-   "wrote": [
-    {
-     "start": "わたしは",
-     "text": "わたしはブレストで肉を食べました！」 CO「ブルーはおいしそうですね。ダイエットがまだ大変ですね」 AB「もうすぐだと思います！」 AA「こんにちは」 CO「こんにちは」 AA「最近"
-    },
-    {
-     "start": "第一条",
-     "text": "第一条 は 2001年 3月20日 に行われ、 リアルタイム・ダグラス のライバル がこれまで3番目に成功していたことが発表された。 1967年 4月12日 に 神戸三宮 で開催された、神戸三宮駅前デザイン演出の選曲「 J-JR 」に果たした"
-    },
-    {
-     "start": "この法律において",
-     "text": "この法律において「新型コロナ対策において、新型コロナ対策推進区域の整備に全力で取り組んでまいります。 新型コロナの新型コロナウイルス感染症対策推進事業、デジタル庁と連携して、新型コロナウイルス感染症対策等を踏まえて、新型コロナウイルス感染症対策を進めてまいります。 来年度予算、これは二〇一七年度の一・二％"
-    }
-   ],
-   "loopPct": 3.02,
-   "movedBody": false
-  },
-  {
    "at": "2026-10-11T11:25:37Z",
    "val": 2.9066,
    "prev": 2.9072,
@@ -12599,9 +12536,72 @@
    ],
    "loopPct": 0.0,
    "movedBody": false
+  },
+  {
+   "at": "2026-10-22T15:19:51Z",
+   "val": 2.8183,
+   "prev": 2.8243,
+   "valTag": "fixed-holdout-v1",
+   "stoppedAt": 156,
+   "stuck": 0,
+   "evalTag": "fixed-ix-v1",
+   "secPerStep": 26.6704,
+   "steps": 322,
+   "bpc": 3.3357,
+   "charsPerTok": 1.2189,
+   "score": 2.1211,
+   "scoreW": 2.0,
+   "scoreMode": "talk",
+   "finishMix": 0.5,
+   "lineage": "L1",
+   "layers": 16,
+   "params": 117914880,
+   "chars": 1045308899,
+   "tokens": 857567631,
+   "grew": 0,
+   "rolledBack": false,
+   "ownVal": null,
+   "ownScore": null,
+   "d": 768,
+   "loops": 1,
+   "spread": 3.3482,
+   "bytes": 1415115957,
+   "heads": 6,
+   "ctx": 512,
+   "vocab": 6000,
+   "kind": "bpe",
+   "arch": "tpp-loop",
+   "wantWider": false,
+   "layerCap": 16,
+   "mixChanged": false,
+   "bySrc": {
+    "laws": 3.9689,
+    "wiki": 2.9754,
+    "aozora": 3.332,
+    "hanrei": 3.4401,
+    "kokkai": 2.6014,
+    "web": 2.8635,
+    "talk": 2.1211
+   },
+   "wrote": [
+    {
+     "start": "わたしは",
+     "text": "わたしはゴキブリ気分をあげにくいのかと、ついつい食べちゃいます。」 DQ「そこは気を付けないとですね。」 CV「そうですよねー！」 DQ「そう考えると、もう少し強いとかあります？」 CV「あー。しかし、お風呂すきなので、気を"
+    },
+    {
+     "start": "第一条",
+     "text": "第一条、第四の工事については、その設備、性別、性別及び性別の規定並びに所定の不利益自由の内容並びに分析及び評価に関する数値及び内容の令和四年分の所得税及び所得の税率の設定等であります。」 AA「なお、歳出の具体的事情を踏まえた上で、規模及び定率減税の見直し等につきましては、その結果を御報告申し上げます。 本件は、消費税及び法人税の課税"
+    },
+    {
+     "start": "この法律において",
+     "text": "この法律において「国際収支」の付加価値税及び賄賂税及び国際収支税及び経済問題の解決策とすべきです。 ここに、政府及び国鉄当初予算に対し、総理大臣の国際情勢が遠いため、政府の説明なくしては、六十四年度予算は国民の信頼を回復するのではないでしょうか。 また、政府は、相乗効果がより強調されています。政府は、財政"
+    }
+   ],
+   "loopPct": 4.82,
+   "movedBody": false
   }
  ],
- "bestVal": 2.8191,
+ "bestVal": 2.8183,
  "layers": 16,
  "params": 117914880,
  "born": "2026-09-08T15:11:54Z",
@@ -12649,5 +12649,5 @@
  ],
  "wantWider": false,
  "nextD": 768,
- "bad": 1
+ "bad": 0
 }
