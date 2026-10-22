@@ -1,69 +1,6 @@
 {
  "runs": [
   {
-   "at": "2026-10-10T22:48:46Z",
-   "val": 2.9096,
-   "prev": 2.9094,
-   "valTag": "fixed-holdout-v1",
-   "stoppedAt": 158,
-   "stuck": 0,
-   "evalTag": "fixed-ix-v1",
-   "secPerStep": 26.2822,
-   "steps": 300,
-   "bpc": 3.4437,
-   "charsPerTok": 1.2189,
-   "score": 2.1548,
-   "scoreW": 2.0,
-   "scoreMode": "talk",
-   "finishMix": 0.5,
-   "lineage": "L1",
-   "layers": 16,
-   "params": 117914880,
-   "chars": 1045308899,
-   "tokens": 857567631,
-   "grew": 0,
-   "rolledBack": false,
-   "ownVal": null,
-   "ownScore": null,
-   "d": 768,
-   "loops": 1,
-   "spread": 3.0137,
-   "bytes": 1415115957,
-   "heads": 6,
-   "ctx": 512,
-   "vocab": 6000,
-   "kind": "bpe",
-   "arch": "tpp-loop",
-   "wantWider": false,
-   "layerCap": 16,
-   "mixChanged": false,
-   "bySrc": {
-    "laws": 4.1618,
-    "wiki": 3.0712,
-    "aozora": 3.421,
-    "hanrei": 3.5122,
-    "kokkai": 2.6795,
-    "web": 2.9442,
-    "talk": 2.1548
-   },
-   "wrote": [
-    {
-     "start": "わたしは",
-     "text": "わたしは敵で苦しいからやたらめちゃくちゃ魔力ですよね。」 AK「たしかに、そういうのが多いですよね。」 BM「ですので、魔力ができるので、最近はありますよね！」 BM「こんに�"
-    },
-    {
-     "start": "第一条",
-     "text": "第一条の消滅によりごくたくさん食べてください。」 店「はい。たとえば、読書・斗宗教・アジュエリアなど、何かご希望はございますか？」 客「最寄り駅はどこでもいいです。」 店「最寄り駅は、豊富です。」 客「わかりました。あと、"
-    },
-    {
-     "start": "この法律において",
-     "text": "この法律において、これらに加えて、日本の国内でも、この世界での貿易、金融、世界銀行、そして金融、金融銀行、金融のコスト削減、世界の金融物価上昇、これが世界的な経済のテロ、そして国際社会の中でも国民の視点からできるだけ早便を目指していくことによって、経済を施すことは必要ではないか、そのためには、日本の経済の開発、"
-    }
-   ],
-   "loopPct": 0.9,
-   "movedBody": false
-  },
-  {
    "at": "2026-10-10T23:50:43Z",
    "val": 2.9192,
    "prev": 2.9096,
@@ -12598,6 +12535,69 @@
     }
    ],
    "loopPct": 2.92,
+   "movedBody": false
+  },
+  {
+   "at": "2026-10-22T03:56:04Z",
+   "val": 2.8217,
+   "prev": 2.8196,
+   "valTag": "fixed-holdout-v1",
+   "stoppedAt": 203,
+   "stuck": 0,
+   "evalTag": "fixed-ix-v1",
+   "secPerStep": 19.9806,
+   "steps": 300,
+   "bpc": 3.3397,
+   "charsPerTok": 1.2189,
+   "score": 2.1116,
+   "scoreW": 2.0,
+   "scoreMode": "talk",
+   "finishMix": 0.5,
+   "lineage": "L1",
+   "layers": 16,
+   "params": 117914880,
+   "chars": 1045308899,
+   "tokens": 857567631,
+   "grew": 0,
+   "rolledBack": false,
+   "ownVal": null,
+   "ownScore": null,
+   "d": 768,
+   "loops": 1,
+   "spread": 2.7457,
+   "bytes": 1415115957,
+   "heads": 6,
+   "ctx": 512,
+   "vocab": 6000,
+   "kind": "bpe",
+   "arch": "tpp-loop",
+   "wantWider": false,
+   "layerCap": 16,
+   "mixChanged": false,
+   "bySrc": {
+    "laws": 3.9658,
+    "wiki": 2.9786,
+    "aozora": 3.3382,
+    "hanrei": 3.4381,
+    "kokkai": 2.6033,
+    "web": 2.8641,
+    "talk": 2.1116
+   },
+   "wrote": [
+    {
+     "start": "わたしは",
+     "text": "わたしは愛が好きなので、はまっちゃえば餅とか。」 BH「そうなんですね。私も最近、口にきます！」 CB「今はあまり知らないのですが、今度やってみようかな」 BH「ぜひやってみてください。」 CB「ありがとうございます。よ"
+    },
+    {
+     "start": "第一条",
+     "text": "第一条略する。 2007年7月14日、メンバーは西大寺が東大寺 へ進出を果たした [ 14 ] 。 2008年 12月15日 、吉本興業は3000mを対象に成功したと発表し、2009年2月11日、吉本興業は2012年3月"
+    },
+    {
+     "start": "この法律において",
+     "text": "この法律において，その号の１，１，３，１０，１１ないし１３の１及び２，１２，２５，２０，１９，１４，２９，４７，１４の１，１２，１４，３８ないし１００，１９２，３０，７１，２０，１３５，２０，１６，７"
+    }
+   ],
+   "loopPct": 8.85,
    "movedBody": false
   }
  ],
