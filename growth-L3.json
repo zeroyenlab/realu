@@ -1,69 +1,6 @@
 {
  "runs": [
   {
-   "at": "2026-10-11T04:51:00Z",
-   "val": 2.6849,
-   "prev": 2.6858,
-   "valTag": "fixed-holdout-v1",
-   "stoppedAt": 0,
-   "stuck": 0,
-   "evalTag": "fixed-ix-v1",
-   "secPerStep": 2.7214,
-   "steps": 1167,
-   "bpc": 3.1778,
-   "charsPerTok": 1.2189,
-   "score": 2.1335,
-   "scoreW": 2.0,
-   "scoreMode": "talk",
-   "finishMix": 0.2,
-   "lineage": "L3",
-   "layers": 13,
-   "params": 25335168,
-   "chars": 1045308899,
-   "tokens": 857567631,
-   "grew": 0,
-   "rolledBack": false,
-   "ownVal": null,
-   "ownScore": null,
-   "d": 384,
-   "loops": 1,
-   "spread": 2.8136,
-   "bytes": 304134793,
-   "heads": 6,
-   "ctx": 512,
-   "vocab": 6000,
-   "kind": "bpe",
-   "arch": "tpp-loop",
-   "wantWider": false,
-   "layerCap": 16,
-   "mixChanged": false,
-   "bySrc": {
-    "laws": 3.6429,
-    "wiki": 2.8454,
-    "aozora": 3.1757,
-    "hanrei": 3.4206,
-    "kokkai": 2.4955,
-    "web": 2.7645,
-    "talk": 2.1335
-   },
-   "wrote": [
-    {
-     "start": "わたしは",
-     "text": "わたしは、赤字公債を発行して、国民生活に重大な疑惑を詭弁せしめ、ここに大きな不信感を抱く、このことは大きな特色であると私は考えるのであります。（拍手）」 AB「議長 三案に対し、討論の通告がございます。発言を許します。政府原案町田志郎�"
-    },
-    {
-     "start": "第一条",
-     "text": "第一条（x）の規定による確認（発売されたことによる。 ただし、 の文字は mix であるが、 com であるが、 com は mix である。 高速通信の tv は mix であるが、 mix で mix である。 mix の mix では mix であるが、mix では mi"
-    },
-    {
-     "start": "この法律において",
-     "text": "この法律において「地方交付税�」又は「地方交付税」又は「地方交付税」又は「地方交付税」又は「地方交付税」又は「地方交付税」又は「地方交付税」又は「地方交付税」又は「地方交付税」又は「地方交付税」又は「地方交付税」又は「地方交付税」又は「地方交付税」又は「地方交付税」又は「地方交付税」又は「地方交付税」又は「地方交付税」又は「地方交付税」又は「"
-    }
-   ],
-   "loopPct": 42.78,
-   "movedBody": false
-  },
-  {
    "at": "2026-10-11T06:13:15Z",
    "val": 2.6833,
    "prev": 2.6849,
@@ -12599,6 +12536,69 @@
    ],
    "loopPct": 15.33,
    "movedBody": false
+  },
+  {
+   "at": "2026-10-22T10:10:57Z",
+   "val": 2.6399,
+   "prev": 2.6391,
+   "valTag": "fixed-holdout-v1",
+   "stoppedAt": 627,
+   "stuck": 0,
+   "evalTag": "fixed-ix-v1",
+   "secPerStep": 5.9598,
+   "steps": 1305,
+   "bpc": 3.1246,
+   "charsPerTok": 1.2189,
+   "score": 2.1087,
+   "scoreW": 2.0,
+   "scoreMode": "talk",
+   "finishMix": 0.2,
+   "lineage": "L3",
+   "layers": 14,
+   "params": 27105408,
+   "chars": 1045308899,
+   "tokens": 857567631,
+   "grew": 0,
+   "rolledBack": false,
+   "ownVal": null,
+   "ownScore": null,
+   "d": 384,
+   "loops": 1,
+   "spread": 2.6399,
+   "bytes": 325385901,
+   "heads": 6,
+   "ctx": 512,
+   "vocab": 6000,
+   "kind": "bpe",
+   "arch": "tpp-loop",
+   "wantWider": false,
+   "layerCap": 16,
+   "mixChanged": false,
+   "bySrc": {
+    "laws": 3.5599,
+    "wiki": 2.7877,
+    "aozora": 3.1275,
+    "hanrei": 3.376,
+    "kokkai": 2.4606,
+    "web": 2.7195,
+    "talk": 2.1087
+   },
+   "wrote": [
+    {
+     "start": "わたしは",
+     "text": "わたしは出来るが、カマメルは汝のお菓子を買い取ると、いつも食物の方を見た。 かれは物置でそのお菓子を机の前に向けて、玉子が顔を見合すと、といったばかりじゃないかと思った。 「そうか。なんて言うのはあるんですか」 「そうか。そうか"
+    },
+    {
+     "start": "第一条",
+     "text": "第一条（ａ）の規定は、国際民間航空路及び国際航空路に関する協定（J-WAPI）について準用する。 （国際関係） （国際関係） 国際関係は、国際関係及び国際関係をもってしてもの義務を援うため必要な国際法的基準（以下「国際法的基準」という。）を定めるものとする。 （国際関係） 国際関係は、国際法的に国際関係である国際株式会社又は国際機関との協調を保つことが目的として国際連合O（以下「"
+    },
+    {
+     "start": "この法律において",
+     "text": "この法律において「強要」と呼ばれる [ 5 ] 。 日本では、 渋沢栄一 が 産業革命 を経て『 大正ロマン主義 』を出版し、 1928年 （昭和3年） 日中戦争 の終結後は、 戦時体制 の低下と 黒装甲車 の増強により 日中戦争 の東"
+    }
+   ],
+   "loopPct": 3.66,
+   "movedBody": false
   }
  ],
  "bestVal": 2.6391,
@@ -12649,5 +12649,5 @@
  ],
  "wantWider": false,
  "nextD": 384,
- "bad": 3
+ "bad": 5
 }
