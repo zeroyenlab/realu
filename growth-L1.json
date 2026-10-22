@@ -1,69 +1,6 @@
 {
  "runs": [
   {
-   "at": "2026-10-11T02:34:03Z",
-   "val": 2.9118,
-   "prev": 2.9147,
-   "valTag": "fixed-holdout-v1",
-   "stoppedAt": 159,
-   "stuck": 0,
-   "evalTag": "fixed-ix-v1",
-   "secPerStep": 26.2246,
-   "steps": 300,
-   "bpc": 3.4464,
-   "charsPerTok": 1.2189,
-   "score": 2.1562,
-   "scoreW": 2.0,
-   "scoreMode": "talk",
-   "finishMix": 0.5,
-   "lineage": "L1",
-   "layers": 16,
-   "params": 117914880,
-   "chars": 1045308899,
-   "tokens": 857567631,
-   "grew": 0,
-   "rolledBack": false,
-   "ownVal": null,
-   "ownScore": null,
-   "d": 768,
-   "loops": 1,
-   "spread": 2.9799,
-   "bytes": 1415115957,
-   "heads": 6,
-   "ctx": 512,
-   "vocab": 6000,
-   "kind": "bpe",
-   "arch": "tpp-loop",
-   "wantWider": false,
-   "layerCap": 16,
-   "mixChanged": false,
-   "bySrc": {
-    "laws": 4.157,
-    "wiki": 3.0679,
-    "aozora": 3.4188,
-    "hanrei": 3.5095,
-    "kokkai": 2.6868,
-    "web": 2.9458,
-    "talk": 2.1562
-   },
-   "wrote": [
-    {
-     "start": "わたしは",
-     "text": "わたしは全然です。」 FA「すごい！一番の好きなので。」 ED「ですよねー！」 FA「そうですね！」 FA「こんにちは！」 FA「こんにちは！」 FA「好きなゲームとかあ"
-    },
-    {
-     "start": "第一条",
-     "text": "第一条屋屋ホえるはずなんだけど、やっぱりいいなあ」 HL「そうなんですよ。走り回ってみたい時間は本当に便利そうですね」 HW「そうですね、やっぱり普通の人が来るなら料理するのが大変そうですね」 HL「たしかに、感動しますね。」 HW「そう"
-    },
-    {
-     "start": "この法律において",
-     "text": "この法律において「総合技術。）その再生等に関する法律」という。） 前条第二項において準用する第九条第一項の許可機関は、次に掲げる事項について貯金者（以下「事業報告書」という。）若しくは第四条第一項の規定による通知を受けた後、当該事業報告書に、当該事業報告書又は事業報告書を提出しなければならない。 （事業書類等の扱い） 湯原産業は、事業設備の決済につくられた場合には、当該事業十三条又は事業の実施日後に事業の取得をした事業（事業一月間におい"
-    }
-   ],
-   "loopPct": 14.62,
-   "movedBody": false
-  },
-  {
    "at": "2026-10-11T03:50:08Z",
    "val": 2.9128,
    "prev": 2.9118,
@@ -12599,6 +12536,69 @@
    ],
    "loopPct": 3.98,
    "movedBody": false
+  },
+  {
+   "at": "2026-10-22T07:43:27Z",
+   "val": 2.8303,
+   "prev": 2.8321,
+   "valTag": "fixed-holdout-v1",
+   "stoppedAt": 204,
+   "stuck": 0,
+   "evalTag": "fixed-ix-v1",
+   "secPerStep": 19.8465,
+   "steps": 300,
+   "bpc": 3.3499,
+   "charsPerTok": 1.2189,
+   "score": 2.1257,
+   "scoreW": 2.0,
+   "scoreMode": "talk",
+   "finishMix": 0.5,
+   "lineage": "L1",
+   "layers": 16,
+   "params": 117914880,
+   "chars": 1045308899,
+   "tokens": 857567631,
+   "grew": 0,
+   "rolledBack": false,
+   "ownVal": null,
+   "ownScore": null,
+   "d": 768,
+   "loops": 1,
+   "spread": 2.943,
+   "bytes": 1415115957,
+   "heads": 6,
+   "ctx": 512,
+   "vocab": 6000,
+   "kind": "bpe",
+   "arch": "tpp-loop",
+   "wantWider": false,
+   "layerCap": 16,
+   "mixChanged": false,
+   "bySrc": {
+    "laws": 3.9737,
+    "wiki": 2.9796,
+    "aozora": 3.3392,
+    "hanrei": 3.4367,
+    "kokkai": 2.6136,
+    "web": 2.8697,
+    "talk": 2.1257
+   },
+   "wrote": [
+    {
+     "start": "わたしは",
+     "text": "わたしはタイムワークスでしたね。特に広告ばかり見てないのですね。」 DP「普段はあんまり見れないですけどね。」 DC「そうなんですよ、ちゃんと単純に見ても気になってびっくりしました！」 DP「まぁ確かに。さんは何かありますか？」 D"
+    },
+    {
+     "start": "第一条",
+     "text": "第一条 乙Ｂ４号証 (ｱ) ｅＢ証言聴聞の経緯及び検証に関する被告Ｄ証言，Ａ１１号証の２ １，３号証，５号証，１７号証の１及び２号証の１及び２， (ｶ) Ｃ主義者証言及びＢ証言表は，３号証の２，証人ＥがＡ７号証の"
+    },
+    {
+     "start": "この法律において",
+     "text": "この法律において「原勲章」を創始する [ 8 ] 。 2012年（平成25年）7月12日、 鹿児島県 にて、 惣菜 「 うみねこ 」が創業し、「 つばさ 」を創業した [ 9 ] 。 2014年（平成26年）12月、公明党の 大�"
+    }
+   ],
+   "loopPct": 7.55,
+   "movedBody": false
   }
  ],
  "bestVal": 2.8191,
@@ -12649,5 +12649,5 @@
  ],
  "wantWider": false,
  "nextD": 768,
- "bad": 4
+ "bad": 1
 }
