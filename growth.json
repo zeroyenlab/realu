@@ -1,69 +1,6 @@
 {
  "runs": [
   {
-   "at": "2026-10-11T21:40:39Z",
-   "val": 2.9037,
-   "prev": 2.9057,
-   "valTag": "fixed-holdout-v1",
-   "stoppedAt": 157,
-   "stuck": 0,
-   "evalTag": "fixed-ix-v1",
-   "secPerStep": 26.6588,
-   "steps": 300,
-   "bpc": 3.4368,
-   "charsPerTok": 1.2189,
-   "score": 2.1517,
-   "scoreW": 2.0,
-   "scoreMode": "talk",
-   "finishMix": 0.5,
-   "lineage": "L1",
-   "layers": 16,
-   "params": 117914880,
-   "chars": 1045308899,
-   "tokens": 857567631,
-   "grew": 0,
-   "rolledBack": false,
-   "ownVal": null,
-   "ownScore": null,
-   "d": 768,
-   "loops": 1,
-   "spread": 3.0256,
-   "bytes": 1415115957,
-   "heads": 6,
-   "ctx": 512,
-   "vocab": 6000,
-   "kind": "bpe",
-   "arch": "tpp-loop",
-   "wantWider": false,
-   "layerCap": 16,
-   "mixChanged": false,
-   "bySrc": {
-    "laws": 4.1472,
-    "wiki": 3.0625,
-    "aozora": 3.4137,
-    "hanrei": 3.501,
-    "kokkai": 2.678,
-    "web": 2.9404,
-    "talk": 2.1517
-   },
-   "wrote": [
-    {
-     "start": "わたしは",
-     "text": "わたしは、スマホゲームですが、すごく怖いです。」 ET「そうなんですか。すごく面白かったですが。私は楽しいゲームです。どういうゲームですか？」 DZ「なぜか話題になっていたので、体調が悪くて面白かったです。」 ET「あら、そう"
-    },
-    {
-     "start": "第一条",
-     "text": "第一条第二号） 響動画が見えるようにするには相当な経過を示している。 逆に、強く反映されることがある。 この回（2003年）によると、 ソフトバンク の 社長、 政宗 の代役や 演劇 のあり方を指す。 なお、『 ラブ・ブラウン 』の カメラ が『 ウルト"
-    },
-    {
-     "start": "この法律において",
-     "text": "この法律において「造林島花説」は時宗教などに使用されている [ 1 ] 。 上記のような形は、 天皇 158 年（ 159 年）より市の 天智天皇 や 太宰治 の筆頭に「天皇」と呼ばれる天皇も大きな関連を持つ 天皇 の「宮」を「"
-    }
-   ],
-   "loopPct": 0.79,
-   "movedBody": false
-  },
-  {
    "at": "2026-10-11T22:57:51Z",
    "val": 2.902,
    "prev": 2.9037,
@@ -12599,6 +12536,69 @@
    ],
    "loopPct": 2.63,
    "movedBody": false
+  },
+  {
+   "at": "2026-10-23T02:47:08Z",
+   "val": 2.8189,
+   "prev": 2.8197,
+   "valTag": "fixed-holdout-v1",
+   "stoppedAt": 178,
+   "stuck": 0,
+   "evalTag": "fixed-ix-v1",
+   "secPerStep": 23.0692,
+   "steps": 300,
+   "bpc": 3.3364,
+   "charsPerTok": 1.2189,
+   "score": 2.1184,
+   "scoreW": 2.0,
+   "scoreMode": "talk",
+   "finishMix": 0.5,
+   "lineage": "L1",
+   "layers": 16,
+   "params": 117914880,
+   "chars": 1045308899,
+   "tokens": 857567631,
+   "grew": 0,
+   "rolledBack": false,
+   "ownVal": null,
+   "ownScore": null,
+   "d": 768,
+   "loops": 1,
+   "spread": 2.9576,
+   "bytes": 1415115957,
+   "heads": 6,
+   "ctx": 512,
+   "vocab": 6000,
+   "kind": "bpe",
+   "arch": "tpp-loop",
+   "wantWider": false,
+   "layerCap": 16,
+   "mixChanged": false,
+   "bySrc": {
+    "laws": 3.9616,
+    "wiki": 2.9728,
+    "aozora": 3.3352,
+    "hanrei": 3.4371,
+    "kokkai": 2.6023,
+    "web": 2.8628,
+    "talk": 2.1184
+   },
+   "wrote": [
+    {
+     "start": "わたしは",
+     "text": "わたしは京都へ行ったり、出張所へ行ったりとか。」 AE「おおおおおおおおおおお。どこか海の幸に行ったりしますか？」 AG「海に行ったりします。あんなに海に行きたいですよね。海がよさそう。」 AE「海に行かなくても海は入ってる気がする。海も"
+    },
+    {
+     "start": "第一条",
+     "text": "第一条にかんが、当該働生等に係る指定書等の提出を終了し、かつ、当該指定ものであること。 指定法第三十条第二項公務員の三十名以上の事業者について、都道府県知事が行う指定十六号委員会に対して、登録申請等をする事業所を経営されている事業者 指定域内における指定地域内における指定地域内における指定地域内における指定地域内における指定地域内における雇用環境等の再生及び雇用の創出についての在り方 指定地域内における指定地域内における特定地域内におけ"
+    },
+    {
+     "start": "この法律において",
+     "text": "この法律において「横断歩道」としている。 上記のような大容量の線引きで、テロリズムは ガザ に見られる。"
+    }
+   ],
+   "loopPct": 16.32,
+   "movedBody": false
   }
  ],
  "bestVal": 2.8165,
@@ -12649,5 +12649,5 @@
  ],
  "wantWider": false,
  "nextD": 768,
- "bad": 3
+ "bad": 0
 }
