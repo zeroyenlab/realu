@@ -1,69 +1,6 @@
 {
  "runs": [
   {
-   "at": "2026-10-12T07:53:02Z",
-   "val": 2.6381,
-   "prev": 2.6399,
-   "valTag": "fixed-holdout-v1",
-   "stoppedAt": 454,
-   "stuck": 0,
-   "evalTag": "fixed-ix-v1",
-   "secPerStep": 8.3675,
-   "steps": 562,
-   "bpc": 3.1224,
-   "charsPerTok": 1.2189,
-   "score": 2.04,
-   "scoreW": 2.0,
-   "scoreMode": "talk",
-   "finishMix": 0.85,
-   "lineage": "L2",
-   "layers": 14,
-   "params": 47379968,
-   "chars": 1045308899,
-   "tokens": 857567631,
-   "grew": 0,
-   "rolledBack": false,
-   "ownVal": null,
-   "ownScore": null,
-   "d": 512,
-   "loops": 1,
-   "spread": 2.5947,
-   "bytes": 568680621,
-   "heads": 8,
-   "ctx": 512,
-   "vocab": 6000,
-   "kind": "bpe",
-   "arch": "tpp-loop",
-   "wantWider": false,
-   "layerCap": 16,
-   "mixChanged": false,
-   "bySrc": {
-    "laws": 3.5085,
-    "wiki": 2.8029,
-    "aozora": 3.121,
-    "hanrei": 3.3669,
-    "kokkai": 2.4609,
-    "web": 2.726,
-    "talk": 2.04
-   },
-   "wrote": [
-    {
-     "start": "わたしは",
-     "text": "わたしは、修学旅行いい本をたくさん読みます。」 GI「修学旅行もいいですね。修学旅行。」 FQ「そうですね、楽しみにしています。」 GI「修学旅行ですか。修学旅行ではないんですか？」 FQ「そうですね、年に２回くらい行きました。」 GI「わお。それ"
-    },
-    {
-     "start": "第一条",
-     "text": "第一条、委員は、それぞれの要職っているのは、当該職種が他の職種に分かれているときは、当該職種に分かれる。 ただし、他の職種に分かれると、その職種と分かれる職種として分かれる。 職種は、職務の職種ごとに分けて区別するため、職種ごとに分けられ、その職種ごとに分けられる。 職種ごとに分けられるのは、特別職種に基づく職種、分かれる職"
-    },
-    {
-     "start": "この法律において",
-     "text": "この法律において「関税区域等調整区域等調整区域等調整区域等調整区域等調整区域等調整区域等調整区域等調整区域等調整区域等調整区域等調整区域等調整区域等調整区域等調整区域等調整区域等調整区域等調整区域等調整区域等調整区域等調整区域等調整区域等調整区域等調整区域等調整区域等調整区域等調整区域等調整区域等調整区域等調整区域等調整区域等調整区域等調整区域等調整区域等調整区域等調整区域等調整"
-    }
-   ],
-   "loopPct": 33.03,
-   "movedBody": false
-  },
-  {
    "at": "2026-10-12T09:12:29Z",
    "val": 2.638,
    "prev": 2.6381,
@@ -12599,6 +12536,69 @@
    ],
    "loopPct": 4.41,
    "movedBody": false
+  },
+  {
+   "at": "2026-10-23T11:43:32Z",
+   "val": 2.6029,
+   "prev": 2.6051,
+   "valTag": "fixed-holdout-v1",
+   "stoppedAt": 593,
+   "stuck": 0,
+   "evalTag": "fixed-ix-v1",
+   "secPerStep": 6.3019,
+   "steps": 774,
+   "bpc": 3.0807,
+   "charsPerTok": 1.2189,
+   "score": 2.0356,
+   "scoreW": 2.0,
+   "scoreMode": "talk",
+   "finishMix": 0.85,
+   "lineage": "L2",
+   "layers": 14,
+   "params": 47379968,
+   "chars": 1045308899,
+   "tokens": 857567631,
+   "grew": 0,
+   "rolledBack": false,
+   "ownVal": null,
+   "ownScore": null,
+   "d": 512,
+   "loops": 1,
+   "spread": 2.7206,
+   "bytes": 568680621,
+   "heads": 8,
+   "ctx": 512,
+   "vocab": 6000,
+   "kind": "bpe",
+   "arch": "tpp-loop",
+   "wantWider": false,
+   "layerCap": 16,
+   "mixChanged": false,
+   "bySrc": {
+    "laws": 3.4577,
+    "wiki": 2.758,
+    "aozora": 3.0824,
+    "hanrei": 3.3449,
+    "kokkai": 2.4369,
+    "web": 2.6877,
+    "talk": 2.0356
+   },
+   "wrote": [
+    {
+     "start": "わたしは",
+     "text": "わたしは母が２人一緒に生まれてくれて、３人はすごい心配だったですわ。」 DL「お母様はお母様に近づいてきてくれませんか？」 CM「私はここまで書かれてたんですが、一緒に生まれた子供のお母さんがいてくれてよかったです！」 DL「お母さんは"
+    },
+    {
+     "start": "第一条",
+     "text": "第一条中「得意なのに、」と歌えい、でも喋るのが好きです。」 CH「わたしは日本の食文化菜類も苦手です。」 ET「日本ではあまり食べないですね。そういえば海外のインド料理、お好きですか？」 CH「インド料理にはまってますが、あまり�"
+    },
+    {
+     "start": "この法律において",
+     "text": "この法律においてSSSSES」】 ↑ 「自分でアクセスを可能にする」NHK (2024年8月16日). 2025年8月3日閲覧。 ↑ 「 NHK (2020年10月16日). “ アクセスを良くする「ポイントプラットフォーム」 ”."
+    }
+   ],
+   "loopPct": 4.3,
+   "movedBody": false
   }
  ],
  "bestVal": 2.5999,
@@ -12649,5 +12649,5 @@
  ],
  "wantWider": false,
  "nextD": 512,
- "bad": 5
+ "bad": 0
 }
