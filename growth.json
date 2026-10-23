@@ -1,69 +1,6 @@
 {
  "runs": [
   {
-   "at": "2026-10-12T09:17:17Z",
-   "val": 2.8993,
-   "prev": 2.9005,
-   "valTag": "fixed-holdout-v1",
-   "stoppedAt": 157,
-   "stuck": 0,
-   "evalTag": "fixed-ix-v1",
-   "secPerStep": 26.5028,
-   "steps": 300,
-   "bpc": 3.4316,
-   "charsPerTok": 1.2189,
-   "score": 2.1423,
-   "scoreW": 2.0,
-   "scoreMode": "talk",
-   "finishMix": 0.5,
-   "lineage": "L1",
-   "layers": 16,
-   "params": 117914880,
-   "chars": 1045308899,
-   "tokens": 857567631,
-   "grew": 0,
-   "rolledBack": false,
-   "ownVal": null,
-   "ownScore": null,
-   "d": 768,
-   "loops": 1,
-   "spread": 3.4504,
-   "bytes": 1415115957,
-   "heads": 6,
-   "ctx": 512,
-   "vocab": 6000,
-   "kind": "bpe",
-   "arch": "tpp-loop",
-   "wantWider": false,
-   "layerCap": 16,
-   "mixChanged": false,
-   "bySrc": {
-    "laws": 4.1385,
-    "wiki": 3.0571,
-    "aozora": 3.4076,
-    "hanrei": 3.5017,
-    "kokkai": 2.6719,
-    "web": 2.934,
-    "talk": 2.1423
-   },
-   "wrote": [
-    {
-     "start": "わたしは",
-     "text": "わたしはピューリッティという女子が、世界の競技者や誕生日が多かったような冗談で、音楽のたった作品は日記をてらっしゃいました。」 AD「そうだったんですね。でも、日記というのは新聞のキングダムクラブやってましたね。」 AD「それは大変ですね。あとは、昔"
-    },
-    {
-     "start": "第一条",
-     "text": "第一条代表者の氏名 oudonardonialdentaliary androidentylockoratoria（スラムバックアップ） Elumonolite Black norted Archiothronicasting Strie"
-    },
-    {
-     "start": "この法律において",
-     "text": "この法律において「�称�」という。）に留まり、当該土地の供用が難航し、かつ、当該土地の入所者の役割が明確になってきていること。 当該土地の返還等のために土地が住む土地がの事業主から買い取る場合には、当該土地が買い取った土地に隣接して土地の買いかえ及び土地に買い取れること。 当該土地は、当該土地の料金を買い取るような土地を買"
-    }
-   ],
-   "loopPct": 0.0,
-   "movedBody": false
-  },
-  {
    "at": "2026-10-12T10:35:32Z",
    "val": 2.8987,
    "prev": 2.8993,
@@ -12599,6 +12536,69 @@
    ],
    "loopPct": 1.6,
    "movedBody": false
+  },
+  {
+   "at": "2026-10-23T14:14:15Z",
+   "val": 2.8411,
+   "prev": 2.8585,
+   "valTag": "fixed-holdout-v1",
+   "stoppedAt": 158,
+   "stuck": 0,
+   "evalTag": "fixed-ix-v1",
+   "secPerStep": 26.3011,
+   "steps": 300,
+   "bpc": 3.3627,
+   "charsPerTok": 1.2189,
+   "score": 2.1386,
+   "scoreW": 2.0,
+   "scoreMode": "talk",
+   "finishMix": 0.5,
+   "lineage": "L1",
+   "layers": 16,
+   "params": 117914880,
+   "chars": 1045308899,
+   "tokens": 857567631,
+   "grew": 0,
+   "rolledBack": false,
+   "ownVal": null,
+   "ownScore": null,
+   "d": 768,
+   "loops": 1,
+   "spread": 2.8702,
+   "bytes": 1415115957,
+   "heads": 6,
+   "ctx": 512,
+   "vocab": 6000,
+   "kind": "bpe",
+   "arch": "tpp-loop",
+   "wantWider": false,
+   "layerCap": 16,
+   "mixChanged": false,
+   "bySrc": {
+    "laws": 3.9914,
+    "wiki": 2.9979,
+    "aozora": 3.3476,
+    "hanrei": 3.4592,
+    "kokkai": 2.6223,
+    "web": 2.8807,
+    "talk": 2.1386
+   },
+   "wrote": [
+    {
+     "start": "わたしは",
+     "text": "わたしはそのような答弁をいただけないでしょうか。」 AA「前田国務大臣 私の考えは、障害者等の国際的な関係を母体として受け入れていくわけですけれども、一つは、例えば、二つの社会保障制度をまたどうするかという発想で、これは、所得の低い方々のケアによって多少なりディスカウントになってくるので"
+    },
+    {
+     "start": "第一条",
+     "text": "第一条 (4) 彼との死後、第一に「彼と彼の第一の住人」を政治的に主導し、彼らの理念を「組織」に改めた [ 29 ] 。 彼は「正義」として最も大きな役割を果たした [ 30 ] 。 彼を頼る一人一人の中で、政治家 ユダヤ人 の養育を受け"
+    },
+    {
+     "start": "この法律において",
+     "text": "この法律において「北海道の西」という風に書かれている 。 神奈川県においては、1933年に「北海道の西部」（北海道の西部が「北海道」と改称）が設置され、北海道に指定され、1930年に販売が実施された 。 西部の地域は、かつては北海道文化局が置かれていたが、1956年"
+    }
+   ],
+   "loopPct": 3.13,
+   "movedBody": false
   }
  ],
  "bestVal": 2.8163,
@@ -12649,5 +12649,5 @@
  ],
  "wantWider": false,
  "nextD": 768,
- "bad": 0
+ "bad": 1
 }
