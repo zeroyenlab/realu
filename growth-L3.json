@@ -1,69 +1,6 @@
 {
  "runs": [
   {
-   "at": "2026-10-12T14:16:35Z",
-   "val": 2.6772,
-   "prev": 2.6772,
-   "valTag": "fixed-holdout-v1",
-   "stoppedAt": 558,
-   "stuck": 0,
-   "evalTag": "fixed-ix-v1",
-   "secPerStep": 6.7231,
-   "steps": 1364,
-   "bpc": 3.1687,
-   "charsPerTok": 1.2189,
-   "score": 2.1283,
-   "scoreW": 2.0,
-   "scoreMode": "talk",
-   "finishMix": 0.2,
-   "lineage": "L3",
-   "layers": 13,
-   "params": 25335168,
-   "chars": 1045308899,
-   "tokens": 857567631,
-   "grew": 0,
-   "rolledBack": false,
-   "ownVal": null,
-   "ownScore": null,
-   "d": 384,
-   "loops": 1,
-   "spread": 2.6572,
-   "bytes": 304134793,
-   "heads": 6,
-   "ctx": 512,
-   "vocab": 6000,
-   "kind": "bpe",
-   "arch": "tpp-loop",
-   "wantWider": false,
-   "layerCap": 16,
-   "mixChanged": false,
-   "bySrc": {
-    "laws": 3.6288,
-    "wiki": 2.8391,
-    "aozora": 3.1701,
-    "hanrei": 3.4092,
-    "kokkai": 2.4898,
-    "web": 2.76,
-    "talk": 2.1283
-   },
-   "wrote": [
-    {
-     "start": "わたしは",
-     "text": "わたしはアンパンマンを持っていた。 1990年代、ゴルトムック社の社長が初代社長になって、オーナーが1991年から1993年にかけて代表取締役社長に就任した。 1991年、ゴルトムック社の社員として、 ゴルトムック社長 （ゴルトムック社長）（当時）と前腰�響あい"
-    },
-    {
-     "start": "第一条",
-     "text": "第一条中意意意味をもって行為をもって行為をもって行為をもって行為をもって行為としてもＯＫＳＤのＯＫＳＤのＯＫＳＤのＯＫＳＤのＯＫＳＤのＯＫＳＤのＯＫＳＤのＯＫＳＤのＲＯＫＳＤのＯＫＳＤの"
-    },
-    {
-     "start": "この法律において",
-     "text": "この法律において「新景観基本法」という。）第一条に規定する新景観基本法による活性化事業（平成十六年四月一日に改正された新しい新景観基本法に基づく新しい景観基本法（平成十五年法律第十一号。以下「旧景観基本法」という。）第一条の第三�る新景観基本法（平成十四年法律第二十号）第一条に規定する新景観基本法（以下「新景観基本法」という。）"
-    }
-   ],
-   "loopPct": 34.95,
-   "movedBody": false
-  },
-  {
    "at": "2026-10-12T15:32:55Z",
    "val": 2.6784,
    "prev": 2.6772,
@@ -12599,6 +12536,69 @@
    ],
    "loopPct": 24.04,
    "movedBody": false
+  },
+  {
+   "at": "2026-10-23T19:05:37Z",
+   "val": 2.6367,
+   "prev": 2.6338,
+   "valTag": "fixed-holdout-v1",
+   "stoppedAt": 0,
+   "stuck": 0,
+   "evalTag": "fixed-ix-v1",
+   "secPerStep": 2.9992,
+   "steps": 909,
+   "bpc": 3.1208,
+   "charsPerTok": 1.2189,
+   "score": 2.1061,
+   "scoreW": 2.0,
+   "scoreMode": "talk",
+   "finishMix": 0.2,
+   "lineage": "L3",
+   "layers": 14,
+   "params": 27105408,
+   "chars": 1045308899,
+   "tokens": 857567631,
+   "grew": 0,
+   "rolledBack": false,
+   "ownVal": null,
+   "ownScore": null,
+   "d": 384,
+   "loops": 1,
+   "spread": 2.6798,
+   "bytes": 325385901,
+   "heads": 6,
+   "ctx": 512,
+   "vocab": 6000,
+   "kind": "bpe",
+   "arch": "tpp-loop",
+   "wantWider": false,
+   "layerCap": 16,
+   "mixChanged": false,
+   "bySrc": {
+    "laws": 3.5524,
+    "wiki": 2.7845,
+    "aozora": 3.1193,
+    "hanrei": 3.3715,
+    "kokkai": 2.4568,
+    "web": 2.7172,
+    "talk": 2.1061
+   },
+   "wrote": [
+    {
+     "start": "わたしは",
+     "text": "わたしは五分間行っていたので。」 AF「わたしは納得しないですね。」 BI「そうなんですよ。今日の晩御飯は何を食べたのですか？」 AF「作るのが大変ですね。」 BI「そうなんですか？？お菓子ですか？」 AF「わたしは、�"
+    },
+    {
+     "start": "第一条",
+     "text": "第一条中「われわれ と用語」に改める。 なお、 1984年 （昭和59年） 1月25日 に 第一回 の大会は、 1986年 （昭和61年） 10月2日 から 12月3日 まで 10試合（または 2006年 （平成18年） 1月25日 から 2月31"
+    },
+    {
+     "start": "この法律において",
+     "text": "この法律において「小作料」として��却。 2025年（令和7年）3月6日 - 自動券売機で、乗車券は1,000円に、小作料は100円に、小作料は2,000円になる。 2026年（令和8年）2月10日 - 自動券売機で、小作料は2,000円に、小作料は2"
+    }
+   ],
+   "loopPct": 8.09,
+   "movedBody": false
   }
  ],
  "bestVal": 2.6338,
@@ -12649,5 +12649,5 @@
  ],
  "wantWider": false,
  "nextD": 384,
- "bad": 3
+ "bad": 5
 }
