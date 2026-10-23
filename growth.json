@@ -1,69 +1,6 @@
 {
  "runs": [
   {
-   "at": "2026-10-12T00:15:41Z",
-   "val": 2.8992,
-   "prev": 2.902,
-   "valTag": "fixed-holdout-v1",
-   "stoppedAt": 157,
-   "stuck": 0,
-   "evalTag": "fixed-ix-v1",
-   "secPerStep": 26.5185,
-   "steps": 300,
-   "bpc": 3.4314,
-   "charsPerTok": 1.2189,
-   "score": 2.147,
-   "scoreW": 2.0,
-   "scoreMode": "talk",
-   "finishMix": 0.5,
-   "lineage": "L1",
-   "layers": 16,
-   "params": 117914880,
-   "chars": 1045308899,
-   "tokens": 857567631,
-   "grew": 0,
-   "rolledBack": false,
-   "ownVal": null,
-   "ownScore": null,
-   "d": 768,
-   "loops": 1,
-   "spread": 3.0594,
-   "bytes": 1415115957,
-   "heads": 6,
-   "ctx": 512,
-   "vocab": 6000,
-   "kind": "bpe",
-   "arch": "tpp-loop",
-   "wantWider": false,
-   "layerCap": 16,
-   "mixChanged": false,
-   "bySrc": {
-    "laws": 4.1405,
-    "wiki": 3.057,
-    "aozora": 3.4091,
-    "hanrei": 3.5009,
-    "kokkai": 2.67,
-    "web": 2.9385,
-    "talk": 2.147
-   },
-   "wrote": [
-    {
-     "start": "わたしは",
-     "text": "わたしは、現在はアメリカのサン＝サミットに見舞われている。 アメリカそうでは、ネパールの木曰く、現代のバーがビジョンで、サントに戻ってきた。アメリカのコロナは、アメリカ軍による2006年、アメリカ軍は作成したインドに渡っている。 2007年、アメリカ"
-    },
-    {
-     "start": "第一条",
-     "text": "第一条フェスティバル 大日本帝国軍 （大日本帝国憲法） - 大日本帝国憲法 、 大日本帝国憲法 、 大日本帝国憲法 など。 コンキスト （ 英語版 ） は 電気データ ( Am"
-    },
-    {
-     "start": "この法律において",
-     "text": "この法律において「事業主者」と呼ばれるものもある。 顧客の不具合が生じ、労働者によっては異なる場合がある。 個人の 個人の責任 や業務に関する要領によると、個人の宅地の設定を後退させないため、その他の者に必要があるべく、個人の双方から追加された様々な制約がある。"
-    }
-   ],
-   "loopPct": 16.02,
-   "movedBody": false
-  },
-  {
    "at": "2026-10-12T01:31:09Z",
    "val": 2.9076,
    "prev": 2.8992,
@@ -12599,6 +12536,69 @@
    ],
    "loopPct": 9.06,
    "movedBody": false
+  },
+  {
+   "at": "2026-10-23T05:19:04Z",
+   "val": 2.8184,
+   "prev": 2.8167,
+   "valTag": "fixed-holdout-v1",
+   "stoppedAt": 201,
+   "stuck": 0,
+   "evalTag": "fixed-ix-v1",
+   "secPerStep": 20.2018,
+   "steps": 300,
+   "bpc": 3.3358,
+   "charsPerTok": 1.2189,
+   "score": 2.121,
+   "scoreW": 2.0,
+   "scoreMode": "talk",
+   "finishMix": 0.5,
+   "lineage": "L1",
+   "layers": 16,
+   "params": 117914880,
+   "chars": 1045308899,
+   "tokens": 857567631,
+   "grew": 0,
+   "rolledBack": false,
+   "ownVal": null,
+   "ownScore": null,
+   "d": 768,
+   "loops": 1,
+   "spread": 2.7828,
+   "bytes": 1415115957,
+   "heads": 6,
+   "ctx": 512,
+   "vocab": 6000,
+   "kind": "bpe",
+   "arch": "tpp-loop",
+   "wantWider": false,
+   "layerCap": 16,
+   "mixChanged": false,
+   "bySrc": {
+    "laws": 3.9617,
+    "wiki": 2.9706,
+    "aozora": 3.3332,
+    "hanrei": 3.4347,
+    "kokkai": 2.6031,
+    "web": 2.8611,
+    "talk": 2.121
+   },
+   "wrote": [
+    {
+     "start": "わたしは",
+     "text": "わたしは、月が道のりを見て、ただ賭けて、いつもショックでした。」 HK「そうなんですね。シングルは好きですか？」 HA「うーん、それが好きです。」 HK「おー。お気に入りのお刺身とか、お高いんですか？」 HA「そうですね、お�"
+    },
+    {
+     "start": "第一条",
+     "text": "第一条若しくは前条第一項若しくは第十四条第二項（十九識別改善給付）に規定する�費用の額の詳細な報告又は調査の要請に関する報告書（録音）の策定に関する報告書を清算人とする屋外会議の修正処分の理由びに限る。 （報告書の表記性及び内容） 第十三条 捜索救難課の所掌事務に関する情報は、次に掲げる場合における届出に係る情報の収集及び提供に関する説明書（以下「報告書等」という。）している出資者その他の情報通信の略日における業務社団等に基づき、退職年"
+    },
+    {
+     "start": "この法律において",
+     "text": "この法律において「福岡」と名付けられた [ 20 ] 。 10月 - 第1次答申 [ 20 ] 。 11月15日 - 前日11時9分に 東京都 ・ 神戸 に落ち込んだ [ 20 ] 。 11月14日 - 6月24日 - 日本テレビ系列でワイド"
+    }
+   ],
+   "loopPct": 2.48,
+   "movedBody": false
   }
  ],
  "bestVal": 2.8165,
@@ -12649,5 +12649,5 @@
  ],
  "wantWider": false,
  "nextD": 768,
- "bad": 1
+ "bad": 3
 }
