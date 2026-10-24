@@ -1,69 +1,6 @@
 {
  "runs": [
   {
-   "at": "2026-10-13T11:58:27Z",
-   "val": 2.8911,
-   "prev": 2.8924,
-   "valTag": "fixed-holdout-v1",
-   "stoppedAt": 158,
-   "stuck": 0,
-   "evalTag": "fixed-ix-v1",
-   "secPerStep": 26.439,
-   "steps": 300,
-   "bpc": 3.4218,
-   "charsPerTok": 1.2189,
-   "score": 2.1486,
-   "scoreW": 2.0,
-   "scoreMode": "talk",
-   "finishMix": 0.5,
-   "lineage": "L1",
-   "layers": 16,
-   "params": 117914880,
-   "chars": 1045308899,
-   "tokens": 857567631,
-   "grew": 0,
-   "rolledBack": false,
-   "ownVal": null,
-   "ownScore": null,
-   "d": 768,
-   "loops": 1,
-   "spread": 2.8509,
-   "bytes": 1415115957,
-   "heads": 6,
-   "ctx": 512,
-   "vocab": 6000,
-   "kind": "bpe",
-   "arch": "tpp-loop",
-   "wantWider": false,
-   "layerCap": 16,
-   "mixChanged": false,
-   "bySrc": {
-    "laws": 4.1205,
-    "wiki": 3.0486,
-    "aozora": 3.4012,
-    "hanrei": 3.4955,
-    "kokkai": 2.6598,
-    "web": 2.927,
-    "talk": 2.1486
-   },
-   "wrote": [
-    {
-     "start": "わたしは",
-     "text": "わたしは、われわれのあのあなたの娘、きさあきの人だと、尻をつくしながら、その一人の一人をやめたことを思いやるので、わたしはそのままじくもう一つの腹をおろした。 「 あなたは、まあ、あなたの運命を感じろと思ってやべきことだろうと思う」と、惨め"
-    },
-    {
-     "start": "第一条",
-     "text": "第一条株主が「皆様に堪え切っていない」……。 「皆さん、御存知なさいよ」と言った。 「これは……これは、皆がこれだけ望んでいるから、八代の小さなところで、そのじゃないの、もう少しでも俺の裏でやろうというのでも……」 「いや、そんなこと"
-    },
-    {
-     "start": "この法律において",
-     "text": "この法律において「妻」と称せられた者を誓約する。 2004年 - 「虎の左」と「白鳥」を4往復で表現。 2015年 - 海鳥が「元は死ぬ」を意味する「元気だ」（ 藤本 ）が、戦場を破り「死んだと卑怯」（ 1879年"
-    }
-   ],
-   "loopPct": 9.61,
-   "movedBody": false
-  },
-  {
    "at": "2026-10-13T13:16:10Z",
    "val": 2.8898,
    "prev": 2.8911,
@@ -12599,6 +12536,69 @@
    ],
    "loopPct": 4.16,
    "movedBody": false
+  },
+  {
+   "at": "2026-10-24T17:11:33Z",
+   "val": 2.8091,
+   "prev": 2.8066,
+   "valTag": "fixed-holdout-v1",
+   "stoppedAt": 205,
+   "stuck": 0,
+   "evalTag": "fixed-ix-v1",
+   "secPerStep": 19.6833,
+   "steps": 300,
+   "bpc": 3.3248,
+   "charsPerTok": 1.2189,
+   "score": 2.1154,
+   "scoreW": 2.0,
+   "scoreMode": "talk",
+   "finishMix": 0.5,
+   "lineage": "L1",
+   "layers": 16,
+   "params": 117914880,
+   "chars": 1045308899,
+   "tokens": 857567631,
+   "grew": 0,
+   "rolledBack": false,
+   "ownVal": null,
+   "ownScore": null,
+   "d": 768,
+   "loops": 1,
+   "spread": 2.8803,
+   "bytes": 1415115957,
+   "heads": 6,
+   "ctx": 512,
+   "vocab": 6000,
+   "kind": "bpe",
+   "arch": "tpp-loop",
+   "wantWider": false,
+   "layerCap": 16,
+   "mixChanged": false,
+   "bySrc": {
+    "laws": 3.936,
+    "wiki": 2.9638,
+    "aozora": 3.3211,
+    "hanrei": 3.4322,
+    "kokkai": 2.5949,
+    "web": 2.8526,
+    "talk": 2.1154
+   },
+   "wrote": [
+    {
+     "start": "わたしは",
+     "text": "わたしは肌が悪くなってしまう。 ぽかぽつ（星、てはまり、しっかり） 声 - 山本貞二 『はなまるマーク』のキャラクター変わった「ゾゾォ」の特徴をあまり知らなくてはいけない。 また、ドラマや原作で描かれた女性カリスマ性が"
+    },
+    {
+     "start": "第一条",
+     "text": "第一条に、そういう説明が、私どももしっかりと、教育というか教師が健全化するということをやったわけではなくて、そこはしっかりと教育をしっかり確保していきたいというふうに思っております。」 AA「鳩山委員 ぜひこの辺で申し上げれば、このために、子供自身がこの問題をもちまして経済"
+    },
+    {
+     "start": "この法律において",
+     "text": "この法律において「颰受けたかつ朝刊」（→『朝刊フレンド』） - 「ミュージックに追加された新人パートナー。 」（→「ビッグカーのパートナー」） - 「東映フレンド」（→「東映フレンド・パートナー」） 新映画（→ 「東�"
+    }
+   ],
+   "loopPct": 2.38,
+   "movedBody": false
   }
  ],
  "bestVal": 2.8066,
@@ -12649,5 +12649,5 @@
  ],
  "wantWider": false,
  "nextD": 768,
- "bad": 1
+ "bad": 3
 }
