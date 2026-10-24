@@ -1,69 +1,6 @@
 {
  "runs": [
   {
-   "at": "2026-10-13T02:53:32Z",
-   "val": 2.6756,
-   "prev": 2.6765,
-   "valTag": "fixed-holdout-v1",
-   "stoppedAt": 789,
-   "stuck": 0,
-   "evalTag": "fixed-ix-v1",
-   "secPerStep": 4.7062,
-   "steps": 970,
-   "bpc": 3.1668,
-   "charsPerTok": 1.2189,
-   "score": 2.1231,
-   "scoreW": 2.0,
-   "scoreMode": "talk",
-   "finishMix": 0.2,
-   "lineage": "L3",
-   "layers": 13,
-   "params": 25335168,
-   "chars": 1045308899,
-   "tokens": 857567631,
-   "grew": 0,
-   "rolledBack": false,
-   "ownVal": null,
-   "ownScore": null,
-   "d": 384,
-   "loops": 1,
-   "spread": 2.7151,
-   "bytes": 304134793,
-   "heads": 6,
-   "ctx": 512,
-   "vocab": 6000,
-   "kind": "bpe",
-   "arch": "tpp-loop",
-   "wantWider": false,
-   "layerCap": 16,
-   "mixChanged": false,
-   "bySrc": {
-    "laws": 3.6308,
-    "wiki": 2.8389,
-    "aozora": 3.168,
-    "hanrei": 3.4108,
-    "kokkai": 2.485,
-    "web": 2.7562,
-    "talk": 2.1231
-   },
-   "wrote": [
-    {
-     "start": "わたしは",
-     "text": "わたしは、ただ一、二十日間にわたってその通りに、数日間にわたって、いやだめなのであります。 しかも、このたびのジョー・ブルーン氏は、アメリカのように満足をいたしましたのは、アメリカの首相大臣でありました。しかし、その逆のような風の音は、一と言ってももう翻弄"
-    },
-    {
-     "start": "第一条",
-     "text": "第一条 の漢字を図�縄市（県が市に指定している地方市） <法令 日本海底沖地震の音声式の違いを見いだす必要性の有無 岡山県の田総合自然科学センター（事業・データベース）における地震動の音声式の違いを見いだす必要性の有無 災害時における地震動の音声式の違いを見いだす必要性の有無について （"
-    },
-    {
-     "start": "この法律において",
-     "text": "この法律において「グル」という。） （１） ＶＩＲＦＩ及びＰＩ審議会 （２） ＶＩＲＦＩ及びＰＩ審議会 （２） ＶＩＲＦＩ及びＰＩ審議会 （２） ＶＩＲＦＩ及びＰＩ審議会 （２） ＶＩＲＦＩ及びＰＩ審議会 （３） ＶＩＲＦＩ及び�"
-    }
-   ],
-   "loopPct": 0.78,
-   "movedBody": false
-  },
-  {
    "at": "2026-10-13T04:12:40Z",
    "val": 2.6739,
    "prev": 2.6756,
@@ -12599,6 +12536,69 @@
    ],
    "loopPct": 0.0,
    "movedBody": false
+  },
+  {
+   "at": "2026-10-24T08:10:16Z",
+   "val": 2.6336,
+   "prev": 2.6348,
+   "valTag": "fixed-holdout-v1",
+   "stoppedAt": 631,
+   "stuck": 0,
+   "evalTag": "fixed-ix-v1",
+   "secPerStep": 5.9236,
+   "steps": 1255,
+   "bpc": 3.117,
+   "charsPerTok": 1.2189,
+   "score": 2.1048,
+   "scoreW": 2.0,
+   "scoreMode": "talk",
+   "finishMix": 0.2,
+   "lineage": "L3",
+   "layers": 14,
+   "params": 27105408,
+   "chars": 1045308899,
+   "tokens": 857567631,
+   "grew": 0,
+   "rolledBack": false,
+   "ownVal": null,
+   "ownScore": null,
+   "d": 384,
+   "loops": 1,
+   "spread": 2.5582,
+   "bytes": 325385901,
+   "heads": 6,
+   "ctx": 512,
+   "vocab": 6000,
+   "kind": "bpe",
+   "arch": "tpp-loop",
+   "wantWider": false,
+   "layerCap": 16,
+   "mixChanged": false,
+   "bySrc": {
+    "laws": 3.5502,
+    "wiki": 2.7801,
+    "aozora": 3.1194,
+    "hanrei": 3.3743,
+    "kokkai": 2.4549,
+    "web": 2.7152,
+    "talk": 2.1048
+   },
+   "wrote": [
+    {
+     "start": "わたしは",
+     "text": "わたしは、 「五、六、六、九日か。まだその間にに帰ってこない。今朝はまだ帰って来ないので、ついさっきその間に何か結構でも早くも帰って来るんだ。そうして帰ってみると、二人は気が変になったと思いますよ、そう言って」 押しはなして、彼女は頑固になって、 「"
+    },
+    {
+     "start": "第一条",
+     "text": "第一条第九項 評議員会 評議員会 評議員会 評議員会 評議員会 評議員会 評議員会 評議員会 評議員会 評議員会 評議員会 評議員会 評議員会 評議員会 評議員会 評議員会 評議員会 評議員会 評議員会 評議員会 評議員会 評議員会 評議員会 評議員会 評議員会 評議員会 評議員会の"
+    },
+    {
+     "start": "この法律において",
+     "text": "この法律において「�「第2回国民体育大会」を開催 。 1990年（平成2年） NHK大阪放送局松山放送局、2014年（平成26年）4月 - 2017年（平成29年）3月まではMBSラジオが担当する。 2023年（令和5年） - 関東地区でラジオ3局（関東"
+    }
+   ],
+   "loopPct": 35.11,
+   "movedBody": false
   }
  ],
  "bestVal": 2.6335,
@@ -12649,5 +12649,5 @@
  ],
  "wantWider": false,
  "nextD": 384,
- "bad": 1
+ "bad": 5
 }
