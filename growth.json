@@ -1,69 +1,6 @@
 {
  "runs": [
   {
-   "at": "2026-10-13T03:02:23Z",
-   "val": 2.8885,
-   "prev": 2.8951,
-   "valTag": "fixed-holdout-v1",
-   "stoppedAt": 143,
-   "stuck": 0,
-   "evalTag": "fixed-ix-v1",
-   "secPerStep": 29.5607,
-   "steps": 300,
-   "bpc": 3.4188,
-   "charsPerTok": 1.2189,
-   "score": 2.1524,
-   "scoreW": 2.0,
-   "scoreMode": "talk",
-   "finishMix": 0.5,
-   "lineage": "L1",
-   "layers": 16,
-   "params": 117914880,
-   "chars": 1045308899,
-   "tokens": 857567631,
-   "grew": 0,
-   "rolledBack": false,
-   "ownVal": null,
-   "ownScore": null,
-   "d": 768,
-   "loops": 1,
-   "spread": 3.0264,
-   "bytes": 1415115957,
-   "heads": 6,
-   "ctx": 512,
-   "vocab": 6000,
-   "kind": "bpe",
-   "arch": "tpp-loop",
-   "wantWider": false,
-   "layerCap": 16,
-   "mixChanged": false,
-   "bySrc": {
-    "laws": 4.1246,
-    "wiki": 3.0482,
-    "aozora": 3.3994,
-    "hanrei": 3.4959,
-    "kokkai": 2.6606,
-    "web": 2.9241,
-    "talk": 2.1524
-   },
-   "wrote": [
-    {
-     "start": "わたしは",
-     "text": "わたしは、安心して、いまはうまいと反省すべきものでなく、02年に開かれた一連の法案について、有識者会議の修正案に反対する旨が述べられましたが、今回の法案における修正議決案に反対し、政府案の通り可決すべきものと決しました。」 AA「議長 弾劾裁判所裁判官原案に対し附帯決議の趣旨を豊�"
-    },
-    {
-     "start": "第一条",
-     "text": "第一条翔』という第1作のリストで、『11』の代役として当面の作品のリストを書き下ろした。 2006年から12年間にわたるリストが2007年から2011年まで『成宮大華』（12月24日～2月23日）で、11月23日より『週刊少年"
-    },
-    {
-     "start": "この法律において",
-     "text": "この法律において向精神薬に相当するものとする。 結局、特定医療等波ブームを定期的に記録すること。 特定機能通信の別の製品ごとの説明書 特定同条についでのものその他の種類の種類を確認すること。 特定単位歯体系及び順序を知る方程式 特定単位構造を考案する幅complepisioned（特定単位系） 特定単位系細胞ブームの集団 特定時間その他の両方の偏測力を"
-    }
-   ],
-   "loopPct": 6.83,
-   "movedBody": false
-  },
-  {
    "at": "2026-10-13T04:19:33Z",
    "val": 2.8889,
    "prev": 2.8885,
@@ -12599,6 +12536,69 @@
    ],
    "loopPct": 4.92,
    "movedBody": false
+  },
+  {
+   "at": "2026-10-24T08:10:27Z",
+   "val": 2.823,
+   "prev": 2.8093,
+   "valTag": "fixed-holdout-v1",
+   "stoppedAt": 0,
+   "stuck": 0,
+   "evalTag": "fixed-ix-v1",
+   "secPerStep": 12.3523,
+   "steps": 300,
+   "bpc": 3.3413,
+   "charsPerTok": 1.2189,
+   "score": 2.1174,
+   "scoreW": 2.0,
+   "scoreMode": "talk",
+   "finishMix": 0.5,
+   "lineage": "L1",
+   "layers": 16,
+   "params": 117914880,
+   "chars": 1045308899,
+   "tokens": 857567631,
+   "grew": 0,
+   "rolledBack": false,
+   "ownVal": null,
+   "ownScore": null,
+   "d": 768,
+   "loops": 1,
+   "spread": 2.7538,
+   "bytes": 1415115957,
+   "heads": 6,
+   "ctx": 512,
+   "vocab": 6000,
+   "kind": "bpe",
+   "arch": "tpp-loop",
+   "wantWider": false,
+   "layerCap": 16,
+   "mixChanged": false,
+   "bySrc": {
+    "laws": 3.9572,
+    "wiki": 2.9807,
+    "aozora": 3.3341,
+    "hanrei": 3.4418,
+    "kokkai": 2.6065,
+    "web": 2.8676,
+    "talk": 2.1174
+   },
+   "wrote": [
+    {
+     "start": "わたしは",
+     "text": "わたしはかなりのヒーローです」 BA「かわいいのよね！」 BO「そうなんです！スキーです。」 BA「何かお好きなアーティストさんはいますか？」 BO「まだまだです！」 BA「まだ見ていないです！」 BO「知ってますか？」"
+    },
+    {
+     "start": "第一条",
+     "text": "第一条の規定が使用される。 これらは、同じウィニチオチオチオチオチオチオチオオチオオチオチオオチオオチオチオオチオツチオオチオチオースチオンチオチオチオチオンチオチオオチオチオシラオチオのケンチオチオチオチャオチオリベオチオチオチオチオチオチオチ"
+    },
+    {
+     "start": "この法律において",
+     "text": "この法律において「日本語」 [ 1 ] を意味する。 『 山沢山 』の主題歌として、Master JAPANが制定された。 2001年 （平成13年） 5月11日 - 山際太郎 が進む。 2002年 （平成14年） 1月15日 - 山形"
+    }
+   ],
+   "loopPct": 27.76,
+   "movedBody": false
   }
  ],
  "bestVal": 2.8093,
@@ -12649,5 +12649,5 @@
  ],
  "wantWider": false,
  "nextD": 768,
- "bad": 0
+ "bad": 3
 }
