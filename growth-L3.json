@@ -1,69 +1,6 @@
 {
  "runs": [
   {
-   "at": "2026-10-13T10:31:56Z",
-   "val": 2.6745,
-   "prev": 2.6736,
-   "valTag": "fixed-holdout-v1",
-   "stoppedAt": 558,
-   "stuck": 0,
-   "evalTag": "fixed-ix-v1",
-   "secPerStep": 6.7243,
-   "steps": 1419,
-   "bpc": 3.1654,
-   "charsPerTok": 1.2189,
-   "score": 2.1307,
-   "scoreW": 2.0,
-   "scoreMode": "talk",
-   "finishMix": 0.2,
-   "lineage": "L3",
-   "layers": 13,
-   "params": 25335168,
-   "chars": 1045308899,
-   "tokens": 857567631,
-   "grew": 0,
-   "rolledBack": false,
-   "ownVal": null,
-   "ownScore": null,
-   "d": 384,
-   "loops": 1,
-   "spread": 2.578,
-   "bytes": 304134793,
-   "heads": 6,
-   "ctx": 512,
-   "vocab": 6000,
-   "kind": "bpe",
-   "arch": "tpp-loop",
-   "wantWider": false,
-   "layerCap": 16,
-   "mixChanged": false,
-   "bySrc": {
-    "laws": 3.6232,
-    "wiki": 2.8363,
-    "aozora": 3.1638,
-    "hanrei": 3.4106,
-    "kokkai": 2.4869,
-    "web": 2.7548,
-    "talk": 2.1307
-   },
-   "wrote": [
-    {
-     "start": "わたしは",
-     "text": "わたしはアルストもいます。」 FE「エンジンを見てください！」 CT「エンジンは、もしくはエンジンありますか？」 FE「いえ、エンジンありますよ。」 CT「あれはエンジンが残りすぎると、いつでも自由になるの！」 FE「えぇ！"
-    },
-    {
-     "start": "第一条",
-     "text": "第一条の内職業安定所額額額 当該居住用測定ノート毎ナノメートル部分 当該居住用測定ノート毎ナノトラクチャラクチャップ条例 七〇条達による居住用測定ノート毎ナノトラクチャラクチャー令第五条の規定によりッ 当該居住用測定ノート毎ナノトラクチャラクチャー令第五条の規定によりッ 当該居住用測定ノート毎ナノトラクチャラクチャ"
-    },
-    {
-     "start": "この法律において",
-     "text": "この法律において「券売機」又は「券売機」をいう。 各序式ことがあるが、それぞれの線からはむしろり返すことはできない（「乗車券」と称する）。 可動式手首は、手書きで行われる場合もあるが、手拍数と手においては、手に持たない手によって手首を切る（手書き）。 手書きは、手書きになっている手首を"
-    }
-   ],
-   "loopPct": 10.13,
-   "movedBody": false
-  },
-  {
    "at": "2026-10-13T11:50:49Z",
    "val": 2.6736,
    "prev": 2.6745,
@@ -12599,6 +12536,69 @@
    ],
    "loopPct": 21.66,
    "movedBody": false
+  },
+  {
+   "at": "2026-10-24T15:50:33Z",
+   "val": 2.6366,
+   "prev": 2.6315,
+   "valTag": "fixed-holdout-v1",
+   "stoppedAt": 520,
+   "stuck": 0,
+   "evalTag": "fixed-ix-v1",
+   "secPerStep": 7.2275,
+   "steps": 895,
+   "bpc": 3.1207,
+   "charsPerTok": 1.2189,
+   "score": 2.1037,
+   "scoreW": 2.0,
+   "scoreMode": "talk",
+   "finishMix": 0.2,
+   "lineage": "L3",
+   "layers": 14,
+   "params": 27105408,
+   "chars": 1045308899,
+   "tokens": 857567631,
+   "grew": 0,
+   "rolledBack": false,
+   "ownVal": null,
+   "ownScore": null,
+   "d": 384,
+   "loops": 1,
+   "spread": 2.5191,
+   "bytes": 325385901,
+   "heads": 6,
+   "ctx": 512,
+   "vocab": 6000,
+   "kind": "bpe",
+   "arch": "tpp-loop",
+   "wantWider": false,
+   "layerCap": 16,
+   "mixChanged": false,
+   "bySrc": {
+    "laws": 3.5608,
+    "wiki": 2.7806,
+    "aozora": 3.1216,
+    "hanrei": 3.3734,
+    "kokkai": 2.4564,
+    "web": 2.7171,
+    "talk": 2.1037
+   },
+   "wrote": [
+    {
+     "start": "わたしは",
+     "text": "わたしはじっくりと、……」 AB「しかし、心から敬意を表したのもそれなりに多くの人々だった。」 AD「……まあ、それはに関する法令に反するのも間違いないわよね」 AA「いや、やっぱりこれ以上言ってくれれば、僕としては、この人たちの主権とそれを温存する前に、なんだ"
+    },
+    {
+     "start": "第一条",
+     "text": "第一条各号列列列列列列列列列列列列列列列列列車列車列車列車列車列車番号列車が付く列車列車列車は1列車を列車列車に置き換えている。 朝夕の時間帯は5往復とも、特急列車本数は2往復である。これは列車列車列車列車は1往復を運行する 。列車列車は10"
+    },
+    {
+     "start": "この法律において",
+     "text": "この法律において「 革命 」という。）によって、 国際連合憲章 特に 国際連合憲章 （ 英語版 ） によって特別に国民の 恩紐 、 融和 または 簡素 、 絶滅 （ 英語版 ） 、 乱獲 （ 英語版 ） または 民兵 、 教団 、 自衛隊"
+    }
+   ],
+   "loopPct": 21.24,
+   "movedBody": false
   }
  ],
  "bestVal": 2.6315,
@@ -12649,5 +12649,5 @@
  ],
  "wantWider": false,
  "nextD": 384,
- "bad": 1
+ "bad": 0
 }
