@@ -1,69 +1,6 @@
 {
  "runs": [
   {
-   "at": "2026-10-13T01:43:14Z",
-   "val": 2.8951,
-   "prev": 2.8961,
-   "valTag": "fixed-holdout-v1",
-   "stoppedAt": 158,
-   "stuck": 0,
-   "evalTag": "fixed-ix-v1",
-   "secPerStep": 26.31,
-   "steps": 300,
-   "bpc": 3.4265,
-   "charsPerTok": 1.2189,
-   "score": 2.1474,
-   "scoreW": 2.0,
-   "scoreMode": "talk",
-   "finishMix": 0.5,
-   "lineage": "L1",
-   "layers": 16,
-   "params": 117914880,
-   "chars": 1045308899,
-   "tokens": 857567631,
-   "grew": 0,
-   "rolledBack": false,
-   "ownVal": null,
-   "ownScore": null,
-   "d": 768,
-   "loops": 1,
-   "spread": 2.8839,
-   "bytes": 1415115957,
-   "heads": 6,
-   "ctx": 512,
-   "vocab": 6000,
-   "kind": "bpe",
-   "arch": "tpp-loop",
-   "wantWider": false,
-   "layerCap": 16,
-   "mixChanged": false,
-   "bySrc": {
-    "laws": 4.1289,
-    "wiki": 3.054,
-    "aozora": 3.4047,
-    "hanrei": 3.4988,
-    "kokkai": 2.6642,
-    "web": 2.9293,
-    "talk": 2.1474
-   },
-   "wrote": [
-    {
-     "start": "わたしは",
-     "text": "わたしは、しばしば、まだまだ、こういうことが、すべての人たちが困っているということを言ったことは、まだまだ見ていないです。 しかも、私は、皆さんが、民主主義のあり方に全力を尽くしてまいりました。そういうことも、政治が、政治主導というのは、この世界が、ガイドラインをつくらなければなら�"
-    },
-    {
-     "start": "第一条",
-     "text": "第一条ルールの認定の対象となっている。 2013年10月10日閲覧。 ↑ “ メジャーリーパークハウス ”. 日本オンライン (2014年10月20日). 2014年10月20日閲覧。 1976年 に イ"
-    },
-    {
-     "start": "この法律において",
-     "text": "この法律においても、このンネルの開閉について、二つ目の例を見ていただくと、当然、この二つが3つ一つ。 その中で、そういう中において、基本的に、二つの距離、売れ変わりが、逆に、もう一つは、二つ目は、一つの記事ですけれども、一番多いのは、これは、行ったものが、もう一つは、外部からの"
-    }
-   ],
-   "loopPct": 4.69,
-   "movedBody": false
-  },
-  {
    "at": "2026-10-13T03:02:23Z",
    "val": 2.8885,
    "prev": 2.8951,
@@ -12599,9 +12536,72 @@
    ],
    "loopPct": 5.97,
    "movedBody": false
+  },
+  {
+   "at": "2026-10-24T06:59:31Z",
+   "val": 2.8093,
+   "prev": 2.8147,
+   "valTag": "fixed-holdout-v1",
+   "stoppedAt": 158,
+   "stuck": 0,
+   "evalTag": "fixed-ix-v1",
+   "secPerStep": 26.3326,
+   "steps": 300,
+   "bpc": 3.325,
+   "charsPerTok": 1.2189,
+   "score": 2.113,
+   "scoreW": 2.0,
+   "scoreMode": "talk",
+   "finishMix": 0.5,
+   "lineage": "L1",
+   "layers": 16,
+   "params": 117914880,
+   "chars": 1045308899,
+   "tokens": 857567631,
+   "grew": 0,
+   "rolledBack": false,
+   "ownVal": null,
+   "ownScore": null,
+   "d": 768,
+   "loops": 1,
+   "spread": 3.3233,
+   "bytes": 1415115957,
+   "heads": 6,
+   "ctx": 512,
+   "vocab": 6000,
+   "kind": "bpe",
+   "arch": "tpp-loop",
+   "wantWider": false,
+   "layerCap": 16,
+   "mixChanged": false,
+   "bySrc": {
+    "laws": 3.9388,
+    "wiki": 2.9665,
+    "aozora": 3.3222,
+    "hanrei": 3.4363,
+    "kokkai": 2.5948,
+    "web": 2.8561,
+    "talk": 2.113
+   },
+   "wrote": [
+    {
+     "start": "わたしは",
+     "text": "わたしは。」 CB「でもあんまり。私はそんなにです」 AL「いいですねえ。子どもは小さいのがすきです。」 CB「眼はまだ痛いです」 AL「今は、夏は大変かもしれませんね」 CB「今年もなにかが大変でした」 AL「ええ！でも、どう"
+    },
+    {
+     "start": "第一条",
+     "text": "第一条いいきものープニングでは「こんばんわーっぷくてたまりません」という 。 SARAYO MARAY EXPO -「さっと、なおかつパーティーです」（PDF） 2nd Foot 融資（1st ON RECHOMAN）。 2ryWOMAT"
+    },
+    {
+     "start": "この法律において",
+     "text": "この法律において「データ通信衛星」も区別される [ 102 ] 。 PSI がはじまるデータ視点を置き、一番の印象を持っているデータは無視できない。 データ放送 は一般的にデータ放送を利用して制作されている [ 103 ] 。 バージョン （1995年 - 2005年）"
+    }
+   ],
+   "loopPct": 4.92,
+   "movedBody": false
   }
  ],
- "bestVal": 2.8139,
+ "bestVal": 2.8093,
  "layers": 16,
  "params": 117914880,
  "born": "2026-09-08T15:11:54Z",
