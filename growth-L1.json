@@ -1,69 +1,6 @@
 {
  "runs": [
   {
-   "at": "2026-10-13T09:22:29Z",
-   "val": 2.8923,
-   "prev": 2.8958,
-   "valTag": "fixed-holdout-v1",
-   "stoppedAt": 158,
-   "stuck": 0,
-   "evalTag": "fixed-ix-v1",
-   "secPerStep": 26.3118,
-   "steps": 300,
-   "bpc": 3.4233,
-   "charsPerTok": 1.2189,
-   "score": 2.1484,
-   "scoreW": 2.0,
-   "scoreMode": "talk",
-   "finishMix": 0.5,
-   "lineage": "L1",
-   "layers": 16,
-   "params": 117914880,
-   "chars": 1045308899,
-   "tokens": 857567631,
-   "grew": 0,
-   "rolledBack": false,
-   "ownVal": null,
-   "ownScore": null,
-   "d": 768,
-   "loops": 1,
-   "spread": 2.892,
-   "bytes": 1415115957,
-   "heads": 6,
-   "ctx": 512,
-   "vocab": 6000,
-   "kind": "bpe",
-   "arch": "tpp-loop",
-   "wantWider": false,
-   "layerCap": 16,
-   "mixChanged": false,
-   "bySrc": {
-    "laws": 4.1211,
-    "wiki": 3.0489,
-    "aozora": 3.4008,
-    "hanrei": 3.4917,
-    "kokkai": 2.6609,
-    "web": 2.9261,
-    "talk": 2.1484
-   },
-   "wrote": [
-    {
-     "start": "わたしは",
-     "text": "わたしは、このうちの集まりでは、十二月の十二日の時点では、ポンディフレになったものだけが出ています。 それから、今回、時間がなくなり、これはリアクションプランもあります。そこで、まずは、今回の事件では、もう一回いっしょうということで、厳正に、何回もやりとりをして、よりよっぽど"
-    },
-    {
-     "start": "第一条",
-     "text": "第一条 舎弟等職員員への適用 組合職員職員の株主等の旧員等の旧板掃除等 （病院等職員等の妻等） 第十三条 法第六条第一項第二号に規定する職員のうち，専門員等にあつては，日本国とアメリカ合衆国との間の相互協力四十 （沖縄及びアメリカ合衆国との間の相互協力） 第二十九条 イからハまでに定める親族 （大学等の義務） 第十五条 修業年限及び少年鑑別所を経て"
-    },
-    {
-     "start": "この法律において",
-     "text": "この法律において「。）、」キロメートル- 12700形 [ 注 14 ] （→ 5000系 ）。 列車の特急「まだまだまだてたい」、DTB - DTB 18距離などが未車で運行されるようになった。 その後、�明・小塚・小塚・今治・小西らが一時期は 19"
-    }
-   ],
-   "loopPct": 8.06,
-   "movedBody": false
-  },
-  {
    "at": "2026-10-13T10:40:39Z",
    "val": 2.8924,
    "prev": 2.8923,
@@ -12598,6 +12535,69 @@
     }
    ],
    "loopPct": 11.52,
+   "movedBody": false
+  },
+  {
+   "at": "2026-10-24T14:40:01Z",
+   "val": 2.81,
+   "prev": 2.8069,
+   "valTag": "fixed-holdout-v1",
+   "stoppedAt": 156,
+   "stuck": 0,
+   "evalTag": "fixed-ix-v1",
+   "secPerStep": 26.7775,
+   "steps": 300,
+   "bpc": 3.3259,
+   "charsPerTok": 1.2189,
+   "score": 2.1157,
+   "scoreW": 2.0,
+   "scoreMode": "talk",
+   "finishMix": 0.5,
+   "lineage": "L1",
+   "layers": 16,
+   "params": 117914880,
+   "chars": 1045308899,
+   "tokens": 857567631,
+   "grew": 0,
+   "rolledBack": false,
+   "ownVal": null,
+   "ownScore": null,
+   "d": 768,
+   "loops": 1,
+   "spread": 2.9247,
+   "bytes": 1415115957,
+   "heads": 6,
+   "ctx": 512,
+   "vocab": 6000,
+   "kind": "bpe",
+   "arch": "tpp-loop",
+   "wantWider": false,
+   "layerCap": 16,
+   "mixChanged": false,
+   "bySrc": {
+    "laws": 3.9381,
+    "wiki": 2.9624,
+    "aozora": 3.3215,
+    "hanrei": 3.4321,
+    "kokkai": 2.598,
+    "web": 2.8509,
+    "talk": 2.1157
+   },
+   "wrote": [
+    {
+     "start": "わたしは",
+     "text": "わたしは絶対になりません。」 GN「椅子ですか」 GA「めちゃきついです。21歳の時から家では見ないので。」 GN「失敗ですね」 GA「まだまだお仕事の規定にかかわらずいきたいです。」 GN「お仕事なんですね」 GA「ありがとうございます。」"
+    },
+    {
+     "start": "第一条",
+     "text": "第一条素子子の「ソーシャルメディア・ジェイコブ・ストーリー」(2001年5月25日). 2017年5月25日閲覧。 ↑ “ パソコンにソフトウェアとOT Politic OX (2022年6月27日). 2022年6"
+    },
+    {
+     "start": "この法律において",
+     "text": "この法律において「マーナー」に改称 。 2022年（令和4年）4月1日：新駅舎が「スーパー大阪駅ビル」を南口に大阪本線の駅として開業 。 2022年（令和4年）3月18日：1番のりばに直通運転のため、同駅に停車する形になった 。 駅"
+    }
+   ],
+   "loopPct": 7.91,
    "movedBody": false
   }
  ],
