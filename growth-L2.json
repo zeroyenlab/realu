@@ -1,69 +1,6 @@
 {
  "runs": [
   {
-   "at": "2026-10-13T11:53:23Z",
-   "val": 2.6353,
-   "prev": 2.6337,
-   "valTag": "fixed-holdout-v1",
-   "stoppedAt": 335,
-   "stuck": 0,
-   "evalTag": "fixed-ix-v1",
-   "secPerStep": 11.5404,
-   "steps": 650,
-   "bpc": 3.1191,
-   "charsPerTok": 1.2189,
-   "score": 2.0363,
-   "scoreW": 2.0,
-   "scoreMode": "talk",
-   "finishMix": 0.85,
-   "lineage": "L2",
-   "layers": 14,
-   "params": 47379968,
-   "chars": 1045308899,
-   "tokens": 857567631,
-   "grew": 0,
-   "rolledBack": false,
-   "ownVal": null,
-   "ownScore": null,
-   "d": 512,
-   "loops": 1,
-   "spread": 2.7695,
-   "bytes": 568680621,
-   "heads": 8,
-   "ctx": 512,
-   "vocab": 6000,
-   "kind": "bpe",
-   "arch": "tpp-loop",
-   "wantWider": false,
-   "layerCap": 16,
-   "mixChanged": false,
-   "bySrc": {
-    "laws": 3.5001,
-    "wiki": 2.7944,
-    "aozora": 3.1142,
-    "hanrei": 3.3666,
-    "kokkai": 2.4624,
-    "web": 2.7214,
-    "talk": 2.0363
-   },
-   "wrote": [
-    {
-     "start": "わたしは",
-     "text": "わたしは服を買ったことがあります！」 EB「服はどうですか？」 DN「好きなものってのは、口にするチントが少なくて、、」 EB「いいじゃないですか、、」 DN「そうですね。紙にはまっているものがありますね。」 EB「わかります！おすすめのアイスがたく"
-    },
-    {
-     "start": "第一条",
-     "text": "第一条第一号ロからヘビペイトグループ） リボルバー（スミレックス） プロフェッショナルヘビ（スミレックス）- プロフェッショナルヘビ プロフェッショナルヘビ（スミレックス）- プロフェッショナルヘビ プロフェッショナルヘビ（スミレックス）- プロフェッショナルヘビ プロフ�"
-    },
-    {
-     "start": "この法律において",
-     "text": "この法律においてにおいて使用する有形文化財（BRICO TECHINYO DYOTECHINYO DYOTECHINYO DYOTECHINYO DYOTECHINYO DYOTECHINYO DYOTECHINYO DYOTECHINYO DYOTE"
-    }
-   ],
-   "loopPct": 49.09,
-   "movedBody": false
-  },
-  {
    "at": "2026-10-13T13:11:26Z",
    "val": 2.6335,
    "prev": 2.6353,
@@ -12598,6 +12535,69 @@
     }
    ],
    "loopPct": 1.75,
+   "movedBody": false
+  },
+  {
+   "at": "2026-10-24T15:51:02Z",
+   "val": 2.5992,
+   "prev": 2.5984,
+   "valTag": "fixed-holdout-v1",
+   "stoppedAt": 340,
+   "stuck": 0,
+   "evalTag": "fixed-ix-v1",
+   "secPerStep": 11.3513,
+   "steps": 561,
+   "bpc": 3.0764,
+   "charsPerTok": 1.2189,
+   "score": 2.0314,
+   "scoreW": 2.0,
+   "scoreMode": "talk",
+   "finishMix": 0.85,
+   "lineage": "L2",
+   "layers": 14,
+   "params": 47379968,
+   "chars": 1045308899,
+   "tokens": 857567631,
+   "grew": 0,
+   "rolledBack": false,
+   "ownVal": null,
+   "ownScore": null,
+   "d": 512,
+   "loops": 1,
+   "spread": 2.6593,
+   "bytes": 568680621,
+   "heads": 8,
+   "ctx": 512,
+   "vocab": 6000,
+   "kind": "bpe",
+   "arch": "tpp-loop",
+   "wantWider": false,
+   "layerCap": 16,
+   "mixChanged": false,
+   "bySrc": {
+    "laws": 3.4517,
+    "wiki": 2.7481,
+    "aozora": 3.0729,
+    "hanrei": 3.34,
+    "kokkai": 2.4322,
+    "web": 2.6812,
+    "talk": 2.0314
+   },
+   "wrote": [
+    {
+     "start": "わたしは",
+     "text": "わたしは、大半がアメリカに亡命している。 この影響でオバマ大統領は4月に アメリカ に亡命する。 彼らは9月に大統領選挙で放免された。 1998年 、 イギリス と 大韓民国 両国が勝利した。 1999年 4月に大統領選挙が実施され、初の任期が20"
+    },
+    {
+     "start": "第一条",
+     "text": "第一条の政令で定める期間のうち、第十六条第二項各号に掲げる者が、当該期間ごとに、同項各号に掲げる者が、当該期間の終了した期間に、当該期間の終了した期間に、当該期間に、当該期間の終了した期間に、当該期間の終了した期間に、当該期間の終了した期間に、当該期間の終了した期間に、当該期間の終了した期間に、当該期間の終了した期間に、当該期間の終了した期間に、当該期間の終了した期間に、当該期間を終了した期間に、当該期間"
+    },
+    {
+     "start": "この法律において",
+     "text": "この法律において「運営指針」には、施行日、施行期日及び施行日を記載しない。 Wikipediaは、第三者による著作権保護に関する協定を締結してから、著作権保護の実施に関する指針（第五章）を制定し、又は運用する。 （権利者の代表） 第三者による著作権保護の実施に関する指針（第五章）は、内閣及び人事院が実行する。 （権利の不保持） 一月おりEU諸国における条約"
+    }
+   ],
+   "loopPct": 4.82,
    "movedBody": false
   }
  ],
