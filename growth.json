@@ -1,69 +1,6 @@
 {
  "runs": [
   {
-   "at": "2026-10-13T16:58:40Z",
-   "val": 2.8935,
-   "prev": 2.8874,
-   "valTag": "fixed-holdout-v1",
-   "stoppedAt": 0,
-   "stuck": 0,
-   "evalTag": "fixed-ix-v1",
-   "secPerStep": 11.7881,
-   "steps": 300,
-   "bpc": 3.4247,
-   "charsPerTok": 1.2189,
-   "score": 2.1511,
-   "scoreW": 2.0,
-   "scoreMode": "talk",
-   "finishMix": 0.5,
-   "lineage": "L1",
-   "layers": 16,
-   "params": 117914880,
-   "chars": 1045308899,
-   "tokens": 857567631,
-   "grew": 0,
-   "rolledBack": false,
-   "ownVal": null,
-   "ownScore": null,
-   "d": 768,
-   "loops": 1,
-   "spread": 2.8727,
-   "bytes": 1415115957,
-   "heads": 6,
-   "ctx": 512,
-   "vocab": 6000,
-   "kind": "bpe",
-   "arch": "tpp-loop",
-   "wantWider": false,
-   "layerCap": 16,
-   "mixChanged": false,
-   "bySrc": {
-    "laws": 4.1277,
-    "wiki": 3.0552,
-    "aozora": 3.406,
-    "hanrei": 3.4994,
-    "kokkai": 2.6652,
-    "web": 2.9297,
-    "talk": 2.1511
-   },
-   "wrote": [
-    {
-     "start": "わたしは",
-     "text": "わたしはやってないですね。」 BZ「たしかに、やはり私は冷やしてそうです。」 BR「はい。最近はサポートしてますので。サポートしていますが、やはりコロナの予知とかもやってます。」 BZ「ほんとです。でも在宅ワークが好きなので、寝てしまって現実"
-    },
-    {
-     "start": "第一条",
-     "text": "第一条第三十七号の事業を行う相続税の基準及び条項移動等を除き、これらの規定に限って、当該�准を受けた特定権者自己又は知識の管理及び国外退去等をする特定の医薬品等若しくは他に特定金属同様の買い入れを行った船舶（特定鉛引き等をするものに限る。健康保険法（平成十三年法律第百号）附則第二条第一項又は第二項の規定に基づき、特定船舶からの裂開を拡大し、又は通報された場合にあっては、当該船舶を運転すること。以下この項において同じ。）に工業する年法律第"
-    },
-    {
-     "start": "この法律において",
-     "text": "この法律において「落着」を収受する [ 31 ] 。 右翼を互いに囲んだ構造が整っており、 変形 を持つ [ 32 ] 。 ウイルス 、 チャーター機 竹、 スタニスト 、 クロマスク など。 彼らは、 アルカーイダ の 人工言語 を対象とした 無人機"
-    }
-   ],
-   "loopPct": 0.0,
-   "movedBody": false
-  },
-  {
    "at": "2026-10-13T18:10:39Z",
    "val": 2.8984,
    "prev": 2.8935,
@@ -12599,6 +12536,69 @@
    ],
    "loopPct": 7.37,
    "movedBody": false
+  },
+  {
+   "at": "2026-10-24T22:16:56Z",
+   "val": 2.8111,
+   "prev": 2.8049,
+   "valTag": "fixed-holdout-v1",
+   "stoppedAt": 0,
+   "stuck": 0,
+   "evalTag": "fixed-ix-v1",
+   "secPerStep": 12.5008,
+   "steps": 300,
+   "bpc": 3.3272,
+   "charsPerTok": 1.2189,
+   "score": 2.1147,
+   "scoreW": 2.0,
+   "scoreMode": "talk",
+   "finishMix": 0.5,
+   "lineage": "L1",
+   "layers": 16,
+   "params": 117914880,
+   "chars": 1045308899,
+   "tokens": 857567631,
+   "grew": 0,
+   "rolledBack": false,
+   "ownVal": null,
+   "ownScore": null,
+   "d": 768,
+   "loops": 1,
+   "spread": 3.1893,
+   "bytes": 1415115957,
+   "heads": 6,
+   "ctx": 512,
+   "vocab": 6000,
+   "kind": "bpe",
+   "arch": "tpp-loop",
+   "wantWider": false,
+   "layerCap": 16,
+   "mixChanged": false,
+   "bySrc": {
+    "laws": 3.9316,
+    "wiki": 2.9682,
+    "aozora": 3.3247,
+    "hanrei": 3.4313,
+    "kokkai": 2.5967,
+    "web": 2.8605,
+    "talk": 2.1147
+   },
+   "wrote": [
+    {
+     "start": "わたしは",
+     "text": "わたしはいつも日々持っております。」 DS「日焼けするとたんに好きな食べ物はいいですね！」 BB「そうですね。私は餃子がいつになりそうで、たまに食べると結構きつく感じがします。」 DS「確かにそうですね。おいしそう！」 BB「もう"
+    },
+    {
+     "start": "第一条",
+     "text": "第一条低低下が相次いでいる 。 1917年（大正7年）2月15日には、大阪府那須市に合成された藤井風景「 」の第10回大阪府大阪市で初めて大阪府大阪市に建てられた 。阪急藤井橋で小田原に映像が放送されたため"
+    },
+    {
+     "start": "この法律において",
+     "text": "この法律において「特定駅」「小田原線」「小田原駅」「小田原駅」「小田原駅」「小田原駅」「小田原駅」「小田原駅」「小田原駅」「小田原駅」「小田原駅」「小田原駅」「小田原駅」「小田原駅」「小"
+    }
+   ],
+   "loopPct": 31.43,
+   "movedBody": false
   }
  ],
  "bestVal": 2.8049,
@@ -12649,5 +12649,5 @@
  ],
  "wantWider": false,
  "nextD": 768,
- "bad": 0
+ "bad": 2
 }
