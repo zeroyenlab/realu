@@ -1,69 +1,6 @@
 {
  "runs": [
   {
-   "at": "2026-10-13T18:10:39Z",
-   "val": 2.8984,
-   "prev": 2.8935,
-   "valTag": "fixed-holdout-v1",
-   "stoppedAt": 0,
-   "stuck": 0,
-   "evalTag": "fixed-ix-v1",
-   "secPerStep": 12.34,
-   "steps": 300,
-   "bpc": 3.4305,
-   "charsPerTok": 1.2189,
-   "score": 2.1542,
-   "scoreW": 2.0,
-   "scoreMode": "talk",
-   "finishMix": 0.5,
-   "lineage": "L1",
-   "layers": 16,
-   "params": 117914880,
-   "chars": 1045308899,
-   "tokens": 857567631,
-   "grew": 0,
-   "rolledBack": false,
-   "ownVal": null,
-   "ownScore": null,
-   "d": 768,
-   "loops": 1,
-   "spread": 3.204,
-   "bytes": 1415115957,
-   "heads": 6,
-   "ctx": 512,
-   "vocab": 6000,
-   "kind": "bpe",
-   "arch": "tpp-loop",
-   "wantWider": false,
-   "layerCap": 16,
-   "mixChanged": false,
-   "bySrc": {
-    "laws": 4.1334,
-    "wiki": 3.0581,
-    "aozora": 3.4096,
-    "hanrei": 3.5042,
-    "kokkai": 2.6661,
-    "web": 2.9353,
-    "talk": 2.1542
-   },
-   "wrote": [
-    {
-     "start": "わたしは",
-     "text": "わたしは随分とり合いになって生きてきました」 GH「家で出るのがいいですよね」 GY「ほんとうに！今は家で何をしていますか？」 GH「家では家で持つので、昔はよく泳いでいます」 GY「いいですね！気を付けていたんですが、大変でしたね。」"
-    },
-    {
-     "start": "第一条",
-     "text": "第一条、それぞれ2024年5月26日閲覧。 ↑ “ ゆるくるぶる青春の2024 ”. ソフトバンク. 2024年7月21日閲覧。 ↑ “ ソフトバンクが初めて溢れる「ソフトバンク」「ソフトバンクがいじらない」 ”"
-    },
-    {
-     "start": "この法律において",
-     "text": "この法律においていうものと考えているわけです。 また、この措置の具体化が業態と数値化の予測であり、企業や企業と、あるいは企業にとってもいいメカニズム、これは今、企業献金というのが全然関連ないわけです。企業が、小さな企業の未来を知っていく中において、経営の自由貿易を実現できる、こういうことで一言で言え"
-    }
-   ],
-   "loopPct": 2.36,
-   "movedBody": false
-  },
-  {
    "at": "2026-10-13T19:29:43Z",
    "val": 2.8902,
    "prev": 2.8984,
@@ -12599,6 +12536,69 @@
    ],
    "loopPct": 31.43,
    "movedBody": false
+  },
+  {
+   "at": "2026-10-24T23:34:12Z",
+   "val": 2.8076,
+   "prev": 2.8111,
+   "valTag": "fixed-holdout-v1",
+   "stoppedAt": 157,
+   "stuck": 0,
+   "evalTag": "fixed-ix-v1",
+   "secPerStep": 26.5462,
+   "steps": 300,
+   "bpc": 3.323,
+   "charsPerTok": 1.2189,
+   "score": 2.1139,
+   "scoreW": 2.0,
+   "scoreMode": "talk",
+   "finishMix": 0.5,
+   "lineage": "L1",
+   "layers": 16,
+   "params": 117914880,
+   "chars": 1045308899,
+   "tokens": 857567631,
+   "grew": 0,
+   "rolledBack": false,
+   "ownVal": null,
+   "ownScore": null,
+   "d": 768,
+   "loops": 1,
+   "spread": 2.6593,
+   "bytes": 1415115957,
+   "heads": 6,
+   "ctx": 512,
+   "vocab": 6000,
+   "kind": "bpe",
+   "arch": "tpp-loop",
+   "wantWider": false,
+   "layerCap": 16,
+   "mixChanged": false,
+   "bySrc": {
+    "laws": 3.9294,
+    "wiki": 2.9638,
+    "aozora": 3.3179,
+    "hanrei": 3.4292,
+    "kokkai": 2.5932,
+    "web": 2.8529,
+    "talk": 2.1139
+   },
+   "wrote": [
+    {
+     "start": "わたしは",
+     "text": "わたしはまたそこまで起こしてくるといいんですけれども。」 AA「鈴木委員 今お聞きしたとおり、これだけの話ですけれども、私は、年金の話を聞いているのだと思います。 ですから、今は、三年間三・五、六年間は大丈夫なんですよ、元々は七年間は。二〇二"
+    },
+    {
+     "start": "第一条",
+     "text": "第一条車50周年を記念した「不定期」で「リコー」の譲らないコンビ「メガ・ゼ・マイ・マイ・エンタテインメント」で初めて登場するシーンもある。 2003年 3月26日、当時のエンタテインメントのトップ10で、サンテレビが『ゲン』を初めて開催した。"
+    },
+    {
+     "start": "この法律において",
+     "text": "この法律において「認定」は、甲14号、甲31号は「認定」となり、同年7月8日、同年8月1日、支社を廃止。 同年7月、東京都区部3号線を、同日、内閣総理大臣海軍大臣第7号線として国務大臣を創立し、同年8月に国務大臣を辞任する。 同年6月、東京都に移管された同年7月1"
+    }
+   ],
+   "loopPct": 4.96,
+   "movedBody": false
   }
  ],
  "bestVal": 2.8049,
@@ -12649,5 +12649,5 @@
  ],
  "wantWider": false,
  "nextD": 768,
- "bad": 2
+ "bad": 0
 }
