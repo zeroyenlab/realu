@@ -1,69 +1,6 @@
 {
  "runs": [
   {
-   "at": "2026-10-14T12:02:53Z",
-   "val": 2.8845,
-   "prev": 2.8771,
-   "valTag": "fixed-holdout-v1",
-   "stoppedAt": 0,
-   "stuck": 0,
-   "evalTag": "fixed-ix-v1",
-   "secPerStep": 10.926,
-   "steps": 320,
-   "bpc": 3.4141,
-   "charsPerTok": 1.2189,
-   "score": 2.157,
-   "scoreW": 2.0,
-   "scoreMode": "talk",
-   "finishMix": 0.5,
-   "lineage": "L1",
-   "layers": 16,
-   "params": 117914880,
-   "chars": 1045308899,
-   "tokens": 857567631,
-   "grew": 0,
-   "rolledBack": false,
-   "ownVal": null,
-   "ownScore": null,
-   "d": 768,
-   "loops": 1,
-   "spread": 2.7548,
-   "bytes": 1415115957,
-   "heads": 6,
-   "ctx": 512,
-   "vocab": 6000,
-   "kind": "bpe",
-   "arch": "tpp-loop",
-   "wantWider": false,
-   "layerCap": 16,
-   "mixChanged": false,
-   "bySrc": {
-    "laws": 4.1086,
-    "wiki": 3.0426,
-    "aozora": 3.3965,
-    "hanrei": 3.4959,
-    "kokkai": 2.6586,
-    "web": 2.9224,
-    "talk": 2.157
-   },
-   "wrote": [
-    {
-     "start": "わたしは",
-     "text": "わたしは、これはたたいへんなことだと思います。」 AA「佐々木委員 いや、しょっちゅうから結構だと思います。 これは、私たちは、あくまでも、uppopyしていると言うんです。 まず、今回のガイドラインは、三〇一〇から五〇％まで下がったんじゃないかなと思って"
-    },
-    {
-     "start": "第一条",
-     "text": "第一条の推進等に関する命令） 第八条の二 （特定特定小小規模小規模小規模小規模小里小規模小規模小規模小規模小規模小規模小規模小規模小規模小規模小規模小規模小規模小規模小規模小規模小規模小規模小規模小規模小規模小規模小規模小規模小規模小規模小規模小規模小小規模小規模小規模小規模小規模小小規模小塚小6小規模図小小規模小規模小規模小規模"
-    },
-    {
-     "start": "この法律において",
-     "text": "この法律において「ーーー」と、好きなものやチーズを使うのは好きな曲です」 FA「そうですね、好きです！」 FA「こんばんは。」 FA「こんばんは。」 FA「今日はなにしましたか？」 F"
-    }
-   ],
-   "loopPct": 44.06,
-   "movedBody": false
-  },
-  {
    "at": "2026-10-14T13:25:18Z",
    "val": 2.881,
    "prev": 2.8845,
@@ -12599,6 +12536,69 @@
    ],
    "loopPct": 5.55,
    "movedBody": false
+  },
+  {
+   "at": "2026-10-25T17:26:58Z",
+   "val": 2.8086,
+   "prev": 2.8075,
+   "valTag": "fixed-holdout-v1",
+   "stoppedAt": 159,
+   "stuck": 0,
+   "evalTag": "fixed-ix-v1",
+   "secPerStep": 26.1184,
+   "steps": 300,
+   "bpc": 3.3243,
+   "charsPerTok": 1.2189,
+   "score": 2.1158,
+   "scoreW": 2.0,
+   "scoreMode": "talk",
+   "finishMix": 0.5,
+   "lineage": "L1",
+   "layers": 16,
+   "params": 117914880,
+   "chars": 1045308899,
+   "tokens": 857567631,
+   "grew": 0,
+   "rolledBack": false,
+   "ownVal": null,
+   "ownScore": null,
+   "d": 768,
+   "loops": 1,
+   "spread": 2.9944,
+   "bytes": 1415115957,
+   "heads": 6,
+   "ctx": 512,
+   "vocab": 6000,
+   "kind": "bpe",
+   "arch": "tpp-loop",
+   "wantWider": false,
+   "layerCap": 16,
+   "mixChanged": false,
+   "bySrc": {
+    "laws": 3.9287,
+    "wiki": 2.9589,
+    "aozora": 3.32,
+    "hanrei": 3.4262,
+    "kokkai": 2.5986,
+    "web": 2.8482,
+    "talk": 2.1158
+   },
+   "wrote": [
+    {
+     "start": "わたしは",
+     "text": "わたしはみんな獲得しました。」 CI「いいですね！私も子どもがやってるイメージです！」 AQ「あれは素敵ですね！」 CI「ですね、シャッターとかはサウナとかも好きです。」 AQ「シャッターはサウナとかですか？」 CI「美味し"
+    },
+    {
+     "start": "第一条",
+     "text": "第一条?-2006年9月30日 世界的流行→世界の薪水を生きる、自然の不安定さ、地球の不良、その体験と地球の武力の不安定、精神的・慣習・要求的問題への対応を背景に、あらゆる現代の再現への対応を可能にする 世界最高の軽水炉から、世界における自然"
+    },
+    {
+     "start": "この法律において",
+     "text": "この法律において「所轄」等」という。）の送還のための規定」手帳が発行される旨 。 2004年（平成16年）度、JR東日本が「東京メトロ�オレンジ」を政府へ譲渡するとして、同年11月1日付で「都営地下鉄東京メトロ」に改称 。 2007年（平成19年）度の1日平均乗車人員は406人"
+    }
+   ],
+   "loopPct": 3.88,
+   "movedBody": false
   }
  ],
  "bestVal": 2.7996,
@@ -12649,5 +12649,5 @@
  ],
  "wantWider": false,
  "nextD": 768,
- "bad": 3
+ "bad": 0
 }
