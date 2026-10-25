@@ -1,69 +1,6 @@
 {
  "runs": [
   {
-   "at": "2026-10-13T20:42:07Z",
-   "val": 2.6334,
-   "prev": 2.6344,
-   "valTag": "fixed-holdout-v1",
-   "stoppedAt": 336,
-   "stuck": 0,
-   "evalTag": "fixed-ix-v1",
-   "secPerStep": 11.5097,
-   "steps": 786,
-   "bpc": 3.1169,
-   "charsPerTok": 1.2189,
-   "score": 2.0368,
-   "scoreW": 2.0,
-   "scoreMode": "talk",
-   "finishMix": 0.85,
-   "lineage": "L2",
-   "layers": 14,
-   "params": 47379968,
-   "chars": 1045308899,
-   "tokens": 857567631,
-   "grew": 0,
-   "rolledBack": false,
-   "ownVal": null,
-   "ownScore": null,
-   "d": 512,
-   "loops": 1,
-   "spread": 2.7334,
-   "bytes": 568680621,
-   "heads": 8,
-   "ctx": 512,
-   "vocab": 6000,
-   "kind": "bpe",
-   "arch": "tpp-loop",
-   "wantWider": false,
-   "layerCap": 16,
-   "mixChanged": false,
-   "bySrc": {
-    "laws": 3.501,
-    "wiki": 2.7923,
-    "aozora": 3.1139,
-    "hanrei": 3.3629,
-    "kokkai": 2.4596,
-    "web": 2.7228,
-    "talk": 2.0368
-   },
-   "wrote": [
-    {
-     "start": "わたしは",
-     "text": "わたしは！」 AU「こんばんは、よろしくお願いします。」 EY「こんばんは、よろしくお願いします。」 AU「今日は、何をしていましたか？」 EY「今日は出社けでしたね。」 AU「お疲"
-    },
-    {
-     "start": "第一条",
-     "text": "第一条の撒水自給率は、年々低下傾向にあるため、一般家庭の終末処理も充実しているとされている。 一方で、ゆるやかな水族館、女性のグループや学校が保護対象となっているため、第五項の撒沢地帯（地域の住民や生徒などと共に親戚、生活困窮者、中学生など）の家族が、子供を稼ぐニーズが高いとしている"
-    },
-    {
-     "start": "この法律において",
-     "text": "この法律において「令和四年度補正予算」とあるのは「令和四年度補正予算（令和八年度補正予算（令和五年度補正予算（第２号）」と、令和四年度補正予算（特第２号）は、いずれも平成十九年度補正予算（第２号）ほか、令和四年度補正予算（特第２号）及び令和五年度補正予算（特第２号）ほか、令和四年度補正予算（第２号）ほか、令和四年度補正予算（特第２号）及び令和"
-    }
-   ],
-   "loopPct": 0.0,
-   "movedBody": false
-  },
-  {
    "at": "2026-10-13T21:58:57Z",
    "val": 2.6312,
    "prev": 2.6334,
@@ -12599,9 +12536,72 @@
    ],
    "loopPct": 2.08,
    "movedBody": false
+  },
+  {
+   "at": "2026-10-25T00:45:43Z",
+   "val": 2.5952,
+   "prev": 2.5988,
+   "valTag": "fixed-holdout-v1",
+   "stoppedAt": 385,
+   "stuck": 0,
+   "evalTag": "fixed-ix-v1",
+   "secPerStep": 9.9642,
+   "steps": 568,
+   "bpc": 3.0716,
+   "charsPerTok": 1.2189,
+   "score": 2.029,
+   "scoreW": 2.0,
+   "scoreMode": "talk",
+   "finishMix": 0.85,
+   "lineage": "L2",
+   "layers": 14,
+   "params": 47379968,
+   "chars": 1045308899,
+   "tokens": 857567631,
+   "grew": 0,
+   "rolledBack": false,
+   "ownVal": null,
+   "ownScore": null,
+   "d": 512,
+   "loops": 1,
+   "spread": 2.5765,
+   "bytes": 568680621,
+   "heads": 8,
+   "ctx": 512,
+   "vocab": 6000,
+   "kind": "bpe",
+   "arch": "tpp-loop",
+   "wantWider": false,
+   "layerCap": 16,
+   "mixChanged": false,
+   "bySrc": {
+    "laws": 3.4557,
+    "wiki": 2.746,
+    "aozora": 3.0761,
+    "hanrei": 3.3401,
+    "kokkai": 2.4264,
+    "web": 2.6804,
+    "talk": 2.029
+   },
+   "wrote": [
+    {
+     "start": "わたしは",
+     "text": "わたしは、東北で会社が経営している中国系統の企業。理由は、GTORPEO、GTORPUO、GTORPUO、GTORPUOの3社が後を付けている。 2021年12月に、ロシアの自宅で子供の飲み会が開催されることが発表された 。 音楽の興味が湧き上がったことから、"
+    },
+    {
+     "start": "第一条",
+     "text": "第一条第一号ハからハまでハまでハまでハまでハまでハの現行行先表示表示板を書かせてもらうと約束されました。 この点について、まず総理、お聞かせをいただきたいと思います。」 AA「内閣総理大臣 先ほど総理から、個々の事案についてお尋ねがありましたが、これは、今先生おっしゃったような対応をしている"
+    },
+    {
+     "start": "この法律において",
+     "text": "この法律において「特定業態等」という。）内に特定の事項（当該�二部門が他人の弁護士となったときは、ション及びベルに改称された囚人（以下「特定業態等」という。）若しくはション、クリエイティブ・アドラー（以下「特定業態等」という。）と、当該他人の特定業態等（特定業態等以外の内部に特定業態等以外の外部に特定業態等を含み、全ての特定業態等に相当する"
+    }
+   ],
+   "loopPct": 15.05,
+   "movedBody": false
   }
  ],
- "bestVal": 2.5966,
+ "bestVal": 2.5952,
  "layers": 14,
  "params": 47379968,
  "born": "2026-09-08T15:11:54Z",
@@ -12649,5 +12649,5 @@
  ],
  "wantWider": false,
  "nextD": 512,
- "bad": 4
+ "bad": 0
 }
