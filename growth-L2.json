@@ -1,69 +1,6 @@
 {
  "runs": [
   {
-   "at": "2026-10-14T09:34:48Z",
-   "val": 2.6282,
-   "prev": 2.6291,
-   "valTag": "fixed-holdout-v1",
-   "stoppedAt": 361,
-   "stuck": 0,
-   "evalTag": "fixed-ix-v1",
-   "secPerStep": 10.6585,
-   "steps": 855,
-   "bpc": 3.1107,
-   "charsPerTok": 1.2189,
-   "score": 2.0319,
-   "scoreW": 2.0,
-   "scoreMode": "talk",
-   "finishMix": 0.85,
-   "lineage": "L2",
-   "layers": 14,
-   "params": 47379968,
-   "chars": 1045308899,
-   "tokens": 857567631,
-   "grew": 0,
-   "rolledBack": false,
-   "ownVal": null,
-   "ownScore": null,
-   "d": 512,
-   "loops": 1,
-   "spread": 2.6818,
-   "bytes": 568680621,
-   "heads": 8,
-   "ctx": 512,
-   "vocab": 6000,
-   "kind": "bpe",
-   "arch": "tpp-loop",
-   "wantWider": false,
-   "layerCap": 16,
-   "mixChanged": false,
-   "bySrc": {
-    "laws": 3.4955,
-    "wiki": 2.7892,
-    "aozora": 3.1079,
-    "hanrei": 3.3615,
-    "kokkai": 2.4532,
-    "web": 2.7166,
-    "talk": 2.0319
-   },
-   "wrote": [
-    {
-     "start": "わたしは",
-     "text": "わたしは日本テレビ系で、ユニバーサルミュージックのバックステップを買いました」 CN「おディスカバリーいいですね！私も好きです！」 ED「本当に最近お金があったら、予想よりもいいかなと思います。」 CN「ちょっとずつ海外のロックバンドとかもやってま"
-    },
-    {
-     "start": "第一条",
-     "text": "第一条の規定に基づき、会社が設立する組合又は組合で計算した場合における勤勉、力なりを演出する組合又は組合について、その組合の存在を知る機会を与えなければならない旨の放送を開始する。 ただし、移り変わり、又は機器の運用上の優位性が認められず、かつ、当該方式を用いて、他の事項に関する随意契約により移行することができる。 ただし、当該方式を用いて他人に移行した場合にあっては、この限りでない。 ただし、当該方式を用いて同"
-    },
-    {
-     "start": "この法律において",
-     "text": "この法律においてonoroance christation christation night）とは、かつて存在したメンバーのイメージを指す。 マイクロソフトのアーティストでは、2013年から活動を再開し 、2015年、活動拠点（2020年、リーダ"
-    }
-   ],
-   "loopPct": 12.9,
-   "movedBody": false
-  },
-  {
    "at": "2026-10-14T10:49:50Z",
    "val": 2.6281,
    "prev": 2.6282,
@@ -12599,6 +12536,69 @@
    ],
    "loopPct": 8.69,
    "movedBody": false
+  },
+  {
+   "at": "2026-10-25T13:32:11Z",
+   "val": 2.5957,
+   "prev": 2.5959,
+   "valTag": "fixed-holdout-v1",
+   "stoppedAt": 454,
+   "stuck": 0,
+   "evalTag": "fixed-ix-v1",
+   "secPerStep": 8.3647,
+   "steps": 573,
+   "bpc": 3.0722,
+   "charsPerTok": 1.2189,
+   "score": 2.0318,
+   "scoreW": 2.0,
+   "scoreMode": "talk",
+   "finishMix": 0.85,
+   "lineage": "L2",
+   "layers": 14,
+   "params": 47379968,
+   "chars": 1045308899,
+   "tokens": 857567631,
+   "grew": 0,
+   "rolledBack": false,
+   "ownVal": null,
+   "ownScore": null,
+   "d": 512,
+   "loops": 1,
+   "spread": 2.7518,
+   "bytes": 568680621,
+   "heads": 8,
+   "ctx": 512,
+   "vocab": 6000,
+   "kind": "bpe",
+   "arch": "tpp-loop",
+   "wantWider": false,
+   "layerCap": 16,
+   "mixChanged": false,
+   "bySrc": {
+    "laws": 3.4544,
+    "wiki": 2.7453,
+    "aozora": 3.0743,
+    "hanrei": 3.3316,
+    "kokkai": 2.4292,
+    "web": 2.6803,
+    "talk": 2.0318
+   },
+   "wrote": [
+    {
+     "start": "わたしは",
+     "text": "わたしは、私にします。」 AK「そういうものもタブレットで調べたら、わりと楽しいんですよねー！」 BZ「そちらはお子さんと喜びますか？」 AK「大丈夫です。よくありますか？」 BZ「うちはよくわからないんですよね。」 AK「そ"
+    },
+    {
+     "start": "第一条",
+     "text": "第一条（第十九条において準用する場合を含む。）の規定による疾患、疾患又は疾患をいう。以下同じ。）若しくは疾患又は疾患又は疾患（疾患又は疾患又は疾患をいう。）若しくは疾患又は疾患又は疾患（疾患又は疾患又は疾患をいう。以下同じ。）若しくは疾患又は疾患又は疾患又は疾患又は疾患又は疾患又は疾患又は疾患又は疾"
+    },
+    {
+     "start": "この法律において",
+     "text": "この法律において「卸売期」とは、Δ〔ｃ〕及びΔ〔ｃ〕及びΔ〔Δ〔Δ〕及びΔ〔Δ〕及びΔ〔Δ〕及びΔ〔Δ〔Δ〔Δ〔Δ〔Δ〕及びΔ〔Δ〔Δ〕及びΔ〔Δ〔Δ〕及びΔ〔"
+    }
+   ],
+   "loopPct": 44.89,
+   "movedBody": false
   }
  ],
  "bestVal": 2.5952,
@@ -12649,5 +12649,5 @@
  ],
  "wantWider": false,
  "nextD": 512,
- "bad": 1
+ "bad": 2
 }
