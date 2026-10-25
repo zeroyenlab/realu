@@ -1,69 +1,6 @@
 {
  "runs": [
   {
-   "at": "2026-10-14T05:51:21Z",
-   "val": 2.8824,
-   "prev": 2.8801,
-   "valTag": "fixed-holdout-v1",
-   "stoppedAt": 201,
-   "stuck": 0,
-   "evalTag": "fixed-ix-v1",
-   "secPerStep": 20.1629,
-   "steps": 300,
-   "bpc": 3.4116,
-   "charsPerTok": 1.2189,
-   "score": 2.1477,
-   "scoreW": 2.0,
-   "scoreMode": "talk",
-   "finishMix": 0.5,
-   "lineage": "L1",
-   "layers": 16,
-   "params": 117914880,
-   "chars": 1045308899,
-   "tokens": 857567631,
-   "grew": 0,
-   "rolledBack": false,
-   "ownVal": null,
-   "ownScore": null,
-   "d": 768,
-   "loops": 1,
-   "spread": 3.0948,
-   "bytes": 1415115957,
-   "heads": 6,
-   "ctx": 512,
-   "vocab": 6000,
-   "kind": "bpe",
-   "arch": "tpp-loop",
-   "wantWider": false,
-   "layerCap": 16,
-   "mixChanged": false,
-   "bySrc": {
-    "laws": 4.1065,
-    "wiki": 3.0409,
-    "aozora": 3.3941,
-    "hanrei": 3.4838,
-    "kokkai": 2.6561,
-    "web": 2.9179,
-    "talk": 2.1477
-   },
-   "wrote": [
-    {
-     "start": "わたしは",
-     "text": "わたしは ブランド・バロイゼンバーグ である。 ブランドの メンバー が 1822年 に ブランド の ボローニャ で発行していた バルセロナ の フェルディナント・アンド・マスカル の レイク・ウィリアムズ が 1823年 の アンチウェイズ"
-    },
-    {
-     "start": "第一条",
-     "text": "第一条 設立時刻を グラビア に改め、 10月2日 に設立。 1962年 （昭和37年）に 新製鉄所 に コーポレートツェ と改称。 1967年 （昭和42年）に ガソリンスタンド を開設。 1967年 （昭和42年）に完成した 鉄道事業 の 鉄道事業"
-    },
-    {
-     "start": "この法律において",
-     "text": "この法律において。 1960年代のアメリカ合衆国ではインディアンは世界初のアメリカ合衆国では 2010年代 には欧州では 1903年 に ポルトガル で発足し、 1965年 の パリ では世界的に イタリア で イタリア 、 ロシア 、 ドイツ 、"
-    }
-   ],
-   "loopPct": 0.82,
-   "movedBody": false
-  },
-  {
    "at": "2026-10-14T07:07:00Z",
    "val": 2.8809,
    "prev": 2.8824,
@@ -12599,6 +12536,69 @@
    ],
    "loopPct": 1.02,
    "movedBody": false
+  },
+  {
+   "at": "2026-10-25T11:05:15Z",
+   "val": 2.8039,
+   "prev": 2.8034,
+   "valTag": "fixed-holdout-v1",
+   "stoppedAt": 160,
+   "stuck": 0,
+   "evalTag": "fixed-ix-v1",
+   "secPerStep": 26.091,
+   "steps": 317,
+   "bpc": 3.3186,
+   "charsPerTok": 1.2189,
+   "score": 2.1106,
+   "scoreW": 2.0,
+   "scoreMode": "talk",
+   "finishMix": 0.5,
+   "lineage": "L1",
+   "layers": 16,
+   "params": 117914880,
+   "chars": 1045308899,
+   "tokens": 857567631,
+   "grew": 0,
+   "rolledBack": false,
+   "ownVal": null,
+   "ownScore": null,
+   "d": 768,
+   "loops": 1,
+   "spread": 3.1042,
+   "bytes": 1415115957,
+   "heads": 6,
+   "ctx": 512,
+   "vocab": 6000,
+   "kind": "bpe",
+   "arch": "tpp-loop",
+   "wantWider": false,
+   "layerCap": 16,
+   "mixChanged": false,
+   "bySrc": {
+    "laws": 3.9306,
+    "wiki": 2.9595,
+    "aozora": 3.3178,
+    "hanrei": 3.4261,
+    "kokkai": 2.5905,
+    "web": 2.8443,
+    "talk": 2.1106
+   },
+   "wrote": [
+    {
+     "start": "わたしは",
+     "text": "わたしは何処へ行くんだろうと、僕も……。」 AE「本当に、僕は今日は、僕が何をしているのか？」 AA「明日のあま姉が空に潜入するのは、僕の方が僕を見ると、僕の行動が少しくらい大きくなって、日が暮れてしまったのだ。」 AD「や"
+    },
+    {
+     "start": "第一条",
+     "text": "第一条 （以上） 2018年12月17日、フランスの音楽学院で勉強に来る演技はあまり得意ではなかったことが判明する。 イギリスの音楽学院では、1600年の音楽学院のプロデューサーが、音楽学院の音楽学院では、1759年の音楽学院の"
+    },
+    {
+     "start": "この法律において",
+     "text": "この法律において「ようしゃるんですか？」 BS「はい、知人です！」 CH「ありがとうございます。」 BS「ありがとうございました！」 BS「こんにちは！」 CH「こんにちは！」 BS「"
+    }
+   ],
+   "loopPct": 2.66,
+   "movedBody": false
   }
  ],
  "bestVal": 2.7996,
@@ -12649,5 +12649,5 @@
  ],
  "wantWider": false,
  "nextD": 768,
- "bad": 1
+ "bad": 2
 }
