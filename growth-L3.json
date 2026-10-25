@@ -1,69 +1,6 @@
 {
  "runs": [
   {
-   "at": "2026-10-14T08:16:02Z",
-   "val": 2.8841,
-   "prev": 2.8841,
-   "valTag": "fixed-holdout-v1",
-   "stoppedAt": 759,
-   "stuck": 1,
-   "evalTag": "fixed-ix-v1",
-   "secPerStep": 4.8946,
-   "steps": 972,
-   "bpc": 3.4136,
-   "charsPerTok": 1.2189,
-   "score": 2.2628,
-   "scoreW": 2.0,
-   "scoreMode": "talk",
-   "finishMix": 0.2,
-   "lineage": "L3",
-   "layers": 14,
-   "params": 27105408,
-   "chars": 1045308899,
-   "tokens": 857567631,
-   "grew": 0,
-   "rolledBack": true,
-   "ownVal": 2.8826,
-   "ownScore": 2.2846,
-   "d": 384,
-   "loops": 1,
-   "spread": 2.8678,
-   "bytes": 325385901,
-   "heads": 6,
-   "ctx": 512,
-   "vocab": 6000,
-   "kind": "bpe",
-   "arch": "tpp-loop",
-   "wantWider": false,
-   "layerCap": 16,
-   "mixChanged": false,
-   "bySrc": {
-    "laws": 4.0021,
-    "wiki": 3.0612,
-    "aozora": 3.3696,
-    "hanrei": 3.6037,
-    "kokkai": 2.6618,
-    "web": 2.968,
-    "talk": 2.2846
-   },
-   "wrote": [
-    {
-     "start": "わたしは",
-     "text": "わたしは春というチャンネルを転覆させていた。 2019年8月26日、佐賀市の渡辺郷で「Deen On Antoshics of Wild Me of the Antoshics Gost Mobiles of Wild Spone"
-    },
-    {
-     "start": "第一条",
-     "text": "第一条各号に掲げるものは、次に掲げるをし、又はれることができる。 （特定特定特定特定特定特定特定特定特定特定特定特定特定特定特定特定特定特定特定特定特定特定特定特定特定特定特定特定特定特定�る特定特定特定特定特定特定特定特定特定特定特定特定特定特定特定特定特定特定特定特定特定特定特定特定特定特定特定特定特定特定特定特定特定特定特定特定特定特定特定特定特定特定特定特定特定特定特定特定特定特定特定特定特定特定特定特定特定特定特定特定特定特定"
-    },
-    {
-     "start": "この法律において",
-     "text": "この法律において「危険防止等地域型社会」という。）に位置づけられている。 ローマ字 はローマ字（ 英 : sfréscherlus, hullixna sicech ）。 この他に、 ローマ字 （ 英語 : hullixna sic"
-    }
-   ],
-   "loopPct": 30.78,
-   "movedBody": false
-  },
-  {
    "at": "2026-10-14T09:32:51Z",
    "val": 2.8396,
    "prev": 2.8841,
@@ -12599,9 +12536,72 @@
    ],
    "loopPct": 2.34,
    "movedBody": false
+  },
+  {
+   "at": "2026-10-25T12:16:11Z",
+   "val": 2.6275,
+   "prev": 2.6284,
+   "valTag": "fixed-holdout-v1",
+   "stoppedAt": 632,
+   "stuck": 0,
+   "evalTag": "fixed-ix-v1",
+   "secPerStep": 5.9138,
+   "steps": 1065,
+   "bpc": 3.1098,
+   "charsPerTok": 1.2189,
+   "score": 2.1023,
+   "scoreW": 2.0,
+   "scoreMode": "talk",
+   "finishMix": 0.2,
+   "lineage": "L3",
+   "layers": 14,
+   "params": 27105408,
+   "chars": 1045308899,
+   "tokens": 857567631,
+   "grew": 0,
+   "rolledBack": false,
+   "ownVal": null,
+   "ownScore": null,
+   "d": 384,
+   "loops": 1,
+   "spread": 2.5926,
+   "bytes": 325385901,
+   "heads": 6,
+   "ctx": 512,
+   "vocab": 6000,
+   "kind": "bpe",
+   "arch": "tpp-loop",
+   "wantWider": false,
+   "layerCap": 16,
+   "mixChanged": false,
+   "bySrc": {
+    "laws": 3.5486,
+    "wiki": 2.772,
+    "aozora": 3.1158,
+    "hanrei": 3.3653,
+    "kokkai": 2.4465,
+    "web": 2.7075,
+    "talk": 2.1023
+   },
+   "wrote": [
+    {
+     "start": "わたしは",
+     "text": "わたしは落ち着くところのようだった。だけど、わたしはゆっくりと凝ったまま、みんなのようだった。 「おい！ 馬鹿徳将軍」と、こう答えた。「わたしは馬鹿をなさずに、それをひっくり返してしまった。馬鹿の遺骸が、おりきとこいこい雨"
+    },
+    {
+     "start": "第一条",
+     "text": "第一条（１）の 第１項に定める「ロイヤルエクスプレス」とは，「ロイヤルエクスプレス．」のうち，「ロイヤルエクスプレス」のロイヤルエクスプレス場であった。 したがって，平成１２年３月１９日，Ｃクレスト（５８８３ホール）は，「ロイヤ"
+    },
+    {
+     "start": "この法律において",
+     "text": "この法律において「基本基本計画」としている。 ただし、これらの計画は、当該基本計画の策定、実施及び実施の状況、当該基本計画の実施状況等を総合的に勘案し、当該基本計画の策定、実施した内容を適切に記録した上で、当該基本計画が達成されることを前提としている。 （基本計画の策定及び実施） �としては、基本計画の策定及び実施状況、基本計画の策定、実施状況、基本計画及び実施状況、基本計画の実施"
+    }
+   ],
+   "loopPct": 4.32,
+   "movedBody": false
   }
  ],
- "bestVal": 2.6284,
+ "bestVal": 2.6275,
  "layers": 14,
  "params": 27105408,
  "born": "2026-09-12T18:05:42Z",
@@ -12649,5 +12649,5 @@
  ],
  "wantWider": false,
  "nextD": 384,
- "bad": 9
+ "bad": 4
 }
