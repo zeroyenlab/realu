@@ -1,69 +1,6 @@
 {
  "runs": [
   {
-   "at": "2026-10-14T17:20:33Z",
-   "val": 2.8761,
-   "prev": 2.8753,
-   "valTag": "fixed-holdout-v1",
-   "stoppedAt": 176,
-   "stuck": 0,
-   "evalTag": "fixed-ix-v1",
-   "secPerStep": 23.3388,
-   "steps": 300,
-   "bpc": 3.404,
-   "charsPerTok": 1.2189,
-   "score": 2.1436,
-   "scoreW": 2.0,
-   "scoreMode": "talk",
-   "finishMix": 0.5,
-   "lineage": "L1",
-   "layers": 16,
-   "params": 117914880,
-   "chars": 1045308899,
-   "tokens": 857567631,
-   "grew": 0,
-   "rolledBack": false,
-   "ownVal": null,
-   "ownScore": null,
-   "d": 768,
-   "loops": 1,
-   "spread": 2.8505,
-   "bytes": 1415115957,
-   "heads": 6,
-   "ctx": 512,
-   "vocab": 6000,
-   "kind": "bpe",
-   "arch": "tpp-loop",
-   "wantWider": false,
-   "layerCap": 16,
-   "mixChanged": false,
-   "bySrc": {
-    "laws": 4.0927,
-    "wiki": 3.032,
-    "aozora": 3.386,
-    "hanrei": 3.4845,
-    "kokkai": 2.6501,
-    "web": 2.9156,
-    "talk": 2.1436
-   },
-   "wrote": [
-    {
-     "start": "わたしは",
-     "text": "わたしは田中康郎さんですか？」 AL「いえ、田中さん、あとは驚きました。」 BA「田中さんは素敵です！」 AL「田中造さん、トロトロ大使館、台湾大使館まで行きました」 BA「へー！！」 AL「あの知り合いの息子で"
-    },
-    {
-     "start": "第一条",
-     "text": "第一条アルベルベルグ、スパークス、スパイイ、スパイイ及びスパイジー、スパイス、スパイス、スパイス、スパイス、スパイス、苦富ビジティア、スパイス、スパイス、スポンサー。スパイスはスパイスと呼ばれる。 スパイスはスパイスとC系のスパイスに換装"
-    },
-    {
-     "start": "この法律において",
-     "text": "この法律においてよくなってます。」 AQ「いいですね！」 AQ「こんばんは。」 CH「こんばんは、こちらこそ。」 AQ「しょっぱいの匂いが好きですか？」 CH「ちょっと親戚が好きですよ"
-    }
-   ],
-   "loopPct": 22.4,
-   "movedBody": false
-  },
-  {
    "at": "2026-10-14T18:49:39Z",
    "val": 2.8718,
    "prev": 2.8761,
@@ -12599,6 +12536,69 @@
    ],
    "loopPct": 0.69,
    "movedBody": false
+  },
+  {
+   "at": "2026-10-25T22:21:29Z",
+   "val": 2.8045,
+   "prev": 2.8126,
+   "valTag": "fixed-holdout-v1",
+   "stoppedAt": 179,
+   "stuck": 0,
+   "evalTag": "fixed-ix-v1",
+   "secPerStep": 23.0092,
+   "steps": 319,
+   "bpc": 3.3193,
+   "charsPerTok": 1.2189,
+   "score": 2.1153,
+   "scoreW": 2.0,
+   "scoreMode": "talk",
+   "finishMix": 0.5,
+   "lineage": "L1",
+   "layers": 16,
+   "params": 117914880,
+   "chars": 1045308899,
+   "tokens": 857567631,
+   "grew": 0,
+   "rolledBack": false,
+   "ownVal": null,
+   "ownScore": null,
+   "d": 768,
+   "loops": 1,
+   "spread": 2.9645,
+   "bytes": 1415115957,
+   "heads": 6,
+   "ctx": 512,
+   "vocab": 6000,
+   "kind": "bpe",
+   "arch": "tpp-loop",
+   "wantWider": false,
+   "layerCap": 16,
+   "mixChanged": false,
+   "bySrc": {
+    "laws": 3.9261,
+    "wiki": 2.9576,
+    "aozora": 3.3188,
+    "hanrei": 3.4253,
+    "kokkai": 2.5929,
+    "web": 2.8448,
+    "talk": 2.1153
+   },
+   "wrote": [
+    {
+     "start": "わたしは",
+     "text": "わたしは、これまでに太田さんがいらっしゃるやつは少しずつ何とかしてたんです。 それが、私は言葉のなかで云うことはない。私はいろいろな言葉を持っていた事があるので、私も後で言って、私から言っていました。それから私はちょっと変な情報になっていながら、あな"
+    },
+    {
+     "start": "第一条",
+     "text": "第一条第二号又は次の表の上欄に掲げる満了の日 地方税法の一部を改正する法律（平成十六年法律第八十九号。以下「平成十六年政令第三百四十三号」という。）附則第十九条等に係る所得税第三十七条第五十二号 平成九年四職業紹介法第九十一条に規定する預金に掲載する債務の保証に関する法律（以下「法」という。）> 平成十九年政令第三百七十九号 平成十三年政令第三百六十六号 平成十六年政令第二節考慮する 平成十三を行おうとする場合の内閣府令で定める者からの"
+    },
+    {
+     "start": "この法律において",
+     "text": "この法律において同年七月二十七日及び二十三日に神戸から神戸から神戸にて行われた神戸市の南へ至る自動車（神戸市）について大阪府と神戸市の間では、神戸市と神戸市、神戸市、神戸市、神戸市、神戸市、神戸市、神戸市、神戸市、神戸市、神戸市、神戸市、川崎市、神戸市、神戸市"
+    }
+   ],
+   "loopPct": 18.78,
+   "movedBody": false
   }
  ],
  "bestVal": 2.7996,
@@ -12649,5 +12649,5 @@
  ],
  "wantWider": false,
  "nextD": 768,
- "bad": 2
+ "bad": 3
 }
