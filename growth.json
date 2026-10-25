@@ -1,69 +1,6 @@
 {
  "runs": [
   {
-   "at": "2026-10-14T09:39:07Z",
-   "val": 2.8811,
-   "prev": 2.8835,
-   "valTag": "fixed-holdout-v1",
-   "stoppedAt": 157,
-   "stuck": 0,
-   "evalTag": "fixed-ix-v1",
-   "secPerStep": 26.4784,
-   "steps": 320,
-   "bpc": 3.41,
-   "charsPerTok": 1.2189,
-   "score": 2.141,
-   "scoreW": 2.0,
-   "scoreMode": "talk",
-   "finishMix": 0.5,
-   "lineage": "L1",
-   "layers": 16,
-   "params": 117914880,
-   "chars": 1045308899,
-   "tokens": 857567631,
-   "grew": 0,
-   "rolledBack": false,
-   "ownVal": null,
-   "ownScore": null,
-   "d": 768,
-   "loops": 1,
-   "spread": 3.1333,
-   "bytes": 1415115957,
-   "heads": 6,
-   "ctx": 512,
-   "vocab": 6000,
-   "kind": "bpe",
-   "arch": "tpp-loop",
-   "wantWider": false,
-   "layerCap": 16,
-   "mixChanged": false,
-   "bySrc": {
-    "laws": 4.1038,
-    "wiki": 3.0372,
-    "aozora": 3.3921,
-    "hanrei": 3.4828,
-    "kokkai": 2.6557,
-    "web": 2.9179,
-    "talk": 2.141
-   },
-   "wrote": [
-    {
-     "start": "わたしは",
-     "text": "わたしは！」 FD「うわー、映画見たいですよね。」 FZ「ゲームとかも結構すごいですよね」 FD「ですね。ポケモンもしました。」 FZ「なるほど、やばいですよね、いつもより手が出ますが」 FD「ですよね。まだ手をつけてしまいます」"
-    },
-    {
-     "start": "第一条",
-     "text": "第一条第一号」と「本店」、「商品販売事業」の次に「(｟)」と「レコード・密封販事業」とは「レコード事業」と訳し、これらを「レコード・カレッジ・コレクション（レコード・サーティー）と呼ばれることがある。 「レコード・サーティー」とも称される。 「レコード」の字幕は「レコード」で「"
-    },
-    {
-     "start": "この法律において",
-     "text": "この法律において「ココアはココム・ココム・ココム」が1997年に制定した 。 1979年9月12日、「アニメイター」が『ココム・ココム』1977年11月1日より制作したものである 。映画監督は2013年7月2日より映画監督『ココム・コミックス』と題"
-    }
-   ],
-   "loopPct": 8.87,
-   "movedBody": false
-  },
-  {
    "at": "2026-10-14T10:56:32Z",
    "val": 2.8771,
    "prev": 2.8811,
@@ -12599,6 +12536,69 @@
    ],
    "loopPct": 4.02,
    "movedBody": false
+  },
+  {
+   "at": "2026-10-25T14:54:05Z",
+   "val": 2.8045,
+   "prev": 2.8069,
+   "valTag": "fixed-holdout-v1",
+   "stoppedAt": 160,
+   "stuck": 0,
+   "evalTag": "fixed-ix-v1",
+   "secPerStep": 26.0689,
+   "steps": 300,
+   "bpc": 3.3194,
+   "charsPerTok": 1.2189,
+   "score": 2.1072,
+   "scoreW": 2.0,
+   "scoreMode": "talk",
+   "finishMix": 0.5,
+   "lineage": "L1",
+   "layers": 16,
+   "params": 117914880,
+   "chars": 1045308899,
+   "tokens": 857567631,
+   "grew": 0,
+   "rolledBack": false,
+   "ownVal": null,
+   "ownScore": null,
+   "d": 768,
+   "loops": 1,
+   "spread": 2.9885,
+   "bytes": 1415115957,
+   "heads": 6,
+   "ctx": 512,
+   "vocab": 6000,
+   "kind": "bpe",
+   "arch": "tpp-loop",
+   "wantWider": false,
+   "layerCap": 16,
+   "mixChanged": false,
+   "bySrc": {
+    "laws": 3.9218,
+    "wiki": 2.9566,
+    "aozora": 3.3183,
+    "hanrei": 3.4194,
+    "kokkai": 2.5932,
+    "web": 2.8425,
+    "talk": 2.1072
+   },
+   "wrote": [
+    {
+     "start": "わたしは",
+     "text": "わたしはやはりやりたいなと思うんですね。」 EL「憧れます。でも、目指すのは、冷たいアクションですし。」 GX「あー。結構良いですよね。」 EL「そうですね、結構アクション系ですけど。」 GX「結構、きっとどっかですね。」 EL「お酒"
+    },
+    {
+     "start": "第一条",
+     "text": "第一条ロロドロフスキンは、スウェーデンのバルカン半島を歩いていた [ 38 ] 。 19世紀半ばに 19世紀 末から19世紀後半にかけて、スウェーデンの スウェーデンの バルカン半島 で チェコスロバキア に住む。 ス"
+    },
+    {
+     "start": "この法律において",
+     "text": "この法律において「利益査定」という。）が、当該資産の賃金を示す場合に、当該資産に係る資産を第一項第二号に計上しなければならない。 （資産の吸収替え） 第三十七条 資産に係る資産に疑義を述べる場合には、資産は、その資産により、資産及び資産に由来する資産に役立てなければならない。 資産は、資産及び資産で持つ資産に占める資産を有し、含み益をすることなく、資産及び資産の減少を獲得することができる。 資産が資産及び資産を"
+    }
+   ],
+   "loopPct": 8.26,
+   "movedBody": false
   }
  ],
  "bestVal": 2.7996,
@@ -12649,5 +12649,5 @@
  ],
  "wantWider": false,
  "nextD": 768,
- "bad": 1
+ "bad": 2
 }
