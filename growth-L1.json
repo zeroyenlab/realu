@@ -1,69 +1,6 @@
 {
  "runs": [
   {
-   "at": "2026-10-14T08:21:52Z",
-   "val": 2.8835,
-   "prev": 2.8809,
-   "valTag": "fixed-holdout-v1",
-   "stoppedAt": 202,
-   "stuck": 0,
-   "evalTag": "fixed-ix-v1",
-   "secPerStep": 20.0676,
-   "steps": 300,
-   "bpc": 3.4128,
-   "charsPerTok": 1.2189,
-   "score": 2.1418,
-   "scoreW": 2.0,
-   "scoreMode": "talk",
-   "finishMix": 0.5,
-   "lineage": "L1",
-   "layers": 16,
-   "params": 117914880,
-   "chars": 1045308899,
-   "tokens": 857567631,
-   "grew": 0,
-   "rolledBack": false,
-   "ownVal": null,
-   "ownScore": null,
-   "d": 768,
-   "loops": 1,
-   "spread": 2.8569,
-   "bytes": 1415115957,
-   "heads": 6,
-   "ctx": 512,
-   "vocab": 6000,
-   "kind": "bpe",
-   "arch": "tpp-loop",
-   "wantWider": false,
-   "layerCap": 16,
-   "mixChanged": false,
-   "bySrc": {
-    "laws": 4.1079,
-    "wiki": 3.0393,
-    "aozora": 3.3945,
-    "hanrei": 3.4856,
-    "kokkai": 2.656,
-    "web": 2.919,
-    "talk": 2.1418
-   },
-   "wrote": [
-    {
-     "start": "わたしは",
-     "text": "わたしは、ちょっと僕は前私が、おかしなことに、どういう事かといっても、私は、僕がそういうことを言う気持ちを私としては考えますと、昨日の議論でもこの問題をまずこれは、おとしい従兄弟の中で一切まざるを得ないと思います。そうして、日本がそういう対処を知ら"
-    },
-    {
-     "start": "第一条",
-     "text": "第一条、「国際条第一項第二号」は、国際機関としての連携を強化し、国際連合の国際機関、国際機関等、国際機関の協力により国際機関、国際連合機関、国際機関砲（国際連合機関）の国際機関であると表明している。 国際機関としては、国際機関、国際機関、国際機関、国際機関、国際機関、国際機関、国際機関、国際機関、国際機関等、国際機関、国際機関、国際機関、国際機関、国際機関、国際機関、国際機関、"
-    },
-    {
-     "start": "この法律において",
-     "text": "この法律において「HEA」「UNIVE」「UNIVER」「SUNIVERVER」「SUVERVER」「UNIVERVER」「100h」「2002年9月」「100th」「2003年9月」「ユニフォーム」「100VER」「100RVER」「"
-    }
-   ],
-   "loopPct": 33.03,
-   "movedBody": false
-  },
-  {
    "at": "2026-10-14T09:39:07Z",
    "val": 2.8811,
    "prev": 2.8835,
@@ -12599,6 +12536,69 @@
    ],
    "loopPct": 7.11,
    "movedBody": false
+  },
+  {
+   "at": "2026-10-25T13:37:46Z",
+   "val": 2.8069,
+   "prev": 2.8069,
+   "valTag": "fixed-holdout-v1",
+   "stoppedAt": 158,
+   "stuck": 0,
+   "evalTag": "fixed-ix-v1",
+   "secPerStep": 26.2931,
+   "steps": 300,
+   "bpc": 3.3222,
+   "charsPerTok": 1.2189,
+   "score": 2.118,
+   "scoreW": 2.0,
+   "scoreMode": "talk",
+   "finishMix": 0.5,
+   "lineage": "L1",
+   "layers": 16,
+   "params": 117914880,
+   "chars": 1045308899,
+   "tokens": 857567631,
+   "grew": 0,
+   "rolledBack": false,
+   "ownVal": null,
+   "ownScore": null,
+   "d": 768,
+   "loops": 1,
+   "spread": 3.045,
+   "bytes": 1415115957,
+   "heads": 6,
+   "ctx": 512,
+   "vocab": 6000,
+   "kind": "bpe",
+   "arch": "tpp-loop",
+   "wantWider": false,
+   "layerCap": 16,
+   "mixChanged": false,
+   "bySrc": {
+    "laws": 3.9308,
+    "wiki": 2.9608,
+    "aozora": 3.3159,
+    "hanrei": 3.4264,
+    "kokkai": 2.5926,
+    "web": 2.8462,
+    "talk": 2.118
+   },
+   "wrote": [
+    {
+     "start": "わたしは",
+     "text": "わたしはしばらく買ってました。」 AA「でも、グッとイチゴを買ったので、今はもう買わなかったのですか？」 AT「そうですね、結構そういうのがかなり長かったです。」 AA「みんなで食べるとすぐに使えるんですか？」 AT「作るのが嫌です"
+    },
+    {
+     "start": "第一条",
+     "text": "第一条にある物品（当該品目を承継する電子記録権を有するものに限る。）とする。 （特定材料億円の落札金額の優先順位の次に掲げる要件のの区域内の土地の返還等） 第四十四条 特定粉ＭＳＭＳＡＭ５０のところに、特定材料購入者以外で、当該製品の製造業者の年金を支払った場合には、当該製造業者である特定製品について、特定物品の購入する特定製品を輸入している者が、当該製品の需給の安定した価格に影響を及ぼしていない日まで、"
+    },
+    {
+     "start": "この法律において",
+     "text": "この法律において「旧非�」は、旧市 と区別されており、市は市の名を冠した市で、市の名に由来する。 市名は、 神奈川県 と旧 銀河 の名残である。 市名は 三河国の 舞 （ そうしま ） [ 8 ] や 三河済島 の 八幡平 （ももと たいむ、"
+    }
+   ],
+   "loopPct": 4.02,
+   "movedBody": false
   }
  ],
  "bestVal": 2.7996,
@@ -12649,5 +12649,5 @@
  ],
  "wantWider": false,
  "nextD": 768,
- "bad": 0
+ "bad": 1
 }
