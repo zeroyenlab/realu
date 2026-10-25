@@ -1,69 +1,6 @@
 {
  "runs": [
   {
-   "at": "2026-10-14T16:03:27Z",
-   "val": 2.8753,
-   "prev": 2.878,
-   "valTag": "fixed-holdout-v1",
-   "stoppedAt": 141,
-   "stuck": 0,
-   "evalTag": "fixed-ix-v1",
-   "secPerStep": 30.0851,
-   "steps": 300,
-   "bpc": 3.4032,
-   "charsPerTok": 1.2189,
-   "score": 2.1455,
-   "scoreW": 2.0,
-   "scoreMode": "talk",
-   "finishMix": 0.5,
-   "lineage": "L1",
-   "layers": 16,
-   "params": 117914880,
-   "chars": 1045308899,
-   "tokens": 857567631,
-   "grew": 0,
-   "rolledBack": false,
-   "ownVal": null,
-   "ownScore": null,
-   "d": 768,
-   "loops": 1,
-   "spread": 3.3086,
-   "bytes": 1415115957,
-   "heads": 6,
-   "ctx": 512,
-   "vocab": 6000,
-   "kind": "bpe",
-   "arch": "tpp-loop",
-   "wantWider": false,
-   "layerCap": 16,
-   "mixChanged": false,
-   "bySrc": {
-    "laws": 4.0872,
-    "wiki": 3.0295,
-    "aozora": 3.3888,
-    "hanrei": 3.4813,
-    "kokkai": 2.6515,
-    "web": 2.9127,
-    "talk": 2.1455
-   },
-   "wrote": [
-    {
-     "start": "わたしは",
-     "text": "わたしは大阪でもやっていますよ。」 BS「えぇ！美味しいですよね。」 BZ「そうですね。ちょっとお腹がすいてきました。」 BS「私もです。あなたはどんなご褒美ですか？」 BZ「お腹すきました。」 BS「え？」 B"
-    },
-    {
-     "start": "第一条",
-     "text": "第一条核燃料物質農林水産大臣に提出しなければならない。 （銚子真機選択含有量） 高等学校は、発達障害の一方の刷り込みを防ごうとする。 （用語） （表現の自粛） 身長1949.41ak（発感度表数02.5、裏面数（約210）） （富士重工）部長は、単位数（約38.6万）に分け"
-    },
-    {
-     "start": "この法律において",
-     "text": "この法律において「紙youthyotories」（40年）」としている [ 38 ] 。 2023年3月 - 「 情報ソフトウェア 」（8月）「 AV 」（8月 - 7月）が、 情報・サービス を、AVCDとのコンテンツサービス「 AVCD 」（9月）へのIV"
-    }
-   ],
-   "loopPct": 0.73,
-   "movedBody": false
-  },
-  {
    "at": "2026-10-14T17:20:33Z",
    "val": 2.8761,
    "prev": 2.8753,
@@ -12599,6 +12536,69 @@
    ],
    "loopPct": 1.09,
    "movedBody": false
+  },
+  {
+   "at": "2026-10-25T21:04:00Z",
+   "val": 2.8126,
+   "prev": 2.812,
+   "valTag": "fixed-holdout-v1",
+   "stoppedAt": 0,
+   "stuck": 0,
+   "evalTag": "fixed-ix-v1",
+   "secPerStep": 12.5924,
+   "steps": 300,
+   "bpc": 3.3289,
+   "charsPerTok": 1.2189,
+   "score": 2.1147,
+   "scoreW": 2.0,
+   "scoreMode": "talk",
+   "finishMix": 0.5,
+   "lineage": "L1",
+   "layers": 16,
+   "params": 117914880,
+   "chars": 1045308899,
+   "tokens": 857567631,
+   "grew": 0,
+   "rolledBack": false,
+   "ownVal": null,
+   "ownScore": null,
+   "d": 768,
+   "loops": 1,
+   "spread": 3.0176,
+   "bytes": 1415115957,
+   "heads": 6,
+   "ctx": 512,
+   "vocab": 6000,
+   "kind": "bpe",
+   "arch": "tpp-loop",
+   "wantWider": false,
+   "layerCap": 16,
+   "mixChanged": false,
+   "bySrc": {
+    "laws": 3.9317,
+    "wiki": 2.9646,
+    "aozora": 3.3215,
+    "hanrei": 3.4289,
+    "kokkai": 2.6002,
+    "web": 2.8548,
+    "talk": 2.1147
+   },
+   "wrote": [
+    {
+     "start": "わたしは",
+     "text": "わたしは大きな顔をしていた。 「おい。あの2人は1人だが…」藤原は6人とも少しずつ出された。「キンドウハンド」がユウイの魔法使いで出ると、ギャングの人物が生まれると、お前はゾンバの眼を伸ばすようになっていった。 「仟、お前」が「アイ"
+    },
+    {
+     "start": "第一条",
+     "text": "第一条の規定に反する旨述べ、討論に入り、討論を終わります。（拍手）」 AA「私は、自由民主党を代表して、ただいま議題となりました平成二年度以後における財政計画の策定について、総理並びに関係大臣に質問をします。 第一点は、アメリカの財政事情に照らし、国連の行動の責任を果たしたいと考えており�"
+    },
+    {
+     "start": "この法律において",
+     "text": "この法律において「区画整理館」等） 疎明式ホームセンター（東側） ビデオ・ケーブル セイミネーション（東側） セイミネーション・ステアリングハウス・ステアリングホーム（セイミネーションズ） セイミネーション・ステアリングホイール（トレイ・グレイ） セイミネーション・デイ・エス（セイミ"
+    }
+   ],
+   "loopPct": 0.69,
+   "movedBody": false
   }
  ],
  "bestVal": 2.7996,
@@ -12649,5 +12649,5 @@
  ],
  "wantWider": false,
  "nextD": 768,
- "bad": 0
+ "bad": 2
 }
