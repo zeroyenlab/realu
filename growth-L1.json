@@ -1,69 +1,6 @@
 {
  "runs": [
   {
-   "at": "2026-10-16T06:26:17Z",
-   "val": 2.8722,
-   "prev": 2.8782,
-   "valTag": "fixed-holdout-v1",
-   "stoppedAt": 159,
-   "stuck": 0,
-   "evalTag": "fixed-ix-v1",
-   "secPerStep": 26.1212,
-   "steps": 330,
-   "bpc": 3.3995,
-   "charsPerTok": 1.2189,
-   "score": 2.1396,
-   "scoreW": 2.0,
-   "scoreMode": "talk",
-   "finishMix": 0.5,
-   "lineage": "L1",
-   "layers": 16,
-   "params": 117914880,
-   "chars": 1045308899,
-   "tokens": 857567631,
-   "grew": 0,
-   "rolledBack": false,
-   "ownVal": null,
-   "ownScore": null,
-   "d": 768,
-   "loops": 1,
-   "spread": 3.0204,
-   "bytes": 1415115957,
-   "heads": 6,
-   "ctx": 512,
-   "vocab": 6000,
-   "kind": "bpe",
-   "arch": "tpp-loop",
-   "wantWider": false,
-   "layerCap": 16,
-   "mixChanged": false,
-   "bySrc": {
-    "laws": 4.0816,
-    "wiki": 3.0331,
-    "aozora": 3.3828,
-    "hanrei": 3.4787,
-    "kokkai": 2.6446,
-    "web": 2.9104,
-    "talk": 2.1396
-   },
-   "wrote": [
-    {
-     "start": "わたしは",
-     "text": "わたしは、実際の不祥事後であったことを明かしているのではないでしょうか。このことを明らかにしてください。 まず、これはみずから考えると、少しも国民はもう振り返ってみますと、そのことを国民に課せられる景気に陥ると、国民の 合理化の中で仲間が出てきているのであろうかと思います。」 AB「そう"
-    },
-    {
-     "start": "第一条",
-     "text": "第一条ハハハハハチワグハンターハンターハンターハンターハンターハンターハンターハンターハンターハンターマンション。 2013年 - インカーファイトハンター （当時） 大塚聡 （当時 日本ハムハンターハンター ） 聖バカン （ 中国語版 ） （ 中国語�"
-    },
-    {
-     "start": "この法律において",
-     "text": "この法律において「レンズ等」をコアとした「レンズ キング ドライブ」を収録した作品。 2026年1月31日、 イーネット・バンダイ の「レンズ100」を発売。 2026年2月18日、 Newstern Sound The Microsoft Su"
-    }
-   ],
-   "loopPct": 18.14,
-   "movedBody": false
-  },
-  {
    "at": "2026-10-16T07:43:51Z",
    "val": 2.8727,
    "prev": 2.8722,
@@ -12599,9 +12536,72 @@
    ],
    "loopPct": 15.08,
    "movedBody": false
+  },
+  {
+   "at": "2026-10-26T22:29:13Z",
+   "val": 2.7964,
+   "prev": 2.8028,
+   "valTag": "fixed-holdout-v1",
+   "stoppedAt": 159,
+   "stuck": 0,
+   "evalTag": "fixed-ix-v1",
+   "secPerStep": 26.26,
+   "steps": 300,
+   "bpc": 3.3097,
+   "charsPerTok": 1.2189,
+   "score": 2.1219,
+   "scoreW": 2.0,
+   "scoreMode": "talk",
+   "finishMix": 0.5,
+   "lineage": "L1",
+   "layers": 16,
+   "params": 117914880,
+   "chars": 1045308899,
+   "tokens": 857567631,
+   "grew": 0,
+   "rolledBack": false,
+   "ownVal": null,
+   "ownScore": null,
+   "d": 768,
+   "loops": 1,
+   "spread": 2.7833,
+   "bytes": 1415115957,
+   "heads": 6,
+   "ctx": 512,
+   "vocab": 6000,
+   "kind": "bpe",
+   "arch": "tpp-loop",
+   "wantWider": false,
+   "layerCap": 16,
+   "mixChanged": false,
+   "bySrc": {
+    "laws": 3.9128,
+    "wiki": 2.944,
+    "aozora": 3.3134,
+    "hanrei": 3.4121,
+    "kokkai": 2.5909,
+    "web": 2.845,
+    "talk": 2.1219
+   },
+   "wrote": [
+    {
+     "start": "わたしは",
+     "text": "わたしは午後6時ごろに？」 FR「そうですね。私は午後3時くらいまでずっとやってます。」 DY「午前中は午後になってもやめられないんですね。。」 FR「午後は何されてますか？」 DY「午後は午後から午後ですね。午後は午後から"
+    },
+    {
+     "start": "第一条",
+     "text": "第一条�正本三四六四一 平成七年四月二十八日質疑を終了いたしました。 以上をもって私の質問を終わります。（拍手）」 AA「国務大臣 森友議員にお答えいたします。 まず、農村を守る町づくりに向けた御強いお一人でございます。 農村を守るためには、農村を守り"
+    },
+    {
+     "start": "この法律において",
+     "text": "この法律において「降雨増車」「帯向」「道中」「隠鏡」「徳鳴」「道鏡風」「道場」「道徳」「道徳」「道徳」「道徳的」「道徳的」「道徳的」「道徳的」「道徳も含む『道徳的解釈』など「道徳的検討」を進"
+    }
+   ],
+   "loopPct": 16.42,
+   "movedBody": false
   }
  ],
- "bestVal": 2.797,
+ "bestVal": 2.7964,
  "layers": 16,
  "params": 117914880,
  "born": "2026-09-08T15:11:54Z",
@@ -12649,5 +12649,5 @@
  ],
  "wantWider": false,
  "nextD": 768,
- "bad": 0
+ "bad": 1
 }
