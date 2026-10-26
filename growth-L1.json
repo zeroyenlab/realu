@@ -1,69 +1,6 @@
 {
  "runs": [
   {
-   "at": "2026-10-16T05:06:39Z",
-   "val": 2.8782,
-   "prev": 2.8688,
-   "valTag": "fixed-holdout-v1",
-   "stoppedAt": 0,
-   "stuck": 0,
-   "evalTag": "fixed-ix-v1",
-   "secPerStep": 10.8879,
-   "steps": 330,
-   "bpc": 3.4066,
-   "charsPerTok": 1.2189,
-   "score": 2.1416,
-   "scoreW": 2.0,
-   "scoreMode": "talk",
-   "finishMix": 0.5,
-   "lineage": "L1",
-   "layers": 16,
-   "params": 117914880,
-   "chars": 1045308899,
-   "tokens": 857567631,
-   "grew": 0,
-   "rolledBack": false,
-   "ownVal": null,
-   "ownScore": null,
-   "d": 768,
-   "loops": 1,
-   "spread": 3.2223,
-   "bytes": 1415115957,
-   "heads": 6,
-   "ctx": 512,
-   "vocab": 6000,
-   "kind": "bpe",
-   "arch": "tpp-loop",
-   "wantWider": false,
-   "layerCap": 16,
-   "mixChanged": false,
-   "bySrc": {
-    "laws": 4.0955,
-    "wiki": 3.0375,
-    "aozora": 3.3914,
-    "hanrei": 3.4827,
-    "kokkai": 2.6525,
-    "web": 2.9159,
-    "talk": 2.1416
-   },
-   "wrote": [
-    {
-     "start": "わたしは",
-     "text": "わたしは、しばしば、むしろ、それはようございます。」 AA「しかし、ここですよね、こちらは。」 AB「このような状況をつくると、もうかるのだろうかと思う。」 AA「そして、それがどこかに書いてあるかとそういうことです。」 AB「ですから、これは差し控えたい"
-    },
-    {
-     "start": "第一条",
-     "text": "第一条リスクナルモデル幹部では、2002年にローレンス・トゥ・サン・カン・ヤーコプターと呼ばれる、1998年にアメリカ合衆国のバルカンで外国人を設立 。 第二次世界大戦後、平和条約を結ぶことは、自国との友好関係を築き上げた。 （ポーランドの現代の"
-    },
-    {
-     "start": "この法律において",
-     "text": "この法律において並�亡すべき義務があるというふうに考えられるわけでございます。」 AA「したがいまして、基本的に今まで何度も申し上げましたように、このような無駄遣いを取っていただくということが政治的な問題であるということは、私は委員長、そしてその復興法aの改正の一つとしての責任は極めて重大でございまして、そのようなこと"
-    }
-   ],
-   "loopPct": 6.16,
-   "movedBody": false
-  },
-  {
    "at": "2026-10-16T06:26:17Z",
    "val": 2.8722,
    "prev": 2.8782,
@@ -12599,6 +12536,69 @@
    ],
    "loopPct": 21.32,
    "movedBody": false
+  },
+  {
+   "at": "2026-10-26T21:11:24Z",
+   "val": 2.8028,
+   "prev": 2.8154,
+   "valTag": "fixed-holdout-v1",
+   "stoppedAt": 179,
+   "stuck": 0,
+   "evalTag": "fixed-ix-v1",
+   "secPerStep": 22.9291,
+   "steps": 300,
+   "bpc": 3.3174,
+   "charsPerTok": 1.2189,
+   "score": 2.1316,
+   "scoreW": 2.0,
+   "scoreMode": "talk",
+   "finishMix": 0.5,
+   "lineage": "L1",
+   "layers": 16,
+   "params": 117914880,
+   "chars": 1045308899,
+   "tokens": 857567631,
+   "grew": 0,
+   "rolledBack": false,
+   "ownVal": null,
+   "ownScore": null,
+   "d": 768,
+   "loops": 1,
+   "spread": 2.8059,
+   "bytes": 1415115957,
+   "heads": 6,
+   "ctx": 512,
+   "vocab": 6000,
+   "kind": "bpe",
+   "arch": "tpp-loop",
+   "wantWider": false,
+   "layerCap": 16,
+   "mixChanged": false,
+   "bySrc": {
+    "laws": 3.9262,
+    "wiki": 2.953,
+    "aozora": 3.3192,
+    "hanrei": 3.4157,
+    "kokkai": 2.5961,
+    "web": 2.8485,
+    "talk": 2.1316
+   },
+   "wrote": [
+    {
+     "start": "わたしは",
+     "text": "わたしは香をひっくり返している。 1982年1月15日付で、 大阪市営バス と呼ばれる、愛知県心理学部「 ふじかわ大阪市立大学 」を1984年に開設している。 1984年に先立つ 岐阜県立小学校 である 伊予鹿美 （現在の伊予国少"
+    },
+    {
+     "start": "第一条",
+     "text": "第一条アルフォンが2005年度、2005年度、2007年度に2005年度に米がリアルに1000万台、2005年度に2000万台で8000台の三日間に1000台を達成した 。また、2006年7月にMLBが1000台に、3000台の割合を2008年まで引き"
+    },
+    {
+     "start": "この法律において",
+     "text": "この法律において「海」を「 海底 」に統一している。 ↑ 日本語版では、現在の「 日活 」（現・ 日経平均 ）が用いられている。 ↑ 言語�版 が示すように、本来は「 魔界の魔界 」という言葉が使われている。 ↑ 多くの 治安流 は日本語では 中"
+    }
+   ],
+   "loopPct": 15.08,
+   "movedBody": false
   }
  ],
  "bestVal": 2.797,
@@ -12649,5 +12649,5 @@
  ],
  "wantWider": false,
  "nextD": 768,
- "bad": 2
+ "bad": 0
 }
