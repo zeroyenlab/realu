@@ -1,69 +1,6 @@
 {
  "runs": [
   {
-   "at": "2026-10-14T21:25:54Z",
-   "val": 2.8759,
-   "prev": 2.8754,
-   "valTag": "fixed-holdout-v1",
-   "stoppedAt": 156,
-   "stuck": 0,
-   "evalTag": "fixed-ix-v1",
-   "secPerStep": 26.817,
-   "steps": 300,
-   "bpc": 3.4038,
-   "charsPerTok": 1.2189,
-   "score": 2.1375,
-   "scoreW": 2.0,
-   "scoreMode": "talk",
-   "finishMix": 0.5,
-   "lineage": "L1",
-   "layers": 16,
-   "params": 117914880,
-   "chars": 1045308899,
-   "tokens": 857567631,
-   "grew": 0,
-   "rolledBack": false,
-   "ownVal": null,
-   "ownScore": null,
-   "d": 768,
-   "loops": 1,
-   "spread": 2.7699,
-   "bytes": 1415115957,
-   "heads": 6,
-   "ctx": 512,
-   "vocab": 6000,
-   "kind": "bpe",
-   "arch": "tpp-loop",
-   "wantWider": false,
-   "layerCap": 16,
-   "mixChanged": false,
-   "bySrc": {
-    "laws": 4.0887,
-    "wiki": 3.0306,
-    "aozora": 3.3886,
-    "hanrei": 3.4845,
-    "kokkai": 2.6526,
-    "web": 2.9123,
-    "talk": 2.1375
-   },
-   "wrote": [
-    {
-     "start": "わたしは",
-     "text": "わたしは、愛に愛を愛しかったこともあった。 『太陽』では、独身の話も聞かせてきたが、実父は自分で話して、兄の人間として嘘を言うかと、わたしは無言でいる。 『吉良夫妻の名は、おまるで中西靖太郎のことだが、"
-    },
-    {
-     "start": "第一条",
-     "text": "第一条第三号ロの視認性を作成した [ 63 ] 。 当時、ソビエト連邦政府は、この印象を「ソビエト連邦政府」に与え、侵略を約束した [ 65 ] 。 これは、ソビエト連邦とソビエト政府との間で ソビエト連邦政府 に位置づけられた。 ソビエト連邦政府"
-    },
-    {
-     "start": "この法律において",
-     "text": "この法律において「エセックス」の三つの「エセックス」が、シャボン玉が1898年に全籏を発売、1905年に11993年から1909年に発売された。 なお、この年のオルガンが「エセックス玉黒龍」から「エセックス」へと変更された。 <記事 南北線>"
-    }
-   ],
-   "loopPct": 1.38,
-   "movedBody": false
-  },
-  {
    "at": "2026-10-14T22:42:29Z",
    "val": 2.8743,
    "prev": 2.8759,
@@ -12599,6 +12536,69 @@
    ],
    "loopPct": 7.75,
    "movedBody": false
+  },
+  {
+   "at": "2026-10-26T02:06:52Z",
+   "val": 2.8017,
+   "prev": 2.8029,
+   "valTag": "fixed-holdout-v1",
+   "stoppedAt": 159,
+   "stuck": 0,
+   "evalTag": "fixed-ix-v1",
+   "secPerStep": 26.2278,
+   "steps": 461,
+   "bpc": 3.316,
+   "charsPerTok": 1.2189,
+   "score": 2.127,
+   "scoreW": 2.0,
+   "scoreMode": "talk",
+   "finishMix": 0.5,
+   "lineage": "L1",
+   "layers": 16,
+   "params": 117914880,
+   "chars": 1045308899,
+   "tokens": 857567631,
+   "grew": 0,
+   "rolledBack": false,
+   "ownVal": null,
+   "ownScore": null,
+   "d": 768,
+   "loops": 1,
+   "spread": 2.9559,
+   "bytes": 1415115957,
+   "heads": 6,
+   "ctx": 512,
+   "vocab": 6000,
+   "kind": "bpe",
+   "arch": "tpp-loop",
+   "wantWider": false,
+   "layerCap": 16,
+   "mixChanged": false,
+   "bySrc": {
+    "laws": 3.9225,
+    "wiki": 2.954,
+    "aozora": 3.3167,
+    "hanrei": 3.4272,
+    "kokkai": 2.5904,
+    "web": 2.8451,
+    "talk": 2.127
+   },
+   "wrote": [
+    {
+     "start": "わたしは",
+     "text": "わたしは、せいぜい、とりもと言っておられます。」 AB「やはり、例えば、さっきのケアトラックを御覧になったように、ぎりぎりのところに、食べる時間が来ると、食べる時間も、そのときに食べる時間もある時もあるということで、おいしいですが、しっかり食べてみたいと思います。"
+    },
+    {
+     "start": "第一条",
+     "text": "第一条業務を行うことを規定した。 ↑ 内閣語「内閣官房副長官」とは、内閣官房内閣における内閣の最高大臣に就任し、内閣官房長官に就任して、内閣官房副長官、内閣官房副長官そして内閣に内閣官房副長官を任務とする。 内閣官房副長官、内閣官房長官。 ↑ 内閣官房副長官総態様。 ↑ 内閣"
+    },
+    {
+     "start": "この法律において",
+     "text": "この法律において「昭和元年」 『 古代文学 』28ページ。 なお、こちらも1ページより多く、 7ページ に ジャック されたがこのページで表記は 西洋文学 ではなく、 Open のアニメーションを早く切り替えて [ 10 ] 、 ジャック・クルミ に"
+    }
+   ],
+   "loopPct": 7.31,
+   "movedBody": false
   }
  ],
  "bestVal": 2.7996,
@@ -12649,5 +12649,5 @@
  ],
  "wantWider": false,
  "nextD": 768,
- "bad": 0
+ "bad": 1
 }
