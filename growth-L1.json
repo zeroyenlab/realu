@@ -1,69 +1,6 @@
 {
  "runs": [
   {
-   "at": "2026-10-14T23:59:31Z",
-   "val": 2.8741,
-   "prev": 2.8743,
-   "valTag": "fixed-holdout-v1",
-   "stoppedAt": 177,
-   "stuck": 0,
-   "evalTag": "fixed-ix-v1",
-   "secPerStep": 23.2771,
-   "steps": 300,
-   "bpc": 3.4018,
-   "charsPerTok": 1.2189,
-   "score": 2.1402,
-   "scoreW": 2.0,
-   "scoreMode": "talk",
-   "finishMix": 0.5,
-   "lineage": "L1",
-   "layers": 16,
-   "params": 117914880,
-   "chars": 1045308899,
-   "tokens": 857567631,
-   "grew": 0,
-   "rolledBack": false,
-   "ownVal": null,
-   "ownScore": null,
-   "d": 768,
-   "loops": 1,
-   "spread": 3.1604,
-   "bytes": 1415115957,
-   "heads": 6,
-   "ctx": 512,
-   "vocab": 6000,
-   "kind": "bpe",
-   "arch": "tpp-loop",
-   "wantWider": false,
-   "layerCap": 16,
-   "mixChanged": false,
-   "bySrc": {
-    "laws": 4.0879,
-    "wiki": 3.0315,
-    "aozora": 3.3882,
-    "hanrei": 3.4728,
-    "kokkai": 2.6493,
-    "web": 2.9107,
-    "talk": 2.1402
-   },
-   "wrote": [
-    {
-     "start": "わたしは",
-     "text": "わたしは、原風山吹瀬のひとりに行きました。エアコンでも無理なものでした。」 CS「昔は何をやってるんでしたっけ？」 BW「最初はまだですね、お盆休みの宿題で新座の果物でしたが。」 CS「いいですね、、うちは涼しいですけど、夜は"
-    },
-    {
-     "start": "第一条",
-     "text": "第一条－2023年7月28日閲覧。 ↑ 「 「新職の小職」が早く進出 」『 Project 』2023年8月28日。 ↑ “ 「ニュースに出向きたい」『ニュース』『ニュース』2023年8月27日閲覧 ↑ “"
-    },
-    {
-     "start": "この法律において",
-     "text": "この法律において「文書」といった文書では特定しない。 例えば、書籍の文書を書くのに、文書を書くしようとしないと、文字で書き換えたように、書籍の統計によって書かれている。 例えば、古書の記事を書いている記録がある。 第3 - 1960年代から1980年代にかけて、詩づけと合わせて掲載するようにな"
-    }
-   ],
-   "loopPct": 9.54,
-   "movedBody": false
-  },
-  {
    "at": "2026-10-15T01:13:50Z",
    "val": 2.8785,
    "prev": 2.8741,
@@ -12599,6 +12536,69 @@
    ],
    "loopPct": 20.39,
    "movedBody": false
+  },
+  {
+   "at": "2026-10-26T04:32:07Z",
+   "val": 2.8113,
+   "prev": 2.8136,
+   "valTag": "fixed-holdout-v1",
+   "stoppedAt": 363,
+   "stuck": 0,
+   "evalTag": "fixed-ix-v1",
+   "secPerStep": 10.5819,
+   "steps": 451,
+   "bpc": 3.3273,
+   "charsPerTok": 1.2189,
+   "score": 2.1123,
+   "scoreW": 2.0,
+   "scoreMode": "talk",
+   "finishMix": 0.5,
+   "lineage": "L1",
+   "layers": 16,
+   "params": 117914880,
+   "chars": 1045308899,
+   "tokens": 857567631,
+   "grew": 0,
+   "rolledBack": false,
+   "ownVal": null,
+   "ownScore": null,
+   "d": 768,
+   "loops": 1,
+   "spread": 3.1934,
+   "bytes": 1415115957,
+   "heads": 6,
+   "ctx": 512,
+   "vocab": 6000,
+   "kind": "bpe",
+   "arch": "tpp-loop",
+   "wantWider": false,
+   "layerCap": 16,
+   "mixChanged": false,
+   "bySrc": {
+    "laws": 3.9476,
+    "wiki": 2.9651,
+    "aozora": 3.3286,
+    "hanrei": 3.4354,
+    "kokkai": 2.5999,
+    "web": 2.8521,
+    "talk": 2.1123
+   },
+   "wrote": [
+    {
+     "start": "わたしは",
+     "text": "わたしは、それが、逮捕されたというふうに記されております。」 AB「森山委員 そういうことは、実は、大変なことでありまして、私は、そのときに、何人も、この事件の責任をとってくれておりますが、今回の事件は、大変に、この事件が起こったわけでありますけれども、何人も、特定責任はない、"
+    },
+    {
+     "start": "第一条",
+     "text": "第一条行政庁による届出は、�働事業されていた労働者の行使により、急速な労働市場の安定を期する上で重要な役割を担うものであります。」 AB「以上、予算編成後、本日討論を省略して、ただいま議題となりました政府関係機関補正予算の無条件関与の枠組みを一体的に実施することに賛成の諸君の起立を求めます。」 AB「議長"
+    },
+    {
+     "start": "この法律において",
+     "text": "この法律において「免許は」と、11月1日付けで「免許」から「教習」に変更された。 そして、その後、11月17日、 パーキングエリア で138番台を閉店し、1980年（昭和55年）10月17日 - 1993年（平成5年）3月1日付で、2011年（平成23年）3月23"
+    }
+   ],
+   "loopPct": 3.79,
+   "movedBody": false
   }
  ],
  "bestVal": 2.7996,
@@ -12649,5 +12649,5 @@
  ],
  "wantWider": false,
  "nextD": 768,
- "bad": 3
+ "bad": 1
 }
