@@ -1,69 +1,6 @@
 {
  "runs": [
   {
-   "at": "2026-10-15T07:22:59Z",
-   "val": 2.6884,
-   "prev": 2.6907,
-   "valTag": "fixed-holdout-v1",
-   "stoppedAt": 523,
-   "stuck": 0,
-   "evalTag": "fixed-ix-v1",
-   "secPerStep": 7.1938,
-   "steps": 898,
-   "bpc": 3.1819,
-   "charsPerTok": 1.2189,
-   "score": 2.1482,
-   "scoreW": 2.0,
-   "scoreMode": "talk",
-   "finishMix": 0.2,
-   "lineage": "L3",
-   "layers": 14,
-   "params": 27105408,
-   "chars": 1045308899,
-   "tokens": 857567631,
-   "grew": 0,
-   "rolledBack": false,
-   "ownVal": null,
-   "ownScore": null,
-   "d": 384,
-   "loops": 1,
-   "spread": 2.6302,
-   "bytes": 325385901,
-   "heads": 6,
-   "ctx": 512,
-   "vocab": 6000,
-   "kind": "bpe",
-   "arch": "tpp-loop",
-   "wantWider": false,
-   "layerCap": 16,
-   "mixChanged": false,
-   "bySrc": {
-    "laws": 3.6333,
-    "wiki": 2.8448,
-    "aozora": 3.1783,
-    "hanrei": 3.4195,
-    "kokkai": 2.4986,
-    "web": 2.7731,
-    "talk": 2.1482
-   },
-   "wrote": [
-    {
-     "start": "わたしは",
-     "text": "わたしは、他をつばめた上に、入り投げに気がついた。 彼女は、腰を刺したまま、寝ると、大きな声を出して、 「おやまびしい女のお客様なんだから、気の毒ですねえ、お前の毒な事は、いったいまた、お前様のお父さんとお気の毒な事は、お前"
-    },
-    {
-     "start": "第一条",
-     "text": "第一条（者の氏名及び住所するために緑色についてもいいのでしょうか） 一般的には、赤色が白色で、緑色が白色を示す。 白色は白色の緑色で、緑色は白色の緑色を表す。 白色は白色で、白色の緑色は白色で、白色の緑色を表す。 白色は白色を使用した。白色は白"
-    },
-    {
-     "start": "この法律において",
-     "text": "この法律において「東京都 東京都 中央区 」を、東京都 東京都 東京都 東京都 玉川区 東京都 東京都 東京都 東京都 東京都 東京都 東京都 東京都 東京都 東京都 東京都 東京都 東京都 東�"
-    }
-   ],
-   "loopPct": 39.16,
-   "movedBody": false
-  },
-  {
    "at": "2026-10-15T21:30:08Z",
    "val": 2.6863,
    "prev": 2.6884,
@@ -12599,9 +12536,72 @@
    ],
    "loopPct": 0.0,
    "movedBody": false
+  },
+  {
+   "at": "2026-10-26T10:51:28Z",
+   "val": 2.6237,
+   "prev": 2.6244,
+   "valTag": "fixed-holdout-v1",
+   "stoppedAt": 528,
+   "stuck": 0,
+   "evalTag": "fixed-ix-v1",
+   "secPerStep": 7.1273,
+   "steps": 887,
+   "bpc": 3.1054,
+   "charsPerTok": 1.2189,
+   "score": 2.0998,
+   "scoreW": 2.0,
+   "scoreMode": "talk",
+   "finishMix": 0.2,
+   "lineage": "L3",
+   "layers": 14,
+   "params": 27105408,
+   "chars": 1045308899,
+   "tokens": 857567631,
+   "grew": 0,
+   "rolledBack": false,
+   "ownVal": null,
+   "ownScore": null,
+   "d": 384,
+   "loops": 1,
+   "spread": 2.7241,
+   "bytes": 325385901,
+   "heads": 6,
+   "ctx": 512,
+   "vocab": 6000,
+   "kind": "bpe",
+   "arch": "tpp-loop",
+   "wantWider": false,
+   "layerCap": 16,
+   "mixChanged": false,
+   "bySrc": {
+    "laws": 3.5376,
+    "wiki": 2.7662,
+    "aozora": 3.1133,
+    "hanrei": 3.3644,
+    "kokkai": 2.4436,
+    "web": 2.7024,
+    "talk": 2.0998
+   },
+   "wrote": [
+    {
+     "start": "わたしは",
+     "text": "わたしはお嫁さんですね。」 DA「おぉ！何年か前から子供の頃なんですか？」 GD「そうですね。昔は子供が小学生の頃から好きです。全然上手ですが。」 DA「私は小学生の時も大人になってからだったのですが、やはり親も少しずつ続けてくれる"
+    },
+    {
+     "start": "第一条",
+     "text": "第一条�附附附附附附附附付附附附け付いていること。 （発売前の本店及び本店） 第十四条 五十三又は一戸建物の百貨店及び百貨店は、麦畑の荒野において、大規模な店舗を販売し、又は展開し、又は展開する場所にあり、又は展開する場所にある品番を、出店場所を特定し、又は展開する場所にあり、かつ、その都"
+    },
+    {
+     "start": "この法律において",
+     "text": "この法律においてる。 ただし、単独ではないので省略する。 複数の単独ではない。 （ 2024年10月 ） ここでは述べる。 カタカナ の イスラム教徒 では イラク 大使館に サバ の ムスリム が イラン に属していた。 両者は"
+    }
+   ],
+   "loopPct": 8.0,
+   "movedBody": false
   }
  ],
- "bestVal": 2.6244,
+ "bestVal": 2.6237,
  "layers": 14,
  "params": 27105408,
  "born": "2026-09-12T18:05:42Z",
@@ -12649,5 +12649,5 @@
  ],
  "wantWider": false,
  "nextD": 384,
- "bad": 4
+ "bad": 2
 }
