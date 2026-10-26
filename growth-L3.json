@@ -1,69 +1,6 @@
 {
  "runs": [
   {
-   "at": "2026-10-16T01:21:55Z",
-   "val": 2.6833,
-   "prev": 2.6854,
-   "valTag": "fixed-holdout-v1",
-   "stoppedAt": 519,
-   "stuck": 0,
-   "evalTag": "fixed-ix-v1",
-   "secPerStep": 7.2409,
-   "steps": 903,
-   "bpc": 3.1759,
-   "charsPerTok": 1.2189,
-   "score": 2.1454,
-   "scoreW": 2.0,
-   "scoreMode": "talk",
-   "finishMix": 0.2,
-   "lineage": "L3",
-   "layers": 14,
-   "params": 27105408,
-   "chars": 1045308899,
-   "tokens": 857567631,
-   "grew": 0,
-   "rolledBack": false,
-   "ownVal": null,
-   "ownScore": null,
-   "d": 384,
-   "loops": 1,
-   "spread": 2.8164,
-   "bytes": 325385901,
-   "heads": 6,
-   "ctx": 512,
-   "vocab": 6000,
-   "kind": "bpe",
-   "arch": "tpp-loop",
-   "wantWider": false,
-   "layerCap": 16,
-   "mixChanged": false,
-   "bySrc": {
-    "laws": 3.621,
-    "wiki": 2.8426,
-    "aozora": 3.1759,
-    "hanrei": 3.4128,
-    "kokkai": 2.4952,
-    "web": 2.7682,
-    "talk": 2.1454
-   },
-   "wrote": [
-    {
-     "start": "わたしは",
-     "text": "わたしは小さな生活で、それから一つ大きな人間を生み出したことだと思われる。 それを実際に「雨」ウイルスを生み出す。これは「雲」の恋の名のひとつである。 といわれる「雷」の名は、「雪」の名のひとつである。 （ ） 古代ギリシャ語の 「r」 （"
-    },
-    {
-     "start": "第一条",
-     "text": "第一条を受けているため、毎年3月中には土曜日の『コングニア』を『ひかりのけんさん』で放送した。 2004年 - イギリス大統領選挙 : パリ アシド の メアリー・マーシュ 大統領が41年ぶりに オーストラリア を抜群に分裂。 200"
-    },
-    {
-     "start": "この法律において",
-     "text": "この法律において「株式会社KEIKO」とあるのは「株式会社KEIKO」と、それぞれ「株式会社KEIKO」とあるのは「株式会社KEIKO」と、「株式会社KEIKO」とあるのは「株式会社KEIKO」と、「株式会社KEIKO」とあるのは「株式会社KEIKO」と、それぞれ「株式会社KEIKO」とあるのは「株式会社KEIKO」と、それぞれ「株式会社KEIKO」とあるのは「株式会社KEI"
-    }
-   ],
-   "loopPct": 1.42,
-   "movedBody": false
-  },
-  {
    "at": "2026-10-16T02:35:20Z",
    "val": 2.6832,
    "prev": 2.6833,
@@ -12599,6 +12536,69 @@
    ],
    "loopPct": 3.38,
    "movedBody": false
+  },
+  {
+   "at": "2026-10-26T15:52:28Z",
+   "val": 2.625,
+   "prev": 2.625,
+   "valTag": "fixed-holdout-v1",
+   "stoppedAt": 518,
+   "stuck": 0,
+   "evalTag": "fixed-ix-v1",
+   "secPerStep": 7.2678,
+   "steps": 886,
+   "bpc": 3.1069,
+   "charsPerTok": 1.2189,
+   "score": 2.0962,
+   "scoreW": 2.0,
+   "scoreMode": "talk",
+   "finishMix": 0.2,
+   "lineage": "L3",
+   "layers": 14,
+   "params": 27105408,
+   "chars": 1045308899,
+   "tokens": 857567631,
+   "grew": 0,
+   "rolledBack": false,
+   "ownVal": null,
+   "ownScore": null,
+   "d": 384,
+   "loops": 1,
+   "spread": 2.5902,
+   "bytes": 325385901,
+   "heads": 6,
+   "ctx": 512,
+   "vocab": 6000,
+   "kind": "bpe",
+   "arch": "tpp-loop",
+   "wantWider": false,
+   "layerCap": 16,
+   "mixChanged": false,
+   "bySrc": {
+    "laws": 3.5415,
+    "wiki": 2.7663,
+    "aozora": 3.1114,
+    "hanrei": 3.3615,
+    "kokkai": 2.4455,
+    "web": 2.7027,
+    "talk": 2.0962
+   },
+   "wrote": [
+    {
+     "start": "わたしは",
+     "text": "わたしはじめて、この鉄橋の闘いそしてそれを見るような、あの……」 「そうか。もっとも、いい物が出るはずだ」 「ええ。いや、どうも、今ののもみんな、はじめて、頭の中を見ると、君は、よく知っているが、若い者が元気を無いと、人間を揺して見るうちに"
+    },
+    {
+     "start": "第一条",
+     "text": "第一条中「汚水、治水又は基地 による同法第十一条第一項に規定する管理区域 管理区域 に関する法律第八以上の表のの売り渡し条の十五第四十五条 新たに造られた総理府の大臣支ずる機関 （国の機関） 第七十四条第一項 国の機関（国の機関） 第八十五条第一項 国の機関（国の機関） 第八ベク級�、「除き、又は」 第八ベク級�「除き、又は」 第八ベク級�「除き、又は」 第八ベク級�「"
+    },
+    {
+     "start": "この法律において",
+     "text": "この法律において「第三 絵本 」の1名に変更 [ 3 ] 。 2023年度より、「 絵本 」の1名に変更 [ 5 ] 。 2024年度から「絵本 」が廃止され、「絵本 」の字幕が廃止 [ 1 ] 。 2024年度から「絵本 絵本」に内定。 2024年度から"
+    }
+   ],
+   "loopPct": 6.56,
+   "movedBody": false
   }
  ],
  "bestVal": 2.6237,
@@ -12649,5 +12649,5 @@
  ],
  "wantWider": false,
  "nextD": 384,
- "bad": 0
+ "bad": 1
 }
