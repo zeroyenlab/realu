@@ -1,69 +1,6 @@
 {
  "runs": [
   {
-   "at": "2026-10-16T02:40:41Z",
-   "val": 2.871,
-   "prev": 2.8733,
-   "valTag": "fixed-holdout-v1",
-   "stoppedAt": 207,
-   "stuck": 0,
-   "evalTag": "fixed-ix-v1",
-   "secPerStep": 19.5779,
-   "steps": 300,
-   "bpc": 3.3981,
-   "charsPerTok": 1.2189,
-   "score": 2.1466,
-   "scoreW": 2.0,
-   "scoreMode": "talk",
-   "finishMix": 0.5,
-   "lineage": "L1",
-   "layers": 16,
-   "params": 117914880,
-   "chars": 1045308899,
-   "tokens": 857567631,
-   "grew": 0,
-   "rolledBack": false,
-   "ownVal": null,
-   "ownScore": null,
-   "d": 768,
-   "loops": 1,
-   "spread": 2.7755,
-   "bytes": 1415115957,
-   "heads": 6,
-   "ctx": 512,
-   "vocab": 6000,
-   "kind": "bpe",
-   "arch": "tpp-loop",
-   "wantWider": false,
-   "layerCap": 16,
-   "mixChanged": false,
-   "bySrc": {
-    "laws": 4.0806,
-    "wiki": 3.031,
-    "aozora": 3.3842,
-    "hanrei": 3.4814,
-    "kokkai": 2.6434,
-    "web": 2.9111,
-    "talk": 2.1466
-   },
-   "wrote": [
-    {
-     "start": "わたしは",
-     "text": "わたしは、今までの苦しみを感じてください。」 AB「そういう意味であれば、これは国民の皆さん方のお疲れさまです。」 AB「夢、ちょっと興味深いですね。理想の種子の名前です。」 AB「そういうことを考えると、硬直する気持ちになるのか。」"
-    },
-    {
-     "start": "第一条",
-     "text": "第一条11年9月25日閲覧。 ↑ “ 東京貨物駅の「ふらろいふた」停留所に いよいよ - ITmedia ”. TV Bususeus . ウェブサイト . 東京都. 2026年9月1日閲覧。 ↑ “ 東京メ"
-    },
-    {
-     "start": "この法律において",
-     "text": "この法律において「原原原告」を世話とする請求は「原告を原告にするような事実からする」とする。 原告は、原告が原告を争う被告に対して原告が預託された本件 原告の主張を原告に言渡ししたことを主張する。 第２事案の概要 原告は，原告が，原告に対し，原告に対し，原告に対し，原告の甲に対し，原"
-    }
-   ],
-   "loopPct": 12.08,
-   "movedBody": false
-  },
-  {
    "at": "2026-10-16T03:58:24Z",
    "val": 2.8688,
    "prev": 2.871,
@@ -12598,6 +12535,69 @@
     }
    ],
    "loopPct": 1.24,
+   "movedBody": false
+  },
+  {
+   "at": "2026-10-26T18:40:33Z",
+   "val": 2.813,
+   "prev": 2.813,
+   "valTag": "fixed-holdout-v1",
+   "stoppedAt": 178,
+   "stuck": 0,
+   "evalTag": "fixed-ix-v1",
+   "secPerStep": 23.1213,
+   "steps": 300,
+   "bpc": 3.3294,
+   "charsPerTok": 1.2189,
+   "score": 2.1219,
+   "scoreW": 2.0,
+   "scoreMode": "talk",
+   "finishMix": 0.5,
+   "lineage": "L1",
+   "layers": 16,
+   "params": 117914880,
+   "chars": 1045308899,
+   "tokens": 857567631,
+   "grew": 0,
+   "rolledBack": false,
+   "ownVal": null,
+   "ownScore": null,
+   "d": 768,
+   "loops": 1,
+   "spread": 2.917,
+   "bytes": 1415115957,
+   "heads": 6,
+   "ctx": 512,
+   "vocab": 6000,
+   "kind": "bpe",
+   "arch": "tpp-loop",
+   "wantWider": false,
+   "layerCap": 16,
+   "mixChanged": false,
+   "bySrc": {
+    "laws": 3.9375,
+    "wiki": 2.963,
+    "aozora": 3.3299,
+    "hanrei": 3.4279,
+    "kokkai": 2.602,
+    "web": 2.8575,
+    "talk": 2.1219
+   },
+   "wrote": [
+    {
+     "start": "わたしは",
+     "text": "わたしはここで答えになっていますか。」 AB「国務大臣 この内閣において、過去の軍事費のあり方については、要は、我が国が世界の軍事費というのは国益を期待しております。そういう面で、今、官房長官がお答えをしたのですが、世界の軍事費というのは、我が国は一体どの程度の答弁をしている"
+    },
+    {
+     "start": "第一条",
+     "text": "第一条に第２にしか所団地設置もなお、ここに同時に閣議決定がなされた。 しかし、この完成はいつになったかもしれません。 その話としては、最初の宿舎復帰に際しては、まず、希望なく、全国から集まる処理を実現する必要があったと思います。 そして、最初に、コミュニティーの非常識な成果を上げていたことが"
+    },
+    {
+     "start": "この法律において",
+     "text": "この法律において「一般会計」と、「及び」とあるのは「日に」と、 教員充当のの用語などを「教員」とめ 「教員」とは、一般に、「教員」とは「教員」と「教員」を指す場合でもな い。 「教員」とは、一般に「教員」を主な学習一方で、こちらも教員 教員資格を喪失する「教員」の境界を指す。"
+    }
+   ],
+   "loopPct": 2.13,
    "movedBody": false
   }
  ],
