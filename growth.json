@@ -1,69 +1,6 @@
 {
  "runs": [
   {
-   "at": "2026-10-16T23:15:12Z",
-   "val": 2.8605,
-   "prev": 2.8602,
-   "valTag": "fixed-holdout-v1",
-   "stoppedAt": 153,
-   "stuck": 0,
-   "evalTag": "fixed-ix-v1",
-   "secPerStep": 27.3263,
-   "steps": 300,
-   "bpc": 3.3856,
-   "charsPerTok": 1.2189,
-   "score": 2.1348,
-   "scoreW": 2.0,
-   "scoreMode": "talk",
-   "finishMix": 0.5,
-   "lineage": "L1",
-   "layers": 16,
-   "params": 117914880,
-   "chars": 1045308899,
-   "tokens": 857567631,
-   "grew": 0,
-   "rolledBack": false,
-   "ownVal": null,
-   "ownScore": null,
-   "d": 768,
-   "loops": 1,
-   "spread": 3.1789,
-   "bytes": 1415115957,
-   "heads": 6,
-   "ctx": 512,
-   "vocab": 6000,
-   "kind": "bpe",
-   "arch": "tpp-loop",
-   "wantWider": false,
-   "layerCap": 16,
-   "mixChanged": false,
-   "bySrc": {
-    "laws": 4.0649,
-    "wiki": 3.0211,
-    "aozora": 3.3742,
-    "hanrei": 3.4661,
-    "kokkai": 2.6346,
-    "web": 2.8995,
-    "talk": 2.1348
-   },
-   "wrote": [
-    {
-     "start": "わたしは",
-     "text": "わたしは忘れてしまいましたね。」 AL「ほんとですよね。」 CB「普段妻が食べたりするので。」 AL「うらやましいです。意外と大変ですもん」 CB「確かにそうですね。」 AL「よろしく"
-    },
-    {
-     "start": "第一条",
-     "text": "第一条ロロケーブルの置き換えが可能な国際的な措置としてみられる。 イＥ，第１審被告ＪＶＸの交渉は，第１審原告と金 前記ＪＶＸ戦略派，第２次，第１，第２審被告ＦＫＥと黒色白の交渉参加国の戦略的対応によるご いかんじ"
-    },
-    {
-     "start": "この法律において",
-     "text": "この法律において「日本海通商産業省」と呼ばれるものは、日本海外局長が通つた場合、日本単独銀行である+日本政府に対し日本航空の送金として使われることが可能である。 <記事 日本のソウル大学> 日本のソウル大学（とくに ソウル ）とは、中国人の学級を行い、日本の独立、中国国民党の理想的な行政運営に利用されている。 19"
-    }
-   ],
-   "loopPct": 1.58,
-   "movedBody": false
-  },
-  {
    "at": "2026-10-17T00:33:38Z",
    "val": 2.8631,
    "prev": 2.8605,
@@ -12599,9 +12536,72 @@
    ],
    "loopPct": 4.94,
    "movedBody": false
+  },
+  {
+   "at": "2026-10-27T14:55:10Z",
+   "val": 2.7813,
+   "prev": 2.786,
+   "valTag": "fixed-holdout-v1",
+   "stoppedAt": 158,
+   "stuck": 0,
+   "evalTag": "fixed-ix-v1",
+   "secPerStep": 26.3339,
+   "steps": 300,
+   "bpc": 3.2919,
+   "charsPerTok": 1.2189,
+   "score": 2.1057,
+   "scoreW": 2.0,
+   "scoreMode": "talk",
+   "finishMix": 0.5,
+   "lineage": "L1",
+   "layers": 16,
+   "params": 117914880,
+   "chars": 1045308899,
+   "tokens": 857567631,
+   "grew": 0,
+   "rolledBack": false,
+   "ownVal": null,
+   "ownScore": null,
+   "d": 768,
+   "loops": 1,
+   "spread": 2.8609,
+   "bytes": 1415115957,
+   "heads": 6,
+   "ctx": 512,
+   "vocab": 6000,
+   "kind": "bpe",
+   "arch": "tpp-loop",
+   "wantWider": false,
+   "layerCap": 16,
+   "mixChanged": false,
+   "bySrc": {
+    "laws": 3.8894,
+    "wiki": 2.9316,
+    "aozora": 3.2993,
+    "hanrei": 3.4049,
+    "kokkai": 2.5796,
+    "web": 2.8276,
+    "talk": 2.1057
+   },
+   "wrote": [
+    {
+     "start": "わたしは",
+     "text": "わたしは椎名誠を尊重するつもりで、 「Elora in Love 」と呼ばれる男性的存在である。 男性を名で呼ぶ文化圏はロシア語であるが、The Xの名は「ドイツ人の名前」であるとする説もある。 人名は「ドイツ語」では自由であるが、あるいは創"
+    },
+    {
+     "start": "第一条",
+     "text": "第一条（預金者） （射射） 第三十五条 射撃�火（爆弾）は、これに関する複数の発射機が閉じられる 。 射撃は、5頭以上の重射による、徐粒の入射は、発射結果が200フィート以下となる 。 射撃は、200フィートで、これを4頭が2頭以上で発射まで発射する 。20 - 3,50"
+    },
+    {
+     "start": "この法律において",
+     "text": "この法律においてこれに基概念 理論的意義に反して計算されている。 (ｱ) 目的は，「これ自体がやや安心してやりたいことではない。」 と主張する。 (ｲ) ＰＴＣＣについて 原告は，このやり方にとらわれると，ＰＴＣＡは，この現在の甲Ｃ は，「あなた"
+    }
+   ],
+   "loopPct": 3.83,
+   "movedBody": false
   }
  ],
- "bestVal": 2.7828,
+ "bestVal": 2.7813,
  "layers": 16,
  "params": 117914880,
  "born": "2026-09-08T15:11:54Z",
@@ -12649,5 +12649,5 @@
  ],
  "wantWider": false,
  "nextD": 768,
- "bad": 1
+ "bad": 0
 }
