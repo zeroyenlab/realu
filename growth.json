@@ -1,69 +1,6 @@
 {
  "runs": [
   {
-   "at": "2026-10-16T16:48:23Z",
-   "val": 2.8633,
-   "prev": 2.8644,
-   "valTag": "fixed-holdout-v1",
-   "stoppedAt": 158,
-   "stuck": 0,
-   "evalTag": "fixed-ix-v1",
-   "secPerStep": 26.3272,
-   "steps": 300,
-   "bpc": 3.389,
-   "charsPerTok": 1.2189,
-   "score": 2.1398,
-   "scoreW": 2.0,
-   "scoreMode": "talk",
-   "finishMix": 0.5,
-   "lineage": "L1",
-   "layers": 16,
-   "params": 117914880,
-   "chars": 1045308899,
-   "tokens": 857567631,
-   "grew": 0,
-   "rolledBack": false,
-   "ownVal": null,
-   "ownScore": null,
-   "d": 768,
-   "loops": 1,
-   "spread": 2.9221,
-   "bytes": 1415115957,
-   "heads": 6,
-   "ctx": 512,
-   "vocab": 6000,
-   "kind": "bpe",
-   "arch": "tpp-loop",
-   "wantWider": false,
-   "layerCap": 16,
-   "mixChanged": false,
-   "bySrc": {
-    "laws": 4.0669,
-    "wiki": 3.0216,
-    "aozora": 3.374,
-    "hanrei": 3.4684,
-    "kokkai": 2.6408,
-    "web": 2.9009,
-    "talk": 2.1398
-   },
-   "wrote": [
-    {
-     "start": "わたしは",
-     "text": "わたしは夜更かしです！」 FG「夜は欲しいんですね！」 AG「そうですね！夜はご飯は食べないので、食べたくなります。」 FG「夜は夜は食べるのが割といつも自分で作るのですが、あまり食べないけどめちゃくちゃあ々"
-    },
-    {
-     "start": "第一条",
-     "text": "第一条に寡演劇場からそれぞれ参加していた。 かつての ニューヨーク から 中国 を始め、 ポーランド から 中国 から80年間、シャロン及びオーストリアの ケネディ と共に リュー する。 このときネルソンは ヨーガ と マンビネー を首都と呼んだ。 pas"
-    },
-    {
-     "start": "この法律において",
-     "text": "この法律において「希望条件」とも、利用者に利用できなくても大変な状況になります。」 客「そうなんですね。それでは、予約をお願いします。8/21で2泊でお願いいたします。」 店「お待たせ致しました。予約番号44370でお取りさせていただきました。」 客「ごめんなさい、大"
-    }
-   ],
-   "loopPct": 3.42,
-   "movedBody": false
-  },
-  {
    "at": "2026-10-16T18:07:08Z",
    "val": 2.8631,
    "prev": 2.8633,
@@ -12599,9 +12536,72 @@
    ],
    "loopPct": 1.88,
    "movedBody": false
+  },
+  {
+   "at": "2026-10-27T08:33:09Z",
+   "val": 2.7858,
+   "prev": 2.7874,
+   "valTag": "fixed-holdout-v1",
+   "stoppedAt": 179,
+   "stuck": 0,
+   "evalTag": "fixed-ix-v1",
+   "secPerStep": 23.0041,
+   "steps": 300,
+   "bpc": 3.2972,
+   "charsPerTok": 1.2189,
+   "score": 2.1098,
+   "scoreW": 2.0,
+   "scoreMode": "talk",
+   "finishMix": 0.5,
+   "lineage": "L1",
+   "layers": 16,
+   "params": 117914880,
+   "chars": 1045308899,
+   "tokens": 857567631,
+   "grew": 0,
+   "rolledBack": false,
+   "ownVal": null,
+   "ownScore": null,
+   "d": 768,
+   "loops": 1,
+   "spread": 2.8918,
+   "bytes": 1415115957,
+   "heads": 6,
+   "ctx": 512,
+   "vocab": 6000,
+   "kind": "bpe",
+   "arch": "tpp-loop",
+   "wantWider": false,
+   "layerCap": 16,
+   "mixChanged": false,
+   "bySrc": {
+    "laws": 3.8914,
+    "wiki": 2.9337,
+    "aozora": 3.3035,
+    "hanrei": 3.4058,
+    "kokkai": 2.5809,
+    "web": 2.8311,
+    "talk": 2.1098
+   },
+   "wrote": [
+    {
+     "start": "わたしは",
+     "text": "わたしは、ただでさえ一貫は、まだたくさんの人たちを守らんでいるのであり、そうして、ラウララを守り、ギリシア理解を成功させようとする。そして二つ目は、国民にとってモロッコではなく、介入した。」 AB「そのとき、二百万年近い恐怖を感じている者は、二百万年の後に、二百"
+    },
+    {
+     "start": "第一条",
+     "text": "第一条の成立によって、労働者は労働大臣を兼ねて公務員をもって組織し、労働組合の判決を條約にした（「本法案は、本法案の成立を期する。」というものであった。これは、本法案の作業をすぐれたときに、労働大臣はこれを抜本的批判に追い込むべきものであるということを理由に、国会が至難の道と私の間に書き入れずに、しかも"
+    },
+    {
+     "start": "この法律において",
+     "text": "この法律において「汗」を切り離して、狭義の巡礼者（湖沼）として始まった。 1959年（昭和34年）11月19日 - 江戸幕府が江戸幕府に再度発足し、江戸幕府の動物張放送で江戸幕府が再び江戸幕府を置いたことを受けて、幕府は江戸"
+    }
+   ],
+   "loopPct": 1.66,
+   "movedBody": false
   }
  ],
- "bestVal": 2.7874,
+ "bestVal": 2.7858,
  "layers": 16,
  "params": 117914880,
  "born": "2026-09-08T15:11:54Z",
