@@ -1,69 +1,6 @@
 {
  "runs": [
   {
-   "at": "2026-10-16T20:41:18Z",
-   "val": 2.8614,
-   "prev": 2.8631,
-   "valTag": "fixed-holdout-v1",
-   "stoppedAt": 158,
-   "stuck": 0,
-   "evalTag": "fixed-ix-v1",
-   "secPerStep": 26.3591,
-   "steps": 300,
-   "bpc": 3.3866,
-   "charsPerTok": 1.2189,
-   "score": 2.1383,
-   "scoreW": 2.0,
-   "scoreMode": "talk",
-   "finishMix": 0.5,
-   "lineage": "L1",
-   "layers": 16,
-   "params": 117914880,
-   "chars": 1045308899,
-   "tokens": 857567631,
-   "grew": 0,
-   "rolledBack": false,
-   "ownVal": null,
-   "ownScore": null,
-   "d": 768,
-   "loops": 1,
-   "spread": 3.0567,
-   "bytes": 1415115957,
-   "heads": 6,
-   "ctx": 512,
-   "vocab": 6000,
-   "kind": "bpe",
-   "arch": "tpp-loop",
-   "wantWider": false,
-   "layerCap": 16,
-   "mixChanged": false,
-   "bySrc": {
-    "laws": 4.0621,
-    "wiki": 3.0187,
-    "aozora": 3.3727,
-    "hanrei": 3.4713,
-    "kokkai": 2.6379,
-    "web": 2.8988,
-    "talk": 2.1383
-   },
-   "wrote": [
-    {
-     "start": "わたしは",
-     "text": "わたしはいきなりもしましたねー。」 GL「こんにちは、、、、2015年と、2014年には結構前ですね！」 GI「そういうのもあるんですね。」 GL「はい、昔だと思ったのですが、3年で8回くらいの頃から。。ありがとうございました！」 G"
-    },
-    {
-     "start": "第一条",
-     "text": "第一条第七号ハ、第一号ハ、クロハハハハハハハハハハハハハハハハハハハハハハハハハハハウハハンハイハハハハハハハハハイハハハハハハハハスコミュージシャンであるハイハハハハハハハハハニクハンドハーレクハに没れては、これまでに女性アンド・ハウハン"
-    },
-    {
-     "start": "この法律において",
-     "text": "この法律において ハハハハハハハハハハハハハハハヤハニヘルマニア ハハハハルハクホハハン優勝手の日本ハハイハントで優勝チーム ハハロハンド・ハザード・ハンガリー (Nostove Liug Grydge proet) はハワード・ハワード・ハ"
-    }
-   ],
-   "loopPct": 35.79,
-   "movedBody": false
-  },
-  {
    "at": "2026-10-16T21:57:18Z",
    "val": 2.8602,
    "prev": 2.8614,
@@ -12598,6 +12535,69 @@
     }
    ],
    "loopPct": 3.08,
+   "movedBody": false
+  },
+  {
+   "at": "2026-10-27T12:23:10Z",
+   "val": 2.7875,
+   "prev": 2.7828,
+   "valTag": "fixed-holdout-v1",
+   "stoppedAt": 212,
+   "stuck": 0,
+   "evalTag": "fixed-ix-v1",
+   "secPerStep": 18.9366,
+   "steps": 300,
+   "bpc": 3.2993,
+   "charsPerTok": 1.2189,
+   "score": 2.111,
+   "scoreW": 2.0,
+   "scoreMode": "talk",
+   "finishMix": 0.5,
+   "lineage": "L1",
+   "layers": 16,
+   "params": 117914880,
+   "chars": 1045308899,
+   "tokens": 857567631,
+   "grew": 0,
+   "rolledBack": false,
+   "ownVal": null,
+   "ownScore": null,
+   "d": 768,
+   "loops": 1,
+   "spread": 2.6735,
+   "bytes": 1415115957,
+   "heads": 6,
+   "ctx": 512,
+   "vocab": 6000,
+   "kind": "bpe",
+   "arch": "tpp-loop",
+   "wantWider": false,
+   "layerCap": 16,
+   "mixChanged": false,
+   "bySrc": {
+    "laws": 3.9001,
+    "wiki": 2.9362,
+    "aozora": 3.3056,
+    "hanrei": 3.407,
+    "kokkai": 2.5851,
+    "web": 2.8307,
+    "talk": 2.111
+   },
+   "wrote": [
+    {
+     "start": "わたしは",
+     "text": "わたしは、北朝鮮が軍事を実現するんですよ。だから、そういう意味では、これはもうこの再軍備というのは、我々は日朝間ではない。国際社会のあり方、日本の国は常識的な国であるでしょう。そういう意味では、必ずしも、その対象と考えますよね、総理、いかがですか。」 AA"
+    },
+    {
+     "start": "第一条",
+     "text": "第一条 第一節 総則 （特別の必要性を理由として、特別な根拠が認められる法的根拠をすべて見直すべき義務があると 認めることはできず，その点についてのみ見解を 説明する必要もない。 なお，本件において、「特別な事情がない」とは，「特別な理由」「特別 にいる」という文言を言い渡すことはできない旨を示唆する上でも， 推"
+    },
+    {
+     "start": "この法律において",
+     "text": "この法律において「78天の請求書」となっている。 ただし、公文書によれば、このような要件を満たさなくなったのは、1954年（昭和29年）時点での公文書は公文書に影響が与えられていない。 公文書としての公文書は、公文書ではなく公文書や公文書ではなく、公文書である。 公文書は公文書であるため一部の公文書は存在しないため、公文書と表現されていない"
+    }
+   ],
+   "loopPct": 0.52,
    "movedBody": false
   }
  ],
