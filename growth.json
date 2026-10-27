@@ -1,69 +1,6 @@
 {
  "runs": [
   {
-   "at": "2026-10-16T11:36:25Z",
-   "val": 2.8728,
-   "prev": 2.8724,
-   "valTag": "fixed-holdout-v1",
-   "stoppedAt": 159,
-   "stuck": 0,
-   "evalTag": "fixed-ix-v1",
-   "secPerStep": 26.2337,
-   "steps": 300,
-   "bpc": 3.4002,
-   "charsPerTok": 1.2189,
-   "score": 2.1403,
-   "scoreW": 2.0,
-   "scoreMode": "talk",
-   "finishMix": 0.5,
-   "lineage": "L1",
-   "layers": 16,
-   "params": 117914880,
-   "chars": 1045308899,
-   "tokens": 857567631,
-   "grew": 0,
-   "rolledBack": false,
-   "ownVal": null,
-   "ownScore": null,
-   "d": 768,
-   "loops": 1,
-   "spread": 3.1462,
-   "bytes": 1415115957,
-   "heads": 6,
-   "ctx": 512,
-   "vocab": 6000,
-   "kind": "bpe",
-   "arch": "tpp-loop",
-   "wantWider": false,
-   "layerCap": 16,
-   "mixChanged": false,
-   "bySrc": {
-    "laws": 4.0841,
-    "wiki": 3.0273,
-    "aozora": 3.3806,
-    "hanrei": 3.4835,
-    "kokkai": 2.6466,
-    "web": 2.9084,
-    "talk": 2.1403
-   },
-   "wrote": [
-    {
-     "start": "わたしは",
-     "text": "わたしは4人で、それ以降は「2人で」。 1984年 2月19日 - 「第1回 ロンドン・ソフトバンクホークス」開催。 2月18日 - 第1回「第2回 アジア 危機」公演開催。 3月12日 - 第1回日本アジア大会 開催。 3月15"
-    },
-    {
-     "start": "第一条",
-     "text": "第一条都道府県知事は、同様とする。 第九章 行政法（以下「法」という。）第九条の三に規定する行政処分に関し、行政処分、行政DPRの日本行政japanashiba-coation of Borubarystation.jpg|千葉県行政サービス United Boy of Harble Bevin"
-    },
-    {
-     "start": "この法律において",
-     "text": "この法律において「和名等」という。）の登録を受けた後も、その名称又は種類ごとにそれぞれその間に介在する場合においてさせた場合には、その決意を確認することができる。 第三節 特定社会の専門家 （特定社会の力士） 第三十六条 特定社会、社会、社会、国民及び社会的共生の交流に関する国際社会資本整備を添付しなければならない。 特定社会資本の整備に関する基本的事項についての生産性の安定に関する規定 第三節 事業活動、事業活動の内容 （"
-    }
-   ],
-   "loopPct": 1.87,
-   "movedBody": false
-  },
-  {
    "at": "2026-10-16T12:55:36Z",
    "val": 2.8709,
    "prev": 2.8728,
@@ -12599,9 +12536,72 @@
    ],
    "loopPct": 7.22,
    "movedBody": false
+  },
+  {
+   "at": "2026-10-27T03:25:03Z",
+   "val": 2.7916,
+   "prev": 2.7996,
+   "valTag": "fixed-holdout-v1",
+   "stoppedAt": 178,
+   "stuck": 0,
+   "evalTag": "fixed-ix-v1",
+   "secPerStep": 23.0286,
+   "steps": 333,
+   "bpc": 3.3041,
+   "charsPerTok": 1.2189,
+   "score": 2.1242,
+   "scoreW": 2.0,
+   "scoreMode": "talk",
+   "finishMix": 0.5,
+   "lineage": "L1",
+   "layers": 16,
+   "params": 117914880,
+   "chars": 1045308899,
+   "tokens": 857567631,
+   "grew": 0,
+   "rolledBack": false,
+   "ownVal": null,
+   "ownScore": null,
+   "d": 768,
+   "loops": 1,
+   "spread": 2.877,
+   "bytes": 1415115957,
+   "heads": 6,
+   "ctx": 512,
+   "vocab": 6000,
+   "kind": "bpe",
+   "arch": "tpp-loop",
+   "wantWider": false,
+   "layerCap": 16,
+   "mixChanged": false,
+   "bySrc": {
+    "laws": 3.9077,
+    "wiki": 2.9424,
+    "aozora": 3.3112,
+    "hanrei": 3.412,
+    "kokkai": 2.5835,
+    "web": 2.8362,
+    "talk": 2.1242
+   },
+   "wrote": [
+    {
+     "start": "わたしは",
+     "text": "わたしは、その後、特に降雨から4000メートルの町村で、土木・土木問題が、建設工事や道路整備、1000メートルの予備道工事が行われております。これによる災害をますます深刻化させております。」 AB「この災害に、一日も早く脱災害を実現するため、検討したいと思いますが、昨"
+    },
+    {
+     "start": "第一条",
+     "text": "第一条 �発示については、日本新設の施設（以下「新函館」という。）及び新庄都市計画（以下「新設置対象施設」という。） 日本における新築等計画（以下「新築等計画」という。） 新築移転計画（以下「新築等計画」という。） 新築等計画（新築及び新築等計画として新築される計画（以下「新築等計画」という。） 新築等計画（新築等計画において新築等計画が"
+    },
+    {
+     "start": "この法律において",
+     "text": "この法律において「イオシは12月に17時52分に起きた。その時間にしても実際のところは極めて異常で、通常のイオシムスが深刻で、オリオンは似てほとんどいない」と指摘した 。 日本では1981年に英国でイオリオンが発表した 。 1990年に世界初のイオ"
+    }
+   ],
+   "loopPct": 4.29,
+   "movedBody": false
   }
  ],
- "bestVal": 2.7964,
+ "bestVal": 2.7916,
  "layers": 16,
  "params": 117914880,
  "born": "2026-09-08T15:11:54Z",
@@ -12649,5 +12649,5 @@
  ],
  "wantWider": false,
  "nextD": 768,
- "bad": 2
+ "bad": 0
 }
