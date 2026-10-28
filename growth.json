@@ -1,69 +1,6 @@
 {
  "runs": [
   {
-   "at": "2026-10-18T02:51:46Z",
-   "val": 2.8702,
-   "prev": 2.8582,
-   "valTag": "fixed-holdout-v1",
-   "stoppedAt": 201,
-   "stuck": 0,
-   "evalTag": "fixed-ix-v1",
-   "secPerStep": 20.292,
-   "steps": 322,
-   "bpc": 3.3971,
-   "charsPerTok": 1.2189,
-   "score": 2.1425,
-   "scoreW": 2.0,
-   "scoreMode": "talk",
-   "finishMix": 0.5,
-   "lineage": "L1",
-   "layers": 16,
-   "params": 117914880,
-   "chars": 1045308899,
-   "tokens": 857567631,
-   "grew": 0,
-   "rolledBack": false,
-   "ownVal": null,
-   "ownScore": null,
-   "d": 768,
-   "loops": 1,
-   "spread": 2.7148,
-   "bytes": 1415115957,
-   "heads": 6,
-   "ctx": 512,
-   "vocab": 6000,
-   "kind": "bpe",
-   "arch": "tpp-loop",
-   "wantWider": false,
-   "layerCap": 16,
-   "mixChanged": false,
-   "bySrc": {
-    "laws": 4.0662,
-    "wiki": 3.0274,
-    "aozora": 3.3732,
-    "hanrei": 3.4833,
-    "kokkai": 2.6469,
-    "web": 2.9043,
-    "talk": 2.1425
-   },
-   "wrote": [
-    {
-     "start": "わたしは",
-     "text": "わたしはシュートで生き残りのニュースをかけます。」 BB「私も見た目で見ます。今日はチェックしてみます。」 BB「はい。チェックしてみます！」 BB「ごはんもお好きですか？」 BB「はい。チェックしてみます。」 BB「さっぱりした"
-    },
-    {
-     "start": "第一条",
-     "text": "第一条 法第二十五条第一項 消防法 蓮宗義法 第一章 総則 （目的） この法律は、行政財産の統合及び変更の真正性に携わる行為であつて、戦当時の国家及び戦争の非国民に対する攻撃の必要性を否定し、及び戦争の危険を阻害することが困難な点を, 本項でみても、戦争の危険は重大であることや、島嶼事変における最高の重大な過失"
-    },
-    {
-     "start": "この法律において",
-     "text": "この法律において「階証」は新規発行の2890年々を集団的自衛権の行使とした。 1899年 （明治22年） 、 共和制 と命名された。 1889年 （明治22年） 東京府 と 大津県 が組織された [ 15 ] 。 1894年 （明治27年） 、東京県が明治村に"
-    }
-   ],
-   "loopPct": 7.42,
-   "movedBody": false
-  },
-  {
    "at": "2026-10-18T04:08:41Z",
    "val": 2.8617,
    "prev": 2.8702,
@@ -12599,6 +12536,69 @@
    ],
    "loopPct": 0.72,
    "movedBody": false
+  },
+  {
+   "at": "2026-10-28T19:02:30Z",
+   "val": 2.775,
+   "prev": 2.7742,
+   "valTag": "fixed-holdout-v1",
+   "stoppedAt": 176,
+   "stuck": 0,
+   "evalTag": "fixed-ix-v1",
+   "secPerStep": 23.4356,
+   "steps": 300,
+   "bpc": 3.2844,
+   "charsPerTok": 1.2189,
+   "score": 2.1043,
+   "scoreW": 2.0,
+   "scoreMode": "talk",
+   "finishMix": 0.5,
+   "lineage": "L1",
+   "layers": 16,
+   "params": 117914880,
+   "chars": 1045308899,
+   "tokens": 857567631,
+   "grew": 0,
+   "rolledBack": false,
+   "ownVal": null,
+   "ownScore": null,
+   "d": 768,
+   "loops": 1,
+   "spread": 2.9063,
+   "bytes": 1415115957,
+   "heads": 6,
+   "ctx": 512,
+   "vocab": 6000,
+   "kind": "bpe",
+   "arch": "tpp-loop",
+   "wantWider": false,
+   "layerCap": 16,
+   "mixChanged": false,
+   "bySrc": {
+    "laws": 3.8704,
+    "wiki": 2.9311,
+    "aozora": 3.29,
+    "hanrei": 3.4111,
+    "kokkai": 2.5695,
+    "web": 2.8242,
+    "talk": 2.1043
+   },
+   "wrote": [
+    {
+     "start": "わたしは",
+     "text": "わたしは、賃金がゼロになるような、賃金が下がった場合、過剰になり得るまで下がるのではないかと相まって、その上で、まだまだ少なくとも賃金も下がっていくような状況であることが前提になってくると思いますが、今御指摘のような質のいいような状況をつくることは困難なことであると考えております。"
+    },
+    {
+     "start": "第一条",
+     "text": "第一条に、これを再教達の日本政府の根底とすることを定めたものであります。（拍手）」 AA「議長 ただいまの御決議は、この際、日程に追加して、只今上程せられました請願外二十五件の請願を一括して議題とすることに御異議ございませんか。」 AA「議長 御異議ないと認めます。先ず委員"
+    },
+    {
+     "start": "この法律において",
+     "text": "この法律において「春日」は寒天が長くなり、半年が経過して寒月が記念日となった [ 23 ] 。 12月1日 （ 5月4日 ） - 金日成 が 4月5日 （ 6月15日 ）。 12月25日 （ 6月25日 ）、 寒月 が 三日月 から 夏"
+    }
+   ],
+   "loopPct": 3.59,
+   "movedBody": false
   }
  ],
  "bestVal": 2.7735,
@@ -12649,5 +12649,5 @@
  ],
  "wantWider": false,
  "nextD": 768,
- "bad": 1
+ "bad": 0
 }
