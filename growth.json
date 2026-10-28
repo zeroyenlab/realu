@@ -1,69 +1,6 @@
 {
  "runs": [
   {
-   "at": "2026-10-17T10:39:19Z",
-   "val": 2.8571,
-   "prev": 2.8557,
-   "valTag": "fixed-holdout-v1",
-   "stoppedAt": 158,
-   "stuck": 0,
-   "evalTag": "fixed-ix-v1",
-   "secPerStep": 26.2793,
-   "steps": 300,
-   "bpc": 3.3816,
-   "charsPerTok": 1.2189,
-   "score": 2.1365,
-   "scoreW": 2.0,
-   "scoreMode": "talk",
-   "finishMix": 0.5,
-   "lineage": "L1",
-   "layers": 16,
-   "params": 117914880,
-   "chars": 1045308899,
-   "tokens": 857567631,
-   "grew": 0,
-   "rolledBack": false,
-   "ownVal": null,
-   "ownScore": null,
-   "d": 768,
-   "loops": 1,
-   "spread": 2.8641,
-   "bytes": 1415115957,
-   "heads": 6,
-   "ctx": 512,
-   "vocab": 6000,
-   "kind": "bpe",
-   "arch": "tpp-loop",
-   "wantWider": false,
-   "layerCap": 16,
-   "mixChanged": false,
-   "bySrc": {
-    "laws": 4.051,
-    "wiki": 3.0168,
-    "aozora": 3.3699,
-    "hanrei": 3.4639,
-    "kokkai": 2.6375,
-    "web": 2.8955,
-    "talk": 2.1365
-   },
-   "wrote": [
-    {
-     "start": "わたしは",
-     "text": "わたしは、三人兄弟のサンディエゴ・ウェルズに素顔を背けた。 筆跡を見ると、多くの人々にもむしろあの人々の脳を紹介されてしまった。 （『プリズン』・『ブーガー』・『プリズン』・『ピチュアン〜安田克也』"
-    },
-    {
-     "start": "第一条",
-     "text": "第一条の意思の意図をもって、私の質問を終わります。」 AA「国務大臣 今御指摘のように、山形県において、都度かなりの県内にお届けをしたところでございます。このような現状は、今後とも、私といたしましては、先ほど申しましたように、県外と県外との交渉ということでございましたけ"
-    },
-    {
-     "start": "この法律において",
-     "text": "この法律において「無人駅」が入居する。 1990年代 後半、日本テレビ系列の『 青春の男 』で、石橋桁子が初めて出演。 2009年 - テレビドラマ『 EXPORTS 』で、 栃木放送 が下り十一番線を一番下り 6番線 で"
-    }
-   ],
-   "loopPct": 4.76,
-   "movedBody": false
-  },
-  {
    "at": "2026-10-17T11:52:00Z",
    "val": 2.8571,
    "prev": 2.8571,
@@ -12599,6 +12536,69 @@
    ],
    "loopPct": 1.88,
    "movedBody": false
+  },
+  {
+   "at": "2026-10-28T02:19:09Z",
+   "val": 2.7893,
+   "prev": 2.7908,
+   "valTag": "fixed-holdout-v1",
+   "stoppedAt": 159,
+   "stuck": 0,
+   "evalTag": "fixed-ix-v1",
+   "secPerStep": 26.2239,
+   "steps": 300,
+   "bpc": 3.3013,
+   "charsPerTok": 1.2189,
+   "score": 2.1089,
+   "scoreW": 2.0,
+   "scoreMode": "talk",
+   "finishMix": 0.5,
+   "lineage": "L1",
+   "layers": 16,
+   "params": 117914880,
+   "chars": 1045308899,
+   "tokens": 857567631,
+   "grew": 0,
+   "rolledBack": false,
+   "ownVal": null,
+   "ownScore": null,
+   "d": 768,
+   "loops": 1,
+   "spread": 2.8287,
+   "bytes": 1415115957,
+   "heads": 6,
+   "ctx": 512,
+   "vocab": 6000,
+   "kind": "bpe",
+   "arch": "tpp-loop",
+   "wantWider": false,
+   "layerCap": 16,
+   "mixChanged": false,
+   "bySrc": {
+    "laws": 3.8948,
+    "wiki": 2.9392,
+    "aozora": 3.3052,
+    "hanrei": 3.4196,
+    "kokkai": 2.5821,
+    "web": 2.8346,
+    "talk": 2.1089
+   },
+   "wrote": [
+    {
+     "start": "わたしは",
+     "text": "わたしは今のお話を聞いているんだから、もう少し、ある意味で発表するようになったらどうするかという話を出してください。しかし、これは本日朝からお話をさしていただきました、二日間だけじゃなかったということを、驚くべきだと思います。」 AB「加藤国務大臣 先ほど申し上げましたように"
+    },
+    {
+     "start": "第一条",
+     "text": "第一条 第208条 , 第201条 , 第201条 , 第101条 , 第202条 , 第202条 , 第201条 , 第201条 , 第30条 , 第200条 , 第201条 , 第3項 , 第103条 , 第104条 (4"
+    },
+    {
+     "start": "この法律において",
+     "text": "この法律において「Gaelio Liselion」（DSM）を採用した。一般のケースでは、レオタイプを採用したとのこと。 「ポケモンの調査」および「ポケモン」(Sankyouteology) が施された。 「ポケモン」とは、ポケモンのツチョコレートや、コンクリート、ア"
+    }
+   ],
+   "loopPct": 25.37,
+   "movedBody": false
   }
  ],
  "bestVal": 2.7793,
@@ -12649,5 +12649,5 @@
  ],
  "wantWider": false,
  "nextD": 768,
- "bad": 0
+ "bad": 1
 }
