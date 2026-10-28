@@ -1,69 +1,6 @@
 {
  "runs": [
   {
-   "at": "2026-10-17T21:52:08Z",
-   "val": 2.6181,
-   "prev": 2.6157,
-   "valTag": "fixed-holdout-v1",
-   "stoppedAt": 341,
-   "stuck": 0,
-   "evalTag": "fixed-ix-v1",
-   "secPerStep": 11.3453,
-   "steps": 566,
-   "bpc": 3.0987,
-   "charsPerTok": 1.2189,
-   "score": 2.0288,
-   "scoreW": 2.0,
-   "scoreMode": "talk",
-   "finishMix": 0.85,
-   "lineage": "L2",
-   "layers": 14,
-   "params": 47379968,
-   "chars": 1045308899,
-   "tokens": 857567631,
-   "grew": 0,
-   "rolledBack": false,
-   "ownVal": null,
-   "ownScore": null,
-   "d": 512,
-   "loops": 1,
-   "spread": 2.7901,
-   "bytes": 568680621,
-   "heads": 8,
-   "ctx": 512,
-   "vocab": 6000,
-   "kind": "bpe",
-   "arch": "tpp-loop",
-   "wantWider": false,
-   "layerCap": 16,
-   "mixChanged": false,
-   "bySrc": {
-    "laws": 3.4829,
-    "wiki": 2.7748,
-    "aozora": 3.0968,
-    "hanrei": 3.358,
-    "kokkai": 2.4472,
-    "web": 2.7054,
-    "talk": 2.0288
-   },
-   "wrote": [
-    {
-     "start": "わたしは",
-     "text": "わたしはひょろと笑ってしまいました。」 BX「笑いました。ははは。」 CM「またお話しましょう！」 CM「こんにちはー！」 BX「こんにちは！」 CM「普段、何かホットケーキを食べに行"
-    },
-    {
-     "start": "第一条",
-     "text": "第一条、附則、附則、公営住宅法、学校法、学校法、学校法、学校法、学校法、学校法、学校法、学校法、学校法、学校法、学校法、学校法、学校法、学校法、学校法の、学校法、学校法、学校法、学校法、学校法、学校法、学校法、学校法、学校法、学校法、学校法、学校法、学校法の法、学校法、学校法、学校法、学校法、学校法、学校"
-    },
-    {
-     "start": "この法律において",
-     "text": "この法律において「公共事業」とは、終戦直後（昭和49年10月30日-12月25日）から昭和49年12月24日（第4回）まで継続して実施された「公共事業」とは、 の3つのグループが存続して 「公共事業」に改称した地下鉄（ 、同社としては ）の合併活動並びに再編工作を行う「公共事業」であって、 の3つのグループとしての"
-    }
-   ],
-   "loopPct": 33.69,
-   "movedBody": false
-  },
-  {
    "at": "2026-10-17T23:05:40Z",
    "val": 2.6171,
    "prev": 2.6181,
@@ -12599,6 +12536,69 @@
    ],
    "loopPct": 0.0,
    "movedBody": false
+  },
+  {
+   "at": "2026-10-28T12:30:20Z",
+   "val": 2.5999,
+   "prev": 2.5973,
+   "valTag": "fixed-holdout-v1",
+   "stoppedAt": 309,
+   "stuck": 0,
+   "evalTag": "fixed-ix-v1",
+   "secPerStep": 12.5577,
+   "steps": 569,
+   "bpc": 3.0772,
+   "charsPerTok": 1.2189,
+   "score": 2.0439,
+   "scoreW": 2.0,
+   "scoreMode": "talk",
+   "finishMix": 0.85,
+   "lineage": "L2",
+   "layers": 14,
+   "params": 47379968,
+   "chars": 1045308899,
+   "tokens": 857567631,
+   "grew": 0,
+   "rolledBack": false,
+   "ownVal": null,
+   "ownScore": null,
+   "d": 512,
+   "loops": 1,
+   "spread": 2.5412,
+   "bytes": 568680621,
+   "heads": 8,
+   "ctx": 512,
+   "vocab": 6000,
+   "kind": "bpe",
+   "arch": "tpp-loop",
+   "wantWider": false,
+   "layerCap": 16,
+   "mixChanged": false,
+   "bySrc": {
+    "laws": 3.4654,
+    "wiki": 2.7477,
+    "aozora": 3.0785,
+    "hanrei": 3.3479,
+    "kokkai": 2.4348,
+    "web": 2.6844,
+    "talk": 2.0439
+   },
+   "wrote": [
+    {
+     "start": "わたしは",
+     "text": "わたしは何でも食べますよ。」 BH「確かにお店で食べると気分がちょっと変わります。」 AV「ほんと、お腹空かないと食べれない時もあります。」 BH「そうですよね。食べてくれるなんて。」 AV「今日はまだお話してなかったので今日もお�"
+    },
+    {
+     "start": "第一条",
+     "text": "第一条の規定の規定に基づき、文字書人が文化庁関係庁次長を補佐する。 文字書の「文字書」は、文化庁関係の役員のを受けて、文字書の「文字書」の後に剤が用いられる。 ただし、文字書が音声文字書として流用された場合、文字書の中で「文字書」が成立する。 文字書の「文字書」は、文字書の中で「文字書」"
+    },
+    {
+     "start": "この法律において",
+     "text": "この法律においてしないでいなくてもいいですよ」 CV「なるほど、いくつも喜ばれるので、ついコツコツとかしてしまいそうです」 EW「でもCDが飽きてしまうので、すぐに来てしまうので、ついつい見てしまいます」 CV「わかります。画面がフォロワーあがり�"
+    }
+   ],
+   "loopPct": 6.12,
+   "movedBody": false
   }
  ],
  "bestVal": 2.5883,
@@ -12649,5 +12649,5 @@
  ],
  "wantWider": false,
  "nextD": 512,
- "bad": 7
+ "bad": 10
 }
