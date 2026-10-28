@@ -1,69 +1,6 @@
 {
  "runs": [
   {
-   "at": "2026-10-18T06:41:09Z",
-   "val": 2.8561,
-   "prev": 2.8622,
-   "valTag": "fixed-holdout-v1",
-   "stoppedAt": 159,
-   "stuck": 0,
-   "evalTag": "fixed-ix-v1",
-   "secPerStep": 26.1314,
-   "steps": 317,
-   "bpc": 3.3804,
-   "charsPerTok": 1.2189,
-   "score": 2.1367,
-   "scoreW": 2.0,
-   "scoreMode": "talk",
-   "finishMix": 0.5,
-   "lineage": "L1",
-   "layers": 16,
-   "params": 117914880,
-   "chars": 1045308899,
-   "tokens": 857567631,
-   "grew": 0,
-   "rolledBack": false,
-   "ownVal": null,
-   "ownScore": null,
-   "d": 768,
-   "loops": 1,
-   "spread": 3.1816,
-   "bytes": 1415115957,
-   "heads": 6,
-   "ctx": 512,
-   "vocab": 6000,
-   "kind": "bpe",
-   "arch": "tpp-loop",
-   "wantWider": false,
-   "layerCap": 16,
-   "mixChanged": false,
-   "bySrc": {
-    "laws": 4.0456,
-    "wiki": 3.0121,
-    "aozora": 3.3659,
-    "hanrei": 3.4675,
-    "kokkai": 2.632,
-    "web": 2.896,
-    "talk": 2.1367
-   },
-   "wrote": [
-    {
-     "start": "わたしは",
-     "text": "わたしは、たぬきた鈴のなかにああなたの素晴さんのことを言い出すところだの、「ぼくにゃくだえ」と言った。 寛政の改革は、部屋の中でもひとつの目から見ると、彼女がぶつかりと歩いていたからで、歯をひいてはそっと歩き出せるのだった。 「もう、"
-    },
-    {
-     "start": "第一条",
-     "text": "第一条ノの契約の内容の詳細 <判決 社民党駅> 参議院選（ぎんじょうかんとうけんこうじょうむんこうじょうとく）は、民主党・日本放送協会・日本放送協会・日本放送協会の設立に当たる。 2021年11月28日、 のち民主党、民主党、公明党の代表連立内閣・共産党・革新共同の党の"
-    },
-    {
-     "start": "この法律において",
-     "text": "この法律において「特定公共交通」を表す。 ｂ上記Ｄ及びＤは，公共交通関係諸関係等を図るため，国が，国 体として，公共交通関係として合意をなすと，被告社会交通関係及び国鉄分野においても，バス ラインの交通問題に関する重要な問題点を指摘し，これらの自動車の都合のよいクレーム，同Ｄの交"
-    }
-   ],
-   "loopPct": 11.47,
-   "movedBody": false
-  },
-  {
    "at": "2026-10-18T07:56:00Z",
    "val": 2.8597,
    "prev": 2.8561,
@@ -12599,9 +12536,72 @@
    ],
    "loopPct": 2.57,
    "movedBody": false
+  },
+  {
+   "at": "2026-10-28T22:55:08Z",
+   "val": 2.7715,
+   "prev": 2.7723,
+   "valTag": "fixed-holdout-v1",
+   "stoppedAt": 157,
+   "stuck": 0,
+   "evalTag": "fixed-ix-v1",
+   "secPerStep": 26.6112,
+   "steps": 300,
+   "bpc": 3.2803,
+   "charsPerTok": 1.2189,
+   "score": 2.1116,
+   "scoreW": 2.0,
+   "scoreMode": "talk",
+   "finishMix": 0.5,
+   "lineage": "L1",
+   "layers": 16,
+   "params": 117914880,
+   "chars": 1045308899,
+   "tokens": 857567631,
+   "grew": 0,
+   "rolledBack": false,
+   "ownVal": null,
+   "ownScore": null,
+   "d": 768,
+   "loops": 1,
+   "spread": 2.6966,
+   "bytes": 1415115957,
+   "heads": 6,
+   "ctx": 512,
+   "vocab": 6000,
+   "kind": "bpe",
+   "arch": "tpp-loop",
+   "wantWider": false,
+   "layerCap": 16,
+   "mixChanged": false,
+   "bySrc": {
+    "laws": 3.8642,
+    "wiki": 2.9225,
+    "aozora": 3.2861,
+    "hanrei": 3.4051,
+    "kokkai": 2.5691,
+    "web": 2.8225,
+    "talk": 2.1116
+   },
+   "wrote": [
+    {
+     "start": "わたしは",
+     "text": "わたしは一日で、 エヴァンゲリオン から聞きました。 だが、お互いの相互理解とかが大事だと思います。 また、ひとつ教えることです。 また、 中国 では 『 巻四詩集 』の 坐臣 の 弘治"
+    },
+    {
+     "start": "第一条",
+     "text": "第一条（以下「, pppersonaChat> BP「こんにちはー。」 AA「こんにちは！」 BP「突然ですが、お肉とか焼肉とか買ってますか？」 AA「そうですね、焼肉です！」 BP「焼肉、どこでも買いますか？」"
+    },
+    {
+     "start": "この法律において",
+     "text": "この法律において「��」とは、貨幣に関する図書の都市（例えば、日本（ ） ）の都（ ソクラテス ）の都市。 ユダヤ人の数が、日本よりも多い（ 日本 ）。 この名の由来は、 アメリカ合衆国 のように、 奴隷 の予算の願望によって、日本は ユダヤ人 であるとするものであった [ 3"
+    }
+   ],
+   "loopPct": 5.3,
+   "movedBody": false
   }
  ],
- "bestVal": 2.7723,
+ "bestVal": 2.7715,
  "layers": 16,
  "params": 117914880,
  "born": "2026-09-08T15:11:54Z",
@@ -12649,5 +12649,5 @@
  ],
  "wantWider": false,
  "nextD": 768,
- "bad": 0
+ "bad": 1
 }
