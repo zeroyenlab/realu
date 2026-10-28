@@ -1,69 +1,6 @@
 {
  "runs": [
   {
-   "at": "2026-10-17T21:54:22Z",
-   "val": 2.8564,
-   "prev": 2.8544,
-   "valTag": "fixed-holdout-v1",
-   "stoppedAt": 202,
-   "stuck": 0,
-   "evalTag": "fixed-ix-v1",
-   "secPerStep": 20.0452,
-   "steps": 300,
-   "bpc": 3.3808,
-   "charsPerTok": 1.2189,
-   "score": 2.1415,
-   "scoreW": 2.0,
-   "scoreMode": "talk",
-   "finishMix": 0.5,
-   "lineage": "L1",
-   "layers": 16,
-   "params": 117914880,
-   "chars": 1045308899,
-   "tokens": 857567631,
-   "grew": 0,
-   "rolledBack": false,
-   "ownVal": null,
-   "ownScore": null,
-   "d": 768,
-   "loops": 1,
-   "spread": 2.7953,
-   "bytes": 1415115957,
-   "heads": 6,
-   "ctx": 512,
-   "vocab": 6000,
-   "kind": "bpe",
-   "arch": "tpp-loop",
-   "wantWider": false,
-   "layerCap": 16,
-   "mixChanged": false,
-   "bySrc": {
-    "laws": 4.0501,
-    "wiki": 3.0146,
-    "aozora": 3.3661,
-    "hanrei": 3.4676,
-    "kokkai": 2.6332,
-    "web": 2.8954,
-    "talk": 2.1415
-   },
-   "wrote": [
-    {
-     "start": "わたしは",
-     "text": "わたしは，Ｄを誘っていた。 ウ平成４年７月１９日午前１１時５分ころ，Ｄに対し，Ｄから出てきた と思い，判示のとおり，Ｄは，Ｄに対して，Ｄと共謀の上，Ｄの前方にＤを出て，Ｄに向けて神経質に向 かっていた。また，原告は�"
-    },
-    {
-     "start": "第一条",
-     "text": "第一条ネルトが置かれている。 2018年 10月 - JR東日本 ・ JR東日本 ・ JR新幹線 ・ JR東日本 ・ 東京ムーランテック ・ 東海道新幹線 ・ 八戸新幹線 ・ 宝塚新幹線 ・ 東京メトロ ・ 東海道新幹線 ・ 新幹線 、"
-    },
-    {
-     "start": "この法律において",
-     "text": "この法律において「運賃」などと共に神経活動を選択、脳・神経障害などを利用した。 1966年 スペインでは、 J-31 を オランダ にて、 フィナンシャル・バンド 、 サンフランシスコ 、 タオル 、 リオクターズ 、 イタリア 、 チュニジア 、 オ"
-    }
-   ],
-   "loopPct": 8.5,
-   "movedBody": false
-  },
-  {
    "at": "2026-10-17T23:07:40Z",
    "val": 2.8601,
    "prev": 2.8564,
@@ -12599,9 +12536,72 @@
    ],
    "loopPct": 0.75,
    "movedBody": false
+  },
+  {
+   "at": "2026-10-28T13:53:48Z",
+   "val": 2.7735,
+   "prev": 2.7737,
+   "valTag": "fixed-holdout-v1",
+   "stoppedAt": 159,
+   "stuck": 0,
+   "evalTag": "fixed-ix-v1",
+   "secPerStep": 26.1866,
+   "steps": 300,
+   "bpc": 3.2827,
+   "charsPerTok": 1.2189,
+   "score": 2.1069,
+   "scoreW": 2.0,
+   "scoreMode": "talk",
+   "finishMix": 0.5,
+   "lineage": "L1",
+   "layers": 16,
+   "params": 117914880,
+   "chars": 1045308899,
+   "tokens": 857567631,
+   "grew": 0,
+   "rolledBack": false,
+   "ownVal": null,
+   "ownScore": null,
+   "d": 768,
+   "loops": 1,
+   "spread": 2.8581,
+   "bytes": 1415115957,
+   "heads": 6,
+   "ctx": 512,
+   "vocab": 6000,
+   "kind": "bpe",
+   "arch": "tpp-loop",
+   "wantWider": false,
+   "layerCap": 16,
+   "mixChanged": false,
+   "bySrc": {
+    "laws": 3.8795,
+    "wiki": 2.9254,
+    "aozora": 3.2954,
+    "hanrei": 3.4055,
+    "kokkai": 2.569,
+    "web": 2.8229,
+    "talk": 2.1069
+   },
+   "wrote": [
+    {
+     "start": "わたしは",
+     "text": "わたしは影響力の強さに気づいた。 しかし、 イングランド 軍は 1748年 10月24日 に アンクル・トマス 軍を破ってボブ・エンゲーがイングランド王に留まらず、 ハンガリー が スコットランド国王 に侵攻し、 カール大公 四郎 が"
+    },
+    {
+     "start": "第一条",
+     "text": "第一条もそうです。」 AB「そういう意味では、この話を聞いてみたいと思います。 だけれども、この話は、一つの話です、二つ目、この二つの話があります。 そこは、もう一つ、これだけの話をさせていただいたことがあります。四つ目は、金融危機管理臓器移植問�"
+    },
+    {
+     "start": "この法律において",
+     "text": "この法律において「ほんとに」には、高齢者の患者を守る者（つまり、 、 ）を守る者がいる 。また、社会に「若者」と「おやつ」を組み合わせるために「おでかけ」を組み合わせて「おはよう」を組む 。 1993年10月10日 - 「国民」を一体化した「国民の不安」を目指す「新"
+    }
+   ],
+   "loopPct": 2.26,
+   "movedBody": false
   }
  ],
- "bestVal": 2.7737,
+ "bestVal": 2.7735,
  "layers": 16,
  "params": 117914880,
  "born": "2026-09-08T15:11:54Z",
