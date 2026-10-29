@@ -1,69 +1,6 @@
 {
  "runs": [
   {
-   "at": "2026-10-19T00:31:27Z",
-   "val": 2.8445,
-   "prev": 2.8442,
-   "valTag": "fixed-holdout-v1",
-   "stoppedAt": 158,
-   "stuck": 0,
-   "evalTag": "fixed-ix-v1",
-   "secPerStep": 26.354,
-   "steps": 300,
-   "bpc": 3.3667,
-   "charsPerTok": 1.2189,
-   "score": 2.1286,
-   "scoreW": 2.0,
-   "scoreMode": "talk",
-   "finishMix": 0.5,
-   "lineage": "L1",
-   "layers": 16,
-   "params": 117914880,
-   "chars": 1045308899,
-   "tokens": 857567631,
-   "grew": 0,
-   "rolledBack": false,
-   "ownVal": null,
-   "ownScore": null,
-   "d": 768,
-   "loops": 1,
-   "spread": 3.3182,
-   "bytes": 1415115957,
-   "heads": 6,
-   "ctx": 512,
-   "vocab": 6000,
-   "kind": "bpe",
-   "arch": "tpp-loop",
-   "wantWider": false,
-   "layerCap": 16,
-   "mixChanged": false,
-   "bySrc": {
-    "laws": 4.0222,
-    "wiki": 3.0013,
-    "aozora": 3.3558,
-    "hanrei": 3.4502,
-    "kokkai": 2.6219,
-    "web": 2.8833,
-    "talk": 2.1286
-   },
-   "wrote": [
-    {
-     "start": "わたしは",
-     "text": "わたしは手を入れて飲みます？」 DC「あ、すみません。焼いて美味しいですよね。」 DY「そうなんです。あなたはどうですか？」 DC「私は、中華を食べます！」 DY「中華いいですね、一日中一緒に食べます！」 DC「一番おい"
-    },
-    {
-     "start": "第一条",
-     "text": "第一条リッターは、両子をモチーフとした模様が含まれ、その理想は伯父の影響で現れ、猪の宝石（伯爵）が挙げられる。 シャクルアーツ（Lenopron 、2015年10月7日 - ） - ゲストも登場。巨嵐子（ヤクト）が配"
-    },
-    {
-     "start": "この法律において",
-     "text": "この法律において「駅舎」業務を開始 。 2007年（平成19年）3月28日：駅舎が閉店 。 2008年（平成20年）2月1日：駅舎が変更となり、駅舎が減少 。 2009年（平成21年）4月1日：駅舎が市民向けに設置された 。 2013年（平成25"
-    }
-   ],
-   "loopPct": 3.35,
-   "movedBody": false
-  },
-  {
    "at": "2026-10-19T01:46:26Z",
    "val": 2.8431,
    "prev": 2.8445,
@@ -12599,6 +12536,69 @@
    ],
    "loopPct": 4.05,
    "movedBody": false
+  },
+  {
+   "at": "2026-10-29T16:46:46Z",
+   "val": 2.7885,
+   "prev": 2.7854,
+   "valTag": "fixed-holdout-v1",
+   "stoppedAt": 201,
+   "stuck": 0,
+   "evalTag": "fixed-ix-v1",
+   "secPerStep": 20.1069,
+   "steps": 300,
+   "bpc": 3.3004,
+   "charsPerTok": 1.2189,
+   "score": 2.115,
+   "scoreW": 2.0,
+   "scoreMode": "talk",
+   "finishMix": 0.5,
+   "lineage": "L1",
+   "layers": 16,
+   "params": 117914880,
+   "chars": 1045308899,
+   "tokens": 857567631,
+   "grew": 0,
+   "rolledBack": false,
+   "ownVal": null,
+   "ownScore": null,
+   "d": 768,
+   "loops": 1,
+   "spread": 2.6972,
+   "bytes": 1415115957,
+   "heads": 6,
+   "ctx": 512,
+   "vocab": 6000,
+   "kind": "bpe",
+   "arch": "tpp-loop",
+   "wantWider": false,
+   "layerCap": 16,
+   "mixChanged": false,
+   "bySrc": {
+    "laws": 3.8775,
+    "wiki": 2.9392,
+    "aozora": 3.3001,
+    "hanrei": 3.422,
+    "kokkai": 2.5883,
+    "web": 2.8352,
+    "talk": 2.115
+   },
+   "wrote": [
+    {
+     "start": "わたしは",
+     "text": "わたしは、万全を期していますか。」 AB「もう一つは、五つに大きくなってしまったと。これは、一つ、今、昨年、最新のお話もありましたが、現在では三千三百ヘクタール、二百ヘクタール、五千ヘクタール、二千二百ヘクタールとか五〇ヘクタール、こういうこと以外に、も"
+    },
+    {
+     "start": "第一条",
+     "text": "第一条 修正8条 1項 [ 152 ] 。 ↑ 女性差別については、ＬＬＮＴの「不法行為である」（損害賠償請求権）およびＬＮＴＴに 貸与 されたとしても，ＬＮＴＴの場合に限定して 逆効 し、ＬＮＴＴから五百万円を重ねて算出したり，ＬＮ�"
+    },
+    {
+     "start": "この法律において",
+     "text": "この法律において「車両」を名に「車両」と、「車両」を「車両」を「車両」に置き換えた。 車両には変わりない外観であって 、車両編成は2台の設備を持たないため、運転台付き車両はすべて塗装されている。また、車内展望台から車両を配置した車両と、車両あるいは車両を車体を集約していた車両に2台のスペースを装備した車両もある。そのため、車"
+    }
+   ],
+   "loopPct": 6.46,
+   "movedBody": false
   }
  ],
  "bestVal": 2.7668,
@@ -12649,5 +12649,5 @@
  ],
  "wantWider": false,
  "nextD": 768,
- "bad": 2
+ "bad": 4
 }
