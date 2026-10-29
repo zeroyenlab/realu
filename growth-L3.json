@@ -1,69 +1,6 @@
 {
  "runs": [
   {
-   "at": "2026-10-18T19:23:26Z",
-   "val": 2.6574,
-   "prev": 2.6574,
-   "valTag": "fixed-holdout-v1",
-   "stoppedAt": 792,
-   "stuck": 0,
-   "evalTag": "fixed-ix-v1",
-   "secPerStep": 4.6804,
-   "steps": 895,
-   "bpc": 3.1453,
-   "charsPerTok": 1.2189,
-   "score": 2.1207,
-   "scoreW": 2.0,
-   "scoreMode": "talk",
-   "finishMix": 0.2,
-   "lineage": "L3",
-   "layers": 14,
-   "params": 27105408,
-   "chars": 1045308899,
-   "tokens": 857567631,
-   "grew": 0,
-   "rolledBack": false,
-   "ownVal": null,
-   "ownScore": null,
-   "d": 384,
-   "loops": 1,
-   "spread": 2.8938,
-   "bytes": 325385901,
-   "heads": 6,
-   "ctx": 512,
-   "vocab": 6000,
-   "kind": "bpe",
-   "arch": "tpp-loop",
-   "wantWider": false,
-   "layerCap": 16,
-   "mixChanged": false,
-   "bySrc": {
-    "laws": 3.5747,
-    "wiki": 2.8119,
-    "aozora": 3.1455,
-    "hanrei": 3.392,
-    "kokkai": 2.4755,
-    "web": 2.7417,
-    "talk": 2.1207
-   },
-   "wrote": [
-    {
-     "start": "わたしは",
-     "text": "わたしは高校の時から友達と親交を深めた。 もっとも、ワーナーは、そのドラマ『JAMAN』では、妻と出会うはずだった。 1964年にフジテレビから集まった『 ANNニュース 』では、当時のバットボンバーの他、TBS系列各局でスピンオフ作品"
-    },
-    {
-     "start": "第一条",
-     "text": "第一条（急峻口回路） 第八十二条の二 更新医又は側面呼吸器外科医又は側面呼吸器外科医又は側面呼吸器外科医又は側面呼吸器外科医若しくは側面呼吸器外科医又は側面呼吸器外科医又は側面呼吸器外科医若しくは側面呼吸器外科医又は側面呼吸器外科医又は側面呼吸器外科医又は側面呼"
-    },
-    {
-     "start": "この法律において",
-     "text": "この法律において「中華民国」を「中華民国」と言ったことがあり、中華民国の要請に反対する中華民国に対しては「中華民国」と言われたが、中華民国は反対することはなかった 。 これにより、中華民国が台湾からアメリカを追放したことは、台湾と比較して大きな違いがあった。中華民国が"
-    }
-   ],
-   "loopPct": 28.33,
-   "movedBody": false
-  },
-  {
    "at": "2026-10-18T20:34:34Z",
    "val": 2.6575,
    "prev": 2.6574,
@@ -12599,9 +12536,72 @@
    ],
    "loopPct": 31.11,
    "movedBody": false
+  },
+  {
+   "at": "2026-10-29T10:21:21Z",
+   "val": 2.6165,
+   "prev": 2.6166,
+   "valTag": "fixed-holdout-v1",
+   "stoppedAt": 752,
+   "stuck": 0,
+   "evalTag": "fixed-ix-v1",
+   "secPerStep": 4.9409,
+   "steps": 890,
+   "bpc": 3.0968,
+   "charsPerTok": 1.2189,
+   "score": 2.0907,
+   "scoreW": 2.0,
+   "scoreMode": "talk",
+   "finishMix": 0.2,
+   "lineage": "L3",
+   "layers": 14,
+   "params": 27105408,
+   "chars": 1045308899,
+   "tokens": 857567631,
+   "grew": 0,
+   "rolledBack": false,
+   "ownVal": null,
+   "ownScore": null,
+   "d": 384,
+   "loops": 1,
+   "spread": 2.4905,
+   "bytes": 325385901,
+   "heads": 6,
+   "ctx": 512,
+   "vocab": 6000,
+   "kind": "bpe",
+   "arch": "tpp-loop",
+   "wantWider": false,
+   "layerCap": 16,
+   "mixChanged": false,
+   "bySrc": {
+    "laws": 3.5272,
+    "wiki": 2.761,
+    "aozora": 3.101,
+    "hanrei": 3.3607,
+    "kokkai": 2.4371,
+    "web": 2.6941,
+    "talk": 2.0907
+   },
+   "wrote": [
+    {
+     "start": "わたしは",
+     "text": "わたしはエイベックスのアリアンを探さなかった。 イーリスでは (1715年) に ヴァロワ朝 ・ ルイ16世 ・ エドワード5世 ・ ジプシー ・ エドワード5世 の妃を�唱して結婚し、 ミディーナ （ 英語版 ） に王"
+    },
+    {
+     "start": "第一条",
+     "text": "第一条（水面揚入後にに設けられた河川改修についての地形の変更及び異議の訴え）をいう。 河川改修計画は、運輸大臣が>に付記しなければならない。 河川改修計画は、類型配置予定区域（土砂の浄化及び放流量の増大に伴う許容範囲の拡大に伴う河川改修工事の級別配置基準の期間の短縮、水質致死量の増大に伴う砂防工事の級別配置基準の期間の短縮、水質改善事業のための資材等の�十四号"
+    },
+    {
+     "start": "この法律において",
+     "text": "この法律において「過激な差別的嫌疑」あり。 ( 2020年10月 ) … 立憲民主党 の 立憲民主党 （立憲共同 日本 ）は、立憲民主党と立憲民主党の 立憲民主党 （立憲民主党・立憲民主党）の 立�"
+    }
+   ],
+   "loopPct": 2.57,
+   "movedBody": false
   }
  ],
- "bestVal": 2.6166,
+ "bestVal": 2.6165,
  "layers": 14,
  "params": 27105408,
  "born": "2026-09-12T18:05:42Z",
@@ -12649,5 +12649,5 @@
  ],
  "wantWider": false,
  "nextD": 384,
- "bad": 4
+ "bad": 5
 }
