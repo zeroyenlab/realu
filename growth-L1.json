@@ -1,69 +1,6 @@
 {
  "runs": [
   {
-   "at": "2026-10-18T20:40:44Z",
-   "val": 2.8503,
-   "prev": 2.856,
-   "valTag": "fixed-holdout-v1",
-   "stoppedAt": 180,
-   "stuck": 0,
-   "evalTag": "fixed-ix-v1",
-   "secPerStep": 22.8033,
-   "steps": 300,
-   "bpc": 3.3735,
-   "charsPerTok": 1.2189,
-   "score": 2.1405,
-   "scoreW": 2.0,
-   "scoreMode": "talk",
-   "finishMix": 0.5,
-   "lineage": "L1",
-   "layers": 16,
-   "params": 117914880,
-   "chars": 1045308899,
-   "tokens": 857567631,
-   "grew": 0,
-   "rolledBack": false,
-   "ownVal": null,
-   "ownScore": null,
-   "d": 768,
-   "loops": 1,
-   "spread": 2.9848,
-   "bytes": 1415115957,
-   "heads": 6,
-   "ctx": 512,
-   "vocab": 6000,
-   "kind": "bpe",
-   "arch": "tpp-loop",
-   "wantWider": false,
-   "layerCap": 16,
-   "mixChanged": false,
-   "bySrc": {
-    "laws": 4.0414,
-    "wiki": 3.0071,
-    "aozora": 3.3616,
-    "hanrei": 3.4631,
-    "kokkai": 2.6264,
-    "web": 2.8897,
-    "talk": 2.1405
-   },
-   "wrote": [
-    {
-     "start": "わたしは",
-     "text": "わたしは、むしろ、黄金いところで、犬がおいしかったです。」 DY「そうなんですね！黄色いモンスターです。顔色は、かわいいですが、、」 CH「ノロとか色々な隙間を合わせるということがありますが、それを使って、あまり妻には見えないです。」 DY"
-    },
-    {
-     "start": "第一条",
-     "text": "第一条、「自主行動計画」が参照）。 2022年（令和4年）には、 海軍省 には 沿岸諸国 （ 中国語版 ） （ 中国語版 ） が就役している。 海軍は 海軍 が支援した防衛問題を擬人化し、 海軍 、 海軍 が1988年に 海軍 が発布。 海"
-    },
-    {
-     "start": "この法律において",
-     "text": "この法律において「ランタン」が一番多く見えるようになった 。 2000年 - 2006年 、『 ミート 』（2007年） - 2011年 - 2012年が死去した際に、フォークが玩具の「ファイアース&フレッシュ」をサポートしていたため、 夢のハイパーティー"
-    }
-   ],
-   "loopPct": 18.61,
-   "movedBody": false
-  },
-  {
    "at": "2026-10-18T21:58:25Z",
    "val": 2.8458,
    "prev": 2.8503,
@@ -12599,6 +12536,69 @@
    ],
    "loopPct": 0.85,
    "movedBody": false
+  },
+  {
+   "at": "2026-10-29T13:01:30Z",
+   "val": 2.777,
+   "prev": 2.7785,
+   "valTag": "fixed-holdout-v1",
+   "stoppedAt": 157,
+   "stuck": 0,
+   "evalTag": "fixed-ix-v1",
+   "secPerStep": 26.5661,
+   "steps": 300,
+   "bpc": 3.2868,
+   "charsPerTok": 1.2189,
+   "score": 2.1079,
+   "scoreW": 2.0,
+   "scoreMode": "talk",
+   "finishMix": 0.5,
+   "lineage": "L1",
+   "layers": 16,
+   "params": 117914880,
+   "chars": 1045308899,
+   "tokens": 857567631,
+   "grew": 0,
+   "rolledBack": false,
+   "ownVal": null,
+   "ownScore": null,
+   "d": 768,
+   "loops": 1,
+   "spread": 2.9695,
+   "bytes": 1415115957,
+   "heads": 6,
+   "ctx": 512,
+   "vocab": 6000,
+   "kind": "bpe",
+   "arch": "tpp-loop",
+   "wantWider": false,
+   "layerCap": 16,
+   "mixChanged": false,
+   "bySrc": {
+    "laws": 3.8652,
+    "wiki": 2.9296,
+    "aozora": 3.2925,
+    "hanrei": 3.4122,
+    "kokkai": 2.5735,
+    "web": 2.8272,
+    "talk": 2.1079
+   },
+   "wrote": [
+    {
+     "start": "わたしは",
+     "text": "わたしは昼は家の庭で。」 CE「本当ですか！私も夜はアイス食べました。」 CY「夜は私もです。夜は何を食べましたか？」 CE「夜はザッツと鶏肉ですね。」 CY「そうなんですね。私はしばいです。」 CE「私は子ど"
+    },
+    {
+     "start": "第一条",
+     "text": "第一条及び同条第八項並びに身体能力及び家族に対する要望に応じた質の高い総合的な治安対策の推進に関する施策の円滑な実施並びに影響を及ぼすこと。 労働安全衛生法、労働安全衛生法及び労働安全衛生法（昭和二十八年法律第百五十八号）第五条第二項、坂道及び樽沢及び笹沢までの主要農薬の予防及び健康づくりの促進に関する法律（昭和四十四年法律第二百三号）第七異なる医療及び福祉に関する法律（昭和四十四年法律第二百二号）第一の品"
+    },
+    {
+     "start": "この法律において",
+     "text": "この法律においてですか？」 AU「基本は、私がやってるのは、メーカーが元々、友達だったらメーカー自身も数人かもしれません。」 DP「それはやったことないですね。私も彼をやってみて、少しましになりました。」 AU「ですよね！ まさに家庭内なので、みんな"
+    }
+   ],
+   "loopPct": 0.0,
+   "movedBody": false
   }
  ],
  "bestVal": 2.7668,
@@ -12649,5 +12649,5 @@
  ],
  "wantWider": false,
  "nextD": 768,
- "bad": 3
+ "bad": 4
 }
