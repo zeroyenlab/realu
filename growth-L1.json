@@ -1,69 +1,6 @@
 {
  "runs": [
   {
-   "at": "2026-10-19T01:46:26Z",
-   "val": 2.8431,
-   "prev": 2.8445,
-   "valTag": "fixed-holdout-v1",
-   "stoppedAt": 201,
-   "stuck": 0,
-   "evalTag": "fixed-ix-v1",
-   "secPerStep": 20.126,
-   "steps": 300,
-   "bpc": 3.365,
-   "charsPerTok": 1.2189,
-   "score": 2.1247,
-   "scoreW": 2.0,
-   "scoreMode": "talk",
-   "finishMix": 0.5,
-   "lineage": "L1",
-   "layers": 16,
-   "params": 117914880,
-   "chars": 1045308899,
-   "tokens": 857567631,
-   "grew": 0,
-   "rolledBack": false,
-   "ownVal": null,
-   "ownScore": null,
-   "d": 768,
-   "loops": 1,
-   "spread": 2.9152,
-   "bytes": 1415115957,
-   "heads": 6,
-   "ctx": 512,
-   "vocab": 6000,
-   "kind": "bpe",
-   "arch": "tpp-loop",
-   "wantWider": false,
-   "layerCap": 16,
-   "mixChanged": false,
-   "bySrc": {
-    "laws": 4.0245,
-    "wiki": 3.0045,
-    "aozora": 3.3574,
-    "hanrei": 3.4519,
-    "kokkai": 2.6177,
-    "web": 2.8852,
-    "talk": 2.1247
-   },
-   "wrote": [
-    {
-     "start": "わたしは",
-     "text": "わたしはシャッターと変わりすぎですか？」 BS「そうですね！渋いですね！」 EW「シャッターがちょっと落ち着いて観ました！」 BS「シャッターは作ってましたか？」 EW「ティッシュでしたが、パスタとか、ハッターでした」 BS「いいですね。�"
-    },
-    {
-     "start": "第一条",
-     "text": "第一条。 2011年（平成23年）9月28日 - 三井住友銀行（現・三井住友銀行）設立。 2024年（令和6年）4月17日 - 三井住友銀行（現・三井住友銀行）が併設。 2025年（令和7年）10月9日 - 三井住友銀行（現"
-    },
-    {
-     "start": "この法律において",
-     "text": "この法律において「住民」とあるのは「地域住民」と、「地区住民」とあるのは「地域住民の大きな会」と、「地域住民」とあるのは「関係地方公共団体」とあるのは「地域住民団体」と、「地域住民」とあるのは「地域住民団体」と、「地域住民地域づくり団体」とあるのは「地域住民団体」と、「地域住民人口と地域地域住民本土の一層の待遇」とあるのは「地域住民が地域住民の生活を図る団体」と、「地域住民的地域住民のでない世帯」とあるのは「地域"
-    }
-   ],
-   "loopPct": 2.69,
-   "movedBody": false
-  },
-  {
    "at": "2026-10-19T03:03:54Z",
    "val": 2.8407,
    "prev": 2.8431,
@@ -12599,6 +12536,69 @@
    ],
    "loopPct": 6.46,
    "movedBody": false
+  },
+  {
+   "at": "2026-10-29T18:05:16Z",
+   "val": 2.7818,
+   "prev": 2.7885,
+   "valTag": "fixed-holdout-v1",
+   "stoppedAt": 158,
+   "stuck": 0,
+   "evalTag": "fixed-ix-v1",
+   "secPerStep": 26.3522,
+   "steps": 321,
+   "bpc": 3.2925,
+   "charsPerTok": 1.2189,
+   "score": 2.1113,
+   "scoreW": 2.0,
+   "scoreMode": "talk",
+   "finishMix": 0.5,
+   "lineage": "L1",
+   "layers": 16,
+   "params": 117914880,
+   "chars": 1045308899,
+   "tokens": 857567631,
+   "grew": 0,
+   "rolledBack": false,
+   "ownVal": null,
+   "ownScore": null,
+   "d": 768,
+   "loops": 1,
+   "spread": 2.8105,
+   "bytes": 1415115957,
+   "heads": 6,
+   "ctx": 512,
+   "vocab": 6000,
+   "kind": "bpe",
+   "arch": "tpp-loop",
+   "wantWider": false,
+   "layerCap": 16,
+   "mixChanged": false,
+   "bySrc": {
+    "laws": 3.8743,
+    "wiki": 2.935,
+    "aozora": 3.3032,
+    "hanrei": 3.4133,
+    "kokkai": 2.5788,
+    "web": 2.8337,
+    "talk": 2.1113
+   },
+   "wrote": [
+    {
+     "start": "わたしは",
+     "text": "わたしは寂しい笑みが覚めたり。」 BF「あはは！そうですよね！寂しいですね。」 AC「ありがとうございました！では、また！」 AC「はじめまして、こんにちはー。」 BF「はーい、"
+    },
+    {
+     "start": "第一条",
+     "text": "第一条におきましては、もう一度実行に移すことになり得ないので、その辺が十分な財源を確保していこうと思いますが、いかがでしょうか。」 AA「政府参考人 御指摘のように、先ほども御指摘いただきましたように、今私がこうした検討課題として出された問題につきまして、私はこれは、もっ"
+    },
+    {
+     "start": "この法律において",
+     "text": "この法律において「 イノベーション 」を買収し、2013年9月29日にプレミアムを買収した。 マルチメディアでは、2018年10月19日に ウィリアム・バッティング を買収した。 同年4月19日に ウィリアム・ハーヴァード が買収し、 ウィリアム・オーテ"
+    }
+   ],
+   "loopPct": 1.86,
+   "movedBody": false
   }
  ],
  "bestVal": 2.7668,
@@ -12649,5 +12649,5 @@
  ],
  "wantWider": false,
  "nextD": 768,
- "bad": 4
+ "bad": 0
 }
