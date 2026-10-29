@@ -1,69 +1,6 @@
 {
  "runs": [
   {
-   "at": "2026-10-19T01:43:34Z",
-   "val": 2.6133,
-   "prev": 2.6144,
-   "valTag": "fixed-holdout-v1",
-   "stoppedAt": 340,
-   "stuck": 0,
-   "evalTag": "fixed-ix-v1",
-   "secPerStep": 11.3653,
-   "steps": 661,
-   "bpc": 3.093,
-   "charsPerTok": 1.2189,
-   "score": 2.0348,
-   "scoreW": 2.0,
-   "scoreMode": "talk",
-   "finishMix": 0.85,
-   "lineage": "L2",
-   "layers": 14,
-   "params": 47379968,
-   "chars": 1045308899,
-   "tokens": 857567631,
-   "grew": 0,
-   "rolledBack": false,
-   "ownVal": null,
-   "ownScore": null,
-   "d": 512,
-   "loops": 1,
-   "spread": 2.5745,
-   "bytes": 568680621,
-   "heads": 8,
-   "ctx": 512,
-   "vocab": 6000,
-   "kind": "bpe",
-   "arch": "tpp-loop",
-   "wantWider": false,
-   "layerCap": 16,
-   "mixChanged": false,
-   "bySrc": {
-    "laws": 3.4689,
-    "wiki": 2.7693,
-    "aozora": 3.0946,
-    "hanrei": 3.3511,
-    "kokkai": 2.4421,
-    "web": 2.6999,
-    "talk": 2.0348
-   },
-   "wrote": [
-    {
-     "start": "わたしは",
-     "text": "わたしは、春から冬にかけて寒い中で寒い中で寒い中を歩く、冬が近づいてきました。」 AV「冬はだいぶ寒そうですね。」 AF「あなたはどちらかというと熱帯雨意識なので、涼しいです。」 AV「ここ数日は雨が降って涼しくて涼"
-    },
-    {
-     "start": "第一条",
-     "text": "第一条に書かれているように、我々が検証をしていくということは重要であるというふうに考えております。」 AA「最後になりましたが、最後に、この予算委員会でも質問になりましたが、もとより、そうした本当に私が一定の責任を持って編成をさせていただく、そういうことでございましたので、その点はよくおわかりい"
-    },
-    {
-     "start": "この法律において",
-     "text": "この法律において泛音IIIGGは、音が鳴るときに鳴り響きを鳴らすとき、鳴るときに鳴るとき、鳴るときに鳴るときに鳴るときに鳴るとき、鳴るときに鳴るとき。 鳴るときは、鳴るとき。 鳴るときは、替わりに鳴るとき。"
-    }
-   ],
-   "loopPct": 28.61,
-   "movedBody": false
-  },
-  {
    "at": "2026-10-19T02:50:12Z",
    "val": 2.6147,
    "prev": 2.6133,
@@ -12599,6 +12536,69 @@
    ],
    "loopPct": 9.42,
    "movedBody": false
+  },
+  {
+   "at": "2026-10-29T16:44:20Z",
+   "val": 2.5916,
+   "prev": 2.5916,
+   "valTag": "fixed-holdout-v1",
+   "stoppedAt": 380,
+   "stuck": 0,
+   "evalTag": "fixed-ix-v1",
+   "secPerStep": 10.1062,
+   "steps": 638,
+   "bpc": 3.0674,
+   "charsPerTok": 1.2189,
+   "score": 2.0388,
+   "scoreW": 2.0,
+   "scoreMode": "talk",
+   "finishMix": 0.85,
+   "lineage": "L2",
+   "layers": 14,
+   "params": 47379968,
+   "chars": 1045308899,
+   "tokens": 857567631,
+   "grew": 0,
+   "rolledBack": false,
+   "ownVal": null,
+   "ownScore": null,
+   "d": 512,
+   "loops": 1,
+   "spread": 2.4931,
+   "bytes": 568680621,
+   "heads": 8,
+   "ctx": 512,
+   "vocab": 6000,
+   "kind": "bpe",
+   "arch": "tpp-loop",
+   "wantWider": false,
+   "layerCap": 16,
+   "mixChanged": false,
+   "bySrc": {
+    "laws": 3.4607,
+    "wiki": 2.7353,
+    "aozora": 3.0687,
+    "hanrei": 3.3387,
+    "kokkai": 2.4235,
+    "web": 2.6737,
+    "talk": 2.0388
+   },
+   "wrote": [
+    {
+     "start": "わたしは",
+     "text": "わたしは何を頼みます。」 GH「食べ盛りの甘みを味わうのに一瞬ですよね」 GH「甘みが好きなんですね。今日はありがとうございました！」 GH「ありがとうございました！！」"
+    },
+    {
+     "start": "第一条",
+     "text": "第一条の規定による通知は、その本部後総務課長条の九以上の正副頭取を補佐して行ったものとする。 （監査委員） 監査委員（監査委員を除く。）の顔色は、監査委員及び監査委員長の顔色は、監査委員長の方法による。 監査委員は、監査委員長が、監査委員に対し、監査委員のほか、監査委員から、監査委員の指名並びに職員を任命し、及び任命しなければならない。 監査委員の任命は、監査委員が任命する。 監査"
+    },
+    {
+     "start": "この法律において",
+     "text": "この法律において「カイバー」はau transional Policies Econcess（英語版）と同じ名称で知られている。 Zep Game Forum Eschesis (1960年代) 、 タイ王国 に置かれた ニューロンパ の古代"
+    }
+   ],
+   "loopPct": 2.0,
+   "movedBody": false
   }
  ],
  "bestVal": 2.5883,
@@ -12649,5 +12649,5 @@
  ],
  "wantWider": false,
  "nextD": 512,
- "bad": 7
+ "bad": 2
 }
