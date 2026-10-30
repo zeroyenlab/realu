@@ -50,7 +50,7 @@ jobs:
     #   ★★★ごはんは共有、脳だけ系統ごと。
     strategy:
       fail-fast: false          # ★1系統が転んでも他は走り切る
-      max-parallel: 3
+      max-parallel: 2
       matrix:
         include:
           - lineage: L1
@@ -135,13 +135,9 @@ jobs:
           # ★L3 は L1/L2 と同じ単位に戻す。★★前の頭（realu-L3.enc）は
           #   単位が違うので繋がらない ── ★頭の「単位の指紋」が食い違えば
           #   grow.py が自分で生まれ直す（2026-09-11 に入れた仕組み）。
-          - lineage: L3
-            finish_mix: "0.2"   # ★広く浅く
-            vocab: "6000"
-            tok: work/tok.json
-            pantry: work/pantry
-            fresh: "0"
-            move_d: "0"         # ★引っ越さない
+          # ★★2026-10-31: L3（★広く浅く・finish_mix 0.2）は止めた（★オーナー「もうL3は消していいんじゃない？」）。
+          #   ★27.1M で val 2.6199 ＝ ★3つの中で一番弱く、★話す頭も L2 になった。
+          #   ★頭は Release の realu-L3.enc に、記録は growth-L3.json に残してある（★戻すならここに足すだけ）。
     env:
       LIN: ${{ matrix.lineage }}
       REALU_BRAIN: brain
@@ -737,7 +733,7 @@ jobs:
             echo "★★時計が無い。★学びは短めにする"; LEFT=1800
           else
             USED=$(( $(date +%s) - T0 ))
-            LEFT=$(( 120*60 - USED - 600 ))   # ★ジョブ120分・最後10分は残すため
+            LEFT=$(( 120*60 - USED - 840 ))   # ★ジョブ120分・最後14分は残す（★10分＋理解テスト4分・2026-10-31）
             echo "★使った $((USED/60))分"
           fi
           # ★★★足りないなら**学ばない**。★学んで締切に殺されると頭が残らない。
@@ -809,6 +805,14 @@ jobs:
           exit $code
 
       # ── ★自分を残す。★★これが消えると、これまでの全部が消える
+      # ★★★理解テスト（★2026-10-31 オーナー「入れよう」）。★毎回、残す頭で300問を測って記録に足す。
+      #   ★一言を読んで4択のどれが続きやすいかで選ばせる（★bench_imi.py・当てずっぽう25%）。
+      #   ★実測 152秒（talk run 41112728825）。★4分で打ち切る。★転んでも頭は残す（★|| true）。
+      - name: 理解テストを測る
+        run: |
+          if [ ! -f brain/realu.pt ] || [ ! -f imi_test.jsonl ]; then echo "★測る頭か問いが無い"; exit 0; fi
+          REALU_CK=brain/realu.pt REALU_IMI_HIST="growth-$LIN.json" timeout 240 python -u bench_imi.py || { echo "★測れなかった"; exit 0; }
+
       - name: あたらしいわたしを残す
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}

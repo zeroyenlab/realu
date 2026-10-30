@@ -28,7 +28,7 @@ on:
         description: "1 にすると、20例ぶんの候補表を bench_reply.json に書き出す（つまみ調整用）"
         default: "0"
       lineage:
-        description: "だれと話すか（L1 / L2 / L3）"
+        description: "だれと話すか（L1 / L2）"
         default: "L1"
       temp:
         description: "ことばのやわらかさ（0.6 かたい 〜 1.0 やわらかい）"

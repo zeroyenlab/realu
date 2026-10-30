@@ -25,7 +25,7 @@ def main():
         sys.stdout.reconfigure(encoding="utf-8", errors="replace")
     except Exception:
         pass
-    ck = os.path.join(WORK, "realu.pt")
+    ck = os.environ.get("REALU_CK") or os.path.join(WORK, "realu.pt")   # ★grow は brain/realu.pt を測る
     if not os.path.exists(ck):
         print("★まだ頭がない。")
         return 1
@@ -80,6 +80,20 @@ def main():
     print("★理解テスト " + json.dumps(res, ensure_ascii=False), flush=True)
     with open(os.path.join(HERE, "bench_imi.json"), "w", encoding="utf-8") as f:
         json.dump(res, f, ensure_ascii=False, indent=1)
+    # ★★grow から呼ばれた時は、★その回の記録（growth-L?.json の最後の1回）に点を足す
+    hp = os.environ.get("REALU_IMI_HIST")
+    if hp and os.path.exists(hp):
+        with open(hp, encoding="utf-8") as f:
+            h = json.load(f)
+        if h.get("runs"):
+            h["runs"][-1]["rikai"] = {
+                "pmi": res["pmi"], "raw": res["raw"], "n": res["n"],
+                "byAsk": {k.split("/")[0]: v for k, v in res["by_ask"].items()
+                          if k.endswith("/pmi") and not k.startswith("?")}}
+            with open(hp, "w", encoding="utf-8", newline=chr(10)) as f:
+                json.dump(h, f, ensure_ascii=False, indent=1)
+                f.write(chr(10))
+            print("★記録に足した: 理解 %.1f%%" % (res["pmi"] * 100), flush=True)
     return 0
 
 

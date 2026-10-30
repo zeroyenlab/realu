@@ -399,7 +399,7 @@ def tell(k, d):
     #     ★それが見えないと「なぜ3つ要るのか」が伝わらない。
     #   ★★どれが何かは**記録に入っている値だけ**から言う（★grow.yml を写さない）。
     lins = []
-    for nm in ("L1", "L2", "L3"):
+    for nm in ("L1", "L2"):   # ★L3 は 2026-10-31 に止めた
         try:
             with open(os.path.join(HERE, "growth-%s.json" % nm), encoding="utf-8") as f:
                 rr = (json.load(f) or {}).get("runs") or []
@@ -419,6 +419,9 @@ def tell(k, d):
                 "talk": (r.get("bySrc") or {}).get("talk"),
                 "loopPct": r.get("loopPct"),
                 "runs": len(rr),
+                # ★★理解テスト（★2026-10-31）。★[いま, はじめて測った時]（★伸びを見せる）
+                "rikai": ([x["rikai"]["pmi"] for x in rr if x.get("rikai")][-1:]
+                          + [x["rikai"]["pmi"] for x in rr if x.get("rikai")][:1]) or None,
                 # ★いちばん新しく書いた1本だけ（★玄関を重くしない）
                 "wrote": {"start": w.get("start"), "text": (w.get("text") or "")[:160]},
             })

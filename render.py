@@ -205,7 +205,7 @@ def main():
     #   ★★何がちがう頭なのかは、★**記録に入っている値だけ**から言う（★grow.yml を写さない）。
     def _lin_rows():
         out = []
-        for nm in ("L1", "L2", "L3"):
+        for nm in ("L1", "L2"):   # ★L3 は 2026-10-31 に止めた
             r = (load(os.path.join(HERE, "growth-%s.json" % nm), {}) or {}).get("runs") or []
             if not r:
                 continue
@@ -214,6 +214,9 @@ def main():
             out.append({"name": nm, "layers": x.get("layers"), "params": x.get("params"),
                         "val": x.get("val"), "score": x.get("score"),
                         "finishMix": x.get("finishMix"), "runs": len(r),
+                        # ★★理解テスト（★2026-10-31）。★[いま, はじめて測った時]
+                        "rikai": ([y["rikai"]["pmi"] for y in r if y.get("rikai")][-1:]
+                                  + [y["rikai"]["pmi"] for y in r if y.get("rikai")][:1]) or None,
                         "wrote": {"start": w.get("start"),
                                   "text": (w.get("text") or "")[:160]}})
         return out
@@ -231,6 +234,11 @@ def main():
                 body.append('<span class="lv"><b>%.4f</b> 会話の点</span>' % x["score"])
             if x.get("val") is not None:
                 body.append('<span class="lv2">全体 %.4f</span>' % x["val"])
+            rk = x.get("rikai")
+            if rk:
+                d = (rk[0] - rk[-1]) * 100
+                body.append('<span class="lv2">理解 %.1f%%%s</span>'
+                            % (rk[0] * 100, (" (%+.1f)" % d) if len(rk) > 1 and abs(d) >= 0.05 else ""))
             t = (x.get("wrote") or {}).get("text") or ""
             st = (x.get("wrote") or {}).get("start") or ""
             cells.append(
@@ -553,6 +561,10 @@ def main():
         'var v="";'
         'if(x.score!=null)v+="<span class=\\"lv\\"><b>"+f4(x.score)+"</b> 会話の点</span>";'
         'if(x.val!=null)v+="<span class=\\"lv2\\">全体 "+f4(x.val)+"</span>";'
+        # ★★理解テスト（★2026-10-31）。★4択300問・当てずっぽう25%
+        'var rk=x.rikai;if(rk&&rk.length){var dd=(rk[0]-rk[rk.length-1])*100;'
+        'v+="<span class=\\"lv2\\">理解 "+(rk[0]*100).toFixed(1)+"%%"'
+        '+((rk.length>1&&Math.abs(dd)>=0.05)?(" ("+(dd>0?"+":"")+dd.toFixed(1)+")"):"")+"</span>"}'
         'var w=(x.wrote||{}),wt=w.text||"";'
         'return "<div class=\\"ln"+(me?" me":"")+"\\">"'
         '+"<div class=\\"lh\\"><span class=\\"lnm\\">"+esc(x.name)+"</span>"'
