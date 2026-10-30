@@ -1,69 +1,6 @@
 {
  "runs": [
   {
-   "at": "2026-10-19T08:12:05Z",
-   "val": 2.8428,
-   "prev": 2.8445,
-   "valTag": "fixed-holdout-v1",
-   "stoppedAt": 158,
-   "stuck": 0,
-   "evalTag": "fixed-ix-v1",
-   "secPerStep": 26.3747,
-   "steps": 300,
-   "bpc": 3.3647,
-   "charsPerTok": 1.2189,
-   "score": 2.1277,
-   "scoreW": 2.0,
-   "scoreMode": "talk",
-   "finishMix": 0.5,
-   "lineage": "L1",
-   "layers": 16,
-   "params": 117914880,
-   "chars": 1045308899,
-   "tokens": 857567631,
-   "grew": 0,
-   "rolledBack": false,
-   "ownVal": null,
-   "ownScore": null,
-   "d": 768,
-   "loops": 1,
-   "spread": 2.8225,
-   "bytes": 1415115957,
-   "heads": 6,
-   "ctx": 512,
-   "vocab": 6000,
-   "kind": "bpe",
-   "arch": "tpp-loop",
-   "wantWider": false,
-   "layerCap": 16,
-   "mixChanged": false,
-   "bySrc": {
-    "laws": 4.0252,
-    "wiki": 2.9994,
-    "aozora": 3.357,
-    "hanrei": 3.4511,
-    "kokkai": 2.6216,
-    "web": 2.8852,
-    "talk": 2.1277
-   },
-   "wrote": [
-    {
-     "start": "わたしは",
-     "text": "わたしは、僕は、昔のことも、誰も知らないから、あなたは僕のお話を聞いていた。 そういう通り、僕は、そういうふうに、僕のお話を聞いた。僕は、僕の階段を、その上で、何か云ったって、僕は、どうもだぞ、僕に聞かないようにしてくれるような気もいた。僕は"
-    },
-    {
-     "start": "第一条",
-     "text": "第一条巡洋艦と合流した。 1881年 （明治24年） 3月26日 - ロンドン で武装。 8月3日 - メイン巡洋艦 （ 英語版 ） がロンドン艦艇へ ウォルト・ディズニー・メール に向かい、レーガンは「 86 巡洋�"
-    },
-    {
-     "start": "この法律において",
-     "text": "この法律において「カロラ」と呼ぶ者あり、現在は異例である。 アリーのような種類のカロライアンテルは、アリーが今日ではトレンドよりも多く、アリーのような古代ローマのカタルーニャ地域のカリウムのカロライアンスが好ましく、それらを前提にアリータスと呼ばれることが"
-    }
-   ],
-   "loopPct": 0.92,
-   "movedBody": false
-  },
-  {
    "at": "2026-10-19T09:29:31Z",
    "val": 2.8387,
    "prev": 2.8428,
@@ -12599,6 +12536,69 @@
    ],
    "loopPct": 16.88,
    "movedBody": false
+  },
+  {
+   "at": "2026-10-30T00:29:51Z",
+   "val": 2.795,
+   "prev": 2.7898,
+   "valTag": "fixed-holdout-v1",
+   "stoppedAt": 158,
+   "stuck": 0,
+   "evalTag": "fixed-ix-v1",
+   "secPerStep": 26.3771,
+   "steps": 300,
+   "bpc": 3.3082,
+   "charsPerTok": 1.2189,
+   "score": 2.1157,
+   "scoreW": 2.0,
+   "scoreMode": "talk",
+   "finishMix": 0.5,
+   "lineage": "L1",
+   "layers": 16,
+   "params": 117914880,
+   "chars": 1045308899,
+   "tokens": 857567631,
+   "grew": 0,
+   "rolledBack": false,
+   "ownVal": null,
+   "ownScore": null,
+   "d": 768,
+   "loops": 1,
+   "spread": 2.7709,
+   "bytes": 1415115957,
+   "heads": 6,
+   "ctx": 512,
+   "vocab": 6000,
+   "kind": "bpe",
+   "arch": "tpp-loop",
+   "wantWider": false,
+   "layerCap": 16,
+   "mixChanged": false,
+   "bySrc": {
+    "laws": 3.9081,
+    "wiki": 2.9469,
+    "aozora": 3.3126,
+    "hanrei": 3.4231,
+    "kokkai": 2.5918,
+    "web": 2.8434,
+    "talk": 2.1157
+   },
+   "wrote": [
+    {
+     "start": "わたしは",
+     "text": "わたしはちゃんと見えるんだよね。」 HF「そうなんです。ちゃんと忙しいと見てしまいます」 DA「お！チャレンジしてみます！チャレンジしてみます！」 HF「チャレンジしてみます！」 H"
+    },
+    {
+     "start": "第一条",
+     "text": "第一条（羽田協定） 2021年 - 糸井健太郎、タドル、ミノルタウン、ノルタウン、ノルタウン、ノルタウンの3つのテーマにアーケードパートナーのワークステーション （映画プロデューサー） - ヴィテージョン・テレビ放送 ダイナマ"
+    },
+    {
+     "start": "この法律において",
+     "text": "この法律において、次痛治において、本来の心身が悪いのだからということに関しましては、心から反省をしなければならぬような気持ちでおる。」 AA「（拍手） そこで、総理、私は、総理、あなたが先決として見てくださいよ。（発言する者あり）」 AB「小渕内閣総理大臣 これは、興味深いことだとは"
+    }
+   ],
+   "loopPct": 19.87,
+   "movedBody": false
   }
  ],
  "bestVal": 2.7668,
@@ -12649,5 +12649,5 @@
  ],
  "wantWider": false,
  "nextD": 768,
- "bad": 0
+ "bad": 1
 }
