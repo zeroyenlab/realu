@@ -1,69 +1,6 @@
 {
  "runs": [
   {
-   "at": "2026-10-19T18:26:45Z",
-   "val": 2.8417,
-   "prev": 2.845,
-   "valTag": "fixed-holdout-v1",
-   "stoppedAt": 206,
-   "stuck": 0,
-   "evalTag": "fixed-ix-v1",
-   "secPerStep": 19.6444,
-   "steps": 300,
-   "bpc": 3.3634,
-   "charsPerTok": 1.2189,
-   "score": 2.1266,
-   "scoreW": 2.0,
-   "scoreMode": "talk",
-   "finishMix": 0.5,
-   "lineage": "L1",
-   "layers": 16,
-   "params": 117914880,
-   "chars": 1045308899,
-   "tokens": 857567631,
-   "grew": 0,
-   "rolledBack": false,
-   "ownVal": null,
-   "ownScore": null,
-   "d": 768,
-   "loops": 1,
-   "spread": 2.8921,
-   "bytes": 1415115957,
-   "heads": 6,
-   "ctx": 512,
-   "vocab": 6000,
-   "kind": "bpe",
-   "arch": "tpp-loop",
-   "wantWider": false,
-   "layerCap": 16,
-   "mixChanged": false,
-   "bySrc": {
-    "laws": 4.0217,
-    "wiki": 2.9966,
-    "aozora": 3.3572,
-    "hanrei": 3.4538,
-    "kokkai": 2.6221,
-    "web": 2.8837,
-    "talk": 2.1266
-   },
-   "wrote": [
-    {
-     "start": "わたしは",
-     "text": "わたしは今日は何か得意な選択肢がありますか？」 CQ「認識していますが、保険とかは何とかと言われますか？」 DT「私は支えません。あると思います。」 CQ「私も在宅勤務なんですが、職場が場合によっては窓ガラスでもあるのかな？」 DT「なるほど、"
-    },
-    {
-     "start": "第一条",
-     "text": "第一条裁判人の除かれるべきですね。」 AA「政府参考人 現在、私的地位協定がございます。大体八割のの株式は三割以上が事業ということでございまして、そして三倍、それから五割から五割のお金が、一四％ずつお願いしているという状況でございます。（発言する者あり）」 AB「先ほど御説明させて"
-    },
-    {
-     "start": "この法律において",
-     "text": "この法律において「株式会社株式会社」は事業に保存されている。 教育委員会事務局 、言語・ 教育委員 、 教育委員 、 教育委員 、 教育局 など。 教育委員 が 教育委員 を務めた [ 1 ] 。 ↑ 高橋昌二 1992年11月22日時点の オリジナル よりアーカイブ。 1 2 3"
-    }
-   ],
-   "loopPct": 15.84,
-   "movedBody": false
-  },
-  {
    "at": "2026-10-19T19:44:21Z",
    "val": 2.8386,
    "prev": 2.8417,
@@ -12598,6 +12535,69 @@
     }
    ],
    "loopPct": 6.14,
+   "movedBody": false
+  },
+  {
+   "at": "2026-10-30T10:35:17Z",
+   "val": 2.7816,
+   "prev": 2.7924,
+   "valTag": "fixed-holdout-v1",
+   "stoppedAt": 142,
+   "stuck": 0,
+   "evalTag": "fixed-ix-v1",
+   "secPerStep": 29.7959,
+   "steps": 319,
+   "bpc": 3.2923,
+   "charsPerTok": 1.2189,
+   "score": 2.1043,
+   "scoreW": 2.0,
+   "scoreMode": "talk",
+   "finishMix": 0.5,
+   "lineage": "L1",
+   "layers": 16,
+   "params": 117914880,
+   "chars": 1045308899,
+   "tokens": 857567631,
+   "grew": 0,
+   "rolledBack": false,
+   "ownVal": null,
+   "ownScore": null,
+   "d": 768,
+   "loops": 1,
+   "spread": 3.014,
+   "bytes": 1415115957,
+   "heads": 6,
+   "ctx": 512,
+   "vocab": 6000,
+   "kind": "bpe",
+   "arch": "tpp-loop",
+   "wantWider": false,
+   "layerCap": 16,
+   "mixChanged": false,
+   "bySrc": {
+    "laws": 3.8732,
+    "wiki": 2.9351,
+    "aozora": 3.2963,
+    "hanrei": 3.413,
+    "kokkai": 2.5773,
+    "web": 2.8288,
+    "talk": 2.1043
+   },
+   "wrote": [
+    {
+     "start": "わたしは",
+     "text": "わたしは、本来は相手が口をこめて、とんでもない口をすぐに空を見つめて、自分を殺し、黙って眼を見ると、主人は愚痴り、または恐らくその顔を見ると、他人の顔を見ては認められない、と言つて、下女へはいって来た。 すると、黙ってみると、なんだか、�"
+    },
+    {
+     "start": "第一条",
+     "text": "第一条の明言に反し、日本共産党の党首を辞任した。この皇族議員は、本院議員としての戦いを引き起こすような逸話を残すことになった。 そのため、日本共産党は太平洋戦争の主力は、国民政府の自由・民主主義の自由、憲法の公権力の跡が明らかになり、宗教、教育、教育"
+    },
+    {
+     "start": "この法律において",
+     "text": "この法律において「辛味丸」（きささき） 1950年 （昭和25年） 7月 - 講談社 の 講談社文庫 に改題、入社。 1953年 （昭和28年） 7月 - 講談社文庫 （講談社） 1952年 （昭和27年） 2月27日 - 講談社文庫"
+    }
+   ],
+   "loopPct": 3.25,
    "movedBody": false
   }
  ],
