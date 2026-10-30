@@ -1,69 +1,6 @@
 {
  "runs": [
   {
-   "at": "2026-10-19T15:51:13Z",
-   "val": 2.8515,
-   "prev": 2.8387,
-   "valTag": "fixed-holdout-v1",
-   "stoppedAt": 0,
-   "stuck": 0,
-   "evalTag": "fixed-ix-v1",
-   "secPerStep": 12.6179,
-   "steps": 300,
-   "bpc": 3.375,
-   "charsPerTok": 1.2189,
-   "score": 2.1334,
-   "scoreW": 2.0,
-   "scoreMode": "talk",
-   "finishMix": 0.5,
-   "lineage": "L1",
-   "layers": 16,
-   "params": 117914880,
-   "chars": 1045308899,
-   "tokens": 857567631,
-   "grew": 0,
-   "rolledBack": false,
-   "ownVal": null,
-   "ownScore": null,
-   "d": 768,
-   "loops": 1,
-   "spread": 3.0927,
-   "bytes": 1415115957,
-   "heads": 6,
-   "ctx": 512,
-   "vocab": 6000,
-   "kind": "bpe",
-   "arch": "tpp-loop",
-   "wantWider": false,
-   "layerCap": 16,
-   "mixChanged": false,
-   "bySrc": {
-    "laws": 4.0333,
-    "wiki": 3.007,
-    "aozora": 3.3645,
-    "hanrei": 3.4534,
-    "kokkai": 2.6314,
-    "web": 2.8936,
-    "talk": 2.1334
-   },
-   "wrote": [
-    {
-     "start": "わたしは",
-     "text": "わたしは秋葉原ですよ」 GG「そうですか！かわいそうですが、いいですね！」 GI「そうですね。さすがです。」 GG「いい感じでしたか？」 GI「あと、好きなので、そこまでいけてないです。」 GG「奇遇ですね！」 GI「そ"
-    },
-    {
-     "start": "第一条",
-     "text": "第一条投資法人割額の総割分ばかりお願いをしております。」 AA「ちょっとお聞きしたいんですが、平成九年の当初、三年目以降、一年半の、五億円の延長のある返済振り分のうち二億円が、四億円を超えるということで、こういうことがあったんじゃないかなというふうに思っておりますが、これでもありますので、続き"
-    },
-    {
-     "start": "この法律において",
-     "text": "この法律において「明治規定要件特別措置法第六条」という。）が上記規定であるため、法令により「一応基本法」とするものではなく、cheekerにおいて「賄賂」という。 日本における「 七条 」は、一条大権が、4条に分かれて上る「一条」については、2条に基づいて「一条」となる。 なお、 1条 については「 一条二条 」を「一条」を"
-    }
-   ],
-   "loopPct": 5.84,
-   "movedBody": false
-  },
-  {
    "at": "2026-10-19T17:09:36Z",
    "val": 2.845,
    "prev": 2.8515,
@@ -12598,6 +12535,69 @@
     }
    ],
    "loopPct": 0.0,
+   "movedBody": false
+  },
+  {
+   "at": "2026-10-30T08:01:43Z",
+   "val": 2.7979,
+   "prev": 2.7994,
+   "valTag": "fixed-holdout-v1",
+   "stoppedAt": 271,
+   "stuck": 0,
+   "evalTag": "fixed-ix-v1",
+   "secPerStep": 14.436,
+   "steps": 300,
+   "bpc": 3.3115,
+   "charsPerTok": 1.2189,
+   "score": 2.1209,
+   "scoreW": 2.0,
+   "scoreMode": "talk",
+   "finishMix": 0.5,
+   "lineage": "L1",
+   "layers": 16,
+   "params": 117914880,
+   "chars": 1045308899,
+   "tokens": 857567631,
+   "grew": 0,
+   "rolledBack": false,
+   "ownVal": null,
+   "ownScore": null,
+   "d": 768,
+   "loops": 1,
+   "spread": 3.0577,
+   "bytes": 1415115957,
+   "heads": 6,
+   "ctx": 512,
+   "vocab": 6000,
+   "kind": "bpe",
+   "arch": "tpp-loop",
+   "wantWider": false,
+   "layerCap": 16,
+   "mixChanged": false,
+   "bySrc": {
+    "laws": 3.9092,
+    "wiki": 2.949,
+    "aozora": 3.3174,
+    "hanrei": 3.4295,
+    "kokkai": 2.5927,
+    "web": 2.8477,
+    "talk": 2.1209
+   },
+   "wrote": [
+    {
+     "start": "わたしは",
+     "text": "わたしはそう思いました。」 GM「それはそうですね。100万もらえるといるといいですよね。」 FV「30万くらいですかね。」 GM「ええ！知り合いがマスクですか？」 FV「すごい、埼玉に誰が来たと思います。」 GM「そうなんです"
+    },
+    {
+     "start": "第一条",
+     "text": "第一条の規定に反する理由はいつでもしないでそう言うのです。 この法案がきわめて重大な問題点だと思います。 政府が提案をしたのは、何といっても、それが必要とされれば、それは、連合国と国境離島を維持しようとしているだけに、日本と国境離島は既に決められることになります。 そこで、この法案は、"
+    },
+    {
+     "start": "この法律において",
+     "text": "この法律において「祝日」は当時の名古屋大学を設立し、４年間にわたって安心して改めて日本学士院を設立した 。 中華学院大学の組織は、このような意見を開講して、これを国史学をより良くする学位を大いに期待する 。 岩手県立大学は、1984年に始まり1988年に開学した。 2"
+    }
+   ],
+   "loopPct": 5.83,
    "movedBody": false
   }
  ],
