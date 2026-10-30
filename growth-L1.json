@@ -1,69 +1,6 @@
 {
  "runs": [
   {
-   "at": "2026-10-19T09:29:31Z",
-   "val": 2.8387,
-   "prev": 2.8428,
-   "valTag": "fixed-holdout-v1",
-   "stoppedAt": 142,
-   "stuck": 0,
-   "evalTag": "fixed-ix-v1",
-   "secPerStep": 29.7708,
-   "steps": 300,
-   "bpc": 3.3598,
-   "charsPerTok": 1.2189,
-   "score": 2.13,
-   "scoreW": 2.0,
-   "scoreMode": "talk",
-   "finishMix": 0.5,
-   "lineage": "L1",
-   "layers": 16,
-   "params": 117914880,
-   "chars": 1045308899,
-   "tokens": 857567631,
-   "grew": 0,
-   "rolledBack": false,
-   "ownVal": null,
-   "ownScore": null,
-   "d": 768,
-   "loops": 1,
-   "spread": 3.1829,
-   "bytes": 1415115957,
-   "heads": 6,
-   "ctx": 512,
-   "vocab": 6000,
-   "kind": "bpe",
-   "arch": "tpp-loop",
-   "wantWider": false,
-   "layerCap": 16,
-   "mixChanged": false,
-   "bySrc": {
-    "laws": 4.0173,
-    "wiki": 2.9967,
-    "aozora": 3.3543,
-    "hanrei": 3.4487,
-    "kokkai": 2.618,
-    "web": 2.8819,
-    "talk": 2.13
-   },
-   "wrote": [
-    {
-     "start": "わたしは",
-     "text": "わたしは、実際は手元に、そんなことがあったんです。 そのうちに、な払い戻しは、それをどうするかということは、まさに、現金でやっておられる方々に対してどのような認識かということは、国が責任を持ってやってみんなでやるのか、あるいは、それでもうこれは是非やはり検討していただきたいと思うんです"
-    },
-    {
-     "start": "第一条",
-     "text": "第一条町 - ここにも残存する旧約聖書の近代文明の伝統的な哲学者の 土浦王黒浦 の視点から、 ４月1日 の 東京府 で 大風平成 の年半から 1806年 にかけて 解放 された 九龍城 の先駆的 千鳥浦 の取り出し�"
-    },
-    {
-     "start": "この法律において",
-     "text": "この法律において「塀」については、尾道開拓税のあり方については、尾道市における地域貢献の進展の予想についても、政府が取り組んでいる点を指摘して、主な点は、頑強になる方向で極めて厳格な対応をしていくことは、政府としても、尾道市が必要であると考えます。しかしながら、同時に、様々"
-    }
-   ],
-   "loopPct": 0.93,
-   "movedBody": false
-  },
-  {
    "at": "2026-10-19T10:43:58Z",
    "val": 2.8456,
    "prev": 2.8387,
@@ -12599,6 +12536,69 @@
    ],
    "loopPct": 19.87,
    "movedBody": false
+  },
+  {
+   "at": "2026-10-30T01:47:15Z",
+   "val": 2.794,
+   "prev": 2.795,
+   "valTag": "fixed-holdout-v1",
+   "stoppedAt": 156,
+   "stuck": 0,
+   "evalTag": "fixed-ix-v1",
+   "secPerStep": 26.8333,
+   "steps": 300,
+   "bpc": 3.3069,
+   "charsPerTok": 1.2189,
+   "score": 2.1167,
+   "scoreW": 2.0,
+   "scoreMode": "talk",
+   "finishMix": 0.5,
+   "lineage": "L1",
+   "layers": 16,
+   "params": 117914880,
+   "chars": 1045308899,
+   "tokens": 857567631,
+   "grew": 0,
+   "rolledBack": false,
+   "ownVal": null,
+   "ownScore": null,
+   "d": 768,
+   "loops": 1,
+   "spread": 2.891,
+   "bytes": 1415115957,
+   "heads": 6,
+   "ctx": 512,
+   "vocab": 6000,
+   "kind": "bpe",
+   "arch": "tpp-loop",
+   "wantWider": false,
+   "layerCap": 16,
+   "mixChanged": false,
+   "bySrc": {
+    "laws": 3.8972,
+    "wiki": 2.9483,
+    "aozora": 3.3129,
+    "hanrei": 3.427,
+    "kokkai": 2.5884,
+    "web": 2.8437,
+    "talk": 2.1167
+   },
+   "wrote": [
+    {
+     "start": "わたしは",
+     "text": "わたしは、いわゆる一般向けの物価上昇を目指すことを決め、従来のように、全く無駄を示さないというものであります。 しかし、その原因については、まさに奇妙な議論がなされなければなりませんが、なお多くの企業は、自分のところに、こういうものを所得なりと、これはまさに、一人一人を選ぶことになり�"
+    },
+    {
+     "start": "第一条",
+     "text": "第一条 13 ] 。 池田は、日本で最も優位に置くよう「 池田新令 」をNICCを除き、獲得した「 池田新法 」である。 池田は、池田政権下で池田政権のもとに借入税制を導入。 1938年 （昭和12年） 文化勲章 は、�"
+    },
+    {
+     "start": "この法律において",
+     "text": "この法律において 」 」を、 2011年 11月25日 から 2012年 11月30日 にかけて、 NEWS29系 での運用が開始された。 一部の特急列車は、 2012年 3月14日 に、 2013年 3月17日 より SNS にて、 2013年 1月"
+    }
+   ],
+   "loopPct": 6.28,
+   "movedBody": false
   }
  ],
  "bestVal": 2.7668,
@@ -12649,5 +12649,5 @@
  ],
  "wantWider": false,
  "nextD": 768,
- "bad": 1
+ "bad": 2
 }
