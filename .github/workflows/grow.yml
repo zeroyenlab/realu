@@ -615,6 +615,13 @@ jobs:
       - name: 物語のごはんをもらう（はじめの一回だけ）
         run: python -u fetch_game.py || true
 
+      # ★★★「言葉→意味」の練習問題（★2026-10-31）。★repo に置いてある小さい物をそのまま棚へ。
+      #   ★to_imi.py が作る。★中身が変われば大きさの合計が変わり、★棚の作り直しの判定に乗る。
+      - name: 意味の練習問題を棚の材料に置く
+        run: |
+          mkdir -p work
+          if [ -f food/imi.txt.gz ]; then cp food/imi.txt.gz work/imi.txt.gz && echo "★練習問題を置いた"; fi
+
       - name: 棚をつくる（ごはんが増えた時だけ）
         run: |
           # ★★★「新しいか」で見てはいけない。

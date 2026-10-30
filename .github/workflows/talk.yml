@@ -33,6 +33,9 @@ on:
       temp:
         description: "ことばのやわらかさ（0.6 かたい 〜 1.0 やわらかい）"
         default: "0.8"
+      rikai:
+        description: "1 にすると、理解テスト（imi_test.jsonl・4択）を測る"
+        default: "0"
 
 permissions:
   contents: read          # ★★何も書かない。★人から来た言葉は残さない
@@ -118,3 +121,10 @@ jobs:
           python -u bench_reply.py
           echo "――― ここから下をコピーして手元で使う ―――"
           cat bench_reply.json
+
+      # ★★★理解テスト（★2026-10-31）。★一言を読んで4択のどれが続きやすいかで選ばせる。
+      - name: 理解テストを測る
+        if: inputs.rikai == '1'
+        env:
+          REALU_THREADS: "4"
+        run: python -u bench_imi.py

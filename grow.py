@@ -195,7 +195,9 @@ except Exception:
 #   ★学習率を0へ落とす区間と重なるので、★「会話の型で固まる」形になる。
 #   ★0 なら仕上げをしない。
 FINISH_P = float(os.environ.get("REALU_FINISH", 0.20))
-FINISH_SRC = os.environ.get("REALU_FINISH_SRC", "talk.txt")
+# ★★2026-10-31: 会話のすぐ後ろに「言葉→意味」の練習問題（imi.txt）を置いた。
+#   ★「,」で並べると、★並んだごはんを**まとめて1つの区間**として引く（★棚の中で隣どうしにしてある）。
+FINISH_SRC = os.environ.get("REALU_FINISH_SRC", "talk.txt,imi.txt")
 # ★★★仕上げ中に会話から引く割合（★2026-09-10）。
 #   ★1.0（会話だけ）で試したら、★会話は 2.658→2.266 と大きく良くなったが、
 #   ★★国会 2.861→3.356 / 法令 4.821→5.191 と他が全部落ちて、★全体では巻き戻された。
@@ -1311,12 +1313,13 @@ def main():
     in_finish = False
     focus_range = None
     if FINISH_P > 0 and pantry is not None:
-        for _m in (getattr(pantry, "marks", None) or []):
-            if _m.get("name") == FINISH_SRC:
-                _a, _b = int(_m.get("at") or 0), int(_m.get("until") or 0)
-                if _b - _a > model.ctx * 64:      # ★短すぎたら意味がない
-                    focus_range = (_a, _b)
-                break
+        _want = [w.strip() for w in FINISH_SRC.split(",") if w.strip()]
+        _got = [(int(_m.get("at") or 0), int(_m.get("until") or 0))
+                for _m in (getattr(pantry, "marks", None) or []) if _m.get("name") in _want]
+        if _got:
+            _a, _b = min(g[0] for g in _got), max(g[1] for g in _got)
+            if _b - _a > model.ctx * 64:          # ★短すぎたら意味がない
+                focus_range = (_a, _b)
     if focus_range:
         print("★仕上げの用意: %s は棚の %s〜%s（%.1f 万トークン）。★%d歩から使う"
               % (FINISH_SRC, format(focus_range[0], ","), format(focus_range[1], ","),

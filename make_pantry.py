@@ -80,13 +80,17 @@ MIX = {
     # ★★ゲームのシナリオ（★くだけた話し言葉）。★小さくて大事なので厚くする。
     #   ★★ただし**増やしすぎない** ── ★小さい棚を何度も見せると丸暗記になる。
     "game.txt":   {"repeat": int(os.environ.get("REALU_REP_GAME", 3))},
+    # ★★★「言葉→意味」の練習問題（★2026-10-31・to_imi.py が food/imi.txt.gz を作る）。
+    #   ★一言・その意味・4択の答え・短い返事。★約2千件と小さいので厚くする（★8回。効き目は理解テストで見て決め直す）。
+    #   ★★理解テスト（imi_test.jsonl）の問いは入れていない（★答えを見せない）。
+    "imi.txt":    {"repeat": int(os.environ.get("REALU_REP_IMI", 8))},
 }
 VAL_PER_MIL = int(os.environ.get("REALU_VAL_PERMIL", 3))
 EXTRA_MAX = int(os.environ.get("REALU_EXTRA_MAX", 4000))   # ★2本目の物差しの、1ソースあたりの上限
 EXTRA_MIN = int(os.environ.get("REALU_EXTRA_MIN", 200))    # ★これ未満のソースは測っても雑音
 SRC_MARK = re.compile("^<(web|本|会話) [^>]*>$")
 
-ORDER = ("laws.txt", "wiki.txt", "aozora.txt", "talk.txt", "game.txt",
+ORDER = ("laws.txt", "wiki.txt", "aozora.txt", "game.txt", "talk.txt", "imi.txt",
          "hanrei.txt", "kaiwa.txt", "kokkai.txt", "web.txt")
 
 

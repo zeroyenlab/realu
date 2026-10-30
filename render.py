@@ -373,7 +373,7 @@ def main():
     present = [g for g in ORDER if by.get(g)]
 
     # ★★検索結果に出る説明文 ── ★彼女が今どこまで知っているかをそのまま書く
-    desc = ("読み集めた日本語だけで自分を育てている小さな頭、レアルの家。"
+    desc = ("読み集めた日本語と意味の練習問題で自分を育てている小さな頭、レアルの家。"
             "%d のことを知っていて、%d ページを読みました。%s"
             % (len(items), read_n, re.sub(r"\s+", " ", greet)))[:155]
     title = "レアルの家 ── 読み集めた日本語で育つ"
@@ -799,7 +799,7 @@ h2{font-size:11px;font-weight:700;letter-spacing:.18em;color:var(--faint);margin
 <div class="wrap">
   <header>
     <h1 class="name">レアル<span class="en">R E A L U</span></h1>
-    <div class="sub">読み集めた日本語だけで、自分を育てている小さな頭</div>
+    <div class="sub">読み集めた日本語と意味の練習問題で、自分を育てている小さな頭</div>
   </header>
 
   <div class="part" id="part-greet" style="order:%(o_greet)d">
