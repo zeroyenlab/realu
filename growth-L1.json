@@ -1,69 +1,6 @@
 {
  "runs": [
   {
-   "at": "2026-10-19T23:24:27Z",
-   "val": 2.839,
-   "prev": 2.8428,
-   "valTag": "fixed-holdout-v1",
-   "stoppedAt": 178,
-   "stuck": 0,
-   "evalTag": "fixed-ix-v1",
-   "secPerStep": 23.1524,
-   "steps": 328,
-   "bpc": 3.3602,
-   "charsPerTok": 1.2189,
-   "score": 2.1316,
-   "scoreW": 2.0,
-   "scoreMode": "talk",
-   "finishMix": 0.5,
-   "lineage": "L1",
-   "layers": 16,
-   "params": 117914880,
-   "chars": 1045308899,
-   "tokens": 857567631,
-   "grew": 0,
-   "rolledBack": false,
-   "ownVal": null,
-   "ownScore": null,
-   "d": 768,
-   "loops": 1,
-   "spread": 3.035,
-   "bytes": 1415115957,
-   "heads": 6,
-   "ctx": 512,
-   "vocab": 6000,
-   "kind": "bpe",
-   "arch": "tpp-loop",
-   "wantWider": false,
-   "layerCap": 16,
-   "mixChanged": false,
-   "bySrc": {
-    "laws": 4.0206,
-    "wiki": 2.9941,
-    "aozora": 3.3581,
-    "hanrei": 3.4534,
-    "kokkai": 2.6191,
-    "web": 2.8818,
-    "talk": 2.1316
-   },
-   "wrote": [
-    {
-     "start": "わたしは",
-     "text": "わたしは、また、それを選ぶとき、いろいろなそういうことを踏まえて、中央省庁等において、自治体が本来の住宅情報に充てられるようにしていきたい、こういうふうに思っております。」 AA「松本委員 今、町長さんがおっしゃったように、さまざまな分野では、どのような形で、地元、地元の�"
-    },
-    {
-     "start": "第一条",
-     "text": "第一条の所在地） 症状 症状、症状、治療、反症状、心臓病、病性、血管症状、心身、脳本症、心筋外底 等、心臓疾患、心疾患、心筋梗塞、心筋梗塞 、心筋梗塞 、心臓 対数 等 、心筋梗塞 、心筋�"
-    },
-    {
-     "start": "この法律において",
-     "text": "この法律において「の冷函型の放出」という。 その後、 函館 、 延暦 、 姉妹型 、 柏木 、 小田原 、 山田 、 中野謙 、 青木鏡 、 平野 、 神田珠 などが生まれた。 1999年 （平成11年） 10月29日"
-    }
-   ],
-   "loopPct": 19.61,
-   "movedBody": false
-  },
-  {
    "at": "2026-10-20T00:42:11Z",
    "val": 2.8375,
    "prev": 2.839,
@@ -12598,6 +12535,69 @@
     }
    ],
    "loopPct": 25.06,
+   "movedBody": false
+  },
+  {
+   "at": "2026-10-30T15:41:39Z",
+   "val": 2.772,
+   "prev": 2.7733,
+   "valTag": "fixed-holdout-v1",
+   "stoppedAt": 158,
+   "stuck": 0,
+   "evalTag": "fixed-ix-v1",
+   "secPerStep": 26.2892,
+   "steps": 319,
+   "bpc": 3.2809,
+   "charsPerTok": 1.2189,
+   "score": 2.0951,
+   "scoreW": 2.0,
+   "scoreMode": "talk",
+   "finishMix": 0.5,
+   "lineage": "L1",
+   "layers": 16,
+   "params": 117914880,
+   "chars": 1045308899,
+   "tokens": 857567631,
+   "grew": 0,
+   "rolledBack": false,
+   "ownVal": null,
+   "ownScore": null,
+   "d": 768,
+   "loops": 1,
+   "spread": 2.7615,
+   "bytes": 1415115957,
+   "heads": 6,
+   "ctx": 512,
+   "vocab": 6000,
+   "kind": "bpe",
+   "arch": "tpp-loop",
+   "wantWider": false,
+   "layerCap": 16,
+   "mixChanged": false,
+   "bySrc": {
+    "laws": 3.8567,
+    "wiki": 2.9215,
+    "aozora": 3.2847,
+    "hanrei": 3.4021,
+    "kokkai": 2.5721,
+    "web": 2.8191,
+    "talk": 2.0951
+   },
+   "wrote": [
+    {
+     "start": "わたしは",
+     "text": "わたしはあまり好きじゃないですか？」 IY「好きです！最近は少し大きくなってます」 CY「今は娘が好きなんですか？」 IY「はい、同棲しているのが好きです」 CY「最近どこかに行かれるんですか？」 IY「うちは甘い"
+    },
+    {
+     "start": "第一条",
+     "text": "第一条、会社等は、当該�販売業者（その一部が女性を除く。）を所属区間とする。 （組織） 第十一条 出資は、以下に掲げる事項の十九（それぞれ、それぞれ、当該の理由を説明した事項に変更があったときは、同項各号に掲げる事項）を、高等学校等の長に対し、当該事項の説明に応じ、当該事項の決定をした事項の総数に当該事項に係る事項に関する事項（当該事項の内容に限る。）を、当該事項に係るものの場合に相当する事項（当該事項に係る事項に係る事項を含む。）に、"
+    },
+    {
+     "start": "この法律において",
+     "text": "この法律において「麺類」に由来する。 なお、麺類については、 麺類 、 麺類 、 麺類 、 麺類 、 麺類 、 麺類 、 麺類 、 牛乳 などが含まれている。 麺類は麺類の場合、麺類は麺類、麺類は麺類である。 麺類 、 札幌末期"
+    }
+   ],
+   "loopPct": 21.96,
    "movedBody": false
   }
  ],
