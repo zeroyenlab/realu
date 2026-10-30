@@ -1,69 +1,6 @@
 {
  "runs": [
   {
-   "at": "2026-10-20T00:42:11Z",
-   "val": 2.8375,
-   "prev": 2.839,
-   "valTag": "fixed-holdout-v1",
-   "stoppedAt": 158,
-   "stuck": 0,
-   "evalTag": "fixed-ix-v1",
-   "secPerStep": 26.351,
-   "steps": 328,
-   "bpc": 3.3584,
-   "charsPerTok": 1.2189,
-   "score": 2.1274,
-   "scoreW": 2.0,
-   "scoreMode": "talk",
-   "finishMix": 0.5,
-   "lineage": "L1",
-   "layers": 16,
-   "params": 117914880,
-   "chars": 1045308899,
-   "tokens": 857567631,
-   "grew": 0,
-   "rolledBack": false,
-   "ownVal": null,
-   "ownScore": null,
-   "d": 768,
-   "loops": 1,
-   "spread": 3.255,
-   "bytes": 1415115957,
-   "heads": 6,
-   "ctx": 512,
-   "vocab": 6000,
-   "kind": "bpe",
-   "arch": "tpp-loop",
-   "wantWider": false,
-   "layerCap": 16,
-   "mixChanged": false,
-   "bySrc": {
-    "laws": 4.0114,
-    "wiki": 2.9935,
-    "aozora": 3.3527,
-    "hanrei": 3.4511,
-    "kokkai": 2.6178,
-    "web": 2.8808,
-    "talk": 2.1274
-   },
-   "wrote": [
-    {
-     "start": "わたしは",
-     "text": "わたしは。」 BY「そうなんですか？結構前からですか？」 CC「友達と行く時は、カフェに行ってみようかなと思ってます。」 BY「いいですねー。私は友達と行くときは、夫の心介を感じて行くのですが、おもしろいことですね。」 CC「お友達、"
-    },
-    {
-     "start": "第一条",
-     "text": "第一条」と改められた [ 14 ] 。 大和国 では 園芸 が主流となった [ 15 ] 。 『日本大百科全書』では「 松案 での論理は、古典的な論理を持つ 正則国 が 徳川家康 を詩人として知る」と定義しており、それによって捉えた ["
-    },
-    {
-     "start": "この法律において",
-     "text": "この法律において「補正予算を組むためには今後再び対応策を今度は尽くすべきである。」 AB「しかるに、今回の補正予算案の審議に当たっては、これは財政法改正案が本当に失業を防ぐための手当であるという、この際に、再発防止策、政府を挙げてやっていかなければならない、そして、今回の補正予算では一日も早く成立をする、"
-    }
-   ],
-   "loopPct": 2.56,
-   "movedBody": false
-  },
-  {
    "at": "2026-10-20T01:56:54Z",
    "val": 2.8401,
    "prev": 2.8375,
@@ -12599,6 +12536,69 @@
    ],
    "loopPct": 21.96,
    "movedBody": false
+  },
+  {
+   "at": "2026-10-30T16:57:47Z",
+   "val": 2.7712,
+   "prev": 2.772,
+   "valTag": "fixed-holdout-v1",
+   "stoppedAt": 179,
+   "stuck": 0,
+   "evalTag": "fixed-ix-v1",
+   "secPerStep": 22.9376,
+   "steps": 300,
+   "bpc": 3.28,
+   "charsPerTok": 1.2189,
+   "score": 2.095,
+   "scoreW": 2.0,
+   "scoreMode": "talk",
+   "finishMix": 0.5,
+   "lineage": "L1",
+   "layers": 16,
+   "params": 117914880,
+   "chars": 1045308899,
+   "tokens": 857567631,
+   "grew": 0,
+   "rolledBack": false,
+   "ownVal": null,
+   "ownScore": null,
+   "d": 768,
+   "loops": 1,
+   "spread": 2.7291,
+   "bytes": 1415115957,
+   "heads": 6,
+   "ctx": 512,
+   "vocab": 6000,
+   "kind": "bpe",
+   "arch": "tpp-loop",
+   "wantWider": false,
+   "layerCap": 16,
+   "mixChanged": false,
+   "bySrc": {
+    "laws": 3.8597,
+    "wiki": 2.9203,
+    "aozora": 3.2859,
+    "hanrei": 3.4,
+    "kokkai": 2.5726,
+    "web": 2.8173,
+    "talk": 2.095
+   },
+   "wrote": [
+    {
+     "start": "わたしは",
+     "text": "わたしはとてもやはり何とかしてください。」 DR「ほんとうだと思います！」 DL「なんだか昔のエピソードってなんかもあるみたいですね！」 DR「そうなんですね！それですね！」 DL「はい！ありがとうございます！」"
+    },
+    {
+     "start": "第一条",
+     "text": "第一条�し，被告１１ の１１と２１はない。 ３よって，本件建物は，上記売買契約が終了した１２か月間にわた り被告３００万円を支払った（甲２４，１５３ないし６４０万円，甲７２の１ないし３５５ １，２６０万円，甲１６の１ないし２１，２８ないし３２，１５"
+    },
+    {
+     "start": "この法律において",
+     "text": "この法律において「作業用用」と「作業用」を塗り上げることで、作業用野生用部分が広く用いられるようになった。 このうち、太陽電池は日本の政府軍事動員法に抵触する要因であるとされ、 日本軍 のように太陽光発電は低温用燃料を採用した。 この機会に 戦車 を介していくために 帝国軍"
+    }
+   ],
+   "loopPct": 3.96,
+   "movedBody": false
   }
  ],
  "bestVal": 2.7668,
@@ -12649,5 +12649,5 @@
  ],
  "wantWider": false,
  "nextD": 768,
- "bad": 0
+ "bad": 1
 }
