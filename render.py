@@ -219,7 +219,7 @@ def main():
         return out
 
     def _lin_html(ls):
-        # ★この家で話しているのは L1（★speak.yml の既定）。★そこだけ印をつける
+        # ★この家で話しているのは L2（★speak.yml の既定・2026-10-30 に L1 から）。★そこだけ印をつける
         cells = []
         for x in ls:
             mx = x.get("finishMix")
@@ -239,9 +239,9 @@ def main():
                 '<div class="lsp">%d 層 ／ %.2f M ／ %d 回ぶん育った</div>'
                 '<div class="lvs">%s</div>'
                 '%s</div>'
-                % (" me" if x["name"] == "L1" else "", e(x["name"]),
+                % (" me" if x["name"] == "L2" else "", e(x["name"]),
                    ('<span class="lmx">%s</span>' % e(mix)) if mix else "",
-                   '<span class="lme">この家で話している子</span>' if x["name"] == "L1" else "",
+                   '<span class="lme">この家で話している子</span>' if x["name"] == "L2" else "",
                    x.get("layers") or 0, (x.get("params") or 0) / 1e6, x.get("runs") or 0,
                    "".join(body),
                    ('<div class="lw"><em>%s</em>%s</div>' % (e(st), e(t))) if t else ""))
@@ -549,7 +549,7 @@ def main():
         'if(lr&&LN.length){lr.innerHTML=LN.map(function(x){'
         'var mix=(typeof x.finishMix==="number")'
         '?("仕上げに会話 "+Math.round(x.finishMix*100)+"%%"):"";'   # ★%% ＝ この塊は % 書式の中
-        'var me=(x.name==="L1");'
+        'var me=(x.name==="L2");'
         'var v="";'
         'if(x.score!=null)v+="<span class=\\"lv\\"><b>"+f4(x.score)+"</b> 会話の点</span>";'
         'if(x.val!=null)v+="<span class=\\"lv2\\">全体 "+f4(x.val)+"</span>";'
