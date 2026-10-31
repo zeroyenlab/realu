@@ -32,12 +32,21 @@
   <div class="card"><div class="sub">1秒に出た字数</div><div class="big" id="cps">—</div></div>
   <div class="card" id="rows"></div>
   <div class="card"><div class="sub">AI の返事</div><div id="out"></div></div>
-  <div class="card"><div id="log">待っています</div></div>
+  <div class="card"><div id="log">読み込み中…</div></div>
   <button id="copy" disabled>結果をコピー</button>
 </main>
 <script type="module">
 // ★transformers.js は 4.3.1（2026-10-06）＝Qwen3_5ForConditionalGeneration が入っている版
-import { AutoProcessor, Qwen3_5ForConditionalGeneration, env } from "https://cdn.jsdelivr.net/npm/@huggingface/transformers@4.3.1/dist/transformers.web.min.js";
+// ★web.min.js は onnxruntime を外から呼ぶ（★ブラウザでは読めず、ボタンが動かなかった・10-31）→ 全部入りの min.js
+const $ = (id) => document.getElementById(id);
+const fail = (e) => { $("log").textContent += "\n★止まった：" + (e?.message || e); $("go").disabled = false; $("go").textContent = "もう一度"; };
+window.addEventListener("error", (e) => fail(e.error || e.message));
+window.addEventListener("unhandledrejection", (e) => fail(e.reason));
+let AutoProcessor, Qwen3_5ForConditionalGeneration;
+try {
+  ({ AutoProcessor, Qwen3_5ForConditionalGeneration } = await import("https://cdn.jsdelivr.net/npm/@huggingface/transformers@4.3.1/dist/transformers.min.js"));
+  $("log").textContent = "準備できました。「始める」を押してください";
+} catch (e) { fail(e); }
 const MODEL = "onnx-community/Qwen3.5-0.8B-ONNX";
 // ★REALT の使い方の説明に近い問い（★答えの中身は測らない・速さだけ）
 const ASKS = [
@@ -45,7 +54,6 @@ const ASKS = [
   "投稿に写真を2枚つけたいです。どうすればいい？",
   "通知がうるさいので減らしたい。どこを触ればいい？",
 ];
-const $ = (id) => document.getElementById(id);
 const res = { ua: navigator.userAgent, webgpu: !!navigator.gpu };
 const log = (s) => { $("log").textContent += "\n" + s; };
 const row = (k, v) => { $("rows").insertAdjacentHTML("beforeend", `<div class="row"><span>${k}</span><b>${v}</b></div>`); };
@@ -58,12 +66,14 @@ async function load(dtype, device) {
   return { processor, model };
 }
 
-$("go").onclick = async () => {
-  $("go").disabled = true; $("log").textContent = "WebGPU：" + (res.webgpu ? "あり" : "なし（遅い道で動かします）");
+$("go").onclick = async () => { try { await run(); } catch (e) { fail(e); } };
+async function run() {
+  $("go").disabled = true; $("rows").innerHTML = ""; $("out").textContent = ""; $("log").textContent = "WebGPU：" + (res.webgpu ? "あり" : "なし（遅い道で動かします）");
   let f16 = false;
   try { const a = await navigator.gpu?.requestAdapter(); f16 = !!a?.features.has("shader-f16"); } catch (e) {}
   res.f16 = f16;
   const device = res.webgpu ? "webgpu" : "wasm";
+  log("AI を読み込み中（初回は数分）…");
   let t0 = performance.now(), m;
   try {
     m = await load(f16 ? "q4f16" : "q4", device); res.dtype = f16 ? "q4f16" : "q4";
@@ -97,7 +107,7 @@ $("go").onclick = async () => {
   $("cps").textContent = res.cps + " 字";
   row("読み込み", res.load_sec + " 秒"); row("1秒の語（トークン）", res.tps); row("動かし方", `${res.dtype}・${device}`);
   $("copy").disabled = false;
-};
+}
 $("copy").onclick = async () => {
   const s = JSON.stringify(res);
   try { await navigator.clipboard.writeText(s); $("copy").textContent = "コピーしました"; }
