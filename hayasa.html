@@ -27,7 +27,7 @@
 <body>
 <main>
   <h1>小さな AI の速さの試し</h1>
-  <p class="sub">0.8B の AI をこのスマホの中だけで動かします。最初に約0.6GB を読み込みます（Wi-Fi 推奨・2回目からは速い）。</p>
+  <p class="sub">0.8B の AI をこのスマホの中だけで動かします。最初に約0.5GB を読み込みます（Wi-Fi 推奨・2回目からは速い）。</p>
   <button id="go">始める</button>
   <div class="card"><div class="sub">1秒に出た字数</div><div class="big" id="cps">—</div></div>
   <div class="card" id="rows"></div>
@@ -36,18 +36,23 @@
   <button id="copy" disabled>結果をコピー</button>
 </main>
 <script type="module">
-// ★transformers.js は 4.3.1（2026-10-06）＝Qwen3_5ForConditionalGeneration が入っている版
+// ★transformers.js は 4.3.1（2026-10-06）＝Qwen3.5 の文章だけの型（Qwen3_5ForCausalLM）が入っている版
 // ★web.min.js は onnxruntime を外から呼ぶ（★ブラウザでは読めず、ボタンが動かなかった・10-31）→ 全部入りの min.js
 const $ = (id) => document.getElementById(id);
 const fail = (e) => { $("log").textContent += "\n★止まった：" + (e?.message || e); $("go").disabled = false; $("go").textContent = "もう一度"; };
 window.addEventListener("error", (e) => fail(e.error || e.message));
 window.addEventListener("unhandledrejection", (e) => fail(e.reason));
-let AutoProcessor, Qwen3_5ForConditionalGeneration;
+let AutoTokenizer, AutoModelForCausalLM;
 try {
-  ({ AutoProcessor, Qwen3_5ForConditionalGeneration } = await import("https://cdn.jsdelivr.net/npm/@huggingface/transformers@4.3.1/dist/transformers.min.js"));
+  ({ AutoTokenizer, AutoModelForCausalLM } = await import("https://cdn.jsdelivr.net/npm/@huggingface/transformers@4.3.1/dist/transformers.min.js"));
   $("log").textContent = "準備できました。「始める」を押してください";
 } catch (e) { fail(e); }
-const MODEL = "onnx-community/Qwen3.5-0.8B-ONNX";
+// ★iPhone の Safari は写真の部分つき（約0.65GB）でタブが落ちて読み直された（10-31）→ 文章だけの版（q4f16 で約0.47GB）
+const MODEL = "onnx-community/Qwen3.5-0.8B-Text-ONNX";
+// ★落ちて読み直されても、どこまで進んだかを残す（★次に開いた時に出す）
+const STAGE = "hayasa_stage";
+const mark = (s) => { try { localStorage.setItem(STAGE, s + "（" + new Date().toLocaleTimeString() + "）"); } catch (e) {} };
+try { const was = localStorage.getItem(STAGE); if (was && !was.startsWith("終わった")) $("log").textContent += "\n★前回は「" + was + "」の所で落ちました"; } catch (e) {}
 // ★REALT の使い方の説明に近い問い（★答えの中身は測らない・速さだけ）
 const ASKS = [
   "SNSアプリで、友達を追加するにはどうすればいいですか？短く教えて。",
@@ -59,11 +64,12 @@ const log = (s) => { $("log").textContent += "\n" + s; };
 const row = (k, v) => { $("rows").insertAdjacentHTML("beforeend", `<div class="row"><span>${k}</span><b>${v}</b></div>`); };
 
 async function load(dtype, device) {
-  const processor = await AutoProcessor.from_pretrained(MODEL);
-  const model = await Qwen3_5ForConditionalGeneration.from_pretrained(MODEL, {
-    dtype: { embed_tokens: dtype, vision_encoder: dtype, decoder_model_merged: dtype }, device,
-  });
-  return { processor, model };
+  const tokenizer = await AutoTokenizer.from_pretrained(MODEL);
+  let last = -1;
+  const model = await AutoModelForCausalLM.from_pretrained(MODEL, { dtype, device,
+    progress_callback: (p) => { if (p.status === "progress" && p.file?.includes("onnx_data")) {
+      const pc = Math.floor(p.progress); if (pc !== last && pc % 10 === 0) { last = pc; mark("落とす " + pc + "%"); $("cps").textContent = "落とす " + pc + "%"; } } } });
+  return { tokenizer, model };
 }
 
 $("go").onclick = async () => { try { await run(); } catch (e) { fail(e); } };
@@ -82,18 +88,19 @@ async function run() {
     t0 = performance.now(); m = await load("q4", "wasm"); res.dtype = "q4"; res.fallback = String(e.message).slice(0, 200);
   }
   res.device = m.model.sessions ? device : device;
+  mark("読み込み終わり・答える前");
   res.load_sec = +((performance.now() - t0) / 1000).toFixed(1);
   log(`読み込み ${res.load_sec}秒（${res.dtype}・${device}）`);
   res.runs = [];
   for (const ask of ASKS) {
-    const text = m.processor.apply_chat_template([{ role: "user", content: [{ type: "text", text: ask }] }],
-      { add_generation_prompt: true, enable_thinking: false });
-    const inputs = await m.processor(text);
+    mark("答える " + (res.runs.length + 1) + "問目");
+    const inputs = m.tokenizer.apply_chat_template([{ role: "user", content: ask }],
+      { add_generation_prompt: true, enable_thinking: false, return_dict: true });
     const n_in = inputs.input_ids.dims.at(-1);
     const t1 = performance.now();
     const outs = await m.model.generate({ ...inputs, max_new_tokens: 120, do_sample: false, repetition_penalty: 1.2 }); // ★無いと同じ句を繰り返した（PC で確かめた・10-31）
     const sec = (performance.now() - t1) / 1000;
-    const ans = m.processor.batch_decode(outs.slice(null, [n_in, null]), { skip_special_tokens: true })[0].trim();
+    const ans = m.tokenizer.batch_decode(outs.slice(null, [n_in, null]), { skip_special_tokens: true })[0].trim();
     const ntok = outs.dims.at(-1) - n_in;
     const r = { sec: +sec.toFixed(1), tok: ntok, chars: [...ans].length, cps: +([...ans].length / sec).toFixed(1), tps: +(ntok / sec).toFixed(1) };
     res.runs.push(r);
@@ -107,6 +114,7 @@ async function run() {
   $("cps").textContent = res.cps + " 字";
   row("読み込み", res.load_sec + " 秒"); row("1秒の語（トークン）", res.tps); row("動かし方", `${res.dtype}・${device}`);
   $("copy").disabled = false;
+  mark("終わった");
 }
 $("copy").onclick = async () => {
   const s = JSON.stringify(res);
