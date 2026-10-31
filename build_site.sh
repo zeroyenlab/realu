@@ -7,6 +7,7 @@ set -e
 rm -rf _site && mkdir -p _site
 cp index.html _site/
 cp _worker.js _site/
+[ -f hayasa.html ] && cp hayasa.html _site/ || true
 [ -f robots.txt ]  && cp robots.txt  _site/ || true
 [ -f sitemap.xml ] && cp sitemap.xml _site/ || true
 # ★★★家が壊れていたら出さない（★自分を消せないようにするための番人）

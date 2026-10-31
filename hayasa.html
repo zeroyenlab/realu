@@ -1,0 +1,108 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex">
+<title>速さの試し</title>
+<style>
+  /* ★アプリの AI 工場（2026-10-31）：Qwen3.5-0.8B をこの端末の中だけで動かして、1秒に何字出るかを測る */
+  :root { --bg:#fbf8f3; --fg:#2a2420; --sub:#7a6e64; --acc:#c2562b; --card:#fff; --line:#e6ddd2; }
+  @media (prefers-color-scheme: dark) { :root { --bg:#1d1a17; --fg:#f2ece4; --sub:#a89c90; --acc:#e57a4c; --card:#28241f; --line:#3a342d; } }
+  body { margin:0; background:var(--bg); color:var(--fg); font:16px/1.6 -apple-system, "Hiragino Sans", sans-serif; }
+  main { max-width:560px; margin:0 auto; padding:24px 16px 48px; }
+  h1 { font-size:22px; margin:0 0 4px; }
+  p.sub { color:var(--sub); margin:0 0 20px; font-size:14px; }
+  button { width:100%; min-height:56px; font-size:18px; font-weight:700; border:0; border-radius:14px; background:var(--acc); color:#fff; }
+  button:disabled { opacity:.5; }
+  .card { background:var(--card); border:1px solid var(--line); border-radius:14px; padding:14px 16px; margin-top:14px; }
+  .big { font-size:40px; font-weight:800; line-height:1.1; }
+  .row { display:flex; justify-content:space-between; padding:4px 0; border-bottom:1px solid var(--line); font-size:15px; }
+  .row:last-child { border:0; }
+  #log { white-space:pre-wrap; font-size:14px; color:var(--sub); }
+  #out { white-space:pre-wrap; font-size:15px; }
+  #copy { margin-top:14px; background:var(--fg); color:var(--bg); }
+</style>
+</head>
+<body>
+<main>
+  <h1>小さな AI の速さの試し</h1>
+  <p class="sub">0.8B の AI をこのスマホの中だけで動かします。最初に約0.6GB を読み込みます（Wi-Fi 推奨・2回目からは速い）。</p>
+  <button id="go">始める</button>
+  <div class="card"><div class="sub">1秒に出た字数</div><div class="big" id="cps">—</div></div>
+  <div class="card" id="rows"></div>
+  <div class="card"><div class="sub">AI の返事</div><div id="out"></div></div>
+  <div class="card"><div id="log">待っています</div></div>
+  <button id="copy" disabled>結果をコピー</button>
+</main>
+<script type="module">
+// ★transformers.js は 4.3.1（2026-10-06）＝Qwen3_5ForConditionalGeneration が入っている版
+import { AutoProcessor, Qwen3_5ForConditionalGeneration, env } from "https://cdn.jsdelivr.net/npm/@huggingface/transformers@4.3.1/dist/transformers.web.min.js";
+const MODEL = "onnx-community/Qwen3.5-0.8B-ONNX";
+// ★REALT の使い方の説明に近い問い（★答えの中身は測らない・速さだけ）
+const ASKS = [
+  "SNSアプリで、友達を追加するにはどうすればいいですか？短く教えて。",
+  "投稿に写真を2枚つけたいです。どうすればいい？",
+  "通知がうるさいので減らしたい。どこを触ればいい？",
+];
+const $ = (id) => document.getElementById(id);
+const res = { ua: navigator.userAgent, webgpu: !!navigator.gpu };
+const log = (s) => { $("log").textContent += "\n" + s; };
+const row = (k, v) => { $("rows").insertAdjacentHTML("beforeend", `<div class="row"><span>${k}</span><b>${v}</b></div>`); };
+
+async function load(dtype, device) {
+  const processor = await AutoProcessor.from_pretrained(MODEL);
+  const model = await Qwen3_5ForConditionalGeneration.from_pretrained(MODEL, {
+    dtype: { embed_tokens: dtype, vision_encoder: dtype, decoder_model_merged: dtype }, device,
+  });
+  return { processor, model };
+}
+
+$("go").onclick = async () => {
+  $("go").disabled = true; $("log").textContent = "WebGPU：" + (res.webgpu ? "あり" : "なし（遅い道で動かします）");
+  let f16 = false;
+  try { const a = await navigator.gpu?.requestAdapter(); f16 = !!a?.features.has("shader-f16"); } catch (e) {}
+  res.f16 = f16;
+  const device = res.webgpu ? "webgpu" : "wasm";
+  let t0 = performance.now(), m;
+  try {
+    m = await load(f16 ? "q4f16" : "q4", device); res.dtype = f16 ? "q4f16" : "q4";
+  } catch (e) {
+    log("1回目の読み込みに失敗：" + e.message + "\n→ q4 / wasm でやり直します");
+    t0 = performance.now(); m = await load("q4", "wasm"); res.dtype = "q4"; res.fallback = String(e.message).slice(0, 200);
+  }
+  res.device = m.model.sessions ? device : device;
+  res.load_sec = +((performance.now() - t0) / 1000).toFixed(1);
+  log(`読み込み ${res.load_sec}秒（${res.dtype}・${device}）`);
+  res.runs = [];
+  for (const ask of ASKS) {
+    const text = m.processor.apply_chat_template([{ role: "user", content: [{ type: "text", text: ask }] }],
+      { add_generation_prompt: true, enable_thinking: false });
+    const inputs = await m.processor(text);
+    const n_in = inputs.input_ids.dims.at(-1);
+    const t1 = performance.now();
+    const outs = await m.model.generate({ ...inputs, max_new_tokens: 120, do_sample: false });
+    const sec = (performance.now() - t1) / 1000;
+    const ans = m.processor.batch_decode(outs.slice(null, [n_in, null]), { skip_special_tokens: true })[0].trim();
+    const ntok = outs.dims.at(-1) - n_in;
+    const r = { sec: +sec.toFixed(1), tok: ntok, chars: [...ans].length, cps: +([...ans].length / sec).toFixed(1), tps: +(ntok / sec).toFixed(1) };
+    res.runs.push(r);
+    $("out").textContent += "Q " + ask + "\nA " + ans + "\n\n";
+    log(`${r.chars}字 ${r.sec}秒 → ${r.cps}字/秒`);
+  }
+  // ★1回目は準備の時間が混ざるので、2回目と3回目で数える
+  const later = res.runs.slice(1);
+  res.cps = +(later.reduce((a, r) => a + r.chars, 0) / later.reduce((a, r) => a + r.sec, 0)).toFixed(1);
+  res.tps = +(later.reduce((a, r) => a + r.tok, 0) / later.reduce((a, r) => a + r.sec, 0)).toFixed(1);
+  $("cps").textContent = res.cps + " 字";
+  row("読み込み", res.load_sec + " 秒"); row("1秒の語（トークン）", res.tps); row("動かし方", `${res.dtype}・${device}`);
+  $("copy").disabled = false;
+};
+$("copy").onclick = async () => {
+  const s = JSON.stringify(res);
+  try { await navigator.clipboard.writeText(s); $("copy").textContent = "コピーしました"; }
+  catch (e) { $("log").textContent = s; $("copy").textContent = "下の文字を長押しでコピー"; }
+};
+</script>
+</body>
+</html>
