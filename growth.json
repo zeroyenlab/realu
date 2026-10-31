@@ -1,69 +1,6 @@
 {
  "runs": [
   {
-   "at": "2026-10-21T03:21:30Z",
-   "val": 2.8309,
-   "prev": 2.8319,
-   "valTag": "fixed-holdout-v1",
-   "stoppedAt": 158,
-   "stuck": 0,
-   "evalTag": "fixed-ix-v1",
-   "secPerStep": 26.4218,
-   "steps": 300,
-   "bpc": 3.3507,
-   "charsPerTok": 1.2189,
-   "score": 2.1214,
-   "scoreW": 2.0,
-   "scoreMode": "talk",
-   "finishMix": 0.5,
-   "lineage": "L1",
-   "layers": 16,
-   "params": 117914880,
-   "chars": 1045308899,
-   "tokens": 857567631,
-   "grew": 0,
-   "rolledBack": false,
-   "ownVal": null,
-   "ownScore": null,
-   "d": 768,
-   "loops": 1,
-   "spread": 2.8071,
-   "bytes": 1415115957,
-   "heads": 6,
-   "ctx": 512,
-   "vocab": 6000,
-   "kind": "bpe",
-   "arch": "tpp-loop",
-   "wantWider": false,
-   "layerCap": 16,
-   "mixChanged": false,
-   "bySrc": {
-    "laws": 3.9826,
-    "wiki": 2.9852,
-    "aozora": 3.3434,
-    "hanrei": 3.4497,
-    "kokkai": 2.6183,
-    "web": 2.8717,
-    "talk": 2.1214
-   },
-   "wrote": [
-    {
-     "start": "わたしは",
-     "text": "わたしは�投票の九枚で、右に右組します。 次に、右に右翼が右翼から右翼現に3本ずつ、右翼は右翼に右翼を右翼に着目して、左右組み立てに右左右両後に左右接近し、右翼に再法第九条項付近に任命されて右翼的支"
-    },
-    {
-     "start": "第一条",
-     "text": "第一条 （１） 平成１１年１０月１７日付け加藤住吉９８頁参照。 （２） 平成１７年４月２７日付け時点 平成２８年６月１７日時点 平成１１年４月１２日 平成２０年４月１１日 平成１４年５月２８日 <判決 5873> 主文 事実及び"
-    },
-    {
-     "start": "この法律において",
-     "text": "この法律において「新編」をイラスト像とした。 また、 2004年度 において、ワールドマンロボを「Microsoft」に改称した。 2006年度のイラスト付きの「Microsoft Windows 4.2」とは、 2007年度 の 旧・Microsoft 当初から、"
-    }
-   ],
-   "loopPct": 4.89,
-   "movedBody": false
-  },
-  {
    "at": "2026-10-21T04:38:14Z",
    "val": 2.8307,
    "prev": 2.8309,
@@ -12639,6 +12576,69 @@
    ],
    "loopPct": 23.76,
    "movedBody": false
+  },
+  {
+   "at": "2026-10-31T21:35:43Z",
+   "val": 2.7646,
+   "prev": 2.7656,
+   "valTag": "fixed-holdout-v1",
+   "stoppedAt": 177,
+   "stuck": 0,
+   "evalTag": "fixed-ix-v1",
+   "secPerStep": 23.3066,
+   "steps": 300,
+   "bpc": 3.2732,
+   "charsPerTok": 1.2185,
+   "score": 2.095,
+   "scoreW": 2.0,
+   "scoreMode": "talk",
+   "finishMix": 0.5,
+   "lineage": "L1",
+   "layers": 16,
+   "params": 117914880,
+   "chars": 1047537723,
+   "tokens": 859675174,
+   "grew": 0,
+   "rolledBack": false,
+   "ownVal": null,
+   "ownScore": null,
+   "d": 768,
+   "loops": 1,
+   "spread": 2.8288,
+   "bytes": 1415116021,
+   "heads": 6,
+   "ctx": 512,
+   "vocab": 6000,
+   "kind": "bpe",
+   "arch": "tpp-loop",
+   "wantWider": false,
+   "layerCap": 16,
+   "mixChanged": false,
+   "bySrc": {
+    "laws": 3.8435,
+    "wiki": 2.9122,
+    "aozora": 3.2836,
+    "hanrei": 3.4025,
+    "kokkai": 2.5679,
+    "web": 2.8023,
+    "talk": 2.095
+   },
+   "wrote": [
+    {
+     "start": "わたしは",
+     "text": "わたしは先日呼ばれていた。その流れでいたときには、ロングセラーで、大車輪を使ってみると、一台の乗客だろうと思った。 ロングセラーのことを「雀の黒摩」と呼んだ。ロングセラーのように、ロングセラーになったのは、1987年にロングセラーで生まれる間もない3人が乗ったことだった"
+    },
+    {
+     "start": "第一条",
+     "text": "第一条している。 2017年11月15日、 サハラ でラヴォナーラに登場する真珠湾攻撃隊が、ラヴォナーラがの戦闘で合流し、クララへの攻撃によって戦闘するという、PPと同盟戦線は終結した。 回帰するまで、ナイト日本軍との戦闘では"
+    },
+    {
+     "start": "この法律において",
+     "text": "この法律において「 「 デベロポリペ 」（ Roderation Pintinia ）を使うことがある。 なお、これは、アジア系の マレーシア 系の 異常突起 （ Michael Little ）を使って生じようとしていた。 2000年代以降、イギリス系 バ"
+    }
+   ],
+   "loopPct": 6.01,
+   "movedBody": false
   }
  ],
  "bestVal": 2.7611,
@@ -12667,7 +12667,7 @@
   857567631,
   857567631,
   857567631,
-  857567631,
+  859675174,
   859675174,
   859675174,
   859675174,
@@ -12689,5 +12689,5 @@
  ],
  "wantWider": false,
  "nextD": 768,
- "bad": 3
+ "bad": 4
 }
