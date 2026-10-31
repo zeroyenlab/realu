@@ -1,69 +1,6 @@
 {
  "runs": [
   {
-   "at": "2026-10-20T14:32:05Z",
-   "val": 2.833,
-   "prev": 2.8354,
-   "valTag": "fixed-holdout-v1",
-   "stoppedAt": 158,
-   "stuck": 0,
-   "evalTag": "fixed-ix-v1",
-   "secPerStep": 26.2852,
-   "steps": 300,
-   "bpc": 3.3531,
-   "charsPerTok": 1.2189,
-   "score": 2.1306,
-   "scoreW": 2.0,
-   "scoreMode": "talk",
-   "finishMix": 0.5,
-   "lineage": "L1",
-   "layers": 16,
-   "params": 117914880,
-   "chars": 1045308899,
-   "tokens": 857567631,
-   "grew": 0,
-   "rolledBack": false,
-   "ownVal": null,
-   "ownScore": null,
-   "d": 768,
-   "loops": 1,
-   "spread": 2.8359,
-   "bytes": 1415115957,
-   "heads": 6,
-   "ctx": 512,
-   "vocab": 6000,
-   "kind": "bpe",
-   "arch": "tpp-loop",
-   "wantWider": false,
-   "layerCap": 16,
-   "mixChanged": false,
-   "bySrc": {
-    "laws": 3.9989,
-    "wiki": 2.9851,
-    "aozora": 3.3462,
-    "hanrei": 3.4469,
-    "kokkai": 2.6167,
-    "web": 2.877,
-    "talk": 2.1306
-   },
-   "wrote": [
-    {
-     "start": "わたしは",
-     "text": "わたしは、誰に謝罪しようとしたのですか？」 AH「いや、たった80000と、どちらかというと60000ですね。」 CE「なるほど、30000とかも出てくるんですね。」 AH「はい、1人でも凄いなと思います。」 CE「そうですねー、最近"
-    },
-    {
-     "start": "第一条",
-     "text": "第一条 契約契約 契約期間 契約書 契約後契約書 契約契約書（契約契約書に記載されている契約書及び契約書 契約書は別紙契約書等において契約書又は契約書の内容を真に侵害するものであるとも解される。） 契約書の取締役会 契約書又は契約書受け入れた契約書 契約書の写し及び契約書既に契約書の内容をいうＢ社に債務第二十六条１項本文 契約書は契約書又は契約書及び契約書人が"
-    },
-    {
-     "start": "この法律において",
-     "text": "この法律において「openantica」（istation）と、ホテル各店舗では「Amazon Press Producture」（en:Placettation）と呼ばれる。 2001年に「Oman Project」の一覧「ORICON」が"
-    }
-   ],
-   "loopPct": 10.92,
-   "movedBody": false
-  },
-  {
    "at": "2026-10-20T15:50:10Z",
    "val": 2.8349,
    "prev": 2.833,
@@ -12619,9 +12556,72 @@
    ],
    "loopPct": 2.54,
    "movedBody": false
+  },
+  {
+   "at": "2026-10-31T08:05:08Z",
+   "val": 2.7648,
+   "prev": 2.7649,
+   "valTag": "fixed-holdout-v1",
+   "stoppedAt": 160,
+   "stuck": 0,
+   "evalTag": "fixed-ix-v1",
+   "secPerStep": 26.0672,
+   "steps": 300,
+   "bpc": 3.2734,
+   "charsPerTok": 1.2185,
+   "score": 2.098,
+   "scoreW": 2.0,
+   "scoreMode": "talk",
+   "finishMix": 0.5,
+   "lineage": "L1",
+   "layers": 16,
+   "params": 117914880,
+   "chars": 1047537723,
+   "tokens": 859675174,
+   "grew": 0,
+   "rolledBack": false,
+   "ownVal": null,
+   "ownScore": null,
+   "d": 768,
+   "loops": 1,
+   "spread": 2.7704,
+   "bytes": 1415116021,
+   "heads": 6,
+   "ctx": 512,
+   "vocab": 6000,
+   "kind": "bpe",
+   "arch": "tpp-loop",
+   "wantWider": false,
+   "layerCap": 16,
+   "mixChanged": false,
+   "bySrc": {
+    "laws": 3.841,
+    "wiki": 2.9107,
+    "aozora": 3.2876,
+    "hanrei": 3.4086,
+    "kokkai": 2.5691,
+    "web": 2.8057,
+    "talk": 2.098
+   },
+   "wrote": [
+    {
+     "start": "わたしは",
+     "text": "わたしは、空を見てて、何も、帰って来たから、来てくれという声がした。 「こんなに前へは行ってるんですから、ほんとに。」 「だいぶん前にお前になって、今度はお前が赤ん坊に這入って来たんじゃないか。」 「赤ん坊だ、議論は出来ねえ。」"
+    },
+    {
+     "start": "第一条",
+     "text": "第一条に、それぞれ設けられた。 この規則は、 線形 または 線形 ・ 線形 ・ 分線 第五の概念を、 線形 と呼ぶ。 線形 ・ 線形 ・ 線形 の 線形 などを、 線形 ・ 線型 ・ 線形 ・ 線形 ・ 線形 ・ 線形 ・ 線形 ・ 線形 など"
+    },
+    {
+     "start": "この法律において",
+     "text": "この法律において「改革」とは、 経済 、 労働 、 企業 、 資本主義 、 企業 、 企業 、 労働党 、 企業 、 国民 、民主主義、 企業 、 企業 、 企業 など。 なお、本来は 企業 や 企業 の雇用 属性 や 働き方 を取り入れることが多い。 また、同じ 企業 、企業、 生産"
+    }
+   ],
+   "loopPct": 26.95,
+   "movedBody": false
   }
  ],
- "bestVal": 2.7649,
+ "bestVal": 2.7648,
  "layers": 16,
  "params": 117914880,
  "born": "2026-09-08T15:11:54Z",
@@ -12657,7 +12657,7 @@
   857567631,
   857567631,
   857567631,
-  857567631,
+  859675174,
   859675174,
   859675174,
   859675174,
@@ -12669,5 +12669,5 @@
  ],
  "wantWider": false,
  "nextD": 768,
- "bad": 1
+ "bad": 2
 }
