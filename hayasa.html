@@ -156,8 +156,7 @@ window.addEventListener("unhandledrejection", (e) => fail(e.reason));
 // ★落ちて読み直されても、どこまで進んだかを残す（★次に開いた時に出す）
 const STAGE = "hayasa_stage";
 const mark = (s) => { try { localStorage.setItem(STAGE, s + "（" + new Date().toLocaleTimeString() + "）"); } catch (e) {} };
-$("log").textContent = "準備できました。「始める」を押してください
-（" + (navigator.userAgent.match(/Version\/[\d.]+/)?.[0] || "") + "・JSPI " + ("Suspending" in WebAssembly ? "あり" : "なし") + "・WebGPU " + (navigator.gpu ? "あり" : "なし") + "）";
+$("log").textContent = "準備できました。「始める」を押してください\n（" + (navigator.userAgent.match(/Version\/[\d.]+/)?.[0] || "") + "・JSPI " + ("Suspending" in WebAssembly ? "あり" : "なし") + "・WebGPU " + (navigator.gpu ? "あり" : "なし") + "）";
 try { const was = localStorage.getItem(STAGE); if (was && !was.startsWith("終わった")) $("log").textContent += "\n★前回は「" + was + "」の所で落ちました"; } catch (e) {}
 let res = null;
 const row = (k, v) => { $("rows").insertAdjacentHTML("beforeend", `<div class="row"><span>${k}</span><b>${v}</b></div>`); };
