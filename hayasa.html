@@ -108,12 +108,16 @@ onmessage = async () => {
     const t0 = performance.now();
     const w = await weights(file);
     res.dl_sec = +((performance.now() - t0) / 1000).toFixed(1);
-    mark("落とし終わり・組み立て中");
+    mark("落とし終わり・組み立て中（" + (res.jspi ? "JSPI" : "JSPI なし") + "）");
     log(`落とす ${res.dl_sec}秒（${(w.size / 2 ** 20).toFixed(0)}MB）→ 組み立て中…`);
     const t1 = performance.now();
     const tokenizer = await AutoTokenizer.from_pretrained(MODEL);
+    mark("組み立て中（言葉の表は済み・頭を組む）");
+    // ★組み立て中の山を低くする：最適化で重みの写しを作らない・CPU の溜め置きを切る（iPhone で組み立て中に落ちた・10-31 15:49）
     const model = await AutoModelForCausalLM.from_pretrained(MODEL, { dtype, device,
-      use_external_data_format: 0, session_options: { externalData: [{ path: file, data: w.data }] } });
+      use_external_data_format: 0, session_options: { externalData: [{ path: file, data: w.data }],
+        graphOptimizationLevel: "disabled", enableCpuMemArena: false, enableMemPattern: false } });
+    res.refetch = performance.getEntriesByType("resource").filter((e) => e.name.includes("onnx_data") && !e.name.includes("HEAD")).length;
     w.close();
     res.load_sec = +((performance.now() - t1) / 1000).toFixed(1);
     mark("組み立て終わり・答える前");
@@ -152,7 +156,8 @@ window.addEventListener("unhandledrejection", (e) => fail(e.reason));
 // ★落ちて読み直されても、どこまで進んだかを残す（★次に開いた時に出す）
 const STAGE = "hayasa_stage";
 const mark = (s) => { try { localStorage.setItem(STAGE, s + "（" + new Date().toLocaleTimeString() + "）"); } catch (e) {} };
-$("log").textContent = "準備できました。「始める」を押してください";
+$("log").textContent = "準備できました。「始める」を押してください
+（" + (navigator.userAgent.match(/Version\/[\d.]+/)?.[0] || "") + "・JSPI " + ("Suspending" in WebAssembly ? "あり" : "なし") + "・WebGPU " + (navigator.gpu ? "あり" : "なし") + "）";
 try { const was = localStorage.getItem(STAGE); if (was && !was.startsWith("終わった")) $("log").textContent += "\n★前回は「" + was + "」の所で落ちました"; } catch (e) {}
 let res = null;
 const row = (k, v) => { $("rows").insertAdjacentHTML("beforeend", `<div class="row"><span>${k}</span><b>${v}</b></div>`); };
