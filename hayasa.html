@@ -27,7 +27,7 @@
 <body>
 <main>
   <h1>小さな AI の速さの試し</h1>
-  <p class="sub">0.8B の AI をこのスマホの中だけで動かします。毎回約0.5GB を読み込みます（Wi-Fi 推奨）。</p>
+  <p class="sub">0.8B の AI をこのスマホの中だけで動かします。最初に約0.5GB を落としてスマホに保存します（Wi-Fi 推奨・2回目からは速い）。</p>
   <button id="go">始める</button>
   <div class="card"><div class="sub">1秒に出た字数</div><div class="big" id="cps">—</div></div>
   <div class="card" id="rows"></div>
@@ -35,97 +35,148 @@
   <div class="card"><div id="log">読み込み中…</div></div>
   <button id="copy" disabled>結果をコピー</button>
 </main>
-<script type="module">
-// ★transformers.js は 4.3.1（2026-10-06）＝Qwen3.5 の文章だけの型（Qwen3_5ForCausalLM）が入っている版
-// ★web.min.js は onnxruntime を外から呼ぶ（★ブラウザでは読めず、ボタンが動かなかった・10-31）→ 全部入りの min.js
-const $ = (id) => document.getElementById(id);
-const fail = (e) => { $("log").textContent += "\n★止まった：" + (e?.message || e); $("go").disabled = false; $("go").textContent = "もう一度"; };
-window.addEventListener("error", (e) => fail(e.error || e.message));
-window.addEventListener("unhandledrejection", (e) => fail(e.reason));
-const res = { ua: navigator.userAgent, webgpu: !!navigator.gpu };
-let AutoTokenizer, AutoModelForCausalLM, env;
-try {
-  ({ AutoTokenizer, AutoModelForCausalLM, env } = await import("https://cdn.jsdelivr.net/npm/@huggingface/transformers@4.3.1/dist/transformers.min.js"));
-  // ★iOS は1つのタブ 2,048MB で落とす。落とし終わりに重さを2つ持つ（読んだ物＋キャッシュに渡す写し）のが原因（transformers.js #1827・10-29）
-  //   → キャッシュに入れない（毎回落とし直す代わりに写しが1つ減る）＋ JSPI 版の部品（Safari で数百MB軽い・#1835）
-  env.useBrowserCache = false;
-  const ortv = env.backends?.onnx?.versions?.web;
-  if (ortv && "Suspending" in WebAssembly) {
-    const dist = `https://cdn.jsdelivr.net/npm/onnxruntime-web@${ortv}/dist/`;
-    env.backends.onnx.wasm.wasmPaths = { mjs: dist + "ort-wasm-simd-threaded.jspi.mjs", wasm: dist + "ort-wasm-simd-threaded.jspi.wasm" };
-  }
-  res.jspi = !!(ortv && "Suspending" in WebAssembly);
-  $("log").textContent = "準備できました。「始める」を押してください";
-} catch (e) { fail(e); }
-// ★iPhone の Safari は写真の部分つき（約0.65GB）でタブが落ちて読み直された（10-31）→ 文章だけの版（q4f16 で約0.47GB）
+<script type="text/plain" id="wk">
+// ★裏の働き手（Worker）：重みを落として OPFS に少しずつ書き、要る分だけ読んで渡す
+// ★iOS は1つのタブ 2,048MB で落とす。キャッシュ経由だと重み全部がメモリに載り、組み立て中に落ちた（10-31）
+//   → transformers.js #1827 の回り道（OPFS に書く・subarray で1つずつ読む・読む箱は使い回す）
+const post = (type, v) => postMessage({ type, v });
+const mark = (s) => post("mark", s);
+const log = (s) => post("log", s);
 const MODEL = "onnx-community/Qwen3.5-0.8B-Text-ONNX";
-// ★落ちて読み直されても、どこまで進んだかを残す（★次に開いた時に出す）
-const STAGE = "hayasa_stage";
-const mark = (s) => { try { localStorage.setItem(STAGE, s + "（" + new Date().toLocaleTimeString() + "）"); } catch (e) {} };
-try { const was = localStorage.getItem(STAGE); if (was && !was.startsWith("終わった")) $("log").textContent += "\n★前回は「" + was + "」の所で落ちました"; } catch (e) {}
-// ★REALT の使い方の説明に近い問い（★答えの中身は測らない・速さだけ）
 const ASKS = [
   "SNSアプリで、友達を追加するにはどうすればいいですか？短く教えて。",
   "投稿に写真を2枚つけたいです。どうすればいい？",
   "通知がうるさいので減らしたい。どこを触ればいい？",
 ];
-const log = (s) => { $("log").textContent += "\n" + s; };
+const res = { ua: navigator.userAgent, webgpu: !!navigator.gpu, worker: true };
+
+// ★重みを OPFS へ。途中で落ちても、大きさが合わなければ落とし直す
+async function weights(file) {
+  const url = `https://huggingface.co/${MODEL}/resolve/main/onnx/${file}`;
+  const dir = await navigator.storage.getDirectory();
+  const fh = await dir.getFileHandle(file, { create: true });
+  const handle = await fh.createSyncAccessHandle();
+  const head = await fetch(url, { method: "HEAD" });
+  const want = +head.headers.get("content-length") || 0;
+  if (!want || handle.getSize() !== want) {
+    handle.truncate(0);
+    const r = await fetch(url);
+    const reader = r.body.getReader();
+    let pos = 0, last = -1;
+    for (let c; !(c = await reader.read()).done; ) {
+      handle.write(c.value, { at: pos }); pos += c.value.byteLength;
+      const pc = want ? Math.floor(pos / want * 100) : 0;
+      if (pc !== last && pc % 10 === 0) { last = pc; mark("落とす " + pc + "%"); post("cps", "落とす " + pc + "%"); }
+    }
+    handle.flush();
+    res.downloaded = true;
+  } else res.downloaded = false;
+  const size = handle.getSize();
+  let scratch = new ArrayBuffer(0);
+  const data = new Uint8Array(0);
+  Object.defineProperties(data, {
+    byteLength: { get: () => size },
+    length: { get: () => size },
+    subarray: { value(begin = 0, end = size) {
+      const n = end - begin;
+      if (scratch.byteLength < n) scratch = new ArrayBuffer(n);
+      const slice = new Uint8Array(scratch, 0, n);
+      handle.read(slice, { at: begin });
+      return slice;
+    } },
+  });
+  return { data, size, close: () => { handle.close(); scratch = null; } };
+}
+
+onmessage = async () => {
+  try {
+    const { AutoTokenizer, AutoModelForCausalLM, env } = await import("https://cdn.jsdelivr.net/npm/@huggingface/transformers@4.3.1/dist/transformers.min.js");
+    // ★JSPI 版の部品（Safari で数百MB軽い・#1835）
+    const ortv = env.backends?.onnx?.versions?.web;
+    if (ortv && "Suspending" in WebAssembly) {
+      const dist = `https://cdn.jsdelivr.net/npm/onnxruntime-web@${ortv}/dist/`;
+      env.backends.onnx.wasm.wasmPaths = { mjs: dist + "ort-wasm-simd-threaded.jspi.mjs", wasm: dist + "ort-wasm-simd-threaded.jspi.wasm" };
+    }
+    res.jspi = !!(ortv && "Suspending" in WebAssembly);
+    let f16 = false;
+    try { const a = await navigator.gpu?.requestAdapter(); f16 = !!a?.features.has("shader-f16"); } catch (e) {}
+    res.f16 = f16;
+    const dtype = f16 ? "q4f16" : "q4", device = res.webgpu ? "webgpu" : "wasm", file = `model_${dtype}.onnx_data`;
+    res.dtype = dtype; res.device = device;
+    log("WebGPU：" + (res.webgpu ? "あり" : "なし（遅い道）") + "・" + dtype + (res.jspi ? "・JSPI" : ""));
+    log("AI を落としています（初回は数分・2回目からは保存した物を使う）…");
+    const t0 = performance.now();
+    const w = await weights(file);
+    res.dl_sec = +((performance.now() - t0) / 1000).toFixed(1);
+    mark("落とし終わり・組み立て中");
+    log(`落とす ${res.dl_sec}秒（${(w.size / 2 ** 20).toFixed(0)}MB）→ 組み立て中…`);
+    const t1 = performance.now();
+    const tokenizer = await AutoTokenizer.from_pretrained(MODEL);
+    const model = await AutoModelForCausalLM.from_pretrained(MODEL, { dtype, device,
+      use_external_data_format: 0, session_options: { externalData: [{ path: file, data: w.data }] } });
+    w.close();
+    res.load_sec = +((performance.now() - t1) / 1000).toFixed(1);
+    mark("組み立て終わり・答える前");
+    log(`組み立て ${res.load_sec}秒`);
+    res.runs = [];
+    for (const ask of ASKS) {
+      mark("答える " + (res.runs.length + 1) + "問目");
+      const inputs = tokenizer.apply_chat_template([{ role: "user", content: ask }],
+        { add_generation_prompt: true, enable_thinking: false, return_dict: true });
+      const n_in = inputs.input_ids.dims.at(-1);
+      const t2 = performance.now();
+      const outs = await model.generate({ ...inputs, max_new_tokens: 120, do_sample: false, repetition_penalty: 1.2 }); // ★無いと同じ句を繰り返した（10-31）
+      const sec = (performance.now() - t2) / 1000;
+      const ans = tokenizer.batch_decode(outs.slice(null, [n_in, null]), { skip_special_tokens: true })[0].trim();
+      const ntok = outs.dims.at(-1) - n_in;
+      const r = { sec: +sec.toFixed(1), tok: ntok, chars: [...ans].length, cps: +([...ans].length / sec).toFixed(1), tps: +(ntok / sec).toFixed(1) };
+      res.runs.push(r);
+      post("out", "Q " + ask + "\nA " + ans + "\n\n");
+      log(`${r.chars}字 ${r.sec}秒 → ${r.cps}字/秒`);
+    }
+    // ★1回目は準備の時間が混ざるので、2回目と3回目で数える
+    const later = res.runs.slice(1);
+    res.cps = +(later.reduce((a, r) => a + r.chars, 0) / later.reduce((a, r) => a + r.sec, 0)).toFixed(1);
+    res.tps = +(later.reduce((a, r) => a + r.tok, 0) / later.reduce((a, r) => a + r.sec, 0)).toFixed(1);
+    post("done", res);
+  } catch (e) { post("fail", String(e?.message || e)); }
+};
+</script>
+<script type="module">
+// ★transformers.js は 4.3.1（2026-10-06）＝Qwen3.5 の文章だけの型（Qwen3_5ForCausalLM）が入っている版・全部入りの min.js
+// ★画面は表示だけ。重い仕事は裏の働き手（上の wk）がする
+const $ = (id) => document.getElementById(id);
+const fail = (e) => { $("log").textContent += "\n★止まった：" + (e?.message || e); $("go").disabled = false; $("go").textContent = "もう一度"; };
+window.addEventListener("error", (e) => fail(e.error || e.message));
+window.addEventListener("unhandledrejection", (e) => fail(e.reason));
+// ★落ちて読み直されても、どこまで進んだかを残す（★次に開いた時に出す）
+const STAGE = "hayasa_stage";
+const mark = (s) => { try { localStorage.setItem(STAGE, s + "（" + new Date().toLocaleTimeString() + "）"); } catch (e) {} };
+$("log").textContent = "準備できました。「始める」を押してください";
+try { const was = localStorage.getItem(STAGE); if (was && !was.startsWith("終わった")) $("log").textContent += "\n★前回は「" + was + "」の所で落ちました"; } catch (e) {}
+let res = null;
 const row = (k, v) => { $("rows").insertAdjacentHTML("beforeend", `<div class="row"><span>${k}</span><b>${v}</b></div>`); };
 
-async function load(dtype, device) {
-  const tokenizer = await AutoTokenizer.from_pretrained(MODEL);
-  let last = -1;
-  const model = await AutoModelForCausalLM.from_pretrained(MODEL, { dtype, device,
-    progress_callback: (p) => { if (p.status === "done" && p.file?.includes("onnx_data")) mark("落とし終わり・組み立て中");
-      if (p.status === "progress" && p.file?.includes("onnx_data")) {
-      const pc = Math.floor(p.progress); if (pc !== last && pc % 10 === 0) { last = pc; mark("落とす " + pc + "%"); $("cps").textContent = "落とす " + pc + "%"; } } } });
-  return { tokenizer, model };
-}
-
-$("go").onclick = async () => { try { await run(); } catch (e) { fail(e); } };
-async function run() {
-  $("go").disabled = true; $("rows").innerHTML = ""; $("out").textContent = ""; $("log").textContent = "WebGPU：" + (res.webgpu ? "あり" : "なし（遅い道で動かします）");
-  let f16 = false;
-  try { const a = await navigator.gpu?.requestAdapter(); f16 = !!a?.features.has("shader-f16"); } catch (e) {}
-  res.f16 = f16;
-  const device = res.webgpu ? "webgpu" : "wasm";
-  log("AI を読み込み中（初回は数分）…");
-  let t0 = performance.now(), m;
-  try {
-    m = await load(f16 ? "q4f16" : "q4", device); res.dtype = f16 ? "q4f16" : "q4";
-  } catch (e) {
-    log("1回目の読み込みに失敗：" + e.message + "\n→ q4 / wasm でやり直します");
-    t0 = performance.now(); m = await load("q4", "wasm"); res.dtype = "q4"; res.fallback = String(e.message).slice(0, 200);
-  }
-  res.device = m.model.sessions ? device : device;
-  mark("読み込み終わり・答える前");
-  res.load_sec = +((performance.now() - t0) / 1000).toFixed(1);
-  log(`読み込み ${res.load_sec}秒（${res.dtype}・${device}）`);
-  res.runs = [];
-  for (const ask of ASKS) {
-    mark("答える " + (res.runs.length + 1) + "問目");
-    const inputs = m.tokenizer.apply_chat_template([{ role: "user", content: ask }],
-      { add_generation_prompt: true, enable_thinking: false, return_dict: true });
-    const n_in = inputs.input_ids.dims.at(-1);
-    const t1 = performance.now();
-    const outs = await m.model.generate({ ...inputs, max_new_tokens: 120, do_sample: false, repetition_penalty: 1.2 }); // ★無いと同じ句を繰り返した（PC で確かめた・10-31）
-    const sec = (performance.now() - t1) / 1000;
-    const ans = m.tokenizer.batch_decode(outs.slice(null, [n_in, null]), { skip_special_tokens: true })[0].trim();
-    const ntok = outs.dims.at(-1) - n_in;
-    const r = { sec: +sec.toFixed(1), tok: ntok, chars: [...ans].length, cps: +([...ans].length / sec).toFixed(1), tps: +(ntok / sec).toFixed(1) };
-    res.runs.push(r);
-    $("out").textContent += "Q " + ask + "\nA " + ans + "\n\n";
-    log(`${r.chars}字 ${r.sec}秒 → ${r.cps}字/秒`);
-  }
-  // ★1回目は準備の時間が混ざるので、2回目と3回目で数える
-  const later = res.runs.slice(1);
-  res.cps = +(later.reduce((a, r) => a + r.chars, 0) / later.reduce((a, r) => a + r.sec, 0)).toFixed(1);
-  res.tps = +(later.reduce((a, r) => a + r.tok, 0) / later.reduce((a, r) => a + r.sec, 0)).toFixed(1);
-  $("cps").textContent = res.cps + " 字";
-  row("読み込み", res.load_sec + " 秒"); row("1秒の語（トークン）", res.tps); row("動かし方", `${res.dtype}・${device}`);
-  $("copy").disabled = false;
-  mark("終わった");
-}
+$("go").onclick = () => {
+  $("go").disabled = true; $("rows").innerHTML = ""; $("out").textContent = ""; $("log").textContent = "始めます"; $("cps").textContent = "—";
+  const url = URL.createObjectURL(new Blob([$("wk").textContent], { type: "text/javascript" }));
+  const w = new Worker(url, { type: "module" });
+  w.onerror = (e) => fail(e.message || "働き手が止まった");
+  w.onmessage = ({ data: { type, v } }) => {
+    if (type === "mark") mark(v);
+    else if (type === "log") $("log").textContent += "\n" + v;
+    else if (type === "cps") $("cps").textContent = v;
+    else if (type === "out") $("out").textContent += v;
+    else if (type === "fail") { mark("終わった（止まった）"); fail(v); w.terminate(); }
+    else if (type === "done") {
+      res = v; $("cps").textContent = res.cps + " 字";
+      row("落とす", res.dl_sec + " 秒"); row("組み立て", res.load_sec + " 秒"); row("1秒の語（トークン）", res.tps); row("動かし方", `${res.dtype}・${res.device}`);
+      $("copy").disabled = false; $("go").disabled = false; $("go").textContent = "もう一度";
+      mark("終わった"); w.terminate();
+    }
+  };
+  w.postMessage("go");
+};
 $("copy").onclick = async () => {
   const s = JSON.stringify(res);
   try { await navigator.clipboard.writeText(s); $("copy").textContent = "コピーしました"; }
