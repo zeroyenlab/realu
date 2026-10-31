@@ -91,7 +91,7 @@ async function run() {
     const inputs = await m.processor(text);
     const n_in = inputs.input_ids.dims.at(-1);
     const t1 = performance.now();
-    const outs = await m.model.generate({ ...inputs, max_new_tokens: 120, do_sample: false });
+    const outs = await m.model.generate({ ...inputs, max_new_tokens: 120, do_sample: false, repetition_penalty: 1.2 }); // ★無いと同じ句を繰り返した（PC で確かめた・10-31）
     const sec = (performance.now() - t1) / 1000;
     const ans = m.processor.batch_decode(outs.slice(null, [n_in, null]), { skip_special_tokens: true })[0].trim();
     const ntok = outs.dims.at(-1) - n_in;
