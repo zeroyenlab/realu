@@ -27,7 +27,7 @@
 <body>
 <main>
   <h1>小さな AI の速さの試し</h1>
-  <p class="sub">0.8B の AI をこのスマホの中だけで動かします。最初に約0.5GB を読み込みます（Wi-Fi 推奨・2回目からは速い）。</p>
+  <p class="sub">0.8B の AI をこのスマホの中だけで動かします。毎回約0.5GB を読み込みます（Wi-Fi 推奨）。</p>
   <button id="go">始める</button>
   <div class="card"><div class="sub">1秒に出た字数</div><div class="big" id="cps">—</div></div>
   <div class="card" id="rows"></div>
@@ -42,9 +42,19 @@ const $ = (id) => document.getElementById(id);
 const fail = (e) => { $("log").textContent += "\n★止まった：" + (e?.message || e); $("go").disabled = false; $("go").textContent = "もう一度"; };
 window.addEventListener("error", (e) => fail(e.error || e.message));
 window.addEventListener("unhandledrejection", (e) => fail(e.reason));
-let AutoTokenizer, AutoModelForCausalLM;
+const res = { ua: navigator.userAgent, webgpu: !!navigator.gpu };
+let AutoTokenizer, AutoModelForCausalLM, env;
 try {
-  ({ AutoTokenizer, AutoModelForCausalLM } = await import("https://cdn.jsdelivr.net/npm/@huggingface/transformers@4.3.1/dist/transformers.min.js"));
+  ({ AutoTokenizer, AutoModelForCausalLM, env } = await import("https://cdn.jsdelivr.net/npm/@huggingface/transformers@4.3.1/dist/transformers.min.js"));
+  // ★iOS は1つのタブ 2,048MB で落とす。落とし終わりに重さを2つ持つ（読んだ物＋キャッシュに渡す写し）のが原因（transformers.js #1827・10-29）
+  //   → キャッシュに入れない（毎回落とし直す代わりに写しが1つ減る）＋ JSPI 版の部品（Safari で数百MB軽い・#1835）
+  env.useBrowserCache = false;
+  const ortv = env.backends?.onnx?.versions?.web;
+  if (ortv && "Suspending" in WebAssembly) {
+    const dist = `https://cdn.jsdelivr.net/npm/onnxruntime-web@${ortv}/dist/`;
+    env.backends.onnx.wasm.wasmPaths = { mjs: dist + "ort-wasm-simd-threaded.jspi.mjs", wasm: dist + "ort-wasm-simd-threaded.jspi.wasm" };
+  }
+  res.jspi = !!(ortv && "Suspending" in WebAssembly);
   $("log").textContent = "準備できました。「始める」を押してください";
 } catch (e) { fail(e); }
 // ★iPhone の Safari は写真の部分つき（約0.65GB）でタブが落ちて読み直された（10-31）→ 文章だけの版（q4f16 で約0.47GB）
@@ -59,7 +69,6 @@ const ASKS = [
   "投稿に写真を2枚つけたいです。どうすればいい？",
   "通知がうるさいので減らしたい。どこを触ればいい？",
 ];
-const res = { ua: navigator.userAgent, webgpu: !!navigator.gpu };
 const log = (s) => { $("log").textContent += "\n" + s; };
 const row = (k, v) => { $("rows").insertAdjacentHTML("beforeend", `<div class="row"><span>${k}</span><b>${v}</b></div>`); };
 
@@ -67,7 +76,8 @@ async function load(dtype, device) {
   const tokenizer = await AutoTokenizer.from_pretrained(MODEL);
   let last = -1;
   const model = await AutoModelForCausalLM.from_pretrained(MODEL, { dtype, device,
-    progress_callback: (p) => { if (p.status === "progress" && p.file?.includes("onnx_data")) {
+    progress_callback: (p) => { if (p.status === "done" && p.file?.includes("onnx_data")) mark("落とし終わり・組み立て中");
+      if (p.status === "progress" && p.file?.includes("onnx_data")) {
       const pc = Math.floor(p.progress); if (pc !== last && pc % 10 === 0) { last = pc; mark("落とす " + pc + "%"); $("cps").textContent = "落とす " + pc + "%"; } } } });
   return { tokenizer, model };
 }
