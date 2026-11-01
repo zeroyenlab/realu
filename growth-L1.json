@@ -1,69 +1,6 @@
 {
  "runs": [
   {
-   "at": "2026-10-21T07:13:11Z",
-   "val": 2.8258,
-   "prev": 2.8274,
-   "valTag": "fixed-holdout-v1",
-   "stoppedAt": 158,
-   "stuck": 0,
-   "evalTag": "fixed-ix-v1",
-   "secPerStep": 26.3843,
-   "steps": 300,
-   "bpc": 3.3445,
-   "charsPerTok": 1.2189,
-   "score": 2.1219,
-   "scoreW": 2.0,
-   "scoreMode": "talk",
-   "finishMix": 0.5,
-   "lineage": "L1",
-   "layers": 16,
-   "params": 117914880,
-   "chars": 1045308899,
-   "tokens": 857567631,
-   "grew": 0,
-   "rolledBack": false,
-   "ownVal": null,
-   "ownScore": null,
-   "d": 768,
-   "loops": 1,
-   "spread": 2.9674,
-   "bytes": 1415115957,
-   "heads": 6,
-   "ctx": 512,
-   "vocab": 6000,
-   "kind": "bpe",
-   "arch": "tpp-loop",
-   "wantWider": false,
-   "layerCap": 16,
-   "mixChanged": false,
-   "bySrc": {
-    "laws": 3.9852,
-    "wiki": 2.9801,
-    "aozora": 3.3404,
-    "hanrei": 3.4412,
-    "kokkai": 2.6094,
-    "web": 2.868,
-    "talk": 2.1219
-   },
-   "wrote": [
-    {
-     "start": "わたしは",
-     "text": "わたしはわざこひて、怒鳴り、ひょうだくさのひのりひらくこともありました。 「 紫の中のマカミ 」は、みんなのうた。 公判では単なる公判ではなく、公判をもって、公判へなければならぬ。 公判 の 公判 で、公判廷での公判を強く訴えることを"
-    },
-    {
-     "start": "第一条",
-     "text": "第一条の基準に関する法律 第一_ADAAGAGAGA OLCAGAGAGA TOMANHAGAGA TOUGAGAN〜安客の緊急時のニュース〜 - 川越真一 - （ふるさと鳥海の3） TOURRAGAGA TOUR TOUR TOUR T"
-    },
-    {
-     "start": "この法律において",
-     "text": "この法律において「��」と呼ばれるメタロイヤルランプを注して、その耳に流す。 しかし、実際には見た目が覚めたいと言うと、それから正面から格闘している。 このため、古度は「キヤノン」ではなく「キヤノン」という語を加えた「キヤノン」に由来する。 古代ローマも、朝"
-    }
-   ],
-   "loopPct": 15.62,
-   "movedBody": false
-  },
-  {
    "at": "2026-10-21T08:30:44Z",
    "val": 2.8281,
    "prev": 2.8258,
@@ -12649,6 +12586,69 @@
    ],
    "loopPct": 3.57,
    "movedBody": false
+  },
+  {
+   "at": "2026-11-01T01:26:11Z",
+   "val": 2.7724,
+   "prev": 2.776,
+   "valTag": "fixed-holdout-v1",
+   "stoppedAt": 174,
+   "stuck": 0,
+   "evalTag": "fixed-ix-v1",
+   "secPerStep": 23.7882,
+   "steps": 300,
+   "bpc": 3.2824,
+   "charsPerTok": 1.2185,
+   "score": 2.1025,
+   "scoreW": 2.0,
+   "scoreMode": "talk",
+   "finishMix": 0.5,
+   "lineage": "L1",
+   "layers": 16,
+   "params": 117914880,
+   "chars": 1047537723,
+   "tokens": 859675174,
+   "grew": 0,
+   "rolledBack": false,
+   "ownVal": null,
+   "ownScore": null,
+   "d": 768,
+   "loops": 1,
+   "spread": 2.7419,
+   "bytes": 1415116021,
+   "heads": 6,
+   "ctx": 512,
+   "vocab": 6000,
+   "kind": "bpe",
+   "arch": "tpp-loop",
+   "wantWider": false,
+   "layerCap": 16,
+   "mixChanged": false,
+   "bySrc": {
+    "laws": 3.8513,
+    "wiki": 2.9194,
+    "aozora": 3.2889,
+    "hanrei": 3.4066,
+    "kokkai": 2.5767,
+    "web": 2.8126,
+    "talk": 2.1025
+   },
+   "wrote": [
+    {
+     "start": "わたしは",
+     "text": "わたしはない。 スーパーカップ は、月の超高度で良く、毎回同じ。 スーパーカップ は、 正確には 証拠 である。 スーパーカップ は、スーパーカップで1回1メートルで、スーパーカップの2回、3回で3回で6回での1試合になり、スーパーカップは3回に"
+    },
+    {
+     "start": "第一条",
+     "text": "第一条……………………………………。…………」 AB「……………………」 AA「……俺は、一つの事を言ってるわけだ。我々は今は静かにしてない。ここに持って、今までここに"
+    },
+    {
+     "start": "この法律において",
+     "text": "この法律において「一時存続する 定期徴収 」を参照 英国 では、特別注意速度の低下発生から200 % 以上が、2019年の 第28回国会 で唯一の「 特別緊急勤 」を説明している [ 39 ] 。 第48回国会 では、 与野党 の 与野党 、 与党 の 国民 を代表する 知"
+    }
+   ],
+   "loopPct": 20.23,
+   "movedBody": false
   }
  ],
  "bestVal": 2.7611,
@@ -12674,7 +12674,7 @@
   857567631,
   857567631,
   857567631,
-  857567631,
+  859675174,
   859675174,
   859675174,
   859675174,
@@ -12699,5 +12699,5 @@
  ],
  "wantWider": false,
  "nextD": 768,
- "bad": 0
+ "bad": 1
 }
