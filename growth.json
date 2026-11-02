@@ -1,69 +1,6 @@
 {
  "runs": [
   {
-   "at": "2026-10-22T11:31:56Z",
-   "val": 2.8263,
-   "prev": 2.8237,
-   "valTag": "fixed-holdout-v1",
-   "stoppedAt": 201,
-   "stuck": 0,
-   "evalTag": "fixed-ix-v1",
-   "secPerStep": 20.3136,
-   "steps": 322,
-   "bpc": 3.3452,
-   "charsPerTok": 1.2189,
-   "score": 2.1139,
-   "scoreW": 2.0,
-   "scoreMode": "talk",
-   "finishMix": 0.5,
-   "lineage": "L1",
-   "layers": 16,
-   "params": 117914880,
-   "chars": 1045308899,
-   "tokens": 857567631,
-   "grew": 0,
-   "rolledBack": false,
-   "ownVal": null,
-   "ownScore": null,
-   "d": 768,
-   "loops": 1,
-   "spread": 2.9013,
-   "bytes": 1415115957,
-   "heads": 6,
-   "ctx": 512,
-   "vocab": 6000,
-   "kind": "bpe",
-   "arch": "tpp-loop",
-   "wantWider": false,
-   "layerCap": 16,
-   "mixChanged": false,
-   "bySrc": {
-    "laws": 3.9757,
-    "wiki": 2.979,
-    "aozora": 3.3376,
-    "hanrei": 3.4423,
-    "kokkai": 2.6132,
-    "web": 2.8647,
-    "talk": 2.1139
-   },
-   "wrote": [
-    {
-     "start": "わたしは",
-     "text": "わたしは、これからも、あれからコンビニに行ってみて下さい。」 BP「はい、実際に行ってみたいです。虫が苦手で、ファストパスというのはありますか？」 CY「茹でたのですが、さすがに行ったことがなくて。」 BP「なるほどなるほど。今日も特にこの子は昼間は"
-    },
-    {
-     "start": "第一条",
-     "text": "第一条月分 ) １被告会社は，一定期間に係る低租税収入に係る宅配給に関す る事務作業を担当するものである。 (2) 原告ら 被告会社は，平成１２年１０月２５日，付近経済情勢の変動，厳しい財政状況の 見積り等を通じて，６年間が経過した前記ウを原告の財政状況下で術後に生じた行為を �"
-    },
-    {
-     "start": "この法律において",
-     "text": "この法律において「SIC」国の「SICカード」は、大手のアウトレットカードをユニフォームに使用している 。上記の通り、こちらはSICカードのカード設定になっている。 File:Suicaは、JavaScript Seryzentail.jpg|Nicendo Stati"
-    }
-   ],
-   "loopPct": 3.2,
-   "movedBody": false
-  },
-  {
    "at": "2026-10-22T12:45:53Z",
    "val": 2.8282,
    "prev": 2.8263,
@@ -12709,6 +12646,69 @@
      "気持ち": 0.283
     }
    }
+  },
+  {
+   "at": "2026-11-02T06:41:38Z",
+   "val": 2.7563,
+   "prev": 2.7635,
+   "valTag": "fixed-holdout-v1",
+   "stoppedAt": 159,
+   "stuck": 0,
+   "evalTag": "fixed-ix-v1",
+   "secPerStep": 26.125,
+   "steps": 300,
+   "bpc": 3.2634,
+   "charsPerTok": 1.2185,
+   "score": 2.1034,
+   "scoreW": 2.0,
+   "scoreMode": "talk",
+   "finishMix": 0.5,
+   "lineage": "L1",
+   "layers": 16,
+   "params": 117914880,
+   "chars": 1047537723,
+   "tokens": 859675174,
+   "grew": 0,
+   "rolledBack": false,
+   "ownVal": null,
+   "ownScore": null,
+   "d": 768,
+   "loops": 1,
+   "spread": 2.8684,
+   "bytes": 1415116021,
+   "heads": 6,
+   "ctx": 512,
+   "vocab": 6000,
+   "kind": "bpe",
+   "arch": "tpp-loop",
+   "wantWider": false,
+   "layerCap": 16,
+   "mixChanged": false,
+   "bySrc": {
+    "laws": 3.8182,
+    "wiki": 2.904,
+    "aozora": 3.2743,
+    "hanrei": 3.3879,
+    "kokkai": 2.5631,
+    "web": 2.7996,
+    "talk": 2.1034
+   },
+   "wrote": [
+    {
+     "start": "わたしは",
+     "text": "わたしは、これはどうも明日がどうなってしまうんだ、こんな事態はもう当然らっているじゃないですか。どうですか。」 AB「大島委員長 時間が来ますので、簡潔に、答弁をいただきます。」 AA「中井委員長 これにて上井君の質疑は終了いたしました。 次回は、明六日�"
+    },
+    {
+     "start": "第一条",
+     "text": "第一条（１） １１月３１日 <判決 965> 主文 １被告の主張 第１請求 １被告は，平成１３年１１月３１日，原告に対し，金１５９９万８４ ６４円及びこれに対する平成１１年６月２６日付けで原告の主張 参考人として，原告に対し，Ｑに対し，「父が予見しており�"
+    },
+    {
+     "start": "この法律において",
+     "text": "この法律において「平成26年度予算案」という。）第三一部を改正する法律案の趣旨説明に対する質疑」 AA「議長 この際、平成14年度一般会計予算外（一般会計契約、平成18年度特別会計予算、平成26年度政府関係機関予算、以上三案を一括して議題とし、質疑を行います。櫻井高一君。」 AB「私は、日本社会党を代表し、平成27年度予算三"
+    }
+   ],
+   "loopPct": 4.52,
+   "movedBody": false
   }
  ],
  "bestVal": 2.755,
