@@ -1,69 +1,6 @@
 {
  "runs": [
   {
-   "at": "2026-10-22T05:13:04Z",
-   "val": 2.8269,
-   "prev": 2.8217,
-   "valTag": "fixed-holdout-v1",
-   "stoppedAt": 177,
-   "stuck": 0,
-   "evalTag": "fixed-ix-v1",
-   "secPerStep": 23.2786,
-   "steps": 300,
-   "bpc": 3.3459,
-   "charsPerTok": 1.2189,
-   "score": 2.114,
-   "scoreW": 2.0,
-   "scoreMode": "talk",
-   "finishMix": 0.5,
-   "lineage": "L1",
-   "layers": 16,
-   "params": 117914880,
-   "chars": 1045308899,
-   "tokens": 857567631,
-   "grew": 0,
-   "rolledBack": false,
-   "ownVal": null,
-   "ownScore": null,
-   "d": 768,
-   "loops": 1,
-   "spread": 2.9695,
-   "bytes": 1415115957,
-   "heads": 6,
-   "ctx": 512,
-   "vocab": 6000,
-   "kind": "bpe",
-   "arch": "tpp-loop",
-   "wantWider": false,
-   "layerCap": 16,
-   "mixChanged": false,
-   "bySrc": {
-    "laws": 3.969,
-    "wiki": 2.9816,
-    "aozora": 3.3389,
-    "hanrei": 3.4454,
-    "kokkai": 2.6109,
-    "web": 2.8687,
-    "talk": 2.114
-   },
-   "wrote": [
-    {
-     "start": "わたしは",
-     "text": "わたしはそれと日本酒政治家というのがありますが、日本酒は飲みませんでした。」 CC「海先目、なんでも、酒は飲まないですよね。」 BF「そうなんです。あなたはありますか？」 CC「私は、ボクサー飲みますよー。」 BF「あはは、ちょっと深いワ"
-    },
-    {
-     "start": "第一条",
-     "text": "第一条、�含管弦楽音楽及び普楽音楽 増補改訂版（「晴天」の音楽史：「晴天」の音楽を楽しむ。」、「晴天」「晴天」「義」の双方とも共通する。晴天の乱は「晴天」と表記される。 歌曲は「�"
-    },
-    {
-     "start": "この法律において",
-     "text": "この法律において「崎崎サミット」（2026年現在では打ち切り）が、2027年時点では32度の臨時�軍事施設が存在している。 土浦は、郊外の食料品は097（松浦金東）であるため、日豊が丸く日が日替わりで商品も割近く、土砂品が失われている。 承止化 -"
-    }
-   ],
-   "loopPct": 7.77,
-   "movedBody": false
-  },
-  {
    "at": "2026-10-22T06:27:17Z",
    "val": 2.8321,
    "prev": 2.8269,
@@ -12689,6 +12626,69 @@
    ],
    "loopPct": 5.3,
    "movedBody": false
+  },
+  {
+   "at": "2026-11-02T00:06:02Z",
+   "val": 2.7566,
+   "prev": 2.7562,
+   "valTag": "fixed-holdout-v1",
+   "stoppedAt": 159,
+   "stuck": 0,
+   "evalTag": "fixed-ix-v1",
+   "secPerStep": 26.13,
+   "steps": 470,
+   "bpc": 3.2637,
+   "charsPerTok": 1.2185,
+   "score": 2.0854,
+   "scoreW": 2.0,
+   "scoreMode": "talk",
+   "finishMix": 0.5,
+   "lineage": "L1",
+   "layers": 16,
+   "params": 117914880,
+   "chars": 1047537723,
+   "tokens": 859675174,
+   "grew": 0,
+   "rolledBack": false,
+   "ownVal": null,
+   "ownScore": null,
+   "d": 768,
+   "loops": 1,
+   "spread": 3.4802,
+   "bytes": 1415116021,
+   "heads": 6,
+   "ctx": 512,
+   "vocab": 6000,
+   "kind": "bpe",
+   "arch": "tpp-loop",
+   "wantWider": false,
+   "layerCap": 16,
+   "mixChanged": false,
+   "bySrc": {
+    "laws": 3.8319,
+    "wiki": 2.9014,
+    "aozora": 3.2726,
+    "hanrei": 3.3883,
+    "kokkai": 2.5626,
+    "web": 2.7956,
+    "talk": 2.0854
+   },
+   "wrote": [
+    {
+     "start": "わたしは",
+     "text": "わたしは最後ですよね！」 DN「そうですね。お休みの日は何をされていますか？」 ED「お盆は、毎日何食べることが多いですね。」 DN「これからはお昼ご飯は断食するようになりましたね。」 ED「はい、そうしてください！お昼は、朝ごはんを食"
+    },
+    {
+     "start": "第一条",
+     "text": "第一条、選定予備選挙運動が行われた。 2011年 3月10日 - 第1次リーガ・ワドソン・シンガーズシンガーズ コンピュータ・リプレイをリプレイしての表情を現した“ コンピュータ・リプレイ”を建てた。 2019年 4月18日 - コンピュータ・リ"
+    },
+    {
+     "start": "この法律において",
+     "text": "この法律において「平成22年 4月 」に変更され、 2016年 4月 までは 2017年 4月1日 へ移行した。 その後も「 6000系 」を導入したが、 2018年 2月1日 に サンライン3000系 を導入し、 2018年 1月1日 に乗り入れを開始した。 1"
+    }
+   ],
+   "loopPct": 7.66,
+   "movedBody": false
   }
  ],
  "bestVal": 2.7562,
@@ -12697,7 +12697,7 @@
  "born": "2026-09-08T15:11:54Z",
  "marks": [
   857567631,
-  857567631,
+  859675174,
   859675174,
   859675174,
   859675174,
@@ -12739,5 +12739,5 @@
  ],
  "wantWider": false,
  "nextD": 768,
- "bad": 0
+ "bad": 1
 }
