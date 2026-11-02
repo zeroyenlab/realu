@@ -1,69 +1,6 @@
 {
  "runs": [
   {
-   "at": "2026-10-22T08:55:03Z",
-   "val": 2.6063,
-   "prev": 2.6053,
-   "valTag": "fixed-holdout-v1",
-   "stoppedAt": 606,
-   "stuck": 0,
-   "evalTag": "fixed-ix-v1",
-   "secPerStep": 6.1566,
-   "steps": 652,
-   "bpc": 3.0848,
-   "charsPerTok": 1.2189,
-   "score": 2.0282,
-   "scoreW": 2.0,
-   "scoreMode": "talk",
-   "finishMix": 0.85,
-   "lineage": "L2",
-   "layers": 14,
-   "params": 47379968,
-   "chars": 1045308899,
-   "tokens": 857567631,
-   "grew": 0,
-   "rolledBack": false,
-   "ownVal": null,
-   "ownScore": null,
-   "d": 512,
-   "loops": 1,
-   "spread": 2.6253,
-   "bytes": 568680621,
-   "heads": 8,
-   "ctx": 512,
-   "vocab": 6000,
-   "kind": "bpe",
-   "arch": "tpp-loop",
-   "wantWider": false,
-   "layerCap": 16,
-   "mixChanged": false,
-   "bySrc": {
-    "laws": 3.4669,
-    "wiki": 2.7629,
-    "aozora": 3.0875,
-    "hanrei": 3.3505,
-    "kokkai": 2.4378,
-    "web": 2.692,
-    "talk": 2.0282
-   },
-   "wrote": [
-    {
-     "start": "わたしは",
-     "text": "わたしは、その日の歩き方を見ていたのですが、何かの前の運動をしていたような気がしました。」 EB「そうなんですね！いい運動になりましたね！」 BX「どうでしょう？」 EB「ちょっと大きいですね！運動はどちらですか？」 BX「運動はしてないんですが、�"
-    },
-    {
-     "start": "第一条",
-     "text": "第一条第六号のネルネルの部分がございます。」 客「そうなんですね。ありがとうございます。あと、タクシーでキャッシュレス払いできるところを探してもらえますか？」 店「かしこまりました。では、関西国際空港というところはいかがでしょうか？」 客「そちらの電話番号を教えて"
-    },
-    {
-     "start": "この法律において",
-     "text": "この法律において「netsugi」における「netsugi」における「netsugi」における「netsugi」は「netsugi」において「netsugi」の用語に「netsugi」をまたぎ、netsugiの「netsugi」を指して「netsugi」に「nets"
-    }
-   ],
-   "loopPct": 2.32,
-   "movedBody": false
-  },
-  {
    "at": "2026-10-22T10:11:07Z",
    "val": 2.6051,
    "prev": 2.6063,
@@ -12999,6 +12936,79 @@
      "気持ち": 0.453
     }
    }
+  },
+  {
+   "at": "2026-11-02T02:42:40Z",
+   "val": 2.5864,
+   "prev": 2.5854,
+   "valTag": "fixed-holdout-v1",
+   "stoppedAt": 326,
+   "stuck": 0,
+   "evalTag": "fixed-ix-v1",
+   "secPerStep": 11.8596,
+   "steps": 559,
+   "bpc": 3.0623,
+   "charsPerTok": 1.2185,
+   "score": 2.0346,
+   "scoreW": 2.0,
+   "scoreMode": "talk",
+   "finishMix": 0.85,
+   "lineage": "L2",
+   "layers": 14,
+   "params": 47379968,
+   "chars": 1047537723,
+   "tokens": 859675174,
+   "grew": 0,
+   "rolledBack": false,
+   "ownVal": null,
+   "ownScore": null,
+   "d": 512,
+   "loops": 1,
+   "spread": 2.639,
+   "bytes": 568680621,
+   "heads": 8,
+   "ctx": 512,
+   "vocab": 6000,
+   "kind": "bpe",
+   "arch": "tpp-loop",
+   "wantWider": false,
+   "layerCap": 16,
+   "mixChanged": false,
+   "bySrc": {
+    "laws": 3.4641,
+    "wiki": 2.723,
+    "aozora": 3.0661,
+    "hanrei": 3.3358,
+    "kokkai": 2.4206,
+    "web": 2.6647,
+    "talk": 2.0346
+   },
+   "wrote": [
+    {
+     "start": "わたしは",
+     "text": "わたしは夜通し派でした。」 GN「それはそうですね」 GU「夜のほうがいいとか。」 GN「食生活ですかね。」 GU「食べるのが一番ですね。」 GN「なかなかですね。」 GU「いつも何食べますか？」 GN「カレーとか。」 GU「カレーいいですね"
+    },
+    {
+     "start": "第一条",
+     "text": "第一条第三号ハハハ。」 客「ありがとうございます。そのお店のエリアと営業時間も教えて頂けないでしょうか。」 店「エリアは若林区で、営業時間は10:00～20:00でございます。」 客「ありがとうございます。当日のタクシーを利用したいのですが、キャッ"
+    },
+    {
+     "start": "この法律において",
+     "text": "この法律において参議院議員選挙法の改正について、私の質問を終わります。（拍手）」 AA「国務大臣 お答えいたします。 まず、我が国の選挙制度についての御質問でありますが、現在、選挙制度の改革を中心に、国民が最善とお考えになっておる最重要課題の一つとなっております。 今回の改正案によりまして、選挙"
+    }
+   ],
+   "loopPct": 6.67,
+   "movedBody": false,
+   "rikai": {
+    "pmi": 0.57,
+    "raw": 0.447,
+    "n": 300,
+    "byAsk": {
+     "したい事": 0.468,
+     "対象": 0.774,
+     "気持ち": 0.491
+    }
+   }
   }
  ],
  "bestVal": 2.584,
@@ -13008,7 +13018,7 @@
  "marks": [
   857567631,
   857567631,
-  857567631,
+  859675174,
   859675174,
   859675174,
   859675174,
@@ -13049,5 +13059,5 @@
  ],
  "wantWider": false,
  "nextD": 512,
- "bad": 2
+ "bad": 0
 }
