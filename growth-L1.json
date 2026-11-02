@@ -1,69 +1,6 @@
 {
  "runs": [
   {
-   "at": "2026-10-22T07:43:27Z",
-   "val": 2.8303,
-   "prev": 2.8321,
-   "valTag": "fixed-holdout-v1",
-   "stoppedAt": 204,
-   "stuck": 0,
-   "evalTag": "fixed-ix-v1",
-   "secPerStep": 19.8465,
-   "steps": 300,
-   "bpc": 3.3499,
-   "charsPerTok": 1.2189,
-   "score": 2.1257,
-   "scoreW": 2.0,
-   "scoreMode": "talk",
-   "finishMix": 0.5,
-   "lineage": "L1",
-   "layers": 16,
-   "params": 117914880,
-   "chars": 1045308899,
-   "tokens": 857567631,
-   "grew": 0,
-   "rolledBack": false,
-   "ownVal": null,
-   "ownScore": null,
-   "d": 768,
-   "loops": 1,
-   "spread": 2.943,
-   "bytes": 1415115957,
-   "heads": 6,
-   "ctx": 512,
-   "vocab": 6000,
-   "kind": "bpe",
-   "arch": "tpp-loop",
-   "wantWider": false,
-   "layerCap": 16,
-   "mixChanged": false,
-   "bySrc": {
-    "laws": 3.9737,
-    "wiki": 2.9796,
-    "aozora": 3.3392,
-    "hanrei": 3.4367,
-    "kokkai": 2.6136,
-    "web": 2.8697,
-    "talk": 2.1257
-   },
-   "wrote": [
-    {
-     "start": "わたしは",
-     "text": "わたしはタイムワークスでしたね。特に広告ばかり見てないのですね。」 DP「普段はあんまり見れないですけどね。」 DC「そうなんですよ、ちゃんと単純に見ても気になってびっくりしました！」 DP「まぁ確かに。さんは何かありますか？」 D"
-    },
-    {
-     "start": "第一条",
-     "text": "第一条 乙Ｂ４号証 (ｱ) ｅＢ証言聴聞の経緯及び検証に関する被告Ｄ証言，Ａ１１号証の２ １，３号証，５号証，１７号証の１及び２号証の１及び２， (ｶ) Ｃ主義者証言及びＢ証言表は，３号証の２，証人ＥがＡ７号証の"
-    },
-    {
-     "start": "この法律において",
-     "text": "この法律において「原勲章」を創始する [ 8 ] 。 2012年（平成25年）7月12日、 鹿児島県 にて、 惣菜 「 うみねこ 」が創業し、「 つばさ 」を創業した [ 9 ] 。 2014年（平成26年）12月、公明党の 大�"
-    }
-   ],
-   "loopPct": 7.55,
-   "movedBody": false
-  },
-  {
    "at": "2026-10-22T09:00:45Z",
    "val": 2.8235,
    "prev": 2.8303,
@@ -12689,6 +12626,79 @@
    ],
    "loopPct": 1.97,
    "movedBody": false
+  },
+  {
+   "at": "2026-11-02T02:42:44Z",
+   "val": 2.763,
+   "prev": 2.755,
+   "valTag": "fixed-holdout-v1",
+   "stoppedAt": 300,
+   "stuck": 0,
+   "evalTag": "fixed-ix-v1",
+   "secPerStep": 12.9721,
+   "steps": 300,
+   "bpc": 3.2713,
+   "charsPerTok": 1.2185,
+   "score": 2.1002,
+   "scoreW": 2.0,
+   "scoreMode": "talk",
+   "finishMix": 0.5,
+   "lineage": "L1",
+   "layers": 16,
+   "params": 117914880,
+   "chars": 1047537723,
+   "tokens": 859675174,
+   "grew": 0,
+   "rolledBack": false,
+   "ownVal": null,
+   "ownScore": null,
+   "d": 768,
+   "loops": 1,
+   "spread": 2.8077,
+   "bytes": 1415116021,
+   "heads": 6,
+   "ctx": 512,
+   "vocab": 6000,
+   "kind": "bpe",
+   "arch": "tpp-loop",
+   "wantWider": false,
+   "layerCap": 16,
+   "mixChanged": false,
+   "bySrc": {
+    "laws": 3.8377,
+    "wiki": 2.9097,
+    "aozora": 3.2797,
+    "hanrei": 3.3921,
+    "kokkai": 2.5704,
+    "web": 2.8022,
+    "talk": 2.1002
+   },
+   "wrote": [
+    {
+     "start": "わたしは",
+     "text": "わたしはパーティーですか？」 DB「パーティー写真とか好きです！」 HA「素敵、そうなんですね！！かっこいいですね！」 DB「とりあえず最初はハンバーグとかも読んでました。」 HA「どんなのを読んだりしますか？」 DB「"
+    },
+    {
+     "start": "第一条",
+     "text": "第一条（１） （１）のとおり，Ａは，Ｊ病院でＡ病院を利用し，Ａ病院の通院嘉 し，Ｇ病院の入院拒否に全力で取り組んできたところ，Ｂ医師から， 本件病院のＥ病院を再開したことに加え，前記Ｅ病院の通院嘉数か所に通院し， 本件病院を通過し，Ｅ病院"
+    },
+    {
+     "start": "この法律において",
+     "text": "この法律において「」とあるのは「ええ」と、「」とあるのは「ひで」と、「」とあるのは「け」と、「ひ」とあるのは「ひ」と、「一」とあるのは「一」という用する。 （一） 一 一 一 一 一 一 一 一 一 一 一 一 一 一 一 一 一 一 一 一 一 一 一 一 一 一 一 一 一 一 一"
+    }
+   ],
+   "loopPct": 16.97,
+   "movedBody": false,
+   "rikai": {
+    "pmi": 0.453,
+    "raw": 0.387,
+    "n": 300,
+    "byAsk": {
+     "したい事": 0.532,
+     "対象": 0.688,
+     "気持ち": 0.189
+    }
+   }
   }
  ],
  "bestVal": 2.755,
@@ -12739,5 +12749,5 @@
  ],
  "wantWider": false,
  "nextD": 768,
- "bad": 2
+ "bad": 1
 }
