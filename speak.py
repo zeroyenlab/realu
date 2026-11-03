@@ -23,6 +23,59 @@ STARTS = ["わたしは", "第一条", "この法律において", "きょうは
 KEEP = int(os.environ.get("REALU_SAID_KEEP", 60))
 
 
+def write(model, vocab, start, n, temp, guard, top_p=0.9):
+    """★★★1つの発話だけを書く（★2026-11-04）。
+
+    ★前は `model.write()` で**改行を越えて**書き、★no_src が改行を空白にしていた。
+      ★材料は「1行に1発話（`AA「…」`）」なので、★頭は改行の次に**次の人の札**を書く。
+      ★★それがそのまま出て「…」 AA「…」になっていた（★60回のうち57回に札）。
+    → ★改行が出たらそこで止める。★裾は切る（★reply.py と同じ top-p）。★字が壊れる単位は選ばない。
+    """
+    import torch
+    import torch.nn.functional as F
+    from reply import _top_p
+    ok, nxt_t = guard if guard else (None, None)
+    ids = (vocab.encode(start) or [0])[-model.ctx:]
+    idx = torch.tensor([ids], dtype=torch.long)
+    use_cache = model.loops == 1
+    caches = [[] for _ in model.blocks] if use_cache else None
+    new, s, ends = [], 0, []   # ★ends: 字の切れ目にいた所（★半端を落とす時に戻る先）
+    with torch.no_grad():
+        if use_cache:
+            logits, _ = model(idx, caches=caches, pos=0)
+            pos = idx.shape[1]
+        else:
+            logits, _ = model(idx)
+        for _ in range(n):
+            lg = logits[0, -1] / temp
+            if ok is not None:
+                lg = lg.masked_fill(~ok[s], float("-inf"))
+            p = _top_p(F.softmax(lg, dim=-1).unsqueeze(0), top_p)
+            nxt = int(torch.multinomial(p, 1).item())
+            new.append(nxt)
+            if ok is not None:
+                s = nxt_t[s][nxt]
+            if s == 0:
+                ends.append(len(new))
+                if "\n" in vocab.decode(new[-2:]):
+                    break
+            t = torch.tensor([[nxt]], dtype=torch.long)
+            if use_cache and pos < model.ctx:
+                logits, _ = model(t, caches=caches, pos=pos)
+                pos += 1
+            else:
+                full = torch.tensor([(ids + new)[-model.ctx:]], dtype=torch.long)
+                if use_cache:
+                    caches = [[] for _ in model.blocks]
+                    logits, _ = model(full, caches=caches, pos=0)
+                    pos = full.shape[1]
+                else:
+                    logits, _ = model(full)
+    if ok is not None:
+        new = new[:ends[-1]] if ends else []   # ★最後に字の半端が残ったら落とす
+    return start + vocab.decode(new).split("\n")[0]
+
+
 def main():
     try:
         sys.stdout.reconfigure(encoding="utf-8", errors="replace")
@@ -69,10 +122,21 @@ def main():
         def safe(_s):
             return True
 
+    # ★★★字の表（★2026-11-04）。★ByteLevel でない頭（文字単位）では使わない
+    guard = None
+    if getattr(vocab, "kind", "") == "bpe":
+        try:
+            import utf8_guard as U
+            tb = U.token_bytes(vocab.t)
+            if tb:
+                guard = U.table(tb)
+        except Exception as e:
+            print("★字の表を作れなかった（%s）" % type(e).__name__, flush=True)
+
     wrote = []
     for pr in STARTS:
         try:
-            t = G.no_src(model.write(vocab, pr, 120, temp=0.8))
+            t = G.no_src(write(model, vocab, pr, 120, 0.8, guard))
             if not safe(t):
                 t = "（出せない言葉が混じったので、これは出さない）"
             wrote.append({"start": pr, "text": t[:240]})

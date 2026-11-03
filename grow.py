@@ -79,6 +79,8 @@ BATCH = int(os.environ.get("REALU_BATCH", 16))
 #   ★★しかも育つ回のログでは、★スケジューラが既に上限 6e-4 に張り付いていた
 #     （`LR_MAX = LR * 2.0`）。★彼女は自力で正解に届いていて、★天井に頭をぶつけていた。
 LR = float(os.environ.get("REALU_LR", 6e-4))
+# ★★★勢いを引き継いだ回の学習率（★2026-11-04・★回をまたいで持ち越さない）
+LR_RUN = float(os.environ.get("REALU_LR_RUN", 5e-5))
 STEPS = int(os.environ.get("REALU_STEPS", 0))         # ★0 なら実測から自動で決める
 # ★★★評価の間隔（2026-09-17 実測で見直した）。
 #   ★評価は 6（本番）＋3（訓練）＝ **9回の順伝播だけ**。★逆伝播が無いので安い。
@@ -1194,6 +1196,7 @@ def main():
               % (bad, GROW_PATIENCE), flush=True)
     want_wider = False          # ★★★「幅が欲しい」と自分で言うための印
     lr_now = LR
+    resumed = False
 
     # ★★★Adam の慣性（勢い）を、前の回から引き継ぐ。
     #   ★これは数百歩かけて溜まったもの。★捨てると冷えた状態に戻り、
@@ -1204,8 +1207,16 @@ def main():
         try:
             opt.load_state_dict(st["opt"])
             sch = st.get("sched") or {}
-            lr_now = float(sch.get("lr_now") or LR)
-            print("★前の回の勢いを引き継いだ（lr %.1e）" % lr_now, flush=True)
+            # ★★★2026-11-04: ★学習率は**持ち越さない**。★毎回 LR_RUN から始める。
+            #   ★前は評価のたびに ×0.9（良くなった時も悪くなった時も）／×1.35（平らな時だけ）を掛け、
+            #     ★その値を次の回へ持ち越していた。★比べる vl のゆれ（0.04〜0.05）が平らの幅より広く、
+            #     ★ほとんど ×0.9 を引くので、★★床（LR/50）まで落ちて張り付いていた
+            #     （★10-26 の L1 は 1.4e-05 ＝設定 6e-4 の 1/43。★温めと減衰を入れると実効は約 1/107）。
+            #   ★1歩 4096 トークンの小さなバッチなら、★目安は 5e-5 前後（★6e-4 は約50万トークン/歩の値）。
+            lr_now = LR_RUN
+            resumed = True
+            print("★前の回の勢いを引き継いだ（前の lr %.1e → いま %.1e）"
+                  % (float(sch.get("lr_now") or 0), lr_now), flush=True)
         except Exception as e:
             print("★勢いは引き継げなかった（%s）。★冷えた状態から始める。"
                   % type(e).__name__, flush=True)
@@ -1349,7 +1360,8 @@ def main():
             print("  ★★ここから仕上げ（%d歩目 / %.0f分経過）。★%.0f%% を %s から引く（%.1f 万トークン）"
                   % (step, now_el / 60, FINISH_MIX * 100, FINISH_SRC,
                      (focus_range[1] - focus_range[0]) / 10000), flush=True)
-        warm = min(1.0, step / 200)
+        # ★★2026-11-04: ★勢いを引き継げた回は温め直さない（★L1 は1回 約170歩で、★200歩の温めが終わらなかった）
+        warm = 1.0 if resumed else min(1.0, step / 200)
         # ★★★学習率を0へ落とす区間。★歩数か時間の**早い方**で始める。
         if decay_started is None and (step > DECAY_FROM
                                       or now_el > budget * (1.0 - DECAY_T)):
@@ -1377,9 +1389,11 @@ def main():
             if w > 0.001:
                 with torch.no_grad():
                     tl, _ = teacher(x)
+                # ★★2026-11-04: ★(B,T,V) のまま batchmean だと B でしか割らず、★1トークンあたりの T 倍（512倍）になっていた
+                _V = logits.size(-1)
                 loss = (1 - w) * loss + w * (TEACH_T ** 2) * F.kl_div(
-                    F.log_softmax(logits / TEACH_T, dim=-1),
-                    F.log_softmax(tl / TEACH_T, dim=-1),
+                    F.log_softmax(logits.reshape(-1, _V) / TEACH_T, dim=-1),
+                    F.log_softmax(tl.reshape(-1, _V) / TEACH_T, dim=-1),
                     reduction="batchmean", log_target=True)
         opt.zero_grad(set_to_none=True)
         if scaler is not None:
@@ -1410,7 +1424,8 @@ def main():
                  lr_now, time.time() - t0), flush=True)
         if vl < best - 0.002:
             best, bad = vl, 0
-            lr_now = max(LR_MIN, lr_now * FIRM)        # ★伸びている → 固める
+            if not resumed:
+                lr_now = max(LR_MIN, lr_now * FIRM)    # ★伸びている → 固める（★引き継いだ回は LR_RUN のまま）
         elif vl > best + WORSE_MARGIN:
             # ★★★2026-09-22: ★**詰まりと発散を分ける。**
             #   ★元は「良くならない＝詰まっている」として**一律に lr を上げて**いた。
@@ -1422,10 +1437,12 @@ def main():
             #     （★L3 は33回連続で巻き戻し。★幅は元のまま＝体の大きさのせいではない）。
             #   → ★はっきり悪くなっている時は**逆に下げる**。★平らな時だけ上げる。
             bad += 1
-            lr_now = max(LR_MIN, lr_now * FIRM)
+            if not resumed:
+                lr_now = max(LR_MIN, lr_now * FIRM)
         else:
             bad += 1
-            lr_now = min(LR_MAX, lr_now * FRAGILE)     # ★平らなだけ → 壊れやすくする
+            if not resumed:
+                lr_now = min(LR_MAX, lr_now * FRAGILE)  # ★平らなだけ → 壊れやすくする
         # ── ③★★★頭打ちなら大きくなる
         # ★★★大きくしてよいのは「本当に容量が足りない」時だけ。
         #   ・訓練も本番も止まっている → ★容量不足。★大きくする
@@ -1464,6 +1481,7 @@ def main():
                                         weight_decay=0.01, betas=(0.9, 0.95))
                 bad, grew = 0, grew + 1
                 lr_now = LR                              # ★★大きくなった → 上げ直す
+                resumed = False                          # ★★勢いは作り直したので、★前の動かし方に戻す
                 print("  ★★★層が増えた → %d 層 / %.2f M（★振る舞いは変わっていない）"
                       % (n, model.n_params() / 1e6), flush=True)
             elif LOOP_OK and model.loops < MAX_LOOPS:
@@ -1471,6 +1489,7 @@ def main():
                 r = model.loop_more()
                 bad, grew = 0, grew + 1
                 lr_now = LR
+                resumed = False
                 print("  ★もう一周ぶん深くなった → %d 周（★パラメータは増えない。★ただし弱い）"
                       % r, flush=True)
             else:
@@ -1607,6 +1626,13 @@ def main():
             model.load_state_dict(before)
             while len(model.blocks) > before_layers:
                 model.blocks = model.blocks[:before_layers]
+            # ★★2026-11-04: ★重みだけ戻して、★捨てた学習で動いた勢い（AdamW）を残していた。
+            #   ★st["opt"] は学習中に書き換わる（★同じ表を共有）ので、★保存前のファイルから読み直す。
+            try:
+                opt.load_state_dict(torch.load(ckpt, map_location="cpu", weights_only=False)["opt"])
+                print("★勢いも前のわたしに戻した", flush=True)
+            except Exception as e:
+                print("★勢いは戻せなかった（%s）" % type(e).__name__, flush=True)
             own_val, own_score = val, score
             val, score, rolled = prev_val, prev_score, True
             stuck += 1
@@ -1740,6 +1766,7 @@ def main():
         "prev": round(prev_val, 4) if prev_val else None, "valTag": VAL_TAG, "stoppedAt": stopped_early, "stuck": stuck, "evalTag": EVAL_TAG,
         # ★★次の回が歩数を決めるための実測。★体が育つたびに自動で追随する
         "secPerStep": round(sec_per_step, 4), "steps": STEPS,
+        "lr": lr_now, "lrFixed": resumed,   # ★★2026-11-04: ★学習率が記録に無く、★床に張り付いていても外から見えなかった
         # ★★語彙が違う線どうしでも比べられる、唯一の物差し
         "bpc": round(bpc, 4), "charsPerTok": round(cpt, 4),
         # ★★採否を決めた合成点（★全体の val とは別）
