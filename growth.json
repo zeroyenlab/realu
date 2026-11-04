@@ -1,69 +1,6 @@
 {
  "runs": [
   {
-   "at": "2026-10-24T12:04:50Z",
-   "val": 2.8101,
-   "prev": 2.813,
-   "valTag": "fixed-holdout-v1",
-   "stoppedAt": 158,
-   "stuck": 0,
-   "evalTag": "fixed-ix-v1",
-   "secPerStep": 26.3406,
-   "steps": 325,
-   "bpc": 3.3259,
-   "charsPerTok": 1.2189,
-   "score": 2.1229,
-   "scoreW": 2.0,
-   "scoreMode": "talk",
-   "finishMix": 0.5,
-   "lineage": "L1",
-   "layers": 16,
-   "params": 117914880,
-   "chars": 1045308899,
-   "tokens": 857567631,
-   "grew": 0,
-   "rolledBack": false,
-   "ownVal": null,
-   "ownScore": null,
-   "d": 768,
-   "loops": 1,
-   "spread": 2.8288,
-   "bytes": 1415115957,
-   "heads": 6,
-   "ctx": 512,
-   "vocab": 6000,
-   "kind": "bpe",
-   "arch": "tpp-loop",
-   "wantWider": false,
-   "layerCap": 16,
-   "mixChanged": false,
-   "bySrc": {
-    "laws": 3.9402,
-    "wiki": 2.9664,
-    "aozora": 3.323,
-    "hanrei": 3.4326,
-    "kokkai": 2.5958,
-    "web": 2.8539,
-    "talk": 2.1229
-   },
-   "wrote": [
-    {
-     "start": "わたしは",
-     "text": "わたしはビートルズから「ネイルの魔法を使ってるんだろうな」と感じ、ズルガがブライトになると「デキサーファー」と言われるほどの人気が多かった。 ライトゲーマー ネイルを使っていたことを聞き、その後、チャンスをかけたところでブライトを相手にいた。 私はそういう気持"
-    },
-    {
-     "start": "第一条",
-     "text": "第一条により第一録） 。 2013年（平成25年）7月18日 - アジア地域の6がアジア地域に統合された。 2014年（平成26年）9月18日 - BS放送が開始。有料番組が中心となってチャンピオンシップを取った後、VTR放送が36分拡大した。同日、放送開始から"
-    },
-    {
-     "start": "この法律において",
-     "text": "この法律において「旧有難用観測所」が完成するのは、単に旧式観測所としての観測所であった。 1941年（昭和16年）7月30日に、 東京駅 （東京都音楽郡 桜井町 ）と東京駅が 天王寺駅 として開業した。 このころは東京駅から東京ビルまで"
-    }
-   ],
-   "loopPct": 0.0,
-   "movedBody": false
-  },
-  {
    "at": "2026-10-24T13:22:42Z",
    "val": 2.8069,
    "prev": 2.8101,
@@ -12813,6 +12750,71 @@
    ],
    "loopPct": 5.58,
    "movedBody": false
+  },
+  {
+   "at": "2026-11-04T09:54:40Z",
+   "val": 2.8774,
+   "prev": 2.8774,
+   "valTag": "fixed-holdout-v1",
+   "stoppedAt": 155,
+   "stuck": 2,
+   "evalTag": "fixed-ix-v1",
+   "secPerStep": 26.9005,
+   "steps": 300,
+   "lr": 5e-05,
+   "lrFixed": true,
+   "bpc": 3.4068,
+   "charsPerTok": 1.2185,
+   "score": 2.1533,
+   "scoreW": 2.0,
+   "scoreMode": "talk",
+   "finishMix": 0.5,
+   "lineage": "L1",
+   "layers": 16,
+   "params": 117914880,
+   "chars": 1047537723,
+   "tokens": 859675174,
+   "grew": 0,
+   "rolledBack": true,
+   "ownVal": 2.8775,
+   "ownScore": 2.1771,
+   "d": 768,
+   "loops": 1,
+   "spread": 2.6614,
+   "bytes": 1415116021,
+   "heads": 6,
+   "ctx": 512,
+   "vocab": 6000,
+   "kind": "bpe",
+   "arch": "tpp-loop",
+   "wantWider": false,
+   "layerCap": 16,
+   "mixChanged": false,
+   "bySrc": {
+    "laws": 4.0412,
+    "wiki": 3.0273,
+    "aozora": 3.3839,
+    "hanrei": 3.547,
+    "kokkai": 2.6705,
+    "web": 2.9195,
+    "talk": 2.1771
+   },
+   "wrote": [
+    {
+     "start": "わたしは",
+     "text": "わたしはもう。」 CH「やはり、もう少し後でやるしかないかなぁ。」 CL「今後も大事にしてみてくださいね。」 CL「こんにちは！」 EJ「こんにちは！」 CL「夜はやることが多いです"
+    },
+    {
+     "start": "第一条",
+     "text": "第一条を受けるべき�立又は互変動の強さは、当該落第又は第1億脇）、当該各線に着陸し、又は可動骨折し、又は冷害を被らし、又は強制的に強引に突入したことを知りながら、その他の線の病に係る部分に限る。 （別紙第1831号） 第三十四条 前章第三節第五節の二項第二U章第三節第三節 第一号2項節第三節"
+    },
+    {
+     "start": "この法律において",
+     "text": "この法律において、その具体的な内容について、関係閣僚に質問しております。 それでは、総理にお伺いしたいんですが、総理は、総理は自分を分かりやすく主張するのではなく、政策で、これを支持するのであれば、総理が自分の立場から、その結果を逃さないと付け加えていた三点になった。 私は、総理とよくお話しに"
+    }
+   ],
+   "loopPct": 4.78,
+   "movedBody": false
   }
  ],
  "bestVal": 2.7492,
@@ -12863,5 +12865,5 @@
  ],
  "wantWider": false,
  "nextD": 768,
- "bad": 5
+ "bad": 6
 }
