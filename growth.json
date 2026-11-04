@@ -1,69 +1,6 @@
 {
  "runs": [
   {
-   "at": "2026-10-24T06:59:31Z",
-   "val": 2.8093,
-   "prev": 2.8147,
-   "valTag": "fixed-holdout-v1",
-   "stoppedAt": 158,
-   "stuck": 0,
-   "evalTag": "fixed-ix-v1",
-   "secPerStep": 26.3326,
-   "steps": 300,
-   "bpc": 3.325,
-   "charsPerTok": 1.2189,
-   "score": 2.113,
-   "scoreW": 2.0,
-   "scoreMode": "talk",
-   "finishMix": 0.5,
-   "lineage": "L1",
-   "layers": 16,
-   "params": 117914880,
-   "chars": 1045308899,
-   "tokens": 857567631,
-   "grew": 0,
-   "rolledBack": false,
-   "ownVal": null,
-   "ownScore": null,
-   "d": 768,
-   "loops": 1,
-   "spread": 3.3233,
-   "bytes": 1415115957,
-   "heads": 6,
-   "ctx": 512,
-   "vocab": 6000,
-   "kind": "bpe",
-   "arch": "tpp-loop",
-   "wantWider": false,
-   "layerCap": 16,
-   "mixChanged": false,
-   "bySrc": {
-    "laws": 3.9388,
-    "wiki": 2.9665,
-    "aozora": 3.3222,
-    "hanrei": 3.4363,
-    "kokkai": 2.5948,
-    "web": 2.8561,
-    "talk": 2.113
-   },
-   "wrote": [
-    {
-     "start": "わたしは",
-     "text": "わたしは。」 CB「でもあんまり。私はそんなにです」 AL「いいですねえ。子どもは小さいのがすきです。」 CB「眼はまだ痛いです」 AL「今は、夏は大変かもしれませんね」 CB「今年もなにかが大変でした」 AL「ええ！でも、どう"
-    },
-    {
-     "start": "第一条",
-     "text": "第一条いいきものープニングでは「こんばんわーっぷくてたまりません」という 。 SARAYO MARAY EXPO -「さっと、なおかつパーティーです」（PDF） 2nd Foot 融資（1st ON RECHOMAN）。 2ryWOMAT"
-    },
-    {
-     "start": "この法律において",
-     "text": "この法律において「データ通信衛星」も区別される [ 102 ] 。 PSI がはじまるデータ視点を置き、一番の印象を持っているデータは無視できない。 データ放送 は一般的にデータ放送を利用して制作されている [ 103 ] 。 バージョン （1995年 - 2005年）"
-    }
-   ],
-   "loopPct": 4.92,
-   "movedBody": false
-  },
-  {
    "at": "2026-10-24T08:10:27Z",
    "val": 2.823,
    "prev": 2.8093,
@@ -12805,6 +12742,71 @@
    ],
    "loopPct": 0.0,
    "movedBody": false
+  },
+  {
+   "at": "2026-11-04T04:29:02Z",
+   "val": 2.8521,
+   "prev": 2.7519,
+   "valTag": "fixed-holdout-v1",
+   "stoppedAt": 176,
+   "stuck": 0,
+   "evalTag": "fixed-ix-v1",
+   "secPerStep": 23.4389,
+   "steps": 300,
+   "lr": 5e-05,
+   "lrFixed": true,
+   "bpc": 3.3768,
+   "charsPerTok": 1.2185,
+   "score": 2.1478,
+   "scoreW": 2.0,
+   "scoreMode": "talk",
+   "finishMix": 0.5,
+   "lineage": "L1",
+   "layers": 16,
+   "params": 117914880,
+   "chars": 1047537723,
+   "tokens": 859675174,
+   "grew": 0,
+   "rolledBack": false,
+   "ownVal": null,
+   "ownScore": null,
+   "d": 768,
+   "loops": 1,
+   "spread": 3.4293,
+   "bytes": 1415116021,
+   "heads": 6,
+   "ctx": 512,
+   "vocab": 6000,
+   "kind": "bpe",
+   "arch": "tpp-loop",
+   "wantWider": false,
+   "layerCap": 16,
+   "mixChanged": false,
+   "bySrc": {
+    "laws": 4.0206,
+    "wiki": 3.0048,
+    "aozora": 3.3681,
+    "hanrei": 3.4767,
+    "kokkai": 2.6517,
+    "web": 2.8945,
+    "talk": 2.1478
+   },
+   "wrote": [
+    {
+     "start": "わたしは",
+     "text": "わたしは、本院におきまして、本院に寄与いたしました日本国民の思いから、本院の審議の不上から帰ったことは、まことに残念なことであります。」 AB「（拍手） 本院の予算審議は、ここに至りまして、政府が予算審議に当たる海外に転嫁して、内外から安心の予算を編成しなければならないこととし、予算"
+    },
+    {
+     "start": "第一条",
+     "text": "第一条いておられます。いろいろな条件があって、それを更にその条件によって変化するというような条件を付けて、そして、必要な�のような条件は変わるということは、そういうことでもって通ったときでも、やはりこれは果していいのかなというふうに私は思っておりますので、そういうことになったときに、もうすぐ計画をつくってもら"
+    },
+    {
+     "start": "この法律において",
+     "text": "この法律において「泊・号」「宿泊・宿泊」「アート・ブリス」といった。 タイトルは「サイコロ」を使っている。 30日の開催期間中にロシアのホテルで開催された「日米洋上」120日間で、ライブも開催され、日本で初めて ジェーン・ブリストル が開催された。 1"
+    }
+   ],
+   "loopPct": 3.34,
+   "movedBody": false
   }
  ],
  "bestVal": 2.7492,
@@ -12855,5 +12857,5 @@
  ],
  "wantWider": false,
  "nextD": 768,
- "bad": 1
+ "bad": 2
 }
