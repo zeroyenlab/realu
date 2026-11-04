@@ -1,69 +1,6 @@
 {
  "runs": [
   {
-   "at": "2026-10-25T00:45:43Z",
-   "val": 2.5952,
-   "prev": 2.5988,
-   "valTag": "fixed-holdout-v1",
-   "stoppedAt": 385,
-   "stuck": 0,
-   "evalTag": "fixed-ix-v1",
-   "secPerStep": 9.9642,
-   "steps": 568,
-   "bpc": 3.0716,
-   "charsPerTok": 1.2189,
-   "score": 2.029,
-   "scoreW": 2.0,
-   "scoreMode": "talk",
-   "finishMix": 0.85,
-   "lineage": "L2",
-   "layers": 14,
-   "params": 47379968,
-   "chars": 1045308899,
-   "tokens": 857567631,
-   "grew": 0,
-   "rolledBack": false,
-   "ownVal": null,
-   "ownScore": null,
-   "d": 512,
-   "loops": 1,
-   "spread": 2.5765,
-   "bytes": 568680621,
-   "heads": 8,
-   "ctx": 512,
-   "vocab": 6000,
-   "kind": "bpe",
-   "arch": "tpp-loop",
-   "wantWider": false,
-   "layerCap": 16,
-   "mixChanged": false,
-   "bySrc": {
-    "laws": 3.4557,
-    "wiki": 2.746,
-    "aozora": 3.0761,
-    "hanrei": 3.3401,
-    "kokkai": 2.4264,
-    "web": 2.6804,
-    "talk": 2.029
-   },
-   "wrote": [
-    {
-     "start": "わたしは",
-     "text": "わたしは、東北で会社が経営している中国系統の企業。理由は、GTORPEO、GTORPUO、GTORPUO、GTORPUOの3社が後を付けている。 2021年12月に、ロシアの自宅で子供の飲み会が開催されることが発表された 。 音楽の興味が湧き上がったことから、"
-    },
-    {
-     "start": "第一条",
-     "text": "第一条第一号ハからハまでハまでハまでハまでハまでハの現行行先表示表示板を書かせてもらうと約束されました。 この点について、まず総理、お聞かせをいただきたいと思います。」 AA「内閣総理大臣 先ほど総理から、個々の事案についてお尋ねがありましたが、これは、今先生おっしゃったような対応をしている"
-    },
-    {
-     "start": "この法律において",
-     "text": "この法律において「特定業態等」という。）内に特定の事項（当該�二部門が他人の弁護士となったときは、ション及びベルに改称された囚人（以下「特定業態等」という。）若しくはション、クリエイティブ・アドラー（以下「特定業態等」という。）と、当該他人の特定業態等（特定業態等以外の内部に特定業態等以外の外部に特定業態等を含み、全ての特定業態等に相当する"
-    }
-   ],
-   "loopPct": 15.05,
-   "movedBody": false
-  },
-  {
    "at": "2026-10-25T02:04:00Z",
    "val": 2.5959,
    "prev": 2.5952,
@@ -13541,6 +13478,81 @@
      "気持ち": 0.462
     }
    }
+  },
+  {
+   "at": "2026-11-04T21:50:23Z",
+   "val": 2.6082,
+   "prev": 2.6079,
+   "valTag": "fixed-holdout-v1",
+   "stoppedAt": 557,
+   "stuck": 0,
+   "evalTag": "fixed-ix-v1",
+   "secPerStep": 6.7251,
+   "steps": 782,
+   "lr": 5e-05,
+   "lrFixed": true,
+   "bpc": 3.088,
+   "charsPerTok": 1.2185,
+   "score": 2.0487,
+   "scoreW": 2.0,
+   "scoreMode": "talk",
+   "finishMix": 0.85,
+   "lineage": "L2",
+   "layers": 14,
+   "params": 47379968,
+   "chars": 1047537723,
+   "tokens": 859675174,
+   "grew": 0,
+   "rolledBack": false,
+   "ownVal": null,
+   "ownScore": null,
+   "d": 512,
+   "loops": 1,
+   "spread": 2.5863,
+   "bytes": 568680621,
+   "heads": 8,
+   "ctx": 512,
+   "vocab": 6000,
+   "kind": "bpe",
+   "arch": "tpp-loop",
+   "wantWider": false,
+   "layerCap": 16,
+   "mixChanged": false,
+   "bySrc": {
+    "laws": 3.5075,
+    "wiki": 2.7509,
+    "aozora": 3.0785,
+    "hanrei": 3.3414,
+    "kokkai": 2.4402,
+    "web": 2.6895,
+    "talk": 2.0487
+   },
+   "wrote": [
+    {
+     "start": "わたしは",
+     "text": "わたしはあそのときはNORIN IN Pressionです。」 EU「あ、そういえば！何が好きですか？」 DT「最近はyoutubeを見ることが多いです。」 EU「最近はYouTubeが好きです。ＣＭ動画とか見ます？」 DT「そ"
+    },
+    {
+     "start": "第一条",
+     "text": "第一条（定義）に規定するームボール、プリンジャー、ザク及びキンググッド。 スズキ、カレー、スイートブリー、スチール、スカート、ザク及びパスタ。 スズキ、カレー、スバル、スリーブス、スイング、トールケース、ホワイトチップス、アンドライバー、スパイス、タマネギ、"
+    },
+    {
+     "start": "この法律において",
+     "text": "この法律において「ビジネス」とは、国際約束のもとに、当該ビジネスを生み出すビジネスをいう。 （ビジネスオンライン） ビジネスオンラインは、ビジネスオンライン（ビジネスオンライン）を構成するビジネスオンライン、ビジネスオンラインを構成するビジネスオンライン、ビジネスオ"
+    }
+   ],
+   "loopPct": 4.28,
+   "movedBody": false,
+   "rikai": {
+    "pmi": 0.597,
+    "raw": 0.487,
+    "n": 300,
+    "byAsk": {
+     "したい事": 0.5,
+     "対象": 0.796,
+     "気持ち": 0.519
+    }
+   }
   }
  ],
  "bestVal": 2.5773,
@@ -13591,5 +13603,5 @@
  ],
  "wantWider": false,
  "nextD": 512,
- "bad": 0
+ "bad": 2
 }
