@@ -1,69 +1,6 @@
 {
  "runs": [
   {
-   "at": "2026-10-24T08:10:27Z",
-   "val": 2.823,
-   "prev": 2.8093,
-   "valTag": "fixed-holdout-v1",
-   "stoppedAt": 0,
-   "stuck": 0,
-   "evalTag": "fixed-ix-v1",
-   "secPerStep": 12.3523,
-   "steps": 300,
-   "bpc": 3.3413,
-   "charsPerTok": 1.2189,
-   "score": 2.1174,
-   "scoreW": 2.0,
-   "scoreMode": "talk",
-   "finishMix": 0.5,
-   "lineage": "L1",
-   "layers": 16,
-   "params": 117914880,
-   "chars": 1045308899,
-   "tokens": 857567631,
-   "grew": 0,
-   "rolledBack": false,
-   "ownVal": null,
-   "ownScore": null,
-   "d": 768,
-   "loops": 1,
-   "spread": 2.7538,
-   "bytes": 1415115957,
-   "heads": 6,
-   "ctx": 512,
-   "vocab": 6000,
-   "kind": "bpe",
-   "arch": "tpp-loop",
-   "wantWider": false,
-   "layerCap": 16,
-   "mixChanged": false,
-   "bySrc": {
-    "laws": 3.9572,
-    "wiki": 2.9807,
-    "aozora": 3.3341,
-    "hanrei": 3.4418,
-    "kokkai": 2.6065,
-    "web": 2.8676,
-    "talk": 2.1174
-   },
-   "wrote": [
-    {
-     "start": "わたしは",
-     "text": "わたしはかなりのヒーローです」 BA「かわいいのよね！」 BO「そうなんです！スキーです。」 BA「何かお好きなアーティストさんはいますか？」 BO「まだまだです！」 BA「まだ見ていないです！」 BO「知ってますか？」"
-    },
-    {
-     "start": "第一条",
-     "text": "第一条の規定が使用される。 これらは、同じウィニチオチオチオチオチオチオチオオチオオチオチオオチオオチオチオオチオツチオオチオチオースチオンチオチオチオチオンチオチオオチオチオシラオチオのケンチオチオチオチャオチオリベオチオチオチオチオチオチオチ"
-    },
-    {
-     "start": "この法律において",
-     "text": "この法律において「日本語」 [ 1 ] を意味する。 『 山沢山 』の主題歌として、Master JAPANが制定された。 2001年 （平成13年） 5月11日 - 山際太郎 が進む。 2002年 （平成14年） 1月15日 - 山形"
-    }
-   ],
-   "loopPct": 27.76,
-   "movedBody": false
-  },
-  {
    "at": "2026-10-24T09:30:58Z",
    "val": 2.8129,
    "prev": 2.823,
@@ -12807,6 +12744,71 @@
    ],
    "loopPct": 3.34,
    "movedBody": false
+  },
+  {
+   "at": "2026-11-04T05:51:14Z",
+   "val": 2.8673,
+   "prev": 2.8521,
+   "valTag": "fixed-holdout-v1",
+   "stoppedAt": 158,
+   "stuck": 0,
+   "evalTag": "fixed-ix-v1",
+   "secPerStep": 26.312,
+   "steps": 300,
+   "lr": 5e-05,
+   "lrFixed": true,
+   "bpc": 3.3948,
+   "charsPerTok": 1.2185,
+   "score": 2.1588,
+   "scoreW": 2.0,
+   "scoreMode": "talk",
+   "finishMix": 0.5,
+   "lineage": "L1",
+   "layers": 16,
+   "params": 117914880,
+   "chars": 1047537723,
+   "tokens": 859675174,
+   "grew": 0,
+   "rolledBack": false,
+   "ownVal": null,
+   "ownScore": null,
+   "d": 768,
+   "loops": 1,
+   "spread": 2.9278,
+   "bytes": 1415116021,
+   "heads": 6,
+   "ctx": 512,
+   "vocab": 6000,
+   "kind": "bpe",
+   "arch": "tpp-loop",
+   "wantWider": false,
+   "layerCap": 16,
+   "mixChanged": false,
+   "bySrc": {
+    "laws": 4.0353,
+    "wiki": 3.026,
+    "aozora": 3.387,
+    "hanrei": 3.4959,
+    "kokkai": 2.6531,
+    "web": 2.9153,
+    "talk": 2.1588
+   },
+   "wrote": [
+    {
+     "start": "わたしは",
+     "text": "わたしは、少しでも、それが、それでもう、それはおどろおどろくだろうな。」 AB「だけれども、そういう大変なことになるということで、大変しっかりしたことになるんじゃないかと思うんですが、そういう御答弁をいただきました。 そこで、これからちょうど四月二日の、いわゆる�"
+    },
+    {
+     "start": "第一条",
+     "text": "第一条の規定を取り消す。 前項と認めるときは、第一項の規定は、第二項の規定は、第二項各号に掲げるえることができる。 この場合において、第一項中「第一項」とあるのは「に備え付け、又は訴願又は復帰に信託金の拡大について、法第十三条第四項、第二項、第四項及び第七項の規定は、第二項これに相当する強制執行に係るconstandarionのイルハウス及びネットワーク制度について、それぞれ準用する。 第二十一条の二の規定は、前項の平成四年度のNHKラ"
+    },
+    {
+     "start": "この法律において",
+     "text": "この法律において「8月10日」と「6月19日」も同じとなった。また、新潮社は全て「8月19日」を「9月19日」と紹介していたことがある。 また、「10月16日」は「8月19日」と同じキャラクターを番組史上初めて使用した。 全対話キャラクターとして『091 - 24 - 24日"
+    }
+   ],
+   "loopPct": 8.57,
+   "movedBody": false
   }
  ],
  "bestVal": 2.7492,
@@ -12857,5 +12859,5 @@
  ],
  "wantWider": false,
  "nextD": 768,
- "bad": 2
+ "bad": 3
 }
