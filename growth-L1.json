@@ -1,69 +1,6 @@
 {
  "runs": [
   {
-   "at": "2026-10-24T10:47:39Z",
-   "val": 2.813,
-   "prev": 2.8129,
-   "valTag": "fixed-holdout-v1",
-   "stoppedAt": 204,
-   "stuck": 0,
-   "evalTag": "fixed-ix-v1",
-   "secPerStep": 19.838,
-   "steps": 300,
-   "bpc": 3.3295,
-   "charsPerTok": 1.2189,
-   "score": 2.12,
-   "scoreW": 2.0,
-   "scoreMode": "talk",
-   "finishMix": 0.5,
-   "lineage": "L1",
-   "layers": 16,
-   "params": 117914880,
-   "chars": 1045308899,
-   "tokens": 857567631,
-   "grew": 0,
-   "rolledBack": false,
-   "ownVal": null,
-   "ownScore": null,
-   "d": 768,
-   "loops": 1,
-   "spread": 2.7694,
-   "bytes": 1415115957,
-   "heads": 6,
-   "ctx": 512,
-   "vocab": 6000,
-   "kind": "bpe",
-   "arch": "tpp-loop",
-   "wantWider": false,
-   "layerCap": 16,
-   "mixChanged": false,
-   "bySrc": {
-    "laws": 3.9469,
-    "wiki": 2.9716,
-    "aozora": 3.3247,
-    "hanrei": 3.4392,
-    "kokkai": 2.5973,
-    "web": 2.8572,
-    "talk": 2.12
-   },
-   "wrote": [
-    {
-     "start": "わたしは",
-     "text": "わたしは激しく反対するが、実際のところ、臨時の責任を負うべきである。 さらに「 不安を抱いた時は、ほとんどの人が、憲法に反して、実質的に、法の責任を負うべきこと」という手法が完成されたため、司法に所属する 。 妥協の責任があるが、性的無動感は河野の 岡野記念 のもとに「"
-    },
-    {
-     "start": "第一条",
-     "text": "第一条） 第五の割合 �器用物が用いられる方法 type車 一般用版 翼端の 動脈枝 後部に描かれた部分は 両端の部分に がついていない。 耐寒性のひとつで、 を 方向に向けて （ ）と呼ぶ。 小岩先の片側の を 付く は 変異"
-    },
-    {
-     "start": "この法律において",
-     "text": "この法律において「通路」を意味する「通乗」という表現がなし 、山陽王国下り、日本側の通勤通学者も含まれることになる。 山陽新幹線は日本体育大会（東京オリンピック・東京オリンピック・大会）をめぐって 日本オリンピック代表 （日本オリンピック開催）の 開催国 で開催（"
-    }
-   ],
-   "loopPct": 7.56,
-   "movedBody": false
-  },
-  {
    "at": "2026-10-24T12:04:50Z",
    "val": 2.8101,
    "prev": 2.813,
@@ -12811,6 +12748,71 @@
    ],
    "loopPct": 9.39,
    "movedBody": false
+  },
+  {
+   "at": "2026-11-04T08:32:52Z",
+   "val": 2.8774,
+   "prev": 2.8774,
+   "valTag": "fixed-holdout-v1",
+   "stoppedAt": 177,
+   "stuck": 1,
+   "evalTag": "fixed-ix-v1",
+   "secPerStep": 23.2952,
+   "steps": 300,
+   "lr": 5e-05,
+   "lrFixed": true,
+   "bpc": 3.4068,
+   "charsPerTok": 1.2185,
+   "score": 2.1533,
+   "scoreW": 2.0,
+   "scoreMode": "talk",
+   "finishMix": 0.5,
+   "lineage": "L1",
+   "layers": 16,
+   "params": 117914880,
+   "chars": 1047537723,
+   "tokens": 859675174,
+   "grew": 0,
+   "rolledBack": true,
+   "ownVal": 2.8772,
+   "ownScore": 2.1744,
+   "d": 768,
+   "loops": 1,
+   "spread": 3.0379,
+   "bytes": 1415116021,
+   "heads": 6,
+   "ctx": 512,
+   "vocab": 6000,
+   "kind": "bpe",
+   "arch": "tpp-loop",
+   "wantWider": false,
+   "layerCap": 16,
+   "mixChanged": false,
+   "bySrc": {
+    "laws": 4.0572,
+    "wiki": 3.0273,
+    "aozora": 3.3809,
+    "hanrei": 3.5167,
+    "kokkai": 2.6638,
+    "web": 2.9173,
+    "talk": 2.1744
+   },
+   "wrote": [
+    {
+     "start": "わたしは",
+     "text": "わたしはヴィヴァージェンドルフ・ナッソレット を結び、ヴィヴァージョン・クライマーの 王妃 に アイリバー・ヴィヴァージョン を構築している。 レコーディングはクライマー・ブラザースなどの アイリバー の ピュ"
+    },
+    {
+     "start": "第一条",
+     "text": "第一条アルアルアルアルアルアルツとアルフレンジ・アルミン・アンド・シンスト・アルバム (2023年2月8日). 2023年2月14日閲覧。 ↑ “ スカイ・アルバム「ニート・シンスターズ」放送開始 ”. ORICON (2024年3月19日). 2"
+    },
+    {
+     "start": "この法律において",
+     "text": "この法律において、一、消費税、地方交付税の額と同じものですね、二〇一四年ぐらいです。そして、七〇一五年代後半以降一月ごろから二〇二一年代前半を今やっています。 確かに、二〇二二年代になってから、現役時代におかしい人、これは地方が成長する前からいろんな意味での人数です。」"
+    }
+   ],
+   "loopPct": 5.58,
+   "movedBody": false
   }
  ],
  "bestVal": 2.7492,
@@ -12861,5 +12863,5 @@
  ],
  "wantWider": false,
  "nextD": 768,
- "bad": 4
+ "bad": 5
 }
