@@ -1,69 +1,6 @@
 {
  "runs": [
   {
-   "at": "2026-10-25T11:05:15Z",
-   "val": 2.8039,
-   "prev": 2.8034,
-   "valTag": "fixed-holdout-v1",
-   "stoppedAt": 160,
-   "stuck": 0,
-   "evalTag": "fixed-ix-v1",
-   "secPerStep": 26.091,
-   "steps": 317,
-   "bpc": 3.3186,
-   "charsPerTok": 1.2189,
-   "score": 2.1106,
-   "scoreW": 2.0,
-   "scoreMode": "talk",
-   "finishMix": 0.5,
-   "lineage": "L1",
-   "layers": 16,
-   "params": 117914880,
-   "chars": 1045308899,
-   "tokens": 857567631,
-   "grew": 0,
-   "rolledBack": false,
-   "ownVal": null,
-   "ownScore": null,
-   "d": 768,
-   "loops": 1,
-   "spread": 3.1042,
-   "bytes": 1415115957,
-   "heads": 6,
-   "ctx": 512,
-   "vocab": 6000,
-   "kind": "bpe",
-   "arch": "tpp-loop",
-   "wantWider": false,
-   "layerCap": 16,
-   "mixChanged": false,
-   "bySrc": {
-    "laws": 3.9306,
-    "wiki": 2.9595,
-    "aozora": 3.3178,
-    "hanrei": 3.4261,
-    "kokkai": 2.5905,
-    "web": 2.8443,
-    "talk": 2.1106
-   },
-   "wrote": [
-    {
-     "start": "わたしは",
-     "text": "わたしは何処へ行くんだろうと、僕も……。」 AE「本当に、僕は今日は、僕が何をしているのか？」 AA「明日のあま姉が空に潜入するのは、僕の方が僕を見ると、僕の行動が少しくらい大きくなって、日が暮れてしまったのだ。」 AD「や"
-    },
-    {
-     "start": "第一条",
-     "text": "第一条 （以上） 2018年12月17日、フランスの音楽学院で勉強に来る演技はあまり得意ではなかったことが判明する。 イギリスの音楽学院では、1600年の音楽学院のプロデューサーが、音楽学院の音楽学院では、1759年の音楽学院の"
-    },
-    {
-     "start": "この法律において",
-     "text": "この法律において「ようしゃるんですか？」 BS「はい、知人です！」 CH「ありがとうございます。」 BS「ありがとうございました！」 BS「こんにちは！」 CH「こんにちは！」 BS「"
-    }
-   ],
-   "loopPct": 2.66,
-   "movedBody": false
-  },
-  {
    "at": "2026-10-25T12:20:30Z",
    "val": 2.8069,
    "prev": 2.8039,
@@ -12909,6 +12846,81 @@
    ],
    "loopPct": 1.6,
    "movedBody": false
+  },
+  {
+   "at": "2026-11-05T09:55:45Z",
+   "val": 2.8643,
+   "prev": 2.86,
+   "valTag": "fixed-holdout-v1",
+   "stoppedAt": 0,
+   "stuck": 0,
+   "evalTag": "fixed-ix-v1",
+   "secPerStep": 10.737,
+   "steps": 300,
+   "lr": 5e-05,
+   "lrFixed": true,
+   "bpc": 3.3912,
+   "charsPerTok": 1.2185,
+   "score": 2.146,
+   "scoreW": 2.0,
+   "scoreMode": "talk",
+   "finishMix": 0.5,
+   "lineage": "L1",
+   "layers": 16,
+   "params": 117914880,
+   "chars": 1047537723,
+   "tokens": 859675174,
+   "grew": 0,
+   "rolledBack": false,
+   "ownVal": null,
+   "ownScore": null,
+   "d": 768,
+   "loops": 1,
+   "spread": 2.8233,
+   "bytes": 1415116021,
+   "heads": 6,
+   "ctx": 512,
+   "vocab": 6000,
+   "kind": "bpe",
+   "arch": "tpp-loop",
+   "wantWider": false,
+   "layerCap": 16,
+   "mixChanged": false,
+   "bySrc": {
+    "laws": 4.0046,
+    "wiki": 3.009,
+    "aozora": 3.3658,
+    "hanrei": 3.491,
+    "kokkai": 2.6469,
+    "web": 2.9098,
+    "talk": 2.146
+   },
+   "wrote": [
+    {
+     "start": "わたしは",
+     "text": "わたしはびしいんです。」 BB「あはは、そうなんですね。」 BA「みんな感じです！」 BB「だから、、もしも気をつけないと思います！」 BA「そうだったんですね」 BB「前回見てきました。いい仕事ですねー。」 BA「私も、仕事までやってま"
+    },
+    {
+     "start": "第一条",
+     "text": "第一条において、「第一節 第二節 第二節 第二節 第二節 第六節 第二節 第三節 第二節 第二節 第二節 第一節 第二節 第二節 第一節 第三節 第二節 第三節 第二節 第三節 第三節 第二節 第三制度 第三節 第三節 第三節 第二節 第一節 第三節 第三節 第三節 第三節 一般 第三節 第三節 第二節 第三"
+    },
+    {
+     "start": "この法律において",
+     "text": "この法律において採用したが、原則として0.2℃（2018年 - 2019年、2020年） 1963年 - スーダン・イヴァン、マッチェル・ガシュット、イタリアのアイルランド王国を批判したメキシコ西部の奴隷が存在した。 1970年"
+    }
+   ],
+   "loopPct": 35.61,
+   "movedBody": false,
+   "rikai": {
+    "pmi": 0.543,
+    "raw": 0.42,
+    "n": 300,
+    "byAsk": {
+     "したい事": 0.5,
+     "対象": 0.774,
+     "気持ち": 0.396
+    }
+   }
   }
  ],
  "bestVal": 2.7492,
@@ -12959,5 +12971,5 @@
  ],
  "wantWider": false,
  "nextD": 768,
- "bad": 0
+ "bad": 1
 }
