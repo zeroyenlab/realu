@@ -1,69 +1,6 @@
 {
  "runs": [
   {
-   "at": "2026-10-25T16:10:15Z",
-   "val": 2.8075,
-   "prev": 2.8045,
-   "valTag": "fixed-holdout-v1",
-   "stoppedAt": 156,
-   "stuck": 0,
-   "evalTag": "fixed-ix-v1",
-   "secPerStep": 26.7005,
-   "steps": 300,
-   "bpc": 3.3229,
-   "charsPerTok": 1.2189,
-   "score": 2.1081,
-   "scoreW": 2.0,
-   "scoreMode": "talk",
-   "finishMix": 0.5,
-   "lineage": "L1",
-   "layers": 16,
-   "params": 117914880,
-   "chars": 1045308899,
-   "tokens": 857567631,
-   "grew": 0,
-   "rolledBack": false,
-   "ownVal": null,
-   "ownScore": null,
-   "d": 768,
-   "loops": 1,
-   "spread": 2.7798,
-   "bytes": 1415115957,
-   "heads": 6,
-   "ctx": 512,
-   "vocab": 6000,
-   "kind": "bpe",
-   "arch": "tpp-loop",
-   "wantWider": false,
-   "layerCap": 16,
-   "mixChanged": false,
-   "bySrc": {
-    "laws": 3.928,
-    "wiki": 2.9601,
-    "aozora": 3.3186,
-    "hanrei": 3.4249,
-    "kokkai": 2.5951,
-    "web": 2.8464,
-    "talk": 2.1081
-   },
-   "wrote": [
-    {
-     "start": "わたしは",
-     "text": "わたしはひいてしまった。 「あなた、あの、一番のお仕事ですか」 「ああ、わしは世間ではないですから。何かあったのかね」 「ひっくり返ってみようかな」 「だめです。そりゃあ無理になってるの」 「それは、われも妙に惚れているでしょう」 「私ははたして母"
-    },
-    {
-     "start": "第一条",
-     "text": "第一条の規定（以下「過致」という。）により、当該通知に係る情報が、当該所得に置き替わり、また、当該情報が、当該情報に緊密な関係を有する事務所において、当該情報の内容を第十六条第一項第一号に掲げる情報が提供されている旨等を矯正してはならない。 （情報提供等） 第三十五条 情報提供等情報のうち、情報提供等情報監督等情報は、情報提供等情報等提供等業務等情報提供等情報等以外の措置により経済的関係情報等及び"
-    },
-    {
-     "start": "この法律において",
-     "text": "この法律において「日指」は原則としてその定義が残る [ 248 ] 。 ↑ 3代目 NEC で1989年3月31日より予備役として行われる。 ↑ NEC が開発した NEC ならびに2006年4月10日をもって終了。 ↑ NEC NEC TV NEC N"
-    }
-   ],
-   "loopPct": 5.55,
-   "movedBody": false
-  },
-  {
    "at": "2026-10-25T17:26:58Z",
    "val": 2.8086,
    "prev": 2.8075,
@@ -12937,6 +12874,71 @@
      "気持ち": 0.396
     }
    }
+  },
+  {
+   "at": "2026-11-05T15:17:49Z",
+   "val": 2.861,
+   "prev": 2.8585,
+   "valTag": "fixed-holdout-v1",
+   "stoppedAt": 157,
+   "stuck": 0,
+   "evalTag": "fixed-ix-v1",
+   "secPerStep": 26.637,
+   "steps": 300,
+   "lr": 5e-05,
+   "lrFixed": true,
+   "bpc": 3.3873,
+   "charsPerTok": 1.2185,
+   "score": 2.1607,
+   "scoreW": 2.0,
+   "scoreMode": "talk",
+   "finishMix": 0.5,
+   "lineage": "L1",
+   "layers": 16,
+   "params": 117914880,
+   "chars": 1047537723,
+   "tokens": 859675174,
+   "grew": 0,
+   "rolledBack": false,
+   "ownVal": null,
+   "ownScore": null,
+   "d": 768,
+   "loops": 1,
+   "spread": 3.1458,
+   "bytes": 1415116021,
+   "heads": 6,
+   "ctx": 512,
+   "vocab": 6000,
+   "kind": "bpe",
+   "arch": "tpp-loop",
+   "wantWider": false,
+   "layerCap": 16,
+   "mixChanged": false,
+   "bySrc": {
+    "laws": 4.0007,
+    "wiki": 3.0101,
+    "aozora": 3.3586,
+    "hanrei": 3.511,
+    "kokkai": 2.6365,
+    "web": 2.9094,
+    "talk": 2.1607
+   },
+   "wrote": [
+    {
+     "start": "わたしは",
+     "text": "わたしは11月の訃報にしました。」 AV「お疲れ様です！ありがとうございました。」 FF「こちらこそありがとうございました。」 AV「こんにちはー。」 FF「こんにちは。」 AV「こん"
+    },
+    {
+     "start": "第一条",
+     "text": "第一条の規定が制定された。 1984年（昭和59年）に再改称・改称に伴い、 岡山県 の 岡山県 （岡山県）の 岡山県 （岡山県）に改称した。 1980年（昭和55年）から1998年（平成10年）にかけて岡山県が 岡山県 に改称した。 1"
+    },
+    {
+     "start": "この法律において",
+     "text": "この法律において「K」や、「C」に分かれた文章がある。 履文文章は「文章」を採用する。また、「文章」はH39文法を意味し、文章では「文章文章」を「文章」という文章で表す。文章文章は文章以前の「文章法」を作り出す。文章文章は文章の文章を文章的に再度で統率した"
+    }
+   ],
+   "loopPct": 19.75,
+   "movedBody": false
   }
  ],
  "bestVal": 2.7492,
@@ -12987,5 +12989,5 @@
  ],
  "wantWider": false,
  "nextD": 768,
- "bad": 1
+ "bad": 2
 }
