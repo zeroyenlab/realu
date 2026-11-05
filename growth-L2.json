@@ -1,69 +1,6 @@
 {
  "runs": [
   {
-   "at": "2026-10-25T08:24:24Z",
-   "val": 2.5963,
-   "prev": 2.597,
-   "valTag": "fixed-holdout-v1",
-   "stoppedAt": 337,
-   "stuck": 0,
-   "evalTag": "fixed-ix-v1",
-   "secPerStep": 11.4833,
-   "steps": 738,
-   "bpc": 3.0729,
-   "charsPerTok": 1.2189,
-   "score": 2.0297,
-   "scoreW": 2.0,
-   "scoreMode": "talk",
-   "finishMix": 0.85,
-   "lineage": "L2",
-   "layers": 14,
-   "params": 47379968,
-   "chars": 1045308899,
-   "tokens": 857567631,
-   "grew": 0,
-   "rolledBack": false,
-   "ownVal": null,
-   "ownScore": null,
-   "d": 512,
-   "loops": 1,
-   "spread": 2.7402,
-   "bytes": 568680621,
-   "heads": 8,
-   "ctx": 512,
-   "vocab": 6000,
-   "kind": "bpe",
-   "arch": "tpp-loop",
-   "wantWider": false,
-   "layerCap": 16,
-   "mixChanged": false,
-   "bySrc": {
-    "laws": 3.4536,
-    "wiki": 2.7473,
-    "aozora": 3.0738,
-    "hanrei": 3.3353,
-    "kokkai": 2.4305,
-    "web": 2.6796,
-    "talk": 2.0297
-   },
-   "wrote": [
-    {
-     "start": "わたしは",
-     "text": "わたしは、低温ではないです。」 EK「そうなんですね。」 DK「あと、健康のために、お風呂上がりに興味が持てなくて」 EK「そうなんですか！お風呂上がりって、あまり効果が無いんですかね？」 DK「それはありますね でも運動不足なので、"
-    },
-    {
-     "start": "第一条",
-     "text": "第一条各号に掲げる項に掲げる剤については、当該を満たすものとする。 （登録の申請） 第九条の二 登録の申請は、様式第七号により、申請書を経由とする。 （登録の申請等） 第九条の三 登録の申請は、様式第六号により、を取得しようとする者が現にしていない法人（以下「登録申請法人」という。）に係る登録申請法人をシステムにより取得しようとする場合は、電子情報処理組織を使用する方法その他人に申請することができる。 登録申請法人をシステムにより取得し"
-    },
-    {
-     "start": "この法律において",
-     "text": "この法律において「地方公共団体」とは、国、地方公共団体をいう。 地方公共団体の長の程度の要請が得られるようにするため、地方公共団体の長えない勤続期間末日等における国、地方公共団体の長である地方公共団体の長が、これらの補助金（の断定又は配分を除く。）を補助することができる。 地方公共団体の長である地方公共団体は、地方公共団体の長から、その大部分を補助金（法人である地方公共団体の長が、第八条第二項の規定に基づき、地方公共団体の長が補助する補"
-    }
-   ],
-   "loopPct": 0.0,
-   "movedBody": false
-  },
-  {
    "at": "2026-10-25T09:42:40Z",
    "val": 2.5978,
    "prev": 2.5963,
@@ -13613,6 +13550,81 @@
      "気持ち": 0.547
     }
    }
+  },
+  {
+   "at": "2026-11-05T06:00:43Z",
+   "val": 2.6068,
+   "prev": 2.6088,
+   "valTag": "fixed-holdout-v1",
+   "stoppedAt": 456,
+   "stuck": 0,
+   "evalTag": "fixed-ix-v1",
+   "secPerStep": 8.3293,
+   "steps": 561,
+   "lr": 5e-05,
+   "lrFixed": true,
+   "bpc": 3.0864,
+   "charsPerTok": 1.2185,
+   "score": 2.0552,
+   "scoreW": 2.0,
+   "scoreMode": "talk",
+   "finishMix": 0.85,
+   "lineage": "L2",
+   "layers": 14,
+   "params": 47379968,
+   "chars": 1047537723,
+   "tokens": 859675174,
+   "grew": 0,
+   "rolledBack": false,
+   "ownVal": null,
+   "ownScore": null,
+   "d": 512,
+   "loops": 1,
+   "spread": 2.3807,
+   "bytes": 568680621,
+   "heads": 8,
+   "ctx": 512,
+   "vocab": 6000,
+   "kind": "bpe",
+   "arch": "tpp-loop",
+   "wantWider": false,
+   "layerCap": 16,
+   "mixChanged": false,
+   "bySrc": {
+    "laws": 3.5152,
+    "wiki": 2.7436,
+    "aozora": 3.0774,
+    "hanrei": 3.3537,
+    "kokkai": 2.4351,
+    "web": 2.6856,
+    "talk": 2.0552
+   },
+   "wrote": [
+    {
+     "start": "わたしは",
+     "text": "わたしは、あんまり知らなくてもネットに来ていると思うのですが、なぜですよね？」 EW「ネットでネットのネットは知らなかったです。テレビだけネットでもネットでもネットでもネットでもネットでもネットでもネットでもネットでもネットでもネットでもネットだと思います。」 EW"
+    },
+    {
+     "start": "第一条",
+     "text": "第一条（前条において準用する場合を含む。）に規定する指定指定絡み出しに係る指定利益金として充てることができる。 指定訪問並みの促進が著しく困難な場合、に対応する�、^ピラミッド、合成グルコース、冷却板、冷却板、冷却板、冷却板、冷却板、冷却板、冷却板、液冷却板又は冷却板の組み合わせができないとき。 指定訪問並みの成分が劣化した場合、そのままでは、冷"
+    },
+    {
+     "start": "この法律において",
+     "text": "この法律において「National Passumental Building」と「National Building」の2つの「National Script」と「National Passumental」の2つの「National B"
+    }
+   ],
+   "loopPct": 25.35,
+   "movedBody": false,
+   "rikai": {
+    "pmi": 0.637,
+    "raw": 0.5,
+    "n": 300,
+    "byAsk": {
+     "したい事": 0.543,
+     "対象": 0.839,
+     "気持ち": 0.547
+    }
+   }
   }
  ],
  "bestVal": 2.5773,
@@ -13663,5 +13675,5 @@
  ],
  "wantWider": false,
  "nextD": 512,
- "bad": 2
+ "bad": 3
 }
