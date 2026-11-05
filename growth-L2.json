@@ -1,69 +1,6 @@
 {
  "runs": [
   {
-   "at": "2026-10-25T07:05:38Z",
-   "val": 2.597,
-   "prev": 2.5958,
-   "valTag": "fixed-holdout-v1",
-   "stoppedAt": 436,
-   "stuck": 0,
-   "evalTag": "fixed-ix-v1",
-   "secPerStep": 8.7493,
-   "steps": 961,
-   "bpc": 3.0738,
-   "charsPerTok": 1.2189,
-   "score": 2.0325,
-   "scoreW": 2.0,
-   "scoreMode": "talk",
-   "finishMix": 0.85,
-   "lineage": "L2",
-   "layers": 14,
-   "params": 47379968,
-   "chars": 1045308899,
-   "tokens": 857567631,
-   "grew": 0,
-   "rolledBack": false,
-   "ownVal": null,
-   "ownScore": null,
-   "d": 512,
-   "loops": 1,
-   "spread": 2.365,
-   "bytes": 568680621,
-   "heads": 8,
-   "ctx": 512,
-   "vocab": 6000,
-   "kind": "bpe",
-   "arch": "tpp-loop",
-   "wantWider": false,
-   "layerCap": 16,
-   "mixChanged": false,
-   "bySrc": {
-    "laws": 3.4506,
-    "wiki": 2.7477,
-    "aozora": 3.074,
-    "hanrei": 3.3327,
-    "kokkai": 2.4311,
-    "web": 2.6813,
-    "talk": 2.0325
-   },
-   "wrote": [
-    {
-     "start": "わたしは",
-     "text": "わたしはパンを食べることが多いです。」 DL「なるほど。パン好きな方は、何が好きですか？」 BM「うーん、じゃがいもが好きですね。」 DL「あの、パンはどうですか？」 BM「そうですね。私はパンが好きです。どういう系が好きで"
-    },
-    {
-     "start": "第一条",
-     "text": "第一条に顔を探しますと、歌が聞こえていませんが、茨城県内のところではないんですよ。 今御指摘のあったとおり、今回、鳥取県の地名ですとか鳥取県内の地名の名前が出てきて、元の名前ですとか、シンボルマーク、生地が出てきたということに"
-    },
-    {
-     "start": "この法律において",
-     "text": "この法律において言葉としては「あさま」「あぁさま」とある。例えば「あさま」「なんでもあり」「ききましょう」「よろ」「おまえ」などのように「はな」「おまえ」「はな」「わかり」「おまえ」などは対象を「おまえ」「またはこ」「つまり」と記す。 「はな」「おまえ"
-    }
-   ],
-   "loopPct": 0.79,
-   "movedBody": false
-  },
-  {
    "at": "2026-10-25T08:24:24Z",
    "val": 2.5963,
    "prev": 2.597,
@@ -13601,6 +13538,81 @@
      "気持ち": 0.509
     }
    }
+  },
+  {
+   "at": "2026-11-05T04:40:12Z",
+   "val": 2.6088,
+   "prev": 2.605,
+   "valTag": "fixed-holdout-v1",
+   "stoppedAt": 330,
+   "stuck": 0,
+   "evalTag": "fixed-ix-v1",
+   "secPerStep": 11.7253,
+   "steps": 635,
+   "lr": 5e-05,
+   "lrFixed": true,
+   "bpc": 3.0888,
+   "charsPerTok": 1.2185,
+   "score": 2.0502,
+   "scoreW": 2.0,
+   "scoreMode": "talk",
+   "finishMix": 0.85,
+   "lineage": "L2",
+   "layers": 14,
+   "params": 47379968,
+   "chars": 1047537723,
+   "tokens": 859675174,
+   "grew": 0,
+   "rolledBack": false,
+   "ownVal": null,
+   "ownScore": null,
+   "d": 512,
+   "loops": 1,
+   "spread": 2.5414,
+   "bytes": 568680621,
+   "heads": 8,
+   "ctx": 512,
+   "vocab": 6000,
+   "kind": "bpe",
+   "arch": "tpp-loop",
+   "wantWider": false,
+   "layerCap": 16,
+   "mixChanged": false,
+   "bySrc": {
+    "laws": 3.5174,
+    "wiki": 2.7542,
+    "aozora": 3.0827,
+    "hanrei": 3.364,
+    "kokkai": 2.4394,
+    "web": 2.6878,
+    "talk": 2.0502
+   },
+   "wrote": [
+    {
+     "start": "わたしは",
+     "text": "わたしは宿題はありますが、眠いです。」 CR「お子さんは何歳とおしゃれですか？」 FP「4歳と1歳と2歳が多いですね！」 CR「いいですね。8歳ですか。」 FP「はい！1歳も3歳なのでまだまだ長いです！」 CR「3歳"
+    },
+    {
+     "start": "第一条",
+     "text": "第一条のはずです」 BU「知らない人は見た目に見た目のいいです。」 CO「はい、それだと人間が多くなるかもしれません」 BU「そうですよね。目的からみたら楽しくない行動ですよね。」 CO「ですよね。見た目ってわけでもないのに全然で。」 BU「わかり�"
+    },
+    {
+     "start": "この法律において",
+     "text": "この法律において「ばい」のモデルが発売され、5月1日よりも11曲目に短縮され、「ばいん」のイベントが開始された [ 23 ] 。 同者には、これまでに「じゃ」のオプションが浸透し [ 23 ] 、新たに「ばいむ」のイベントが開催され、12月3日より「ばい"
+    }
+   ],
+   "loopPct": 4.37,
+   "movedBody": false,
+   "rikai": {
+    "pmi": 0.623,
+    "raw": 0.483,
+    "n": 300,
+    "byAsk": {
+     "したい事": 0.521,
+     "対象": 0.828,
+     "気持ち": 0.547
+    }
+   }
   }
  ],
  "bestVal": 2.5773,
@@ -13651,5 +13663,5 @@
  ],
  "wantWider": false,
  "nextD": 512,
- "bad": 3
+ "bad": 2
 }
