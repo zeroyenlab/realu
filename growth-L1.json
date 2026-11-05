@@ -1,69 +1,6 @@
 {
  "runs": [
   {
-   "at": "2026-10-25T23:35:21Z",
-   "val": 2.8039,
-   "prev": 2.8045,
-   "valTag": "fixed-holdout-v1",
-   "stoppedAt": 279,
-   "stuck": 0,
-   "evalTag": "fixed-ix-v1",
-   "secPerStep": 14.0183,
-   "steps": 319,
-   "bpc": 3.3187,
-   "charsPerTok": 1.2189,
-   "score": 2.1238,
-   "scoreW": 2.0,
-   "scoreMode": "talk",
-   "finishMix": 0.5,
-   "lineage": "L1",
-   "layers": 16,
-   "params": 117914880,
-   "chars": 1045308899,
-   "tokens": 857567631,
-   "grew": 0,
-   "rolledBack": false,
-   "ownVal": null,
-   "ownScore": null,
-   "d": 768,
-   "loops": 1,
-   "spread": 3.0295,
-   "bytes": 1415115957,
-   "heads": 6,
-   "ctx": 512,
-   "vocab": 6000,
-   "kind": "bpe",
-   "arch": "tpp-loop",
-   "wantWider": false,
-   "layerCap": 16,
-   "mixChanged": false,
-   "bySrc": {
-    "laws": 3.9244,
-    "wiki": 2.9557,
-    "aozora": 3.3193,
-    "hanrei": 3.4235,
-    "kokkai": 2.5935,
-    "web": 2.8463,
-    "talk": 2.1238
-   },
-   "wrote": [
-    {
-     "start": "わたしは",
-     "text": "わたしはガレリアがいるといった感じでした。」 AA「まあ、そういうことなんですけど、あのフレンチトランスチャンスですね、必ずしも気になってないみたいです。」 BG「そうですよね。なんか、どう考えるんでしょうね？」 AA「ああ、そういう感じがします。�"
-    },
-    {
-     "start": "第一条",
-     "text": "第一条ネルボード�校（Aボード）は、1942年から1946年にかけて、通常のカーペットでは150ps以上、195ch、195ccの三重のトリプルが可能である。 また、このデータは、NASAによって行われたものである。 カーペットは、1958年から1969年にかけて、1963年"
-    },
-    {
-     "start": "この法律において",
-     "text": "この法律において「能代」と呼ばれるもの」といった組合もある [ 113 ] 。 また、 当該特定刑事裁判 でも、一般に「 無罪 な刑事裁判 」などと定義していた [ 114 ] 。 また、医師による犯罪の被害額は、 民事裁判 によるものではないとして、刑事訴訟以外の事例を評価する団体が「 無罪・無罪・無罪の判"
-    }
-   ],
-   "loopPct": 6.35,
-   "movedBody": false
-  },
-  {
    "at": "2026-10-26T00:49:16Z",
    "val": 2.8029,
    "prev": 2.8039,
@@ -12968,6 +12905,71 @@
     }
    ],
    "loopPct": 17.63,
+   "movedBody": false
+  },
+  {
+   "at": "2026-11-05T23:25:50Z",
+   "val": 2.8477,
+   "prev": 2.8449,
+   "valTag": "fixed-holdout-v1",
+   "stoppedAt": 158,
+   "stuck": 0,
+   "evalTag": "fixed-ix-v1",
+   "secPerStep": 26.3813,
+   "steps": 300,
+   "lr": 5e-05,
+   "lrFixed": true,
+   "bpc": 3.3716,
+   "charsPerTok": 1.2185,
+   "score": 2.1633,
+   "scoreW": 2.0,
+   "scoreMode": "talk",
+   "finishMix": 0.5,
+   "lineage": "L1",
+   "layers": 16,
+   "params": 117914880,
+   "chars": 1047537723,
+   "tokens": 859675174,
+   "grew": 0,
+   "rolledBack": false,
+   "ownVal": null,
+   "ownScore": null,
+   "d": 768,
+   "loops": 1,
+   "spread": 2.8386,
+   "bytes": 1415116021,
+   "heads": 6,
+   "ctx": 512,
+   "vocab": 6000,
+   "kind": "bpe",
+   "arch": "tpp-loop",
+   "wantWider": false,
+   "layerCap": 16,
+   "mixChanged": false,
+   "bySrc": {
+    "laws": 3.962,
+    "wiki": 3.0089,
+    "aozora": 3.3609,
+    "hanrei": 3.4892,
+    "kokkai": 2.6354,
+    "web": 2.9036,
+    "talk": 2.1633
+   },
+   "wrote": [
+    {
+     "start": "わたしは",
+     "text": "わたしは、あるとき、行くことを余儀なくされていた。 しかし、その人たちは、口を拘った。 「こっちのこと、君に僕が動かしてあると思います」 「君は知らぬ知らぬ。だからもう少しです」 「もっと、生まれも嘘ではない」 「そうですか。愚な事があったら"
+    },
+    {
+     "start": "第一条",
+     "text": "第一条じゃない。」 AB「いや今日、アニメーションが出てきたから、みんな出てきましたよね。」 AB「そうだったって、それじゃアニメは私も見ませんよ。テレビ番組だって、一番もったいないですよね。」 AB「そうなんですね。私は、古典的な物語を作る"
+    },
+    {
+     "start": "この法律において",
+     "text": "この法律において「」を冠したラジエーター「ラジエーター」をリリースした。 同年9月10日に放送を開始した。当初はスタジオの「NHK」と呼ばれたのは、それまでのテレビ局・放送局・テレビ朝日と同じ番組で、2005年春からの放送では、テレビ朝日系列は毎日放送（主に全日"
+    }
+   ],
+   "loopPct": 4.01,
    "movedBody": false
   }
  ],
