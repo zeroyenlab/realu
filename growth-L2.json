@@ -1,69 +1,6 @@
 {
  "runs": [
   {
-   "at": "2026-10-26T08:19:39Z",
-   "val": 2.5965,
-   "prev": 2.5967,
-   "valTag": "fixed-holdout-v1",
-   "stoppedAt": 458,
-   "stuck": 0,
-   "evalTag": "fixed-ix-v1",
-   "secPerStep": 8.3043,
-   "steps": 563,
-   "bpc": 3.0731,
-   "charsPerTok": 1.2189,
-   "score": 2.0331,
-   "scoreW": 2.0,
-   "scoreMode": "talk",
-   "finishMix": 0.85,
-   "lineage": "L2",
-   "layers": 14,
-   "params": 47379968,
-   "chars": 1045308899,
-   "tokens": 857567631,
-   "grew": 0,
-   "rolledBack": false,
-   "ownVal": null,
-   "ownScore": null,
-   "d": 512,
-   "loops": 1,
-   "spread": 2.4752,
-   "bytes": 568680621,
-   "heads": 8,
-   "ctx": 512,
-   "vocab": 6000,
-   "kind": "bpe",
-   "arch": "tpp-loop",
-   "wantWider": false,
-   "layerCap": 16,
-   "mixChanged": false,
-   "bySrc": {
-    "laws": 3.4599,
-    "wiki": 2.7461,
-    "aozora": 3.0757,
-    "hanrei": 3.3373,
-    "kokkai": 2.4331,
-    "web": 2.6831,
-    "talk": 2.0331
-   },
-   "wrote": [
-    {
-     "start": "わたしは",
-     "text": "わたしは絶対にすぐに増えますよ！」 AV「わたしも最近は食べるようになってきました。」 GA「熱いんですか？」 AV「熱いんです。」 GA「熱いんですか？」 AV「ならなんでも食べたくなります。」 GA「なるほど。」 AV「もうお"
-    },
-    {
-     "start": "第一条",
-     "text": "第一条第九号、第三十九条、第三十二条、健康保険法、医師法、医師法並びに医師法並びに医師法並びに医師法並びに医師法並びに医師法並びに医師法並びに医師法並びに医師法及び医師法並びに医師法並びに医師法」、以上三案について、提案になりましたが、二法案については、一括して申し上げた次第であります。 まず第一に、医師法と医師法並びに医師法並びに医師法並びに医師法の一部改正について申し"
-    },
-    {
-     "start": "この法律において",
-     "text": "この法律において立法-改正-」という。）―九条現在、令和三年六月に設立された日本司法制度調査会、2004年（平成16年）3月現在、文献の定義はないが、旧統一教会仏教の公式（文献の定義による）・栄誉・王文・年号は、旧統一教会仏教の公式（旧統一教会仏教の公式）・"
-    }
-   ],
-   "loopPct": 18.78,
-   "movedBody": false
-  },
-  {
    "at": "2026-10-26T09:36:23Z",
    "val": 2.595,
    "prev": 2.5965,
@@ -13841,6 +13778,81 @@
      "気持ち": 0.509
     }
    }
+  },
+  {
+   "at": "2026-11-06T08:48:28Z",
+   "val": 2.5976,
+   "prev": 2.5984,
+   "valTag": "fixed-holdout-v1",
+   "stoppedAt": 340,
+   "stuck": 0,
+   "evalTag": "fixed-ix-v1",
+   "secPerStep": 11.3553,
+   "steps": 774,
+   "lr": 5e-05,
+   "lrFixed": true,
+   "bpc": 3.0755,
+   "charsPerTok": 1.2185,
+   "score": 2.0568,
+   "scoreW": 2.0,
+   "scoreMode": "talk",
+   "finishMix": 0.85,
+   "lineage": "L2",
+   "layers": 14,
+   "params": 47379968,
+   "chars": 1047537723,
+   "tokens": 859675174,
+   "grew": 0,
+   "rolledBack": false,
+   "ownVal": null,
+   "ownScore": null,
+   "d": 512,
+   "loops": 1,
+   "spread": 2.4082,
+   "bytes": 568680621,
+   "heads": 8,
+   "ctx": 512,
+   "vocab": 6000,
+   "kind": "bpe",
+   "arch": "tpp-loop",
+   "wantWider": false,
+   "layerCap": 16,
+   "mixChanged": false,
+   "bySrc": {
+    "laws": 3.4953,
+    "wiki": 2.74,
+    "aozora": 3.0727,
+    "hanrei": 3.3437,
+    "kokkai": 2.4339,
+    "web": 2.6818,
+    "talk": 2.0568
+   },
+   "wrote": [
+    {
+     "start": "わたしは",
+     "text": "わたしは、フジテレビの音楽番組『きょうだのワイド』を見ると、フジテレビ出身のバンドマンの舞台挨拶が出る。 フジテレビの音楽番組『キャプテン・オーボエ』は、本番組の主題歌『マジョッキー』といった音楽番組のテ"
+    },
+    {
+     "start": "第一条",
+     "text": "第一条で、2016年に作成した新種の1種、2種、3種、4種、2種、3種以上の中からの分類である 。 小型種（パン）とパン（パン）の二種で、硬質のパンを母の形にした。パンでは、コーカシーのパン（ペンパン）とパン（パンパン）の組み合わせが登場し、この組み"
+    },
+    {
+     "start": "この法律において",
+     "text": "この法律においてELEXXX and ELEXX - 2001年4月11日-11月21日 株式会社 - 同年11月30日より \"Technologies in Living Categments ELEXX in Living Categmen"
+    }
+   ],
+   "loopPct": 7.61,
+   "movedBody": false,
+   "rikai": {
+    "pmi": 0.607,
+    "raw": 0.497,
+    "n": 300,
+    "byAsk": {
+     "したい事": 0.543,
+     "対象": 0.828,
+     "気持ち": 0.472
+    }
+   }
   }
  ],
  "bestVal": 2.5773,
@@ -13891,5 +13903,5 @@
  ],
  "wantWider": false,
  "nextD": 512,
- "bad": 6
+ "bad": 9
 }
