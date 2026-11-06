@@ -1,69 +1,6 @@
 {
  "runs": [
   {
-   "at": "2026-10-26T03:20:16Z",
-   "val": 2.8136,
-   "prev": 2.8017,
-   "valTag": "fixed-holdout-v1",
-   "stoppedAt": 274,
-   "stuck": 0,
-   "evalTag": "fixed-ix-v1",
-   "secPerStep": 14.3171,
-   "steps": 461,
-   "bpc": 3.3301,
-   "charsPerTok": 1.2189,
-   "score": 2.1261,
-   "scoreW": 2.0,
-   "scoreMode": "talk",
-   "finishMix": 0.5,
-   "lineage": "L1",
-   "layers": 16,
-   "params": 117914880,
-   "chars": 1045308899,
-   "tokens": 857567631,
-   "grew": 0,
-   "rolledBack": false,
-   "ownVal": null,
-   "ownScore": null,
-   "d": 768,
-   "loops": 1,
-   "spread": 2.6118,
-   "bytes": 1415115957,
-   "heads": 6,
-   "ctx": 512,
-   "vocab": 6000,
-   "kind": "bpe",
-   "arch": "tpp-loop",
-   "wantWider": false,
-   "layerCap": 16,
-   "mixChanged": false,
-   "bySrc": {
-    "laws": 3.9356,
-    "wiki": 2.9651,
-    "aozora": 3.3293,
-    "hanrei": 3.4406,
-    "kokkai": 2.6036,
-    "web": 2.8559,
-    "talk": 2.1261
-   },
-   "wrote": [
-    {
-     "start": "わたしは",
-     "text": "わたしは藤川だらけの影響ですね！」 EQ「ですよね。私も今は遊びたいですね。」 DV「ですよねー！嫌いな種類もありますしね」 EQ「そうですね。カレーを作るのも大変さです。」 DV「パスタは好きなんですか？」 E"
-    },
-    {
-     "start": "第一条",
-     "text": "第一条第三号 勲章 勲章勲章及び勲章勲章 勲章勲章及び勲章の整理及び勲章 勲章及び勲章 勲章又は勲章についての項目 勲章、勲章及び勲章等 勲章、勲章、演祖又は勲章、勲章及び勲章 勲章、勲章及び勲章、勲章、�"
-    },
-    {
-     "start": "この法律において",
-     "text": "この法律において「被爆者」となっている。 10月1日 - 東京冷凍食品（全国の物で使用）が 日本国内の食品 に指定され、 日本油 （SF）の生産は 12月 をもって生産された [ 18 ] 。 この生産は、日本国内に比べてもう一つの生産量を示せば約30%を占める [ 19 ]"
-    }
-   ],
-   "loopPct": 20.39,
-   "movedBody": false
-  },
-  {
    "at": "2026-10-26T04:32:07Z",
    "val": 2.8113,
    "prev": 2.8136,
@@ -12975,6 +12912,81 @@
    ],
    "loopPct": 3.03,
    "movedBody": false
+  },
+  {
+   "at": "2026-11-06T03:30:01Z",
+   "val": 2.8421,
+   "prev": 2.8421,
+   "valTag": "fixed-holdout-v1",
+   "stoppedAt": 213,
+   "stuck": 1,
+   "evalTag": "fixed-ix-v1",
+   "secPerStep": 18.9893,
+   "steps": 300,
+   "lr": 5e-05,
+   "lrFixed": true,
+   "bpc": 3.365,
+   "charsPerTok": 1.2185,
+   "score": 2.1511,
+   "scoreW": 2.0,
+   "scoreMode": "talk",
+   "finishMix": 0.5,
+   "lineage": "L1",
+   "layers": 16,
+   "params": 117914880,
+   "chars": 1047537723,
+   "tokens": 859675174,
+   "grew": 0,
+   "rolledBack": true,
+   "ownVal": 2.8493,
+   "ownScore": 2.172,
+   "d": 768,
+   "loops": 1,
+   "spread": 2.9139,
+   "bytes": 1415116021,
+   "heads": 6,
+   "ctx": 512,
+   "vocab": 6000,
+   "kind": "bpe",
+   "arch": "tpp-loop",
+   "wantWider": false,
+   "layerCap": 16,
+   "mixChanged": false,
+   "bySrc": {
+    "laws": 3.9523,
+    "wiki": 2.9994,
+    "aozora": 3.3635,
+    "hanrei": 3.4853,
+    "kokkai": 2.6363,
+    "web": 2.9063,
+    "talk": 2.172
+   },
+   "wrote": [
+    {
+     "start": "わたしは",
+     "text": "わたしは、その生命、身体、身体、身体、身体、生物、生物、生物などの酸素活動をJIS S 1964年から始めた。 の動物は、固く生物が生物に生態系を作り上げようと、生物が生物に生息する。生物が生物に向かって生物を大量に生息させて生物が生物から生物が生物に生息すること"
+    },
+    {
+     "start": "第一条",
+     "text": "第一条（労働料金の支給の特例）の規定及び労働料金等の免状を�には、労働料金の引き下げ方法その他の労働条件を確実にするための措置とする。 （労働料金） 労働料金の値上げに必要な規定は、労働料金、労働料金、労働料金その他の労働料金値上げ団体の雇用を事情により解消することができるものとする。 労働料金等の適用期間内に労働料金の引上げを計画する法（昭和二十二年法律第二百二十二号）第十四条第一項（労働）に規定する労働料金の合計料金は、賃金及び労働"
+    },
+    {
+     "start": "この法律において",
+     "text": "この法律において「YouTubeチャンネル」でナレーションを流し、12月30日放送の同時ネットに合わせて、『AREAMENT NEWS23』で『AREANT VERSE GO!GO』を生放送。 2017年3月13日放送の『AREANT GOD"
+    }
+   ],
+   "loopPct": 10.61,
+   "movedBody": false,
+   "rikai": {
+    "pmi": 0.56,
+    "raw": 0.417,
+    "n": 300,
+    "byAsk": {
+     "したい事": 0.511,
+     "対象": 0.806,
+     "気持ち": 0.387
+    }
+   }
   }
  ],
  "bestVal": 2.7492,
@@ -13025,5 +13037,5 @@
  ],
  "wantWider": false,
  "nextD": 768,
- "bad": 1
+ "bad": 0
 }
