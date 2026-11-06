@@ -1,69 +1,6 @@
 {
  "runs": [
   {
-   "at": "2026-10-26T12:07:52Z",
-   "val": 2.814,
-   "prev": 2.797,
-   "valTag": "fixed-holdout-v1",
-   "stoppedAt": 273,
-   "stuck": 0,
-   "evalTag": "fixed-ix-v1",
-   "secPerStep": 14.3774,
-   "steps": 314,
-   "bpc": 3.3306,
-   "charsPerTok": 1.2189,
-   "score": 2.1286,
-   "scoreW": 2.0,
-   "scoreMode": "talk",
-   "finishMix": 0.5,
-   "lineage": "L1",
-   "layers": 16,
-   "params": 117914880,
-   "chars": 1045308899,
-   "tokens": 857567631,
-   "grew": 0,
-   "rolledBack": false,
-   "ownVal": null,
-   "ownScore": null,
-   "d": 768,
-   "loops": 1,
-   "spread": 2.7397,
-   "bytes": 1415115957,
-   "heads": 6,
-   "ctx": 512,
-   "vocab": 6000,
-   "kind": "bpe",
-   "arch": "tpp-loop",
-   "wantWider": false,
-   "layerCap": 16,
-   "mixChanged": false,
-   "bySrc": {
-    "laws": 3.943,
-    "wiki": 2.9677,
-    "aozora": 3.3228,
-    "hanrei": 3.4248,
-    "kokkai": 2.6001,
-    "web": 2.862,
-    "talk": 2.1286
-   },
-   "wrote": [
-    {
-     "start": "わたしは",
-     "text": "わたしはこの日をお控えになっていますが、お買い物、お風呂、それから大丈夫なんですか。」 店「海水浴場というお話をありがとうございました。またお待ちしております。」 客「横浜に旅行に行きます。大阪で泊"
-    },
-    {
-     "start": "第一条",
-     "text": "第一条、�党議員及び国民の信頼を回復するため、私の質問を終わります。（拍手）」 AA「国務大臣 今回の東日本大震災の被災者生活再建支援法案は、昨年一年間に、将来の生活再建に寄与して、財政再建に取り組むための対応を含め、必要な措置を講ずるために、今回、旧・八百億円の被災者の皆様の状況も"
-    },
-    {
-     "start": "この法律において",
-     "text": "この法律において「国」を参照。 「国」とは、地域的、和歌地区における「和歌」を意味する「和歌」と称する。 「和歌」の語源や「和歌」の語源であり、「和歌」・「和歌」なども「和歌」、和歌「和歌」は、「和歌」の語源は「和歌」または「和歌」と呼"
-    }
-   ],
-   "loopPct": 0.7,
-   "movedBody": false
-  },
-  {
    "at": "2026-10-26T13:20:38Z",
    "val": 2.8203,
    "prev": 2.814,
@@ -13017,6 +12954,71 @@
      "気持ち": 0.425
     }
    }
+  },
+  {
+   "at": "2026-11-06T11:29:16Z",
+   "val": 2.8385,
+   "prev": 2.8398,
+   "valTag": "fixed-holdout-v1",
+   "stoppedAt": 177,
+   "stuck": 0,
+   "evalTag": "fixed-ix-v1",
+   "secPerStep": 23.2152,
+   "steps": 318,
+   "lr": 5e-05,
+   "lrFixed": true,
+   "bpc": 3.3607,
+   "charsPerTok": 1.2185,
+   "score": 2.1585,
+   "scoreW": 2.0,
+   "scoreMode": "talk",
+   "finishMix": 0.5,
+   "lineage": "L1",
+   "layers": 16,
+   "params": 117914880,
+   "chars": 1047537723,
+   "tokens": 859675174,
+   "grew": 0,
+   "rolledBack": false,
+   "ownVal": null,
+   "ownScore": null,
+   "d": 768,
+   "loops": 1,
+   "spread": 2.6261,
+   "bytes": 1415116021,
+   "heads": 6,
+   "ctx": 512,
+   "vocab": 6000,
+   "kind": "bpe",
+   "arch": "tpp-loop",
+   "wantWider": false,
+   "layerCap": 16,
+   "mixChanged": false,
+   "bySrc": {
+    "laws": 3.9197,
+    "wiki": 2.9975,
+    "aozora": 3.3444,
+    "hanrei": 3.4585,
+    "kokkai": 2.6291,
+    "web": 2.896,
+    "talk": 2.1585
+   },
+   "wrote": [
+    {
+     "start": "わたしは",
+     "text": "わたしは女を飲むからです。キングスではありますか？」 BM「そうです。男は誰でもいいですね。」 BV「わ！お父さんもいますか？」 BM「とても美味しいですよ。わんちゃんはなんでも好きです。」 BV「わーいいですね。気"
+    },
+    {
+     "start": "第一条",
+     "text": "第一条の基本理解釈を無理やり速やかに検証し、絶対に通告しない。 （詳細は 詳細 ） 中身は無理であり、中々不忍却なので、つまり、処分場や無理に満足させることが無理なわけではない。 （詳しくは詳細は 中野区 （ 中野区 ） 所管 [ 27 ] 。"
+    },
+    {
+     "start": "この法律において",
+     "text": "この法律において「任命率に、これらの罰則に関する手続を委託する」という内容になった。 2008年（平成20年）5月16日 - 伊勢神宮への参入に向けて、伊勢神宮の本社が新設、引退。 2008年（平成20年）1月3日に名古屋市に処理した「新城」の公設施設として、エレベーター"
+    }
+   ],
+   "loopPct": 3.32,
+   "movedBody": false
   }
  ],
  "bestVal": 2.7492,
@@ -13067,5 +13069,5 @@
  ],
  "wantWider": false,
  "nextD": 768,
- "bad": 1
+ "bad": 0
 }
