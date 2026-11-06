@@ -1,69 +1,6 @@
 {
  "runs": [
   {
-   "at": "2026-10-26T02:06:52Z",
-   "val": 2.8017,
-   "prev": 2.8029,
-   "valTag": "fixed-holdout-v1",
-   "stoppedAt": 159,
-   "stuck": 0,
-   "evalTag": "fixed-ix-v1",
-   "secPerStep": 26.2278,
-   "steps": 461,
-   "bpc": 3.316,
-   "charsPerTok": 1.2189,
-   "score": 2.127,
-   "scoreW": 2.0,
-   "scoreMode": "talk",
-   "finishMix": 0.5,
-   "lineage": "L1",
-   "layers": 16,
-   "params": 117914880,
-   "chars": 1045308899,
-   "tokens": 857567631,
-   "grew": 0,
-   "rolledBack": false,
-   "ownVal": null,
-   "ownScore": null,
-   "d": 768,
-   "loops": 1,
-   "spread": 2.9559,
-   "bytes": 1415115957,
-   "heads": 6,
-   "ctx": 512,
-   "vocab": 6000,
-   "kind": "bpe",
-   "arch": "tpp-loop",
-   "wantWider": false,
-   "layerCap": 16,
-   "mixChanged": false,
-   "bySrc": {
-    "laws": 3.9225,
-    "wiki": 2.954,
-    "aozora": 3.3167,
-    "hanrei": 3.4272,
-    "kokkai": 2.5904,
-    "web": 2.8451,
-    "talk": 2.127
-   },
-   "wrote": [
-    {
-     "start": "わたしは",
-     "text": "わたしは、せいぜい、とりもと言っておられます。」 AB「やはり、例えば、さっきのケアトラックを御覧になったように、ぎりぎりのところに、食べる時間が来ると、食べる時間も、そのときに食べる時間もある時もあるということで、おいしいですが、しっかり食べてみたいと思います。"
-    },
-    {
-     "start": "第一条",
-     "text": "第一条業務を行うことを規定した。 ↑ 内閣語「内閣官房副長官」とは、内閣官房内閣における内閣の最高大臣に就任し、内閣官房長官に就任して、内閣官房副長官、内閣官房副長官そして内閣に内閣官房副長官を任務とする。 内閣官房副長官、内閣官房長官。 ↑ 内閣官房副長官総態様。 ↑ 内閣"
-    },
-    {
-     "start": "この法律において",
-     "text": "この法律において「昭和元年」 『 古代文学 』28ページ。 なお、こちらも1ページより多く、 7ページ に ジャック されたがこのページで表記は 西洋文学 ではなく、 Open のアニメーションを早く切り替えて [ 10 ] 、 ジャック・クルミ に"
-    }
-   ],
-   "loopPct": 7.31,
-   "movedBody": false
-  },
-  {
    "at": "2026-10-26T03:20:16Z",
    "val": 2.8136,
    "prev": 2.8017,
@@ -12973,6 +12910,71 @@
    ],
    "loopPct": 1.71,
    "movedBody": false
+  },
+  {
+   "at": "2026-11-06T02:10:28Z",
+   "val": 2.8421,
+   "prev": 2.8594,
+   "valTag": "fixed-holdout-v1",
+   "stoppedAt": 159,
+   "stuck": 0,
+   "evalTag": "fixed-ix-v1",
+   "secPerStep": 26.178,
+   "steps": 300,
+   "lr": 5e-05,
+   "lrFixed": true,
+   "bpc": 3.365,
+   "charsPerTok": 1.2185,
+   "score": 2.1511,
+   "scoreW": 2.0,
+   "scoreMode": "talk",
+   "finishMix": 0.5,
+   "lineage": "L1",
+   "layers": 16,
+   "params": 117914880,
+   "chars": 1047537723,
+   "tokens": 859675174,
+   "grew": 0,
+   "rolledBack": false,
+   "ownVal": null,
+   "ownScore": null,
+   "d": 768,
+   "loops": 1,
+   "spread": 2.9732,
+   "bytes": 1415116021,
+   "heads": 6,
+   "ctx": 512,
+   "vocab": 6000,
+   "kind": "bpe",
+   "arch": "tpp-loop",
+   "wantWider": false,
+   "layerCap": 16,
+   "mixChanged": false,
+   "bySrc": {
+    "laws": 3.972,
+    "wiki": 3.0021,
+    "aozora": 3.3523,
+    "hanrei": 3.4871,
+    "kokkai": 2.6285,
+    "web": 2.8976,
+    "talk": 2.1511
+   },
+   "wrote": [
+    {
+     "start": "わたしは",
+     "text": "わたしは勝ち残ったもので、アニメでのこともあります。」 DU「でも宇宙の色とかいっぱいですよね。私は腰痛は高くないですが。」 BX「肉の調達は良いですね！色々な種類に出ていますよね。」 DU「そうですね。腰痛は嫌い"
+    },
+    {
+     "start": "第一条",
+     "text": "第一条 同一損害賠償に係る損害を保険の担当となる事情 損害保険による損害を保険条の規定により保険の携帯する保険 保険会社等が保険会社である保険会社 保険会社（保険会社若しくは保険会社を除く。）、保険会社（保険会社又は保険会社の保険会社をいう。以下同じ。）が保険会社及び保険会社若しくは保険会社（保険会社にあっては、保険会社をいう。以下同じ。）である保険会社及び保険会社日に保険会社 保険会社 保険会社 保険会社並びに保険会社、保険会社又は保"
+    },
+    {
+     "start": "この法律において",
+     "text": "この法律において「バーチャント」についてジャーナリストのエンディングは担当した。 オープニングテーマ「アドビ」のテーマソングとしては、『 pon』（『モーニング』 ）のテーマソングキャストの （『 Transfectures 』の）が、『"
+    }
+   ],
+   "loopPct": 3.03,
+   "movedBody": false
   }
  ],
  "bestVal": 2.7492,
@@ -13023,5 +13025,5 @@
  ],
  "wantWider": false,
  "nextD": 768,
- "bad": 0
+ "bad": 1
 }
