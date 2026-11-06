@@ -1,69 +1,6 @@
 {
  "runs": [
   {
-   "at": "2026-10-26T16:00:03Z",
-   "val": 2.8175,
-   "prev": 2.8181,
-   "valTag": "fixed-holdout-v1",
-   "stoppedAt": 179,
-   "stuck": 0,
-   "evalTag": "fixed-ix-v1",
-   "secPerStep": 22.8982,
-   "steps": 449,
-   "bpc": 3.3347,
-   "charsPerTok": 1.2189,
-   "score": 2.135,
-   "scoreW": 2.0,
-   "scoreMode": "talk",
-   "finishMix": 0.5,
-   "lineage": "L1",
-   "layers": 16,
-   "params": 117914880,
-   "chars": 1045308899,
-   "tokens": 857567631,
-   "grew": 0,
-   "rolledBack": false,
-   "ownVal": null,
-   "ownScore": null,
-   "d": 768,
-   "loops": 1,
-   "spread": 2.7049,
-   "bytes": 1415115957,
-   "heads": 6,
-   "ctx": 512,
-   "vocab": 6000,
-   "kind": "bpe",
-   "arch": "tpp-loop",
-   "wantWider": false,
-   "layerCap": 16,
-   "mixChanged": false,
-   "bySrc": {
-    "laws": 3.9508,
-    "wiki": 2.972,
-    "aozora": 3.3326,
-    "hanrei": 3.4382,
-    "kokkai": 2.6069,
-    "web": 2.8649,
-    "talk": 2.135
-   },
-   "wrote": [
-    {
-     "start": "わたしは",
-     "text": "わたしは、松中島三郎君を引退させてしまえば、一番下の方に、まずおられました。しかし、これは、生前、私、長澤さんのお話がありました。いまだに、無事に、私がこの時点で、このお父さんに家族があったと思われるのであります。 そこで、今、先生にお答えいただ"
-    },
-    {
-     "start": "第一条",
-     "text": "第一条十五号 」その他平成八年改正法施行法 第３号 第３号 （平成八年改正法第５号（平成１０年改正法）第９号 ）第３号 （平成４年改正法第１６号）第２号 （平成６年改正法第２２号）第２号 （平成１３年改正法第２６号） 第２号 （平成１３年改正法第７４号） 第"
-    },
-    {
-     "start": "この法律において",
-     "text": "この法律において「家賃」となる。 菓子業 - 菓子業などが価値を反映している [ 37 ] 。 菓子業 - 菓子業 など 取引 ・ コーポレーション 業界における 取引 ・売業を行う インフラ・コメント など。 ジャパン・コミュニケーションズ - 業界団体、自社で"
-    }
-   ],
-   "loopPct": 3.88,
-   "movedBody": false
-  },
-  {
    "at": "2026-10-26T17:21:40Z",
    "val": 2.813,
    "prev": 2.8175,
@@ -13033,6 +12970,71 @@
    ],
    "loopPct": 0.83,
    "movedBody": false
+  },
+  {
+   "at": "2026-11-06T15:29:24Z",
+   "val": 2.834,
+   "prev": 2.8326,
+   "valTag": "fixed-holdout-v1",
+   "stoppedAt": 278,
+   "stuck": 0,
+   "evalTag": "fixed-ix-v1",
+   "secPerStep": 14.0875,
+   "steps": 317,
+   "lr": 5e-05,
+   "lrFixed": true,
+   "bpc": 3.3554,
+   "charsPerTok": 1.2185,
+   "score": 2.154,
+   "scoreW": 2.0,
+   "scoreMode": "talk",
+   "finishMix": 0.5,
+   "lineage": "L1",
+   "layers": 16,
+   "params": 117914880,
+   "chars": 1047537723,
+   "tokens": 859675174,
+   "grew": 0,
+   "rolledBack": false,
+   "ownVal": null,
+   "ownScore": null,
+   "d": 768,
+   "loops": 1,
+   "spread": 2.8798,
+   "bytes": 1415116021,
+   "heads": 6,
+   "ctx": 512,
+   "vocab": 6000,
+   "kind": "bpe",
+   "arch": "tpp-loop",
+   "wantWider": false,
+   "layerCap": 16,
+   "mixChanged": false,
+   "bySrc": {
+    "laws": 3.9175,
+    "wiki": 2.9842,
+    "aozora": 3.3409,
+    "hanrei": 3.4632,
+    "kokkai": 2.6264,
+    "web": 2.8919,
+    "talk": 2.154
+   },
+   "wrote": [
+    {
+     "start": "わたしは",
+     "text": "わたしは、半ば後半ば、あらゆる用意をしてやってまいりました。」 AB「両方が、ここで御説明をいただきまして、午前中の議論でございますが、まずは、この問題に総理は、この問題について、今後とも尽くしていくということでの視点から、できるだけ早く御議論"
+    },
+    {
+     "start": "第一条",
+     "text": "第一条しょうでもうたくさんでも構いませんが、日曜日だと嬉しいですね。」 AQ「そうなんです。今年はこちらも暑いですしね。」 AK「多少は暑いと思いますが。日中は行きたいです。」 AQ「そうですよね。日中待ちくだしです。"
+    },
+    {
+     "start": "この法律において",
+     "text": "この法律において「センバーグ」のうち最も小さく、小さな丸い丸めて、小麦粉が生産されることになる松本市の名古屋市。 富山県中川町 - 松茂郡名古屋町。1968年に�頭に米穀製造を始めとした同社製の丸い丸井炭と同等の豊かな水を供給することがある。�"
+    }
+   ],
+   "loopPct": 0.82,
+   "movedBody": false
   }
  ],
  "bestVal": 2.7492,
@@ -13083,5 +13085,5 @@
  ],
  "wantWider": false,
  "nextD": 768,
- "bad": 1
+ "bad": 0
 }
