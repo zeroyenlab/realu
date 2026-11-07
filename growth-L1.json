@@ -1,69 +1,6 @@
 {
  "runs": [
   {
-   "at": "2026-10-27T09:49:57Z",
-   "val": 2.7847,
-   "prev": 2.7858,
-   "valTag": "fixed-holdout-v1",
-   "stoppedAt": 159,
-   "stuck": 0,
-   "evalTag": "fixed-ix-v1",
-   "secPerStep": 26.1899,
-   "steps": 300,
-   "bpc": 3.2959,
-   "charsPerTok": 1.2189,
-   "score": 2.1122,
-   "scoreW": 2.0,
-   "scoreMode": "talk",
-   "finishMix": 0.5,
-   "lineage": "L1",
-   "layers": 16,
-   "params": 117914880,
-   "chars": 1045308899,
-   "tokens": 857567631,
-   "grew": 0,
-   "rolledBack": false,
-   "ownVal": null,
-   "ownScore": null,
-   "d": 768,
-   "loops": 1,
-   "spread": 2.9872,
-   "bytes": 1415115957,
-   "heads": 6,
-   "ctx": 512,
-   "vocab": 6000,
-   "kind": "bpe",
-   "arch": "tpp-loop",
-   "wantWider": false,
-   "layerCap": 16,
-   "mixChanged": false,
-   "bySrc": {
-    "laws": 3.8904,
-    "wiki": 2.9324,
-    "aozora": 3.3041,
-    "hanrei": 3.4074,
-    "kokkai": 2.5822,
-    "web": 2.8296,
-    "talk": 2.1122
-   },
-   "wrote": [
-    {
-     "start": "わたしは",
-     "text": "わたしは一生もいます。」 BV「いいですね。ではまた。」 BV「こんにちはー！」 BM「こんにちはー！」 BV「何か趣味はありますか？」 BM「おすすめの作品はありますか？」"
-    },
-    {
-     "start": "第一条",
-     "text": "第一条 （許可の申請） 離婚締結権の登録は、様式第四による。 （選定） 密接な関係を有する者は、離婚後に不規則な差別により離婚した離婚の公正な関係を築き、かつ、当該離婚については、その親権を踏まえて、親権を行う。 （離婚） 交渉は、離婚を義務づけるとともに、離婚を希望する合議体とそれを離婚、結婚することなく、"
-    },
-    {
-     "start": "この法律において",
-     "text": "この法律において「地方交付税」とは、国の負担を求める、国の負担の公平を補うための課税拠点をつくる。 ただし、地方交付税は、地方交付税であって地方交付税又は交付税または意見の交換を行うことができない。 地方交付税は、前年度のような地方交付税ん制となっていった。 地方交付税は、地方交付税の請求を受けた地方交付税その他地方交付税の算定方法による地方交付税についても、地方交付税の計算が行な"
-    }
-   ],
-   "loopPct": 2.94,
-   "movedBody": false
-  },
-  {
    "at": "2026-10-27T11:08:20Z",
    "val": 2.7828,
    "prev": 2.7847,
@@ -13081,6 +13018,71 @@
    ],
    "loopPct": 12.93,
    "movedBody": false
+  },
+  {
+   "at": "2026-11-07T10:26:24Z",
+   "val": 2.81,
+   "prev": 2.8089,
+   "valTag": "fixed-holdout-v1",
+   "stoppedAt": 160,
+   "stuck": 0,
+   "evalTag": "fixed-ix-v1",
+   "secPerStep": 26.0534,
+   "steps": 300,
+   "lr": 5e-05,
+   "lrFixed": true,
+   "bpc": 3.327,
+   "charsPerTok": 1.2185,
+   "score": 2.1463,
+   "scoreW": 2.0,
+   "scoreMode": "talk",
+   "finishMix": 0.5,
+   "lineage": "L1",
+   "layers": 16,
+   "params": 117914880,
+   "chars": 1047537723,
+   "tokens": 859675174,
+   "grew": 0,
+   "rolledBack": false,
+   "ownVal": null,
+   "ownScore": null,
+   "d": 768,
+   "loops": 1,
+   "spread": 2.8918,
+   "bytes": 1415116021,
+   "heads": 6,
+   "ctx": 512,
+   "vocab": 6000,
+   "kind": "bpe",
+   "arch": "tpp-loop",
+   "wantWider": false,
+   "layerCap": 16,
+   "mixChanged": false,
+   "bySrc": {
+    "laws": 3.8864,
+    "wiki": 2.9647,
+    "aozora": 3.3313,
+    "hanrei": 3.4539,
+    "kokkai": 2.6013,
+    "web": 2.8692,
+    "talk": 2.1463
+   },
+   "wrote": [
+    {
+     "start": "わたしは",
+     "text": "わたしはいつも何をしてますか？」 ET「ネットは映画ですね。何か映画を見ることが多いですか？」 EK「ネトフリは見ますね。見る、知ってます？」 ET「知ってます！」 EK「なんだか気になりますね！」 ET「最近、一話を見たので、ネ"
+    },
+    {
+     "start": "第一条",
+     "text": "第一条億亜体、スペイン語圏、ニューヨーク、モンゴル語、ソタキ語、アカラ語、マレー語、中国語、中国語、韓国語、中国語、中国語、中国語など）の各種言語、シンガポール語、中国語、中国語などの言語も存在する。 中国語 では、中国語、中"
+    },
+    {
+     "start": "この法律において",
+     "text": "この法律において「労働省」とは、労働省、労働省、労働省、労働省、労働省、労働省、労働省、機関等についての件について、「労働省・労働省」とは、労働省、労働省、労働省、労働省、労働省、労働省、労働省、労働省、労働省、労働省、東京労働局、愛知県、岡田市、岡崎市、岡崎市並びに千葉地方裁判所に裁判所を設置し"
+    }
+   ],
+   "loopPct": 32.98,
+   "movedBody": false
   }
  ],
  "bestVal": 2.7492,
@@ -13131,5 +13133,5 @@
  ],
  "wantWider": false,
  "nextD": 768,
- "bad": 0
+ "bad": 1
 }
