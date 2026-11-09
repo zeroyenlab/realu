@@ -1,69 +1,6 @@
 {
  "runs": [
   {
-   "at": "2026-10-28T22:55:08Z",
-   "val": 2.7715,
-   "prev": 2.7723,
-   "valTag": "fixed-holdout-v1",
-   "stoppedAt": 157,
-   "stuck": 0,
-   "evalTag": "fixed-ix-v1",
-   "secPerStep": 26.6112,
-   "steps": 300,
-   "bpc": 3.2803,
-   "charsPerTok": 1.2189,
-   "score": 2.1116,
-   "scoreW": 2.0,
-   "scoreMode": "talk",
-   "finishMix": 0.5,
-   "lineage": "L1",
-   "layers": 16,
-   "params": 117914880,
-   "chars": 1045308899,
-   "tokens": 857567631,
-   "grew": 0,
-   "rolledBack": false,
-   "ownVal": null,
-   "ownScore": null,
-   "d": 768,
-   "loops": 1,
-   "spread": 2.6966,
-   "bytes": 1415115957,
-   "heads": 6,
-   "ctx": 512,
-   "vocab": 6000,
-   "kind": "bpe",
-   "arch": "tpp-loop",
-   "wantWider": false,
-   "layerCap": 16,
-   "mixChanged": false,
-   "bySrc": {
-    "laws": 3.8642,
-    "wiki": 2.9225,
-    "aozora": 3.2861,
-    "hanrei": 3.4051,
-    "kokkai": 2.5691,
-    "web": 2.8225,
-    "talk": 2.1116
-   },
-   "wrote": [
-    {
-     "start": "わたしは",
-     "text": "わたしは一日で、 エヴァンゲリオン から聞きました。 だが、お互いの相互理解とかが大事だと思います。 また、ひとつ教えることです。 また、 中国 では 『 巻四詩集 』の 坐臣 の 弘治"
-    },
-    {
-     "start": "第一条",
-     "text": "第一条（以下「, pppersonaChat> BP「こんにちはー。」 AA「こんにちは！」 BP「突然ですが、お肉とか焼肉とか買ってますか？」 AA「そうですね、焼肉です！」 BP「焼肉、どこでも買いますか？」"
-    },
-    {
-     "start": "この法律において",
-     "text": "この法律において「��」とは、貨幣に関する図書の都市（例えば、日本（ ） ）の都（ ソクラテス ）の都市。 ユダヤ人の数が、日本よりも多い（ 日本 ）。 この名の由来は、 アメリカ合衆国 のように、 奴隷 の予算の願望によって、日本は ユダヤ人 であるとするものであった [ 3"
-    }
-   ],
-   "loopPct": 5.3,
-   "movedBody": false
-  },
-  {
    "at": "2026-10-29T00:14:52Z",
    "val": 2.7683,
    "prev": 2.7715,
@@ -13169,6 +13106,71 @@
    ],
    "loopPct": 32.99,
    "movedBody": false
+  },
+  {
+   "at": "2026-11-09T22:48:07Z",
+   "val": 2.7712,
+   "prev": 2.7712,
+   "valTag": "fixed-holdout-v1",
+   "stoppedAt": 158,
+   "stuck": 1,
+   "evalTag": "fixed-ix-v1",
+   "secPerStep": 26.352,
+   "steps": 300,
+   "lr": 5e-05,
+   "lrFixed": true,
+   "bpc": 3.281,
+   "charsPerTok": 1.2185,
+   "score": 2.137,
+   "scoreW": 2.0,
+   "scoreMode": "talk",
+   "finishMix": 0.5,
+   "lineage": "L1",
+   "layers": 16,
+   "params": 117914880,
+   "chars": 1047537723,
+   "tokens": 859675174,
+   "grew": 0,
+   "rolledBack": true,
+   "ownVal": 2.7695,
+   "ownScore": 2.1609,
+   "d": 768,
+   "loops": 1,
+   "spread": 2.9589,
+   "bytes": 1415116021,
+   "heads": 6,
+   "ctx": 512,
+   "vocab": 6000,
+   "kind": "bpe",
+   "arch": "tpp-loop",
+   "wantWider": false,
+   "layerCap": 16,
+   "mixChanged": false,
+   "bySrc": {
+    "laws": 3.8037,
+    "wiki": 2.9177,
+    "aozora": 3.2771,
+    "hanrei": 3.4235,
+    "kokkai": 2.5705,
+    "web": 2.8352,
+    "talk": 2.1609
+   },
+   "wrote": [
+    {
+     "start": "わたしは",
+     "text": "わたしはまったことありますか？」 CC「りっぱなしですかねー。」 BR「すごい！私も最近はあまりないですが、この前聞きました！」 CC「そんなことないですよね。私も聞いておいてよかったんですが、何かの使い分けはしてますか？」 BR「いえ、私"
+    },
+    {
+     "start": "第一条",
+     "text": "第一条 和歌山県裁事（二重県児童生徒補）に勤務し、同年四月から和歌山市内の規模に転居。 2022年（令和4年）8月から和歌山県庁所在地の道路交通法違反で懲罰事犯による判事補が同年9月より和歌山県庁在職したため、和歌山県連合軍総司令部の青尾恵理将が"
+    },
+    {
+     "start": "この法律において",
+     "text": "この法律において、その約一割を今回の0.7厘になるということで、今回の今回の担保理が続くということですけれども、その前に、中小企業庁、さらには中小企業庁などを中心に、そして中小企業庁も、実はそういう側面もありますし、そういう意味では、三本柱を鶴舞、四本柱となるという"
+    }
+   ],
+   "loopPct": 5.55,
+   "movedBody": false
   }
  ],
  "bestVal": 2.7492,
@@ -13219,5 +13221,5 @@
  ],
  "wantWider": false,
  "nextD": 768,
- "bad": 1
+ "bad": 2
 }
