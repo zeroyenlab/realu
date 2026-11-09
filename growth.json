@@ -1,69 +1,6 @@
 {
  "runs": [
   {
-   "at": "2026-10-28T19:02:30Z",
-   "val": 2.775,
-   "prev": 2.7742,
-   "valTag": "fixed-holdout-v1",
-   "stoppedAt": 176,
-   "stuck": 0,
-   "evalTag": "fixed-ix-v1",
-   "secPerStep": 23.4356,
-   "steps": 300,
-   "bpc": 3.2844,
-   "charsPerTok": 1.2189,
-   "score": 2.1043,
-   "scoreW": 2.0,
-   "scoreMode": "talk",
-   "finishMix": 0.5,
-   "lineage": "L1",
-   "layers": 16,
-   "params": 117914880,
-   "chars": 1045308899,
-   "tokens": 857567631,
-   "grew": 0,
-   "rolledBack": false,
-   "ownVal": null,
-   "ownScore": null,
-   "d": 768,
-   "loops": 1,
-   "spread": 2.9063,
-   "bytes": 1415115957,
-   "heads": 6,
-   "ctx": 512,
-   "vocab": 6000,
-   "kind": "bpe",
-   "arch": "tpp-loop",
-   "wantWider": false,
-   "layerCap": 16,
-   "mixChanged": false,
-   "bySrc": {
-    "laws": 3.8704,
-    "wiki": 2.9311,
-    "aozora": 3.29,
-    "hanrei": 3.4111,
-    "kokkai": 2.5695,
-    "web": 2.8242,
-    "talk": 2.1043
-   },
-   "wrote": [
-    {
-     "start": "わたしは",
-     "text": "わたしは、賃金がゼロになるような、賃金が下がった場合、過剰になり得るまで下がるのではないかと相まって、その上で、まだまだ少なくとも賃金も下がっていくような状況であることが前提になってくると思いますが、今御指摘のような質のいいような状況をつくることは困難なことであると考えております。"
-    },
-    {
-     "start": "第一条",
-     "text": "第一条に、これを再教達の日本政府の根底とすることを定めたものであります。（拍手）」 AA「議長 ただいまの御決議は、この際、日程に追加して、只今上程せられました請願外二十五件の請願を一括して議題とすることに御異議ございませんか。」 AA「議長 御異議ないと認めます。先ず委員"
-    },
-    {
-     "start": "この法律において",
-     "text": "この法律において「春日」は寒天が長くなり、半年が経過して寒月が記念日となった [ 23 ] 。 12月1日 （ 5月4日 ） - 金日成 が 4月5日 （ 6月15日 ）。 12月25日 （ 6月25日 ）、 寒月 が 三日月 から 夏"
-    }
-   ],
-   "loopPct": 3.59,
-   "movedBody": false
-  },
-  {
    "at": "2026-10-28T20:19:51Z",
    "val": 2.7764,
    "prev": 2.775,
@@ -13162,6 +13099,71 @@
     }
    ],
    "loopPct": 5.68,
+   "movedBody": false
+  },
+  {
+   "at": "2026-11-09T18:42:53Z",
+   "val": 2.7755,
+   "prev": 2.7751,
+   "valTag": "fixed-holdout-v1",
+   "stoppedAt": 157,
+   "stuck": 0,
+   "evalTag": "fixed-ix-v1",
+   "secPerStep": 26.4867,
+   "steps": 300,
+   "lr": 5e-05,
+   "lrFixed": true,
+   "bpc": 3.2861,
+   "charsPerTok": 1.2185,
+   "score": 2.1507,
+   "scoreW": 2.0,
+   "scoreMode": "talk",
+   "finishMix": 0.5,
+   "lineage": "L1",
+   "layers": 16,
+   "params": 117914880,
+   "chars": 1047537723,
+   "tokens": 859675174,
+   "grew": 0,
+   "rolledBack": false,
+   "ownVal": null,
+   "ownScore": null,
+   "d": 768,
+   "loops": 1,
+   "spread": 2.7196,
+   "bytes": 1415116021,
+   "heads": 6,
+   "ctx": 512,
+   "vocab": 6000,
+   "kind": "bpe",
+   "arch": "tpp-loop",
+   "wantWider": false,
+   "layerCap": 16,
+   "mixChanged": false,
+   "bySrc": {
+    "laws": 3.8307,
+    "wiki": 2.9263,
+    "aozora": 3.2843,
+    "hanrei": 3.4241,
+    "kokkai": 2.5735,
+    "web": 2.8433,
+    "talk": 2.1507
+   },
+   "wrote": [
+    {
+     "start": "わたしは",
+     "text": "わたしは岸本の羡�をくれるのが好きでしたね。」 EO「おいしいですね。お褒めにもなりますし。」 CN「方言も好きですね。私は初耳ですが、一人だと」 EO「自分は行きやすいので、一生に一度くらい行ってみたいです。」 CN「結構あるんです"
+    },
+    {
+     "start": "第一条",
+     "text": "第一条 第一条 第一条の自由を保障するためには、第三条の自由を保障しなければならない。 第一条の自由を保障する自由を保障するのが、参加者による自由を保障するのがＰＫＦＩＳＦＰＦＯＳＦＳＦＰＳＦＯＩＳＦＦＰＳＳＦＰＳＦＯＳＦＰＳＦＥＳＦＳ�"
+    },
+    {
+     "start": "この法律において",
+     "text": "この法律において，前記のとおり，Ｄは，被告ＤにＥに対し，Ｅを，Ｅに対し，まとめて，このＣに対し，「むかしはどっちか」と告げて，被 告Ｄが，ＥのＤを殺したため，平成１０年５月ころ，Ｅに，被告Ｄに対して， 本件Ｅが，Ｅの"
+    }
+   ],
+   "loopPct": 13.53,
    "movedBody": false
   }
  ],
