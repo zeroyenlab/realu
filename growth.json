@@ -1,69 +1,6 @@
 {
  "runs": [
   {
-   "at": "2026-10-28T02:19:09Z",
-   "val": 2.7893,
-   "prev": 2.7908,
-   "valTag": "fixed-holdout-v1",
-   "stoppedAt": 159,
-   "stuck": 0,
-   "evalTag": "fixed-ix-v1",
-   "secPerStep": 26.2239,
-   "steps": 300,
-   "bpc": 3.3013,
-   "charsPerTok": 1.2189,
-   "score": 2.1089,
-   "scoreW": 2.0,
-   "scoreMode": "talk",
-   "finishMix": 0.5,
-   "lineage": "L1",
-   "layers": 16,
-   "params": 117914880,
-   "chars": 1045308899,
-   "tokens": 857567631,
-   "grew": 0,
-   "rolledBack": false,
-   "ownVal": null,
-   "ownScore": null,
-   "d": 768,
-   "loops": 1,
-   "spread": 2.8287,
-   "bytes": 1415115957,
-   "heads": 6,
-   "ctx": 512,
-   "vocab": 6000,
-   "kind": "bpe",
-   "arch": "tpp-loop",
-   "wantWider": false,
-   "layerCap": 16,
-   "mixChanged": false,
-   "bySrc": {
-    "laws": 3.8948,
-    "wiki": 2.9392,
-    "aozora": 3.3052,
-    "hanrei": 3.4196,
-    "kokkai": 2.5821,
-    "web": 2.8346,
-    "talk": 2.1089
-   },
-   "wrote": [
-    {
-     "start": "わたしは",
-     "text": "わたしは今のお話を聞いているんだから、もう少し、ある意味で発表するようになったらどうするかという話を出してください。しかし、これは本日朝からお話をさしていただきました、二日間だけじゃなかったということを、驚くべきだと思います。」 AB「加藤国務大臣 先ほど申し上げましたように"
-    },
-    {
-     "start": "第一条",
-     "text": "第一条 第208条 , 第201条 , 第201条 , 第101条 , 第202条 , 第202条 , 第201条 , 第201条 , 第30条 , 第200条 , 第201条 , 第3項 , 第103条 , 第104条 (4"
-    },
-    {
-     "start": "この法律において",
-     "text": "この法律において「Gaelio Liselion」（DSM）を採用した。一般のケースでは、レオタイプを採用したとのこと。 「ポケモンの調査」および「ポケモン」(Sankyouteology) が施された。 「ポケモン」とは、ポケモンのツチョコレートや、コンクリート、ア"
-    }
-   ],
-   "loopPct": 25.37,
-   "movedBody": false
-  },
-  {
    "at": "2026-10-28T03:35:24Z",
    "val": 2.7843,
    "prev": 2.7893,
@@ -13127,6 +13064,71 @@
    ],
    "loopPct": 8.18,
    "movedBody": false
+  },
+  {
+   "at": "2026-11-09T01:10:14Z",
+   "val": 2.7885,
+   "prev": 2.7942,
+   "valTag": "fixed-holdout-v1",
+   "stoppedAt": 159,
+   "stuck": 0,
+   "evalTag": "fixed-ix-v1",
+   "secPerStep": 26.2176,
+   "steps": 300,
+   "lr": 5e-05,
+   "lrFixed": true,
+   "bpc": 3.3015,
+   "charsPerTok": 1.2185,
+   "score": 2.1316,
+   "scoreW": 2.0,
+   "scoreMode": "talk",
+   "finishMix": 0.5,
+   "lineage": "L1",
+   "layers": 16,
+   "params": 117914880,
+   "chars": 1047537723,
+   "tokens": 859675174,
+   "grew": 0,
+   "rolledBack": false,
+   "ownVal": null,
+   "ownScore": null,
+   "d": 768,
+   "loops": 1,
+   "spread": 2.9769,
+   "bytes": 1415116021,
+   "heads": 6,
+   "ctx": 512,
+   "vocab": 6000,
+   "kind": "bpe",
+   "arch": "tpp-loop",
+   "wantWider": false,
+   "layerCap": 16,
+   "mixChanged": false,
+   "bySrc": {
+    "laws": 3.8493,
+    "wiki": 2.9376,
+    "aozora": 3.3147,
+    "hanrei": 3.4345,
+    "kokkai": 2.5879,
+    "web": 2.8546,
+    "talk": 2.1316
+   },
+   "wrote": [
+    {
+     "start": "わたしは",
+     "text": "わたしは大藏大臣においでになった方面ですね。」 AB「経済界には常に大きな役割を果たすことを期待しました。 しかし、大変な時期で、経済界には、まさに自民党が幸いだったことは大変残念に思っております。総理のおっしゃるように、その辺の課題は、未曾有の"
+    },
+    {
+     "start": "第一条",
+     "text": "第一条第三号に該当するとき。 者から、第一項他の都道府県に対し、前項各号又は条第一項第一号からの規定の適用を受けなかったとき。 当該都道府県が決定したとき。 当該都道府県に通知した事実が存在しないとき。 基準完了後三月以内に、当該都道府県に通知した事実が存在しなかった場合。 基準月に服していた職員については、当該都道府県に通知した事項に係る事実について確認するとともに、関係市町村に通知したことを確認する。 基準月に通知した地震発生後一年"
+    },
+    {
+     "start": "この法律において",
+     "text": "この法律において「平成１１年１０月１４日」という言葉とあるのは「平成１２年１０月１７日」と、「平成１２年７月１８日」と言う文言が出てくる。 (5) Ｃは、平成１２年１０月１９日，昭和２２年１２月１９日，Ｃ に対し，平成１４年１０月２９日，平成１２年１０月２"
+    }
+   ],
+   "loopPct": 2.02,
+   "movedBody": false
   }
  ],
  "bestVal": 2.7492,
@@ -13177,5 +13179,5 @@
  ],
  "wantWider": false,
  "nextD": 768,
- "bad": 0
+ "bad": 1
 }
