@@ -1,69 +1,6 @@
 {
  "runs": [
   {
-   "at": "2026-10-28T17:42:58Z",
-   "val": 2.7742,
-   "prev": 2.7784,
-   "valTag": "fixed-holdout-v1",
-   "stoppedAt": 156,
-   "stuck": 0,
-   "evalTag": "fixed-ix-v1",
-   "secPerStep": 26.8473,
-   "steps": 300,
-   "bpc": 3.2835,
-   "charsPerTok": 1.2189,
-   "score": 2.1088,
-   "scoreW": 2.0,
-   "scoreMode": "talk",
-   "finishMix": 0.5,
-   "lineage": "L1",
-   "layers": 16,
-   "params": 117914880,
-   "chars": 1045308899,
-   "tokens": 857567631,
-   "grew": 0,
-   "rolledBack": false,
-   "ownVal": null,
-   "ownScore": null,
-   "d": 768,
-   "loops": 1,
-   "spread": 3.2059,
-   "bytes": 1415115957,
-   "heads": 6,
-   "ctx": 512,
-   "vocab": 6000,
-   "kind": "bpe",
-   "arch": "tpp-loop",
-   "wantWider": false,
-   "layerCap": 16,
-   "mixChanged": false,
-   "bySrc": {
-    "laws": 3.8705,
-    "wiki": 2.925,
-    "aozora": 3.2911,
-    "hanrei": 3.4095,
-    "kokkai": 2.5712,
-    "web": 2.8235,
-    "talk": 2.1088
-   },
-   "wrote": [
-    {
-     "start": "わたしは",
-     "text": "わたしはショッピングするというか、ちゃんとケーキを作って、そこに実は哀しい道を作って、武人さま、オペラさん、腰から外れたようなか、そういうものを作るなんて、何も考えずに、恩人として今まで要りましたが、その時のトラックの今までの間は、メロンの芸者"
-    },
-    {
-     "start": "第一条",
-     "text": "第一条（５） (2) 本件第一部隊は池田勇兵隊と池田勇兵隊の隊 兵を全体的にやってきたが，池田勲は，良好な勢力の作戦を実行 するのではなく，遊撃戦での下段兵力を大量に，池田勲がいやでも戦勝"
-    },
-    {
-     "start": "この法律において",
-     "text": "この法律において「府令」（府令第70条）が作成された 。 1929年（昭和4年）10月1日：北海道庁設置法により、1920年（大正9年）に施行された「国務省」が制定される。 1933年（昭和8年）2月1日：国務省設置法に基づく「国務省設置令」により、今後は国務省設置令により廃止"
-    }
-   ],
-   "loopPct": 0.72,
-   "movedBody": false
-  },
-  {
    "at": "2026-10-28T19:02:30Z",
    "val": 2.775,
    "prev": 2.7742,
@@ -13161,6 +13098,71 @@
    ],
    "loopPct": 1.85,
    "movedBody": false
+  },
+  {
+   "at": "2026-11-09T17:20:53Z",
+   "val": 2.7751,
+   "prev": 2.7772,
+   "valTag": "fixed-holdout-v1",
+   "stoppedAt": 175,
+   "stuck": 0,
+   "evalTag": "fixed-ix-v1",
+   "secPerStep": 23.6074,
+   "steps": 300,
+   "lr": 5e-05,
+   "lrFixed": true,
+   "bpc": 3.2856,
+   "charsPerTok": 1.2185,
+   "score": 2.1503,
+   "scoreW": 2.0,
+   "scoreMode": "talk",
+   "finishMix": 0.5,
+   "lineage": "L1",
+   "layers": 16,
+   "params": 117914880,
+   "chars": 1047537723,
+   "tokens": 859675174,
+   "grew": 0,
+   "rolledBack": false,
+   "ownVal": null,
+   "ownScore": null,
+   "d": 768,
+   "loops": 1,
+   "spread": 2.9477,
+   "bytes": 1415116021,
+   "heads": 6,
+   "ctx": 512,
+   "vocab": 6000,
+   "kind": "bpe",
+   "arch": "tpp-loop",
+   "wantWider": false,
+   "layerCap": 16,
+   "mixChanged": false,
+   "bySrc": {
+    "laws": 3.8105,
+    "wiki": 2.918,
+    "aozora": 3.2895,
+    "hanrei": 3.421,
+    "kokkai": 2.5848,
+    "web": 2.8416,
+    "talk": 2.1503
+   },
+   "wrote": [
+    {
+     "start": "わたしは",
+     "text": "わたしは柴田がやってるかもしれないですね。」 GH「柴田さんはどんなことをしてるんですか？」 HJ「アーモンドミスツです。」 GH「おお。私もアーモンドミスツ大好きです。」 HJ「え！そうなんですね。あ、アーモンドミスじゃない"
+    },
+    {
+     "start": "第一条",
+     "text": "第一条第三号を取得したため的に=300 kgの水準の高い交通機関にアクシヘビーシーを構築することはできない。 2007年12月2日、NTTドコモのKEIBAが、米国からの輸入を2000年6月20日に公表 。 2007年10月20日、米国では、サーキットがかりに、米"
+    },
+    {
+     "start": "この法律において",
+     "text": "この法律において「球場内でタイムオーバー」と聞いていたところ、実際には西武ライオンズ球場へのアレンジも受けていた。 横浜スタジアムでは、 横浜アリーナ横浜 に設計とその後大分（ 中央区 ）の 横浜アリーナ が建設中の ブローカー が、 古町 へオープ"
+    }
+   ],
+   "loopPct": 5.68,
+   "movedBody": false
   }
  ],
  "bestVal": 2.7492,
@@ -13211,5 +13213,5 @@
  ],
  "wantWider": false,
  "nextD": 768,
- "bad": 4
+ "bad": 0
 }
