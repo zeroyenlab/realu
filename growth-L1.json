@@ -1,69 +1,6 @@
 {
  "runs": [
   {
-   "at": "2026-10-28T11:18:09Z",
-   "val": 2.7744,
-   "prev": 2.7742,
-   "valTag": "fixed-holdout-v1",
-   "stoppedAt": 158,
-   "stuck": 0,
-   "evalTag": "fixed-ix-v1",
-   "secPerStep": 26.352,
-   "steps": 300,
-   "bpc": 3.2838,
-   "charsPerTok": 1.2189,
-   "score": 2.1102,
-   "scoreW": 2.0,
-   "scoreMode": "talk",
-   "finishMix": 0.5,
-   "lineage": "L1",
-   "layers": 16,
-   "params": 117914880,
-   "chars": 1045308899,
-   "tokens": 857567631,
-   "grew": 0,
-   "rolledBack": false,
-   "ownVal": null,
-   "ownScore": null,
-   "d": 768,
-   "loops": 1,
-   "spread": 2.9929,
-   "bytes": 1415115957,
-   "heads": 6,
-   "ctx": 512,
-   "vocab": 6000,
-   "kind": "bpe",
-   "arch": "tpp-loop",
-   "wantWider": false,
-   "layerCap": 16,
-   "mixChanged": false,
-   "bySrc": {
-    "laws": 3.872,
-    "wiki": 2.926,
-    "aozora": 3.2915,
-    "hanrei": 3.4079,
-    "kokkai": 2.5686,
-    "web": 2.8253,
-    "talk": 2.1102
-   },
-   "wrote": [
-    {
-     "start": "わたしは",
-     "text": "わたしはまだ見つけてしまう。 「だってわかります。これは朝の４時半になりますよ。じゃあ若いお母さんは何かやるんですか」と言う。 「そうか、あるんです」と言われる。ちょっと楽しみましょう。「あなたのお母さんは未だに眠ってしまうのですか」"
-    },
-    {
-     "start": "第一条",
-     "text": "第一条 （ 言語学 ） 1973年 8月20日 、 1973年 8月26日 に連邦最高裁判所が判決するまで決裁した。 国連憲章10条上、日本は国連憲章、日本の 情報 上当局を補佐し、特権を維持および上告する（国連憲章37条）。 日本の防衛は、各"
-    },
-    {
-     "start": "この法律において",
-     "text": "この法律において，同年１１月１４日，Ｃとジュネーブで あるＤと共謀の上，Ｄを再度，脱退することができず，ＤからはＤと共謀の上， 殺害の犯行に及んだ。 (2) Ｄは，同年１１月２７日，Ｄ及びＤに対し，「Ｄは，同年１"
-    }
-   ],
-   "loopPct": 1.89,
-   "movedBody": false
-  },
-  {
    "at": "2026-10-28T12:35:58Z",
    "val": 2.7737,
    "prev": 2.7744,
@@ -13151,6 +13088,71 @@
      "気持ち": 0.245
     }
    }
+  },
+  {
+   "at": "2026-11-09T10:38:37Z",
+   "val": 2.7745,
+   "prev": 2.782,
+   "valTag": "fixed-holdout-v1",
+   "stoppedAt": 263,
+   "stuck": 0,
+   "evalTag": "fixed-ix-v1",
+   "secPerStep": 14.9813,
+   "steps": 300,
+   "lr": 5e-05,
+   "lrFixed": true,
+   "bpc": 3.285,
+   "charsPerTok": 1.2185,
+   "score": 2.1274,
+   "scoreW": 2.0,
+   "scoreMode": "talk",
+   "finishMix": 0.5,
+   "lineage": "L1",
+   "layers": 16,
+   "params": 117914880,
+   "chars": 1047537723,
+   "tokens": 859675174,
+   "grew": 0,
+   "rolledBack": false,
+   "ownVal": null,
+   "ownScore": null,
+   "d": 768,
+   "loops": 1,
+   "spread": 2.8338,
+   "bytes": 1415116021,
+   "heads": 6,
+   "ctx": 512,
+   "vocab": 6000,
+   "kind": "bpe",
+   "arch": "tpp-loop",
+   "wantWider": false,
+   "layerCap": 16,
+   "mixChanged": false,
+   "bySrc": {
+    "laws": 3.8176,
+    "wiki": 2.9252,
+    "aozora": 3.2921,
+    "hanrei": 3.4174,
+    "kokkai": 2.5757,
+    "web": 2.8491,
+    "talk": 2.1274
+   },
+   "wrote": [
+    {
+     "start": "わたしは",
+     "text": "わたしはおいしいですよね！」 DW「そうですね、おいしくてうどんです。おいしいですよね！」 CP「いいですね。あと、おいしいですよね！」 DW「はい！私もおいしいです。」 CP「わかりますー。おいしいですよね！」 DW「"
+    },
+    {
+     "start": "第一条",
+     "text": "第一条のみで、2006年4月3日に火星に移行 。 2010年3月13日に愛知県庁では第1次バイパスの西武ライオンズに移行した。 2016年2月16日に「北海道の人々」としてライオンズに移行した。 2017年6月1日、北海道大会にて"
+    },
+    {
+     "start": "この法律において",
+     "text": "この法律において、法人税等改定に伴う税体系を改善するとともに、事務費七千億円を計上することにしております。 以上、新たに各種税制を強化するため、冷戦終結後の反対の旧来の税体系を構築してまいりたいと考えております。」 AA「次に、自己責任の下に、社会保障制度を充実し、社会保障制度を構築するため、社会保障制度全体を充実しつ"
+    }
+   ],
+   "loopPct": 3.03,
+   "movedBody": false
   }
  ],
  "bestVal": 2.7492,
@@ -13201,5 +13203,5 @@
  ],
  "wantWider": false,
  "nextD": 768,
- "bad": 2
+ "bad": 0
 }
