@@ -1,69 +1,6 @@
 {
  "runs": [
   {
-   "at": "2026-10-28T06:11:26Z",
-   "val": 2.7804,
-   "prev": 2.785,
-   "valTag": "fixed-holdout-v1",
-   "stoppedAt": 159,
-   "stuck": 0,
-   "evalTag": "fixed-ix-v1",
-   "secPerStep": 26.1567,
-   "steps": 300,
-   "bpc": 3.2908,
-   "charsPerTok": 1.2189,
-   "score": 2.1063,
-   "scoreW": 2.0,
-   "scoreMode": "talk",
-   "finishMix": 0.5,
-   "lineage": "L1",
-   "layers": 16,
-   "params": 117914880,
-   "chars": 1045308899,
-   "tokens": 857567631,
-   "grew": 0,
-   "rolledBack": false,
-   "ownVal": null,
-   "ownScore": null,
-   "d": 768,
-   "loops": 1,
-   "spread": 3.1241,
-   "bytes": 1415115957,
-   "heads": 6,
-   "ctx": 512,
-   "vocab": 6000,
-   "kind": "bpe",
-   "arch": "tpp-loop",
-   "wantWider": false,
-   "layerCap": 16,
-   "mixChanged": false,
-   "bySrc": {
-    "laws": 3.8864,
-    "wiki": 2.9351,
-    "aozora": 3.2921,
-    "hanrei": 3.4179,
-    "kokkai": 2.5748,
-    "web": 2.8296,
-    "talk": 2.1063
-   },
-   "wrote": [
-    {
-     "start": "わたしは",
-     "text": "わたしは、ハロウィンをやってました。」 CF「わー、確かに。私だったらハロウィンが出るようになってきてますよね。」 BX「はい。最近はアプリでやってますが、最近はまだ見つけてます。」 CF「あ！そうなんですか！すごいですね！」 BX「い"
-    },
-    {
-     "start": "第一条",
-     "text": "第一条ただし書の規定には含まれることとされている。 景気回復の改革については、戦後、国家経済、社会の破壊、経済、文化、産業などの政策が盛んな状態にあったと言われている [ 24 ] 。 また、農産物の緑催しが盛んな地域と農産物の生産は、人口増加に膨らんでいた [ 25 ] 。 経済政策の目標は、"
-    },
-    {
-     "start": "この法律において",
-     "text": "この法律において「ノーマル・ノーマル」は、ノーマルが普及しつつある。 キャンパス内では、ニューヨークはスペインのノーマル・ノーマル・ノーマルズを足し、 サイト デュアルチュアンス「ノーマル・ノーマル」を知ることができる。 ノーマル・ノーマル は、ノーマル"
-    }
-   ],
-   "loopPct": 5.4,
-   "movedBody": false
-  },
-  {
    "at": "2026-10-28T07:29:57Z",
    "val": 2.7792,
    "prev": 2.7804,
@@ -13133,6 +13070,71 @@
    ],
    "loopPct": 13.15,
    "movedBody": false
+  },
+  {
+   "at": "2026-11-09T05:14:26Z",
+   "val": 2.7859,
+   "prev": 2.7824,
+   "valTag": "fixed-holdout-v1",
+   "stoppedAt": 177,
+   "stuck": 0,
+   "evalTag": "fixed-ix-v1",
+   "secPerStep": 23.2395,
+   "steps": 300,
+   "lr": 5e-05,
+   "lrFixed": true,
+   "bpc": 3.2984,
+   "charsPerTok": 1.2185,
+   "score": 2.1268,
+   "scoreW": 2.0,
+   "scoreMode": "talk",
+   "finishMix": 0.5,
+   "lineage": "L1",
+   "layers": 16,
+   "params": 117914880,
+   "chars": 1047537723,
+   "tokens": 859675174,
+   "grew": 0,
+   "rolledBack": false,
+   "ownVal": null,
+   "ownScore": null,
+   "d": 768,
+   "loops": 1,
+   "spread": 2.7501,
+   "bytes": 1415116021,
+   "heads": 6,
+   "ctx": 512,
+   "vocab": 6000,
+   "kind": "bpe",
+   "arch": "tpp-loop",
+   "wantWider": false,
+   "layerCap": 16,
+   "mixChanged": false,
+   "bySrc": {
+    "laws": 3.8368,
+    "wiki": 2.9365,
+    "aozora": 3.3008,
+    "hanrei": 3.4308,
+    "kokkai": 2.5855,
+    "web": 2.8523,
+    "talk": 2.1268
+   },
+   "wrote": [
+    {
+     "start": "わたしは",
+     "text": "わたしは鏡班に出て、栗を開いては、二、三回の鏡班を奉すと、やはり二、三回の鏡台と六回、百回の鏡台で、名前も台詞と共に出ませぬ。」 AA「そして、その鏡台のお店には、今の鏡台が到着すると、今は相応"
+    },
+    {
+     "start": "第一条",
+     "text": "第一条中「中武藩は司法権が現実に発展して、諸地ではないと思っております。」 AA「いずれにしても、その前に、わが国の司法権は、人権もぐっと進むように、また、現在、安保条約により、わが国にとって、わが国が、このようなことをやっているわけではありません。むしろ、世界の及ぶ範囲は"
+    },
+    {
+     "start": "この法律において",
+     "text": "この法律において「現在の馬鹿児島」と呼称すること。 1960年 - 10月下旬に宮崎県沖縄市で開催。 1961年 - 10月26日改称。NREUTODAYSHIVEL カップヌードルの要素が浮かび上がった。 1961年 - 10月に商業"
+    }
+   ],
+   "loopPct": 1.76,
+   "movedBody": false
   }
  ],
  "bestVal": 2.7492,
@@ -13183,5 +13185,5 @@
  ],
  "wantWider": false,
  "nextD": 768,
- "bad": 1
+ "bad": 0
 }
