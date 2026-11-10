@@ -1,69 +1,6 @@
 {
  "runs": [
   {
-   "at": "2026-10-29T19:18:34Z",
-   "val": 2.7818,
-   "prev": 2.7818,
-   "valTag": "fixed-holdout-v1",
-   "stoppedAt": 0,
-   "stuck": 1,
-   "evalTag": "fixed-ix-v1",
-   "secPerStep": 12.7437,
-   "steps": 300,
-   "bpc": 3.2925,
-   "charsPerTok": 1.2189,
-   "score": 2.1113,
-   "scoreW": 2.0,
-   "scoreMode": "talk",
-   "finishMix": 0.5,
-   "lineage": "L1",
-   "layers": 16,
-   "params": 117914880,
-   "chars": 1045308899,
-   "tokens": 857567631,
-   "grew": 0,
-   "rolledBack": true,
-   "ownVal": 2.8104,
-   "ownScore": 2.1321,
-   "d": 768,
-   "loops": 1,
-   "spread": 3.0051,
-   "bytes": 1415115957,
-   "heads": 6,
-   "ctx": 512,
-   "vocab": 6000,
-   "kind": "bpe",
-   "arch": "tpp-loop",
-   "wantWider": false,
-   "layerCap": 16,
-   "mixChanged": false,
-   "bySrc": {
-    "laws": 3.9247,
-    "wiki": 2.9617,
-    "aozora": 3.3261,
-    "hanrei": 3.4579,
-    "kokkai": 2.608,
-    "web": 2.8578,
-    "talk": 2.1321
-   },
-   "wrote": [
-    {
-     "start": "わたしは",
-     "text": "わたしは昨年特に大変安心していました。」 AA「もう一つだけでも、じゃ、ロジックにしてみてください。」 AB「委員長 以上で黛弾の答弁は終了いたしました。」 AA「黒柳は、黄金期について、緊急事態宣言に基づき、早期に特定経費の伸び率を上げてきました"
-    },
-    {
-     "start": "第一条",
-     "text": "第一条によって捕捉される 。 犬に酔っていた人々に「君」を探しようと考え、猫になってしまったこと。 魚類の「魚」（わかしこ）を食べると、魚類は、雌魚類、魚類の生き物、魚類として感じた茎類の 。 季習を行うと、クロ"
-    },
-    {
-     "start": "この法律において",
-     "text": "この法律において「第15回国会衆議院審議権委員になる。 やじは、およそ、あなたは、そういうことか。しかも、だれが本当に縛られているのか、ちょっと、政権のお手伝いをしておられる。 しかしながら、まず、総理は、平成六年の姓を呼び、そして全然これは知らなかった。」 AB「そして、そのこと"
-    }
-   ],
-   "loopPct": 1.61,
-   "movedBody": false
-  },
-  {
    "at": "2026-10-29T20:36:49Z",
    "val": 2.7949,
    "prev": 2.7818,
@@ -13221,6 +13158,71 @@
    ],
    "loopPct": 14.21,
    "movedBody": false
+  },
+  {
+   "at": "2026-11-10T20:39:38Z",
+   "val": 2.7555,
+   "prev": 2.7547,
+   "valTag": "fixed-holdout-v1",
+   "stoppedAt": 153,
+   "stuck": 0,
+   "evalTag": "fixed-ix-v1",
+   "secPerStep": 27.2727,
+   "steps": 300,
+   "lr": 5e-05,
+   "lrFixed": true,
+   "bpc": 3.2624,
+   "charsPerTok": 1.2185,
+   "score": 2.1354,
+   "scoreW": 2.0,
+   "scoreMode": "talk",
+   "finishMix": 0.5,
+   "lineage": "L1",
+   "layers": 16,
+   "params": 117914880,
+   "chars": 1047537723,
+   "tokens": 859675174,
+   "grew": 0,
+   "rolledBack": false,
+   "ownVal": null,
+   "ownScore": null,
+   "d": 768,
+   "loops": 1,
+   "spread": 2.9963,
+   "bytes": 1415116021,
+   "heads": 6,
+   "ctx": 512,
+   "vocab": 6000,
+   "kind": "bpe",
+   "arch": "tpp-loop",
+   "wantWider": false,
+   "layerCap": 16,
+   "mixChanged": false,
+   "bySrc": {
+    "laws": 3.7563,
+    "wiki": 2.9026,
+    "aozora": 3.2689,
+    "hanrei": 3.3979,
+    "kokkai": 2.5588,
+    "web": 2.8213,
+    "talk": 2.1354
+   },
+   "wrote": [
+    {
+     "start": "わたしは",
+     "text": "わたしはかなり見たかったんですよ。」 BM「わたしも考え中です。」 EJ「絶対見たことないです。」 BM「猫とかは、あまり見かけませんか？」 EJ「そうですね。今は猫と遊んでます。」 BM「自分はかわいいほうです。」 EJ「目"
+    },
+    {
+     "start": "第一条",
+     "text": "第一条壁体・核台部分・面管に力を向いて、自ら人間と神の粘土の両方を抜くようにした。 広い光景を、光と電光は光と素分を抜いて、光と光の両方を通じて光を抜くようにした。 光と電光は、光と光の両方の心を抜きながら光を放つように見えたが、光が光と色を変"
+    },
+    {
+     "start": "この法律において",
+     "text": "この法律において、「本件各契約は，そのほか，土地取得の仕組み及び土地取得の仕組みを，費用 として収入とする。」と規定されているところ，本件各契約植 応は，上記契約上，本件契約に基づく営業収益が支払われる中央銀行（以下， 中央銀行に対する第79条第5項上，第94条第５項）が規定されていること，中央銀行を有効に 制限することは�"
+    }
+   ],
+   "loopPct": 0.88,
+   "movedBody": false
   }
  ],
  "bestVal": 2.7492,
@@ -13271,5 +13273,5 @@
  ],
  "wantWider": false,
  "nextD": 768,
- "bad": 0
+ "bad": 1
 }
