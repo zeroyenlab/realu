@@ -1,69 +1,6 @@
 {
  "runs": [
   {
-   "at": "2026-10-29T20:36:49Z",
-   "val": 2.7949,
-   "prev": 2.7818,
-   "valTag": "fixed-holdout-v1",
-   "stoppedAt": 157,
-   "stuck": 0,
-   "evalTag": "fixed-ix-v1",
-   "secPerStep": 26.6048,
-   "steps": 321,
-   "bpc": 3.308,
-   "charsPerTok": 1.2189,
-   "score": 2.1201,
-   "scoreW": 2.0,
-   "scoreMode": "talk",
-   "finishMix": 0.5,
-   "lineage": "L1",
-   "layers": 16,
-   "params": 117914880,
-   "chars": 1045308899,
-   "tokens": 857567631,
-   "grew": 0,
-   "rolledBack": false,
-   "ownVal": null,
-   "ownScore": null,
-   "d": 768,
-   "loops": 1,
-   "spread": 2.9212,
-   "bytes": 1415115957,
-   "heads": 6,
-   "ctx": 512,
-   "vocab": 6000,
-   "kind": "bpe",
-   "arch": "tpp-loop",
-   "wantWider": false,
-   "layerCap": 16,
-   "mixChanged": false,
-   "bySrc": {
-    "laws": 3.9092,
-    "wiki": 2.9468,
-    "aozora": 3.3086,
-    "hanrei": 3.4297,
-    "kokkai": 2.586,
-    "web": 2.8439,
-    "talk": 2.1201
-   },
-   "wrote": [
-    {
-     "start": "わたしは",
-     "text": "わたしはエレベーター1の乗降人員で乗り降り出す。 Shibi Number Wi-Fi で乗車した社長の社長。 上田市の ゲームバランス のミニ番組。 ゲームボーイカラーView Shirum Victora のPlayStation"
-    },
-    {
-     "start": "第一条",
-     "text": "第一条にまったくのきていりたいというふうに思います。」 AA「現段階でどういう意味でいえば、世界全体で見るというのが、今の世界は、、いわゆるエンゲルバーグのように、戦争などをやるということはありますか。」 AB「国務大臣 今私も、今度、侵"
-    },
-    {
-     "start": "この法律において",
-     "text": "この法律において「組合」（報道局）の記事を掲載している。 2016年 4月1日 より、インターネットサービスの ANN に対して、各企業のインターネットサービスの インターネットサービス の記事を掲載。 株式会社インターネットサービスの 電子書籍 が日本円でメディアサービスに統合された [ 12 ] 。 2018年 10月"
-    }
-   ],
-   "loopPct": 2.3,
-   "movedBody": false
-  },
-  {
    "at": "2026-10-29T21:53:51Z",
    "val": 2.7896,
    "prev": 2.7949,
@@ -13223,9 +13160,84 @@
    ],
    "loopPct": 0.88,
    "movedBody": false
+  },
+  {
+   "at": "2026-11-10T21:59:59Z",
+   "val": 2.7469,
+   "prev": 2.7555,
+   "valTag": "fixed-holdout-v1",
+   "stoppedAt": 196,
+   "stuck": 0,
+   "evalTag": "fixed-ix-v1",
+   "secPerStep": 20.8155,
+   "steps": 300,
+   "lr": 5e-05,
+   "lrFixed": true,
+   "bpc": 3.2523,
+   "charsPerTok": 1.2185,
+   "score": 2.1327,
+   "scoreW": 2.0,
+   "scoreMode": "talk",
+   "finishMix": 0.5,
+   "lineage": "L1",
+   "layers": 16,
+   "params": 117914880,
+   "chars": 1047537723,
+   "tokens": 859675174,
+   "grew": 0,
+   "rolledBack": false,
+   "ownVal": null,
+   "ownScore": null,
+   "d": 768,
+   "loops": 1,
+   "spread": 2.8429,
+   "bytes": 1415116021,
+   "heads": 6,
+   "ctx": 512,
+   "vocab": 6000,
+   "kind": "bpe",
+   "arch": "tpp-loop",
+   "wantWider": false,
+   "layerCap": 16,
+   "mixChanged": false,
+   "bySrc": {
+    "laws": 3.7512,
+    "wiki": 2.9055,
+    "aozora": 3.2606,
+    "hanrei": 3.4092,
+    "kokkai": 2.552,
+    "web": 2.8199,
+    "talk": 2.1327
+   },
+   "wrote": [
+    {
+     "start": "わたしは",
+     "text": "わたしは、それでお興味のようです」と呼ぶ者ありやとか言ってきたのですが、短いのですが、酒井副大臣というのは、もう少し時間がかかっておりますので、一緒に質問してもらいたいと思います」 AA「国務大臣 いろいろなことは、御指摘のとおり、少なくとも酒井局長が"
+    },
+    {
+     "start": "第一条",
+     "text": "第一条の措置を認めるときには、私どもは、それなくして、今この制度の法律により、ージニアの法律によれば、さまざまな対象を広げて、そういう点で、私どもは、そういう意味では、これは、今回の法案を等賛成したのだと思いますが、時間もありますので、そこで、私どもは、今後、この法"
+    },
+    {
+     "start": "この法律において",
+     "text": "この法律においても、自立支援法を法律に制定することは、今後もしっかりと法制をもってしてもらいたいと思っております。」 AA「今後、法案の趣旨を踏まえて、これまでの細川内閣としてのあり方については、少子化対策として、社会保障制度を一層充実させるべく、しっかりと取り組んでまいりたいと思"
+    }
+   ],
+   "loopPct": 3.88,
+   "movedBody": false,
+   "rikai": {
+    "pmi": 0.573,
+    "raw": 0.463,
+    "n": 300,
+    "byAsk": {
+     "したい事": 0.511,
+     "対象": 0.828,
+     "気持ち": 0.434
+    }
+   }
   }
  ],
- "bestVal": 2.7492,
+ "bestVal": 2.7469,
  "layers": 16,
  "params": 117914880,
  "born": "2026-09-08T15:11:54Z",
@@ -13273,5 +13285,5 @@
  ],
  "wantWider": false,
  "nextD": 768,
- "bad": 1
+ "bad": 0
 }
