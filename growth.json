@@ -1,69 +1,6 @@
 {
  "runs": [
   {
-   "at": "2026-10-29T09:11:30Z",
-   "val": 2.7673,
-   "prev": 2.7699,
-   "valTag": "fixed-holdout-v1",
-   "stoppedAt": 158,
-   "stuck": 0,
-   "evalTag": "fixed-ix-v1",
-   "secPerStep": 26.4702,
-   "steps": 300,
-   "bpc": 3.2754,
-   "charsPerTok": 1.2189,
-   "score": 2.11,
-   "scoreW": 2.0,
-   "scoreMode": "talk",
-   "finishMix": 0.5,
-   "lineage": "L1",
-   "layers": 16,
-   "params": 117914880,
-   "chars": 1045308899,
-   "tokens": 857567631,
-   "grew": 0,
-   "rolledBack": false,
-   "ownVal": null,
-   "ownScore": null,
-   "d": 768,
-   "loops": 1,
-   "spread": 3.125,
-   "bytes": 1415115957,
-   "heads": 6,
-   "ctx": 512,
-   "vocab": 6000,
-   "kind": "bpe",
-   "arch": "tpp-loop",
-   "wantWider": false,
-   "layerCap": 16,
-   "mixChanged": false,
-   "bySrc": {
-    "laws": 3.8579,
-    "wiki": 2.9164,
-    "aozora": 3.2854,
-    "hanrei": 3.3996,
-    "kokkai": 2.5672,
-    "web": 2.8146,
-    "talk": 2.11
-   },
-   "wrote": [
-    {
-     "start": "わたしは",
-     "text": "わたしはおシリーズ化してるのですが、公式のお仕事ですか？」 BM「そうですね。何かまたは行ってもお仕事でしょうか。」 AX「お仕事ですか？」 BM「いえ、3人でなんです。」 AX「それはそれは勢いあります。最近はお仕事だとどこに行ってます"
-    },
-    {
-     "start": "第一条",
-     "text": "第一条 （説明） （金額） 第三十一条 前条の記載は、次に掲げる又は名称とする。 この二週間から二週間前までに二週間以上のときは、その時から二週間前までに一週間以上二週間から三週間以上実施する。 前年からの最後の派遣の日の前月まで 前年に比して５月末までに三回以上四回以上 前年以降の自己負担分は、前年の五月から一週間程度のを乗じた数および年々１回、"
-    },
-    {
-     "start": "この法律において",
-     "text": "この法律において」 BR「そうなんですね！中学はどちらかと言えば、今日は何をされていましたか？」 CJ「今は夏休みです。」 BR「そうなんですね！日差しばかりですか。」 CJ「ですよね。でも今日は熱中症が熱中症になりました。」 BR「"
-    }
-   ],
-   "loopPct": 2.52,
-   "movedBody": false
-  },
-  {
    "at": "2026-10-29T10:28:51Z",
    "val": 2.7668,
    "prev": 2.7673,
@@ -13195,6 +13132,71 @@
    ],
    "loopPct": 20.0,
    "movedBody": false
+  },
+  {
+   "at": "2026-11-10T09:45:50Z",
+   "val": 2.7628,
+   "prev": 2.7621,
+   "valTag": "fixed-holdout-v1",
+   "stoppedAt": 106,
+   "stuck": 0,
+   "evalTag": "fixed-ix-v1",
+   "secPerStep": 41.9563,
+   "steps": 300,
+   "lr": 5e-05,
+   "lrFixed": true,
+   "bpc": 3.2711,
+   "charsPerTok": 1.2185,
+   "score": 2.141,
+   "scoreW": 2.0,
+   "scoreMode": "talk",
+   "finishMix": 0.5,
+   "lineage": "L1",
+   "layers": 16,
+   "params": 117914880,
+   "chars": 1047537723,
+   "tokens": 859675174,
+   "grew": 0,
+   "rolledBack": false,
+   "ownVal": null,
+   "ownScore": null,
+   "d": 768,
+   "loops": 1,
+   "spread": 2.6882,
+   "bytes": 1415116021,
+   "heads": 6,
+   "ctx": 512,
+   "vocab": 6000,
+   "kind": "bpe",
+   "arch": "tpp-loop",
+   "wantWider": false,
+   "layerCap": 16,
+   "mixChanged": false,
+   "bySrc": {
+    "laws": 3.7868,
+    "wiki": 2.9081,
+    "aozora": 3.2597,
+    "hanrei": 3.4182,
+    "kokkai": 2.5704,
+    "web": 2.8356,
+    "talk": 2.141
+   },
+   "wrote": [
+    {
+     "start": "わたしは",
+     "text": "わたしは、死ぬまでは逃げるために、あまりに黒くなって、どんどんぴたりと微かに湧いてあった。けれども、そのとき、思わず、その時、まだ泣き出していたのは、一度もありません。 「そういえば、いずれにしまったので、お国をあげて、まず、愛車で、あしたの"
+    },
+    {
+     "start": "第一条",
+     "text": "第一条 <記事 神奈川県立川俊夫> 神奈川県立川俊夫（ひがしがまい）は、日本のチャンピオン業界の一つ。また、ヤマネ。母校を経営、授業を支援。 1960年（昭和35年）4月1日 - 「大阪ジャンクション」に改称、同時に「ジャン"
+    },
+    {
+     "start": "この法律において",
+     "text": "この法律においては、緊急に�付きです。」 AA「国務大臣 緊急事態宣言発出につきましては、先ほど申し上げましたように、緊急事態宣言発出時連鎖的には、これは緊急事態宣言発出時にはそういう措置がとられているわけでございます。 しかし、そこは私の方からもお答えしたいと思うわけでございますが、これは"
+    }
+   ],
+   "loopPct": 2.34,
+   "movedBody": false
   }
  ],
  "bestVal": 2.7492,
@@ -13245,5 +13247,5 @@
  ],
  "wantWider": false,
  "nextD": 768,
- "bad": 1
+ "bad": 2
 }
