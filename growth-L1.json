@@ -1,69 +1,6 @@
 {
  "runs": [
   {
-   "at": "2026-10-29T18:05:16Z",
-   "val": 2.7818,
-   "prev": 2.7885,
-   "valTag": "fixed-holdout-v1",
-   "stoppedAt": 158,
-   "stuck": 0,
-   "evalTag": "fixed-ix-v1",
-   "secPerStep": 26.3522,
-   "steps": 321,
-   "bpc": 3.2925,
-   "charsPerTok": 1.2189,
-   "score": 2.1113,
-   "scoreW": 2.0,
-   "scoreMode": "talk",
-   "finishMix": 0.5,
-   "lineage": "L1",
-   "layers": 16,
-   "params": 117914880,
-   "chars": 1045308899,
-   "tokens": 857567631,
-   "grew": 0,
-   "rolledBack": false,
-   "ownVal": null,
-   "ownScore": null,
-   "d": 768,
-   "loops": 1,
-   "spread": 2.8105,
-   "bytes": 1415115957,
-   "heads": 6,
-   "ctx": 512,
-   "vocab": 6000,
-   "kind": "bpe",
-   "arch": "tpp-loop",
-   "wantWider": false,
-   "layerCap": 16,
-   "mixChanged": false,
-   "bySrc": {
-    "laws": 3.8743,
-    "wiki": 2.935,
-    "aozora": 3.3032,
-    "hanrei": 3.4133,
-    "kokkai": 2.5788,
-    "web": 2.8337,
-    "talk": 2.1113
-   },
-   "wrote": [
-    {
-     "start": "わたしは",
-     "text": "わたしは寂しい笑みが覚めたり。」 BF「あはは！そうですよね！寂しいですね。」 AC「ありがとうございました！では、また！」 AC「はじめまして、こんにちはー。」 BF「はーい、"
-    },
-    {
-     "start": "第一条",
-     "text": "第一条におきましては、もう一度実行に移すことになり得ないので、その辺が十分な財源を確保していこうと思いますが、いかがでしょうか。」 AA「政府参考人 御指摘のように、先ほども御指摘いただきましたように、今私がこうした検討課題として出された問題につきまして、私はこれは、もっ"
-    },
-    {
-     "start": "この法律において",
-     "text": "この法律において「 イノベーション 」を買収し、2013年9月29日にプレミアムを買収した。 マルチメディアでは、2018年10月19日に ウィリアム・バッティング を買収した。 同年4月19日に ウィリアム・ハーヴァード が買収し、 ウィリアム・オーテ"
-    }
-   ],
-   "loopPct": 1.86,
-   "movedBody": false
-  },
-  {
    "at": "2026-10-29T19:18:34Z",
    "val": 2.7818,
    "prev": 2.7818,
@@ -13219,6 +13156,71 @@
    ],
    "loopPct": 4.43,
    "movedBody": false
+  },
+  {
+   "at": "2026-11-10T19:17:47Z",
+   "val": 2.7547,
+   "prev": 2.7567,
+   "valTag": "fixed-holdout-v1",
+   "stoppedAt": 135,
+   "stuck": 0,
+   "evalTag": "fixed-ix-v1",
+   "secPerStep": 31.6162,
+   "steps": 300,
+   "lr": 5e-05,
+   "lrFixed": true,
+   "bpc": 3.2614,
+   "charsPerTok": 1.2185,
+   "score": 2.1397,
+   "scoreW": 2.0,
+   "scoreMode": "talk",
+   "finishMix": 0.5,
+   "lineage": "L1",
+   "layers": 16,
+   "params": 117914880,
+   "chars": 1047537723,
+   "tokens": 859675174,
+   "grew": 0,
+   "rolledBack": false,
+   "ownVal": null,
+   "ownScore": null,
+   "d": 768,
+   "loops": 1,
+   "spread": 2.8332,
+   "bytes": 1415116021,
+   "heads": 6,
+   "ctx": 512,
+   "vocab": 6000,
+   "kind": "bpe",
+   "arch": "tpp-loop",
+   "wantWider": false,
+   "layerCap": 16,
+   "mixChanged": false,
+   "bySrc": {
+    "laws": 3.7566,
+    "wiki": 2.9035,
+    "aozora": 3.2595,
+    "hanrei": 3.4007,
+    "kokkai": 2.5673,
+    "web": 2.818,
+    "talk": 2.1397
+   },
+   "wrote": [
+    {
+     "start": "わたしは",
+     "text": "わたしは、しばらく、何のために、なけりゃ、急いで、その下に、下へ引合わせて、 「今、」と云うように、 「わたくしたら、それっきり、お前たちを助けたくなったのだ。そう云って、今度お前たちを引き取って、いきなまじゃ。いや、今夜は、そろそろ"
+    },
+    {
+     "start": "第一条",
+     "text": "第一条による欧米の共同声明」という文言が使われている）。 『The The Norther Tower of The The The British Hellorer in The Fly Greating brited Commin"
+    },
+    {
+     "start": "この法律において",
+     "text": "この法律において「認定しようとする認定証」とあるのは「認定を受けた認定証」と、同項第三号中「認定証」とあるのは「認定証」と読み替えるものとする。 認定認定証については、認定証の交付を受けた認定証、認定証及び認定証の提出については、認定証は、認定証をしていないが、認定証は、認定証会社のみなし内容を示さない。 認定証又は認定証を提示した以内に、認定証を提示した旨、認定証又は認定証を提示した旨、認定証又は認定証を提示"
+    }
+   ],
+   "loopPct": 14.21,
+   "movedBody": false
   }
  ],
  "bestVal": 2.7492,
@@ -13269,5 +13271,5 @@
  ],
  "wantWider": false,
  "nextD": 768,
- "bad": 2
+ "bad": 0
 }
