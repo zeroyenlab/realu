@@ -1,69 +1,6 @@
 {
  "runs": [
   {
-   "at": "2026-10-29T02:45:17Z",
-   "val": 2.7795,
-   "prev": 2.7707,
-   "valTag": "fixed-holdout-v1",
-   "stoppedAt": 0,
-   "stuck": 0,
-   "evalTag": "fixed-ix-v1",
-   "secPerStep": 12.8796,
-   "steps": 300,
-   "bpc": 3.2898,
-   "charsPerTok": 1.2189,
-   "score": 2.109,
-   "scoreW": 2.0,
-   "scoreMode": "talk",
-   "finishMix": 0.5,
-   "lineage": "L1",
-   "layers": 16,
-   "params": 117914880,
-   "chars": 1045308899,
-   "tokens": 857567631,
-   "grew": 0,
-   "rolledBack": false,
-   "ownVal": null,
-   "ownScore": null,
-   "d": 768,
-   "loops": 1,
-   "spread": 2.7584,
-   "bytes": 1415115957,
-   "heads": 6,
-   "ctx": 512,
-   "vocab": 6000,
-   "kind": "bpe",
-   "arch": "tpp-loop",
-   "wantWider": false,
-   "layerCap": 16,
-   "mixChanged": false,
-   "bySrc": {
-    "laws": 3.8708,
-    "wiki": 2.9298,
-    "aozora": 3.2901,
-    "hanrei": 3.4102,
-    "kokkai": 2.5758,
-    "web": 2.8274,
-    "talk": 2.109
-   },
-   "wrote": [
-    {
-     "start": "わたしは",
-     "text": "わたしはしゃべりの人です。」 BP「ですよね。私は家では珍しいのに割と家です。」 EJ「珍しいですね！家でも！私も家では珍しくないです。」 BP「ですね！家では珍しくなかったら、まず珍しい！」 EJ「そう"
-    },
-    {
-     "start": "第一条",
-     "text": "第一条。 2007年（平成19年）10月：東京都千代田区の721台HTDを導入。 2008年（平成20年）10月：青森県の2009年（平成21年）7月に開局。 2009年（平成21年）2月：第1回八尾観光工会女子大学. 2"
-    },
-    {
-     "start": "この法律において",
-     "text": "この法律において「地域間協定」欄が法律によって廃止されることになる。 しかし、これが法律的法的義務を害するのではない。 「地域間の相対的協力」を検討すると、地域間の理解が得られることになる。 これは地域間の交流は地域間の交流を通じて、地域間交流が可能なので、地域間の交流がほとんど一致し、地域間交流は"
-    }
-   ],
-   "loopPct": 8.27,
-   "movedBody": false
-  },
-  {
    "at": "2026-10-29T04:02:43Z",
    "val": 2.7723,
    "prev": 2.7795,
@@ -13184,6 +13121,71 @@
     }
    ],
    "loopPct": 14.64,
+   "movedBody": false
+  },
+  {
+   "at": "2026-11-10T02:51:33Z",
+   "val": 2.7647,
+   "prev": 2.7664,
+   "valTag": "fixed-holdout-v1",
+   "stoppedAt": 137,
+   "stuck": 0,
+   "evalTag": "fixed-ix-v1",
+   "secPerStep": 31.174,
+   "steps": 300,
+   "lr": 5e-05,
+   "lrFixed": true,
+   "bpc": 3.2734,
+   "charsPerTok": 1.2185,
+   "score": 2.1314,
+   "scoreW": 2.0,
+   "scoreMode": "talk",
+   "finishMix": 0.5,
+   "lineage": "L1",
+   "layers": 16,
+   "params": 117914880,
+   "chars": 1047537723,
+   "tokens": 859675174,
+   "grew": 0,
+   "rolledBack": false,
+   "ownVal": null,
+   "ownScore": null,
+   "d": 768,
+   "loops": 1,
+   "spread": 2.8402,
+   "bytes": 1415116021,
+   "heads": 6,
+   "ctx": 512,
+   "vocab": 6000,
+   "kind": "bpe",
+   "arch": "tpp-loop",
+   "wantWider": false,
+   "layerCap": 16,
+   "mixChanged": false,
+   "bySrc": {
+    "laws": 3.793,
+    "wiki": 2.9154,
+    "aozora": 3.2743,
+    "hanrei": 3.4274,
+    "kokkai": 2.5629,
+    "web": 2.8406,
+    "talk": 2.1314
+   },
+   "wrote": [
+    {
+     "start": "わたしは",
+     "text": "わたしは、恐らく、二人でも、伝えます。……。まあ、、」 藤原は、そればかりで満足させようと思った。 「そうかな。、ここに永いところは、もうすっかり変ってるんだし。……」 「僕が一番いいんだ。僕は、そういうところを、逃げどんと、うんとあ"
+    },
+    {
+     "start": "第一条",
+     "text": "第一条についで決めてまいります。」 AB「藤井委員長 この際、中藤谷君から関連質疑の申し出があります。藤井君の持ち時間の範囲内でこれを許します。中藤義昭君。」 AA「中西委員 自由民主党になりまして、本当にお手伝いするのは、一つ"
+    },
+    {
+     "start": "この法律において",
+     "text": "この法律において「東京都区部市長」とあるのは「東京都区部市長」と総称する。 東京都区部市長 - 東京都区部市長（2021年4月1日現在、同区の内部部長）」 東海漕 - 東京都千代田区長（2026年3月1日現在）、東京都区部市長（2026年4"
+    }
+   ],
+   "loopPct": 5.98,
    "movedBody": false
   }
  ],
