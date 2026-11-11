@@ -1,69 +1,6 @@
 {
  "runs": [
   {
-   "at": "2026-10-30T10:35:17Z",
-   "val": 2.7816,
-   "prev": 2.7924,
-   "valTag": "fixed-holdout-v1",
-   "stoppedAt": 142,
-   "stuck": 0,
-   "evalTag": "fixed-ix-v1",
-   "secPerStep": 29.7959,
-   "steps": 319,
-   "bpc": 3.2923,
-   "charsPerTok": 1.2189,
-   "score": 2.1043,
-   "scoreW": 2.0,
-   "scoreMode": "talk",
-   "finishMix": 0.5,
-   "lineage": "L1",
-   "layers": 16,
-   "params": 117914880,
-   "chars": 1045308899,
-   "tokens": 857567631,
-   "grew": 0,
-   "rolledBack": false,
-   "ownVal": null,
-   "ownScore": null,
-   "d": 768,
-   "loops": 1,
-   "spread": 3.014,
-   "bytes": 1415115957,
-   "heads": 6,
-   "ctx": 512,
-   "vocab": 6000,
-   "kind": "bpe",
-   "arch": "tpp-loop",
-   "wantWider": false,
-   "layerCap": 16,
-   "mixChanged": false,
-   "bySrc": {
-    "laws": 3.8732,
-    "wiki": 2.9351,
-    "aozora": 3.2963,
-    "hanrei": 3.413,
-    "kokkai": 2.5773,
-    "web": 2.8288,
-    "talk": 2.1043
-   },
-   "wrote": [
-    {
-     "start": "わたしは",
-     "text": "わたしは、本来は相手が口をこめて、とんでもない口をすぐに空を見つめて、自分を殺し、黙って眼を見ると、主人は愚痴り、または恐らくその顔を見ると、他人の顔を見ては認められない、と言つて、下女へはいって来た。 すると、黙ってみると、なんだか、�"
-    },
-    {
-     "start": "第一条",
-     "text": "第一条の明言に反し、日本共産党の党首を辞任した。この皇族議員は、本院議員としての戦いを引き起こすような逸話を残すことになった。 そのため、日本共産党は太平洋戦争の主力は、国民政府の自由・民主主義の自由、憲法の公権力の跡が明らかになり、宗教、教育、教育"
-    },
-    {
-     "start": "この法律において",
-     "text": "この法律において「辛味丸」（きささき） 1950年 （昭和25年） 7月 - 講談社 の 講談社文庫 に改題、入社。 1953年 （昭和28年） 7月 - 講談社文庫 （講談社） 1952年 （昭和27年） 2月27日 - 講談社文庫"
-    }
-   ],
-   "loopPct": 3.25,
-   "movedBody": false
-  },
-  {
    "at": "2026-10-30T11:50:17Z",
    "val": 2.7829,
    "prev": 2.7816,
@@ -13295,9 +13232,74 @@
    ],
    "loopPct": 9.76,
    "movedBody": false
+  },
+  {
+   "at": "2026-11-11T12:38:10Z",
+   "val": 2.7383,
+   "prev": 2.7392,
+   "valTag": "fixed-holdout-v1",
+   "stoppedAt": 171,
+   "stuck": 0,
+   "evalTag": "fixed-ix-v1",
+   "secPerStep": 24.2218,
+   "steps": 300,
+   "lr": 5e-05,
+   "lrFixed": true,
+   "bpc": 3.242,
+   "charsPerTok": 1.2185,
+   "score": 2.1373,
+   "scoreW": 2.0,
+   "scoreMode": "talk",
+   "finishMix": 0.5,
+   "lineage": "L1",
+   "layers": 16,
+   "params": 117914880,
+   "chars": 1047537723,
+   "tokens": 859675174,
+   "grew": 0,
+   "rolledBack": false,
+   "ownVal": null,
+   "ownScore": null,
+   "d": 768,
+   "loops": 1,
+   "spread": 2.8503,
+   "bytes": 1415116021,
+   "heads": 6,
+   "ctx": 512,
+   "vocab": 6000,
+   "kind": "bpe",
+   "arch": "tpp-loop",
+   "wantWider": false,
+   "layerCap": 16,
+   "mixChanged": false,
+   "bySrc": {
+    "laws": 3.7267,
+    "wiki": 2.8869,
+    "aozora": 3.2504,
+    "hanrei": 3.4163,
+    "kokkai": 2.5491,
+    "web": 2.8065,
+    "talk": 2.1373
+   },
+   "wrote": [
+    {
+     "start": "わたしは",
+     "text": "わたしは驚きました。」 FJ「カレーってなんか食べたくなってきましたね、そうめんは食べたくなりますよね。」 GJ「はい。キムチもいろいろ種類も多いですが。」 FJ「お、それはおいしいですね、おいしさを感じるとあっという間に野菜を食べます。」"
+    },
+    {
+     "start": "第一条",
+     "text": "第一条第六十五条の二十七第二項にタッパーサイズが置かれるよう取り扱ってきたため、そのタッチダウンとしてのタッチダウンが必要になった。 トップチーム：2012年1月に スマーク・マーク がユニバーサル・スタジオで開催。 トップチーム：2021年4月に優勝者：202"
+    },
+    {
+     "start": "この法律において",
+     "text": "この法律において「緑化」とは、機関名以外に「緑化」とは、ドイツの物理学者『 哲学 』 [ 1 ] 。 1946年 の著書『視覚』では、植物学者の ユダヤ人 の 動物学者 ロバート・ジョンソン が、「真の生物学的価値」を否定し、 計画論 的な"
+    }
+   ],
+   "loopPct": 2.43,
+   "movedBody": false
   }
  ],
- "bestVal": 2.7392,
+ "bestVal": 2.7383,
  "layers": 16,
  "params": 117914880,
  "born": "2026-09-08T15:11:54Z",
@@ -13345,5 +13347,5 @@
  ],
  "wantWider": false,
  "nextD": 768,
- "bad": 1
+ "bad": 0
 }
