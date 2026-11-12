@@ -1,69 +1,6 @@
 {
  "runs": [
   {
-   "at": "2026-10-31T21:35:43Z",
-   "val": 2.7646,
-   "prev": 2.7656,
-   "valTag": "fixed-holdout-v1",
-   "stoppedAt": 177,
-   "stuck": 0,
-   "evalTag": "fixed-ix-v1",
-   "secPerStep": 23.3066,
-   "steps": 300,
-   "bpc": 3.2732,
-   "charsPerTok": 1.2185,
-   "score": 2.095,
-   "scoreW": 2.0,
-   "scoreMode": "talk",
-   "finishMix": 0.5,
-   "lineage": "L1",
-   "layers": 16,
-   "params": 117914880,
-   "chars": 1047537723,
-   "tokens": 859675174,
-   "grew": 0,
-   "rolledBack": false,
-   "ownVal": null,
-   "ownScore": null,
-   "d": 768,
-   "loops": 1,
-   "spread": 2.8288,
-   "bytes": 1415116021,
-   "heads": 6,
-   "ctx": 512,
-   "vocab": 6000,
-   "kind": "bpe",
-   "arch": "tpp-loop",
-   "wantWider": false,
-   "layerCap": 16,
-   "mixChanged": false,
-   "bySrc": {
-    "laws": 3.8435,
-    "wiki": 2.9122,
-    "aozora": 3.2836,
-    "hanrei": 3.4025,
-    "kokkai": 2.5679,
-    "web": 2.8023,
-    "talk": 2.095
-   },
-   "wrote": [
-    {
-     "start": "わたしは",
-     "text": "わたしは先日呼ばれていた。その流れでいたときには、ロングセラーで、大車輪を使ってみると、一台の乗客だろうと思った。 ロングセラーのことを「雀の黒摩」と呼んだ。ロングセラーのように、ロングセラーになったのは、1987年にロングセラーで生まれる間もない3人が乗ったことだった"
-    },
-    {
-     "start": "第一条",
-     "text": "第一条している。 2017年11月15日、 サハラ でラヴォナーラに登場する真珠湾攻撃隊が、ラヴォナーラがの戦闘で合流し、クララへの攻撃によって戦闘するという、PPと同盟戦線は終結した。 回帰するまで、ナイト日本軍との戦闘では"
-    },
-    {
-     "start": "この法律において",
-     "text": "この法律において「 「 デベロポリペ 」（ Roderation Pintinia ）を使うことがある。 なお、これは、アジア系の マレーシア 系の 異常突起 （ Michael Little ）を使って生じようとしていた。 2000年代以降、イギリス系 バ"
-    }
-   ],
-   "loopPct": 6.01,
-   "movedBody": false
-  },
-  {
    "at": "2026-10-31T22:42:35Z",
    "val": 2.7689,
    "prev": 2.7646,
@@ -13387,6 +13324,71 @@
    ],
    "loopPct": 4.21,
    "movedBody": false
+  },
+  {
+   "at": "2026-11-12T23:34:52Z",
+   "val": 2.7107,
+   "prev": 2.7154,
+   "valTag": "fixed-holdout-v1",
+   "stoppedAt": 149,
+   "stuck": 0,
+   "evalTag": "fixed-ix-v1",
+   "secPerStep": 28.3377,
+   "steps": 435,
+   "lr": 5e-05,
+   "lrFixed": true,
+   "bpc": 3.2093,
+   "charsPerTok": 1.2185,
+   "score": 2.1196,
+   "scoreW": 2.0,
+   "scoreMode": "talk",
+   "finishMix": 0.5,
+   "lineage": "L1",
+   "layers": 16,
+   "params": 117914880,
+   "chars": 1047537723,
+   "tokens": 859675174,
+   "grew": 0,
+   "rolledBack": false,
+   "ownVal": null,
+   "ownScore": null,
+   "d": 768,
+   "loops": 1,
+   "spread": 2.7885,
+   "bytes": 1415116021,
+   "heads": 6,
+   "ctx": 512,
+   "vocab": 6000,
+   "kind": "bpe",
+   "arch": "tpp-loop",
+   "wantWider": false,
+   "layerCap": 16,
+   "mixChanged": false,
+   "bySrc": {
+    "laws": 3.666,
+    "wiki": 2.8565,
+    "aozora": 3.216,
+    "hanrei": 3.3828,
+    "kokkai": 2.5352,
+    "web": 2.7885,
+    "talk": 2.1196
+   },
+   "wrote": [
+    {
+     "start": "わたしは",
+     "text": "わたしは、彼女が引き取ろうと思って、彼女を見つけて「あなたに制裁を許せ」と言いかけても、彼女の代弁者を許すだけではないと語っている 。 「少年時代、少年」は、家事収入や家族困窮地に陥るが、彼女が子供を殺したために大層惨敗。 「少年は何"
+    },
+    {
+     "start": "第一条",
+     "text": "第一条 前項 会社ＢあるいはＣ株式会社（以下「Ｂ署」という。）は、当該会社に対し、当該投資事業有限責任事業に基づく事業の内容の照合、実施等から距離を置き、かつ、当該会社に対し、当該会社を当事者とし、当該会社に対する優先的弁解及び廣池の口実に対し、当該会社に対し、当該会社を当事者とし、当該会社を当事者とし、当該会社を当事者とし、当該会社を当事者とし、当該会社を"
+    },
+    {
+     "start": "この法律において",
+     "text": "この法律において「）ととも」している。 ↑ “ NHK新聞放送 ”. NHKニュース . NHK . 2022年1月18日閲覧。 ↑ “ NHKアーカイブス [May ] 「NHK」 ”. NHKニュース新聞 (2024年4月19日)."
+    }
+   ],
+   "loopPct": 13.85,
+   "movedBody": false
   }
  ],
  "bestVal": 2.709,
@@ -13437,5 +13439,5 @@
  ],
  "wantWider": false,
  "nextD": 768,
- "bad": 1
+ "bad": 0
 }
