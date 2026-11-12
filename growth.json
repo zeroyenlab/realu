@@ -1,69 +1,6 @@
 {
  "runs": [
   {
-   "at": "2026-10-31T08:05:08Z",
-   "val": 2.7648,
-   "prev": 2.7649,
-   "valTag": "fixed-holdout-v1",
-   "stoppedAt": 160,
-   "stuck": 0,
-   "evalTag": "fixed-ix-v1",
-   "secPerStep": 26.0672,
-   "steps": 300,
-   "bpc": 3.2734,
-   "charsPerTok": 1.2185,
-   "score": 2.098,
-   "scoreW": 2.0,
-   "scoreMode": "talk",
-   "finishMix": 0.5,
-   "lineage": "L1",
-   "layers": 16,
-   "params": 117914880,
-   "chars": 1047537723,
-   "tokens": 859675174,
-   "grew": 0,
-   "rolledBack": false,
-   "ownVal": null,
-   "ownScore": null,
-   "d": 768,
-   "loops": 1,
-   "spread": 2.7704,
-   "bytes": 1415116021,
-   "heads": 6,
-   "ctx": 512,
-   "vocab": 6000,
-   "kind": "bpe",
-   "arch": "tpp-loop",
-   "wantWider": false,
-   "layerCap": 16,
-   "mixChanged": false,
-   "bySrc": {
-    "laws": 3.841,
-    "wiki": 2.9107,
-    "aozora": 3.2876,
-    "hanrei": 3.4086,
-    "kokkai": 2.5691,
-    "web": 2.8057,
-    "talk": 2.098
-   },
-   "wrote": [
-    {
-     "start": "わたしは",
-     "text": "わたしは、空を見てて、何も、帰って来たから、来てくれという声がした。 「こんなに前へは行ってるんですから、ほんとに。」 「だいぶん前にお前になって、今度はお前が赤ん坊に這入って来たんじゃないか。」 「赤ん坊だ、議論は出来ねえ。」"
-    },
-    {
-     "start": "第一条",
-     "text": "第一条に、それぞれ設けられた。 この規則は、 線形 または 線形 ・ 線形 ・ 分線 第五の概念を、 線形 と呼ぶ。 線形 ・ 線形 ・ 線形 の 線形 などを、 線形 ・ 線型 ・ 線形 ・ 線形 ・ 線形 ・ 線形 ・ 線形 ・ 線形 など"
-    },
-    {
-     "start": "この法律において",
-     "text": "この法律において「改革」とは、 経済 、 労働 、 企業 、 資本主義 、 企業 、 企業 、 労働党 、 企業 、 国民 、民主主義、 企業 、 企業 、 企業 など。 なお、本来は 企業 や 企業 の雇用 属性 や 働き方 を取り入れることが多い。 また、同じ 企業 、企業、 生産"
-    }
-   ],
-   "loopPct": 26.95,
-   "movedBody": false
-  },
-  {
    "at": "2026-10-31T09:26:56Z",
    "val": 2.7645,
    "prev": 2.7648,
@@ -13347,6 +13284,71 @@
      "気持ち": 0.292
     }
    }
+  },
+  {
+   "at": "2026-11-12T10:10:37Z",
+   "val": 2.7273,
+   "prev": 2.7225,
+   "valTag": "fixed-holdout-v1",
+   "stoppedAt": 170,
+   "stuck": 0,
+   "evalTag": "fixed-ix-v1",
+   "secPerStep": 24.3239,
+   "steps": 329,
+   "lr": 5e-05,
+   "lrFixed": true,
+   "bpc": 3.229,
+   "charsPerTok": 1.2185,
+   "score": 2.1064,
+   "scoreW": 2.0,
+   "scoreMode": "talk",
+   "finishMix": 0.5,
+   "lineage": "L1",
+   "layers": 16,
+   "params": 117914880,
+   "chars": 1047537723,
+   "tokens": 859675174,
+   "grew": 0,
+   "rolledBack": false,
+   "ownVal": null,
+   "ownScore": null,
+   "d": 768,
+   "loops": 1,
+   "spread": 2.7712,
+   "bytes": 1415116021,
+   "heads": 6,
+   "ctx": 512,
+   "vocab": 6000,
+   "kind": "bpe",
+   "arch": "tpp-loop",
+   "wantWider": false,
+   "layerCap": 16,
+   "mixChanged": false,
+   "bySrc": {
+    "laws": 3.7163,
+    "wiki": 2.8617,
+    "aozora": 3.2322,
+    "hanrei": 3.3836,
+    "kokkai": 2.5424,
+    "web": 2.7974,
+    "talk": 2.1064
+   },
+   "wrote": [
+    {
+     "start": "わたしは",
+     "text": "わたしは、ずっと云うことを聞いているんですよ。」 BL「あ、そうなんですね。でも応援してるのは、あまり見てないですね。」 CC「あはは。ありがたいです。」 CC「はじめまして」 BL「こんにちはー」"
+    },
+    {
+     "start": "第一条",
+     "text": "第一条第五号・趙雲節 が日本統治時代に入る前から長く続く州に位置づけられた干潟のように、旱魃は架空の風俗を持つようにとされていた。 1905年にアメリカの 行政府 が発足し、 外務省 は1906年に設置されたのが現在の ベトナム文化 である。 そのため北部"
+    },
+    {
+     "start": "この法律において",
+     "text": "この法律において「特定非非営利と第十八号」という。）を、「特定非営利を目的地とする特定非営利的かつ非営利を目的地とする特定非営利活動針」の規定により、単なる「非営利家基本方針」いうええの単なるものではない。 特定非営利活動を対象とする非営利活動は、特定非営利活動を目的として行われるもので、一般的には「非営利活動」である。 非営利活動は、"
+    }
+   ],
+   "loopPct": 4.21,
+   "movedBody": false
   }
  ],
  "bestVal": 2.7225,
