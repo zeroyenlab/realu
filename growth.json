@@ -1,69 +1,6 @@
 {
  "runs": [
   {
-   "at": "2026-11-01T00:05:02Z",
-   "val": 2.776,
-   "prev": 2.7689,
-   "valTag": "fixed-holdout-v1",
-   "stoppedAt": 276,
-   "stuck": 0,
-   "evalTag": "fixed-ix-v1",
-   "secPerStep": 14.1064,
-   "steps": 300,
-   "bpc": 3.2866,
-   "charsPerTok": 1.2185,
-   "score": 2.0961,
-   "scoreW": 2.0,
-   "scoreMode": "talk",
-   "finishMix": 0.5,
-   "lineage": "L1",
-   "layers": 16,
-   "params": 117914880,
-   "chars": 1047537723,
-   "tokens": 859675174,
-   "grew": 0,
-   "rolledBack": false,
-   "ownVal": null,
-   "ownScore": null,
-   "d": 768,
-   "loops": 1,
-   "spread": 2.8504,
-   "bytes": 1415116021,
-   "heads": 6,
-   "ctx": 512,
-   "vocab": 6000,
-   "kind": "bpe",
-   "arch": "tpp-loop",
-   "wantWider": false,
-   "layerCap": 16,
-   "mixChanged": false,
-   "bySrc": {
-    "laws": 3.8583,
-    "wiki": 2.9259,
-    "aozora": 3.2954,
-    "hanrei": 3.4125,
-    "kokkai": 2.5772,
-    "web": 2.8213,
-    "talk": 2.0961
-   },
-   "wrote": [
-    {
-     "start": "わたしは",
-     "text": "わたしはあまり好きではないので、やってみます。」 FF「いいですね。どういったジャンルですか？」 CD「アニメですかね？」 FF「アニメはあまり見ないですね。今度見てみます。」 CD「この時期ですね。」 FF「そうですね。」"
-    },
-    {
-     "start": "第一条",
-     "text": "第一条 28.63912016 、 2017年 12月1日 。 ロンドン では オーストラリア 、 モンテネグロ などを司る ベルリオーズ 、 ヴァルテール など。 大日本帝国憲法第"
-    },
-    {
-     "start": "この法律において",
-     "text": "この法律において、六掛けぎ引渡請求書（三画に五画、七万四千七百二十円）を、四百六十円余り払っていた。 この三画には、三十二万七千七百円、十円に対して十万円、十円八三十一円、六万三千円、八四％、八十四円、十万円などの手順が、五十七万円に上る。 さらに、一家を借りている者が六千万円、四十二万円"
-    }
-   ],
-   "loopPct": 3.57,
-   "movedBody": false
-  },
-  {
    "at": "2026-11-01T01:26:11Z",
    "val": 2.7724,
    "prev": 2.776,
@@ -13381,9 +13318,74 @@
    ],
    "loopPct": 4.29,
    "movedBody": false
+  },
+  {
+   "at": "2026-11-13T02:20:35Z",
+   "val": 2.6996,
+   "prev": 2.7065,
+   "valTag": "fixed-holdout-v1",
+   "stoppedAt": 150,
+   "stuck": 0,
+   "evalTag": "fixed-ix-v1",
+   "secPerStep": 27.9978,
+   "steps": 300,
+   "lr": 5e-05,
+   "lrFixed": true,
+   "bpc": 3.1962,
+   "charsPerTok": 1.2185,
+   "score": 2.0989,
+   "scoreW": 2.0,
+   "scoreMode": "talk",
+   "finishMix": 0.5,
+   "lineage": "L1",
+   "layers": 16,
+   "params": 117914880,
+   "chars": 1047537723,
+   "tokens": 859675174,
+   "grew": 0,
+   "rolledBack": false,
+   "ownVal": null,
+   "ownScore": null,
+   "d": 768,
+   "loops": 1,
+   "spread": 2.4503,
+   "bytes": 1415116021,
+   "heads": 6,
+   "ctx": 512,
+   "vocab": 6000,
+   "kind": "bpe",
+   "arch": "tpp-loop",
+   "wantWider": false,
+   "layerCap": 16,
+   "mixChanged": false,
+   "bySrc": {
+    "laws": 3.6563,
+    "wiki": 2.8544,
+    "aozora": 3.215,
+    "hanrei": 3.3655,
+    "kokkai": 2.5227,
+    "web": 2.787,
+    "talk": 2.0989
+   },
+   "wrote": [
+    {
+     "start": "わたしは",
+     "text": "わたしは、孫子さんが最初から忘れました。」 DC「おお！すごい！私はそのあとソフトが欲しい！」 BW「ですよね、、確かに。」 DC「そうそう、感動しちゃって、虫とか、めちゃくちゃ愛情を持ってるような」 BW「虫が�"
+    },
+    {
+     "start": "第一条",
+     "text": "第一条の見見見見る前に、どういうことだったのか、どういうことになったのか、どういうことなのか、そういうことについて、今述べたところであります。」 AB「今のお話ですと、一つ、答えをいただきたいというふうなことを言っているんですが、先ほど官房長官から答えさせたいというふうにおっしゃっているん"
+    },
+    {
+     "start": "この法律において",
+     "text": "この法律において「日本列島」を再編・整理する。 『古事記』 18世紀 - 19世紀 - 世界の名誉 （世紀）において「宣戦布告」を実施 18世紀 - 世紀のこと 18世紀 - 世紀 - 世紀の到来 19世紀 - 世紀を肯定する。"
+    }
+   ],
+   "loopPct": 9.5,
+   "movedBody": false
   }
  ],
- "bestVal": 2.7065,
+ "bestVal": 2.6996,
  "layers": 16,
  "params": 117914880,
  "born": "2026-09-08T15:11:54Z",
@@ -13431,5 +13433,5 @@
  ],
  "wantWider": false,
  "nextD": 768,
- "bad": 0
+ "bad": 1
 }
