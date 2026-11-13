@@ -1,69 +1,6 @@
 {
  "runs": [
   {
-   "at": "2026-11-01T10:53:26Z",
-   "val": 2.776,
-   "prev": 2.7698,
-   "valTag": "fixed-holdout-v1",
-   "stoppedAt": 177,
-   "stuck": 0,
-   "evalTag": "fixed-ix-v1",
-   "secPerStep": 23.2647,
-   "steps": 300,
-   "bpc": 3.2867,
-   "charsPerTok": 1.2185,
-   "score": 2.0963,
-   "scoreW": 2.0,
-   "scoreMode": "talk",
-   "finishMix": 0.5,
-   "lineage": "L1",
-   "layers": 16,
-   "params": 117914880,
-   "chars": 1047537723,
-   "tokens": 859675174,
-   "grew": 0,
-   "rolledBack": false,
-   "ownVal": null,
-   "ownScore": null,
-   "d": 768,
-   "loops": 1,
-   "spread": 2.6591,
-   "bytes": 1415116021,
-   "heads": 6,
-   "ctx": 512,
-   "vocab": 6000,
-   "kind": "bpe",
-   "arch": "tpp-loop",
-   "wantWider": false,
-   "layerCap": 16,
-   "mixChanged": false,
-   "bySrc": {
-    "laws": 3.8587,
-    "wiki": 2.924,
-    "aozora": 3.2941,
-    "hanrei": 3.4158,
-    "kokkai": 2.5801,
-    "web": 2.8121,
-    "talk": 2.0963
-   },
-   "wrote": [
-    {
-     "start": "わたしは",
-     "text": "わたしは自分に愛情なさそうだった。 この時、自分は オスマン帝国 での イギリス の支配下にあった。 その後は 1932年 に オーストリア で アントン・デイヴィッド・フィデン （ 英語版 ） とともに ソ連 の 反乱 を買収した。"
-    },
-    {
-     "start": "第一条",
-     "text": "第一条にそするもの。 」、「 ユーザーは、 日本の エヴァンゲリオン や ドイツの マルクス と隣接する デンマーク人 で、イギリス人 リチャード・ドイツ の ドイツ人 、フランス人 ハロルド・モリス が紀元前400年 アンデス山脈"
-    },
-    {
-     "start": "この法律において",
-     "text": "この法律において、その総数は、これを引き継いでいるのであって、これによって得られる表面的な表現が可能である。 以上は、この表現がどうあるべきかは、外部的に生じるからである。 ここでいう「 表現の自由 」は、:en:Sassemesister (Windows)) を計算しておく、そのために、その文字と"
-    }
-   ],
-   "loopPct": 3.7,
-   "movedBody": false
-  },
-  {
    "at": "2026-11-01T12:10:41Z",
    "val": 2.7858,
    "prev": 2.776,
@@ -13427,6 +13364,81 @@
    ],
    "loopPct": 3.07,
    "movedBody": false
+  },
+  {
+   "at": "2026-11-13T12:50:02Z",
+   "val": 2.7037,
+   "prev": 2.6989,
+   "valTag": "fixed-holdout-v1",
+   "stoppedAt": 0,
+   "stuck": 0,
+   "evalTag": "fixed-ix-v1",
+   "secPerStep": 11.1723,
+   "steps": 321,
+   "lr": 5e-05,
+   "lrFixed": true,
+   "bpc": 3.2011,
+   "charsPerTok": 1.2185,
+   "score": 2.1082,
+   "scoreW": 2.0,
+   "scoreMode": "talk",
+   "finishMix": 0.5,
+   "lineage": "L1",
+   "layers": 16,
+   "params": 117914880,
+   "chars": 1047537723,
+   "tokens": 859675174,
+   "grew": 0,
+   "rolledBack": false,
+   "ownVal": null,
+   "ownScore": null,
+   "d": 768,
+   "loops": 1,
+   "spread": 2.5835,
+   "bytes": 1415116021,
+   "heads": 6,
+   "ctx": 512,
+   "vocab": 6000,
+   "kind": "bpe",
+   "arch": "tpp-loop",
+   "wantWider": false,
+   "layerCap": 16,
+   "mixChanged": false,
+   "bySrc": {
+    "laws": 3.6551,
+    "wiki": 2.8426,
+    "aozora": 3.2075,
+    "hanrei": 3.3776,
+    "kokkai": 2.5158,
+    "web": 2.7759,
+    "talk": 2.1082
+   },
+   "wrote": [
+    {
+     "start": "わたしは",
+     "text": "わたしは寝起きやすくなりますね」 AG「そうですね。私も寝起きです。」 CF「寝起きは気持ちよさそうです。」 AG「そうそう。想像してしまいました。」 AG「こんばんは。今日も暑"
+    },
+    {
+     "start": "第一条",
+     "text": "第一条第二号に掲げる事項 前項に掲げる事項 前項に掲げる事項 前項第三号に掲げる事項 前項に掲げる事項 前項に掲げる事項 前項に掲げる事項 第一項各号に掲げる事項 第一項第三号に掲げる事項 第一項事項は、同項第三号に掲げる事項とする。 第一項各号に掲げる事項 前項第一号に掲げる事項 第一項第三号に掲げる事項 前項に掲げる事項 第一項各号に掲げる事項 第一項第二号に掲げる事項 前条第一項第一号に掲げる事項 前項第二号に掲げる事項 第一項第"
+    },
+    {
+     "start": "この法律において",
+     "text": "この法律において、当該の指導者にとって安全でございますので、そういった意味では、当然、安全であるかどうかの判断を尊重いたします。 また、国連決議違反罪の罪についてでありますとか、それに当たる者については、患者の判断などを尊重する必要があると考えております。」 AA「そして、原発事故のときに、先般同�"
+    }
+   ],
+   "loopPct": 12.91,
+   "movedBody": false,
+   "rikai": {
+    "pmi": 0.51,
+    "raw": 0.5,
+    "n": 300,
+    "byAsk": {
+     "したい事": 0.511,
+     "対象": 0.817,
+     "気持ち": 0.245
+    }
+   }
   }
  ],
  "bestVal": 2.6989,
