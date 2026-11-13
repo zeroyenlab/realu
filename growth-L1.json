@@ -1,69 +1,6 @@
 {
  "runs": [
   {
-   "at": "2026-11-01T18:49:06Z",
-   "val": 2.7618,
-   "prev": 2.7701,
-   "valTag": "fixed-holdout-v1",
-   "stoppedAt": 158,
-   "stuck": 0,
-   "evalTag": "fixed-ix-v1",
-   "secPerStep": 26.2964,
-   "steps": 300,
-   "bpc": 3.2699,
-   "charsPerTok": 1.2185,
-   "score": 2.0951,
-   "scoreW": 2.0,
-   "scoreMode": "talk",
-   "finishMix": 0.5,
-   "lineage": "L1",
-   "layers": 16,
-   "params": 117914880,
-   "chars": 1047537723,
-   "tokens": 859675174,
-   "grew": 0,
-   "rolledBack": false,
-   "ownVal": null,
-   "ownScore": null,
-   "d": 768,
-   "loops": 1,
-   "spread": 2.8365,
-   "bytes": 1415116021,
-   "heads": 6,
-   "ctx": 512,
-   "vocab": 6000,
-   "kind": "bpe",
-   "arch": "tpp-loop",
-   "wantWider": false,
-   "layerCap": 16,
-   "mixChanged": false,
-   "bySrc": {
-    "laws": 3.8421,
-    "wiki": 2.9084,
-    "aozora": 3.2808,
-    "hanrei": 3.3924,
-    "kokkai": 2.5659,
-    "web": 2.8002,
-    "talk": 2.0951
-   },
-   "wrote": [
-    {
-     "start": "わたしは",
-     "text": "わたしは三人ですか？」 GI「いえ。まだまだいけてます。」 GR「なぜですか？」 GI「たべまくってます。」 GR「何かお勧めはありますか？」 GI「アクセントが大好きです。」 GR「そうなんですね」 GI「はい。」 GR「なる"
-    },
-    {
-     "start": "第一条",
-     "text": "第一条の方法 （事項を記載した検査の方法） 高速船バスは、船舶船の便所又は況及び乗合ペースにより応答できるように、船銀の便所等で乗客が運賃及び乗換料を支払うよう努めなければならない。 （物の授業料等） 第十三条 定期船等における船資本の許可は、徒歩で行わない。 （船舶局の輸送等） 第十九条 船舶には、船首が通るのを選ばなければならない。 船舶"
-    },
-    {
-     "start": "この法律において",
-     "text": "この法律において「独占税」を創設して、内部組織を創設するものである。これは、個人が個人の負担を負担することである。経済的負担を保障するための研究あるいは企業が利用し、個人の社会的、経済的な負担を担保する。」 AB「実際の税負担の軽減は、法人格を無視することができ、または企業間の直接的な生活の質的向上によって大きく統制される。そして、別途、"
-    }
-   ],
-   "loopPct": 1.75,
-   "movedBody": false
-  },
-  {
    "at": "2026-11-01T20:07:32Z",
    "val": 2.7628,
    "prev": 2.7618,
@@ -13429,6 +13366,81 @@
    ],
    "loopPct": 9.41,
    "movedBody": false
+  },
+  {
+   "at": "2026-11-13T20:53:20Z",
+   "val": 2.6951,
+   "prev": 2.7016,
+   "valTag": "fixed-holdout-v1",
+   "stoppedAt": 191,
+   "stuck": 0,
+   "evalTag": "fixed-ix-v1",
+   "secPerStep": 21.3361,
+   "steps": 300,
+   "lr": 5e-05,
+   "lrFixed": true,
+   "bpc": 3.1909,
+   "charsPerTok": 1.2185,
+   "score": 2.1075,
+   "scoreW": 2.0,
+   "scoreMode": "talk",
+   "finishMix": 0.5,
+   "lineage": "L1",
+   "layers": 16,
+   "params": 117914880,
+   "chars": 1047537723,
+   "tokens": 859675174,
+   "grew": 0,
+   "rolledBack": false,
+   "ownVal": null,
+   "ownScore": null,
+   "d": 768,
+   "loops": 1,
+   "spread": 2.6266,
+   "bytes": 1415116021,
+   "heads": 6,
+   "ctx": 512,
+   "vocab": 6000,
+   "kind": "bpe",
+   "arch": "tpp-loop",
+   "wantWider": false,
+   "layerCap": 16,
+   "mixChanged": false,
+   "bySrc": {
+    "laws": 3.6331,
+    "wiki": 2.8495,
+    "aozora": 3.204,
+    "hanrei": 3.3742,
+    "kokkai": 2.5127,
+    "web": 2.7724,
+    "talk": 2.1075
+   },
+   "wrote": [
+    {
+     "start": "わたしは",
+     "text": "わたしはつもうどん、いつもお肉を食べてるのですか？」 EF「いつもお肉を食べたら秋服にしちゃいますねー。」 CT「ほんとですね。茹でるの大変みたいですよね。」 EF「お肉だと思います。お肉だと元気だけどだと思い"
+    },
+    {
+     "start": "第一条",
+     "text": "第一条 xxx及びCBSの前文字 x89 xx x max x x87 Unix Jaxプロジェクトが現在も実施されている他、 X x Unix Jax の XIT 向けの XXIT ソフトウェアは、 Unix 上でも本体に intern"
+    },
+    {
+     "start": "この法律において",
+     "text": "この法律において「中小企業等」又は「中小企業等」とは、中小企業等協同組合法（昭和四十年法律第百五号）第五条第二項に規定する中小企業等協同組合法（昭和四十年法律第百四号）第六条の規定により同法第五条第一項の規定により同法第六条第二項に規定する認定員は、次に掲げる者の事務所を定め、境右に分割して、これを事務所に編入しなければならない。 中小企業等協同組合法（昭和三十一年法律第二十四号）第五条第二項に規定する中小企業等協同組合法（昭和三十一年"
+    }
+   ],
+   "loopPct": 5.6,
+   "movedBody": false,
+   "rikai": {
+    "pmi": 0.53,
+    "raw": 0.507,
+    "n": 300,
+    "byAsk": {
+     "したい事": 0.5,
+     "対象": 0.806,
+     "気持ち": 0.311
+    }
+   }
   }
  ],
  "bestVal": 2.6944,
