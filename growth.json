@@ -1,69 +1,6 @@
 {
  "runs": [
   {
-   "at": "2026-11-01T16:13:42Z",
-   "val": 2.768,
-   "prev": 2.7708,
-   "valTag": "fixed-holdout-v1",
-   "stoppedAt": 159,
-   "stuck": 0,
-   "evalTag": "fixed-ix-v1",
-   "secPerStep": 26.1893,
-   "steps": 300,
-   "bpc": 3.2773,
-   "charsPerTok": 1.2185,
-   "score": 2.1027,
-   "scoreW": 2.0,
-   "scoreMode": "talk",
-   "finishMix": 0.5,
-   "lineage": "L1",
-   "layers": 16,
-   "params": 117914880,
-   "chars": 1047537723,
-   "tokens": 859675174,
-   "grew": 0,
-   "rolledBack": false,
-   "ownVal": null,
-   "ownScore": null,
-   "d": 768,
-   "loops": 1,
-   "spread": 2.7269,
-   "bytes": 1415116021,
-   "heads": 6,
-   "ctx": 512,
-   "vocab": 6000,
-   "kind": "bpe",
-   "arch": "tpp-loop",
-   "wantWider": false,
-   "layerCap": 16,
-   "mixChanged": false,
-   "bySrc": {
-    "laws": 3.8451,
-    "wiki": 2.911,
-    "aozora": 3.2864,
-    "hanrei": 3.4003,
-    "kokkai": 2.5731,
-    "web": 2.8041,
-    "talk": 2.1027
-   },
-   "wrote": [
-    {
-     "start": "わたしは",
-     "text": "わたしは、主人公の「ヘエ」に、空っぽい声を作っている。 「シーン」という語には、「シーン」に、アイルンが「シーン」と書かれている 。 シーンの中から「シーン」と呼ばれるようになったのは、1970年代から1980年代前半の時代になってからで、1960年代になって以降、ス"
-    },
-    {
-     "start": "第一条",
-     "text": "第一条の規定です。 しかし、民主主義に反対するさまざまな問題が方策定されました。詰めに終わりました。我々は、この実行に移す。本来、民主主義を弾圧し、一刻も早まるやり方です。」 AA「しかも、民主主義はぜひともアメリカに向けて"
-    },
-    {
-     "start": "この法律において",
-     "text": "この法律において「差別」とは、労働者による差別の解消のために、差別や非効率的な行為による差別になるようなものではない。 その場合、法的に問われるほど、不平等な行為を指す。 また、通常、保護法要件が実現されないおそれもある。 ⅰ 被告の主張 ⅳ 原告らは、被告の友人あるいは、この悪"
-    }
-   ],
-   "loopPct": 3.57,
-   "movedBody": false
-  },
-  {
    "at": "2026-11-01T17:19:21Z",
    "val": 2.7701,
    "prev": 2.768,
@@ -13435,9 +13372,74 @@
    ],
    "loopPct": 23.83,
    "movedBody": false
+  },
+  {
+   "at": "2026-11-13T18:14:26Z",
+   "val": 2.6944,
+   "prev": 2.7048,
+   "valTag": "fixed-holdout-v1",
+   "stoppedAt": 168,
+   "stuck": 0,
+   "evalTag": "fixed-ix-v1",
+   "secPerStep": 24.736,
+   "steps": 300,
+   "lr": 5e-05,
+   "lrFixed": true,
+   "bpc": 3.1901,
+   "charsPerTok": 1.2185,
+   "score": 2.1121,
+   "scoreW": 2.0,
+   "scoreMode": "talk",
+   "finishMix": 0.5,
+   "lineage": "L1",
+   "layers": 16,
+   "params": 117914880,
+   "chars": 1047537723,
+   "tokens": 859675174,
+   "grew": 0,
+   "rolledBack": false,
+   "ownVal": null,
+   "ownScore": null,
+   "d": 768,
+   "loops": 1,
+   "spread": 2.6233,
+   "bytes": 1415116021,
+   "heads": 6,
+   "ctx": 512,
+   "vocab": 6000,
+   "kind": "bpe",
+   "arch": "tpp-loop",
+   "wantWider": false,
+   "layerCap": 16,
+   "mixChanged": false,
+   "bySrc": {
+    "laws": 3.6301,
+    "wiki": 2.8364,
+    "aozora": 3.2117,
+    "hanrei": 3.3667,
+    "kokkai": 2.5129,
+    "web": 2.7684,
+    "talk": 2.1121
+   },
+   "wrote": [
+    {
+     "start": "わたしは",
+     "text": "わたしは、Wikipedia Technome Stereat PCINESは、Wikipedia Sterea PCINESの一種であり、サービスの運用は自社ラッシュサービスである。 それらの給付が、一定のサービスの運用を可能な限り行うことが多い 。 対人・対人・兵役などの条件"
+    },
+    {
+     "start": "第一条",
+     "text": "第一条以下この号において「鉄道事業」という。）の設立その他の当該鉄道事業」という。）の届出に係る事項を記載した書類 鉄道事業の額 鉄道事業の許可がtsukishizukata-station-national tsukishi-station-bever.jpg|鉄道施設（2007年7月） ファイル:Tsukishi"
+    },
+    {
+     "start": "この法律において",
+     "text": "この法律において「第三者の」という。）は、公益性に基づく業務づくりに関する法律（平成十七年法律第八十五号）附則第五条第一項公職選挙法（昭和二十五年法律第二百八号）第六号の指定を受けた者（当該認定創造協会及び公益財団法人に関する法律（平成十七年法律第百六十七号）をすべき組合を除く。）を代表する障害者である者との間で入院その他の必要な賞与として支給された額に限る。以下「一時支給日」という。）は、当該支給を受けた額については、この限りでない。"
+    }
+   ],
+   "loopPct": 2.77,
+   "movedBody": false
   }
  ],
- "bestVal": 2.6989,
+ "bestVal": 2.6944,
  "layers": 16,
  "params": 117914880,
  "born": "2026-09-08T15:11:54Z",
