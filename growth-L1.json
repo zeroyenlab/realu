@@ -1,69 +1,6 @@
 {
  "runs": [
   {
-   "at": "2026-11-01T14:51:50Z",
-   "val": 2.7708,
-   "prev": 2.7747,
-   "valTag": "fixed-holdout-v1",
-   "stoppedAt": 177,
-   "stuck": 0,
-   "evalTag": "fixed-ix-v1",
-   "secPerStep": 23.1884,
-   "steps": 300,
-   "bpc": 3.2805,
-   "charsPerTok": 1.2185,
-   "score": 2.103,
-   "scoreW": 2.0,
-   "scoreMode": "talk",
-   "finishMix": 0.5,
-   "lineage": "L1",
-   "layers": 16,
-   "params": 117914880,
-   "chars": 1047537723,
-   "tokens": 859675174,
-   "grew": 0,
-   "rolledBack": false,
-   "ownVal": null,
-   "ownScore": null,
-   "d": 768,
-   "loops": 1,
-   "spread": 3.0191,
-   "bytes": 1415116021,
-   "heads": 6,
-   "ctx": 512,
-   "vocab": 6000,
-   "kind": "bpe",
-   "arch": "tpp-loop",
-   "wantWider": false,
-   "layerCap": 16,
-   "mixChanged": false,
-   "bySrc": {
-    "laws": 3.8534,
-    "wiki": 2.9143,
-    "aozora": 3.2889,
-    "hanrei": 3.4002,
-    "kokkai": 2.5728,
-    "web": 2.8079,
-    "talk": 2.103
-   },
-   "wrote": [
-    {
-     "start": "わたしは",
-     "text": "わたしはジャンピーとかもいいですね」 AU「サッカーは、いろんなチームがあるからいいでしょうね。 あなたはどんなチームがお好きなんですか？」 AU「私は、アウトドアが近いので、大会のチーム見に行きたいですね。」 AU「アウトドア、いいですね！�"
-    },
-    {
-     "start": "第一条",
-     "text": "第一条第一号ロロツキハハフハツ山西のキリシタン。これがキリシタンである。またキリシタン人が祖父に宗教を信じるという意図はもちろんのこと、当時はあまりにも信仰されども第一次大戦後もしばしば刺激されておらず、それが�らわれることはなかった。 キリシタン大唯一いる旧"
-    },
-    {
-     "start": "この法律において",
-     "text": "この法律において「基本方針」と、「基本計画」を「基本計画計画」に「基本計画」を十一月に位置づけ、そして「基本計画」に着手する。 「基本計画」を策定し、計画提出に並通して「計画」を策定して「計画計画」の策定を行う。 「計画」を「計画」に、計画の」を「計画」に、「計画」を大幅に拡大して、計画を進めていく。 計画"
-    }
-   ],
-   "loopPct": 8.13,
-   "movedBody": false
-  },
-  {
    "at": "2026-11-01T16:13:42Z",
    "val": 2.768,
    "prev": 2.7708,
@@ -13432,6 +13369,71 @@
     }
    ],
    "loopPct": 8.64,
+   "movedBody": false
+  },
+  {
+   "at": "2026-11-13T16:53:56Z",
+   "val": 2.7048,
+   "prev": 2.7031,
+   "valTag": "fixed-holdout-v1",
+   "stoppedAt": 148,
+   "stuck": 0,
+   "evalTag": "fixed-ix-v1",
+   "secPerStep": 28.4139,
+   "steps": 300,
+   "lr": 5e-05,
+   "lrFixed": true,
+   "bpc": 3.2024,
+   "charsPerTok": 1.2185,
+   "score": 2.1197,
+   "scoreW": 2.0,
+   "scoreMode": "talk",
+   "finishMix": 0.5,
+   "lineage": "L1",
+   "layers": 16,
+   "params": 117914880,
+   "chars": 1047537723,
+   "tokens": 859675174,
+   "grew": 0,
+   "rolledBack": false,
+   "ownVal": null,
+   "ownScore": null,
+   "d": 768,
+   "loops": 1,
+   "spread": 2.6529,
+   "bytes": 1415116021,
+   "heads": 6,
+   "ctx": 512,
+   "vocab": 6000,
+   "kind": "bpe",
+   "arch": "tpp-loop",
+   "wantWider": false,
+   "layerCap": 16,
+   "mixChanged": false,
+   "bySrc": {
+    "laws": 3.6463,
+    "wiki": 2.8408,
+    "aozora": 3.2101,
+    "hanrei": 3.3595,
+    "kokkai": 2.5224,
+    "web": 2.7668,
+    "talk": 2.1197
+   },
+   "wrote": [
+    {
+     "start": "わたしは",
+     "text": "わたしは途中で、中心です。」 DC「私もどちらか、ちょっとだけ歩いてきたつもりなので、そこは、もう、やっぱり。」 EF「それはツイッターですね！懐かしいです！」 DC「ああー！なんかわかります！！」"
+    },
+    {
+     "start": "第一条",
+     "text": "第一条にあると認めます。 本案は委員長報告のとおり決するに御異議ありませんか。」 AB「議事日程追加の緊急動議を提出いたします。 すなわち、この際、日程に追加して、委員会の審査に付します。 日程第三、地方自治法の一部を改正する法律案（参議院提出）を議題といたします。 まず、委員長の報告を求めます。ZAKZAKZA"
+    },
+    {
+     "start": "この法律において",
+     "text": "この法律において、その最高項の一号、一号、一号、二号、二号、二号、二号、三号、二号、二号、二号、三号、三号、三号、二号、二号、二号、三号、二号、二号、二号、二号、二号、四号、五号、七、三号、日平均、三号、七、三号、五号、七、六、二号、三号、五"
+    }
+   ],
+   "loopPct": 23.83,
    "movedBody": false
   }
  ],
