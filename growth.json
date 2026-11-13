@@ -1,69 +1,6 @@
 {
  "runs": [
   {
-   "at": "2026-11-01T04:06:56Z",
-   "val": 2.7681,
-   "prev": 2.7686,
-   "valTag": "fixed-holdout-v1",
-   "stoppedAt": 158,
-   "stuck": 0,
-   "evalTag": "fixed-ix-v1",
-   "secPerStep": 26.4535,
-   "steps": 300,
-   "bpc": 3.2774,
-   "charsPerTok": 1.2185,
-   "score": 2.1011,
-   "scoreW": 2.0,
-   "scoreMode": "talk",
-   "finishMix": 0.5,
-   "lineage": "L1",
-   "layers": 16,
-   "params": 117914880,
-   "chars": 1047537723,
-   "tokens": 859675174,
-   "grew": 0,
-   "rolledBack": false,
-   "ownVal": null,
-   "ownScore": null,
-   "d": 768,
-   "loops": 1,
-   "spread": 3.0327,
-   "bytes": 1415116021,
-   "heads": 6,
-   "ctx": 512,
-   "vocab": 6000,
-   "kind": "bpe",
-   "arch": "tpp-loop",
-   "wantWider": false,
-   "layerCap": 16,
-   "mixChanged": false,
-   "bySrc": {
-    "laws": 3.8448,
-    "wiki": 2.9136,
-    "aozora": 3.2847,
-    "hanrei": 3.3994,
-    "kokkai": 2.5716,
-    "web": 2.8079,
-    "talk": 2.1011
-   },
-   "wrote": [
-    {
-     "start": "わたしは",
-     "text": "わたしは、このような記述を作りたかったものだったわけです。 この記述が、あのかくのごとき記述からすれば、その記述が、たとえ、（中略）われわれ賢くもなしに、（中略）平民にどういう方式がとられたか、はなはだのような説得がなされるのか、（中略）一つの記述を、具体的に提"
-    },
-    {
-     "start": "第一条",
-     "text": "第一条「任意政治政治に関する博物館」（1967年）を開館。 明治32年） 10月16日 - 第1次協会の博物館で、身延線の修復工事を完了。 1974年（昭和49年） 11月15日 - 「鈴木田樹」を設立。 1977年（昭和52年） 11月25日"
-    },
-    {
-     "start": "この法律において",
-     "text": "この法律において、そのうちの一番近くに所在する。 （所定のカードのカードのカードのカードカード） 事業届出勤続中は、前年に配布したカードカードが作成され、前年に続いて発行されたカードを書籍化したカードに配序を貼り、そのカードが発行された所得税法違反のページのチャージで報告されている。 2006年3月21日のカードの場所で、対戦カード"
-    }
-   ],
-   "loopPct": 12.81,
-   "movedBody": false
-  },
-  {
    "at": "2026-11-01T05:28:58Z",
    "val": 2.7669,
    "prev": 2.7681,
@@ -13397,6 +13334,81 @@
    ],
    "loopPct": 8.58,
    "movedBody": false
+  },
+  {
+   "at": "2026-11-13T06:18:59Z",
+   "val": 2.7063,
+   "prev": 2.7089,
+   "valTag": "fixed-holdout-v1",
+   "stoppedAt": 202,
+   "stuck": 0,
+   "evalTag": "fixed-ix-v1",
+   "secPerStep": 20.0857,
+   "steps": 300,
+   "lr": 5e-05,
+   "lrFixed": true,
+   "bpc": 3.2042,
+   "charsPerTok": 1.2185,
+   "score": 2.1107,
+   "scoreW": 2.0,
+   "scoreMode": "talk",
+   "finishMix": 0.5,
+   "lineage": "L1",
+   "layers": 16,
+   "params": 117914880,
+   "chars": 1047537723,
+   "tokens": 859675174,
+   "grew": 0,
+   "rolledBack": false,
+   "ownVal": null,
+   "ownScore": null,
+   "d": 768,
+   "loops": 1,
+   "spread": 3.0377,
+   "bytes": 1415116021,
+   "heads": 6,
+   "ctx": 512,
+   "vocab": 6000,
+   "kind": "bpe",
+   "arch": "tpp-loop",
+   "wantWider": false,
+   "layerCap": 16,
+   "mixChanged": false,
+   "bySrc": {
+    "laws": 3.6608,
+    "wiki": 2.8542,
+    "aozora": 3.2067,
+    "hanrei": 3.3714,
+    "kokkai": 2.5228,
+    "web": 2.7854,
+    "talk": 2.1107
+   },
+   "wrote": [
+    {
+     "start": "わたしは",
+     "text": "わたしは本気ですよね！」 AA「本当に！」 AC「良いですね！」 AA「よろしくお願いします。」 AC「くーちゃん！」 AC「あなたは、みんなで？」 AC「いやー、何かありますか？」 AC「私は北海道に行きたいです"
+    },
+    {
+     "start": "第一条",
+     "text": "第一条ただし書の規定により同項各号に掲げる行為を適用するとされているもの 前項及び第三項の規定は、第一項について準用する。 （許可等） 第三十六条 第四十六条の規定は、第三十六条について準用する。 （許可等） 第三十八条 事業者は、第五十七条第九項の規定による許可等（第七十一条第七項の規定による許可等を除く。）をする場合において、第四十七条地方税法（昭和二十二年法律第百号）第二十一条の規定は、適用しない。 （許可等） 第三十五条 におい"
+    },
+    {
+     "start": "この法律において",
+     "text": "この法律において「「運営指針」」とは、構成要件として「業務の指針」という。）若しくは「業務改善計画」とは、次に掲げる目標の変更、識字整理施設の創設、WP:CAL、WP:CAL、WP:CAL、WP:CAL、WP:CAL、AIL、WP:CAL、CDC（SOLON、DCAL、GP:CAL）又はW"
+    }
+   ],
+   "loopPct": 12.9,
+   "movedBody": false,
+   "rikai": {
+    "pmi": 0.473,
+    "raw": 0.497,
+    "n": 300,
+    "byAsk": {
+     "したい事": 0.489,
+     "対象": 0.817,
+     "気持ち": 0.179
+    }
+   }
   }
  ],
  "bestVal": 2.6996,
@@ -13447,5 +13459,5 @@
  ],
  "wantWider": false,
  "nextD": 768,
- "bad": 0
+ "bad": 1
 }
