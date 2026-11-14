@@ -1,79 +1,6 @@
 {
  "runs": [
   {
-   "at": "2026-11-02T16:05:56Z",
-   "val": 2.7531,
-   "prev": 2.7512,
-   "valTag": "fixed-holdout-v1",
-   "stoppedAt": 206,
-   "stuck": 0,
-   "evalTag": "fixed-ix-v1",
-   "secPerStep": 19.6104,
-   "steps": 300,
-   "bpc": 3.2596,
-   "charsPerTok": 1.2185,
-   "score": 2.1019,
-   "scoreW": 2.0,
-   "scoreMode": "talk",
-   "finishMix": 0.5,
-   "lineage": "L1",
-   "layers": 16,
-   "params": 117914880,
-   "chars": 1047537723,
-   "tokens": 859675174,
-   "grew": 0,
-   "rolledBack": false,
-   "ownVal": null,
-   "ownScore": null,
-   "d": 768,
-   "loops": 1,
-   "spread": 2.7237,
-   "bytes": 1415116021,
-   "heads": 6,
-   "ctx": 512,
-   "vocab": 6000,
-   "kind": "bpe",
-   "arch": "tpp-loop",
-   "wantWider": false,
-   "layerCap": 16,
-   "mixChanged": false,
-   "bySrc": {
-    "laws": 3.8156,
-    "wiki": 2.9019,
-    "aozora": 3.2743,
-    "hanrei": 3.3918,
-    "kokkai": 2.5543,
-    "web": 2.8017,
-    "talk": 2.1019
-   },
-   "wrote": [
-    {
-     "start": "わたしは",
-     "text": "わたしは、適当な暗号措置をもって、この二つのインパクトを生み出す決意である。 大西洋平和委員会（アメリカ合衆国）は、経済発展の現状を危惧し、「平和」の両立を期待して対立する。 国際比較 （ 英語版 ） ( Category: Elier de L"
-    },
-    {
-     "start": "第一条",
-     "text": "第一条の規定で、これは、屋内の振込み、そして、こういう作物が、これは福島市の資本注入、こういうことになっていく中で、これは国と国との関係を考えていかなきゃならないということになっていくわけでございます。 ですから、今のお話ですが、日本だけの国といいますか、国や都道府県とか自然というのは国の本来の性"
-    },
-    {
-     "start": "この法律において",
-     "text": "この法律において「駅名」となる。 2009年（平成21年）3月1日より「エスタグリーンタワー」の駅名から「ホームタウン」に変更された。 2010年（平成22年）度の1日平均乗降人員は1987年の1日平均乗降人員は15,963人。 山口県の駅から約500名の川口を"
-    }
-   ],
-   "loopPct": 4.3,
-   "movedBody": false,
-   "rikai": {
-    "pmi": 0.45,
-    "raw": 0.407,
-    "n": 300,
-    "byAsk": {
-     "したい事": 0.489,
-     "対象": 0.656,
-     "気持ち": 0.245
-    }
-   }
-  },
-  {
    "at": "2026-11-02T17:27:26Z",
    "val": 2.7494,
    "prev": 2.7531,
@@ -13481,6 +13408,71 @@
    ],
    "loopPct": 31.41,
    "movedBody": false
+  },
+  {
+   "at": "2026-11-14T17:55:11Z",
+   "val": 2.6858,
+   "prev": 2.6849,
+   "valTag": "fixed-holdout-v1",
+   "stoppedAt": 151,
+   "stuck": 0,
+   "evalTag": "fixed-ix-v1",
+   "secPerStep": 27.7899,
+   "steps": 300,
+   "lr": 5e-05,
+   "lrFixed": true,
+   "bpc": 3.1799,
+   "charsPerTok": 1.2185,
+   "score": 2.1077,
+   "scoreW": 2.0,
+   "scoreMode": "talk",
+   "finishMix": 0.5,
+   "lineage": "L1",
+   "layers": 16,
+   "params": 117914880,
+   "chars": 1047537723,
+   "tokens": 859675174,
+   "grew": 0,
+   "rolledBack": false,
+   "ownVal": null,
+   "ownScore": null,
+   "d": 768,
+   "loops": 1,
+   "spread": 2.6011,
+   "bytes": 1415116021,
+   "heads": 6,
+   "ctx": 512,
+   "vocab": 6000,
+   "kind": "bpe",
+   "arch": "tpp-loop",
+   "wantWider": false,
+   "layerCap": 16,
+   "mixChanged": false,
+   "bySrc": {
+    "laws": 3.6177,
+    "wiki": 2.828,
+    "aozora": 3.1806,
+    "hanrei": 3.3571,
+    "kokkai": 2.508,
+    "web": 2.7627,
+    "talk": 2.1077
+   },
+   "wrote": [
+    {
+     "start": "わたしは",
+     "text": "わたしは、黄金色のやわい。」 BH「黄金でやってるのが黄金です。」 BX「確かに。私は黄金でもあればいいので黄金のやつを感じてます。」 BH「そうですよねー。私は東京都に住んでるので、ちょっと気になります。」 BX"
+    },
+    {
+     "start": "第一条",
+     "text": "第一条織番号は5024でございます。」 客「ありがとうございます。以上で結構です。」 店「承知しました。ありがとうございました。」 客「福岡へ旅行に行くので、当日買い物ができるところを探してください。」 店「か"
+    },
+    {
+     "start": "この法律において",
+     "text": "この法律においてにおいてもルールが異なる場合は、そのルールを変更し、その後で行い、当該各人のルールを変更する。 さらに、そのルールを変更した場合でも、作っても、そのルールを整理しない限り、そのルールを変更し、正式にルールを変更する。 その後、ルールを変更する、ルールを変更し、ルールを変更する場合もある。 ルール変更 →詳細は「 ルール変更 」を参照"
+    }
+   ],
+   "loopPct": 3.22,
+   "movedBody": false
   }
  ],
  "bestVal": 2.684,
@@ -13531,5 +13523,5 @@
  ],
  "wantWider": false,
  "nextD": 768,
- "bad": 8
+ "bad": 9
 }
