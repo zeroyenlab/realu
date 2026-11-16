@@ -1,71 +1,6 @@
 {
  "runs": [
   {
-   "at": "2026-11-04T07:12:36Z",
-   "val": 2.8774,
-   "prev": 2.8673,
-   "valTag": "fixed-holdout-v1",
-   "stoppedAt": 158,
-   "stuck": 0,
-   "evalTag": "fixed-ix-v1",
-   "secPerStep": 26.4063,
-   "steps": 300,
-   "lr": 5e-05,
-   "lrFixed": true,
-   "bpc": 3.4068,
-   "charsPerTok": 1.2185,
-   "score": 2.1533,
-   "scoreW": 2.0,
-   "scoreMode": "talk",
-   "finishMix": 0.5,
-   "lineage": "L1",
-   "layers": 16,
-   "params": 117914880,
-   "chars": 1047537723,
-   "tokens": 859675174,
-   "grew": 0,
-   "rolledBack": false,
-   "ownVal": null,
-   "ownScore": null,
-   "d": 768,
-   "loops": 1,
-   "spread": 2.7822,
-   "bytes": 1415116021,
-   "heads": 6,
-   "ctx": 512,
-   "vocab": 6000,
-   "kind": "bpe",
-   "arch": "tpp-loop",
-   "wantWider": false,
-   "layerCap": 16,
-   "mixChanged": false,
-   "bySrc": {
-    "laws": 4.0612,
-    "wiki": 3.0263,
-    "aozora": 3.3881,
-    "hanrei": 3.4933,
-    "kokkai": 2.6714,
-    "web": 2.92,
-    "talk": 2.1533
-   },
-   "wrote": [
-    {
-     "start": "わたしは",
-     "text": "わたしはたはしくしますね。」 AA「私も少しはよく食べます。」 BO「そうなんですね！」 AA「本当に！」 BO「今日はいいお天気ですよね。」 AA「ありがとうございます。大国でもすごくいいですよね。」 BO「いいですよね。寝"
-    },
-    {
-     "start": "第一条",
-     "text": "第一条の管理に関する調査の調査及び調査に関する調査の調査に関する調査（以下「調査調査」という。）に基づき調査官が調査官内で調査官を務め、調査官のウレナリウスは、調査官に当選して調査官を務める。 の委員長には、調査官が就任する。 （調査官の任務） 4月、調査士官として、調査士（以下「調査士」という。）が就任。 （調査士の任務の任務"
-    },
-    {
-     "start": "この法律において",
-     "text": "この法律において「フトバーグダイナミックオーナー」（2003年4月7日、フトバーグノーナー） フレンチホルン - フランスのアンドレア・デル・アンドリューズカップ（2004年9月4日、フルネーム） フタイオーナー - フレンチホルンのオーナー"
-    }
-   ],
-   "loopPct": 9.39,
-   "movedBody": false
-  },
-  {
    "at": "2026-11-04T08:32:52Z",
    "val": 2.8774,
    "prev": 2.8774,
@@ -13559,9 +13494,84 @@
    ],
    "loopPct": 5.51,
    "movedBody": false
+  },
+  {
+   "at": "2026-11-16T07:55:55Z",
+   "val": 2.6549,
+   "prev": 2.6576,
+   "valTag": "fixed-holdout-v1",
+   "stoppedAt": 0,
+   "stuck": 0,
+   "evalTag": "fixed-ix-v1",
+   "secPerStep": 11.4497,
+   "steps": 310,
+   "lr": 5e-05,
+   "lrFixed": true,
+   "bpc": 3.1433,
+   "charsPerTok": 1.2185,
+   "score": 2.0888,
+   "scoreW": 2.0,
+   "scoreMode": "talk",
+   "finishMix": 0.5,
+   "lineage": "L1",
+   "layers": 16,
+   "params": 117914880,
+   "chars": 1047537723,
+   "tokens": 859675174,
+   "grew": 0,
+   "rolledBack": false,
+   "ownVal": null,
+   "ownScore": null,
+   "d": 768,
+   "loops": 1,
+   "spread": 2.5289,
+   "bytes": 1415116021,
+   "heads": 6,
+   "ctx": 512,
+   "vocab": 6000,
+   "kind": "bpe",
+   "arch": "tpp-loop",
+   "wantWider": false,
+   "layerCap": 16,
+   "mixChanged": false,
+   "bySrc": {
+    "laws": 3.5521,
+    "wiki": 2.8127,
+    "aozora": 3.1554,
+    "hanrei": 3.3462,
+    "kokkai": 2.4805,
+    "web": 2.7478,
+    "talk": 2.0888
+   },
+   "wrote": [
+    {
+     "start": "わたしは",
+     "text": "わたしは！」 CY「おー！すごい！今日はどんなお仕事をしていましたか？」 BA「いえ！家でゲームしたりって感じです。」 CY「いいですね！ゲームいいですねー！」 BA「そうそう」 CY「家でゲームしてるんですよね。」 BA「ゲ"
+    },
+    {
+     "start": "第一条",
+     "text": "第一条に「側車庫、支店、支店」と書いてある。 下車は、朝に1本、上車は1本（馬車が発行される場合などは 大阪市交通局 が発行する 中央本線 は 中央本線 だけが設置している場合のみ）に1本の中央本線と1本のJR西日本が発行している。 また、 西日本旅客鉄道 （JR�"
+    },
+    {
+     "start": "この法律において",
+     "text": "この法律において、その取得を計画的に進められるよう努めることは困難であると考えています。」 AB「このように、新たな事業投資を促進することは困難であると考えています。 また、専門学校の卒業生の中には、柔軟な働き方や資料を配布する納税者もいることといったことから、学習を持って事業を進めることが必要であると考えております。 高校授業料などの"
+    }
+   ],
+   "loopPct": 6.39,
+   "movedBody": false,
+   "rikai": {
+    "pmi": 0.557,
+    "raw": 0.523,
+    "n": 300,
+    "byAsk": {
+     "したい事": 0.468,
+     "対象": 0.796,
+     "気持ち": 0.443
+    }
+   }
   }
  ],
- "bestVal": 2.6576,
+ "bestVal": 2.6549,
  "layers": 16,
  "params": 117914880,
  "born": "2026-09-08T15:11:54Z",
@@ -13609,5 +13619,5 @@
  ],
  "wantWider": false,
  "nextD": 768,
- "bad": 0
+ "bad": 1
 }
