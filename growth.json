@@ -1,71 +1,6 @@
 {
  "runs": [
   {
-   "at": "2026-11-04T01:48:13Z",
-   "val": 2.7519,
-   "prev": 2.7519,
-   "valTag": "fixed-holdout-v1",
-   "stoppedAt": 158,
-   "stuck": 7,
-   "evalTag": "fixed-ix-v1",
-   "secPerStep": 26.4234,
-   "steps": 300,
-   "lr": 5e-05,
-   "lrFixed": true,
-   "bpc": 3.2582,
-   "charsPerTok": 1.2185,
-   "score": 2.0948,
-   "scoreW": 2.0,
-   "scoreMode": "talk",
-   "finishMix": 0.5,
-   "lineage": "L1",
-   "layers": 16,
-   "params": 117914880,
-   "chars": 1047537723,
-   "tokens": 859675174,
-   "grew": 0,
-   "rolledBack": true,
-   "ownVal": 2.8599,
-   "ownScore": 2.1659,
-   "d": 768,
-   "loops": 1,
-   "spread": 2.8242,
-   "bytes": 1415116021,
-   "heads": 6,
-   "ctx": 512,
-   "vocab": 6000,
-   "kind": "bpe",
-   "arch": "tpp-loop",
-   "wantWider": false,
-   "layerCap": 16,
-   "mixChanged": false,
-   "bySrc": {
-    "laws": 3.9932,
-    "wiki": 3.0064,
-    "aozora": 3.3717,
-    "hanrei": 3.5041,
-    "kokkai": 2.6421,
-    "web": 2.9009,
-    "talk": 2.1659
-   },
-   "wrote": [
-    {
-     "start": "わたしは",
-     "text": "わたしは、これはもうこういう認識ですから、この共同声明は、この歴史認識、今後の国際社会における外交努力、最も大切なことだと思います。 これは、いわゆる艦艇、それから、日本政府の、また、防衛政策が正式に決定をされております。そういう中で、大総裁は、先ほども申し上げましたように、"
-    },
-    {
-     "start": "第一条",
-     "text": "第一条 1936年2月26日、社会党の総裁選挙に立候補した。 2007年12月、自由党の党首に 公明党 が立候補したが、2007年11月、自由党の 自由党 が党勢拡大を目指す 自由党 を組む 自由党 が 自由党 の党首として結成されたが"
-    },
-    {
-     "start": "この法律において",
-     "text": "この法律において』が発表され、同年2月に出版される。 『コミックギア』は、1987年に『TV New Ball』が発表され、『TV Vol.8』にて特別出演した。 1987年にソニー・ミュージックエンタテイメントより（日曜 14:30"
-    }
-   ],
-   "loopPct": 3.4,
-   "movedBody": false
-  },
-  {
    "at": "2026-11-04T03:07:19Z",
    "val": 2.7519,
    "prev": 2.7519,
@@ -13539,9 +13474,74 @@
      "気持ち": 0.255
     }
    }
+  },
+  {
+   "at": "2026-11-16T02:52:19Z",
+   "val": 2.6589,
+   "prev": 2.6598,
+   "valTag": "fixed-holdout-v1",
+   "stoppedAt": 168,
+   "stuck": 0,
+   "evalTag": "fixed-ix-v1",
+   "secPerStep": 24.7626,
+   "steps": 300,
+   "lr": 5e-05,
+   "lrFixed": true,
+   "bpc": 3.148,
+   "charsPerTok": 1.2185,
+   "score": 2.0828,
+   "scoreW": 2.0,
+   "scoreMode": "talk",
+   "finishMix": 0.5,
+   "lineage": "L1",
+   "layers": 16,
+   "params": 117914880,
+   "chars": 1047537723,
+   "tokens": 859675174,
+   "grew": 0,
+   "rolledBack": false,
+   "ownVal": null,
+   "ownScore": null,
+   "d": 768,
+   "loops": 1,
+   "spread": 2.5004,
+   "bytes": 1415116021,
+   "heads": 6,
+   "ctx": 512,
+   "vocab": 6000,
+   "kind": "bpe",
+   "arch": "tpp-loop",
+   "wantWider": false,
+   "layerCap": 16,
+   "mixChanged": false,
+   "bySrc": {
+    "laws": 3.5665,
+    "wiki": 2.8163,
+    "aozora": 3.1556,
+    "hanrei": 3.3486,
+    "kokkai": 2.4807,
+    "web": 2.7466,
+    "talk": 2.0828
+   },
+   "wrote": [
+    {
+     "start": "わたしは",
+     "text": "わたしは、そのままで、大変のしつけ懸けのような大騒ぎを繰り返して、そのままのままに、まるでりのように僕のように、岩の上に落ちついてゆくうちに、しつこくなるから、そのままではしごとなぞらしく、いろいろとかさまがふさふと動かして、ぼんやりしたあとから、ま"
+    },
+    {
+     "start": "第一条",
+     "text": "第一条第三号ボヘヘミア諸島における米軍の作戦は、米軍の軍備削減を基本的進めるのではなくして、アメリカの一員としての軍備拡張にとどめようとしていることは、ゆえにアメリカの作戦戦略が米軍の作戦網にとどまるところをもたないにもかかわらず、アメリカでは、まさにアメリ"
+    },
+    {
+     "start": "この法律において",
+     "text": "この法律において「ＴＲＰＴが撤退するかどうかはＴＲＰＴが判断した時点」は，これを「ＴＲＰＴが撤退するのか，これを判断した」ということになる。 ＴＲＰＴＲは，ＴＲＰＴが撤退をする際に，ＴＲＰＴが「ＴＲＰ�"
+    }
+   ],
+   "loopPct": 7.93,
+   "movedBody": false
   }
  ],
- "bestVal": 2.6591,
+ "bestVal": 2.6589,
  "layers": 16,
  "params": 117914880,
  "born": "2026-09-08T15:11:54Z",
@@ -13589,5 +13589,5 @@
  ],
  "wantWider": false,
  "nextD": 768,
- "bad": 2
+ "bad": 3
 }
