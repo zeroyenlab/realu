@@ -1,71 +1,6 @@
 {
  "runs": [
   {
-   "at": "2026-11-04T21:56:47Z",
-   "val": 2.8674,
-   "prev": 2.8785,
-   "valTag": "fixed-holdout-v1",
-   "stoppedAt": 159,
-   "stuck": 0,
-   "evalTag": "fixed-ix-v1",
-   "secPerStep": 26.2042,
-   "steps": 318,
-   "lr": 5e-05,
-   "lrFixed": true,
-   "bpc": 3.3949,
-   "charsPerTok": 1.2185,
-   "score": 2.158,
-   "scoreW": 2.0,
-   "scoreMode": "talk",
-   "finishMix": 0.5,
-   "lineage": "L1",
-   "layers": 16,
-   "params": 117914880,
-   "chars": 1047537723,
-   "tokens": 859675174,
-   "grew": 0,
-   "rolledBack": false,
-   "ownVal": null,
-   "ownScore": null,
-   "d": 768,
-   "loops": 1,
-   "spread": 3.1231,
-   "bytes": 1415116021,
-   "heads": 6,
-   "ctx": 512,
-   "vocab": 6000,
-   "kind": "bpe",
-   "arch": "tpp-loop",
-   "wantWider": false,
-   "layerCap": 16,
-   "mixChanged": false,
-   "bySrc": {
-    "laws": 4.0259,
-    "wiki": 3.0143,
-    "aozora": 3.3823,
-    "hanrei": 3.487,
-    "kokkai": 2.653,
-    "web": 2.9143,
-    "talk": 2.158
-   },
-   "wrote": [
-    {
-     "start": "わたしは",
-     "text": "わたしはパン屋さんがきました」 DP「うちもパンのお魚はいくつかいきました。」 CK「家族になりましたか？」 DP「はい。まだまだおいしいもの食べました。」 CK「おいしいですよね。」 DP「はい。お魚はどのあたりかを食べましたか？」"
-    },
-    {
-     "start": "第一条",
-     "text": "第一条第一号ソフトウェアウェアウトックスーツのDSDを採用している情報もある [ 23 ] 。 独自のプライバシー侵害などは、 原告 が主張するデータを アメリカ イエスラビジョンではなく、アメリカなどにアメリカが挙がってきている [ 23 ]"
-    },
-    {
-     "start": "この法律において",
-     "text": "この法律において、当該区間を内で、当該区間を使用して当該再開等をする場所とし、の全ての免許を、当該設備単に示すべきもの適正な措置をとることを内容とするものであります。 なお、本案においては、国及び都道府県は、引き続き、自衛隊の任務及び運用並びに装備品の運用、ャンペーンその他防衛施設中に設置することとし、また、自衛隊の補給、米国の防空道、国際機関等との協力関係及び愛知県における自衛隊の行う自衛隊"
-    }
-   ],
-   "loopPct": 4.67,
-   "movedBody": false
-  },
-  {
    "at": "2026-11-04T23:17:25Z",
    "val": 2.8645,
    "prev": 2.8674,
@@ -13579,9 +13514,74 @@
      "気持ち": 0.302
     }
    }
+  },
+  {
+   "at": "2026-11-16T23:19:35Z",
+   "val": 2.6433,
+   "prev": 2.6457,
+   "valTag": "fixed-holdout-v1",
+   "stoppedAt": 168,
+   "stuck": 0,
+   "evalTag": "fixed-ix-v1",
+   "secPerStep": 24.7571,
+   "steps": 300,
+   "lr": 5e-05,
+   "lrFixed": true,
+   "bpc": 3.1296,
+   "charsPerTok": 1.2185,
+   "score": 2.082,
+   "scoreW": 2.0,
+   "scoreMode": "talk",
+   "finishMix": 0.5,
+   "lineage": "L1",
+   "layers": 16,
+   "params": 117914880,
+   "chars": 1047537723,
+   "tokens": 859675174,
+   "grew": 0,
+   "rolledBack": false,
+   "ownVal": null,
+   "ownScore": null,
+   "d": 768,
+   "loops": 1,
+   "spread": 2.8796,
+   "bytes": 1415116021,
+   "heads": 6,
+   "ctx": 512,
+   "vocab": 6000,
+   "kind": "bpe",
+   "arch": "tpp-loop",
+   "wantWider": false,
+   "layerCap": 16,
+   "mixChanged": false,
+   "bySrc": {
+    "laws": 3.5318,
+    "wiki": 2.7982,
+    "aozora": 3.1526,
+    "hanrei": 3.3418,
+    "kokkai": 2.4755,
+    "web": 2.7345,
+    "talk": 2.082
+   },
+   "wrote": [
+    {
+     "start": "わたしは",
+     "text": "わたしは、会話も短いしその先ですので、テーマは短くないです。」 CZ「私は短い方です。一気に長い時間で汗かくのですよ。」 CX「そうなんですね。近くは夏休みの宿は多いですか？」 CZ「夏休みは夜両方やってるんです。結構多いですね"
+    },
+    {
+     "start": "第一条",
+     "text": "第一条（同法第八十七条において準用する場合を含む。の番人を含む。）及び前項の決議（法第五十四月三十一条第二項において「決議」という。）が成立したため、当該決議が成立したことになった。1972年（昭和47年）に初めて作った「第三ch」によって、1988年（昭和63年）に拡大され、1988年（昭和63年）に普天間飛行場、1991年（平成"
+    },
+    {
+     "start": "この法律において",
+     "text": "この法律においての間）の1回目の開催だったが、2013年10月28日より実施された。 2014年2月28日の「2014 HAPPの投稿ダイジェスト！」は、2013年8月29日よりスタート。 2014年3月16日には「2014 Wing Andia W"
+    }
+   ],
+   "loopPct": 3.2,
+   "movedBody": false
   }
  ],
- "bestVal": 2.6456,
+ "bestVal": 2.6433,
  "layers": 16,
  "params": 117914880,
  "born": "2026-09-08T15:11:54Z",
@@ -13629,5 +13629,5 @@
  ],
  "wantWider": false,
  "nextD": 768,
- "bad": 0
+ "bad": 1
 }
