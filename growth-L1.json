@@ -1,71 +1,6 @@
 {
  "runs": [
   {
-   "at": "2026-11-06T15:29:24Z",
-   "val": 2.834,
-   "prev": 2.8326,
-   "valTag": "fixed-holdout-v1",
-   "stoppedAt": 278,
-   "stuck": 0,
-   "evalTag": "fixed-ix-v1",
-   "secPerStep": 14.0875,
-   "steps": 317,
-   "lr": 5e-05,
-   "lrFixed": true,
-   "bpc": 3.3554,
-   "charsPerTok": 1.2185,
-   "score": 2.154,
-   "scoreW": 2.0,
-   "scoreMode": "talk",
-   "finishMix": 0.5,
-   "lineage": "L1",
-   "layers": 16,
-   "params": 117914880,
-   "chars": 1047537723,
-   "tokens": 859675174,
-   "grew": 0,
-   "rolledBack": false,
-   "ownVal": null,
-   "ownScore": null,
-   "d": 768,
-   "loops": 1,
-   "spread": 2.8798,
-   "bytes": 1415116021,
-   "heads": 6,
-   "ctx": 512,
-   "vocab": 6000,
-   "kind": "bpe",
-   "arch": "tpp-loop",
-   "wantWider": false,
-   "layerCap": 16,
-   "mixChanged": false,
-   "bySrc": {
-    "laws": 3.9175,
-    "wiki": 2.9842,
-    "aozora": 3.3409,
-    "hanrei": 3.4632,
-    "kokkai": 2.6264,
-    "web": 2.8919,
-    "talk": 2.154
-   },
-   "wrote": [
-    {
-     "start": "わたしは",
-     "text": "わたしは、半ば後半ば、あらゆる用意をしてやってまいりました。」 AB「両方が、ここで御説明をいただきまして、午前中の議論でございますが、まずは、この問題に総理は、この問題について、今後とも尽くしていくということでの視点から、できるだけ早く御議論"
-    },
-    {
-     "start": "第一条",
-     "text": "第一条しょうでもうたくさんでも構いませんが、日曜日だと嬉しいですね。」 AQ「そうなんです。今年はこちらも暑いですしね。」 AK「多少は暑いと思いますが。日中は行きたいです。」 AQ「そうですよね。日中待ちくだしです。"
-    },
-    {
-     "start": "この法律において",
-     "text": "この法律において「センバーグ」のうち最も小さく、小さな丸い丸めて、小麦粉が生産されることになる松本市の名古屋市。 富山県中川町 - 松茂郡名古屋町。1968年に�頭に米穀製造を始めとした同社製の丸い丸井炭と同等の豊かな水を供給することがある。�"
-    }
-   ],
-   "loopPct": 0.82,
-   "movedBody": false
-  },
-  {
    "at": "2026-11-06T16:51:34Z",
    "val": 2.8299,
    "prev": 2.834,
@@ -13579,9 +13514,74 @@
    ],
    "loopPct": 1.67,
    "movedBody": false
+  },
+  {
+   "at": "2026-11-18T16:52:30Z",
+   "val": 2.6315,
+   "prev": 2.6342,
+   "valTag": "fixed-holdout-v1",
+   "stoppedAt": 148,
+   "stuck": 0,
+   "evalTag": "fixed-ix-v1",
+   "secPerStep": 28.4697,
+   "steps": 300,
+   "lr": 5e-05,
+   "lrFixed": true,
+   "bpc": 3.1156,
+   "charsPerTok": 1.2185,
+   "score": 2.081,
+   "scoreW": 2.0,
+   "scoreMode": "talk",
+   "finishMix": 0.5,
+   "lineage": "L1",
+   "layers": 16,
+   "params": 117914880,
+   "chars": 1047537723,
+   "tokens": 859675174,
+   "grew": 0,
+   "rolledBack": false,
+   "ownVal": null,
+   "ownScore": null,
+   "d": 768,
+   "loops": 1,
+   "spread": 2.6806,
+   "bytes": 1415116021,
+   "heads": 6,
+   "ctx": 512,
+   "vocab": 6000,
+   "kind": "bpe",
+   "arch": "tpp-loop",
+   "wantWider": false,
+   "layerCap": 16,
+   "mixChanged": false,
+   "bySrc": {
+    "laws": 3.5071,
+    "wiki": 2.785,
+    "aozora": 3.1334,
+    "hanrei": 3.3343,
+    "kokkai": 2.4605,
+    "web": 2.7185,
+    "talk": 2.081
+   },
+   "wrote": [
+    {
+     "start": "わたしは",
+     "text": "わたしは、私はそのことを承知したわけでございます。」 AB「それは、総理は、今までの答弁は、今日の病院のうどんを、私も、自分のところに一斉に行きましたので、このままなおいちどりなしに、なおかつ、今度の今日この方式なりして、何てそういうことでござ"
+    },
+    {
+     "start": "第一条",
+     "text": "第一条 規則 っていりやしかるべき趣旨 点検 調査の結果を待ち時間償還期間の書店であるとかあるいはこれを避けて話し合おうとしないとか、そういうことをすればいつでも調査を待たねばならぬ。 けれども、連絡する以上は調査しろと。 実際、調査票の削除 調査票の削除 調査票の削除 調査票の削除"
+    },
+    {
+     "start": "この法律において",
+     "text": "この法律において「優勝決定決定決定」と「優勝決定決定決定」とは、優勝決定決定（優勝決定決定）決定（優勝決定決定決定）決定（優勝決定決定）決定（優勝決定決定）決定（優勝決定決定決定）決定（優勝決定決定決定））決定（優勝決定決定決定）決定（優勝決定決定決定）決定（優勝決定決定決定）決定（優勝決定決定決定）決定（優勝決定決定決定）決定しなければならない決定決定"
+    }
+   ],
+   "loopPct": 38.99,
+   "movedBody": false
   }
  ],
- "bestVal": 2.6329,
+ "bestVal": 2.6315,
  "layers": 16,
  "params": 117914880,
  "born": "2026-09-08T15:11:54Z",
@@ -13629,5 +13629,5 @@
  ],
  "wantWider": false,
  "nextD": 768,
- "bad": 1
+ "bad": 2
 }
