@@ -1,81 +1,6 @@
 {
  "runs": [
   {
-   "at": "2026-11-06T08:48:28Z",
-   "val": 2.5976,
-   "prev": 2.5984,
-   "valTag": "fixed-holdout-v1",
-   "stoppedAt": 340,
-   "stuck": 0,
-   "evalTag": "fixed-ix-v1",
-   "secPerStep": 11.3553,
-   "steps": 774,
-   "lr": 5e-05,
-   "lrFixed": true,
-   "bpc": 3.0755,
-   "charsPerTok": 1.2185,
-   "score": 2.0568,
-   "scoreW": 2.0,
-   "scoreMode": "talk",
-   "finishMix": 0.85,
-   "lineage": "L2",
-   "layers": 14,
-   "params": 47379968,
-   "chars": 1047537723,
-   "tokens": 859675174,
-   "grew": 0,
-   "rolledBack": false,
-   "ownVal": null,
-   "ownScore": null,
-   "d": 512,
-   "loops": 1,
-   "spread": 2.4082,
-   "bytes": 568680621,
-   "heads": 8,
-   "ctx": 512,
-   "vocab": 6000,
-   "kind": "bpe",
-   "arch": "tpp-loop",
-   "wantWider": false,
-   "layerCap": 16,
-   "mixChanged": false,
-   "bySrc": {
-    "laws": 3.4953,
-    "wiki": 2.74,
-    "aozora": 3.0727,
-    "hanrei": 3.3437,
-    "kokkai": 2.4339,
-    "web": 2.6818,
-    "talk": 2.0568
-   },
-   "wrote": [
-    {
-     "start": "わたしは",
-     "text": "わたしは、フジテレビの音楽番組『きょうだのワイド』を見ると、フジテレビ出身のバンドマンの舞台挨拶が出る。 フジテレビの音楽番組『キャプテン・オーボエ』は、本番組の主題歌『マジョッキー』といった音楽番組のテ"
-    },
-    {
-     "start": "第一条",
-     "text": "第一条で、2016年に作成した新種の1種、2種、3種、4種、2種、3種以上の中からの分類である 。 小型種（パン）とパン（パン）の二種で、硬質のパンを母の形にした。パンでは、コーカシーのパン（ペンパン）とパン（パンパン）の組み合わせが登場し、この組み"
-    },
-    {
-     "start": "この法律において",
-     "text": "この法律においてELEXXX and ELEXX - 2001年4月11日-11月21日 株式会社 - 同年11月30日より \"Technologies in Living Categments ELEXX in Living Categmen"
-    }
-   ],
-   "loopPct": 7.61,
-   "movedBody": false,
-   "rikai": {
-    "pmi": 0.607,
-    "raw": 0.497,
-    "n": 300,
-    "byAsk": {
-     "したい事": 0.543,
-     "対象": 0.828,
-     "気持ち": 0.472
-    }
-   }
-  },
-  {
    "at": "2026-11-06T10:05:33Z",
    "val": 2.6008,
    "prev": 2.5976,
@@ -14999,6 +14924,81 @@
      "気持ち": 0.594
     }
    }
+  },
+  {
+   "at": "2026-11-18T08:42:46Z",
+   "val": 2.5538,
+   "prev": 2.5554,
+   "valTag": "fixed-holdout-v1",
+   "stoppedAt": 611,
+   "stuck": 0,
+   "evalTag": "fixed-ix-v1",
+   "secPerStep": 6.1065,
+   "steps": 761,
+   "lr": 5e-05,
+   "lrFixed": true,
+   "bpc": 3.0237,
+   "charsPerTok": 1.2185,
+   "score": 2.0716,
+   "scoreW": 2.0,
+   "scoreMode": "talk",
+   "finishMix": 0.85,
+   "lineage": "L2",
+   "layers": 14,
+   "params": 47379968,
+   "chars": 1047537723,
+   "tokens": 859675174,
+   "grew": 0,
+   "rolledBack": false,
+   "ownVal": null,
+   "ownScore": null,
+   "d": 512,
+   "loops": 1,
+   "spread": 2.8463,
+   "bytes": 568680621,
+   "heads": 8,
+   "ctx": 512,
+   "vocab": 6000,
+   "kind": "bpe",
+   "arch": "tpp-loop",
+   "wantWider": false,
+   "layerCap": 16,
+   "mixChanged": false,
+   "bySrc": {
+    "laws": 3.3961,
+    "wiki": 2.6805,
+    "aozora": 3.0207,
+    "hanrei": 3.3157,
+    "kokkai": 2.3977,
+    "web": 2.6271,
+    "talk": 2.0716
+   },
+   "wrote": [
+    {
+     "start": "わたしは",
+     "text": "わたしは自転車の自転車の乗ったことないんですよ。」 AY「おお！いいなー！どれくらいの時間ですか？」 AT「5分くらいですね、朝は結構快適です。」 AY「うおー！楽しそう！」 AT「少し涼しくなってきたのに、今後の便利さは感じられ�"
+    },
+    {
+     "start": "第一条",
+     "text": "第一条において、現行法に従い、営利企業及び有限会社を設立し、また、これに伴い、�立株式会社を設立し、展開会社、副社長、株事故対策本部長、部長、東京都中央区東京1丁目11-1 役員として、前島社長、日本書紀社長、書家に、東京都内在住の憲法改正に関する特別委員として、前島社長、東京都"
+    },
+    {
+     "start": "この法律において",
+     "text": "この法律において「居木」とは、被災地において、災害救助法の対象となった地域に係る災害に係る災害であって、その日からせておかなければならない。 （防災体制の整備） 第三十九条 所在地の判断で地震防災対策を実施する必要じめのある者である場合には、同和対策短時間地帯に係る地震防災対策の実施に関する基本的な方針（以下「防災基本構想」という。）を定めるものとする。 この場合において、関係地方公共団体は、防災基本構想を定めた場合において、地方公共団"
+    }
+   ],
+   "loopPct": 10.3,
+   "movedBody": false,
+   "rikai": {
+    "pmi": 0.64,
+    "raw": 0.557,
+    "n": 300,
+    "byAsk": {
+     "したい事": 0.521,
+     "対象": 0.817,
+     "気持ち": 0.585
+    }
+   }
   }
  ],
  "bestVal": 2.5514,
@@ -15049,5 +15049,5 @@
  ],
  "wantWider": false,
  "nextD": 512,
- "bad": 1
+ "bad": 2
 }
