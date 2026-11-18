@@ -1,71 +1,6 @@
 {
  "runs": [
   {
-   "at": "2026-11-05T23:25:50Z",
-   "val": 2.8477,
-   "prev": 2.8449,
-   "valTag": "fixed-holdout-v1",
-   "stoppedAt": 158,
-   "stuck": 0,
-   "evalTag": "fixed-ix-v1",
-   "secPerStep": 26.3813,
-   "steps": 300,
-   "lr": 5e-05,
-   "lrFixed": true,
-   "bpc": 3.3716,
-   "charsPerTok": 1.2185,
-   "score": 2.1633,
-   "scoreW": 2.0,
-   "scoreMode": "talk",
-   "finishMix": 0.5,
-   "lineage": "L1",
-   "layers": 16,
-   "params": 117914880,
-   "chars": 1047537723,
-   "tokens": 859675174,
-   "grew": 0,
-   "rolledBack": false,
-   "ownVal": null,
-   "ownScore": null,
-   "d": 768,
-   "loops": 1,
-   "spread": 2.8386,
-   "bytes": 1415116021,
-   "heads": 6,
-   "ctx": 512,
-   "vocab": 6000,
-   "kind": "bpe",
-   "arch": "tpp-loop",
-   "wantWider": false,
-   "layerCap": 16,
-   "mixChanged": false,
-   "bySrc": {
-    "laws": 3.962,
-    "wiki": 3.0089,
-    "aozora": 3.3609,
-    "hanrei": 3.4892,
-    "kokkai": 2.6354,
-    "web": 2.9036,
-    "talk": 2.1633
-   },
-   "wrote": [
-    {
-     "start": "わたしは",
-     "text": "わたしは、あるとき、行くことを余儀なくされていた。 しかし、その人たちは、口を拘った。 「こっちのこと、君に僕が動かしてあると思います」 「君は知らぬ知らぬ。だからもう少しです」 「もっと、生まれも嘘ではない」 「そうですか。愚な事があったら"
-    },
-    {
-     "start": "第一条",
-     "text": "第一条じゃない。」 AB「いや今日、アニメーションが出てきたから、みんな出てきましたよね。」 AB「そうだったって、それじゃアニメは私も見ませんよ。テレビ番組だって、一番もったいないですよね。」 AB「そうなんですね。私は、古典的な物語を作る"
-    },
-    {
-     "start": "この法律において",
-     "text": "この法律において「」を冠したラジエーター「ラジエーター」をリリースした。 同年9月10日に放送を開始した。当初はスタジオの「NHK」と呼ばれたのは、それまでのテレビ局・放送局・テレビ朝日と同じ番組で、2005年春からの放送では、テレビ朝日系列は毎日放送（主に全日"
-    }
-   ],
-   "loopPct": 4.01,
-   "movedBody": false
-  },
-  {
    "at": "2026-11-06T00:49:19Z",
    "val": 2.8594,
    "prev": 2.8477,
@@ -13599,6 +13534,71 @@
    ],
    "loopPct": 25.63,
    "movedBody": false
+  },
+  {
+   "at": "2026-11-18T00:39:06Z",
+   "val": 2.6424,
+   "prev": 2.6436,
+   "valTag": "fixed-holdout-v1",
+   "stoppedAt": 169,
+   "stuck": 0,
+   "evalTag": "fixed-ix-v1",
+   "secPerStep": 24.5331,
+   "steps": 300,
+   "lr": 5e-05,
+   "lrFixed": true,
+   "bpc": 3.1285,
+   "charsPerTok": 1.2185,
+   "score": 2.0835,
+   "scoreW": 2.0,
+   "scoreMode": "talk",
+   "finishMix": 0.5,
+   "lineage": "L1",
+   "layers": 16,
+   "params": 117914880,
+   "chars": 1047537723,
+   "tokens": 859675174,
+   "grew": 0,
+   "rolledBack": false,
+   "ownVal": null,
+   "ownScore": null,
+   "d": 768,
+   "loops": 1,
+   "spread": 2.44,
+   "bytes": 1415116021,
+   "heads": 6,
+   "ctx": 512,
+   "vocab": 6000,
+   "kind": "bpe",
+   "arch": "tpp-loop",
+   "wantWider": false,
+   "layerCap": 16,
+   "mixChanged": false,
+   "bySrc": {
+    "laws": 3.5057,
+    "wiki": 2.7998,
+    "aozora": 3.1357,
+    "hanrei": 3.3381,
+    "kokkai": 2.4742,
+    "web": 2.7223,
+    "talk": 2.0835
+   },
+   "wrote": [
+    {
+     "start": "わたしは",
+     "text": "わたしはきっと。」 AI「ああ、たまにいいですね」 BR「あぁ！自分のものを飼うのは好きなので！」 AI「いいですね、なんだかんだいいっぱいです」 BR「そうですね。かわいいですよね。私はうらやましい。」 AI「そうなんですかそれ、好き"
+    },
+    {
+     "start": "第一条",
+     "text": "第一条第四号の規定の適用については、月日は、当該復旧工事犯書の」と、すことができる。 この場合において、前項中「当該�水工事犯書の」とあるのは「当該災害復旧工事犯書の」と、同条第四項中「当該復旧工事の目的が」とあるのは「当該復旧工事が」と、同条第七号中「当該災害復旧事業に」とあるのは「当該災害復旧工事が」と、同条説及び同条那�式�公共団体の被災復旧工事施行者」と、同条第七号中「又は」とあるのは「又は」と"
+    },
+    {
+     "start": "この法律において",
+     "text": "この法律において「を終わらせろ」という内容が含まれております。（拍手） 私たちは、今回の武田総理の言葉の中で、日本、アジアの平和、安全を守る、この日本が戦争である、これがアメリカの国民にとってこの国だとお考えになっていると思います。」 AB「（拍手） 昨年十二月"
+    }
+   ],
+   "loopPct": 4.24,
+   "movedBody": false
   }
  ],
  "bestVal": 2.6378,
@@ -13649,5 +13649,5 @@
  ],
  "wantWider": false,
  "nextD": 768,
- "bad": 4
+ "bad": 0
 }
