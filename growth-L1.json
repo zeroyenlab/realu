@@ -1,71 +1,6 @@
 {
  "runs": [
   {
-   "at": "2026-11-06T11:29:16Z",
-   "val": 2.8385,
-   "prev": 2.8398,
-   "valTag": "fixed-holdout-v1",
-   "stoppedAt": 177,
-   "stuck": 0,
-   "evalTag": "fixed-ix-v1",
-   "secPerStep": 23.2152,
-   "steps": 318,
-   "lr": 5e-05,
-   "lrFixed": true,
-   "bpc": 3.3607,
-   "charsPerTok": 1.2185,
-   "score": 2.1585,
-   "scoreW": 2.0,
-   "scoreMode": "talk",
-   "finishMix": 0.5,
-   "lineage": "L1",
-   "layers": 16,
-   "params": 117914880,
-   "chars": 1047537723,
-   "tokens": 859675174,
-   "grew": 0,
-   "rolledBack": false,
-   "ownVal": null,
-   "ownScore": null,
-   "d": 768,
-   "loops": 1,
-   "spread": 2.6261,
-   "bytes": 1415116021,
-   "heads": 6,
-   "ctx": 512,
-   "vocab": 6000,
-   "kind": "bpe",
-   "arch": "tpp-loop",
-   "wantWider": false,
-   "layerCap": 16,
-   "mixChanged": false,
-   "bySrc": {
-    "laws": 3.9197,
-    "wiki": 2.9975,
-    "aozora": 3.3444,
-    "hanrei": 3.4585,
-    "kokkai": 2.6291,
-    "web": 2.896,
-    "talk": 2.1585
-   },
-   "wrote": [
-    {
-     "start": "わたしは",
-     "text": "わたしは女を飲むからです。キングスではありますか？」 BM「そうです。男は誰でもいいですね。」 BV「わ！お父さんもいますか？」 BM「とても美味しいですよ。わんちゃんはなんでも好きです。」 BV「わーいいですね。気"
-    },
-    {
-     "start": "第一条",
-     "text": "第一条の基本理解釈を無理やり速やかに検証し、絶対に通告しない。 （詳細は 詳細 ） 中身は無理であり、中々不忍却なので、つまり、処分場や無理に満足させることが無理なわけではない。 （詳しくは詳細は 中野区 （ 中野区 ） 所管 [ 27 ] 。"
-    },
-    {
-     "start": "この法律において",
-     "text": "この法律において「任命率に、これらの罰則に関する手続を委託する」という内容になった。 2008年（平成20年）5月16日 - 伊勢神宮への参入に向けて、伊勢神宮の本社が新設、引退。 2008年（平成20年）1月3日に名古屋市に処理した「新城」の公設施設として、エレベーター"
-    }
-   ],
-   "loopPct": 3.32,
-   "movedBody": false
-  },
-  {
    "at": "2026-11-06T12:48:44Z",
    "val": 2.8337,
    "prev": 2.8385,
@@ -13579,9 +13514,74 @@
    ],
    "loopPct": 5.77,
    "movedBody": false
+  },
+  {
+   "at": "2026-11-18T12:53:39Z",
+   "val": 2.6329,
+   "prev": 2.6366,
+   "valTag": "fixed-holdout-v1",
+   "stoppedAt": 167,
+   "stuck": 0,
+   "evalTag": "fixed-ix-v1",
+   "secPerStep": 24.8789,
+   "steps": 300,
+   "lr": 5e-05,
+   "lrFixed": true,
+   "bpc": 3.1173,
+   "charsPerTok": 1.2185,
+   "score": 2.0849,
+   "scoreW": 2.0,
+   "scoreMode": "talk",
+   "finishMix": 0.5,
+   "lineage": "L1",
+   "layers": 16,
+   "params": 117914880,
+   "chars": 1047537723,
+   "tokens": 859675174,
+   "grew": 0,
+   "rolledBack": false,
+   "ownVal": null,
+   "ownScore": null,
+   "d": 768,
+   "loops": 1,
+   "spread": 2.5381,
+   "bytes": 1415116021,
+   "heads": 6,
+   "ctx": 512,
+   "vocab": 6000,
+   "kind": "bpe",
+   "arch": "tpp-loop",
+   "wantWider": false,
+   "layerCap": 16,
+   "mixChanged": false,
+   "bySrc": {
+    "laws": 3.4992,
+    "wiki": 2.7919,
+    "aozora": 3.1342,
+    "hanrei": 3.3354,
+    "kokkai": 2.4595,
+    "web": 2.7247,
+    "talk": 2.0849
+   },
+   "wrote": [
+    {
+     "start": "わたしは",
+     "text": "わたしは、こんなに食べられないものありましたよ」 BI「食べられないので、子供と八人子供生ける人と食べすぎるといいんでしょうが。」 DG「そうかもしれません。熱中症も多いですし」 BI「そうですね。一番美味しいものは、子供がいると食べられないんですか？」"
+    },
+    {
+     "start": "第一条",
+     "text": "第一条未満の表示を少なくし、また、その表示の過程でマスダメントをもった表示を保護するか、または制作するかをチェックして�す。 そのチェック機能が、マスダメントを持たないというチェック機能は、マスダメントを持たないと見なされません。 また、血行による表示が行われているかどうかは、マスダメントによ"
+    },
+    {
+     "start": "この法律において",
+     "text": "この法律において「一体性」という。）を達成するために、本来の法的守秘の世界における国別の解剖を目的として、無視して、日本と同程度の具体的な治験を進めるべきであると考えますが、総理の御見解を伺いたいと思います。 次に、注意深い観察と答弁を求めておきたいと思います。 政府は、現行制度を現行の"
+    }
+   ],
+   "loopPct": 0.79,
+   "movedBody": false
   }
  ],
- "bestVal": 2.6337,
+ "bestVal": 2.6329,
  "layers": 16,
  "params": 117914880,
  "born": "2026-09-08T15:11:54Z",
@@ -13629,5 +13629,5 @@
  ],
  "wantWider": false,
  "nextD": 768,
- "bad": 5
+ "bad": 6
 }
