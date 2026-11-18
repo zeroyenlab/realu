@@ -1,71 +1,6 @@
 {
  "runs": [
   {
-   "at": "2026-11-06T08:49:25Z",
-   "val": 2.838,
-   "prev": 2.846,
-   "valTag": "fixed-holdout-v1",
-   "stoppedAt": 264,
-   "stuck": 0,
-   "evalTag": "fixed-ix-v1",
-   "secPerStep": 14.8858,
-   "steps": 300,
-   "lr": 5e-05,
-   "lrFixed": true,
-   "bpc": 3.3601,
-   "charsPerTok": 1.2185,
-   "score": 2.1666,
-   "scoreW": 2.0,
-   "scoreMode": "talk",
-   "finishMix": 0.5,
-   "lineage": "L1",
-   "layers": 16,
-   "params": 117914880,
-   "chars": 1047537723,
-   "tokens": 859675174,
-   "grew": 0,
-   "rolledBack": false,
-   "ownVal": null,
-   "ownScore": null,
-   "d": 768,
-   "loops": 1,
-   "spread": 2.8876,
-   "bytes": 1415116021,
-   "heads": 6,
-   "ctx": 512,
-   "vocab": 6000,
-   "kind": "bpe",
-   "arch": "tpp-loop",
-   "wantWider": false,
-   "layerCap": 16,
-   "mixChanged": false,
-   "bySrc": {
-    "laws": 3.9165,
-    "wiki": 2.9922,
-    "aozora": 3.3508,
-    "hanrei": 3.4773,
-    "kokkai": 2.6321,
-    "web": 2.8988,
-    "talk": 2.1666
-   },
-   "wrote": [
-    {
-     "start": "わたしは",
-     "text": "わたしはちょっとですね。」 CM「そうなんです、やっぱり頭痛や体重消化はしますか？」 DS「全然ですね。体重も体重もらなかったですが体重も2000～2000度で被害が多いです。」 CM「体重も少しバレてるかもしれませんね。」 D"
-    },
-    {
-     "start": "第一条",
-     "text": "第一条の第10条を適用している。 この定義は、１条では「特定の方法」と表記されることもある。 ... 愛称は、特定のものであっても、「特定行為」という表記のままで約1年間の約1500万ドルの約3000万ドルを払うということになる。 1980年の「特定行為」に関しては、特定行為に基づき特定行為が全て特定行為を行うもの"
-    },
-    {
-     "start": "この法律において",
-     "text": "この法律において定めるものとされた改正法である。 1994年（平成6年）4月26日、大橋博草社長による本人へのインタビューで、2021年（令和3年）10月1日、「全国紙」にもインタビューが開かれている 。 「有能ブランド」 - 大橋博士の「有能ブランド」設立時の名を冠したもの。 大"
-    }
-   ],
-   "loopPct": 8.63,
-   "movedBody": false
-  },
-  {
    "at": "2026-11-06T10:09:08Z",
    "val": 2.8398,
    "prev": 2.838,
@@ -13589,9 +13524,74 @@
    ],
    "loopPct": 7.92,
    "movedBody": false
+  },
+  {
+   "at": "2026-11-18T10:10:47Z",
+   "val": 2.6337,
+   "prev": 2.6338,
+   "valTag": "fixed-holdout-v1",
+   "stoppedAt": 169,
+   "stuck": 0,
+   "evalTag": "fixed-ix-v1",
+   "secPerStep": 24.5122,
+   "steps": 300,
+   "lr": 5e-05,
+   "lrFixed": true,
+   "bpc": 3.1182,
+   "charsPerTok": 1.2185,
+   "score": 2.0842,
+   "scoreW": 2.0,
+   "scoreMode": "talk",
+   "finishMix": 0.5,
+   "lineage": "L1",
+   "layers": 16,
+   "params": 117914880,
+   "chars": 1047537723,
+   "tokens": 859675174,
+   "grew": 0,
+   "rolledBack": false,
+   "ownVal": null,
+   "ownScore": null,
+   "d": 768,
+   "loops": 1,
+   "spread": 2.8256,
+   "bytes": 1415116021,
+   "heads": 6,
+   "ctx": 512,
+   "vocab": 6000,
+   "kind": "bpe",
+   "arch": "tpp-loop",
+   "wantWider": false,
+   "layerCap": 16,
+   "mixChanged": false,
+   "bySrc": {
+    "laws": 3.4817,
+    "wiki": 2.7834,
+    "aozora": 3.1328,
+    "hanrei": 3.3339,
+    "kokkai": 2.4589,
+    "web": 2.7236,
+    "talk": 2.0842
+   },
+   "wrote": [
+    {
+     "start": "わたしは",
+     "text": "わたしは好きなので、カレーを作るのが好きです。」 AO「カレーいいですね！私も、カレーは好きです！」 BB「カレーいいですよね。たまねぎは私も好きです！」 AO「カレー好きなんですね。それこそカレーも食べたかったので。」 BB「カレー"
+    },
+    {
+     "start": "第一条",
+     "text": "第一条条第三項の規定によりITTの本拠地点に関する情報提供の実施を行うに当たって必要な事項を当該Java本体により管理しなければならない。 番号は、SSBテレビジョン放送局で管理されているJRN番組（JRN）が、SSB本体により管理することが義務付けられている。 また、2005年10月の14:50以前は本社機能を展開しており、それらのテレビジョン放送"
+    },
+    {
+     "start": "この法律において",
+     "text": "この法律において「付録」が採用される。 ただし、日本以外の地方放送局のニュースダイジェスト・ニュースデスクは、2023年3月以降は、読売新聞社（2025年10月以降は、読売新聞社）から、元NHKニュースアーカイブス放送のミュージックエンターテイメントを題材にしたCDが導"
+    }
+   ],
+   "loopPct": 6.26,
+   "movedBody": false
   }
  ],
- "bestVal": 2.6338,
+ "bestVal": 2.6337,
  "layers": 16,
  "params": 117914880,
  "born": "2026-09-08T15:11:54Z",
@@ -13639,5 +13639,5 @@
  ],
  "wantWider": false,
  "nextD": 768,
- "bad": 3
+ "bad": 4
 }
