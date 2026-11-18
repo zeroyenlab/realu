@@ -1,81 +1,6 @@
 {
  "runs": [
   {
-   "at": "2026-11-06T14:04:45Z",
-   "val": 2.5968,
-   "prev": 2.6007,
-   "valTag": "fixed-holdout-v1",
-   "stoppedAt": 374,
-   "stuck": 0,
-   "evalTag": "fixed-ix-v1",
-   "secPerStep": 10.2742,
-   "steps": 538,
-   "lr": 5e-05,
-   "lrFixed": true,
-   "bpc": 3.0746,
-   "charsPerTok": 1.2185,
-   "score": 2.0587,
-   "scoreW": 2.0,
-   "scoreMode": "talk",
-   "finishMix": 0.85,
-   "lineage": "L2",
-   "layers": 14,
-   "params": 47379968,
-   "chars": 1047537723,
-   "tokens": 859675174,
-   "grew": 0,
-   "rolledBack": false,
-   "ownVal": null,
-   "ownScore": null,
-   "d": 512,
-   "loops": 1,
-   "spread": 2.8173,
-   "bytes": 568680621,
-   "heads": 8,
-   "ctx": 512,
-   "vocab": 6000,
-   "kind": "bpe",
-   "arch": "tpp-loop",
-   "wantWider": false,
-   "layerCap": 16,
-   "mixChanged": false,
-   "bySrc": {
-    "laws": 3.4952,
-    "wiki": 2.7417,
-    "aozora": 3.0707,
-    "hanrei": 3.3337,
-    "kokkai": 2.4303,
-    "web": 2.678,
-    "talk": 2.0587
-   },
-   "wrote": [
-    {
-     "start": "わたしは",
-     "text": "わたしはあんまりハマらないですよね。」 CF「そうなんですよね。私はあの人間が好きです。あなたはお昼は食べましたか？」 BP「はい、お昼は食べました。どちらもかなり食べましたよ！」 CF「そうなのですね！私は今日は昼にカレー"
-    },
-    {
-     "start": "第一条",
-     "text": "第一条従って、その工事は終わりなんですよ」 AC「ごめんなさい、正式なんです、ここで。」 AA「おかげで、今日のお昼は決まってるんですから」 AC「まあ、通っちゃいます。メルカリに並ぶのも大変！」 AA「実は私もメルカリの開発を"
-    },
-    {
-     "start": "この法律において",
-     "text": "この法律において「高速この項の高速レーザー」と比較することが多く、耐久性を重視する技術や安全性などの問題もある 。 条理を理解する上で、パーソナルコンピュータのような、情報を伝達する手段を前提に、マイクロソフト社の「IPS専用プログラム」も含む。 <記事 ローソン・ウェ"
-    }
-   ],
-   "loopPct": 2.63,
-   "movedBody": false,
-   "rikai": {
-    "pmi": 0.623,
-    "raw": 0.51,
-    "n": 300,
-    "byAsk": {
-     "したい事": 0.532,
-     "対象": 0.86,
-     "気持ち": 0.5
-    }
-   }
-  },
-  {
    "at": "2026-11-06T15:24:30Z",
    "val": 2.6012,
    "prev": 2.5968,
@@ -14999,6 +14924,81 @@
      "気持ち": 0.585
     }
    }
+  },
+  {
+   "at": "2026-11-18T14:10:31Z",
+   "val": 2.5529,
+   "prev": 2.5513,
+   "valTag": "fixed-holdout-v1",
+   "stoppedAt": 309,
+   "stuck": 0,
+   "evalTag": "fixed-ix-v1",
+   "secPerStep": 12.5744,
+   "steps": 955,
+   "lr": 5e-05,
+   "lrFixed": true,
+   "bpc": 3.0226,
+   "charsPerTok": 1.2185,
+   "score": 2.0741,
+   "scoreW": 2.0,
+   "scoreMode": "talk",
+   "finishMix": 0.85,
+   "lineage": "L2",
+   "layers": 14,
+   "params": 47379968,
+   "chars": 1047537723,
+   "tokens": 859675174,
+   "grew": 0,
+   "rolledBack": false,
+   "ownVal": null,
+   "ownScore": null,
+   "d": 512,
+   "loops": 1,
+   "spread": 2.6232,
+   "bytes": 568680621,
+   "heads": 8,
+   "ctx": 512,
+   "vocab": 6000,
+   "kind": "bpe",
+   "arch": "tpp-loop",
+   "wantWider": false,
+   "layerCap": 16,
+   "mixChanged": false,
+   "bySrc": {
+    "laws": 3.4163,
+    "wiki": 2.6817,
+    "aozora": 3.0285,
+    "hanrei": 3.3266,
+    "kokkai": 2.3942,
+    "web": 2.6284,
+    "talk": 2.0741
+   },
+   "wrote": [
+    {
+     "start": "わたしは",
+     "text": "わたしは、お昼ご飯まだ半々です！」 DU「なにか夏らしいことってありましたか？」 BZ「複雑な環境ですね。暑さが和らぎましたよね。」 DU「そうですよね。私の友達は昨日、学校の宿題を自由にできるキーの兵器をやっていて。」 BZ"
+    },
+    {
+     "start": "第一条",
+     "text": "第一条別表民間 3 法律第134号。 ベルリン は ヨーロッパ 各国 共通語 であるが、 北欧諸国 と 中華人民共和国 の ポルトガル （ ポルトガル 領）の言葉に由来する。 1972年 の第3次 国際連合安全保障理事会決議 で"
+    },
+    {
+     "start": "この法律において",
+     "text": "この法律において「三」に「これ」とあり 「三」の「」を「九」とあり、これらを「通」とあり 「東（東）」の「東」ン「東」を「東」（「東」の「東」の「西」を「東」とする）を「東」とあり、これらを「東」とあり、これらを「東」と「東」とあり、これらを「東」とあり、"
+    }
+   ],
+   "loopPct": 12.24,
+   "movedBody": false,
+   "rikai": {
+    "pmi": 0.637,
+    "raw": 0.57,
+    "n": 300,
+    "byAsk": {
+     "したい事": 0.543,
+     "対象": 0.806,
+     "気持ち": 0.557
+    }
+   }
   }
  ],
  "bestVal": 2.5491,
@@ -15049,5 +15049,5 @@
  ],
  "wantWider": false,
  "nextD": 512,
- "bad": 7
+ "bad": 0
 }
