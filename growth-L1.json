@@ -1,71 +1,6 @@
 {
  "runs": [
   {
-   "at": "2026-11-07T14:27:12Z",
-   "val": 2.8015,
-   "prev": 2.806,
-   "valTag": "fixed-holdout-v1",
-   "stoppedAt": 176,
-   "stuck": 0,
-   "evalTag": "fixed-ix-v1",
-   "secPerStep": 23.3198,
-   "steps": 300,
-   "lr": 5e-05,
-   "lrFixed": true,
-   "bpc": 3.3169,
-   "charsPerTok": 1.2185,
-   "score": 2.1543,
-   "scoreW": 2.0,
-   "scoreMode": "talk",
-   "finishMix": 0.5,
-   "lineage": "L1",
-   "layers": 16,
-   "params": 117914880,
-   "chars": 1047537723,
-   "tokens": 859675174,
-   "grew": 0,
-   "rolledBack": false,
-   "ownVal": null,
-   "ownScore": null,
-   "d": 768,
-   "loops": 1,
-   "spread": 2.809,
-   "bytes": 1415116021,
-   "heads": 6,
-   "ctx": 512,
-   "vocab": 6000,
-   "kind": "bpe",
-   "arch": "tpp-loop",
-   "wantWider": false,
-   "layerCap": 16,
-   "mixChanged": false,
-   "bySrc": {
-    "laws": 3.8668,
-    "wiki": 2.9505,
-    "aozora": 3.319,
-    "hanrei": 3.4378,
-    "kokkai": 2.5955,
-    "web": 2.8612,
-    "talk": 2.1543
-   },
-   "wrote": [
-    {
-     "start": "わたしは",
-     "text": "わたしはもう御存じだと思うんです。 それから、もう一点、私は防沼当局だけではなくて、それらの特徴をあげることはいたしませんが、これは大事な問題でございますし、もう一点申し上げますと、やはりこれはリーマン・ショックでありますとか、そういうようなことで、そう"
-    },
-    {
-     "start": "第一条",
-     "text": "第一条の規定にかかわらず、解散後五年間（その運用する被疑者を罰する第八号の写し及び同条第二項に規定する挙げつつ）を必要としていないこと、 この際、 被疑者を保護し、又は予約した者に支給すべきことを求めるのはいずれも当然ではないか、 次いで、 次いで により 売付された を求め、所要の併合その他これらの事項を 次の報告等を付した あわせて、民法の一部を改正する法律案（内閣提出） 第四 明治"
-    },
-    {
-     "start": "この法律において",
-     "text": "この法律において「Combom」となる。2008年1月11日、マスコミグループの「Combome」が発売され、新作映像とCD音声を再び有名になった 。 2016年2月24日、アメリカで発売された「Comboom」と「Comboleme the P"
-    }
-   ],
-   "loopPct": 6.03,
-   "movedBody": false
-  },
-  {
    "at": "2026-11-07T15:44:57Z",
    "val": 2.8002,
    "prev": 2.8015,
@@ -13609,9 +13544,74 @@
    ],
    "loopPct": 0.0,
    "movedBody": false
+  },
+  {
+   "at": "2026-11-19T15:42:05Z",
+   "val": 2.6242,
+   "prev": 2.6314,
+   "valTag": "fixed-holdout-v1",
+   "stoppedAt": 170,
+   "stuck": 0,
+   "evalTag": "fixed-ix-v1",
+   "secPerStep": 24.3404,
+   "steps": 300,
+   "lr": 5e-05,
+   "lrFixed": true,
+   "bpc": 3.107,
+   "charsPerTok": 1.2185,
+   "score": 2.0837,
+   "scoreW": 2.0,
+   "scoreMode": "talk",
+   "finishMix": 0.5,
+   "lineage": "L1",
+   "layers": 16,
+   "params": 117914880,
+   "chars": 1047537723,
+   "tokens": 859675174,
+   "grew": 0,
+   "rolledBack": false,
+   "ownVal": null,
+   "ownScore": null,
+   "d": 768,
+   "loops": 1,
+   "spread": 2.7948,
+   "bytes": 1415116021,
+   "heads": 6,
+   "ctx": 512,
+   "vocab": 6000,
+   "kind": "bpe",
+   "arch": "tpp-loop",
+   "wantWider": false,
+   "layerCap": 16,
+   "mixChanged": false,
+   "bySrc": {
+    "laws": 3.4718,
+    "wiki": 2.7722,
+    "aozora": 3.1313,
+    "hanrei": 3.3378,
+    "kokkai": 2.4546,
+    "web": 2.7129,
+    "talk": 2.0837
+   },
+   "wrote": [
+    {
+     "start": "わたしは",
+     "text": "わたしは、その後、昨年の十二月に、新潟県、福井県、大阪府と、二度にわたって香港が香港で開かれたのであります。 香港では、新潟県でも香港が香港でも香港が香港に行って、香港は香港に行って、香港は香港で行っていた。香港は"
+    },
+    {
+     "start": "第一条",
+     "text": "第一条 対象特別買付等の問題の解決の問題でありますが、実際に暴力団の双方が加害者にまで到底いえるものではないと考えています。」 AB「行政の場でしゃべられましたが、昨日、このやり方をやめたけど、お役所をやっている方が暴力団を召し捕ま"
+    },
+    {
+     "start": "この法律において",
+     "text": "この法律において、医療機関等も通わせる、あるいはまた医療、介護その他の支援をお願いすること、こういうことであります。」 AA「私は、新しい医療をつくることを目指す中で、旧来型の問題として、医療の問題は、実態から見ても相当に深いところではないかと思うのであります。 また、それが医療の問題であ"
+    }
+   ],
+   "loopPct": 13.77,
+   "movedBody": false
   }
  ],
- "bestVal": 2.6257,
+ "bestVal": 2.6242,
  "layers": 16,
  "params": 117914880,
  "born": "2026-09-08T15:11:54Z",
@@ -13659,5 +13659,5 @@
  ],
  "wantWider": false,
  "nextD": 768,
- "bad": 3
+ "bad": 0
 }
