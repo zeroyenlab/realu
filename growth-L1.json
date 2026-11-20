@@ -1,71 +1,6 @@
 {
  "runs": [
   {
-   "at": "2026-11-09T06:36:34Z",
-   "val": 2.7859,
-   "prev": 2.7859,
-   "valTag": "fixed-holdout-v1",
-   "stoppedAt": 158,
-   "stuck": 1,
-   "evalTag": "fixed-ix-v1",
-   "secPerStep": 26.3504,
-   "steps": 300,
-   "lr": 5e-05,
-   "lrFixed": true,
-   "bpc": 3.2984,
-   "charsPerTok": 1.2185,
-   "score": 2.1268,
-   "scoreW": 2.0,
-   "scoreMode": "talk",
-   "finishMix": 0.5,
-   "lineage": "L1",
-   "layers": 16,
-   "params": 117914880,
-   "chars": 1047537723,
-   "tokens": 859675174,
-   "grew": 0,
-   "rolledBack": true,
-   "ownVal": 2.7862,
-   "ownScore": 2.147,
-   "d": 768,
-   "loops": 1,
-   "spread": 2.7878,
-   "bytes": 1415116021,
-   "heads": 6,
-   "ctx": 512,
-   "vocab": 6000,
-   "kind": "bpe",
-   "arch": "tpp-loop",
-   "wantWider": false,
-   "layerCap": 16,
-   "mixChanged": false,
-   "bySrc": {
-    "laws": 3.8272,
-    "wiki": 2.928,
-    "aozora": 3.3016,
-    "hanrei": 3.4203,
-    "kokkai": 2.5983,
-    "web": 2.8439,
-    "talk": 2.147
-   },
-   "wrote": [
-    {
-     "start": "わたしは",
-     "text": "わたしはちゃんととっておったのであります。これは何とかして、あなたはどなたかということをあなた方だけは言わないのであります。（拍手）しかも、このようなことを言うものであります。（拍手） 私は、すでに、河野総理大臣がいまより反対の意を表明いたしましたほかに、まず、この公約を基"
-    },
-    {
-     "start": "第一条",
-     "text": "第一条おり、同月8日付で、ジャンクションをコンビニエンスストアと共同で設置した「新会社」を設立 。 1987年（昭和62年）9月1日：「株式会社HARACE（SieBA）」設立 。 1988年（昭和63年）10月1日：株式会社HARACE・株式会社PLF（現・株式会社新"
-    },
-    {
-     "start": "この法律において",
-     "text": "この法律において「今日の社会保障制度調査会」の経営判断を深くする。 しかしながら、現在、昭和30年代後半になると、当時小泉官房長官から「いつも早くに結婚可能になったので…」と言われるようになった。 当時は「早稲田大学法医学部」という名で、ただし早稲田大学に入っており、現在"
-    }
-   ],
-   "loopPct": 2.21,
-   "movedBody": false
-  },
-  {
    "at": "2026-11-09T08:01:31Z",
    "val": 2.7889,
    "prev": 2.7859,
@@ -13629,9 +13564,74 @@
    ],
    "loopPct": 27.39,
    "movedBody": false
+  },
+  {
+   "at": "2026-11-20T10:18:47Z",
+   "val": 2.6176,
+   "prev": 2.6248,
+   "valTag": "fixed-holdout-v1",
+   "stoppedAt": 151,
+   "stuck": 0,
+   "evalTag": "fixed-ix-v1",
+   "secPerStep": 27.8363,
+   "steps": 300,
+   "lr": 5e-05,
+   "lrFixed": true,
+   "bpc": 3.0992,
+   "charsPerTok": 1.2185,
+   "score": 2.0851,
+   "scoreW": 2.0,
+   "scoreMode": "talk",
+   "finishMix": 0.5,
+   "lineage": "L1",
+   "layers": 16,
+   "params": 117914880,
+   "chars": 1047537723,
+   "tokens": 859675174,
+   "grew": 0,
+   "rolledBack": false,
+   "ownVal": null,
+   "ownScore": null,
+   "d": 768,
+   "loops": 1,
+   "spread": 2.4338,
+   "bytes": 1415116021,
+   "heads": 6,
+   "ctx": 512,
+   "vocab": 6000,
+   "kind": "bpe",
+   "arch": "tpp-loop",
+   "wantWider": false,
+   "layerCap": 16,
+   "mixChanged": false,
+   "bySrc": {
+    "laws": 3.4165,
+    "wiki": 2.7587,
+    "aozora": 3.1118,
+    "hanrei": 3.3177,
+    "kokkai": 2.4611,
+    "web": 2.6973,
+    "talk": 2.0851
+   },
+   "wrote": [
+    {
+     "start": "わたしは",
+     "text": "わたしは失敗を申しわけないけれども、しかし、実際に、平成二十一年の十二月におきましては、この予算委員会において、来年の春、来年の十二月の大臣の予算委員会で、先ほど来、当時の関係閣僚が大変なTシャツ屋さんに、こういうところのお話をいただいたということが、私は大きな問題だと思います。 そして、"
+    },
+    {
+     "start": "第一条",
+     "text": "第一条各号の規定により管理管理管理管理管理管理管理を行う管理管理管理管理管理管理責任管理に関し管理管理監督責任を負うものについて、当該管理管理監督責任管理管理管理監督責任に基づき管理管理責任を除き管理管理監督監督責任を有するものとして、管理管理監督責任を行う管理管理責任管理管理責任者が管理管理監督責任を行使し、管理管理責任を負うものとする。 管理管理責任管理管理監督責任管理責任管理責任管理者が管理管理責任管理監督責任を負う場合において、"
+    },
+    {
+     "start": "この法律において",
+     "text": "この法律において「非公開」とは、非公開とした報告、公開、ニ依ス、投票管理及び公開並びに公開、公開、公開、公開及び公開、公開又は公開（公開するinformisions on the Convention on the Convention）及び公開、公開、公開、公開、公開、公開、公開、公開、公開、公開、公開、公開"
+    }
+   ],
+   "loopPct": 32.42,
+   "movedBody": false
   }
  ],
- "bestVal": 2.6188,
+ "bestVal": 2.6176,
  "layers": 16,
  "params": 117914880,
  "born": "2026-09-08T15:11:54Z",
@@ -13679,5 +13679,5 @@
  ],
  "wantWider": false,
  "nextD": 768,
- "bad": 0
+ "bad": 1
 }
