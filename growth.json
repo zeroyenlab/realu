@@ -1,71 +1,6 @@
 {
  "runs": [
   {
-   "at": "2026-11-09T05:14:26Z",
-   "val": 2.7859,
-   "prev": 2.7824,
-   "valTag": "fixed-holdout-v1",
-   "stoppedAt": 177,
-   "stuck": 0,
-   "evalTag": "fixed-ix-v1",
-   "secPerStep": 23.2395,
-   "steps": 300,
-   "lr": 5e-05,
-   "lrFixed": true,
-   "bpc": 3.2984,
-   "charsPerTok": 1.2185,
-   "score": 2.1268,
-   "scoreW": 2.0,
-   "scoreMode": "talk",
-   "finishMix": 0.5,
-   "lineage": "L1",
-   "layers": 16,
-   "params": 117914880,
-   "chars": 1047537723,
-   "tokens": 859675174,
-   "grew": 0,
-   "rolledBack": false,
-   "ownVal": null,
-   "ownScore": null,
-   "d": 768,
-   "loops": 1,
-   "spread": 2.7501,
-   "bytes": 1415116021,
-   "heads": 6,
-   "ctx": 512,
-   "vocab": 6000,
-   "kind": "bpe",
-   "arch": "tpp-loop",
-   "wantWider": false,
-   "layerCap": 16,
-   "mixChanged": false,
-   "bySrc": {
-    "laws": 3.8368,
-    "wiki": 2.9365,
-    "aozora": 3.3008,
-    "hanrei": 3.4308,
-    "kokkai": 2.5855,
-    "web": 2.8523,
-    "talk": 2.1268
-   },
-   "wrote": [
-    {
-     "start": "わたしは",
-     "text": "わたしは鏡班に出て、栗を開いては、二、三回の鏡班を奉すと、やはり二、三回の鏡台と六回、百回の鏡台で、名前も台詞と共に出ませぬ。」 AA「そして、その鏡台のお店には、今の鏡台が到着すると、今は相応"
-    },
-    {
-     "start": "第一条",
-     "text": "第一条中「中武藩は司法権が現実に発展して、諸地ではないと思っております。」 AA「いずれにしても、その前に、わが国の司法権は、人権もぐっと進むように、また、現在、安保条約により、わが国にとって、わが国が、このようなことをやっているわけではありません。むしろ、世界の及ぶ範囲は"
-    },
-    {
-     "start": "この法律において",
-     "text": "この法律において「現在の馬鹿児島」と呼称すること。 1960年 - 10月下旬に宮崎県沖縄市で開催。 1961年 - 10月26日改称。NREUTODAYSHIVEL カップヌードルの要素が浮かび上がった。 1961年 - 10月に商業"
-    }
-   ],
-   "loopPct": 1.76,
-   "movedBody": false
-  },
-  {
    "at": "2026-11-09T06:36:34Z",
    "val": 2.7859,
    "prev": 2.7859,
@@ -13629,6 +13564,71 @@
    ],
    "loopPct": 25.61,
    "movedBody": false
+  },
+  {
+   "at": "2026-11-20T08:57:09Z",
+   "val": 2.6248,
+   "prev": 2.6206,
+   "valTag": "fixed-holdout-v1",
+   "stoppedAt": 150,
+   "stuck": 0,
+   "evalTag": "fixed-ix-v1",
+   "secPerStep": 27.9649,
+   "steps": 300,
+   "lr": 5e-05,
+   "lrFixed": true,
+   "bpc": 3.1076,
+   "charsPerTok": 1.2185,
+   "score": 2.0769,
+   "scoreW": 2.0,
+   "scoreMode": "talk",
+   "finishMix": 0.5,
+   "lineage": "L1",
+   "layers": 16,
+   "params": 117914880,
+   "chars": 1047537723,
+   "tokens": 859675174,
+   "grew": 0,
+   "rolledBack": false,
+   "ownVal": null,
+   "ownScore": null,
+   "d": 768,
+   "loops": 1,
+   "spread": 2.8026,
+   "bytes": 1415116021,
+   "heads": 6,
+   "ctx": 512,
+   "vocab": 6000,
+   "kind": "bpe",
+   "arch": "tpp-loop",
+   "wantWider": false,
+   "layerCap": 16,
+   "mixChanged": false,
+   "bySrc": {
+    "laws": 3.444,
+    "wiki": 2.7646,
+    "aozora": 3.1171,
+    "hanrei": 3.3172,
+    "kokkai": 2.4613,
+    "web": 2.7003,
+    "talk": 2.0769
+   },
+   "wrote": [
+    {
+     "start": "わたしは",
+     "text": "わたしはそのままに残しております。 このため、今回政府が、日米安保体制のもとで、米国に対して一層厳しい対応を強力に推進していく必要があると思いますが、昨年十二月の国連総会でのウエブサイトにおけるいわゆるＰＫＯ、ＰＫＯ等の強化について、総理及び防衛庁長官の答弁を求め"
+    },
+    {
+     "start": "第一条",
+     "text": "第一条 （補助金） （補助又は補助 （補助金） （補助金の交付 補助金） （補助金の交付 補助金の交付 補助金の交付 補助金の交付 補助金の交付 補助金の交付 補助金の交付 補助金の交付 補助金の交付 補助金の交付 補助金の交付 補助金の交付 補助金の交付 補助金の交付 補助金の交付 補助金の交付 補助金の交付 補助金の交付 補助金の交付 補助金の交付 補助金の交付 補助金の"
+    },
+    {
+     "start": "この法律において",
+     "text": "この法律において「副主席」とあるのは「副大統領」と、「副大統領」とあるのは「副大統領」と読み替えるものとする。 （副大統領及び副大統領） 第六十一条 副大統領及び副大統領は、副大統領又は副大統領に会合しなければならない。 副大統領は、副大統領又は副大統領を出席させ、又は副大統領の規定により副大統領及び副大統領一般社団録さ基準市民団体"
+    }
+   ],
+   "loopPct": 27.39,
+   "movedBody": false
   }
  ],
  "bestVal": 2.6188,
@@ -13679,5 +13679,5 @@
  ],
  "wantWider": false,
  "nextD": 768,
- "bad": 1
+ "bad": 0
 }
