@@ -1,71 +1,6 @@
 {
  "runs": [
   {
-   "at": "2026-11-09T11:59:02Z",
-   "val": 2.781,
-   "prev": 2.7745,
-   "valTag": "fixed-holdout-v1",
-   "stoppedAt": 177,
-   "stuck": 0,
-   "evalTag": "fixed-ix-v1",
-   "secPerStep": 23.3021,
-   "steps": 300,
-   "lr": 5e-05,
-   "lrFixed": true,
-   "bpc": 3.2926,
-   "charsPerTok": 1.2185,
-   "score": 2.1312,
-   "scoreW": 2.0,
-   "scoreMode": "talk",
-   "finishMix": 0.5,
-   "lineage": "L1",
-   "layers": 16,
-   "params": 117914880,
-   "chars": 1047537723,
-   "tokens": 859675174,
-   "grew": 0,
-   "rolledBack": false,
-   "ownVal": null,
-   "ownScore": null,
-   "d": 768,
-   "loops": 1,
-   "spread": 2.6627,
-   "bytes": 1415116021,
-   "heads": 6,
-   "ctx": 512,
-   "vocab": 6000,
-   "kind": "bpe",
-   "arch": "tpp-loop",
-   "wantWider": false,
-   "layerCap": 16,
-   "mixChanged": false,
-   "bySrc": {
-    "laws": 3.8176,
-    "wiki": 2.9273,
-    "aozora": 3.2885,
-    "hanrei": 3.4185,
-    "kokkai": 2.59,
-    "web": 2.8485,
-    "talk": 2.1312
-   },
-   "wrote": [
-    {
-     "start": "わたしは",
-     "text": "わたしは、こういうふうに、あたかも多分に話してもらいたいと思いながらいいんじゃないかと思うのですが、いかがですか。」 AA「藤野国務大臣 ただいま御指摘のように、この日本の農産物輸入を、悲惨な農業経営の大変な衰退というものに対しては、いわば輸出市場を拡大したい"
-    },
-    {
-     "start": "第一条",
-     "text": "第一条第一号又は第三号、第六号及び第十三号に掲げる事項 （�本者） 旅行業避位者（林業製鉄所していない重要事項者を除く。）は、石炭及び炭鉱に対抗するため、石炭及び炭鉱等のガス金融を運輸省に移譲する。 （販売店） <法令 京都府鎌倉市の担当者局長に対する答弁書の答弁書の答弁書の答弁書の答弁書の答弁書の答弁書"
-    },
-    {
-     "start": "この法律において",
-     "text": "この法律において，被告が効果的・効果的な効果的な評価を不要にし，その評価を否定し，原 告が本件において，被告が本件評価の評価を行い，原告が，本件評価を知らしめないことにも 反対し，イ原告が，被告に求めた本件評価が低いことを理由に，本件評価を低 めた原告は，原告に対し�"
-    }
-   ],
-   "loopPct": 10.41,
-   "movedBody": false
-  },
-  {
    "at": "2026-11-09T13:21:13Z",
    "val": 2.7777,
    "prev": 2.781,
@@ -13629,6 +13564,71 @@
    ],
    "loopPct": 9.0,
    "movedBody": false
+  },
+  {
+   "at": "2026-11-20T15:29:35Z",
+   "val": 2.6216,
+   "prev": 2.6229,
+   "valTag": "fixed-holdout-v1",
+   "stoppedAt": 171,
+   "stuck": 0,
+   "evalTag": "fixed-ix-v1",
+   "secPerStep": 24.1895,
+   "steps": 300,
+   "lr": 5e-05,
+   "lrFixed": true,
+   "bpc": 3.1038,
+   "charsPerTok": 1.2185,
+   "score": 2.0691,
+   "scoreW": 2.0,
+   "scoreMode": "talk",
+   "finishMix": 0.5,
+   "lineage": "L1",
+   "layers": 16,
+   "params": 117914880,
+   "chars": 1047537723,
+   "tokens": 859675174,
+   "grew": 0,
+   "rolledBack": false,
+   "ownVal": null,
+   "ownScore": null,
+   "d": 768,
+   "loops": 1,
+   "spread": 2.6789,
+   "bytes": 1415116021,
+   "heads": 6,
+   "ctx": 512,
+   "vocab": 6000,
+   "kind": "bpe",
+   "arch": "tpp-loop",
+   "wantWider": false,
+   "layerCap": 16,
+   "mixChanged": false,
+   "bySrc": {
+    "laws": 3.4351,
+    "wiki": 2.7586,
+    "aozora": 3.112,
+    "hanrei": 3.2981,
+    "kokkai": 2.4628,
+    "web": 2.7034,
+    "talk": 2.0691
+   },
+   "wrote": [
+    {
+     "start": "わたしは",
+     "text": "わたしは、自分のキャラクターとして、イメージして、自分で犬とか猫の写真を入り書いてくれるらしいです。」 AT「いいですね、犬は飼ってるんですか？」 CI「犬は飼ってます！犬も中からみたらし団子、って言ってます。」 AT「どんなアイテムを使って"
+    },
+    {
+     "start": "第一条",
+     "text": "第一条ベイト中に取材した上で、その中では、就職が終了することになるという趣旨の発言をしていた、こういうことでございます。」 AA「原口委員 確かに、先ほどもお話ししたように、何が原口大臣ですか。 原口大臣にお伺いしたいのは、いわゆるラジオのラジオですね。これは、ラジオのラジ"
+    },
+    {
+     "start": "この法律において",
+     "text": "この法律において の観点に立って、 片山議員 が失行政処分処分を決定した。 2015年現在、 公費負担 問題 が 2017年 4月29日 時点で終わり、 行政当 は 最高裁 、 最高裁 、 最高裁 、 裁判所 、 最高裁判所 、 最高裁判所 、 最高裁判所 、 最高裁判所 、 最高裁判所 、"
+    }
+   ],
+   "loopPct": 18.27,
+   "movedBody": false
   }
  ],
  "bestVal": 2.6176,
@@ -13679,5 +13679,5 @@
  ],
  "wantWider": false,
  "nextD": 768,
- "bad": 0
+ "bad": 1
 }
